@@ -29,7 +29,7 @@ function Unlock() {
     try {
       const r = await redeem({ data: { code } });
       if (r.ok) {
-        toast.success(r.type === "admin" ? "Admin + Pro unlocked!" : "Pro unlocked!");
+        toast.success("Everything unlocked!");
         nav({ to: "/dashboard" });
       } else {
         toast.error("Invalid unlock code");
@@ -66,10 +66,17 @@ function Unlock() {
         <Card className="mt-6 p-6 text-start">
           <div className="flex items-center gap-2 micro-label"><KeyRound className="h-3 w-3" /> Have an unlock code?</div>
           <form onSubmit={submit} className="mt-3 flex gap-2">
-            <Input value={code} onChange={(e) => setCode(e.target.value)} placeholder="KREDO-PRO-2026" className="h-11" />
+            <Input
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              placeholder="Enter your code"
+              type="password"
+              autoComplete="off"
+              className="h-11 font-mono"
+            />
             <Button type="submit" disabled={busy || !code.trim()} className="h-11">Redeem</Button>
           </form>
-          <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Codes grant Pro or Admin access instantly</p>
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">A valid code unlocks all features instantly</p>
         </Card>
 
         <Button variant="link" className="mt-4" onClick={() => nav({ to: "/dashboard" })}>← Back to dashboard</Button>
