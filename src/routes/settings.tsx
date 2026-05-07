@@ -167,6 +167,38 @@ function Settings() {
           </div>
         </Card>
 
+        <Card className="mt-6 p-6">
+          <h2 className="font-display text-xl font-black tracking-tight">Certificate template</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Pick the design used when generating your certificates. The accent dot follows your theme color.</p>
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {CERT_TEMPLATES.map((t) => (
+              <button
+                key={t.key}
+                onClick={() => { setCertTpl(t.key); localStorage.setItem("kredo.certTemplate", t.key); }}
+                className={`group rounded-lg border p-2 text-start transition ${certTpl === t.key ? "border-foreground ring-2 ring-primary/30" : "border-border hover:border-foreground/40"}`}
+              >
+                <div className="overflow-hidden rounded">
+                  <CertificateView
+                    compact
+                    template={t.key}
+                    serial="KR-2026-PREVIEW"
+                    recipientName="Your Name"
+                    courseTopic="Sample Course"
+                    score={94}
+                    issuedAt={new Date().toISOString()}
+                    verifyUrl="https://kredo.app/verify/preview"
+                  />
+                </div>
+                <div className="mt-2 flex items-center justify-between">
+                  <span className="text-sm font-medium">{t.label}</span>
+                  {certTpl === t.key && <Check className="h-4 w-4 text-primary" />}
+                </div>
+                <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">{t.hint}</div>
+              </button>
+            ))}
+          </div>
+        </Card>
+
         <div className="mt-6 flex justify-end">
           <Button variant="outline" onClick={reset}><RotateCcw className="me-2 h-4 w-4" /> Reset to defaults</Button>
         </div>
