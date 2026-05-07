@@ -36,6 +36,7 @@ function Unlock() {
       const r = await res.json();
       if (r.ok) {
         toast.success("Everything unlocked!");
+        try { localStorage.setItem("kredo.unlocked", "1"); } catch {}
         nav({ to: "/dashboard" });
       } else {
         toast.error("Invalid unlock code");

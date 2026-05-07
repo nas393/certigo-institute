@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
 import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
+import { CERT_TEMPLATES, type CertTemplate, CertificateView } from "@/components/kredo/CertificateView";
 
 export const Route = createFileRoute("/settings")({
   head: () => ({
@@ -39,12 +40,15 @@ function Settings() {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [compact, setCompact] = useState(false);
   const [adminCode, setAdminCode] = useState("");
+  const [certTpl, setCertTpl] = useState<CertTemplate>("classic");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     setReducedMotion(localStorage.getItem("kredo.motion") === "reduced");
     setCompact(localStorage.getItem("kredo.density") === "compact");
     document.documentElement.classList.toggle("reduce-motion", localStorage.getItem("kredo.motion") === "reduced");
+    const t = (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic";
+    setCertTpl(t);
   }, []);
   useEffect(() => {
     if (!user) return;
@@ -158,6 +162,38 @@ function Settings() {
               >
                 <div className="font-black">{FONTS[k].label}</div>
                 <div className="mt-1 text-xs text-muted-foreground">The quick brown fox.</div>
+              </button>
+            ))}
+          </div>
+        </Card>
+
+        <Card className="mt-6 p-6">
+          <h2 className="font-display text-xl font-black tracking-tight">Certificate template</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Pick the design used when generating your certificates. The accent dot follows your theme color.</p>
+          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {CERT_TEMPLATES.map((t) => (
+              <button
+                key={t.key}
+                onClick={() => { setCertTpl(t.key); localStorage.setItem("kredo.certTemplate", t.key); }}
+                className={`group rounded-lg border p-2 text-start transition ${certTpl === t.key ? "border-foreground ring-2 ring-primary/30" : "border-border hover:border-foreground/40"}`}
+              >
+                <div className="overflow-hidden rounded">
+                  <CertificateView
+                    compact
+                    template={t.key}
+                    serial="KR-2026-PREVIEW"
+                    recipientName="Your Name"
+                    courseTopic="Sample Course"
+                    score={94}
+                    issuedAt={new Date().toISOString()}
+                    verifyUrl="https://kredo.app/verify/preview"
+                  />
+                </div>
+                <div className="mt-2 flex items-center justify-between">
+                  <span className="text-sm font-medium">{t.label}</span>
+                  {certTpl === t.key && <Check className="h-4 w-4 text-primary" />}
+                </div>
+                <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">{t.hint}</div>
               </button>
             ))}
           </div>

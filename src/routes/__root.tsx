@@ -8,6 +8,46 @@ import { AuthProvider } from "@/lib/auth";
 import { I18nProvider } from "@/lib/i18n";
 import { ThemeProvider } from "@/lib/theme";
 import appCss from "../styles.css?url";
+import { useEffect } from "react";
+
+function CopyGuard() {
+  useEffect(() => {
+    const isUnlocked = () => {
+      try { return localStorage.getItem("kredo.unlocked") === "1"; } catch { return false; }
+    };
+    const block = (e: Event) => {
+      if (isUnlocked()) return;
+      const target = e.target as HTMLElement | null;
+      // allow inputs / textareas / contenteditable
+      if (target && (target.closest("input, textarea, [contenteditable='true']"))) return;
+      e.preventDefault();
+    };
+    const blockKeys = (e: KeyboardEvent) => {
+      if (isUnlocked()) return;
+      const k = e.key.toLowerCase();
+      if ((e.ctrlKey || e.metaKey) && ["c", "x", "s", "p", "u"].includes(k)) {
+        const target = e.target as HTMLElement | null;
+        if (target && target.closest("input, textarea, [contenteditable='true']")) return;
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("contextmenu", block);
+    document.addEventListener("copy", block);
+    document.addEventListener("cut", block);
+    document.addEventListener("dragstart", block);
+    document.addEventListener("selectstart", block);
+    document.addEventListener("keydown", blockKeys);
+    return () => {
+      document.removeEventListener("contextmenu", block);
+      document.removeEventListener("copy", block);
+      document.removeEventListener("cut", block);
+      document.removeEventListener("dragstart", block);
+      document.removeEventListener("selectstart", block);
+      document.removeEventListener("keydown", blockKeys);
+    };
+  }, []);
+  return null;
+}
 
 function NotFoundComponent() {
   return (
@@ -76,6 +116,7 @@ function RootComponent() {
       <I18nProvider>
         <ThemeProvider>
           <AuthProvider>
+            <CopyGuard />
             <Outlet />
             <Toaster />
           </AuthProvider>
