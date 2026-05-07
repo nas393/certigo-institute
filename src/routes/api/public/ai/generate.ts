@@ -7,7 +7,10 @@ export const Route = createFileRoute("/api/public/ai/generate")({
     handlers: {
       POST: async ({ request }) => {
         const apiKey = process.env.LOVABLE_API_KEY;
-        if (!apiKey) return new Response(JSON.stringify({ error: "missing key" }), { status: 500 });
+        if (!apiKey) {
+          console.error("[ai/generate] missing LOVABLE_API_KEY");
+          return new Response(JSON.stringify({ error: "missing key" }), { status: 500 });
+        }
         const body = (await request.json()) as Body;
         if (!body?.topic || body.topic.length > 200) return new Response(JSON.stringify({ error: "bad topic" }), { status: 400 });
 
@@ -40,13 +43,17 @@ Rules: 3 modules, 2 lessons each, 6-8 quiz questions, write in ${body.language |
         });
         if (!res.ok) {
           const txt = await res.text();
+          console.error("[ai/generate] gateway error", res.status, txt.slice(0, 500));
           return new Response(JSON.stringify({ error: "AI error", detail: txt }), { status: 502 });
         }
         const data = await res.json() as any;
         const content = data?.choices?.[0]?.message?.content;
         let parsed: any;
         try { parsed = typeof content === "string" ? JSON.parse(content) : content; }
-        catch { return new Response(JSON.stringify({ error: "bad JSON" }), { status: 502 }); }
+        catch (e) {
+          console.error("[ai/generate] bad JSON", String(content).slice(0, 500));
+          return new Response(JSON.stringify({ error: "bad JSON" }), { status: 502 });
+        }
         return Response.json({ outline: parsed });
       },
     },
