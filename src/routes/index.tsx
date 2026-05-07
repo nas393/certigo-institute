@@ -57,17 +57,21 @@ function Home() {
                 <span>✓ No credit card</span><span>✓ 1 free certificate</span><span>✓ Setup in 60 seconds</span>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative mx-auto w-full max-w-[460px] lg:max-w-[420px]">
               <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 to-transparent blur-2xl" />
               <div className="rotate-[-1.5deg] transition-transform hover:rotate-0">
                 <CertificateView
+                  compact
                   serial="KR-2026-DEMO01"
                   recipientName="Amara Okafor"
                   courseTopic="Prompt Engineering Fundamentals"
                   score={94}
                   issuedAt={new Date().toISOString()}
-                  verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify` : "/verify"}
+                  verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify/KR-2026-DEMO01` : "/verify/KR-2026-DEMO01"}
                 />
+              </div>
+              <div className="mt-3 text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                Scan or <a href="/verify/KR-2026-DEMO01" className="underline hover:text-primary">open the public verify page</a>
               </div>
             </div>
           </div>
