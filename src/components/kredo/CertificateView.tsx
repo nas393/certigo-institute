@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 import signatureUrl from "@/assets/kredo-signature.png";
 import stampUrl from "@/assets/kredo-stamp.png";
+import { formatSerial } from "@/lib/cert";
 
 export type CertTemplate =
   | "classic"
@@ -46,7 +47,17 @@ export function CertificateView(p: Props) {
   const [qr, setQr] = useState<string>("");
   const [appPrimary, setAppPrimary] = useState<string>("oklch(0.42 0.21 275)");
   const tpl: CertTemplate = p.template ?? (typeof window !== "undefined" ? (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic" : "classic");
-  useEffect(() => { QRCode.toDataURL(p.verifyUrl, { margin: 0, width: 240 }).then(setQr); }, [p.verifyUrl]);
+  const displaySerial = formatSerial(p.serial);
+  // Always link the QR to the public verify page using the (formatted) serial.
+  const qrTarget = (() => {
+    try {
+      const u = new URL(p.verifyUrl);
+      return `${u.origin}/verify/${displaySerial}`;
+    } catch {
+      return `/verify/${displaySerial}`;
+    }
+  })();
+  useEffect(() => { QRCode.toDataURL(qrTarget, { margin: 0, width: 240 }).then(setQr); }, [qrTarget]);
   useEffect(() => { setAppPrimary(getAppPrimary()); }, []);
 
   const lock = {
@@ -162,51 +173,66 @@ export function CertificateView(p: Props) {
         <div className="flex items-start justify-between">
           <Wordmark size={p.compact ? "sm" : "md"} />
           <div className="text-right">
-            <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
-            <div className="mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-foreground/70">
-              <span className="h-1.5 w-1.5 rounded-full" style={{ background: appPrimary }} /> On-chain Verified
+            <div className={`font-mono tracking-widest text-muted-foreground ${p.compact ? "text-[8px]" : "text-[9px]"}`}>{displaySerial}</div>
+            <div className={`mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-1.5 py-[1px] font-mono uppercase tracking-widest text-foreground/70 ${p.compact ? "text-[6px]" : "text-[7px]"}`}>
+              <span className={`rounded-full ${p.compact ? "h-1 w-1" : "h-1.5 w-1.5"}`} style={{ background: appPrimary }} /> On-chain Verified
             </div>
           </div>
         </div>
-        <div className={`mx-auto text-center ${p.compact ? "mt-[3%]" : "mt-[5%]"}`}>
+        <div className={`mx-auto text-center ${p.compact ? "mt-[3%]" : "mt-[4%]"}`}>
           <div className="micro-label">Certificate of Completion</div>
-          <h2 className={`font-display font-black leading-none tracking-tighter ${p.compact ? "mt-3 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-6 text-[clamp(1.5rem,4.5vw,3.5rem)]"}`}>
+          <p className={`font-mono uppercase tracking-[0.3em] text-muted-foreground ${p.compact ? "mt-2 text-[7px]" : "mt-3 text-[9px]"}`}>
+            This is to certify that
+          </p>
+          <h2 className={`font-display font-black leading-none tracking-tighter ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.5rem,4.5vw,3.2rem)]"}`}>
             {p.recipientName}
           </h2>
           <div className={`mx-auto h-px w-20 ${p.compact ? "mt-2" : "mt-3"}`} style={{ background: appPrimary, opacity: 0.6 }} />
-          <p className={`max-w-xl text-balance text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.65rem,1.1vw,0.85rem)]" : "mt-4 text-[clamp(0.8rem,1.4vw,1rem)]"}`}>
-            For successfully completing <span className="text-foreground">"{p.courseTopic}"</span>
+          <p className={`max-w-xl text-balance text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 text-[clamp(0.7rem,1.2vw,0.9rem)]"}`}>
+            has successfully completed the course
           </p>
+          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight text-foreground ${p.compact ? "mt-1 text-[clamp(0.85rem,2vw,1.15rem)]" : "mt-2 text-[clamp(1.1rem,2.6vw,1.75rem)]"}`}>
+            {p.courseTopic}
+          </h3>
           <p className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "mt-1 text-[7px]" : "mt-1 text-[8px]"}`}>
             {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString()}
           </p>
         </div>
-        <div className="mt-auto flex items-end justify-between gap-4">
-          {/* signature + stamp horizontal block */}
-          <div className="flex items-end gap-3">
-            <div className={`relative ${p.compact ? "w-36" : "w-52"}`}>
-              <img
-                src={signatureUrl}
-                alt=""
-                className={`absolute left-2 object-contain ${p.compact ? "-top-8 h-10 w-24" : "-top-12 h-14 w-36"}`}
-                style={{ filter: "brightness(0.3)" }}
-              />
-              <div className={`h-px bg-foreground/70 ${p.compact ? "w-36" : "w-52"}`} />
-              <div className={`mt-1 font-display tracking-tight text-foreground ${p.compact ? "text-[10px]" : "text-xs"}`}>
-                KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
-              </div>
+        {/* Signatory · Stamp · QR */}
+        <div className="mt-auto grid grid-cols-3 items-end gap-4">
+          {/* Signature */}
+          <div className="flex flex-col items-start">
+            <img
+              src={signatureUrl}
+              alt="Signature"
+              className={`object-contain object-left-bottom ${p.compact ? "h-10 w-32" : "h-16 w-44"}`}
+              style={{ filter: "brightness(0.2) contrast(1.2)" }}
+            />
+            <div className={`mt-1 w-full border-t border-foreground/70 ${p.compact ? "max-w-[8rem]" : "max-w-[11rem]"}`} />
+            <div className={`mt-1 font-display font-semibold tracking-tight text-foreground ${p.compact ? "text-[9px]" : "text-[11px]"}`}>
+              KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
             </div>
+            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
+              Authorized Signatory
+            </div>
+          </div>
+          {/* Stamp */}
+          <div className="flex items-end justify-center">
             <img
               src={stampUrl}
-              alt=""
-              className={`rotate-[-10deg] opacity-80 mix-blend-multiply ${p.compact ? "h-12 w-12" : "h-20 w-20"}`}
+              alt="Official seal"
+              className={`rotate-[-8deg] opacity-90 mix-blend-multiply ${p.compact ? "h-16 w-16" : "h-24 w-24"}`}
             />
           </div>
           {/* QR + serial */}
-          <div className="text-right">
-            {qr && <img src={qr} alt="QR" className={`ml-auto rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />}
-            <div className={`mt-1 font-mono tracking-widest text-foreground/70 ${p.compact ? "text-[7px]" : "text-[9px]"}`}>{p.serial}</div>
-            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>Scan to verify</div>
+          <div className="flex flex-col items-end text-right">
+            {qr && (
+              <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
+                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />
+              </a>
+            )}
+            <div className={`mt-1 font-mono tracking-widest text-foreground/80 ${p.compact ? "text-[7px]" : "text-[9px]"}`}>{displaySerial}</div>
+            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[7px]"}`}>Scan to verify</div>
           </div>
         </div>
         {p.watermark && (
