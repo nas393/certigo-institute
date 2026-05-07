@@ -15,8 +15,10 @@ import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ArchiveRouteImport } from './routes/archive'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
+import { Route as UHandleRouteImport } from './routes/u.$handle'
 import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as ApiPublicAiGenerateRouteImport } from './routes/api/public/ai/generate'
@@ -51,6 +53,11 @@ const ArchiveRoute = ArchiveRouteImport.update({
   path: '/archive',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -60,6 +67,11 @@ const VerifyIdRoute = VerifyIdRouteImport.update({
   id: '/$id',
   path: '/$id',
   getParentRoute: () => VerifyRoute,
+} as any)
+const UHandleRoute = UHandleRouteImport.update({
+  id: '/u/$handle',
+  path: '/u/$handle',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const CourseIdRoute = CourseIdRouteImport.update({
   id: '/course/$id',
@@ -79,6 +91,7 @@ const ApiPublicAiGenerateRoute = ApiPublicAiGenerateRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
@@ -87,11 +100,13 @@ export interface FileRoutesByFullPath {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
@@ -100,12 +115,14 @@ export interface FileRoutesByTo {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
@@ -114,6 +131,7 @@ export interface FileRoutesById {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
@@ -121,6 +139,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/archive'
     | '/auth'
     | '/dashboard'
@@ -129,11 +148,13 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/u/$handle'
     | '/verify/$id'
     | '/api/public/ai/generate'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin'
     | '/archive'
     | '/auth'
     | '/dashboard'
@@ -142,11 +163,13 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/u/$handle'
     | '/verify/$id'
     | '/api/public/ai/generate'
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/archive'
     | '/auth'
     | '/dashboard'
@@ -155,12 +178,14 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/u/$handle'
     | '/verify/$id'
     | '/api/public/ai/generate'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
@@ -169,6 +194,7 @@ export interface RootRouteChildren {
   VerifyRoute: typeof VerifyRouteWithChildren
   CertificateIdRoute: typeof CertificateIdRoute
   CourseIdRoute: typeof CourseIdRoute
+  UHandleRoute: typeof UHandleRoute
   ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
 }
 
@@ -216,6 +242,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ArchiveRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -229,6 +262,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/verify/$id'
       preLoaderRoute: typeof VerifyIdRouteImport
       parentRoute: typeof VerifyRoute
+    }
+    '/u/$handle': {
+      id: '/u/$handle'
+      path: '/u/$handle'
+      fullPath: '/u/$handle'
+      preLoaderRoute: typeof UHandleRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/course/$id': {
       id: '/course/$id'
@@ -267,6 +307,7 @@ const VerifyRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
@@ -275,8 +316,19 @@ const rootRouteChildren: RootRouteChildren = {
   VerifyRoute: VerifyRouteWithChildren,
   CertificateIdRoute: CertificateIdRoute,
   CourseIdRoute: CourseIdRoute,
+  UHandleRoute: UHandleRoute,
   ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
