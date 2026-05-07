@@ -33,7 +33,26 @@ function VerifyOne() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     (async () => {
-      const { data } = await supabase.from("certificates").select("*").eq("id", id).maybeSingle();
+      // Demo serials: render a verifiable showcase without a DB row
+      if (/^KR-2026-DEMO/i.test(id)) {
+        setCert({
+          id,
+          serial: id.toUpperCase(),
+          recipient_name: "Amara Okafor",
+          course_topic: "Prompt Engineering Fundamentals",
+          score: 94,
+          issued_at: new Date().toISOString(),
+          revoked: false,
+          _demo: true,
+        });
+        setLoading(false);
+        return;
+      }
+      const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+      const q = supabase.from("certificates").select("*");
+      const { data } = UUID_RE.test(id)
+        ? await q.eq("id", id).maybeSingle()
+        : await q.ilike("serial", id).maybeSingle();
       setCert(data); setLoading(false);
     })();
   }, [id]);
@@ -49,7 +68,9 @@ function VerifyOne() {
             <div className="flex items-center gap-3 rounded-lg border border-primary/30 bg-primary/5 px-5 py-4">
               <ShieldCheck className="h-6 w-6 text-primary" />
               <div>
-                <div className="font-display text-lg font-black tracking-tight">✓ Verified by Kredo</div>
+                <div className="font-display text-lg font-black tracking-tight">
+                  ✓ Verified by Kredo {cert._demo && <span className="ms-2 rounded bg-foreground/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest">Demo</span>}
+                </div>
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
                   Issued {new Date(cert.issued_at).toLocaleDateString()} · Serial {cert.serial}
                 </div>
