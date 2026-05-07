@@ -5,7 +5,7 @@ import { Header } from "@/components/kredo/Header";
 import { CertificateView } from "@/components/kredo/CertificateView";
 import { ShieldCheck, ShieldX, Loader2 } from "lucide-react";
 
-export const Route = createFileRoute("/verify/")({
+export const Route = createFileRoute("/verify/$id")({
   head: ({ params }) => ({
     meta: [
       { title: `Verify ${params.id} — Kredo` },
