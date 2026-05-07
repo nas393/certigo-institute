@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Sparkles, BadgeCheck, KeyRound } from "lucide-react";
-import { useServerFn } from "@tanstack/react-start";
-import { redeemUnlock } from "@/lib/unlock.functions";
 import { toast } from "sonner";
 import { useAuth } from "@/lib/auth";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/unlock")({
   head: () => ({ meta: [{ title: "Upgrade to Pro — Kredo" }, { name: "description", content: "Unlock unlimited verified credentials." }] }),
@@ -18,7 +17,6 @@ export const Route = createFileRoute("/unlock")({
 function Unlock() {
   const nav = useNavigate();
   const { user } = useAuth();
-  const redeem = useServerFn(redeemUnlock);
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
 
@@ -27,7 +25,15 @@ function Unlock() {
     if (!user) { nav({ to: "/auth" }); return; }
     setBusy(true);
     try {
-      const r = await redeem({ data: { code } });
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      if (!token) { toast.error("Please sign in again"); nav({ to: "/auth" }); return; }
+      const res = await fetch("/api/public/unlock", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ code }),
+      });
+      const r = await res.json();
       if (r.ok) {
         toast.success("Everything unlocked!");
         nav({ to: "/dashboard" });
