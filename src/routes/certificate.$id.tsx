@@ -8,7 +8,7 @@ import { Download, Loader2 } from "lucide-react";
 import { downloadCertificatePdf } from "@/lib/pdf";
 import { useAuth } from "@/lib/auth";
 
-export const Route = createFileRoute("/certificate/")({
+export const Route = createFileRoute("/certificate/$id")({
   head: () => ({ meta: [{ title: "Certificate — Kredo" }, { name: "description", content: "A QR-verified Kredo certificate." }] }),
   component: CertPage,
 });
