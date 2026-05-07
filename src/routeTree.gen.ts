@@ -10,9 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifyRouteImport } from './routes/verify'
+import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
+import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyRouteImport } from './routes/verify.'
 import { Route as CourseRouteImport } from './routes/course.'
@@ -22,6 +24,11 @@ import { Route as ApiPublicAiGenerateRouteImport } from './routes/api/public/ai/
 const VerifyRoute = VerifyRouteImport.update({
   id: '/verify',
   path: '/verify',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UnlockRoute = UnlockRouteImport.update({
+  id: '/unlock',
+  path: '/unlock',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProfileRoute = ProfileRouteImport.update({
@@ -37,6 +44,11 @@ const DashboardRoute = DashboardRouteImport.update({
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArchiveRoute = ArchiveRouteImport.update({
+  id: '/archive',
+  path: '/archive',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -67,9 +79,11 @@ const ApiPublicAiGenerateRoute = ApiPublicAiGenerateRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
+  '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/': typeof CertificateRoute
   '/course/': typeof CourseRoute
@@ -78,9 +92,11 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
+  '/unlock': typeof UnlockRoute
   '/certificate': typeof CertificateRoute
   '/course': typeof CourseRoute
   '/verify': typeof VerifyRoute
@@ -89,9 +105,11 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
+  '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/': typeof CertificateRoute
   '/course/': typeof CourseRoute
@@ -102,9 +120,11 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/archive'
     | '/auth'
     | '/dashboard'
     | '/profile'
+    | '/unlock'
     | '/verify'
     | '/certificate/'
     | '/course/'
@@ -113,9 +133,11 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/archive'
     | '/auth'
     | '/dashboard'
     | '/profile'
+    | '/unlock'
     | '/certificate'
     | '/course'
     | '/verify'
@@ -123,9 +145,11 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/archive'
     | '/auth'
     | '/dashboard'
     | '/profile'
+    | '/unlock'
     | '/verify'
     | '/certificate/'
     | '/course/'
@@ -135,9 +159,11 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
   ProfileRoute: typeof ProfileRoute
+  UnlockRoute: typeof UnlockRoute
   VerifyRoute: typeof VerifyRouteWithChildren
   CertificateRoute: typeof CertificateRoute
   CourseRoute: typeof CourseRoute
@@ -151,6 +177,13 @@ declare module '@tanstack/react-router' {
       path: '/verify'
       fullPath: '/verify'
       preLoaderRoute: typeof VerifyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unlock': {
+      id: '/unlock'
+      path: '/unlock'
+      fullPath: '/unlock'
+      preLoaderRoute: typeof UnlockRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/profile': {
@@ -172,6 +205,13 @@ declare module '@tanstack/react-router' {
       path: '/auth'
       fullPath: '/auth'
       preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/archive': {
+      id: '/archive'
+      path: '/archive'
+      fullPath: '/archive'
+      preLoaderRoute: typeof ArchiveRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -225,9 +265,11 @@ const VerifyRouteWithChildren =
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
   ProfileRoute: ProfileRoute,
+  UnlockRoute: UnlockRoute,
   VerifyRoute: VerifyRouteWithChildren,
   CertificateRoute: CertificateRoute,
   CourseRoute: CourseRoute,
