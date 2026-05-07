@@ -120,22 +120,16 @@ function Home() {
         </div>
       </section>
 
-      {/* DEMO CERT */}
+      {/* TRUST CALLOUT (no second demo cert) */}
       <section className="border-y border-border bg-card">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-2 lg:items-center">
-          <div>
-            <div className="micro-label">◆ Built to be trusted</div>
-            <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">Every certificate carries proof.</h2>
-            <p className="mt-5 text-muted-foreground">
-              Each Kredo certificate has a unique serial and a QR code linking to a public ledger page.
-              Anyone — recruiters, schools, clients — can verify the credential in one scan, no login required.
-            </p>
-            <Button className="mt-8" onClick={() => nav({ to: "/verify" })}>Verify this certificate <ArrowRight className="ms-2 h-4 w-4" /></Button>
-          </div>
-          <div className="rotate-[1deg]">
-            <CertificateView serial="KR-2026-LEDGR1" recipientName="Joaquín Mendes" courseTopic="Financial Modeling Essentials" score={88}
-              issuedAt={new Date().toISOString()} verifyUrl="/verify" />
-          </div>
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center">
+          <div className="micro-label">◆ Built to be trusted</div>
+          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">Every certificate carries proof.</h2>
+          <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
+            Each Kredo certificate has a unique serial and a QR code linking to a public ledger page.
+            Anyone — recruiters, schools, clients — can verify the credential in one scan, no login required.
+          </p>
+          <Button className="mt-8" onClick={() => nav({ to: "/verify" })}>Open the public ledger <ArrowRight className="ms-2 h-4 w-4" /></Button>
         </div>
       </section>
 

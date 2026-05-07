@@ -38,8 +38,13 @@ export function CertificateView(p: Props) {
       <div className="absolute inset-5 border border-foreground/10" />
       <div className="relative flex h-full flex-col p-[6%]">
         <div className="flex items-start justify-between">
-          <img src={logoUrl} alt="Kredo" className="h-7 w-auto" />
-          <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
+          <img src={logoUrl} alt="Kredo" className="h-11 w-auto" />
+          <div className="text-right">
+            <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
+            <div className="mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-foreground/70">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" /> Verified ledger
+            </div>
+          </div>
         </div>
         <div className="mx-auto mt-[5%] text-center">
           <div className="micro-label">Certificate of Completion</div>
@@ -55,22 +60,22 @@ export function CertificateView(p: Props) {
           </p>
         </div>
         <div className="mt-auto flex items-end justify-between">
-          <div className="relative w-44">
+          <div className="relative w-48">
             <img
               src={signatureUrl}
               alt=""
-              className="absolute -top-7 left-1/2 h-14 w-40 -translate-x-1/2 object-contain"
+              className="absolute -top-[3.5rem] left-1/2 h-16 w-44 -translate-x-1/2 object-contain"
               style={{ filter: "brightness(0.4)" }}
             />
-            <div className="h-px w-40 bg-foreground/60" />
+            <img
+              src={stampUrl}
+              alt=""
+              className="absolute -top-10 -right-6 h-20 w-20 rotate-[-12deg] opacity-80 mix-blend-multiply"
+            />
+            <div className="h-px w-44 bg-foreground/60" />
             <div className="mt-1 font-display italic">Kredo Director</div>
             <div className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Verified by Kredo</div>
           </div>
-          <img
-            src={stampUrl}
-            alt=""
-            className="absolute bottom-[14%] right-[28%] h-24 w-24 rotate-[-12deg] opacity-80 mix-blend-multiply"
-          />
           <div className="text-right">
             {qr && <img src={qr} alt="QR" className="h-20 w-20 rounded-sm border border-foreground/10" />}
             <div className="mt-1 font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Scan to verify</div>
