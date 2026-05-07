@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 import signatureUrl from "@/assets/kredo-signature.png";
-import stampUrl from "@/assets/kredo-stamp.png";
 import { formatSerial } from "@/lib/cert";
 
 export type CertTemplate =
