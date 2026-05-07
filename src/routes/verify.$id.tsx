@@ -44,7 +44,7 @@ function VerifyOne() {
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto max-w-4xl px-6 py-12">
-        {cert ? (
+        {cert && !cert.revoked ? (
           <>
             <div className="flex items-center gap-3 rounded-lg border border-primary/30 bg-primary/5 px-5 py-4">
               <ShieldCheck className="h-6 w-6 text-primary" />
@@ -68,6 +68,12 @@ function VerifyOne() {
               </div>
             </div>
           </>
+        ) : cert?.revoked ? (
+          <div className="text-center">
+            <ShieldX className="mx-auto h-10 w-10 text-destructive" />
+            <h1 className="mt-4 font-display text-3xl font-black tracking-tighter">Certificate revoked</h1>
+            <p className="mt-2 text-muted-foreground">Serial {cert.serial} is no longer valid.</p>
+          </div>
         ) : (
           <div className="text-center">
             <ShieldX className="mx-auto h-10 w-10 text-destructive" />
