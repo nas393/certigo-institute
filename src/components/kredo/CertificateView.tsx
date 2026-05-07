@@ -174,8 +174,8 @@ export function CertificateView(p: Props) {
           <Wordmark size={p.compact ? "sm" : "md"} />
           <div className="text-right">
             <div className={`font-mono tracking-widest text-muted-foreground ${p.compact ? "text-[8px]" : "text-[9px]"}`}>{displaySerial}</div>
-            <div className={`mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-1.5 py-[1px] font-mono uppercase tracking-widest text-foreground/70 ${p.compact ? "text-[6px]" : "text-[7px]"}`}>
-              <span className={`rounded-full ${p.compact ? "h-1 w-1" : "h-1.5 w-1.5"}`} style={{ background: appPrimary }} /> On-chain Verified
+            <div className={`mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/15 px-1.5 py-[1px] font-sans tracking-wide text-foreground/60 ${p.compact ? "text-[5px]" : "text-[6px]"}`}>
+              <span className={`rounded-full ${p.compact ? "h-[3px] w-[3px]" : "h-1 w-1"}`} style={{ background: appPrimary }} /> On-Chain Verified
             </div>
           </div>
         </div>
@@ -205,14 +205,14 @@ export function CertificateView(p: Props) {
             <img
               src={signatureUrl}
               alt="Signature"
-              className={`object-contain object-left-bottom ${p.compact ? "h-10 w-32" : "h-16 w-44"}`}
+              className={`object-contain object-left-bottom ${p.compact ? "h-14 w-40" : "h-24 w-60"}`}
               style={{ filter: "brightness(0.2) contrast(1.2)" }}
             />
-            <div className={`mt-1 w-full border-t border-foreground/70 ${p.compact ? "max-w-[8rem]" : "max-w-[11rem]"}`} />
+            <div className={`mt-1 w-full border-t border-foreground/70 ${p.compact ? "max-w-[10rem]" : "max-w-[15rem]"}`} />
             <div className={`mt-1 font-display font-semibold tracking-tight text-foreground ${p.compact ? "text-[9px]" : "text-[11px]"}`}>
               KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
             </div>
-            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
+            <div className={`font-sans tracking-wide text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
               Authorized Signatory
             </div>
           </div>
