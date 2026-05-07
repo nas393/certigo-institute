@@ -1,5 +1,8 @@
 import { jsPDF } from "jspdf";
 import QRCode from "qrcode";
+import logoUrl from "@/assets/kredo-logo.png";
+import signatureUrl from "@/assets/kredo-signature.png";
+import stampUrl from "@/assets/kredo-stamp.png";
 
 export interface CertData {
   serial: string;
@@ -12,6 +15,21 @@ export interface CertData {
 }
 
 export async function downloadCertificatePdf(c: CertData) {
+  const toDataUrl = async (url: string): Promise<string> => {
+    const res = await fetch(url);
+    const blob = await res.blob();
+    return await new Promise((resolve) => {
+      const fr = new FileReader();
+      fr.onload = () => resolve(fr.result as string);
+      fr.readAsDataURL(blob);
+    });
+  };
+  const [logoData, sigData, stampData] = await Promise.all([
+    toDataUrl(logoUrl),
+    toDataUrl(signatureUrl),
+    toDataUrl(stampUrl),
+  ]);
+
   const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "a4" });
   const w = doc.internal.pageSize.getWidth();
   const h = doc.internal.pageSize.getHeight();
@@ -27,11 +45,10 @@ export async function downloadCertificatePdf(c: CertData) {
   doc.setLineWidth(0.4);
   doc.rect(38, 38, w - 76, h - 76);
 
-  // wordmark
-  doc.setFont("helvetica", "bold");
-  doc.setTextColor(20, 20, 30);
-  doc.setFontSize(20);
-  doc.text("KREDO.", 60, 70);
+  // logo
+  const logoH = 36;
+  const logoW = 100;
+  doc.addImage(logoData, "PNG", 60, 50, logoW, logoH);
 
   // serial
   doc.setFont("courier", "normal");
@@ -39,11 +56,11 @@ export async function downloadCertificatePdf(c: CertData) {
   doc.setTextColor(80, 80, 90);
   doc.text(c.serial, w - 60, 70, { align: "right" });
 
-  // eyebrow
+  // eyebrow (avoid Unicode glyph + letter-spaced rendering bugs)
   doc.setFont("courier", "normal");
   doc.setFontSize(10);
   doc.setTextColor(100, 100, 120);
-  doc.text("◆  CERTIFICATE OF COMPLETION", w / 2, 150, { align: "center" });
+  doc.text("CERTIFICATE OF COMPLETION", w / 2, 150, { align: "center" });
 
   // recipient name
   doc.setFont("helvetica", "bold");
@@ -77,7 +94,8 @@ export async function downloadCertificatePdf(c: CertData) {
   doc.setTextColor(80, 80, 90);
   doc.text("SCAN TO VERIFY", w - 60 - qrSize / 2, h - 50 - qrSize - 6, { align: "center" });
 
-  // signature
+  // signature image
+  doc.addImage(sigData, "PNG", 60, h - 150, 160, 60);
   doc.setDrawColor(20, 20, 30);
   doc.setLineWidth(0.4);
   doc.line(60, h - 90, 240, h - 90);
@@ -89,6 +107,10 @@ export async function downloadCertificatePdf(c: CertData) {
   doc.setFontSize(8);
   doc.setTextColor(100, 100, 120);
   doc.text("Verified by Kredo  ·  kredo.app/verify", 60, h - 64);
+
+  // stamp (between signature and QR)
+  const stampSize = 90;
+  doc.addImage(stampData, "PNG", w / 2 - stampSize / 2, h - 50 - stampSize, stampSize, stampSize);
 
   if (c.watermark) {
     doc.setFont("helvetica", "bold");
