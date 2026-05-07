@@ -164,7 +164,7 @@ export function CertificateView(p: Props) {
           <div className="text-right">
             <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
             <div className="mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-foreground/70">
-              <span className="h-1.5 w-1.5 rounded-full" style={{ background: appPrimary }} /> Verified ledger
+              <span className="h-1.5 w-1.5 rounded-full" style={{ background: appPrimary }} /> On-chain Verified
             </div>
           </div>
         </div>
@@ -192,10 +192,7 @@ export function CertificateView(p: Props) {
                 style={{ filter: "brightness(0.3)" }}
               />
               <div className={`h-px bg-foreground/70 ${p.compact ? "w-36" : "w-52"}`} />
-              <div className={`mt-1 font-mono uppercase tracking-[0.18em] text-foreground/80 ${p.compact ? "text-[8px]" : "text-[9px]"}`}>
-                Authorized Signatory
-              </div>
-              <div className={`font-display tracking-tight text-foreground ${p.compact ? "text-[10px]" : "text-xs"}`}>
+              <div className={`mt-1 font-display tracking-tight text-foreground ${p.compact ? "text-[10px]" : "text-xs"}`}>
                 KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
               </div>
             </div>
@@ -211,15 +208,6 @@ export function CertificateView(p: Props) {
             <div className={`mt-1 font-mono tracking-widest text-foreground/70 ${p.compact ? "text-[7px]" : "text-[9px]"}`}>{p.serial}</div>
             <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>Scan to verify</div>
           </div>
-        </div>
-        {/* security footer strip */}
-        <div className={`mt-2 flex items-center justify-center gap-2 border-t border-foreground/10 pt-1.5 font-mono uppercase tracking-[0.3em] text-muted-foreground/80 ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
-          <span className="inline-block h-1 w-1 rounded-full" style={{ background: appPrimary }} />
-          On-chain Verified
-          <span className="opacity-40">·</span>
-          {p.serial}
-          <span className="opacity-40">·</span>
-          kredo.app/verify
         </div>
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
