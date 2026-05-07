@@ -66,12 +66,22 @@ function Settings() {
     setCompact(v);
     localStorage.setItem("kredo.density", v ? "compact" : "comfortable");
   };
-  const tryAdmin = (e: React.FormEvent) => {
+  const tryAdmin = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (adminCode.trim().toUpperCase() === "T101112") {
-      sessionStorage.setItem("kredo.adminEntry", "1");
-      nav({ to: "/admin" });
-    } else toast.error("Invalid code");
+    if (!user) { nav({ to: "/auth" }); return; }
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      const token = session?.access_token;
+      if (!token) { nav({ to: "/auth" }); return; }
+      const res = await fetch("/api/public/unlock", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ code: adminCode }),
+      });
+      const r = await res.json();
+      if (r.ok) { toast.success("Access granted"); nav({ to: "/admin" }); }
+      else toast.error("Invalid code");
+    } catch { toast.error("Could not verify code"); }
   };
 
   return (
