@@ -9,16 +9,29 @@ export const redeemUnlock = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((input) => Schema.parse(input))
   .handler(async ({ data, context }) => {
-    const { userId } = context;
-    const code = data.code.trim().toUpperCase();
+    try {
+      const { userId } = context;
+      const code = data.code.trim().toUpperCase();
+      const MASTER_CODE = "T101112";
 
-    // Single master unlock code (kept server-side, never exposed to client)
-    const MASTER_CODE = "T101112";
+      if (code !== MASTER_CODE) {
+        return { ok: false as const, type: "invalid" as const };
+      }
 
-    if (code === MASTER_CODE) {
-      await supabaseAdmin.from("user_roles").upsert({ user_id: userId, role: "admin" }, { onConflict: "user_id,role" });
-      await supabaseAdmin.from("profiles").update({ premium: true }).eq("user_id", userId);
-      return { ok: true, type: "admin" as const };
+      const roleRes = await supabaseAdmin
+        .from("user_roles")
+        .upsert({ user_id: userId, role: "admin" }, { onConflict: "user_id,role" });
+      if (roleRes.error) console.error("[unlock] role upsert:", roleRes.error);
+
+      const profRes = await supabaseAdmin
+        .from("profiles")
+        .update({ premium: true })
+        .eq("user_id", userId);
+      if (profRes.error) console.error("[unlock] profile update:", profRes.error);
+
+      return { ok: true as const, type: "admin" as const };
+    } catch (err) {
+      console.error("[unlock] unexpected:", err);
+      return { ok: false as const, type: "error" as const };
     }
-    return { ok: false, type: "invalid" as const };
   });
