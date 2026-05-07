@@ -1,8 +1,14 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Sparkles, BadgeCheck } from "lucide-react";
+import { Sparkles, BadgeCheck, KeyRound } from "lucide-react";
+import { useServerFn } from "@tanstack/react-start";
+import { redeemUnlock } from "@/lib/unlock.functions";
+import { toast } from "sonner";
+import { useAuth } from "@/lib/auth";
 
 export const Route = createFileRoute("/unlock")({
   head: () => ({ meta: [{ title: "Upgrade to Pro — Kredo" }, { name: "description", content: "Unlock unlimited verified credentials." }] }),
@@ -11,6 +17,30 @@ export const Route = createFileRoute("/unlock")({
 
 function Unlock() {
   const nav = useNavigate();
+  const { user } = useAuth();
+  const redeem = useServerFn(redeemUnlock);
+  const [code, setCode] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!user) { nav({ to: "/auth" }); return; }
+    setBusy(true);
+    try {
+      const r = await redeem({ data: { code } });
+      if (r.ok) {
+        toast.success(r.type === "admin" ? "Admin + Pro unlocked!" : "Pro unlocked!");
+        nav({ to: "/dashboard" });
+      } else {
+        toast.error("Invalid unlock code");
+      }
+    } catch {
+      toast.error("Failed to redeem");
+    } finally {
+      setBusy(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -21,7 +51,7 @@ function Unlock() {
         <p className="mt-4 text-muted-foreground">Upgrade once. Issue forever.</p>
         <Card className="mt-10 p-8 text-start">
           <ul className="space-y-3">
-            {["Unlimited certificates", "No Kredo watermark on PDF", "Priority AI generation", "LinkedIn integration", "Public profile page"].map((f) => (
+            {["Unlimited certificates", "No Kredo watermark on PDF", "Priority AI generation", "Public profile page", "LinkedIn share-ready"].map((f) => (
               <li key={f} className="flex items-center gap-2"><BadgeCheck className="h-5 w-5 text-primary" /> {f}</li>
             ))}
           </ul>
@@ -30,8 +60,18 @@ function Unlock() {
             <span className="text-muted-foreground">/ month</span>
           </div>
           <Button className="mt-6 w-full h-12">Upgrade to Pro</Button>
-          <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Coming soon · Get notified at launch</p>
+          <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Coming soon</p>
         </Card>
+
+        <Card className="mt-6 p-6 text-start">
+          <div className="flex items-center gap-2 micro-label"><KeyRound className="h-3 w-3" /> Have an unlock code?</div>
+          <form onSubmit={submit} className="mt-3 flex gap-2">
+            <Input value={code} onChange={(e) => setCode(e.target.value)} placeholder="KREDO-PRO-2026" className="h-11" />
+            <Button type="submit" disabled={busy || !code.trim()} className="h-11">Redeem</Button>
+          </form>
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Codes grant Pro or Admin access instantly</p>
+        </Card>
+
         <Button variant="link" className="mt-4" onClick={() => nav({ to: "/dashboard" })}>← Back to dashboard</Button>
       </div>
     </div>
