@@ -36,9 +36,9 @@ export function CertificateView(p: Props) {
     >
       <div className="absolute inset-3 border border-foreground/30" />
       <div className="absolute inset-5 border border-foreground/10" />
-      <div className="relative flex h-full flex-col p-[6%]">
+      <div className={`relative flex h-full flex-col ${p.compact ? "p-[5%]" : "p-[6%]"}`}>
         <div className="flex items-start justify-between">
-          <img src={logoUrl} alt="Kredo" className="h-11 w-auto" />
+          <img src={logoUrl} alt="Kredo" className={p.compact ? "h-8 w-auto" : "h-11 w-auto"} />
           <div className="text-right">
             <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
             <div className="mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/20 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest text-foreground/70">
@@ -46,39 +46,39 @@ export function CertificateView(p: Props) {
             </div>
           </div>
         </div>
-        <div className="mx-auto mt-[5%] text-center">
+        <div className={`mx-auto text-center ${p.compact ? "mt-[3%]" : "mt-[5%]"}`}>
           <div className="micro-label">Certificate of Completion</div>
-          <h2 className="mt-6 font-display text-[clamp(1.5rem,4.5vw,3.5rem)] font-black leading-none tracking-tighter">
+          <h2 className={`font-display font-black leading-none tracking-tighter ${p.compact ? "mt-3 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-6 text-[clamp(1.5rem,4.5vw,3.5rem)]"}`}>
             {p.recipientName}
           </h2>
-          <div className="mx-auto mt-3 h-px w-24 bg-foreground/40" />
-          <p className="mt-4 max-w-xl text-balance text-[clamp(0.8rem,1.4vw,1rem)] text-muted-foreground">
+          <div className={`mx-auto h-px w-20 bg-foreground/40 ${p.compact ? "mt-2" : "mt-3"}`} />
+          <p className={`max-w-xl text-balance text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.65rem,1.1vw,0.85rem)]" : "mt-4 text-[clamp(0.8rem,1.4vw,1rem)]"}`}>
             For successfully completing <span className="text-foreground">"{p.courseTopic}"</span>
           </p>
-          <p className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+          <p className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "mt-1 text-[8px]" : "mt-1 text-[10px]"}`}>
             {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString()}
           </p>
         </div>
         <div className="mt-auto flex items-end justify-between">
-          <div className="relative w-48">
+          <div className={`relative ${p.compact ? "w-32" : "w-48"}`}>
             <img
               src={signatureUrl}
               alt=""
-              className="absolute -top-[3.5rem] left-1/2 h-16 w-44 -translate-x-1/2 object-contain"
+              className={`absolute left-1/2 -translate-x-1/2 object-contain ${p.compact ? "-top-9 h-10 w-28" : "-top-[3.5rem] h-16 w-44"}`}
               style={{ filter: "brightness(0.4)" }}
             />
             <img
               src={stampUrl}
               alt=""
-              className="absolute -top-10 -right-6 h-20 w-20 rotate-[-12deg] opacity-80 mix-blend-multiply"
+              className={`absolute rotate-[-12deg] opacity-80 mix-blend-multiply ${p.compact ? "-top-6 -right-4 h-12 w-12" : "-top-10 -right-6 h-20 w-20"}`}
             />
-            <div className="h-px w-44 bg-foreground/60" />
-            <div className="mt-1 font-display italic">Kredo Director</div>
-            <div className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Verified by Kredo</div>
+            <div className={`h-px bg-foreground/60 ${p.compact ? "w-32" : "w-44"}`} />
+            <div className={`mt-1 font-display italic ${p.compact ? "text-[11px]" : ""}`}>Kredo Director</div>
+            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>Verified by Kredo</div>
           </div>
           <div className="text-right">
-            {qr && <img src={qr} alt="QR" className="h-20 w-20 rounded-sm border border-foreground/10" />}
-            <div className="mt-1 font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Scan to verify</div>
+            {qr && <img src={qr} alt="QR" className={`rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />}
+            <div className={`mt-1 font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>Scan to verify</div>
           </div>
         </div>
         {p.watermark && (
