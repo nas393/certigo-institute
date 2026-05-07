@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CourseRouteImport } from './routes/course.'
 import { Route as ApiPublicAiGenerateRouteImport } from './routes/api/public/ai/generate'
 
 const DashboardRoute = DashboardRouteImport.update({
@@ -29,6 +30,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CourseRoute = CourseRouteImport.update({
+  id: '/course/',
+  path: '/course/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicAiGenerateRoute = ApiPublicAiGenerateRouteImport.update({
   id: '/api/public/ai/generate',
   path: '/api/public/ai/generate',
@@ -39,12 +45,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/course/': typeof CourseRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/course': typeof CourseRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesById {
@@ -52,20 +60,33 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/course/': typeof CourseRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/auth' | '/dashboard' | '/api/public/ai/generate'
+  fullPaths:
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/course/'
+    | '/api/public/ai/generate'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/auth' | '/dashboard' | '/api/public/ai/generate'
-  id: '__root__' | '/' | '/auth' | '/dashboard' | '/api/public/ai/generate'
+  to: '/' | '/auth' | '/dashboard' | '/course' | '/api/public/ai/generate'
+  id:
+    | '__root__'
+    | '/'
+    | '/auth'
+    | '/dashboard'
+    | '/course/'
+    | '/api/public/ai/generate'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
+  CourseRoute: typeof CourseRoute
   ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
 }
 
@@ -92,6 +113,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/course/': {
+      id: '/course/'
+      path: '/course'
+      fullPath: '/course/'
+      preLoaderRoute: typeof CourseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/ai/generate': {
       id: '/api/public/ai/generate'
       path: '/api/public/ai/generate'
@@ -106,6 +134,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
+  CourseRoute: CourseRoute,
   ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,
 }
 export const routeTree = rootRouteImport
