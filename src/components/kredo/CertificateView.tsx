@@ -175,6 +175,12 @@ export function CertificateView(p: Props) {
         <div className="mt-auto flex items-end justify-between">
           <div className={`relative ${p.compact ? "w-32" : "w-48"}`}>
             <img
+              src={signatureUrl}
+              alt=""
+              className={`absolute left-1/2 -translate-x-1/2 object-contain ${p.compact ? "-top-8 h-10 w-28" : "-top-12 h-14 w-40"}`}
+              style={{ filter: "brightness(0.3)" }}
+            />
+            <img
               src={stampUrl}
               alt=""
               className={`absolute rotate-[-12deg] opacity-80 mix-blend-multiply ${p.compact ? "-top-6 -right-4 h-12 w-12" : "-top-10 -right-6 h-20 w-20"}`}
