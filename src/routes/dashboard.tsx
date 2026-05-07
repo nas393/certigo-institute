@@ -6,11 +6,10 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { Loader2, ArrowRight, Award, BookOpen, Download } from "lucide-react";
+import { Loader2, ArrowRight, Award, BookOpen, Download, Sparkles, Lock, Share2 } from "lucide-react";
 import { toast } from "sonner";
 import { downloadCertificatePdf } from "@/lib/pdf";
 import { PRESET_TOPICS } from "@/lib/topics";
-import { Sparkles, Lock, Share2 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard — Kredo" }, { name: "description", content: "Your courses and verified certificates." }] }),
