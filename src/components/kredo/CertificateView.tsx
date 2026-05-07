@@ -90,7 +90,12 @@ export function CertificateView(p: Props) {
           </>
         );
       case "minimal":
-        return <div className="absolute inset-4 border border-foreground/25" />;
+        return (
+          <>
+            <div className="absolute inset-3 border-[3px] border-foreground/80" />
+            <div className="absolute inset-[18px] border border-foreground/20" />
+          </>
+        );
       case "deco": {
         const corner = (cls: string) => (
           <svg className={`absolute h-10 w-10 ${cls}`} viewBox="0 0 40 40" fill="none">
@@ -163,26 +168,20 @@ export function CertificateView(p: Props) {
           <p className={`max-w-xl text-balance text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.65rem,1.1vw,0.85rem)]" : "mt-4 text-[clamp(0.8rem,1.4vw,1rem)]"}`}>
             For successfully completing <span className="text-foreground">"{p.courseTopic}"</span>
           </p>
-          <p className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "mt-1 text-[8px]" : "mt-1 text-[10px]"}`}>
+          <p className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "mt-1 text-[7px]" : "mt-1 text-[8px]"}`}>
             {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString()}
           </p>
         </div>
         <div className="mt-auto flex items-end justify-between">
           <div className={`relative ${p.compact ? "w-32" : "w-48"}`}>
             <img
-              src={signatureUrl}
-              alt=""
-              className={`absolute left-1/2 -translate-x-1/2 object-contain ${p.compact ? "-top-9 h-10 w-28" : "-top-[3.5rem] h-16 w-44"}`}
-              style={{ filter: "brightness(0.4)" }}
-            />
-            <img
               src={stampUrl}
               alt=""
               className={`absolute rotate-[-12deg] opacity-80 mix-blend-multiply ${p.compact ? "-top-6 -right-4 h-12 w-12" : "-top-10 -right-6 h-20 w-20"}`}
             />
             <div className={`h-px bg-foreground/60 ${p.compact ? "w-32" : "w-44"}`} />
-            <div className={`mt-1 font-display italic ${p.compact ? "text-[11px]" : ""}`}>Kredo Director</div>
-            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>Verified by Kredo</div>
+            <div className={`mt-1 font-mono uppercase tracking-widest text-foreground/80 ${p.compact ? "text-[8px]" : "text-[9px]"}`}>Authorized signatory</div>
+            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[8px]"}`}>Kredo · On-chain verified</div>
           </div>
           <div className="text-right">
             {qr && <img src={qr} alt="QR" className={`rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />}
