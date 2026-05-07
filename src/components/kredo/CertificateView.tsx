@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
+import logoUrl from "@/assets/kredo-logo.png";
+import signatureUrl from "@/assets/kredo-signature.png";
+import stampUrl from "@/assets/kredo-stamp.png";
 
 interface Props {
   serial: string;
@@ -35,11 +38,11 @@ export function CertificateView(p: Props) {
       <div className="absolute inset-5 border border-foreground/10" />
       <div className="relative flex h-full flex-col p-[6%]">
         <div className="flex items-start justify-between">
-          <div className="font-display text-xl font-black tracking-tighter">KREDO<span className="text-primary">.</span></div>
+          <img src={logoUrl} alt="Kredo" className="h-7 w-auto" />
           <div className="font-mono text-[10px] tracking-widest text-muted-foreground">{p.serial}</div>
         </div>
         <div className="mx-auto mt-[5%] text-center">
-          <div className="micro-label">◆ Certificate of Completion</div>
+          <div className="micro-label">Certificate of Completion</div>
           <h2 className="mt-6 font-display text-[clamp(1.5rem,4.5vw,3.5rem)] font-black leading-none tracking-tighter">
             {p.recipientName}
           </h2>
@@ -53,10 +56,12 @@ export function CertificateView(p: Props) {
         </div>
         <div className="mt-auto flex items-end justify-between">
           <div>
+            <img src={signatureUrl} alt="" className="-mb-1 h-12 w-auto opacity-90" />
             <div className="h-px w-40 bg-foreground/60" />
             <div className="mt-1 font-display italic">Kredo Director</div>
             <div className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Verified by Kredo</div>
           </div>
+          <img src={stampUrl} alt="" className="absolute left-1/2 bottom-[10%] h-20 w-20 -translate-x-1/2 opacity-90" />
           <div className="text-right">
             {qr && <img src={qr} alt="QR" className="h-20 w-20 rounded-sm border border-foreground/10" />}
             <div className="mt-1 font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Scan to verify</div>
