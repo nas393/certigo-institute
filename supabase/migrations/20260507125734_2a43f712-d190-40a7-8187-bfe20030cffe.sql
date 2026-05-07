@@ -1,0 +1,2 @@
+ALTER TABLE public.certificates ADD COLUMN IF NOT EXISTS name_edited boolean NOT NULL DEFAULT false;
+CREATE POLICY "owners update own certificates" ON public.certificates FOR UPDATE USING (auth.uid() = user_id);

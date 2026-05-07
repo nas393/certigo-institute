@@ -20,6 +20,7 @@ export type Database = {
           course_topic: string
           id: string
           issued_at: string | null
+          name_edited: boolean
           recipient_name: string
           revoked: boolean
           score: number | null
@@ -31,6 +32,7 @@ export type Database = {
           course_topic: string
           id?: string
           issued_at?: string | null
+          name_edited?: boolean
           recipient_name: string
           revoked?: boolean
           score?: number | null
@@ -42,6 +44,7 @@ export type Database = {
           course_topic?: string
           id?: string
           issued_at?: string | null
+          name_edited?: boolean
           recipient_name?: string
           revoked?: boolean
           score?: number | null
