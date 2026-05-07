@@ -21,6 +21,7 @@ import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as UHandleRouteImport } from './routes/u.$handle'
 import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
+import { Route as ApiPublicUnlockRouteImport } from './routes/api/public/unlock'
 import { Route as ApiPublicAiGenerateRouteImport } from './routes/api/public/ai/generate'
 
 const VerifyRoute = VerifyRouteImport.update({
@@ -83,6 +84,11 @@ const CertificateIdRoute = CertificateIdRouteImport.update({
   path: '/certificate/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicUnlockRoute = ApiPublicUnlockRouteImport.update({
+  id: '/api/public/unlock',
+  path: '/api/public/unlock',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicAiGenerateRoute = ApiPublicAiGenerateRouteImport.update({
   id: '/api/public/ai/generate',
   path: '/api/public/ai/generate',
@@ -102,6 +108,7 @@ export interface FileRoutesByFullPath {
   '/course/$id': typeof CourseIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/api/public/unlock': typeof ApiPublicUnlockRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesByTo {
@@ -117,6 +124,7 @@ export interface FileRoutesByTo {
   '/course/$id': typeof CourseIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/api/public/unlock': typeof ApiPublicUnlockRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRoutesById {
@@ -133,6 +141,7 @@ export interface FileRoutesById {
   '/course/$id': typeof CourseIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/api/public/unlock': typeof ApiPublicUnlockRoute
   '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
 }
 export interface FileRouteTypes {
@@ -150,6 +159,7 @@ export interface FileRouteTypes {
     | '/course/$id'
     | '/u/$handle'
     | '/verify/$id'
+    | '/api/public/unlock'
     | '/api/public/ai/generate'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -165,6 +175,7 @@ export interface FileRouteTypes {
     | '/course/$id'
     | '/u/$handle'
     | '/verify/$id'
+    | '/api/public/unlock'
     | '/api/public/ai/generate'
   id:
     | '__root__'
@@ -180,6 +191,7 @@ export interface FileRouteTypes {
     | '/course/$id'
     | '/u/$handle'
     | '/verify/$id'
+    | '/api/public/unlock'
     | '/api/public/ai/generate'
   fileRoutesById: FileRoutesById
 }
@@ -195,6 +207,7 @@ export interface RootRouteChildren {
   CertificateIdRoute: typeof CertificateIdRoute
   CourseIdRoute: typeof CourseIdRoute
   UHandleRoute: typeof UHandleRoute
+  ApiPublicUnlockRoute: typeof ApiPublicUnlockRoute
   ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
 }
 
@@ -284,6 +297,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CertificateIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/unlock': {
+      id: '/api/public/unlock'
+      path: '/api/public/unlock'
+      fullPath: '/api/public/unlock'
+      preLoaderRoute: typeof ApiPublicUnlockRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/ai/generate': {
       id: '/api/public/ai/generate'
       path: '/api/public/ai/generate'
@@ -317,6 +337,7 @@ const rootRouteChildren: RootRouteChildren = {
   CertificateIdRoute: CertificateIdRoute,
   CourseIdRoute: CourseIdRoute,
   UHandleRoute: UHandleRoute,
+  ApiPublicUnlockRoute: ApiPublicUnlockRoute,
   ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,
 }
 export const routeTree = rootRouteImport
