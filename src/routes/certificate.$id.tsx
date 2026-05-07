@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/kredo/Header";
-import { CertificateView } from "@/components/kredo/CertificateView";
+import { CertificateView, type CertTemplate } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Download, Loader2, Pencil, Lock } from "lucide-react";
@@ -24,6 +24,12 @@ function CertPage() {
   const [name, setName] = useState("");
   const [adminCode, setAdminCode] = useState("");
   const [saving, setSaving] = useState(false);
+  const [tpl, setTpl] = useState<CertTemplate>("classic");
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic"));
+    }
+  }, []);
   useEffect(() => {
     (async () => {
       const { data } = await supabase.from("certificates").select("*").eq("id", id).maybeSingle();
@@ -101,7 +107,7 @@ function CertPage() {
         )}
         <div className="mt-8">
           <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
-            score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} />
+            score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} />
         </div>
         <div className="mt-6 flex gap-2">
           <Button onClick={() => downloadCertificatePdf({
