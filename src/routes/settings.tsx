@@ -11,6 +11,7 @@ import { toast } from "sonner";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
 import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
+import { CERT_TEMPLATES, type CertTemplate, CertificateView } from "@/components/kredo/CertificateView";
 
 export const Route = createFileRoute("/settings")({
   head: () => ({
@@ -39,12 +40,15 @@ function Settings() {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [compact, setCompact] = useState(false);
   const [adminCode, setAdminCode] = useState("");
+  const [certTpl, setCertTpl] = useState<CertTemplate>("classic");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     setReducedMotion(localStorage.getItem("kredo.motion") === "reduced");
     setCompact(localStorage.getItem("kredo.density") === "compact");
     document.documentElement.classList.toggle("reduce-motion", localStorage.getItem("kredo.motion") === "reduced");
+    const t = (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic";
+    setCertTpl(t);
   }, []);
   useEffect(() => {
     if (!user) return;
