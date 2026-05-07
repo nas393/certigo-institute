@@ -55,13 +55,22 @@ export function CertificateView(p: Props) {
           </p>
         </div>
         <div className="mt-auto flex items-end justify-between">
-          <div>
-            <img src={signatureUrl} alt="" className="-mb-1 h-12 w-auto opacity-90" />
+          <div className="relative w-44">
+            <img
+              src={signatureUrl}
+              alt=""
+              className="absolute -top-7 left-1/2 h-14 w-40 -translate-x-1/2 object-contain"
+              style={{ filter: "brightness(0.4)" }}
+            />
             <div className="h-px w-40 bg-foreground/60" />
             <div className="mt-1 font-display italic">Kredo Director</div>
             <div className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Verified by Kredo</div>
           </div>
-          <img src={stampUrl} alt="" className="absolute left-1/2 bottom-[10%] h-20 w-20 -translate-x-1/2 opacity-90" />
+          <img
+            src={stampUrl}
+            alt=""
+            className="absolute bottom-[14%] right-[28%] h-24 w-24 rotate-[-12deg] opacity-80 mix-blend-multiply"
+          />
           <div className="text-right">
             {qr && <img src={qr} alt="QR" className="h-20 w-20 rounded-sm border border-foreground/10" />}
             <div className="mt-1 font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Scan to verify</div>
