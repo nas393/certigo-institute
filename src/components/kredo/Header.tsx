@@ -23,7 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoUrl} alt="Kredo" className="h-6 w-auto" />
+          <img src={logoUrl} alt="Kredo" className="h-9 w-auto" />
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
           <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.home")}</Link>
@@ -31,7 +31,6 @@ export function Header() {
           <Link to="/verify" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.verify")}</Link>
           {user && <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">Profile</Link>}
           <Link to="/settings" className="text-sm font-medium text-muted-foreground hover:text-foreground">Settings</Link>
-          {isAdmin && <Link to="/admin" className="text-sm font-medium text-primary hover:text-primary/80">Admin</Link>}
         </nav>
         <div className="flex items-center gap-2">
           <select
@@ -66,7 +65,6 @@ export function Header() {
                   { to: "/verify" as const, label: t("nav.verify") },
                   ...(user ? [{ to: "/profile" as const, label: "Profile" }] : []),
                   { to: "/settings" as const, label: "Settings" },
-                  ...(isAdmin ? [{ to: "/admin" as const, label: "Admin" }] : []),
                 ].map((l) => (
                   <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted">
                     {l.label}

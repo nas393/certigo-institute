@@ -22,19 +22,25 @@ function Verify() {
     setBusy(true);
     try {
       // Allow pasting full verify URL
-      const fromUrl = raw.match(/verify\/([0-9a-f-]{36})/i)?.[1];
-      const candidate = fromUrl ?? raw;
+      const fromUrl = raw.match(/verify\/([0-9a-f-]{36}|[A-Z0-9-]{6,})/i)?.[1];
+      const candidate = (fromUrl ?? raw).trim();
+      // Built-in demo serials route to a virtual demo page
+      if (/^KR-2026-DEMO/i.test(candidate)) {
+        nav({ to: "/verify/$id", params: { id: candidate.toUpperCase() } });
+        return;
+      }
       if (UUID_RE.test(candidate)) {
         nav({ to: "/verify/$id", params: { id: candidate } });
         return;
       }
-      // Try lookup by serial
+      // Lookup by serial — case-insensitive
       const { data, error } = await supabase
         .from("certificates")
         .select("id")
-        .eq("serial", candidate.toUpperCase())
+        .ilike("serial", candidate)
         .maybeSingle();
-      if (error || !data) { toast.error("Certificate not found"); return; }
+      if (error) { toast.error("Verification service error"); return; }
+      if (!data) { toast.error("No certificate matches that ID or serial"); return; }
       nav({ to: "/verify/$id", params: { id: data.id } });
     } finally {
       setBusy(false);
