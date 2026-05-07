@@ -9,6 +9,8 @@ import { Card } from "@/components/ui/card";
 import { Loader2, ArrowRight, Award, BookOpen, Download } from "lucide-react";
 import { toast } from "sonner";
 import { downloadCertificatePdf } from "@/lib/pdf";
+import { PRESET_TOPICS } from "@/lib/topics";
+import { Sparkles, Lock, Share2 } from "lucide-react";
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard — Kredo" }, { name: "description", content: "Your courses and verified certificates." }] }),
@@ -24,6 +26,8 @@ function Dashboard() {
   const [progress, setProgress] = useState<Record<string, any>>({});
   const [certs, setCerts] = useState<any[]>([]);
   const [profile, setProfile] = useState<any>(null);
+  const [showAll, setShowAll] = useState(false);
+  const [category, setCategory] = useState<string>("All");
 
   useEffect(() => { if (!loading && !user) nav({ to: "/auth" }); }, [user, loading]);
   useEffect(() => {
@@ -44,6 +48,12 @@ function Dashboard() {
 
   const generate = async () => {
     if (!topic.trim() || !user) return;
+    // Premium gate: free users limited to 3 courses
+    if (!profile?.premium && courses.length >= 3) {
+      toast.error("Free plan limit reached (3 courses). Upgrade or redeem an unlock code.");
+      nav({ to: "/unlock" });
+      return;
+    }
     setGenerating(true);
     try {
       const r = await fetch("/api/public/ai/generate", {
@@ -69,6 +79,9 @@ function Dashboard() {
 
   const inProgress = courses.filter((c) => !progress[c.id]?.completed);
   const completed = courses.filter((c) => progress[c.id]?.completed);
+  const cats = ["All", ...Array.from(new Set(PRESET_TOPICS.map((t) => t.category)))];
+  const visiblePresets = (category === "All" ? PRESET_TOPICS : PRESET_TOPICS.filter((t) => t.category === category)).slice(0, showAll ? 999 : 12);
+  const profileHandle = profile?.display_name || user.id;
 
   return (
     <div className="min-h-screen bg-background">
@@ -78,7 +91,17 @@ function Dashboard() {
         <h1 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">
           {profile?.display_name ? `Hi, ${profile.display_name}.` : "Welcome back."}
         </h1>
-        <p className="mt-2 text-muted-foreground">From knowledge to verified proof — instantly.</p>
+        <div className="mt-2 flex flex-wrap items-center gap-3">
+          <p className="text-muted-foreground">From knowledge to verified proof — instantly.</p>
+          {profile?.premium ? (
+            <span className="rounded-full bg-primary/15 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary">◆ Pro</span>
+          ) : (
+            <Link to="/unlock" className="rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground hover:border-primary/50 hover:text-primary">Upgrade</Link>
+          )}
+          <Link to="/u/$handle" params={{ handle: profileHandle }} className="inline-flex items-center gap-1 rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground hover:border-primary/50 hover:text-primary">
+            <Share2 className="h-3 w-3" /> Public profile
+          </Link>
+        </div>
 
         {/* Generator */}
         <Card className="mt-10 border-primary/30 bg-card p-6 shadow-elegant">
@@ -89,6 +112,32 @@ function Dashboard() {
             <Button onClick={generate} disabled={generating || !topic.trim()} className="h-12 px-6">
               {generating ? <><Loader2 className="me-2 h-4 w-4 animate-spin" /> Generating</> : <>Generate <ArrowRight className="ms-2 h-4 w-4" /></>}
             </Button>
+          </div>
+          {!profile?.premium && (
+            <p className="mt-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+              <Lock className="me-1 inline h-3 w-3" /> Free plan: {Math.max(0, 3 - courses.length)} of 3 courses left
+            </p>
+          )}
+
+          <div className="mt-6">
+            <div className="flex items-center gap-2 micro-label"><Sparkles className="h-3 w-3" /> Or pick from 50 ready-made topics</div>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {cats.map((c) => (
+                <button key={c} onClick={() => setCategory(c)}
+                  className={`rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-widest transition-colors ${category === c ? "border-primary bg-primary text-primary-foreground" : "border-border text-muted-foreground hover:border-primary/40"}`}>
+                  {c}
+                </button>
+              ))}
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {visiblePresets.map((p) => (
+                <button key={p.topic} onClick={() => setTopic(p.topic)}
+                  className="rounded-md border border-border bg-background px-3 py-1.5 text-xs font-medium hover:border-primary/50 hover:bg-primary/5">
+                  {p.topic}
+                </button>
+              ))}
+            </div>
+            {!showAll && <button onClick={() => setShowAll(true)} className="mt-3 font-mono text-[10px] uppercase tracking-widest text-primary hover:underline">Show all 50 →</button>}
           </div>
         </Card>
 
