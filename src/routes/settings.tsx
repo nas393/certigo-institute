@@ -1,10 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Header } from "@/components/kredo/Header";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Switch } from "@/components/ui/switch";
+import { useEffect, useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth";
+import { toast } from "sonner";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
-import { Settings as SettingsIcon, Check, RotateCcw } from "lucide-react";
+import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
 
 export const Route = createFileRoute("/settings")({
   head: () => ({
@@ -25,8 +31,48 @@ const LANGS: { v: Lang; label: string }[] = [
 ];
 
 function Settings() {
+  const { user } = useAuth();
+  const nav = useNavigate();
   const { lang, setLang } = useI18n();
   const { accent, bg, font, setAccent, setBg, setFont, reset } = useTheme();
+  const [displayName, setDisplayName] = useState("");
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const [compact, setCompact] = useState(false);
+  const [adminCode, setAdminCode] = useState("");
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    setReducedMotion(localStorage.getItem("kredo.motion") === "reduced");
+    setCompact(localStorage.getItem("kredo.density") === "compact");
+    document.documentElement.classList.toggle("reduce-motion", localStorage.getItem("kredo.motion") === "reduced");
+  }, []);
+  useEffect(() => {
+    if (!user) return;
+    supabase.from("profiles").select("display_name").eq("user_id", user.id).maybeSingle()
+      .then(({ data }) => setDisplayName(data?.display_name ?? ""));
+  }, [user]);
+
+  const saveName = async () => {
+    if (!user) return;
+    const { error } = await supabase.from("profiles").update({ display_name: displayName.trim() }).eq("user_id", user.id);
+    if (error) toast.error(error.message); else toast.success("Profile updated");
+  };
+  const toggleMotion = (v: boolean) => {
+    setReducedMotion(v);
+    localStorage.setItem("kredo.motion", v ? "reduced" : "normal");
+    document.documentElement.classList.toggle("reduce-motion", v);
+  };
+  const toggleCompact = (v: boolean) => {
+    setCompact(v);
+    localStorage.setItem("kredo.density", v ? "compact" : "comfortable");
+  };
+  const tryAdmin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (adminCode.trim().toUpperCase() === "T101112") {
+      sessionStorage.setItem("kredo.adminEntry", "1");
+      nav({ to: "/admin" });
+    } else toast.error("Invalid code");
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -110,6 +156,44 @@ function Settings() {
         <div className="mt-6 flex justify-end">
           <Button variant="outline" onClick={reset}><RotateCcw className="me-2 h-4 w-4" /> Reset to defaults</Button>
         </div>
+
+        {user && (
+          <Card className="mt-6 p-6">
+            <h2 className="font-display text-xl font-black tracking-tight">Profile</h2>
+            <p className="mt-1 text-sm text-muted-foreground">Your display name appears on your public profile.</p>
+            <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+              <Input value={displayName} onChange={(e) => setDisplayName(e.target.value)} placeholder="Display name" maxLength={80} className="h-10" />
+              <Button onClick={saveName}>Save</Button>
+            </div>
+          </Card>
+        )}
+
+        <Card className="mt-6 p-6">
+          <h2 className="font-display text-xl font-black tracking-tight">Accessibility & density</h2>
+          <div className="mt-4 flex items-center justify-between">
+            <div>
+              <div className="font-medium">Reduce motion</div>
+              <div className="text-sm text-muted-foreground">Disables non-essential animations.</div>
+            </div>
+            <Switch checked={reducedMotion} onCheckedChange={toggleMotion} />
+          </div>
+          <div className="mt-4 flex items-center justify-between">
+            <div>
+              <div className="font-medium">Compact layout</div>
+              <div className="text-sm text-muted-foreground">Tighter spacing across cards and lists.</div>
+            </div>
+            <Switch checked={compact} onCheckedChange={toggleCompact} />
+          </div>
+        </Card>
+
+        <Card className="mt-6 p-6">
+          <h2 className="font-display text-xl font-black tracking-tight">Advanced</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Authorized personnel only.</p>
+          <form onSubmit={tryAdmin} className="mt-3 flex gap-2">
+            <Input value={adminCode} onChange={(e) => setAdminCode(e.target.value)} type="password" placeholder="Access code" autoComplete="off" className="h-10 font-mono" />
+            <Button type="submit" variant="outline"><KeyRound className="me-2 h-4 w-4" /> Enter</Button>
+          </form>
+        </Card>
       </div>
     </div>
   );
