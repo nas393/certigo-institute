@@ -149,6 +149,15 @@ export function CertificateView(p: Props) {
       className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-md border border-foreground/20 ${p.compact ? "" : "shadow-elegant"}`}
     >
       {frame}
+      {/* subtle tech micro-pattern */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.05]"
+        style={{
+          backgroundImage:
+            "radial-gradient(currentColor 1px, transparent 1px)",
+          backgroundSize: "14px 14px",
+        }}
+      />
       <div className={`relative flex h-full flex-col ${p.compact ? "p-[5%]" : "p-[6%]"} ${padL}`}>
         <div className="flex items-start justify-between">
           <Wordmark size={p.compact ? "sm" : "md"} />
@@ -172,27 +181,45 @@ export function CertificateView(p: Props) {
             {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString()}
           </p>
         </div>
-        <div className="mt-auto flex items-end justify-between">
-          <div className={`relative ${p.compact ? "w-32" : "w-48"}`}>
-            <img
-              src={signatureUrl}
-              alt=""
-              className={`absolute left-1/2 -translate-x-1/2 object-contain ${p.compact ? "-top-8 h-10 w-28" : "-top-12 h-14 w-40"}`}
-              style={{ filter: "brightness(0.3)" }}
-            />
+        <div className="mt-auto flex items-end justify-between gap-4">
+          {/* signature + stamp horizontal block */}
+          <div className="flex items-end gap-3">
+            <div className={`relative ${p.compact ? "w-36" : "w-52"}`}>
+              <img
+                src={signatureUrl}
+                alt=""
+                className={`absolute left-2 object-contain ${p.compact ? "-top-8 h-10 w-24" : "-top-12 h-14 w-36"}`}
+                style={{ filter: "brightness(0.3)" }}
+              />
+              <div className={`h-px bg-foreground/70 ${p.compact ? "w-36" : "w-52"}`} />
+              <div className={`mt-1 font-mono uppercase tracking-[0.18em] text-foreground/80 ${p.compact ? "text-[8px]" : "text-[9px]"}`}>
+                Authorized Signatory
+              </div>
+              <div className={`font-display tracking-tight text-foreground ${p.compact ? "text-[10px]" : "text-xs"}`}>
+                KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
+              </div>
+            </div>
             <img
               src={stampUrl}
               alt=""
-              className={`absolute rotate-[-12deg] opacity-80 mix-blend-multiply ${p.compact ? "-top-6 -right-4 h-12 w-12" : "-top-10 -right-6 h-20 w-20"}`}
+              className={`rotate-[-10deg] opacity-80 mix-blend-multiply ${p.compact ? "h-12 w-12" : "h-20 w-20"}`}
             />
-            <div className={`h-px bg-foreground/60 ${p.compact ? "w-32" : "w-44"}`} />
-            <div className={`mt-1 font-mono uppercase tracking-widest text-foreground/80 ${p.compact ? "text-[8px]" : "text-[9px]"}`}>Authorized signatory</div>
-            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[8px]"}`}>Kredo · On-chain verified</div>
           </div>
+          {/* QR + serial */}
           <div className="text-right">
-            {qr && <img src={qr} alt="QR" className={`rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />}
-            <div className={`mt-1 font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>Scan to verify</div>
+            {qr && <img src={qr} alt="QR" className={`ml-auto rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />}
+            <div className={`mt-1 font-mono tracking-widest text-foreground/70 ${p.compact ? "text-[7px]" : "text-[9px]"}`}>{p.serial}</div>
+            <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>Scan to verify</div>
           </div>
+        </div>
+        {/* security footer strip */}
+        <div className={`mt-2 flex items-center justify-center gap-2 border-t border-foreground/10 pt-1.5 font-mono uppercase tracking-[0.3em] text-muted-foreground/80 ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
+          <span className="inline-block h-1 w-1 rounded-full" style={{ background: appPrimary }} />
+          On-chain Verified
+          <span className="opacity-40">·</span>
+          {p.serial}
+          <span className="opacity-40">·</span>
+          kredo.app/verify
         </div>
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
