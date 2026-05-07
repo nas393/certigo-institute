@@ -61,14 +61,14 @@ export function CertificateView(p: Props) {
   useEffect(() => { setAppPrimary(getAppPrimary()); }, []);
 
   const lock = {
-    "--background": "oklch(0.985 0.005 85)",
+    "--background": "oklch(1 0 0)",
     "--foreground": "oklch(0.16 0.01 270)",
     "--muted-foreground": "oklch(0.45 0.01 270)",
     "--primary": "oklch(0.42 0.21 275)",
     "--font-display": 'ui-serif, "Times New Roman", Georgia, serif',
     "--font-sans": 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif',
     color: "oklch(0.16 0.01 270)",
-    background: "oklch(0.99 0.005 85)",
+    background: "#ffffff",
   } as React.CSSProperties;
 
   // Wordmark logo: KREDO + themed dot
