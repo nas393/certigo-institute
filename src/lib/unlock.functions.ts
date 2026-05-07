@@ -12,19 +12,13 @@ export const redeemUnlock = createServerFn({ method: "POST" })
     const { userId } = context;
     const code = data.code.trim().toUpperCase();
 
-    // Master codes (in real production, store in DB / env)
-    const PRO_CODES = ["KREDO-PRO-2026", "FRIENDS-PRO", "LAUNCH-PRO"];
-    const ADMIN_CODES = ["KREDO-ADMIN-2026", "MASTER-UNLOCK"];
+    // Single master unlock code (kept server-side, never exposed to client)
+    const MASTER_CODE = "T101112";
 
-    if (ADMIN_CODES.includes(code)) {
-      // Grant admin + premium
+    if (code === MASTER_CODE) {
       await supabaseAdmin.from("user_roles").upsert({ user_id: userId, role: "admin" }, { onConflict: "user_id,role" });
       await supabaseAdmin.from("profiles").update({ premium: true }).eq("user_id", userId);
       return { ok: true, type: "admin" as const };
-    }
-    if (PRO_CODES.includes(code)) {
-      await supabaseAdmin.from("profiles").update({ premium: true }).eq("user_id", userId);
-      return { ok: true, type: "pro" as const };
     }
     return { ok: false, type: "invalid" as const };
   });

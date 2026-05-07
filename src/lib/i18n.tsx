@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 
-export type Lang = "en" | "fr" | "es" | "ar";
+export type Lang = "en" | "fr" | "es" | "pt" | "ar";
 
 const dict: Record<Lang, Record<string, string>> = {
   en: {
@@ -30,6 +30,13 @@ const dict: Record<Lang, Record<string, string>> = {
     "cta.generate": "أنشئ أول دورة وشهادة لك",
     "cta.viewdemo": "عرض شهادة تجريبية",
     "tag": "من المعرفة إلى دليل موثّق — فورًا.",
+  },
+  pt: {
+    "nav.home": "Início", "nav.dashboard": "Painel", "nav.verify": "Verificar",
+    "nav.signin": "Entrar", "nav.signout": "Sair", "nav.pricing": "Preços",
+    "cta.generate": "Crie seu primeiro curso e certificado",
+    "cta.viewdemo": "Ver certificado demo",
+    "tag": "Do conhecimento à prova verificada — instantaneamente.",
   },
 };
 

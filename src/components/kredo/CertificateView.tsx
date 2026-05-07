@@ -15,8 +15,22 @@ interface Props {
 export function CertificateView(p: Props) {
   const [qr, setQr] = useState<string>("");
   useEffect(() => { QRCode.toDataURL(p.verifyUrl, { margin: 0, width: 240 }).then(setQr); }, [p.verifyUrl]);
+  // Lock certificate to its canonical palette regardless of app theme.
+  const lock = {
+    "--background": "oklch(0.985 0.005 85)",
+    "--foreground": "oklch(0.16 0.01 270)",
+    "--muted-foreground": "oklch(0.45 0.01 270)",
+    "--primary": "oklch(0.42 0.21 275)",
+    "--font-display": 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif',
+    "--font-sans": 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif',
+    color: "oklch(0.16 0.01 270)",
+    background: "oklch(0.99 0.005 85)",
+  } as React.CSSProperties;
   return (
-    <div className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-md border border-foreground/20 bg-[oklch(0.99_0.005_85)] text-foreground ${p.compact ? "" : "shadow-elegant"}`}>
+    <div
+      style={lock}
+      className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-md border border-foreground/20 ${p.compact ? "" : "shadow-elegant"}`}
+    >
       <div className="absolute inset-3 border border-foreground/30" />
       <div className="absolute inset-5 border border-foreground/10" />
       <div className="relative flex h-full flex-col p-[6%]">

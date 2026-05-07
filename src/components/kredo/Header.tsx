@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
+import { ThemeSwitcher } from "@/components/kredo/ThemeSwitcher";
 
 export function Header() {
   const { user, signOut } = useAuth();
@@ -33,9 +34,13 @@ export function Header() {
             onChange={(e) => setLang(e.target.value as Lang)}
             className="hidden rounded-md border border-border bg-transparent px-2 py-1 font-mono text-xs uppercase tracking-widest text-muted-foreground sm:block"
           >
-            <option value="en">EN</option><option value="fr">FR</option>
-            <option value="es">ES</option><option value="ar">AR</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+            <option value="pt">PT</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
           </select>
+          <ThemeSwitcher />
           {user ? (
             <Button variant="outline" size="sm" onClick={async () => { await signOut(); nav({ to: "/" }); }}>{t("nav.signout")}</Button>
           ) : (
