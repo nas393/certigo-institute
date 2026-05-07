@@ -46,7 +46,6 @@ function getAppPrimary(): string {
 export function CertificateView(p: Props) {
   const [qr, setQr] = useState<string>("");
   const [appPrimary, setAppPrimary] = useState<string>("oklch(0.42 0.21 275)");
-  const tpl: CertTemplate = p.template ?? (typeof window !== "undefined" ? (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic" : "classic");
   const displaySerial = formatSerial(p.serial);
   // Always link the QR to the public verify page using the (formatted) serial.
   const qrTarget = (() => {
@@ -64,177 +63,105 @@ export function CertificateView(p: Props) {
     "--background": "oklch(1 0 0)",
     "--foreground": "oklch(0.16 0.01 270)",
     "--muted-foreground": "oklch(0.45 0.01 270)",
-    "--primary": "oklch(0.42 0.21 275)",
     "--font-display": 'ui-serif, "Times New Roman", Georgia, serif',
     "--font-sans": 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif',
     color: "oklch(0.16 0.01 270)",
     background: "#ffffff",
   } as React.CSSProperties;
 
-  // Wordmark logo: KREDO + themed dot
-  const Wordmark = ({ size = "md" }: { size?: "sm" | "md" }) => (
-    <span className={`font-display font-black tracking-tighter leading-none ${size === "sm" ? "text-base" : "text-2xl"}`}
-          style={{ fontFamily: 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif' }}>
-      KREDO<span style={{ color: appPrimary }}>.</span>
-    </span>
-  );
-
-  // Frame variants
-  const frame = (() => {
-    switch (tpl) {
-      case "executive":
-        return (
-          <>
-            <div className="absolute inset-x-0 top-0 h-2" style={{ background: appPrimary }} />
-            <div className="absolute inset-x-0 bottom-0 h-1" style={{ background: appPrimary, opacity: 0.5 }} />
-            <div className="absolute inset-3 border border-foreground/20" />
-          </>
-        );
-      case "monogram":
-        return (
-          <>
-            <div className="absolute inset-3 border border-foreground/30" />
-            <div className="absolute inset-5 border border-foreground/10" />
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-              <span className="font-display font-black text-foreground/[0.05]" style={{ fontSize: "min(60vw, 28rem)", lineHeight: 1, color: appPrimary, opacity: 0.06 }}>K</span>
-            </div>
-          </>
-        );
-      case "minimal":
-        return (
-          <>
-            <div className="absolute inset-3 border-[3px] border-foreground/80" />
-            <div className="absolute inset-[18px] border border-foreground/20" />
-          </>
-        );
-      case "deco": {
-        const corner = (cls: string) => (
-          <svg className={`absolute h-10 w-10 ${cls}`} viewBox="0 0 40 40" fill="none">
-            <path d="M2 18V2h16" stroke={appPrimary} strokeWidth="1.5" />
-            <path d="M6 14V6h8" stroke="currentColor" strokeOpacity=".4" strokeWidth="1" />
-          </svg>
-        );
-        return (
-          <>
-            <div className="absolute inset-4 border border-foreground/20" />
-            {corner("top-2 left-2")}
-            <div className="absolute top-2 right-2 rotate-90">{corner("")}</div>
-            <div className="absolute bottom-2 right-2 rotate-180">{corner("")}</div>
-            <div className="absolute bottom-2 left-2 -rotate-90">{corner("")}</div>
-          </>
-        );
-      }
-      case "bordered":
-        return <div className="absolute inset-2 border-[3px]" style={{ borderColor: appPrimary }} />;
-      case "ribbon":
-        return (
-          <>
-            <div className="absolute inset-3 border border-foreground/30" />
-            <div className="absolute -right-12 top-6 rotate-45 px-14 py-1 text-[10px] font-mono uppercase tracking-widest text-white shadow-md" style={{ background: appPrimary }}>
-              Verified
-            </div>
-          </>
-        );
-      case "modern":
-        return (
-          <>
-            <div className="absolute inset-y-0 left-0 w-3" style={{ background: appPrimary }} />
-            <div className="absolute inset-3 border border-foreground/15" />
-          </>
-        );
-      case "classic":
-      default:
-        return (
-          <>
-            <div className="absolute inset-3 border border-foreground/30" />
-            <div className="absolute inset-5 border border-foreground/10" />
-          </>
-        );
-    }
-  })();
-
-  const padL = tpl === "modern" ? (p.compact ? "pl-[7%]" : "pl-[8%]") : "";
   return (
     <div
       style={lock}
-      className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-md border border-foreground/20 ${p.compact ? "" : "shadow-elegant"}`}
+      className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-sm ${p.compact ? "" : "shadow-elegant"}`}
     >
-      {frame}
-      {/* subtle tech micro-pattern */}
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.05]"
-        style={{
-          backgroundImage:
-            "radial-gradient(currentColor 1px, transparent 1px)",
-          backgroundSize: "14px 14px",
-        }}
-      />
-      <div className={`relative flex h-full flex-col ${p.compact ? "p-[5%]" : "p-[6%]"} ${padL}`}>
+      {/* Bold double-line frame (UC Regents inspired, no gold) */}
+      <div className="absolute inset-2 border-[6px] border-foreground" />
+      <div className="absolute inset-[18px] border border-foreground/70" />
+
+      {/* Themed circular seal watermark — scales with primary color */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <svg viewBox="0 0 200 200" className={`${p.compact ? "h-[55%]" : "h-[60%]"} opacity-[0.07]`} style={{ color: appPrimary }} aria-hidden>
+          <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" strokeWidth="2" />
+          <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" strokeWidth="0.6" />
+          <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="1.2" />
+          <text x="100" y="128" textAnchor="middle" fontSize="90" fontWeight="900" fill="currentColor" fontFamily="ui-serif, Georgia, serif">K</text>
+          <g fill="currentColor">
+            {Array.from({ length: 36 }).map((_, i) => (
+              <rect key={i} x="99.4" y="2" width="1.2" height="6" transform={`rotate(${i * 10} 100 100)`} />
+            ))}
+          </g>
+        </svg>
+      </div>
+
+      <div className={`relative flex h-full flex-col ${p.compact ? "p-[5.5%]" : "p-[6.5%]"}`}>
+        {/* Header bar */}
         <div className="flex items-start justify-between">
-          <Wordmark size={p.compact ? "sm" : "md"} />
-          <div className="text-right">
-            <div className={`font-mono tracking-widest text-muted-foreground ${p.compact ? "text-[8px]" : "text-[9px]"}`}>{displaySerial}</div>
-            <div className={`mt-1 inline-flex items-center gap-1 rounded-full border border-foreground/15 px-1.5 py-[1px] font-sans tracking-wide text-foreground/60 ${p.compact ? "text-[5px]" : "text-[6px]"}`}>
-              <span className={`rounded-full ${p.compact ? "h-[3px] w-[3px]" : "h-1 w-1"}`} style={{ background: appPrimary }} /> On-Chain Verified
-            </div>
+          <div className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>
+            Ref · {displaySerial}
+          </div>
+          <div className={`inline-flex items-center gap-1.5 rounded-full border border-foreground/30 px-2 py-[2px] font-sans tracking-wide text-foreground/80 ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
+            <span className={`rounded-full ${p.compact ? "h-[4px] w-[4px]" : "h-1.5 w-1.5"}`} style={{ background: appPrimary }} />
+            On-Chain Verified
           </div>
         </div>
-        <div className={`mx-auto text-center ${p.compact ? "mt-[3%]" : "mt-[4%]"}`}>
-          <div className="micro-label">Certificate of Completion</div>
-          <p className={`font-mono uppercase tracking-[0.3em] text-muted-foreground ${p.compact ? "mt-2 text-[7px]" : "mt-3 text-[9px]"}`}>
+
+        {/* Institutional masthead */}
+        <div className={`text-center ${p.compact ? "mt-[2%]" : "mt-[2.5%]"}`}>
+          <div className={`font-display font-black uppercase leading-none tracking-[0.2em] text-foreground ${p.compact ? "text-[clamp(0.9rem,2.4vw,1.4rem)]" : "text-[clamp(1.2rem,3vw,2rem)]"}`}>
+            KREDO
+          </div>
+          <div className={`mx-auto mt-1 h-px w-24 ${p.compact ? "" : "w-32"}`} style={{ background: "currentColor", opacity: 0.5 }} />
+          <div className={`mt-1 font-display italic text-muted-foreground ${p.compact ? "text-[8px]" : "text-[11px]"}`}>
+            Global Learning
+          </div>
+        </div>
+
+        {/* Body */}
+        <div className={`mx-auto flex-1 text-center ${p.compact ? "mt-[3%]" : "mt-[4%]"}`}>
+          <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1vw,0.75rem)]" : "text-[clamp(0.75rem,1.3vw,0.95rem)]"}`}>
             This is to certify that
           </p>
-          <h2 className={`font-display font-black leading-none tracking-tighter ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.5rem,4.5vw,3.2rem)]"}`}>
+          <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5vw,3rem)]"}`}>
             {p.recipientName}
           </h2>
-          <div className={`mx-auto h-px w-20 ${p.compact ? "mt-2" : "mt-3"}`} style={{ background: appPrimary, opacity: 0.6 }} />
-          <p className={`max-w-xl text-balance text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 text-[clamp(0.7rem,1.2vw,0.9rem)]"}`}>
-            has successfully completed the course
+          <p className={`font-display italic text-muted-foreground ${p.compact ? "mt-2 text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 text-[clamp(0.75rem,1.3vw,0.95rem)]"}`}>
+            has successfully completed the course of study in
           </p>
-          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight text-foreground ${p.compact ? "mt-1 text-[clamp(0.85rem,2vw,1.15rem)]" : "mt-2 text-[clamp(1.1rem,2.6vw,1.75rem)]"}`}>
+          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-1 text-[clamp(0.9rem,2vw,1.2rem)]" : "mt-2 text-[clamp(1.15rem,2.6vw,1.7rem)]"}`}>
             {p.courseTopic}
           </h3>
-          <p className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "mt-1 text-[7px]" : "mt-1 text-[8px]"}`}>
-            {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString()}
+          <p className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "mt-2 text-[7px]" : "mt-3 text-[9px]"}`}>
+            {p.score != null ? `Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
           </p>
         </div>
-        {/* Signatory · Stamp · QR */}
-        <div className="mt-auto grid grid-cols-3 items-end gap-4">
-          {/* Signature */}
+
+        {/* Footer: Signature · QR */}
+        <div className="mt-auto flex items-end justify-between gap-6">
           <div className="flex flex-col items-start">
             <img
               src={signatureUrl}
-              alt="Signature"
-              className={`object-contain object-left-bottom ${p.compact ? "h-14 w-40" : "h-24 w-60"}`}
-              style={{ filter: "brightness(0.2) contrast(1.2)" }}
+              alt=""
+              aria-hidden
+              className={`object-contain object-left-bottom ${p.compact ? "h-12 w-36" : "h-20 w-52"}`}
+              style={{ filter: "brightness(0.15) contrast(1.3)" }}
             />
-            <div className={`mt-1 w-full border-t border-foreground/70 ${p.compact ? "max-w-[10rem]" : "max-w-[15rem]"}`} />
-            <div className={`mt-1 font-display font-semibold tracking-tight text-foreground ${p.compact ? "text-[9px]" : "text-[11px]"}`}>
-              KREDO<span style={{ color: appPrimary }}>.</span> Global Learning
-            </div>
-            <div className={`font-sans tracking-wide text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
+            <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[9rem]" : "max-w-[13rem]"}`} />
+            <div className={`mt-1 font-mono uppercase tracking-[0.2em] text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
               Authorized Signatory
             </div>
           </div>
-          {/* Stamp */}
-          <div className="flex items-end justify-center">
-            <img
-              src={stampUrl}
-              alt="Official seal"
-              className={`rotate-[-8deg] opacity-90 mix-blend-multiply ${p.compact ? "h-16 w-16" : "h-24 w-24"}`}
-            />
-          </div>
-          {/* QR + serial */}
+
           <div className="flex flex-col items-end text-right">
             {qr && (
               <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/10 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />
+                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/20 ${p.compact ? "h-14 w-14" : "h-20 w-20"}`} />
               </a>
             )}
             <div className={`mt-1 font-mono tracking-widest text-foreground/80 ${p.compact ? "text-[7px]" : "text-[9px]"}`}>{displaySerial}</div>
             <div className={`font-mono uppercase tracking-widest text-muted-foreground ${p.compact ? "text-[6px]" : "text-[7px]"}`}>Scan to verify</div>
           </div>
         </div>
+
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div className="rotate-[-20deg] font-display text-[clamp(3rem,10vw,7rem)] font-black text-foreground/[0.04]">
