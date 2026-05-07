@@ -21,6 +21,7 @@ export type Database = {
           id: string
           issued_at: string | null
           recipient_name: string
+          revoked: boolean
           score: number | null
           serial: string
           user_id: string
@@ -31,6 +32,7 @@ export type Database = {
           id?: string
           issued_at?: string | null
           recipient_name: string
+          revoked?: boolean
           score?: number | null
           serial: string
           user_id: string
@@ -41,6 +43,7 @@ export type Database = {
           id?: string
           issued_at?: string | null
           recipient_name?: string
+          revoked?: boolean
           score?: number | null
           serial?: string
           user_id?: string
