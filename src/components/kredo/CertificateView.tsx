@@ -80,7 +80,7 @@ export function CertificateView(p: Props) {
       <div className={`relative flex h-full flex-col ${p.compact ? "p-[5.5%]" : "p-[6.5%]"}`}>
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
-          <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2vw,1.3rem)]" : "text-[clamp(1.1rem,2.6vw,1.7rem)]"}`}>
+          <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2cqw,1.3rem)]" : "text-[clamp(1.1rem,2.6cqw,1.7rem)]"}`}>
             <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
           </div>
           <div className="flex flex-col items-end gap-1">
@@ -102,7 +102,7 @@ export function CertificateView(p: Props) {
           <div className={`font-mono uppercase tracking-[0.4em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[10px]"}`}>
             Certigo · Verified Credentials
           </div>
-          <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6vw,1.6rem)]" : "text-[clamp(1.4rem,3.4vw,2.4rem)]"}`}>
+          <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6cqw,1.6rem)]" : "text-[clamp(1.4rem,3.4cqw,2.4rem)]"}`}>
             Certificate of Completion
           </h1>
           <div className="mx-auto mt-2 flex items-center justify-center gap-2">
@@ -114,19 +114,19 @@ export function CertificateView(p: Props) {
 
         {/* Body */}
         <div className={`mx-auto flex-1 text-center ${p.compact ? "mt-[3%]" : "mt-[3.5%]"}`}>
-          <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1vw,0.75rem)]" : "text-[clamp(0.8rem,1.3vw,0.95rem)]"}`}>
+          <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1cqw,0.75rem)]" : "text-[clamp(0.8rem,1.3cqw,0.95rem)]"}`}>
             This is to certify that
           </p>
-          <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5vw,3rem)]"}`}>
+          <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2cqw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5cqw,3rem)]"}`}>
             {p.recipientName}
           </h2>
-          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 max-w-2xl text-[clamp(0.78rem,1.25vw,0.92rem)]"}`}>
+          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.6rem,1cqw,0.75rem)]" : "mt-3 max-w-2xl text-[clamp(0.78rem,1.25cqw,0.92rem)]"}`}>
             has successfully completed all requirements for
           </p>
-          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-2 text-[clamp(0.95rem,2.2vw,1.3rem)]" : "mt-3 text-[clamp(1.2rem,2.7vw,1.8rem)]"}`}>
+          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-2 text-[clamp(0.95rem,2.2cqw,1.3rem)]" : "mt-3 text-[clamp(1.2rem,2.7cqw,1.8rem)]"}`}>
             {p.courseTopic}
           </h3>
-          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95vw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15vw,0.85rem)]"}`}>
+          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95cqw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15cqw,0.85rem)]"}`}>
             Cryptographically issued and independently verifiable on the Certigo ledger.
           </p>
           <p className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "mt-3 text-[7px]" : "mt-4 text-[9px]"}`}>
@@ -191,7 +191,7 @@ export function CertificateView(p: Props) {
 
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <div className="rotate-[-20deg] font-display text-[clamp(3rem,10vw,7rem)] font-black text-foreground/[0.04]">
+            <div className="rotate-[-20deg] font-display text-[clamp(3rem,10cqw,7rem)] font-black text-foreground/[0.04]">
               CERTIGO FREE
             </div>
           </div>
