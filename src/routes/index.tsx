@@ -57,9 +57,9 @@ function Home() {
                 <span>✓ No credit card</span><span>✓ 1 free certificate</span><span>✓ Setup in 60 seconds</span>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[460px] lg:max-w-[420px]">
+            <div className="relative mx-auto w-full max-w-[460px] px-2 sm:px-0 lg:max-w-[420px]">
               <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 to-transparent blur-2xl" />
-              <div className="rotate-[-1.5deg] transition-transform hover:rotate-0">
+              <div className="rotate-0 sm:rotate-[-1.5deg] transition-transform hover:rotate-0">
                 <CertificateView
                   compact
                   serial="KR-2026-DEMO01"
