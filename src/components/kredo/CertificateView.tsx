@@ -81,7 +81,7 @@ export function CertificateView(p: Props) {
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
           <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2vw,1.3rem)]" : "text-[clamp(1.1rem,2.6vw,1.7rem)]"}`}>
-            KREDO<span style={{ color: appPrimary }}>.</span>
+            CERTOGO<span style={{ color: appPrimary }}>.</span>
           </div>
           <div className="flex flex-col items-end gap-1">
             <div className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>
@@ -100,7 +100,7 @@ export function CertificateView(p: Props) {
         {/* Masthead */}
         <div className={`text-center ${p.compact ? "mt-[3%]" : "mt-[4%]"}`}>
           <div className={`font-mono uppercase tracking-[0.4em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[10px]"}`}>
-            Kredo Global Learning
+            Certogo · Verified Credentials
           </div>
           <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6vw,1.6rem)]" : "text-[clamp(1.4rem,3.4vw,2.4rem)]"}`}>
             Certificate of Completion
@@ -115,19 +115,19 @@ export function CertificateView(p: Props) {
         {/* Body */}
         <div className={`mx-auto flex-1 text-center ${p.compact ? "mt-[3%]" : "mt-[3.5%]"}`}>
           <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1vw,0.75rem)]" : "text-[clamp(0.8rem,1.3vw,0.95rem)]"}`}>
-            This certificate is proudly presented to
+            This is to certify that
           </p>
           <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5vw,3rem)]"}`}>
             {p.recipientName}
           </h2>
           <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 max-w-2xl text-[clamp(0.78rem,1.25vw,0.92rem)]"}`}>
-            in formal recognition of dedicated study, demonstrated mastery, and the successful completion of all coursework, assessments and practical requirements for
+            has successfully completed all requirements for
           </p>
           <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-2 text-[clamp(0.95rem,2.2vw,1.3rem)]" : "mt-3 text-[clamp(1.2rem,2.7vw,1.8rem)]"}`}>
             {p.courseTopic}
           </h3>
           <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95vw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15vw,0.85rem)]"}`}>
-            Issued and cryptographically anchored on the Kredo verification ledger, this credential affirms the holder’s standing and may be independently verified worldwide.
+            Cryptographically issued and independently verifiable on the Certogo ledger.
           </p>
           <p className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "mt-3 text-[7px]" : "mt-4 text-[9px]"}`}>
             {p.score != null ? `Final Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
@@ -161,13 +161,13 @@ export function CertificateView(p: Props) {
                 <path id="stampTop" d="M 25,100 a 75,75 0 0 1 150,0" fill="none" />
                 <path id="stampBot" d="M 30,100 a 70,70 0 0 0 140,0" fill="none" />
               </defs>
-              <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="15" letterSpacing="4" fill="currentColor">
-                <textPath href="#stampTop" startOffset="50%" textAnchor="middle">KREDO · VERIFIED</textPath>
+              <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="14" letterSpacing="4" fill="currentColor">
+                <textPath href="#stampTop" startOffset="50%" textAnchor="middle">CERTOGO · VERIFIED</textPath>
               </text>
               <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="11" letterSpacing="3" fill="currentColor">
-                <textPath href="#stampBot" startOffset="50%" textAnchor="middle">GLOBAL LEARNING</textPath>
+                <textPath href="#stampBot" startOffset="50%" textAnchor="middle">AUTHENTIC CREDENTIAL</textPath>
               </text>
-              <text x="100" y="118" textAnchor="middle" fontSize="56" fontWeight="900" fill="currentColor" fontFamily="ui-serif, Georgia, serif">K</text>
+              <text x="100" y="118" textAnchor="middle" fontSize="56" fontWeight="900" fill="currentColor" fontFamily="ui-serif, Georgia, serif">C</text>
               <g fill="currentColor">
                 {Array.from({ length: 24 }).map((_, i) => (
                   <rect key={i} x="99.4" y="6" width="1.2" height="5" transform={`rotate(${i * 15} 100 100)`} />
@@ -192,7 +192,7 @@ export function CertificateView(p: Props) {
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div className="rotate-[-20deg] font-display text-[clamp(3rem,10vw,7rem)] font-black text-foreground/[0.04]">
-              KREDO FREE
+              CERTOGO FREE
             </div>
           </div>
         )}

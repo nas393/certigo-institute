@@ -9,7 +9,7 @@ import { Loader2, Trash2, ShieldOff, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Admin — Kredo" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Admin — Certogo" }, { name: "robots", content: "noindex" }] }),
   component: Admin,
 });
 
