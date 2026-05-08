@@ -119,5 +119,5 @@ export async function downloadCertificatePdf(c: CertData) {
     doc.text("CERTOGO FREE", w / 2, h / 2 + 20, { align: "center", angle: -20 });
   }
 
-  doc.save(`kredo-${c.serial}.pdf`);
+  doc.save(`certogo-${c.serial}.pdf`);
 }
