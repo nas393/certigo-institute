@@ -9,9 +9,9 @@ import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Certogo — From knowledge to verified proof, instantly" },
+      { title: "Certigo — From knowledge to verified proof, instantly" },
       { name: "description", content: "The fastest way to create credentials employers can verify instantly. Type a skill, learn, pass a quiz, get a QR-verified certificate." },
-      { property: "og:title", content: "Certogo — Verified credentials in minutes" },
+      { property: "og:title", content: "Certigo — Verified credentials in minutes" },
       { property: "og:description", content: "From knowledge to verified proof — instantly." },
     ],
   }),
@@ -41,7 +41,7 @@ function Home() {
                 <span className="text-primary">Instantly.</span>
               </h1>
               <p className="mt-7 max-w-xl text-lg text-muted-foreground text-balance">
-                Certogo is the fastest way to create credentials employers can verify instantly.
+                Certigo is the fastest way to create credentials employers can verify instantly.
                 Type a skill — get a full course, a quiz, and a QR-verified certificate that lives
                 forever in your account.
               </p>
@@ -57,9 +57,9 @@ function Home() {
                 <span>✓ No credit card</span><span>✓ 1 free certificate</span><span>✓ Setup in 60 seconds</span>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[460px] lg:max-w-[420px]">
+            <div className="relative mx-auto w-full max-w-[460px] px-2 sm:px-0 lg:max-w-[420px]">
               <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 to-transparent blur-2xl" />
-              <div className="rotate-[-1.5deg] transition-transform hover:rotate-0">
+              <div className="rotate-0 sm:rotate-[-1.5deg] transition-transform hover:rotate-0">
                 <CertificateView
                   compact
                   serial="KR-2026-DEMO01"
@@ -130,7 +130,7 @@ function Home() {
           <div className="micro-label">◆ Built to be trusted</div>
           <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">Every certificate carries proof.</h2>
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">
-            Each Certogo certificate has a unique serial and a QR code linking to a public ledger page.
+            Each Certigo certificate has a unique serial and a QR code linking to a public ledger page.
             Anyone — recruiters, schools, clients — can verify the credential in one scan, no login required.
           </p>
           <Button className="mt-8" onClick={() => nav({ to: "/verify" })}>Open the public ledger <ArrowRight className="ms-2 h-4 w-4" /></Button>
@@ -158,12 +158,12 @@ function Home() {
       {/* MANIFESTO */}
       <section className="bg-foreground text-background">
         <div className="mx-auto max-w-4xl px-6 py-28 text-center">
-          <div className="font-mono text-[10px] uppercase tracking-widest text-background/60">◆ Why Certogo exists</div>
+          <div className="font-mono text-[10px] uppercase tracking-widest text-background/60">◆ Why Certigo exists</div>
           <h2 className="mt-6 font-display text-4xl font-black leading-tight tracking-tighter md:text-6xl">
             Skills move faster than credentials. <span className="text-primary-foreground/60 italic">Until now.</span>
           </h2>
           <p className="mx-auto mt-8 max-w-2xl text-lg text-background/70">
-            We believe proof of knowledge should be as fast as learning itself. Certogo is the fastest
+            We believe proof of knowledge should be as fast as learning itself. Certigo is the fastest
             way to create credentials employers can verify instantly — open, portable, and yours forever.
           </p>
         </div>
@@ -174,7 +174,7 @@ function Home() {
         <div className="grid gap-10 md:grid-cols-3">
           {[
             ["Share to LinkedIn", "One click adds your verified credential to your profile."],
-            ["Public profile", "Get a certogo.app/u/yourname page with every credential you've earned."],
+            ["Public profile", "Get a certigo.app/u/yourname page with every credential you've earned."],
             ["Shareable links", "Send a verify URL to recruiters. They scan, they trust."],
           ].map(([t, d]) => (
             <div key={t} className="border-l-2 border-primary ps-5">
@@ -193,7 +193,7 @@ function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               { name: "Starter", price: "Free", desc: "1 watermarked certificate", features: ["AI course generation", "QR verification", "Watermarked PDF"] },
-              { name: "Pro", price: "$19", per: "/mo", highlight: true, desc: "Unlimited credentials", features: ["Unlimited certificates", "No Certogo branding", "LinkedIn integration", "Priority AI"] },
+              { name: "Pro", price: "$19", per: "/mo", highlight: true, desc: "Unlimited credentials", features: ["Unlimited certificates", "No Certigo branding", "LinkedIn integration", "Priority AI"] },
               { name: "Business", price: "$29", per: "/seat", desc: "Built for teams", features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
             ].map((p) => (
               <div key={p.name} className={`relative rounded-2xl border p-8 ${p.highlight ? "border-primary bg-background shadow-elegant" : "border-border bg-background"}`}>
@@ -254,8 +254,8 @@ function Home() {
         </div>
         <footer className="border-t border-border">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 md:flex-row">
-            <div className="font-display text-sm font-black tracking-tighter">CERTOGO<span className="text-primary">.</span></div>
-            <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} Certogo · Verified credentials</div>
+            <div className="font-display text-sm font-black tracking-tighter"><span className="text-primary">CERTI</span><span className="text-foreground">GO</span></div>
+            <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} Certigo · Verified credentials</div>
           </div>
         </footer>
       </section>

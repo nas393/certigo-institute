@@ -11,7 +11,7 @@ import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/profile")({
-  head: () => ({ meta: [{ title: "Profile — Certogo" }, { name: "description", content: "Edit your Certogo profile and language." }] }),
+  head: () => ({ meta: [{ title: "Profile — Certigo" }, { name: "description", content: "Edit your Certigo profile and language." }] }),
   component: Profile,
 });
 
