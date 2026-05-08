@@ -77,7 +77,7 @@ export function CertificateView(p: Props) {
       <div className="absolute inset-2 border-[6px] border-foreground" />
       <div className="absolute inset-[18px] border border-foreground/70" />
 
-      <div className={`relative flex h-full flex-col ${p.compact ? "p-[5.5%]" : "p-[6.5%]"}`}>
+      <div className={`relative flex h-full flex-col ${p.compact ? "px-[5%] py-[4%]" : "px-[6.5%] py-[5%]"}`}>
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
           <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2cqw,1.3rem)]" : "text-[clamp(1.1rem,2.6cqw,1.7rem)]"}`}>
@@ -142,10 +142,10 @@ export function CertificateView(p: Props) {
               src={signatureUrl}
               alt=""
               aria-hidden
-              className={`object-contain object-left-bottom ${p.compact ? "h-10 w-32" : "h-16 w-48"}`}
+              className={`object-contain object-left-bottom ${p.compact ? "h-7 w-24" : "h-14 w-44"}`}
               style={{ filter: "grayscale(1) contrast(1.2) brightness(0.55)", mixBlendMode: "multiply" }}
             />
-            <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[9rem]" : "max-w-[13rem]"}`} />
+            <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[7rem]" : "max-w-[12rem]"}`} />
             <div className={`mt-1 font-mono uppercase tracking-[0.2em] text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
               Authorized Signatory
             </div>
@@ -153,7 +153,7 @@ export function CertificateView(p: Props) {
 
           {/* Stamp — circular themed seal, solid (no gold) */}
           <div className={`relative ${p.compact ? "-translate-y-1" : "-translate-y-2"}`} aria-hidden>
-            <svg viewBox="0 0 200 200" className={`${p.compact ? "h-20 w-20" : "h-28 w-28"} -rotate-[8deg]`} style={{ color: appPrimary }}>
+            <svg viewBox="0 0 200 200" className={`${p.compact ? "h-16 w-16" : "h-28 w-28"} -rotate-[8deg]`} style={{ color: appPrimary }}>
               <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="4" />
               <circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" strokeWidth="1.2" />
               <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -183,7 +183,7 @@ export function CertificateView(p: Props) {
             </div>
             {qr && (
               <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/20 ${p.compact ? "h-16 w-16" : "h-24 w-24"}`} />
+                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/20 ${p.compact ? "h-14 w-14" : "h-24 w-24"}`} />
               </a>
             )}
           </div>
