@@ -152,7 +152,7 @@ export function CertificateView(p: Props) {
           </div>
 
           {/* Stamp — circular themed seal, solid (no gold) */}
-          <div className={`relative ${p.compact ? "-translate-y-1" : "-translate-y-2"}`} aria-hidden>
+          <div className="relative" aria-hidden>
             <svg viewBox="0 0 200 200" className={`${p.compact ? "h-16 w-16" : "h-28 w-28"} -rotate-[8deg]`} style={{ color: appPrimary }}>
               <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="4" />
               <circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" strokeWidth="1.2" />
