@@ -4,7 +4,13 @@ import { Header } from "@/components/kredo/Header";
 import { CertificateView } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck, Mail, MapPin, MessageCircle, Lock, Zap, Users } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -57,9 +63,9 @@ function Home() {
                 <span>✓ No credit card</span><span>✓ 1 free certificate</span><span>✓ Setup in 60 seconds</span>
               </div>
             </div>
-            <div className="relative mx-auto w-full max-w-[460px] px-2 sm:px-0 lg:max-w-[420px]">
-              <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 to-transparent blur-2xl" />
-              <div className="rotate-0 sm:rotate-[-1.5deg] transition-transform hover:rotate-0">
+            <div className="relative mx-auto w-full max-w-[480px] px-1 sm:px-0 lg:max-w-[440px]">
+              <div className="pointer-events-none absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-br from-primary/15 to-transparent blur-2xl" />
+              <div className="lg:rotate-[-1.5deg] transition-transform hover:rotate-0">
                 <CertificateView
                   compact
                   serial="KR-2026-DEMO01"
