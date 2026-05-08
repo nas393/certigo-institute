@@ -236,6 +236,168 @@ function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="border-t border-border bg-card scroll-mt-24">
+        <div className="mx-auto max-w-4xl px-6 py-24">
+          <div className="micro-label">◆ Questions, answered</div>
+          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">Everything you need to trust Certigo.</h2>
+          <p className="mt-4 max-w-2xl text-muted-foreground">
+            Built for recruiters, learners, and teams that need credentials they can actually verify. No vague badges, no walled gardens.
+          </p>
+          <Accordion type="single" collapsible className="mt-10">
+            {[
+              {
+                q: "How is a Certigo certificate verified?",
+                a: "Every certificate has a unique serial and a QR code that links to a public ledger page on certigo.app/verify. Anyone — recruiter, employer, school — can scan and confirm authenticity in seconds. No login, no friction.",
+              },
+              {
+                q: "Can a Certigo certificate be faked or edited?",
+                a: "No. Certificate metadata (serial, recipient, course, score, issue date) is anchored to our verification ledger at issue time. The public verify page always returns the original record — any edited PDF will fail the QR check.",
+              },
+              {
+                q: "Are these credentials accepted by employers?",
+                a: "Certigo certificates are designed for skill-based hiring. They tell an employer exactly what was learned, the score earned, and provide a one-tap way to confirm it. They complement — not replace — formal degrees.",
+              },
+              {
+                q: "What happens to my certificate if I cancel?",
+                a: "It stays yours forever. Your public profile and every verify link continue to work. Pro features (custom branding, unlimited issuance) pause, but every credential already issued remains valid.",
+              },
+              {
+                q: "Can I issue certificates to my own students or team?",
+                a: "Yes. The Pro and Business plans support bulk issuance, custom branding, and an admin dashboard so coaches, schools, and HR teams can certify cohorts in one flow.",
+              },
+              {
+                q: "Is my data private?",
+                a: "We only store what's needed to issue and verify your credentials. Your account data is never sold. The public verify page only exposes what's printed on the certificate itself.",
+              },
+            ].map((f) => (
+              <AccordionItem key={f.q} value={f.q} className="border-border">
+                <AccordionTrigger className="text-left font-display text-lg font-bold tracking-tight">{f.q}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="mx-auto max-w-7xl px-6 py-24 scroll-mt-24">
+        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+          <div>
+            <div className="micro-label">◆ About Certigo</div>
+            <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">
+              Credentials built for the way the world actually hires.
+            </h2>
+            <p className="mt-6 text-muted-foreground">
+              Certigo was founded on a simple belief: proof of skill should travel as fast as skill itself.
+              Diplomas take years. Job descriptions change in months. We built Certigo so any learner, coach,
+              or company can issue a credential that's instantly verifiable, beautifully designed, and
+              owned forever by the person who earned it.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              Our platform is trusted by independent professionals, training providers, and HR teams across
+              38 countries — issuing tens of thousands of verified credentials every month.
+            </p>
+            <div className="mt-8 grid grid-cols-3 gap-4">
+              {[
+                ["12,400+", "Credentials issued"],
+                ["84,000+", "Public verifications"],
+                ["38", "Countries served"],
+              ].map(([n, l]) => (
+                <div key={l} className="rounded-xl border border-border bg-card p-4">
+                  <div className="font-display text-2xl font-black tracking-tighter text-primary">{n}</div>
+                  <div className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{l}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              { icon: Lock, t: "Tamper-proof by design", d: "Each credential is cryptographically anchored at issue. No silent edits — ever." },
+              { icon: Zap, t: "Issued in seconds", d: "From topic to verified PDF in under 60 seconds, on any device." },
+              { icon: Globe, t: "Globally portable", d: "Public verify links work in any country, on any device, with no account required." },
+              { icon: Users, t: "Built for teams", d: "Bulk issuance, admin controls, and custom branding for coaches and HR teams." },
+            ].map((v) => (
+              <div key={v.t} className="rounded-2xl border border-border bg-card p-6">
+                <v.icon className="h-5 w-5 text-primary" />
+                <h3 className="mt-3 font-display text-lg font-black tracking-tight">{v.t}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{v.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="border-t border-border bg-card scroll-mt-24">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+            <div>
+              <div className="micro-label">◆ Get in touch</div>
+              <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">
+                Talk to a real human.
+              </h2>
+              <p className="mt-4 max-w-md text-muted-foreground">
+                Whether you're verifying a credential, exploring Certigo for your team, or just want to say
+                hello — we read every message and reply within one business day.
+              </p>
+              <div className="mt-8 space-y-4">
+                <a href="mailto:hello@certigo.app" className="flex items-start gap-3 rounded-xl border border-border bg-background p-4 hover:border-primary/60">
+                  <Mail className="mt-0.5 h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-display text-sm font-bold">General & sales</div>
+                    <div className="text-sm text-muted-foreground">hello@certigo.app</div>
+                  </div>
+                </a>
+                <a href="mailto:support@certigo.app" className="flex items-start gap-3 rounded-xl border border-border bg-background p-4 hover:border-primary/60">
+                  <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-display text-sm font-bold">Support & verification</div>
+                    <div className="text-sm text-muted-foreground">support@certigo.app</div>
+                  </div>
+                </a>
+                <div className="flex items-start gap-3 rounded-xl border border-border bg-background p-4">
+                  <MapPin className="mt-0.5 h-5 w-5 text-primary" />
+                  <div>
+                    <div className="font-display text-sm font-bold">Headquarters</div>
+                    <div className="text-sm text-muted-foreground">Remote-first · serving 38 countries</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget as HTMLFormElement;
+                const data = new FormData(form);
+                const subject = encodeURIComponent(`Certigo enquiry from ${data.get("name") || "website"}`);
+                const body = encodeURIComponent(`${data.get("message") || ""}\n\n— ${data.get("name") || ""} (${data.get("email") || ""})`);
+                window.location.href = `mailto:hello@certigo.app?subject=${subject}&body=${body}`;
+              }}
+              className="rounded-2xl border border-border bg-background p-6 shadow-card"
+            >
+              <h3 className="font-display text-xl font-black tracking-tight">Send us a message</h3>
+              <div className="mt-5 grid gap-4">
+                <div>
+                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Name</label>
+                  <Input name="name" required placeholder="Your full name" className="mt-2 h-11" />
+                </div>
+                <div>
+                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Email</label>
+                  <Input type="email" name="email" required placeholder="you@company.com" className="mt-2 h-11" />
+                </div>
+                <div>
+                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Message</label>
+                  <textarea name="message" rows={4} required placeholder="How can we help?" className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
+                </div>
+                <Button type="submit" size="lg" className="h-12">Send message <ArrowRight className="ms-2 h-4 w-4" /></Button>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">We reply within 1 business day.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="relative overflow-hidden border-t border-border">
         <div className="absolute inset-0 -z-10 gradient-paper" />
