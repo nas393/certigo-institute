@@ -142,8 +142,8 @@ export function CertificateView(p: Props) {
               src={signatureUrl}
               alt=""
               aria-hidden
-              className={`object-contain object-left-bottom ${p.compact ? "h-12 w-36" : "h-20 w-56"}`}
-              style={{ filter: "brightness(0.1) contrast(1.4)" }}
+              className={`object-contain object-left-bottom ${p.compact ? "h-10 w-32" : "h-16 w-48"}`}
+              style={{ filter: "grayscale(1) contrast(1.2) brightness(0.55)", mixBlendMode: "multiply" }}
             />
             <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[9rem]" : "max-w-[13rem]"}`} />
             <div className={`mt-1 font-mono uppercase tracking-[0.2em] text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
