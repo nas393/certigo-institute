@@ -16,8 +16,8 @@ import { CERT_TEMPLATES, type CertTemplate, CertificateView } from "@/components
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — Kredo" },
-      { name: "description", content: "Personalize your Kredo experience: language, color, background, and typography." },
+      { title: "Settings — Certogo" },
+      { name: "description", content: "Personalize your Certogo experience: language, color, background, and typography." },
     ],
   }),
   component: Settings,
@@ -119,7 +119,7 @@ function Settings() {
 
         <Card className="mt-6 p-6">
           <h2 className="font-display text-xl font-black tracking-tight">Accent color</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Pick a primary color. Certificates always render in the canonical Kredo palette.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Pick a primary color. Certificates always render in the canonical Certogo palette.</p>
           <div className="mt-4 grid grid-cols-4 gap-3 sm:grid-cols-7">
             {(Object.keys(ACCENTS) as AccentKey[]).map((k) => (
               <button
@@ -186,7 +186,7 @@ function Settings() {
                     courseTopic="Sample Course"
                     score={94}
                     issuedAt={new Date().toISOString()}
-                    verifyUrl="https://kredo.app/verify/preview"
+                    verifyUrl="https://certogo.app/verify/preview"
                   />
                 </div>
                 <div className="mt-2 flex items-center justify-between">

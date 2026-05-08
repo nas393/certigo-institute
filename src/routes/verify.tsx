@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { ShieldCheck, ExternalLink, Link2 } from "lucide-react";
 
 export const Route = createFileRoute("/verify")({
-  head: () => ({ meta: [{ title: "Verify a Kredo certificate" }, { name: "description", content: "Verify the authenticity of any Kredo certificate." }] }),
+  head: () => ({ meta: [{ title: "Verify a Certogo certificate" }, { name: "description", content: "Verify the authenticity of any Certogo certificate." }] }),
   component: Verify,
 });
 
@@ -60,7 +60,7 @@ function Verify() {
       <div className="mx-auto max-w-2xl px-6 py-20 text-center">
         <ShieldCheck className="mx-auto h-10 w-10 text-primary" />
         <div className="mt-4 micro-label">◆ Public Ledger</div>
-        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter md:text-5xl">Verify a Kredo credential.</h1>
+        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter md:text-5xl">Verify a Certogo credential.</h1>
         <p className="mt-3 text-muted-foreground">Enter the certificate code, click Verify — get an instant on-chain proof summary.</p>
         <form onSubmit={submit} className="mx-auto mt-8 flex max-w-md gap-2">
           <Input value={v} onChange={(e) => setV(e.target.value)} placeholder="e.g. KR-2026-DEMO01" className="h-12" />

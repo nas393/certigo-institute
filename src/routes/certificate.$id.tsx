@@ -11,7 +11,7 @@ import { useAuth } from "@/lib/auth";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/certificate/$id")({
-  head: () => ({ meta: [{ title: "Certificate — Kredo" }, { name: "description", content: "A QR-verified Kredo certificate." }] }),
+  head: () => ({ meta: [{ title: "Certificate — Certogo" }, { name: "description", content: "A QR-verified Certogo certificate." }] }),
   component: CertPage,
 });
 

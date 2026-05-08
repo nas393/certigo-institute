@@ -102,11 +102,11 @@ export async function downloadCertificatePdf(c: CertData) {
   doc.setFont("helvetica", "italic");
   doc.setFontSize(11);
   doc.setTextColor(20, 20, 30);
-  doc.text("Kredo Director", 60, h - 78);
+  doc.text("Certogo Director", 60, h - 78);
   doc.setFont("courier", "normal");
   doc.setFontSize(8);
   doc.setTextColor(100, 100, 120);
-  doc.text("Verified by Kredo  ·  kredo.app/verify", 60, h - 64);
+  doc.text("Verified by Certogo  ·  certogo.app/verify", 60, h - 64);
 
   // stamp (between signature and QR)
   const stampSize = 90;
@@ -116,7 +116,7 @@ export async function downloadCertificatePdf(c: CertData) {
     doc.setFont("helvetica", "bold");
     doc.setFontSize(80);
     doc.setTextColor(230, 230, 235);
-    doc.text("KREDO FREE", w / 2, h / 2 + 20, { align: "center", angle: -20 });
+    doc.text("CERTOGO FREE", w / 2, h / 2 + 20, { align: "center", angle: -20 });
   }
 
   doc.save(`kredo-${c.serial}.pdf`);

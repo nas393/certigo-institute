@@ -8,8 +8,8 @@ import { ShieldCheck, ShieldX, Loader2 } from "lucide-react";
 export const Route = createFileRoute("/verify/$id")({
   head: ({ params }) => ({
     meta: [
-      { title: `Verify ${params.id} — Kredo` },
-      { name: "description", content: "Public verification page for a Kredo certificate." },
+      { title: `Verify ${params.id} — Certogo` },
+      { name: "description", content: "Public verification page for a Certogo certificate." },
     ],
     scripts: [
       {
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/verify/$id")({
           "@type": "EducationalOccupationalCredential",
           identifier: params.id,
           credentialCategory: "Certificate",
-          issuedBy: { "@type": "Organization", name: "Kredo" },
+          issuedBy: { "@type": "Organization", name: "Certogo" },
         }),
       },
     ],
@@ -69,7 +69,7 @@ function VerifyOne() {
               <ShieldCheck className="h-6 w-6 text-primary" />
               <div>
                 <div className="font-display text-lg font-black tracking-tight">
-                  ✓ Verified by Kredo {cert._demo && <span className="ms-2 rounded bg-foreground/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest">Demo</span>}
+                  ✓ Verified by Certogo {cert._demo && <span className="ms-2 rounded bg-foreground/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest">Demo</span>}
                 </div>
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
                   Issued {new Date(cert.issued_at).toLocaleDateString()} · Serial {cert.serial}
@@ -99,7 +99,7 @@ function VerifyOne() {
           <div className="text-center">
             <ShieldX className="mx-auto h-10 w-10 text-destructive" />
             <h1 className="mt-4 font-display text-3xl font-black tracking-tighter">Certificate not found</h1>
-            <p className="mt-2 text-muted-foreground">This ID does not match any Kredo credential.</p>
+            <p className="mt-2 text-muted-foreground">This ID does not match any Certogo credential.</p>
             <Link to="/verify" className="mt-6 inline-block font-mono text-[10px] uppercase tracking-widest text-primary">← Try another</Link>
           </div>
         )}
