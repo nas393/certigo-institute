@@ -70,7 +70,7 @@ export function CertificateView(p: Props) {
 
   return (
     <div
-      style={lock}
+      style={{ ...lock, containerType: "inline-size" } as React.CSSProperties}
       className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-sm ${p.compact ? "" : "shadow-elegant"}`}
     >
       {/* Bold double-line frame (UC Regents inspired, no gold) */}
