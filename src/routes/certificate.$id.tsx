@@ -109,13 +109,26 @@ function CertPage() {
           <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
             score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} />
         </div>
-        <div className="mt-6 flex gap-2">
-          <Button onClick={() => downloadCertificatePdf({
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row">
+          <Button className="w-full sm:w-auto" onClick={() => downloadCertificatePdf({
             serial: cert.serial, recipientName: cert.recipient_name, courseTopic: cert.course_topic,
             score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium,
           })}><Download className="me-2 h-4 w-4" /> Download PDF</Button>
-          <Button asChild variant="outline"><Link to="/verify/$id" params={{ id: cert.id }}>Public verify page</Link></Button>
+          <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/verify/$id" params={{ id: cert.id }}>Public verify page</Link></Button>
         </div>
+      </div>
+      {/* Sticky one-tap download bar (mobile only) */}
+      <div className="sticky bottom-0 z-30 border-t border-border bg-background/95 px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-background/80 sm:hidden">
+        <Button
+          size="lg"
+          className="h-12 w-full"
+          onClick={() => downloadCertificatePdf({
+            serial: cert.serial, recipientName: cert.recipient_name, courseTopic: cert.course_topic,
+            score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium,
+          })}
+        >
+          <Download className="me-2 h-4 w-4" /> Download certificate (PDF)
+        </Button>
       </div>
     </div>
   );

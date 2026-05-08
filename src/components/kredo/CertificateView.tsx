@@ -70,17 +70,17 @@ export function CertificateView(p: Props) {
 
   return (
     <div
-      style={lock}
+      style={{ ...lock, containerType: "inline-size" } as React.CSSProperties}
       className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-sm ${p.compact ? "" : "shadow-elegant"}`}
     >
       {/* Bold double-line frame (UC Regents inspired, no gold) */}
       <div className="absolute inset-2 border-[6px] border-foreground" />
       <div className="absolute inset-[18px] border border-foreground/70" />
 
-      <div className={`relative flex h-full flex-col ${p.compact ? "p-[5.5%]" : "p-[6.5%]"}`}>
+      <div className={`relative flex h-full flex-col ${p.compact ? "px-[5%] py-[4%]" : "px-[6.5%] py-[5%]"}`}>
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
-          <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2vw,1.3rem)]" : "text-[clamp(1.1rem,2.6vw,1.7rem)]"}`}>
+          <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2cqw,1.3rem)]" : "text-[clamp(1.1rem,2.6cqw,1.7rem)]"}`}>
             <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
           </div>
           <div className="flex flex-col items-end gap-1">
@@ -102,7 +102,7 @@ export function CertificateView(p: Props) {
           <div className={`font-mono uppercase tracking-[0.4em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[10px]"}`}>
             Certigo · Verified Credentials
           </div>
-          <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6vw,1.6rem)]" : "text-[clamp(1.4rem,3.4vw,2.4rem)]"}`}>
+          <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6cqw,1.6rem)]" : "text-[clamp(1.4rem,3.4cqw,2.4rem)]"}`}>
             Certificate of Completion
           </h1>
           <div className="mx-auto mt-2 flex items-center justify-center gap-2">
@@ -114,19 +114,19 @@ export function CertificateView(p: Props) {
 
         {/* Body */}
         <div className={`mx-auto flex-1 text-center ${p.compact ? "mt-[3%]" : "mt-[3.5%]"}`}>
-          <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1vw,0.75rem)]" : "text-[clamp(0.8rem,1.3vw,0.95rem)]"}`}>
+          <p className={`font-display italic text-muted-foreground ${p.compact ? "text-[clamp(0.6rem,1cqw,0.75rem)]" : "text-[clamp(0.8rem,1.3cqw,0.95rem)]"}`}>
             This is to certify that
           </p>
-          <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2vw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5vw,3rem)]"}`}>
+          <h2 className={`font-display font-black leading-none tracking-tight ${p.compact ? "mt-2 text-[clamp(1.1rem,3.2cqw,2rem)]" : "mt-3 text-[clamp(1.6rem,4.5cqw,3rem)]"}`}>
             {p.recipientName}
           </h2>
-          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.6rem,1vw,0.75rem)]" : "mt-3 max-w-2xl text-[clamp(0.78rem,1.25vw,0.92rem)]"}`}>
+          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.6rem,1cqw,0.75rem)]" : "mt-3 max-w-2xl text-[clamp(0.78rem,1.25cqw,0.92rem)]"}`}>
             has successfully completed all requirements for
           </p>
-          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-2 text-[clamp(0.95rem,2.2vw,1.3rem)]" : "mt-3 text-[clamp(1.2rem,2.7vw,1.8rem)]"}`}>
+          <h3 className={`mx-auto max-w-2xl font-display font-bold leading-tight tracking-tight ${p.compact ? "mt-2 text-[clamp(0.95rem,2.2cqw,1.3rem)]" : "mt-3 text-[clamp(1.2rem,2.7cqw,1.8rem)]"}`}>
             {p.courseTopic}
           </h3>
-          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95vw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15vw,0.85rem)]"}`}>
+          <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95cqw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15cqw,0.85rem)]"}`}>
             Cryptographically issued and independently verifiable on the Certigo ledger.
           </p>
           <p className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "mt-3 text-[7px]" : "mt-4 text-[9px]"}`}>
@@ -142,18 +142,18 @@ export function CertificateView(p: Props) {
               src={signatureUrl}
               alt=""
               aria-hidden
-              className={`object-contain object-left-bottom ${p.compact ? "h-12 w-36" : "h-20 w-56"}`}
-              style={{ filter: "brightness(0.1) contrast(1.4)" }}
+              className={`object-contain object-left-bottom ${p.compact ? "h-7 w-24" : "h-14 w-44"}`}
+              style={{ filter: "grayscale(1) contrast(1.2) brightness(0.55)", mixBlendMode: "multiply" }}
             />
-            <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[9rem]" : "max-w-[13rem]"}`} />
+            <div className={`mt-1 w-full border-t border-foreground/80 ${p.compact ? "max-w-[7rem]" : "max-w-[12rem]"}`} />
             <div className={`mt-1 font-mono uppercase tracking-[0.2em] text-muted-foreground ${p.compact ? "text-[6px]" : "text-[8px]"}`}>
               Authorized Signatory
             </div>
           </div>
 
           {/* Stamp — circular themed seal, solid (no gold) */}
-          <div className={`relative ${p.compact ? "-translate-y-1" : "-translate-y-2"}`} aria-hidden>
-            <svg viewBox="0 0 200 200" className={`${p.compact ? "h-20 w-20" : "h-28 w-28"} -rotate-[8deg]`} style={{ color: appPrimary }}>
+          <div className="relative" aria-hidden>
+            <svg viewBox="0 0 200 200" className={`${p.compact ? "h-16 w-16" : "h-28 w-28"} -rotate-[8deg]`} style={{ color: appPrimary }}>
               <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="4" />
               <circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" strokeWidth="1.2" />
               <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -183,7 +183,7 @@ export function CertificateView(p: Props) {
             </div>
             {qr && (
               <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/20 ${p.compact ? "h-16 w-16" : "h-24 w-24"}`} />
+                <img src={qr} alt="Scan to verify" className={`rounded-sm border border-foreground/20 ${p.compact ? "h-14 w-14" : "h-24 w-24"}`} />
               </a>
             )}
           </div>
@@ -191,7 +191,7 @@ export function CertificateView(p: Props) {
 
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <div className="rotate-[-20deg] font-display text-[clamp(3rem,10vw,7rem)] font-black text-foreground/[0.04]">
+            <div className="rotate-[-20deg] font-display text-[clamp(3rem,10cqw,7rem)] font-black text-foreground/[0.04]">
               CERTIGO FREE
             </div>
           </div>
