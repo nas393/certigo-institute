@@ -12,7 +12,7 @@ import { downloadCertificatePdf } from "@/lib/pdf";
 import { PRESET_TOPICS } from "@/lib/topics";
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "Dashboard — Certogo" }, { name: "description", content: "Your courses and verified certificates." }] }),
+  head: () => ({ meta: [{ title: "Dashboard — Certigo" }, { name: "description", content: "Your courses and verified certificates." }] }),
   component: Dashboard,
 });
 

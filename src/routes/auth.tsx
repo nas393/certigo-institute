@@ -11,7 +11,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "Sign in — Certogo" }, { name: "description", content: "Sign in to Certogo to issue verified credentials." }] }),
+  head: () => ({ meta: [{ title: "Sign in — Certigo" }, { name: "description", content: "Sign in to Certigo to issue verified credentials." }] }),
   component: AuthPage,
 });
 
@@ -48,7 +48,7 @@ function AuthPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto flex max-w-md flex-col px-6 py-16">
-        <div className="micro-label">◆ Welcome to Certogo</div>
+        <div className="micro-label">◆ Welcome to Certigo</div>
         <h1 className="mt-4 font-display text-4xl font-black tracking-tighter">Issue your first credential.</h1>
         <p className="mt-2 text-sm text-muted-foreground">Sign in or create an account — it takes seconds.</p>
 

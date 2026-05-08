@@ -81,7 +81,7 @@ export function CertificateView(p: Props) {
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
           <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2vw,1.3rem)]" : "text-[clamp(1.1rem,2.6vw,1.7rem)]"}`}>
-            CERTOGO<span style={{ color: appPrimary }}>.</span>
+            CERTIGO<span style={{ color: appPrimary }}>.</span>
           </div>
           <div className="flex flex-col items-end gap-1">
             <div className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>
@@ -100,7 +100,7 @@ export function CertificateView(p: Props) {
         {/* Masthead */}
         <div className={`text-center ${p.compact ? "mt-[3%]" : "mt-[4%]"}`}>
           <div className={`font-mono uppercase tracking-[0.4em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[10px]"}`}>
-            Certogo · Verified Credentials
+            Certigo · Verified Credentials
           </div>
           <h1 className={`mt-2 font-display font-black uppercase leading-none tracking-[0.08em] ${p.compact ? "text-[clamp(1rem,2.6vw,1.6rem)]" : "text-[clamp(1.4rem,3.4vw,2.4rem)]"}`}>
             Certificate of Completion
@@ -127,7 +127,7 @@ export function CertificateView(p: Props) {
             {p.courseTopic}
           </h3>
           <p className={`mx-auto font-display italic text-muted-foreground ${p.compact ? "mt-2 max-w-md text-[clamp(0.55rem,0.95vw,0.7rem)]" : "mt-3 max-w-xl text-[clamp(0.72rem,1.15vw,0.85rem)]"}`}>
-            Cryptographically issued and independently verifiable on the Certogo ledger.
+            Cryptographically issued and independently verifiable on the Certigo ledger.
           </p>
           <p className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "mt-3 text-[7px]" : "mt-4 text-[9px]"}`}>
             {p.score != null ? `Final Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
@@ -162,7 +162,7 @@ export function CertificateView(p: Props) {
                 <path id="stampBot" d="M 30,100 a 70,70 0 0 0 140,0" fill="none" />
               </defs>
               <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="14" letterSpacing="4" fill="currentColor">
-                <textPath href="#stampTop" startOffset="50%" textAnchor="middle">CERTOGO · VERIFIED</textPath>
+                <textPath href="#stampTop" startOffset="50%" textAnchor="middle">CERTIGO · VERIFIED</textPath>
               </text>
               <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="11" letterSpacing="3" fill="currentColor">
                 <textPath href="#stampBot" startOffset="50%" textAnchor="middle">AUTHENTIC CREDENTIAL</textPath>
@@ -192,7 +192,7 @@ export function CertificateView(p: Props) {
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div className="rotate-[-20deg] font-display text-[clamp(3rem,10vw,7rem)] font-black text-foreground/[0.04]">
-              CERTOGO FREE
+              CERTIGO FREE
             </div>
           </div>
         )}

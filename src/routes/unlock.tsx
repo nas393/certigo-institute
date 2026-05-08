@@ -10,7 +10,7 @@ import { useAuth } from "@/lib/auth";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/unlock")({
-  head: () => ({ meta: [{ title: "Upgrade to Pro — Certogo" }, { name: "description", content: "Unlock unlimited verified credentials." }] }),
+  head: () => ({ meta: [{ title: "Upgrade to Pro — Certigo" }, { name: "description", content: "Unlock unlimited verified credentials." }] }),
   component: Unlock,
 });
 
@@ -53,12 +53,12 @@ function Unlock() {
       <Header />
       <div className="mx-auto max-w-3xl px-6 py-20 text-center">
         <Sparkles className="mx-auto h-10 w-10 text-primary" />
-        <div className="mt-4 micro-label">◆ Certogo Pro</div>
+        <div className="mt-4 micro-label">◆ Certigo Pro</div>
         <h1 className="mt-3 font-display text-5xl font-black tracking-tighter">Unlimited credentials. No watermark.</h1>
         <p className="mt-4 text-muted-foreground">Upgrade once. Issue forever.</p>
         <Card className="mt-10 p-8 text-start">
           <ul className="space-y-3">
-            {["Unlimited certificates", "No Certogo watermark on PDF", "Priority AI generation", "Public profile page", "LinkedIn share-ready"].map((f) => (
+            {["Unlimited certificates", "No Certigo watermark on PDF", "Priority AI generation", "Public profile page", "LinkedIn share-ready"].map((f) => (
               <li key={f} className="flex items-center gap-2"><BadgeCheck className="h-5 w-5 text-primary" /> {f}</li>
             ))}
           </ul>
