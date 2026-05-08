@@ -81,7 +81,7 @@ export function CertificateView(p: Props) {
         {/* Header: Logo left · Ref right */}
         <div className="flex items-start justify-between">
           <div className={`font-display font-black tracking-tighter leading-none ${p.compact ? "text-[clamp(0.9rem,2.2vw,1.3rem)]" : "text-[clamp(1.1rem,2.6vw,1.7rem)]"}`}>
-            CERTIGO<span style={{ color: appPrimary }}>.</span>
+            <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
           </div>
           <div className="flex flex-col items-end gap-1">
             <div className={`font-mono uppercase tracking-[0.25em] text-muted-foreground ${p.compact ? "text-[7px]" : "text-[9px]"}`}>

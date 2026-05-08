@@ -254,7 +254,7 @@ function Home() {
         </div>
         <footer className="border-t border-border">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 md:flex-row">
-            <div className="font-display text-sm font-black tracking-tighter">CERTIGO<span className="text-primary">.</span></div>
+            <div className="font-display text-sm font-black tracking-tighter"><span className="text-primary">CERTI</span><span className="text-foreground">GO</span></div>
             <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} Certigo · Verified credentials</div>
           </div>
         </footer>
