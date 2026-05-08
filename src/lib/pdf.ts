@@ -1,8 +1,8 @@
 import { jsPDF } from "jspdf";
-import QRCode from "qrcode";
-import logoUrl from "@/assets/kredo-logo.png";
-import signatureUrl from "@/assets/kredo-signature.png";
-import stampUrl from "@/assets/kredo-stamp.png";
+import html2canvas from "html2canvas-pro";
+import { createRoot } from "react-dom/client";
+import { createElement } from "react";
+import { CertificateView } from "@/components/kredo/CertificateView";
 
 export interface CertData {
   serial: string;
@@ -14,110 +14,69 @@ export interface CertData {
   watermark?: boolean;
 }
 
+/**
+ * Render the React CertificateView off-screen at full A4-landscape size,
+ * capture with html2canvas, and embed in a single-page PDF so the export
+ * matches the on-screen preview pixel-for-pixel.
+ */
 export async function downloadCertificatePdf(c: CertData) {
-  const toDataUrl = async (url: string): Promise<string> => {
-    const res = await fetch(url);
-    const blob = await res.blob();
-    return await new Promise((resolve) => {
-      const fr = new FileReader();
-      fr.onload = () => resolve(fr.result as string);
-      fr.readAsDataURL(blob);
-    });
-  };
-  const [logoData, sigData, stampData] = await Promise.all([
-    toDataUrl(logoUrl),
-    toDataUrl(signatureUrl),
-    toDataUrl(stampUrl),
-  ]);
+  const RENDER_WIDTH = 1414;
+  const RENDER_HEIGHT = Math.round(RENDER_WIDTH / 1.414);
 
-  const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "a4" });
-  const w = doc.internal.pageSize.getWidth();
-  const h = doc.internal.pageSize.getHeight();
+  const host = document.createElement("div");
+  host.style.cssText = [
+    "position:fixed",
+    "left:-100000px",
+    "top:0",
+    `width:${RENDER_WIDTH}px`,
+    `height:${RENDER_HEIGHT}px`,
+    "background:#ffffff",
+    "z-index:-1",
+    "pointer-events:none",
+  ].join(";");
+  document.body.appendChild(host);
 
-  // background
-  doc.setFillColor(252, 251, 248);
-  doc.rect(0, 0, w, h, "F");
+  const root = createRoot(host);
+  root.render(
+    createElement(CertificateView, {
+      serial: c.serial,
+      recipientName: c.recipientName,
+      courseTopic: c.courseTopic,
+      score: c.score,
+      issuedAt: c.issuedAt,
+      verifyUrl: c.verifyUrl,
+      watermark: c.watermark,
+      compact: false,
+    }),
+  );
 
-  // outer thin border
-  doc.setDrawColor(20, 20, 30);
-  doc.setLineWidth(1);
-  doc.rect(28, 28, w - 56, h - 56);
-  doc.setLineWidth(0.4);
-  doc.rect(38, 38, w - 76, h - 76);
-
-  // logo
-  const logoH = 36;
-  const logoW = 100;
-  doc.addImage(logoData, "PNG", 60, 50, logoW, logoH);
-
-  // serial
-  doc.setFont("courier", "normal");
-  doc.setFontSize(9);
-  doc.setTextColor(80, 80, 90);
-  doc.text(c.serial, w - 60, 70, { align: "right" });
-
-  // eyebrow (avoid Unicode glyph + letter-spaced rendering bugs)
-  doc.setFont("courier", "normal");
-  doc.setFontSize(10);
-  doc.setTextColor(100, 100, 120);
-  doc.text("CERTIFICATE OF COMPLETION", w / 2, 150, { align: "center" });
-
-  // recipient name
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(54);
-  doc.setTextColor(20, 20, 30);
-  doc.text(c.recipientName, w / 2, 230, { align: "center" });
-
-  // line
-  doc.setDrawColor(20, 20, 30);
-  doc.setLineWidth(0.5);
-  doc.line(w / 2 - 60, 250, w / 2 + 60, 250);
-
-  // course
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(14);
-  doc.setTextColor(60, 60, 70);
-  const text = `For successfully completing  "${c.courseTopic}"`;
-  doc.text(text, w / 2, 290, { align: "center" });
-
-  doc.setFontSize(11);
-  doc.setTextColor(90, 90, 100);
-  const meta = `${c.score != null ? `Score ${c.score}%   ·   ` : ""}Issued ${new Date(c.issuedAt).toLocaleDateString()}`;
-  doc.text(meta, w / 2, 312, { align: "center" });
-
-  // QR
-  const qrDataUrl = await QRCode.toDataURL(c.verifyUrl, { margin: 0, width: 240 });
-  const qrSize = 110;
-  doc.addImage(qrDataUrl, "PNG", w - 60 - qrSize, h - 60 - qrSize, qrSize, qrSize);
-  doc.setFont("courier", "normal");
-  doc.setFontSize(8);
-  doc.setTextColor(80, 80, 90);
-  doc.text("SCAN TO VERIFY", w - 60 - qrSize / 2, h - 50 - qrSize - 6, { align: "center" });
-
-  // signature image
-  doc.addImage(sigData, "PNG", 60, h - 150, 160, 60);
-  doc.setDrawColor(20, 20, 30);
-  doc.setLineWidth(0.4);
-  doc.line(60, h - 90, 240, h - 90);
-  doc.setFont("helvetica", "italic");
-  doc.setFontSize(11);
-  doc.setTextColor(20, 20, 30);
-  doc.text("Certigo Director", 60, h - 78);
-  doc.setFont("courier", "normal");
-  doc.setFontSize(8);
-  doc.setTextColor(100, 100, 120);
-  doc.text("Verified by Certigo  ·  certigo.app/verify", 60, h - 64);
-
-  // stamp (between signature and QR)
-  const stampSize = 90;
-  doc.addImage(stampData, "PNG", w / 2 - stampSize / 2, h - 50 - stampSize, stampSize, stampSize);
-
-  if (c.watermark) {
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(80);
-    doc.setTextColor(230, 230, 235);
-    doc.text("CERTIGO FREE", w / 2, h / 2 + 20, { align: "center", angle: -20 });
+  // wait for QR code, images, and fonts to settle
+  await new Promise((r) => setTimeout(r, 600));
+  if ((document as any).fonts?.ready) {
+    try { await (document as any).fonts.ready; } catch { /* noop */ }
   }
 
-  doc.save(`certigo-${c.serial}.pdf`);
+  try {
+    const canvas = await html2canvas(host, {
+      backgroundColor: "#ffffff",
+      scale: 2,
+      useCORS: true,
+      width: RENDER_WIDTH,
+      height: RENDER_HEIGHT,
+      windowWidth: RENDER_WIDTH,
+      windowHeight: RENDER_HEIGHT,
+    });
+    const img = canvas.toDataURL("image/png");
+
+    const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "a4" });
+    const w = doc.internal.pageSize.getWidth();
+    const h = doc.internal.pageSize.getHeight();
+    doc.setFillColor(255, 255, 255);
+    doc.rect(0, 0, w, h, "F");
+    doc.addImage(img, "PNG", 0, 0, w, h, undefined, "FAST");
+    doc.save(`certigo-${c.serial}.pdf`);
+  } finally {
+    root.unmount();
+    host.remove();
+  }
 }
