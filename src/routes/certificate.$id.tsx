@@ -28,7 +28,7 @@ function CertPage() {
   const [ori, setOri] = useState<CertOrientation>("landscape");
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic"));
+      setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "signature"));
       setOri(((localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape"));
     }
   }, []);
