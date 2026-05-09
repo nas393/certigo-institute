@@ -74,7 +74,7 @@ function Home() {
                     compact
                     serial="KR-2026-DEMO01"
                     recipientName="Amara Okafor"
-                    courseTopic="Prompt Engineering Fundamentals"
+                    courseTopic="Certified Prompt Engineering Professional (CPEP)"
                     score={94}
                     issuedAt={new Date().toISOString()}
                     verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify/KR-2026-DEMO01` : "/verify/KR-2026-DEMO01"}
