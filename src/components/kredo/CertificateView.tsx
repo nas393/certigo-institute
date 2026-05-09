@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 import { formatSerial } from "@/lib/cert";
+import signatureImg from "@/assets/signature.png";
 
 export type CertTemplate =
   | "classic"
@@ -298,7 +299,19 @@ export function CertificateView(p: Props) {
           >
             {/* signature */}
             <div style={{ textAlign: "left" }}>
-              <SignatureMonogram variant={sigVariant} style={{ height: cq(3.2), width: "85%", display: "block", marginBottom: cq(0.2) }} />
+              <img
+                src={signatureImg}
+                alt="Authorized signature"
+                style={{
+                  height: cq(3.6),
+                  width: "auto",
+                  maxWidth: "85%",
+                  display: "block",
+                  marginBottom: cq(-0.6),
+                  objectFit: "contain",
+                  mixBlendMode: "multiply",
+                }}
+              />
               <div style={{ height: "1px", background: sk.ink, opacity: 0.7, marginBottom: cq(0.5) }} />
               <div
                 style={{
@@ -336,9 +349,6 @@ export function CertificateView(p: Props) {
                   <img src={qr} alt="Scan to verify" style={{ width: cq(6.2), height: cq(6.2), display: "block" }} />
                 </a>
               )}
-              <div className="font-mono" style={{ fontSize: cq(0.62), letterSpacing: "0.18em", color: `${sk.ink}88`, textAlign: "right" }}>
-                SCAN TO VERIFY
-              </div>
             </div>
           </div>
 
