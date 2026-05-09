@@ -40,7 +40,7 @@ function Settings() {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [compact, setCompact] = useState(false);
   const [adminCode, setAdminCode] = useState("");
-  const [certTpl, setCertTpl] = useState<CertTemplate>("classic");
+  const [certTpl, setCertTpl] = useState<CertTemplate>("signature");
   const [certOri, setCertOri] = useState<CertOrientation>("landscape");
   const [sigVar, setSigVar] = useState<SignatureVariant>(0);
 
@@ -49,7 +49,7 @@ function Settings() {
     setReducedMotion(localStorage.getItem("kredo.motion") === "reduced");
     setCompact(localStorage.getItem("kredo.density") === "compact");
     document.documentElement.classList.toggle("reduce-motion", localStorage.getItem("kredo.motion") === "reduced");
-    const t = (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic";
+    const t = (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "signature";
     setCertTpl(t);
     const o = (localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape";
     setCertOri(o);
