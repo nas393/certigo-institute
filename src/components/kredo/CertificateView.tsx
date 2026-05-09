@@ -397,6 +397,15 @@ function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: numb
           <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.06)} solid ${ink}`, opacity: 0.4 }} />
         </>
       );
+    case "signature":
+      // CERTIGO single default: thick navy outer + crisp hairline inner.
+      // Blend of "Minimal" + "Navy" with a heavier outer frame.
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(0.8), border: `${cq(0.85)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.08)} solid ${ink}`, opacity: 0.55 }} />
+        </>
+      );
     default:
       return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
   }
