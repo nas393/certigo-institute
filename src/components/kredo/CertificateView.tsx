@@ -14,6 +14,15 @@ export type CertTemplate =
 
 export type CertOrientation = "landscape" | "portrait";
 
+export type SignatureVariant = 0 | 1 | 2 | 3 | 4;
+export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
+  { key: 0, label: "Loop & Sweep" },
+  { key: 1, label: "Bold Cursive" },
+  { key: 2, label: "Angular Flair" },
+  { key: 3, label: "Minimal Stroke" },
+  { key: 4, label: "Double Loop" },
+];
+
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
   { key: "classic",   label: "Classic",    hint: "Traditional double border" },
   { key: "executive", label: "Executive",  hint: "Top accent bar + serif air" },
@@ -36,6 +45,7 @@ interface Props {
   compact?: boolean;
   template?: CertTemplate;
   orientation?: CertOrientation;
+  signatureVariant?: SignatureVariant;
 }
 
 function getAppPrimary(): string {
@@ -72,10 +82,15 @@ export function CertificateView(p: Props) {
     background: "#ffffff",
   } as React.CSSProperties;
 
-  // deterministic signature variant per serial
-  const sigVariant = (() => {
+  // signature variant: prop > localStorage > deterministic from serial
+  const sigVariant: SignatureVariant = (() => {
+    if (typeof p.signatureVariant === "number") return p.signatureVariant;
+    if (typeof window !== "undefined") {
+      const v = parseInt(localStorage.getItem("certigo.sigVariant") || "", 10);
+      if (!Number.isNaN(v) && v >= 0 && v <= 4) return v as SignatureVariant;
+    }
     let h = 0; for (let i = 0; i < p.serial.length; i++) h = (h * 31 + p.serial.charCodeAt(i)) >>> 0;
-    return h % 3;
+    return (h % 5) as SignatureVariant;
   })();
 
   // Aspect + scale tuning. cqw stays consistent across orientations because
@@ -180,8 +195,10 @@ export function CertificateView(p: Props) {
               </div>
             </div>
 
-            {/* Center: Corporate Seal (spacer) */}
-            <div style={{ textAlign: "center" }} />
+            {/* Center: Fake stamp seal */}
+            <div style={{ textAlign: "center", display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+              <CertigoStamp style={{ width: cq(8), height: cq(8) }} />
+            </div>
 
             {/* Right: QR Code */}
             <div style={{ textAlign: "right" }}>
@@ -274,43 +291,106 @@ function VerifiedSeal({ style }: { style?: React.CSSProperties }) {
 }
 
 // === Big Signature Monogram + handwriting flourish strokes ===
+// === Hand-drawn signature: 5 variants inspired by a flowing scribble + loop ===
 function SignatureMonogram({ variant, style }: { variant: number; style?: React.CSSProperties }) {
-  // flourish variants (lines that emanate from / wrap the monogram)
-  const flourishes = [
+  // each variant is an array of <path d, strokeWidth, opacity>
+  type Stroke = { d: string; w: number; o?: number };
+  const variants: Stroke[][] = [
+    // 0 — Loop & Sweep (closest to the uploaded reference)
     [
-      "M70 36 C 95 14, 130 50, 165 24 C 192 6, 220 38, 244 18",
-      "M58 44 C 110 50, 180 50, 240 42",
-      "M180 22 C 198 28, 208 38, 200 46",
+      { d: "M30 70 C 38 30, 60 12, 78 30 C 92 44, 70 60, 60 50 C 52 42, 70 26, 88 36", w: 2.6 },
+      { d: "M120 50 C 110 18, 200 10, 230 35 C 250 55, 215 80, 180 75 C 150 70, 130 55, 145 38 C 160 22, 200 30, 205 50", w: 2.6 },
+      { d: "M10 58 C 80 50, 170 48, 250 42", w: 1.6, o: 0.9 },
+      { d: "M70 78 C 90 88, 110 86, 130 80", w: 1.4, o: 0.7 },
     ],
+    // 1 — Bold Cursive (heavier capital + tail)
     [
-      "M72 30 C 100 18, 132 42, 162 22 C 190 6, 222 36, 246 16",
-      "M64 44 C 130 38, 190 44, 244 36",
-      "M120 16 C 132 22, 138 30, 130 38",
+      { d: "M22 70 C 28 30, 44 14, 60 22 C 78 32, 60 56, 48 50 L 80 80", w: 3.2 },
+      { d: "M90 40 C 130 18, 180 22, 210 40 C 230 54, 200 70, 170 60 C 150 54, 160 42, 180 44", w: 2.8 },
+      { d: "M14 76 C 90 84, 180 82, 240 70", w: 1.8, o: 0.85 },
+      { d: "M210 32 C 222 38, 226 48, 218 56", w: 1.4, o: 0.7 },
     ],
+    // 2 — Angular Flair (sharp diagonals + small loop)
     [
-      "M74 34 C 96 20, 128 46, 160 24 C 188 6, 216 38, 240 22",
-      "M58 46 C 100 42, 180 46, 246 40",
-      "M210 18 C 222 26, 226 36, 218 44",
+      { d: "M20 78 L 40 18 L 70 78 L 88 22 L 108 70", w: 3 },
+      { d: "M130 60 C 150 30, 200 30, 215 50 C 225 64, 200 72, 188 60", w: 2.4 },
+      { d: "M0 86 L 240 78", w: 1.4, o: 0.7 },
+      { d: "M80 30 L 230 28", w: 1, o: 0.55 },
+    ],
+    // 3 — Minimal Stroke (single flowing line, light)
+    [
+      { d: "M20 66 C 60 22, 110 22, 140 50 C 170 78, 220 50, 245 30", w: 2.2 },
+      { d: "M14 72 C 90 70, 170 68, 240 60", w: 1.2, o: 0.6 },
+    ],
+    // 4 — Double Loop (two intertwined ovals)
+    [
+      { d: "M30 60 C 20 30, 70 12, 90 30 C 110 50, 70 68, 50 56 C 36 48, 60 30, 80 36", w: 2.6 },
+      { d: "M120 60 C 110 28, 170 14, 195 32 C 220 52, 175 70, 150 58 C 130 48, 160 30, 185 36", w: 2.6 },
+      { d: "M0 76 C 100 70, 180 70, 250 64", w: 1.6, o: 0.8 },
+      { d: "M40 86 C 100 92, 170 90, 220 84", w: 1.2, o: 0.6 },
     ],
   ];
-  const f = flourishes[variant] ?? flourishes[0];
+  const strokes = variants[variant] ?? variants[0];
   return (
-    <svg viewBox="0 0 250 60" preserveAspectRatio="xMinYMid meet" aria-hidden style={style}>
+    <svg viewBox="0 0 260 100" preserveAspectRatio="xMinYMid meet" aria-hidden style={style}>
       <g fill="none" stroke="oklch(0.16 0.01 270)" strokeLinecap="round" strokeLinejoin="round">
-        {/* Large hand-drawn N/Signature */}
-        <path d="M14 50 C 12 38, 14 22, 16 10 L 18 10 L 56 44 L 58 44 C 56 32, 56 20, 58 8"
-              strokeWidth="3.4" />
-        {/* secondary thin overlay for ink weight */}
-        <path d="M16 12 L 56 46" strokeWidth="1.2" opacity="0.55" />
-        {/* tail flourish */}
-        <path d="M10 54 C 28 58, 50 58, 64 52" strokeWidth="1.6" opacity="0.85" />
-        {/* main script flourish */}
-        <path d={f[0]} strokeWidth="2.2" />
-        {/* underline */}
-        <path d={f[1]} strokeWidth="1.2" opacity="0.7" />
-        {/* loop accent */}
-        <path d={f[2]} strokeWidth="1.4" opacity="0.85" />
+        {strokes.map((s, i) => (
+          <path key={i} d={s.d} strokeWidth={s.w} opacity={s.o ?? 1} />
+        ))}
       </g>
+    </svg>
+  );
+}
+
+// === Fake CERTIGO stamp seal (laurel + C + curved text + star) ===
+function CertigoStamp({ style }: { style?: React.CSSProperties }) {
+  const ink = "#0f2a55";
+  return (
+    <svg viewBox="0 0 220 220" style={{ ...style, opacity: 0.92 }} aria-hidden>
+      <defs>
+        <path id="topArc" d="M 35 110 A 75 75 0 0 1 185 110" fill="none" />
+        <path id="bottomArc" d="M 35 110 A 75 75 0 0 0 185 110" fill="none" />
+      </defs>
+      {/* outer ring */}
+      <circle cx="110" cy="110" r="100" fill="none" stroke={ink} strokeWidth="3" />
+      <circle cx="110" cy="110" r="92" fill="none" stroke={ink} strokeWidth="1" />
+      {/* inner ring */}
+      <circle cx="110" cy="110" r="70" fill="none" stroke={ink} strokeWidth="2" />
+      {/* top text */}
+      <text fontFamily="serif" fontWeight="700" fontSize="16" letterSpacing="6" fill={ink}>
+        <textPath href="#topArc" startOffset="50%" textAnchor="middle">· CERTIGO ·</textPath>
+      </text>
+      {/* bottom text (use a path arc that reads correctly along bottom) */}
+      <path id="botArc" d="M 30 110 A 80 80 0 0 0 190 110" fill="none" />
+      <text fontFamily="serif" fontWeight="700" fontSize="12" letterSpacing="3.5" fill={ink}>
+        <textPath href="#botArc" startOffset="50%" textAnchor="middle">VERIFIED · CREDENTIAL</textPath>
+      </text>
+      {/* laurel left */}
+      <g stroke={ink} strokeWidth="1.4" fill="none" strokeLinecap="round">
+        <path d="M70 70 C 60 90, 60 130, 78 150" />
+        {[78, 92, 106, 120, 134].map((y, i) => (
+          <path key={`ll${i}`} d={`M${70 - (i % 2 === 0 ? 2 : 0)} ${y} q -10 -4 -14 -10`} />
+        ))}
+        {[80, 94, 108, 122, 136].map((y, i) => (
+          <path key={`lr${i}`} d={`M${70 + (i % 2 === 0 ? 2 : 0)} ${y} q -2 6 4 12`} />
+        ))}
+      </g>
+      {/* laurel right (mirrored) */}
+      <g stroke={ink} strokeWidth="1.4" fill="none" strokeLinecap="round">
+        <path d="M150 70 C 160 90, 160 130, 142 150" />
+        {[78, 92, 106, 120, 134].map((y, i) => (
+          <path key={`rl${i}`} d={`M${150 + (i % 2 === 0 ? 2 : 0)} ${y} q 10 -4 14 -10`} />
+        ))}
+        {[80, 94, 108, 122, 136].map((y, i) => (
+          <path key={`rr${i}`} d={`M${150 - (i % 2 === 0 ? 2 : 0)} ${y} q 2 6 -4 12`} />
+        ))}
+      </g>
+      {/* center C */}
+      <text x="110" y="125" fontFamily="serif" fontWeight="900" fontSize="74" textAnchor="middle" fill={ink}>C</text>
+      {/* star bottom */}
+      <polygon points="110,158 113,166 121,166 115,171 117,179 110,174 103,179 105,171 99,166 107,166" fill={ink} />
+      {/* distressed/stamp imperfection — subtle dashed ring */}
+      <circle cx="110" cy="110" r="98" fill="none" stroke={ink} strokeWidth="0.8" strokeDasharray="2 4" opacity="0.45" />
     </svg>
   );
 }
