@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
 import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
-import { CERT_TEMPLATES, type CertTemplate, CertificateView } from "@/components/kredo/CertificateView";
+import { CERT_TEMPLATES, type CertTemplate, type CertOrientation, CertificateView } from "@/components/kredo/CertificateView";
 
 export const Route = createFileRoute("/settings")({
   head: () => ({
@@ -41,6 +41,7 @@ function Settings() {
   const [compact, setCompact] = useState(false);
   const [adminCode, setAdminCode] = useState("");
   const [certTpl, setCertTpl] = useState<CertTemplate>("classic");
+  const [certOri, setCertOri] = useState<CertOrientation>("landscape");
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -49,6 +50,8 @@ function Settings() {
     document.documentElement.classList.toggle("reduce-motion", localStorage.getItem("kredo.motion") === "reduced");
     const t = (localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic";
     setCertTpl(t);
+    const o = (localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape";
+    setCertOri(o);
   }, []);
   useEffect(() => {
     if (!user) return;
@@ -169,6 +172,30 @@ function Settings() {
 
         <Card className="mt-6 p-6">
           <h2 className="font-display text-xl font-black tracking-tight">Certificate template</h2>
+          <div className="mt-4">
+            <div className="micro-label">◆ Orientation</div>
+            <div className="mt-2 grid grid-cols-2 gap-4">
+              {(["landscape", "portrait"] as CertOrientation[]).map((o) => (
+                <button
+                  key={o}
+                  onClick={() => { setCertOri(o); localStorage.setItem("kredo.certOrientation", o); }}
+                  className={`rounded-lg border p-2 text-start transition ${certOri === o ? "border-foreground ring-2 ring-primary/30" : "border-border hover:border-foreground/40"}`}
+                >
+                  <div className={o === "portrait" ? "mx-auto max-w-[180px]" : ""}>
+                    <CertificateView
+                      compact orientation={o} template={certTpl}
+                      serial="KR-2026-PREVIEW" recipientName="Your Name" courseTopic="Sample Course"
+                      score={94} issuedAt={new Date().toISOString()} verifyUrl="https://certigo.app/verify/preview"
+                    />
+                  </div>
+                  <div className="mt-2 flex items-center justify-between">
+                    <span className="text-sm font-medium capitalize">{o}</span>
+                    {certOri === o && <Check className="h-4 w-4 text-primary" />}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
           <p className="mt-1 text-sm text-muted-foreground">Pick the design used when generating your certificates. The accent dot follows your theme color.</p>
           <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {CERT_TEMPLATES.map((t) => (

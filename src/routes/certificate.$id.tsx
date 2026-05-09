@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/kredo/Header";
-import { CertificateView, type CertTemplate } from "@/components/kredo/CertificateView";
+import { CertificateView, type CertTemplate, type CertOrientation } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Download, Loader2, Pencil, Lock } from "lucide-react";
@@ -25,9 +25,11 @@ function CertPage() {
   const [adminCode, setAdminCode] = useState("");
   const [saving, setSaving] = useState(false);
   const [tpl, setTpl] = useState<CertTemplate>("classic");
+  const [ori, setOri] = useState<CertOrientation>("landscape");
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic"));
+      setOri(((localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape"));
     }
   }, []);
   useEffect(() => {
@@ -106,13 +108,15 @@ function CertPage() {
           </div>
         )}
         <div className="mt-8">
-          <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
-            score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} />
+          <div className={ori === "portrait" ? "mx-auto max-w-[640px]" : ""}>
+            <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
+              score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} orientation={ori} />
+          </div>
         </div>
         <div className="mt-6 flex flex-col gap-2 sm:flex-row">
           <Button className="w-full sm:w-auto" onClick={() => downloadCertificatePdf({
             serial: cert.serial, recipientName: cert.recipient_name, courseTopic: cert.course_topic,
-            score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium,
+            score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium, orientation: ori,
           })}><Download className="me-2 h-4 w-4" /> Download PDF</Button>
           <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/verify/$id" params={{ id: cert.id }}>Public verify page</Link></Button>
         </div>
@@ -124,7 +128,7 @@ function CertPage() {
           className="h-12 w-full"
           onClick={() => downloadCertificatePdf({
             serial: cert.serial, recipientName: cert.recipient_name, courseTopic: cert.course_topic,
-            score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium,
+            score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium, orientation: ori,
           })}
         >
           <Download className="me-2 h-4 w-4" /> Download certificate (PDF)
