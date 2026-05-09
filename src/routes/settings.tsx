@@ -11,7 +11,7 @@ import { toast } from "sonner";
 import { useI18n, type Lang } from "@/lib/i18n";
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
 import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
-import { CERT_TEMPLATES, type CertTemplate, type CertOrientation, CertificateView } from "@/components/kredo/CertificateView";
+import { CERT_TEMPLATES, SIGNATURE_VARIANTS, type CertTemplate, type CertOrientation, type SignatureVariant, CertificateView } from "@/components/kredo/CertificateView";
 
 export const Route = createFileRoute("/settings")({
   head: () => ({
@@ -42,6 +42,7 @@ function Settings() {
   const [adminCode, setAdminCode] = useState("");
   const [certTpl, setCertTpl] = useState<CertTemplate>("classic");
   const [certOri, setCertOri] = useState<CertOrientation>("landscape");
+  const [sigVar, setSigVar] = useState<SignatureVariant>(0);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -52,6 +53,8 @@ function Settings() {
     setCertTpl(t);
     const o = (localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape";
     setCertOri(o);
+    const sv = parseInt(localStorage.getItem("certigo.sigVariant") || "0", 10);
+    if (!Number.isNaN(sv) && sv >= 0 && sv <= 4) setSigVar(sv as SignatureVariant);
   }, []);
   useEffect(() => {
     if (!user) return;
@@ -221,6 +224,42 @@ function Settings() {
                   {certTpl === t.key && <Check className="h-4 w-4 text-primary" />}
                 </div>
                 <div className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">{t.hint}</div>
+              </button>
+            ))}
+          </div>
+        </Card>
+
+        <div className="mt-6 flex justify-end">
+        </div>
+
+        <Card className="mt-6 p-6">
+          <h2 className="font-display text-xl font-black tracking-tight">Signature style</h2>
+          <p className="mt-1 text-sm text-muted-foreground">Pick the hand-drawn signature drawn on every certificate. The stamp seal stays the same.</p>
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
+            {SIGNATURE_VARIANTS.map((s) => (
+              <button
+                key={s.key}
+                onClick={() => { setSigVar(s.key); localStorage.setItem("certigo.sigVariant", String(s.key)); }}
+                className={`rounded-lg border p-3 text-start transition ${sigVar === s.key ? "border-foreground ring-2 ring-primary/30" : "border-border hover:border-foreground/40"}`}
+              >
+                <div className="overflow-hidden rounded bg-white p-2">
+                  <CertificateView
+                    compact
+                    signatureVariant={s.key}
+                    orientation={certOri}
+                    template={certTpl}
+                    serial={`KR-2026-SIG${s.key}`}
+                    recipientName="Your Name"
+                    courseTopic="Sample Course"
+                    score={94}
+                    issuedAt={new Date().toISOString()}
+                    verifyUrl="https://certigo.app/verify/preview"
+                  />
+                </div>
+                <div className="mt-2 flex items-center justify-between">
+                  <span className="text-sm font-medium">{s.label}</span>
+                  {sigVar === s.key && <Check className="h-4 w-4 text-primary" />}
+                </div>
               </button>
             ))}
           </div>
