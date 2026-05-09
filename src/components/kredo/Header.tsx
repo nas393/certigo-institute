@@ -29,14 +29,15 @@ export function Header() {
           <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.home")}</Link>
           {user && <Link to="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.dashboard")}</Link>}
           <Link to="/verify" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.verify")}</Link>
-          {user && <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">Profile</Link>}
-          <Link to="/settings" className="text-sm font-medium text-muted-foreground hover:text-foreground">Settings</Link>
+          {user && <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.profile")}</Link>}
+          <Link to="/settings" className="text-sm font-medium text-muted-foreground hover:text-foreground">{t("nav.settings")}</Link>
         </nav>
         <div className="flex items-center gap-2">
           <select
             value={lang}
             onChange={(e) => setLang(e.target.value as Lang)}
-            className="hidden rounded-md border border-border bg-transparent px-2 py-1 font-mono text-xs uppercase tracking-widest text-muted-foreground sm:block"
+            aria-label={t("lang.label")}
+            className="rounded-md border border-border bg-transparent px-2 py-1 font-mono text-xs uppercase tracking-widest text-muted-foreground"
           >
             <option value="en">EN</option>
             <option value="es">ES</option>
@@ -63,14 +64,28 @@ export function Header() {
                   { to: "/" as const, label: t("nav.home") },
                   ...(user ? [{ to: "/dashboard" as const, label: t("nav.dashboard") }] : []),
                   { to: "/verify" as const, label: t("nav.verify") },
-                  ...(user ? [{ to: "/profile" as const, label: "Profile" }] : []),
-                  { to: "/settings" as const, label: "Settings" },
+                  ...(user ? [{ to: "/profile" as const, label: t("nav.profile") }] : []),
+                  { to: "/settings" as const, label: t("nav.settings") },
                 ].map((l) => (
                   <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted">
                     {l.label}
                   </Link>
                 ))}
                 <div className="mt-4 border-t border-border pt-4">
+                  <div className="mb-3">
+                    <label className="mb-2 block font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("lang.label")}</label>
+                    <select
+                      value={lang}
+                      onChange={(e) => setLang(e.target.value as Lang)}
+                      className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm"
+                    >
+                      <option value="en">English</option>
+                      <option value="es">Español</option>
+                      <option value="pt">Português</option>
+                      <option value="fr">Français</option>
+                      <option value="ar">العربية</option>
+                    </select>
+                  </div>
                   {user ? (
                     <Button variant="outline" className="w-full" onClick={async () => { setOpen(false); await signOut(); nav({ to: "/" }); }}>{t("nav.signout")}</Button>
                   ) : (
