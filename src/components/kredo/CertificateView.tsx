@@ -171,6 +171,7 @@ export function CertificateView(p: Props) {
                 fontWeight: 700,
                 marginBottom: cq(1.5),
                 letterSpacing: "0.01em",
+                color: sk.titleColor ?? undefined,
               }}
             >
               Certificate of Appreciation
