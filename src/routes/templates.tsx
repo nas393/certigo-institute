@@ -8,14 +8,14 @@ export const Route = createFileRoute("/templates")({
 
 function TemplatesShowcase() {
   return (
-    <div className="min-h-screen bg-neutral-100 p-10">
-      <h1 className="mb-8 text-3xl font-black tracking-tight">Certigo — 10 Certificate Templates</h1>
-      <div className="grid grid-cols-2 gap-8">
+    <div className="min-h-screen bg-neutral-100 p-6">
+      <h1 className="mb-4 text-2xl font-black tracking-tight">Certigo — 10 Certificate Templates</h1>
+      <div className="grid grid-cols-5 gap-4">
         {CERT_TEMPLATES.map((t, i) => (
-          <div key={t.key} className="rounded-md bg-white p-4 shadow-md">
-            <div className="mb-3 flex items-baseline justify-between">
-              <div className="text-sm font-mono uppercase tracking-widest text-neutral-500">Option {i + 1}</div>
-              <div className="text-lg font-bold">{t.label}</div>
+          <div key={t.key} className="rounded bg-white p-2 shadow">
+            <div className="mb-1 flex items-baseline justify-between">
+              <div className="text-[10px] font-mono uppercase tracking-widest text-neutral-500">OPT {i + 1}</div>
+              <div className="text-xs font-bold">{t.label}</div>
             </div>
             <CertificateView
               template={t.key}
@@ -27,7 +27,7 @@ function TemplatesShowcase() {
               issuedAt={new Date().toISOString()}
               verifyUrl="https://certigo.app/verify/KR-2026-DEMO01"
             />
-            <div className="mt-2 text-xs text-neutral-500">{t.hint}</div>
+            <div className="mt-1 text-[10px] text-neutral-500">{t.hint}</div>
           </div>
         ))}
       </div>
