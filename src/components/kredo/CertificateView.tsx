@@ -79,129 +79,144 @@ export function CertificateView(p: Props) {
       style={{ ...lock, containerType: "inline-size" } as React.CSSProperties}
       className={`relative aspect-[1.414/1] w-full overflow-hidden rounded-sm ${p.compact ? "" : "shadow-elegant"}`}
     >
-      {/* === HYBRID PREMIUM (D): bold outer frame + thin inner ornamental border === */}
-      {/* Outer thick black frame */}
-      <div className="pointer-events-none absolute inset-[1.5cqw] border-[0.55cqw] border-foreground" />
-      {/* Inner hairline ornamental border */}
-      <div className="pointer-events-none absolute inset-[3.2cqw] border-[0.12cqw] border-foreground/80" />
-      {/* Corner ornament dots (4) */}
-      {[
-        "top-[2.6cqw] left-[2.6cqw]",
-        "top-[2.6cqw] right-[2.6cqw]",
-        "bottom-[2.6cqw] left-[2.6cqw]",
-        "bottom-[2.6cqw] right-[2.6cqw]",
-      ].map((c) => (
-        <span key={c} className={`pointer-events-none absolute ${c} h-[0.9cqw] w-[0.9cqw] rotate-45 bg-foreground`} />
-      ))}
+      {/* === MODERN APPRECIATION-STYLE LAYOUT === */}
+      {/* Bold outer frame */}
+      <div className="pointer-events-none absolute inset-[1.4cqw] border-[0.5cqw] border-foreground" />
 
-      <div className="relative flex h-full flex-col px-[5cqw] py-[3.4cqw]">
-        {/* Header: Logo left · Ref + verified badge right */}
+      {/* Decorative sunburst on the right (subtle) */}
+      <svg
+        aria-hidden
+        viewBox="0 0 200 200"
+        className="pointer-events-none absolute right-[6cqw] top-[18cqw] h-[22cqw] w-[22cqw] opacity-90"
+        style={{ color: appPrimary }}
+      >
+        <g stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" opacity="0.65">
+          {Array.from({ length: 28 }).map((_, i) => {
+            const a = (i / 28) * Math.PI * 2;
+            const x1 = 100 + Math.cos(a) * 22;
+            const y1 = 100 + Math.sin(a) * 22;
+            const x2 = 100 + Math.cos(a) * (60 + (i % 3) * 12);
+            const y2 = 100 + Math.sin(a) * (60 + (i % 3) * 12);
+            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
+          })}
+        </g>
+        <circle cx="100" cy="100" r="9" fill="currentColor" />
+      </svg>
+
+      {/* Soft wave lines (decorative) */}
+      <svg
+        aria-hidden
+        viewBox="0 0 800 300"
+        preserveAspectRatio="none"
+        className="pointer-events-none absolute inset-x-[6cqw] top-[42%] h-[28cqw] w-[88%] opacity-[0.18] text-foreground"
+      >
+        {Array.from({ length: 14 }).map((_, i) => (
+          <path
+            key={i}
+            d={`M0 ${150 + i * 4} C 200 ${80 + i * 6}, 600 ${220 - i * 4}, 800 ${130 + i * 5}`}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="0.8"
+          />
+        ))}
+      </svg>
+
+      <div className="relative flex h-full flex-col px-[5.5cqw] py-[4cqw]">
+        {/* Top row: Logo · Date + Ref + Verified */}
         <div className="flex items-start justify-between gap-[2cqw]">
-          <div className="font-display font-black tracking-tighter leading-none text-[2.8cqw]">
+          <div className="font-display font-black tracking-tighter leading-none text-[2.4cqw]">
             <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
           </div>
-          <div className="flex flex-col items-end gap-[0.3cqw]">
-            <div className="font-mono uppercase tracking-[0.25em] text-muted-foreground text-[0.95cqw]">
-              Certificate Ref
+          <div className="flex flex-col items-end gap-[0.5cqw]">
+            <div className="font-sans text-foreground text-[1.15cqw]">
+              {new Date(p.issuedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }).replace(",", " |")}
             </div>
-            <div className="font-mono tracking-widest text-foreground text-[1.2cqw]">
-              {displaySerial}
+            <div className="font-mono tracking-[0.25em] text-muted-foreground text-[0.85cqw]">
+              REF · {displaySerial}
             </div>
-            <div className="inline-flex items-center gap-[0.5cqw] rounded-full border border-foreground/30 px-[0.9cqw] py-[0.2cqw] font-sans tracking-wide text-foreground/80 text-[0.9cqw]">
-              <svg viewBox="0 0 24 24" className="h-[1.1cqw] w-[1.1cqw]" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ color: appPrimary }}>
-                <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
-              Verified Credential
+            <div className="inline-flex items-center gap-[0.5cqw] rounded-full border px-[0.9cqw] py-[0.2cqw] font-sans tracking-wide text-[0.85cqw]"
+                 style={{ color: "#16a34a", borderColor: "rgba(22,163,74,0.4)", background: "rgba(22,163,74,0.08)" }}>
+              <span className="relative inline-flex h-[0.7cqw] w-[0.7cqw]">
+                <span className="absolute inset-0 rounded-full" style={{ background: "#16a34a" }} />
+                <span className="absolute inset-0 rounded-full animate-ping" style={{ background: "#16a34a", opacity: 0.4 }} />
+              </span>
+              On-chain Verified
             </div>
           </div>
         </div>
 
-        {/* Masthead — split title with side bars (Classic Ornate touch) */}
-        <div className="text-center mt-[2.4cqw]">
-          <div className="mx-auto flex items-center justify-center gap-[1.2cqw]">
-            <span className="h-[0.15cqw] w-[4cqw] bg-foreground" />
-            <h1 className="font-display font-black uppercase leading-none tracking-[0.06em] text-[5cqw]">
-              Certificate
-            </h1>
-            <span className="h-[0.15cqw] w-[4cqw] bg-foreground" />
-          </div>
-          <div className="mt-[0.9cqw] flex items-center justify-center gap-[0.8cqw]">
-            <span className="h-[0.8cqw] w-[0.8cqw] rotate-45 border border-foreground" />
-            <div className="font-mono uppercase tracking-[0.45em] text-foreground text-[1.3cqw]">
+        {/* Masthead — left-aligned bold title */}
+        <div className="mt-[2cqw]">
+          <h1 className="font-display font-black uppercase leading-[0.95] tracking-[-0.02em] text-[7cqw] text-foreground">
+            Certificate
+          </h1>
+          <div className="mt-[0.4cqw] flex items-baseline gap-[0.4cqw]">
+            <h2 className="font-sans font-medium uppercase tracking-[0.18em] text-foreground/80 text-[2cqw]">
               Of Completion
-            </div>
-            <span className="h-[0.8cqw] w-[0.8cqw] rotate-45 border border-foreground" />
+            </h2>
+            <span className="inline-block h-[0.9cqw] w-[0.9cqw] rounded-full" style={{ background: appPrimary }} />
           </div>
         </div>
 
         {/* Body */}
-        <div className="mx-auto flex-1 text-center mt-[2.2cqw]">
-          <p className="font-display italic text-muted-foreground text-[1.3cqw]">
-            This is to certify that
+        <div className="mt-[2.2cqw] max-w-[68%]">
+          <p className="font-sans text-foreground/80 text-[1.2cqw]">
+            This certificate is proudly awarded to:
           </p>
-          <h2 className="mt-[1cqw] font-display font-black leading-none tracking-tight text-[4.2cqw]">
+          <h3 className="mt-[0.9cqw] font-display font-black leading-none tracking-tight text-foreground text-[3.6cqw]">
             {p.recipientName}
-          </h2>
-          <div className="mx-auto mt-[1cqw] h-[0.1cqw] w-[55%] bg-foreground/70" />
-          <p className="mx-auto mt-[1.2cqw] max-w-[78%] font-display italic text-muted-foreground text-[1.3cqw]">
-            has successfully completed all requirements for
-          </p>
-          <h3 className="mx-auto mt-[0.8cqw] max-w-[80%] font-display font-bold leading-tight tracking-tight text-[2.4cqw]">
-            {p.courseTopic}
           </h3>
-          <p className="mx-auto mt-[1.2cqw] max-w-[72%] font-display italic text-muted-foreground text-[1.15cqw]">
-            Cryptographically issued and independently verifiable on the Certigo ledger.
+          <p className="mt-[1.4cqw] font-sans font-bold text-foreground text-[1.55cqw]">
+            {p.courseTopic}
           </p>
-          <p className="mt-[1.2cqw] font-mono uppercase tracking-[0.28em] text-muted-foreground text-[1cqw]">
-            {p.score != null ? `Final Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
+          <p className="mt-[0.6cqw] font-sans text-foreground/70 text-[1cqw] leading-relaxed">
+            For successfully completing all required modules and assessments. Cryptographically issued and independently verifiable on the Certigo ledger{p.score != null ? ` with a final score of ${p.score}%` : ""}.
           </p>
         </div>
 
-        {/* Footer: Signature · Stamp · QR — uniform alignment baseline */}
-        <div className="mt-auto grid grid-cols-3 items-end gap-[2cqw]">
-          {/* Signature (no name) */}
+        {/* Footer: Signature left · Stamp center · QR right */}
+        <div className="mt-auto grid grid-cols-[1.2fr_1fr_1fr] items-end gap-[2cqw]">
+          {/* Signature — single, authorized signatory */}
           <div className="flex flex-col items-start">
-            <SignatureScribble variant={sigVariant} className="h-[4cqw] w-[16cqw]" />
-            <div className="mt-[0.3cqw] h-[0.1cqw] w-[16cqw] bg-foreground/80" />
-            <div className="mt-[0.5cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[0.9cqw]">
+            <div className="font-sans text-foreground/70 text-[0.95cqw]">Authorized by:</div>
+            <SignatureScribble variant={sigVariant} className="mt-[0.6cqw] h-[3.6cqw] w-[14cqw]" />
+            <div className="mt-[0.2cqw] h-[0.08cqw] w-[14cqw] bg-foreground/80" />
+            <div className="mt-[0.5cqw] font-sans font-bold text-foreground text-[1cqw]">
               Authorized Signatory
+            </div>
+            <div className="font-sans text-muted-foreground text-[0.85cqw]">
+              Certigo Credentials
             </div>
           </div>
 
-          {/* Stamp — circular themed seal */}
+          {/* Stamp — circular badge inspired by reference (star + curved text) */}
           <div className="flex justify-center" aria-hidden>
-            <svg viewBox="0 0 200 200" className="h-[10.5cqw] w-[10.5cqw] -rotate-[8deg]" style={{ color: appPrimary }}>
-              <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="4" />
-              <circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" strokeWidth="1.2" />
-              <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" strokeWidth="2" />
+            <svg viewBox="0 0 200 200" className="h-[10cqw] w-[10cqw] -rotate-[6deg]" style={{ color: appPrimary }}>
+              <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="2.2" />
+              <circle cx="100" cy="100" r="68" fill="none" stroke="currentColor" strokeWidth="1.4" strokeDasharray="2 3" />
               <defs>
-                <path id={`stampTop-${p.serial}`} d="M 25,100 a 75,75 0 0 1 150,0" fill="none" />
-                <path id={`stampBot-${p.serial}`} d="M 30,100 a 70,70 0 0 0 140,0" fill="none" />
+                <path id={`cstampTop-${p.serial}`} d="M 18,100 a 82,82 0 0 1 164,0" fill="none" />
+                <path id={`cstampBot-${p.serial}`} d="M 22,100 a 78,78 0 0 0 156,0" fill="none" />
               </defs>
-              <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="14" letterSpacing="4" fill="currentColor">
-                <textPath href={`#stampTop-${p.serial}`} startOffset="50%" textAnchor="middle">CERTIGO · VERIFIED</textPath>
+              <text fontFamily="ui-serif, Georgia, serif" fontStyle="italic" fontSize="14" letterSpacing="2" fill="currentColor">
+                <textPath href={`#cstampTop-${p.serial}`} startOffset="50%" textAnchor="middle">Certigo · Verified Credential</textPath>
               </text>
-              <text fontFamily="ui-serif, Georgia, serif" fontWeight="700" fontSize="11" letterSpacing="3" fill="currentColor">
-                <textPath href={`#stampBot-${p.serial}`} startOffset="50%" textAnchor="middle">AUTHENTIC CREDENTIAL</textPath>
+              <text fontFamily="ui-serif, Georgia, serif" fontStyle="italic" fontSize="11" letterSpacing="3" fill="currentColor">
+                <textPath href={`#cstampBot-${p.serial}`} startOffset="50%" textAnchor="middle">AUTHENTIC · ON-CHAIN</textPath>
               </text>
-              <text x="100" y="118" textAnchor="middle" fontSize="56" fontWeight="900" fill="currentColor" fontFamily="ui-serif, Georgia, serif">C</text>
-              <g fill="currentColor">
-                {Array.from({ length: 24 }).map((_, i) => (
-                  <rect key={i} x="99.4" y="6" width="1.2" height="5" transform={`rotate(${i * 15} 100 100)`} />
-                ))}
-              </g>
+              {/* center 4-point star */}
+              <path d="M100 70 L108 95 L132 100 L108 105 L100 130 L92 105 L68 100 L92 95 Z" fill="currentColor" />
             </svg>
           </div>
 
-          {/* QR */}
+          {/* QR right */}
           <div className="flex flex-col items-end text-right">
-            <div className="mb-[0.4cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[0.9cqw]">
+            <div className="mb-[0.4cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[0.85cqw]">
               Scan to verify
             </div>
             {qr && (
               <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                <img src={qr} alt="Scan to verify" className="h-[9cqw] w-[9cqw] rounded-sm border border-foreground/20" />
+                <img src={qr} alt="Scan to verify" className="h-[8.5cqw] w-[8.5cqw] rounded-sm border border-foreground/20" />
               </a>
             )}
           </div>
