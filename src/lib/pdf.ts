@@ -2,7 +2,7 @@ import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas-pro";
 import { createRoot } from "react-dom/client";
 import { createElement } from "react";
-import { CertificateView } from "@/components/kredo/CertificateView";
+import { CertificateView, type CertOrientation } from "@/components/kredo/CertificateView";
 
 export interface CertData {
   serial: string;
@@ -12,6 +12,7 @@ export interface CertData {
   issuedAt: string;
   verifyUrl: string;
   watermark?: boolean;
+  orientation?: CertOrientation;
 }
 
 /**
@@ -20,8 +21,9 @@ export interface CertData {
  * matches the on-screen preview pixel-for-pixel.
  */
 export async function downloadCertificatePdf(c: CertData) {
-  const RENDER_WIDTH = 1414;
-  const RENDER_HEIGHT = Math.round(RENDER_WIDTH / 1.414);
+  const isPortrait = c.orientation === "portrait";
+  const RENDER_WIDTH = isPortrait ? 1000 : 1414;
+  const RENDER_HEIGHT = isPortrait ? Math.round(RENDER_WIDTH * 1.414) : Math.round(RENDER_WIDTH / 1.414);
 
   const host = document.createElement("div");
   host.style.cssText = [
@@ -47,6 +49,7 @@ export async function downloadCertificatePdf(c: CertData) {
       verifyUrl: c.verifyUrl,
       watermark: c.watermark,
       compact: false,
+      orientation: c.orientation,
     }),
   );
 
@@ -68,7 +71,7 @@ export async function downloadCertificatePdf(c: CertData) {
     });
     const img = canvas.toDataURL("image/png");
 
-    const doc = new jsPDF({ orientation: "landscape", unit: "pt", format: "a4" });
+    const doc = new jsPDF({ orientation: isPortrait ? "portrait" : "landscape", unit: "pt", format: "a4" });
     const w = doc.internal.pageSize.getWidth();
     const h = doc.internal.pageSize.getHeight();
     doc.setFillColor(255, 255, 255);
