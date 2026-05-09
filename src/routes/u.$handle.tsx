@@ -9,7 +9,7 @@ export const Route = createFileRoute("/u/$handle")({
   head: ({ params }) => ({
     meta: [
       { title: `${params.handle} — CERTIGO. profile` },
-      { name: "description", content: `Verified credentials issued to ${params.handle} on Certigo.` },
+      { name: "description", content: `Verified credentials issued to ${params.handle} on CERTIGO.` },
     ],
   }),
   component: PublicProfile,
