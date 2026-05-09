@@ -61,7 +61,7 @@ function Home() {
                 <span>{t("hero.bullet.cc")}</span><span>{t("hero.bullet.free")}</span><span>{t("hero.bullet.fast")}</span>
               </div>
             </div>
-            {/* DEMO CERTIFICATE — professional minimalist design */}
+            {/* DEMO CERTIFICATE — premium framed presentation */}
             <div className="relative mx-auto w-full max-w-[560px]">
               {/* glow */}
               <div className="pointer-events-none absolute -inset-6 -z-10 rounded-[28px] bg-gradient-to-br from-primary/20 via-primary/5 to-transparent blur-2xl" />
@@ -199,11 +199,11 @@ function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               { name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
-              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No Certigo branding", "LinkedIn integrat[...]
+              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No Certigo branding", "LinkedIn integration", "Priority AI"] },
               { name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
             ].map((p) => (
               <div key={p.name} className={`relative rounded-2xl border p-8 ${p.highlight ? "border-primary bg-background shadow-elegant" : "border-border bg-background"}`}>
-                {p.highlight && <span className="absolute -top-3 start-6 rounded-full bg-primary px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary-foreground">{t("pricing.pop[...]
+                {p.highlight && <span className="absolute -top-3 start-6 rounded-full bg-primary px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary-foreground">{t("pricing.popular")}</span>}
                 <h3 className="font-display text-2xl font-black tracking-tight">{p.name}</h3>
                 <div className="mt-4 flex items-baseline gap-1">
                   <span className="font-display text-5xl font-black tracking-tighter">{p.price}</span>
@@ -246,19 +246,19 @@ function Home() {
             {[
               {
                 q: "How is a Certigo certificate verified?",
-                a: "Every certificate has a unique serial and a QR code that links to a public ledger page on certigo.app/verify. Anyone — recruiter, employer, school — can scan and confirm a[...]
+                a: "Every certificate has a unique serial and a QR code that links to a public ledger page on certigo.app/verify. Anyone — recruiter, employer, school — can scan and confirm authenticity in seconds. No login, no friction.",
               },
               {
                 q: "Can a Certigo certificate be faked or edited?",
-                a: "No. Certificate metadata (serial, recipient, course, score, issue date) is anchored to our verification ledger at issue time. The public verify page always returns the origina[...]
+                a: "No. Certificate metadata (serial, recipient, course, score, issue date) is anchored to our verification ledger at issue time. The public verify page always returns the original record — any edited PDF will fail the QR check.",
               },
               {
                 q: "Are these credentials accepted by employers?",
-                a: "Certigo certificates are designed for skill-based hiring. They tell an employer exactly what was learned, the score earned, and provide a one-tap way to confirm it. They compl[...]
+                a: "Certigo certificates are designed for skill-based hiring. They tell an employer exactly what was learned, the score earned, and provide a one-tap way to confirm it. They complement — not replace — formal degrees.",
               },
               {
                 q: "What happens to my certificate if I cancel?",
-                a: "It stays yours forever. Your public profile and every verify link continue to work. Pro features (custom branding, unlimited issuance) pause, but every credential already issu[...]
+                a: "It stays yours forever. Your public profile and every verify link continue to work. Pro features (custom branding, unlimited issuance) pause, but every credential already issued remains valid.",
               },
               {
                 q: "Can I issue certificates to my own students or team?",
@@ -266,7 +266,7 @@ function Home() {
               },
               {
                 q: "Is my data private?",
-                a: "We only store what's needed to issue and verify your credentials. Your account data is never sold. The public verify page only exposes what's printed on the certificate itself[...]
+                a: "We only store what's needed to issue and verify your credentials. Your account data is never sold. The public verify page only exposes what's printed on the certificate itself.",
               },
             ].map((f) => (
               <AccordionItem key={f.q} value={f.q} className="border-border">
@@ -371,7 +371,7 @@ function Home() {
                 </div>
                 <div>
                   <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.message")}</label>
-                  <textarea name="message" rows={4} required placeholder={t("contact.form.message.ph")} className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus[...]
+                  <textarea name="message" rows={4} required placeholder={t("contact.form.message.ph")} className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
                 </div>
                 <Button type="submit" size="lg" className="h-12">{t("contact.form.send")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
                 <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.reply")}</p>
