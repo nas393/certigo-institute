@@ -94,21 +94,21 @@ export function CertificateView(p: Props) {
         <span key={c} className={`pointer-events-none absolute ${c} h-[0.9cqw] w-[0.9cqw] rotate-45 bg-foreground`} />
       ))}
 
-      <div className="relative flex h-full flex-col px-[5.5cqw] py-[4.2cqw]">
+      <div className="relative flex h-full flex-col px-[5cqw] py-[3.4cqw]">
         {/* Header: Logo left · Ref + verified badge right */}
         <div className="flex items-start justify-between gap-[2cqw]">
-          <div className="font-display font-black tracking-tighter leading-none text-[3.2cqw]">
+          <div className="font-display font-black tracking-tighter leading-none text-[2.8cqw]">
             <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
           </div>
-          <div className="flex flex-col items-end gap-[0.4cqw]">
-            <div className="font-mono uppercase tracking-[0.25em] text-muted-foreground text-[1.1cqw]">
+          <div className="flex flex-col items-end gap-[0.3cqw]">
+            <div className="font-mono uppercase tracking-[0.25em] text-muted-foreground text-[0.95cqw]">
               Certificate Ref
             </div>
-            <div className="font-mono tracking-widest text-foreground text-[1.45cqw]">
+            <div className="font-mono tracking-widest text-foreground text-[1.2cqw]">
               {displaySerial}
             </div>
-            <div className="inline-flex items-center gap-[0.5cqw] rounded-full border border-foreground/30 px-[1cqw] py-[0.25cqw] font-sans tracking-wide text-foreground/80 text-[1.05cqw]">
-              <svg viewBox="0 0 24 24" className="h-[1.3cqw] w-[1.3cqw]" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ color: appPrimary }}>
+            <div className="inline-flex items-center gap-[0.5cqw] rounded-full border border-foreground/30 px-[0.9cqw] py-[0.2cqw] font-sans tracking-wide text-foreground/80 text-[0.9cqw]">
+              <svg viewBox="0 0 24 24" className="h-[1.1cqw] w-[1.1cqw]" fill="none" stroke="currentColor" strokeWidth="2.5" style={{ color: appPrimary }}>
                 <path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z" />
                 <path d="m9 12 2 2 4-4" />
               </svg>
@@ -118,42 +118,42 @@ export function CertificateView(p: Props) {
         </div>
 
         {/* Masthead — split title with side bars (Classic Ornate touch) */}
-        <div className="text-center mt-[4cqw]">
-          <div className="mx-auto flex items-center justify-center gap-[1.4cqw]">
-            <span className="h-[0.18cqw] w-[5cqw] bg-foreground" />
-            <h1 className="font-display font-black uppercase leading-none tracking-[0.06em] text-[6.2cqw]">
+        <div className="text-center mt-[2.4cqw]">
+          <div className="mx-auto flex items-center justify-center gap-[1.2cqw]">
+            <span className="h-[0.15cqw] w-[4cqw] bg-foreground" />
+            <h1 className="font-display font-black uppercase leading-none tracking-[0.06em] text-[5cqw]">
               Certificate
             </h1>
-            <span className="h-[0.18cqw] w-[5cqw] bg-foreground" />
+            <span className="h-[0.15cqw] w-[4cqw] bg-foreground" />
           </div>
-          <div className="mt-[1.2cqw] flex items-center justify-center gap-[0.9cqw]">
-            <span className="h-[1cqw] w-[1cqw] rotate-45 border border-foreground" />
-            <div className="font-mono uppercase tracking-[0.45em] text-foreground text-[1.6cqw]">
+          <div className="mt-[0.9cqw] flex items-center justify-center gap-[0.8cqw]">
+            <span className="h-[0.8cqw] w-[0.8cqw] rotate-45 border border-foreground" />
+            <div className="font-mono uppercase tracking-[0.45em] text-foreground text-[1.3cqw]">
               Of Completion
             </div>
-            <span className="h-[1cqw] w-[1cqw] rotate-45 border border-foreground" />
+            <span className="h-[0.8cqw] w-[0.8cqw] rotate-45 border border-foreground" />
           </div>
         </div>
 
         {/* Body */}
-        <div className="mx-auto flex-1 text-center mt-[3.2cqw]">
-          <p className="font-display italic text-muted-foreground text-[1.55cqw]">
+        <div className="mx-auto flex-1 text-center mt-[2.2cqw]">
+          <p className="font-display italic text-muted-foreground text-[1.3cqw]">
             This is to certify that
           </p>
-          <h2 className="mt-[1.4cqw] font-display font-black leading-none tracking-tight text-[5.2cqw]">
+          <h2 className="mt-[1cqw] font-display font-black leading-none tracking-tight text-[4.2cqw]">
             {p.recipientName}
           </h2>
-          <div className="mx-auto mt-[1.2cqw] h-[0.12cqw] w-[55%] bg-foreground/70" />
-          <p className="mx-auto mt-[1.6cqw] max-w-[78%] font-display italic text-muted-foreground text-[1.55cqw]">
+          <div className="mx-auto mt-[1cqw] h-[0.1cqw] w-[55%] bg-foreground/70" />
+          <p className="mx-auto mt-[1.2cqw] max-w-[78%] font-display italic text-muted-foreground text-[1.3cqw]">
             has successfully completed all requirements for
           </p>
-          <h3 className="mx-auto mt-[1cqw] max-w-[80%] font-display font-bold leading-tight tracking-tight text-[3cqw]">
+          <h3 className="mx-auto mt-[0.8cqw] max-w-[80%] font-display font-bold leading-tight tracking-tight text-[2.4cqw]">
             {p.courseTopic}
           </h3>
-          <p className="mx-auto mt-[1.6cqw] max-w-[70%] font-display italic text-muted-foreground text-[1.35cqw]">
+          <p className="mx-auto mt-[1.2cqw] max-w-[72%] font-display italic text-muted-foreground text-[1.15cqw]">
             Cryptographically issued and independently verifiable on the Certigo ledger.
           </p>
-          <p className="mt-[1.6cqw] font-mono uppercase tracking-[0.28em] text-muted-foreground text-[1.15cqw]">
+          <p className="mt-[1.2cqw] font-mono uppercase tracking-[0.28em] text-muted-foreground text-[1cqw]">
             {p.score != null ? `Final Score ${p.score}%  ·  ` : ""}Issued {new Date(p.issuedAt).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
           </p>
         </div>
@@ -162,16 +162,16 @@ export function CertificateView(p: Props) {
         <div className="mt-auto grid grid-cols-3 items-end gap-[2cqw]">
           {/* Signature (no name) */}
           <div className="flex flex-col items-start">
-            <SignatureScribble variant={sigVariant} className="h-[5.5cqw] w-[18cqw]" />
-            <div className="mt-[0.4cqw] h-[0.12cqw] w-[18cqw] bg-foreground/80" />
-            <div className="mt-[0.6cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[1.05cqw]">
+            <SignatureScribble variant={sigVariant} className="h-[4cqw] w-[16cqw]" />
+            <div className="mt-[0.3cqw] h-[0.1cqw] w-[16cqw] bg-foreground/80" />
+            <div className="mt-[0.5cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[0.9cqw]">
               Authorized Signatory
             </div>
           </div>
 
           {/* Stamp — circular themed seal */}
           <div className="flex justify-center" aria-hidden>
-            <svg viewBox="0 0 200 200" className="h-[14cqw] w-[14cqw] -rotate-[8deg]" style={{ color: appPrimary }}>
+            <svg viewBox="0 0 200 200" className="h-[10.5cqw] w-[10.5cqw] -rotate-[8deg]" style={{ color: appPrimary }}>
               <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" strokeWidth="4" />
               <circle cx="100" cy="100" r="82" fill="none" stroke="currentColor" strokeWidth="1.2" />
               <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -196,12 +196,12 @@ export function CertificateView(p: Props) {
 
           {/* QR */}
           <div className="flex flex-col items-end text-right">
-            <div className="mb-[0.5cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[1.05cqw]">
+            <div className="mb-[0.4cqw] font-mono uppercase tracking-[0.2em] text-muted-foreground text-[0.9cqw]">
               Scan to verify
             </div>
             {qr && (
               <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                <img src={qr} alt="Scan to verify" className="h-[12cqw] w-[12cqw] rounded-sm border border-foreground/20" />
+                <img src={qr} alt="Scan to verify" className="h-[9cqw] w-[9cqw] rounded-sm border border-foreground/20" />
               </a>
             )}
           </div>
