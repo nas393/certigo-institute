@@ -199,7 +199,7 @@ export function CertificateView(p: Props) {
                 For successfully completing the training program "{p.courseTopic}" and demonstrating exceptional commitment to professional development and continuous learning. This credential certifies that the recipient has met all requirements and competency standards.
               </p>
               <p style={{ fontSize: cq(0.8), opacity: 0.8 }}>
-                This certificate is issued in recognition of achievement and is valid as per the certification standards established by Certigo. Verification of this credential can be performed through the QR code provided.
+                This certificate is issued in recognition of achievement and is valid as per the certification standards established by CERTIGO. Verification of this credential can be performed through the QR code provided.
                 {p.score != null ? ` Final assessment score: ${p.score}%` : ""}
               </p>
             </div>

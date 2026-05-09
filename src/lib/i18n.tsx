@@ -58,7 +58,7 @@ const en = {
   "pricing.business.name": "Business", "pricing.business.desc": "Built for teams",
 
   "faq.label": "Questions, answered",
-  "faq.title": "Everything you need to trust Certigo.",
+  "faq.title": "Everything you need to trust CERTIGO.",
   "faq.intro": "Built for recruiters, learners, and teams that need credentials they can actually verify. No vague badges, no walled gardens.",
 
   "about.label": "About CERTIGO.",
@@ -155,7 +155,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.business.name": "Business", "pricing.business.desc": "Conçu pour les équipes",
 
     "faq.label": "Questions, réponses",
-    "faq.title": "Tout ce qu'il faut pour faire confiance à Certigo.",
+    "faq.title": "Tout ce qu'il faut pour faire confiance à CERTIGO.",
     "faq.intro": "Conçu pour les recruteurs, apprenants et équipes qui ont besoin de certificats vérifiables.",
 
     "about.label": "À propos de CERTIGO.",
@@ -247,7 +247,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.business.desc": "Para equipos",
 
     "faq.label": "Preguntas, respondidas",
-    "faq.title": "Todo lo que necesitas para confiar en Certigo.",
+    "faq.title": "Todo lo que necesitas para confiar en CERTIGO.",
     "faq.intro": "Para reclutadores, estudiantes y equipos que necesitan credenciales verificables.",
 
     "about.label": "Acerca de CERTIGO.",
@@ -336,7 +336,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.pro.desc": "Credenciais ilimitadas", "pricing.business.desc": "Feito para equipes",
 
     "faq.label": "Perguntas, respondidas",
-    "faq.title": "Tudo que você precisa para confiar no Certigo.",
+    "faq.title": "Tudo que você precisa para confiar no CERTIGO.",
     "faq.intro": "Para recrutadores, alunos e equipes que precisam de credenciais verificáveis.",
 
     "about.label": "Sobre CERTIGO.",
@@ -425,7 +425,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "pricing.pro.desc": "شهادات غير محدودة", "pricing.business.desc": "للفرق",
 
     "faq.label": "أسئلة وأجوبة",
-    "faq.title": "كل ما تحتاجه للثقة بـ Certigo.",
+    "faq.title": "كل ما تحتاجه للثقة بـ CERTIGO.",
     "faq.intro": "للمسؤولين والمتعلمين والفرق الذين يحتاجون شهادات قابلة للتحقق.",
 
     "about.label": "عن CERTIGO.",
