@@ -16,8 +16,8 @@ import { CERT_TEMPLATES, SIGNATURE_VARIANTS, type CertTemplate, type CertOrienta
 export const Route = createFileRoute("/settings")({
   head: () => ({
     meta: [
-      { title: "Settings — Certigo" },
-      { name: "description", content: "Personalize your Certigo experience: language, color, background, and typography." },
+      { title: "Settings — CERTIGO." },
+      { name: "description", content: "Personalize your CERTIGO. experience: language, color, background, and typography." },
     ],
   }),
   component: Settings,
@@ -125,7 +125,7 @@ function Settings() {
 
         <Card className="mt-6 p-6">
           <h2 className="font-display text-xl font-black tracking-tight">Accent color</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Pick a primary color. Certificates always render in the canonical Certigo palette.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Pick a primary color. Certificates always render in the canonical CERTIGO. palette.</p>
           <div className="mt-4 grid grid-cols-4 gap-3 sm:grid-cols-7">
             {(Object.keys(ACCENTS) as AccentKey[]).map((k) => (
               <button

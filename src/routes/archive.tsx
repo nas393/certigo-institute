@@ -6,7 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Card } from "@/components/ui/card";
 
 export const Route = createFileRoute("/archive")({
-  head: () => ({ meta: [{ title: "Archive — Certigo" }, { name: "description", content: "All your generated courses." }] }),
+  head: () => ({ meta: [{ title: "Archive — CERTIGO." }, { name: "description", content: "All your generated courses." }] }),
   component: Archive,
 });
 

@@ -12,7 +12,7 @@ import { generateSerial } from "@/lib/cert";
 import { downloadCertificatePdf } from "@/lib/pdf";
 
 export const Route = createFileRoute("/course/$id")({
-  head: () => ({ meta: [{ title: "Course — Certigo" }, { name: "description", content: "Study, pass the quiz, earn a verified credential." }] }),
+  head: () => ({ meta: [{ title: "Course — CERTIGO." }, { name: "description", content: "Study, pass the quiz, earn a verified credential." }] }),
   component: CoursePage,
 });
 

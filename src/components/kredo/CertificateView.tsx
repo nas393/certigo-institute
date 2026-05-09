@@ -27,7 +27,7 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
-  { key: "signature", label: "Signature",  hint: "CERTIGO default — thick navy + hairline" },
+  { key: "signature", label: "Signature",  hint: "CERTIGO. default — thick navy + hairline" },
   { key: "classic",  label: "Classic",   hint: "Thin black frame" },
   { key: "double",   label: "Double",    hint: "Inner + outer black border" },
   { key: "ornate",   label: "Ornate",    hint: "Gold double frame" },
@@ -139,12 +139,12 @@ export function CertificateView(p: Props) {
 
         {/* === CONTENT === */}
         <div className="relative flex h-full flex-col" style={{ paddingLeft: cq(4), paddingRight: cq(4), paddingTop: cq(3), paddingBottom: cq(3) }}>
-          {/* TOP LEFT: CERTIGO LOGO */}
+          {/* TOP LEFT: CERTIGO. LOGO */}
           <div className="absolute top-0 left-0" style={{ padding: cq(2) }}>
             <div style={{ display: "flex", alignItems: "center", gap: cq(0.8) }}>
               <CertigoLogo style={{ width: cq(3.5), height: cq(3.5) }} />
-              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8) }}>
-                CERTIGO
+              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8), letterSpacing: "-0.02em" }}>
+                CERTIGO<span style={{ color: "#0a1c44" }}>.</span>
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@ export function CertificateView(p: Props) {
                 For successfully completing the training program "{p.courseTopic}" and demonstrating exceptional commitment to professional development and continuous learning. This credential certifies that the recipient has met all requirements and competency standards.
               </p>
               <p style={{ fontSize: cq(0.8), opacity: 0.8 }}>
-                This certificate is issued in recognition of achievement and is valid as per the certification standards established by Certigo. Verification of this credential can be performed through the QR code provided.
+                This certificate is issued in recognition of achievement and is valid as per the certification standards established by CERTIGO. Verification of this credential can be performed through the QR code provided.
                 {p.score != null ? ` Final assessment score: ${p.score}%` : ""}
               </p>
             </div>
@@ -237,7 +237,7 @@ export function CertificateView(p: Props) {
           {p.watermark && (
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
               <div className="rotate-[-20deg] font-display font-black text-foreground/[0.04]" style={{ fontSize: cq(10) }}>
-                CERTIGO FREE
+                CERTIGO. FREE
               </div>
             </div>
           )}
@@ -247,7 +247,7 @@ export function CertificateView(p: Props) {
   );
 }
 
-// === CERTIGO LOGO: Stylized Gold Shield with 'G' ===
+// === CERTIGO. LOGO: Stylized Gold Shield with 'G' ===
 function CertigoLogo({ style }: { style?: React.CSSProperties }) {
   return (
     <svg viewBox="0 0 100 120" style={style} aria-hidden>
@@ -398,7 +398,7 @@ function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: numb
         </>
       );
     case "signature":
-      // CERTIGO single default: thick navy outer + crisp hairline inner.
+      // CERTIGO. single default: thick navy outer + crisp hairline inner.
       // Blend of "Minimal" + "Navy" with a heavier outer frame.
       return (
         <>
@@ -437,7 +437,7 @@ function SignatureMonogram({ variant, style }: { variant: number; style?: React.
   // each variant is an array of <path d, strokeWidth, opacity>
   type Stroke = { d: string; w: number; o?: number };
   const variants: Stroke[][] = [
-    // 0 — CERTIGO Authorized Signature (traced from reference, single SVG, scales crisply)
+    // 0 — CERTIGO. Authorized Signature (traced from reference, single SVG, scales crisply)
     // Flowing cursive: tall capital loop, descending body, long underscore tail.
     [
       // Capital "S" loop with descending swoop into body
@@ -492,7 +492,7 @@ function SignatureMonogram({ variant, style }: { variant: number; style?: React.
   );
 }
 
-// === Fake CERTIGO stamp seal (laurel + C + curved text + star) ===
+// === Fake CERTIGO. stamp seal (laurel + C + curved text + star) ===
 function CertigoStamp({ style }: { style?: React.CSSProperties }) {
   const ink = "#0f2a55";
   return (
@@ -508,7 +508,7 @@ function CertigoStamp({ style }: { style?: React.CSSProperties }) {
       <circle cx="110" cy="110" r="70" fill="none" stroke={ink} strokeWidth="2" />
       {/* top text */}
       <text fontFamily="serif" fontWeight="700" fontSize="16" letterSpacing="6" fill={ink}>
-        <textPath href="#topArc" startOffset="50%" textAnchor="middle">· CERTIGO ·</textPath>
+        <textPath href="#topArc" startOffset="50%" textAnchor="middle">· CERTIGO. ·</textPath>
       </text>
       {/* bottom text (use a path arc that reads correctly along bottom) */}
       <path id="botArc" d="M 30 110 A 80 80 0 0 0 190 110" fill="none" />
