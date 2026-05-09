@@ -113,13 +113,13 @@ export function CertificateView(p: Props) {
 
           {/* TOP RIGHT: REF CODE + VERIFIED SIGN */}
           <div className="absolute top-0 right-0" style={{ padding: cq(2), textAlign: "right" }}>
-            <div className="font-mono text-foreground text-[0.85em]" style={{ fontSize: cq(0.9), fontWeight: 600, letterSpacing: "0.05em" }}>
+            <div className="font-mono text-foreground" style={{ fontSize: cq(0.95), fontWeight: 700, letterSpacing: "0.08em" }}>
               REF-CODE: {displaySerial}
             </div>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: cq(0.5), marginTop: cq(0.4) }}>
-              <VerifiedCheckmark style={{ width: cq(1.2), height: cq(1.2) }} />
-              <span className="font-sans text-foreground text-[0.75em]" style={{ fontSize: cq(0.8) }}>
-                VERIFIED SIGN
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: cq(0.5), marginTop: cq(0.6) }}>
+              <VerifiedSeal style={{ width: cq(1.4), height: cq(1.4) }} />
+              <span className="font-sans" style={{ fontSize: cq(0.85), fontWeight: 600, letterSpacing: "0.12em", color: "#16a34a" }}>
+                VERIFIED · ON-CHAIN
               </span>
             </div>
           </div>
@@ -127,20 +127,30 @@ export function CertificateView(p: Props) {
           {/* CENTER: MAIN CONTENT */}
           <div style={{ marginTop: cq(4.5) }}>
             {/* Main Title */}
-            <h1 className="font-display font-black text-foreground text-center" style={{ fontSize: cq(4), lineHeight: 1.1, fontFamily: "'Blackletter', 'Old English Text', serif", marginBottom: cq(1.5) }}>
+            <h1
+              className="text-foreground text-center"
+              style={{
+                fontSize: cq(5),
+                lineHeight: 1.05,
+                fontFamily: "'UnifrakturCook', 'Old English Text MT', 'Blackletter', serif",
+                fontWeight: 700,
+                marginBottom: cq(1.5),
+                letterSpacing: "0.01em",
+              }}
+            >
               Certificate of Appreciation
             </h1>
 
             {/* Presentation text */}
-            <p className="font-sans text-foreground text-center" style={{ fontSize: cq(1.2), letterSpacing: "0.05em", marginBottom: cq(1) }}>
-              THE CERTIFICATE IS PRESENTED TO
+            <p className="font-sans text-foreground/80 text-center" style={{ fontSize: cq(1.15), letterSpacing: "0.28em", marginBottom: cq(1), fontWeight: 500 }}>
+              THIS CERTIFICATE IS PRESENTED TO
             </p>
 
             {/* Blank line for recipient name */}
             <div style={{ height: "2px", background: "#000000", margin: `${cq(1)} auto`, width: "60%", maxWidth: "400px" }} />
 
             {/* Recipient Name */}
-            <p className="font-display italic text-foreground text-center" style={{ fontSize: cq(2.6), marginTop: cq(1.5), marginBottom: cq(2.5), fontWeight: 600 }}>
+            <p className="text-foreground text-center" style={{ fontSize: cq(3), marginTop: cq(1.2), marginBottom: cq(2.2), fontWeight: 600, fontStyle: "italic", fontFamily: "'Cormorant Garamond', ui-serif, Georgia, serif" }}>
               {p.recipientName}
             </p>
 
@@ -248,6 +258,17 @@ function VerifiedCheckmark({ style }: { style?: React.CSSProperties }) {
   return (
     <svg viewBox="0 0 24 24" style={style} aria-hidden fill="none" stroke="currentColor" strokeWidth="2">
       <polyline points="20 6 9 17 4 12" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// === VERIFIED SEAL — green badge with checkmark ===
+function VerifiedSeal({ style }: { style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 24 24" style={style} aria-hidden>
+      <circle cx="12" cy="12" r="10" fill="#16a34a" />
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#15803d" strokeWidth="1" />
+      <polyline points="7.5 12.5 10.5 15.5 16.5 8.5" fill="none" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
