@@ -262,6 +262,17 @@ function VerifiedCheckmark({ style }: { style?: React.CSSProperties }) {
   );
 }
 
+// === VERIFIED SEAL — green badge with checkmark ===
+function VerifiedSeal({ style }: { style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 24 24" style={style} aria-hidden>
+      <circle cx="12" cy="12" r="10" fill="#16a34a" />
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#15803d" strokeWidth="1" />
+      <polyline points="7.5 12.5 10.5 15.5 16.5 8.5" fill="none" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 // === Big Signature Monogram + handwriting flourish strokes ===
 function SignatureMonogram({ variant, style }: { variant: number; style?: React.CSSProperties }) {
   // flourish variants (lines that emanate from / wrap the monogram)
