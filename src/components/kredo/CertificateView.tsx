@@ -134,103 +134,211 @@ export function CertificateView(p: Props) {
 
       {/* INNER CANVAS — all content lives inside */}
       <div className="absolute overflow-hidden" style={{ inset: cq(tpl === "stripe" ? 1 : 1) }}>
-        {/* Clean white background with subtle texture */}
+        {/* Pure white certificate paper */}
         <div className="absolute inset-0" style={{ background: "#ffffff" }} />
 
-        {/* === CONTENT === */}
-        <div className="relative flex h-full flex-col" style={{ paddingLeft: cq(4), paddingRight: cq(4), paddingTop: cq(3), paddingBottom: cq(3) }}>
-          {/* TOP LEFT: CERTIGO. LOGO */}
-          <div className="absolute top-0 left-0" style={{ padding: cq(2) }}>
-            <div style={{ display: "flex", alignItems: "center", gap: cq(0.8) }}>
-              <CertigoLogo style={{ width: cq(3.5), height: cq(3.5) }} />
-              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8), letterSpacing: "-0.02em" }}>
-                CERTIGO<span style={{ color: "#0a1c44" }}>.</span>
+        {/* === CONTENT — premium editorial layout === */}
+        <div
+          className="relative flex h-full flex-col"
+          style={{
+            paddingLeft: cq(5),
+            paddingRight: cq(5),
+            paddingTop: cq(3.2),
+            paddingBottom: cq(3.2),
+          }}
+        >
+          {/* HEADER ROW: logo + ref/verified, separated by hairline */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr auto",
+              alignItems: "center",
+              gap: cq(2),
+              paddingBottom: cq(1.6),
+              borderBottom: `1px solid ${sk.ink}33`,
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: cq(1) }}>
+              <CertigoLogo style={{ width: cq(3.4), height: cq(3.4) }} />
+              <div
+                className="font-display"
+                style={{
+                  fontSize: cq(1.9),
+                  fontWeight: 900,
+                  letterSpacing: "-0.025em",
+                  lineHeight: 1,
+                  color: sk.titleColor ?? "#0a0a0a",
+                }}
+              >
+                CERTIGO<span style={{ color: sk.accent }}>.</span>
+              </div>
+            </div>
+            <div style={{ textAlign: "right" }}>
+              <div
+                className="font-mono"
+                style={{
+                  fontSize: cq(0.85),
+                  fontWeight: 700,
+                  letterSpacing: "0.18em",
+                  color: sk.ink,
+                }}
+              >
+                REF · {displaySerial}
+              </div>
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: cq(0.4),
+                  marginTop: cq(0.5),
+                  padding: `${cq(0.25)} ${cq(0.7)}`,
+                  border: "1px solid #16a34a",
+                  borderRadius: "999px",
+                  background: "#f0fdf4",
+                }}
+              >
+                <VerifiedSeal style={{ width: cq(1), height: cq(1) }} />
+                <span
+                  style={{
+                    fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                    fontSize: cq(0.7),
+                    fontWeight: 700,
+                    letterSpacing: "0.18em",
+                    color: "#15803d",
+                  }}
+                >
+                  VERIFIED
+                </span>
               </div>
             </div>
           </div>
 
-          {/* TOP RIGHT: REF CODE + VERIFIED SIGN */}
-          <div className="absolute top-0 right-0" style={{ padding: cq(2), textAlign: "right" }}>
-            <div className="font-mono text-foreground" style={{ fontSize: cq(0.95), fontWeight: 700, letterSpacing: "0.08em" }}>
-              REF-CODE: {displaySerial}
-            </div>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: cq(0.5), marginTop: cq(0.6) }}>
-              <VerifiedSeal style={{ width: cq(1.4), height: cq(1.4) }} />
-              <span className="font-sans" style={{ fontSize: cq(0.85), fontWeight: 600, letterSpacing: "0.12em", color: "#16a34a" }}>
-                VERIFIED · ON-CHAIN
-              </span>
-            </div>
-          </div>
-
-          {/* CENTER: MAIN CONTENT */}
-          <div style={{ marginTop: cq(4.5) }}>
-            {/* Main Title */}
-            <h1
-              className="text-foreground text-center"
+          {/* CENTER — title block */}
+          <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", textAlign: "center", paddingTop: cq(1.5) }}>
+            <p
               style={{
-                fontSize: cq(5),
-                lineHeight: 1.05,
-                fontFamily: "'UnifrakturCook', 'Old English Text MT', 'Blackletter', serif",
-                fontWeight: 700,
-                marginBottom: cq(1.5),
-                letterSpacing: "0.01em",
-                color: sk.titleColor ?? undefined,
+                fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                fontSize: cq(1),
+                fontWeight: 600,
+                letterSpacing: "0.45em",
+                color: `${sk.ink}aa`,
+                marginBottom: cq(1.2),
               }}
             >
-              Certificate of Appreciation
+              CERTIFICATE
+            </p>
+            <h1
+              style={{
+                fontFamily: "'UnifrakturCook', 'Old English Text MT', serif",
+                fontWeight: 700,
+                fontSize: cq(5.4),
+                lineHeight: 1,
+                letterSpacing: "0.01em",
+                color: sk.titleColor ?? "#0a0a0a",
+                marginBottom: cq(2),
+              }}
+            >
+              of Appreciation
             </h1>
 
-            {/* Presentation text */}
-            <p className="font-sans text-foreground/80 text-center" style={{ fontSize: cq(1.15), letterSpacing: "0.28em", marginBottom: cq(1), fontWeight: 500 }}>
-              THIS CERTIFICATE IS PRESENTED TO
+            <p
+              style={{
+                fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                fontSize: cq(0.95),
+                letterSpacing: "0.32em",
+                color: `${sk.ink}99`,
+                marginBottom: cq(1.4),
+              }}
+            >
+              PRESENTED TO
             </p>
 
-            {/* Blank line for recipient name */}
-            <div style={{ height: "2px", background: "#000000", margin: `${cq(1)} auto`, width: "60%", maxWidth: "400px" }} />
-
-            {/* Recipient Name */}
-            <p className="text-foreground text-center" style={{ fontSize: cq(3), marginTop: cq(1.2), marginBottom: cq(2.2), fontWeight: 600, fontStyle: "italic", fontFamily: "'Cormorant Garamond', ui-serif, Georgia, serif" }}>
+            <p
+              style={{
+                fontFamily: "'Cormorant Garamond', ui-serif, Georgia, serif",
+                fontStyle: "italic",
+                fontWeight: 600,
+                fontSize: cq(3.6),
+                lineHeight: 1.05,
+                color: sk.ink,
+                marginBottom: cq(0.6),
+              }}
+            >
               {p.recipientName}
             </p>
 
-            {/* Fine Print Placeholder Text */}
-            <div className="font-sans text-foreground/70 text-center" style={{ fontSize: cq(0.9), lineHeight: 1.6, maxWidth: "85%", margin: "0 auto", marginBottom: cq(2.5) }}>
-              <p style={{ marginBottom: cq(1) }}>
-                For successfully completing the training program "{p.courseTopic}" and demonstrating exceptional commitment to professional development and continuous learning. This credential certifies that the recipient has met all requirements and competency standards.
-              </p>
-              <p style={{ fontSize: cq(0.8), opacity: 0.8 }}>
-                This certificate is issued in recognition of achievement and is valid as per the certification standards established by CERTIGO. Verification of this credential can be performed through the QR code provided.
-                {p.score != null ? ` Final assessment score: ${p.score}%` : ""}
-              </p>
-            </div>
+            <div style={{ height: "1px", background: sk.ink, opacity: 0.55, margin: `${cq(0.5)} auto ${cq(1.5)}`, width: "55%" }} />
+
+            <p
+              style={{
+                fontFamily: "'Cormorant Garamond', ui-serif, Georgia, serif",
+                fontSize: cq(1.1),
+                lineHeight: 1.55,
+                color: `${sk.ink}cc`,
+                maxWidth: "78%",
+                margin: "0 auto",
+              }}
+            >
+              for successfully completing <em style={{ fontWeight: 600 }}>"{p.courseTopic}"</em> and demonstrating exceptional commitment to verified, skill-based learning
+              {p.score != null ? <> with a final assessment score of <strong>{p.score}%</strong></> : null}.
+            </p>
           </div>
 
-          {/* FOOTER: SIGNATURE + SIGNATORY LINE + QR CODE */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: cq(2), marginTop: "auto", alignItems: "flex-end" }}>
-            {/* Left: Signature + Signatory Line */}
+          {/* FOOTER — signature | stamp | QR */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1.3fr 1fr 1fr",
+              gap: cq(2.5),
+              alignItems: "end",
+              marginTop: cq(2),
+              paddingTop: cq(1.5),
+              borderTop: `1px solid ${sk.ink}22`,
+            }}
+          >
+            {/* signature */}
             <div style={{ textAlign: "left" }}>
-              <SignatureMonogram variant={sigVariant} style={{ height: cq(3), width: "100%", marginBottom: cq(0.3) }} />
-              <div style={{ height: "1px", background: "#000000", marginBottom: cq(0.3) }} />
-              <div className="font-sans font-bold text-foreground" style={{ fontSize: cq(0.95) }}>
-                CERTIGO. AUTHORIZED SIGNATORY
+              <SignatureMonogram variant={sigVariant} style={{ height: cq(3.2), width: "85%", display: "block", marginBottom: cq(0.2) }} />
+              <div style={{ height: "1px", background: sk.ink, opacity: 0.7, marginBottom: cq(0.5) }} />
+              <div
+                style={{
+                  fontFamily: "ui-sans-serif, system-ui, sans-serif",
+                  fontWeight: 800,
+                  fontSize: cq(0.78),
+                  letterSpacing: "0.18em",
+                  color: sk.ink,
+                }}
+              >
+                CERTIGO<span style={{ color: sk.accent }}>.</span> · AUTHORIZED SIGNATORY
               </div>
-              <div className="font-sans text-foreground/60" style={{ fontSize: cq(0.8), marginTop: cq(0.2) }}>
-                {new Date(p.issuedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+              <div
+                className="font-mono"
+                style={{
+                  fontSize: cq(0.7),
+                  letterSpacing: "0.15em",
+                  color: `${sk.ink}88`,
+                  marginTop: cq(0.3),
+                }}
+              >
+                {new Date(p.issuedAt).toLocaleDateString("en-US", { month: "short", day: "2-digit", year: "numeric" }).toUpperCase()}
               </div>
             </div>
 
-            {/* Center: Fake stamp seal */}
-            <div style={{ textAlign: "center", display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
-              <CertigoStamp style={{ width: cq(8), height: cq(8) }} />
+            {/* stamp */}
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+              <CertigoStamp style={{ width: cq(7.2), height: cq(7.2) }} />
             </div>
 
-            {/* Right: QR Code */}
-            <div style={{ textAlign: "right" }}>
+            {/* QR */}
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: cq(0.3) }}>
               {qr && (
-                <a href={qrTarget} target="_blank" rel="noreferrer" className="block" style={{ display: "inline-block" }}>
-                  <img src={qr} alt="Scan to verify" className="border border-foreground/30" style={{ width: cq(7), height: cq(7) }} />
+                <a href={qrTarget} target="_blank" rel="noreferrer" style={{ display: "inline-block", padding: cq(0.3), border: `1px solid ${sk.ink}55`, background: "#fff" }}>
+                  <img src={qr} alt="Scan to verify" style={{ width: cq(6.2), height: cq(6.2), display: "block" }} />
                 </a>
               )}
+              <div className="font-mono" style={{ fontSize: cq(0.62), letterSpacing: "0.18em", color: `${sk.ink}88`, textAlign: "right" }}>
+                SCAN TO VERIFY
+              </div>
             </div>
           </div>
 
