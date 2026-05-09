@@ -38,35 +38,40 @@
 
 :root {
   --radius: 0.5rem;
-  /* warm paper / ink */
-  --background: oklch(0.985 0.005 85);
-  --paper: oklch(0.985 0.005 85);
-  --foreground: oklch(0.16 0.01 270);
-  --ink: oklch(0.12 0.01 270);
+  /* CERTIGO Midnight Indigo — light surface with deep indigo authority */
+  --background: oklch(0.985 0.004 270);
+  --paper: oklch(0.985 0.004 270);
+  --foreground: oklch(0.14 0.02 275);
+  --ink: oklch(0.10 0.02 275);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.16 0.01 270);
+  --card-foreground: oklch(0.14 0.02 275);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.01 270);
-  /* deep saturated indigo */
-  --primary: oklch(0.42 0.21 275);
+  --popover-foreground: oklch(0.14 0.02 275);
+  /* Deep midnight indigo primary; electric indigo glow */
+  --primary: oklch(0.32 0.18 278);
   --primary-foreground: oklch(0.99 0 0);
-  --primary-glow: oklch(0.58 0.22 280);
-  --secondary: oklch(0.95 0.005 85);
-  --secondary-foreground: oklch(0.2 0.01 270);
-  --muted: oklch(0.95 0.005 85);
-  --muted-foreground: oklch(0.45 0.01 270);
-  --accent: oklch(0.93 0.02 280);
-  --accent-foreground: oklch(0.2 0.01 270);
+  --primary-glow: oklch(0.58 0.24 282);
+  /* Electric cyan as secondary accent (verified states, pulses) */
+  --cyan: oklch(0.78 0.16 215);
+  --cyan-foreground: oklch(0.10 0.02 275);
+  --secondary: oklch(0.96 0.01 275);
+  --secondary-foreground: oklch(0.18 0.02 275);
+  --muted: oklch(0.96 0.01 275);
+  --muted-foreground: oklch(0.45 0.02 275);
+  --accent: oklch(0.93 0.03 280);
+  --accent-foreground: oklch(0.18 0.02 275);
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.9 0.008 80);
-  --input: oklch(0.9 0.008 80);
-  --ring: oklch(0.42 0.21 275);
+  --border: oklch(0.91 0.01 275);
+  --input: oklch(0.91 0.01 275);
+  --ring: oklch(0.32 0.18 278);
 
-  --gradient-primary: linear-gradient(135deg, oklch(0.42 0.21 275), oklch(0.58 0.22 290));
-  --gradient-paper: linear-gradient(180deg, oklch(0.99 0.005 85), oklch(0.96 0.01 80));
-  --shadow-elegant: 0 30px 60px -30px color-mix(in oklab, oklch(0.42 0.21 275) 40%, transparent);
-  --shadow-card: 0 1px 0 0 oklch(0.9 0.008 80), 0 20px 40px -25px oklch(0.2 0.01 270 / 0.15);
+  --gradient-primary: linear-gradient(135deg, oklch(0.22 0.14 275), oklch(0.42 0.22 282));
+  --gradient-aurora: linear-gradient(135deg, oklch(0.22 0.14 275) 0%, oklch(0.42 0.22 282) 50%, oklch(0.78 0.16 215) 100%);
+  --gradient-paper: linear-gradient(180deg, oklch(0.99 0.004 270), oklch(0.96 0.01 275));
+  --shadow-elegant: 0 30px 60px -30px color-mix(in oklab, oklch(0.32 0.18 278) 45%, transparent);
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, oklch(0.78 0.16 215) 30%, transparent), 0 20px 60px -20px color-mix(in oklab, oklch(0.78 0.16 215) 35%, transparent);
+  --shadow-card: 0 1px 0 0 oklch(0.91 0.01 275), 0 20px 40px -25px oklch(0.14 0.02 275 / 0.15);
 
   --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -74,25 +79,28 @@
 }
 
 .dark {
-  --background: oklch(0.12 0.01 270);
-  --paper: oklch(0.12 0.01 270);
-  --foreground: oklch(0.98 0.005 85);
+  /* CERTIGO Midnight — deep indigo canvas with cyan-electric primaries */
+  --background: oklch(0.10 0.02 275);
+  --paper: oklch(0.10 0.02 275);
+  --foreground: oklch(0.98 0.005 275);
   --ink: oklch(0.99 0 0);
-  --card: oklch(0.16 0.015 270);
-  --card-foreground: oklch(0.98 0.005 85);
-  --popover: oklch(0.16 0.015 270);
-  --popover-foreground: oklch(0.98 0.005 85);
-  --primary: oklch(0.7 0.2 285);
-  --primary-foreground: oklch(0.12 0.01 270);
-  --secondary: oklch(0.2 0.015 270);
-  --secondary-foreground: oklch(0.98 0.005 85);
-  --muted: oklch(0.2 0.015 270);
-  --muted-foreground: oklch(0.7 0.01 270);
-  --accent: oklch(0.25 0.03 280);
-  --accent-foreground: oklch(0.98 0.005 85);
+  --card: oklch(0.14 0.025 275);
+  --card-foreground: oklch(0.98 0.005 275);
+  --popover: oklch(0.14 0.025 275);
+  --popover-foreground: oklch(0.98 0.005 275);
+  --primary: oklch(0.72 0.22 285);
+  --primary-foreground: oklch(0.10 0.02 275);
+  --primary-glow: oklch(0.78 0.16 215);
+  --cyan: oklch(0.82 0.18 215);
+  --secondary: oklch(0.18 0.025 275);
+  --secondary-foreground: oklch(0.98 0.005 275);
+  --muted: oklch(0.18 0.025 275);
+  --muted-foreground: oklch(0.72 0.02 275);
+  --accent: oklch(0.24 0.05 280);
+  --accent-foreground: oklch(0.98 0.005 275);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.7 0.2 285);
+  --ring: oklch(0.72 0.22 285);
 }
 
 @layer base {
