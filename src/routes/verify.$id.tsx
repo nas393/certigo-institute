@@ -39,7 +39,7 @@ function VerifyOne() {
           id,
           serial: id.toUpperCase(),
           recipient_name: "Amara Okafor",
-          course_topic: "Prompt Engineering Fundamentals",
+          course_topic: "Certified Prompt Engineering Professional (CPEP)",
           score: 94,
           issued_at: new Date().toISOString(),
           revoked: false,
