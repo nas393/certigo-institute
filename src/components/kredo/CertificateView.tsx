@@ -12,7 +12,8 @@ export type CertTemplate =
   | "navy"
   | "emerald"
   | "stripe"
-  | "embossed";
+  | "embossed"
+  | "signature";
 
 export type CertOrientation = "landscape" | "portrait";
 
@@ -26,6 +27,7 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
+  { key: "signature", label: "Signature",  hint: "CERTIGO default — thick navy + hairline" },
   { key: "classic",  label: "Classic",   hint: "Thin black frame" },
   { key: "double",   label: "Double",    hint: "Inner + outer black border" },
   { key: "ornate",   label: "Ornate",    hint: "Gold double frame" },
@@ -118,6 +120,7 @@ export function CertificateView(p: Props) {
     emerald:  { ink: "#065f46", accent: "#065f46", titleColor: "#065f46" },
     stripe:   { ink: "#000000", accent: "#dc2626" },
     embossed: { ink: "#0f172a", accent: "#0f172a" },
+    signature:{ ink: "#0a1c44", accent: "#4f46e5", titleColor: "#0a1c44" },
   };
   const sk = skin[tpl];
 
