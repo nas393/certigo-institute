@@ -409,7 +409,7 @@ function Style10() {
   );
 }
 
-const STYLES: { n: number; title: string; bg?: string; render: () => JSX.Element }[] = [
+const STYLES: { n: number; title: string; bg?: string; render: () => React.ReactNode }[] = [
   { n: 1,  title: "Swiss Grid",         render: () => <Style01 /> },
   { n: 2,  title: "Editorial Serif",    render: () => <Style02 /> },
   { n: 3,  title: "Navy Diploma",       render: () => <Style03 />, bg: "#0a1c44" },
