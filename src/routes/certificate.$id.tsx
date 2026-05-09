@@ -24,7 +24,7 @@ function CertPage() {
   const [name, setName] = useState("");
   const [adminCode, setAdminCode] = useState("");
   const [saving, setSaving] = useState(false);
-  const [tpl, setTpl] = useState<CertTemplate>("classic");
+  const [tpl, setTpl] = useState<CertTemplate>("signature");
   const [ori, setOri] = useState<CertOrientation>("landscape");
   useEffect(() => {
     if (typeof window !== "undefined") {
