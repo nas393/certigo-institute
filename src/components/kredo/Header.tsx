@@ -22,7 +22,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2" aria-label="CERTIGO. home">
           <span className="font-display text-2xl font-black tracking-tighter leading-none">
-            <span className="text-primary">CERTI</span><span className="text-foreground">GO</span>
+            <span className="text-primary">CERTI</span><span className="text-foreground">GO</span><span className="text-primary">.</span>
           </span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
