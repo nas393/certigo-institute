@@ -506,12 +506,29 @@ function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: numb
         </>
       );
     case "signature":
-      // CERTIGO. single default: thick navy outer + crisp hairline inner.
-      // Blend of "Minimal" + "Navy" with a heavier outer frame.
+      // CERTIGO. default frame — heavy black outer + navy hairline inner +
+      // navy corner notches. Premium editorial look matching the brief.
       return (
         <>
-          <div className="pointer-events-none absolute" style={{ inset: cq(0.8), border: `${cq(0.85)} solid ${ink}`, boxShadow: shadow }} />
-          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.08)} solid ${ink}`, opacity: 0.55 }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(0.6), border: `${cq(0.5)} solid #0a0a0a`, boxShadow: "0 25px 60px -25px rgba(0,0,0,0.35), 0 8px 24px -10px rgba(10,28,68,0.2)" }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(1.7), border: `${cq(0.08)} solid ${ink}`, opacity: 0.7 }} />
+          {(["tl","tr","bl","br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(1.2), left: cq(1.2) } :
+              corner === "tr" ? { top: cq(1.2), right: cq(1.2) } :
+              corner === "bl" ? { bottom: cq(1.2), left: cq(1.2) } :
+                                { bottom: cq(1.2), right: cq(1.2) };
+            const rot =
+              corner === "tl" ? "rotate(0deg)" :
+              corner === "tr" ? "rotate(90deg)" :
+              corner === "bl" ? "rotate(-90deg)" :
+                                "rotate(180deg)";
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(1.6), height: cq(1.6), transform: rot, ...pos }} viewBox="0 0 20 20" aria-hidden>
+                <path d="M0 8 L 0 0 L 8 0" fill="none" stroke={ink} strokeWidth="1.4" />
+              </svg>
+            );
+          })}
         </>
       );
     default:
