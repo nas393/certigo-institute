@@ -107,7 +107,7 @@ export function CertificateView(p: Props) {
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
 
-  const tpl: CertTemplate = p.template ?? "classic";
+  const tpl: CertTemplate = p.template ?? "signature";
   // per-template chrome: frame color, accent color (for hairlines/title underline)
   const skin: Record<CertTemplate, { ink: string; accent: string; titleColor?: string }> = {
     classic:  { ink: "#000000", accent: "#000000" },
