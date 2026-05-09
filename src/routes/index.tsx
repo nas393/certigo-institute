@@ -38,7 +38,8 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 gradient-paper" />
-        <div className="absolute -top-40 left-1/2 -z-10 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute -top-40 left-1/2 -z-10 h-[600px] w-[1100px] -translate-x-1/2 rounded-full gradient-aurora opacity-25 blur-3xl" />
+        <div className="pointer-events-none absolute inset-0 -z-10 [background-image:radial-gradient(circle_at_1px_1px,oklch(0.32_0.18_278/0.12)_1px,transparent_0)] [background-size:24px_24px] opacity-40" />
         <div className="mx-auto max-w-7xl px-6 pt-20 pb-24 lg:pt-28 lg:pb-32">
           <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
             <div>

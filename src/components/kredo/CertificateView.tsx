@@ -12,7 +12,8 @@ export type CertTemplate =
   | "navy"
   | "emerald"
   | "stripe"
-  | "embossed";
+  | "embossed"
+  | "signature";
 
 export type CertOrientation = "landscape" | "portrait";
 
@@ -26,6 +27,7 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
+  { key: "signature", label: "Signature",  hint: "CERTIGO default — thick navy + hairline" },
   { key: "classic",  label: "Classic",   hint: "Thin black frame" },
   { key: "double",   label: "Double",    hint: "Inner + outer black border" },
   { key: "ornate",   label: "Ornate",    hint: "Gold double frame" },
@@ -105,7 +107,7 @@ export function CertificateView(p: Props) {
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
 
-  const tpl: CertTemplate = p.template ?? "classic";
+  const tpl: CertTemplate = p.template ?? "signature";
   // per-template chrome: frame color, accent color (for hairlines/title underline)
   const skin: Record<CertTemplate, { ink: string; accent: string; titleColor?: string }> = {
     classic:  { ink: "#000000", accent: "#000000" },
@@ -118,6 +120,7 @@ export function CertificateView(p: Props) {
     emerald:  { ink: "#065f46", accent: "#065f46", titleColor: "#065f46" },
     stripe:   { ink: "#000000", accent: "#dc2626" },
     embossed: { ink: "#0f172a", accent: "#0f172a" },
+    signature:{ ink: "#0a1c44", accent: "#4f46e5", titleColor: "#0a1c44" },
   };
   const sk = skin[tpl];
 
@@ -394,6 +397,15 @@ function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: numb
           <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.06)} solid ${ink}`, opacity: 0.4 }} />
         </>
       );
+    case "signature":
+      // CERTIGO single default: thick navy outer + crisp hairline inner.
+      // Blend of "Minimal" + "Navy" with a heavier outer frame.
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(0.8), border: `${cq(0.85)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.08)} solid ${ink}`, opacity: 0.55 }} />
+        </>
+      );
     default:
       return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
   }
@@ -425,12 +437,21 @@ function SignatureMonogram({ variant, style }: { variant: number; style?: React.
   // each variant is an array of <path d, strokeWidth, opacity>
   type Stroke = { d: string; w: number; o?: number };
   const variants: Stroke[][] = [
-    // 0 — Loop & Sweep (closest to the uploaded reference)
+    // 0 — CERTIGO Authorized Signature (traced from reference, single SVG, scales crisply)
+    // Flowing cursive: tall capital loop, descending body, long underscore tail.
     [
-      { d: "M30 70 C 38 30, 60 12, 78 30 C 92 44, 70 60, 60 50 C 52 42, 70 26, 88 36", w: 2.6 },
-      { d: "M120 50 C 110 18, 200 10, 230 35 C 250 55, 215 80, 180 75 C 150 70, 130 55, 145 38 C 160 22, 200 30, 205 50", w: 2.6 },
-      { d: "M10 58 C 80 50, 170 48, 250 42", w: 1.6, o: 0.9 },
-      { d: "M70 78 C 90 88, 110 86, 130 80", w: 1.4, o: 0.7 },
+      // Capital "S" loop with descending swoop into body
+      { d: "M28 64 C 22 38, 48 18, 68 28 C 82 36, 70 50, 56 48 C 44 46, 50 32, 64 30 C 78 28, 86 40, 80 54", w: 2.8 },
+      // Body — connected cursive: t-e-p-h ligature
+      { d: "M76 60 C 92 42, 108 60, 102 76 C 96 88, 86 80, 92 70 C 100 58, 116 56, 122 70 C 128 84, 118 92, 114 80 C 112 72, 124 68, 134 74", w: 2.6 },
+      // Mid section — a-n-e cluster with rounded humps
+      { d: "M134 70 C 144 60, 156 64, 156 76 C 156 86, 144 86, 142 78 C 140 70, 152 66, 162 72 C 174 80, 168 92, 158 88", w: 2.4 },
+      // Final flourish — long tail "l" with descending loop and underline sweep
+      { d: "M168 78 C 184 50, 198 42, 210 50 C 222 58, 214 78, 200 80 C 188 82, 200 70, 220 72 C 240 74, 252 80, 250 90", w: 2.6 },
+      // Long underscore — the signature underline
+      { d: "M14 90 C 90 96, 180 96, 252 88", w: 1.6, o: 0.9 },
+      // Small descending dot/flick
+      { d: "M210 96 C 215 100, 222 100, 228 96", w: 1.2, o: 0.65 },
     ],
     // 1 — Bold Cursive (heavier capital + tail)
     [

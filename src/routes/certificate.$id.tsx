@@ -24,11 +24,11 @@ function CertPage() {
   const [name, setName] = useState("");
   const [adminCode, setAdminCode] = useState("");
   const [saving, setSaving] = useState(false);
-  const [tpl, setTpl] = useState<CertTemplate>("classic");
+  const [tpl, setTpl] = useState<CertTemplate>("signature");
   const [ori, setOri] = useState<CertOrientation>("landscape");
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "classic"));
+      setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "signature"));
       setOri(((localStorage.getItem("kredo.certOrientation") as CertOrientation) || "landscape"));
     }
   }, []);
