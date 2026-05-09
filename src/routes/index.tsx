@@ -62,14 +62,14 @@ function Home() {
                 <span>{t("hero.bullet.cc")}</span><span>{t("hero.bullet.free")}</span><span>{t("hero.bullet.fast")}</span>
               </div>
             </div>
-            {/* DEMO CERTIFICATE — premium framed presentation */}
-            <div className="relative mx-auto w-full max-w-[560px]">
-              {/* glow */}
-              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-[28px] bg-gradient-to-br from-primary/20 via-primary/5 to-transparent blur-2xl" />
-              {/* tilt + presentation card */}
-              <div className="group relative">
-                <div className="absolute -inset-2 -z-10 rounded-2xl bg-foreground/[0.04]" />
-                <div className="rounded-xl border border-border bg-card p-3 shadow-elegant transition-transform duration-500 sm:p-4 lg:rotate-[-1.2deg] group-hover:lg:rotate-0">
+            {/* DEMO CERTIFICATE — pristine museum-grade presentation */}
+            <div className="relative mx-auto w-full max-w-[600px]">
+              {/* aurora glow halo */}
+              <div className="pointer-events-none absolute -inset-10 -z-10 rounded-[40px] gradient-aurora opacity-25 blur-3xl" />
+              {/* gallery wall card */}
+              <div className="relative rounded-2xl border border-border/60 bg-white p-4 shadow-elegant sm:p-6">
+                {/* matte frame: thin neutral mat around the certificate */}
+                <div className="rounded-md ring-1 ring-black/5">
                   <CertificateView
                     compact
                     serial="KR-2026-DEMO01"
@@ -80,11 +80,16 @@ function Home() {
                     verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify/KR-2026-DEMO01` : "/verify/KR-2026-DEMO01"}
                   />
                 </div>
-              </div>
-              <div className="mt-4 flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                <QrCode className="h-3 w-3" />
-                <span>{t("cta.scanorvisit")}</span>
-                <a href="/verify/KR-2026-DEMO01" className="underline underline-offset-2 hover:text-primary">{t("cta.opendemo")}</a>
+                {/* gallery plaque */}
+                <div className="mt-4 flex items-center justify-between gap-3 px-1">
+                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                    <QrCode className="h-3 w-3" />
+                    <span>{t("cta.scanorvisit")}</span>
+                  </div>
+                  <a href="/verify/KR-2026-DEMO01" className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary underline-offset-4 hover:underline">
+                    {t("cta.opendemo")} →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
