@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifyRouteImport } from './routes/verify'
 import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TemplatesRouteImport } from './routes/templates'
+import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as DashboardRouteImport } from './routes/dashboard'
@@ -39,6 +40,11 @@ const UnlockRoute = UnlockRouteImport.update({
 const TemplatesRoute = TemplatesRouteImport.update({
   id: '/templates',
   path: '/templates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StylesRoute = StylesRouteImport.update({
+  id: '/styles',
+  path: '/styles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -115,6 +121,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
+  '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -133,6 +140,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
+  '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -152,6 +160,7 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
+  '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -172,6 +181,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/profile'
     | '/settings'
+    | '/styles'
     | '/templates'
     | '/unlock'
     | '/verify'
@@ -190,6 +200,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/profile'
     | '/settings'
+    | '/styles'
     | '/templates'
     | '/unlock'
     | '/verify'
@@ -208,6 +219,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/profile'
     | '/settings'
+    | '/styles'
     | '/templates'
     | '/unlock'
     | '/verify'
@@ -227,6 +239,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   ProfileRoute: typeof ProfileRoute
   SettingsRoute: typeof SettingsRoute
+  StylesRoute: typeof StylesRoute
   TemplatesRoute: typeof TemplatesRoute
   UnlockRoute: typeof UnlockRoute
   VerifyRoute: typeof VerifyRouteWithChildren
@@ -258,6 +271,13 @@ declare module '@tanstack/react-router' {
       path: '/templates'
       fullPath: '/templates'
       preLoaderRoute: typeof TemplatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/styles': {
+      id: '/styles'
+      path: '/styles'
+      fullPath: '/styles'
+      preLoaderRoute: typeof StylesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -373,6 +393,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   ProfileRoute: ProfileRoute,
   SettingsRoute: SettingsRoute,
+  StylesRoute: StylesRoute,
   TemplatesRoute: TemplatesRoute,
   UnlockRoute: UnlockRoute,
   VerifyRoute: VerifyRouteWithChildren,
@@ -385,3 +406,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
