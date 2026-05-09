@@ -89,143 +89,95 @@ export function CertificateView(p: Props) {
   return (
     <div
       style={{ ...lock, containerType: "inline-size", aspectRatio: aspect } as React.CSSProperties}
-      className={`relative w-full overflow-hidden rounded-sm ${p.compact ? "" : "shadow-elegant"}`}
+      className={`relative w-full overflow-hidden rounded-none ${p.compact ? "" : "shadow-lg"}`}
     >
-      {/* === OUTER + INNER BORDER (everything else lives inside) === */}
-      <div className="pointer-events-none absolute" style={{ inset: cq(1.4), border: `${cq(0.5)} solid currentColor`, color: "oklch(0.16 0.01 270)" }} />
-      <div className="pointer-events-none absolute" style={{ inset: cq(2.4), border: `1px solid currentColor`, color: appPrimary, opacity: 0.45 }} />
+      {/* === SLEEK THIN BLACK FRAME WITH DROP SHADOW === */}
+      <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid #000000`, boxShadow: "0 10px 40px rgba(0,0,0,0.15)" }} />
 
-      {/* INNER CANVAS — all decoration clipped to this rectangle */}
-      <div className="absolute overflow-hidden" style={{ inset: cq(2.4) }}>
-        {/* Guilloché grid (very subtle, full-bleed of inner) */}
-        <svg
-          aria-hidden viewBox="0 0 800 560" preserveAspectRatio="none"
-          className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.06] text-foreground"
-        >
-          <defs>
-            <pattern id={`cg-${p.serial}`} width="14" height="14" patternUnits="userSpaceOnUse">
-              <path d="M 14 0 L 0 0 0 14" fill="none" stroke="currentColor" strokeWidth="0.4" />
-              <circle cx="7" cy="7" r="0.6" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width="800" height="560" fill={`url(#cg-${p.serial})`} />
-        </svg>
-
-        {/* Decorative key-pattern stripe (left side, inspired by reference) */}
-        <svg
-          aria-hidden viewBox="0 0 60 1000" preserveAspectRatio="none"
-          className="pointer-events-none absolute left-0 top-0 h-full"
-          style={{ width: cq(5.5), color: appPrimary }}
-        >
-          <defs>
-            <pattern id={`key-${p.serial}`} width="60" height="80" patternUnits="userSpaceOnUse">
-              {/* interlocking diamond / key motif */}
-              <path d="M30 6 L54 30 L30 54 L6 30 Z" fill="none" stroke="currentColor" strokeWidth="2.2" />
-              <path d="M30 18 L42 30 L30 42 L18 30 Z" fill="none" stroke="currentColor" strokeWidth="1.4" />
-              <line x1="30" y1="54" x2="30" y2="74" stroke="currentColor" strokeWidth="2.2" />
-              <line x1="0"  y1="74" x2="60" y2="74" stroke="currentColor" strokeWidth="1.2" opacity="0.55" />
-            </pattern>
-          </defs>
-          <rect width="60" height="1000" fill={`url(#key-${p.serial})`} opacity="0.85" />
-        </svg>
-
-        {/* Right edge thin echo of stripe */}
-        <div className="pointer-events-none absolute right-0 top-0 h-full" style={{ width: cq(0.6), background: appPrimary, opacity: 0.6 }} />
-        <div className="pointer-events-none absolute right-0 top-0 h-full" style={{ width: cq(1.6), borderLeft: `1px solid ${appPrimary}`, marginRight: cq(0.9), opacity: 0.4 }} />
+      {/* INNER CANVAS — all content lives inside */}
+      <div className="absolute overflow-hidden" style={{ inset: cq(1) }}>
+        {/* Clean white background with subtle texture */}
+        <div className="absolute inset-0" style={{ background: "#ffffff" }} />
 
         {/* === CONTENT === */}
-        <div className="relative flex h-full flex-col" style={{ paddingLeft: cq(8.5), paddingRight: cq(4.5), paddingTop: cq(3.5), paddingBottom: cq(3.5) }}>
-          {/* Top row */}
-          <div className="flex items-start justify-between gap-3">
-            <div className="flex flex-col" style={{ gap: cq(0.3) }}>
-              <div className="font-mono uppercase text-muted-foreground tracking-[0.25em]" style={{ fontSize: cq(0.85) }}>
-                REF · {displaySerial}
+        <div className="relative flex h-full flex-col" style={{ paddingLeft: cq(4), paddingRight: cq(4), paddingTop: cq(3), paddingBottom: cq(3) }}>
+          {/* TOP LEFT: CERTIGO LOGO */}
+          <div className="absolute top-0 left-0" style={{ padding: cq(2) }}>
+            <div style={{ display: "flex", alignItems: "center", gap: cq(0.8) }}>
+              <CertigoLogo style={{ width: cq(3.5), height: cq(3.5) }} />
+              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8) }}>
+                CERTIGO
               </div>
-              <div className="font-sans text-foreground/80" style={{ fontSize: cq(1) }}>
+            </div>
+          </div>
+
+          {/* TOP RIGHT: REF CODE + VERIFIED SIGN */}
+          <div className="absolute top-0 right-0" style={{ padding: cq(2), textAlign: "right" }}>
+            <div className="font-mono text-foreground text-[0.85em]" style={{ fontSize: cq(0.9), fontWeight: 600, letterSpacing: "0.05em" }}>
+              REF-CODE: {displaySerial}
+            </div>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: cq(0.5), marginTop: cq(0.4) }}>
+              <VerifiedCheckmark style={{ width: cq(1.2), height: cq(1.2) }} />
+              <span className="font-sans text-foreground text-[0.75em]" style={{ fontSize: cq(0.8) }}>
+                VERIFIED SIGN
+              </span>
+            </div>
+          </div>
+
+          {/* CENTER: MAIN CONTENT */}
+          <div style={{ marginTop: cq(4.5) }}>
+            {/* Main Title */}
+            <h1 className="font-display font-black text-foreground text-center" style={{ fontSize: cq(4), lineHeight: 1.1, fontFamily: "'Blackletter', 'Old English Text', serif", marginBottom: cq(1.5) }}>
+              Certificate of Appreciation
+            </h1>
+
+            {/* Presentation text */}
+            <p className="font-sans text-foreground text-center" style={{ fontSize: cq(1.2), letterSpacing: "0.05em", marginBottom: cq(1) }}>
+              THE CERTIFICATE IS PRESENTED TO
+            </p>
+
+            {/* Blank line for recipient name */}
+            <div style={{ height: "2px", background: "#000000", margin: `${cq(1)} auto`, width: "60%", maxWidth: "400px" }} />
+
+            {/* Recipient Name */}
+            <p className="font-display italic text-foreground text-center" style={{ fontSize: cq(2.6), marginTop: cq(1.5), marginBottom: cq(2.5), fontWeight: 600 }}>
+              {p.recipientName}
+            </p>
+
+            {/* Fine Print Placeholder Text */}
+            <div className="font-sans text-foreground/70 text-center" style={{ fontSize: cq(0.9), lineHeight: 1.6, maxWidth: "85%", margin: "0 auto", marginBottom: cq(2.5) }}>
+              <p style={{ marginBottom: cq(1) }}>
+                For successfully completing the training program "{p.courseTopic}" and demonstrating exceptional commitment to professional development and continuous learning. This credential certifies that the recipient has met all requirements and competency standards.
+              </p>
+              <p style={{ fontSize: cq(0.8), opacity: 0.8 }}>
+                This certificate is issued in recognition of achievement and is valid as per the certification standards established by Certigo. Verification of this credential can be performed through the QR code provided.
+                {p.score != null ? ` Final assessment score: ${p.score}%` : ""}
+              </p>
+            </div>
+          </div>
+
+          {/* FOOTER: SIGNATURE + SIGNATORY LINE + QR CODE */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: cq(2), marginTop: "auto", alignItems: "flex-end" }}>
+            {/* Left: Signature + Signatory Line */}
+            <div style={{ textAlign: "left" }}>
+              <SignatureMonogram variant={sigVariant} style={{ height: cq(3), width: "100%", marginBottom: cq(0.3) }} />
+              <div style={{ height: "1px", background: "#000000", marginBottom: cq(0.3) }} />
+              <div className="font-sans font-bold text-foreground" style={{ fontSize: cq(0.95) }}>
+                CERTIGO. AUTHORIZED SIGNATORY
+              </div>
+              <div className="font-sans text-foreground/60" style={{ fontSize: cq(0.8), marginTop: cq(0.2) }}>
                 {new Date(p.issuedAt).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
               </div>
             </div>
-            <div className="flex flex-col items-end" style={{ gap: cq(0.4) }}>
-              <div className="font-display font-black leading-none tracking-tighter" style={{ fontSize: cq(2.2) }}>
-                <span style={{ color: appPrimary }}>CERTI</span><span className="text-foreground">GO</span>
-              </div>
-              <div className="font-sans text-muted-foreground" style={{ fontSize: cq(0.85) }}>
-                Verified Credential Authority
-              </div>
-              <div
-                className="inline-flex items-center rounded-full border"
-                style={{
-                  gap: cq(0.5), paddingInline: cq(0.9), paddingBlock: cq(0.2), fontSize: cq(0.85),
-                  color: "#16a34a", borderColor: "rgba(22,163,74,0.45)", background: "rgba(22,163,74,0.08)",
-                }}
-              >
-                <span className="relative inline-flex" style={{ width: cq(0.7), height: cq(0.7) }}>
-                  <span className="absolute inset-0 rounded-full" style={{ background: "#16a34a" }} />
-                  <span className="absolute inset-0 rounded-full animate-ping" style={{ background: "#16a34a", opacity: 0.4 }} />
-                </span>
-                On-chain Verified
-              </div>
-            </div>
-          </div>
 
-          {/* Title */}
-          <div className="mt-[auto]" />
-          <div style={{ marginTop: cq(2.4) }}>
-            <h1 className="font-display italic font-black tracking-tight text-foreground" style={{ fontSize: cq(5.2), lineHeight: 1 }}>
-              Certificate
-            </h1>
-            <h2 className="font-display italic font-black tracking-tight text-foreground" style={{ fontSize: cq(2.8), lineHeight: 1.05, marginTop: cq(0.2) }}>
-              Of Completion
-              <span className="inline-block rounded-full align-middle" style={{ background: appPrimary, width: cq(0.7), height: cq(0.7), marginLeft: cq(0.6) }} />
-            </h2>
-          </div>
+            {/* Center: Corporate Seal (spacer) */}
+            <div style={{ textAlign: "center" }} />
 
-          {/* Body */}
-          <div style={{ marginTop: cq(2), maxWidth: "78%" }}>
-            <p className="font-sans text-foreground/75" style={{ fontSize: cq(1.1) }}>
-              This is to proudly certify that
-            </p>
-            <h3
-              className="font-display italic text-foreground"
-              style={{ fontSize: cq(3.4), lineHeight: 1.05, marginTop: cq(0.6), fontWeight: 700 }}
-            >
-              {p.recipientName}
-            </h3>
-            <p className="font-sans text-foreground/70" style={{ fontSize: cq(0.95), marginTop: cq(1.2), lineHeight: 1.55 }}>
-              has successfully completed the program
-              <span className="font-bold text-foreground"> “{p.courseTopic}”</span>,
-              meeting all requirements and assessments. This credential is cryptographically issued and independently verifiable on the Certigo ledger
-              {p.score != null ? ` with a final score of ${p.score}%` : ""}.
-            </p>
-          </div>
-
-          {/* Footer */}
-          <div className="mt-auto grid items-end" style={{ gridTemplateColumns: "1.3fr 1fr 1fr", gap: cq(2), marginTop: cq(2.4) }}>
-            {/* Signature with big N monogram */}
-            <div className="flex flex-col items-start">
-              <SignatureMonogram variant={sigVariant} className="block" style={{ height: cq(4.4), width: cq(16) }} />
-              <div style={{ height: 1, width: cq(15), background: "currentColor", opacity: 0.85, marginTop: cq(0.3) }} />
-              <div className="font-sans font-bold text-foreground" style={{ fontSize: cq(1), marginTop: cq(0.4) }}>
-                N. — Authorized Signatory
-              </div>
-              <div className="font-sans text-muted-foreground" style={{ fontSize: cq(0.8) }}>
-                Certigo Credentials Office
-              </div>
-            </div>
-
-            {/* Corporate seal */}
-            <div className="flex justify-center" aria-hidden>
-              <CorporateSeal serial={p.serial} color={appPrimary} style={{ width: cq(11), height: cq(11) }} />
-            </div>
-
-            {/* QR */}
-            <div className="flex flex-col items-end text-right">
-              <div className="font-mono uppercase tracking-[0.2em] text-muted-foreground" style={{ marginBottom: cq(0.4), fontSize: cq(0.8) }}>
-                Scan to verify
-              </div>
+            {/* Right: QR Code */}
+            <div style={{ textAlign: "right" }}>
               {qr && (
-                <a href={qrTarget} target="_blank" rel="noreferrer" className="block">
-                  <img src={qr} alt="Scan to verify" className="rounded-sm border border-foreground/20" style={{ width: cq(8.5), height: cq(8.5) }} />
+                <a href={qrTarget} target="_blank" rel="noreferrer" className="block" style={{ display: "inline-block" }}>
+                  <img src={qr} alt="Scan to verify" className="border border-foreground/30" style={{ width: cq(7), height: cq(7) }} />
                 </a>
               )}
             </div>
@@ -244,58 +196,65 @@ export function CertificateView(p: Props) {
   );
 }
 
-// === Corporate seal: outer ring + guilloché rosette + curved text + star ===
-function CorporateSeal({ serial, color, style }: { serial: string; color: string; style?: React.CSSProperties }) {
-  const topId = `seal-top-${serial}`;
-  const botId = `seal-bot-${serial}`;
-  // generate guilloché rosette path
-  const rosette: string[] = [];
-  const lobes = 24;
-  for (let i = 0; i < lobes; i++) {
-    const a1 = (i / lobes) * Math.PI * 2;
-    const a2 = ((i + 1) / lobes) * Math.PI * 2;
-    const x1 = 100 + Math.cos(a1) * 40;
-    const y1 = 100 + Math.sin(a1) * 40;
-    const x2 = 100 + Math.cos(a2) * 40;
-    const y2 = 100 + Math.sin(a2) * 40;
-    const cx = 100 + Math.cos((a1 + a2) / 2) * 64;
-    const cy = 100 + Math.sin((a1 + a2) / 2) * 64;
-    rosette.push(`M ${x1.toFixed(1)} ${y1.toFixed(1)} Q ${cx.toFixed(1)} ${cy.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}`);
-  }
+// === CERTIGO LOGO: Stylized Gold Shield with 'G' ===
+function CertigoLogo({ style }: { style?: React.CSSProperties }) {
   return (
-    <svg viewBox="0 0 200 200" style={{ color, ...style }} className="-rotate-[6deg]">
-      {/* outer thick ring */}
-      <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" strokeWidth="2.4" />
-      <circle cx="100" cy="100" r="90" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.8" />
-      {/* curved text band */}
-      <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="0.6" opacity="0.5" />
+    <svg viewBox="0 0 100 120" style={style} aria-hidden>
+      {/* Gold Shield Shape */}
       <defs>
-        <path id={topId} d="M 22,100 a 78,78 0 0 1 156,0" fill="none" />
-        <path id={botId} d="M 26,100 a 74,74 0 0 0 148,0" fill="none" />
+        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#FFD700" />
+          <stop offset="50%" stopColor="#FFC700" />
+          <stop offset="100%" stopColor="#DAA520" />
+        </linearGradient>
       </defs>
-      <text fontFamily="ui-serif, Georgia, serif" fontStyle="italic" fontSize="13.5" letterSpacing="2.2" fill="currentColor">
-        <textPath href={`#${topId}`} startOffset="50%" textAnchor="middle">CERTIGO · VERIFIED CREDENTIAL</textPath>
+      
+      {/* Shield outline and fill */}
+      <path
+        d="M 50 10 L 25 30 L 25 60 Q 25 90 50 110 Q 75 90 75 60 L 75 30 Z"
+        fill="url(#goldGradient)"
+        stroke="#B8860B"
+        strokeWidth="2"
+      />
+      
+      {/* Shield highlight */}
+      <path
+        d="M 50 10 L 30 28 L 30 60 Q 30 85 50 102 Q 65 85 65 60 L 65 28 Z"
+        fill="none"
+        stroke="#FFED4E"
+        strokeWidth="1.5"
+        opacity="0.6"
+      />
+
+      {/* Large 'G' in the center */}
+      <text
+        x="50"
+        y="70"
+        fontSize="48"
+        fontWeight="bold"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="#1a1a1a"
+        fontFamily="serif"
+      >
+        G
       </text>
-      <text fontFamily="ui-serif, Georgia, serif" fontStyle="italic" fontSize="10" letterSpacing="3" fill="currentColor">
-        <textPath href={`#${botId}`} startOffset="50%" textAnchor="middle">AUTHENTIC · ON-CHAIN · {serial.slice(-6).toUpperCase()}</textPath>
-      </text>
-      {/* inner ring */}
-      <circle cx="100" cy="100" r="66" fill="none" stroke="currentColor" strokeWidth="1.6" />
-      {/* guilloché rosette */}
-      <g fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.55">
-        {rosette.map((d, i) => <path key={i} d={d} />)}
-      </g>
-      <circle cx="100" cy="100" r="44" fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.6" strokeDasharray="2 2" />
-      {/* central star */}
-      <path d="M100 60 L110 92 L142 92 L116 110 L126 142 L100 124 L74 142 L84 110 L58 92 L90 92 Z"
-            fill="currentColor" opacity="0.92" />
     </svg>
   );
 }
 
-// === Big "N" monogram + handwriting flourish strokes ===
-function SignatureMonogram({ variant, className, style }: { variant: number; className?: string; style?: React.CSSProperties }) {
-  // flourish variants (lines that emanate from / wrap the N)
+// === VERIFIED CHECKMARK ===
+function VerifiedCheckmark({ style }: { style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 24 24" style={style} aria-hidden fill="none" stroke="currentColor" strokeWidth="2">
+      <polyline points="20 6 9 17 4 12" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// === Big Signature Monogram + handwriting flourish strokes ===
+function SignatureMonogram({ variant, style }: { variant: number; style?: React.CSSProperties }) {
+  // flourish variants (lines that emanate from / wrap the monogram)
   const flourishes = [
     [
       "M70 36 C 95 14, 130 50, 165 24 C 192 6, 220 38, 244 18",
@@ -315,14 +274,14 @@ function SignatureMonogram({ variant, className, style }: { variant: number; cla
   ];
   const f = flourishes[variant] ?? flourishes[0];
   return (
-    <svg viewBox="0 0 250 60" preserveAspectRatio="xMinYMid meet" aria-hidden className={className} style={style}>
+    <svg viewBox="0 0 250 60" preserveAspectRatio="xMinYMid meet" aria-hidden style={style}>
       <g fill="none" stroke="oklch(0.16 0.01 270)" strokeLinecap="round" strokeLinejoin="round">
-        {/* Large hand-drawn N */}
+        {/* Large hand-drawn N/Signature */}
         <path d="M14 50 C 12 38, 14 22, 16 10 L 18 10 L 56 44 L 58 44 C 56 32, 56 20, 58 8"
               strokeWidth="3.4" />
-        {/* secondary thin overlay on N for ink weight */}
+        {/* secondary thin overlay for ink weight */}
         <path d="M16 12 L 56 46" strokeWidth="1.2" opacity="0.55" />
-        {/* tail flourish under N */}
+        {/* tail flourish */}
         <path d="M10 54 C 28 58, 50 58, 64 52" strokeWidth="1.6" opacity="0.85" />
         {/* main script flourish */}
         <path d={f[0]} strokeWidth="2.2" />
