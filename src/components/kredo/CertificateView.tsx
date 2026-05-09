@@ -4,13 +4,15 @@ import { formatSerial } from "@/lib/cert";
 
 export type CertTemplate =
   | "classic"
-  | "executive"
-  | "monogram"
+  | "double"
+  | "ornate"
   | "minimal"
   | "deco"
   | "bordered"
-  | "ribbon"
-  | "modern";
+  | "navy"
+  | "emerald"
+  | "stripe"
+  | "embossed";
 
 export type CertOrientation = "landscape" | "portrait";
 
@@ -24,14 +26,16 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
-  { key: "classic",   label: "Classic",    hint: "Traditional double border" },
-  { key: "executive", label: "Executive",  hint: "Top accent bar + serif air" },
-  { key: "monogram",  label: "Monogram",   hint: "Center K monogram watermark" },
-  { key: "minimal",   label: "Minimal",    hint: "Single hairline frame" },
-  { key: "deco",      label: "Art Deco",   hint: "Corner ornaments" },
-  { key: "bordered",  label: "Bordered",   hint: "Bold solid frame" },
-  { key: "ribbon",    label: "Ribbon",     hint: "Diagonal seal ribbon" },
-  { key: "modern",    label: "Modern",     hint: "Asymmetric side stripe" },
+  { key: "classic",  label: "Classic",   hint: "Thin black frame" },
+  { key: "double",   label: "Double",    hint: "Inner + outer black border" },
+  { key: "ornate",   label: "Ornate",    hint: "Gold double frame" },
+  { key: "minimal",  label: "Minimal",   hint: "Single hairline grey" },
+  { key: "deco",     label: "Art Deco",  hint: "Geometric corner brackets" },
+  { key: "bordered", label: "Bordered",  hint: "Bold solid frame" },
+  { key: "navy",     label: "Navy",      hint: "Navy double border" },
+  { key: "emerald",  label: "Emerald",   hint: "Forest green + star corners" },
+  { key: "stripe",   label: "Stripe",    hint: "Left vertical accent stripe" },
+  { key: "embossed", label: "Embossed",  hint: "Inset shadow + thin frame" },
 ];
 
 interface Props {
@@ -101,16 +105,32 @@ export function CertificateView(p: Props) {
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
 
+  const tpl: CertTemplate = p.template ?? "classic";
+  // per-template chrome: frame color, accent color (for hairlines/title underline)
+  const skin: Record<CertTemplate, { ink: string; accent: string; titleColor?: string }> = {
+    classic:  { ink: "#000000", accent: "#000000" },
+    double:   { ink: "#000000", accent: "#000000" },
+    ornate:   { ink: "#b8860b", accent: "#b8860b", titleColor: "#1a1a1a" },
+    minimal:  { ink: "#9ca3af", accent: "#000000" },
+    deco:     { ink: "#000000", accent: "#000000" },
+    bordered: { ink: "#000000", accent: "#000000" },
+    navy:     { ink: "#0f2a55", accent: "#0f2a55", titleColor: "#0f2a55" },
+    emerald:  { ink: "#065f46", accent: "#065f46", titleColor: "#065f46" },
+    stripe:   { ink: "#000000", accent: "#dc2626" },
+    embossed: { ink: "#0f172a", accent: "#0f172a" },
+  };
+  const sk = skin[tpl];
+
   return (
     <div
       style={{ ...lock, containerType: "inline-size", aspectRatio: aspect } as React.CSSProperties}
       className={`relative w-full overflow-hidden rounded-none ${p.compact ? "" : "shadow-lg"}`}
     >
-      {/* === SLEEK THIN BLACK FRAME WITH DROP SHADOW === */}
-      <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid #000000`, boxShadow: "0 10px 40px rgba(0,0,0,0.15)" }} />
+      {/* === FRAME (varies by template) === */}
+      <CertFrame template={tpl} cq={cq} ink={sk.ink} />
 
       {/* INNER CANVAS — all content lives inside */}
-      <div className="absolute overflow-hidden" style={{ inset: cq(1) }}>
+      <div className="absolute overflow-hidden" style={{ inset: cq(tpl === "stripe" ? 1 : 1) }}>
         {/* Clean white background with subtle texture */}
         <div className="absolute inset-0" style={{ background: "#ffffff" }} />
 
@@ -151,6 +171,7 @@ export function CertificateView(p: Props) {
                 fontWeight: 700,
                 marginBottom: cq(1.5),
                 letterSpacing: "0.01em",
+                color: sk.titleColor ?? undefined,
               }}
             >
               Certificate of Appreciation
@@ -268,6 +289,114 @@ function CertigoLogo({ style }: { style?: React.CSSProperties }) {
       </text>
     </svg>
   );
+}
+
+// === Per-template frame chrome (10 variants) ===
+function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: number) => string; ink: string }) {
+  const shadow = "0 10px 40px rgba(0,0,0,0.15)";
+  switch (template) {
+    case "classic":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
+    case "double":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.5)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.12)} solid ${ink}` }} />
+        </>
+      );
+    case "ornate":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.55)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2), border: `${cq(0.2)} solid ${ink}` }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.6), border: `${cq(0.06)} solid ${ink}`, opacity: 0.6 }} />
+          {/* corner ornaments */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(2), left: cq(2) } :
+              corner === "tr" ? { top: cq(2), right: cq(2) } :
+              corner === "bl" ? { bottom: cq(2), left: cq(2) } :
+                                { bottom: cq(2), right: cq(2) };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(4), height: cq(4), ...pos }} viewBox="0 0 40 40" aria-hidden>
+                <path d="M2 2 L 14 2 M 2 2 L 2 14 M 6 6 L 14 6 M 6 6 L 6 14" fill="none" stroke={ink} strokeWidth="1.5" />
+                <circle cx="2" cy="2" r="2" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "minimal":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1.4), border: `${cq(0.08)} solid ${ink}`, boxShadow: shadow }} />;
+    case "deco":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.18)} solid ${ink}`, boxShadow: shadow }} />
+          {/* corner brackets */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(1.6), left: cq(1.6), transform: "rotate(0deg)" } :
+              corner === "tr" ? { top: cq(1.6), right: cq(1.6), transform: "rotate(90deg)" } :
+              corner === "bl" ? { bottom: cq(1.6), left: cq(1.6), transform: "rotate(-90deg)" } :
+                                { bottom: cq(1.6), right: cq(1.6), transform: "rotate(180deg)" };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(5), height: cq(5), ...pos }} viewBox="0 0 50 50" aria-hidden>
+                <path d="M2 30 L 2 2 L 30 2" fill="none" stroke={ink} strokeWidth="2.4" />
+                <path d="M8 22 L 8 8 L 22 8" fill="none" stroke={ink} strokeWidth="1.2" />
+                <path d="M14 14 L 14 14" fill="none" stroke={ink} strokeWidth="0" />
+                <rect x="3" y="3" width="3" height="3" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "bordered":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.9)} solid ${ink}`, boxShadow: shadow }} />;
+    case "navy":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.45)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(1.9), border: `${cq(0.08)} solid ${ink}`, opacity: 0.7 }} />
+        </>
+      );
+    case "emerald":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.4)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(1.9), border: `${cq(0.08)} solid ${ink}`, opacity: 0.6 }} />
+          {/* corner stars */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(1.4), left: cq(1.4) } :
+              corner === "tr" ? { top: cq(1.4), right: cq(1.4) } :
+              corner === "bl" ? { bottom: cq(1.4), left: cq(1.4) } :
+                                { bottom: cq(1.4), right: cq(1.4) };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(1.4), height: cq(1.4), ...pos }} viewBox="0 0 20 20" aria-hidden>
+                <polygon points="10,1 12,7 19,7 13,11 15,18 10,14 5,18 7,11 1,7 8,7" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "stripe":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.18)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ top: cq(1), bottom: cq(1), left: cq(1), width: cq(1.6), background: "#dc2626" }} />
+          <div className="pointer-events-none absolute" style={{ top: cq(1), bottom: cq(1), left: cq(2.6), width: cq(0.08), background: ink, opacity: 0.4 }} />
+        </>
+      );
+    case "embossed":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.2)} solid ${ink}`, boxShadow: `${shadow}, inset 0 0 ${cq(2)} rgba(0,0,0,0.18)` }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.06)} solid ${ink}`, opacity: 0.4 }} />
+        </>
+      );
+    default:
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
+  }
 }
 
 // === VERIFIED CHECKMARK ===
