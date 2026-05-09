@@ -4,13 +4,15 @@ import { formatSerial } from "@/lib/cert";
 
 export type CertTemplate =
   | "classic"
-  | "executive"
-  | "monogram"
+  | "double"
+  | "ornate"
   | "minimal"
   | "deco"
   | "bordered"
-  | "ribbon"
-  | "modern";
+  | "navy"
+  | "emerald"
+  | "stripe"
+  | "embossed";
 
 export type CertOrientation = "landscape" | "portrait";
 
@@ -24,14 +26,16 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
-  { key: "classic",   label: "Classic",    hint: "Traditional double border" },
-  { key: "executive", label: "Executive",  hint: "Top accent bar + serif air" },
-  { key: "monogram",  label: "Monogram",   hint: "Center K monogram watermark" },
-  { key: "minimal",   label: "Minimal",    hint: "Single hairline frame" },
-  { key: "deco",      label: "Art Deco",   hint: "Corner ornaments" },
-  { key: "bordered",  label: "Bordered",   hint: "Bold solid frame" },
-  { key: "ribbon",    label: "Ribbon",     hint: "Diagonal seal ribbon" },
-  { key: "modern",    label: "Modern",     hint: "Asymmetric side stripe" },
+  { key: "classic",  label: "Classic",   hint: "Thin black frame" },
+  { key: "double",   label: "Double",    hint: "Inner + outer black border" },
+  { key: "ornate",   label: "Ornate",    hint: "Gold double frame" },
+  { key: "minimal",  label: "Minimal",   hint: "Single hairline grey" },
+  { key: "deco",     label: "Art Deco",  hint: "Geometric corner brackets" },
+  { key: "bordered", label: "Bordered",  hint: "Bold solid frame" },
+  { key: "navy",     label: "Navy",      hint: "Navy double border" },
+  { key: "emerald",  label: "Emerald",   hint: "Forest green + star corners" },
+  { key: "stripe",   label: "Stripe",    hint: "Left vertical accent stripe" },
+  { key: "embossed", label: "Embossed",  hint: "Inset shadow + thin frame" },
 ];
 
 interface Props {
@@ -101,16 +105,32 @@ export function CertificateView(p: Props) {
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
 
+  const tpl: CertTemplate = p.template ?? "classic";
+  // per-template chrome: frame color, accent color (for hairlines/title underline)
+  const skin: Record<CertTemplate, { ink: string; accent: string; titleColor?: string }> = {
+    classic:  { ink: "#000000", accent: "#000000" },
+    double:   { ink: "#000000", accent: "#000000" },
+    ornate:   { ink: "#b8860b", accent: "#b8860b", titleColor: "#1a1a1a" },
+    minimal:  { ink: "#9ca3af", accent: "#000000" },
+    deco:     { ink: "#000000", accent: "#000000" },
+    bordered: { ink: "#000000", accent: "#000000" },
+    navy:     { ink: "#0f2a55", accent: "#0f2a55", titleColor: "#0f2a55" },
+    emerald:  { ink: "#065f46", accent: "#065f46", titleColor: "#065f46" },
+    stripe:   { ink: "#000000", accent: "#dc2626" },
+    embossed: { ink: "#0f172a", accent: "#0f172a" },
+  };
+  const sk = skin[tpl];
+
   return (
     <div
       style={{ ...lock, containerType: "inline-size", aspectRatio: aspect } as React.CSSProperties}
       className={`relative w-full overflow-hidden rounded-none ${p.compact ? "" : "shadow-lg"}`}
     >
-      {/* === SLEEK THIN BLACK FRAME WITH DROP SHADOW === */}
-      <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid #000000`, boxShadow: "0 10px 40px rgba(0,0,0,0.15)" }} />
+      {/* === FRAME (varies by template) === */}
+      <CertFrame template={tpl} cq={cq} ink={sk.ink} />
 
       {/* INNER CANVAS — all content lives inside */}
-      <div className="absolute overflow-hidden" style={{ inset: cq(1) }}>
+      <div className="absolute overflow-hidden" style={{ inset: cq(tpl === "stripe" ? 1 : 1) }}>
         {/* Clean white background with subtle texture */}
         <div className="absolute inset-0" style={{ background: "#ffffff" }} />
 
