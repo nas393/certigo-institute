@@ -16,7 +16,7 @@ const en = {
   "hero.title.a": "From knowledge to",
   "hero.title.b": "verified proof.",
   "hero.title.c": "Instantly.",
-  "hero.sub": "Certigo is the fastest way to create credentials employers can verify instantly. Type a skill — get a full course, a quiz, and a QR-verified certificate that lives forever in your account.",
+  "hero.sub": "CERTIGO. is the fastest way to create credentials employers can verify instantly. Type a skill — get a full course, a quiz, and a QR-verified certificate that lives forever in your account.",
   "hero.bullet.cc": "✓ No credit card",
   "hero.bullet.free": "✓ 1 free certificate",
   "hero.bullet.fast": "✓ Setup in 60 seconds",
@@ -34,7 +34,7 @@ const en = {
 
   "trust2.label": "Built to be trusted",
   "trust2.title": "Every certificate carries proof.",
-  "trust2.body": "Each Certigo certificate has a unique serial and a QR code linking to a public ledger page. Anyone — recruiters, schools, clients — can verify the credential in one scan, no login required.",
+  "trust2.body": "Each CERTIGO. certificate has a unique serial and a QR code linking to a public ledger page. Anyone — recruiters, schools, clients — can verify the credential in one scan, no login required.",
   "trust2.cta": "Open the public ledger",
 
   "who.label": "Who it's for",
@@ -42,10 +42,10 @@ const en = {
   "who.2.t": "Coaches & creators", "who.2.d": "Issue branded certificates to students with one click.",
   "who.3.t": "Companies & HR", "who.3.d": "Onboard, train, and certify teams at scale.",
 
-  "manifesto.label": "Why Certigo exists",
+  "manifesto.label": "Why CERTIGO. exists",
   "manifesto.title.a": "Skills move faster than credentials.",
   "manifesto.title.b": "Until now.",
-  "manifesto.body": "We believe proof of knowledge should be as fast as learning itself. Certigo is the fastest way to create credentials employers can verify instantly — open, portable, and yours forever.",
+  "manifesto.body": "We believe proof of knowledge should be as fast as learning itself. CERTIGO. is the fastest way to create credentials employers can verify instantly — open, portable, and yours forever.",
 
   "share.1.t": "Share to LinkedIn", "share.1.d": "One click adds your verified credential to your profile.",
   "share.2.t": "Public profile", "share.2.d": "Get a certigo.app/u/yourname page with every credential you've earned.",
@@ -61,9 +61,9 @@ const en = {
   "faq.title": "Everything you need to trust Certigo.",
   "faq.intro": "Built for recruiters, learners, and teams that need credentials they can actually verify. No vague badges, no walled gardens.",
 
-  "about.label": "About Certigo",
+  "about.label": "About CERTIGO.",
   "about.title": "Credentials built for the way the world actually hires.",
-  "about.body1": "Certigo was founded on a simple belief: proof of skill should travel as fast as skill itself. Diplomas take years. Job descriptions change in months. We built Certigo so any learner, coach, or company can issue a credential that's instantly verifiable, beautifully designed, and owned forever by the person who earned it.",
+  "about.body1": "CERTIGO. was founded on a simple belief: proof of skill should travel as fast as skill itself. Diplomas take years. Job descriptions change in months. We built CERTIGO. so any learner, coach, or company can issue a credential that's instantly verifiable, beautifully designed, and owned forever by the person who earned it.",
   "about.body2": "Our platform is trusted by independent professionals, training providers, and HR teams across 38 countries — issuing tens of thousands of verified credentials every month.",
   "about.stat.issued": "Credentials issued",
   "about.stat.verifs": "Public verifications",
@@ -75,7 +75,7 @@ const en = {
   "value.4.t": "Built for teams", "value.4.d": "Bulk issuance, admin controls, and custom branding for coaches and HR teams.",
 
   "contact.label": "Get in touch", "contact.title": "Talk to a real human.",
-  "contact.body": "Whether you're verifying a credential, exploring Certigo for your team, or just want to say hello — we read every message and reply within one business day.",
+  "contact.body": "Whether you're verifying a credential, exploring CERTIGO. for your team, or just want to say hello — we read every message and reply within one business day.",
   "contact.sales": "General & sales", "contact.support": "Support & verification",
   "contact.hq": "Headquarters", "contact.hq.value": "Remote-first · serving 38 countries",
   "contact.form.title": "Send us a message",
@@ -113,7 +113,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "hero.title.a": "Du savoir à la",
     "hero.title.b": "preuve vérifiée.",
     "hero.title.c": "Instantanément.",
-    "hero.sub": "Certigo est le moyen le plus rapide de créer des certificats que les employeurs peuvent vérifier en un instant. Tapez une compétence — obtenez un cours complet, un quiz et un certificat vérifié par QR.",
+    "hero.sub": "CERTIGO. est le moyen le plus rapide de créer des certificats que les employeurs peuvent vérifier en un instant. Tapez une compétence — obtenez un cours complet, un quiz et un certificat vérifié par QR.",
     "hero.bullet.cc": "✓ Sans carte bancaire",
     "hero.bullet.free": "✓ 1 certificat gratuit",
     "hero.bullet.fast": "✓ Configuration en 60 sec.",
@@ -131,7 +131,7 @@ const dict: Record<Lang, Record<string, string>> = {
 
     "trust2.label": "Conçu pour être fiable",
     "trust2.title": "Chaque certificat porte sa preuve.",
-    "trust2.body": "Chaque certificat Certigo possède un numéro de série unique et un QR code menant à une page de registre public. N'importe qui peut vérifier le certificat en un scan, sans connexion.",
+    "trust2.body": "Chaque certificat CERTIGO. possède un numéro de série unique et un QR code menant à une page de registre public. N'importe qui peut vérifier le certificat en un scan, sans connexion.",
     "trust2.cta": "Ouvrir le registre public",
 
     "who.label": "Pour qui",
@@ -139,10 +139,10 @@ const dict: Record<Lang, Record<string, string>> = {
     "who.2.t": "Coachs & créateurs", "who.2.d": "Délivrez des certificats brandés à vos élèves en un clic.",
     "who.3.t": "Entreprises & RH", "who.3.d": "Intégrez, formez et certifiez vos équipes à grande échelle.",
 
-    "manifesto.label": "Pourquoi Certigo existe",
+    "manifesto.label": "Pourquoi CERTIGO. existe",
     "manifesto.title.a": "Les compétences évoluent plus vite que les diplômes.",
     "manifesto.title.b": "Plus maintenant.",
-    "manifesto.body": "Nous croyons que la preuve du savoir doit être aussi rapide que l'apprentissage lui-même. Certigo est ouvert, portable et vous appartient pour toujours.",
+    "manifesto.body": "Nous croyons que la preuve du savoir doit être aussi rapide que l'apprentissage lui-même. CERTIGO. est ouvert, portable et vous appartient pour toujours.",
 
     "share.1.t": "Partager sur LinkedIn", "share.1.d": "Un clic pour ajouter votre certificat vérifié à votre profil.",
     "share.2.t": "Profil public", "share.2.d": "Obtenez une page certigo.app/u/votrenom avec tous vos certificats.",
@@ -158,9 +158,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "faq.title": "Tout ce qu'il faut pour faire confiance à Certigo.",
     "faq.intro": "Conçu pour les recruteurs, apprenants et équipes qui ont besoin de certificats vérifiables.",
 
-    "about.label": "À propos de Certigo",
+    "about.label": "À propos de CERTIGO.",
     "about.title": "Des certificats conçus pour le monde du travail réel.",
-    "about.body1": "Certigo a été fondé sur une conviction simple : la preuve du savoir doit voyager aussi vite que le savoir lui-même.",
+    "about.body1": "CERTIGO. a été fondé sur une conviction simple : la preuve du savoir doit voyager aussi vite que le savoir lui-même.",
     "about.body2": "Notre plateforme est utilisée par des professionnels, formateurs et équipes RH dans 38 pays.",
     "about.stat.issued": "Certificats émis",
     "about.stat.verifs": "Vérifications publiques",
@@ -172,7 +172,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "value.4.t": "Conçu pour les équipes", "value.4.d": "Émission en masse, contrôles admin et personnalisation.",
 
     "contact.label": "Contactez-nous", "contact.title": "Parlez à un vrai humain.",
-    "contact.body": "Que vous vérifiez un certificat ou exploriez Certigo pour votre équipe, nous lisons chaque message.",
+    "contact.body": "Que vous vérifiez un certificat ou exploriez CERTIGO. pour votre équipe, nous lisons chaque message.",
     "contact.sales": "Général & ventes", "contact.support": "Support & vérification",
     "contact.hq": "Siège", "contact.hq.value": "Distant — dans 38 pays",
     "contact.form.title": "Envoyez-nous un message",
@@ -206,7 +206,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "hero.title.a": "Del conocimiento a la",
     "hero.title.b": "prueba verificada.",
     "hero.title.c": "Al instante.",
-    "hero.sub": "Certigo es la forma más rápida de crear credenciales que los empleadores pueden verificar al instante.",
+    "hero.sub": "CERTIGO. es la forma más rápida de crear credenciales que los empleadores pueden verificar al instante.",
     "hero.bullet.cc": "✓ Sin tarjeta",
     "hero.bullet.free": "✓ 1 certificado gratis",
     "hero.bullet.fast": "✓ Listo en 60 seg.",
@@ -223,7 +223,7 @@ const dict: Record<Lang, Record<string, string>> = {
 
     "trust2.label": "Confianza por diseño",
     "trust2.title": "Cada certificado lleva su prueba.",
-    "trust2.body": "Cada certificado Certigo tiene un serial único y un QR a una página pública.",
+    "trust2.body": "Cada certificado CERTIGO. tiene un serial único y un QR a una página pública.",
     "trust2.cta": "Abrir registro público",
 
     "who.label": "Para quién",
@@ -231,7 +231,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "who.2.t": "Coaches y creadores", "who.2.d": "Emite certificados con un clic.",
     "who.3.t": "Empresas y RR.HH.", "who.3.d": "Capacita y certifica equipos a escala.",
 
-    "manifesto.label": "Por qué existe Certigo",
+    "manifesto.label": "Por qué existe CERTIGO.",
     "manifesto.title.a": "Las habilidades cambian más rápido que las credenciales.",
     "manifesto.title.b": "Hasta ahora.",
     "manifesto.body": "Creemos que la prueba del conocimiento debe ser tan rápida como aprenderlo.",
@@ -250,9 +250,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "faq.title": "Todo lo que necesitas para confiar en Certigo.",
     "faq.intro": "Para reclutadores, estudiantes y equipos que necesitan credenciales verificables.",
 
-    "about.label": "Acerca de Certigo",
+    "about.label": "Acerca de CERTIGO.",
     "about.title": "Credenciales para cómo el mundo realmente contrata.",
-    "about.body1": "Certigo se fundó sobre una creencia simple: la prueba de habilidad debe viajar tan rápido como la habilidad misma.",
+    "about.body1": "CERTIGO. se fundó sobre una creencia simple: la prueba de habilidad debe viajar tan rápido como la habilidad misma.",
     "about.body2": "Nuestra plataforma es usada en 38 países.",
     "about.stat.issued": "Credenciales emitidas",
     "about.stat.verifs": "Verificaciones públicas",
@@ -298,7 +298,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "hero.title.a": "Do conhecimento à",
     "hero.title.b": "prova verificada.",
     "hero.title.c": "Instantaneamente.",
-    "hero.sub": "Certigo é a forma mais rápida de criar credenciais que empregadores podem verificar instantaneamente.",
+    "hero.sub": "CERTIGO. é a forma mais rápida de criar credenciais que empregadores podem verificar instantaneamente.",
     "hero.bullet.cc": "✓ Sem cartão", "hero.bullet.free": "✓ 1 certificado grátis", "hero.bullet.fast": "✓ Pronto em 60s",
 
     "trust.qr": "Verificado por QR", "trust.tamper": "À prova de adulteração",
@@ -313,7 +313,7 @@ const dict: Record<Lang, Record<string, string>> = {
 
     "trust2.label": "Construído para confiança",
     "trust2.title": "Cada certificado carrega prova.",
-    "trust2.body": "Cada certificado Certigo tem serial único e QR para página pública.",
+    "trust2.body": "Cada certificado CERTIGO. tem serial único e QR para página pública.",
     "trust2.cta": "Abrir registro público",
 
     "who.label": "Para quem",
@@ -321,7 +321,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "who.2.t": "Coaches e criadores", "who.2.d": "Emita certificados com um clique.",
     "who.3.t": "Empresas e RH", "who.3.d": "Treine e certifique equipes em escala.",
 
-    "manifesto.label": "Por que Certigo existe",
+    "manifesto.label": "Por que CERTIGO. existe",
     "manifesto.title.a": "Habilidades evoluem mais rápido que credenciais.",
     "manifesto.title.b": "Até agora.",
     "manifesto.body": "Acreditamos que a prova de conhecimento deve ser tão rápida quanto aprendê-lo.",
@@ -339,9 +339,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "faq.title": "Tudo que você precisa para confiar no Certigo.",
     "faq.intro": "Para recrutadores, alunos e equipes que precisam de credenciais verificáveis.",
 
-    "about.label": "Sobre Certigo",
+    "about.label": "Sobre CERTIGO.",
     "about.title": "Credenciais para como o mundo realmente contrata.",
-    "about.body1": "Certigo foi fundado numa crença simples: a prova de habilidade deve viajar tão rápido quanto a própria habilidade.",
+    "about.body1": "CERTIGO. foi fundado numa crença simples: a prova de habilidade deve viajar tão rápido quanto a própria habilidade.",
     "about.body2": "Nossa plataforma é usada em 38 países.",
     "about.stat.issued": "Credenciais emitidas",
     "about.stat.verifs": "Verificações públicas",
@@ -387,7 +387,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "hero.title.a": "من المعرفة إلى",
     "hero.title.b": "دليل موثّق.",
     "hero.title.c": "فورًا.",
-    "hero.sub": "Certigo هي أسرع طريقة لإنشاء شهادات يمكن لأصحاب العمل التحقق منها فورًا.",
+    "hero.sub": "CERTIGO. هي أسرع طريقة لإنشاء شهادات يمكن لأصحاب العمل التحقق منها فورًا.",
     "hero.bullet.cc": "✓ بدون بطاقة", "hero.bullet.free": "✓ شهادة مجانية", "hero.bullet.fast": "✓ جاهز في 60 ثانية",
 
     "trust.qr": "موثّق بـ QR", "trust.tamper": "ضد التزوير",
@@ -402,7 +402,7 @@ const dict: Record<Lang, Record<string, string>> = {
 
     "trust2.label": "مبني على الثقة",
     "trust2.title": "كل شهادة تحمل دليلها.",
-    "trust2.body": "كل شهادة Certigo لها رقم فريد ورمز QR لصفحة عامة.",
+    "trust2.body": "كل شهادة CERTIGO. لها رقم فريد ورمز QR لصفحة عامة.",
     "trust2.cta": "افتح السجل العام",
 
     "who.label": "لمن",
@@ -410,7 +410,7 @@ const dict: Record<Lang, Record<string, string>> = {
     "who.2.t": "المدربون والمبدعون", "who.2.d": "أصدر شهادات بنقرة.",
     "who.3.t": "الشركات والموارد البشرية", "who.3.d": "درّب وثّق فرقك.",
 
-    "manifesto.label": "لماذا Certigo",
+    "manifesto.label": "لماذا CERTIGO.",
     "manifesto.title.a": "المهارات تتحرك أسرع من الشهادات.",
     "manifesto.title.b": "حتى الآن.",
     "manifesto.body": "نؤمن بأن إثبات المعرفة يجب أن يكون بسرعة التعلّم نفسه.",
@@ -428,9 +428,9 @@ const dict: Record<Lang, Record<string, string>> = {
     "faq.title": "كل ما تحتاجه للثقة بـ Certigo.",
     "faq.intro": "للمسؤولين والمتعلمين والفرق الذين يحتاجون شهادات قابلة للتحقق.",
 
-    "about.label": "عن Certigo",
+    "about.label": "عن CERTIGO.",
     "about.title": "شهادات لطريقة التوظيف الحقيقية في العالم.",
-    "about.body1": "تأسست Certigo على إيمان بسيط: إثبات المهارة يجب أن يسافر بسرعة المهارة نفسها.",
+    "about.body1": "تأسست CERTIGO. على إيمان بسيط: إثبات المهارة يجب أن يسافر بسرعة المهارة نفسها.",
     "about.body2": "منصتنا تخدم 38 دولة.",
     "about.stat.issued": "شهادات مُصدَرة",
     "about.stat.verifs": "عمليات تحقق",

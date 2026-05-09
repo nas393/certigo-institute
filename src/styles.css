@@ -38,7 +38,7 @@
 
 :root {
   --radius: 0.5rem;
-  /* CERTIGO Midnight Indigo — light surface with deep indigo authority */
+  /* CERTIGO. Midnight Indigo — light surface with deep indigo authority */
   --background: oklch(0.985 0.004 270);
   --paper: oklch(0.985 0.004 270);
   --foreground: oklch(0.14 0.02 275);
@@ -79,7 +79,7 @@
 }
 
 .dark {
-  /* CERTIGO Midnight — deep indigo canvas with cyan-electric primaries */
+  /* CERTIGO. Midnight — deep indigo canvas with cyan-electric primaries */
   --background: oklch(0.10 0.02 275);
   --paper: oklch(0.10 0.02 275);
   --foreground: oklch(0.98 0.005 275);

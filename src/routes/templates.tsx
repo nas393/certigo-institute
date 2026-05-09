@@ -2,14 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CertificateView, CERT_TEMPLATES } from "@/components/kredo/CertificateView";
 
 export const Route = createFileRoute("/templates")({
-  head: () => ({ meta: [{ title: "Templates — Certigo" }] }),
+  head: () => ({ meta: [{ title: "Templates — CERTIGO." }] }),
   component: TemplatesShowcase,
 });
 
 function TemplatesShowcase() {
   return (
     <div className="min-h-screen bg-neutral-100 p-6">
-      <h1 className="mb-4 text-2xl font-black tracking-tight">Certigo — 10 Certificate Templates</h1>
+      <h1 className="mb-4 text-2xl font-black tracking-tight">CERTIGO. — 10 Certificate Templates</h1>
       <div className="grid grid-cols-5 gap-4">
         {CERT_TEMPLATES.map((t, i) => (
           <div key={t.key} className="rounded bg-white p-2 shadow">

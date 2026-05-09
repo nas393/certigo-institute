@@ -16,9 +16,9 @@ import { useI18n } from "@/lib/i18n";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Certigo — From knowledge to verified proof, instantly" },
+      { title: "CERTIGO. — From knowledge to verified proof, instantly" },
       { name: "description", content: "The fastest way to create credentials employers can verify instantly. Type a skill, learn, pass a quiz, get a QR-verified certificate." },
-      { property: "og:title", content: "Certigo — Verified credentials in minutes" },
+      { property: "og:title", content: "CERTIGO. — Verified credentials in minutes" },
       { property: "og:description", content: "From knowledge to verified proof — instantly." },
     ],
   }),
@@ -200,7 +200,7 @@ function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               { name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
-              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No Certigo branding", "LinkedIn integration", "Priority AI"] },
+              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
               { name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
             ].map((p) => (
               <div key={p.name} className={`relative rounded-2xl border p-8 ${p.highlight ? "border-primary bg-background shadow-elegant" : "border-border bg-background"}`}>
@@ -246,16 +246,16 @@ function Home() {
           <Accordion type="single" collapsible className="mt-10">
             {[
               {
-                q: "How is a Certigo certificate verified?",
+                q: "How is a CERTIGO. certificate verified?",
                 a: "Every certificate has a unique serial and a QR code that links to a public ledger page on certigo.app/verify. Anyone — recruiter, employer, school — can scan and confirm authenticity in seconds. No login, no friction.",
               },
               {
-                q: "Can a Certigo certificate be faked or edited?",
+                q: "Can a CERTIGO. certificate be faked or edited?",
                 a: "No. Certificate metadata (serial, recipient, course, score, issue date) is anchored to our verification ledger at issue time. The public verify page always returns the original record — any edited PDF will fail the QR check.",
               },
               {
                 q: "Are these credentials accepted by employers?",
-                a: "Certigo certificates are designed for skill-based hiring. They tell an employer exactly what was learned, the score earned, and provide a one-tap way to confirm it. They complement — not replace — formal degrees.",
+                a: "CERTIGO. certificates are designed for skill-based hiring. They tell an employer exactly what was learned, the score earned, and provide a one-tap way to confirm it. They complement — not replace — formal degrees.",
               },
               {
                 q: "What happens to my certificate if I cancel?",
@@ -354,7 +354,7 @@ function Home() {
                 e.preventDefault();
                 const form = e.currentTarget as HTMLFormElement;
                 const data = new FormData(form);
-                const subject = encodeURIComponent(`Certigo enquiry from ${data.get("name") || "website"}`);
+                const subject = encodeURIComponent(`CERTIGO. enquiry from ${data.get("name") || "website"}`);
                 const body = encodeURIComponent(`${data.get("message") || ""}\n\n— ${data.get("name") || ""} (${data.get("email") || ""})`);
                 window.location.href = `mailto:hello@certigo.app?subject=${subject}&body=${body}`;
               }}
@@ -407,7 +407,7 @@ function Home() {
         <footer className="border-t border-border">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 md:flex-row">
             <div className="font-display text-sm font-black tracking-tighter"><span className="text-primary">CERTI</span><span className="text-foreground">GO</span></div>
-            <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} Certigo · {t("footer.copy")}</div>
+            <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} CERTIGO. · {t("footer.copy")}</div>
           </div>
         </footer>
       </section>

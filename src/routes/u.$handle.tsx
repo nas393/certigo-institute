@@ -8,7 +8,7 @@ import { Award, ShieldCheck, Loader2 } from "lucide-react";
 export const Route = createFileRoute("/u/$handle")({
   head: ({ params }) => ({
     meta: [
-      { title: `${params.handle} — Certigo profile` },
+      { title: `${params.handle} — CERTIGO. profile` },
       { name: "description", content: `Verified credentials issued to ${params.handle} on Certigo.` },
     ],
   }),
