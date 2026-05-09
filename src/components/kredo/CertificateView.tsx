@@ -291,6 +291,114 @@ function CertigoLogo({ style }: { style?: React.CSSProperties }) {
   );
 }
 
+// === Per-template frame chrome (10 variants) ===
+function CertFrame({ template, cq, ink }: { template: CertTemplate; cq: (n: number) => string; ink: string }) {
+  const shadow = "0 10px 40px rgba(0,0,0,0.15)";
+  switch (template) {
+    case "classic":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
+    case "double":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.5)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.12)} solid ${ink}` }} />
+        </>
+      );
+    case "ornate":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.55)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2), border: `${cq(0.2)} solid ${ink}` }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.6), border: `${cq(0.06)} solid ${ink}`, opacity: 0.6 }} />
+          {/* corner ornaments */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(2), left: cq(2) } :
+              corner === "tr" ? { top: cq(2), right: cq(2) } :
+              corner === "bl" ? { bottom: cq(2), left: cq(2) } :
+                                { bottom: cq(2), right: cq(2) };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(4), height: cq(4), ...pos }} viewBox="0 0 40 40" aria-hidden>
+                <path d="M2 2 L 14 2 M 2 2 L 2 14 M 6 6 L 14 6 M 6 6 L 6 14" fill="none" stroke={ink} strokeWidth="1.5" />
+                <circle cx="2" cy="2" r="2" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "minimal":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1.4), border: `${cq(0.08)} solid ${ink}`, boxShadow: shadow }} />;
+    case "deco":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.18)} solid ${ink}`, boxShadow: shadow }} />
+          {/* corner brackets */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(1.6), left: cq(1.6), transform: "rotate(0deg)" } :
+              corner === "tr" ? { top: cq(1.6), right: cq(1.6), transform: "rotate(90deg)" } :
+              corner === "bl" ? { bottom: cq(1.6), left: cq(1.6), transform: "rotate(-90deg)" } :
+                                { bottom: cq(1.6), right: cq(1.6), transform: "rotate(180deg)" };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(5), height: cq(5), ...pos }} viewBox="0 0 50 50" aria-hidden>
+                <path d="M2 30 L 2 2 L 30 2" fill="none" stroke={ink} strokeWidth="2.4" />
+                <path d="M8 22 L 8 8 L 22 8" fill="none" stroke={ink} strokeWidth="1.2" />
+                <path d="M14 14 L 14 14" fill="none" stroke={ink} strokeWidth="0" />
+                <rect x="3" y="3" width="3" height="3" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "bordered":
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.9)} solid ${ink}`, boxShadow: shadow }} />;
+    case "navy":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.45)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(1.9), border: `${cq(0.08)} solid ${ink}`, opacity: 0.7 }} />
+        </>
+      );
+    case "emerald":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.4)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(1.9), border: `${cq(0.08)} solid ${ink}`, opacity: 0.6 }} />
+          {/* corner stars */}
+          {(["tl", "tr", "bl", "br"] as const).map((corner) => {
+            const pos =
+              corner === "tl" ? { top: cq(1.4), left: cq(1.4) } :
+              corner === "tr" ? { top: cq(1.4), right: cq(1.4) } :
+              corner === "bl" ? { bottom: cq(1.4), left: cq(1.4) } :
+                                { bottom: cq(1.4), right: cq(1.4) };
+            return (
+              <svg key={corner} className="pointer-events-none absolute" style={{ width: cq(1.4), height: cq(1.4), ...pos }} viewBox="0 0 20 20" aria-hidden>
+                <polygon points="10,1 12,7 19,7 13,11 15,18 10,14 5,18 7,11 1,7 8,7" fill={ink} />
+              </svg>
+            );
+          })}
+        </>
+      );
+    case "stripe":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.18)} solid ${ink}`, boxShadow: shadow }} />
+          <div className="pointer-events-none absolute" style={{ top: cq(1), bottom: cq(1), left: cq(1), width: cq(1.6), background: "#dc2626" }} />
+          <div className="pointer-events-none absolute" style={{ top: cq(1), bottom: cq(1), left: cq(2.6), width: cq(0.08), background: ink, opacity: 0.4 }} />
+        </>
+      );
+    case "embossed":
+      return (
+        <>
+          <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.2)} solid ${ink}`, boxShadow: `${shadow}, inset 0 0 ${cq(2)} rgba(0,0,0,0.18)` }} />
+          <div className="pointer-events-none absolute" style={{ inset: cq(2.2), border: `${cq(0.06)} solid ${ink}`, opacity: 0.4 }} />
+        </>
+      );
+    default:
+      return <div className="pointer-events-none absolute" style={{ inset: cq(1), border: `${cq(0.35)} solid ${ink}`, boxShadow: shadow }} />;
+  }
+}
+
 // === VERIFIED CHECKMARK ===
 function VerifiedCheckmark({ style }: { style?: React.CSSProperties }) {
   return (
