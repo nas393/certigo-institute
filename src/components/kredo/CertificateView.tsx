@@ -143,8 +143,8 @@ export function CertificateView(p: Props) {
           <div className="absolute top-0 left-0" style={{ padding: cq(2) }}>
             <div style={{ display: "flex", alignItems: "center", gap: cq(0.8) }}>
               <CertigoLogo style={{ width: cq(3.5), height: cq(3.5) }} />
-              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8) }}>
-                CERTIGO.
+              <div className="font-display font-bold text-foreground" style={{ fontSize: cq(1.8), letterSpacing: "-0.02em" }}>
+                CERTIGO<span style={{ color: "#0a1c44" }}>.</span>
               </div>
             </div>
           </div>
