@@ -119,8 +119,10 @@
   .text-balance { text-wrap: balance; }
   .font-mono { font-family: var(--font-mono); }
   .gradient-primary { background: var(--gradient-primary); }
+  .gradient-aurora { background: var(--gradient-aurora); }
   .gradient-paper { background: var(--gradient-paper); }
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
   .shadow-card { box-shadow: var(--shadow-card); }
   .micro-label {
     font-family: var(--font-mono);
