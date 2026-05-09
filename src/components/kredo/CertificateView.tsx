@@ -83,42 +83,50 @@ export function CertificateView(p: Props) {
       {/* Bold outer frame */}
       <div className="pointer-events-none absolute inset-[1.4cqw] border-[0.5cqw] border-foreground" />
 
-      {/* Decorative sunburst on the right (subtle) */}
+      {/* Corporate half-circle medallion on the right edge */}
       <svg
         aria-hidden
-        viewBox="0 0 200 200"
-        className="pointer-events-none absolute right-[6cqw] top-[18cqw] h-[22cqw] w-[22cqw] opacity-90"
+        viewBox="0 0 200 400"
+        preserveAspectRatio="xMaxYMid meet"
+        className="pointer-events-none absolute right-0 top-0 h-full w-[26cqw]"
         style={{ color: appPrimary }}
       >
-        <g stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" opacity="0.65">
-          {Array.from({ length: 28 }).map((_, i) => {
-            const a = (i / 28) * Math.PI * 2;
-            const x1 = 100 + Math.cos(a) * 22;
-            const y1 = 100 + Math.sin(a) * 22;
-            const x2 = 100 + Math.cos(a) * (60 + (i % 3) * 12);
-            const y2 = 100 + Math.sin(a) * (60 + (i % 3) * 12);
+        {/* nested concentric arcs anchored to the right edge */}
+        <g fill="none" stroke="currentColor" strokeLinecap="round">
+          <circle cx="200" cy="200" r="190" strokeWidth="1.4" opacity="0.45" />
+          <circle cx="200" cy="200" r="160" strokeWidth="1" opacity="0.28" strokeDasharray="2 4" />
+          <circle cx="200" cy="200" r="130" strokeWidth="1.2" opacity="0.55" />
+          <circle cx="200" cy="200" r="100" strokeWidth="0.9" opacity="0.22" strokeDasharray="1 3" />
+          <circle cx="200" cy="200" r="72" strokeWidth="1.1" opacity="0.5" />
+          <circle cx="200" cy="200" r="40" strokeWidth="1.4" opacity="0.7" />
+        </g>
+        {/* tick marks along the outer arc */}
+        <g stroke="currentColor" strokeWidth="1.2" opacity="0.55">
+          {Array.from({ length: 22 }).map((_, i) => {
+            const a = Math.PI / 2 + (i / 21) * Math.PI; // sweep from top to bottom on the left side of the right-anchored circle
+            const x1 = 200 + Math.cos(a) * 196;
+            const y1 = 200 + Math.sin(a) * 196;
+            const x2 = 200 + Math.cos(a) * (i % 3 === 0 ? 178 : 186);
+            const y2 = 200 + Math.sin(a) * (i % 3 === 0 ? 178 : 186);
             return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
           })}
         </g>
-        <circle cx="100" cy="100" r="9" fill="currentColor" />
+        <circle cx="200" cy="200" r="6" fill="currentColor" />
       </svg>
 
-      {/* Soft wave lines (decorative) */}
+      {/* Subtle corporate guilloché grid (very faint, full-bleed) */}
       <svg
         aria-hidden
-        viewBox="0 0 800 300"
+        viewBox="0 0 800 560"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute inset-x-[6cqw] top-[42%] h-[28cqw] w-[88%] opacity-[0.18] text-foreground"
+        className="pointer-events-none absolute inset-[3cqw] h-[calc(100%-6cqw)] w-[calc(100%-6cqw)] opacity-[0.05] text-foreground"
       >
-        {Array.from({ length: 14 }).map((_, i) => (
-          <path
-            key={i}
-            d={`M0 ${150 + i * 4} C 200 ${80 + i * 6}, 600 ${220 - i * 4}, 800 ${130 + i * 5}`}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="0.8"
-          />
-        ))}
+        <defs>
+          <pattern id="cgrid" width="14" height="14" patternUnits="userSpaceOnUse">
+            <path d="M 14 0 L 0 0 0 14" fill="none" stroke="currentColor" strokeWidth="0.4" />
+          </pattern>
+        </defs>
+        <rect width="800" height="560" fill="url(#cgrid)" />
       </svg>
 
       <div className="relative flex h-full flex-col px-[5.5cqw] py-[4cqw]">
