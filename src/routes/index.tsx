@@ -7,7 +7,11 @@ import { Input } from "@/components/ui/input";
 import {
   ArrowRight, ShieldCheck, QrCode, Send, Wallet, Search, Building2, GraduationCap, User,
   Lock, Sparkles, Globe, Zap, CheckCircle2, ArrowUpRight, BadgeCheck, Activity,
+  BookOpen, Briefcase, Users, Truck, LineChart, Scale, Wrench, Shield, Brain, Megaphone,
 } from "lucide-react";
+import {
+  Accordion, AccordionItem, AccordionTrigger, AccordionContent,
+} from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +37,7 @@ function Home() {
       <Audiences />
       <Pricing />
       <Security />
+      <Courses />
       <UseCase />
       <FinalCTA />
       <Footer />
