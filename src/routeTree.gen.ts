@@ -15,6 +15,7 @@ import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as ProductRouteImport } from './routes/product'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ArchiveRouteImport } from './routes/archive'
@@ -55,6 +56,11 @@ const SettingsRoute = SettingsRouteImport.update({
 const ProfileRoute = ProfileRouteImport.update({
   id: '/profile',
   path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductRoute = ProductRouteImport.update({
+  id: '/product',
+  path: '/product',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -119,6 +125,7 @@ export interface FileRoutesByFullPath {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -138,6 +145,7 @@ export interface FileRoutesByTo {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -158,6 +166,7 @@ export interface FileRoutesById {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -179,6 +188,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -198,6 +208,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -217,6 +228,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -237,6 +249,7 @@ export interface RootRouteChildren {
   ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
+  ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
@@ -292,6 +305,13 @@ declare module '@tanstack/react-router' {
       path: '/profile'
       fullPath: '/profile'
       preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -391,6 +411,7 @@ const rootRouteChildren: RootRouteChildren = {
   ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
+  ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
