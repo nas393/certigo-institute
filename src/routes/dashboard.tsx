@@ -10,6 +10,7 @@ import { Loader2, ArrowRight, Award, BookOpen, Download, Sparkles, Lock, Share2 
 import { toast } from "sonner";
 import { downloadCertificatePdf } from "@/lib/pdf";
 import { PRESET_TOPICS } from "@/lib/topics";
+import { consumePendingCertification, peekPendingCertification, type PendingCertification } from "@/lib/certigo-pending";
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard — CERTIGO." }, { name: "description", content: "Your courses and verified certificates." }] }),
@@ -27,8 +28,20 @@ function Dashboard() {
   const [profile, setProfile] = useState<any>(null);
   const [showAll, setShowAll] = useState(false);
   const [category, setCategory] = useState<string>("All");
+  const [pendingCert, setPendingCert] = useState<PendingCertification | null>(null);
+  const [pendingLevel, setPendingLevel] = useState<"foundational" | "intermediate" | "advanced">("intermediate");
 
   useEffect(() => { if (!loading && !user) nav({ to: "/auth" }); }, [user, loading]);
+  // Prefill the topic / level / outline from a "Start Certification" deep link.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const peek = peekPendingCertification();
+    if (peek) {
+      setPendingCert(peek);
+      setTopic(peek.topic);
+      setPendingLevel(peek.level);
+    }
+  }, []);
   useEffect(() => {
     if (!user) return;
     (async () => {
@@ -55,17 +68,28 @@ function Dashboard() {
     }
     setGenerating(true);
     try {
+      const consumed = consumePendingCertification();
+      const useLevel = consumed?.level ?? pendingLevel;
       const r = await fetch("/api/public/ai/generate", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ topic, level: "intermediate", duration: "30 min", language: "en" }),
+        body: JSON.stringify({
+          topic,
+          level: useLevel,
+          duration: "30 min",
+          language: "en",
+          outline: consumed?.outline,
+          competencies: consumed?.competencies,
+          code: consumed?.code,
+        }),
       });
       if (!r.ok) throw new Error("generation failed");
       const { outline } = await r.json();
       const { data, error } = await supabase.from("courses").insert({
-        user_id: user.id, topic, outline, level: "intermediate", duration: "30 min", language: "en",
+        user_id: user.id, topic, outline, level: useLevel, duration: "30 min", language: "en",
       }).select().single();
       if (error) throw error;
       toast.success("Course ready!");
+      setPendingCert(null);
       nav({ to: "/course/$id", params: { id: data.id } });
     } catch (e: any) {
       toast.error(e.message || "Failed");

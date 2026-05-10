@@ -1,6 +1,7 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
+import { SafeBoundary } from "@/components/saas/SafeBoundary";
 import { Button } from "@/components/ui/button";
 import { Lock, ShieldCheck, KeyRound, Globe, FileCheck2, Server, Eye, GitBranch, ArrowRight } from "lucide-react";
 
@@ -18,7 +19,7 @@ export const Route = createFileRoute("/security")({
 
 function SecurityPage() {
   const nav = useNavigate();
-  const pillars: { icon: typeof Lock; t: string; d: string }[] = [
+  const rawPillars: { icon: typeof Lock; t: string; d: string }[] = [
     { icon: Lock, t: "Encryption everywhere", d: "TLS 1.3 in transit. AES-256 at rest. Per-tenant key isolation with rotation policies." },
     { icon: ShieldCheck, t: "Tamper-proof verification", d: "Each credential carries a cryptographic signature; any byte change invalidates the proof." },
     { icon: KeyRound, t: "Zero-trust access", d: "SSO, SCIM provisioning and granular role-based access for every issuing team." },
@@ -28,7 +29,16 @@ function SecurityPage() {
     { icon: Eye, t: "Privacy by design", d: "Recipients control what is shared; verifiers see only what they need." },
     { icon: GitBranch, t: "Auditable trail", d: "Every issuance, revocation and verification is logged and exportable." },
   ];
-  const compliance = ["GDPR", "UK GDPR", "SOC 2 (in progress)", "ISO 27001 (roadmap)", "CCPA", "WCAG 2.1 AA"];
+  const rawCompliance = ["GDPR", "UK GDPR", "SOC 2 (in progress)", "ISO 27001 (roadmap)", "CCPA", "WCAG 2.1 AA"];
+
+  // Runtime guards — never let a bad data source crash the page.
+  const pillars = (Array.isArray(rawPillars) ? rawPillars : []).filter(
+    (p): p is { icon: typeof Lock; t: string; d: string } =>
+      !!p && typeof p === "object" && typeof p.t === "string" && typeof p.d === "string" && typeof p.icon === "function"
+  );
+  const compliance = (Array.isArray(rawCompliance) ? rawCompliance : []).filter(
+    (c): c is string => typeof c === "string" && c.length > 0
+  );
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -47,17 +57,25 @@ function SecurityPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-20">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {(Array.isArray(pillars) ? pillars : []).map(({ icon: Icon, ...p }) => (
-            <div key={p.t} className="rounded-xl border border-border bg-card p-6">
-              <div className="grid h-10 w-10 place-items-center rounded-lg gradient-hero text-white">
-                {Icon ? <Icon className="h-5 w-5" /> : null}
-              </div>
-              <div className="mt-4 font-display text-base font-bold">{p.t}</div>
-              <p className="mt-2 text-sm text-muted-foreground">{p.d}</p>
+        <SafeBoundary label="security-pillars">
+          {pillars.length === 0 ? (
+            <div className="rounded-xl border border-border bg-card p-6 text-center text-sm text-muted-foreground">
+              Security pillars are loading…
             </div>
-          ))}
-        </div>
+          ) : (
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {pillars.map(({ icon: Icon, ...p }) => (
+                <div key={p.t} className="rounded-xl border border-border bg-card p-6">
+                  <div className="grid h-10 w-10 place-items-center rounded-lg gradient-hero text-white">
+                    {Icon ? <Icon className="h-5 w-5" /> : null}
+                  </div>
+                  <div className="mt-4 font-display text-base font-bold">{p.t}</div>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.d}</p>
+                </div>
+              ))}
+            </div>
+          )}
+        </SafeBoundary>
       </section>
 
       <section className="bg-surface">
@@ -73,14 +91,22 @@ function SecurityPage() {
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-card p-6">
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {(compliance ?? []).map((c) => (
-                  <div key={c} className="rounded-lg border border-border bg-surface p-4 text-center">
-                    <ShieldCheck className="mx-auto h-4 w-4 text-[var(--primary)]" />
-                    <div className="mt-2 text-xs font-semibold">{c}</div>
+              <SafeBoundary label="security-compliance">
+                {compliance.length === 0 ? (
+                  <div className="rounded-lg border border-border bg-surface p-4 text-center text-xs text-muted-foreground">
+                    Compliance list unavailable.
                   </div>
-                ))}
-              </div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {compliance.map((c) => (
+                      <div key={c} className="rounded-lg border border-border bg-surface p-4 text-center">
+                        <ShieldCheck className="mx-auto h-4 w-4 text-[var(--primary)]" />
+                        <div className="mt-2 text-xs font-semibold">{c}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </SafeBoundary>
             </div>
           </div>
         </div>
