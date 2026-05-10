@@ -16,6 +16,7 @@ import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ArchiveRouteImport } from './routes/archive'
@@ -61,6 +62,11 @@ const ProfileRoute = ProfileRouteImport.update({
 const ProductRoute = ProductRouteImport.update({
   id: '/product',
   path: '/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -125,6 +131,7 @@ export interface FileRoutesByFullPath {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
@@ -145,6 +152,7 @@ export interface FileRoutesByTo {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
@@ -188,6 +197,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
     | '/product'
     | '/profile'
     | '/settings'
@@ -208,6 +218,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
     | '/product'
     | '/profile'
     | '/settings'
@@ -228,6 +239,7 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
     | '/product'
     | '/profile'
     | '/settings'
@@ -249,6 +261,7 @@ export interface RootRouteChildren {
   ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
+  PricingRoute: typeof PricingRoute
   ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
   SettingsRoute: typeof SettingsRoute
@@ -312,6 +325,13 @@ declare module '@tanstack/react-router' {
       path: '/product'
       fullPath: '/product'
       preLoaderRoute: typeof ProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -411,6 +431,7 @@ const rootRouteChildren: RootRouteChildren = {
   ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
+  PricingRoute: PricingRoute,
   ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
   SettingsRoute: SettingsRoute,
