@@ -166,8 +166,8 @@ function Home() {
 
       {/* TRUST BAR */}
       <section className="border-y-2 border-foreground bg-foreground text-background">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-2 md:items-center">
-          <div className="flex flex-wrap gap-2">
+        <div className="mx-auto max-w-7xl px-6 py-10">
+          <div className="flex flex-wrap justify-center gap-2">
             {[
               { icon: QrCode, label: t("trust.qr") },
               { icon: ShieldCheck, label: t("trust.tamper") },
@@ -177,14 +177,6 @@ function Home() {
               <span key={label} className="inline-flex items-center gap-2 border border-background/40 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]">
                 <I className="h-3 w-3 text-wax" /> {label}
               </span>
-            ))}
-          </div>
-          <div className="grid grid-cols-3 gap-6 text-center md:text-end">
-            {[["12,400+",t("trust.stat.certs")],["38",t("trust.stat.countries")],["84,000+",t("trust.stat.verifs")]].map(([n,l]) => (
-              <div key={l}>
-                <div className="font-display text-3xl tracking-[-0.04em]">{n}</div>
-                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background/60">{l}</div>
-              </div>
             ))}
           </div>
         </div>
@@ -363,45 +355,7 @@ function Home() {
 
       {/* ABOUT — institute brief */}
       <Chapter id="about" chapter="VII" section={t("about.label")} title={t("about.title")}>
-        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-            <div className="border-l-2 border-foreground/70 pl-6">
-              <p className="font-serif text-lg italic text-foreground/85">{t("about.body1")}</p>
-              <p className="mt-4 font-serif text-lg italic text-muted-foreground">{t("about.body2")}</p>
-              <div className="mt-10 border-t-2 border-foreground pt-6">
-                <div className="micro-label">◆ Institute Objectives</div>
-                <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
-                  {[
-                    { n: "01", t: "Make every credential instantly verifiable", d: "Build a public, scannable proof layer that any recruiter or institution can trust without an account." },
-                    { n: "02", t: "Anchor credentials to demonstrated knowledge", d: "Tie each certificate to an assessed outcome — not seat-time, not self-claim." },
-                    { n: "03", t: "Keep certification borderless and accessible", d: "Issue and verify from anywhere, in any language, on any device, at minimal cost." },
-                    { n: "04", t: "Protect recipients and issuers from forgery", d: "Anchor every record at issue-time so edited PDFs never validate." },
-                  ].map((o) => (
-                    <li key={o.n} className="flex gap-5 py-4">
-                      <span className="font-display text-2xl text-wax leading-none">{o.n}</span>
-                      <div>
-                        <div className="font-display text-base tracking-tight uppercase">{o.t}</div>
-                        <p className="mt-1 font-serif text-sm italic text-muted-foreground">{o.d}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
-              {[
-                { icon: Lock, t: t("value.1.t"), d: t("value.1.d") },
-                { icon: Zap,  t: t("value.2.t"), d: t("value.2.d") },
-                { icon: Globe,t: t("value.3.t"), d: t("value.3.d") },
-                { icon: Users,t: t("value.4.t"), d: t("value.4.d") },
-              ].map((v, i) => (
-                <div key={v.t} className={`p-7 ${i % 2 === 1 ? "sm:border-l border-foreground/20" : ""} ${i >= 2 ? "border-t border-foreground/20" : ""}`}>
-                  <v.icon className="h-4 w-4 text-wax" />
-                  <h3 className="mt-4 font-display text-lg tracking-tight uppercase">{v.t}</h3>
-                  <p className="mt-2 font-serif text-base italic text-muted-foreground">{v.d}</p>
-                </div>
-              ))}
-            </div>
-        </div>
+        <AboutBlock t={t} />
       </Chapter>
 
       {/* CONTACT — institute correspondence (minimal webmail) */}
@@ -505,6 +459,75 @@ function Home() {
           </div>
         </footer>
       </section>
+    </div>
+  );
+}
+
+function AboutBlock({ t }: { t: (k: string) => string }) {
+  const [mode, setMode] = useState<"short" | "detailed">("short");
+  const body1 = mode === "short" ? t("about.body1.short") : t("about.body1");
+  const body2 = mode === "short" ? t("about.body2.short") : t("about.body2");
+  return (
+    <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+      <div className="border-l-2 border-foreground/70 ps-6">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="micro-label">◆ {t("about.brief")}</div>
+          <div className="inline-flex border border-foreground" role="tablist" aria-label="About length">
+            {(["short", "detailed"] as const).map((m) => (
+              <button
+                key={m}
+                type="button"
+                role="tab"
+                aria-selected={mode === m}
+                onClick={() => setMode(m)}
+                className={`px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em] transition-colors ${
+                  mode === m ? "bg-foreground text-background" : "bg-transparent text-foreground hover:bg-foreground/10"
+                }`}
+              >
+                {t(`about.toggle.${m}`)}
+              </button>
+            ))}
+          </div>
+        </div>
+        <p className="mt-6 font-serif text-lg italic leading-relaxed text-foreground/85">{body1}</p>
+        <p className="mt-4 font-serif text-lg italic leading-relaxed text-muted-foreground">{body2}</p>
+        <div className="mt-10 border-t-2 border-foreground pt-6">
+          <div className="micro-label">◆ Institute Objectives</div>
+          <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
+            {[
+              { n: "01", t: "Make every credential instantly verifiable", d: "Build a public, scannable proof layer that any recruiter or institution can trust without an account." },
+              { n: "02", t: "Anchor credentials to demonstrated knowledge", d: "Tie each certificate to an assessed outcome — not seat-time, not self-claim." },
+              { n: "03", t: "Keep certification borderless and accessible", d: "Issue and verify from anywhere, in any language, on any device, at minimal cost." },
+              { n: "04", t: "Protect recipients and issuers from forgery", d: "Anchor every record at issue-time so edited PDFs never validate." },
+            ].map((o) => (
+              <li key={o.n} className="flex gap-5 py-4">
+                <span className="font-display text-2xl text-wax leading-none">{o.n}</span>
+                <div>
+                  <div className="font-display text-base tracking-tight uppercase">{o.t}</div>
+                  <p className="mt-1 font-serif text-sm italic text-muted-foreground">{o.d}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div className="micro-label">◆ Institute Values</div>
+        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
+          {[
+            { icon: Lock, t: t("value.1.t"), d: t("value.1.d") },
+            { icon: Zap, t: t("value.2.t"), d: t("value.2.d") },
+            { icon: Globe, t: t("value.3.t"), d: t("value.3.d") },
+            { icon: Users, t: t("value.4.t"), d: t("value.4.d") },
+          ].map((v, i) => (
+            <div key={v.t} className={`p-7 ${i % 2 === 1 ? "sm:border-s border-foreground/20" : ""} ${i >= 2 ? "border-t border-foreground/20" : ""}`}>
+              <v.icon className="h-4 w-4 text-wax" />
+              <h3 className="mt-4 font-display text-lg tracking-tight uppercase">{v.t}</h3>
+              <p className="mt-2 font-serif text-base italic leading-relaxed text-muted-foreground">{v.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
