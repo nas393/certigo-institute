@@ -106,7 +106,7 @@ function Home() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="border-y border-border bg-card">
+      <section className="border-y-2 border-foreground bg-foreground text-background">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-2 md:items-center">
           <div className="flex flex-wrap gap-2">
             {[
@@ -115,16 +115,16 @@ function Home() {
               { icon: Building2, label: t("trust.employers") },
               { icon: Globe, label: t("trust.global") },
             ].map(({ icon: I, label }) => (
-              <span key={label} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium">
-                <I className="h-3.5 w-3.5 text-primary" /> {label}
+              <span key={label} className="inline-flex items-center gap-2 border border-background/40 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]">
+                <I className="h-3 w-3 text-wax" /> {label}
               </span>
             ))}
           </div>
           <div className="grid grid-cols-3 gap-6 text-center md:text-end">
             {[["12,400+",t("trust.stat.certs")],["38",t("trust.stat.countries")],["84,000+",t("trust.stat.verifs")]].map(([n,l]) => (
               <div key={l}>
-                <div className="font-display text-2xl font-black tracking-tighter">{n}</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{l}</div>
+                <div className="font-display text-3xl tracking-[-0.04em]">{n}</div>
+                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background/60">{l}</div>
               </div>
             ))}
           </div>
@@ -133,74 +133,97 @@ function Home() {
 
       {/* HOW IT WORKS */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="micro-label">◆ {t("how.label")}</div>
-        <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-6xl">{t("how.title")}</h2>
-        <div className="mt-14 grid gap-6 md:grid-cols-4">
+        <div className="border-b-2 border-foreground pb-6">
+          <div className="flex items-baseline justify-between gap-6">
+            <div>
+              <div className="micro-label">◆ Chapter I · {t("how.label")}</div>
+              <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("how.title")}</h2>
+            </div>
+            <div className="hidden font-serif text-sm italic text-muted-foreground md:block">A four-step protocol</div>
+          </div>
+        </div>
+        <div className="mt-12 grid gap-0 md:grid-cols-4">
           {[
             { n: "01", t: t("how.s1.t"), d: t("how.s1.d") },
             { n: "02", t: t("how.s2.t"), d: t("how.s2.d") },
             { n: "03", t: t("how.s3.t"), d: t("how.s3.d") },
             { n: "04", t: t("how.s4.t"), d: t("how.s4.d") },
-          ].map((s) => (
-            <div key={s.n} className="group rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant">
-              <div className="font-mono text-xs tracking-widest text-primary">{s.n}</div>
-              <h3 className="mt-3 font-display text-xl font-black tracking-tight">{s.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
+          ].map((s, i) => (
+            <div key={s.n} className={`group relative bg-card p-7 transition-colors hover:bg-foreground hover:text-background ${i > 0 ? "md:border-l border-foreground/20" : ""} border-b border-foreground/20 md:border-b-0`}>
+              <div className="font-display text-5xl text-wax leading-none">{s.n}</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground group-hover:text-background/60">Step {s.n}</div>
+              <h3 className="mt-5 font-display text-lg tracking-tight uppercase">{s.t}</h3>
+              <p className="mt-2 font-serif text-base leading-snug italic text-muted-foreground group-hover:text-background/80">{s.d}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* TRUST CALLOUT (no second demo cert) */}
-      <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center">
+      {/* TRUST CALLOUT — declaration */}
+      <section className="border-y-2 border-foreground bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center">
           <div className="micro-label">◆ {t("trust2.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("trust2.title")}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">{t("trust2.body")}</p>
-          <Button className="mt-8" onClick={() => nav({ to: "/verify" })}>{t("trust2.cta")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
+          <h2 className="mt-5 font-serif text-4xl italic font-semibold tracking-[-0.02em] md:text-6xl text-balance">"{t("trust2.title")}"</h2>
+          <div className="mx-auto mt-6 h-px w-24 bg-foreground" />
+          <p className="mx-auto mt-6 max-w-2xl font-serif text-lg italic text-muted-foreground text-balance">{t("trust2.body")}</p>
+          <Button className="mt-10 h-12 rounded-none bg-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] text-background hover:bg-wax" onClick={() => nav({ to: "/verify" })}>
+            {t("trust2.cta")} <ArrowRight className="ms-2 h-4 w-4" />
+          </Button>
         </div>
       </section>
 
       {/* WHO IT'S FOR */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="micro-label">◆ {t("who.label")}</div>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Chapter II · {t("who.label")}</div>
+        </div>
+        <div className="mt-10 grid gap-0 md:grid-cols-3">
           {[
             { t: t("who.1.t"), d: t("who.1.d") },
             { t: t("who.2.t"), d: t("who.2.d") },
             { t: t("who.3.t"), d: t("who.3.d") },
-          ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-border p-8">
-              <Sparkles className="h-5 w-5 text-primary" />
-              <h3 className="mt-4 font-display text-2xl font-black tracking-tight">{c.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
+          ].map((c, i) => (
+            <div key={c.t} className={`p-10 ${i > 0 ? "md:border-l border-foreground/20" : ""}`}>
+              <div className="flex items-center gap-3">
+                <span className="grid h-8 w-8 place-items-center bg-foreground font-mono text-[10px] tracking-[0.2em] text-background">0{i + 1}</span>
+                <Sparkles className="h-4 w-4 text-wax" />
+              </div>
+              <h3 className="mt-6 font-display text-2xl tracking-[-0.03em] uppercase">{c.t}</h3>
+              <p className="mt-3 font-serif text-base italic text-muted-foreground">{c.d}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* MANIFESTO */}
-      <section className="bg-foreground text-background">
-        <div className="mx-auto max-w-4xl px-6 py-28 text-center">
-          <div className="font-mono text-[10px] uppercase tracking-widest text-background/60">◆ {t("manifesto.label")}</div>
-          <h2 className="mt-6 font-display text-4xl font-black leading-tight tracking-tighter md:text-6xl">
-            {t("manifesto.title.a")} <span className="text-primary-foreground/60 italic">{t("manifesto.title.b")}</span>
+      {/* MANIFESTO — institute charter */}
+      <section className="relative bg-foreground text-background">
+        <div className="mx-auto max-w-5xl px-6 py-32 text-center">
+          <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-background/50">◆ Charter · {t("manifesto.label")}</div>
+          <div className="mx-auto mt-6 h-px w-24 bg-wax" />
+          <h2 className="mt-8 font-display text-4xl leading-[0.95] tracking-[-0.04em] uppercase md:text-7xl">
+            {t("manifesto.title.a")} <br/>
+            <span className="font-serif italic font-semibold normal-case tracking-[-0.02em] text-background/65">{t("manifesto.title.b")}</span>
           </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-background/70">{t("manifesto.body")}</p>
+          <p className="mx-auto mt-10 max-w-2xl font-serif text-xl italic leading-snug text-background/75">{t("manifesto.body")}</p>
+          <div className="mx-auto mt-10 h-px w-24 bg-wax" />
+          <div className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-background/50">— The Certigo Certification Board</div>
         </div>
       </section>
 
       {/* SHARING */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Chapter III · Distribution</div>
+        </div>
+        <div className="mt-10 grid gap-10 md:grid-cols-3">
           {[
             [t("share.1.t"), t("share.1.d")],
             [t("share.2.t"), t("share.2.d")],
             [t("share.3.t"), t("share.3.d")],
-          ].map(([t, d]) => (
-            <div key={t} className="border-l-2 border-primary ps-5">
-              <h3 className="font-display text-xl font-black tracking-tight">{t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{d}</p>
+          ].map(([title, d]) => (
+            <div key={title} className="border-l-2 border-wax ps-5">
+              <h3 className="font-display text-xl tracking-tight uppercase">{title}</h3>
+              <p className="mt-2 font-serif text-base italic text-muted-foreground">{d}</p>
             </div>
           ))}
         </div>
