@@ -1,10 +1,10 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Header } from "@/components/kredo/Header";
 import { CertificateView } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck, Mail, MapPin, MessageCircle, Lock, Zap, Users } from "lucide-react";
+import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck, Mail, MapPin, MessageCircle, Lock, Zap, Users, Plus, Minus } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -24,6 +24,65 @@ export const Route = createFileRoute("/")({
   }),
   component: Home,
 });
+
+function Chapter({
+  id,
+  chapter,
+  section,
+  title,
+  aside,
+  defaultOpen = false,
+  children,
+}: {
+  id?: string;
+  chapter: string; // "I", "II"...
+  section: string; // short section name
+  title?: string;
+  aside?: ReactNode;
+  defaultOpen?: boolean;
+  children: ReactNode;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <section id={id} className="scroll-mt-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="group flex w-full items-center justify-between gap-6 border-b-2 border-foreground py-6 text-left transition-colors hover:bg-foreground hover:text-background"
+        >
+          <div className="flex flex-1 flex-col gap-3 px-1">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="bg-foreground px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background group-hover:bg-background group-hover:text-foreground">
+                ◆ Chapter {chapter}
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground group-hover:text-background/70">
+                Section · {section}
+              </span>
+            </div>
+            {title && (
+              <h2 className="font-display text-3xl tracking-[-0.04em] uppercase md:text-5xl">
+                {title}
+              </h2>
+            )}
+            {aside && <div className="font-serif text-sm italic text-muted-foreground group-hover:text-background/70">{aside}</div>}
+          </div>
+          <span className="grid h-11 w-11 shrink-0 place-items-center border-2 border-foreground bg-background text-foreground transition-transform group-hover:bg-wax group-hover:text-background group-hover:border-wax">
+            {open ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+          </span>
+        </button>
+      </div>
+      <div
+        className={`grid transition-[grid-template-rows] duration-500 ease-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+      >
+        <div className="overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 py-16">{children}</div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function Home() {
   const nav = useNavigate();
