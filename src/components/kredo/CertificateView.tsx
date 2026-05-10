@@ -6,7 +6,8 @@ import sigDirector from "@/assets/sig-director.png";
 
 export type CertTemplate =
   | "classic" | "double" | "ornate" | "minimal" | "deco"
-  | "bordered" | "navy" | "emerald" | "stripe" | "embossed" | "signature";
+  | "bordered" | "navy" | "emerald" | "stripe" | "embossed" | "signature"
+  | "executive" | "technical" | "dark-glass";
 export type CertOrientation = "landscape" | "portrait";
 export type SignatureVariant = 0 | 1 | 2 | 3 | 4;
 export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
@@ -16,6 +17,9 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
   { key: "signature", label: "Professional", hint: "CERTIGO Institute — official credential" },
+  { key: "executive", label: "Executive", hint: "Classic serif · centered golden seal" },
+  { key: "technical", label: "Technical", hint: "Blueprint grid · competency sidebar" },
+  { key: "dark-glass", label: "Modern Dark", hint: "Dark mode · gold text · glassmorphism" },
   { key: "classic", label: "Classic", hint: "Thin black frame" },
   { key: "double", label: "Double", hint: "Inner + outer black border" },
   { key: "ornate", label: "Ornate", hint: "Gold double frame" },
@@ -69,6 +73,27 @@ export function CertificateView(p: Props) {
   const aspect = isPortrait ? "1/1.414" : "1.414/1";
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
+
+  // Themed palette variants
+  const theme = p.template;
+  if (theme === "executive") {
+    return (
+      <ExecutiveCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
+  if (theme === "technical") {
+    return (
+      <TechnicalCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
+  if (theme === "dark-glass") {
+    return (
+      <DarkGlassCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
 
   const ink = "#0a0a0a";
   const sub = "#2a2a2a";
