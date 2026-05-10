@@ -7,7 +7,11 @@ import { Input } from "@/components/ui/input";
 import {
   ArrowRight, ShieldCheck, QrCode, Send, Wallet, Search, Building2, GraduationCap, User,
   Lock, Sparkles, Globe, Zap, CheckCircle2, ArrowUpRight, BadgeCheck, Activity,
+  BookOpen, Briefcase, Users, Truck, LineChart, Scale, Wrench, Shield, Brain, Megaphone,
 } from "lucide-react";
+import {
+  Accordion, AccordionItem, AccordionTrigger, AccordionContent,
+} from "@/components/ui/accordion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +37,7 @@ function Home() {
       <Audiences />
       <Pricing />
       <Security />
+      <Courses />
       <UseCase />
       <FinalCTA />
       <Footer />
@@ -497,6 +502,230 @@ function Stat({ big, label }: { big: string; label: string }) {
       <div className="font-display text-3xl font-extrabold gradient-text">{big}</div>
       <div className="mt-1 text-xs text-muted-foreground">{label}</div>
     </div>
+  );
+}
+
+/* ─────────────────────────── COURSES ─────────────────────────── */
+type Course = {
+  icon: React.ComponentType<{ className?: string }>;
+  code: string;
+  title: string;
+  duration: string;
+  level: string;
+  intro: string;
+  outcomes: string[];
+  modules: { t: string; d: string }[];
+};
+
+const COURSES: Course[] = [
+  {
+    icon: Briefcase, code: "PM-101", title: "Project Management", duration: "12 weeks · 60h", level: "Intermediate",
+    intro: "Plan, execute and close complex projects on time and on budget using Agile, Waterfall and hybrid frameworks.",
+    outcomes: ["Build a project charter and WBS", "Run sprint and stage-gate cadences", "Manage budget, scope and risk", "Lead cross-functional delivery"],
+    modules: [
+      { t: "Foundations & lifecycles", d: "PMBOK 7, PRINCE2 essentials, hybrid delivery models." },
+      { t: "Scope, schedule & cost", d: "WBS decomposition, critical path, earned-value management." },
+      { t: "Risk & quality", d: "Probability/impact matrices, mitigation playbooks, ISO 9001 controls." },
+      { t: "Agile & Scrum operations", d: "Backlog grooming, sprint planning, velocity & burn-down analytics." },
+      { t: "Stakeholder & change management", d: "RACI, communication plans, ADKAR adoption." },
+      { t: "Capstone", d: "Deliver a 6-week multi-team programme with measurable KPIs." },
+    ],
+  },
+  {
+    icon: Megaphone, code: "MK-110", title: "Marketing Foundations", duration: "10 weeks · 45h", level: "Foundational",
+    intro: "Translate brand strategy into measurable demand across digital, content and lifecycle channels.",
+    outcomes: ["Map a customer journey", "Run a full-funnel campaign", "Read GA4 and attribution models", "Brief creative and media partners"],
+    modules: [
+      { t: "Strategy & positioning", d: "JTBD, segmentation, value propositions, brand architecture." },
+      { t: "SEO & content engines", d: "Topic clusters, technical SEO, editorial planning." },
+      { t: "Performance media", d: "Meta, Google and LinkedIn auctions; bidding strategies and creative testing." },
+      { t: "Lifecycle & CRM", d: "Email, push, in-product flows; segmentation in Braze/Customer.io." },
+      { t: "Analytics & attribution", d: "GA4, MMM 101, incrementality testing." },
+      { t: "Capstone", d: "Build and defend a 90-day GTM plan with budget and KPI tree." },
+    ],
+  },
+  {
+    icon: Users, code: "LD-200", title: "Leadership", duration: "8 weeks · 40h", level: "Advanced",
+    intro: "Lead high-performing teams through ambiguity using evidence-based leadership models and modern coaching practices.",
+    outcomes: ["Run effective 1:1s and feedback loops", "Set OKRs that ladder to strategy", "Coach for performance", "Lead through change and conflict"],
+    modules: [
+      { t: "Self-awareness & EQ", d: "Goleman's EQ, Hogan & DISC interpretation." },
+      { t: "Operating cadence", d: "OKRs, weekly business reviews, decision logs." },
+      { t: "Coaching & feedback", d: "GROW model, radical candor, situational leadership." },
+      { t: "Conflict & negotiation", d: "Principled negotiation, mediation, difficult conversations." },
+      { t: "Leading change", d: "Kotter's 8 steps, ADKAR, narrative-driven transformation." },
+      { t: "Capstone", d: "180° feedback round and personal leadership manifesto." },
+    ],
+  },
+  {
+    icon: Truck, code: "SC-310", title: "Supply Chain & Logistics Management", duration: "12 weeks · 55h", level: "Intermediate",
+    intro: "Design resilient, cost-efficient and sustainable supply chains across procurement, operations and distribution.",
+    outcomes: ["Model end-to-end supply networks", "Run S&OP processes", "Apply Lean to logistics", "Mitigate geopolitical and ESG risk"],
+    modules: [
+      { t: "Network design", d: "Make-vs-buy, nearshoring, multi-echelon inventory." },
+      { t: "Procurement & supplier risk", d: "Strategic sourcing, RFx, dual-sourcing playbooks." },
+      { t: "Demand & inventory planning", d: "Forecasting (ARIMA, Croston), safety stock, S&OP." },
+      { t: "Warehousing & distribution", d: "WMS/TMS, last-mile economics, omni-channel fulfilment." },
+      { t: "Sustainability & compliance", d: "Scope 3 emissions, CBAM, modern slavery acts." },
+      { t: "Capstone", d: "Resilience audit of a real-world supply network." },
+    ],
+  },
+  {
+    icon: Zap, code: "DT-410", title: "Digital Transformation Strategy", duration: "10 weeks · 50h", level: "Advanced",
+    intro: "Lead enterprise transformations that pair customer-centric design with cloud, data and AI operating models.",
+    outcomes: ["Build a transformation roadmap", "Quantify business cases", "Govern cloud & data programmes", "Embed AI responsibly"],
+    modules: [
+      { t: "Operating models", d: "Spotify, EDGE, product-led organisation design." },
+      { t: "Cloud & platform strategy", d: "AWS/Azure/GCP fundamentals, FinOps, platform engineering." },
+      { t: "Data & analytics maturity", d: "Lakehouse architecture, DAMA-DMBOK governance." },
+      { t: "AI adoption", d: "Use-case discovery, MLOps, model risk management." },
+      { t: "Change & adoption", d: "Adoption metrics, value-realisation tracking." },
+      { t: "Capstone", d: "Board-ready transformation business case." },
+    ],
+  },
+  {
+    icon: User, code: "HR-220", title: "Human Resources & Talent Strategy", duration: "10 weeks · 45h", level: "Intermediate",
+    intro: "Design talent systems that attract, grow and retain high-impact employees in modern hybrid organisations.",
+    outcomes: ["Build a workforce plan", "Design competency frameworks", "Run inclusive hiring", "Measure HR with people analytics"],
+    modules: [
+      { t: "Workforce planning", d: "Skills taxonomies, build/buy/borrow models." },
+      { t: "Talent acquisition", d: "Structured interviewing, scorecards, DEI in hiring." },
+      { t: "Performance & rewards", d: "Calibration, pay bands, total rewards design." },
+      { t: "Learning & development", d: "70-20-10, capability academies, skills passports." },
+      { t: "People analytics", d: "Engagement, attrition modelling, ONA basics." },
+      { t: "Capstone", d: "12-month people strategy with KPI dashboard." },
+    ],
+  },
+  {
+    icon: Shield, code: "RC-330", title: "Risk Management & Global Compliance", duration: "12 weeks · 55h", level: "Advanced",
+    intro: "Build enterprise risk and compliance programmes aligned with ISO 31000, COSO and global regulatory regimes.",
+    outcomes: ["Run an enterprise risk assessment", "Operate a compliance management system", "Manage regulatory change", "Report to audit committees"],
+    modules: [
+      { t: "Risk frameworks", d: "ISO 31000, COSO ERM, three lines model." },
+      { t: "Compliance programmes", d: "Policies, training, monitoring, attestations." },
+      { t: "Financial crime", d: "AML, KYC, sanctions, anti-bribery (UKBA, FCPA)." },
+      { t: "Operational & third-party risk", d: "Vendor due diligence, business continuity, ORM." },
+      { t: "Regulatory change", d: "Horizon scanning, impact analysis, control mapping." },
+      { t: "Capstone", d: "Board-level risk &amp; compliance report for a regulated business." },
+    ],
+  },
+  {
+    icon: LineChart, code: "FN-240", title: "Financial Intelligence for Managers", duration: "8 weeks · 35h", level: "Intermediate",
+    intro: "Read, interpret and use financial statements to make sharper operating and people decisions. Complements Leadership and HR tracks.",
+    outcomes: ["Read P&L, balance sheet and cash flow", "Build budgets and forecasts", "Evaluate investment decisions", "Speak the language of the CFO"],
+    modules: [
+      { t: "Accounting essentials", d: "Accruals vs cash, IFRS vs GAAP basics." },
+      { t: "Reading the three statements", d: "How operating decisions move each line." },
+      { t: "Budgeting & forecasting", d: "Driver-based budgets, rolling forecasts, variance analysis." },
+      { t: "Capital allocation", d: "NPV, IRR, payback, hurdle rates." },
+      { t: "Working capital & cash", d: "DSO, DPO, inventory turns, cash conversion cycle." },
+      { t: "Capstone", d: "Defend a business case to a simulated executive committee." },
+    ],
+  },
+  {
+    icon: Wrench, code: "OE-340", title: "Operational Excellence & Lean Six Sigma", duration: "14 weeks · 70h", level: "Advanced",
+    intro: "Apply Lean and Six Sigma to remove waste, reduce variation and build a continuous-improvement culture (Green Belt level).",
+    outcomes: ["Lead DMAIC projects", "Use SPC and process capability tools", "Run kaizen events", "Quantify financial impact"],
+    modules: [
+      { t: "Define & measure", d: "Project charters, SIPOC, MSA, baseline capability." },
+      { t: "Analyse", d: "Hypothesis testing, regression, root-cause analysis." },
+      { t: "Improve", d: "DOE, kaizen, poka-yoke, future-state value-stream maps." },
+      { t: "Control", d: "SPC, control plans, sustaining gains." },
+      { t: "Lean management system", d: "Daily management, leader standard work, gemba." },
+      { t: "Capstone", d: "Deliver a Green-Belt project with audited savings." },
+    ],
+  },
+  {
+    icon: Brain, code: "CS-350", title: "Data Privacy & Cybersecurity Governance", duration: "10 weeks · 45h", level: "Advanced",
+    intro: "Govern data privacy and cybersecurity programmes across NIST CSF, ISO 27001 and global privacy laws (GDPR, CCPA, LGPD).",
+    outcomes: ["Run a privacy impact assessment", "Operate an ISMS aligned to ISO 27001", "Manage incident response", "Brief boards on cyber risk"],
+    modules: [
+      { t: "Privacy law landscape", d: "GDPR, UK GDPR, CCPA/CPRA, LGPD, sectoral US laws." },
+      { t: "Privacy by design", d: "DPIA, ROPA, data minimisation, retention." },
+      { t: "Security frameworks", d: "NIST CSF 2.0, ISO 27001:2022, CIS Controls v8." },
+      { t: "Identity & access", d: "Zero trust, IAM, PAM, SSO/SCIM." },
+      { t: "Incident response & resilience", d: "NIST 800-61, tabletop exercises, breach notification." },
+      { t: "Capstone", d: "Build a 12-month privacy &amp; security governance roadmap." },
+    ],
+  },
+];
+
+function Courses() {
+  const nav = useNavigate();
+  return (
+    <Section eyebrow="Common courses" title="Ten flagship credentials. Audit-grade syllabuses." muted>
+      <p className="-mt-6 mb-10 max-w-2xl text-muted-foreground">
+        Every CERTIGO. credential ships with a public, examinable syllabus. Expand any course to see modules, outcomes and assessment depth.
+      </p>
+      <div className="rounded-2xl border border-border bg-card p-2 sm:p-4">
+        <Accordion type="single" collapsible className="divide-y divide-border">
+          {COURSES.map((c) => {
+            const Icon = c.icon;
+            return (
+              <AccordionItem key={c.code} value={c.code} className="border-b-0">
+                <AccordionTrigger className="px-3 py-5 hover:no-underline sm:px-4">
+                  <div className="flex w-full items-center gap-4 text-left">
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg gradient-hero text-white">
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">{c.code}</span>
+                        <span className="hidden h-3 w-px bg-border sm:inline-block" />
+                        <span className="text-[11px] font-medium text-muted-foreground">{c.duration} · {c.level}</span>
+                      </div>
+                      <div className="mt-1 font-display text-base font-bold sm:text-lg">{c.title}</div>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-3 pb-6 sm:px-4">
+                  <div className="ml-0 grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:ml-14">
+                    <div>
+                      <p className="text-sm text-muted-foreground">{c.intro}</p>
+                      <div className="mt-5 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--primary)]">Learning outcomes</div>
+                      <ul className="mt-3 space-y-2">
+                        {c.outcomes.map((o) => (
+                          <li key={o} className="flex items-start gap-2 text-sm">
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" />
+                            <span>{o}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--primary)]">Syllabus</div>
+                      <ol className="mt-3 space-y-3">
+                        {c.modules.map((m, i) => (
+                          <li key={m.t} className="rounded-lg border border-border bg-surface p-4">
+                            <div className="flex items-start gap-3">
+                              <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-foreground text-[11px] font-bold text-background">
+                                {String(i + 1).padStart(2, "0")}
+                              </span>
+                              <div>
+                                <div className="font-display text-sm font-bold">{m.t}</div>
+                                <p className="mt-1 text-sm text-muted-foreground">{m.d}</p>
+                              </div>
+                            </div>
+                          </li>
+                        ))}
+                      </ol>
+                      <div className="mt-5 flex flex-wrap gap-2">
+                        <Button size="sm" className="gradient-hero text-white border-0 hover:opacity-95" onClick={() => nav({ to: "/auth" })}>
+                          <BookOpen className="mr-2 h-4 w-4" /> Enrol
+                        </Button>
+                        <Button size="sm" variant="outline" onClick={() => nav({ to: "/verify" })}>
+                          See sample credential
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            );
+          })}
+        </Accordion>
+      </div>
+    </Section>
   );
 }
 
