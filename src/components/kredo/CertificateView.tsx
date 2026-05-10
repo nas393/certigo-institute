@@ -279,7 +279,7 @@ export function CertificateView(p: Props) {
           <SmallMeta cq={cq} ink={ink} mute={mute} label="CREDENTIAL ID" value={displaySerial} mono align="right" />
         </div>
 
-        {/* FOOTER */}
+        {/* FOOTER — tagline only, centered (board emblem removed) */}
         <div style={{
           width: "100%",
           marginTop: cq(1.2),
@@ -287,20 +287,8 @@ export function CertificateView(p: Props) {
           borderTop: `${cq(0.04)} solid ${ink}`,
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
-          gap: cq(1.2),
+          justifyContent: "center",
         }}>
-          <div style={{ display: "flex", alignItems: "center", gap: cq(0.9) }}>
-            <BoardEmblem size={cq(2.4)} color={ink} />
-            <div style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif", textAlign: "left", lineHeight: 1.35 }}>
-              <div style={{ fontSize: cq(0.7), fontWeight: 800, letterSpacing: "0.16em", color: ink }}>
-                ISSUED BY THE CERTIGO CERTIFICATION BOARD
-              </div>
-              <div style={{ fontSize: cq(0.62), color: mute, marginTop: cq(0.1), fontStyle: "italic" }}>
-                Under the Digital Skills Competency Framework (DSCF™)
-              </div>
-            </div>
-          </div>
           <div style={{
             fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
             fontSize: cq(0.62),
@@ -308,6 +296,7 @@ export function CertificateView(p: Props) {
             letterSpacing: "0.18em",
             fontWeight: 600,
             textTransform: "uppercase",
+            textAlign: "center",
           }}>
             Building skills <span style={{ margin: `0 ${cq(0.3)}`, color: accent }}>|</span>
             Validating expertise <span style={{ margin: `0 ${cq(0.3)}`, color: accent }}>|</span>
