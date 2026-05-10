@@ -31,17 +31,116 @@ function Home() {
       <Header />
       <Hero />
       <SocialProof />
-      <Problem />
-      <HowItWorks />
-      <ProductShowcase />
-      <Audiences />
-      <Pricing />
-      <Security />
-      <Courses />
-      <UseCase />
+      <Chapters />
       <FinalCTA />
       <Footer />
     </div>
+  );
+}
+
+/* ─────────────────────────── COLLAPSIBLE CHAPTERS ─────────────────────────── */
+function Chapters() {
+  const chapters: { id: string; chapter: string; title: string; node: React.ReactNode }[] = [
+    { id: "ch-1", chapter: "Chapter I", title: "The trust gap in modern hiring", node: <Problem /> },
+    { id: "ch-2", chapter: "Chapter II", title: "How CERTIGO. works",            node: <HowItWorks /> },
+    { id: "ch-3", chapter: "Chapter III", title: "One platform, three surfaces",  node: <ProductShowcase /> },
+    { id: "ch-4", chapter: "Chapter IV", title: "Built for three audiences",      node: <Audiences /> },
+    { id: "ch-5", chapter: "Chapter V",  title: "Pricing that scales",            node: <Pricing /> },
+    { id: "ch-6", chapter: "Chapter VI", title: "Security &amp; compliance",      node: <Security /> },
+    { id: "ch-7", chapter: "Chapter VII", title: "Use case in production",        node: <UseCase /> },
+    { id: "ch-8", chapter: "Chapter VIII", title: "Common course syllabuses",     node: <Courses /> },
+    { id: "ch-9", chapter: "Chapter IX", title: "Global Certification Catalog",   node: <CertificationCatalog /> },
+  ];
+  return (
+    <section className="bg-background">
+      <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-16">
+        <Accordion type="multiple" defaultValue={chapters.map((c) => c.id)} className="space-y-4">
+          {chapters.map((c) => (
+            <AccordionItem
+              key={c.id}
+              value={c.id}
+              className="overflow-hidden rounded-2xl border border-border bg-card"
+            >
+              <AccordionTrigger className="px-6 py-5 hover:no-underline sm:px-8">
+                <div className="flex w-full items-center gap-4 text-left">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--primary)]">
+                    {c.chapter}
+                  </span>
+                  <span className="hidden h-3 w-px bg-border sm:inline-block" />
+                  <span className="font-display text-base font-extrabold tracking-tight sm:text-lg">
+                    {c.title}
+                  </span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="border-t border-border p-0">
+                {c.node}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── CHAPTER IX — CERTIFICATION CATALOG ─────────────────────────── */
+function CertificationCatalog() {
+  const nav = useNavigate();
+  const certs = COURSES.map((c) => ({
+    code: c.code,
+    icon: c.icon,
+    title: c.title,
+    subtitle: c.intro,
+    duration: c.duration,
+    level: c.level,
+  }));
+  return (
+    <Section eyebrow="Global Certification Catalog" title="Ten flagship certifications. Audit-grade. Globally portable.">
+      <p className="-mt-6 mb-10 max-w-2xl text-muted-foreground">
+        Every CERTIGO. certification is competency-mapped, examinable and instantly verifiable on the public registry.
+      </p>
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        {certs.map((c) => {
+          const Icon = c.icon;
+          return (
+            <div
+              key={c.code}
+              className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-card"
+            >
+              <div className="flex items-center justify-between">
+                <span className="grid h-10 w-10 place-items-center rounded-lg gradient-hero text-white shadow-glow">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                  {c.code}
+                </span>
+              </div>
+              <div className="mt-5 font-display text-base font-extrabold leading-snug">
+                {c.title}
+              </div>
+              <p className="mt-2 line-clamp-3 text-xs text-muted-foreground">{c.subtitle}</p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                <span className="rounded-full border border-border bg-surface px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                  {c.duration}
+                </span>
+                <span className="rounded-full border border-border bg-surface px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+                  {c.level}
+                </span>
+              </div>
+              <div className="mt-auto pt-5">
+                <Button
+                  size="sm"
+                  className="w-full gradient-hero text-white border-0 hover:opacity-95"
+                  onClick={() => nav({ to: "/auth" })}
+                >
+                  Start Certification <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                </Button>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Section>
   );
 }
 

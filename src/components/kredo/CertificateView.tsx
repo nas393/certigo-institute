@@ -6,7 +6,8 @@ import sigDirector from "@/assets/sig-director.png";
 
 export type CertTemplate =
   | "classic" | "double" | "ornate" | "minimal" | "deco"
-  | "bordered" | "navy" | "emerald" | "stripe" | "embossed" | "signature";
+  | "bordered" | "navy" | "emerald" | "stripe" | "embossed" | "signature"
+  | "executive" | "technical" | "dark-glass";
 export type CertOrientation = "landscape" | "portrait";
 export type SignatureVariant = 0 | 1 | 2 | 3 | 4;
 export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
@@ -16,6 +17,9 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
   { key: "signature", label: "Professional", hint: "CERTIGO Institute — official credential" },
+  { key: "executive", label: "Executive", hint: "Classic serif · centered golden seal" },
+  { key: "technical", label: "Technical", hint: "Blueprint grid · competency sidebar" },
+  { key: "dark-glass", label: "Modern Dark", hint: "Dark mode · gold text · glassmorphism" },
   { key: "classic", label: "Classic", hint: "Thin black frame" },
   { key: "double", label: "Double", hint: "Inner + outer black border" },
   { key: "ornate", label: "Ornate", hint: "Gold double frame" },
@@ -69,6 +73,27 @@ export function CertificateView(p: Props) {
   const aspect = isPortrait ? "1/1.414" : "1.414/1";
   const s = isPortrait ? 1.35 : 1;
   const cq = (n: number) => `${(n * s).toFixed(2)}cqw`;
+
+  // Themed palette variants
+  const theme = p.template;
+  if (theme === "executive") {
+    return (
+      <ExecutiveCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
+  if (theme === "technical") {
+    return (
+      <TechnicalCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
+  if (theme === "dark-glass") {
+    return (
+      <DarkGlassCert p={p} qr={qr} qrTarget={qrTarget} displaySerial={displaySerial}
+        issued={issued} expiry={expiry} fmt={fmt} aspect={aspect} cq={cq} />
+    );
+  }
 
   const ink = "#0a0a0a";
   const sub = "#2a2a2a";
@@ -432,6 +457,269 @@ function WaxSeal({ style }: { style?: React.CSSProperties }) {
       <circle cx="158" cy="135" r="7" fill="#f1d9b6" opacity="0.9" />
       {/* highlight */}
       <ellipse cx="78" cy="58" rx="30" ry="14" fill="#fff" opacity="0.18" />
+    </svg>
+  );
+}
+
+/* ─────────── THEMED VARIANTS ─────────── */
+type ThemedProps = {
+  p: Props;
+  qr: string;
+  qrTarget: string;
+  displaySerial: string;
+  issued: Date;
+  expiry: Date;
+  fmt: (d: Date) => string;
+  aspect: string;
+  cq: (n: number) => string;
+};
+
+function ExecutiveCert({ p, qr, qrTarget, displaySerial, issued, expiry, fmt, aspect, cq }: ThemedProps) {
+  const ink = "#1a1a1a";
+  const mute = "#7a7a7a";
+  const gold = "#b08a36";
+  return (
+    <div
+      style={{ containerType: "inline-size", aspectRatio: aspect, background: "#ffffff", color: ink } as React.CSSProperties}
+      className={`relative w-full overflow-hidden ${p.compact ? "" : "shadow-2xl"}`}
+    >
+      <div className="absolute" style={{ inset: cq(1.4), border: `${cq(0.08)} solid ${gold}` }} />
+      <div className="absolute" style={{ inset: cq(2.0), border: `${cq(0.04)} solid ${gold}`, opacity: 0.6 }} />
+      <div className="relative h-full" style={{ padding: `${cq(5)} ${cq(6)}`, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ fontFamily: "'Playfair Display', 'Cormorant Garamond', serif", fontSize: cq(1.1), letterSpacing: "0.5em", fontWeight: 700, color: gold, textTransform: "uppercase" }}>
+          Certificate of Achievement
+        </div>
+        <div style={{ marginTop: cq(0.6), height: cq(0.06), width: cq(10), background: gold }} />
+        <div style={{ marginTop: cq(2.4), fontFamily: "'Playfair Display', serif", fontSize: cq(1.4), fontStyle: "italic", color: mute }}>
+          This certificate is proudly presented to
+        </div>
+        <div style={{ marginTop: cq(1.6), fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: cq(5.4), letterSpacing: "-0.01em", lineHeight: 1, color: ink }}>
+          {p.recipientName}
+        </div>
+        <div style={{ marginTop: cq(2), fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: cq(1.3), color: mute, maxWidth: "70%" }}>
+          for the successful completion of
+        </div>
+        <div style={{ marginTop: cq(0.7), fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: cq(1.9), color: ink }}>
+          {p.courseTopic}
+        </div>
+        {p.score != null && (
+          <div style={{ marginTop: cq(0.6), fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.7), letterSpacing: "0.3em", color: mute }}>
+            FINAL SCORE · {p.score}%
+          </div>
+        )}
+        <div style={{ flex: 1 }} />
+        {/* Centered Golden Seal */}
+        <div style={{ marginTop: cq(2) }}>
+          <GoldenSeal size={cq(7.5)} />
+        </div>
+        <div style={{
+          width: "100%", marginTop: cq(2), display: "flex", justifyContent: "space-between", alignItems: "end",
+          fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.62), letterSpacing: "0.2em", color: mute,
+        }}>
+          <div style={{ textAlign: "left" }}>
+            <div>ISSUED</div>
+            <div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{fmt(issued).toUpperCase()}</div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <div>CREDENTIAL ID</div>
+            <div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{displaySerial}</div>
+          </div>
+          <div style={{ textAlign: "right" }}>
+            <div>VALID UNTIL</div>
+            <div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{fmt(expiry).toUpperCase()}</div>
+          </div>
+        </div>
+        {qr && (
+          <a href={qrTarget} target="_blank" rel="noreferrer" style={{ position: "absolute", right: cq(2.4), bottom: cq(2.4) }}>
+            <img src={qr} alt="Verify" style={{ width: cq(3.6), height: cq(3.6), display: "block" }} />
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function TechnicalCert({ p, qr, qrTarget, displaySerial, issued, expiry, fmt, aspect, cq }: ThemedProps) {
+  const ink = "#0c1e3a";
+  const mute = "#5b7898";
+  const accent = "#2563eb";
+  const competencies = ["Domain Mastery", "Applied Methods", "Systems Design", "Risk & Governance", "Quantitative Reasoning", "Practitioner Capstone"];
+  return (
+    <div
+      style={{
+        containerType: "inline-size", aspectRatio: aspect,
+        background: "#f8fafc", color: ink,
+        backgroundImage: `linear-gradient(to right, rgba(37,99,235,0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(37,99,235,0.08) 1px, transparent 1px)`,
+        backgroundSize: `${cq(2)} ${cq(2)}`,
+      } as React.CSSProperties}
+      className={`relative w-full overflow-hidden ${p.compact ? "" : "shadow-2xl"}`}
+    >
+      <div className="absolute" style={{ inset: cq(1), border: `${cq(0.08)} solid ${ink}` }} />
+      <div className="relative h-full" style={{ padding: cq(2.6), display: "grid", gridTemplateColumns: "1fr 30%", gap: cq(2) }}>
+        {/* main */}
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.7), letterSpacing: "0.3em", color: accent, fontWeight: 700 }}>
+            CERTIGO. // TECHNICAL CREDENTIAL
+          </div>
+          <div style={{ marginTop: cq(0.8), fontFamily: "'Inter', sans-serif", fontSize: cq(0.85), letterSpacing: "0.2em", color: mute, fontWeight: 700 }}>
+            ISSUED TO
+          </div>
+          <div style={{ marginTop: cq(0.4), fontFamily: "'Archivo Black', sans-serif", fontSize: cq(4), letterSpacing: "-0.02em", lineHeight: 1, color: ink }}>
+            {p.recipientName}
+          </div>
+          <div style={{ marginTop: cq(1.6), fontFamily: "'Inter', sans-serif", fontSize: cq(0.75), letterSpacing: "0.2em", color: mute, fontWeight: 700 }}>
+            CREDENTIAL
+          </div>
+          <div style={{ marginTop: cq(0.3), fontFamily: "'Inter', sans-serif", fontSize: cq(1.4), fontWeight: 800, color: ink }}>
+            {p.courseTopic}
+          </div>
+          {p.score != null && (
+            <div style={{ marginTop: cq(0.4), fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.65), letterSpacing: "0.2em", color: accent, fontWeight: 700 }}>
+              ASSESSED PROFICIENCY · {p.score}%
+            </div>
+          )}
+          <div style={{ flex: 1 }} />
+          <div style={{
+            display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: cq(1),
+            paddingTop: cq(1.2), borderTop: `${cq(0.04)} solid ${ink}`,
+            fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.55), letterSpacing: "0.18em", color: mute,
+          }}>
+            <div><div>ISSUED</div><div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{fmt(issued).toUpperCase()}</div></div>
+            <div><div>VALID</div><div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{fmt(expiry).toUpperCase()}</div></div>
+            <div><div>SERIAL</div><div style={{ marginTop: cq(0.2), color: ink, fontWeight: 700 }}>{displaySerial}</div></div>
+          </div>
+        </div>
+        {/* sidebar */}
+        <div style={{
+          background: "#ffffff", border: `${cq(0.06)} solid ${ink}`,
+          padding: cq(1.4), display: "flex", flexDirection: "column",
+        }}>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.6), letterSpacing: "0.22em", color: accent, fontWeight: 700 }}>
+            PASSED COMPETENCIES
+          </div>
+          <ul style={{ marginTop: cq(0.8), padding: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: cq(0.5) }}>
+            {competencies.map((c) => (
+              <li key={c} style={{ display: "flex", alignItems: "flex-start", gap: cq(0.4), fontFamily: "'Inter', sans-serif", fontSize: cq(0.7), color: ink, fontWeight: 600 }}>
+                <span style={{ marginTop: cq(0.18), width: cq(0.45), height: cq(0.45), background: accent, display: "inline-block" }} />
+                {c}
+              </li>
+            ))}
+          </ul>
+          <div style={{ flex: 1 }} />
+          {qr && (
+            <div style={{ marginTop: cq(1), display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <a href={qrTarget} target="_blank" rel="noreferrer">
+                <img src={qr} alt="Verify" style={{ width: cq(4.6), height: cq(4.6), display: "block" }} />
+              </a>
+              <div style={{ marginTop: cq(0.4), fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.5), letterSpacing: "0.18em", color: mute, fontWeight: 700 }}>
+                SCAN TO VERIFY
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DarkGlassCert({ p, qr, qrTarget, displaySerial, issued, expiry, fmt, aspect, cq }: ThemedProps) {
+  const gold = "#d4af37";
+  const goldSoft = "#f1d9b6";
+  const text = "#f5f0e6";
+  const muted = "rgba(245,240,230,0.55)";
+  return (
+    <div
+      style={{
+        containerType: "inline-size", aspectRatio: aspect,
+        background: "radial-gradient(circle at 25% 15%, #1a1a2e 0%, #0a0a12 60%, #050509 100%)",
+        color: text,
+      } as React.CSSProperties}
+      className={`relative w-full overflow-hidden ${p.compact ? "" : "shadow-2xl"}`}
+    >
+      {/* glass shimmer layers */}
+      <div className="absolute" style={{ inset: 0, background: "radial-gradient(ellipse at top, rgba(212,175,55,0.18), transparent 60%)" }} />
+      <div className="absolute" style={{ inset: cq(1.6), border: `${cq(0.06)} solid ${gold}`, opacity: 0.6 }} />
+      <div className="absolute" style={{
+        inset: cq(2.4),
+        background: "rgba(255,255,255,0.04)",
+        backdropFilter: "blur(8px)",
+        WebkitBackdropFilter: "blur(8px)",
+        border: `${cq(0.04)} solid rgba(212,175,55,0.35)`,
+        borderRadius: cq(0.4),
+      }} />
+      <div className="relative h-full" style={{ padding: `${cq(4.6)} ${cq(5)}`, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: cq(4.4), fontWeight: 900, letterSpacing: "-0.04em", color: text }}>
+          CERTIGO<span style={{ color: gold }}>.</span>
+        </div>
+        <div style={{ marginTop: cq(0.5), fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.65), letterSpacing: "0.34em", color: gold, fontWeight: 700 }}>
+          ELITE CREDENTIAL
+        </div>
+        <div style={{ marginTop: cq(2.4), fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: cq(1.3), color: muted }}>
+          Awarded to
+        </div>
+        <div style={{ marginTop: cq(1), fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: cq(5.6), letterSpacing: "-0.01em", lineHeight: 1, color: gold, textShadow: `0 0 ${cq(1)} rgba(212,175,55,0.35)` }}>
+          {p.recipientName}
+        </div>
+        <div style={{ marginTop: cq(1.8), fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", fontSize: cq(1.2), color: muted }}>
+          for mastery of
+        </div>
+        <div style={{ marginTop: cq(0.5), fontFamily: "'Inter', sans-serif", fontWeight: 800, fontSize: cq(1.6), color: text, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+          {p.courseTopic}
+        </div>
+        {p.score != null && (
+          <div style={{ marginTop: cq(0.6), fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.7), letterSpacing: "0.3em", color: goldSoft }}>
+            EXAM SCORE · {p.score}%
+          </div>
+        )}
+        <div style={{ flex: 1 }} />
+        <div style={{
+          width: "100%", display: "flex", justifyContent: "space-between", alignItems: "end",
+          fontFamily: "'JetBrains Mono', monospace", fontSize: cq(0.6), letterSpacing: "0.22em", color: muted,
+        }}>
+          <div style={{ textAlign: "left" }}>
+            <div>ISSUED</div>
+            <div style={{ marginTop: cq(0.2), color: text, fontWeight: 700 }}>{fmt(issued).toUpperCase()}</div>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <div>ID</div>
+            <div style={{ marginTop: cq(0.2), color: gold, fontWeight: 700 }}>{displaySerial}</div>
+          </div>
+          <div style={{ textAlign: "right" }}>
+            <div>VALID</div>
+            <div style={{ marginTop: cq(0.2), color: text, fontWeight: 700 }}>{fmt(expiry).toUpperCase()}</div>
+          </div>
+        </div>
+        {qr && (
+          <a href={qrTarget} target="_blank" rel="noreferrer" style={{ position: "absolute", right: cq(3), bottom: cq(3) }}>
+            <img src={qr} alt="Verify" style={{ width: cq(3.4), height: cq(3.4), display: "block", filter: "invert(1)" }} />
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function GoldenSeal({ size }: { size: string }) {
+  return (
+    <svg viewBox="0 0 200 200" style={{ width: size, height: size }} aria-hidden>
+      <defs>
+        <radialGradient id="goldseal" cx="40%" cy="35%" r="70%">
+          <stop offset="0%" stopColor="#f7e2a7" />
+          <stop offset="55%" stopColor="#c9a14e" />
+          <stop offset="100%" stopColor="#7d6022" />
+        </radialGradient>
+      </defs>
+      {/* rays */}
+      <g fill="#c9a14e" opacity="0.65">
+        {Array.from({ length: 24 }).map((_, i) => {
+          const a = (i * 360) / 24;
+          return <rect key={i} x="98" y="6" width="4" height="22" transform={`rotate(${a} 100 100)`} />;
+        })}
+      </g>
+      <circle cx="100" cy="100" r="68" fill="url(#goldseal)" stroke="#7d6022" strokeWidth="1.4" />
+      <circle cx="100" cy="100" r="56" fill="none" stroke="#f1d9b6" strokeWidth="1" opacity="0.8" />
+      <text x="100" y="118" textAnchor="middle" fontFamily="'Playfair Display', serif" fontWeight="900" fontSize="64" fill="#3a2a08">C</text>
+      <text x="100" y="160" textAnchor="middle" fontFamily="'JetBrains Mono', monospace" fontSize="10" fill="#3a2a08" letterSpacing="3">CERTIGO.</text>
     </svg>
   );
 }

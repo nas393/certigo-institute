@@ -18,7 +18,7 @@ export const Route = createFileRoute("/security")({
 
 function SecurityPage() {
   const nav = useNavigate();
-  const pillars = [
+  const pillars: { icon: typeof Lock; t: string; d: string }[] = [
     { icon: Lock, t: "Encryption everywhere", d: "TLS 1.3 in transit. AES-256 at rest. Per-tenant key isolation with rotation policies." },
     { icon: ShieldCheck, t: "Tamper-proof verification", d: "Each credential carries a cryptographic signature; any byte change invalidates the proof." },
     { icon: KeyRound, t: "Zero-trust access", d: "SSO, SCIM provisioning and granular role-based access for every issuing team." },
@@ -48,10 +48,10 @@ function SecurityPage() {
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pb-20">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {pillars.map(({ icon: Icon, ...p }) => (
+          {(Array.isArray(pillars) ? pillars : []).map(({ icon: Icon, ...p }) => (
             <div key={p.t} className="rounded-xl border border-border bg-card p-6">
               <div className="grid h-10 w-10 place-items-center rounded-lg gradient-hero text-white">
-                <Icon className="h-5 w-5" />
+                {Icon ? <Icon className="h-5 w-5" /> : null}
               </div>
               <div className="mt-4 font-display text-base font-bold">{p.t}</div>
               <p className="mt-2 text-sm text-muted-foreground">{p.d}</p>
@@ -74,7 +74,7 @@ function SecurityPage() {
             </div>
             <div className="rounded-2xl border border-border bg-card p-6">
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                {compliance.map((c) => (
+                {(compliance ?? []).map((c) => (
                   <div key={c} className="rounded-lg border border-border bg-surface p-4 text-center">
                     <ShieldCheck className="mx-auto h-4 w-4 text-[var(--primary)]" />
                     <div className="mt-2 text-xs font-semibold">{c}</div>
