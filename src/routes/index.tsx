@@ -355,11 +355,10 @@ function Home() {
 
       {/* ABOUT — institute brief */}
       <Chapter id="about" chapter="VII" section={t("about.label")} title={t("about.title")}>
-        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-            <div className="border-l-2 border-foreground/70 pl-6">
-              <p className="font-serif text-lg italic text-foreground/85">{t("about.body1")}</p>
-              <p className="mt-4 font-serif text-lg italic text-muted-foreground">{t("about.body2")}</p>
-              <div className="mt-10 border-t-2 border-foreground pt-6">
+        <AboutBlock t={t} />
+      </Chapter>
+
+      {/* CONTACT — institute correspondence (minimal webmail) */}
                 <div className="micro-label">◆ Institute Objectives</div>
                 <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
                   {[
