@@ -14,6 +14,7 @@ import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PricingRouteImport } from './routes/pricing'
@@ -52,6 +53,11 @@ const StylesRoute = StylesRouteImport.update({
 const SettingsRoute = SettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecurityRoute = SecurityRouteImport.update({
+  id: '/security',
+  path: '/security',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProfileRoute = ProfileRouteImport.update({
@@ -134,6 +140,7 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
+  '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
@@ -155,6 +162,7 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
+  '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
@@ -177,6 +185,7 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
+  '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
@@ -200,6 +209,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/product'
     | '/profile'
+    | '/security'
     | '/settings'
     | '/styles'
     | '/templates'
@@ -221,6 +231,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/product'
     | '/profile'
+    | '/security'
     | '/settings'
     | '/styles'
     | '/templates'
@@ -242,6 +253,7 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/product'
     | '/profile'
+    | '/security'
     | '/settings'
     | '/styles'
     | '/templates'
@@ -264,6 +276,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
+  SecurityRoute: typeof SecurityRoute
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
   TemplatesRoute: typeof TemplatesRoute
@@ -311,6 +324,13 @@ declare module '@tanstack/react-router' {
       path: '/settings'
       fullPath: '/settings'
       preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/security': {
+      id: '/security'
+      path: '/security'
+      fullPath: '/security'
+      preLoaderRoute: typeof SecurityRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/profile': {
@@ -434,6 +454,7 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
+  SecurityRoute: SecurityRoute,
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
   TemplatesRoute: TemplatesRoute,
@@ -448,3 +469,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
