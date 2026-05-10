@@ -38,38 +38,48 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 gradient-paper" />
-        <div className="absolute -top-40 left-1/2 -z-10 h-[600px] w-[1100px] -translate-x-1/2 rounded-full gradient-aurora opacity-25 blur-3xl" />
-        <div className="pointer-events-none absolute inset-0 -z-10 [background-image:radial-gradient(circle_at_1px_1px,oklch(0.32_0.18_278/0.12)_1px,transparent_0)] [background-size:24px_24px] opacity-40" />
-        <div className="mx-auto max-w-7xl px-6 pt-20 pb-24 lg:pt-28 lg:pb-32">
-          <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32">
+          {/* institutional headline strap */}
+          <div className="mb-12 flex flex-wrap items-center justify-between gap-3 border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Professional Certification Authority · Vol. I · No. 01</div>
+            <div className="micro-label hidden sm:block">Issued Worldwide · Verified at certigo.institute</div>
+          </div>
+          <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center">
             <div>
-              <div className="micro-label">◆ {t("hero.label")}</div>
-              <h1 className="mt-6 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-black leading-[0.95] tracking-tighter text-balance">
-                {t("hero.title.a")} <span className="italic">{t("hero.title.b")}</span>
+              <div className="flex items-center gap-3">
+                <span className="h-px w-10 bg-foreground" />
+                <div className="micro-label">{t("hero.label")}</div>
+              </div>
+              <h1 className="mt-6 font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.88] tracking-[-0.05em] text-balance uppercase text-foreground">
+                {t("hero.title.a")}
                 <br />
-                <span className="text-primary">{t("hero.title.c")}</span>
+                <span className="font-serif italic font-semibold normal-case tracking-[-0.02em] text-foreground/85">{t("hero.title.b")}</span>
+                <br />
+                <span className="text-wax">{t("hero.title.c")}</span>
               </h1>
-              <p className="mt-7 max-w-xl text-lg text-muted-foreground text-balance">{t("hero.sub")}</p>
+              <div className="mt-8 max-w-xl border-l-2 border-foreground/70 pl-5">
+                <p className="font-serif text-xl italic text-foreground/85 text-balance">{t("hero.sub")}</p>
+              </div>
               <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row">
-                <Button size="lg" className="h-12 px-6" onClick={start}>
+                <Button size="lg" className="h-12 rounded-none bg-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] text-background hover:bg-foreground/90" onClick={start}>
                   {t("cta.generate")} <ArrowRight className="ms-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="h-12 px-6" onClick={() => nav({ to: "/verify" })}>
+                <Button size="lg" variant="outline" className="h-12 rounded-none border-2 border-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-foreground hover:text-background" onClick={() => nav({ to: "/verify" })}>
                   {t("cta.viewdemo")}
                 </Button>
               </div>
-              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                <span>{t("hero.bullet.cc")}</span><span>{t("hero.bullet.free")}</span><span>{t("hero.bullet.fast")}</span>
+              <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-foreground/20 pt-5 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+                <span>◆ {t("hero.bullet.cc")}</span>
+                <span>◆ {t("hero.bullet.free")}</span>
+                <span>◆ {t("hero.bullet.fast")}</span>
               </div>
             </div>
-            {/* DEMO CERTIFICATE — pristine museum-grade presentation */}
-            <div className="relative mx-auto w-full max-w-[600px]">
-              {/* aurora glow halo */}
-              <div className="pointer-events-none absolute -inset-10 -z-10 rounded-[40px] gradient-aurora opacity-25 blur-3xl" />
-              {/* gallery wall card */}
-              <div className="relative rounded-2xl border border-border/60 bg-white p-4 shadow-elegant sm:p-6">
-                {/* matte frame: thin neutral mat around the certificate */}
-                <div className="rounded-md ring-1 ring-black/5">
+            {/* DEMO CERTIFICATE — exhibition plate */}
+            <div className="relative mx-auto w-full max-w-[620px]">
+              <div className="absolute -inset-3 -z-10 border-2 border-foreground" />
+              <div className="absolute -top-3 -left-3 -z-10 h-6 w-6 bg-wax" />
+              <div className="relative bg-card p-3 shadow-frame sm:p-4">
+                <div className="ring-1 ring-foreground/10">
                   <CertificateView
                     compact
                     serial="KR-2026-DEMO01"
@@ -80,13 +90,12 @@ function Home() {
                     verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify/KR-2026-DEMO01` : "/verify/KR-2026-DEMO01"}
                   />
                 </div>
-                {/* gallery plaque */}
-                <div className="mt-4 flex items-center justify-between gap-3 px-1">
-                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                    <QrCode className="h-3 w-3" />
-                    <span>{t("cta.scanorvisit")}</span>
+                {/* exhibition plaque */}
+                <div className="mt-3 flex items-center justify-between gap-3 border-t border-foreground/15 px-1 pt-3">
+                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+                    <QrCode className="h-3 w-3" /> <span>Plate I · {t("cta.scanorvisit")}</span>
                   </div>
-                  <a href="/verify/KR-2026-DEMO01" className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary underline-offset-4 hover:underline">
+                  <a href="/verify/KR-2026-DEMO01" className="font-mono text-[10px] uppercase tracking-[0.22em] text-wax underline-offset-4 hover:underline">
                     {t("cta.opendemo")} →
                   </a>
                 </div>
