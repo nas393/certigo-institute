@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/accordion";
 import { setPendingCertification } from "@/lib/certigo-pending";
 import { useAuth } from "@/lib/auth";
+import { useI18n } from "@/lib/i18n";
+import { chapters as chapterStrings, catalog as catalogStrings } from "@/lib/i18n-chapters";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,19 +44,21 @@ function Home() {
 
 /* ─────────────────────────── COLLAPSIBLE CHAPTERS ─────────────────────────── */
 function Chapters() {
+  const { lang, dir } = useI18n();
+  const s = chapterStrings(lang);
   const chapters: { id: string; chapter: string; title: string; node: React.ReactNode }[] = [
-    { id: "ch-1", chapter: "Chapter I", title: "The trust gap in modern hiring", node: <Problem /> },
-    { id: "ch-2", chapter: "Chapter II", title: "How CERTIGO. works",            node: <HowItWorks /> },
-    { id: "ch-3", chapter: "Chapter III", title: "One platform, three surfaces",  node: <ProductShowcase /> },
-    { id: "ch-4", chapter: "Chapter IV", title: "Built for three audiences",      node: <Audiences /> },
-    { id: "ch-5", chapter: "Chapter V",  title: "Pricing that scales",            node: <Pricing /> },
-    { id: "ch-6", chapter: "Chapter VI", title: "Security &amp; compliance",      node: <Security /> },
-    { id: "ch-7", chapter: "Chapter VII", title: "Use case in production",        node: <UseCase /> },
-    { id: "ch-8", chapter: "Chapter VIII", title: "Common course syllabuses",     node: <Courses /> },
-    { id: "ch-9", chapter: "Chapter IX", title: "Global Certification Catalog",   node: <CertificationCatalog /> },
+    { id: "ch-1", chapter: s.chapter1, title: s.chapter1_title, node: <Problem /> },
+    { id: "ch-2", chapter: s.chapter2, title: s.chapter2_title, node: <HowItWorks /> },
+    { id: "ch-3", chapter: s.chapter3, title: s.chapter3_title, node: <ProductShowcase /> },
+    { id: "ch-4", chapter: s.chapter4, title: s.chapter4_title, node: <Audiences /> },
+    { id: "ch-5", chapter: s.chapter5, title: s.chapter5_title, node: <Pricing /> },
+    { id: "ch-6", chapter: s.chapter6, title: s.chapter6_title, node: <Security /> },
+    { id: "ch-7", chapter: s.chapter7, title: s.chapter7_title, node: <UseCase /> },
+    { id: "ch-8", chapter: s.chapter8, title: s.chapter8_title, node: <Courses /> },
+    { id: "ch-9", chapter: s.chapter9, title: s.chapter9_title, node: <CertificationCatalog /> },
   ];
   return (
-    <section className="bg-background">
+    <section className="bg-background" dir={dir}>
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-16">
         <Accordion type="multiple" defaultValue={chapters.map((c) => c.id)} className="space-y-4">
           {chapters.map((c) => (
@@ -89,10 +93,12 @@ function Chapters() {
 function CertificationCatalog() {
   const nav = useNavigate();
   const { user } = useAuth();
+  const { lang, dir } = useI18n();
+  const cs = catalogStrings(lang);
   const certs = COURSES.map((c) => ({
     code: c.code,
     icon: c.icon,
-    title: c.title,
+    title: cs.cert[c.code] ?? c.title,
     subtitle: c.intro,
     duration: c.duration,
     level: c.level,
@@ -117,9 +123,10 @@ function CertificationCatalog() {
     nav({ to: user ? "/dashboard" : "/auth" });
   };
   return (
-    <Section eyebrow="Global Certification Catalog" title="Ten flagship certifications. Audit-grade. Globally portable.">
+    <div dir={dir}>
+    <Section eyebrow={cs.eyebrow} title={cs.title}>
       <p className="-mt-6 mb-10 max-w-2xl text-muted-foreground">
-        Every CERTIGO. certification is competency-mapped, examinable and instantly verifiable on the public registry.
+        {cs.subtitle}
       </p>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {certs.map((c) => {
@@ -150,13 +157,13 @@ function CertificationCatalog() {
                   {c.level}
                 </span>
                 <span className="inline-flex items-center gap-1 rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 text-[10px] font-semibold text-[var(--primary)]">
-                  <BadgeCheck className="h-3 w-3" /> Quiz ready
+                  <BadgeCheck className="h-3 w-3" /> {cs.quizReady}
                 </span>
               </div>
               {topComps.length > 0 && (
                 <div className="mt-4">
                   <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-[var(--primary)]">
-                    Passed competencies
+                    {cs.competencies}
                   </div>
                   <ul className="mt-2 space-y-1.5">
                     {topComps.map((o) => (
@@ -174,7 +181,7 @@ function CertificationCatalog() {
                   className="w-full gradient-hero text-white border-0 hover:opacity-95"
                   onClick={() => startCertification(c)}
                 >
-                  Start Certification <ArrowRight className="ml-2 h-3.5 w-3.5" />
+                  {cs.start} <ArrowRight className="ml-2 h-3.5 w-3.5" />
                 </Button>
               </div>
             </div>
@@ -182,6 +189,7 @@ function CertificationCatalog() {
         })}
       </div>
     </Section>
+    </div>
   );
 }
 
