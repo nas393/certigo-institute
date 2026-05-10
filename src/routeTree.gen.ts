@@ -15,6 +15,8 @@ import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as ProductRouteImport } from './routes/product'
+import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ArchiveRouteImport } from './routes/archive'
@@ -55,6 +57,16 @@ const SettingsRoute = SettingsRouteImport.update({
 const ProfileRoute = ProfileRouteImport.update({
   id: '/profile',
   path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductRoute = ProductRouteImport.update({
+  id: '/product',
+  path: '/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -119,6 +131,8 @@ export interface FileRoutesByFullPath {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -138,6 +152,8 @@ export interface FileRoutesByTo {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -158,6 +174,8 @@ export interface FileRoutesById {
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
   '/dashboard': typeof DashboardRoute
+  '/pricing': typeof PricingRoute
+  '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
@@ -179,6 +197,8 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -198,6 +218,8 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -217,6 +239,8 @@ export interface FileRouteTypes {
     | '/archive'
     | '/auth'
     | '/dashboard'
+    | '/pricing'
+    | '/product'
     | '/profile'
     | '/settings'
     | '/styles'
@@ -237,6 +261,8 @@ export interface RootRouteChildren {
   ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
   DashboardRoute: typeof DashboardRoute
+  PricingRoute: typeof PricingRoute
+  ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
@@ -292,6 +318,20 @@ declare module '@tanstack/react-router' {
       path: '/profile'
       fullPath: '/profile'
       preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -391,6 +431,8 @@ const rootRouteChildren: RootRouteChildren = {
   ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
   DashboardRoute: DashboardRoute,
+  PricingRoute: PricingRoute,
+  ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
@@ -406,13 +448,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
