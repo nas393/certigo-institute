@@ -108,7 +108,14 @@ function CertPage() {
           </div>
         )}
         <div className="mt-8">
-          <div className={ori === "portrait" ? "mx-auto max-w-[640px]" : ""}>
+          <div
+            className="mx-auto"
+            style={{
+              width: ori === "portrait"
+                ? "min(100%, calc(78vh / 1.414))"
+                : "min(100%, calc(78vh * 1.414))",
+            }}
+          >
             <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
               score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} orientation={ori} />
           </div>

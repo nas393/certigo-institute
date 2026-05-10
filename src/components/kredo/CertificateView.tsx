@@ -73,7 +73,7 @@ export function CertificateView(p: Props) {
   const ink = "#0a0a0a";
   const sub = "#2a2a2a";
   const mute = "#6b6b6b";
-  const paper = "#f5f1e8";
+  const paper = "#ffffff";
   const accent = "#7a1f1f";
 
   return (
@@ -81,144 +81,115 @@ export function CertificateView(p: Props) {
       style={{ containerType: "inline-size", aspectRatio: aspect, background: ink, color: ink } as React.CSSProperties}
       className={`relative w-full overflow-hidden ${p.compact ? "" : "shadow-2xl"}`}
     >
-      {/* Thick double frame: outer ink, inner cream, mid ink, inner cream */}
+      {/* V2 Museum frame: single thin outer + hairline inner */}
       <div className="absolute" style={{ inset: 0, background: paper }} />
-      <div className="absolute" style={{ inset: cq(1.4), border: `${cq(0.7)} solid ${ink}` }} />
-      <div className="absolute" style={{ inset: cq(2.6), border: `${cq(0.18)} solid ${ink}` }} />
+      <div className="absolute" style={{ inset: cq(1.2), border: `${cq(0.18)} solid ${ink}` }} />
+      <div className="absolute" style={{ inset: cq(1.8), border: `${cq(0.04)} solid ${ink}`, opacity: 0.55 }} />
 
-      <div className="relative h-full" style={{ padding: `${cq(3.6)} ${cq(5)}`, display: "flex", flexDirection: "column", textAlign: "center", alignItems: "center" }}>
-        {/* TOP: institute lockup centered */}
-        <div style={{
-          fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
-          fontSize: cq(0.7),
-          letterSpacing: "0.42em",
-          fontWeight: 800,
-          color: mute,
-        }}>
-          CERTIGO INSTITUTE
-        </div>
+      <div className="relative h-full" style={{ padding: `${cq(3.4)} ${cq(4.6)} ${cq(2.8)}`, display: "flex", flexDirection: "column", textAlign: "center", alignItems: "center" }}>
+        {/* TOP: wordmark + tagline */}
         <div style={{
           fontFamily: "'Archivo Black', 'Helvetica Neue', sans-serif",
-          fontSize: cq(5.6),
+          fontSize: cq(5.4),
           fontWeight: 900,
           letterSpacing: "-0.05em",
           lineHeight: 0.9,
           color: ink,
-          marginTop: cq(0.5),
         }}>
           CERTIGO<span style={{ color: accent }}>.</span>
         </div>
         <div style={{
           fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
           fontSize: cq(0.7),
-          letterSpacing: "0.36em",
+          letterSpacing: "0.34em",
           fontWeight: 700,
-          color: sub,
+          color: mute,
           marginTop: cq(0.7),
         }}>
-          PROFESSIONAL CERTIFICATION AUTHORITY
+          GLOBAL STANDARDS <span style={{ color: accent, margin: `0 ${cq(0.45)}` }}>·</span> VERIFIED EXCELLENCE
         </div>
 
-        {/* ornament rule */}
-        <div style={{ display: "flex", alignItems: "center", gap: cq(1), marginTop: cq(2), width: "55%" }}>
-          <div style={{ flex: 1, height: cq(0.04), background: ink, opacity: 0.7 }} />
-          <svg viewBox="0 0 16 16" style={{ width: cq(1.2), height: cq(1.2), color: ink }} fill="currentColor"><path d="M8 0l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>
-          <div style={{ flex: 1, height: cq(0.04), background: ink, opacity: 0.7 }} />
-        </div>
-
-        {/* "Professional Certification" serif italic */}
+        {/* "This is to certify that" */}
         <div style={{
           fontFamily: "'Cormorant Garamond', 'Times New Roman', serif",
-          fontSize: cq(2.4),
+          fontSize: cq(1.6),
           fontStyle: "italic",
           fontWeight: 500,
           color: sub,
-          marginTop: cq(1.4),
+          marginTop: cq(2.4),
         }}>
-          Professional Certification
+          This is to certify that
         </div>
-
-        <p style={{
-          fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
-          fontSize: cq(0.92),
-          color: sub,
-          marginTop: cq(1),
-          lineHeight: 1.6,
-          maxWidth: "78%",
-        }}>
-          This is to certify that the individual named below has successfully completed the assessment and competency standards established by the Certigo Professional Certification Board.
-        </p>
 
         {/* recipient */}
         <div style={{
           fontFamily: "'Archivo Black', 'Helvetica Neue', sans-serif",
-          fontSize: cq(5.4),
+          fontSize: cq(6.2),
           fontWeight: 900,
-          letterSpacing: "-0.035em",
+          letterSpacing: "-0.045em",
           color: ink,
           textTransform: "uppercase",
           lineHeight: 1,
-          marginTop: cq(1.6),
+          marginTop: cq(1.2),
         }}>
           {p.recipientName}
         </div>
-        <div style={{ height: cq(0.06), background: ink, opacity: 0.85, width: "60%", marginTop: cq(0.9) }} />
 
         <div style={{
           fontFamily: "'Cormorant Garamond', serif",
           fontStyle: "italic",
-          fontSize: cq(1.3),
+          fontSize: cq(1.4),
           color: sub,
-          marginTop: cq(0.9),
+          marginTop: cq(1.4),
         }}>
-          is hereby awarded the credential of
+          has successfully completed
         </div>
         <div style={{
           fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
-          fontSize: cq(1.65),
+          fontSize: cq(1.55),
           fontWeight: 800,
           color: ink,
-          marginTop: cq(0.5),
-          letterSpacing: "-0.005em",
+          marginTop: cq(0.6),
+          letterSpacing: "0.01em",
+          textTransform: "uppercase",
         }}>
           {p.courseTopic}
         </div>
-        <div style={{
-          fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
-          fontSize: cq(0.7),
-          letterSpacing: "0.32em",
-          color: mute,
-          fontWeight: 700,
-          marginTop: cq(0.5),
-          textTransform: "uppercase",
-        }}>
-          Professional Level Credential{p.score != null ? ` · Score ${p.score}%` : ""}
-        </div>
+        {p.score != null && (
+          <div style={{
+            fontFamily: "'JetBrains Mono', ui-monospace, monospace",
+            fontSize: cq(0.65),
+            letterSpacing: "0.28em",
+            color: mute,
+            fontWeight: 600,
+            marginTop: cq(0.5),
+          }}>
+            PROFESSIONAL LEVEL · SCORE {p.score}%
+          </div>
+        )}
 
-        {/* COMPETENCIES — inline strip */}
+        {/* COMPETENCIES — 6 inline outlined chips */}
         <div style={{
-          marginTop: cq(1.8),
+          marginTop: cq(1.6),
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: cq(0.6),
-          maxWidth: "85%",
+          gap: cq(0.55),
+          maxWidth: "92%",
         }}>
-          {COMPETENCIES.map((c) => (
-            <div key={c.label} style={{
+          {["PROMPT DESIGN","CONTEXT ENGINEERING","MODEL INTEGRATION","EVALUATION & TESTING","SAFETY & ETHICS","OPTIMIZATION"].map((label) => (
+            <div key={label} style={{
               display: "inline-flex",
               alignItems: "center",
-              gap: cq(0.5),
-              border: `${cq(0.08)} solid ${ink}`,
-              padding: `${cq(0.4)} ${cq(0.9)}`,
+              border: `${cq(0.06)} solid ${ink}`,
+              padding: `${cq(0.32)} ${cq(0.85)}`,
               fontFamily: "'JetBrains Mono', ui-monospace, monospace",
-              fontSize: cq(0.72),
+              fontSize: cq(0.66),
               fontWeight: 600,
               color: ink,
-              letterSpacing: "0.04em",
+              letterSpacing: "0.1em",
             }}>
-              <CompIcon name={c.icon} size={cq(1)} color={ink} />
-              {c.label}
+              {label}
             </div>
           ))}
         </div>
@@ -226,83 +197,53 @@ export function CertificateView(p: Props) {
         {/* spacer */}
         <div style={{ flex: 1 }} />
 
-        {/* BOTTOM ROW: seal | signatures (V4 minimal) | QR */}
+        {/* BOTTOM ROW: signature | wax seal (centered) | signature */}
         <div style={{
           width: "100%",
           display: "grid",
-          gridTemplateColumns: "1fr 1.1fr 1.1fr 1fr",
+          gridTemplateColumns: "1fr auto 1fr",
           alignItems: "end",
-          gap: cq(1.6),
+          gap: cq(1.4),
           marginTop: cq(1),
         }}>
-          {/* wax seal */}
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <WaxSeal style={{ width: cq(8.5), height: cq(8.5), display: "block" }} />
+          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigDirector} title="Director of Certification" />
+
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", paddingBottom: cq(0.2) }}>
+            <WaxSeal style={{ width: cq(8.4), height: cq(8.4), display: "block" }} />
           </div>
 
-          {/* signature 1 — V4 minimal */}
-          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigOfficer} title="Chief Certification Officer" />
-          {/* signature 2 — V4 minimal */}
-          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigDirector} title="Program Director" />
-
-          {/* QR */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: cq(0.4) }}>
-            {qr && (
-              <a href={qrTarget} target="_blank" rel="noreferrer">
-                <img src={qr} alt="Scan to verify" style={{ width: cq(6.5), height: cq(6.5), display: "block" }} />
-              </a>
-            )}
-            <div style={{
-              fontFamily: "'JetBrains Mono', ui-monospace, monospace",
-              fontSize: cq(0.6),
-              letterSpacing: "0.16em",
-              color: mute,
-              textAlign: "right",
-            }}>
-              {verifyHost}
-            </div>
-          </div>
+          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigOfficer} title="Chief Standards Officer" />
         </div>
 
-        {/* META STRIP */}
+        {/* BOTTOM META: corner-aligned issued / id, with QR floated bottom-right */}
         <div style={{
           width: "100%",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr",
-          gap: cq(1.6),
-          marginTop: cq(1.4),
-          paddingTop: cq(1),
-          borderTop: `${cq(0.04)} solid ${ink}`,
-        }}>
-          <SmallMeta cq={cq} ink={ink} mute={mute} label="ISSUE DATE" value={fmt(issued)} />
-          <SmallMeta cq={cq} ink={ink} mute={mute} label="VALID UNTIL" value={fmt(expiry)} />
-          <SmallMeta cq={cq} ink={ink} mute={mute} label="CREDENTIAL ID" value={displaySerial} mono align="right" />
-        </div>
-
-        {/* FOOTER — tagline only, centered (board emblem removed) */}
-        <div style={{
-          width: "100%",
-          marginTop: cq(1.2),
-          paddingTop: cq(0.9),
-          borderTop: `${cq(0.04)} solid ${ink}`,
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          gap: cq(2.2),
+          marginTop: cq(1.6),
+          paddingRight: cq(7),
+          fontFamily: "'JetBrains Mono', ui-monospace, monospace",
+          fontSize: cq(0.62),
+          letterSpacing: "0.16em",
+          color: mute,
+          fontWeight: 600,
         }}>
-          <div style={{
-            fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif",
-            fontSize: cq(0.62),
-            color: mute,
-            letterSpacing: "0.18em",
-            fontWeight: 600,
-            textTransform: "uppercase",
-            textAlign: "center",
-          }}>
-            Building skills <span style={{ margin: `0 ${cq(0.3)}`, color: accent }}>|</span>
-            Validating expertise <span style={{ margin: `0 ${cq(0.3)}`, color: accent }}>|</span>
-            Advancing careers
-          </div>
+          <span>ISSUED {fmt(issued).toUpperCase()}</span>
+          <span style={{ color: mute }}>VALID {fmt(expiry).toUpperCase()}</span>
+          <span>ID {displaySerial}</span>
         </div>
+
+        {/* QR — bottom-right corner, outside meta row */}
+        {qr && (
+          <a href={qrTarget} target="_blank" rel="noreferrer" style={{
+            position: "absolute", right: cq(2.6), bottom: cq(2.6),
+            display: "block",
+          }}>
+            <img src={qr} alt={`Verify on ${verifyHost}`} style={{ width: cq(4.6), height: cq(4.6), display: "block" }} />
+          </a>
+        )}
 
         {p.watermark && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
