@@ -331,76 +331,85 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section id="about" className="mx-auto max-w-7xl px-6 py-24 scroll-mt-24">
-        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-          <div>
-            <div className="micro-label">◆ {t("about.label")}</div>
-            <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("about.title")}</h2>
-            <p className="mt-6 text-muted-foreground">{t("about.body1")}</p>
-            <p className="mt-4 text-muted-foreground">{t("about.body2")}</p>
-            <div className="mt-8 grid grid-cols-3 gap-4">
+      {/* ABOUT — institute brief */}
+      <section id="about" className="border-t-2 border-foreground scroll-mt-24">
+        <div className="mx-auto max-w-7xl px-6 py-24">
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Chapter V · {t("about.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("about.title")}</h2>
+          </div>
+          <div className="mt-12 grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+            <div className="border-l-2 border-foreground/70 pl-6">
+              <p className="font-serif text-lg italic text-foreground/85">{t("about.body1")}</p>
+              <p className="mt-4 font-serif text-lg italic text-muted-foreground">{t("about.body2")}</p>
+              <div className="mt-10 grid grid-cols-3 gap-0 border-t border-foreground/20">
+                {[
+                  ["12,400+", t("about.stat.issued")],
+                  ["84,000+", t("about.stat.verifs")],
+                  ["38", t("about.stat.countries")],
+                ].map(([n, l], i) => (
+                  <div key={l} className={`py-5 ${i > 0 ? "border-l border-foreground/20 pl-5" : "pr-5"}`}>
+                    <div className="font-display text-3xl tracking-[-0.04em] text-foreground">{n}</div>
+                    <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{l}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
               {[
-                ["12,400+", t("about.stat.issued")],
-                ["84,000+", t("about.stat.verifs")],
-                ["38", t("about.stat.countries")],
-              ].map(([n, l]) => (
-                <div key={l} className="rounded-xl border border-border bg-card p-4">
-                  <div className="font-display text-2xl font-black tracking-tighter text-primary">{n}</div>
-                  <div className="mt-1 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{l}</div>
+                { icon: Lock, t: t("value.1.t"), d: t("value.1.d") },
+                { icon: Zap,  t: t("value.2.t"), d: t("value.2.d") },
+                { icon: Globe,t: t("value.3.t"), d: t("value.3.d") },
+                { icon: Users,t: t("value.4.t"), d: t("value.4.d") },
+              ].map((v, i) => (
+                <div key={v.t} className={`p-7 ${i % 2 === 1 ? "sm:border-l border-foreground/20" : ""} ${i >= 2 ? "border-t border-foreground/20" : ""}`}>
+                  <v.icon className="h-4 w-4 text-wax" />
+                  <h3 className="mt-4 font-display text-lg tracking-tight uppercase">{v.t}</h3>
+                  <p className="mt-2 font-serif text-base italic text-muted-foreground">{v.d}</p>
                 </div>
               ))}
             </div>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              { icon: Lock, t: t("value.1.t"), d: t("value.1.d") },
-              { icon: Zap,  t: t("value.2.t"), d: t("value.2.d") },
-              { icon: Globe,t: t("value.3.t"), d: t("value.3.d") },
-              { icon: Users,t: t("value.4.t"), d: t("value.4.d") },
-            ].map((v) => (
-              <div key={v.t} className="rounded-2xl border border-border bg-card p-6">
-                <v.icon className="h-5 w-5 text-primary" />
-                <h3 className="mt-3 font-display text-lg font-black tracking-tight">{v.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{v.d}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact" className="border-t border-border bg-card scroll-mt-24">
+      {/* CONTACT — institute correspondence (minimal webmail) */}
+      <section id="contact" className="border-t-2 border-foreground bg-card scroll-mt-24">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
-            <div>
-              <div className="micro-label">◆ {t("contact.label")}</div>
-              <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("contact.title")}</h2>
-              <p className="mt-4 max-w-md text-muted-foreground">{t("contact.body")}</p>
-              <div className="mt-8 space-y-4">
-                <a href="mailto:hello@certigo.app" className="flex items-start gap-3 rounded-xl border border-border bg-background p-4 hover:border-primary/60">
-                  <Mail className="mt-0.5 h-5 w-5 text-primary" />
-                  <div>
-                    <div className="font-display text-sm font-bold">{t("contact.sales")}</div>
-                    <div className="text-sm text-muted-foreground">hello@certigo.app</div>
-                  </div>
-                </a>
-                <a href="mailto:support@certigo.app" className="flex items-start gap-3 rounded-xl border border-border bg-background p-4 hover:border-primary/60">
-                  <MessageCircle className="mt-0.5 h-5 w-5 text-primary" />
-                  <div>
-                    <div className="font-display text-sm font-bold">{t("contact.support")}</div>
-                    <div className="text-sm text-muted-foreground">support@certigo.app</div>
-                  </div>
-                </a>
-                <div className="flex items-start gap-3 rounded-xl border border-border bg-background p-4">
-                  <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-                  <div>
-                    <div className="font-display text-sm font-bold">{t("contact.hq")}</div>
-                    <div className="text-sm text-muted-foreground">{t("contact.hq.value")}</div>
-                  </div>
-                </div>
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Chapter VI · {t("contact.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("contact.title")}</h2>
+          </div>
+          <div className="mt-12 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+            <div className="border-l-2 border-foreground/70 pl-6">
+              <p className="font-serif text-lg italic text-foreground/85">{t("contact.body")}</p>
+              <div className="mt-10 divide-y divide-foreground/15 border-y border-foreground/15">
+                {[
+                  { icon: Mail, label: t("contact.sales"), value: "hello@certigo.app", href: "mailto:hello@certigo.app" },
+                  { icon: MessageCircle, label: t("contact.support"), value: "support@certigo.app", href: "mailto:support@certigo.app" },
+                  { icon: MapPin, label: t("contact.hq"), value: t("contact.hq.value") },
+                ].map((row) => {
+                  const Inner = (
+                    <div className="flex items-center justify-between gap-4 py-4">
+                      <div className="flex items-center gap-4">
+                        <row.icon className="h-4 w-4 text-wax" />
+                        <div>
+                          <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{row.label}</div>
+                          <div className="mt-0.5 font-display text-sm tracking-tight uppercase">{row.value}</div>
+                        </div>
+                      </div>
+                      {row.href && <ArrowRight className="h-4 w-4 text-foreground/60" />}
+                    </div>
+                  );
+                  return row.href ? (
+                    <a key={row.label} href={row.href} className="block hover:bg-foreground hover:text-background transition-colors px-1">{Inner}</a>
+                  ) : (
+                    <div key={row.label} className="px-1">{Inner}</div>
+                  );
+                })}
               </div>
             </div>
+            {/* Minimal editorial webmail */}
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -410,56 +419,64 @@ function Home() {
                 const body = encodeURIComponent(`${data.get("message") || ""}\n\n— ${data.get("name") || ""} (${data.get("email") || ""})`);
                 window.location.href = `mailto:hello@certigo.app?subject=${subject}&body=${body}`;
               }}
-              className="rounded-2xl border border-border bg-background p-6 shadow-card"
+              className="border-2 border-foreground bg-background"
             >
-              <h3 className="font-display text-xl font-black tracking-tight">{t("contact.form.title")}</h3>
-              <div className="mt-5 grid gap-4">
-                <div>
-                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.name")}</label>
-                  <Input name="name" required placeholder={t("contact.form.name.ph")} className="mt-2 h-11" />
+              <div className="flex items-center justify-between border-b border-foreground/20 px-5 py-3">
+                <div className="micro-label">◆ Compose · Webmail</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">to: hello@certigo.app</div>
+              </div>
+              <div className="divide-y divide-foreground/15">
+                <label className="flex items-baseline gap-4 px-5 py-3">
+                  <span className="w-16 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">From</span>
+                  <Input name="name" required placeholder={t("contact.form.name.ph")} className="h-9 flex-1 rounded-none border-0 px-0 shadow-none focus-visible:ring-0 font-serif text-base" />
+                </label>
+                <label className="flex items-baseline gap-4 px-5 py-3">
+                  <span className="w-16 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Reply</span>
+                  <Input type="email" name="email" required placeholder={t("contact.form.email.ph")} className="h-9 flex-1 rounded-none border-0 px-0 shadow-none focus-visible:ring-0 font-serif text-base" />
+                </label>
+                <div className="px-5 py-3">
+                  <span className="block font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Message</span>
+                  <textarea name="message" rows={6} required placeholder={t("contact.form.message.ph")} className="mt-2 w-full resize-none border-0 bg-transparent px-0 font-serif text-base italic leading-relaxed focus:outline-none" />
                 </div>
-                <div>
-                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.email")}</label>
-                  <Input type="email" name="email" required placeholder={t("contact.form.email.ph")} className="mt-2 h-11" />
-                </div>
-                <div>
-                  <label className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.message")}</label>
-                  <textarea name="message" rows={4} required placeholder={t("contact.form.message.ph")} className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring" />
-                </div>
-                <Button type="submit" size="lg" className="h-12">{t("contact.form.send")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("contact.form.reply")}</p>
+              </div>
+              <div className="flex items-center justify-between gap-3 border-t-2 border-foreground px-5 py-3">
+                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{t("contact.form.reply")}</span>
+                <Button type="submit" className="h-10 rounded-none bg-foreground px-6 font-mono text-[10px] uppercase tracking-[0.22em] text-background hover:bg-wax">
+                  {t("contact.form.send")} <ArrowRight className="ms-2 h-4 w-4" />
+                </Button>
               </div>
             </form>
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="relative overflow-hidden border-t border-border">
+      {/* FINAL CTA — closing colophon */}
+      <section className="relative overflow-hidden border-t-2 border-foreground">
         <div className="absolute inset-0 -z-10 gradient-paper" />
         <div className="mx-auto max-w-4xl px-6 py-28 text-center">
-          <div className="micro-label">◆ {t("final.label")}</div>
-          <h2 className="mt-6 font-display text-4xl font-black leading-tight tracking-tighter md:text-6xl text-balance">
-            {t("final.title.a")} <span className="text-primary italic">{t("final.title.b")}</span>
+          <div className="micro-label">◆ Colophon · {t("final.label")}</div>
+          <div className="mx-auto mt-6 h-px w-24 bg-wax" />
+          <h2 className="mt-8 font-display text-4xl leading-[0.95] tracking-[-0.04em] uppercase md:text-6xl text-balance">
+            {t("final.title.a")} <span className="font-serif italic font-semibold normal-case tracking-[-0.02em] text-wax">{t("final.title.b")}</span>
           </h2>
-          <p className="mt-6 text-muted-foreground">{t("final.body")}</p>
+          <p className="mx-auto mt-6 max-w-xl font-serif text-lg italic text-muted-foreground">{t("final.body")}</p>
           <form
             onSubmit={(e) => { e.preventDefault(); start(); }}
-            className="mx-auto mt-10 flex max-w-xl flex-col gap-2 sm:flex-row"
+            className="mx-auto mt-10 flex max-w-xl flex-col gap-0 sm:flex-row border-2 border-foreground"
           >
             <Input
               value={topic} onChange={(e) => setTopic(e.target.value)}
               placeholder={t("final.placeholder")}
-              className="h-12 flex-1 border-foreground/20 bg-background"
+              className="h-12 flex-1 rounded-none border-0 bg-background px-4 font-serif text-base shadow-none focus-visible:ring-0"
             />
-            <Button type="submit" size="lg" className="h-12 px-6">{t("final.cta")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
+            <Button type="submit" className="h-12 rounded-none bg-foreground px-6 font-mono text-[11px] uppercase tracking-[0.22em] text-background hover:bg-wax">{t("final.cta")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
           </form>
-          <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{t("final.foot")}</p>
+          <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{t("final.foot")}</p>
         </div>
-        <footer className="border-t border-border">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-8 md:flex-row">
-            <div className="font-display text-sm font-black tracking-tighter"><span className="text-primary">CERTI</span><span className="text-foreground">GO</span></div>
-            <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">© {new Date().getFullYear()} CERTIGO. · {t("footer.copy")}</div>
+        <footer className="border-t-2 border-foreground bg-foreground text-background">
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 md:flex-row">
+            <div className="font-display text-sm tracking-[-0.04em]">CERTIGO<span className="text-wax">.</span></div>
+            <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-background/60">© {new Date().getFullYear()} CERTIGO. · {t("footer.copy")}</div>
           </div>
         </footer>
       </section>
