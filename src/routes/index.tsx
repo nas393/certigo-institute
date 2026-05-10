@@ -359,30 +359,32 @@ function Home() {
             ))}
           </Accordion>
         </div>
-      </section>
+      </Chapter>
 
       {/* ABOUT — institute brief */}
-      <section id="about" className="border-t-2 border-foreground scroll-mt-24">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Chapter V · {t("about.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("about.title")}</h2>
-          </div>
-          <div className="mt-12 grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+      <Chapter id="about" chapter="VII" section={t("about.label")} title={t("about.title")}>
+        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
             <div className="border-l-2 border-foreground/70 pl-6">
               <p className="font-serif text-lg italic text-foreground/85">{t("about.body1")}</p>
               <p className="mt-4 font-serif text-lg italic text-muted-foreground">{t("about.body2")}</p>
-              <div className="mt-10 grid grid-cols-3 gap-0 border-t border-foreground/20">
-                {[
-                  ["12,400+", t("about.stat.issued")],
-                  ["84,000+", t("about.stat.verifs")],
-                  ["38", t("about.stat.countries")],
-                ].map(([n, l], i) => (
-                  <div key={l} className={`py-5 ${i > 0 ? "border-l border-foreground/20 pl-5" : "pr-5"}`}>
-                    <div className="font-display text-3xl tracking-[-0.04em] text-foreground">{n}</div>
-                    <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{l}</div>
-                  </div>
-                ))}
+              <div className="mt-10 border-t-2 border-foreground pt-6">
+                <div className="micro-label">◆ Institute Objectives</div>
+                <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
+                  {[
+                    { n: "01", t: "Make every credential instantly verifiable", d: "Build a public, scannable proof layer that any recruiter or institution can trust without an account." },
+                    { n: "02", t: "Anchor credentials to demonstrated knowledge", d: "Tie each certificate to an assessed outcome — not seat-time, not self-claim." },
+                    { n: "03", t: "Keep certification borderless and accessible", d: "Issue and verify from anywhere, in any language, on any device, at minimal cost." },
+                    { n: "04", t: "Protect recipients and issuers from forgery", d: "Anchor every record at issue-time so edited PDFs never validate." },
+                  ].map((o) => (
+                    <li key={o.n} className="flex gap-5 py-4">
+                      <span className="font-display text-2xl text-wax leading-none">{o.n}</span>
+                      <div>
+                        <div className="font-display text-base tracking-tight uppercase">{o.t}</div>
+                        <p className="mt-1 font-serif text-sm italic text-muted-foreground">{o.d}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
@@ -399,18 +401,12 @@ function Home() {
                 </div>
               ))}
             </div>
-          </div>
         </div>
-      </section>
+      </Chapter>
 
       {/* CONTACT — institute correspondence (minimal webmail) */}
-      <section id="contact" className="border-t-2 border-foreground bg-card scroll-mt-24">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Chapter VI · {t("contact.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("contact.title")}</h2>
-          </div>
-          <div className="mt-12 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+      <Chapter id="contact" chapter="VIII" section={t("contact.label")} title={t("contact.title")}>
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="border-l-2 border-foreground/70 pl-6">
               <p className="font-serif text-lg italic text-foreground/85">{t("contact.body")}</p>
               <div className="mt-10 divide-y divide-foreground/15 border-y border-foreground/15">
@@ -476,9 +472,8 @@ function Home() {
                 </Button>
               </div>
             </form>
-          </div>
         </div>
-      </section>
+      </Chapter>
 
       {/* FINAL CTA — closing colophon */}
       <section className="relative overflow-hidden border-t-2 border-foreground">
