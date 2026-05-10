@@ -12,6 +12,8 @@ import {
 import {
   Accordion, AccordionItem, AccordionTrigger, AccordionContent,
 } from "@/components/ui/accordion";
+import { setPendingCertification } from "@/lib/certigo-pending";
+import { useAuth } from "@/lib/auth";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -86,6 +88,7 @@ function Chapters() {
 /* ─────────────────────────── CHAPTER IX — CERTIFICATION CATALOG ─────────────────────────── */
 function CertificationCatalog() {
   const nav = useNavigate();
+  const { user } = useAuth();
   const certs = COURSES.map((c) => ({
     code: c.code,
     icon: c.icon,
@@ -93,7 +96,26 @@ function CertificationCatalog() {
     subtitle: c.intro,
     duration: c.duration,
     level: c.level,
+    outcomes: c.outcomes,
+    modules: c.modules,
   }));
+  const startCertification = (c: (typeof certs)[number]) => {
+    const lvl = (c.level || "").toLowerCase();
+    const level: "foundational" | "intermediate" | "advanced" =
+      lvl.startsWith("found") ? "foundational"
+        : lvl.startsWith("adv") ? "advanced"
+          : "intermediate";
+    setPendingCertification({
+      code: c.code,
+      topic: c.title,
+      level,
+      outline: c.modules.map((m) => m.t),
+      competencies: c.outcomes,
+    });
+    // Send unauth users to /auth (which then bounces to /dashboard);
+    // signed-in users skip auth and prefill the dashboard generator directly.
+    nav({ to: user ? "/dashboard" : "/auth" });
+  };
   return (
     <Section eyebrow="Global Certification Catalog" title="Ten flagship certifications. Audit-grade. Globally portable.">
       <p className="-mt-6 mb-10 max-w-2xl text-muted-foreground">
@@ -102,6 +124,7 @@ function CertificationCatalog() {
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {certs.map((c) => {
           const Icon = c.icon;
+          const topComps = (c.outcomes ?? []).slice(0, 3);
           return (
             <div
               key={c.code}
@@ -126,12 +149,30 @@ function CertificationCatalog() {
                 <span className="rounded-full border border-border bg-surface px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
                   {c.level}
                 </span>
+                <span className="inline-flex items-center gap-1 rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10 px-2 py-0.5 text-[10px] font-semibold text-[var(--primary)]">
+                  <BadgeCheck className="h-3 w-3" /> Quiz ready
+                </span>
               </div>
+              {topComps.length > 0 && (
+                <div className="mt-4">
+                  <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-[var(--primary)]">
+                    Passed competencies
+                  </div>
+                  <ul className="mt-2 space-y-1.5">
+                    {topComps.map((o) => (
+                      <li key={o} className="flex items-start gap-1.5 text-[11px] leading-snug text-foreground/80">
+                        <CheckCircle2 className="mt-0.5 h-3 w-3 shrink-0 text-[var(--accent)]" />
+                        <span className="line-clamp-2">{o}</span>
+                      </li>
+                    ))}
+                  </ul>
+              </div>
+              )}
               <div className="mt-auto pt-5">
                 <Button
                   size="sm"
                   className="w-full gradient-hero text-white border-0 hover:opacity-95"
-                  onClick={() => nav({ to: "/auth" })}
+                  onClick={() => startCertification(c)}
                 >
                   Start Certification <ArrowRight className="ml-2 h-3.5 w-3.5" />
                 </Button>
