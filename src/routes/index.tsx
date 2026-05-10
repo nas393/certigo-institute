@@ -41,7 +41,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32">
           {/* institutional headline strap */}
           <div className="mb-12 flex flex-wrap items-center justify-between gap-3 border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Professional Certification Authority · Vol. I · No. 01</div>
+            <div className="micro-label">◆ Professional Certification Authority</div>
             <div className="micro-label hidden sm:block">Issued Worldwide · Verified at certigo.institute</div>
           </div>
           <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center">
