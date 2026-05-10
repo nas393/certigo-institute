@@ -358,3 +358,10 @@ function Field({ label, value, mono }: { label: string; value: string; mono?: bo
     </div>
   );
 }
+
+function labelFor(t: CertTemplate): string {
+  if (t === "executive") return "Executive";
+  if (t === "technical") return "Technical";
+  if (t === "dark-glass") return "Modern Dark";
+  return String(t);
+}
