@@ -63,8 +63,8 @@ const en = {
 
   "about.label": "About CERTIGO.",
   "about.title": "Credentials built for the way the world actually hires.",
-  "about.body1": "CERTIGO. was founded on a simple belief: proof of skill should travel as fast as skill itself. Diplomas take years. Job descriptions change in months. We built CERTIGO. so any learner, coach, or company can issue a credential that's instantly verifiable, beautifully designed, and owned forever by the person who earned it.",
-  "about.body2": "Our platform is trusted by independent professionals, training providers, and HR teams across 38 countries — issuing tens of thousands of verified credentials every month.",
+  "about.body1": "CERTIGO. was founded on a simple belief: proof of skill should move as fast as skill itself. Diplomas take years. Job requirements evolve in months. We built CERTIGO. so learners, coaches, and companies can issue credentials that are instantly verifiable, beautifully designed, and permanently owned by the people who earn them.",
+  "about.body2": "Our platform is built for independent professionals, training providers, and HR teams worldwide—enabling fast, secure issuance of verifiable digital credentials for modern hiring and workforce development.",
   "about.stat.issued": "Credentials issued",
   "about.stat.verifs": "Public verifications",
   "about.stat.countries": "Countries served",
