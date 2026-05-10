@@ -166,8 +166,8 @@ function Home() {
 
       {/* TRUST BAR */}
       <section className="border-y-2 border-foreground bg-foreground text-background">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-2 md:items-center">
-          <div className="flex flex-wrap gap-2">
+        <div className="mx-auto max-w-7xl px-6 py-10">
+          <div className="flex flex-wrap justify-center gap-2">
             {[
               { icon: QrCode, label: t("trust.qr") },
               { icon: ShieldCheck, label: t("trust.tamper") },
@@ -177,14 +177,6 @@ function Home() {
               <span key={label} className="inline-flex items-center gap-2 border border-background/40 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]">
                 <I className="h-3 w-3 text-wax" /> {label}
               </span>
-            ))}
-          </div>
-          <div className="grid grid-cols-3 gap-6 text-center md:text-end">
-            {[["12,400+",t("trust.stat.certs")],["38",t("trust.stat.countries")],["84,000+",t("trust.stat.verifs")]].map(([n,l]) => (
-              <div key={l}>
-                <div className="font-display text-3xl tracking-[-0.04em]">{n}</div>
-                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background/60">{l}</div>
-              </div>
             ))}
           </div>
         </div>
