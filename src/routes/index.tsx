@@ -359,43 +359,6 @@ function Home() {
       </Chapter>
 
       {/* CONTACT — institute correspondence (minimal webmail) */}
-                <div className="micro-label">◆ Institute Objectives</div>
-                <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
-                  {[
-                    { n: "01", t: "Make every credential instantly verifiable", d: "Build a public, scannable proof layer that any recruiter or institution can trust without an account." },
-                    { n: "02", t: "Anchor credentials to demonstrated knowledge", d: "Tie each certificate to an assessed outcome — not seat-time, not self-claim." },
-                    { n: "03", t: "Keep certification borderless and accessible", d: "Issue and verify from anywhere, in any language, on any device, at minimal cost." },
-                    { n: "04", t: "Protect recipients and issuers from forgery", d: "Anchor every record at issue-time so edited PDFs never validate." },
-                  ].map((o) => (
-                    <li key={o.n} className="flex gap-5 py-4">
-                      <span className="font-display text-2xl text-wax leading-none">{o.n}</span>
-                      <div>
-                        <div className="font-display text-base tracking-tight uppercase">{o.t}</div>
-                        <p className="mt-1 font-serif text-sm italic text-muted-foreground">{o.d}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
-              {[
-                { icon: Lock, t: t("value.1.t"), d: t("value.1.d") },
-                { icon: Zap,  t: t("value.2.t"), d: t("value.2.d") },
-                { icon: Globe,t: t("value.3.t"), d: t("value.3.d") },
-                { icon: Users,t: t("value.4.t"), d: t("value.4.d") },
-              ].map((v, i) => (
-                <div key={v.t} className={`p-7 ${i % 2 === 1 ? "sm:border-l border-foreground/20" : ""} ${i >= 2 ? "border-t border-foreground/20" : ""}`}>
-                  <v.icon className="h-4 w-4 text-wax" />
-                  <h3 className="mt-4 font-display text-lg tracking-tight uppercase">{v.t}</h3>
-                  <p className="mt-2 font-serif text-base italic text-muted-foreground">{v.d}</p>
-                </div>
-              ))}
-            </div>
-        </div>
-      </Chapter>
-
-      {/* CONTACT — institute correspondence (minimal webmail) */}
       <Chapter id="contact" chapter="VIII" section={t("contact.label")} title={t("contact.title")}>
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="border-l-2 border-foreground/70 pl-6">
