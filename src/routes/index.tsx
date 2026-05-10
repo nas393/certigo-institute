@@ -38,38 +38,48 @@ function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 gradient-paper" />
-        <div className="absolute -top-40 left-1/2 -z-10 h-[600px] w-[1100px] -translate-x-1/2 rounded-full gradient-aurora opacity-25 blur-3xl" />
-        <div className="pointer-events-none absolute inset-0 -z-10 [background-image:radial-gradient(circle_at_1px_1px,oklch(0.32_0.18_278/0.12)_1px,transparent_0)] [background-size:24px_24px] opacity-40" />
-        <div className="mx-auto max-w-7xl px-6 pt-20 pb-24 lg:pt-28 lg:pb-32">
-          <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32">
+          {/* institutional headline strap */}
+          <div className="mb-12 flex flex-wrap items-center justify-between gap-3 border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Professional Certification Authority · Vol. I · No. 01</div>
+            <div className="micro-label hidden sm:block">Issued Worldwide · Verified at certigo.institute</div>
+          </div>
+          <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center">
             <div>
-              <div className="micro-label">◆ {t("hero.label")}</div>
-              <h1 className="mt-6 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-black leading-[0.95] tracking-tighter text-balance">
-                {t("hero.title.a")} <span className="italic">{t("hero.title.b")}</span>
+              <div className="flex items-center gap-3">
+                <span className="h-px w-10 bg-foreground" />
+                <div className="micro-label">{t("hero.label")}</div>
+              </div>
+              <h1 className="mt-6 font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.88] tracking-[-0.05em] text-balance uppercase text-foreground">
+                {t("hero.title.a")}
                 <br />
-                <span className="text-primary">{t("hero.title.c")}</span>
+                <span className="font-serif italic font-semibold normal-case tracking-[-0.02em] text-foreground/85">{t("hero.title.b")}</span>
+                <br />
+                <span className="text-wax">{t("hero.title.c")}</span>
               </h1>
-              <p className="mt-7 max-w-xl text-lg text-muted-foreground text-balance">{t("hero.sub")}</p>
+              <div className="mt-8 max-w-xl border-l-2 border-foreground/70 pl-5">
+                <p className="font-serif text-xl italic text-foreground/85 text-balance">{t("hero.sub")}</p>
+              </div>
               <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row">
-                <Button size="lg" className="h-12 px-6" onClick={start}>
+                <Button size="lg" className="h-12 rounded-none bg-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] text-background hover:bg-foreground/90" onClick={start}>
                   {t("cta.generate")} <ArrowRight className="ms-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="h-12 px-6" onClick={() => nav({ to: "/verify" })}>
+                <Button size="lg" variant="outline" className="h-12 rounded-none border-2 border-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] hover:bg-foreground hover:text-background" onClick={() => nav({ to: "/verify" })}>
                   {t("cta.viewdemo")}
                 </Button>
               </div>
-              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                <span>{t("hero.bullet.cc")}</span><span>{t("hero.bullet.free")}</span><span>{t("hero.bullet.fast")}</span>
+              <div className="mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-foreground/20 pt-5 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+                <span>◆ {t("hero.bullet.cc")}</span>
+                <span>◆ {t("hero.bullet.free")}</span>
+                <span>◆ {t("hero.bullet.fast")}</span>
               </div>
             </div>
-            {/* DEMO CERTIFICATE — pristine museum-grade presentation */}
-            <div className="relative mx-auto w-full max-w-[600px]">
-              {/* aurora glow halo */}
-              <div className="pointer-events-none absolute -inset-10 -z-10 rounded-[40px] gradient-aurora opacity-25 blur-3xl" />
-              {/* gallery wall card */}
-              <div className="relative rounded-2xl border border-border/60 bg-white p-4 shadow-elegant sm:p-6">
-                {/* matte frame: thin neutral mat around the certificate */}
-                <div className="rounded-md ring-1 ring-black/5">
+            {/* DEMO CERTIFICATE — exhibition plate */}
+            <div className="relative mx-auto w-full max-w-[620px]">
+              <div className="absolute -inset-3 -z-10 border-2 border-foreground" />
+              <div className="absolute -top-3 -left-3 -z-10 h-6 w-6 bg-wax" />
+              <div className="relative bg-card p-3 shadow-frame sm:p-4">
+                <div className="ring-1 ring-foreground/10">
                   <CertificateView
                     compact
                     serial="KR-2026-DEMO01"
@@ -80,13 +90,12 @@ function Home() {
                     verifyUrl={typeof window !== "undefined" ? `${window.location.origin}/verify/KR-2026-DEMO01` : "/verify/KR-2026-DEMO01"}
                   />
                 </div>
-                {/* gallery plaque */}
-                <div className="mt-4 flex items-center justify-between gap-3 px-1">
-                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                    <QrCode className="h-3 w-3" />
-                    <span>{t("cta.scanorvisit")}</span>
+                {/* exhibition plaque */}
+                <div className="mt-3 flex items-center justify-between gap-3 border-t border-foreground/15 px-1 pt-3">
+                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+                    <QrCode className="h-3 w-3" /> <span>Plate I · {t("cta.scanorvisit")}</span>
                   </div>
-                  <a href="/verify/KR-2026-DEMO01" className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary underline-offset-4 hover:underline">
+                  <a href="/verify/KR-2026-DEMO01" className="font-mono text-[10px] uppercase tracking-[0.22em] text-wax underline-offset-4 hover:underline">
                     {t("cta.opendemo")} →
                   </a>
                 </div>
@@ -97,7 +106,7 @@ function Home() {
       </section>
 
       {/* TRUST BAR */}
-      <section className="border-y border-border bg-card">
+      <section className="border-y-2 border-foreground bg-foreground text-background">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 md:grid-cols-2 md:items-center">
           <div className="flex flex-wrap gap-2">
             {[
@@ -106,16 +115,16 @@ function Home() {
               { icon: Building2, label: t("trust.employers") },
               { icon: Globe, label: t("trust.global") },
             ].map(({ icon: I, label }) => (
-              <span key={label} className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium">
-                <I className="h-3.5 w-3.5 text-primary" /> {label}
+              <span key={label} className="inline-flex items-center gap-2 border border-background/40 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.22em]">
+                <I className="h-3 w-3 text-wax" /> {label}
               </span>
             ))}
           </div>
           <div className="grid grid-cols-3 gap-6 text-center md:text-end">
             {[["12,400+",t("trust.stat.certs")],["38",t("trust.stat.countries")],["84,000+",t("trust.stat.verifs")]].map(([n,l]) => (
               <div key={l}>
-                <div className="font-display text-2xl font-black tracking-tighter">{n}</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">{l}</div>
+                <div className="font-display text-3xl tracking-[-0.04em]">{n}</div>
+                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background/60">{l}</div>
               </div>
             ))}
           </div>
@@ -124,130 +133,168 @@ function Home() {
 
       {/* HOW IT WORKS */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="micro-label">◆ {t("how.label")}</div>
-        <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-6xl">{t("how.title")}</h2>
-        <div className="mt-14 grid gap-6 md:grid-cols-4">
+        <div className="border-b-2 border-foreground pb-6">
+          <div className="flex items-baseline justify-between gap-6">
+            <div>
+              <div className="micro-label">◆ Chapter I · {t("how.label")}</div>
+              <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("how.title")}</h2>
+            </div>
+            <div className="hidden font-serif text-sm italic text-muted-foreground md:block">A four-step protocol</div>
+          </div>
+        </div>
+        <div className="mt-12 grid gap-0 md:grid-cols-4">
           {[
             { n: "01", t: t("how.s1.t"), d: t("how.s1.d") },
             { n: "02", t: t("how.s2.t"), d: t("how.s2.d") },
             { n: "03", t: t("how.s3.t"), d: t("how.s3.d") },
             { n: "04", t: t("how.s4.t"), d: t("how.s4.d") },
-          ].map((s) => (
-            <div key={s.n} className="group rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-elegant">
-              <div className="font-mono text-xs tracking-widest text-primary">{s.n}</div>
-              <h3 className="mt-3 font-display text-xl font-black tracking-tight">{s.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
+          ].map((s, i) => (
+            <div key={s.n} className={`group relative bg-card p-7 transition-colors hover:bg-foreground hover:text-background ${i > 0 ? "md:border-l border-foreground/20" : ""} border-b border-foreground/20 md:border-b-0`}>
+              <div className="font-display text-5xl text-wax leading-none">{s.n}</div>
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground group-hover:text-background/60">Step {s.n}</div>
+              <h3 className="mt-5 font-display text-lg tracking-tight uppercase">{s.t}</h3>
+              <p className="mt-2 font-serif text-base leading-snug italic text-muted-foreground group-hover:text-background/80">{s.d}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* TRUST CALLOUT (no second demo cert) */}
-      <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-4xl px-6 py-20 text-center">
+      {/* TRUST CALLOUT — declaration */}
+      <section className="border-y-2 border-foreground bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center">
           <div className="micro-label">◆ {t("trust2.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("trust2.title")}</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-muted-foreground">{t("trust2.body")}</p>
-          <Button className="mt-8" onClick={() => nav({ to: "/verify" })}>{t("trust2.cta")} <ArrowRight className="ms-2 h-4 w-4" /></Button>
+          <h2 className="mt-5 font-serif text-4xl italic font-semibold tracking-[-0.02em] md:text-6xl text-balance">"{t("trust2.title")}"</h2>
+          <div className="mx-auto mt-6 h-px w-24 bg-foreground" />
+          <p className="mx-auto mt-6 max-w-2xl font-serif text-lg italic text-muted-foreground text-balance">{t("trust2.body")}</p>
+          <Button className="mt-10 h-12 rounded-none bg-foreground px-7 font-mono text-[11px] uppercase tracking-[0.22em] text-background hover:bg-wax" onClick={() => nav({ to: "/verify" })}>
+            {t("trust2.cta")} <ArrowRight className="ms-2 h-4 w-4" />
+          </Button>
         </div>
       </section>
 
       {/* WHO IT'S FOR */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="micro-label">◆ {t("who.label")}</div>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Chapter II · {t("who.label")}</div>
+        </div>
+        <div className="mt-10 grid gap-0 md:grid-cols-3">
           {[
             { t: t("who.1.t"), d: t("who.1.d") },
             { t: t("who.2.t"), d: t("who.2.d") },
             { t: t("who.3.t"), d: t("who.3.d") },
-          ].map((c) => (
-            <div key={c.t} className="rounded-2xl border border-border p-8">
-              <Sparkles className="h-5 w-5 text-primary" />
-              <h3 className="mt-4 font-display text-2xl font-black tracking-tight">{c.t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{c.d}</p>
+          ].map((c, i) => (
+            <div key={c.t} className={`p-10 ${i > 0 ? "md:border-l border-foreground/20" : ""}`}>
+              <div className="flex items-center gap-3">
+                <span className="grid h-8 w-8 place-items-center bg-foreground font-mono text-[10px] tracking-[0.2em] text-background">0{i + 1}</span>
+                <Sparkles className="h-4 w-4 text-wax" />
+              </div>
+              <h3 className="mt-6 font-display text-2xl tracking-[-0.03em] uppercase">{c.t}</h3>
+              <p className="mt-3 font-serif text-base italic text-muted-foreground">{c.d}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* MANIFESTO */}
-      <section className="bg-foreground text-background">
-        <div className="mx-auto max-w-4xl px-6 py-28 text-center">
-          <div className="font-mono text-[10px] uppercase tracking-widest text-background/60">◆ {t("manifesto.label")}</div>
-          <h2 className="mt-6 font-display text-4xl font-black leading-tight tracking-tighter md:text-6xl">
-            {t("manifesto.title.a")} <span className="text-primary-foreground/60 italic">{t("manifesto.title.b")}</span>
+      {/* MANIFESTO — institute charter */}
+      <section className="relative bg-foreground text-background">
+        <div className="mx-auto max-w-5xl px-6 py-32 text-center">
+          <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-background/50">◆ Charter · {t("manifesto.label")}</div>
+          <div className="mx-auto mt-6 h-px w-24 bg-wax" />
+          <h2 className="mt-8 font-display text-4xl leading-[0.95] tracking-[-0.04em] uppercase md:text-7xl">
+            {t("manifesto.title.a")} <br/>
+            <span className="font-serif italic font-semibold normal-case tracking-[-0.02em] text-background/65">{t("manifesto.title.b")}</span>
           </h2>
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-background/70">{t("manifesto.body")}</p>
+          <p className="mx-auto mt-10 max-w-2xl font-serif text-xl italic leading-snug text-background/75">{t("manifesto.body")}</p>
+          <div className="mx-auto mt-10 h-px w-24 bg-wax" />
+          <div className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-background/50">— The Certigo Certification Board</div>
         </div>
       </section>
 
       {/* SHARING */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Chapter III · Distribution</div>
+        </div>
+        <div className="mt-10 grid gap-10 md:grid-cols-3">
           {[
             [t("share.1.t"), t("share.1.d")],
             [t("share.2.t"), t("share.2.d")],
             [t("share.3.t"), t("share.3.d")],
-          ].map(([t, d]) => (
-            <div key={t} className="border-l-2 border-primary ps-5">
-              <h3 className="font-display text-xl font-black tracking-tight">{t}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{d}</p>
+          ].map(([title, d]) => (
+            <div key={title} className="border-l-2 border-wax ps-5">
+              <h3 className="font-display text-xl tracking-tight uppercase">{title}</h3>
+              <p className="mt-2 font-serif text-base italic text-muted-foreground">{d}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* PRICING */}
-      <section className="border-t border-border bg-card">
+      {/* PRICING — registry of credentials */}
+      <section className="border-t-2 border-foreground bg-card">
         <div className="mx-auto max-w-7xl px-6 py-24">
-          <div className="micro-label">◆ {t("pricing.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("pricing.title")}</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Chapter IV · {t("pricing.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("pricing.title")}</h2>
+          </div>
+          <div className="mt-12 grid gap-0 md:grid-cols-3">
             {[
-              { name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
-              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
-              { name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
-            ].map((p) => (
-              <div key={p.name} className={`relative rounded-2xl border p-8 ${p.highlight ? "border-primary bg-background shadow-elegant" : "border-border bg-background"}`}>
-                {p.highlight && <span className="absolute -top-3 start-6 rounded-full bg-primary px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary-foreground">{t("pricing.popular")}</span>}
-                <h3 className="font-display text-2xl font-black tracking-tight">{p.name}</h3>
-                <div className="mt-4 flex items-baseline gap-1">
-                  <span className="font-display text-5xl font-black tracking-tighter">{p.price}</span>
-                  {p.per && <span className="text-sm text-muted-foreground">{p.per}</span>}
+              { tier: "I", name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
+              { tier: "II", name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
+              { tier: "III", name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
+            ].map((p, i) => (
+              <div key={p.name} className={`relative p-8 ${i > 0 ? "md:border-l border-foreground/20" : ""} ${p.highlight ? "bg-foreground text-background" : "bg-background"}`}>
+                {p.highlight && <span className="absolute -top-3 start-8 bg-wax px-3 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background">◆ {t("pricing.popular")}</span>}
+                <div className={`flex items-center justify-between border-b ${p.highlight ? "border-background/30" : "border-foreground/20"} pb-3`}>
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "text-background/70" : "text-muted-foreground"}`}>Tier {p.tier}</span>
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "text-wax" : "text-wax"}`}>Class {p.tier}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-                <ul className="mt-6 space-y-2 text-sm">
-                  {p.features.map((f) => <li key={f} className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> {f}</li>)}
+                <h3 className="mt-5 font-display text-3xl tracking-[-0.03em] uppercase">{p.name}</h3>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="font-display text-6xl tracking-[-0.045em]">{p.price}</span>
+                  {p.per && <span className={`font-mono text-xs uppercase tracking-widest ${p.highlight ? "text-background/60" : "text-muted-foreground"}`}>{p.per}</span>}
+                </div>
+                <p className={`mt-3 font-serif text-base italic ${p.highlight ? "text-background/75" : "text-muted-foreground"}`}>{p.desc}</p>
+                <ul className="mt-6 space-y-2.5 text-sm">
+                  {p.features.map((f) => <li key={f} className="flex items-center gap-2"><BadgeCheck className={`h-4 w-4 ${p.highlight ? "text-wax" : "text-wax"}`} /> {f}</li>)}
                 </ul>
-                <Button className="mt-8 w-full" variant={p.highlight ? "default" : "outline"} onClick={() => nav({ to: "/auth" })}>{t("pricing.cta")}</Button>
+                <Button className={`mt-8 w-full h-11 rounded-none font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "bg-wax text-background hover:bg-wax/90" : "bg-foreground text-background hover:bg-foreground/90"}`} onClick={() => nav({ to: "/auth" })}>
+                  {t("pricing.cta")}
+                </Button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS — recipient correspondence */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Recipient Correspondence</div>
+        </div>
+        <div className="mt-10 grid gap-0 md:grid-cols-3">
           {[
             { q: "I went from 'self-taught' to 'verified' in an afternoon. Got the interview a week later.", n: "Tunde A.", c: "Lagos" },
             { q: "We onboarded 40 contractors and certified them on our internal SOPs. Game changer.", n: "Wanjiku M.", c: "Nairobi" },
             { q: "My students love how clean the certificates look. They actually share them.", n: "Liam V.", c: "Cape Town" },
-          ].map((t) => (
-            <figure key={t.n} className="rounded-2xl border border-border bg-card p-8">
-              <blockquote className="font-display text-lg leading-snug tracking-tight">"{t.q}"</blockquote>
-              <figcaption className="mt-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">— {t.n} · {t.c}</figcaption>
+          ].map((c, i) => (
+            <figure key={c.n} className={`p-10 ${i > 0 ? "md:border-l border-foreground/20" : ""}`}>
+              <div className="font-display text-5xl text-wax leading-none">"</div>
+              <blockquote className="mt-3 font-serif text-xl italic leading-snug text-foreground">{c.q}</blockquote>
+              <div className="mt-6 h-px w-12 bg-foreground" />
+              <figcaption className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">— {c.n} · {c.c}</figcaption>
             </figure>
           ))}
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="border-t border-border bg-card scroll-mt-24">
+      {/* FAQ — institute responses */}
+      <section id="faq" className="border-t-2 border-foreground bg-card scroll-mt-24">
         <div className="mx-auto max-w-4xl px-6 py-24">
-          <div className="micro-label">◆ {t("faq.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("faq.title")}</h2>
-          <p className="mt-4 max-w-2xl text-muted-foreground">{t("faq.intro")}</p>
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Institute Responses · {t("faq.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("faq.title")}</h2>
+          </div>
+          <p className="mt-6 max-w-2xl font-serif text-lg italic text-muted-foreground">{t("faq.intro")}</p>
           <Accordion type="single" collapsible className="mt-10">
             {[
               {

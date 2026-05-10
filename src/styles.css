@@ -1,15 +1,15 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -31,76 +31,76 @@
   --color-ring: var(--ring);
   --color-ink: var(--ink);
   --color-paper: var(--paper);
+  --color-wax: var(--wax);
   --font-display: var(--font-display);
+  --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
 }
 
 :root {
-  --radius: 0.5rem;
-  /* CERTIGO. Midnight Indigo — light surface with deep indigo authority */
-  --background: oklch(0.985 0.004 270);
-  --paper: oklch(0.985 0.004 270);
-  --foreground: oklch(0.14 0.02 275);
-  --ink: oklch(0.10 0.02 275);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.14 0.02 275);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.14 0.02 275);
-  /* Deep midnight indigo primary; electric indigo glow */
-  --primary: oklch(0.32 0.18 278);
-  --primary-foreground: oklch(0.99 0 0);
-  --primary-glow: oklch(0.58 0.24 282);
-  /* Electric cyan as secondary accent (verified states, pulses) */
-  --cyan: oklch(0.78 0.16 215);
-  --cyan-foreground: oklch(0.10 0.02 275);
-  --secondary: oklch(0.96 0.01 275);
-  --secondary-foreground: oklch(0.18 0.02 275);
-  --muted: oklch(0.96 0.01 275);
-  --muted-foreground: oklch(0.45 0.02 275);
-  --accent: oklch(0.93 0.03 280);
-  --accent-foreground: oklch(0.18 0.02 275);
-  --destructive: oklch(0.55 0.22 25);
+  --radius: 0.25rem;
+  /* CERTIGO Institute — cream paper + deep ink + wax-red accent */
+  --background: oklch(0.965 0.012 85);          /* warm cream paper */
+  --paper: oklch(0.965 0.012 85);
+  --foreground: oklch(0.16 0.01 60);            /* deep ink */
+  --ink: oklch(0.12 0.005 60);
+  --card: oklch(0.985 0.008 85);
+  --card-foreground: oklch(0.16 0.01 60);
+  --popover: oklch(0.985 0.008 85);
+  --popover-foreground: oklch(0.16 0.01 60);
+  /* Primary = ink (institutional black) */
+  --primary: oklch(0.14 0.005 60);
+  --primary-foreground: oklch(0.965 0.012 85);
+  /* Wax seal red — single luxury accent */
+  --wax: oklch(0.42 0.16 28);
+  --wax-foreground: oklch(0.965 0.012 85);
+  --secondary: oklch(0.93 0.018 80);
+  --secondary-foreground: oklch(0.16 0.01 60);
+  --muted: oklch(0.93 0.015 80);
+  --muted-foreground: oklch(0.42 0.012 65);
+  --accent: oklch(0.42 0.16 28);                /* wax accent */
+  --accent-foreground: oklch(0.965 0.012 85);
+  --destructive: oklch(0.50 0.20 28);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.91 0.01 275);
-  --input: oklch(0.91 0.01 275);
-  --ring: oklch(0.32 0.18 278);
+  --border: oklch(0.16 0.01 60 / 0.18);
+  --input: oklch(0.16 0.01 60 / 0.22);
+  --ring: oklch(0.14 0.005 60);
 
-  --gradient-primary: linear-gradient(135deg, oklch(0.22 0.14 275), oklch(0.42 0.22 282));
-  --gradient-aurora: linear-gradient(135deg, oklch(0.22 0.14 275) 0%, oklch(0.42 0.22 282) 50%, oklch(0.78 0.16 215) 100%);
-  --gradient-paper: linear-gradient(180deg, oklch(0.99 0.004 270), oklch(0.96 0.01 275));
-  --shadow-elegant: 0 30px 60px -30px color-mix(in oklab, oklch(0.32 0.18 278) 45%, transparent);
-  --shadow-glow: 0 0 0 1px color-mix(in oklab, oklch(0.78 0.16 215) 30%, transparent), 0 20px 60px -20px color-mix(in oklab, oklch(0.78 0.16 215) 35%, transparent);
-  --shadow-card: 0 1px 0 0 oklch(0.91 0.01 275), 0 20px 40px -25px oklch(0.14 0.02 275 / 0.15);
+  --gradient-paper: linear-gradient(180deg, oklch(0.975 0.01 85), oklch(0.945 0.018 80));
+  --gradient-ink: linear-gradient(180deg, oklch(0.14 0.005 60), oklch(0.10 0.005 60));
+  --shadow-elegant: 0 1px 0 0 oklch(0.16 0.01 60 / 0.06), 0 30px 60px -30px oklch(0.16 0.01 60 / 0.25);
+  --shadow-card: 0 1px 0 0 oklch(0.16 0.01 60 / 0.05), 0 12px 30px -20px oklch(0.16 0.01 60 / 0.18);
+  --shadow-frame: 0 0 0 1px oklch(0.16 0.01 60 / 0.85), 0 30px 80px -40px oklch(0.16 0.01 60 / 0.45);
 
-  --font-display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --font-display: "Archivo Black", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
 
 .dark {
-  /* CERTIGO. Midnight — deep indigo canvas with cyan-electric primaries */
-  --background: oklch(0.10 0.02 275);
-  --paper: oklch(0.10 0.02 275);
-  --foreground: oklch(0.98 0.005 275);
-  --ink: oklch(0.99 0 0);
-  --card: oklch(0.14 0.025 275);
-  --card-foreground: oklch(0.98 0.005 275);
-  --popover: oklch(0.14 0.025 275);
-  --popover-foreground: oklch(0.98 0.005 275);
-  --primary: oklch(0.72 0.22 285);
-  --primary-foreground: oklch(0.10 0.02 275);
-  --primary-glow: oklch(0.78 0.16 215);
-  --cyan: oklch(0.82 0.18 215);
-  --secondary: oklch(0.18 0.025 275);
-  --secondary-foreground: oklch(0.98 0.005 275);
-  --muted: oklch(0.18 0.025 275);
-  --muted-foreground: oklch(0.72 0.02 275);
-  --accent: oklch(0.24 0.05 280);
-  --accent-foreground: oklch(0.98 0.005 275);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0.22 285);
+  /* Institute Noir — deep paper-black with cream type and wax accent */
+  --background: oklch(0.13 0.008 60);
+  --paper: oklch(0.13 0.008 60);
+  --foreground: oklch(0.94 0.012 85);
+  --ink: oklch(0.96 0.012 85);
+  --card: oklch(0.16 0.01 60);
+  --card-foreground: oklch(0.94 0.012 85);
+  --popover: oklch(0.16 0.01 60);
+  --popover-foreground: oklch(0.94 0.012 85);
+  --primary: oklch(0.94 0.012 85);
+  --primary-foreground: oklch(0.13 0.008 60);
+  --wax: oklch(0.62 0.18 28);
+  --secondary: oklch(0.20 0.012 60);
+  --secondary-foreground: oklch(0.94 0.012 85);
+  --muted: oklch(0.20 0.012 60);
+  --muted-foreground: oklch(0.70 0.012 70);
+  --accent: oklch(0.62 0.18 28);
+  --accent-foreground: oklch(0.96 0.012 85);
+  --border: oklch(0.94 0.012 85 / 0.14);
+  --input: oklch(0.94 0.012 85 / 0.18);
+  --ring: oklch(0.94 0.012 85);
 }
 
 @layer base {
@@ -109,26 +109,62 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
-  h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.025em; }
+  /* Subtle paper grain — institutional, never busy */
+  body::before {
+    content: "";
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      radial-gradient(oklch(0.16 0.01 60 / 0.025) 1px, transparent 1px),
+      radial-gradient(oklch(0.16 0.01 60 / 0.018) 1px, transparent 1px);
+    background-size: 3px 3px, 7px 7px;
+    background-position: 0 0, 1px 2px;
+    mix-blend-mode: multiply;
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.035em; }
   [dir="rtl"] { direction: rtl; }
 }
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
+  .font-display { font-family: var(--font-display); }
+  .font-serif { font-family: var(--font-serif); }
   .font-mono { font-family: var(--font-mono); }
-  .gradient-primary { background: var(--gradient-primary); }
-  .gradient-aurora { background: var(--gradient-aurora); }
+  .text-wax { color: var(--color-wax); }
+  .bg-wax { background: var(--color-wax); color: var(--wax-foreground); }
+  .border-wax { border-color: var(--color-wax); }
   .gradient-paper { background: var(--gradient-paper); }
+  .gradient-ink { background: var(--gradient-ink); }
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
   .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-frame { box-shadow: var(--shadow-frame); }
   .micro-label {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
+    font-weight: 700;
     color: var(--color-muted-foreground);
   }
+  .editorial-rule {
+    background: var(--color-foreground);
+    height: 2px;
+  }
+  .frame-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-foreground);
+    box-shadow: 4px 4px 0 0 var(--color-foreground);
+  }
+  .seal-corner {
+    position: relative;
+  }
+  .seal-corner::before, .seal-corner::after {
+    content: ""; position: absolute; width: 14px; height: 14px;
+    border: 1.5px solid var(--color-foreground);
+  }
+  .seal-corner::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .seal-corner::after { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 }
