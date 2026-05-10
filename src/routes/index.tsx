@@ -1,10 +1,10 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Header } from "@/components/kredo/Header";
 import { CertificateView } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck, Mail, MapPin, MessageCircle, Lock, Zap, Users } from "lucide-react";
+import { ArrowRight, ShieldCheck, QrCode, Globe, Building2, Sparkles, BadgeCheck, Mail, MapPin, MessageCircle, Lock, Zap, Users, Plus, Minus } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -24,6 +24,65 @@ export const Route = createFileRoute("/")({
   }),
   component: Home,
 });
+
+function Chapter({
+  id,
+  chapter,
+  section,
+  title,
+  aside,
+  defaultOpen = false,
+  children,
+}: {
+  id?: string;
+  chapter: string; // "I", "II"...
+  section: string; // short section name
+  title?: string;
+  aside?: ReactNode;
+  defaultOpen?: boolean;
+  children: ReactNode;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <section id={id} className="scroll-mt-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="group flex w-full items-center justify-between gap-6 border-b-2 border-foreground py-6 text-left transition-colors hover:bg-foreground hover:text-background"
+        >
+          <div className="flex flex-1 flex-col gap-3 px-1">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="bg-foreground px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background group-hover:bg-background group-hover:text-foreground">
+                ◆ Chapter {chapter}
+              </span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground group-hover:text-background/70">
+                Section · {section}
+              </span>
+            </div>
+            {title && (
+              <h2 className="font-display text-3xl tracking-[-0.04em] uppercase md:text-5xl">
+                {title}
+              </h2>
+            )}
+            {aside && <div className="font-serif text-sm italic text-muted-foreground group-hover:text-background/70">{aside}</div>}
+          </div>
+          <span className="grid h-11 w-11 shrink-0 place-items-center border-2 border-foreground bg-background text-foreground transition-transform group-hover:bg-wax group-hover:text-background group-hover:border-wax">
+            {open ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+          </span>
+        </button>
+      </div>
+      <div
+        className={`grid transition-[grid-template-rows] duration-500 ease-out ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+      >
+        <div className="overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 py-16">{children}</div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function Home() {
   const nav = useNavigate();
@@ -132,17 +191,8 @@ function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="border-b-2 border-foreground pb-6">
-          <div className="flex items-baseline justify-between gap-6">
-            <div>
-              <div className="micro-label">◆ Chapter I · {t("how.label")}</div>
-              <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("how.title")}</h2>
-            </div>
-            <div className="hidden font-serif text-sm italic text-muted-foreground md:block">A four-step protocol</div>
-          </div>
-        </div>
-        <div className="mt-12 grid gap-0 md:grid-cols-4">
+      <Chapter chapter="I" section={t("how.label")} title={t("how.title")} aside="A four-step protocol" defaultOpen>
+        <div className="grid gap-0 md:grid-cols-4">
           {[
             { n: "01", t: t("how.s1.t"), d: t("how.s1.d") },
             { n: "02", t: t("how.s2.t"), d: t("how.s2.d") },
@@ -157,7 +207,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </Chapter>
 
       {/* TRUST CALLOUT — declaration */}
       <section className="border-y-2 border-foreground bg-card">
@@ -173,11 +223,8 @@ function Home() {
       </section>
 
       {/* WHO IT'S FOR */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="border-b-2 border-foreground pb-4">
-          <div className="micro-label">◆ Chapter II · {t("who.label")}</div>
-        </div>
-        <div className="mt-10 grid gap-0 md:grid-cols-3">
+      <Chapter chapter="II" section={t("who.label")} title="Who it serves">
+        <div className="grid gap-0 md:grid-cols-3 border border-foreground/20">
           {[
             { t: t("who.1.t"), d: t("who.1.d") },
             { t: t("who.2.t"), d: t("who.2.d") },
@@ -193,7 +240,7 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </Chapter>
 
       {/* MANIFESTO — institute charter */}
       <section className="relative bg-foreground text-background">
@@ -211,11 +258,8 @@ function Home() {
       </section>
 
       {/* SHARING */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="border-b-2 border-foreground pb-4">
-          <div className="micro-label">◆ Chapter III · Distribution</div>
-        </div>
-        <div className="mt-10 grid gap-10 md:grid-cols-3">
+      <Chapter chapter="III" section="Distribution" title="How credentials travel">
+        <div className="grid gap-10 md:grid-cols-3">
           {[
             [t("share.1.t"), t("share.1.d")],
             [t("share.2.t"), t("share.2.d")],
@@ -227,16 +271,11 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </Chapter>
 
       {/* PRICING — registry of credentials */}
-      <section className="border-t-2 border-foreground bg-card">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Chapter IV · {t("pricing.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("pricing.title")}</h2>
-          </div>
-          <div className="mt-12 grid gap-0 md:grid-cols-3">
+      <Chapter chapter="IV" section={t("pricing.label")} title={t("pricing.title")}>
+        <div className="grid gap-0 md:grid-cols-3 border border-foreground/20">
             {[
               { tier: "I", name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
               { tier: "II", name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
@@ -262,16 +301,12 @@ function Home() {
                 </Button>
               </div>
             ))}
-          </div>
         </div>
-      </section>
+      </Chapter>
 
       {/* TESTIMONIALS — recipient correspondence */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="border-b-2 border-foreground pb-4">
-          <div className="micro-label">◆ Recipient Correspondence</div>
-        </div>
-        <div className="mt-10 grid gap-0 md:grid-cols-3">
+      <Chapter chapter="V" section="Recipient Correspondence" title="Letters from the field">
+        <div className="grid gap-0 md:grid-cols-3 border border-foreground/20">
           {[
             { q: "I went from 'self-taught' to 'verified' in an afternoon. Got the interview a week later.", n: "Tunde A.", c: "Lagos" },
             { q: "We onboarded 40 contractors and certified them on our internal SOPs. Game changer.", n: "Wanjiku M.", c: "Nairobi" },
@@ -285,17 +320,12 @@ function Home() {
             </figure>
           ))}
         </div>
-      </section>
+      </Chapter>
 
       {/* FAQ — institute responses */}
-      <section id="faq" className="border-t-2 border-foreground bg-card scroll-mt-24">
-        <div className="mx-auto max-w-4xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Institute Responses · {t("faq.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("faq.title")}</h2>
-          </div>
-          <p className="mt-6 max-w-2xl font-serif text-lg italic text-muted-foreground">{t("faq.intro")}</p>
-          <Accordion type="single" collapsible className="mt-10">
+      <Chapter id="faq" chapter="VI" section={t("faq.label")} title={t("faq.title")} aside={t("faq.intro")}>
+        <div className="mx-auto max-w-4xl">
+          <Accordion type="single" collapsible>
             {[
               {
                 q: "How is a CERTIGO. certificate verified?",
@@ -329,30 +359,32 @@ function Home() {
             ))}
           </Accordion>
         </div>
-      </section>
+      </Chapter>
 
       {/* ABOUT — institute brief */}
-      <section id="about" className="border-t-2 border-foreground scroll-mt-24">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Chapter V · {t("about.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("about.title")}</h2>
-          </div>
-          <div className="mt-12 grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+      <Chapter id="about" chapter="VII" section={t("about.label")} title={t("about.title")}>
+        <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-start">
             <div className="border-l-2 border-foreground/70 pl-6">
               <p className="font-serif text-lg italic text-foreground/85">{t("about.body1")}</p>
               <p className="mt-4 font-serif text-lg italic text-muted-foreground">{t("about.body2")}</p>
-              <div className="mt-10 grid grid-cols-3 gap-0 border-t border-foreground/20">
-                {[
-                  ["12,400+", t("about.stat.issued")],
-                  ["84,000+", t("about.stat.verifs")],
-                  ["38", t("about.stat.countries")],
-                ].map(([n, l], i) => (
-                  <div key={l} className={`py-5 ${i > 0 ? "border-l border-foreground/20 pl-5" : "pr-5"}`}>
-                    <div className="font-display text-3xl tracking-[-0.04em] text-foreground">{n}</div>
-                    <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{l}</div>
-                  </div>
-                ))}
+              <div className="mt-10 border-t-2 border-foreground pt-6">
+                <div className="micro-label">◆ Institute Objectives</div>
+                <ul className="mt-5 divide-y divide-foreground/15 border-y border-foreground/15">
+                  {[
+                    { n: "01", t: "Make every credential instantly verifiable", d: "Build a public, scannable proof layer that any recruiter or institution can trust without an account." },
+                    { n: "02", t: "Anchor credentials to demonstrated knowledge", d: "Tie each certificate to an assessed outcome — not seat-time, not self-claim." },
+                    { n: "03", t: "Keep certification borderless and accessible", d: "Issue and verify from anywhere, in any language, on any device, at minimal cost." },
+                    { n: "04", t: "Protect recipients and issuers from forgery", d: "Anchor every record at issue-time so edited PDFs never validate." },
+                  ].map((o) => (
+                    <li key={o.n} className="flex gap-5 py-4">
+                      <span className="font-display text-2xl text-wax leading-none">{o.n}</span>
+                      <div>
+                        <div className="font-display text-base tracking-tight uppercase">{o.t}</div>
+                        <p className="mt-1 font-serif text-sm italic text-muted-foreground">{o.d}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 border border-foreground/20">
@@ -369,18 +401,12 @@ function Home() {
                 </div>
               ))}
             </div>
-          </div>
         </div>
-      </section>
+      </Chapter>
 
       {/* CONTACT — institute correspondence (minimal webmail) */}
-      <section id="contact" className="border-t-2 border-foreground bg-card scroll-mt-24">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="border-b-2 border-foreground pb-4">
-            <div className="micro-label">◆ Chapter VI · {t("contact.label")}</div>
-            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("contact.title")}</h2>
-          </div>
-          <div className="mt-12 grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+      <Chapter id="contact" chapter="VIII" section={t("contact.label")} title={t("contact.title")}>
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="border-l-2 border-foreground/70 pl-6">
               <p className="font-serif text-lg italic text-foreground/85">{t("contact.body")}</p>
               <div className="mt-10 divide-y divide-foreground/15 border-y border-foreground/15">
@@ -446,9 +472,8 @@ function Home() {
                 </Button>
               </div>
             </form>
-          </div>
         </div>
-      </section>
+      </Chapter>
 
       {/* FINAL CTA — closing colophon */}
       <section className="relative overflow-hidden border-t-2 border-foreground">
