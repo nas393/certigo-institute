@@ -19,6 +19,7 @@ import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ArchiveRouteImport } from './routes/archive'
 import { Route as AdminRouteImport } from './routes/admin'
@@ -80,6 +81,11 @@ const DashboardRoute = DashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
@@ -136,6 +142,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
+  '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
@@ -158,6 +165,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
+  '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
@@ -181,6 +189,7 @@ export interface FileRoutesById {
   '/admin': typeof AdminRoute
   '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
+  '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/pricing': typeof PricingRoute
   '/product': typeof ProductRoute
@@ -205,6 +214,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/archive'
     | '/auth'
+    | '/contact'
     | '/dashboard'
     | '/pricing'
     | '/product'
@@ -227,6 +237,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/archive'
     | '/auth'
+    | '/contact'
     | '/dashboard'
     | '/pricing'
     | '/product'
@@ -249,6 +260,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/archive'
     | '/auth'
+    | '/contact'
     | '/dashboard'
     | '/pricing'
     | '/product'
@@ -272,6 +284,7 @@ export interface RootRouteChildren {
   AdminRoute: typeof AdminRoute
   ArchiveRoute: typeof ArchiveRoute
   AuthRoute: typeof AuthRoute
+  ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
   PricingRoute: typeof PricingRoute
   ProductRoute: typeof ProductRoute
@@ -359,6 +372,13 @@ declare module '@tanstack/react-router' {
       path: '/dashboard'
       fullPath: '/dashboard'
       preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -450,6 +470,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminRoute: AdminRoute,
   ArchiveRoute: ArchiveRoute,
   AuthRoute: AuthRoute,
+  ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
   PricingRoute: PricingRoute,
   ProductRoute: ProductRoute,
