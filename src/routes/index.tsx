@@ -229,57 +229,72 @@ function Home() {
         </div>
       </section>
 
-      {/* PRICING */}
-      <section className="border-t border-border bg-card">
+      {/* PRICING — registry of credentials */}
+      <section className="border-t-2 border-foreground bg-card">
         <div className="mx-auto max-w-7xl px-6 py-24">
-          <div className="micro-label">◆ {t("pricing.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("pricing.title")}</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Chapter IV · {t("pricing.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("pricing.title")}</h2>
+          </div>
+          <div className="mt-12 grid gap-0 md:grid-cols-3">
             {[
-              { name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
-              { name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
-              { name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
-            ].map((p) => (
-              <div key={p.name} className={`relative rounded-2xl border p-8 ${p.highlight ? "border-primary bg-background shadow-elegant" : "border-border bg-background"}`}>
-                {p.highlight && <span className="absolute -top-3 start-6 rounded-full bg-primary px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary-foreground">{t("pricing.popular")}</span>}
-                <h3 className="font-display text-2xl font-black tracking-tight">{p.name}</h3>
-                <div className="mt-4 flex items-baseline gap-1">
-                  <span className="font-display text-5xl font-black tracking-tighter">{p.price}</span>
-                  {p.per && <span className="text-sm text-muted-foreground">{p.per}</span>}
+              { tier: "I", name: t("pricing.starter.name"), price: t("pricing.starter.price"), desc: t("pricing.starter.desc"), features: ["AI course generation", "QR verification", "Watermarked PDF"] },
+              { tier: "II", name: t("pricing.pro.name"), price: "$19", per: "/mo", highlight: true, desc: t("pricing.pro.desc"), features: ["Unlimited certificates", "No CERTIGO. branding", "LinkedIn integration", "Priority AI"] },
+              { tier: "III", name: t("pricing.business.name"), price: "$29", per: "/seat", desc: t("pricing.business.desc"), features: ["Bulk issuance", "Admin dashboard", "Custom branding", "SSO"] },
+            ].map((p, i) => (
+              <div key={p.name} className={`relative p-8 ${i > 0 ? "md:border-l border-foreground/20" : ""} ${p.highlight ? "bg-foreground text-background" : "bg-background"}`}>
+                {p.highlight && <span className="absolute -top-3 start-8 bg-wax px-3 py-1 font-mono text-[10px] uppercase tracking-[0.22em] text-background">◆ {t("pricing.popular")}</span>}
+                <div className={`flex items-center justify-between border-b ${p.highlight ? "border-background/30" : "border-foreground/20"} pb-3`}>
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "text-background/70" : "text-muted-foreground"}`}>Tier {p.tier}</span>
+                  <span className={`font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "text-wax" : "text-wax"}`}>Class {p.tier}</span>
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
-                <ul className="mt-6 space-y-2 text-sm">
-                  {p.features.map((f) => <li key={f} className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-primary" /> {f}</li>)}
+                <h3 className="mt-5 font-display text-3xl tracking-[-0.03em] uppercase">{p.name}</h3>
+                <div className="mt-4 flex items-baseline gap-1">
+                  <span className="font-display text-6xl tracking-[-0.045em]">{p.price}</span>
+                  {p.per && <span className={`font-mono text-xs uppercase tracking-widest ${p.highlight ? "text-background/60" : "text-muted-foreground"}`}>{p.per}</span>}
+                </div>
+                <p className={`mt-3 font-serif text-base italic ${p.highlight ? "text-background/75" : "text-muted-foreground"}`}>{p.desc}</p>
+                <ul className="mt-6 space-y-2.5 text-sm">
+                  {p.features.map((f) => <li key={f} className="flex items-center gap-2"><BadgeCheck className={`h-4 w-4 ${p.highlight ? "text-wax" : "text-wax"}`} /> {f}</li>)}
                 </ul>
-                <Button className="mt-8 w-full" variant={p.highlight ? "default" : "outline"} onClick={() => nav({ to: "/auth" })}>{t("pricing.cta")}</Button>
+                <Button className={`mt-8 w-full h-11 rounded-none font-mono text-[10px] uppercase tracking-[0.22em] ${p.highlight ? "bg-wax text-background hover:bg-wax/90" : "bg-foreground text-background hover:bg-foreground/90"}`} onClick={() => nav({ to: "/auth" })}>
+                  {t("pricing.cta")}
+                </Button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS — recipient correspondence */}
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="border-b-2 border-foreground pb-4">
+          <div className="micro-label">◆ Recipient Correspondence</div>
+        </div>
+        <div className="mt-10 grid gap-0 md:grid-cols-3">
           {[
             { q: "I went from 'self-taught' to 'verified' in an afternoon. Got the interview a week later.", n: "Tunde A.", c: "Lagos" },
             { q: "We onboarded 40 contractors and certified them on our internal SOPs. Game changer.", n: "Wanjiku M.", c: "Nairobi" },
             { q: "My students love how clean the certificates look. They actually share them.", n: "Liam V.", c: "Cape Town" },
-          ].map((t) => (
-            <figure key={t.n} className="rounded-2xl border border-border bg-card p-8">
-              <blockquote className="font-display text-lg leading-snug tracking-tight">"{t.q}"</blockquote>
-              <figcaption className="mt-6 font-mono text-xs uppercase tracking-widest text-muted-foreground">— {t.n} · {t.c}</figcaption>
+          ].map((c, i) => (
+            <figure key={c.n} className={`p-10 ${i > 0 ? "md:border-l border-foreground/20" : ""}`}>
+              <div className="font-display text-5xl text-wax leading-none">"</div>
+              <blockquote className="mt-3 font-serif text-xl italic leading-snug text-foreground">{c.q}</blockquote>
+              <div className="mt-6 h-px w-12 bg-foreground" />
+              <figcaption className="mt-3 font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">— {c.n} · {c.c}</figcaption>
             </figure>
           ))}
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="border-t border-border bg-card scroll-mt-24">
+      {/* FAQ — institute responses */}
+      <section id="faq" className="border-t-2 border-foreground bg-card scroll-mt-24">
         <div className="mx-auto max-w-4xl px-6 py-24">
-          <div className="micro-label">◆ {t("faq.label")}</div>
-          <h2 className="mt-4 font-display text-4xl font-black tracking-tighter md:text-5xl">{t("faq.title")}</h2>
-          <p className="mt-4 max-w-2xl text-muted-foreground">{t("faq.intro")}</p>
+          <div className="border-b-2 border-foreground pb-4">
+            <div className="micro-label">◆ Institute Responses · {t("faq.label")}</div>
+            <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl uppercase">{t("faq.title")}</h2>
+          </div>
+          <p className="mt-6 max-w-2xl font-serif text-lg italic text-muted-foreground">{t("faq.intro")}</p>
           <Accordion type="single" collapsible className="mt-10">
             {[
               {
