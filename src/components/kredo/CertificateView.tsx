@@ -220,8 +220,10 @@ export function CertificateView(p: Props) {
           width: "100%",
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "flex-start",
+          gap: cq(2.2),
           marginTop: cq(1.6),
+          paddingRight: cq(7),
           fontFamily: "'JetBrains Mono', ui-monospace, monospace",
           fontSize: cq(0.62),
           letterSpacing: "0.16em",
@@ -233,12 +235,13 @@ export function CertificateView(p: Props) {
           <span>ID {displaySerial}</span>
         </div>
 
-        {/* QR — bottom-right inside frame */}
+        {/* QR — bottom-right corner, outside meta row */}
         {qr && (
           <a href={qrTarget} target="_blank" rel="noreferrer" style={{
             position: "absolute", right: cq(2.6), bottom: cq(2.6),
+            display: "block",
           }}>
-            <img src={qr} alt={`Verify on ${verifyHost}`} style={{ width: cq(5.2), height: cq(5.2), display: "block" }} />
+            <img src={qr} alt={`Verify on ${verifyHost}`} style={{ width: cq(4.6), height: cq(4.6), display: "block" }} />
           </a>
         )}
 
