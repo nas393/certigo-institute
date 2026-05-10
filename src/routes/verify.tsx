@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription,
 } from "@/components/ui/dialog";
-import { CertificateView } from "@/components/kredo/CertificateView";
+import { CertificateView, type CertTemplate } from "@/components/kredo/CertificateView";
 import { ShieldCheck, Search, ExternalLink, Link2, BadgeCheck, AlertTriangle, Lock, QrCode, Globe } from "lucide-react";
 
 export const Route = createFileRoute("/verify")({
@@ -48,6 +48,7 @@ function Verify() {
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<CertResult | null>(null);
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState<CertTemplate>("executive");
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -233,7 +234,29 @@ function Verify() {
                 </div>
 
                 <div className="overflow-hidden rounded-xl border border-border bg-background">
+                  <div className="flex flex-wrap items-center gap-2 border-b border-border bg-surface px-4 py-2">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Theme</span>
+                    {([
+                      { k: "executive", l: "Executive" },
+                      { k: "technical", l: "Technical" },
+                      { k: "dark-glass", l: "Modern Dark" },
+                    ] as { k: CertTemplate; l: string }[]).map((t) => (
+                      <button
+                        key={t.k}
+                        type="button"
+                        onClick={() => setTheme(t.k)}
+                        className={`rounded-full border px-3 py-1 text-[11px] font-semibold transition-colors ${
+                          theme === t.k
+                            ? "border-transparent bg-foreground text-background"
+                            : "border-border bg-card text-muted-foreground hover:text-foreground"
+                        }`}
+                      >
+                        {t.l}
+                      </button>
+                    ))}
+                  </div>
                   <CertificateView
+                    template={theme}
                     serial={result.cert.serial}
                     recipientName={result.cert.recipient_name}
                     courseTopic={result.cert.course_topic}
