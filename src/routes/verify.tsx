@@ -10,7 +10,9 @@ import {
   Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription,
 } from "@/components/ui/dialog";
 import { CertificateView, type CertTemplate } from "@/components/kredo/CertificateView";
-import { ShieldCheck, Search, ExternalLink, Link2, BadgeCheck, AlertTriangle, Lock, QrCode, Globe } from "lucide-react";
+import { ShieldCheck, Search, ExternalLink, Link2, BadgeCheck, AlertTriangle, Lock, QrCode, Globe, Download } from "lucide-react";
+import { downloadCertificatePdf } from "@/lib/pdf";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/verify")({
   head: () => ({
@@ -48,7 +50,22 @@ function Verify() {
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<CertResult | null>(null);
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState<CertTemplate>("executive");
+  // Persist the chosen certificate theme across reloads / modal openings.
+  const [theme, setThemeState] = useState<CertTemplate>("executive");
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const saved = window.localStorage.getItem("certigo.cert-theme") as CertTemplate | null;
+    if (saved === "executive" || saved === "technical" || saved === "dark-glass") {
+      setThemeState(saved);
+    }
+  }, []);
+  const setTheme = (t: CertTemplate) => {
+    setThemeState(t);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("certigo.cert-theme", t);
+    }
+  };
+  const [downloading, setDownloading] = useState(false);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -274,6 +291,34 @@ function Verify() {
                     onClick={() => nav({ to: "/verify/$id", params: { id: result.cert!.id } })}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" /> Open full certificate
+                  </Button>
+                  <Button
+                    variant="outline"
+                    disabled={downloading}
+                    onClick={async () => {
+                      if (!result.cert) return;
+                      setDownloading(true);
+                      try {
+                        await downloadCertificatePdf({
+                          serial: result.cert.serial,
+                          recipientName: result.cert.recipient_name,
+                          courseTopic: result.cert.course_topic,
+                          score: result.cert.score ?? null,
+                          issuedAt: result.cert.issued_at,
+                          verifyUrl: `${window.location.origin}/verify/${result.cert.serial}`,
+                          watermark: !!result.cert._demo,
+                          template: theme,
+                        });
+                        toast.success("Certificate downloaded");
+                      } catch {
+                        toast.error("Download failed");
+                      } finally {
+                        setDownloading(false);
+                      }
+                    }}
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    {downloading ? "Preparing…" : `Download PDF (${labelFor(theme)})`}
                   </Button>
                   <Button
                     variant="outline"
