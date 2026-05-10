@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifyRouteImport } from './routes/verify'
 import { Route as UnlockRouteImport } from './routes/unlock'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
@@ -40,6 +41,11 @@ const VerifyRoute = VerifyRouteImport.update({
 const UnlockRoute = UnlockRouteImport.update({
   id: '/unlock',
   path: '/unlock',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TemplatesRoute = TemplatesRouteImport.update({
@@ -158,6 +164,7 @@ export interface FileRoutesByFullPath {
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
+  '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
@@ -182,6 +189,7 @@ export interface FileRoutesByTo {
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
+  '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
@@ -207,6 +215,7 @@ export interface FileRoutesById {
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
+  '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
@@ -233,6 +242,7 @@ export interface FileRouteTypes {
     | '/settings'
     | '/styles'
     | '/templates'
+    | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
@@ -257,6 +267,7 @@ export interface FileRouteTypes {
     | '/settings'
     | '/styles'
     | '/templates'
+    | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
@@ -281,6 +292,7 @@ export interface FileRouteTypes {
     | '/settings'
     | '/styles'
     | '/templates'
+    | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
@@ -306,6 +318,7 @@ export interface RootRouteChildren {
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
   TemplatesRoute: typeof TemplatesRoute
+  TermsRoute: typeof TermsRoute
   UnlockRoute: typeof UnlockRoute
   VerifyRoute: typeof VerifyRouteWithChildren
   CertificateIdRoute: typeof CertificateIdRoute
@@ -329,6 +342,13 @@ declare module '@tanstack/react-router' {
       path: '/unlock'
       fullPath: '/unlock'
       preLoaderRoute: typeof UnlockRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/templates': {
@@ -500,6 +520,7 @@ const rootRouteChildren: RootRouteChildren = {
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
   TemplatesRoute: TemplatesRoute,
+  TermsRoute: TermsRoute,
   UnlockRoute: UnlockRoute,
   VerifyRoute: VerifyRouteWithChildren,
   CertificateIdRoute: CertificateIdRoute,
