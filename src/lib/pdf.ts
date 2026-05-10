@@ -2,7 +2,7 @@ import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas-pro";
 import { createRoot } from "react-dom/client";
 import { createElement } from "react";
-import { CertificateView, type CertOrientation } from "@/components/kredo/CertificateView";
+import { CertificateView, type CertOrientation, type CertTemplate } from "@/components/kredo/CertificateView";
 
 export interface CertData {
   serial: string;
@@ -13,6 +13,7 @@ export interface CertData {
   verifyUrl: string;
   watermark?: boolean;
   orientation?: CertOrientation;
+  template?: CertTemplate;
 }
 
 /**
@@ -50,6 +51,7 @@ export async function downloadCertificatePdf(c: CertData) {
       watermark: c.watermark,
       compact: false,
       orientation: c.orientation,
+      template: c.template,
     }),
   );
 
@@ -77,7 +79,8 @@ export async function downloadCertificatePdf(c: CertData) {
     doc.setFillColor(255, 255, 255);
     doc.rect(0, 0, w, h, "F");
     doc.addImage(img, "PNG", 0, 0, w, h, undefined, "FAST");
-    doc.save(`certigo-${c.serial}.pdf`);
+    const themeSuffix = c.template ? `-${c.template}` : "";
+    doc.save(`certigo-${c.serial}${themeSuffix}.pdf`);
   } finally {
     root.unmount();
     host.remove();
