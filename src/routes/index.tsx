@@ -418,7 +418,7 @@ function LiveDemo() {
                 <Button
                   size="sm"
                   variant="outline"
-                  onClick={() => nav({ to: "/certificate/$id", params: { id: c.id } })}
+                  onClick={() => nav({ to: "/verify/$id", params: { id: c.id } })}
                 >
                   View certificate
                 </Button>
