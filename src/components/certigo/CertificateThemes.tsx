@@ -275,9 +275,12 @@ function SovereignCert(p: CertigoCertProps) {
 
         <div style={{ width: "100%", display: "grid", gridTemplateColumns: "1fr auto 1fr",
           alignItems: "end", gap: "2cqw" }}>
-          <SignatureLine name="Dr. M. Castellano" role="Director of Certification" />
-          <GoldSeal size={64} label="VERIFIED" />
-          <SignatureLine name="A. Renaud" role="Chief Standards Officer" />
+          <div />
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+            <GoldSeal size={64} label="VERIFIED" />
+            <AuthorityBlock />
+          </div>
+          <div />
         </div>
 
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -373,9 +376,12 @@ function ObsidianCert(p: CertigoCertProps) {
 
         <div style={{ width: "100%", display: "grid", gridTemplateColumns: "1fr auto 1fr",
           alignItems: "end", gap: "2cqw" }}>
-          <SignatureLine name="Dr. M. Castellano" role="Academic Director" />
-          <GoldSeal size={68} label="OBSIDIAN" />
-          <SignatureLine name="A. Renaud" role="Standards Officer" />
+          <div />
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+            <GoldSeal size={68} label="OBSIDIAN" />
+            <AuthorityBlock />
+          </div>
+          <div />
         </div>
 
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -464,9 +470,10 @@ function QuantumCert(p: CertigoCertProps) {
               letterSpacing: "0.22em", color: GOLD }}>ON-CHAIN METADATA</div>
           </div>
           <div style={{ display: "flex", justifyContent: "center", gap: "2cqw", alignItems: "end" }}>
-            <SignatureLine name="Dr. M. Castellano" role="Director, Certification" />
-            <GoldSeal size={56} label="QUANTUM" />
-            <SignatureLine name="A. Renaud" role="Standards Officer" />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
+              <GoldSeal size={56} label="QUANTUM" />
+              <AuthorityBlock />
+            </div>
           </div>
           <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
             fontSize: "0.6cqw", letterSpacing: "0.16em", color: "#9fb1d8", lineHeight: 1.7 }}>
@@ -532,9 +539,12 @@ function ImperialCert(p: CertigoCertProps) {
 
         <div style={{ width: "100%", display: "grid", gridTemplateColumns: "1fr auto 1fr",
           alignItems: "end", gap: "2cqw" }}>
-          <SignatureLine name="Dr. M. Castellano" role="Director of Certification" ink="#f4ecd2" />
-          <GoldSeal size={72} label="IMPERIAL" />
-          <SignatureLine name="A. Renaud" role="Chief Standards Officer" ink="#f4ecd2" />
+          <div />
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+            <GoldSeal size={72} label="IMPERIAL" />
+            <AuthorityBlock ink="#f4ecd2" />
+          </div>
+          <div />
         </div>
 
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -625,9 +635,12 @@ function MeridianCert(p: CertigoCertProps) {
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr",
           alignItems: "end", gap: "1.6cqw" }}>
-          <SignatureLine name="Dr. M. Castellano" role="Director of Certification" ink={NAVY_DEEP} />
-          <GoldSeal size={60} label="MERIDIAN" />
-          <SignatureLine name="A. Renaud" role="Standards Officer" ink={NAVY_DEEP} />
+          <div />
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
+            <GoldSeal size={60} label="MERIDIAN" />
+            <AuthorityBlock ink={NAVY_DEEP} />
+          </div>
+          <div />
         </div>
         <div style={{ marginTop: "1.2cqw", fontFamily: "'JetBrains Mono', monospace",
           fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#5b6478" }}>
