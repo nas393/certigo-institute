@@ -508,7 +508,7 @@ function SovereignCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+            <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
           </div>
           <div />
         </div>
@@ -608,7 +608,7 @@ function ObsidianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+            <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
           </div>
           <div />
         </div>
@@ -700,7 +700,7 @@ function QuantumCert(p: CertigoCertProps) {
           </div>
           <div style={{ display: "flex", justifyContent: "center", gap: "2cqw", alignItems: "end" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-              <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+              <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
             </div>
           </div>
           <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
@@ -769,7 +769,7 @@ function ImperialCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <AuthorityBlock ink="#f4ecd2" certificateId={p.certificateId} issueDate={p.issueDate} />
+            <AuthorityBlock ink="#f4ecd2" certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
           </div>
           <div />
         </div>
@@ -864,7 +864,7 @@ function MeridianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "1.6cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-            <AuthorityBlock ink={NAVY_DEEP} certificateId={p.certificateId} issueDate={p.issueDate} />
+            <AuthorityBlock ink={NAVY_DEEP} certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
           </div>
           <div />
         </div>
@@ -917,7 +917,7 @@ function MonolithCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
           alignItems: "flex-end", marginTop: "1.4cqw" }}>
@@ -972,7 +972,7 @@ function AuroraCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
           alignItems: "flex-end", marginTop: "1.4cqw" }}>
@@ -1025,7 +1025,7 @@ function ParchmentCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw", color: NAVY_DEEP }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <AuthorityBlock ink={NAVY_DEEP} certificateId={p.certificateId} issueDate={p.issueDate} />
+          <AuthorityBlock ink={NAVY_DEEP} certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
           alignItems: "flex-end", marginTop: "1.4cqw" }}>
@@ -1085,7 +1085,7 @@ function CipherCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
           alignItems: "flex-end", marginTop: "1.4cqw" }}>
@@ -1139,7 +1139,7 @@ function RegaliaCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} />
+          <AuthorityBlock certificateId={p.certificateId} issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
           alignItems: "flex-end", marginTop: "1.4cqw" }}>
