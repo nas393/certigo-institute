@@ -6,7 +6,12 @@ export type CertigoCertTheme =
   | "obsidian"    // charcoal + gold filigree, minimal grid
   | "quantum"     // navy with hex/circuit pattern, modern UI
   | "imperial"    // warm charcoal + double gold border, formal serif
-  | "meridian";   // split: navy circuit rail | white content
+  | "meridian"    // split: navy circuit rail | white content
+  | "monolith"    // pure black + gold edge rails, centered
+  | "aurora"      // navy + sweeping gold gradient halo
+  | "parchment"   // ivory/cream + classical navy + gold border
+  | "cipher"      // navy + binary / data background
+  | "regalia";    // burgundy + gold heraldic
 
 export const CERTIGO_CERT_THEMES: { key: CertigoCertTheme; label: string; hint: string }[] = [
   { key: "sovereign", label: "Sovereign",  hint: "Deep navy · gold crest · circuit halo" },
@@ -14,6 +19,11 @@ export const CERTIGO_CERT_THEMES: { key: CertigoCertTheme; label: string; hint: 
   { key: "quantum",   label: "Quantum",    hint: "Navy · hex circuitry · webapp UI" },
   { key: "imperial",  label: "Imperial",   hint: "Charcoal · double gold frame · serif" },
   { key: "meridian",  label: "Meridian",   hint: "Split rail · navy + circuitry · white" },
+  { key: "monolith",  label: "Monolith",   hint: "Pure black · gold edge rails" },
+  { key: "aurora",    label: "Aurora",     hint: "Navy · sweeping gold halo" },
+  { key: "parchment", label: "Parchment",  hint: "Ivory · classical navy + gold" },
+  { key: "cipher",    label: "Cipher",     hint: "Navy · binary data pattern" },
+  { key: "regalia",   label: "Regalia",    hint: "Burgundy · heraldic gold" },
 ];
 
 export interface CertigoCertProps {
