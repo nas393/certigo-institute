@@ -34,7 +34,12 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
-      <SocialProof />
+      <TrustStrip />
+      <LiveDemo />
+      <HowVerification />
+      <WhoItsFor />
+      <WhoBuilt />
+      <EnterpriseSecurity />
       <Chapters />
       <FinalCTA />
       <Footer />
