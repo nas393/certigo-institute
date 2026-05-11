@@ -394,7 +394,7 @@ function LiveDemo() {
           </div>
           <Button
             className="mt-6 w-full gradient-hero text-white border-0"
-            onClick={() => nav({ to: "/u/$handle", params: { handle: "demo-professional" } })}
+            onClick={() => nav({ to: "/verify" })}
           >
             Open demo profile <ArrowUpRight className="ml-2 h-4 w-4" />
           </Button>
