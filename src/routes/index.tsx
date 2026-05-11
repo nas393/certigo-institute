@@ -230,7 +230,7 @@ function Hero() {
                 size="lg"
                 variant="outline"
                 className="h-12 px-6 text-sm font-semibold"
-                onClick={() => nav({ to: "/u/$handle", params: { handle: "demo-professional" } })}
+                onClick={() => nav({ to: "/verify/$id", params: { id: "CERT-DM-1024" } })}
               >
                 View live demo credential
               </Button>
