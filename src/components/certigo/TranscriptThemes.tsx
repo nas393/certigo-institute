@@ -528,3 +528,262 @@ function Stat({ label, value }: { label: string; value: string }) {
     </div>
   );
 }
+
+/* ---------- shared mini list for new themes ---------- */
+function ModuleRow({ m, accent, ink, alt }: { m: TranscriptModule; accent: string; ink: string; alt?: boolean }) {
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "auto 1fr auto auto",
+      gap: "1cqw", padding: "0.75cqw 1cqw", background: alt ? "rgba(255,255,255,0.03)" : "transparent",
+      borderBottom: `1px solid ${ink}22`, fontSize: "0.85cqw", alignItems: "baseline" }}>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.7cqw",
+        letterSpacing: "0.1em", color: accent }}>{m.code}</span>
+      <span style={{ color: ink }}>{m.title}</span>
+      <span style={{ fontFamily: "'JetBrains Mono', monospace",
+        fontSize: "0.75cqw", color: ink, opacity: 0.75 }}>{m.hours}h · {m.scorePct}%</span>
+      <span style={{ fontWeight: 800, color: accent, fontFamily: "'JetBrains Mono', monospace",
+        fontSize: "0.85cqw", minWidth: "2cqw", textAlign: "right" }}>{m.grade}</span>
+    </div>
+  );
+}
+
+/* ---------- 6. MONOLITH transcript ---------- */
+function MonolithTr(p: CertigoTranscriptProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1/1.414", containerType: "inline-size", background: "#000",
+      color: "#fff", position: "relative", overflow: "hidden",
+      fontFamily: "'Inter', sans-serif" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", top: "1.6cqw", left: 0, right: 0, height: "0.3cqw",
+        background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }} />
+      <div style={{ position: "absolute", bottom: "1.6cqw", left: 0, right: 0, height: "0.3cqw",
+        background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }} />
+      <div style={{ padding: "4cqw 5cqw" }}>
+        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.45em", color: GOLD, fontWeight: 700 }}>
+          CERTIGO INSTITUTE · OFFICIAL TRANSCRIPT
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3cqw",
+          fontWeight: 700, marginTop: "1cqw", color: GOLD_HI }}>{p.recipientName}</div>
+        <div style={{ fontSize: "0.85cqw", color: "#bdbdbd", marginTop: "0.4cqw" }}>
+          {p.programTitle} · <span style={{ color: GOLD }}>{p.programCode}</span>
+        </div>
+        <div style={{ marginTop: "2.4cqw", border: `1px solid ${GOLD}55` }}>
+          {p.modules.map((m, i) => <ModuleRow key={m.code} m={m} accent={GOLD_HI} ink="#fff" alt={i % 2 === 1} />)}
+        </div>
+      </div>
+      <div style={{ position: "absolute", bottom: "2.6cqw", left: "5cqw", right: "5cqw",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.8cqw" }}>
+          {qr && <img src={qr} alt="Verify" style={{ width: "5cqw", height: "5cqw", background: "#fff", padding: "0.2cqw" }} />}
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.6cqw",
+            letterSpacing: "0.2em", color: GOLD, lineHeight: 1.7 }}>ON-CHAIN VERIFIED<br />METADATA</div>
+        </div>
+        <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+          fontSize: "0.62cqw", letterSpacing: "0.18em", color: "#bdbdbd", lineHeight: 1.7 }}>
+          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
+          <div>ID {p.transcriptId}</div>
+          {p.cumulativeGpa && <div style={{ color: GOLD }}>GPA {p.cumulativeGpa}</div>}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 7. AURORA transcript ---------- */
+function AuroraTr(p: CertigoTranscriptProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1/1.414", containerType: "inline-size",
+      background: `linear-gradient(135deg, ${NAVY_DEEP} 0%, #0d1d44 50%, ${NAVY_DEEP} 100%)`,
+      color: "#fff", position: "relative", overflow: "hidden",
+      fontFamily: "'Inter', sans-serif" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", inset: 0, background:
+        `radial-gradient(80% 40% at 50% 0%, rgba(241,214,138,0.30) 0%, transparent 70%)` }} />
+      <div style={{ position: "absolute", inset: "1.6cqw", border: `1px solid ${GOLD}55`, borderRadius: "0.4cqw" }} />
+      <div style={{ position: "relative", padding: "4cqw 5cqw" }}>
+        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.45em", color: GOLD_HI, fontWeight: 700 }}>
+          CERTIGO INSTITUTE · TRANSCRIPT
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3cqw",
+          fontWeight: 600, marginTop: "1cqw", color: "#fff",
+          textShadow: "0 0 24px rgba(241,214,138,0.45)" }}>{p.recipientName}</div>
+        <div style={{ fontSize: "0.85cqw", color: "#cfd6e8", marginTop: "0.4cqw" }}>
+          {p.programTitle} · <span style={{ color: GOLD_HI }}>{p.programCode}</span>
+        </div>
+        <div style={{ marginTop: "2.4cqw" }}>
+          {p.modules.map((m, i) => <ModuleRow key={m.code} m={m} accent={GOLD_HI} ink="#fff" alt={i % 2 === 1} />)}
+        </div>
+        {p.cumulativeGpa && (
+          <div style={{ marginTop: "1.4cqw", display: "flex", justifyContent: "space-between",
+            alignItems: "baseline", borderTop: `1px solid ${GOLD}55`, paddingTop: "1cqw" }}>
+            <span style={{ fontStyle: "italic", color: "#cfd6e8" }}>Cumulative</span>
+            <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.6cqw",
+              fontWeight: 700, color: GOLD_HI }}>{p.cumulativeGpa}</span>
+          </div>
+        )}
+      </div>
+      <div style={{ position: "absolute", bottom: "2.6cqw", left: "5cqw", right: "5cqw",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.8cqw" }}>
+          {qr && <img src={qr} alt="Verify" style={{ width: "5cqw", height: "5cqw", background: "#fff", padding: "0.2cqw", borderRadius: 4 }} />}
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.6cqw",
+            letterSpacing: "0.2em", color: GOLD, lineHeight: 1.7 }}>ON-CHAIN VERIFIED</div>
+        </div>
+        <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+          fontSize: "0.62cqw", letterSpacing: "0.18em", color: "#cfd6e8", lineHeight: 1.7 }}>
+          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
+          <div>ID {p.transcriptId}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 8. PARCHMENT transcript ---------- */
+function ParchmentTr(p: CertigoTranscriptProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1/1.414", containerType: "inline-size",
+      background: "linear-gradient(180deg, #fbf7ec 0%, #f4ecd2 100%)",
+      color: NAVY_DEEP, position: "relative", overflow: "hidden",
+      fontFamily: "'Inter', sans-serif" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", inset: "1.4cqw", border: `2.5px solid ${GOLD}` }} />
+      <div style={{ position: "absolute", inset: "2.2cqw", border: `0.6px solid ${GOLD_LO}`, opacity: 0.6 }} />
+      <div style={{ padding: "4cqw 5cqw" }}>
+        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.45em", color: GOLD_LO, fontWeight: 700 }}>
+          CERTIGO INSTITUTE · OFFICIAL TRANSCRIPT
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3cqw",
+          fontWeight: 700, marginTop: "1cqw", color: NAVY_DEEP }}>{p.recipientName}</div>
+        <div style={{ fontSize: "0.85cqw", color: "#5a4f2c", marginTop: "0.3cqw" }}>
+          {p.programTitle} · <span style={{ color: GOLD_LO, fontWeight: 700 }}>{p.programCode}</span>
+        </div>
+        <div style={{ marginTop: "2.2cqw", borderTop: `1px solid ${NAVY_DEEP}` }}>
+          {p.modules.map((m, i) => <ModuleRow key={m.code} m={m} accent={GOLD_LO} ink={NAVY_DEEP} alt={i % 2 === 1} />)}
+        </div>
+        {p.cumulativeGpa && (
+          <div style={{ marginTop: "1.4cqw", display: "flex", justifyContent: "space-between",
+            alignItems: "baseline", borderTop: `2px solid ${NAVY_DEEP}`, paddingTop: "1cqw" }}>
+            <span style={{ fontStyle: "italic", color: "#5a4f2c" }}>Cumulative</span>
+            <span style={{ fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "1.6cqw", fontWeight: 700, color: NAVY_DEEP }}>{p.cumulativeGpa}</span>
+          </div>
+        )}
+      </div>
+      <div style={{ position: "absolute", bottom: "3cqw", left: "5cqw", right: "5cqw",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.8cqw" }}>
+          {qr && <img src={qr} alt="Verify" style={{ width: "4.8cqw", height: "4.8cqw" }} />}
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.6cqw",
+            letterSpacing: "0.2em", color: GOLD_LO, lineHeight: 1.7 }}>ON-CHAIN VERIFIED METADATA</div>
+        </div>
+        <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+          fontSize: "0.62cqw", letterSpacing: "0.18em", color: "#5a4f2c", lineHeight: 1.7 }}>
+          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
+          <div>ID {p.transcriptId}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 9. CIPHER transcript ---------- */
+function CipherTr(p: CertigoTranscriptProps) {
+  const qr = useQR(p.verifyUrl);
+  const rows = Array.from({ length: 36 }, (_, r) =>
+    Array.from({ length: 60 }, (_, c) => ((r * 5 + c * 11) % 4 === 0 ? "1" : "0")).join(" ")
+  );
+  return (
+    <div style={{ aspectRatio: "1/1.414", containerType: "inline-size",
+      background: NAVY_DEEP, color: "#fff", position: "relative", overflow: "hidden",
+      fontFamily: "'JetBrains Mono', monospace" }} className="w-full shadow-2xl">
+      <div aria-hidden style={{ position: "absolute", inset: 0, opacity: 0.10,
+        fontSize: "0.55cqw", color: GOLD, whiteSpace: "pre", lineHeight: 1.4, padding: "2cqw" }}>
+        {rows.join("\n")}
+      </div>
+      <div style={{ position: "absolute", inset: 0, background:
+        `radial-gradient(70% 50% at 50% 30%, rgba(11,26,58,0) 0%, ${NAVY_DEEP} 80%)` }} />
+      <div style={{ position: "relative", padding: "4cqw 5cqw" }}>
+        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.32em", color: GOLD }}>
+          ● CERTIGO.CIPHER &nbsp;/&nbsp; TRANSCRIPT.v1
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8cqw",
+          marginTop: "1cqw", color: "#fff", fontWeight: 600 }}>{p.recipientName}</div>
+        <div style={{ fontSize: "0.85cqw", color: "#9fb1d8", marginTop: "0.4cqw", letterSpacing: "0.1em" }}>
+          {p.programTitle} · <span style={{ color: GOLD }}>{p.programCode}</span>
+        </div>
+        <div style={{ marginTop: "2.4cqw", border: `1px solid ${GOLD}55` }}>
+          <div style={{ display: "grid", gridTemplateColumns: "auto 1fr auto auto",
+            gap: "1cqw", padding: "0.6cqw 1cqw", background: `${GOLD}15`,
+            fontSize: "0.6cqw", letterSpacing: "0.24em", color: GOLD, fontWeight: 700 }}>
+            <span>CODE</span><span>MODULE</span><span>HRS · SCORE</span><span>GR</span>
+          </div>
+          {p.modules.map((m, i) => <ModuleRow key={m.code} m={m} accent={GOLD_HI} ink="#fff" alt={i % 2 === 1} />)}
+        </div>
+      </div>
+      <div style={{ position: "absolute", bottom: "2.4cqw", left: "5cqw", right: "5cqw",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.8cqw" }}>
+          {qr && <img src={qr} alt="Verify" style={{ width: "5cqw", height: "5cqw", background: "#fff", padding: "0.2cqw" }} />}
+          <div style={{ fontSize: "0.55cqw", letterSpacing: "0.2em", color: GOLD, lineHeight: 1.7 }}>
+            SHA256 · ON-CHAIN<br />METADATA
+          </div>
+        </div>
+        <div style={{ textAlign: "right", fontSize: "0.6cqw", letterSpacing: "0.18em",
+          color: "#9fb1d8", lineHeight: 1.7 }}>
+          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
+          <div>ID {p.transcriptId}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 10. REGALIA transcript ---------- */
+function RegaliaTr(p: CertigoTranscriptProps) {
+  const qr = useQR(p.verifyUrl);
+  const BURG = "#3a0f17";
+  const BURG_DEEP = "#220609";
+  return (
+    <div style={{ aspectRatio: "1/1.414", containerType: "inline-size",
+      background: `linear-gradient(180deg, ${BURG} 0%, ${BURG_DEEP} 100%)`,
+      color: "#fff", position: "relative", overflow: "hidden",
+      fontFamily: "'Inter', sans-serif" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", inset: "1.4cqw", border: `2px solid ${GOLD}` }} />
+      <div style={{ position: "absolute", inset: "2.2cqw", border: `0.5px solid ${GOLD}`, opacity: 0.55 }} />
+      <div style={{ padding: "4cqw 5cqw" }}>
+        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.45em", color: GOLD_HI, fontWeight: 700 }}>
+          CERTIGO INSTITUTE · OFFICIAL TRANSCRIPT
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3cqw",
+          fontWeight: 700, marginTop: "1cqw", color: "#fff8e2" }}>{p.recipientName}</div>
+        <div style={{ fontSize: "0.85cqw", color: "#e6c89a", marginTop: "0.3cqw" }}>
+          {p.programTitle} · <span style={{ color: GOLD_HI, fontWeight: 700 }}>{p.programCode}</span>
+        </div>
+        <div style={{ marginTop: "2.2cqw", borderTop: `1px solid ${GOLD}` }}>
+          {p.modules.map((m, i) => <ModuleRow key={m.code} m={m} accent={GOLD_HI} ink="#fff" alt={i % 2 === 1} />)}
+        </div>
+        {p.cumulativeGpa && (
+          <div style={{ marginTop: "1.4cqw", display: "flex", justifyContent: "space-between",
+            alignItems: "baseline", borderTop: `2px solid ${GOLD}`, paddingTop: "1cqw" }}>
+            <span style={{ fontStyle: "italic", color: "#e6c89a" }}>Cumulative</span>
+            <span style={{ fontFamily: "'Cormorant Garamond', serif",
+              fontSize: "1.6cqw", fontWeight: 700, color: GOLD_HI }}>{p.cumulativeGpa}</span>
+          </div>
+        )}
+      </div>
+      <div style={{ position: "absolute", bottom: "2.6cqw", left: "5cqw", right: "5cqw",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.8cqw" }}>
+          {qr && <img src={qr} alt="Verify" style={{ width: "5cqw", height: "5cqw", background: "#fff", padding: "0.2cqw" }} />}
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.6cqw",
+            letterSpacing: "0.2em", color: GOLD_HI, lineHeight: 1.7 }}>ON-CHAIN VERIFIED<br />METADATA</div>
+        </div>
+        <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+          fontSize: "0.62cqw", letterSpacing: "0.18em", color: "#e6c89a", lineHeight: 1.7 }}>
+          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
+          <div>ID {p.transcriptId}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
