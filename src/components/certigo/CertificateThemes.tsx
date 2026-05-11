@@ -170,22 +170,55 @@ function GoldSeal({ size = 64, label = "OFFICIAL" }: { size?: number; label?: st
   );
 }
 
-function AuthorityBlock({ ink = "#fff", muted = 0.78 }: { ink?: string; muted?: number }) {
+/** Engraved signature flourish — anonymous, role-based. No personal names. */
+function SignatureFlourish({ color = GOLD, variant = 0 }: { color?: string; variant?: 0 | 1 }) {
+  const path = variant === 0
+    ? "M2 28 C 18 8, 36 44, 58 22 S 96 6, 124 30 C 138 42, 154 18, 168 26"
+    : "M2 30 C 22 14, 40 40, 64 24 C 88 10, 110 36, 132 22 S 162 32, 168 24";
   return (
-    <div style={{ textAlign: "center" }}>
+    <svg viewBox="0 0 170 40" width="100%" height="100%" aria-hidden style={{ display: "block" }}>
+      <path d={path} fill="none" stroke={color} strokeWidth="1.6" strokeLinecap="round" opacity="0.95" />
+      <path d="M14 36 L 26 32 M 40 38 L 60 34" stroke={color} strokeWidth="0.8" opacity="0.55" />
+    </svg>
+  );
+}
+
+function SignaturePillar({ ink, role, refId, variant }: { ink: string; role: string; refId: string; variant: 0 | 1 }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 0 }}>
+      <div style={{ width: "16cqw", height: "2.2cqw" }}>
+        <SignatureFlourish variant={variant} color={GOLD_HI} />
+      </div>
+      <div style={{ width: "16cqw", height: 1, background: ink, opacity: 0.55 }} />
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.6cqw",
+        letterSpacing: "0.32em", textTransform: "uppercase", fontWeight: 700,
+        color: ink, marginTop: "0.5cqw" }}>{role}</div>
+      <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.45cqw",
+        letterSpacing: "0.24em", color: ink, opacity: 0.6, marginTop: "0.2cqw" }}>{refId}</div>
+    </div>
+  );
+}
+
+function AuthorityBlock({ ink = "#fff", muted = 0.78 }: { ink?: string; muted?: number }) {
+  void muted;
+  return (
+    <div style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "end",
+        columnGap: "3cqw", width: "100%", maxWidth: "62cqw" }}>
+        <SignaturePillar ink={ink} role="Registrar" refId="REG · CERTIGO INSTITUTE" variant={0} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4cqw" }}>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+            fontSize: "0.7cqw", letterSpacing: "0.22em", color: GOLD_HI, opacity: 0.9 }}>
+            Veritas · Probatum · Aeternum
+          </div>
+        </div>
+        <SignaturePillar ink={ink} role="Director of Credentialing" refId="DIR · CERTIGO INSTITUTE" variant={1} />
+      </div>
       <div style={{
-        fontFamily: "'Inter', sans-serif", fontSize: "0.55cqw",
+        fontFamily: "'Inter', sans-serif", fontSize: "0.5cqw",
         letterSpacing: "0.36em", textTransform: "uppercase", fontWeight: 700,
-        color: ink, opacity: muted * 0.9,
-      }}>Issued under the authority of</div>
-      <div style={{
-        fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1cqw",
-        letterSpacing: "0.18em", marginTop: "0.3cqw", color: GOLD_HI, fontWeight: 700,
-      }}>CERTIGO INSTITUTE</div>
-      <div style={{
-        fontFamily: "'JetBrains Mono', monospace", fontSize: "0.5cqw",
-        letterSpacing: "0.28em", marginTop: "0.4cqw", color: ink, opacity: muted * 0.7,
-      }}>OFFICIAL · VERIFIED CREDENTIAL</div>
+        color: ink, opacity: 0.7, marginTop: "0.2cqw",
+      }}>Issued under the authority of <span style={{ color: GOLD_HI, letterSpacing: "0.22em" }}>CERTIGO INSTITUTE</span> · Official Verified Credential</div>
     </div>
   );
 }
@@ -282,7 +315,6 @@ function SovereignCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={64} label="VERIFIED" />
             <AuthorityBlock />
           </div>
           <div />
@@ -383,7 +415,6 @@ function ObsidianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={68} label="OBSIDIAN" />
             <AuthorityBlock />
           </div>
           <div />
@@ -476,7 +507,6 @@ function QuantumCert(p: CertigoCertProps) {
           </div>
           <div style={{ display: "flex", justifyContent: "center", gap: "2cqw", alignItems: "end" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-              <GoldSeal size={56} label="QUANTUM" />
               <AuthorityBlock />
             </div>
           </div>
@@ -546,7 +576,6 @@ function ImperialCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={72} label="IMPERIAL" />
             <AuthorityBlock ink="#f4ecd2" />
           </div>
           <div />
@@ -642,7 +671,6 @@ function MeridianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "1.6cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-            <GoldSeal size={60} label="MERIDIAN" />
             <AuthorityBlock ink={NAVY_DEEP} />
           </div>
           <div />
@@ -696,7 +724,6 @@ function MonolithCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={64} label="MONOLITH" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -752,7 +779,6 @@ function AuroraCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={60} label="AURORA" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -806,7 +832,6 @@ function ParchmentCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw", color: NAVY_DEEP }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={64} label="PARCHMENT" />
           <AuthorityBlock ink={NAVY_DEEP} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -867,7 +892,6 @@ function CipherCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={56} label="CIPHER" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -922,7 +946,6 @@ function RegaliaCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={68} label="REGALIA" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
