@@ -224,8 +224,9 @@ function SignatureFlourish({ color = "#0a0a0a", variant = 0 }: { color?: string;
 function SignaturePillar({ ink, role, refId, variant, inkColor }: {
   ink: string; role: string; refId: string; variant: 0 | 1; inkColor?: string;
 }) {
-  // Default ink — deep navy/black for realism. Override per theme via inkColor.
-  const sigColor = inkColor ?? "#0a1226";
+  // On dark backgrounds use warm gold ink; on light backgrounds use deep navy.
+  const isDark = ink === "#fff" || ink.toLowerCase() === "#ffffff";
+  const sigColor = inkColor ?? (isDark ? GOLD_HI : "#0a1226");
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 0 }}>
       <div style={{ width: "18cqw", height: "4.6cqw", marginBottom: "-0.6cqw" }}>
