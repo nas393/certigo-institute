@@ -172,67 +172,102 @@ function GoldSeal({ size = 64, label = "OFFICIAL" }: { size?: number; label?: st
 
 /**
  * Realistic handwritten signature — anonymous, no personal name.
- * Multi-stroke cursive paths that read as authentic ink, not a generic squiggle.
- * Two distinct variants (0/1) so the two pillars don't look identical.
+ * 6 distinct ink-signature variants modeled on real fountain-pen autographs.
+ * Each variant uses multiple overlapping strokes with varying weight and a
+ * sweeping descender/underline tail to read as authentic, not generic.
  */
-function SignatureFlourish({ color = "#0a0a0a", variant = 0 }: { color?: string; variant?: 0 | 1 }) {
-  // Variant 0 — flowing copperplate with a long underline tail
+export type SignatureVariant = 0 | 1 | 2 | 3 | 4 | 5;
+export const SIGNATURE_VARIANTS: SignatureVariant[] = [0, 1, 2, 3, 4, 5];
+
+function SignatureFlourish({ color = "#0a1a4a", variant = 0 }: { color?: string; variant?: SignatureVariant }) {
+  const stroke = (d: string, w = 2.4, op = 1) => (
+    <path d={d} fill="none" stroke={color} strokeWidth={w} strokeLinecap="round"
+      strokeLinejoin="round" opacity={op} />
+  );
+
+  // V0 — Bold executive (modeled on the uploaded reference: tall capital,
+  //       crossing loop, long sweeping tail dash).
   const v0 = (
     <>
-      {/* main body — looped cursive */}
-      <path
-        d="M6 44 C 14 30, 22 18, 30 24 C 36 28, 32 40, 38 42 C 46 44, 50 28, 58 26 C 66 24, 64 40, 72 42
-           C 80 44, 86 28, 94 30 C 102 32, 100 44, 110 44 C 122 44, 128 26, 140 30
-           C 152 34, 156 22, 168 26 C 178 30, 184 22, 194 26"
-        fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"
-      />
-      {/* capital initial flourish */}
-      <path d="M8 44 C 4 30, 12 14, 26 18 C 32 20, 30 30, 22 32"
-        fill="none" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
-      {/* underline tail */}
-      <path d="M14 56 C 60 50, 130 50, 196 54"
-        fill="none" stroke={color} strokeWidth="1.4" strokeLinecap="round" opacity="0.85" />
-      {/* dot accent */}
-      <circle cx="120" cy="20" r="1.2" fill={color} opacity="0.85" />
+      {stroke("M10 50 C 14 24, 28 12, 40 22 C 50 30, 38 44, 26 40 C 18 38, 22 30, 30 32", 3.2)}
+      {stroke("M30 44 C 46 30, 60 56, 78 38 C 92 24, 96 50, 116 36 C 134 24, 140 52, 162 36 C 178 24, 188 42, 198 30", 2.8)}
+      {stroke("M120 14 C 150 12, 180 22, 200 18", 1.6, 0.85)}
+      {stroke("M198 32 C 218 28, 244 30, 270 28", 2.0, 0.95)}
+      {stroke("M40 60 C 90 56, 170 56, 240 58", 1.2, 0.55)}
     </>
   );
-  // Variant 1 — sharper executive signature with cross-stroke
+
+  // V1 — Flowing copperplate with looped tail
   const v1 = (
     <>
-      <path
-        d="M4 46 C 16 26, 28 36, 36 30 C 44 24, 42 42, 52 42 C 62 42, 60 24, 72 28
-           C 84 32, 80 44, 92 42 C 104 40, 100 24, 114 28 C 128 32, 124 46, 138 42
-           C 152 38, 156 22, 170 26 C 184 30, 188 38, 200 32"
-        fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"
-      />
-      {/* sweeping cross-bar (like a t-bar through the signature) */}
-      <path d="M22 24 C 60 18, 130 18, 184 22"
-        fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" opacity="0.9" />
-      {/* descender loop */}
-      <path d="M150 42 C 156 54, 140 60, 130 54 C 124 50, 130 46, 138 48"
-        fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+      {stroke("M8 44 C 6 26, 18 14, 32 18 C 40 22, 38 36, 28 38 C 22 38, 22 30, 28 30", 2.6)}
+      {stroke("M28 36 C 44 30, 52 50, 70 40 C 86 30, 86 50, 104 40 C 122 30, 122 50, 142 40 C 160 30, 168 48, 188 38 C 204 30, 220 40, 250 32", 2.2)}
+      {stroke("M250 34 C 258 50, 232 60, 218 50 C 208 44, 220 38, 232 42", 2.0)}
+      {stroke("M16 56 C 80 52, 180 52, 248 54", 1.2, 0.6)}
     </>
   );
+
+  // V2 — Slanted diplomat with double-loop ascender
+  const v2 = (
+    <>
+      {stroke("M6 50 C 18 18, 34 14, 44 26 C 50 34, 38 42, 30 38 C 24 36, 28 28, 36 30", 2.6)}
+      {stroke("M40 36 C 60 22, 76 50, 96 36 C 116 22, 124 50, 146 36 C 168 22, 178 48, 200 36 C 218 26, 232 40, 252 30", 2.4)}
+      {stroke("M10 22 C 60 14, 200 14, 256 22", 1.2, 0.75)}
+      {stroke("M252 32 C 268 36, 280 30, 268 24", 1.8)}
+    </>
+  );
+
+  // V3 — Sharp angular CEO mark
+  const v3 = (
+    <>
+      {stroke("M8 52 L 28 14 L 38 50 L 22 32 L 50 32", 2.8)}
+      {stroke("M50 38 C 64 18, 78 50, 96 36 C 116 22, 122 50, 140 38 C 160 26, 172 50, 192 36 C 210 24, 222 46, 240 32", 2.4)}
+      {stroke("M240 32 C 256 28, 270 36, 280 30", 2.0)}
+      {stroke("M20 60 C 80 58, 180 58, 250 60", 1.0, 0.5)}
+    </>
+  );
+
+  // V4 — Continuous loop signature, single stroke feel
+  const v4 = (
+    <>
+      {stroke("M8 40 C 18 14, 36 14, 36 36 C 36 52, 18 50, 22 36 C 26 24, 50 22, 56 38 C 60 50, 76 50, 82 36 C 88 22, 108 22, 114 36 C 120 50, 142 50, 146 36 C 150 22, 174 22, 180 36 C 186 50, 208 50, 216 36 C 226 20, 252 26, 268 30", 2.6)}
+      {stroke("M268 30 C 282 32, 284 44, 268 46", 2.0)}
+      {stroke("M40 56 C 110 52, 220 52, 260 56", 1.2, 0.55)}
+    </>
+  );
+
+  // V5 — Elegant minister, low descender + dot
+  const v5 = (
+    <>
+      {stroke("M6 46 C 12 22, 26 16, 36 26 C 44 34, 32 44, 24 38", 2.8)}
+      {stroke("M30 38 C 46 26, 56 50, 74 36 C 92 22, 100 48, 118 36 C 138 22, 148 48, 168 36 C 188 24, 200 46, 218 34 C 232 26, 246 36, 260 30", 2.4)}
+      {stroke("M170 38 C 174 56, 152 64, 138 56 C 128 50, 142 44, 154 48", 2.0)}
+      <circle cx="252" cy="20" r="1.6" fill={color} />
+      {stroke("M20 58 C 90 54, 180 54, 250 56", 1.1, 0.55)}
+    </>
+  );
+
+  const all = [v0, v1, v2, v3, v4, v5];
   return (
-    <svg viewBox="0 0 210 64" width="100%" height="100%" aria-hidden
-      style={{ display: "block", filter: "drop-shadow(0 0.5px 0 rgba(0,0,0,0.25))" }}>
-      {variant === 0 ? v0 : v1}
+    <svg viewBox="0 0 290 70" width="100%" height="100%" aria-hidden preserveAspectRatio="xMidYMid meet"
+      style={{ display: "block", filter: "drop-shadow(0 0.4px 0 rgba(0,0,0,0.35))" }}>
+      {all[variant]}
     </svg>
   );
 }
 
 function SignaturePillar({ ink, role, refId, variant, inkColor }: {
-  ink: string; role: string; refId: string; variant: 0 | 1; inkColor?: string;
+  ink: string; role: string; refId: string; variant: SignatureVariant; inkColor?: string;
 }) {
   // On dark backgrounds use warm gold ink; on light backgrounds use deep navy.
   const isDark = ink === "#fff" || ink.toLowerCase() === "#ffffff";
-  const sigColor = inkColor ?? (isDark ? GOLD_HI : "#0a1226");
+  const sigColor = inkColor ?? (isDark ? GOLD_HI : "#0b1a4a");
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 0 }}>
-      <div style={{ width: "18cqw", height: "4.6cqw", marginBottom: "-0.6cqw" }}>
+      <div style={{ width: "20cqw", height: "5.4cqw", marginBottom: "-1cqw" }}>
         <SignatureFlourish variant={variant} color={sigColor} />
       </div>
-      <div style={{ width: "18cqw", height: 1, background: ink, opacity: 0.55 }} />
+      <div style={{ width: "20cqw", height: 1, background: ink, opacity: 0.55 }} />
       <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.62cqw",
         letterSpacing: "0.34em", textTransform: "uppercase", fontWeight: 700,
         color: ink, marginTop: "0.6cqw" }}>{role}</div>
@@ -242,22 +277,128 @@ function SignaturePillar({ ink, role, refId, variant, inkColor }: {
   );
 }
 
-function AuthorityBlock({ ink = "#fff", inkColor }: { ink?: string; muted?: number; inkColor?: string }) {
+/**
+ * Electronic stamp — replaces wax seal. Renders a tilted, slightly distressed
+ * digital validation stamp ("CERTIFIED · CERTIGO INSTITUTE · ID · DATE"),
+ * styled like an inked rubber stamp but unmistakably digital (mono type +
+ * verification hash bar). Three variants.
+ */
+export type StampVariant = 0 | 1 | 2;
+export const STAMP_VARIANTS: StampVariant[] = [0, 1, 2];
+
+function ElectronicStamp({
+  variant = 0, certificateId = "CERT-XXXXXX", issueDate = new Date().toISOString(),
+  color = GOLD_HI, size = 8,
+}: {
+  variant?: StampVariant; certificateId?: string; issueDate?: string;
+  color?: string; size?: number;
+}) {
+  const date = new Date(issueDate).toISOString().slice(0, 10);
+  // angle + style per variant
+  const tilt = variant === 0 ? -8 : variant === 1 ? -3 : -12;
+
+  if (variant === 1) {
+    // CIRCULAR digital stamp
+    return (
+      <div style={{ width: `${size}cqw`, height: `${size}cqw`, transform: `rotate(${tilt}deg)`,
+        position: "relative", color }}>
+        <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden>
+          <circle cx="50" cy="50" r="46" fill="none" stroke={color} strokeWidth="2" />
+          <circle cx="50" cy="50" r="40" fill="none" stroke={color} strokeWidth="0.6" opacity="0.7" />
+          <circle cx="50" cy="50" r="22" fill="none" stroke={color} strokeWidth="1" />
+          <defs>
+            <path id="es-top" d="M 50 50 m -34 0 a 34 34 0 1 1 68 0" />
+            <path id="es-bot" d="M 50 50 m -34 0 a 34 34 0 1 0 68 0" />
+          </defs>
+          <text fill={color} fontFamily="'JetBrains Mono', monospace" fontSize="6.6"
+            letterSpacing="3" fontWeight="700">
+            <textPath href="#es-top" startOffset="50%" textAnchor="middle">CERTIGO · INSTITUTE</textPath>
+          </text>
+          <text fill={color} fontFamily="'JetBrains Mono', monospace" fontSize="5.6"
+            letterSpacing="2" opacity="0.85">
+            <textPath href="#es-bot" startOffset="50%" textAnchor="middle">VERIFIED · ON-CHAIN</textPath>
+          </text>
+          <text x="50" y="46" textAnchor="middle" fontFamily="'Cormorant Garamond', serif"
+            fontSize="14" fontWeight="700" fill={color}>e✓</text>
+          <text x="50" y="58" textAnchor="middle" fontFamily="'JetBrains Mono', monospace"
+            fontSize="5.4" letterSpacing="1.5" fill={color}>{date}</text>
+        </svg>
+      </div>
+    );
+  }
+
+  if (variant === 2) {
+    // HEXAGONAL token stamp
+    return (
+      <div style={{ width: `${size + 1}cqw`, height: `${size}cqw`, transform: `rotate(${tilt}deg)`,
+        position: "relative", color }}>
+        <svg viewBox="0 0 120 100" width="100%" height="100%" aria-hidden>
+          <polygon points="30,4 90,4 116,50 90,96 30,96 4,50" fill="none" stroke={color} strokeWidth="2" />
+          <polygon points="34,10 86,10 108,50 86,90 34,90 12,50" fill="none" stroke={color} strokeWidth="0.6" opacity="0.6" />
+          <text x="60" y="36" textAnchor="middle" fontFamily="'JetBrains Mono', monospace"
+            fontSize="8" letterSpacing="2" fontWeight="700" fill={color}>CERTIFIED</text>
+          <text x="60" y="54" textAnchor="middle" fontFamily="'Cormorant Garamond', serif"
+            fontSize="14" fontWeight="700" fontStyle="italic" fill={color}>e-Seal</text>
+          <text x="60" y="70" textAnchor="middle" fontFamily="'JetBrains Mono', monospace"
+            fontSize="6" letterSpacing="1.4" fill={color}>{date}</text>
+          <text x="60" y="82" textAnchor="middle" fontFamily="'JetBrains Mono', monospace"
+            fontSize="5" letterSpacing="1.2" opacity="0.8" fill={color}>{certificateId}</text>
+        </svg>
+      </div>
+    );
+  }
+
+  // Variant 0 — RECTANGULAR rubber-stamp style
+  return (
+    <div style={{
+      transform: `rotate(${tilt}deg)`,
+      border: `2px solid ${color}`, padding: "0.6cqw 1cqw",
+      borderRadius: "0.25cqw", color,
+      fontFamily: "'JetBrains Mono', monospace",
+      display: "inline-flex", flexDirection: "column", alignItems: "center", gap: "0.15cqw",
+      boxShadow: `inset 0 0 0 1px ${color}`,
+    }}>
+      <div style={{ fontSize: "0.7cqw", letterSpacing: "0.5em", fontWeight: 800 }}>CERTIFIED</div>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5cqw" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1.4cqw", fontWeight: 700, lineHeight: 1 }}>CERTIGO</div>
+        <div style={{ width: 1, height: "1.2cqw", background: color, opacity: 0.7 }} />
+        <div style={{ fontSize: "0.55cqw", letterSpacing: "0.3em", lineHeight: 1.3 }}>
+          INSTITUTE<br />e‑SEAL · v1
+        </div>
+      </div>
+      <div style={{ fontSize: "0.5cqw", letterSpacing: "0.22em", opacity: 0.85 }}>
+        {date} · {certificateId}
+      </div>
+    </div>
+  );
+}
+
+function AuthorityBlock({
+  ink = "#fff", inkColor, sigPair = [0, 1], stampVariant = 0,
+  certificateId, issueDate,
+}: {
+  ink?: string; muted?: number; inkColor?: string;
+  sigPair?: [SignatureVariant, SignatureVariant];
+  stampVariant?: StampVariant;
+  certificateId?: string; issueDate?: string;
+}) {
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "end",
-        columnGap: "3cqw", width: "100%", maxWidth: "66cqw" }}>
+        columnGap: "3cqw", width: "100%", maxWidth: "72cqw" }}>
         <SignaturePillar ink={ink} inkColor={inkColor} role="Office of the Registrar"
-          refId="REG · CERTIGO INSTITUTE" variant={0} />
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4cqw" }}>
-          <GoldSeal size={56} label="VERIFIED" />
+          refId="REG · CERTIGO INSTITUTE" variant={sigPair[0]} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5cqw" }}>
+          <ElectronicStamp variant={stampVariant} color={GOLD_HI}
+            certificateId={certificateId ?? "CERT-XXXXXX"} issueDate={issueDate ?? new Date().toISOString()} />
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
             fontSize: "0.7cqw", letterSpacing: "0.22em", color: GOLD_HI, opacity: 0.9 }}>
             Veritas · Probatum · Aeternum
           </div>
         </div>
         <SignaturePillar ink={ink} inkColor={inkColor} role="Director of Credentialing"
-          refId="DIR · CERTIGO INSTITUTE" variant={1} />
+          refId="DIR · CERTIGO INSTITUTE" variant={sigPair[1]} />
       </div>
       <div style={{
         fontFamily: "'Inter', sans-serif", fontSize: "0.52cqw",
@@ -267,6 +408,9 @@ function AuthorityBlock({ ink = "#fff", inkColor }: { ink?: string; muted?: numb
     </div>
   );
 }
+
+// Re-export atoms so the showcase route can build option grids.
+export { SignatureFlourish, ElectronicStamp, AuthorityBlock };
 
 /* ---------- master switch ---------- */
 
