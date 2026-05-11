@@ -6,7 +6,12 @@ export type CertigoTranscriptTheme =
   | "dossier"     // monochrome paper, classified-file vibe
   | "telemetry"   // dark-mode console / data dashboard
   | "codex"       // minimal serif, editorial / law-firm
-  | "audit";      // corporate report with progress bars
+  | "audit"       // corporate report with progress bars
+  | "monolith"    // pure black + gold rails
+  | "aurora"      // navy + gold halo minimal
+  | "parchment"   // ivory + classical navy
+  | "cipher"      // navy + binary data background
+  | "regalia";    // burgundy + heraldic gold
 
 export const CERTIGO_TRANSCRIPT_THEMES: { key: CertigoTranscriptTheme; label: string; hint: string }[] = [
   { key: "ledger",    label: "Ledger",    hint: "Navy header · academic table" },
@@ -14,6 +19,11 @@ export const CERTIGO_TRANSCRIPT_THEMES: { key: CertigoTranscriptTheme; label: st
   { key: "telemetry", label: "Telemetry", hint: "Dark console · live metrics" },
   { key: "codex",     label: "Codex",     hint: "Editorial serif · minimal" },
   { key: "audit",     label: "Audit",     hint: "Corporate report · bars" },
+  { key: "monolith",  label: "Monolith",  hint: "Pure black · gold rails" },
+  { key: "aurora",    label: "Aurora",    hint: "Navy · gold halo · minimal" },
+  { key: "parchment", label: "Parchment", hint: "Ivory · classical navy" },
+  { key: "cipher",    label: "Cipher",    hint: "Navy · binary data" },
+  { key: "regalia",   label: "Regalia",   hint: "Burgundy · heraldic gold" },
 ];
 
 export interface TranscriptModule {
@@ -58,6 +68,11 @@ export function CertigoTranscript(p: CertigoTranscriptProps) {
     case "telemetry": return <TelemetryTr {...p} />;
     case "codex":     return <CodexTr {...p} />;
     case "audit":     return <AuditTr {...p} />;
+    case "monolith":  return <MonolithTr {...p} />;
+    case "aurora":    return <AuroraTr {...p} />;
+    case "parchment": return <ParchmentTr {...p} />;
+    case "cipher":    return <CipherTr {...p} />;
+    case "regalia":   return <RegaliaTr {...p} />;
     case "ledger":
     default:          return <LedgerTr {...p} />;
   }
