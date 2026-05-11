@@ -170,19 +170,22 @@ function GoldSeal({ size = 64, label = "OFFICIAL" }: { size?: number; label?: st
   );
 }
 
-function SignatureLine({ name, role, ink = "#fff" }: { name: string; role: string; ink?: string }) {
+function AuthorityBlock({ ink = "#fff", muted = 0.78 }: { ink?: string; muted?: number }) {
   return (
-    <div style={{ textAlign: "center", minWidth: "9rem" }}>
+    <div style={{ textAlign: "center" }}>
       <div style={{
-        fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
-        fontSize: "1.05rem", color: ink, opacity: 0.9, lineHeight: 1,
-      }}>{name}</div>
-      <div style={{ height: 1, background: ink, opacity: 0.45, marginTop: 6 }} />
+        fontFamily: "'Inter', sans-serif", fontSize: "0.55cqw",
+        letterSpacing: "0.36em", textTransform: "uppercase", fontWeight: 700,
+        color: ink, opacity: muted * 0.9,
+      }}>Issued under the authority of</div>
       <div style={{
-        fontFamily: "'Inter', sans-serif", fontSize: "0.55rem",
-        letterSpacing: "0.28em", textTransform: "uppercase", fontWeight: 700,
-        color: ink, opacity: 0.7, marginTop: 6,
-      }}>{role}</div>
+        fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1cqw",
+        letterSpacing: "0.18em", marginTop: "0.3cqw", color: GOLD_HI, fontWeight: 700,
+      }}>CERTIGO INSTITUTE</div>
+      <div style={{
+        fontFamily: "'JetBrains Mono', monospace", fontSize: "0.5cqw",
+        letterSpacing: "0.28em", marginTop: "0.4cqw", color: ink, opacity: muted * 0.7,
+      }}>OFFICIAL · VERIFIED CREDENTIAL</div>
     </div>
   );
 }
