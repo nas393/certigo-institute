@@ -207,7 +207,6 @@ function AuthorityBlock({ ink = "#fff", muted = 0.78 }: { ink?: string; muted?: 
         columnGap: "3cqw", width: "100%", maxWidth: "62cqw" }}>
         <SignaturePillar ink={ink} role="Registrar" refId="REG · CERTIGO INSTITUTE" variant={0} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4cqw" }}>
-          <GoldSeal size={56} label="VERIFIED" />
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
             fontSize: "0.7cqw", letterSpacing: "0.22em", color: GOLD_HI, opacity: 0.9 }}>
             Veritas · Probatum · Aeternum
@@ -316,7 +315,6 @@ function SovereignCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={64} label="VERIFIED" />
             <AuthorityBlock />
           </div>
           <div />
@@ -417,7 +415,6 @@ function ObsidianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={68} label="OBSIDIAN" />
             <AuthorityBlock />
           </div>
           <div />
@@ -510,7 +507,6 @@ function QuantumCert(p: CertigoCertProps) {
           </div>
           <div style={{ display: "flex", justifyContent: "center", gap: "2cqw", alignItems: "end" }}>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-              <GoldSeal size={56} label="QUANTUM" />
               <AuthorityBlock />
             </div>
           </div>
@@ -580,7 +576,6 @@ function ImperialCert(p: CertigoCertProps) {
           alignItems: "end", gap: "2cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-            <GoldSeal size={72} label="IMPERIAL" />
             <AuthorityBlock ink="#f4ecd2" />
           </div>
           <div />
@@ -676,7 +671,6 @@ function MeridianCert(p: CertigoCertProps) {
           alignItems: "end", gap: "1.6cqw" }}>
           <div />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.6cqw" }}>
-            <GoldSeal size={60} label="MERIDIAN" />
             <AuthorityBlock ink={NAVY_DEEP} />
           </div>
           <div />
@@ -730,7 +724,6 @@ function MonolithCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={64} label="MONOLITH" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -786,7 +779,6 @@ function AuroraCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={60} label="AURORA" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -840,7 +832,6 @@ function ParchmentCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw", color: NAVY_DEEP }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={64} label="PARCHMENT" />
           <AuthorityBlock ink={NAVY_DEEP} />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -901,7 +892,6 @@ function CipherCert(p: CertigoCertProps) {
           letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={56} label="CIPHER" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
@@ -956,7 +946,6 @@ function RegaliaCert(p: CertigoCertProps) {
           letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
         <div style={{ flex: 1 }} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
-          <GoldSeal size={68} label="REGALIA" />
           <AuthorityBlock />
         </div>
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
