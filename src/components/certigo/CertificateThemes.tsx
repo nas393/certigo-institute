@@ -170,54 +170,98 @@ function GoldSeal({ size = 64, label = "OFFICIAL" }: { size?: number; label?: st
   );
 }
 
-/** Engraved signature flourish — anonymous, role-based. No personal names. */
-function SignatureFlourish({ color = GOLD, variant = 0 }: { color?: string; variant?: 0 | 1 }) {
-  const path = variant === 0
-    ? "M2 28 C 18 8, 36 44, 58 22 S 96 6, 124 30 C 138 42, 154 18, 168 26"
-    : "M2 30 C 22 14, 40 40, 64 24 C 88 10, 110 36, 132 22 S 162 32, 168 24";
+/**
+ * Realistic handwritten signature — anonymous, no personal name.
+ * Multi-stroke cursive paths that read as authentic ink, not a generic squiggle.
+ * Two distinct variants (0/1) so the two pillars don't look identical.
+ */
+function SignatureFlourish({ color = "#0a0a0a", variant = 0 }: { color?: string; variant?: 0 | 1 }) {
+  // Variant 0 — flowing copperplate with a long underline tail
+  const v0 = (
+    <>
+      {/* main body — looped cursive */}
+      <path
+        d="M6 44 C 14 30, 22 18, 30 24 C 36 28, 32 40, 38 42 C 46 44, 50 28, 58 26 C 66 24, 64 40, 72 42
+           C 80 44, 86 28, 94 30 C 102 32, 100 44, 110 44 C 122 44, 128 26, 140 30
+           C 152 34, 156 22, 168 26 C 178 30, 184 22, 194 26"
+        fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"
+      />
+      {/* capital initial flourish */}
+      <path d="M8 44 C 4 30, 12 14, 26 18 C 32 20, 30 30, 22 32"
+        fill="none" stroke={color} strokeWidth="2.4" strokeLinecap="round" />
+      {/* underline tail */}
+      <path d="M14 56 C 60 50, 130 50, 196 54"
+        fill="none" stroke={color} strokeWidth="1.4" strokeLinecap="round" opacity="0.85" />
+      {/* dot accent */}
+      <circle cx="120" cy="20" r="1.2" fill={color} opacity="0.85" />
+    </>
+  );
+  // Variant 1 — sharper executive signature with cross-stroke
+  const v1 = (
+    <>
+      <path
+        d="M4 46 C 16 26, 28 36, 36 30 C 44 24, 42 42, 52 42 C 62 42, 60 24, 72 28
+           C 84 32, 80 44, 92 42 C 104 40, 100 24, 114 28 C 128 32, 124 46, 138 42
+           C 152 38, 156 22, 170 26 C 184 30, 188 38, 200 32"
+        fill="none" stroke={color} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"
+      />
+      {/* sweeping cross-bar (like a t-bar through the signature) */}
+      <path d="M22 24 C 60 18, 130 18, 184 22"
+        fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" opacity="0.9" />
+      {/* descender loop */}
+      <path d="M150 42 C 156 54, 140 60, 130 54 C 124 50, 130 46, 138 48"
+        fill="none" stroke={color} strokeWidth="1.8" strokeLinecap="round" />
+    </>
+  );
   return (
-    <svg viewBox="0 0 170 40" width="100%" height="100%" aria-hidden style={{ display: "block" }}>
-      <path d={path} fill="none" stroke={color} strokeWidth="1.6" strokeLinecap="round" opacity="0.95" />
-      <path d="M14 36 L 26 32 M 40 38 L 60 34" stroke={color} strokeWidth="0.8" opacity="0.55" />
+    <svg viewBox="0 0 210 64" width="100%" height="100%" aria-hidden
+      style={{ display: "block", filter: "drop-shadow(0 0.5px 0 rgba(0,0,0,0.25))" }}>
+      {variant === 0 ? v0 : v1}
     </svg>
   );
 }
 
-function SignaturePillar({ ink, role, refId, variant }: { ink: string; role: string; refId: string; variant: 0 | 1 }) {
+function SignaturePillar({ ink, role, refId, variant, inkColor }: {
+  ink: string; role: string; refId: string; variant: 0 | 1; inkColor?: string;
+}) {
+  // Default ink — deep navy/black for realism. Override per theme via inkColor.
+  const sigColor = inkColor ?? "#0a1226";
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", minWidth: 0 }}>
-      <div style={{ width: "16cqw", height: "2.2cqw" }}>
-        <SignatureFlourish variant={variant} color={GOLD_HI} />
+      <div style={{ width: "18cqw", height: "4.6cqw", marginBottom: "-0.6cqw" }}>
+        <SignatureFlourish variant={variant} color={sigColor} />
       </div>
-      <div style={{ width: "16cqw", height: 1, background: ink, opacity: 0.55 }} />
-      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.6cqw",
-        letterSpacing: "0.32em", textTransform: "uppercase", fontWeight: 700,
-        color: ink, marginTop: "0.5cqw" }}>{role}</div>
-      <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.45cqw",
-        letterSpacing: "0.24em", color: ink, opacity: 0.6, marginTop: "0.2cqw" }}>{refId}</div>
+      <div style={{ width: "18cqw", height: 1, background: ink, opacity: 0.55 }} />
+      <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.62cqw",
+        letterSpacing: "0.34em", textTransform: "uppercase", fontWeight: 700,
+        color: ink, marginTop: "0.6cqw" }}>{role}</div>
+      <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.46cqw",
+        letterSpacing: "0.24em", color: ink, opacity: 0.55, marginTop: "0.25cqw" }}>{refId}</div>
     </div>
   );
 }
 
-function AuthorityBlock({ ink = "#fff", muted = 0.78 }: { ink?: string; muted?: number }) {
-  void muted;
+function AuthorityBlock({ ink = "#fff", inkColor }: { ink?: string; muted?: number; inkColor?: string }) {
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
       <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "end",
-        columnGap: "3cqw", width: "100%", maxWidth: "62cqw" }}>
-        <SignaturePillar ink={ink} role="Registrar" refId="REG · CERTIGO INSTITUTE" variant={0} />
+        columnGap: "3cqw", width: "100%", maxWidth: "66cqw" }}>
+        <SignaturePillar ink={ink} inkColor={inkColor} role="Office of the Registrar"
+          refId="REG · CERTIGO INSTITUTE" variant={0} />
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.4cqw" }}>
+          <GoldSeal size={56} label="VERIFIED" />
           <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
             fontSize: "0.7cqw", letterSpacing: "0.22em", color: GOLD_HI, opacity: 0.9 }}>
             Veritas · Probatum · Aeternum
           </div>
         </div>
-        <SignaturePillar ink={ink} role="Director of Credentialing" refId="DIR · CERTIGO INSTITUTE" variant={1} />
+        <SignaturePillar ink={ink} inkColor={inkColor} role="Director of Credentialing"
+          refId="DIR · CERTIGO INSTITUTE" variant={1} />
       </div>
       <div style={{
-        fontFamily: "'Inter', sans-serif", fontSize: "0.5cqw",
+        fontFamily: "'Inter', sans-serif", fontSize: "0.52cqw",
         letterSpacing: "0.36em", textTransform: "uppercase", fontWeight: 700,
-        color: ink, opacity: 0.7, marginTop: "0.2cqw",
+        color: ink, opacity: 0.72, marginTop: "0.2cqw",
       }}>Issued under the authority of <span style={{ color: GOLD_HI, letterSpacing: "0.22em" }}>CERTIGO INSTITUTE</span> · Official Verified Credential</div>
     </div>
   );
