@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, GraduationCap, Building2, User, Sparkles } from "lucide-react";
+import { CheckCircle2, Building2, User, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
@@ -27,31 +27,77 @@ type Tier = {
   highlight?: boolean;
 };
 
-const trainingTiers: Tier[] = [
-  { name: "Academy Essential", price: "$129", per: "/month", desc: "For independent academies and trainers.",
-    feats: ["Up to 30 credentials/month", "Certificate studio", "Verification pages", "Learner profiles", "Analytics"], cta: "Start free trial", to: "/auth" },
-  { name: "Academy Professional", price: "$349", per: "/month", desc: "For growing training providers.",
-    feats: ["Up to 120 credentials/month", "Team workspace (5 users)", "Advanced analytics", "Priority support", "Advanced branding"], cta: "Start free trial", to: "/auth", highlight: true },
-  { name: "Academy Signature", price: "$799", per: "/month", desc: "For established academies at scale.",
-    feats: ["Up to 350 credentials/month", "White-label certificates", "Custom verification domain", "API access", "Roles & permissions", "Dedicated onboarding"], cta: "Start free trial", to: "/auth" },
-  { name: "Enterprise", price: "Custom", desc: "Unlimited issuance, SSO, DPA, SLA.",
-    feats: ["Unlimited credentials", "SSO & SCIM", "Procurement & DPA", "Dedicated CSM"], cta: "Contact sales", to: "/contact" },
-];
-
-const hrTiers: Tier[] = [
-  { name: "Team Credentials", price: "$199", per: "/month", desc: "For HR teams getting started.",
-    feats: ["Up to 50 employees / learners", "Internal training credentials", "Verification pages", "Manager analytics"], cta: "Start free trial", to: "/auth" },
-  { name: "Business Credentials", price: "$499", per: "/month", desc: "For mid-market HR organizations.",
-    feats: ["Up to 200 employees / learners", "Workforce analytics", "SSO ready", "Priority support"], cta: "Start free trial", to: "/auth", highlight: true },
-  { name: "Enterprise Workforce", price: "Custom", desc: "Global rollouts and HRIS integrations.",
-    feats: ["Unlimited employees", "HRIS / ATS integrations", "Regional data residency", "Dedicated CSM"], cta: "Contact sales", to: "/contact" },
-];
-
+// Pay-per-certificate pricing. Designed for two audiences:
+// 1) Individual job seekers building a verified credential portfolio
+// 2) HR, L&D and Academic teams issuing credentials in cohorts
 const individualTiers: Tier[] = [
-  { name: "Free Profile", price: "$0", per: "", desc: "Claim and share your credentials.",
-    feats: ["Public credential profile", "Share via link or QR", "Lifetime access"], cta: "Create free profile", to: "/auth" },
-  { name: "Verified Professional", price: "$8", per: "/month", desc: "Or $79/year — billed annually.",
-    feats: ["Verified badge", "Portfolio page", "Custom profile URL", "Career analytics", "Featured in profile search"], cta: "Get verified", to: "/auth", highlight: true },
+  { name: "Starter", price: "$0", desc: "Claim your verified profile — try a sample credential.",
+    feats: ["1 sample credential", "Public verification page", "Shareable link & QR", "Lifetime access"],
+    cta: "Create free profile", to: "/auth" },
+  { name: "Career Pack", price: "$49", per: "one-time",
+    desc: "5 verified certificates. Perfect for job seekers building a portfolio.",
+    feats: [
+      "5 verified certificates ($9.80 each)",
+      "Premium certificate templates",
+      "Public profile + custom URL",
+      "LinkedIn-ready share kit",
+      "Lifetime verification",
+    ],
+    cta: "Get Career Pack", to: "/auth", highlight: true },
+  { name: "Pro Portfolio", price: "$89", per: "one-time",
+    desc: "10 certificates + verified badge for serious career builders.",
+    feats: [
+      "10 verified certificates ($8.90 each)",
+      "Verified Professional badge",
+      "Featured in profile search",
+      "Career analytics dashboard",
+      "Priority support",
+    ],
+    cta: "Go Pro", to: "/auth" },
+];
+
+const teamTiers: Tier[] = [
+  { name: "Team Starter", price: "$99", per: "one-time",
+    desc: "12 credentials. Best for small HR or training pilots.",
+    feats: [
+      "12 verified credentials ($8.25 each)",
+      "Team workspace (3 admins)",
+      "Branded certificates",
+      "Bulk issuance via CSV",
+      "Verification pages",
+    ],
+    cta: "Start with Team", to: "/auth" },
+  { name: "Team Growth", price: "$349", per: "one-time",
+    desc: "50 credentials for HR, L&D and academic cohorts.",
+    feats: [
+      "50 verified credentials ($6.98 each)",
+      "Team workspace (10 admins)",
+      "Advanced branding & templates",
+      "Cohort & program analytics",
+      "Priority support",
+    ],
+    cta: "Choose Growth", to: "/auth", highlight: true },
+  { name: "Team Scale", price: "$799", per: "one-time",
+    desc: "150 credentials for academies and L&D departments at scale.",
+    feats: [
+      "150 verified credentials ($5.33 each)",
+      "White-label certificates",
+      "Custom verification domain",
+      "API access & integrations",
+      "Roles & permissions",
+      "Dedicated onboarding",
+    ],
+    cta: "Choose Scale", to: "/auth" },
+  { name: "Enterprise", price: "Custom",
+    desc: "Unlimited issuance, SSO, DPA, SLA — for global rollouts.",
+    feats: [
+      "Volume pricing under $4 / credential",
+      "SSO & SCIM",
+      "HRIS / LMS integrations",
+      "Procurement, DPA & regional residency",
+      "Dedicated CSM",
+    ],
+    cta: "Contact sales", to: "/contact" },
 ];
 
 function TierCard({ t }: { t: Tier }) {
@@ -87,7 +133,7 @@ function TierCard({ t }: { t: Tier }) {
 }
 
 function TierBlock({ icon: Icon, eyebrow, title, subtitle, tiers, cols }: {
-  icon: typeof GraduationCap; eyebrow: string; title: string; subtitle: string; tiers: Tier[]; cols: string;
+  icon: typeof Building2; eyebrow: string; title: string; subtitle: string; tiers: Tier[]; cols: string;
 }) {
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-16">
@@ -115,31 +161,25 @@ function PricingPage() {
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-20 pb-4">
         <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--primary)]">Pricing</div>
         <h1 className="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Credential Governance Plans.
+          Pay per certificate. Verified for life.
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-          Transparent USD pricing for organizations and professionals. Start small, scale globally — no credentials are
-          ever locked behind a paywall for the recipient.
+          Simple, transparent USD pricing. Buy credentials in packs — no subscription required.
+          Recipients verify for free, forever.
         </p>
       </section>
 
-      <TierBlock icon={GraduationCap} eyebrow="Training Providers"
-        title="For academies and certification bodies."
-        subtitle="Issue premium, verifiable credentials and grow alumni networks."
-        tiers={trainingTiers}
-        cols="sm:grid-cols-2 lg:grid-cols-4" />
-
-      <TierBlock icon={Building2} eyebrow="Corporate HR"
-        title="For HR and L&D teams."
-        subtitle="Recognize internal training and skills at the speed of your business."
-        tiers={hrTiers}
+      <TierBlock icon={User} eyebrow="For Individuals"
+        title="Job seekers & professionals."
+        subtitle="Build a verified credential portfolio recruiters can trust at a glance."
+        tiers={individualTiers}
         cols="sm:grid-cols-2 lg:grid-cols-3" />
 
-      <TierBlock icon={User} eyebrow="Individuals"
-        title="For professionals building a verified identity."
-        subtitle="Own your credentials for life. Share with one link."
-        tiers={individualTiers}
-        cols="sm:grid-cols-2" />
+      <TierBlock icon={Building2} eyebrow="For Teams"
+        title="HR, L&D and Academic teams."
+        subtitle="Issue verifiable credentials to employees, learners and cohorts. Per-certificate pricing scales with you."
+        tiers={teamTiers}
+        cols="sm:grid-cols-2 lg:grid-cols-4" />
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
         <div className="rounded-3xl gradient-hero p-10 text-white shadow-glow sm:p-14">
