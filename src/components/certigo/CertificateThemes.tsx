@@ -35,6 +35,10 @@ export interface CertigoCertProps {
   certificateId: string; // e.g. CERT-WAA-1024
   verifyUrl: string;
   scorePct?: number;
+  /** optional override of the two signature variants used in AuthorityBlock */
+  sigPair?: [SignatureVariant, SignatureVariant];
+  /** optional override of the electronic stamp variant */
+  stampVariant?: StampVariant;
 }
 
 /* ---------- shared atoms ---------- */
