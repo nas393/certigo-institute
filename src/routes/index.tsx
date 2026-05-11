@@ -210,14 +210,13 @@ function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted-foreground">
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
-              Verifiable credentials infrastructure
+              Credential Governance Platform
             </div>
             <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-              Skills you can trust.<br />
-              Credentials you can <span className="gradient-text">verify. Instantly.</span>
+              Credential infrastructure for the <span className="gradient-text">modern workforce.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              CERTIGO. is the global infrastructure for issuing, sharing and verifying digital credentials in seconds.
+              Issue, manage and verify professional credentials with enterprise-grade governance and global verification.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button
@@ -225,19 +224,19 @@ function Hero() {
                 className="gradient-hero text-white border-0 hover:opacity-95 h-12 px-6 text-sm font-semibold shadow-glow"
                 onClick={() => nav({ to: "/auth" })}
               >
-                Start issuing certificates <ArrowRight className="ml-2 h-4 w-4" />
+                Start issuing credentials <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="h-12 px-6 text-sm font-semibold"
-                onClick={() => nav({ to: "/verify" })}
+                onClick={() => nav({ to: "/u/$handle", params: { handle: "demo-professional" } })}
               >
-                Verify a credential
+                View live demo credential
               </Button>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
-              Built for training providers, companies and global talent.
+              Used by training providers and corporate HR teams worldwide.
             </p>
           </div>
 
