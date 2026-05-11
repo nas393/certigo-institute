@@ -19,7 +19,6 @@ import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthRouteImport } from './routes/auth'
@@ -81,11 +80,6 @@ const ProductRoute = ProductRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DashboardRoute = DashboardRouteImport.update({
@@ -156,7 +150,6 @@ export interface FileRoutesByFullPath {
   '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
@@ -181,7 +174,6 @@ export interface FileRoutesByTo {
   '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
@@ -207,7 +199,6 @@ export interface FileRoutesById {
   '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
-  '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
@@ -234,7 +225,6 @@ export interface FileRouteTypes {
     | '/auth'
     | '/contact'
     | '/dashboard'
-    | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
@@ -259,7 +249,6 @@ export interface FileRouteTypes {
     | '/auth'
     | '/contact'
     | '/dashboard'
-    | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
@@ -284,7 +273,6 @@ export interface FileRouteTypes {
     | '/auth'
     | '/contact'
     | '/dashboard'
-    | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
@@ -310,7 +298,6 @@ export interface RootRouteChildren {
   AuthRoute: typeof AuthRoute
   ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
-  PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
@@ -398,13 +385,6 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/dashboard': {
@@ -512,7 +492,6 @@ const rootRouteChildren: RootRouteChildren = {
   AuthRoute: AuthRoute,
   ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
-  PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
@@ -532,13 +511,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
