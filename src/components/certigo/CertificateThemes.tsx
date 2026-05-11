@@ -656,3 +656,289 @@ function MeridianCert(p: CertigoCertProps) {
     </div>
   );
 }
+
+/* ---------- 6. MONOLITH — pure black + gold edge rails ---------- */
+
+function MonolithCert(p: CertigoCertProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1.414/1", containerType: "inline-size", background: "#000",
+      color: "#fff", position: "relative", overflow: "hidden" }} className="w-full shadow-2xl">
+      {/* gold rails */}
+      <div style={{ position: "absolute", top: "1.6cqw", left: 0, right: 0, height: "0.4cqw",
+        background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }} />
+      <div style={{ position: "absolute", bottom: "1.6cqw", left: 0, right: 0, height: "0.4cqw",
+        background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)` }} />
+      <div style={{ position: "absolute", top: "1.6cqw", bottom: "1.6cqw", left: "1.6cqw", width: "1px", background: GOLD, opacity: 0.6 }} />
+      <div style={{ position: "absolute", top: "1.6cqw", bottom: "1.6cqw", right: "1.6cqw", width: "1px", background: GOLD, opacity: 0.6 }} />
+
+      <div style={{ position: "relative", height: "100%", padding: "5cqw 7cqw",
+        display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ width: "8cqw", height: "8cqw" }}><GoldCrest /></div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.7cqw",
+          letterSpacing: "0.5em", color: GOLD, marginTop: "0.8cqw", fontWeight: 700 }}>
+          CERTIGO &nbsp; INSTITUTE
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.4cqw",
+          fontWeight: 600, marginTop: "1.6cqw", letterSpacing: "0.04em" }}>
+          Certificate <span style={{ fontStyle: "italic", color: GOLD }}>of</span> Achievement
+        </div>
+        <div style={{ width: "10cqw", height: 1, background: GOLD, marginTop: "1cqw" }} />
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8cqw",
+          letterSpacing: "0.32em", color: "#bdbdbd", marginTop: "1.6cqw" }}>PRESENTED TO</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontWeight: 700, fontSize: "5.4cqw", color: GOLD_HI, marginTop: "0.4cqw", lineHeight: 1 }}>
+          {p.recipientName}
+        </div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8cqw",
+          letterSpacing: "0.32em", color: "#bdbdbd", marginTop: "1.6cqw" }}>FOR THE COMPLETION OF</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.6cqw", fontWeight: 800,
+          letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+          <GoldSeal size={64} label="MONOLITH" />
+          <AuthorityBlock />
+        </div>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
+          alignItems: "flex-end", marginTop: "1.4cqw" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7cqw" }}>
+            {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw", background: "#fff", padding: "0.2cqw" }} />}
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+              letterSpacing: "0.2em", color: GOLD, lineHeight: 1.6 }}>ON-CHAIN VERIFIED<br />METADATA</div>
+          </div>
+          <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#bdbdbd", lineHeight: 1.7 }}>
+            <div>ISSUED &nbsp; {fmtDate(p.issueDate).toUpperCase()}</div>
+            <div>ID &nbsp; {p.certificateId}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 7. AURORA — navy + sweeping gold halo ---------- */
+
+function AuroraCert(p: CertigoCertProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1.414/1", containerType: "inline-size",
+      background: `linear-gradient(135deg, ${NAVY_DEEP} 0%, #0d1d44 50%, ${NAVY_DEEP} 100%)`,
+      color: "#fff", position: "relative", overflow: "hidden" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", inset: 0, background:
+        `radial-gradient(80% 50% at 50% 0%, rgba(241,214,138,0.35) 0%, transparent 70%),
+         radial-gradient(60% 40% at 100% 100%, rgba(91,140,255,0.25) 0%, transparent 70%)` }} />
+      <div style={{ position: "absolute", inset: "1.6cqw", border: `1px solid ${GOLD}`, opacity: 0.55, borderRadius: "0.4cqw" }} />
+
+      <div style={{ position: "relative", height: "100%", padding: "4cqw 6cqw",
+        display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ width: "8cqw", height: "8cqw" }}><GoldCrest /></div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.7cqw",
+          letterSpacing: "0.45em", color: GOLD_HI, marginTop: "1cqw", fontWeight: 700 }}>
+          CERTIGO INSTITUTE · GLOBAL CREDENTIAL
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.4cqw",
+          fontWeight: 600, marginTop: "1.4cqw" }}>
+          Certificate <span style={{ fontStyle: "italic", color: GOLD_HI }}>of</span> Achievement
+        </div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8cqw",
+          letterSpacing: "0.32em", color: "#cfd6e8", marginTop: "1.4cqw" }}>AWARDED TO</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontWeight: 700, fontSize: "5.4cqw", color: "#fff",
+          marginTop: "0.4cqw", textShadow: "0 0 30px rgba(241,214,138,0.55)" }}>{p.recipientName}</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.8cqw",
+          letterSpacing: "0.32em", color: "#cfd6e8", marginTop: "1.4cqw" }}>HAS COMPLETED</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.55cqw", fontWeight: 800,
+          letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+          <GoldSeal size={60} label="AURORA" />
+          <AuthorityBlock />
+        </div>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
+          alignItems: "flex-end", marginTop: "1.4cqw" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7cqw" }}>
+            {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw", background: "#fff", padding: "0.2cqw", borderRadius: 4 }} />}
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+              letterSpacing: "0.2em", color: GOLD, lineHeight: 1.6 }}>ON-CHAIN VERIFIED</div>
+          </div>
+          <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#cfd6e8", lineHeight: 1.7 }}>
+            <div>ISSUED &nbsp; {fmtDate(p.issueDate).toUpperCase()}</div>
+            <div>ID &nbsp; {p.certificateId}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 8. PARCHMENT — ivory + classical navy + gold ---------- */
+
+function ParchmentCert(p: CertigoCertProps) {
+  const qr = useQR(p.verifyUrl);
+  return (
+    <div style={{ aspectRatio: "1.414/1", containerType: "inline-size",
+      background: "linear-gradient(180deg, #fbf7ec 0%, #f4ecd2 100%)",
+      color: NAVY_DEEP, position: "relative", overflow: "hidden" }} className="w-full shadow-2xl">
+      <div style={{ position: "absolute", inset: "1.4cqw", border: `2.5px solid ${GOLD}` }} />
+      <div style={{ position: "absolute", inset: "2.2cqw", border: `0.6px solid ${GOLD_LO}`, opacity: 0.7 }} />
+      <div style={{ position: "absolute", inset: 0, opacity: 0.06, backgroundImage:
+        "radial-gradient(rgba(0,0,0,0.6) 1px, transparent 1px)", backgroundSize: "4px 4px" }} />
+
+      <div style={{ position: "relative", height: "100%", padding: "5cqw 7cqw",
+        display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ width: "10cqw", height: "10cqw" }}><GoldCrest /></div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.4cqw",
+          fontWeight: 700, letterSpacing: "0.12em", marginTop: "1.4cqw", color: NAVY_DEEP }}>
+          CERTIFICATE
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1.4cqw", marginTop: "0.2cqw", color: GOLD_LO }}>of Achievement</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1cqw", color: "#5a4f2c", marginTop: "1.6cqw" }}>This certifies that</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700,
+          fontSize: "5.4cqw", marginTop: "0.4cqw", lineHeight: 1, color: NAVY_DEEP }}>{p.recipientName}</div>
+        <div style={{ width: "30%", height: 1, background: GOLD_LO, opacity: 0.6, marginTop: "1cqw" }} />
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1cqw", color: "#5a4f2c", marginTop: "1.4cqw" }}>has successfully completed</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.5cqw", fontWeight: 700,
+          letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw", color: NAVY_DEEP }}>{p.courseTitle}</div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+          <GoldSeal size={64} label="PARCHMENT" />
+          <AuthorityBlock ink={NAVY_DEEP} />
+        </div>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
+          alignItems: "flex-end", marginTop: "1.4cqw" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7cqw" }}>
+            {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw" }} />}
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+              letterSpacing: "0.2em", color: GOLD_LO, lineHeight: 1.6 }}>ON-CHAIN VERIFIED METADATA</div>
+          </div>
+          <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#5a4f2c", lineHeight: 1.7 }}>
+            <div>ISSUED &nbsp; {fmtDate(p.issueDate).toUpperCase()}</div>
+            <div>ID &nbsp; {p.certificateId}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 9. CIPHER — navy + binary data pattern ---------- */
+
+function CipherCert(p: CertigoCertProps) {
+  const qr = useQR(p.verifyUrl);
+  // pre-built "binary" rows
+  const rows = Array.from({ length: 26 }, (_, r) =>
+    Array.from({ length: 80 }, (_, c) => ((r * 7 + c * 13) % 5 === 0 ? "1" : "0")).join(" ")
+  );
+  return (
+    <div style={{ aspectRatio: "1.414/1", containerType: "inline-size",
+      background: NAVY_DEEP, color: "#fff", position: "relative", overflow: "hidden" }} className="w-full shadow-2xl">
+      <div aria-hidden style={{ position: "absolute", inset: 0, opacity: 0.13,
+        fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw", color: GOLD,
+        whiteSpace: "pre", lineHeight: 1.4, padding: "2cqw" }}>
+        {rows.join("\n")}
+      </div>
+      <div style={{ position: "absolute", inset: 0, background:
+        `radial-gradient(70% 50% at 50% 40%, rgba(11,26,58,0) 0%, ${NAVY_DEEP} 80%)` }} />
+      <div style={{ position: "absolute", inset: "1.6cqw", border: `1px solid ${GOLD}`, opacity: 0.55 }} />
+
+      <div style={{ position: "relative", height: "100%", padding: "4cqw 6cqw",
+        display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.65cqw",
+          letterSpacing: "0.32em", color: GOLD }}>
+          ● CERTIGO.CIPHER &nbsp;/&nbsp; CRED.SHA256
+        </div>
+        <div style={{ width: "8cqw", height: "8cqw", marginTop: "1cqw" }}><GoldCrest /></div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.2cqw",
+          fontWeight: 600, marginTop: "1.2cqw" }}>Certificate of Achievement</div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.65cqw",
+          letterSpacing: "0.32em", color: "#9fb1d8", marginTop: "1.6cqw" }}>&lt;recipient/&gt;</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontWeight: 700, fontSize: "5cqw", color: GOLD_HI, marginTop: "0.3cqw", lineHeight: 1,
+          textShadow: "0 0 24px rgba(241,214,138,0.4)" }}>{p.recipientName}</div>
+        <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.65cqw",
+          letterSpacing: "0.32em", color: "#9fb1d8", marginTop: "1.4cqw" }}>&lt;course/&gt;</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.55cqw", fontWeight: 800,
+          letterSpacing: "0.06em", textTransform: "uppercase", marginTop: "0.4cqw" }}>{p.courseTitle}</div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+          <GoldSeal size={56} label="CIPHER" />
+          <AuthorityBlock />
+        </div>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
+          alignItems: "flex-end", marginTop: "1.4cqw" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7cqw" }}>
+            {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw", background: "#fff", padding: "0.2cqw" }} />}
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+              letterSpacing: "0.2em", color: GOLD, lineHeight: 1.6 }}>SHA256 · ON-CHAIN<br />METADATA</div>
+          </div>
+          <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#9fb1d8", lineHeight: 1.7 }}>
+            <div>ISSUED &nbsp; {fmtDate(p.issueDate).toUpperCase()}</div>
+            <div>ID &nbsp; {p.certificateId}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 10. REGALIA — burgundy + heraldic gold ---------- */
+
+function RegaliaCert(p: CertigoCertProps) {
+  const qr = useQR(p.verifyUrl);
+  const BURG = "#3a0f17";
+  const BURG_DEEP = "#220609";
+  return (
+    <div style={{ aspectRatio: "1.414/1", containerType: "inline-size",
+      background: `radial-gradient(120% 80% at 50% 0%, ${BURG} 0%, ${BURG_DEEP} 75%)`,
+      color: "#fff", position: "relative", overflow: "hidden" }} className="w-full shadow-2xl">
+      <CircuitryBg color={GOLD} opacity={0.10} />
+      <div style={{ position: "absolute", inset: "1.4cqw", border: `2.5px solid ${GOLD}` }} />
+      <div style={{ position: "absolute", inset: "2.2cqw", border: `0.6px solid ${GOLD}`, opacity: 0.55 }} />
+
+      <div style={{ position: "relative", height: "100%", padding: "5cqw 7cqw",
+        display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <div style={{ width: "10cqw", height: "10cqw" }}><GoldCrest /></div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "3.4cqw",
+          fontWeight: 700, letterSpacing: "0.14em", marginTop: "1.4cqw", color: GOLD_HI }}>
+          CERTIFICATE
+        </div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1.4cqw", marginTop: "0.2cqw", color: GOLD }}>of High Achievement</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1cqw", color: "#e6c89a", marginTop: "1.8cqw" }}>conferred upon</div>
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 700,
+          fontSize: "5.6cqw", color: "#fff8e2", marginTop: "0.4cqw", lineHeight: 1 }}>{p.recipientName}</div>
+        <div style={{ width: "26%", height: 1, background: GOLD, opacity: 0.6, marginTop: "1cqw" }} />
+        <div style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic",
+          fontSize: "1cqw", color: "#e6c89a", marginTop: "1.4cqw" }}>in recognition of completing</div>
+        <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.55cqw", fontWeight: 700,
+          letterSpacing: "0.08em", textTransform: "uppercase", marginTop: "0.5cqw" }}>{p.courseTitle}</div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.8cqw" }}>
+          <GoldSeal size={68} label="REGALIA" />
+          <AuthorityBlock />
+        </div>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between",
+          alignItems: "flex-end", marginTop: "1.4cqw" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.7cqw" }}>
+            {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw", background: "#fff", padding: "0.2cqw" }} />}
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+              letterSpacing: "0.2em", color: GOLD, lineHeight: 1.6 }}>ON-CHAIN VERIFIED<br />METADATA</div>
+          </div>
+          <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#e6c89a", lineHeight: 1.7 }}>
+            <div>ISSUED &nbsp; {fmtDate(p.issueDate).toUpperCase()}</div>
+            <div>ID &nbsp; {p.certificateId}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
