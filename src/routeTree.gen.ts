@@ -14,6 +14,7 @@ import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
+import { Route as ShowcaseRouteImport } from './routes/showcase'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ProfileRouteImport } from './routes/profile'
@@ -57,6 +58,11 @@ const TemplatesRoute = TemplatesRouteImport.update({
 const StylesRoute = StylesRouteImport.update({
   id: '/styles',
   path: '/styles',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShowcaseRoute = ShowcaseRouteImport.update({
+  id: '/showcase',
+  path: '/showcase',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -169,6 +175,7 @@ export interface FileRoutesByFullPath {
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
+  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -195,6 +202,7 @@ export interface FileRoutesByTo {
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
+  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
+  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -250,6 +259,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/security'
     | '/settings'
+    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -276,6 +286,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/security'
     | '/settings'
+    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -302,6 +313,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/security'
     | '/settings'
+    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -329,6 +341,7 @@ export interface RootRouteChildren {
   ProfileRoute: typeof ProfileRoute
   SecurityRoute: typeof SecurityRoute
   SettingsRoute: typeof SettingsRoute
+  ShowcaseRoute: typeof ShowcaseRoute
   StylesRoute: typeof StylesRoute
   TemplatesRoute: typeof TemplatesRoute
   TermsRoute: typeof TermsRoute
@@ -376,6 +389,13 @@ declare module '@tanstack/react-router' {
       path: '/styles'
       fullPath: '/styles'
       preLoaderRoute: typeof StylesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/showcase': {
+      id: '/showcase'
+      path: '/showcase'
+      fullPath: '/showcase'
+      preLoaderRoute: typeof ShowcaseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -539,6 +559,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProfileRoute: ProfileRoute,
   SecurityRoute: SecurityRoute,
   SettingsRoute: SettingsRoute,
+  ShowcaseRoute: ShowcaseRoute,
   StylesRoute: StylesRoute,
   TemplatesRoute: TemplatesRoute,
   TermsRoute: TermsRoute,
