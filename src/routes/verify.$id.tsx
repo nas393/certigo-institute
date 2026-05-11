@@ -34,14 +34,21 @@ function VerifyOne() {
   useEffect(() => {
     (async () => {
       // Demo serials: render a verifiable showcase without a DB row
-      if (/^KR-2026-DEMO/i.test(id)) {
+      if (/^KR-2026-DEMO/i.test(id) || /^CERT-[A-Z]{2,3}-\d+/i.test(id)) {
+        const upper = id.toUpperCase();
+        const demoMap: Record<string, { topic: string; date: string }> = {
+          "CERT-DM-1024": { topic: "Digital Marketing Fundamentals", date: "2026-03-12" },
+          "CERT-PM-2048": { topic: "Project Management Essentials", date: "2026-04-08" },
+          "CERT-LC-4096": { topic: "Leadership & Communication", date: "2026-05-02" },
+        };
+        const meta = demoMap[upper];
         setCert({
           id,
-          serial: id.toUpperCase(),
-          recipient_name: "Amara Okafor",
-          course_topic: "Certified Prompt Engineering Professional (CPEP)",
-          score: 94,
-          issued_at: new Date().toISOString(),
+          serial: upper,
+          recipient_name: meta ? "Demo Professional" : "Amara Okafor",
+          course_topic: meta ? meta.topic : "Certified Prompt Engineering Professional (CPEP)",
+          score: meta ? 92 : 94,
+          issued_at: meta ? new Date(meta.date).toISOString() : new Date().toISOString(),
           revoked: false,
           _demo: true,
         });

@@ -34,7 +34,12 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
-      <SocialProof />
+      <TrustStrip />
+      <LiveDemo />
+      <HowVerification />
+      <WhoItsFor />
+      <WhoBuilt />
+      <EnterpriseSecurity />
       <Chapters />
       <FinalCTA />
       <Footer />
@@ -205,14 +210,13 @@ function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted-foreground">
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
-              Verifiable credentials infrastructure
+              Credential Governance Platform
             </div>
             <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-              Skills you can trust.<br />
-              Credentials you can <span className="gradient-text">verify. Instantly.</span>
+              Credential infrastructure for the <span className="gradient-text">modern workforce.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              CERTIGO. is the global infrastructure for issuing, sharing and verifying digital credentials in seconds.
+              Issue, manage and verify professional credentials with enterprise-grade governance and global verification.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button
@@ -220,19 +224,19 @@ function Hero() {
                 className="gradient-hero text-white border-0 hover:opacity-95 h-12 px-6 text-sm font-semibold shadow-glow"
                 onClick={() => nav({ to: "/auth" })}
               >
-                Start issuing certificates <ArrowRight className="ml-2 h-4 w-4" />
+                Start issuing credentials <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="h-12 px-6 text-sm font-semibold"
-                onClick={() => nav({ to: "/verify" })}
+                onClick={() => nav({ to: "/verify/$id", params: { id: "CERT-DM-1024" } })}
               >
-                Verify a credential
+                View live demo credential
               </Button>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
-              Built for training providers, companies and global talent.
+              Used by training providers and corporate HR teams worldwide.
             </p>
           </div>
 
@@ -317,6 +321,240 @@ function SocialProof() {
         ))}
       </div>
     </section>
+  );
+}
+
+/* ─────────────────────────── TRUST STRIP ─────────────────────────── */
+function TrustStrip() {
+  const items = [
+    { icon: Globe, t: "Instant global verification" },
+    { icon: User, t: "Public credential profiles" },
+    { icon: QrCode, t: "Secure credential IDs & QR validation" },
+    { icon: Building2, t: "Built for training providers & HR teams" },
+  ];
+  return (
+    <section className="border-y border-border bg-surface py-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 sm:grid-cols-4 sm:px-8">
+        {items.map(({ icon: Icon, t }) => (
+          <div key={t} className="flex items-center gap-3">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg border border-border bg-card text-[var(--primary)]">
+              <Icon className="h-4 w-4" />
+            </span>
+            <span className="text-xs font-medium text-foreground/85 sm:text-sm">{t}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── LIVE DEMO ─────────────────────────── */
+const DEMO_CERTS = [
+  { id: "CERT-DM-1024", title: "Digital Marketing Fundamentals", issued: "March 2026" },
+  { id: "CERT-PM-2048", title: "Project Management Essentials", issued: "April 2026" },
+  { id: "CERT-LC-4096", title: "Leadership & Communication", issued: "May 2026" },
+];
+
+function LiveDemo() {
+  const nav = useNavigate();
+  return (
+    <Section eyebrow="Live demonstration" title="See how verification works.">
+      <p className="-mt-6 mb-10 max-w-2xl text-muted-foreground">
+        A real public learner profile, issued by CERTIGO Academy. Open any credential, verify it instantly,
+        and experience exactly what employers see.
+      </p>
+      <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr]">
+        <div className="rounded-2xl border border-border bg-card p-7">
+          <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-[var(--primary)]">Public profile</div>
+          <div className="mt-4 flex items-center gap-4">
+            <div className="grid h-14 w-14 place-items-center rounded-full gradient-hero font-display text-lg font-extrabold text-white">
+              DP
+            </div>
+            <div>
+              <div className="font-display text-lg font-extrabold">Demo Professional</div>
+              <div className="text-xs text-muted-foreground">certigo.institute/u/demo-professional</div>
+            </div>
+          </div>
+          <div className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-[var(--accent)]/10 px-2.5 py-1 text-[10px] font-semibold text-[var(--primary)]">
+            <BadgeCheck className="h-3 w-3" /> Publicly verifiable identity
+          </div>
+          <div className="mt-6 grid grid-cols-3 gap-2 text-center">
+            <div className="rounded-lg border border-border bg-surface p-2">
+              <div className="font-display text-base font-extrabold">3</div>
+              <div className="text-[10px] text-muted-foreground">Credentials</div>
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-2">
+              <div className="font-display text-base font-extrabold">100%</div>
+              <div className="text-[10px] text-muted-foreground">Verifiable</div>
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-2">
+              <div className="font-display text-base font-extrabold">Live</div>
+              <div className="text-[10px] text-muted-foreground">Status</div>
+            </div>
+          </div>
+          <Button
+            className="mt-6 w-full gradient-hero text-white border-0"
+            onClick={() => nav({ to: "/verify" })}
+          >
+            Open demo profile <ArrowUpRight className="ml-2 h-4 w-4" />
+          </Button>
+        </div>
+        <div className="space-y-4">
+          {DEMO_CERTS.map((c) => (
+            <div key={c.id} className="frame-card p-5 sm:p-6">
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                    Issued by CERTIGO Academy · {c.issued}
+                  </div>
+                  <div className="mt-2 font-display text-base font-extrabold sm:text-lg">{c.title}</div>
+                  <div className="mt-1 text-xs text-muted-foreground">Credential ID · {c.id}</div>
+                </div>
+                <span className="inline-flex items-center gap-1 rounded-full bg-[var(--accent)]/10 px-2 py-1 text-[10px] font-semibold text-[var(--primary)]">
+                  <ShieldCheck className="h-3 w-3" /> Publicly verifiable
+                </span>
+              </div>
+              <div className="mt-4 flex flex-wrap items-center gap-2">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={() => nav({ to: "/verify/$id", params: { id: c.id } })}
+                >
+                  View certificate
+                </Button>
+                <Button
+                  size="sm"
+                  className="gradient-hero text-white border-0"
+                  onClick={() => nav({ to: "/verify/$id", params: { id: c.id } })}
+                >
+                  Verify credential <Search className="ml-2 h-3.5 w-3.5" />
+                </Button>
+                <span className="ml-auto inline-flex items-center gap-1 rounded-md border border-border bg-surface px-2 py-1 text-[10px] font-mono text-muted-foreground">
+                  <QrCode className="h-3 w-3" /> QR ready
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+/* ─────────────────────────── HOW VERIFICATION WORKS ─────────────────────────── */
+function HowVerification() {
+  const steps = [
+    { n: "01", t: "Organization issues credential", d: "An accredited issuer creates the record from their dashboard or API." },
+    { n: "02", t: "Unique credential ID generated", d: "Every credential gets a permanent, tamper-resistant identifier." },
+    { n: "03", t: "Public verification page created", d: "A shareable page is published the moment the credential is issued." },
+    { n: "04", t: "QR code linked to credential record", d: "Print or embed the QR — it always points to the live record." },
+    { n: "05", t: "Anyone can verify instantly worldwide", d: "Recruiters and partners verify in under three seconds." },
+  ];
+  return (
+    <Section eyebrow="Verification engine" title="Built for instant global verification." muted>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        {steps.map((s) => (
+          <div key={s.n} className="rounded-xl border border-border bg-card p-5">
+            <div className="font-mono text-[11px] tracking-[0.18em] text-[var(--primary)]">{s.n}</div>
+            <div className="mt-3 font-display text-sm font-extrabold leading-snug">{s.t}</div>
+            <p className="mt-2 text-xs text-muted-foreground">{s.d}</p>
+          </div>
+        ))}
+      </div>
+      <p className="mt-8 text-center font-display text-lg font-bold text-foreground/90 sm:text-xl">
+        No PDFs. No emails. No manual verification.
+      </p>
+    </Section>
+  );
+}
+
+/* ─────────────────────────── WHO IT'S FOR ─────────────────────────── */
+function WhoItsFor() {
+  const cards = [
+    { icon: GraduationCap, who: "Training Providers", d: "Issue premium certificates and track alumni." },
+    { icon: Building2, who: "Corporate HR Teams", d: "Recognize employee skills and internal training." },
+    { icon: User, who: "Professionals", d: "Build a public, verifiable credential profile." },
+  ];
+  return (
+    <Section eyebrow="Who it's for" title="One platform. Three audiences. One source of truth.">
+      <div className="grid gap-5 lg:grid-cols-3">
+        {cards.map(({ icon: Icon, who, d }) => (
+          <div key={who} className="rounded-2xl border border-border bg-card p-7">
+            <div className="grid h-10 w-10 place-items-center rounded-lg gradient-hero text-white">
+              <Icon className="h-5 w-5" />
+            </div>
+            <div className="mt-5 font-display text-lg font-extrabold">{who}</div>
+            <p className="mt-2 text-sm text-muted-foreground">{d}</p>
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
+/* ─────────────────────────── WHO BUILT CERTIGO ─────────────────────────── */
+function WhoBuilt() {
+  return (
+    <Section eyebrow="Who built CERTIGO" title="Built by experienced corporate leaders." muted>
+      <div className="grid gap-8 rounded-2xl border border-border bg-card p-8 lg:grid-cols-[1.3fr_1fr] lg:p-12">
+        <div>
+          <p className="text-base text-foreground/85 sm:text-lg">
+            CERTIGO was created by senior professionals in Corporate HR, Talent Development and Marketing Strategy.
+          </p>
+          <p className="mt-4 text-sm text-muted-foreground sm:text-base">
+            The founding team combines 20+ years of experience across multinational organizations and understands
+            the real challenges of training credibility, workforce development and credential fraud.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          {[
+            { k: "20+ yrs", v: "Corporate HR" },
+            { k: "Global", v: "Multinationals" },
+            { k: "L&D", v: "Talent strategy" },
+          ].map((x) => (
+            <div key={x.v} className="rounded-xl border border-border bg-surface p-4 text-center">
+              <div className="font-display text-base font-extrabold gradient-text">{x.k}</div>
+              <div className="mt-1 text-[11px] text-muted-foreground">{x.v}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+/* ─────────────────────────── ENTERPRISE SECURITY ─────────────────────────── */
+function EnterpriseSecurity() {
+  const items = [
+    { icon: Lock, t: "Permanent public credential URLs" },
+    { icon: ShieldCheck, t: "Tamper-resistant credential records" },
+    { icon: Scale, t: "GDPR-ready architecture" },
+    { icon: Globe, t: "Cloud-hosted global infrastructure" },
+  ];
+  const live = [
+    "Live platform demonstration",
+    "Public demo credentials available",
+    "Open verification engine active",
+  ];
+  return (
+    <Section eyebrow="Enterprise trust" title="Enterprise-grade credential security.">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {items.map(({ icon: Icon, t }) => (
+          <div key={t} className="rounded-xl border border-border bg-card p-6">
+            <Icon className="h-5 w-5 text-[var(--primary)]" />
+            <div className="mt-4 font-display text-sm font-extrabold leading-snug">{t}</div>
+          </div>
+        ))}
+      </div>
+      <div className="mt-8 grid gap-3 sm:grid-cols-3">
+        {live.map((l) => (
+          <div key={l} className="flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-3 text-xs font-medium text-foreground/85">
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+            {l}
+          </div>
+        ))}
+      </div>
+    </Section>
   );
 }
 
