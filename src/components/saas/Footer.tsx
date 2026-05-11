@@ -3,14 +3,14 @@ import { ShieldCheck } from "lucide-react";
 
 export function Footer() {
   const cols: { title: string; links: { to: string; label: string }[] }[] = [
-    { title: "Product", links: [
-      { to: "/product", label: "Overview" },
+    { title: "Platform", links: [
+      { to: "/product", label: "Credential Governance" },
+      { to: "/security", label: "Security" },
+      { to: "/verify", label: "Verification" },
       { to: "/pricing", label: "Pricing" },
-      { to: "/verify", label: "Verify a credential" },
     ]},
     { title: "Company", links: [
-      { to: "/security", label: "Security" },
-      { to: "/contact", label: "Contact" },
+      { to: "/contact", label: "Contact sales" },
     ]},
     { title: "Legal", links: [
       { to: "/privacy", label: "Privacy Policy" },
@@ -32,7 +32,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-white/60">
-              The global infrastructure for issuing, sharing and verifying digital credentials in seconds.
+              Credential infrastructure for the modern workforce. Issue, manage and verify with enterprise-grade governance.
             </p>
           </div>
           {cols.map((c) => (
