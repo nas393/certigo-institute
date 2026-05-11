@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/kredo/Header";
 import {
-  CertigoCertificate, CERTIGO_CERT_THEMES, type CertigoCertTheme,
+  CertigoCertificate, type CertigoCertTheme,
+  SignatureFlourish, ElectronicStamp,
+  SIGNATURE_VARIANTS, STAMP_VARIANTS,
+  type SignatureVariant, type StampVariant,
 } from "@/components/certigo/CertificateThemes";
-import {
-  CertigoTranscript, CERTIGO_TRANSCRIPT_THEMES, type CertigoTranscriptTheme, type TranscriptModule,
-} from "@/components/certigo/TranscriptThemes";
 
 export const Route = createFileRoute("/showcase")({
   head: () => ({ meta: [
-    { title: "Certificate & Transcript Themes — CERTIGO." },
-    { name: "description", content: "Pick from 5 premium certificate themes and 5 transcript themes." },
+    { title: "Signature & Electronic Stamp Options — CERTIGO." },
+    { name: "description", content: "Pick the official signature pair and electronic stamp for CERTIGO INSTITUTE certificates." },
   ] }),
   component: ShowcasePage,
 });
@@ -25,47 +25,27 @@ const SAMPLE = {
   scorePct: 96,
 };
 
-const MODULES: TranscriptModule[] = [
-  { code: "WAA-101", title: "Foundations of Distributed Web Systems", hours: 14, scorePct: 94, grade: "A"  },
-  { code: "WAA-202", title: "Front-end Architecture & Design Systems",  hours: 16, scorePct: 97, grade: "A+" },
-  { code: "WAA-303", title: "Edge Runtimes & Serverless Patterns",      hours: 12, scorePct: 92, grade: "A-" },
-  { code: "WAA-404", title: "Credential Verification & Cryptography",   hours: 10, scorePct: 95, grade: "A"  },
-  { code: "WAA-505", title: "Performance, Observability & Security",    hours: 12, scorePct: 96, grade: "A"  },
-  { code: "WAA-606", title: "Capstone — Production Credential Platform", hours: 18, scorePct: 98, grade: "A+" },
+/**
+ * 6 signature pair options × 3 electronic stamp options.
+ * The base certificate theme is fixed to "sovereign" so you can compare
+ * signatures and stamps fairly.
+ */
+const SIG_PAIRS: { id: string; pair: [SignatureVariant, SignatureVariant]; label: string; hint: string }[] = [
+  { id: "A", pair: [0, 3], label: "Executive · Angular",   hint: "Bold cap + sharp angular CEO mark" },
+  { id: "B", pair: [1, 5], label: "Copperplate · Minister", hint: "Flowing loops + elegant low descender" },
+  { id: "C", pair: [2, 4], label: "Diplomat · Continuous",  hint: "Slanted ascender + single-stroke flow" },
+  { id: "D", pair: [0, 1], label: "Executive · Copperplate", hint: "Reference-style bold + flowing loops" },
+  { id: "E", pair: [3, 2], label: "Angular · Diplomat",     hint: "Sharp + slanted, classical pairing" },
+  { id: "F", pair: [5, 4], label: "Minister · Continuous",  hint: "Soft elegant + relentless single line" },
 ];
 
-const TR_SAMPLE = {
-  recipientName: "Emma J. Sullivan",
-  programTitle: "Advanced Web App Architecture & Development",
-  programCode: "WAA-2026-PRO",
-  issueDate: new Date().toISOString(),
-  transcriptId: "TR-WAA-1024",
-  verifyUrl: "https://certigo.institute/verify/CERT-WAA-1024",
-  modules: MODULES,
-  cumulativeGpa: "3.95 / 4.00",
-  totalHours: MODULES.reduce((a, m) => a + m.hours, 0),
+const STAMP_LABELS: Record<StampVariant, { label: string; hint: string }> = {
+  0: { label: "Rect e-Stamp",   hint: "Rectangular tilted rubber-stamp · serif lockup" },
+  1: { label: "Round e-Seal",   hint: "Circular text-around-ring · ministerial" },
+  2: { label: "Hex Token",      hint: "Hexagonal · web3 / on-chain feel" },
 };
 
-/**
- * 10 paired options. Certificate theme + matching transcript theme paired
- * by index. Pick ONE option to standardize across CERTIGO.
- */
-const PAIRED_OPTIONS: { cert: CertigoCertTheme; tr: CertigoTranscriptTheme }[] = [
-  { cert: "sovereign", tr: "ledger"     },
-  { cert: "obsidian",  tr: "dossier"    },
-  { cert: "quantum",   tr: "telemetry"  },
-  { cert: "imperial",  tr: "audit"      },
-  { cert: "meridian",  tr: "codex"      },
-  { cert: "monolith",  tr: "monolith"   },
-  { cert: "aurora",    tr: "aurora"     },
-  { cert: "parchment", tr: "parchment"  },
-  { cert: "cipher",    tr: "cipher"     },
-  { cert: "regalia",   tr: "regalia"    },
-];
-
-function findMeta<T extends { key: string; label: string; hint: string }>(arr: T[], key: string) {
-  return arr.find((t) => t.key === key)!;
-}
+const BASE_THEME: CertigoCertTheme = "sovereign";
 
 function ShowcasePage() {
   return (
