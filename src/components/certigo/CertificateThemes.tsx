@@ -198,6 +198,11 @@ export function CertigoCertificate(p: CertigoCertProps) {
     case "quantum":  return <QuantumCert {...p} />;
     case "imperial": return <ImperialCert {...p} />;
     case "meridian": return <MeridianCert {...p} />;
+    case "monolith": return <MonolithCert {...p} />;
+    case "aurora":   return <AuroraCert {...p} />;
+    case "parchment":return <ParchmentCert {...p} />;
+    case "cipher":   return <CipherCert {...p} />;
+    case "regalia":  return <RegaliaCert {...p} />;
     case "sovereign":
     default:         return <SovereignCert {...p} />;
   }
