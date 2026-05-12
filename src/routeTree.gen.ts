@@ -14,13 +14,13 @@ import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
-import { Route as ShowcaseRouteImport } from './routes/showcase'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as SecurityRouteImport } from './routes/security'
 import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as OptionsRouteImport } from './routes/options'
 import { Route as GovernanceRouteImport } from './routes/governance'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -60,11 +60,6 @@ const StylesRoute = StylesRouteImport.update({
   path: '/styles',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ShowcaseRoute = ShowcaseRouteImport.update({
-  id: '/showcase',
-  path: '/showcase',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SettingsRoute = SettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
@@ -93,6 +88,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OptionsRoute = OptionsRouteImport.update({
+  id: '/options',
+  path: '/options',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GovernanceRoute = GovernanceRouteImport.update({
@@ -169,13 +169,13 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
+  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
-  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -196,13 +196,13 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
+  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
-  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -224,13 +224,13 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
+  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
   '/profile': typeof ProfileRoute
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
-  '/showcase': typeof ShowcaseRoute
   '/styles': typeof StylesRoute
   '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
@@ -253,13 +253,13 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
+    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
     | '/security'
     | '/settings'
-    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -280,13 +280,13 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
+    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
     | '/security'
     | '/settings'
-    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -307,13 +307,13 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
+    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
     | '/profile'
     | '/security'
     | '/settings'
-    | '/showcase'
     | '/styles'
     | '/templates'
     | '/terms'
@@ -335,13 +335,13 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
   GovernanceRoute: typeof GovernanceRoute
+  OptionsRoute: typeof OptionsRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ProductRoute: typeof ProductRoute
   ProfileRoute: typeof ProfileRoute
   SecurityRoute: typeof SecurityRoute
   SettingsRoute: typeof SettingsRoute
-  ShowcaseRoute: typeof ShowcaseRoute
   StylesRoute: typeof StylesRoute
   TemplatesRoute: typeof TemplatesRoute
   TermsRoute: typeof TermsRoute
@@ -391,13 +391,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StylesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/showcase': {
-      id: '/showcase'
-      path: '/showcase'
-      fullPath: '/showcase'
-      preLoaderRoute: typeof ShowcaseRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/settings': {
       id: '/settings'
       path: '/settings'
@@ -438,6 +431,13 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/options': {
+      id: '/options'
+      path: '/options'
+      fullPath: '/options'
+      preLoaderRoute: typeof OptionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/governance': {
@@ -553,13 +553,13 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
   GovernanceRoute: GovernanceRoute,
+  OptionsRoute: OptionsRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ProductRoute: ProductRoute,
   ProfileRoute: ProfileRoute,
   SecurityRoute: SecurityRoute,
   SettingsRoute: SettingsRoute,
-  ShowcaseRoute: ShowcaseRoute,
   StylesRoute: StylesRoute,
   TemplatesRoute: TemplatesRoute,
   TermsRoute: TermsRoute,
