@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
+import { getStandard, PAIR_DEFINITIONS } from "@/lib/certigo-standard";
 
 export type CertigoCertTheme =
   | "sovereign"   // deep navy + gold foil crest + circuit traces
@@ -414,23 +415,30 @@ function AuthorityBlock({
 }
 
 // Re-export atoms so the showcase route can build option grids.
-export { SignatureFlourish, ElectronicStamp, AuthorityBlock };
+export { SignatureFlourish, ElectronicStamp, AuthorityBlock, SignaturePillar };
 
 /* ---------- master switch ---------- */
 
 export function CertigoCertificate(p: CertigoCertProps) {
-  switch (p.theme) {
-    case "obsidian": return <ObsidianCert {...p} />;
-    case "quantum":  return <QuantumCert {...p} />;
-    case "imperial": return <ImperialCert {...p} />;
-    case "meridian": return <MeridianCert {...p} />;
-    case "monolith": return <MonolithCert {...p} />;
-    case "aurora":   return <AuroraCert {...p} />;
-    case "parchment":return <ParchmentCert {...p} />;
-    case "cipher":   return <CipherCert {...p} />;
-    case "regalia":  return <RegaliaCert {...p} />;
+  // Apply persistent CERTIGO standard for sigPair/stampVariant when not overridden.
+  const std = getStandard();
+  const merged: CertigoCertProps = {
+    ...p,
+    sigPair: p.sigPair ?? PAIR_DEFINITIONS[std.pairId].pair,
+    stampVariant: p.stampVariant ?? ((std.stamp - 1) as StampVariant),
+  };
+  switch (merged.theme) {
+    case "obsidian": return <ObsidianCert {...merged} />;
+    case "quantum":  return <QuantumCert {...merged} />;
+    case "imperial": return <ImperialCert {...merged} />;
+    case "meridian": return <MeridianCert {...merged} />;
+    case "monolith": return <MonolithCert {...merged} />;
+    case "aurora":   return <AuroraCert {...merged} />;
+    case "parchment":return <ParchmentCert {...merged} />;
+    case "cipher":   return <CipherCert {...merged} />;
+    case "regalia":  return <RegaliaCert {...merged} />;
     case "sovereign":
-    default:         return <SovereignCert {...p} />;
+    default:         return <SovereignCert {...merged} />;
   }
 }
 
