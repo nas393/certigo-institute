@@ -36,7 +36,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
-      <DemoCertificateSection />
+      <DemoCertificate />
       <TrustStrip />
       <LiveNetwork />
       <ActivityOverview />
