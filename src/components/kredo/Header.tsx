@@ -4,7 +4,40 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { Menu, ShieldCheck } from "lucide-react";
+import { Menu } from "lucide-react";
+
+/**
+ * Stamp-only CERTIGO mark — gold electronic-seal style.
+ * No red wax. Clean, ministerial, scalable.
+ */
+function CertigoMark({ size = 32 }: { size?: number }) {
+  return (
+    <svg viewBox="0 0 100 100" width={size} height={size} aria-hidden role="img">
+      <defs>
+        <radialGradient id="certigo-mark-g" cx="40%" cy="35%" r="70%">
+          <stop offset="0%" stopColor="#f1d68a" />
+          <stop offset="55%" stopColor="#c9a24a" />
+          <stop offset="100%" stopColor="#8a6a23" />
+        </radialGradient>
+      </defs>
+      <circle cx="50" cy="50" r="46" fill="#0b1a3a" />
+      <circle cx="50" cy="50" r="46" fill="none" stroke="url(#certigo-mark-g)" strokeWidth="2.4" />
+      <circle cx="50" cy="50" r="38" fill="none" stroke="url(#certigo-mark-g)" strokeWidth="0.8" opacity="0.65" />
+      <text x="50" y="62" textAnchor="middle"
+        fontFamily="'Cormorant Garamond', 'Times New Roman', serif"
+        fontSize="44" fontWeight="700" fill="url(#certigo-mark-g)">C</text>
+      {/* tick stripes around perimeter */}
+      <g stroke="url(#certigo-mark-g)" strokeWidth="0.6" opacity="0.7">
+        {Array.from({ length: 16 }).map((_, i) => {
+          const a = (i / 16) * Math.PI * 2;
+          const x1 = 50 + Math.cos(a) * 40, y1 = 50 + Math.sin(a) * 40;
+          const x2 = 50 + Math.cos(a) * 44, y2 = 50 + Math.sin(a) * 44;
+          return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
+        })}
+      </g>
+    </svg>
+  );
+}
 
 const NAV: { to: string; label: string }[] = [
   { to: "/product", label: "Product" },
@@ -30,8 +63,8 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
         <Link to="/" className="flex items-center gap-2.5" aria-label="CERTIGO. home">
-          <span className="grid h-8 w-8 place-items-center rounded-lg gradient-hero text-white shadow-glow">
-            <ShieldCheck className="h-4 w-4" />
+          <span className="grid h-9 w-9 place-items-center" aria-hidden>
+            <CertigoMark size={36} />
           </span>
           <span className="font-display text-[20px] font-extrabold tracking-tight text-foreground">
             CERTIGO<span className="text-[hsl(var(--accent))]" style={{ color: "var(--primary)" }}>.</span>
