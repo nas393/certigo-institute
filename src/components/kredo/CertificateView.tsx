@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 import { formatSerial } from "@/lib/cert";
-import sigOfficer from "@/assets/sig-officer.png";
-import sigDirector from "@/assets/sig-director.png";
+import { ElectronicStamp, SignaturePillar } from "@/components/certigo/CertificateThemes";
+import { getStandard, PAIR_DEFINITIONS } from "@/lib/certigo-standard";
 
 export type CertTemplate =
   | "classic" | "double" | "ornate" | "minimal" | "deco"
@@ -58,6 +58,9 @@ export function CertificateView(p: Props) {
   const displaySerial = formatSerial(p.serial);
   const orientation: CertOrientation = p.orientation ?? "landscape";
   const isPortrait = orientation === "portrait";
+  const std = getStandard();
+  const stdPair = PAIR_DEFINITIONS[std.pairId].pair;
+  const stdStampZeroIdx = (std.stamp - 1) as 0 | 1 | 2;
 
   const issued = new Date(p.issuedAt);
   const expiry = new Date(issued); expiry.setFullYear(expiry.getFullYear() + 2);
@@ -222,22 +225,43 @@ export function CertificateView(p: Props) {
         {/* spacer */}
         <div style={{ flex: 1 }} />
 
-        {/* BOTTOM ROW: signature | wax seal (centered) | signature */}
-        <div style={{
-          width: "100%",
-          display: "grid",
-          gridTemplateColumns: "1fr auto 1fr",
-          alignItems: "end",
-          gap: cq(1.4),
-          marginTop: cq(1),
-        }}>
-          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigDirector} title="Director of Certification" />
-
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", paddingBottom: cq(0.2) }}>
-            <WaxSeal style={{ width: cq(8.4), height: cq(8.4), display: "block" }} />
+        {/* BOTTOM ROW: signature | electronic stamp (centered) | signature
+            All three pull from the persistent CERTIGO standard (Pair A–F + Stamp #1–#3). */}
+        <div
+          style={{
+            width: "100%",
+            display: "grid",
+            gridTemplateColumns: "1fr auto 1fr",
+            alignItems: "end",
+            gap: cq(1.4),
+            marginTop: cq(1),
+            containerType: "inline-size",
+          }}
+        >
+          <SignaturePillar
+            ink={ink}
+            inkColor="#0a1226"
+            role="Office of the Registrar"
+            refId="REG · CERTIGO INSTITUTE"
+            variant={stdPair[0]}
+          />
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end",
+            paddingBottom: cq(0.2) }}>
+            <ElectronicStamp
+              variant={stdStampZeroIdx}
+              color={accent}
+              certificateId={displaySerial}
+              issueDate={p.issuedAt}
+              size={10}
+            />
           </div>
-
-          <MinimalSig cq={cq} ink={ink} mute={mute} sigSrc={sigOfficer} title="Chief Standards Officer" />
+          <SignaturePillar
+            ink={ink}
+            inkColor="#0a1226"
+            role="Director of Credentialing"
+            refId="DIR · CERTIGO INSTITUTE"
+            variant={stdPair[1]}
+          />
         </div>
 
         {/* BOTTOM META: corner-aligned issued / id, with QR floated bottom-right */}
