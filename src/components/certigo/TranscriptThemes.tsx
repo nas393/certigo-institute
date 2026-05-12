@@ -103,24 +103,32 @@ function LedgerTr(p: CertigoTranscriptProps) {
     <div style={{ aspectRatio: "1/1.414", containerType: "inline-size", background: "#fff",
       color: NAVY_DEEP, position: "relative", overflow: "hidden",
       fontFamily: "'Inter', sans-serif" }} className="w-full shadow-2xl">
-      {/* navy header */}
+      {/* editorial header — navy band + dual gold rules */}
       <div style={{ background: `linear-gradient(180deg, ${NAVY} 0%, ${NAVY_DEEP} 100%)`,
-        color: "#fff", padding: "4cqw 5cqw", position: "relative" }}>
+        color: "#fff", padding: "4.4cqw 5cqw 3.4cqw", position: "relative",
+        borderBottom: `2px solid ${GOLD}` }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
           <div>
-            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.4cqw",
-              fontWeight: 700, color: GOLD_HI, letterSpacing: "0.04em" }}>Certigo Institute</div>
-            <div style={{ fontSize: "0.75cqw", letterSpacing: "0.4em", color: "#cfd6e8",
-              fontWeight: 600, marginTop: "0.4cqw" }}>OFFICIAL ACADEMIC TRANSCRIPT</div>
+            <div style={{ fontSize: "0.7cqw", letterSpacing: "0.5em", color: GOLD,
+              fontWeight: 700 }}>CERTIGO &nbsp; INSTITUTE</div>
+            <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "2.8cqw",
+              fontWeight: 700, color: "#fff", letterSpacing: "0.02em", marginTop: "0.6cqw",
+              lineHeight: 1.05 }}>
+              Official Academic <span style={{ fontStyle: "italic", color: GOLD_HI }}>Transcript</span>
+            </div>
           </div>
           <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "0.62cqw", letterSpacing: "0.16em", color: "#cfd6e8", lineHeight: 1.7 }}>
+            fontSize: "0.6cqw", letterSpacing: "0.18em", color: "#cfd6e8", lineHeight: 1.8 }}>
             <div>TRANSCRIPT ID</div>
-            <div style={{ color: GOLD }}>{p.transcriptId}</div>
+            <div style={{ color: GOLD_HI, fontWeight: 700 }}>{p.transcriptId}</div>
+            <div style={{ marginTop: "0.4cqw" }}>ISSUED</div>
+            <div style={{ color: "#fff", fontWeight: 700 }}>{fmtDate(p.issueDate).toUpperCase()}</div>
           </div>
         </div>
-        <div style={{ height: 1, background: GOLD, opacity: 0.6, marginTop: "1.6cqw" }} />
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1cqw", marginTop: "1.4cqw" }}>
+        <div style={{ height: 1, background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)`,
+          marginTop: "2cqw" }} />
+        <div style={{ display: "grid", gridTemplateColumns: "2fr 2fr 1fr", gap: "1.6cqw",
+          marginTop: "1.6cqw" }}>
           <Field label="RECIPIENT" value={p.recipientName} />
           <Field label="PROGRAM" value={p.programTitle} />
           <Field label="PROGRAM CODE" value={p.programCode} mono />
@@ -128,9 +136,16 @@ function LedgerTr(p: CertigoTranscriptProps) {
       </div>
 
       {/* table */}
-      <div style={{ padding: "3cqw 5cqw" }}>
-        <div style={{ fontSize: "0.7cqw", letterSpacing: "0.32em", color: GOLD_LO,
-          fontWeight: 700, marginBottom: "1cqw" }}>COURSE RECORD</div>
+      <div style={{ padding: "3cqw 5cqw 1.6cqw" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline",
+          marginBottom: "1cqw" }}>
+          <div style={{ fontSize: "0.7cqw", letterSpacing: "0.32em", color: GOLD_LO,
+            fontWeight: 800 }}>◆ COURSE RECORD</div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.55cqw",
+            letterSpacing: "0.22em", color: "#7a8198" }}>
+            {p.modules.length} MODULES · {p.totalHours ?? p.modules.reduce((a, m) => a + m.hours, 0)} HOURS
+          </div>
+        </div>
         <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95cqw" }}>
           <thead>
             <tr style={{ background: "#f4f1e8", color: NAVY_DEEP }}>
@@ -161,20 +176,28 @@ function LedgerTr(p: CertigoTranscriptProps) {
         </table>
       </div>
 
-      {/* footer */}
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "3cqw 5cqw",
-        borderTop: `1px solid #ece7d3`, display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
+      {/* authority block — same signatures + electronic stamp as the certificate */}
+      <div style={{ padding: "0 5cqw 0", marginTop: "1.4cqw" }}>
+        <AuthorityBlock ink={NAVY_DEEP} certificateId={p.transcriptId}
+          issueDate={p.issueDate} sigPair={p.sigPair} stampVariant={p.stampVariant} />
+      </div>
+
+      {/* verified metadata footer */}
+      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, padding: "2.4cqw 5cqw",
+        borderTop: `1px solid #ece7d3`, background: "#fbfaf6",
+        display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
         <div style={{ display: "flex", gap: "1cqw", alignItems: "center" }}>
-          {qr && <img src={qr} alt="Verify" style={{ width: "5cqw", height: "5cqw" }} />}
-          <div style={{ fontSize: "0.65cqw", letterSpacing: "0.2em", color: NAVY,
-            fontFamily: "'JetBrains Mono', monospace", lineHeight: 1.7 }}>
-            ON-CHAIN VERIFIED<br />METADATA · v1
+          {qr && <img src={qr} alt="Verify" style={{ width: "4.6cqw", height: "4.6cqw" }} />}
+          <div style={{ fontSize: "0.6cqw", letterSpacing: "0.22em", color: NAVY,
+            fontFamily: "'JetBrains Mono', monospace", lineHeight: 1.8 }}>
+            ON-CHAIN VERIFIED METADATA<br />
+            <span style={{ color: GOLD_LO }}>certigo.institute/verify/{p.transcriptId}</span>
           </div>
         </div>
         <div style={{ textAlign: "right", fontFamily: "'JetBrains Mono', monospace",
-          fontSize: "0.65cqw", letterSpacing: "0.18em", color: NAVY, lineHeight: 1.7 }}>
-          <div>ISSUED {fmtDate(p.issueDate).toUpperCase()}</div>
-          <div style={{ color: GOLD_LO }}>OFFICIAL · CERTIGO INSTITUTE</div>
+          fontSize: "0.6cqw", letterSpacing: "0.2em", color: NAVY, lineHeight: 1.8 }}>
+          <div style={{ color: GOLD_LO, fontWeight: 700 }}>OFFICIAL · CERTIGO INSTITUTE</div>
+          <div>VERITAS · PROBATUM · AETERNUM</div>
         </div>
       </div>
     </div>
