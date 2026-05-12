@@ -6,6 +6,13 @@ import {
   SIGNATURE_VARIANTS, STAMP_VARIANTS,
   type SignatureVariant, type StampVariant,
 } from "@/components/certigo/CertificateThemes";
+import { CertigoTranscript } from "@/components/certigo/TranscriptThemes";
+import {
+  PAIR_DEFINITIONS, STAMP_NUMS, useCertigoStandard,
+  type PairId, type StampNum,
+} from "@/lib/certigo-standard";
+import { Check } from "lucide-react";
+import { toast } from "sonner";
 
 export const Route = createFileRoute("/showcase")({
   head: () => ({ meta: [
@@ -25,19 +32,30 @@ const SAMPLE = {
   scorePct: 96,
 };
 
+const TRANSCRIPT_SAMPLE = {
+  recipientName: SAMPLE.recipientName,
+  programTitle: "Advanced Web App Architecture & Development",
+  programCode: "WAA-2026-PRO",
+  issueDate: SAMPLE.issueDate,
+  transcriptId: "TR-WAA-1024",
+  verifyUrl: SAMPLE.verifyUrl,
+  cumulativeGpa: "3.96 / 4.00",
+  modules: [
+    { code: "WAA-101", title: "Modern Frontend Architecture", hours: 14, scorePct: 96, grade: "A" },
+    { code: "WAA-201", title: "Edge Runtimes & Distributed Systems", hours: 18, scorePct: 94, grade: "A" },
+    { code: "WAA-301", title: "Credential Verification & Cryptography", hours: 16, scorePct: 98, grade: "A+" },
+    { code: "WAA-401", title: "Production Reliability & Observability", hours: 12, scorePct: 92, grade: "A-" },
+  ],
+};
+
 /**
  * 6 signature pair options × 3 electronic stamp options.
  * The base certificate theme is fixed to "sovereign" so you can compare
  * signatures and stamps fairly.
  */
-const SIG_PAIRS: { id: string; pair: [SignatureVariant, SignatureVariant]; label: string; hint: string }[] = [
-  { id: "A", pair: [0, 3], label: "Executive · Angular",   hint: "Bold cap + sharp angular CEO mark" },
-  { id: "B", pair: [1, 5], label: "Copperplate · Minister", hint: "Flowing loops + elegant low descender" },
-  { id: "C", pair: [2, 4], label: "Diplomat · Continuous",  hint: "Slanted ascender + single-stroke flow" },
-  { id: "D", pair: [0, 1], label: "Executive · Copperplate", hint: "Reference-style bold + flowing loops" },
-  { id: "E", pair: [3, 2], label: "Angular · Diplomat",     hint: "Sharp + slanted, classical pairing" },
-  { id: "F", pair: [5, 4], label: "Minister · Continuous",  hint: "Soft elegant + relentless single line" },
-];
+const SIG_PAIRS = (Object.keys(PAIR_DEFINITIONS) as PairId[]).map((id) => ({
+  id, ...PAIR_DEFINITIONS[id],
+}));
 
 const STAMP_LABELS: Record<StampVariant, { label: string; hint: string }> = {
   0: { label: "Rect e-Stamp",   hint: "Rectangular tilted rubber-stamp · serif lockup" },
@@ -48,6 +66,11 @@ const STAMP_LABELS: Record<StampVariant, { label: string; hint: string }> = {
 const BASE_THEME: CertigoCertTheme = "sovereign";
 
 function ShowcasePage() {
+  const [standard, setStandard] = useCertigoStandard();
+  const setActive = (pairId: PairId, stamp: StampNum) => {
+    setStandard({ pairId, stamp });
+    toast.success(`Locked Pair ${pairId} + Stamp #${stamp} as the CERTIGO standard`);
+  };
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -60,9 +83,73 @@ function ShowcasePage() {
           Two layers to choose from. First pick a <strong>signature pair</strong> (left = Office of the Registrar,
           right = Director of Credentialing) — no personal names, just authentic ink. Then pick an
           <strong> electronic stamp</strong> — a tamper-evident digital seal that replaces the old wax look.
-          Tell us the pair letter (A–F) and stamp number (1–3) and we lock those across every certificate
-          and transcript.
+          Use the matrix below to lock a Pair (A–F) × Stamp (#1–#3) combination as the
+          single CERTIGO standard. It's saved on this device and applied automatically to every
+          certificate, transcript, verify modal, and PDF export.
         </p>
+
+        <div className="mt-6 rounded-lg border border-primary/40 bg-primary/5 px-4 py-3 text-sm">
+          <span className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+            Active standard
+          </span>{" "}
+          <strong>Pair {standard.pairId}</strong>{" "}
+          <span className="text-muted-foreground">({PAIR_DEFINITIONS[standard.pairId].label})</span>{" "}
+          + <strong>Stamp #{standard.stamp}</strong>
+        </div>
+
+        {/* SELECTOR MATRIX — Pair × Stamp */}
+        <section className="mt-10">
+          <h2 className="font-display text-2xl font-black tracking-tight">Lock the standard</h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Click any cell to set it as the active standard. Highlighted cell = currently locked.
+          </p>
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full border-collapse text-left">
+              <thead>
+                <tr className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
+                  <th className="p-2">Pair</th>
+                  {STAMP_NUMS.map((s) => (
+                    <th key={s} className="p-2 text-center">Stamp #{s}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {SIG_PAIRS.map((opt) => (
+                  <tr key={opt.id} className="border-t border-border">
+                    <td className="p-2 align-top">
+                      <div className="font-mono text-xs font-bold">PAIR {opt.id}</div>
+                      <div className="text-xs text-muted-foreground">{opt.label}</div>
+                    </td>
+                    {STAMP_NUMS.map((s) => {
+                      const isActive = standard.pairId === opt.id && standard.stamp === s;
+                      return (
+                        <td key={s} className="p-2">
+                          <button
+                            type="button"
+                            onClick={() => setActive(opt.id, s)}
+                            className={`w-full rounded-md border px-3 py-2 text-left text-xs transition ${
+                              isActive
+                                ? "border-primary bg-primary/10 text-foreground"
+                                : "border-border hover:border-primary/50 hover:bg-muted/40"
+                            }`}
+                          >
+                            <div className="flex items-center justify-between gap-2">
+                              <span className="font-mono">Pair {opt.id} · Stamp #{s}</span>
+                              {isActive && <Check className="h-3.5 w-3.5 text-primary" />}
+                            </div>
+                            <div className="mt-1 text-[10px] text-muted-foreground">
+                              {isActive ? "ACTIVE STANDARD" : "Set as standard"}
+                            </div>
+                          </button>
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
 
         {/* SIGNATURE LIBRARY — 6 individual variants, then 6 paired options */}
         <section className="mt-12">
@@ -116,16 +203,19 @@ function ShowcasePage() {
         <section className="mt-16">
           <h2 className="font-display text-2xl font-black tracking-tight">Paired previews</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Each option below is a full certificate using one signature pair and Stamp #1.
-            We can swap to Stamp #2 or #3 once you confirm.
+            Each option below previews one signature pair using your currently active stamp
+            (Stamp #{standard.stamp}). Click "Lock as standard" to apply it everywhere.
           </p>
 
           <div className="mt-8 space-y-12">
             {SIG_PAIRS.map((opt, i) => {
               const num = String(i + 1).padStart(2, "0");
+              const isActive = standard.pairId === opt.id;
               return (
                 <section key={opt.id}
-                  className="rounded-xl border border-border bg-muted/20 p-6 md:p-8">
+                  className={`rounded-xl border p-6 md:p-8 ${
+                    isActive ? "border-primary bg-primary/5" : "border-border bg-muted/20"
+                  }`}>
                   <header className="mb-6 flex flex-wrap items-baseline justify-between gap-3">
                     <div className="flex items-baseline gap-3">
                       <span className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
@@ -134,17 +224,42 @@ function ShowcasePage() {
                       <h3 className="font-display text-2xl font-black tracking-tight">
                         {opt.label}
                       </h3>
+                      {isActive && (
+                        <span className="rounded-full bg-primary px-2 py-0.5 text-[10px] font-mono uppercase tracking-widest text-primary-foreground">
+                          Active
+                        </span>
+                      )}
                     </div>
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                      Signatures V{opt.pair[0]} + V{opt.pair[1]} &nbsp;·&nbsp; {opt.hint}
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                        Signatures V{opt.pair[0]} + V{opt.pair[1]} &nbsp;·&nbsp; {opt.hint}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setActive(opt.id, standard.stamp)}
+                        className="rounded-md border border-primary/50 px-3 py-1.5 text-[10px] font-mono uppercase tracking-widest text-primary hover:bg-primary/10"
+                      >
+                        Lock as standard
+                      </button>
+                    </div>
                   </header>
                   <div className="rounded-md border border-border bg-background p-3">
                     <CertigoCertificate
                       theme={BASE_THEME}
                       {...SAMPLE}
                       sigPair={opt.pair}
-                      stampVariant={0}
+                      stampVariant={(standard.stamp - 1) as StampVariant}
+                    />
+                  </div>
+                  <div className="mt-6 rounded-md border border-border bg-background p-3">
+                    <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
+                      Matching transcript (Ledger theme)
+                    </div>
+                    <CertigoTranscript
+                      theme="ledger"
+                      {...TRANSCRIPT_SAMPLE}
+                      sigPair={opt.pair}
+                      stampVariant={(standard.stamp - 1) as StampVariant}
                     />
                   </div>
                 </section>
