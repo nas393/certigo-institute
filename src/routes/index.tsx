@@ -17,6 +17,7 @@ import { useAuth } from "@/lib/auth";
 import { useI18n } from "@/lib/i18n";
 import { chapters as chapterStrings, catalog as catalogStrings } from "@/lib/i18n-chapters";
 import { LiveNetwork, ActivityOverview, TrustPillars, EarlyAdopters } from "@/components/saas/LiveNetwork";
+import { MonochromeCertificate, MONO_OPTIONS, type MonoVariant } from "@/components/certigo/MonochromeCertificate";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,6 +36,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
+      <DemoCertificateSection />
       <TrustStrip />
       <LiveNetwork />
       <ActivityOverview />
