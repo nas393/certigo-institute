@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import QRCode from "qrcode";
 import sigImg from "@/assets/signature-director.png";
 
 export type MonoVariant = "01" | "02" | "03";
@@ -24,6 +26,49 @@ function fmtDate(iso: string) {
   return d.toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
 }
 
+/** Brand wordmark — always with terminal dot. */
+function Wordmark({ className = "" }: { className?: string }) {
+  return (
+    <span className={className}>
+      CERTIGO<span className="text-neutral-900">.</span>
+    </span>
+  );
+}
+
+/** Tiny verified QR + signal block, sits beneath the credential ref. */
+function VerifyQR({ url, size = 72, align = "left" }: { url: string; size?: number; align?: "left" | "right" | "center" }) {
+  const [src, setSrc] = useState<string>("");
+  useEffect(() => {
+    let live = true;
+    QRCode.toDataURL(url, {
+      errorCorrectionLevel: "M",
+      margin: 0,
+      color: { dark: "#0a0a0a", light: "#ffffff00" },
+      width: size * 3,
+    })
+      .then((d) => { if (live) setSrc(d); })
+      .catch(() => { /* noop */ });
+    return () => { live = false; };
+  }, [url, size]);
+  const just = align === "right" ? "items-end text-right" : align === "center" ? "items-center text-center" : "items-start text-left";
+  return (
+    <div className={`flex flex-col gap-1.5 ${just}`}>
+      <div
+        className="rounded-[2px] bg-white p-1 ring-1 ring-neutral-900/10"
+        style={{ width: size, height: size }}
+      >
+        {src ? (
+          <img src={src} alt="" width={size - 8} height={size - 8} className="h-full w-full object-contain" />
+        ) : null}
+      </div>
+      <div className="flex items-center gap-1.5 font-mono text-[8px] uppercase tracking-[0.32em] text-neutral-700">
+        <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600" />
+        Verified · <Wordmark /> Registry
+      </div>
+    </div>
+  );
+}
+
 /** Single centered ink signature — no printed name, role only. */
 function CenterSignature() {
   return (
@@ -31,16 +76,16 @@ function CenterSignature() {
       <img
         src={sigImg}
         alt=""
-        className="h-16 w-auto select-none object-contain md:h-20"
-        style={{ filter: "grayscale(1) contrast(1.15)", mixBlendMode: "multiply" }}
+        className="h-20 w-auto select-none object-contain md:h-24"
+        style={{ mixBlendMode: "multiply" }}
         draggable={false}
       />
-      <div className="mt-2 h-px w-56 bg-neutral-900/80" />
+      <div className="mt-1 h-px w-64 bg-neutral-900/80" />
       <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-700">
         Director of Academic Affairs
       </div>
       <div className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.28em] text-neutral-500">
-        Certigo Institute
+        <Wordmark /> Institute
       </div>
     </div>
   );
