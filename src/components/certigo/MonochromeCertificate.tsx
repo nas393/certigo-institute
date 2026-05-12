@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import QRCode from "qrcode";
 import sigImg from "@/assets/signature-director.png";
 
 export type MonoVariant = "01" | "02" | "03";
@@ -24,6 +26,49 @@ function fmtDate(iso: string) {
   return d.toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
 }
 
+/** Brand wordmark — always with terminal dot. */
+function Wordmark({ className = "" }: { className?: string }) {
+  return (
+    <span className={className}>
+      CERTIGO<span className="text-neutral-900">.</span>
+    </span>
+  );
+}
+
+/** Tiny verified QR + signal block, sits beneath the credential ref. */
+function VerifyQR({ url, size = 72, align = "left" }: { url: string; size?: number; align?: "left" | "right" | "center" }) {
+  const [src, setSrc] = useState<string>("");
+  useEffect(() => {
+    let live = true;
+    QRCode.toDataURL(url, {
+      errorCorrectionLevel: "M",
+      margin: 0,
+      color: { dark: "#0a0a0a", light: "#ffffff00" },
+      width: size * 3,
+    })
+      .then((d) => { if (live) setSrc(d); })
+      .catch(() => { /* noop */ });
+    return () => { live = false; };
+  }, [url, size]);
+  const just = align === "right" ? "items-end text-right" : align === "center" ? "items-center text-center" : "items-start text-left";
+  return (
+    <div className={`flex flex-col gap-1.5 ${just}`}>
+      <div
+        className="rounded-[2px] bg-white p-1 ring-1 ring-neutral-900/10"
+        style={{ width: size, height: size }}
+      >
+        {src ? (
+          <img src={src} alt="" width={size - 8} height={size - 8} className="h-full w-full object-contain" />
+        ) : null}
+      </div>
+      <div className="flex items-center gap-1.5 font-mono text-[8px] uppercase tracking-[0.32em] text-neutral-700">
+        <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600" />
+        Verified · <Wordmark /> Registry
+      </div>
+    </div>
+  );
+}
+
 /** Single centered ink signature — no printed name, role only. */
 function CenterSignature() {
   return (
@@ -31,27 +76,32 @@ function CenterSignature() {
       <img
         src={sigImg}
         alt=""
-        className="h-16 w-auto select-none object-contain md:h-20"
-        style={{ filter: "grayscale(1) contrast(1.15)", mixBlendMode: "multiply" }}
+        className="h-20 w-auto select-none object-contain md:h-24"
+        style={{ mixBlendMode: "multiply" }}
         draggable={false}
       />
-      <div className="mt-2 h-px w-56 bg-neutral-900/80" />
+      <div className="mt-1 h-px w-64 bg-neutral-900/80" />
       <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-700">
         Director of Academic Affairs
       </div>
       <div className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.28em] text-neutral-500">
-        Certigo Institute
+        <Wordmark /> Institute
       </div>
     </div>
   );
 }
 
-function MetaRow({ id, date, score }: { id: string; date: string; score?: number }) {
+function MetaRow({ id, date, score, verifyUrl }: { id: string; date: string; score?: number; verifyUrl?: string }) {
   return (
-    <div className="grid grid-cols-3 gap-4 font-mono text-[10px] uppercase tracking-[0.22em] text-neutral-500">
+    <div className="grid grid-cols-3 items-start gap-4 font-mono text-[10px] uppercase tracking-[0.22em] text-neutral-500">
       <div>
         <div className="text-[8px] tracking-[0.3em] text-neutral-400">Credential ID</div>
         <div className="mt-1 text-neutral-800">{id}</div>
+        {verifyUrl && (
+          <div className="mt-2">
+            <VerifyQR url={verifyUrl} size={64} align="left" />
+          </div>
+        )}
       </div>
       <div className="text-center">
         <div className="text-[8px] tracking-[0.3em] text-neutral-400">Issued</div>
@@ -78,7 +128,7 @@ function Variant01(p: MonoCertProps) {
 
       <div className="relative flex h-full flex-col px-12 py-10 md:px-16 md:py-12">
         <header className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-          <span>Certigo Institute</span>
+          <span><Wordmark /> Institute</span>
           <span>Certificate · No. {p.certificateId}</span>
         </header>
 
@@ -104,8 +154,11 @@ function Variant01(p: MonoCertProps) {
         <div className="mt-auto pt-10">
           <div className="flex items-end justify-between">
             <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-              <div className="text-[8px] tracking-[0.4em] text-neutral-400">Verify</div>
-              <div className="mt-1 text-neutral-800">certigo.institute/v/{p.certificateId}</div>
+              <div className="text-[8px] tracking-[0.4em] text-neutral-400">Credential Ref</div>
+              <div className="mt-1 text-neutral-800">{p.certificateId}</div>
+              <div className="mt-3">
+                <VerifyQR url={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} size={68} align="left" />
+              </div>
             </div>
             <CenterSignature />
             <div className="text-right font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
@@ -125,7 +178,7 @@ function Variant02(p: MonoCertProps) {
     <div className="relative aspect-[1.414/1] w-full overflow-hidden bg-white text-neutral-900 ring-1 ring-neutral-200">
       <div className="relative flex h-full flex-col items-center px-12 py-12 text-center md:px-20">
         <div className="font-mono text-[10px] uppercase tracking-[0.5em] text-neutral-500">
-          Certigo Institute
+          <Wordmark /> Institute
         </div>
         <div className="mt-2 h-px w-24 bg-neutral-900" />
 
@@ -152,7 +205,7 @@ function Variant02(p: MonoCertProps) {
         <div className="mt-auto w-full pt-10">
           <CenterSignature />
           <div className="mt-8 border-t border-neutral-200 pt-4">
-            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} />
+            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} />
           </div>
         </div>
       </div>
@@ -170,7 +223,7 @@ function Variant03(p: MonoCertProps) {
           className="font-mono text-[9px] uppercase tracking-[0.5em]"
           style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
         >
-          Certigo · Institute · MMXXVI
+          CERTIGO. · Institute · MMXXVI
         </div>
         <div
           className="font-mono text-[9px] uppercase tracking-[0.5em]"
@@ -215,7 +268,7 @@ function Variant03(p: MonoCertProps) {
 
         <div className="mt-auto grid grid-cols-12 items-end gap-6 pt-8">
           <div className="col-span-5">
-            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} />
+            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} />
           </div>
           <div className="col-span-7 flex justify-end">
             <CenterSignature />
