@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
+import {
+  AuthorityBlock,
+  ElectronicStamp,
+  SignaturePillar,
+  type StampVariant,
+  type SignatureVariant,
+} from "@/components/certigo/CertificateThemes";
+import { getStandard, PAIR_DEFINITIONS } from "@/lib/certigo-standard";
 
 export type CertigoTranscriptTheme =
   | "ledger"      // navy header, formal tabular grades (academic)
@@ -45,6 +53,9 @@ export interface CertigoTranscriptProps {
   modules: TranscriptModule[];
   cumulativeGpa?: string;       // "3.92 / 4.00"
   totalHours?: number;
+  /** override standard pair/stamp; defaults pull from the persistent standard */
+  sigPair?: [SignatureVariant, SignatureVariant];
+  stampVariant?: StampVariant;
 }
 
 const NAVY = "#0b1a3a";
@@ -63,18 +74,24 @@ function useQR(t: string, size = 220) {
 }
 
 export function CertigoTranscript(p: CertigoTranscriptProps) {
-  switch (p.theme) {
-    case "dossier":   return <DossierTr {...p} />;
-    case "telemetry": return <TelemetryTr {...p} />;
-    case "codex":     return <CodexTr {...p} />;
-    case "audit":     return <AuditTr {...p} />;
-    case "monolith":  return <MonolithTr {...p} />;
-    case "aurora":    return <AuroraTr {...p} />;
-    case "parchment": return <ParchmentTr {...p} />;
-    case "cipher":    return <CipherTr {...p} />;
-    case "regalia":   return <RegaliaTr {...p} />;
+  const std = getStandard();
+  const merged: CertigoTranscriptProps = {
+    ...p,
+    sigPair: p.sigPair ?? PAIR_DEFINITIONS[std.pairId].pair,
+    stampVariant: p.stampVariant ?? ((std.stamp - 1) as StampVariant),
+  };
+  switch (merged.theme) {
+    case "dossier":   return <DossierTr {...merged} />;
+    case "telemetry": return <TelemetryTr {...merged} />;
+    case "codex":     return <CodexTr {...merged} />;
+    case "audit":     return <AuditTr {...merged} />;
+    case "monolith":  return <MonolithTr {...merged} />;
+    case "aurora":    return <AuroraTr {...merged} />;
+    case "parchment": return <ParchmentTr {...merged} />;
+    case "cipher":    return <CipherTr {...merged} />;
+    case "regalia":   return <RegaliaTr {...merged} />;
     case "ledger":
-    default:          return <LedgerTr {...p} />;
+    default:          return <LedgerTr {...merged} />;
   }
 }
 
