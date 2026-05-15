@@ -2,10 +2,10 @@ import { formatSerial } from "@/lib/cert";
 import { MonochromeCertificate, type MonoVariant } from "@/components/certigo/MonochromeCertificate";
 
 /**
- * Single source of truth for the rendered certificate. The legacy template
- * keys are kept for backward compatibility with callers, but everything now
- * renders through MonochromeCertificate (the demo on the home page) so the
- * app, the verify modal, and the PDF export are pixel-identical.
+ * Single source of truth for the rendered certificate. There is exactly ONE
+ * locked template (Helvetica Grid / mono-01). Legacy template keys are kept
+ * only to avoid breaking older callers — they all collapse to mono-01 so
+ * the app, verify modal, PDF export, and home demo are pixel-identical.
  */
 export type CertTemplate =
   | "classic" | "double" | "ornate" | "minimal" | "deco"
@@ -20,9 +20,7 @@ export const SIGNATURE_VARIANTS: { key: SignatureVariant; label: string }[] = [
 ];
 
 export const CERT_TEMPLATES: { key: CertTemplate; label: string; hint: string }[] = [
-  { key: "mono-01", label: "Helvetica Grid",  hint: "Swiss precision · all-caps mono · hairline rules" },
-  { key: "mono-02", label: "Editorial Serif", hint: "Didone display · centred · breathing negative space" },
-  { key: "mono-03", label: "Bauhaus Block",   hint: "Heavy display · left-aligned · industrial label rail" },
+  { key: "mono-01", label: "Helvetica Grid", hint: "Locked global standard — Swiss precision, all-caps mono, hairline rules" },
 ];
 
 interface Props {
@@ -39,9 +37,8 @@ interface Props {
   signatureVariant?: SignatureVariant;
 }
 
-function resolveVariant(t?: CertTemplate): MonoVariant {
-  if (t === "mono-02" || t === "executive") return "02";
-  if (t === "mono-03" || t === "technical" || t === "dark-glass") return "03";
+// Locked: every certificate renders Variant 01 (Helvetica Grid).
+function resolveVariant(_t?: CertTemplate): MonoVariant {
   return "01";
 }
 

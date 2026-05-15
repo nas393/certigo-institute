@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifyRouteImport } from './routes/verify'
 import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as SecurityRouteImport } from './routes/security'
@@ -20,7 +19,6 @@ import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as OptionsRouteImport } from './routes/options'
 import { Route as GovernanceRouteImport } from './routes/governance'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -48,11 +46,6 @@ const UnlockRoute = UnlockRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TemplatesRoute = TemplatesRouteImport.update({
-  id: '/templates',
-  path: '/templates',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StylesRoute = StylesRouteImport.update({
@@ -88,11 +81,6 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OptionsRoute = OptionsRouteImport.update({
-  id: '/options',
-  path: '/options',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GovernanceRoute = GovernanceRouteImport.update({
@@ -169,7 +157,6 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -177,7 +164,6 @@ export interface FileRoutesByFullPath {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -196,7 +182,6 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -204,7 +189,6 @@ export interface FileRoutesByTo {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -224,7 +208,6 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -232,7 +215,6 @@ export interface FileRoutesById {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
@@ -253,7 +235,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -261,7 +242,6 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
@@ -280,7 +260,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -288,7 +267,6 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
@@ -307,7 +285,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -315,7 +292,6 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
@@ -335,7 +311,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
   GovernanceRoute: typeof GovernanceRoute
-  OptionsRoute: typeof OptionsRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ProductRoute: typeof ProductRoute
@@ -343,7 +318,6 @@ export interface RootRouteChildren {
   SecurityRoute: typeof SecurityRoute
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
-  TemplatesRoute: typeof TemplatesRoute
   TermsRoute: typeof TermsRoute
   UnlockRoute: typeof UnlockRoute
   VerifyRoute: typeof VerifyRouteWithChildren
@@ -375,13 +349,6 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/templates': {
-      id: '/templates'
-      path: '/templates'
-      fullPath: '/templates'
-      preLoaderRoute: typeof TemplatesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/styles': {
@@ -431,13 +398,6 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/options': {
-      id: '/options'
-      path: '/options'
-      fullPath: '/options'
-      preLoaderRoute: typeof OptionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/governance': {
@@ -553,7 +513,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
   GovernanceRoute: GovernanceRoute,
-  OptionsRoute: OptionsRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ProductRoute: ProductRoute,
@@ -561,7 +520,6 @@ const rootRouteChildren: RootRouteChildren = {
   SecurityRoute: SecurityRoute,
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
-  TemplatesRoute: TemplatesRoute,
   TermsRoute: TermsRoute,
   UnlockRoute: UnlockRoute,
   VerifyRoute: VerifyRouteWithChildren,
@@ -574,3 +532,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
