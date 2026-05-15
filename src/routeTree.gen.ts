@@ -28,6 +28,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as UHandleRouteImport } from './routes/u.$handle'
+import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as ApiPublicUnlockRouteImport } from './routes/api/public/unlock'
@@ -128,6 +129,11 @@ const UHandleRoute = UHandleRouteImport.update({
   path: '/u/$handle',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TranscriptIdRoute = TranscriptIdRouteImport.update({
+  id: '/transcript/$id',
+  path: '/transcript/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CourseIdRoute = CourseIdRouteImport.update({
   id: '/course/$id',
   path: '/course/$id',
@@ -169,6 +175,7 @@ export interface FileRoutesByFullPath {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -194,6 +201,7 @@ export interface FileRoutesByTo {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -220,6 +228,7 @@ export interface FileRoutesById {
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -247,6 +256,7 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -272,6 +282,7 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -323,6 +335,7 @@ export interface RootRouteChildren {
   VerifyRoute: typeof VerifyRouteWithChildren
   CertificateIdRoute: typeof CertificateIdRoute
   CourseIdRoute: typeof CourseIdRoute
+  TranscriptIdRoute: typeof TranscriptIdRoute
   UHandleRoute: typeof UHandleRoute
   ApiPublicUnlockRoute: typeof ApiPublicUnlockRoute
   ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
@@ -463,6 +476,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UHandleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/transcript/$id': {
+      id: '/transcript/$id'
+      path: '/transcript/$id'
+      fullPath: '/transcript/$id'
+      preLoaderRoute: typeof TranscriptIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/course/$id': {
       id: '/course/$id'
       path: '/course/$id'
@@ -525,6 +545,7 @@ const rootRouteChildren: RootRouteChildren = {
   VerifyRoute: VerifyRouteWithChildren,
   CertificateIdRoute: CertificateIdRoute,
   CourseIdRoute: CourseIdRoute,
+  TranscriptIdRoute: TranscriptIdRoute,
   UHandleRoute: UHandleRoute,
   ApiPublicUnlockRoute: ApiPublicUnlockRoute,
   ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,
@@ -532,3 +553,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
