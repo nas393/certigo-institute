@@ -17,7 +17,7 @@ import { useAuth } from "@/lib/auth";
 import { useI18n } from "@/lib/i18n";
 import { chapters as chapterStrings, catalog as catalogStrings } from "@/lib/i18n-chapters";
 import { LiveNetwork, ActivityOverview, TrustPillars, EarlyAdopters } from "@/components/saas/LiveNetwork";
-import { MonochromeCertificate, MONO_OPTIONS, type MonoVariant } from "@/components/certigo/MonochromeCertificate";
+import { MonochromeCertificate } from "@/components/certigo/MonochromeCertificate";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -1175,7 +1175,11 @@ function Section({
 
 /* ───────────────────────── DEMO CERTIFICATE (home, below hero) ───────────────────────── */
 function DemoCertificate() {
-  const [variant, setVariant] = useState<MonoVariant>("01");
+  const demoSerial = "CERT-DM-1024";
+  const verifyUrl =
+    typeof window !== "undefined"
+      ? `${window.location.origin}/verify/${demoSerial}`
+      : `/verify/${demoSerial}`;
   return (
     <section className="bg-surface">
       <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-24">
@@ -1185,41 +1189,28 @@ function DemoCertificate() {
               ◆ Specimen credential
             </div>
             <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
-              An actual CERTIGO certificate.
+              An actual CERTIGO<span className="text-foreground">.</span> certificate.
             </h2>
             <p className="mt-3 text-muted-foreground">
               Pure white paper, single ink signature, machine-verifiable.
-              Pick a layout to preview — choose one to lock as the global standard.
+              The locked global standard — identical in app, verify page, and PDF.
             </p>
           </div>
-          <div className="inline-flex rounded-lg border border-border bg-background p-1 font-mono text-[11px] uppercase tracking-[0.24em]">
-            {MONO_OPTIONS.map((o, i) => (
-              <button
-                key={o.key}
-                type="button"
-                onClick={() => setVariant(o.key)}
-                className={
-                  "rounded-md px-3 py-1.5 transition " +
-                  (variant === o.key
-                    ? "bg-foreground text-background"
-                    : "text-muted-foreground hover:text-foreground")
-                }
-              >
-                Opt {String(i + 1).padStart(2, "0")}
-              </button>
-            ))}
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600" />
+            Locked · Helvetica Grid
           </div>
         </div>
 
         <div className="rounded-2xl border border-border bg-background p-3 sm:p-5">
           <MonochromeCertificate
-            variant={variant}
+            variant="01"
             recipientName="Demo Professional"
-            courseTitle="Prompt Engineering Fundamentals"
-            description="A rigorous program covering instruction design, evaluation, safety, and production deployment of large language model applications."
+            courseTitle="Digital Marketing Fundamentals"
+            description="A rigorous program covering positioning, channels, analytics, and conversion optimisation across modern digital marketing surfaces."
             issueDate={new Date().toISOString()}
-            certificateId="KR-2026-DM01-AX"
-            verifyUrl="https://certigo.institute/verify/KR-2026-DM01-AX"
+            certificateId={demoSerial}
+            verifyUrl={verifyUrl}
             scorePct={96}
           />
         </div>

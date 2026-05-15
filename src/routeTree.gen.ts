@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as VerifyRouteImport } from './routes/verify'
 import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as TemplatesRouteImport } from './routes/templates'
 import { Route as StylesRouteImport } from './routes/styles'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as SecurityRouteImport } from './routes/security'
@@ -20,7 +19,6 @@ import { Route as ProfileRouteImport } from './routes/profile'
 import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as OptionsRouteImport } from './routes/options'
 import { Route as GovernanceRouteImport } from './routes/governance'
 import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -30,6 +28,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as UHandleRouteImport } from './routes/u.$handle'
+import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as ApiPublicUnlockRouteImport } from './routes/api/public/unlock'
@@ -48,11 +47,6 @@ const UnlockRoute = UnlockRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TemplatesRoute = TemplatesRouteImport.update({
-  id: '/templates',
-  path: '/templates',
   getParentRoute: () => rootRouteImport,
 } as any)
 const StylesRoute = StylesRouteImport.update({
@@ -88,11 +82,6 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const OptionsRoute = OptionsRouteImport.update({
-  id: '/options',
-  path: '/options',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GovernanceRoute = GovernanceRouteImport.update({
@@ -140,6 +129,11 @@ const UHandleRoute = UHandleRouteImport.update({
   path: '/u/$handle',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TranscriptIdRoute = TranscriptIdRouteImport.update({
+  id: '/transcript/$id',
+  path: '/transcript/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CourseIdRoute = CourseIdRouteImport.update({
   id: '/course/$id',
   path: '/course/$id',
@@ -169,7 +163,6 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -177,12 +170,12 @@ export interface FileRoutesByFullPath {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -196,7 +189,6 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -204,12 +196,12 @@ export interface FileRoutesByTo {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -224,7 +216,6 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/dashboard': typeof DashboardRoute
   '/governance': typeof GovernanceRoute
-  '/options': typeof OptionsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/product': typeof ProductRoute
@@ -232,12 +223,12 @@ export interface FileRoutesById {
   '/security': typeof SecurityRoute
   '/settings': typeof SettingsRoute
   '/styles': typeof StylesRoute
-  '/templates': typeof TemplatesRoute
   '/terms': typeof TermsRoute
   '/unlock': typeof UnlockRoute
   '/verify': typeof VerifyRouteWithChildren
   '/certificate/$id': typeof CertificateIdRoute
   '/course/$id': typeof CourseIdRoute
+  '/transcript/$id': typeof TranscriptIdRoute
   '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
   '/api/public/unlock': typeof ApiPublicUnlockRoute
@@ -253,7 +244,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -261,12 +251,12 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -280,7 +270,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -288,12 +277,12 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -307,7 +296,6 @@ export interface FileRouteTypes {
     | '/contact'
     | '/dashboard'
     | '/governance'
-    | '/options'
     | '/pricing'
     | '/privacy'
     | '/product'
@@ -315,12 +303,12 @@ export interface FileRouteTypes {
     | '/security'
     | '/settings'
     | '/styles'
-    | '/templates'
     | '/terms'
     | '/unlock'
     | '/verify'
     | '/certificate/$id'
     | '/course/$id'
+    | '/transcript/$id'
     | '/u/$handle'
     | '/verify/$id'
     | '/api/public/unlock'
@@ -335,7 +323,6 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DashboardRoute: typeof DashboardRoute
   GovernanceRoute: typeof GovernanceRoute
-  OptionsRoute: typeof OptionsRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ProductRoute: typeof ProductRoute
@@ -343,12 +330,12 @@ export interface RootRouteChildren {
   SecurityRoute: typeof SecurityRoute
   SettingsRoute: typeof SettingsRoute
   StylesRoute: typeof StylesRoute
-  TemplatesRoute: typeof TemplatesRoute
   TermsRoute: typeof TermsRoute
   UnlockRoute: typeof UnlockRoute
   VerifyRoute: typeof VerifyRouteWithChildren
   CertificateIdRoute: typeof CertificateIdRoute
   CourseIdRoute: typeof CourseIdRoute
+  TranscriptIdRoute: typeof TranscriptIdRoute
   UHandleRoute: typeof UHandleRoute
   ApiPublicUnlockRoute: typeof ApiPublicUnlockRoute
   ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
@@ -375,13 +362,6 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/templates': {
-      id: '/templates'
-      path: '/templates'
-      fullPath: '/templates'
-      preLoaderRoute: typeof TemplatesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/styles': {
@@ -431,13 +411,6 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/options': {
-      id: '/options'
-      path: '/options'
-      fullPath: '/options'
-      preLoaderRoute: typeof OptionsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/governance': {
@@ -503,6 +476,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UHandleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/transcript/$id': {
+      id: '/transcript/$id'
+      path: '/transcript/$id'
+      fullPath: '/transcript/$id'
+      preLoaderRoute: typeof TranscriptIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/course/$id': {
       id: '/course/$id'
       path: '/course/$id'
@@ -553,7 +533,6 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DashboardRoute: DashboardRoute,
   GovernanceRoute: GovernanceRoute,
-  OptionsRoute: OptionsRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ProductRoute: ProductRoute,
@@ -561,12 +540,12 @@ const rootRouteChildren: RootRouteChildren = {
   SecurityRoute: SecurityRoute,
   SettingsRoute: SettingsRoute,
   StylesRoute: StylesRoute,
-  TemplatesRoute: TemplatesRoute,
   TermsRoute: TermsRoute,
   UnlockRoute: UnlockRoute,
   VerifyRoute: VerifyRouteWithChildren,
   CertificateIdRoute: CertificateIdRoute,
   CourseIdRoute: CourseIdRoute,
+  TranscriptIdRoute: TranscriptIdRoute,
   UHandleRoute: UHandleRoute,
   ApiPublicUnlockRoute: ApiPublicUnlockRoute,
   ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,

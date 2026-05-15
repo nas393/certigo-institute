@@ -126,6 +126,7 @@ function CertPage() {
             score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium, orientation: ori,
           })}><Download className="me-2 h-4 w-4" /> Download PDF</Button>
           <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/verify/$id" params={{ id: cert.id }}>Public verify page</Link></Button>
+          <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/transcript/$id" params={{ id: cert.id }}>View transcript (A4)</Link></Button>
         </div>
       </div>
       {/* Sticky one-tap download bar (mobile only) */}

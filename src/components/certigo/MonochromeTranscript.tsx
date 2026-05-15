@@ -65,7 +65,7 @@ function VerifyQR({ url, size = 96 }: { url: string; size?: number }) {
 
 /** A4 portrait transcript — same minimal monochrome theme as the certificate. */
 export function MonochromeTranscript(p: MonoTranscriptProps) {
-  const verifyUrl = p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`;
+  const verifyUrl = p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`);
   const totalHours =
     p.totalHours ?? p.modules.reduce((s, m) => s + (m.hours || 0), 0);
 
