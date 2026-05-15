@@ -157,7 +157,7 @@ function Variant01(p: MonoCertProps) {
               <div className="text-[8px] tracking-[0.4em] text-neutral-400">Credential Ref</div>
               <div className="mt-1 text-neutral-800">{p.certificateId}</div>
               <div className="mt-3">
-                <VerifyQR url={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} size={68} align="left" />
+                <VerifyQR url={p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`)} size={68} align="left" />
               </div>
             </div>
             <CenterSignature />
@@ -205,7 +205,7 @@ function Variant02(p: MonoCertProps) {
         <div className="mt-auto w-full pt-10">
           <CenterSignature />
           <div className="mt-8 border-t border-neutral-200 pt-4">
-            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} />
+            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`)} />
           </div>
         </div>
       </div>
@@ -268,7 +268,7 @@ function Variant03(p: MonoCertProps) {
 
         <div className="mt-auto grid grid-cols-12 items-end gap-6 pt-8">
           <div className="col-span-5">
-            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? `https://certigo.institute/verify/${p.certificateId}`} />
+            <MetaRow id={p.certificateId} date={p.issueDate} score={p.scorePct} verifyUrl={p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`)} />
           </div>
           <div className="col-span-7 flex justify-end">
             <CenterSignature />
