@@ -96,7 +96,7 @@ function MetaRow({ id, date, score, verifyUrl }: { id: string; date: string; sco
     <div className="grid grid-cols-3 items-start gap-4 font-mono text-[10px] uppercase tracking-[0.22em] text-neutral-500">
       <div>
         <div className="text-[8px] tracking-[0.3em] text-neutral-400">Credential ID</div>
-        <div className="mt-1 text-neutral-800">{id}</div>
+        <div className="mt-1 text-neutral-800"><Wordmark /> {id}</div>
         {verifyUrl && (
           <div className="mt-2">
             <VerifyQR url={verifyUrl} size={64} align="left" />
@@ -155,7 +155,7 @@ function Variant01(p: MonoCertProps) {
           <div className="flex items-end justify-between">
             <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
               <div className="text-[8px] tracking-[0.4em] text-neutral-400">Credential Ref</div>
-              <div className="mt-1 text-neutral-800">{p.certificateId}</div>
+              <div className="mt-1 text-neutral-800"><Wordmark /> {p.certificateId}</div>
               <div className="mt-3">
                 <VerifyQR url={p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`)} size={68} align="left" />
               </div>
