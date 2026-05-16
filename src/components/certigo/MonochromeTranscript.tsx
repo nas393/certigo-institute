@@ -187,7 +187,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         <footer className="mt-auto grid grid-cols-12 items-end gap-6 pt-10">
           <div className="col-span-5">
             <div className="font-mono text-[8px] uppercase tracking-[0.4em] text-neutral-400">Credential Ref</div>
-            <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-neutral-800">{p.certificateId}</div>
+            <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-neutral-800"><Wordmark /> {p.certificateId}</div>
             <div className="mt-3 max-w-xs text-[10px] leading-relaxed text-neutral-500">
               This transcript is digitally signed and registered in the public CERTIGO. registry.
               Scan the code or visit the verify URL to confirm authenticity.
