@@ -7,34 +7,86 @@ import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/co
 import { Menu } from "lucide-react";
 
 /**
- * Stamp-only CERTIGO mark — gold electronic-seal style.
- * No red wax. Clean, ministerial, scalable.
+ * CERTIGO. mark — refined ministerial seal.
+ * Deep navy medallion, brushed-gold serif monogram C with the brand
+ * terminal dot, double engraved ring with guilloche bead-work.
  */
 function CertigoMark({ size = 32 }: { size?: number }) {
+  const beads = Array.from({ length: 48 });
   return (
     <svg viewBox="0 0 100 100" width={size} height={size} aria-hidden role="img">
       <defs>
-        <radialGradient id="certigo-mark-g" cx="40%" cy="35%" r="70%">
-          <stop offset="0%" stopColor="#f1d68a" />
-          <stop offset="55%" stopColor="#c9a24a" />
-          <stop offset="100%" stopColor="#8a6a23" />
+        <radialGradient id="certigo-medallion" cx="38%" cy="30%" r="85%">
+          <stop offset="0%" stopColor="#16294f" />
+          <stop offset="60%" stopColor="#0b1a3a" />
+          <stop offset="100%" stopColor="#050d22" />
         </radialGradient>
+        <linearGradient id="certigo-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#f7e4a3" />
+          <stop offset="40%" stopColor="#d8b15a" />
+          <stop offset="70%" stopColor="#a37b2c" />
+          <stop offset="100%" stopColor="#6e4f17" />
+        </linearGradient>
+        <linearGradient id="certigo-gold-soft" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#f1d68a" />
+          <stop offset="100%" stopColor="#b0832e" />
+        </linearGradient>
       </defs>
-      <circle cx="50" cy="50" r="46" fill="#0b1a3a" />
-      <circle cx="50" cy="50" r="46" fill="none" stroke="url(#certigo-mark-g)" strokeWidth="2.4" />
-      <circle cx="50" cy="50" r="38" fill="none" stroke="url(#certigo-mark-g)" strokeWidth="0.8" opacity="0.65" />
-      <text x="50" y="62" textAnchor="middle"
-        fontFamily="'Cormorant Garamond', 'Times New Roman', serif"
-        fontSize="44" fontWeight="700" fill="url(#certigo-mark-g)">C</text>
-      {/* tick stripes around perimeter */}
-      <g stroke="url(#certigo-mark-g)" strokeWidth="0.6" opacity="0.7">
-        {Array.from({ length: 16 }).map((_, i) => {
-          const a = (i / 16) * Math.PI * 2;
-          const x1 = 50 + Math.cos(a) * 40, y1 = 50 + Math.sin(a) * 40;
-          const x2 = 50 + Math.cos(a) * 44, y2 = 50 + Math.sin(a) * 44;
-          return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} />;
+
+      {/* Medallion */}
+      <circle cx="50" cy="50" r="47" fill="url(#certigo-medallion)" />
+
+      {/* Outer engraved ring */}
+      <circle cx="50" cy="50" r="46" fill="none" stroke="url(#certigo-gold)" strokeWidth="1.4" />
+      <circle cx="50" cy="50" r="43.2" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.5" opacity="0.7" />
+
+      {/* Guilloche bead ring */}
+      <g fill="url(#certigo-gold-soft)">
+        {beads.map((_, i) => {
+          const a = (i / beads.length) * Math.PI * 2;
+          const x = 50 + Math.cos(a) * 44.6;
+          const y = 50 + Math.sin(a) * 44.6;
+          return <circle key={i} cx={x} cy={y} r="0.55" opacity={i % 2 ? 0.9 : 0.55} />;
         })}
       </g>
+
+      {/* Inner stage */}
+      <circle cx="50" cy="50" r="35" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.9" opacity="0.85" />
+      <circle cx="50" cy="50" r="33.4" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.4" opacity="0.45" />
+
+      {/* Monogram C with brand terminal dot */}
+      <g transform="translate(0,2)">
+        <text
+          x="46.5"
+          y="64"
+          textAnchor="middle"
+          fontFamily="'Cormorant Garamond', 'Playfair Display', 'Times New Roman', serif"
+          fontStyle="italic"
+          fontWeight="600"
+          fontSize="46"
+          fill="url(#certigo-gold)"
+          style={{ paintOrder: "stroke fill" }}
+          stroke="#3a2a08"
+          strokeWidth="0.4"
+          strokeOpacity="0.55"
+        >
+          C
+        </text>
+        {/* Brand dot — echoes the wordmark's terminal period */}
+        <circle cx="66.5" cy="62" r="3.2" fill="url(#certigo-gold-soft)" />
+        <circle cx="65.4" cy="60.9" r="0.9" fill="#fff8e1" opacity="0.85" />
+      </g>
+
+      {/* Hairline tick marks at cardinal points */}
+      <g stroke="url(#certigo-gold)" strokeWidth="0.7" opacity="0.85">
+        <line x1="50" y1="3.5" x2="50" y2="7.5" />
+        <line x1="50" y1="92.5" x2="50" y2="96.5" />
+        <line x1="3.5" y1="50" x2="7.5" y2="50" />
+        <line x1="92.5" y1="50" x2="96.5" y2="50" />
+      </g>
+
+      {/* Soft top highlight for dimensional read */}
+      <ellipse cx="38" cy="22" rx="22" ry="8" fill="#ffffff" opacity="0.06" />
     </svg>
   );
 }
