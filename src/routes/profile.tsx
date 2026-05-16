@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { useAuth } from "@/lib/auth";
 import { supabase } from "@/integrations/supabase/client";
-import { useI18n, type Lang } from "@/lib/i18n";
+// English-only build: language picker removed.
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -18,7 +18,6 @@ export const Route = createFileRoute("/profile")({
 function Profile() {
   const { user, loading } = useAuth();
   const nav = useNavigate();
-  const { lang, setLang } = useI18n();
   const [name, setName] = useState(""); const [avatar, setAvatar] = useState("");
   useEffect(() => { if (!loading && !user) nav({ to: "/auth" }); }, [user, loading]);
   useEffect(() => {
@@ -29,7 +28,7 @@ function Profile() {
   }, [user]);
   const save = async () => {
     if (!user) return;
-    const { error } = await supabase.from("profiles").update({ display_name: name, avatar_url: avatar, language: lang, updated_at: new Date().toISOString() }).eq("user_id", user.id);
+    const { error } = await supabase.from("profiles").update({ display_name: name, avatar_url: avatar, language: "en", updated_at: new Date().toISOString() }).eq("user_id", user.id);
     if (error) toast.error(error.message); else toast.success("Saved");
   };
   return (
@@ -43,10 +42,9 @@ function Profile() {
           <div><Label>Avatar URL</Label><Input value={avatar} onChange={(e) => setAvatar(e.target.value)} /></div>
           <div>
             <Label>Language</Label>
-            <select value={lang} onChange={(e) => setLang(e.target.value as Lang)} className="mt-2 w-full rounded-md border border-border bg-background px-3 py-2">
-              <option value="en">English</option><option value="fr">Français</option>
-              <option value="es">Español</option><option value="ar">العربية</option>
-            </select>
+            <div className="mt-2 rounded-md border border-border bg-muted px-3 py-2 text-sm text-muted-foreground">
+              English
+            </div>
           </div>
           <Button onClick={save} className="w-full">Save</Button>
         </Card>
