@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/kredo/Header";
 import { MonochromeTranscript, type TranscriptModule } from "@/components/certigo/MonochromeTranscript";
-import { Loader2 } from "lucide-react";
+import { Loader2, Download } from "lucide-react";
 import { formatSerial } from "@/lib/cert";
+import { Button } from "@/components/ui/button";
+import { downloadTranscriptPdf } from "@/lib/transcript-pdf";
 
 export const Route = createFileRoute("/transcript/$id")({
   head: () => ({ meta: [{ title: "Transcript — CERTIGO." }] }),
@@ -47,7 +49,26 @@ function TranscriptPage() {
     <div className="min-h-screen bg-neutral-100">
       <Header />
       <div className="mx-auto max-w-4xl px-6 py-12">
-        <Link to="/certificate/$id" params={{ id: cert.id }} className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">← Back to certificate</Link>
+        <div className="flex items-center justify-between gap-3">
+          <Link to="/certificate/$id" params={{ id: cert.id }} className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">← Back to certificate</Link>
+          <Button
+            size="sm"
+            onClick={() => downloadTranscriptPdf({
+              serial: cert.serial,
+              recipientName: cert.recipient_name,
+              programmeTitle: cert.course_topic,
+              certificateId: formatSerial(cert.serial),
+              issueDate: cert.issued_at,
+              verifyUrl,
+              modules,
+              finalGrade: cert.score >= 90 ? "A" : cert.score >= 80 ? "B" : cert.score >= 70 ? "C" : "Pass",
+              finalScorePct: cert.score ?? undefined,
+              totalHours,
+            })}
+          >
+            <Download className="me-2 h-4 w-4" /> Download transcript (PDF)
+          </Button>
+        </div>
         <div className="mt-6 rounded-2xl border border-border bg-background p-3 sm:p-5">
           <MonochromeTranscript
             recipientName={cert.recipient_name}
