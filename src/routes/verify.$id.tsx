@@ -4,6 +4,39 @@ import { supabase } from "@/integrations/supabase/client";
 import { Header } from "@/components/kredo/Header";
 import { CertificateView } from "@/components/kredo/CertificateView";
 import { ShieldCheck, ShieldX, Loader2 } from "lucide-react";
+import { formatSerial } from "@/lib/cert";
+
+/**
+ * Dev-only end-to-end check banner.
+ * Validates that:
+ *   1. The record loaded matches the URL id (or serial).
+ *   2. The verify URL on the certificate resolves to `${origin}/verify/${cert.id}`.
+ *   3. The reference id renders as `CERTIGO. ${formatSerial(serial)}`.
+ */
+function VerifyE2EBanner({ cert, urlId }: { cert: any; urlId: string }) {
+  if (!import.meta.env.DEV) return null;
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const expectedVerifyUrl = `${origin}/verify/${cert.id ?? urlId}`;
+  const expectedRef = `CERTIGO. ${formatSerial(cert.serial)}`;
+  const matchesId = cert.id === urlId || String(cert.serial).toLowerCase() === urlId.toLowerCase();
+  const checks = [
+    { label: "Record resolved", pass: !!cert && !cert.revoked },
+    { label: "ID matches URL", pass: matchesId },
+    { label: "Verify URL → record", pass: expectedVerifyUrl.endsWith(`/verify/${cert.id ?? urlId}`) },
+    { label: `Ref renders as “${expectedRef}”`, pass: /^CERTIGO\.\s+\S+/.test(expectedRef) },
+  ];
+  const allPass = checks.every((c) => c.pass);
+  return (
+    <div className={`mt-4 rounded-md border px-4 py-3 font-mono text-[10px] uppercase tracking-widest ${allPass ? "border-emerald-500/30 bg-emerald-500/5 text-emerald-700" : "border-destructive/40 bg-destructive/5 text-destructive"}`}>
+      <div className="mb-1 font-bold">DEV · E2E verify check {allPass ? "✓ pass" : "✗ fail"}</div>
+      <ul className="space-y-0.5">
+        {checks.map((c) => (
+          <li key={c.label}>{c.pass ? "✓" : "✗"} {c.label}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export const Route = createFileRoute("/verify/$id")({
   head: ({ params }) => ({
@@ -79,10 +112,11 @@ function VerifyOne() {
                   ✓ Verified by CERTIGO. {cert._demo && <span className="ms-2 rounded bg-foreground/10 px-2 py-0.5 font-mono text-[9px] uppercase tracking-widest">Demo</span>}
                 </div>
                 <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                  Issued {new Date(cert.issued_at).toLocaleDateString()} · Serial {cert.serial}
+                  Issued {new Date(cert.issued_at).toLocaleDateString()} · CERTIGO. {formatSerial(cert.serial)}
                 </div>
               </div>
             </div>
+            <VerifyE2EBanner cert={cert} urlId={id} />
             <div className="mt-8 grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
               <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
                 score={cert.score} issuedAt={cert.issued_at} verifyUrl={`${window.location.origin}/verify/${cert.id}`} />
