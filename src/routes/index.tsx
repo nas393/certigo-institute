@@ -16,7 +16,7 @@ import { setPendingCertification } from "@/lib/certigo-pending";
 import { useAuth } from "@/lib/auth";
 import { useI18n } from "@/lib/i18n";
 import { chapters as chapterStrings, catalog as catalogStrings } from "@/lib/i18n-chapters";
-import { LiveNetwork, ActivityOverview, TrustPillars, EarlyAdopters } from "@/components/saas/LiveNetwork";
+import { TrustPillars, EarlyAdopters } from "@/components/saas/LiveNetwork";
 import { MonochromeCertificate } from "@/components/certigo/MonochromeCertificate";
 
 export const Route = createFileRoute("/")({
@@ -38,8 +38,6 @@ function Home() {
       <Hero />
       <DemoCertificate />
       <TrustStrip />
-      <LiveNetwork />
-      <ActivityOverview />
       <LiveDemo />
       <HowVerification />
       <TrustPillars />
