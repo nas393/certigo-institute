@@ -487,24 +487,20 @@ interface I18nCtx { lang: Lang; setLang: (l: Lang) => void; t: (k: string) => st
 const Ctx = createContext<I18nCtx>({ lang: "en", setLang: () => {}, t: (k) => k, dir: "ltr" });
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const saved = (localStorage.getItem("kredo.lang") as Lang) || "en";
-    setLangState(saved);
-  }, []);
+  // English-only build. The app is locked to English; the language switcher
+  // and any persisted preference are intentionally ignored.
+  const lang: Lang = "en";
   useEffect(() => {
     if (typeof document === "undefined") return;
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  }, [lang]);
-  const setLang = (l: Lang) => {
-    setLangState(l);
-    if (typeof window !== "undefined") localStorage.setItem("kredo.lang", l);
-  };
-  const t = (k: string) => dict[lang]?.[k] ?? dict.en[k] ?? k;
-  const dir = lang === "ar" ? "rtl" : "ltr";
-  return <Ctx.Provider value={{ lang, setLang, t, dir }}>{children}</Ctx.Provider>;
+    document.documentElement.lang = "en";
+    document.documentElement.dir = "ltr";
+    if (typeof window !== "undefined") {
+      try { localStorage.setItem("kredo.lang", "en"); } catch {}
+    }
+  }, []);
+  const setLang = (_l: Lang) => { /* no-op: English only */ };
+  const t = (k: string) => dict.en[k] ?? k;
+  return <Ctx.Provider value={{ lang, setLang, t, dir: "ltr" }}>{children}</Ctx.Provider>;
 }
 
 export const useI18n = () => useContext(Ctx);

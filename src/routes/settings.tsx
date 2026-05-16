@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { toast } from "sonner";
-import { useI18n, type Lang } from "@/lib/i18n";
+// English-only build: language picker removed.
 import { useTheme, ACCENTS, BACKGROUNDS, FONTS, type AccentKey, type BgKey, type FontKey } from "@/lib/theme";
 import { Settings as SettingsIcon, Check, RotateCcw, KeyRound } from "lucide-react";
 import { CERT_TEMPLATES, SIGNATURE_VARIANTS, type CertTemplate, type CertOrientation, type SignatureVariant, CertificateView } from "@/components/kredo/CertificateView";
@@ -23,18 +23,9 @@ export const Route = createFileRoute("/settings")({
   component: Settings,
 });
 
-const LANGS: { v: Lang; label: string }[] = [
-  { v: "en", label: "English" },
-  { v: "es", label: "Español" },
-  { v: "pt", label: "Português" },
-  { v: "fr", label: "Français" },
-  { v: "ar", label: "العربية" },
-];
-
 function Settings() {
   const { user } = useAuth();
   const nav = useNavigate();
-  const { lang, setLang } = useI18n();
   const { accent, bg, font, setAccent, setBg, setFont, reset } = useTheme();
   const [displayName, setDisplayName] = useState("");
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -108,18 +99,9 @@ function Settings() {
 
         <Card className="mt-8 p-6">
           <h2 className="font-display text-xl font-black tracking-tight">Language</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Used across the app interface. Certificates remain in the original course language.</p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {LANGS.map((l) => (
-              <button
-                key={l.v}
-                onClick={() => setLang(l.v)}
-                className={`rounded-full border px-4 py-2 text-sm transition ${lang === l.v ? "border-primary bg-primary text-primary-foreground" : "border-border hover:border-primary/50"}`}
-              >
-                {lang === l.v && <Check className="me-1 inline h-3.5 w-3.5" />}
-                {l.label}
-              </button>
-            ))}
+          <p className="mt-1 text-sm text-muted-foreground">CERTIGO. ships in English. Additional languages are on the roadmap.</p>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-primary bg-primary px-4 py-2 text-sm text-primary-foreground">
+            <Check className="h-3.5 w-3.5" /> English
           </div>
         </Card>
 
