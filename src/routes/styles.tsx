@@ -209,7 +209,7 @@ function Style05() {
         <div className="flex w-full items-end justify-between">
           <div className="text-left">
             <img src={signatureImg} alt="" style={{ height: "min(34px,3.8cqw)", mixBlendMode: "multiply" }} />
-            <div className="mt-1 border-t pt-1 text-[10px] uppercase tracking-[0.3em]" style={{ borderColor: gold, color: gold }}>Maître</div>
+            <div className="mt-1 border-t pt-1 text-[10px] uppercase tracking-[0.3em]" style={{ borderColor: gold, color: gold }}>Master</div>
           </div>
           <div className="text-[10px] uppercase tracking-[0.3em]" style={{ color: gold }}>{DATE}</div>
           {qr && <img src={qr} alt="QR" style={{ width: "min(58px,6.4cqw)", opacity: 0.85 }} />}
