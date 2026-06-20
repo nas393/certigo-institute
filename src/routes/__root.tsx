@@ -5,8 +5,6 @@ import {
 } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
 import { AuthProvider } from "@/lib/auth";
-import { I18nProvider } from "@/lib/i18n";
-import { ThemeProvider } from "@/lib/theme";
 import appCss from "../styles.css?url";
 import { useEffect } from "react";
 
@@ -113,56 +111,13 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
-      <I18nProvider>
-        <ThemeProvider>
-          <AuthProvider>
-            <CopyGuard />
-            <GoogleTranslate />
-            <Outlet />
-            <Toaster />
-          </AuthProvider>
-        </ThemeProvider>
-      </I18nProvider>
+      <AuthProvider>
+        <CopyGuard />
+        <Outlet />
+        <Toaster />
+      </AuthProvider>
     </QueryClientProvider>
   );
 }
 
-/**
- * Google Translate auto-detection.
- * - No visible UI (widget div is hidden, banner suppressed via CSS).
- * - Sets the `googtrans` cookie based on `navigator.language` so the
- *   translation is applied on first paint.
- */
-function GoogleTranslate() {
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (document.getElementById("google-translate-script")) return;
 
-    const browserLang = (navigator.language || "en").slice(0, 2).toLowerCase();
-    if (browserLang && browserLang !== "en") {
-      const cookie = `/en/${browserLang}`;
-      document.cookie = `googtrans=${cookie};path=/`;
-      try {
-        document.cookie = `googtrans=${cookie};path=/;domain=.${window.location.hostname.replace(/^www\./, "")}`;
-      } catch { /* ignore */ }
-    }
-
-    (window as any).googleTranslateElementInit = () => {
-      const g = (window as any).google;
-      if (g?.translate?.TranslateElement) {
-        new g.translate.TranslateElement(
-          { pageLanguage: "en", autoDisplay: false },
-          "google_translate_element"
-        );
-      }
-    };
-
-    const s = document.createElement("script");
-    s.id = "google-translate-script";
-    s.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    s.async = true;
-    document.body.appendChild(s);
-  }, []);
-
-  return <div id="google_translate_element" style={{ display: "none" }} aria-hidden />;
-}
