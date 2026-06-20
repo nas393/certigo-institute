@@ -17,7 +17,6 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
-import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -59,11 +58,6 @@ const TranscriptIdRoute = TranscriptIdRouteImport.update({
   path: '/transcript/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CertificateIdRoute = CertificateIdRouteImport.update({
-  id: '/certificate/$id',
-  path: '/certificate/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -72,7 +66,6 @@ export interface FileRoutesByFullPath {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
 }
@@ -83,7 +76,6 @@ export interface FileRoutesByTo {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
 }
@@ -95,7 +87,6 @@ export interface FileRoutesById {
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
 }
@@ -108,7 +99,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/terms'
-    | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
   fileRoutesByTo: FileRoutesByTo
@@ -119,7 +109,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/terms'
-    | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
   id:
@@ -130,7 +119,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/privacy'
     | '/terms'
-    | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
   fileRoutesById: FileRoutesById
@@ -142,7 +130,6 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
-  CertificateIdRoute: typeof CertificateIdRoute
   TranscriptIdRoute: typeof TranscriptIdRoute
   VerifyIdRoute: typeof VerifyIdRoute
 }
@@ -205,13 +192,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TranscriptIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/certificate/$id': {
-      id: '/certificate/$id'
-      path: '/certificate/$id'
-      fullPath: '/certificate/$id'
-      preLoaderRoute: typeof CertificateIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -222,7 +202,6 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
-  CertificateIdRoute: CertificateIdRoute,
   TranscriptIdRoute: TranscriptIdRoute,
   VerifyIdRoute: VerifyIdRoute,
 }
