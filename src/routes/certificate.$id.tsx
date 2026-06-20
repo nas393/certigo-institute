@@ -5,7 +5,9 @@ import { Header } from "@/components/kredo/Header";
 import { CertificateView, type CertTemplate, type CertOrientation } from "@/components/kredo/CertificateView";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Download, Loader2, Pencil, Lock } from "lucide-react";
+import { Download, Loader2, Pencil, Lock, Linkedin, Share2, QrCode, BadgeCheck } from "lucide-react";
+import QRCode from "qrcode";
+import { formatSerial } from "@/lib/cert";
 import { downloadCertificatePdf } from "@/lib/pdf";
 import { useAuth } from "@/lib/auth";
 import { toast } from "sonner";
@@ -26,6 +28,7 @@ function CertPage() {
   const [saving, setSaving] = useState(false);
   const [tpl, setTpl] = useState<CertTemplate>("signature");
   const [ori, setOri] = useState<CertOrientation>("landscape");
+  const [view, setView] = useState<"digital" | "print">("print");
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTpl(((localStorage.getItem("kredo.certTemplate") as CertTemplate) || "signature"));
@@ -108,6 +111,25 @@ function CertPage() {
           </div>
         )}
         <div className="mt-8">
+          <div className="mb-5 inline-flex items-center rounded-full border border-border bg-surface p-1 text-xs font-medium">
+            <button
+              type="button"
+              onClick={() => setView("digital")}
+              className={`h-9 min-w-[10rem] rounded-full px-4 transition-colors ${view === "digital" ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Digital badge view
+            </button>
+            <button
+              type="button"
+              onClick={() => setView("print")}
+              className={`h-9 min-w-[10rem] rounded-full px-4 transition-colors ${view === "print" ? "bg-foreground text-background" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Official print view
+            </button>
+          </div>
+          {view === "digital" ? (
+            <DigitalBadge cert={cert} verifyUrl={verifyUrl} />
+          ) : (
           <div
             className="mx-auto"
             style={{
@@ -119,12 +141,14 @@ function CertPage() {
             <CertificateView serial={cert.serial} recipientName={cert.recipient_name} courseTopic={cert.course_topic}
               score={cert.score} issuedAt={cert.issued_at} verifyUrl={verifyUrl} watermark={!profile?.premium} template={tpl} orientation={ori} />
           </div>
+          )}
         </div>
-        <div className="mt-6 flex flex-col gap-2 sm:flex-row">
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           <Button className="w-full sm:w-auto" onClick={() => downloadCertificatePdf({
             serial: cert.serial, recipientName: cert.recipient_name, courseTopic: cert.course_topic,
             score: cert.score, issuedAt: cert.issued_at, verifyUrl, watermark: !profile?.premium, orientation: ori,
           })}><Download className="me-2 h-4 w-4" /> Download PDF</Button>
+          <AddToLinkedInButton cert={cert} verifyUrl={verifyUrl} />
           <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/verify/$id" params={{ id: cert.id }}>Public verify page</Link></Button>
           <Button asChild variant="outline" className="w-full sm:w-auto"><Link to="/transcript/$id" params={{ id: cert.id }}>View transcript (A4)</Link></Button>
         </div>
