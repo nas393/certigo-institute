@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import QRCode from "qrcode";
 import jsQR from "jsqr";
-import { PNG } from "pngjs/browser";
 import { buildCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference, isValidSerial } from "@/lib/cert";
 
