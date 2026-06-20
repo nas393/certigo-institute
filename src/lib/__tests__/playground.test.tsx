@@ -2,6 +2,12 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 
+vi.mock("@tanstack/react-router", () => ({
+  Link: ({ children, to, params, ...rest }: any) => (
+    <a href={typeof to === "string" ? to : "#"} {...rest}>{children}</a>
+  ),
+}));
+
 const SAMPLE = {
   serial: "CERT-PMFN-0042",
   recipient_name: "Alex Johnson",
