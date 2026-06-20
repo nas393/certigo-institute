@@ -9,69 +9,25 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VerifyRouteImport } from './routes/verify'
-import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as StylesRouteImport } from './routes/styles'
-import { Route as SettingsRouteImport } from './routes/settings'
-import { Route as SecurityRouteImport } from './routes/security'
-import { Route as ProfileRouteImport } from './routes/profile'
-import { Route as ProductRouteImport } from './routes/product'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as GovernanceRouteImport } from './routes/governance'
-import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as AuthRouteImport } from './routes/auth'
-import { Route as ArchiveRouteImport } from './routes/archive'
-import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
-import { Route as UHandleRouteImport } from './routes/u.$handle'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
-import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
-import { Route as ApiPublicUnlockRouteImport } from './routes/api/public/unlock'
-import { Route as ApiPublicAiGenerateRouteImport } from './routes/api/public/ai/generate'
+import { Route as CSlugRouteImport } from './routes/c.$slug'
+import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
+import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
 
-const VerifyRoute = VerifyRouteImport.update({
-  id: '/verify',
-  path: '/verify',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const UnlockRoute = UnlockRouteImport.update({
-  id: '/unlock',
-  path: '/unlock',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const StylesRoute = StylesRouteImport.update({
-  id: '/styles',
-  path: '/styles',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SettingsRoute = SettingsRouteImport.update({
-  id: '/settings',
-  path: '/settings',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SecurityRoute = SecurityRouteImport.update({
-  id: '/security',
-  path: '/security',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProfileRoute = ProfileRouteImport.update({
-  id: '/profile',
-  path: '/profile',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ProductRoute = ProductRouteImport.update({
-  id: '/product',
-  path: '/product',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -84,19 +40,14 @@ const PricingRoute = PricingRouteImport.update({
   path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
-const GovernanceRoute = GovernanceRouteImport.update({
-  id: '/governance',
-  path: '/governance',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DashboardRoute = DashboardRouteImport.update({
-  id: '/dashboard',
-  path: '/dashboard',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogRoute = CatalogRouteImport.update({
+  id: '/catalog',
+  path: '/catalog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -104,14 +55,8 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ArchiveRoute = ArchiveRouteImport.update({
-  id: '/archive',
-  path: '/archive',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AdminRoute = AdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -120,13 +65,8 @@ const IndexRoute = IndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const VerifyIdRoute = VerifyIdRouteImport.update({
-  id: '/$id',
-  path: '/$id',
-  getParentRoute: () => VerifyRoute,
-} as any)
-const UHandleRoute = UHandleRouteImport.update({
-  id: '/u/$handle',
-  path: '/u/$handle',
+  id: '/verify/$id',
+  path: '/verify/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TranscriptIdRoute = TranscriptIdRouteImport.update({
@@ -134,269 +74,157 @@ const TranscriptIdRoute = TranscriptIdRouteImport.update({
   path: '/transcript/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CourseIdRoute = CourseIdRouteImport.update({
-  id: '/course/$id',
-  path: '/course/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CertificateIdRoute = CertificateIdRouteImport.update({
   id: '/certificate/$id',
   path: '/certificate/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicUnlockRoute = ApiPublicUnlockRouteImport.update({
-  id: '/api/public/unlock',
-  path: '/api/public/unlock',
+const CSlugRoute = CSlugRouteImport.update({
+  id: '/c/$slug',
+  path: '/c/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicAiGenerateRoute = ApiPublicAiGenerateRouteImport.update({
-  id: '/api/public/ai/generate',
-  path: '/api/public/ai/generate',
-  getParentRoute: () => rootRouteImport,
+const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedIssuedSerialRoute =
+  AuthenticatedIssuedSerialRouteImport.update({
+    id: '/issued/$serial',
+    path: '/issued/$serial',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
+  id: '/exam/$slug',
+  path: '/exam/$slug',
+  getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
-  '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
+  '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/governance': typeof GovernanceRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/product': typeof ProductRoute
-  '/profile': typeof ProfileRoute
-  '/security': typeof SecurityRoute
-  '/settings': typeof SettingsRoute
-  '/styles': typeof StylesRoute
   '/terms': typeof TermsRoute
-  '/unlock': typeof UnlockRoute
-  '/verify': typeof VerifyRouteWithChildren
+  '/dashboard': typeof AuthenticatedDashboardRoute
+  '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/api/public/unlock': typeof ApiPublicUnlockRoute
-  '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
+  '/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
-  '/archive': typeof ArchiveRoute
   '/auth': typeof AuthRoute
+  '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/governance': typeof GovernanceRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/product': typeof ProductRoute
-  '/profile': typeof ProfileRoute
-  '/security': typeof SecurityRoute
-  '/settings': typeof SettingsRoute
-  '/styles': typeof StylesRoute
   '/terms': typeof TermsRoute
-  '/unlock': typeof UnlockRoute
-  '/verify': typeof VerifyRouteWithChildren
+  '/dashboard': typeof AuthenticatedDashboardRoute
+  '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/api/public/unlock': typeof ApiPublicUnlockRoute
-  '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
+  '/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
-  '/archive': typeof ArchiveRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/auth': typeof AuthRoute
+  '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
-  '/dashboard': typeof DashboardRoute
-  '/governance': typeof GovernanceRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
-  '/product': typeof ProductRoute
-  '/profile': typeof ProfileRoute
-  '/security': typeof SecurityRoute
-  '/settings': typeof SettingsRoute
-  '/styles': typeof StylesRoute
   '/terms': typeof TermsRoute
-  '/unlock': typeof UnlockRoute
-  '/verify': typeof VerifyRouteWithChildren
+  '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
+  '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/api/public/unlock': typeof ApiPublicUnlockRoute
-  '/api/public/ai/generate': typeof ApiPublicAiGenerateRoute
+  '/_authenticated/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/_authenticated/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/admin'
-    | '/archive'
     | '/auth'
+    | '/catalog'
     | '/contact'
-    | '/dashboard'
-    | '/governance'
     | '/pricing'
     | '/privacy'
-    | '/product'
-    | '/profile'
-    | '/security'
-    | '/settings'
-    | '/styles'
     | '/terms'
-    | '/unlock'
-    | '/verify'
+    | '/dashboard'
+    | '/c/$slug'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
-    | '/api/public/unlock'
-    | '/api/public/ai/generate'
+    | '/exam/$slug'
+    | '/issued/$serial'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/admin'
-    | '/archive'
     | '/auth'
+    | '/catalog'
     | '/contact'
-    | '/dashboard'
-    | '/governance'
     | '/pricing'
     | '/privacy'
-    | '/product'
-    | '/profile'
-    | '/security'
-    | '/settings'
-    | '/styles'
     | '/terms'
-    | '/unlock'
-    | '/verify'
+    | '/dashboard'
+    | '/c/$slug'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
-    | '/api/public/unlock'
-    | '/api/public/ai/generate'
+    | '/exam/$slug'
+    | '/issued/$serial'
   id:
     | '__root__'
     | '/'
-    | '/admin'
-    | '/archive'
+    | '/_authenticated'
     | '/auth'
+    | '/catalog'
     | '/contact'
-    | '/dashboard'
-    | '/governance'
     | '/pricing'
     | '/privacy'
-    | '/product'
-    | '/profile'
-    | '/security'
-    | '/settings'
-    | '/styles'
     | '/terms'
-    | '/unlock'
-    | '/verify'
+    | '/_authenticated/dashboard'
+    | '/c/$slug'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
-    | '/api/public/unlock'
-    | '/api/public/ai/generate'
+    | '/_authenticated/exam/$slug'
+    | '/_authenticated/issued/$serial'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AdminRoute: typeof AdminRoute
-  ArchiveRoute: typeof ArchiveRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AuthRoute: typeof AuthRoute
+  CatalogRoute: typeof CatalogRoute
   ContactRoute: typeof ContactRoute
-  DashboardRoute: typeof DashboardRoute
-  GovernanceRoute: typeof GovernanceRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
-  ProductRoute: typeof ProductRoute
-  ProfileRoute: typeof ProfileRoute
-  SecurityRoute: typeof SecurityRoute
-  SettingsRoute: typeof SettingsRoute
-  StylesRoute: typeof StylesRoute
   TermsRoute: typeof TermsRoute
-  UnlockRoute: typeof UnlockRoute
-  VerifyRoute: typeof VerifyRouteWithChildren
+  CSlugRoute: typeof CSlugRoute
   CertificateIdRoute: typeof CertificateIdRoute
-  CourseIdRoute: typeof CourseIdRoute
   TranscriptIdRoute: typeof TranscriptIdRoute
-  UHandleRoute: typeof UHandleRoute
-  ApiPublicUnlockRoute: typeof ApiPublicUnlockRoute
-  ApiPublicAiGenerateRoute: typeof ApiPublicAiGenerateRoute
+  VerifyIdRoute: typeof VerifyIdRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/verify': {
-      id: '/verify'
-      path: '/verify'
-      fullPath: '/verify'
-      preLoaderRoute: typeof VerifyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/unlock': {
-      id: '/unlock'
-      path: '/unlock'
-      fullPath: '/unlock'
-      preLoaderRoute: typeof UnlockRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/terms': {
       id: '/terms'
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/styles': {
-      id: '/styles'
-      path: '/styles'
-      fullPath: '/styles'
-      preLoaderRoute: typeof StylesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/settings': {
-      id: '/settings'
-      path: '/settings'
-      fullPath: '/settings'
-      preLoaderRoute: typeof SettingsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/security': {
-      id: '/security'
-      path: '/security'
-      fullPath: '/security'
-      preLoaderRoute: typeof SecurityRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/profile': {
-      id: '/profile'
-      path: '/profile'
-      fullPath: '/profile'
-      preLoaderRoute: typeof ProfileRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/product': {
-      id: '/product'
-      path: '/product'
-      fullPath: '/product'
-      preLoaderRoute: typeof ProductRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -413,25 +241,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/governance': {
-      id: '/governance'
-      path: '/governance'
-      fullPath: '/governance'
-      preLoaderRoute: typeof GovernanceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dashboard': {
-      id: '/dashboard'
-      path: '/dashboard'
-      fullPath: '/dashboard'
-      preLoaderRoute: typeof DashboardRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalog': {
+      id: '/catalog'
+      path: '/catalog'
+      fullPath: '/catalog'
+      preLoaderRoute: typeof CatalogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/auth': {
@@ -441,18 +262,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/archive': {
-      id: '/archive'
-      path: '/archive'
-      fullPath: '/archive'
-      preLoaderRoute: typeof ArchiveRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/admin': {
-      id: '/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AdminRouteImport
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -464,16 +278,9 @@ declare module '@tanstack/react-router' {
     }
     '/verify/$id': {
       id: '/verify/$id'
-      path: '/$id'
+      path: '/verify/$id'
       fullPath: '/verify/$id'
       preLoaderRoute: typeof VerifyIdRouteImport
-      parentRoute: typeof VerifyRoute
-    }
-    '/u/$handle': {
-      id: '/u/$handle'
-      path: '/u/$handle'
-      fullPath: '/u/$handle'
-      preLoaderRoute: typeof UHandleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/transcript/$id': {
@@ -483,13 +290,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TranscriptIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/course/$id': {
-      id: '/course/$id'
-      path: '/course/$id'
-      fullPath: '/course/$id'
-      preLoaderRoute: typeof CourseIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/certificate/$id': {
       id: '/certificate/$id'
       path: '/certificate/$id'
@@ -497,58 +297,65 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CertificateIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/unlock': {
-      id: '/api/public/unlock'
-      path: '/api/public/unlock'
-      fullPath: '/api/public/unlock'
-      preLoaderRoute: typeof ApiPublicUnlockRouteImport
+    '/c/$slug': {
+      id: '/c/$slug'
+      path: '/c/$slug'
+      fullPath: '/c/$slug'
+      preLoaderRoute: typeof CSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/ai/generate': {
-      id: '/api/public/ai/generate'
-      path: '/api/public/ai/generate'
-      fullPath: '/api/public/ai/generate'
-      preLoaderRoute: typeof ApiPublicAiGenerateRouteImport
-      parentRoute: typeof rootRouteImport
+    '/_authenticated/dashboard': {
+      id: '/_authenticated/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof AuthenticatedDashboardRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/issued/$serial': {
+      id: '/_authenticated/issued/$serial'
+      path: '/issued/$serial'
+      fullPath: '/issued/$serial'
+      preLoaderRoute: typeof AuthenticatedIssuedSerialRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/exam/$slug': {
+      id: '/_authenticated/exam/$slug'
+      path: '/exam/$slug'
+      fullPath: '/exam/$slug'
+      preLoaderRoute: typeof AuthenticatedExamSlugRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
     }
   }
 }
 
-interface VerifyRouteChildren {
-  VerifyIdRoute: typeof VerifyIdRoute
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
+  AuthenticatedExamSlugRoute: typeof AuthenticatedExamSlugRoute
+  AuthenticatedIssuedSerialRoute: typeof AuthenticatedIssuedSerialRoute
 }
 
-const VerifyRouteChildren: VerifyRouteChildren = {
-  VerifyIdRoute: VerifyIdRoute,
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
+  AuthenticatedExamSlugRoute: AuthenticatedExamSlugRoute,
+  AuthenticatedIssuedSerialRoute: AuthenticatedIssuedSerialRoute,
 }
 
-const VerifyRouteWithChildren =
-  VerifyRoute._addFileChildren(VerifyRouteChildren)
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AdminRoute: AdminRoute,
-  ArchiveRoute: ArchiveRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AuthRoute: AuthRoute,
+  CatalogRoute: CatalogRoute,
   ContactRoute: ContactRoute,
-  DashboardRoute: DashboardRoute,
-  GovernanceRoute: GovernanceRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
-  ProductRoute: ProductRoute,
-  ProfileRoute: ProfileRoute,
-  SecurityRoute: SecurityRoute,
-  SettingsRoute: SettingsRoute,
-  StylesRoute: StylesRoute,
   TermsRoute: TermsRoute,
-  UnlockRoute: UnlockRoute,
-  VerifyRoute: VerifyRouteWithChildren,
+  CSlugRoute: CSlugRoute,
   CertificateIdRoute: CertificateIdRoute,
-  CourseIdRoute: CourseIdRoute,
   TranscriptIdRoute: TranscriptIdRoute,
-  UHandleRoute: UHandleRoute,
-  ApiPublicUnlockRoute: ApiPublicUnlockRoute,
-  ApiPublicAiGenerateRoute: ApiPublicAiGenerateRoute,
+  VerifyIdRoute: VerifyIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

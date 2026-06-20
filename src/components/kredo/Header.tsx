@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -41,24 +40,15 @@ function CertigoMark({ size = 32 }: { size?: number }) {
 }
 
 const NAV: { to: string; label: string }[] = [
-  { to: "/product", label: "Product" },
+  { to: "/catalog", label: "Catalog" },
   { to: "/pricing", label: "Pricing" },
-  { to: "/security", label: "Security" },
-  { to: "/verify", label: "Verify" },
   { to: "/contact", label: "Contact" },
 ];
 
 export function Header() {
   const { user, signOut } = useAuth();
   const nav = useNavigate();
-  const [isAdmin, setIsAdmin] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    if (!user) { setIsAdmin(false); return; }
-    supabase.from("user_roles").select("role").eq("user_id", user.id).eq("role", "admin")
-      .then(({ data }) => setIsAdmin((data?.length ?? 0) > 0));
-  }, [user]);
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
@@ -86,11 +76,6 @@ export function Header() {
           {user && (
             <Link to="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground">
               Dashboard
-            </Link>
-          )}
-          {isAdmin && (
-            <Link to="/admin" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Admin
             </Link>
           )}
         </nav>
