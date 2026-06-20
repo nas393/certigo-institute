@@ -7,86 +7,35 @@ import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/co
 import { Menu } from "lucide-react";
 
 /**
- * CERTIGO. mark — refined ministerial seal.
- * Deep navy medallion, brushed-gold serif monogram C with the brand
- * terminal dot, double engraved ring with guilloche bead-work.
+ * CERTIGO. mark — minimalist geometric monogram.
+ * A precise open "C" arc on a deep navy square with rounded corners,
+ * resolved by an emerald verification check at its terminal. Technical,
+ * professional, instantly readable at favicon size.
  */
 function CertigoMark({ size = 32 }: { size?: number }) {
-  const beads = Array.from({ length: 48 });
   return (
-    <svg viewBox="0 0 100 100" width={size} height={size} aria-hidden role="img">
-      <defs>
-        <radialGradient id="certigo-medallion" cx="38%" cy="30%" r="85%">
-          <stop offset="0%" stopColor="#16294f" />
-          <stop offset="60%" stopColor="#0b1a3a" />
-          <stop offset="100%" stopColor="#050d22" />
-        </radialGradient>
-        <linearGradient id="certigo-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#f7e4a3" />
-          <stop offset="40%" stopColor="#d8b15a" />
-          <stop offset="70%" stopColor="#a37b2c" />
-          <stop offset="100%" stopColor="#6e4f17" />
-        </linearGradient>
-        <linearGradient id="certigo-gold-soft" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#f1d68a" />
-          <stop offset="100%" stopColor="#b0832e" />
-        </linearGradient>
-      </defs>
-
-      {/* Medallion */}
-      <circle cx="50" cy="50" r="47" fill="url(#certigo-medallion)" />
-
-      {/* Outer engraved ring */}
-      <circle cx="50" cy="50" r="46" fill="none" stroke="url(#certigo-gold)" strokeWidth="1.4" />
-      <circle cx="50" cy="50" r="43.2" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.5" opacity="0.7" />
-
-      {/* Guilloche bead ring */}
-      <g fill="url(#certigo-gold-soft)">
-        {beads.map((_, i) => {
-          const a = (i / beads.length) * Math.PI * 2;
-          const x = 50 + Math.cos(a) * 44.6;
-          const y = 50 + Math.sin(a) * 44.6;
-          return <circle key={i} cx={x} cy={y} r="0.55" opacity={i % 2 ? 0.9 : 0.55} />;
-        })}
-      </g>
-
-      {/* Inner stage */}
-      <circle cx="50" cy="50" r="35" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.9" opacity="0.85" />
-      <circle cx="50" cy="50" r="33.4" fill="none" stroke="url(#certigo-gold)" strokeWidth="0.4" opacity="0.45" />
-
-      {/* Monogram C with brand terminal dot */}
-      <g transform="translate(0,2)">
-        <text
-          x="46.5"
-          y="64"
-          textAnchor="middle"
-          fontFamily="'Cormorant Garamond', 'Playfair Display', 'Times New Roman', serif"
-          fontStyle="italic"
-          fontWeight="600"
-          fontSize="46"
-          fill="url(#certigo-gold)"
-          style={{ paintOrder: "stroke fill" }}
-          stroke="#3a2a08"
-          strokeWidth="0.4"
-          strokeOpacity="0.55"
-        >
-          C
-        </text>
-        {/* Brand dot — echoes the wordmark's terminal period */}
-        <circle cx="66.5" cy="62" r="3.2" fill="url(#certigo-gold-soft)" />
-        <circle cx="65.4" cy="60.9" r="0.9" fill="#fff8e1" opacity="0.85" />
-      </g>
-
-      {/* Hairline tick marks at cardinal points */}
-      <g stroke="url(#certigo-gold)" strokeWidth="0.7" opacity="0.85">
-        <line x1="50" y1="3.5" x2="50" y2="7.5" />
-        <line x1="50" y1="92.5" x2="50" y2="96.5" />
-        <line x1="3.5" y1="50" x2="7.5" y2="50" />
-        <line x1="92.5" y1="50" x2="96.5" y2="50" />
-      </g>
-
-      {/* Soft top highlight for dimensional read */}
-      <ellipse cx="38" cy="22" rx="22" ry="8" fill="#ffffff" opacity="0.06" />
+    <svg viewBox="0 0 64 64" width={size} height={size} aria-hidden role="img">
+      {/* Navy tile */}
+      <rect x="2" y="2" width="60" height="60" rx="14" fill="#0B1B3A" />
+      {/* Subtle inset hairline */}
+      <rect x="5" y="5" width="54" height="54" rx="11" fill="none" stroke="#ffffff" strokeOpacity="0.08" />
+      {/* Open geometric "C" — arc opens to the right where the check resolves it */}
+      <path
+        d="M44 20a16 16 0 1 0 0 24"
+        fill="none"
+        stroke="#FFFFFF"
+        strokeWidth="4.5"
+        strokeLinecap="square"
+      />
+      {/* Verification check — closes the C, emerald accent */}
+      <path
+        d="M38 32.5l5 5 9.5-11"
+        fill="none"
+        stroke="#10B981"
+        strokeWidth="4.5"
+        strokeLinecap="square"
+        strokeLinejoin="miter"
+      />
     </svg>
   );
 }
@@ -119,7 +68,7 @@ export function Header() {
             <CertigoMark size={36} />
           </span>
           <span className="font-display text-[20px] font-extrabold tracking-tight text-foreground">
-            CERTIGO<span className="text-[hsl(var(--accent))]" style={{ color: "var(--primary)" }}>.</span>
+            CERTIGO<span style={{ color: "#10B981" }}>.</span>
           </span>
         </Link>
 
@@ -185,7 +134,7 @@ export function Header() {
             <SheetContent side="right" className="w-80 bg-background">
               <SheetHeader>
                 <SheetTitle className="font-display text-xl font-extrabold">
-                  CERTIGO<span style={{ color: "var(--primary)" }}>.</span>
+                  CERTIGO<span style={{ color: "#10B981" }}>.</span>
                 </SheetTitle>
               </SheetHeader>
               <nav className="mt-6 flex flex-col">
