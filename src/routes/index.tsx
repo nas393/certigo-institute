@@ -36,6 +36,7 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
+      <VerificationPlayground />
       <DemoCertificate />
       <TrustStrip />
       <LiveDemo />
@@ -45,12 +46,164 @@ function Home() {
       <WhoItsFor />
       <WhoBuilt />
       <EnterpriseSecurity />
+      <PilotCTA />
       <Chapters />
       <FinalCTA />
       <Footer />
     </div>
   );
 }
+
+/* ─────────────────────────── VERIFICATION PLAYGROUND ─────────────────────────── */
+function VerificationPlayground() {
+  const [id, setId] = useState("CERT-DM-1024");
+  const [phase, setPhase] = useState<"idle" | "scanning" | "decrypting" | "ok">("idle");
+  const steps = [
+    { key: "scanning", label: "Scanning credential signature" },
+    { key: "decrypting", label: "Decrypting registry record" },
+    { key: "ok", label: "Cross-checking issuing authority" },
+  ] as const;
+  const run = () => {
+    if (phase !== "idle" && phase !== "ok") return;
+    setPhase("scanning");
+    setTimeout(() => setPhase("decrypting"), 900);
+    setTimeout(() => setPhase("ok"), 1900);
+  };
+  const active = (k: typeof steps[number]["key"]) => {
+    const order = ["scanning", "decrypting", "ok"] as const;
+    return order.indexOf(phase as any) >= order.indexOf(k);
+  };
+  return (
+    <section className="border-y border-border bg-surface">
+      <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+        <div className="max-w-2xl">
+          <div className="font-mono text-[10px] uppercase tracking-[0.28em]" style={{ color: "#10B981" }}>Verification playground</div>
+          <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
+            Watch a credential resolve, live.
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            Paste any sample ID or run the simulation to see the exact scan-and-decrypt sequence employers experience.
+          </p>
+        </div>
+        <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+          <div className="rounded-2xl border border-border bg-card p-5 sm:p-7">
+            <label className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">Credential ID</label>
+            <div className="mt-2 grid grid-cols-[minmax(0,1fr)_auto] gap-2">
+              <Input value={id} onChange={(e) => setId(e.target.value)} placeholder="CERT-DM-1024" className="h-12 font-mono text-sm" />
+              <Button
+                className="h-12 px-5 text-sm font-semibold text-white"
+                style={{ background: "#10B981" }}
+                onClick={run}
+              >
+                Test simulation <Zap className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+            <ul className="mt-6 space-y-2">
+              {steps.map((s) => {
+                const done = active(s.key);
+                return (
+                  <li key={s.key} className="flex items-center gap-3 rounded-lg border border-border bg-surface px-3 py-2.5 text-sm">
+                    <span
+                      className={`grid h-6 w-6 shrink-0 place-items-center rounded-full border ${done ? "border-transparent text-white" : "border-border bg-background text-muted-foreground"}`}
+                      style={done ? { background: "#10B981" } : {}}
+                    >
+                      {done ? <CheckCircle2 className="h-4 w-4" /> : <Activity className="h-3.5 w-3.5" />}
+                    </span>
+                    <span className={done ? "text-foreground" : "text-muted-foreground"}>{s.label}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-[#0B1B3A] p-6 text-white sm:p-8">
+            <div
+              className="pointer-events-none absolute inset-x-0 top-0 h-px"
+              style={{
+                background: "linear-gradient(90deg, transparent, #10B981, transparent)",
+                transform: `translateY(${phase === "scanning" ? "120px" : phase === "decrypting" ? "220px" : phase === "ok" ? "100%" : "0"})`,
+                transition: "transform 900ms ease-out",
+                opacity: phase === "idle" ? 0 : 0.9,
+              }}
+            />
+            <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.28em] text-white/70">
+              <span>CERTIGO<span style={{ color: "#10B981" }}>.</span> Registry</span>
+              <span>{phase === "ok" ? "VERIFIED" : phase === "idle" ? "STANDBY" : "SCANNING"}</span>
+            </div>
+            <div className="mt-6">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-white/60">Credential</div>
+              <div className="mt-1 font-display text-xl font-extrabold tracking-tight">
+                {id || "CERT-DM-1024"}
+              </div>
+              <div className="mt-5 font-mono text-[10px] uppercase tracking-[0.28em] text-white/60">Issued by</div>
+              <div className="mt-1 font-semibold">CERTIGO. Institute</div>
+            </div>
+            <div
+              className={`mt-8 flex items-center justify-between rounded-xl border px-4 py-3 transition-colors ${phase === "ok" ? "border-[#10B981]/40 bg-[#10B981]/10" : "border-white/10 bg-white/5"}`}
+            >
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5" style={{ color: phase === "ok" ? "#10B981" : "rgba(255,255,255,0.5)" }} />
+                <span className="font-mono text-xs uppercase tracking-[0.22em]">
+                  {phase === "ok" ? "CERTIGO. SECURED" : "Awaiting verification"}
+                </span>
+              </div>
+              {phase === "ok" && <span className="h-2 w-2 animate-pulse rounded-full" style={{ background: "#10B981" }} />}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────── Q3 PILOT CTA ─────────────────────────── */
+function PilotCTA() {
+  const nav = useNavigate();
+  return (
+    <section className="bg-background">
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
+        <div className="relative overflow-hidden rounded-2xl border border-border bg-[#0B1B3A] px-6 py-10 text-white sm:px-10 sm:py-14">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full"
+            style={{ background: "radial-gradient(closest-side, rgba(16,185,129,0.35), transparent)" }}
+          />
+          <div className="grid items-center gap-6 sm:grid-cols-[1.4fr_auto]">
+            <div className="min-w-0">
+              <div className="font-mono text-[10px] uppercase tracking-[0.28em]" style={{ color: "#10B981" }}>
+                For issuing institutions
+              </div>
+              <h3 className="mt-2 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">
+                Join the Q3 Pilot Program.
+              </h3>
+              <p className="mt-2 max-w-xl text-sm text-white/75 sm:text-base">
+                Secure your credentials, eliminate resume fraud. Limited cohort onboarding now.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3 sm:justify-end">
+              <Button
+                size="lg"
+                className="h-12 px-6 text-sm font-semibold text-white border-0"
+                style={{ background: "#10B981" }}
+                onClick={() => nav({ to: "/contact" })}
+              >
+                Apply for pilot <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-12 border-white/30 bg-transparent px-6 text-sm font-semibold text-white hover:bg-white/10"
+                onClick={() => nav({ to: "/product" })}
+              >
+                See how it works
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
 /* ─────────────────────────── COLLAPSIBLE CHAPTERS ─────────────────────────── */
 function Chapters() {
