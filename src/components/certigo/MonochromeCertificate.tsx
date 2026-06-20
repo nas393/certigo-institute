@@ -30,7 +30,7 @@ function fmtDate(iso: string) {
 function Wordmark({ className = "" }: { className?: string }) {
   return (
     <span className={className}>
-      CERTIGO<span className="text-neutral-900">.</span>
+      CERTIGO<span style={{ color: "#10B981" }}>.</span>
     </span>
   );
 }
