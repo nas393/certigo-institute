@@ -169,3 +169,93 @@ function CertPage() {
     </div>
   );
 }
+
+function AddToLinkedInButton({ cert, verifyUrl }: { cert: any; verifyUrl: string }) {
+  const d = new Date(cert.issued_at);
+  const issueMonth = d.getUTCMonth() + 1;
+  const issueYear = d.getUTCFullYear();
+  const url = `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME` +
+    `&name=${encodeURIComponent(cert.course_topic)}` +
+    `&organizationName=${encodeURIComponent("CERTIGO. Institute")}` +
+    `&issueMonth=${issueMonth}` +
+    `&issueYear=${issueYear}` +
+    `&certUrl=${encodeURIComponent(verifyUrl)}` +
+    `&certId=${encodeURIComponent(formatSerial(cert.serial))}`;
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex h-10 min-h-[3rem] w-full items-center justify-center gap-2 rounded-md bg-[#0A66C2] px-4 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 sm:h-10 sm:min-h-10 sm:w-auto"
+      aria-label="Add this certificate to your LinkedIn profile"
+    >
+      <Linkedin className="h-4 w-4" /> Add to LinkedIn profile
+    </a>
+  );
+}
+
+function DigitalBadge({ cert, verifyUrl }: { cert: any; verifyUrl: string }) {
+  const [qr, setQr] = useState("");
+  useEffect(() => {
+    let live = true;
+    QRCode.toDataURL(verifyUrl, { margin: 0, width: 240, color: { dark: "#0B1B3A", light: "#ffffff00" } })
+      .then((d) => { if (live) setQr(d); }).catch(() => {});
+    return () => { live = false; };
+  }, [verifyUrl]);
+  const issued = new Date(cert.issued_at).toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
+  const onShare = async () => {
+    if (typeof navigator !== "undefined" && (navigator as any).share) {
+      try { await (navigator as any).share({ title: cert.course_topic, url: verifyUrl }); return; } catch { /* cancelled */ }
+    }
+    try { await navigator.clipboard.writeText(verifyUrl); } catch { /* noop */ }
+  };
+  return (
+    <div className="mx-auto w-full max-w-2xl overflow-hidden rounded-2xl border border-border bg-card shadow-card">
+      <div className="flex items-center justify-between gap-3 border-b border-border bg-[#0B1B3A] px-5 py-3 text-white">
+        <div className="flex min-w-0 items-center gap-2 font-mono text-[10px] uppercase tracking-[0.28em]">
+          <BadgeCheck className="h-4 w-4 shrink-0" style={{ color: "#10B981" }} />
+          <span className="truncate">CERTIGO<span style={{ color: "#10B981" }}>.</span> Verified credential</span>
+        </div>
+        <span className="shrink-0 font-mono text-[10px] uppercase tracking-[0.22em] text-white/70">{formatSerial(cert.serial)}</span>
+      </div>
+      <div className="grid gap-6 p-6 sm:grid-cols-[1fr_auto] sm:p-8">
+        <div className="min-w-0">
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">Awarded to</div>
+          <h2 className="mt-1 truncate font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{cert.recipient_name}</h2>
+          <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">Certification</div>
+          <div className="mt-1 font-display text-base font-bold sm:text-lg">{cert.course_topic}</div>
+          <dl className="mt-5 grid grid-cols-2 gap-3 text-xs">
+            <div className="rounded-lg border border-border bg-surface p-3">
+              <dt className="font-mono text-[9px] uppercase tracking-[0.28em] text-muted-foreground">Issued</dt>
+              <dd className="mt-1 font-semibold">{issued}</dd>
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-3">
+              <dt className="font-mono text-[9px] uppercase tracking-[0.28em] text-muted-foreground">Score</dt>
+              <dd className="mt-1 font-semibold">{cert.score ? `${cert.score}%` : "Pass"}</dd>
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-3">
+              <dt className="font-mono text-[9px] uppercase tracking-[0.28em] text-muted-foreground">Issuer</dt>
+              <dd className="mt-1 font-semibold">CERTIGO. Institute</dd>
+            </div>
+            <div className="rounded-lg border border-border bg-surface p-3">
+              <dt className="font-mono text-[9px] uppercase tracking-[0.28em] text-muted-foreground">Expires</dt>
+              <dd className="mt-1 font-semibold">No expiry</dd>
+            </div>
+          </dl>
+        </div>
+        <div className="flex flex-col items-center justify-between gap-3 sm:items-end">
+          <div className="rounded-xl bg-white p-3 ring-1 ring-border">
+            {qr ? <img src={qr} alt="Verify QR" className="h-32 w-32 sm:h-36 sm:w-36" /> : <div className="grid h-32 w-32 place-items-center text-muted-foreground sm:h-36 sm:w-36"><QrCode className="h-6 w-6" /></div>}
+          </div>
+          <button
+            type="button"
+            onClick={onShare}
+            className="inline-flex h-11 min-w-[8rem] items-center justify-center gap-2 rounded-md border border-border bg-surface px-4 text-xs font-semibold hover:bg-surface-muted"
+          >
+            <Share2 className="h-4 w-4" /> Share link
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
