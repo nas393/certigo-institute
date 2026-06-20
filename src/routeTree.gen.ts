@@ -16,9 +16,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
-import { Route as UHandleRouteImport } from './routes/u.$handle'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
-import { Route as CourseIdRouteImport } from './routes/course.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 
 const TermsRoute = TermsRouteImport.update({
@@ -56,19 +54,9 @@ const VerifyIdRoute = VerifyIdRouteImport.update({
   path: '/verify/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const UHandleRoute = UHandleRouteImport.update({
-  id: '/u/$handle',
-  path: '/u/$handle',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TranscriptIdRoute = TranscriptIdRouteImport.update({
   id: '/transcript/$id',
   path: '/transcript/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CourseIdRoute = CourseIdRouteImport.update({
-  id: '/course/$id',
-  path: '/course/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CertificateIdRoute = CertificateIdRouteImport.update({
@@ -85,9 +73,7 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRoutesByTo {
@@ -98,9 +84,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRoutesById {
@@ -112,9 +96,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/certificate/$id': typeof CertificateIdRoute
-  '/course/$id': typeof CourseIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
-  '/u/$handle': typeof UHandleRoute
   '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRouteTypes {
@@ -127,9 +109,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -140,9 +120,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
   id:
     | '__root__'
@@ -153,9 +131,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/certificate/$id'
-    | '/course/$id'
     | '/transcript/$id'
-    | '/u/$handle'
     | '/verify/$id'
   fileRoutesById: FileRoutesById
 }
@@ -167,9 +143,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
   CertificateIdRoute: typeof CertificateIdRoute
-  CourseIdRoute: typeof CourseIdRoute
   TranscriptIdRoute: typeof TranscriptIdRoute
-  UHandleRoute: typeof UHandleRoute
   VerifyIdRoute: typeof VerifyIdRoute
 }
 
@@ -224,25 +198,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VerifyIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/u/$handle': {
-      id: '/u/$handle'
-      path: '/u/$handle'
-      fullPath: '/u/$handle'
-      preLoaderRoute: typeof UHandleRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/transcript/$id': {
       id: '/transcript/$id'
       path: '/transcript/$id'
       fullPath: '/transcript/$id'
       preLoaderRoute: typeof TranscriptIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/course/$id': {
-      id: '/course/$id'
-      path: '/course/$id'
-      fullPath: '/course/$id'
-      preLoaderRoute: typeof CourseIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/certificate/$id': {
@@ -263,9 +223,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
   CertificateIdRoute: CertificateIdRoute,
-  CourseIdRoute: CourseIdRoute,
   TranscriptIdRoute: TranscriptIdRoute,
-  UHandleRoute: UHandleRoute,
   VerifyIdRoute: VerifyIdRoute,
 }
 export const routeTree = rootRouteImport
