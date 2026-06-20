@@ -13,10 +13,6 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as VerifyIdRouteImport } from './routes/verify.$id'
-import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -38,100 +34,39 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthRoute = AuthRouteImport.update({
-  id: '/auth',
-  path: '/auth',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VerifyIdRoute = VerifyIdRouteImport.update({
-  id: '/verify/$id',
-  path: '/verify/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TranscriptIdRoute = TranscriptIdRouteImport.update({
-  id: '/transcript/$id',
-  path: '/transcript/$id',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/transcript/$id': typeof TranscriptIdRoute
-  '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/transcript/$id': typeof TranscriptIdRoute
-  '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/auth': typeof AuthRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
-  '/transcript/$id': typeof TranscriptIdRoute
-  '/verify/$id': typeof VerifyIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/auth'
-    | '/contact'
-    | '/pricing'
-    | '/privacy'
-    | '/terms'
-    | '/transcript/$id'
-    | '/verify/$id'
+  fullPaths: '/contact' | '/pricing' | '/privacy' | '/terms'
   fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/auth'
-    | '/contact'
-    | '/pricing'
-    | '/privacy'
-    | '/terms'
-    | '/transcript/$id'
-    | '/verify/$id'
-  id:
-    | '__root__'
-    | '/'
-    | '/auth'
-    | '/contact'
-    | '/pricing'
-    | '/privacy'
-    | '/terms'
-    | '/transcript/$id'
-    | '/verify/$id'
+  to: '/contact' | '/pricing' | '/privacy' | '/terms'
+  id: '__root__' | '/contact' | '/pricing' | '/privacy' | '/terms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  AuthRoute: typeof AuthRoute
   ContactRoute: typeof ContactRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   TermsRoute: typeof TermsRoute
-  TranscriptIdRoute: typeof TranscriptIdRoute
-  VerifyIdRoute: typeof VerifyIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -164,46 +99,14 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/verify/$id': {
-      id: '/verify/$id'
-      path: '/verify/$id'
-      fullPath: '/verify/$id'
-      preLoaderRoute: typeof VerifyIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/transcript/$id': {
-      id: '/transcript/$id'
-      path: '/transcript/$id'
-      fullPath: '/transcript/$id'
-      preLoaderRoute: typeof TranscriptIdRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AuthRoute: AuthRoute,
   ContactRoute: ContactRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   TermsRoute: TermsRoute,
-  TranscriptIdRoute: TranscriptIdRoute,
-  VerifyIdRoute: VerifyIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
