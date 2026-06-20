@@ -19,6 +19,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CSlugRouteImport } from './routes/c.$slug'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
 import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
 
 const TermsRoute = TermsRouteImport.update({
@@ -70,6 +71,12 @@ const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedIssuedSerialRoute =
+  AuthenticatedIssuedSerialRouteImport.update({
+    id: '/issued/$serial',
+    path: '/issued/$serial',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
   id: '/exam/$slug',
   path: '/exam/$slug',
@@ -87,6 +94,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/c/$slug': typeof CSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -99,6 +107,7 @@ export interface FileRoutesByTo {
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/c/$slug': typeof CSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -113,6 +122,7 @@ export interface FileRoutesById {
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/c/$slug': typeof CSlugRoute
   '/_authenticated/exam/$slug': typeof AuthenticatedExamSlugRoute
+  '/_authenticated/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/c/$slug'
     | '/exam/$slug'
+    | '/issued/$serial'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/c/$slug'
     | '/exam/$slug'
+    | '/issued/$serial'
   id:
     | '__root__'
     | '/'
@@ -152,6 +164,7 @@ export interface FileRouteTypes {
     | '/_authenticated/dashboard'
     | '/c/$slug'
     | '/_authenticated/exam/$slug'
+    | '/_authenticated/issued/$serial'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -238,6 +251,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedDashboardRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/issued/$serial': {
+      id: '/_authenticated/issued/$serial'
+      path: '/issued/$serial'
+      fullPath: '/issued/$serial'
+      preLoaderRoute: typeof AuthenticatedIssuedSerialRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/exam/$slug': {
       id: '/_authenticated/exam/$slug'
       path: '/exam/$slug'
@@ -251,11 +271,13 @@ declare module '@tanstack/react-router' {
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedExamSlugRoute: typeof AuthenticatedExamSlugRoute
+  AuthenticatedIssuedSerialRoute: typeof AuthenticatedIssuedSerialRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedExamSlugRoute: AuthenticatedExamSlugRoute,
+  AuthenticatedIssuedSerialRoute: AuthenticatedIssuedSerialRoute,
 }
 
 const AuthenticatedRouteRouteWithChildren =
@@ -275,3 +297,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
