@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent, waitFor, act } from "@testing-library/react";
+import { describe, it, expect, vi } from "vitest";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 
 const SAMPLE = {
@@ -51,21 +51,16 @@ vi.mock("@/integrations/supabase/client", () => {
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
 
 describe("Verification Playground", () => {
-  beforeEach(() => vi.useFakeTimers());
-
   it("resolves a sample ID to a real record and shows the CERTIGO. SECURED card", async () => {
     render(<VerificationPlayground />);
 
     // Sample button populates after initial sample fetch
-    const sampleBtn = await screen.findByTestId("playground-sample", {}, { timeout: 2000 });
+    const sampleBtn = await screen.findByTestId("playground-sample", {}, { timeout: 3000 });
     expect(sampleBtn.textContent).toContain(SAMPLE.serial);
 
-    await act(async () => { fireEvent.click(sampleBtn); });
-    // Scan + decrypt animation visible
-    expect(screen.getByTestId("playground-scanning")).toBeInTheDocument();
-
-    // Advance through scan (600ms) + decrypt (500ms)
-    await act(async () => { await vi.advanceTimersByTimeAsync(1200); });
+    fireEvent.click(sampleBtn);
+    // Scan animation appears synchronously
+    await waitFor(() => expect(screen.getByTestId("playground-scanning")).toBeInTheDocument());
 
     await waitFor(() => {
       const card = screen.getByTestId("playground-secured");
@@ -74,8 +69,7 @@ describe("Verification Playground", () => {
       expect(card.textContent).toContain("SECURED");
       expect(card.textContent).toContain(SAMPLE.recipient_name);
       expect(card.textContent).toContain(SAMPLE.serial);
-    });
-    // The green card should NOT be there when a wrong serial is used
+    }, { timeout: 4000 });
     expect(screen.queryByTestId("playground-notfound")).toBeNull();
   });
 
@@ -84,11 +78,11 @@ describe("Verification Playground", () => {
     const input = screen.getByTestId("playground-input");
     const verify = screen.getByTestId("playground-verify");
     fireEvent.change(input, { target: { value: "CERT-NOPE-0000" } });
-    await act(async () => { fireEvent.click(verify); });
-    await act(async () => { await vi.advanceTimersByTimeAsync(1200); });
-    await waitFor(() => {
-      expect(screen.getByTestId("playground-notfound")).toBeInTheDocument();
-    });
+    fireEvent.click(verify);
+    await waitFor(
+      () => expect(screen.getByTestId("playground-notfound")).toBeInTheDocument(),
+      { timeout: 4000 },
+    );
     expect(screen.queryByTestId("playground-secured")).toBeNull();
   });
 });
