@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { ArrowRight, ShieldCheck, Loader2, Search, Linkedin, ScanLine, Sparkles } from "lucide-react";
-import { formatReference } from "@/lib/cert";
+import { ArrowRight, Sparkles } from "lucide-react";
+import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
 
 export const Route = createFileRoute("/")({
   head: () => ({
