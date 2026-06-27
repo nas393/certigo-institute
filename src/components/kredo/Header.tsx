@@ -78,6 +78,11 @@ export function Header() {
               Dashboard
             </Link>
           )}
+          {user && (
+            <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">
+              Profile
+            </Link>
+          )}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -137,6 +142,12 @@ export function Header() {
                   <Link to="/dashboard" onClick={() => setOpen(false)}
                     className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
                     Dashboard
+                  </Link>
+                )}
+                {user && (
+                  <Link to="/profile" onClick={() => setOpen(false)}
+                    className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
+                    Profile
                   </Link>
                 )}
                 <div className="mt-6 flex flex-col gap-2">
