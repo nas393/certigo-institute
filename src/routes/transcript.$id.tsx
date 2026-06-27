@@ -17,12 +17,12 @@ function TranscriptPage() {
   const { id } = Route.useParams();
   const [cert, setCert] = useState<any>(null);
   useEffect(() => {
-    const s = id.toUpperCase();
-    supabase
-      .from("certificates")
-      .select("serial, recipient_name, issued_at, score, certifications(title, skills)")
-      .or(`serial.eq.${s},id.eq.${id}`).maybeSingle()
-      .then(({ data }) => setCert(data));
+    supabase.rpc("verify_certificate", { lookup: id })
+      .then(({ data }: { data: any }) => {
+        const row = Array.isArray(data) ? data[0] : data;
+        if (!row) return;
+        setCert({ ...row, certifications: { title: row.cert_title, skills: row.skills } });
+      });
   }, [id]);
 
   if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;

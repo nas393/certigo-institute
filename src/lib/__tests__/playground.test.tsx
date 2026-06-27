@@ -18,40 +18,32 @@ const SAMPLE = {
 
 // Mock the supabase client BEFORE importing the component
 vi.mock("@/integrations/supabase/client", () => {
-  function makeChain(result: any) {
-    const chain: any = {};
-    const methods = ["select", "order", "limit", "eq", "or"];
-    methods.forEach((m) => (chain[m] = vi.fn(() => chain)));
-    chain.maybeSingle = vi.fn(async () => result);
-    chain.then = (resolve: any) => Promise.resolve(result).then(resolve);
-    return chain;
-  }
-  const fromImpl: any = vi.fn((table: string) => {
-    if (table !== "certificates") return makeChain({ data: [], error: null });
-    return {
-      select: vi.fn((cols: string) => {
-        if (cols.includes("recipient_name")) {
-          // The eq("serial", X) branch resolves with maybeSingle
-          return {
-            eq: vi.fn((_c: string, val: string) => ({
-              maybeSingle: vi.fn(async () =>
-                val === SAMPLE.serial ? { data: SAMPLE, error: null } : { data: null, error: null },
-              ),
-            })),
-          };
-        }
-        // sample list branch
-        return {
-          order: vi.fn(() => ({
-            limit: vi.fn(() => ({
-              then: (resolve: any) => Promise.resolve({ data: [{ serial: SAMPLE.serial }], error: null }).then(resolve),
-            })),
-          })),
-        };
-      }),
-    };
+  const rpc = vi.fn((fn: string, args?: any) => {
+    if (fn === "sample_certificate_serial") {
+      return Promise.resolve({ data: SAMPLE.serial, error: null });
+    }
+    if (fn === "verify_certificate") {
+      const lookup = String(args?.lookup ?? "").toUpperCase();
+      if (lookup === SAMPLE.serial) {
+        return Promise.resolve({
+          data: [{
+            serial: SAMPLE.serial,
+            recipient_name: SAMPLE.recipient_name,
+            issued_at: SAMPLE.issued_at,
+            revoked: false,
+            score: 96,
+            cert_title: SAMPLE.certifications.title,
+            issuer_name: SAMPLE.certifications.issuer_name,
+            skills: [],
+          }],
+          error: null,
+        });
+      }
+      return Promise.resolve({ data: [], error: null });
+    }
+    return Promise.resolve({ data: null, error: null });
   });
-  return { supabase: { from: fromImpl } };
+  return { supabase: { rpc, from: vi.fn(() => ({})) } };
 });
 
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";

@@ -6,14 +6,13 @@ import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import { generateSerial } from "@/lib/cert";
 
 export const Route = createFileRoute("/_authenticated/exam/$slug")({
   head: ({ params }) => ({ meta: [{ title: `Exam · ${params.slug} — CERTIGO.` }] }),
   component: Exam,
 });
 
-type Q = { q: string; options: string[]; answer: number };
+type Q = { q: string; options: string[] };
 
 function Exam() {
   const { slug } = Route.useParams();
@@ -38,40 +37,33 @@ function Exam() {
       toast.error("Answer every question first."); return;
     }
     setSubmitting(true);
-    const correct = questions.filter((q, i) => answers[i] === q.answer).length;
-    const score = Math.round((correct / total) * 100);
-    const passed = score >= cert.pass_score;
+    const { data: profile } = await supabase
+      .from("profiles").select("display_name").eq("user_id", user.id).maybeSingle();
+    const recipientName =
+      profile?.display_name ||
+      (user.user_metadata?.display_name as string | undefined) ||
+      user.email!.split("@")[0];
 
-    await supabase.from("attempts").insert({
-      user_id: user.id,
-      certification_id: cert.id,
-      score,
-      passed,
-      answers,
+    const { data, error } = await supabase.rpc("grade_and_issue", {
+      _certification_id: cert.id,
+      _answers: answers,
+      _recipient_name: recipientName,
     });
-
-    if (!passed) {
+    if (error) {
+      toast.error(error.message);
+      setSubmitting(false);
+      return;
+    }
+    const row: any = Array.isArray(data) ? data[0] : data;
+    const score = row?.score ?? 0;
+    if (!row?.passed || !row?.serial) {
       setSubmitting(false);
       toast.error(`You scored ${score}%. Pass mark is ${cert.pass_score}%. Try again.`);
       setAnswers({});
       return;
     }
-
-    // Get recipient name
-    const { data: profile } = await supabase.from("profiles").select("display_name").eq("user_id", user.id).maybeSingle();
-    const recipientName = profile?.display_name || (user.user_metadata?.display_name as string | undefined) || user.email!.split("@")[0];
-
-    const serial = generateSerial(cert.slug);
-    const { error: insErr } = await supabase.from("certificates").insert({
-      serial,
-      user_id: user.id,
-      certification_id: cert.id,
-      recipient_name: recipientName,
-      score,
-    });
-    if (insErr) { toast.error(insErr.message); setSubmitting(false); return; }
     toast.success("Certificate issued.");
-    nav({ to: "/issued/$serial", params: { serial } });
+    nav({ to: "/issued/$serial", params: { serial: row.serial } });
   }
 
   return (
