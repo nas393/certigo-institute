@@ -95,6 +95,7 @@ export type Database = {
       }
       certifications: {
         Row: {
+          answer_keys: Json
           category: string
           created_at: string
           id: string
@@ -108,6 +109,7 @@ export type Database = {
           title: string
         }
         Insert: {
+          answer_keys?: Json
           category: string
           created_at?: string
           id?: string
@@ -121,6 +123,7 @@ export type Database = {
           title: string
         }
         Update: {
+          answer_keys?: Json
           category?: string
           created_at?: string
           id?: string
@@ -173,7 +176,32 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      grade_and_issue: {
+        Args: {
+          _answers: Json
+          _certification_id: string
+          _recipient_name: string
+        }
+        Returns: {
+          passed: boolean
+          score: number
+          serial: string
+        }[]
+      }
+      sample_certificate_serial: { Args: never; Returns: string }
+      verify_certificate: {
+        Args: { lookup: string }
+        Returns: {
+          cert_title: string
+          issued_at: string
+          issuer_name: string
+          recipient_name: string
+          revoked: boolean
+          score: number
+          serial: string
+          skills: string[]
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
