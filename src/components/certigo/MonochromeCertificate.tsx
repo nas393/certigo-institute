@@ -72,7 +72,7 @@ function VerifyQR({ url, size = 72, align = "left" }: { url: string; size?: numb
 /** Single centered ink signature — no printed name, role only. */
 function CenterSignature() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="relative flex flex-col items-center">
       <img
         src={sigImg}
         alt=""
@@ -81,13 +81,34 @@ function CenterSignature() {
         draggable={false}
       />
       <div className="mt-1 h-px w-64 bg-neutral-900/80" />
-      <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-700">
-        Director of Academic Affairs
+      <div className="relative mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-700">
+        Director of Academic Affair<span className="relative">s<DigitalStamp /></span>
       </div>
       <div className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.28em] text-neutral-500">
         <Wordmark /> Institute
       </div>
     </div>
+  );
+}
+
+/** Circular emerald "CERTIGO. CERTIFIED" stamp — sits over the trailing S of AFFAIRS. */
+function DigitalStamp() {
+  return (
+    <span
+      aria-hidden
+      className="pointer-events-none absolute -right-3 -top-3 inline-flex h-9 w-9 -rotate-12 items-center justify-center rounded-full border-2 border-emerald-600/80 text-emerald-700"
+      style={{ mixBlendMode: "multiply" }}
+    >
+      <svg viewBox="0 0 60 60" className="absolute inset-0 h-full w-full">
+        <defs>
+          <path id="stamp-arc" d="M30,30 m-22,0 a22,22 0 1,1 44,0 a22,22 0 1,1 -44,0" />
+        </defs>
+        <text fontSize="7.5" letterSpacing="2" fill="currentColor" fontFamily="ui-monospace,Menlo,monospace" fontWeight="700">
+          <textPath href="#stamp-arc" startOffset="0">CERTIGO · CERTIFIED · </textPath>
+        </text>
+      </svg>
+      <span className="font-mono text-[7px] font-black leading-none tracking-tighter">✓</span>
+    </span>
   );
 }
 
