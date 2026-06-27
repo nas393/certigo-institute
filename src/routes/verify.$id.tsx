@@ -22,14 +22,16 @@ function VerifyOne() {
   const [cert, setCert] = useState<any>(null);
 
   useEffect(() => {
-    const s = id.toUpperCase();
-    supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, revoked, certifications(title, issuer_name)")
-      .or(`serial.eq.${s},id.eq.${id}`).maybeSingle()
-      .then(({ data }) => {
-        if (!data) setState("miss");
-        else if (data.revoked) { setCert(data); setState("revoked"); }
-        else { setCert(data); setState("ok"); }
+    supabase.rpc("verify_certificate", { lookup: id })
+      .then(({ data }: { data: any }) => {
+        const row = Array.isArray(data) ? data[0] : data;
+        if (!row) { setState("miss"); return; }
+        const shaped = {
+          ...row,
+          certifications: { title: row.cert_title, issuer_name: row.issuer_name },
+        };
+        if (row.revoked) { setCert(shaped); setState("revoked"); }
+        else { setCert(shaped); setState("ok"); }
       });
   }, [id]);
 

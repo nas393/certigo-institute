@@ -30,12 +30,11 @@ export function CertChecksBanner({ cert }: { cert: Cert }) {
 
   useEffect(() => {
     let live = true;
-    supabase
-      .from("certificates")
-      .select("serial")
-      .eq("serial", cert.serial)
-      .maybeSingle()
-      .then(({ data }) => { if (live) setQrResolves(data?.serial === cert.serial); });
+    supabase.rpc("verify_certificate", { lookup: cert.serial })
+      .then(({ data }: any) => {
+        const row = Array.isArray(data) ? data[0] : data;
+        if (live) setQrResolves(row?.serial === cert.serial);
+      });
     return () => { live = false; };
   }, [cert.serial]);
 

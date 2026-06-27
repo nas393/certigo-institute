@@ -27,11 +27,12 @@ function CertPage() {
   const [view, setView] = useState<"digital" | "print">("digital");
 
   useEffect(() => {
-    const s = id.toUpperCase();
-    supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, score, revoked, certifications(title, issuer_name)")
-      .or(`serial.eq.${s},id.eq.${id}`).maybeSingle()
-      .then(({ data }) => setCert(data));
+    supabase.rpc("verify_certificate", { lookup: id })
+      .then(({ data }: { data: any }) => {
+        const row = Array.isArray(data) ? data[0] : data;
+        if (!row) return;
+        setCert({ ...row, certifications: { title: row.cert_title, issuer_name: row.issuer_name } });
+      });
   }, [id]);
 
   if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;

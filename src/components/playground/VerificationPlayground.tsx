@@ -15,8 +15,8 @@ export function VerificationPlayground() {
   const [sample, setSample] = useState<string | null>(null);
 
   useEffect(() => {
-    supabase.from("certificates").select("serial").order("issued_at", { ascending: false }).limit(1)
-      .then(({ data }: any) => setSample(data?.[0]?.serial ?? null));
+    supabase.rpc("sample_certificate_serial")
+      .then(({ data }: any) => setSample(typeof data === "string" ? data : data?.[0] ?? null));
   }, []);
 
   async function run(input: string) {
@@ -26,11 +26,9 @@ export function VerificationPlayground() {
     setState("scanning");
     await new Promise((r) => setTimeout(r, 600));
     setState("decrypting");
-    const { data } = await supabase
-      .from("certificates")
-      .select("serial, recipient_name, issued_at, revoked, certifications(title, issuer_name)")
-      .eq("serial", s)
-      .maybeSingle();
+    const { data: raw } = await supabase.rpc("verify_certificate", { lookup: s });
+    const row: any = Array.isArray(raw) ? raw[0] : raw;
+    const data = row ? { ...row, certifications: { title: row.cert_title, issuer_name: row.issuer_name } } : null;
     await new Promise((r) => setTimeout(r, 500));
     if (data && !data.revoked) {
       setHit(data);
