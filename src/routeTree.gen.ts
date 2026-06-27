@@ -21,6 +21,7 @@ import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as CSlugRouteImport } from './routes/c.$slug'
+import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
 import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
@@ -84,6 +85,11 @@ const CSlugRoute = CSlugRouteImport.update({
   path: '/c/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
   id: '/dashboard',
   path: '/dashboard',
@@ -110,6 +116,7 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
@@ -126,6 +133,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
@@ -144,6 +152,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/terms': typeof TermsRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
+  '/_authenticated/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
@@ -162,6 +171,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/dashboard'
+    | '/profile'
     | '/c/$slug'
     | '/certificate/$id'
     | '/transcript/$id'
@@ -178,6 +188,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/dashboard'
+    | '/profile'
     | '/c/$slug'
     | '/certificate/$id'
     | '/transcript/$id'
@@ -195,6 +206,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/terms'
     | '/_authenticated/dashboard'
+    | '/_authenticated/profile'
     | '/c/$slug'
     | '/certificate/$id'
     | '/transcript/$id'
@@ -304,6 +316,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/profile': {
+      id: '/_authenticated/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof AuthenticatedProfileRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/dashboard': {
       id: '/_authenticated/dashboard'
       path: '/dashboard'
@@ -330,12 +349,14 @@ declare module '@tanstack/react-router' {
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
+  AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
   AuthenticatedExamSlugRoute: typeof AuthenticatedExamSlugRoute
   AuthenticatedIssuedSerialRoute: typeof AuthenticatedIssuedSerialRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
+  AuthenticatedProfileRoute: AuthenticatedProfileRoute,
   AuthenticatedExamSlugRoute: AuthenticatedExamSlugRoute,
   AuthenticatedIssuedSerialRoute: AuthenticatedIssuedSerialRoute,
 }
