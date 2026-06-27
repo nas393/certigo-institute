@@ -1,0 +1,62 @@
+name: E2E
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  playwright:
+    name: Playwright — Official Print PDF
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PORT: "8080"
+      CI: "true"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Unit tests
+        run: bun run test
+
+      - name: Install Playwright Chromium
+        run: bunx playwright install --with-deps chromium
+
+      - name: Build
+        run: bun run build
+
+      - name: Start preview server
+        run: |
+          bun run preview --port 8080 --host 127.0.0.1 &
+          echo $! > .preview.pid
+          for i in $(seq 1 60); do
+            if curl -sf http://127.0.0.1:8080 > /dev/null; then
+              echo "Preview ready"; exit 0
+            fi
+            sleep 1
+          done
+          echo "Preview failed to start"; exit 1
+
+      - name: Run E2E (Playwright)
+        run: bun run test:e2e
+
+      - name: Stop preview server
+        if: always()
+        run: |
+          if [ -f .preview.pid ]; then kill "$(cat .preview.pid)" || true; fi
+
+      - name: Upload PDF + screenshot artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-artifacts
+          path: /tmp/browser/certigo-pdf
+          if-no-files-found: ignore

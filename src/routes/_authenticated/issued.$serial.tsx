@@ -8,6 +8,7 @@ import { CertificateCard } from "@/components/cert/CertificateCard";
 import { DigitalBadge } from "@/components/cert/DigitalBadge";
 import { LinkedInButton } from "@/components/cert/LinkedInButton";
 import { CertChecksBanner } from "@/components/dev/CertChecksBanner";
+import { StagingShareToggle } from "@/components/cert/StagingShareToggle";
 import { downloadCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference } from "@/lib/cert";
 import { toast } from "sonner";
@@ -101,6 +102,7 @@ function Issued() {
         </div>
 
         <CertChecksBanner cert={cert} />
+        <StagingShareToggle serial={cert.serial} />
 
         <div className="mt-8 text-sm text-muted-foreground">
           <Link to="/certificate/$id" params={{ id: cert.serial }} className="hover:text-foreground underline-offset-4 hover:underline">
