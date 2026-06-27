@@ -102,6 +102,9 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
   doc.text("DIRECTOR OF ACADEMIC AFFAIRS", W - 55, H - 33, { align: "center" });
   doc.text(`ISSUED ${dateStr.toUpperCase()}`, W - 55, H - 28, { align: "center" });
 
+  // Digital stamp — emerald circular seal covering the "S" of AFFAIRS
+  drawDigitalStamp(doc, W - 27, H - 34, 7);
+
   const bytes = doc.output("arraybuffer");
   return {
     bytes: new Uint8Array(bytes),
@@ -114,4 +117,23 @@ export async function downloadCertificatePdf(data: CertPdfData) {
   const built = await buildCertificatePdf(data);
   built.doc.save(built.filename);
   return built;
+}
+
+/** Round emerald "CERTIGO · CERTIFIED" digital stamp drawn with vector primitives. */
+function drawDigitalStamp(doc: jsPDF, cx: number, cy: number, r: number) {
+  doc.saveGraphicsState?.();
+  doc.setDrawColor(16, 185, 129);
+  doc.setLineWidth(0.6);
+  doc.circle(cx, cy, r, "S");
+  doc.setLineWidth(0.25);
+  doc.circle(cx, cy, r - 1.3, "S");
+  doc.setTextColor(16, 185, 129);
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(6);
+  doc.text("CERTIFIED", cx, cy + 0.4, { align: "center" });
+  doc.setFontSize(4);
+  doc.text("CERTIGO.", cx, cy + 3.2, { align: "center" });
+  doc.text("✓", cx, cy - 2.2, { align: "center" });
+  doc.setTextColor(20);
+  doc.restoreGraphicsState?.();
 }
