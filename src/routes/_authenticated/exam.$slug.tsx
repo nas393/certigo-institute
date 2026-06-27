@@ -6,7 +6,6 @@ import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import { generateSerial } from "@/lib/cert";
 
 export const Route = createFileRoute("/_authenticated/exam/$slug")({
   head: ({ params }) => ({ meta: [{ title: `Exam · ${params.slug} — CERTIGO.` }] }),
