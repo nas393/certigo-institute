@@ -12,6 +12,7 @@ import { StagingShareToggle } from "@/components/cert/StagingShareToggle";
 import { downloadCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference } from "@/lib/cert";
 import { toast } from "sonner";
+import sigImg from "@/assets/signature-director.png";
 
 export const Route = createFileRoute("/_authenticated/issued/$serial")({
   head: ({ params }) => ({ meta: [{ title: `Issued ${params.serial} — CERTIGO.` }] }),
@@ -26,7 +27,7 @@ function Issued() {
 
   useEffect(() => {
     supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, score, certifications(title, issuer_name)")
+      .select("serial, recipient_name, issued_at, score, certifications(title, issuer_name, skills)")
       .eq("serial", serial).maybeSingle()
       .then(({ data }) => setCert(data));
   }, [serial]);
@@ -41,6 +42,15 @@ function Issued() {
   async function download() {
     setDownloading(true);
     try {
+      const skills: string[] = cert.certifications?.skills ?? [];
+      const modules = (skills.length ? skills : [certTitle]).slice(0, 10).map((title, i) => ({
+        code: `M${String(i + 1).padStart(2, "0")}`,
+        title,
+        hours: 6,
+        grade: cert.score >= 90 ? "A" : cert.score >= 80 ? "B" : cert.score >= 70 ? "C" : "Pass",
+        scorePct: cert.score ?? undefined,
+      }));
+      const signatureDataUrl = await fetch(sigImg).then((r) => r.blob()).then(blobToDataUrl).catch(() => undefined);
       await downloadCertificatePdf({
         serial: cert.serial,
         recipientName: cert.recipient_name,
@@ -49,6 +59,10 @@ function Issued() {
         issuedAt: cert.issued_at,
         scorePct: cert.score,
         verifyUrl,
+        signatureDataUrl,
+        modules,
+        programmeTitle: certTitle,
+        totalHours: modules.reduce((s, m) => s + m.hours, 0),
       });
     } catch (e: any) {
       toast.error(e.message ?? "PDF failed");
@@ -116,4 +130,13 @@ function Issued() {
       </div>
     </div>
   );
+}
+
+function blobToDataUrl(blob: Blob): Promise<string> {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res(String(r.result));
+    r.onerror = () => rej(r.error);
+    r.readAsDataURL(blob);
+  });
 }
