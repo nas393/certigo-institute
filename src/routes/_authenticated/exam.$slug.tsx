@@ -6,6 +6,7 @@ import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import { resolveRecipientName } from "@/lib/cert";
 
 export const Route = createFileRoute("/_authenticated/exam/$slug")({
   head: ({ params }) => ({ meta: [{ title: `Exam · ${params.slug} — CERTIGO.` }] }),
@@ -39,10 +40,14 @@ function Exam() {
     setSubmitting(true);
     const { data: profile } = await supabase
       .from("profiles").select("display_name").eq("user_id", user.id).maybeSingle();
-    const recipientName =
-      profile?.display_name ||
-      (user.user_metadata?.display_name as string | undefined) ||
-      user.email!.split("@")[0];
+    const recipientName = resolveRecipientName({
+      profileName: profile?.display_name,
+      providerName:
+        (user.user_metadata?.display_name as string | undefined) ??
+        (user.user_metadata?.full_name as string | undefined) ??
+        (user.user_metadata?.name as string | undefined),
+      email: user.email,
+    });
 
     const { data, error } = await supabase.rpc("grade_and_issue", {
       _certification_id: cert.id,

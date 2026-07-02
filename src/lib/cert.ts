@@ -46,3 +46,27 @@ export function formatReference(serial: string): string {
 export function isValidSerial(serial: string): boolean {
   return SERIAL_RE.test((serial ?? "").toUpperCase().trim());
 }
+
+/**
+ * Resolve the printed recipient name for a certificate.
+ * Rules:
+ *   1. Prefer profile.display_name (trimmed).
+ *   2. Fall back to identity-provider name (e.g. Google full_name / display_name).
+ *   3. Fall back to the email local-part.
+ *   4. Never return empty; caps at 120 chars to protect layout.
+ */
+export function resolveRecipientName(input: {
+  profileName?: string | null;
+  providerName?: string | null;
+  email?: string | null;
+}): string {
+  const clean = (s?: string | null) =>
+    (s ?? "").replace(/\s+/g, " ").trim();
+  const candidates = [
+    clean(input.profileName),
+    clean(input.providerName),
+    clean(input.email).split("@")[0],
+  ];
+  const first = candidates.find((c) => c.length > 0) ?? "CERTIGO. Recipient";
+  return first.slice(0, 120);
+}
