@@ -96,18 +96,18 @@ function DigitalStamp() {
   return (
     <span
       aria-hidden
-      className="pointer-events-none absolute -right-3 -top-3 inline-flex h-9 w-9 -rotate-12 items-center justify-center rounded-full border-2 border-emerald-600/80 text-emerald-700"
+      className="pointer-events-none absolute -right-6 -top-6 inline-flex h-16 w-16 -rotate-12 items-center justify-center rounded-full border-[2.5px] border-emerald-600/85 text-emerald-700 md:h-20 md:w-20"
       style={{ mixBlendMode: "multiply" }}
     >
       <svg viewBox="0 0 60 60" className="absolute inset-0 h-full w-full">
         <defs>
           <path id="stamp-arc" d="M30,30 m-22,0 a22,22 0 1,1 44,0 a22,22 0 1,1 -44,0" />
         </defs>
-        <text fontSize="7.5" letterSpacing="2" fill="currentColor" fontFamily="ui-monospace,Menlo,monospace" fontWeight="700">
+        <text fontSize="6.5" letterSpacing="2.4" fill="currentColor" fontFamily="ui-monospace,Menlo,monospace" fontWeight="700">
           <textPath href="#stamp-arc" startOffset="0">CERTIGO · CERTIFIED · </textPath>
         </text>
       </svg>
-      <span className="font-mono text-[7px] font-black leading-none tracking-tighter">✓</span>
+      <span className="font-mono text-[14px] font-black leading-none tracking-tighter">✓</span>
     </span>
   );
 }
