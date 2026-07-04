@@ -209,13 +209,22 @@ function drawDigitalStamp(doc: jsPDF, cx: number, cy: number, r: number) {
   doc.restoreGraphicsState?.();
 }
 
-function drawWordmark(doc: jsPDF, x: number, y: number, size: number) {
+function drawWordmark(
+  doc: jsPDF,
+  x: number,
+  y: number,
+  size: number,
+  align: "left" | "right" = "left",
+) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(size);
+  const wordW = doc.getTextWidth("CERTIGO");
+  const dotW = doc.getTextWidth(".");
+  const startX = align === "right" ? x - (wordW + dotW) : x;
   doc.setTextColor(20);
-  doc.text("CERTIGO", x, y);
+  doc.text("CERTIGO", startX, y);
   doc.setTextColor(16, 185, 129);
-  doc.text(".", x + doc.getTextWidth("CERTIGO"), y);
+  doc.text(".", startX + wordW, y);
   doc.setTextColor(20);
 }
 
