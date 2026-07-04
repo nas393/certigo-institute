@@ -13,6 +13,8 @@ export interface MonoCertProps {
   certificateId: string;
   verifyUrl?: string;
   scorePct?: number;
+  /** Real-world professional skills applied by the graduate. Rendered as a chip strip. */
+  skills?: string[];
 }
 
 export const MONO_OPTIONS: { key: MonoVariant; label: string; hint: string }[] = [
@@ -139,7 +141,7 @@ function MetaRow({ id, date, score, verifyUrl }: { id: string; date: string; sco
 /* ───────────────────────── Variant 01 — Helvetica Grid ───────────────────────── */
 function Variant01(p: MonoCertProps) {
   return (
-    <div className="relative aspect-[1.414/1] w-full overflow-hidden bg-white text-neutral-900 ring-1 ring-neutral-200">
+    <div className="relative aspect-[1.414/1] w-full overflow-hidden bg-white text-neutral-900 ring-2 ring-neutral-900">
       {/* corner crops */}
       <div className="pointer-events-none absolute inset-5 border border-neutral-900/15" />
       <div className="pointer-events-none absolute left-5 top-5 h-3 w-3 border-l border-t border-neutral-900" />
@@ -148,9 +150,18 @@ function Variant01(p: MonoCertProps) {
       <div className="pointer-events-none absolute right-5 bottom-5 h-3 w-3 border-r border-b border-neutral-900" />
 
       <div className="relative flex h-full flex-col px-12 py-10 md:px-16 md:py-12">
-        <header className="flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-          <span><Wordmark /> Institute</span>
-          <span>Certificate · No. {p.certificateId}</span>
+        <header className="flex items-start justify-between">
+          <div className="font-display text-lg font-black tracking-tighter text-neutral-900">
+            <Wordmark />
+          </div>
+          <div className="text-right">
+            <div className="font-display text-sm font-black uppercase tracking-widest text-neutral-900">
+              <Wordmark />
+            </div>
+            <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.32em] text-neutral-500">
+              No. {p.certificateId}
+            </div>
+          </div>
         </header>
 
         <div className="mt-12 font-mono text-[10px] uppercase tracking-[0.45em] text-neutral-500">
@@ -170,6 +181,24 @@ function Variant01(p: MonoCertProps) {
           <p className="mt-4 max-w-2xl text-[12px] leading-relaxed text-neutral-600">
             {p.description}
           </p>
+        )}
+
+        {p.skills && p.skills.length > 0 && (
+          <div className="mt-6 border-y border-neutral-900/10 py-3">
+            <div className="font-mono text-[9px] uppercase tracking-[0.34em] text-neutral-400">
+              Skills applied in the real professional world
+            </div>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {p.skills.slice(0, 8).map((s) => (
+                <span
+                  key={s}
+                  className="rounded-sm bg-neutral-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-neutral-800"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
+          </div>
         )}
 
         <div className="mt-auto pt-10">

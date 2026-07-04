@@ -12,6 +12,8 @@ export interface CertPdfData {
   verifyUrl: string;
   /** Optional signature image (PNG data URL) — embedded when present. */
   signatureDataUrl?: string;
+  /** Real-world professional skills — printed as a chip strip on the certificate. */
+  skills?: string[];
   /** Optional transcript modules — when present, a second A4 page is appended. */
   modules?: Array<{
     code: string;
@@ -19,6 +21,8 @@ export interface CertPdfData {
     hours: number;
     grade: string;
     scorePct?: number;
+    subject?: string;
+    learned?: string;
   }>;
   totalHours?: number;
   programmeTitle?: string;
@@ -41,22 +45,20 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
 
   // Background + corner crops (mirrors on-screen MonochromeCertificate Variant 01)
   doc.setDrawColor(20);
-  doc.setLineWidth(0.3);
+  doc.setLineWidth(0.6); // ~100% thicker outer border
   doc.rect(12, 12, W - 24, H - 24);
   drawCornerCrops(doc, 12, 12, W - 24, H - 24, 4);
 
-  // Header
-  drawWordmark(doc, 22, 25, 10);
+  // Header — left wordmark, right bold CERTIGO. + tiny serial
+  drawWordmark(doc, 22, 25, 12);
+  drawWordmark(doc, W - 22, 25, 11, "right");
   doc.setFont("helvetica", "normal");
-  doc.setFontSize(7.5);
+  doc.setFontSize(7);
   doc.setTextColor(120);
-  doc.text("INSTITUTE", 22 + doc.getTextWidth("CERTIGO.") + 2.5, 25);
-  doc.setFontSize(8);
-  doc.setTextColor(90);
-  doc.text(`CERTIFICATE · NO. ${data.serial}`, W - 22, 25, { align: "right" });
+  doc.text(`NO. ${data.serial}`, W - 22, 30, { align: "right" });
   doc.setDrawColor(20);
   doc.setLineWidth(0.15);
-  doc.line(22, 30, W - 22, 30);
+  doc.line(22, 34, W - 22, 34);
 
   // Body — matches on-screen hierarchy
   doc.setTextColor(120);
@@ -84,6 +86,35 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
     doc.setFont("helvetica", "normal");
     doc.setFontSize(9);
     doc.text(`Final score · ${data.scorePct}%`, 22, 114);
+  }
+
+  // Skills strip — real-world professional skills
+  if (data.skills && data.skills.length > 0) {
+    const stripY = 124;
+    doc.setDrawColor(200);
+    doc.setLineWidth(0.15);
+    doc.line(22, stripY, W - 22, stripY);
+    doc.line(22, stripY + 14, W - 22, stripY + 14);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(6.5);
+    doc.setTextColor(140);
+    doc.text("SKILLS APPLIED IN THE REAL PROFESSIONAL WORLD", 22, stripY + 4);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8);
+    doc.setTextColor(30);
+    let cx = 22;
+    const chipY = stripY + 10.2;
+    for (const s of data.skills.slice(0, 8)) {
+      const label = s.toUpperCase();
+      const w = doc.getTextWidth(label) + 5;
+      if (cx + w > W - 22) break;
+      doc.setFillColor(245, 245, 245);
+      doc.setDrawColor(210);
+      doc.setLineWidth(0.1);
+      doc.roundedRect(cx, chipY - 3.4, w, 4.6, 0.6, 0.6, "FD");
+      doc.text(label, cx + 2.5, chipY);
+      cx += w + 2.5;
+    }
   }
 
   // QR code (bottom-left)
@@ -178,13 +209,22 @@ function drawDigitalStamp(doc: jsPDF, cx: number, cy: number, r: number) {
   doc.restoreGraphicsState?.();
 }
 
-function drawWordmark(doc: jsPDF, x: number, y: number, size: number) {
+function drawWordmark(
+  doc: jsPDF,
+  x: number,
+  y: number,
+  size: number,
+  align: "left" | "right" = "left",
+) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(size);
+  const wordW = doc.getTextWidth("CERTIGO");
+  const dotW = doc.getTextWidth(".");
+  const startX = align === "right" ? x - (wordW + dotW) : x;
   doc.setTextColor(20);
-  doc.text("CERTIGO", x, y);
+  doc.text("CERTIGO", startX, y);
   doc.setTextColor(16, 185, 129);
-  doc.text(".", x + doc.getTextWidth("CERTIGO"), y);
+  doc.text(".", startX + wordW, y);
   doc.setTextColor(20);
 }
 
@@ -212,21 +252,19 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
   const H = doc.internal.pageSize.getHeight();
 
   doc.setDrawColor(20);
-  doc.setLineWidth(0.3);
+  doc.setLineWidth(0.6);
   doc.rect(12, 12, W - 24, H - 24);
   drawCornerCrops(doc, 12, 12, W - 24, H - 24, 4);
 
-  // Header
-  drawWordmark(doc, 22, 25, 10);
+  // Header — bold wordmark both sides, serial small under right
+  drawWordmark(doc, 22, 25, 12);
+  drawWordmark(doc, W - 22, 25, 11, "right");
   doc.setFont("helvetica", "normal");
-  doc.setFontSize(7.5);
+  doc.setFontSize(7);
   doc.setTextColor(120);
-  doc.text("INSTITUTE · REGISTRAR", 22 + doc.getTextWidth("CERTIGO.") + 2.5, 25);
-  doc.setFontSize(8);
-  doc.setTextColor(90);
-  doc.text(`TRANSCRIPT · NO. ${data.serial}`, W - 22, 25, { align: "right" });
+  doc.text(`TRANSCRIPT · NO. ${data.serial}`, W - 22, 30, { align: "right" });
   doc.setLineWidth(0.15);
-  doc.line(22, 30, W - 22, 30);
+  doc.line(22, 34, W - 22, 34);
 
   // Title
   doc.setFont("helvetica", "bold");
@@ -279,7 +317,7 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
   let y = tableTop + rowH;
   let totalHours = 0;
   for (const m of data.modules!) {
-    if (y > H - 40) break;
+    if (y > H - 42) break;
     doc.setTextColor(140);
     doc.setFont("courier", "normal");
     doc.setFontSize(8);
@@ -293,11 +331,28 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
     doc.text(typeof m.scorePct === "number" ? `${m.scorePct}%` : "—", cols.score.x + cols.score.w, y, { align: "right" });
     doc.setFont("helvetica", "bold");
     doc.text(m.grade, cols.grade.x + cols.grade.w, y, { align: "right" });
+    let subY = y;
+    if (m.subject) {
+      subY += 3.6;
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(6.5);
+      doc.setTextColor(120);
+      doc.text(`SUBJECT · ${m.subject.toUpperCase()}`, cols.title.x, subY, { maxWidth: cols.title.w });
+    }
+    if (m.learned) {
+      subY += 3.6;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(8);
+      doc.setTextColor(90);
+      const wrapped = doc.splitTextToSize(m.learned, cols.title.w);
+      doc.text(wrapped, cols.title.x, subY);
+      subY += (wrapped.length - 1) * 3.2;
+    }
     doc.setDrawColor(220);
     doc.setLineWidth(0.1);
-    doc.line(22, y + 2.5, W - 22, y + 2.5);
+    doc.line(22, subY + 2.5, W - 22, subY + 2.5);
     totalHours += m.hours || 0;
-    y += rowH;
+    y = subY + rowH;
   }
 
   // Totals

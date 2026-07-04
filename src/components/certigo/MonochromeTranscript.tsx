@@ -8,6 +8,10 @@ export interface TranscriptModule {
   hours: number;
   grade: string;       // e.g. "A", "A-", "Pass"
   scorePct?: number;
+  /** Short subject/topic label (e.g. "Positioning theory"). */
+  subject?: string;
+  /** One-line summary of what was learned in this module. */
+  learned?: string;
 }
 
 export interface MonoTranscriptProps {
@@ -129,10 +133,22 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
             {p.modules.map((m) => (
               <li
                 key={m.code}
-                className="grid grid-cols-12 items-baseline py-2.5 font-mono text-[11px] tracking-tight text-neutral-800"
+                className="grid grid-cols-12 items-baseline gap-y-1 py-3 font-mono text-[11px] tracking-tight text-neutral-800"
               >
                 <div className="col-span-2 text-neutral-500">{m.code}</div>
-                <div className="col-span-6 font-sans text-[12px] text-neutral-900">{m.title}</div>
+                <div className="col-span-6 font-sans text-neutral-900">
+                  <div className="text-[12px] font-semibold">{m.title}</div>
+                  {m.subject && (
+                    <div className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.28em] text-neutral-500">
+                      Subject · {m.subject}
+                    </div>
+                  )}
+                  {m.learned && (
+                    <div className="mt-1 font-sans text-[10.5px] leading-snug text-neutral-600">
+                      {m.learned}
+                    </div>
+                  )}
+                </div>
                 <div className="col-span-1 text-right tabular-nums">{m.hours}</div>
                 <div className="col-span-2 text-right tabular-nums">
                   {typeof m.scorePct === "number" ? `${m.scorePct}%` : "—"}

@@ -32,7 +32,9 @@ function TranscriptPage() {
     .slice(0, 8)
     .map((title, i) => ({
       code: `M${String(i + 1).padStart(2, "0")}`,
-      title,
+      title: `Module ${i + 1} · ${title}`,
+      subject: title,
+      learned: `Applied ${title.toLowerCase()} through short lessons, practical exercises and a knowledge check, then demonstrated competency on the ${cert.certifications?.title ?? "assessment"}.`,
       hours: 6,
       grade: cert.score >= 90 ? "A" : cert.score >= 80 ? "B" : cert.score >= 70 ? "C" : "Pass",
       scorePct: cert.score ?? undefined,

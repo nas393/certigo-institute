@@ -43,13 +43,7 @@ function Issued() {
     setDownloading(true);
     try {
       const skills: string[] = cert.certifications?.skills ?? [];
-      const modules = (skills.length ? skills : [certTitle]).slice(0, 10).map((title, i) => ({
-        code: `M${String(i + 1).padStart(2, "0")}`,
-        title,
-        hours: 6,
-        grade: cert.score >= 90 ? "A" : cert.score >= 80 ? "B" : cert.score >= 70 ? "C" : "Pass",
-        scorePct: cert.score ?? undefined,
-      }));
+      const modules = buildTranscriptModules(skills, certTitle, cert.score);
       const signatureDataUrl = await fetch(sigImg).then((r) => r.blob()).then(blobToDataUrl).catch(() => undefined);
       await downloadCertificatePdf({
         serial: cert.serial,
@@ -60,9 +54,10 @@ function Issued() {
         scorePct: cert.score,
         verifyUrl,
         signatureDataUrl,
+        skills,
         modules,
         programmeTitle: certTitle,
-        totalHours: modules.reduce((s, m) => s + m.hours, 0),
+        totalHours: modules.reduce((s: number, m: TranscriptModuleRow) => s + m.hours, 0),
       });
     } catch (e: any) {
       toast.error(e.message ?? "PDF failed");
@@ -111,6 +106,7 @@ function Issued() {
               issuedAt={cert.issued_at}
               score={cert.score}
               verifyUrl={verifyUrl}
+              skills={cert.certifications?.skills ?? []}
             />
           )}
         </div>
@@ -139,4 +135,52 @@ function blobToDataUrl(blob: Blob): Promise<string> {
     r.onerror = () => rej(r.error);
     r.readAsDataURL(blob);
   });
+}
+
+/**
+ * Build transcript modules with subject label and short "what was learned"
+ * summary so the academic transcript reads as more than a one-word title.
+ * Draws from `certifications.skills` (real-world capabilities) and falls back
+ * to a course-title outline of 6 modules when no skills are configured.
+ */
+interface TranscriptModuleRow {
+  code: string;
+  title: string;
+  hours: number;
+  grade: string;
+  scorePct?: number;
+  subject: string;
+  learned: string;
+}
+function buildTranscriptModules(
+  skills: string[],
+  courseTitle: string,
+  score: number,
+): TranscriptModuleRow[] {
+  const grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "Pass";
+  const source = skills.length ? skills : defaultOutline(courseTitle);
+  return source.slice(0, 8).map((title, i) => ({
+    code: `M${String(i + 1).padStart(2, "0")}`,
+    title: `Module ${i + 1} · ${title}`,
+    subject: title,
+    learned: learnedSummary(title, courseTitle),
+    hours: 6,
+    grade,
+    scorePct: score ?? undefined,
+  }));
+}
+function defaultOutline(courseTitle: string): string[] {
+  return [
+    `Foundations of ${courseTitle}`,
+    `Core frameworks & terminology`,
+    `Applied case studies`,
+    `Tools & workflows`,
+    `Measurement & evaluation`,
+    `Capstone assessment`,
+  ];
+}
+function learnedSummary(skill: string, courseTitle: string): string {
+  // A short, professional summary the graduate can point to on a CV.
+  // Keeps to one sentence per module so the transcript stays scannable.
+  return `Applied ${skill.toLowerCase()} through short lessons, practical exercises and a knowledge check, then demonstrated competency on the ${courseTitle} assessment.`;
 }
