@@ -57,7 +57,7 @@ function Issued() {
         skills,
         modules,
         programmeTitle: certTitle,
-        totalHours: modules.reduce((s, m) => s + m.hours, 0),
+        totalHours: modules.reduce((s: number, m: TranscriptModuleRow) => s + m.hours, 0),
       });
     } catch (e: any) {
       toast.error(e.message ?? "PDF failed");
