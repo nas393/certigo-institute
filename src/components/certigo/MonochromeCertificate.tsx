@@ -13,6 +13,8 @@ export interface MonoCertProps {
   certificateId: string;
   verifyUrl?: string;
   scorePct?: number;
+  /** Real-world professional skills applied by the graduate. Rendered as a chip strip. */
+  skills?: string[];
 }
 
 export const MONO_OPTIONS: { key: MonoVariant; label: string; hint: string }[] = [
