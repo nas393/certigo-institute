@@ -12,6 +12,8 @@ export interface CertPdfData {
   verifyUrl: string;
   /** Optional signature image (PNG data URL) — embedded when present. */
   signatureDataUrl?: string;
+  /** Real-world professional skills — printed as a chip strip on the certificate. */
+  skills?: string[];
   /** Optional transcript modules — when present, a second A4 page is appended. */
   modules?: Array<{
     code: string;
@@ -19,6 +21,8 @@ export interface CertPdfData {
     hours: number;
     grade: string;
     scorePct?: number;
+    subject?: string;
+    learned?: string;
   }>;
   totalHours?: number;
   programmeTitle?: string;
@@ -41,22 +45,20 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
 
   // Background + corner crops (mirrors on-screen MonochromeCertificate Variant 01)
   doc.setDrawColor(20);
-  doc.setLineWidth(0.3);
+  doc.setLineWidth(0.6); // ~100% thicker outer border
   doc.rect(12, 12, W - 24, H - 24);
   drawCornerCrops(doc, 12, 12, W - 24, H - 24, 4);
 
-  // Header
-  drawWordmark(doc, 22, 25, 10);
+  // Header — left wordmark, right bold CERTIGO. + tiny serial
+  drawWordmark(doc, 22, 25, 12);
+  drawWordmark(doc, W - 22, 25, 11, "right");
   doc.setFont("helvetica", "normal");
-  doc.setFontSize(7.5);
+  doc.setFontSize(7);
   doc.setTextColor(120);
-  doc.text("INSTITUTE", 22 + doc.getTextWidth("CERTIGO.") + 2.5, 25);
-  doc.setFontSize(8);
-  doc.setTextColor(90);
-  doc.text(`CERTIFICATE · NO. ${data.serial}`, W - 22, 25, { align: "right" });
+  doc.text(`NO. ${data.serial}`, W - 22, 30, { align: "right" });
   doc.setDrawColor(20);
   doc.setLineWidth(0.15);
-  doc.line(22, 30, W - 22, 30);
+  doc.line(22, 34, W - 22, 34);
 
   // Body — matches on-screen hierarchy
   doc.setTextColor(120);
@@ -84,6 +86,35 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
     doc.setFont("helvetica", "normal");
     doc.setFontSize(9);
     doc.text(`Final score · ${data.scorePct}%`, 22, 114);
+  }
+
+  // Skills strip — real-world professional skills
+  if (data.skills && data.skills.length > 0) {
+    const stripY = 124;
+    doc.setDrawColor(200);
+    doc.setLineWidth(0.15);
+    doc.line(22, stripY, W - 22, stripY);
+    doc.line(22, stripY + 14, W - 22, stripY + 14);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(6.5);
+    doc.setTextColor(140);
+    doc.text("SKILLS APPLIED IN THE REAL PROFESSIONAL WORLD", 22, stripY + 4);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8);
+    doc.setTextColor(30);
+    let cx = 22;
+    const chipY = stripY + 10.2;
+    for (const s of data.skills.slice(0, 8)) {
+      const label = s.toUpperCase();
+      const w = doc.getTextWidth(label) + 5;
+      if (cx + w > W - 22) break;
+      doc.setFillColor(245, 245, 245);
+      doc.setDrawColor(210);
+      doc.setLineWidth(0.1);
+      doc.roundedRect(cx, chipY - 3.4, w, 4.6, 0.6, 0.6, "FD");
+      doc.text(label, cx + 2.5, chipY);
+      cx += w + 2.5;
+    }
   }
 
   // QR code (bottom-left)
