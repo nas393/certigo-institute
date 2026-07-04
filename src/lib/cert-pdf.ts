@@ -252,21 +252,19 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
   const H = doc.internal.pageSize.getHeight();
 
   doc.setDrawColor(20);
-  doc.setLineWidth(0.3);
+  doc.setLineWidth(0.6);
   doc.rect(12, 12, W - 24, H - 24);
   drawCornerCrops(doc, 12, 12, W - 24, H - 24, 4);
 
-  // Header
-  drawWordmark(doc, 22, 25, 10);
+  // Header — bold wordmark both sides, serial small under right
+  drawWordmark(doc, 22, 25, 12);
+  drawWordmark(doc, W - 22, 25, 11, "right");
   doc.setFont("helvetica", "normal");
-  doc.setFontSize(7.5);
+  doc.setFontSize(7);
   doc.setTextColor(120);
-  doc.text("INSTITUTE · REGISTRAR", 22 + doc.getTextWidth("CERTIGO.") + 2.5, 25);
-  doc.setFontSize(8);
-  doc.setTextColor(90);
-  doc.text(`TRANSCRIPT · NO. ${data.serial}`, W - 22, 25, { align: "right" });
+  doc.text(`TRANSCRIPT · NO. ${data.serial}`, W - 22, 30, { align: "right" });
   doc.setLineWidth(0.15);
-  doc.line(22, 30, W - 22, 30);
+  doc.line(22, 34, W - 22, 34);
 
   // Title
   doc.setFont("helvetica", "bold");
@@ -319,7 +317,7 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
   let y = tableTop + rowH;
   let totalHours = 0;
   for (const m of data.modules!) {
-    if (y > H - 40) break;
+    if (y > H - 42) break;
     doc.setTextColor(140);
     doc.setFont("courier", "normal");
     doc.setFontSize(8);
@@ -333,11 +331,28 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
     doc.text(typeof m.scorePct === "number" ? `${m.scorePct}%` : "—", cols.score.x + cols.score.w, y, { align: "right" });
     doc.setFont("helvetica", "bold");
     doc.text(m.grade, cols.grade.x + cols.grade.w, y, { align: "right" });
+    let subY = y;
+    if (m.subject) {
+      subY += 3.6;
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(6.5);
+      doc.setTextColor(120);
+      doc.text(`SUBJECT · ${m.subject.toUpperCase()}`, cols.title.x, subY, { maxWidth: cols.title.w });
+    }
+    if (m.learned) {
+      subY += 3.6;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(8);
+      doc.setTextColor(90);
+      const wrapped = doc.splitTextToSize(m.learned, cols.title.w);
+      doc.text(wrapped, cols.title.x, subY);
+      subY += (wrapped.length - 1) * 3.2;
+    }
     doc.setDrawColor(220);
     doc.setLineWidth(0.1);
-    doc.line(22, y + 2.5, W - 22, y + 2.5);
+    doc.line(22, subY + 2.5, W - 22, subY + 2.5);
     totalHours += m.hours || 0;
-    y += rowH;
+    y = subY + rowH;
   }
 
   // Totals
