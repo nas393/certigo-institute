@@ -8,6 +8,7 @@ interface Props {
   issuedAt: string;
   score: number;
   verifyUrl: string;
+  skills?: string[];
 }
 
 export function CertificateCard(p: Props) {
@@ -20,6 +21,7 @@ export function CertificateCard(p: Props) {
       certificateId={formatReference(p.serial)}
       verifyUrl={p.verifyUrl}
       scorePct={p.score}
+      skills={p.skills}
     />
   );
 }
