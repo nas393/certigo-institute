@@ -43,13 +43,7 @@ function Issued() {
     setDownloading(true);
     try {
       const skills: string[] = cert.certifications?.skills ?? [];
-      const modules = (skills.length ? skills : [certTitle]).slice(0, 10).map((title, i) => ({
-        code: `M${String(i + 1).padStart(2, "0")}`,
-        title,
-        hours: 6,
-        grade: cert.score >= 90 ? "A" : cert.score >= 80 ? "B" : cert.score >= 70 ? "C" : "Pass",
-        scorePct: cert.score ?? undefined,
-      }));
+      const modules = buildTranscriptModules(skills, certTitle, cert.score);
       const signatureDataUrl = await fetch(sigImg).then((r) => r.blob()).then(blobToDataUrl).catch(() => undefined);
       await downloadCertificatePdf({
         serial: cert.serial,
@@ -60,6 +54,7 @@ function Issued() {
         scorePct: cert.score,
         verifyUrl,
         signatureDataUrl,
+        skills,
         modules,
         programmeTitle: certTitle,
         totalHours: modules.reduce((s, m) => s + m.hours, 0),
@@ -111,6 +106,7 @@ function Issued() {
               issuedAt={cert.issued_at}
               score={cert.score}
               verifyUrl={verifyUrl}
+              skills={cert.certifications?.skills ?? []}
             />
           )}
         </div>
