@@ -8,6 +8,10 @@ export interface TranscriptModule {
   hours: number;
   grade: string;       // e.g. "A", "A-", "Pass"
   scorePct?: number;
+  /** Short subject/topic label (e.g. "Positioning theory"). */
+  subject?: string;
+  /** One-line summary of what was learned in this module. */
+  learned?: string;
 }
 
 export interface MonoTranscriptProps {
