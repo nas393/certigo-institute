@@ -99,7 +99,9 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
+      <CourseGenerator />
+
+      <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="grid gap-6 sm:grid-cols-3">
           {[
             { n: "01", t: "Pick a certification", d: "Six career-relevant tracks. Each one is short and to the point." },
