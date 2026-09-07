@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
+import { CourseGenerator } from "@/components/course/CourseGenerator";
 
 export const Route = createFileRoute("/")({
   head: () => ({
