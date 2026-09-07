@@ -40,10 +40,14 @@ function Home() {
   }, [role]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(16,185,129,0.14)_0%,rgba(16,185,129,0)_70%)]"
+      />
       <Header />
 
-      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
+      <section className="relative mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ For professionals</div>
         <h1 className="mt-4 font-display text-5xl font-black tracking-tighter sm:text-7xl">
           Your next credential,<br />issued in <span className="text-emerald-600">10 minutes</span>.
