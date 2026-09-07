@@ -199,7 +199,7 @@ function PricingPage() {
                   Contact sales
                 </Button>
               </Link>
-              <Link to="/verify">
+              <Link to="/"  hash="verify">
                 <Button size="lg" variant="outline" className="h-12 w-full border-white/40 bg-transparent text-white hover:bg-white/10">
                   Verify a credential
                 </Button>
