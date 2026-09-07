@@ -108,7 +108,7 @@ function Home() {
             { n: "02", t: "Pass one quiz", d: "Eight questions. Pass at 70%. Your answers are stored." },
             { n: "03", t: "Share to LinkedIn", d: "Add to Profile button is pre-filled with your verified credential metadata." },
           ].map((s) => (
-            <div key={s.n} className="rounded-xl border border-border bg-card p-5">
+            <div key={s.n} className="rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card">
               <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {s.n}</div>
               <div className="mt-3 font-display text-lg font-extrabold">{s.t}</div>
               <p className="mt-1 text-sm text-muted-foreground">{s.d}</p>

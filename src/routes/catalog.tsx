@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { ArrowRight } from "lucide-react";
+import { CourseGenerator } from "@/components/course/CourseGenerator";
 
 export const Route = createFileRoute("/catalog")({
   head: () => ({
@@ -53,6 +54,7 @@ function Catalog() {
           ))}
         </div>
       </div>
+      <CourseGenerator />
     </div>
   );
 }
