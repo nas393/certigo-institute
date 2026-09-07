@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
+import { CourseGenerator } from "@/components/course/CourseGenerator";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,10 +40,14 @@ function Home() {
   }, [role]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-[520px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(16,185,129,0.14)_0%,rgba(16,185,129,0)_70%)]"
+      />
       <Header />
 
-      <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
+      <section className="relative mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ For professionals</div>
         <h1 className="mt-4 font-display text-5xl font-black tracking-tighter sm:text-7xl">
           Your next credential,<br />issued in <span className="text-emerald-600">10 minutes</span>.
@@ -94,14 +99,16 @@ function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
+      <CourseGenerator />
+
+      <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="grid gap-6 sm:grid-cols-3">
           {[
             { n: "01", t: "Pick a certification", d: "Six career-relevant tracks. Each one is short and to the point." },
             { n: "02", t: "Pass one quiz", d: "Eight questions. Pass at 70%. Your answers are stored." },
             { n: "03", t: "Share to LinkedIn", d: "Add to Profile button is pre-filled with your verified credential metadata." },
           ].map((s) => (
-            <div key={s.n} className="rounded-xl border border-border bg-card p-5">
+            <div key={s.n} className="rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card">
               <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {s.n}</div>
               <div className="mt-3 font-display text-lg font-extrabold">{s.t}</div>
               <p className="mt-1 text-sm text-muted-foreground">{s.d}</p>
