@@ -98,8 +98,10 @@ export type Database = {
           answer_keys: Json
           category: string
           created_at: string
+          created_by: string | null
           id: string
           issuer_name: string
+          modules: Json
           pass_score: number
           question_count: number
           questions: Json
@@ -112,8 +114,10 @@ export type Database = {
           answer_keys?: Json
           category: string
           created_at?: string
+          created_by?: string | null
           id?: string
           issuer_name?: string
+          modules?: Json
           pass_score?: number
           question_count?: number
           questions?: Json
@@ -126,8 +130,10 @@ export type Database = {
           answer_keys?: Json
           category?: string
           created_at?: string
+          created_by?: string | null
           id?: string
           issuer_name?: string
+          modules?: Json
           pass_score?: number
           question_count?: number
           questions?: Json
@@ -137,6 +143,70 @@ export type Database = {
           title?: string
         }
         Relationships: []
+      }
+      lesson_progress: {
+        Row: {
+          certification_id: string
+          correct: boolean
+          created_at: string
+          id: string
+          module_index: number
+          user_id: string
+        }
+        Insert: {
+          certification_id: string
+          correct: boolean
+          created_at?: string
+          id?: string
+          module_index: number
+          user_id: string
+        }
+        Update: {
+          certification_id?: string
+          correct?: boolean
+          created_at?: string
+          id?: string
+          module_index?: number
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "lesson_progress_certification_id_fkey"
+            columns: ["certification_id"]
+            isOneToOne: false
+            referencedRelation: "certifications"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      module_keys: {
+        Row: {
+          answer_index: number
+          certification_id: string
+          explanation: string
+          module_index: number
+        }
+        Insert: {
+          answer_index: number
+          certification_id: string
+          explanation?: string
+          module_index: number
+        }
+        Update: {
+          answer_index?: number
+          certification_id?: string
+          explanation?: string
+          module_index?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "module_keys_certification_id_fkey"
+            columns: ["certification_id"]
+            isOneToOne: false
+            referencedRelation: "certifications"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       profiles: {
         Row: {
@@ -186,6 +256,18 @@ export type Database = {
           passed: boolean
           score: number
           serial: string
+        }[]
+      }
+      grade_lesson_check: {
+        Args: {
+          _certification_id: string
+          _choice: number
+          _module_index: number
+        }
+        Returns: {
+          correct: boolean
+          correct_index: number
+          explanation: string
         }[]
       }
       sample_certificate_serial: { Args: never; Returns: string }
