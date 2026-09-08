@@ -1,10 +1,13 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, ShieldCheck, Loader2 } from "lucide-react";
+import { ArrowRight, Clock, ShieldCheck, Loader2, Pencil } from "lucide-react";
+import { SkillsMap, normalizeModules } from "@/components/course/SkillsMap";
+import { LessonChecks } from "@/components/course/LessonChecks";
+
 
 export const Route = createFileRoute("/c/$slug")({
   head: ({ params }) => ({
