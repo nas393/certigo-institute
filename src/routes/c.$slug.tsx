@@ -88,7 +88,11 @@ function CertDetail() {
         >
           {user ? "Start the exam" : "Sign in to start"} <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
+
+        <SkillsMap modules={modules} fallback={c.skills ?? []} />
+        <LessonChecks certificationId={c.id} modules={modules} />
       </div>
+
     </div>
   );
 }
