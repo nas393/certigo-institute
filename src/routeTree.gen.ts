@@ -25,6 +25,7 @@ import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticate
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
 import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
+import { Route as AuthenticatedBuildSlugRouteImport } from './routes/_authenticated/build.$slug'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -106,6 +107,11 @@ const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
   path: '/exam/$slug',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedBuildSlugRoute = AuthenticatedBuildSlugRouteImport.update({
+  id: '/build/$slug',
+  path: '/build/$slug',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -121,6 +127,7 @@ export interface FileRoutesByFullPath {
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -138,6 +145,7 @@ export interface FileRoutesByTo {
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -157,6 +165,7 @@ export interface FileRoutesById {
   '/certificate/$id': typeof CertificateIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
+  '/_authenticated/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/_authenticated/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/_authenticated/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -176,6 +185,7 @@ export interface FileRouteTypes {
     | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
+    | '/build/$slug'
     | '/exam/$slug'
     | '/issued/$serial'
   fileRoutesByTo: FileRoutesByTo
@@ -193,6 +203,7 @@ export interface FileRouteTypes {
     | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
+    | '/build/$slug'
     | '/exam/$slug'
     | '/issued/$serial'
   id:
@@ -211,6 +222,7 @@ export interface FileRouteTypes {
     | '/certificate/$id'
     | '/transcript/$id'
     | '/verify/$id'
+    | '/_authenticated/build/$slug'
     | '/_authenticated/exam/$slug'
     | '/_authenticated/issued/$serial'
   fileRoutesById: FileRoutesById
@@ -344,12 +356,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedExamSlugRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/build/$slug': {
+      id: '/_authenticated/build/$slug'
+      path: '/build/$slug'
+      fullPath: '/build/$slug'
+      preLoaderRoute: typeof AuthenticatedBuildSlugRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
+  AuthenticatedBuildSlugRoute: typeof AuthenticatedBuildSlugRoute
   AuthenticatedExamSlugRoute: typeof AuthenticatedExamSlugRoute
   AuthenticatedIssuedSerialRoute: typeof AuthenticatedIssuedSerialRoute
 }
@@ -357,6 +377,7 @@ interface AuthenticatedRouteRouteChildren {
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedProfileRoute: AuthenticatedProfileRoute,
+  AuthenticatedBuildSlugRoute: AuthenticatedBuildSlugRoute,
   AuthenticatedExamSlugRoute: AuthenticatedExamSlugRoute,
   AuthenticatedIssuedSerialRoute: AuthenticatedIssuedSerialRoute,
 }
