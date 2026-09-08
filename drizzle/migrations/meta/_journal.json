@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1788854524155,
+      "tag": "0000_course_builder_modules_checks",
+      "breakpoints": true
+    }
+  ]
+}
