@@ -29,13 +29,27 @@ function CertDetail() {
     supabase.from("certifications").select("*").eq("slug", slug).maybeSingle().then(({ data }) => setC(data));
   }, [slug]);
 
+  const modules = useMemo(() => normalizeModules(c?.modules), [c]);
+  const canEdit = !!user && !!c?.created_by && c.created_by === user.id;
+
   if (!c) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8">
-        <Link to="/catalog" className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground hover:text-foreground">← catalog</Link>
+        <div className="flex items-center justify-between gap-3">
+          <Link to="/catalog" className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground hover:text-foreground">← catalog</Link>
+          {canEdit && (
+            <Link
+              to="/build/$slug"
+              params={{ slug }}
+              className="flex items-center gap-1 rounded-full border border-border px-3 py-1 text-xs font-medium hover:border-emerald-600 hover:text-emerald-700"
+            >
+              <Pencil className="h-3 w-3" /> Edit course
+            </Link>
+          )}
+        </div>
         <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ {c.category}</div>
         <h1 className="mt-2 font-display text-5xl font-black tracking-tighter">{c.title}</h1>
         <p className="mt-3 text-base text-muted-foreground">{c.summary}</p>
@@ -45,6 +59,7 @@ function CertDetail() {
             <span key={s} className="rounded-full bg-muted px-3 py-1 text-xs">{s}</span>
           ))}
         </div>
+
 
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg border border-border p-4">
