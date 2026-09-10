@@ -102,7 +102,7 @@ export const generateCourse = createServerFn({ method: "POST" })
         "X-Lovable-AIG-SDK": "fetch",
       },
       body: JSON.stringify({
-        model: "google/gemini-3.6-flash",
+        model: "openai/gpt-6-astra",
         messages: [
           { role: "system", content: SYSTEM },
           {
