@@ -23,6 +23,8 @@ export interface CertPdfData {
     scorePct?: number;
     subject?: string;
     learned?: string;
+    /** Job-relevant skills this specific lesson maps to. */
+    skills?: string[];
   }>;
   totalHours?: number;
   programmeTitle?: string;
