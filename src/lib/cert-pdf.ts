@@ -350,6 +350,16 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
       doc.text(wrapped, cols.title.x, subY);
       subY += (wrapped.length - 1) * 3.2;
     }
+    if (m.skills && m.skills.length > 0) {
+      subY += 3.4;
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(6.5);
+      doc.setTextColor(120);
+      const line = `SKILLS APPLIED · ${m.skills.slice(0, 4).join(" · ").toUpperCase()}`;
+      const wrappedSkills = doc.splitTextToSize(line, cols.title.w);
+      doc.text(wrappedSkills, cols.title.x, subY);
+      subY += (wrappedSkills.length - 1) * 3;
+    }
     doc.setDrawColor(220);
     doc.setLineWidth(0.1);
     doc.line(22, subY + 2.5, W - 22, subY + 2.5);
