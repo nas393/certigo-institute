@@ -27,7 +27,7 @@ function Issued() {
 
   useEffect(() => {
     supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, score, certifications(title, issuer_name, skills)")
+      .select("serial, recipient_name, issued_at, score, certifications(title, issuer_name, skills, modules)")
       .eq("serial", serial).maybeSingle()
       .then(({ data }) => setCert(data));
   }, [serial]);
