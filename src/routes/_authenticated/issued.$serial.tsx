@@ -42,8 +42,13 @@ function Issued() {
   async function download() {
     setDownloading(true);
     try {
-      const skills: string[] = cert.certifications?.skills ?? [];
-      const modules = buildTranscriptModules(skills, certTitle, cert.score);
+      const courseModules = Array.isArray(cert.certifications?.modules) ? cert.certifications.modules : [];
+      const skills: string[] = cert.certifications?.skills?.length
+        ? cert.certifications.skills
+        : lessonSkills(courseModules);
+      const modules = courseModules.length
+        ? buildLessonTranscript(courseModules, cert.score)
+        : buildTranscriptModules(skills, certTitle, cert.score);
       const signatureDataUrl = await fetch(sigImg).then((r) => r.blob()).then(blobToDataUrl).catch(() => undefined);
       await downloadCertificatePdf({
         serial: cert.serial,
@@ -106,7 +111,11 @@ function Issued() {
               issuedAt={cert.issued_at}
               score={cert.score}
               verifyUrl={verifyUrl}
-              skills={cert.certifications?.skills ?? []}
+              skills={
+                cert.certifications?.skills?.length
+                  ? cert.certifications.skills
+                  : lessonSkills(Array.isArray(cert.certifications?.modules) ? cert.certifications.modules : [])
+              }
             />
           )}
         </div>
@@ -151,6 +160,38 @@ interface TranscriptModuleRow {
   scorePct?: number;
   subject: string;
   learned: string;
+  skills?: string[];
+}
+
+/** Union of the job skills each lesson maps to (used when the course has none of its own). */
+function lessonSkills(modules: any[]): string[] {
+  const out: string[] = [];
+  modules.forEach((m) => {
+    (Array.isArray(m?.skills) ? m.skills : []).forEach((s: any) => {
+      const v = String(s).trim();
+      if (v && !out.includes(v)) out.push(v);
+    });
+  });
+  return out.slice(0, 8);
+}
+
+/** Transcript rows built from the real lessons of the course, incl. their job skills. */
+function buildLessonTranscript(modules: any[], score: number): TranscriptModuleRow[] {
+  const grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "Pass";
+  return modules.slice(0, 8).map((m: any, i: number) => {
+    const title = String(m?.title ?? `Module ${i + 1}`);
+    const minutes = Number(m?.minutes) || 12;
+    return {
+      code: `M${String(i + 1).padStart(2, "0")}`,
+      title: `Module ${i + 1} · ${title}`,
+      subject: String(m?.subject ?? title),
+      learned: String(m?.learned ?? ""),
+      skills: Array.isArray(m?.skills) ? m.skills.map(String) : [],
+      hours: Math.max(1, Math.round(minutes / 60 * 10) / 10),
+      grade,
+      scorePct: score ?? undefined,
+    };
+  });
 }
 function buildTranscriptModules(
   skills: string[],
