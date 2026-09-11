@@ -57,6 +57,7 @@ export type Database = {
           certification_id: string
           id: string
           issued_at: string
+          price_cents: number
           recipient_name: string
           revoked: boolean
           score: number
@@ -67,6 +68,7 @@ export type Database = {
           certification_id: string
           id?: string
           issued_at?: string
+          price_cents?: number
           recipient_name: string
           revoked?: boolean
           score: number
@@ -77,6 +79,7 @@ export type Database = {
           certification_id?: string
           id?: string
           issued_at?: string
+          price_cents?: number
           recipient_name?: string
           revoked?: boolean
           score?: number
@@ -103,6 +106,7 @@ export type Database = {
           issuer_name: string
           modules: Json
           pass_score: number
+          price_cents: number
           question_count: number
           questions: Json
           skills: string[]
@@ -119,6 +123,7 @@ export type Database = {
           issuer_name?: string
           modules?: Json
           pass_score?: number
+          price_cents?: number
           question_count?: number
           questions?: Json
           skills?: string[]
@@ -135,6 +140,7 @@ export type Database = {
           issuer_name?: string
           modules?: Json
           pass_score?: number
+          price_cents?: number
           question_count?: number
           questions?: Json
           skills?: string[]
@@ -143,6 +149,35 @@ export type Database = {
           title?: string
         }
         Relationships: []
+      }
+      enrollments: {
+        Row: {
+          certification_id: string
+          created_at: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          certification_id: string
+          created_at?: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          certification_id?: string
+          created_at?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "enrollments_certification_id_fkey"
+            columns: ["certification_id"]
+            isOneToOne: false
+            referencedRelation: "certifications"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       lesson_progress: {
         Row: {
@@ -241,6 +276,27 @@ export type Database = {
         }
         Relationships: []
       }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -270,6 +326,13 @@ export type Database = {
           explanation: string
         }[]
       }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
       sample_certificate_serial: { Args: never; Returns: string }
       verify_certificate: {
         Args: { lookup: string }
@@ -277,6 +340,7 @@ export type Database = {
           cert_title: string
           issued_at: string
           issuer_name: string
+          price_cents: number
           recipient_name: string
           revoked: boolean
           score: number
@@ -286,7 +350,7 @@ export type Database = {
       }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "learner"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -413,6 +477,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "learner"],
+    },
   },
 } as const
