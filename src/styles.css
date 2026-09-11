@@ -174,7 +174,7 @@ html[dir="rtl"] .font-display,
 
   .bg-surface { background: var(--surface); }
   .bg-surface-muted { background: var(--surface-muted); }
-  .bg-ink { background: #0B1020; color: #F8FAFC; }
+  .bg-ink { background: #141810; color: #F2F0E8; }
 
   .gradient-hero { background: var(--gradient-hero); }
   .gradient-signature { background: var(--gradient-signature); }
