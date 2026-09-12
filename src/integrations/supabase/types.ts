@@ -297,6 +297,27 @@ export type Database = {
         }
         Relationships: []
       }
+      verification_events: {
+        Row: {
+          created_at: string
+          id: string
+          outcome: string
+          serial: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          outcome: string
+          serial: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          outcome?: string
+          serial?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
@@ -333,6 +354,8 @@ export type Database = {
         }
         Returns: boolean
       }
+      public_passport: { Args: { _user_id: string }; Returns: Json }
+      public_stats: { Args: never; Returns: Json }
       sample_certificate_serial: { Args: never; Returns: string }
       verify_certificate: {
         Args: { lookup: string }
@@ -346,6 +369,20 @@ export type Database = {
           score: number
           serial: string
           skills: string[]
+        }[]
+      }
+      verify_record: { Args: { lookup: string }; Returns: Json }
+      verify_serials: {
+        Args: { _serials: string[] }
+        Returns: {
+          cert_title: string
+          found: boolean
+          input: string
+          issued_at: string
+          issuer_name: string
+          recipient_name: string
+          serial: string
+          status: string
         }[]
       }
     }

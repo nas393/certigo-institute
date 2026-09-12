@@ -19,6 +19,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
+import { Route as PIdRouteImport } from './routes/p.$id'
 import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as CSlugRouteImport } from './routes/c.$slug'
 import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
@@ -76,6 +77,11 @@ const TranscriptIdRoute = TranscriptIdRouteImport.update({
   path: '/transcript/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PIdRoute = PIdRouteImport.update({
+  id: '/p/$id',
+  path: '/p/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CertificateIdRoute = CertificateIdRouteImport.update({
   id: '/certificate/$id',
   path: '/certificate/$id',
@@ -125,6 +131,7 @@ export interface FileRoutesByFullPath {
   '/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
+  '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
   '/build/$slug': typeof AuthenticatedBuildSlugRoute
@@ -143,6 +150,7 @@ export interface FileRoutesByTo {
   '/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
+  '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
   '/build/$slug': typeof AuthenticatedBuildSlugRoute
@@ -163,6 +171,7 @@ export interface FileRoutesById {
   '/_authenticated/profile': typeof AuthenticatedProfileRoute
   '/c/$slug': typeof CSlugRoute
   '/certificate/$id': typeof CertificateIdRoute
+  '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
   '/_authenticated/build/$slug': typeof AuthenticatedBuildSlugRoute
@@ -183,6 +192,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/c/$slug'
     | '/certificate/$id'
+    | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
     | '/build/$slug'
@@ -201,6 +211,7 @@ export interface FileRouteTypes {
     | '/profile'
     | '/c/$slug'
     | '/certificate/$id'
+    | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
     | '/build/$slug'
@@ -220,6 +231,7 @@ export interface FileRouteTypes {
     | '/_authenticated/profile'
     | '/c/$slug'
     | '/certificate/$id'
+    | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
     | '/_authenticated/build/$slug'
@@ -238,6 +250,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   CSlugRoute: typeof CSlugRoute
   CertificateIdRoute: typeof CertificateIdRoute
+  PIdRoute: typeof PIdRoute
   TranscriptIdRoute: typeof TranscriptIdRoute
   VerifyIdRoute: typeof VerifyIdRoute
 }
@@ -312,6 +325,13 @@ declare module '@tanstack/react-router' {
       path: '/transcript/$id'
       fullPath: '/transcript/$id'
       preLoaderRoute: typeof TranscriptIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/p/$id': {
+      id: '/p/$id'
+      path: '/p/$id'
+      fullPath: '/p/$id'
+      preLoaderRoute: typeof PIdRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/certificate/$id': {
@@ -396,6 +416,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   CSlugRoute: CSlugRoute,
   CertificateIdRoute: CertificateIdRoute,
+  PIdRoute: PIdRoute,
   TranscriptIdRoute: TranscriptIdRoute,
   VerifyIdRoute: VerifyIdRoute,
 }
