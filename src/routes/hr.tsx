@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -51,6 +51,8 @@ function HrChecker() {
     setBusy(false);
     if (error) { toast.error("Verification failed. Try again."); return; }
     setRows((data ?? []) as SerialCheck[]);
+    // Each check is logged as a real verification event — refresh the live counters.
+    await loadStats();
   }
 
   async function onFile(f: File | undefined) {
