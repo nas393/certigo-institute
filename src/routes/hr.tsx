@@ -20,7 +20,7 @@ export const Route = createFileRoute("/hr")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: HrChecker;
+  component: HrChecker,
 });
 
 function HrChecker() {
