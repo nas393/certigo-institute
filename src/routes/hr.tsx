@@ -23,10 +23,21 @@ export const Route = createFileRoute("/hr")({
   component: HrChecker,
 });
 
+type RegistryStats = { credentials: number; holders: number; issuers: number; verifications: number; verifications_7d: number };
+
 function HrChecker() {
   const [text, setText] = useState("");
   const [rows, setRows] = useState<SerialCheck[] | null>(null);
   const [busy, setBusy] = useState(false);
+  const [stats, setStats] = useState<RegistryStats | null>(null);
+
+  async function loadStats() {
+    const { data } = await supabase.rpc("public_stats");
+    if (data) setStats(data as unknown as RegistryStats);
+  }
+
+  useEffect(() => { void loadStats(); }, []);
+
 
   async function run() {
     const serials = extractSerials(text);

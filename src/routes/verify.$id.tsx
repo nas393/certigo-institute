@@ -122,6 +122,14 @@ function VerifyOne() {
             <Row label="Credential status" value={revoked ? "REVOKED" : "ACTIVE"} ok={!revoked} />
             <Row label="Issue date" value={formatLongDate(r.issued_at)} />
             <Row label="Validity" value="No expiry — credential does not lapse" />
+            <Row
+              label="Verification checks"
+              value={
+                <span data-testid="scan-count">
+                  {(r.scan_count ?? 1) === 1 ? "1 check — this one" : `${r.scan_count} checks, including this one`}
+                </span>
+              }
+            />
             <Row label="Verification ID" value={<span className="font-mono">{formatReference(r.serial)}</span>} />
             <Row label="Course" value={`${r.cert_title} · ${r.category}`} />
             <Row
