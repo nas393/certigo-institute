@@ -1,8 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Building2, User, Sparkles } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { supabase } from "@/integrations/supabase/client";
+import { formatPrice } from "@/lib/money";
+import { CheckCircle2, Building2, User, Sparkles, GraduationCap, Loader2 } from "lucide-react";
 
 export const Route = createFileRoute("/pricing")({
   head: () => ({
