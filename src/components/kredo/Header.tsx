@@ -42,13 +42,24 @@ function CertigoMark({ size = 32 }: { size?: number }) {
 const NAV: { to: string; label: string }[] = [
   { to: "/catalog", label: "Catalog" },
   { to: "/pricing", label: "Pricing" },
+  { to: "/hr", label: "For HR" },
   { to: "/contact", label: "Contact" },
 ];
 
 export function Header() {
   const { user, signOut } = useAuth();
+  const { isAdmin } = useIsAdmin();
   const nav = useNavigate();
   const [open, setOpen] = useState(false);
+
+  const accountLinks = user
+    ? [
+        { to: "/portal", label: "My learning" },
+        { to: "/dashboard", label: "Dashboard" },
+        { to: "/profile", label: "Profile" },
+        ...(isAdmin ? [{ to: "/admin", label: "Admin" }] : []),
+      ]
+    : [];
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
