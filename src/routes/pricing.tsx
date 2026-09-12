@@ -185,6 +185,10 @@ function PricingPage() {
         tiers={teamTiers}
         cols="sm:grid-cols-2 lg:grid-cols-4" />
 
+      <CoursePriceList />
+
+
+
       <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
         <div className="rounded-3xl gradient-hero p-10 text-white shadow-glow sm:p-14">
           <div className="grid items-center gap-6 lg:grid-cols-[1.4fr_1fr]">
