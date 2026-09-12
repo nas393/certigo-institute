@@ -144,18 +144,12 @@ export function Header() {
                     {l.label}
                   </Link>
                 ))}
-                {user && (
-                  <Link to="/dashboard" onClick={() => setOpen(false)}
+                {accountLinks.map((l) => (
+                  <Link key={l.to} to={l.to as any} onClick={() => setOpen(false)}
                     className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
-                    Dashboard
+                    {l.label}
                   </Link>
-                )}
-                {user && (
-                  <Link to="/profile" onClick={() => setOpen(false)}
-                    className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
-                    Profile
-                  </Link>
-                )}
+                ))}
                 <div className="mt-6 flex flex-col gap-2">
                   {user ? (
                     <Button variant="outline" onClick={async () => { setOpen(false); await signOut(); nav({ to: "/" }); }}>
