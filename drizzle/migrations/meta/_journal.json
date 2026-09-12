@@ -22,6 +22,20 @@
       "when": 1789199271401,
       "tag": "0002_verification_records_passport_stats",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1789203931268,
+      "tag": "0003_verify_scan_count_and_admin_results",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1789204147148,
+      "tag": "0004_log_cv_batch_verifications",
+      "breakpoints": true
     }
   ]
 }

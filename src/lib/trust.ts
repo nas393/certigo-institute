@@ -22,6 +22,7 @@ export interface VerificationRecord {
   hours: number;
   attempt_count: number;
   issuer_credentials_issued: number;
+  scan_count?: number;
 }
 
 export interface TrustFactor {

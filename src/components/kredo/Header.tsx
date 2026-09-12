@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { useAuth } from "@/lib/auth";
+import { useIsAdmin } from "@/lib/use-admin";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -42,13 +43,24 @@ function CertigoMark({ size = 32 }: { size?: number }) {
 const NAV: { to: string; label: string }[] = [
   { to: "/catalog", label: "Catalog" },
   { to: "/pricing", label: "Pricing" },
+  { to: "/hr", label: "For HR" },
   { to: "/contact", label: "Contact" },
 ];
 
 export function Header() {
   const { user, signOut } = useAuth();
+  const { isAdmin } = useIsAdmin();
   const nav = useNavigate();
   const [open, setOpen] = useState(false);
+
+  const accountLinks = user
+    ? [
+        { to: "/portal", label: "My learning" },
+        { to: "/dashboard", label: "Dashboard" },
+        { to: "/profile", label: "Profile" },
+        ...(isAdmin ? [{ to: "/admin", label: "Admin" }] : []),
+      ]
+    : [];
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur-xl">
@@ -73,16 +85,11 @@ export function Header() {
               {l.label}
             </Link>
           ))}
-          {user && (
-            <Link to="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Dashboard
+          {accountLinks.map((l) => (
+            <Link key={l.to} to={l.to as any} className="text-sm font-medium text-muted-foreground hover:text-foreground">
+              {l.label}
             </Link>
-          )}
-          {user && (
-            <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Profile
-            </Link>
-          )}
+          ))}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -138,18 +145,12 @@ export function Header() {
                     {l.label}
                   </Link>
                 ))}
-                {user && (
-                  <Link to="/dashboard" onClick={() => setOpen(false)}
+                {accountLinks.map((l) => (
+                  <Link key={l.to} to={l.to as any} onClick={() => setOpen(false)}
                     className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
-                    Dashboard
+                    {l.label}
                   </Link>
-                )}
-                {user && (
-                  <Link to="/profile" onClick={() => setOpen(false)}
-                    className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]">
-                    Profile
-                  </Link>
-                )}
+                ))}
                 <div className="mt-6 flex flex-col gap-2">
                   {user ? (
                     <Button variant="outline" onClick={async () => { setOpen(false); await signOut(); nav({ to: "/" }); }}>

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -23,10 +23,21 @@ export const Route = createFileRoute("/hr")({
   component: HrChecker,
 });
 
+type RegistryStats = { credentials: number; holders: number; issuers: number; verifications: number; verifications_7d: number };
+
 function HrChecker() {
   const [text, setText] = useState("");
   const [rows, setRows] = useState<SerialCheck[] | null>(null);
   const [busy, setBusy] = useState(false);
+  const [stats, setStats] = useState<RegistryStats | null>(null);
+
+  async function loadStats() {
+    const { data } = await supabase.rpc("public_stats");
+    if (data) setStats(data as unknown as RegistryStats);
+  }
+
+  useEffect(() => { void loadStats(); }, []);
+
 
   async function run() {
     const serials = extractSerials(text);
@@ -40,6 +51,8 @@ function HrChecker() {
     setBusy(false);
     if (error) { toast.error("Verification failed. Try again."); return; }
     setRows((data ?? []) as SerialCheck[]);
+    // Each check is logged as a real verification event — refresh the live counters.
+    await loadStats();
   }
 
   async function onFile(f: File | undefined) {
@@ -66,7 +79,23 @@ function HrChecker() {
           Paste or upload a candidate CV. Every CERTIGO. credential reference is detected, checked against the registry, and flagged if revoked or unverifiable.
         </p>
 
-        <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-card">
+        {stats && (
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4" data-testid="registry-stats">
+            {[
+              { n: stats.credentials, l: "Live credentials" },
+              { n: stats.holders, l: "Credential holders" },
+              { n: stats.verifications, l: "Verification checks" },
+              { n: stats.verifications_7d, l: "Checks last 7 days" },
+            ].map((s) => (
+              <div key={s.l} className="rounded-xl border border-border bg-card p-4 shadow-card">
+                <div className="font-display text-2xl font-black tracking-tighter">{s.n}</div>
+                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-card">
           <Textarea
             value={text}
             onChange={(e) => setText(e.target.value)}

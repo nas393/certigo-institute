@@ -4,6 +4,7 @@ import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { formatReference } from "@/lib/cert";
+import { courseProgress, usePortalCourses } from "@/lib/portal";
 import { ArrowRight, Pencil, User as UserIcon } from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
@@ -38,6 +39,11 @@ function Dashboard() {
     user?.email?.split("@")[0] ||
     "—";
   const avgScore = certs.length ? Math.round(certs.reduce((s, c) => s + (c.score ?? 0), 0) / certs.length) : 0;
+  const { courses } = usePortalCourses(user?.id);
+  const enrolled = courses ?? [];
+  const overall = enrolled.length
+    ? Math.round(enrolled.reduce((s, c) => s + courseProgress(c), 0) / enrolled.length)
+    : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -84,11 +90,60 @@ function Dashboard() {
                 <div className="font-display text-2xl font-black">{avgScore}%</div>
                 <div className="text-xs text-muted-foreground">Avg score</div>
               </div>
+              <div>
+                <div className="font-display text-2xl font-black">{enrolled.length}</div>
+                <div className="text-xs text-muted-foreground">Enrolled</div>
+              </div>
+              <div>
+                <div className="font-display text-2xl font-black">{overall}%</div>
+                <div className="text-xs text-muted-foreground">Progress</div>
+              </div>
             </div>
-            <Link to="/catalog" className="mt-4 inline-flex items-center gap-1 text-xs font-medium text-emerald-700">
-              Browse catalog <ArrowRight className="h-3 w-3" />
-            </Link>
+            <div className="mt-4 flex flex-col gap-1.5">
+              <Link to="/portal" className="inline-flex items-center gap-1 text-xs font-medium text-emerald-700">
+                My learning <ArrowRight className="h-3 w-3" />
+              </Link>
+              {user && (
+                <Link to="/p/$id" params={{ id: user.id }} className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground">
+                  My credential passport <ArrowRight className="h-3 w-3" />
+                </Link>
+              )}
+              <Link to="/catalog" className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground">
+                Browse catalog <ArrowRight className="h-3 w-3" />
+              </Link>
+            </div>
           </div>
+        </div>
+
+        {/* Courses in progress */}
+        <div className="mt-8">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="font-display text-lg font-extrabold">In progress</h2>
+            <Link to="/portal" className="text-xs font-medium text-emerald-700 hover:underline">Open my learning →</Link>
+          </div>
+          {enrolled.length === 0 ? (
+            <p className="mt-3 text-sm text-muted-foreground">
+              You have not enrolled in a course yet. <Link to="/catalog" className="text-emerald-700 hover:underline">Pick one from the catalog</Link>.
+            </p>
+          ) : (
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              {enrolled.slice(0, 4).map((c) => {
+                const pct = courseProgress(c);
+                return (
+                  <Link key={c.id} to="/c/$slug" params={{ slug: c.slug }} className="rounded-xl border border-border bg-card p-5 transition hover:border-foreground/40">
+                    <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {c.category}</div>
+                    <div className="mt-2 font-display text-base font-extrabold">{c.title}</div>
+                    <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-muted">
+                      <div className="h-full rounded-full bg-emerald-600" style={{ width: `${pct}%` }} />
+                    </div>
+                    <div className="mt-2 text-xs text-muted-foreground">
+                      {pct}% · {c.lessonsDone}/{c.lessons} lesson checks · {c.passed ? "exam passed" : "exam pending"}
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         <h2 className="mt-10 font-display text-lg font-extrabold">Certificates</h2>

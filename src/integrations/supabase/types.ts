@@ -323,6 +323,28 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_course_overview: {
+        Args: never
+        Returns: {
+          certificates: number
+          certification_id: string
+          learners: number
+          passers: number
+        }[]
+      }
+      admin_course_results: {
+        Args: { _certification_id: string }
+        Returns: {
+          attempts: number
+          best_score: number
+          display_name: string
+          enrolled_at: string
+          issued_at: string
+          passed: boolean
+          serial: string
+          user_id: string
+        }[]
+      }
       grade_and_issue: {
         Args: {
           _answers: Json
