@@ -39,6 +39,10 @@ function Dashboard() {
     user?.email?.split("@")[0] ||
     "—";
   const avgScore = certs.length ? Math.round(certs.reduce((s, c) => s + (c.score ?? 0), 0) / certs.length) : 0;
+  const { courses: enrolled } = usePortalCourses();
+  const overall = enrolled.length
+    ? Math.round(enrolled.reduce((s, c) => s + courseProgress(c), 0) / enrolled.length)
+    : 0;
 
   return (
     <div className="min-h-screen bg-background">
