@@ -79,7 +79,23 @@ function HrChecker() {
           Paste or upload a candidate CV. Every CERTIGO. credential reference is detected, checked against the registry, and flagged if revoked or unverifiable.
         </p>
 
-        <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-card">
+        {stats && (
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4" data-testid="registry-stats">
+            {[
+              { n: stats.credentials, l: "Live credentials" },
+              { n: stats.holders, l: "Credential holders" },
+              { n: stats.verifications, l: "Verification checks" },
+              { n: stats.verifications_7d, l: "Checks last 7 days" },
+            ].map((s) => (
+              <div key={s.l} className="rounded-xl border border-border bg-card p-4 shadow-card">
+                <div className="font-display text-2xl font-black tracking-tighter">{s.n}</div>
+                <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{s.l}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-card">
           <Textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
