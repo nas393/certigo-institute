@@ -4,6 +4,7 @@ import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { formatReference } from "@/lib/cert";
+import { courseProgress, usePortalCourses } from "@/lib/portal";
 import { ArrowRight, Pencil, User as UserIcon } from "lucide-react";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
