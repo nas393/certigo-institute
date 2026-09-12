@@ -62,7 +62,8 @@ function AdminPanel() {
       .order("category")
       .order("title");
     setCourses((data ?? []) as Course[]);
-    const { data: ov } = await supabase.rpc("admin_course_overview");
+    const { data: ov, error: ovError } = await supabase.rpc("admin_course_overview");
+    if (ovError) { toast.error(`Could not load course results: ${ovError.message}`); return; }
     const map: Record<string, Overview> = {};
     for (const row of (ov ?? []) as Overview[]) map[row.certification_id] = row;
     setOverview(map);
