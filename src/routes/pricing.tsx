@@ -158,6 +158,74 @@ function TierBlock({ icon: Icon, eyebrow, title, subtitle, tiers, cols }: {
   );
 }
 
+type CoursePrice = { slug: string; title: string; category: string; price_cents: number };
+
+function CoursePriceList() {
+  const [rows, setRows] = useState<CoursePrice[] | null>(null);
+  const [q, setQ] = useState("");
+
+  useEffect(() => {
+    supabase
+      .from("certifications")
+      .select("slug, title, category, price_cents")
+      .order("category")
+      .order("title")
+      .then(({ data }) => setRows((data ?? []) as CoursePrice[]));
+  }, []);
+
+  const needle = q.trim().toLowerCase();
+  const shown = (rows ?? []).filter(
+    (r) => !needle || r.title.toLowerCase().includes(needle) || r.category.toLowerCase().includes(needle),
+  );
+
+  return (
+    <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-16">
+      <div className="flex items-start gap-4">
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg gradient-hero text-white">
+          <GraduationCap className="h-5 w-5" />
+        </span>
+        <div>
+          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--primary)]">Course prices</div>
+          <h2 className="mt-1 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Every course and what it costs.</h2>
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+            One price per credential — the exam, the certificate, the transcript and lifetime verification included.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-6 max-w-sm">
+        <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search courses or categories" />
+      </div>
+
+      {!rows ? (
+        <div className="mt-8 grid place-items-center"><Loader2 className="animate-spin" /></div>
+      ) : (
+        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {shown.map((r) => (
+            <Link
+              key={r.slug}
+              to="/c/$slug"
+              params={{ slug: r.slug }}
+              className="flex items-start justify-between gap-4 rounded-2xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:shadow-card"
+            >
+              <div className="min-w-0">
+                <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">◆ {r.category}</div>
+                <div className="mt-1 font-display text-base font-extrabold leading-snug">{r.title}</div>
+              </div>
+              <div className="shrink-0 font-display text-lg font-black tracking-tighter">{formatPrice(r.price_cents)}</div>
+            </Link>
+          ))}
+          {shown.length === 0 && (
+            <div className="rounded-2xl border border-dashed border-border p-8 text-center text-sm text-muted-foreground sm:col-span-2 lg:col-span-3">
+              No course matches “{q}”.
+            </div>
+          )}
+        </div>
+      )}
+    </section>
+  );
+}
+
 function PricingPage() {
   return (
     <div className="min-h-screen bg-background">
