@@ -84,16 +84,11 @@ export function Header() {
               {l.label}
             </Link>
           ))}
-          {user && (
-            <Link to="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Dashboard
+          {accountLinks.map((l) => (
+            <Link key={l.to} to={l.to as any} className="text-sm font-medium text-muted-foreground hover:text-foreground">
+              {l.label}
             </Link>
-          )}
-          {user && (
-            <Link to="/profile" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Profile
-            </Link>
-          )}
+          ))}
         </nav>
 
         <div className="flex items-center gap-2">
