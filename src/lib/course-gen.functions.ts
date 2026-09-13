@@ -91,38 +91,39 @@ export const generateCourse = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((data: unknown) => Input.parse(data))
   .handler(async ({ data, context }) => {
-    const apiKey = process.env["LOVABLE_API_KEY"];
+    const apiKey = process.env["ANTHROPIC_API_KEY"];
     if (!apiKey) throw new Error("AI is not configured.");
 
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+    const res = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Lovable-API-Key": apiKey,
-        "X-Lovable-AIG-SDK": "fetch",
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01",
       },
       body: JSON.stringify({
-        model: "openai/gpt-6-astra",
+        model: "claude-sonnet-4-5",
+        max_tokens: 8192,
+        system: SYSTEM,
         messages: [
-          { role: "system", content: SYSTEM },
           {
             role: "user",
             content: `Skill: ${data.skill}\n\nReturn json with keys: title, category, summary, skills[], modules[{title, subject, learned, minutes, skills[], check:{q, options[4], answer_index, explanation}}], questions[{q, options[4], answer_index}].`,
           },
         ],
-        response_format: { type: "json_object" },
       }),
     });
 
     if (!res.ok) {
       const body = await res.text();
       if (res.status === 429) throw new Error("Too many requests right now — try again in a moment.");
-      if (res.status === 402) throw new Error("AI credits are exhausted for this workspace.");
+      if (res.status === 401) throw new Error("The AI key is invalid — update ANTHROPIC_API_KEY.");
+      if (res.status === 402 || res.status === 403) throw new Error("The AI account has no available credit or permission.");
       throw new Error(`Course generation failed (${res.status}). ${body.slice(0, 200)}`);
     }
 
-    const payload = (await res.json()) as { choices?: Array<{ message?: { content?: string } }> };
-    const raw = payload.choices?.[0]?.message?.content ?? "";
+    const payload = (await res.json()) as { content?: Array<{ type: string; text?: string }> };
+    const raw = payload.content?.find((b) => b.type === "text")?.text ?? "";
     const cleaned = raw.trim().replace(/^```(?:json)?/i, "").replace(/```$/, "").trim();
 
     let loose: z.infer<typeof Loose>;
