@@ -50,6 +50,13 @@
       "when": 1789289432731,
       "tag": "0006_harden_attempts_certificates_answer_keys",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1789298005889,
+      "tag": "0007_lock_down_answer_keys_and_definer_functions",
+      "breakpoints": true
     }
   ]
 }
