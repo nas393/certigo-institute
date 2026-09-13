@@ -9,56 +9,35 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as HrRouteImport } from './routes/hr'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CatalogRouteImport } from './routes/catalog'
-import { Route as AuthRouteImport } from './routes/auth'
-import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as VerifyIdRouteImport } from './routes/verify.$id'
-import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
-import { Route as PIdRouteImport } from './routes/p.$id'
-import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
-import { Route as CSlugRouteImport } from './routes/c.$slug'
-import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
-import { Route as AuthenticatedPortalRouteImport } from './routes/_authenticated/portal'
-import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
+import { Route as AuthRouteImport } from './routes/auth'
+import { Route as CatalogRouteImport } from './routes/catalog'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as HrRouteImport } from './routes/hr'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
-import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
-import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
+import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedPortalRouteImport } from './routes/_authenticated/portal'
+import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
+import { Route as CSlugRouteImport } from './routes/c.$slug'
+import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
+import { Route as PIdRouteImport } from './routes/p.$id'
+import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
+import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as AuthenticatedBuildSlugRouteImport } from './routes/_authenticated/build.$slug'
+import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
+import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
 
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HrRoute = HrRouteImport.update({
-  id: '/hr',
-  path: '/hr',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CatalogRoute = CatalogRouteImport.update({
-  id: '/catalog',
-  path: '/catalog',
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuthRoute = AuthRouteImport.update({
@@ -66,48 +45,39 @@ const AuthRoute = AuthRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
-  id: '/_authenticated',
+const CatalogRoute = CatalogRouteImport.update({
+  id: '/catalog',
+  path: '/catalog',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const VerifyIdRoute = VerifyIdRouteImport.update({
-  id: '/verify/$id',
-  path: '/verify/$id',
+const HrRoute = HrRouteImport.update({
+  id: '/hr',
+  path: '/hr',
   getParentRoute: () => rootRouteImport,
 } as any)
-const TranscriptIdRoute = TranscriptIdRouteImport.update({
-  id: '/transcript/$id',
-  path: '/transcript/$id',
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PIdRoute = PIdRouteImport.update({
-  id: '/p/$id',
-  path: '/p/$id',
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CertificateIdRoute = CertificateIdRouteImport.update({
-  id: '/certificate/$id',
-  path: '/certificate/$id',
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CSlugRoute = CSlugRouteImport.update({
-  id: '/c/$slug',
-  path: '/c/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
-  id: '/profile',
-  path: '/profile',
-  getParentRoute: () => AuthenticatedRouteRoute,
-} as any)
-const AuthenticatedPortalRoute = AuthenticatedPortalRouteImport.update({
-  id: '/portal',
-  path: '/portal',
+const AuthenticatedAdminRoute = AuthenticatedAdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
@@ -115,9 +85,49 @@ const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
-const AuthenticatedAdminRoute = AuthenticatedAdminRouteImport.update({
-  id: '/admin',
-  path: '/admin',
+const AuthenticatedPortalRoute = AuthenticatedPortalRouteImport.update({
+  id: '/portal',
+  path: '/portal',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const CSlugRoute = CSlugRouteImport.update({
+  id: '/c/$slug',
+  path: '/c/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CertificateIdRoute = CertificateIdRouteImport.update({
+  id: '/certificate/$id',
+  path: '/certificate/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PIdRoute = PIdRouteImport.update({
+  id: '/p/$id',
+  path: '/p/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TranscriptIdRoute = TranscriptIdRouteImport.update({
+  id: '/transcript/$id',
+  path: '/transcript/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VerifyIdRoute = VerifyIdRouteImport.update({
+  id: '/verify/$id',
+  path: '/verify/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedBuildSlugRoute = AuthenticatedBuildSlugRouteImport.update({
+  id: '/build/$slug',
+  path: '/build/$slug',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
+  id: '/exam/$slug',
+  path: '/exam/$slug',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
 const AuthenticatedIssuedSerialRoute =
@@ -126,16 +136,6 @@ const AuthenticatedIssuedSerialRoute =
     path: '/issued/$serial',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
-const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
-  id: '/exam/$slug',
-  path: '/exam/$slug',
-  getParentRoute: () => AuthenticatedRouteRoute,
-} as any)
-const AuthenticatedBuildSlugRoute = AuthenticatedBuildSlugRouteImport.update({
-  id: '/build/$slug',
-  path: '/build/$slug',
-  getParentRoute: () => AuthenticatedRouteRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -294,53 +294,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/hr': {
-      id: '/hr'
-      path: '/hr'
-      fullPath: '/hr'
-      preLoaderRoute: typeof HrRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/catalog': {
-      id: '/catalog'
-      path: '/catalog'
-      fullPath: '/catalog'
-      preLoaderRoute: typeof CatalogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auth': {
-      id: '/auth'
-      path: '/auth'
-      fullPath: '/auth'
-      preLoaderRoute: typeof AuthRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_authenticated': {
@@ -350,60 +308,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/auth': {
+      id: '/auth'
+      path: '/auth'
+      fullPath: '/auth'
+      preLoaderRoute: typeof AuthRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/verify/$id': {
-      id: '/verify/$id'
-      path: '/verify/$id'
-      fullPath: '/verify/$id'
-      preLoaderRoute: typeof VerifyIdRouteImport
+    '/catalog': {
+      id: '/catalog'
+      path: '/catalog'
+      fullPath: '/catalog'
+      preLoaderRoute: typeof CatalogRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/transcript/$id': {
-      id: '/transcript/$id'
-      path: '/transcript/$id'
-      fullPath: '/transcript/$id'
-      preLoaderRoute: typeof TranscriptIdRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/p/$id': {
-      id: '/p/$id'
-      path: '/p/$id'
-      fullPath: '/p/$id'
-      preLoaderRoute: typeof PIdRouteImport
+    '/hr': {
+      id: '/hr'
+      path: '/hr'
+      fullPath: '/hr'
+      preLoaderRoute: typeof HrRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/certificate/$id': {
-      id: '/certificate/$id'
-      path: '/certificate/$id'
-      fullPath: '/certificate/$id'
-      preLoaderRoute: typeof CertificateIdRouteImport
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/c/$slug': {
-      id: '/c/$slug'
-      path: '/c/$slug'
-      fullPath: '/c/$slug'
-      preLoaderRoute: typeof CSlugRouteImport
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/profile': {
-      id: '/_authenticated/profile'
-      path: '/profile'
-      fullPath: '/profile'
-      preLoaderRoute: typeof AuthenticatedProfileRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/portal': {
-      id: '/_authenticated/portal'
-      path: '/portal'
-      fullPath: '/portal'
-      preLoaderRoute: typeof AuthenticatedPortalRouteImport
+    '/_authenticated/admin': {
+      id: '/_authenticated/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AuthenticatedAdminRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/dashboard': {
@@ -413,18 +371,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedDashboardRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/admin': {
-      id: '/_authenticated/admin'
-      path: '/admin'
-      fullPath: '/admin'
-      preLoaderRoute: typeof AuthenticatedAdminRouteImport
+    '/_authenticated/portal': {
+      id: '/_authenticated/portal'
+      path: '/portal'
+      fullPath: '/portal'
+      preLoaderRoute: typeof AuthenticatedPortalRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/issued/$serial': {
-      id: '/_authenticated/issued/$serial'
-      path: '/issued/$serial'
-      fullPath: '/issued/$serial'
-      preLoaderRoute: typeof AuthenticatedIssuedSerialRouteImport
+    '/_authenticated/profile': {
+      id: '/_authenticated/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof AuthenticatedProfileRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/c/$slug': {
+      id: '/c/$slug'
+      path: '/c/$slug'
+      fullPath: '/c/$slug'
+      preLoaderRoute: typeof CSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/certificate/$id': {
+      id: '/certificate/$id'
+      path: '/certificate/$id'
+      fullPath: '/certificate/$id'
+      preLoaderRoute: typeof CertificateIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/p/$id': {
+      id: '/p/$id'
+      path: '/p/$id'
+      fullPath: '/p/$id'
+      preLoaderRoute: typeof PIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transcript/$id': {
+      id: '/transcript/$id'
+      path: '/transcript/$id'
+      fullPath: '/transcript/$id'
+      preLoaderRoute: typeof TranscriptIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/verify/$id': {
+      id: '/verify/$id'
+      path: '/verify/$id'
+      fullPath: '/verify/$id'
+      preLoaderRoute: typeof VerifyIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated/build/$slug': {
+      id: '/_authenticated/build/$slug'
+      path: '/build/$slug'
+      fullPath: '/build/$slug'
+      preLoaderRoute: typeof AuthenticatedBuildSlugRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
     '/_authenticated/exam/$slug': {
@@ -434,11 +434,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedExamSlugRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
-    '/_authenticated/build/$slug': {
-      id: '/_authenticated/build/$slug'
-      path: '/build/$slug'
-      fullPath: '/build/$slug'
-      preLoaderRoute: typeof AuthenticatedBuildSlugRouteImport
+    '/_authenticated/issued/$serial': {
+      id: '/_authenticated/issued/$serial'
+      path: '/issued/$serial'
+      fullPath: '/issued/$serial'
+      preLoaderRoute: typeof AuthenticatedIssuedSerialRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
   }
