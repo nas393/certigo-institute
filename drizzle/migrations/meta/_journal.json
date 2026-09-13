@@ -43,6 +43,13 @@
       "when": 1789206139296,
       "tag": "0005_fix_admin_report_ambiguity",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1789289432731,
+      "tag": "0006_harden_attempts_certificates_answer_keys",
+      "breakpoints": true
     }
   ]
 }
