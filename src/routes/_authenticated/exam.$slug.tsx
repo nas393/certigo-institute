@@ -24,7 +24,7 @@ function Exam() {
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    supabase.from("certifications").select("*").eq("slug", slug).maybeSingle().then(({ data }) => setCert(data));
+    supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setCert(data));
   }, [slug]);
 
   const questions: Q[] = useMemo(() => (Array.isArray(cert?.questions) ? cert.questions : []), [cert]);
