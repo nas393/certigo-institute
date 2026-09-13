@@ -18,7 +18,7 @@ export const Route = createFileRoute("/catalog")({
 function Catalog() {
   const [rows, setRows] = useState<any[]>([]);
   useEffect(() => {
-    supabase.from("certifications").select("*").order("title").then(({ data }) => setRows(data ?? []));
+    supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").order("title").then(({ data }) => setRows(data ?? []));
   }, []);
 
   return (

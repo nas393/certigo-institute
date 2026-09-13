@@ -63,8 +63,7 @@ function Builder() {
   useEffect(() => {
     if (!user) return;
     supabase
-      .from("certifications")
-      .select("*")
+      .from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents")
       .eq("slug", slug)
       .maybeSingle()
       .then(({ data }) => {
