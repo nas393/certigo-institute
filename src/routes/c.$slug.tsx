@@ -30,7 +30,7 @@ function CertDetail() {
   const [enrolled, setEnrolled] = useState(false);
   const [enrolling, setEnrolling] = useState(false);
   const { t, lang } = useI18n();
-  const { translation, loading: translating } = useCourseTranslation(slug);
+  const { translation, loading: translating, error: translateError } = useCourseTranslation(slug);
 
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setC(data));
@@ -93,7 +93,7 @@ function CertDetail() {
         {lang !== "en" && (
           <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
             {translating ? <Loader2 className="h-3 w-3 animate-spin" /> : null}
-            {translating ? t("course.translating") : translation ? t("course.translated") : null}
+            {translating ? t("course.translating") : translation ? t("course.translated") : translateError ?? null}
           </p>
         )}
 
