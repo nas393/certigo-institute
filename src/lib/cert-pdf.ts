@@ -633,9 +633,10 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   ctx.font = `500 ${mm(3)}px Inter, Helvetica, Arial, sans-serif`;
   ctx.fillText("CERTIGO. INSTITUTE", cx, sigY + mm(10.5));
 
-  // Emerald digital stamp, mirroring the English page
+  // Emerald digital stamp, mirroring the English page — sits just past the role line
+  ctx.font = `600 ${mm(3.4)}px ${body}`;
   const roleW = ctx.measureText(L.role).width;
-  const stampX = cx + roleW / 2 + mm(9);
+  const stampX = cx + roleW / 2 + mm(10);
   const r = mm(12);
   ctx.strokeStyle = "#10B981";
   ctx.lineWidth = mm(0.7);
