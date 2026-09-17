@@ -20,7 +20,7 @@ export function PricingTools({ categories, onDone }: { categories: string[]; onD
     if (!window.confirm(`Set the price of ${where} to $${(cents / 100).toFixed(2)}?`)) return;
     setBusy(true);
     const { data, error } = await supabase.rpc("admin_bulk_set_price", {
-      _category: category || null,
+      _category: (category || null) as unknown as string,
       _price_cents: cents,
     });
     setBusy(false);
