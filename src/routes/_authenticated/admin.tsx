@@ -269,6 +269,18 @@ function AdminPanel() {
                       <span className="rounded-full bg-muted px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em]">
                         {ov?.learners ?? 0} enrolled · {ov?.passers ?? 0} passed · {ov?.certificates ?? 0} issued
                       </span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-xs text-muted-foreground">$</span>
+                        <Input
+                          aria-label={`Price for ${c.title}`}
+                          inputMode="decimal"
+                          className="h-9 w-20"
+                          value={quickPrice[c.id] ?? ""}
+                          onChange={(e) => setQuickPrice((p) => ({ ...p, [c.id]: e.target.value }))}
+                          onBlur={() => void saveQuickPrice(c)}
+                          onKeyDown={(e) => { if (e.key === "Enter") void saveQuickPrice(c); }}
+                        />
+                      </div>
                       <Button size="sm" variant="outline" onClick={() => void toggleResults(c)}>
                         <Users className="mr-1.5 h-3.5 w-3.5" /> Results <ChevronDown className={"ml-1 h-3 w-3 transition " + (openResults === c.id ? "rotate-180" : "")} />
                       </Button>
