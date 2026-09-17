@@ -182,6 +182,56 @@ export type Database = {
           },
         ]
       }
+      discount_codes: {
+        Row: {
+          active: boolean
+          certification_id: string | null
+          code: string
+          created_at: string
+          created_by: string | null
+          expires_at: string | null
+          id: string
+          max_redemptions: number | null
+          note: string
+          percent_off: number
+          redemptions: number
+        }
+        Insert: {
+          active?: boolean
+          certification_id?: string | null
+          code: string
+          created_at?: string
+          created_by?: string | null
+          expires_at?: string | null
+          id?: string
+          max_redemptions?: number | null
+          note?: string
+          percent_off?: number
+          redemptions?: number
+        }
+        Update: {
+          active?: boolean
+          certification_id?: string | null
+          code?: string
+          created_at?: string
+          created_by?: string | null
+          expires_at?: string | null
+          id?: string
+          max_redemptions?: number | null
+          note?: string
+          percent_off?: number
+          redemptions?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "discount_codes_certification_id_fkey"
+            columns: ["certification_id"]
+            isOneToOne: false
+            referencedRelation: "certifications"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       enrollments: {
         Row: {
           certification_id: string
@@ -355,6 +405,10 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      admin_bulk_set_price: {
+        Args: { _category: string; _price_cents: number }
+        Returns: number
+      }
       admin_course_overview: {
         Args: never
         Returns: {
@@ -376,6 +430,11 @@ export type Database = {
           serial: string
           user_id: string
         }[]
+      }
+      admin_overview_stats: { Args: never; Returns: Json }
+      admin_set_certificate_revoked: {
+        Args: { _revoked: boolean; _serial: string }
+        Returns: boolean
       }
       grade_and_issue: {
         Args: {
@@ -407,6 +466,10 @@ export type Database = {
           _user_id: string
         }
         Returns: boolean
+      }
+      preview_discount: {
+        Args: { _certification_id: string; _code: string }
+        Returns: Json
       }
       public_passport: { Args: { _user_id: string }; Returns: Json }
       public_stats: { Args: never; Returns: Json }

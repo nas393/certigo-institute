@@ -71,6 +71,13 @@
       "when": 1789641134296,
       "tag": "0009_lock_answer_keys_and_definer_grants",
       "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1789641320315,
+      "tag": "0010_discount_codes_and_admin_tools",
+      "breakpoints": true
     }
   ]
 }

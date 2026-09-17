@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
@@ -11,6 +11,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Loader2, Plus, Pencil, Trash2, Users, ChevronDown, ShieldAlert, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
+import { DiscountCodes } from "@/components/admin/DiscountCodes";
+import { PricingTools } from "@/components/admin/PricingTools";
 
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({ meta: [{ title: "Admin — CERTIGO." }] }),
@@ -34,6 +36,11 @@ type Result = {
   user_id: string; display_name: string; attempts: number; best_score: number;
   passed: boolean; serial: string | null; issued_at: string | null; enrolled_at: string | null;
 };
+type Stats = {
+  courses: number; learners: number; enrollments: number; attempts: number;
+  certificates: number; revoked: number; verifications: number; active_codes: number; avg_price_cents: number;
+};
+type Tab = "courses" | "pricing" | "codes";
 
 const blank = {
   slug: "", title: "", category: "", summary: "",
@@ -49,11 +56,14 @@ function AdminPanel() {
   const { isAdmin, loading: roleLoading } = useIsAdmin();
   const [courses, setCourses] = useState<Course[] | null>(null);
   const [overview, setOverview] = useState<Record<string, Overview>>({});
+  const [stats, setStats] = useState<Stats | null>(null);
+  const [tab, setTab] = useState<Tab>("courses");
   const [editing, setEditing] = useState<Course | "new" | null>(null);
   const [form, setForm] = useState({ ...blank });
   const [saving, setSaving] = useState(false);
   const [openResults, setOpenResults] = useState<string | null>(null);
   const [results, setResults] = useState<Record<string, Result[]>>({});
+  const [quickPrice, setQuickPrice] = useState<Record<string, string>>({});
 
   const load = useCallback(async () => {
     const { data } = await supabase
@@ -62,6 +72,11 @@ function AdminPanel() {
       .order("category")
       .order("title");
     setCourses((data ?? []) as Course[]);
+    setQuickPrice(Object.fromEntries((data ?? []).map((c: any) => [c.id, String((c.price_cents ?? 0) / 100)])));
+
+    const { data: st } = await supabase.rpc("admin_overview_stats");
+    if (st) setStats(st as unknown as Stats);
+
     const { data: ov, error: ovError } = await supabase.rpc("admin_course_overview");
     if (ovError) { toast.error(`Could not load course results: ${ovError.message}`); return; }
     const map: Record<string, Overview> = {};
@@ -70,6 +85,20 @@ function AdminPanel() {
   }, []);
 
   useEffect(() => { if (isAdmin) void load(); }, [isAdmin, load]);
+
+  const categories = useMemo(
+    () => Array.from(new Set((courses ?? []).map((c) => c.category))).sort(),
+    [courses],
+  );
+
+  async function saveQuickPrice(c: Course) {
+    const cents = Math.max(0, Math.round(Number(quickPrice[c.id] ?? 0) * 100));
+    if (cents === c.price_cents) return;
+    const { error } = await supabase.from("certifications").update({ price_cents: cents }).eq("id", c.id);
+    if (error) { toast.error(error.message); return; }
+    setCourses((rows) => (rows ?? []).map((r) => (r.id === c.id ? { ...r, price_cents: cents } : r)));
+    toast.success(`${c.title} is now ${formatPrice(cents)}.`);
+  }
 
   function startEdit(c: Course) {
     setEditing(c);
@@ -145,18 +174,62 @@ function AdminPanel() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ Administration</div>
-            <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Courses & results</h1>
-            <p className="mt-2 text-sm text-muted-foreground">Create, edit and delete courses. Open any course to see who enrolled, attempted and passed.</p>
+            <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Control room</h1>
+            <p className="mt-2 text-sm text-muted-foreground">Courses, prices, discount codes, learner results and credential status — all in one place.</p>
           </div>
           <Button
             className="min-h-[44px] bg-emerald-600 text-white hover:bg-emerald-700"
-            onClick={() => { setEditing("new"); setForm({ ...blank }); }}
+            onClick={() => { setTab("courses"); setEditing("new"); setForm({ ...blank }); }}
           >
             <Plus className="mr-2 h-4 w-4" /> New course
           </Button>
         </div>
 
-        {editing && (
+        {stats && (
+          <div className="mt-8 grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {[
+              ["Courses", String(stats.courses)],
+              ["Learners", String(stats.learners)],
+              ["Enrollments", String(stats.enrollments)],
+              ["Credentials", String(stats.certificates)],
+              ["Revoked", String(stats.revoked)],
+              ["Avg price", formatPrice(stats.avg_price_cents)],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-xl border border-border bg-card p-4 shadow-card">
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{label}</div>
+                <div className="mt-1 font-display text-2xl font-black tracking-tighter">{value}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-8 flex flex-wrap gap-2">
+          {([["courses", "Courses & results"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"]] as Array<[Tab, string]>).map(([id, label]) => (
+            <button
+              key={id}
+              onClick={() => setTab(id)}
+              className={"rounded-full border px-4 py-2 text-xs font-semibold transition " + (tab === id
+                ? "border-transparent bg-emerald-600 text-white"
+                : "border-border text-muted-foreground hover:text-foreground")}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        {tab === "pricing" && (
+          <div className="mt-8">
+            <PricingTools categories={categories} onDone={load} />
+          </div>
+        )}
+
+        {tab === "codes" && (
+          <div className="mt-8">
+            <DiscountCodes courses={(courses ?? []).map((c) => ({ id: c.id, title: c.title }))} userId={user?.id} />
+          </div>
+        )}
+
+        {tab === "courses" && editing && (
           <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-card">
             <div className="font-display text-lg font-extrabold">{editing === "new" ? "New course" : `Editing ${(editing as Course).title}`}</div>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -177,7 +250,7 @@ function AdminPanel() {
           </div>
         )}
 
-        {!courses ? (
+        {tab !== "courses" ? null : !courses ? (
           <div className="mt-10 grid place-items-center"><Loader2 className="animate-spin" /></div>
         ) : (
           <div className="mt-8 space-y-3">
@@ -196,6 +269,18 @@ function AdminPanel() {
                       <span className="rounded-full bg-muted px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em]">
                         {ov?.learners ?? 0} enrolled · {ov?.passers ?? 0} passed · {ov?.certificates ?? 0} issued
                       </span>
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-xs text-muted-foreground">$</span>
+                        <Input
+                          aria-label={`Price for ${c.title}`}
+                          inputMode="decimal"
+                          className="h-9 w-20"
+                          value={quickPrice[c.id] ?? ""}
+                          onChange={(e) => setQuickPrice((p) => ({ ...p, [c.id]: e.target.value }))}
+                          onBlur={() => void saveQuickPrice(c)}
+                          onKeyDown={(e) => { if (e.key === "Enter") void saveQuickPrice(c); }}
+                        />
+                      </div>
                       <Button size="sm" variant="outline" onClick={() => void toggleResults(c)}>
                         <Users className="mr-1.5 h-3.5 w-3.5" /> Results <ChevronDown className={"ml-1 h-3 w-3 transition " + (openResults === c.id ? "rotate-180" : "")} />
                       </Button>

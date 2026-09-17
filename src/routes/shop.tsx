@@ -46,6 +46,8 @@ function durationLabel(modules: unknown): string {
   return m === 0 ? `${h} h` : `${h} h ${m} min`;
 }
 
+type Discount = { percent_off: number; final_cents: number };
+
 function ShopPage() {
   const nav = useNavigate();
   const { user } = useAuth();
@@ -54,6 +56,55 @@ function ShopPage() {
   const [busy, setBusy] = useState<string | null>(null);
   const [q, setQ] = useState("");
   const [cat, setCat] = useState<string>("All");
+  const [promo, setPromo] = useState("");
+  const [appliedCode, setAppliedCode] = useState<string | null>(null);
+  const [checking, setChecking] = useState(false);
+  const [discounts, setDiscounts] = useState<Record<string, Discount>>({});
+
+  async function applyPromo() {
+    const code = promo.trim().toUpperCase();
+    if (!code) return;
+    const all = rows ?? [];
+    if (all.length === 0) return;
+    setChecking(true);
+    const found: Record<string, Discount> = {};
+    let reason = "That code is not valid.";
+    for (let i = 0; i < all.length; i += 8) {
+      const batch = all.slice(i, i + 8);
+      const results = await Promise.all(
+        batch.map((c) => supabase.rpc("preview_discount", { _code: code, _certification_id: c.id })),
+      );
+      results.forEach(({ data }, idx) => {
+        const res = data as unknown as
+          | { valid: true; percent_off: number; final_cents: number }
+          | { valid: false; reason: string }
+          | null;
+        if (!res) return;
+        if (res.valid) {
+          const course = batch[idx];
+          if (course) found[course.id] = { percent_off: res.percent_off, final_cents: res.final_cents };
+        } else if (res.reason) {
+          reason = res.reason;
+        }
+      });
+    }
+    setChecking(false);
+    if (Object.keys(found).length === 0) {
+      setAppliedCode(null);
+      setDiscounts({});
+      toast.error(reason);
+      return;
+    }
+    setAppliedCode(code);
+    setDiscounts(found);
+    toast.success(`${code} applied to ${Object.keys(found).length} course${Object.keys(found).length === 1 ? "" : "s"}.`);
+  }
+
+  function clearPromo() {
+    setPromo("");
+    setAppliedCode(null);
+    setDiscounts({});
+  }
 
   useEffect(() => {
     supabase
@@ -131,6 +182,27 @@ function ShopPage() {
             ))}
           </div>
         </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-card">
+          <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">Discount code</span>
+          <Input
+            aria-label="Discount code"
+            className="h-10 w-40"
+            placeholder="CERTIGO…"
+            value={promo}
+            onChange={(e) => setPromo(e.target.value.toUpperCase())}
+            onKeyDown={(e) => { if (e.key === "Enter") void applyPromo(); }}
+          />
+          <Button variant="outline" className="h-10" disabled={checking || !rows} onClick={() => void applyPromo()}>
+            {checking ? <Loader2 className="mr-1.5 h-4 w-4 animate-spin" /> : null} Apply
+          </Button>
+          {appliedCode && (
+            <>
+              <span className="text-sm text-[var(--primary)]">{appliedCode} applied</span>
+              <button onClick={clearPromo} className="text-xs text-muted-foreground underline">Remove</button>
+            </>
+          )}
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 pt-8 sm:px-8">
@@ -160,8 +232,17 @@ function ShopPage() {
                   <div className="mt-auto pt-6">
                     <div className="flex items-end justify-between gap-3">
                       <div>
-                        <div className="font-display text-2xl font-black tracking-tighter">{formatPrice(c.price_cents)}</div>
-                        <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">per credential</div>
+                        {discounts[c.id] ? (
+                          <div className="flex items-baseline gap-2">
+                            <span className="font-display text-2xl font-black tracking-tighter text-[var(--primary)]">{formatPrice(discounts[c.id]!.final_cents)}</span>
+                            <span className="text-sm text-muted-foreground line-through">{formatPrice(c.price_cents)}</span>
+                          </div>
+                        ) : (
+                          <div className="font-display text-2xl font-black tracking-tighter">{formatPrice(c.price_cents)}</div>
+                        )}
+                        <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
+                          {discounts[c.id] ? `${discounts[c.id]!.percent_off}% off with ${appliedCode}` : "per credential"}
+                        </div>
                       </div>
                       {has ? (
                         <Link to="/portal">
