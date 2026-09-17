@@ -64,6 +64,13 @@
       "when": 1789638015752,
       "tag": "0008_course_translations",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1789641134296,
+      "tag": "0009_lock_answer_keys_and_definer_grants",
+      "breakpoints": true
     }
   ]
 }
