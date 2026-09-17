@@ -182,6 +182,27 @@ function ShopPage() {
             ))}
           </div>
         </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-xl border border-border bg-card p-4 shadow-card">
+          <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">Discount code</span>
+          <Input
+            aria-label="Discount code"
+            className="h-10 w-40"
+            placeholder="CERTIGO…"
+            value={promo}
+            onChange={(e) => setPromo(e.target.value.toUpperCase())}
+            onKeyDown={(e) => { if (e.key === "Enter") void applyPromo(); }}
+          />
+          <Button variant="outline" className="h-10" disabled={checking || !rows} onClick={() => void applyPromo()}>
+            {checking ? <Loader2 className="mr-1.5 h-4 w-4 animate-spin" /> : null} Apply
+          </Button>
+          {appliedCode && (
+            <>
+              <span className="text-sm text-[var(--primary)]">{appliedCode} applied</span>
+              <button onClick={clearPromo} className="text-xs text-muted-foreground underline">Remove</button>
+            </>
+          )}
+        </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 pb-20 pt-8 sm:px-8">
