@@ -46,6 +46,8 @@ function durationLabel(modules: unknown): string {
   return m === 0 ? `${h} h` : `${h} h ${m} min`;
 }
 
+type Discount = { percent_off: number; final_cents: number };
+
 function ShopPage() {
   const nav = useNavigate();
   const { user } = useAuth();
@@ -54,6 +56,55 @@ function ShopPage() {
   const [busy, setBusy] = useState<string | null>(null);
   const [q, setQ] = useState("");
   const [cat, setCat] = useState<string>("All");
+  const [promo, setPromo] = useState("");
+  const [appliedCode, setAppliedCode] = useState<string | null>(null);
+  const [checking, setChecking] = useState(false);
+  const [discounts, setDiscounts] = useState<Record<string, Discount>>({});
+
+  async function applyPromo() {
+    const code = promo.trim().toUpperCase();
+    if (!code) return;
+    const all = rows ?? [];
+    if (all.length === 0) return;
+    setChecking(true);
+    const found: Record<string, Discount> = {};
+    let reason = "That code is not valid.";
+    for (let i = 0; i < all.length; i += 8) {
+      const batch = all.slice(i, i + 8);
+      const results = await Promise.all(
+        batch.map((c) => supabase.rpc("preview_discount", { _code: code, _certification_id: c.id })),
+      );
+      results.forEach(({ data }, idx) => {
+        const res = data as unknown as
+          | { valid: true; percent_off: number; final_cents: number }
+          | { valid: false; reason: string }
+          | null;
+        if (!res) return;
+        if (res.valid) {
+          const course = batch[idx];
+          if (course) found[course.id] = { percent_off: res.percent_off, final_cents: res.final_cents };
+        } else if (res.reason) {
+          reason = res.reason;
+        }
+      });
+    }
+    setChecking(false);
+    if (Object.keys(found).length === 0) {
+      setAppliedCode(null);
+      setDiscounts({});
+      toast.error(reason);
+      return;
+    }
+    setAppliedCode(code);
+    setDiscounts(found);
+    toast.success(`${code} applied to ${Object.keys(found).length} course${Object.keys(found).length === 1 ? "" : "s"}.`);
+  }
+
+  function clearPromo() {
+    setPromo("");
+    setAppliedCode(null);
+    setDiscounts({});
+  }
 
   useEffect(() => {
     supabase
