@@ -174,16 +174,60 @@ function AdminPanel() {
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ Administration</div>
-            <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Courses & results</h1>
-            <p className="mt-2 text-sm text-muted-foreground">Create, edit and delete courses. Open any course to see who enrolled, attempted and passed.</p>
+            <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Control room</h1>
+            <p className="mt-2 text-sm text-muted-foreground">Courses, prices, discount codes, learner results and credential status — all in one place.</p>
           </div>
           <Button
             className="min-h-[44px] bg-emerald-600 text-white hover:bg-emerald-700"
-            onClick={() => { setEditing("new"); setForm({ ...blank }); }}
+            onClick={() => { setTab("courses"); setEditing("new"); setForm({ ...blank }); }}
           >
             <Plus className="mr-2 h-4 w-4" /> New course
           </Button>
         </div>
+
+        {stats && (
+          <div className="mt-8 grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {[
+              ["Courses", String(stats.courses)],
+              ["Learners", String(stats.learners)],
+              ["Enrollments", String(stats.enrollments)],
+              ["Credentials", String(stats.certificates)],
+              ["Revoked", String(stats.revoked)],
+              ["Avg price", formatPrice(stats.avg_price_cents)],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-xl border border-border bg-card p-4 shadow-card">
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">{label}</div>
+                <div className="mt-1 font-display text-2xl font-black tracking-tighter">{value}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="mt-8 flex flex-wrap gap-2">
+          {([["courses", "Courses & results"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"]] as Array<[Tab, string]>).map(([id, label]) => (
+            <button
+              key={id}
+              onClick={() => setTab(id)}
+              className={"rounded-full border px-4 py-2 text-xs font-semibold transition " + (tab === id
+                ? "border-transparent bg-emerald-600 text-white"
+                : "border-border text-muted-foreground hover:text-foreground")}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        {tab === "pricing" && (
+          <div className="mt-8">
+            <PricingTools categories={categories} onDone={load} />
+          </div>
+        )}
+
+        {tab === "codes" && (
+          <div className="mt-8">
+            <DiscountCodes courses={(courses ?? []).map((c) => ({ id: c.id, title: c.title }))} userId={user?.id} />
+          </div>
+        )}
 
         {editing && (
           <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-card">
