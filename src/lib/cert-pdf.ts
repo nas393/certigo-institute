@@ -639,7 +639,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   // Emerald digital stamp, mirroring the English page — sits just past the role line
   ctx.font = `600 ${mm(3.4)}px ${body}`;
   const roleW = ctx.measureText(L.role).width;
-  const stampX = rtl ? cx - roleW / 2 - mm(10) : cx + roleW / 2 + mm(10);
+  const stampX = rtl ? cx - roleW / 2 - mm(15) : cx + roleW / 2 + mm(10);
   const r = mm(12);
   ctx.strokeStyle = "#10B981";
   ctx.lineWidth = mm(0.7);
@@ -667,7 +667,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   const dateStr = new Date(data.issuedAt).toLocaleDateString(CERT_LOCALES[lang], {
     day: "2-digit", month: "long", year: "numeric",
   });
-  ctx.fillText(ltr(dateStr), endX, CH - mm(17));
+  ctx.fillText(dateStr, endX, CH - mm(17));
   ctx.fillStyle = "#8c8c8c";
   ctx.font = `400 ${mm(2.8)}px ${body}`;
   ctx.fillText(L.note, endX, CH - mm(13));
