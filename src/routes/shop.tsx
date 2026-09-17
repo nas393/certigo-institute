@@ -232,8 +232,17 @@ function ShopPage() {
                   <div className="mt-auto pt-6">
                     <div className="flex items-end justify-between gap-3">
                       <div>
-                        <div className="font-display text-2xl font-black tracking-tighter">{formatPrice(c.price_cents)}</div>
-                        <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">per credential</div>
+                        {discounts[c.id] ? (
+                          <div className="flex items-baseline gap-2">
+                            <span className="font-display text-2xl font-black tracking-tighter text-[var(--primary)]">{formatPrice(discounts[c.id]!.final_cents)}</span>
+                            <span className="text-sm text-muted-foreground line-through">{formatPrice(c.price_cents)}</span>
+                          </div>
+                        ) : (
+                          <div className="font-display text-2xl font-black tracking-tighter">{formatPrice(c.price_cents)}</div>
+                        )}
+                        <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
+                          {discounts[c.id] ? `${discounts[c.id]!.percent_off}% off with ${appliedCode}` : "per credential"}
+                        </div>
                       </div>
                       {has ? (
                         <Link to="/portal">
