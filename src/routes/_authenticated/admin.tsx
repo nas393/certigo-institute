@@ -36,6 +36,11 @@ type Result = {
   user_id: string; display_name: string; attempts: number; best_score: number;
   passed: boolean; serial: string | null; issued_at: string | null; enrolled_at: string | null;
 };
+type Stats = {
+  courses: number; learners: number; enrollments: number; attempts: number;
+  certificates: number; revoked: number; verifications: number; active_codes: number; avg_price_cents: number;
+};
+type Tab = "courses" | "pricing" | "codes";
 
 const blank = {
   slug: "", title: "", category: "", summary: "",
@@ -51,11 +56,14 @@ function AdminPanel() {
   const { isAdmin, loading: roleLoading } = useIsAdmin();
   const [courses, setCourses] = useState<Course[] | null>(null);
   const [overview, setOverview] = useState<Record<string, Overview>>({});
+  const [stats, setStats] = useState<Stats | null>(null);
+  const [tab, setTab] = useState<Tab>("courses");
   const [editing, setEditing] = useState<Course | "new" | null>(null);
   const [form, setForm] = useState({ ...blank });
   const [saving, setSaving] = useState(false);
   const [openResults, setOpenResults] = useState<string | null>(null);
   const [results, setResults] = useState<Record<string, Result[]>>({});
+  const [quickPrice, setQuickPrice] = useState<Record<string, string>>({});
 
   const load = useCallback(async () => {
     const { data } = await supabase
