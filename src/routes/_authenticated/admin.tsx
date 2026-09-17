@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
@@ -11,6 +11,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Loader2, Plus, Pencil, Trash2, Users, ChevronDown, ShieldAlert, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
+import { DiscountCodes } from "@/components/admin/DiscountCodes";
+import { PricingTools } from "@/components/admin/PricingTools";
 
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({ meta: [{ title: "Admin — CERTIGO." }] }),
