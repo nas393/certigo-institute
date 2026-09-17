@@ -23,33 +23,62 @@ function list(v: unknown): string[] {
   return Array.isArray(v) ? v.map((x) => str(x)).filter(Boolean) : [];
 }
 
-/** Free Google Translate endpoint (no key, no AI credits). */
-async function gtranslate(text: string, target: string): Promise<string> {
-  if (!text.trim()) return text;
-  const url =
-    "https://translate.googleapis.com/translate_a/single?client=gtx&dt=t&sl=en&tl=" +
-    encodeURIComponent(target) +
-    "&q=" +
-    encodeURIComponent(text);
-  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+/**
+ * Free Google Translate endpoint (no key, no AI credits). Accepts a batch of
+ * strings and returns one translation per input, in the same order.
+ */
+async function gtranslateBatch(texts: string[], target: string): Promise<string[]> {
+  const params = new URLSearchParams({ client: "dict-chrome-ex", sl: "en", tl: target });
+  for (const t of texts) params.append("q", t);
+  const res = await fetch(`https://clients5.google.com/translate_a/t?${params.toString()}`, {
+    headers: { "User-Agent": "Mozilla/5.0" },
+  });
   if (!res.ok) throw new Error(`Translation service returned ${res.status}.`);
   const json = (await res.json()) as unknown;
-  const chunks = Array.isArray(json) && Array.isArray((json as any[])[0]) ? ((json as any[])[0] as any[]) : [];
-  const out = chunks.map((c) => (Array.isArray(c) ? str(c[0]) : "")).join("");
-  return out.trim() || text;
+  const arr = Array.isArray(json) ? (json as unknown[]) : [];
+  const flat = arr.map((v) => (Array.isArray(v) ? str(v[0]) : str(v)));
+  if (flat.length !== texts.length) throw new Error("Unexpected translation response.");
+  return flat.map((v, i) => v || texts[i]);
 }
 
-/** Translate many strings with limited concurrency; falls back to the source on failure. */
+/** Translate many strings in small batches; falls back to the source text on failure. */
 async function translateAll(texts: string[], target: string): Promise<string[]> {
-  const out = new Array<string>(texts.length);
+  const out = [...texts];
+  const indexes = texts.map((t, i) => i).filter((i) => texts[i].trim().length > 0);
+
+  // Group into batches that stay well inside URL length limits.
+  const batches: number[][] = [];
+  let current: number[] = [];
+  let size = 0;
+  for (const i of indexes) {
+    const len = texts[i].length * 3 + 8;
+    if (current.length >= 20 || size + len > 1600) {
+      if (current.length) batches.push(current);
+      current = [];
+      size = 0;
+    }
+    current.push(i);
+    size += len;
+  }
+  if (current.length) batches.push(current);
+
   let cursor = 0;
-  const workers = Array.from({ length: 6 }, async () => {
-    while (cursor < texts.length) {
-      const i = cursor++;
+  const workers = Array.from({ length: 4 }, async () => {
+    while (cursor < batches.length) {
+      const batch = batches[cursor++];
       try {
-        out[i] = await gtranslate(texts[i], target);
+        const res = await gtranslateBatch(batch.map((i) => texts[i]), target);
+        batch.forEach((i, j) => { out[i] = res[j]; });
       } catch {
-        out[i] = texts[i];
+        // Retry one string at a time so a single bad phrase can't drop the batch.
+        for (const i of batch) {
+          try {
+            const [one] = await gtranslateBatch([texts[i]], target);
+            out[i] = one;
+          } catch {
+            out[i] = texts[i];
+          }
+        }
       }
     }
   });
