@@ -516,6 +516,9 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   const align: CanvasTextAlign = rtl ? "right" : "left";
   const alignEnd: CanvasTextAlign = rtl ? "left" : "right";
 
+  // Bidi: let the canvas lay Arabic out right-to-left, and isolate Latin/number runs.
+  ctx.direction = rtl ? "rtl" : "ltr";
+  const ltr = (v: string) => (rtl ? `\u2066${v}\u2069` : v);
   ctx.fillStyle = "#ffffff";
   ctx.fillRect(0, 0, CW, CH);
 
@@ -554,7 +557,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   ctx.textAlign = alignEnd;
   ctx.font = `500 ${mm(3)}px ${body}`;
   ctx.fillStyle = "#787878";
-  ctx.fillText(`${L.lang} · NO. ${data.serial}`, endX, mm(30));
+  ctx.fillText(`${L.lang} · ${ltr(`NO. ${data.serial}`)}`, endX, mm(30));
 
   ctx.strokeStyle = "#141414";
   ctx.lineWidth = mm(0.15);
@@ -592,7 +595,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   if (typeof data.scorePct === "number") {
     ctx.fillStyle = "#5a5a5a";
     ctx.font = `500 ${mm(3.8)}px ${body}`;
-    ctx.fillText(`${L.score} · ${data.scorePct}%`, startX, mm(116));
+    ctx.fillText(`${L.score} · ${ltr(`${data.scorePct}%`)}`, startX, mm(116));
   }
 
   // QR + reference
@@ -607,10 +610,10 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   ctx.fillText(L.ref, startX, CH - mm(22));
   ctx.fillStyle = "#141414";
   ctx.font = `700 ${mm(4)}px Inter, Helvetica, Arial, sans-serif`;
-  ctx.fillText(formatReference(data.serial), startX, CH - mm(17));
+  ctx.fillText(ltr(formatReference(data.serial)), startX, CH - mm(17));
   ctx.fillStyle = "#5a5a5a";
   ctx.font = `400 ${mm(2.8)}px Inter, Helvetica, Arial, sans-serif`;
-  ctx.fillText(`${L.verify}: ${data.verifyUrl}`, startX, CH - mm(13));
+  ctx.fillText(`${L.verify}: ${ltr(data.verifyUrl)}`, startX, CH - mm(13));
 
   // Signature block (centred)
   const cx = CW / 2;
@@ -636,7 +639,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   // Emerald digital stamp, mirroring the English page — sits just past the role line
   ctx.font = `600 ${mm(3.4)}px ${body}`;
   const roleW = ctx.measureText(L.role).width;
-  const stampX = cx + roleW / 2 + mm(10);
+  const stampX = rtl ? cx - roleW / 2 - mm(10) : cx + roleW / 2 + mm(10);
   const r = mm(12);
   ctx.strokeStyle = "#10B981";
   ctx.lineWidth = mm(0.7);
@@ -645,6 +648,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   ctx.beginPath(); ctx.arc(stampX, sigY + mm(4), r - mm(1.8), 0, Math.PI * 2); ctx.stroke();
   ctx.fillStyle = "#10B981";
   ctx.textAlign = "center";
+  ctx.direction = "ltr";
   ctx.font = `700 ${mm(4)}px Inter, Helvetica, Arial, sans-serif`;
   ctx.fillText("CERTIFIED", stampX, sigY + mm(5));
   ctx.font = `700 ${mm(2.6)}px Inter, Helvetica, Arial, sans-serif`;
@@ -653,6 +657,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   ctx.fillText("✓", stampX, sigY - mm(0.5));
 
   // Issue date + translated-copy note
+  ctx.direction = rtl ? "rtl" : "ltr";
   ctx.textAlign = alignEnd;
   ctx.fillStyle = "#8c8c8c";
   ctx.font = `500 ${mm(3)}px ${body}`;
@@ -662,7 +667,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
   const dateStr = new Date(data.issuedAt).toLocaleDateString(CERT_LOCALES[lang], {
     day: "2-digit", month: "long", year: "numeric",
   });
-  ctx.fillText(dateStr, endX, CH - mm(17));
+  ctx.fillText(ltr(dateStr), endX, CH - mm(17));
   ctx.fillStyle = "#8c8c8c";
   ctx.font = `400 ${mm(2.8)}px ${body}`;
   ctx.fillText(L.note, endX, CH - mm(13));
