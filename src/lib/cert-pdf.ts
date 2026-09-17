@@ -635,7 +635,7 @@ async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDa
 
   // Emerald digital stamp, mirroring the English page
   const roleW = ctx.measureText(L.role).width;
-  const stampX = cx + roleW / 2 + mm(4);
+  const stampX = cx + roleW / 2 + mm(9);
   const r = mm(12);
   ctx.strokeStyle = "#10B981";
   ctx.lineWidth = mm(0.7);
