@@ -229,7 +229,7 @@ function AdminPanel() {
           </div>
         )}
 
-        {editing && (
+        {tab === "courses" && editing && (
           <div className="mt-8 rounded-2xl border border-border bg-card p-6 shadow-card">
             <div className="font-display text-lg font-extrabold">{editing === "new" ? "New course" : `Editing ${(editing as Course).title}`}</div>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -250,7 +250,7 @@ function AdminPanel() {
           </div>
         )}
 
-        {!courses ? (
+        {tab !== "courses" ? null : !courses ? (
           <div className="mt-10 grid place-items-center"><Loader2 className="animate-spin" /></div>
         ) : (
           <div className="mt-8 space-y-3">
