@@ -72,6 +72,11 @@ function AdminPanel() {
       .order("category")
       .order("title");
     setCourses((data ?? []) as Course[]);
+    setQuickPrice(Object.fromEntries((data ?? []).map((c: any) => [c.id, String((c.price_cents ?? 0) / 100)])));
+
+    const { data: st } = await supabase.rpc("admin_overview_stats");
+    if (st) setStats(st as unknown as Stats);
+
     const { data: ov, error: ovError } = await supabase.rpc("admin_course_overview");
     if (ovError) { toast.error(`Could not load course results: ${ovError.message}`); return; }
     const map: Record<string, Overview> = {};
@@ -80,6 +85,20 @@ function AdminPanel() {
   }, []);
 
   useEffect(() => { if (isAdmin) void load(); }, [isAdmin, load]);
+
+  const categories = useMemo(
+    () => Array.from(new Set((courses ?? []).map((c) => c.category))).sort(),
+    [courses],
+  );
+
+  async function saveQuickPrice(c: Course) {
+    const cents = Math.max(0, Math.round(Number(quickPrice[c.id] ?? 0) * 100));
+    if (cents === c.price_cents) return;
+    const { error } = await supabase.from("certifications").update({ price_cents: cents }).eq("id", c.id);
+    if (error) { toast.error(error.message); return; }
+    setCourses((rows) => (rows ?? []).map((r) => (r.id === c.id ? { ...r, price_cents: cents } : r)));
+    toast.success(`${c.title} is now ${formatPrice(cents)}.`);
+  }
 
   function startEdit(c: Course) {
     setEditing(c);
