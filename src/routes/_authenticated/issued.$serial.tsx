@@ -13,6 +13,8 @@ import { downloadCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference } from "@/lib/cert";
 import { toast } from "sonner";
 import sigImg from "@/assets/signature-director.png";
+import { useI18n, languageName } from "@/lib/i18n";
+import { useCourseTranslation } from "@/lib/use-course-translation";
 
 export const Route = createFileRoute("/_authenticated/issued/$serial")({
   head: ({ params }) => ({ meta: [{ title: `Issued ${params.serial} — CERTIGO.` }] }),
@@ -24,10 +26,12 @@ function Issued() {
   const [cert, setCert] = useState<any>(null);
   const [view, setView] = useState<"digital" | "print">("digital");
   const [downloading, setDownloading] = useState(false);
+  const { t, lang } = useI18n();
+  const { translation } = useCourseTranslation(cert?.certifications?.slug);
 
   useEffect(() => {
     supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, score, certifications(title, issuer_name, skills, modules)")
+      .select("serial, recipient_name, issued_at, score, certifications(slug, title, issuer_name, skills, modules)")
       .eq("serial", serial).maybeSingle()
       .then(({ data }) => setCert(data));
   }, [serial]);
@@ -62,6 +66,8 @@ function Issued() {
         skills,
         modules,
         programmeTitle: certTitle,
+        language: lang,
+        translatedTitle: translation?.title,
         totalHours: modules.reduce((s: number, m: TranscriptModuleRow) => s + m.hours, 0),
       });
     } catch (e: any) {
@@ -73,15 +79,15 @@ function Issued() {
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
-        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ Certificate issued</div>
-        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Congratulations.</h1>
-        <p className="mt-2 text-sm text-muted-foreground">{formatReference(cert.serial)} · Score {cert.score}%</p>
+        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ {t("cert.issued")}</div>
+        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">{t("cert.congrats")}</h1>
+        <p className="mt-2 text-sm text-muted-foreground">{formatReference(cert.serial)} · {t("cert.score")} {cert.score}%</p>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          <Button variant={view === "digital" ? "default" : "outline"} onClick={() => setView("digital")} className="min-h-[44px]">Digital badge</Button>
-          <Button variant={view === "print" ? "default" : "outline"} onClick={() => setView("print")} className="min-h-[44px]">Official print</Button>
+          <Button variant={view === "digital" ? "default" : "outline"} onClick={() => setView("digital")} className="min-h-[44px]">{t("cert.digital")}</Button>
+          <Button variant={view === "print" ? "default" : "outline"} onClick={() => setView("print")} className="min-h-[44px]">{t("cert.print")}</Button>
           <Button onClick={download} disabled={downloading} className="min-h-[44px] bg-emerald-600 text-white hover:bg-emerald-700">
-            <Download className="mr-2 h-4 w-4" /> {downloading ? "Generating…" : "Download PDF"}
+            <Download className="mr-2 h-4 w-4" /> {downloading ? t("cert.generating") : t("cert.download")}
           </Button>
           <LinkedInButton
             certTitle={certTitle}
@@ -120,16 +126,22 @@ function Issued() {
           )}
         </div>
 
+        {lang !== "en" && (
+          <p className="mt-4 text-xs text-muted-foreground">
+            {t("cert.bilingualNote", { lang: languageName(lang) })}
+          </p>
+        )}
+
         <CertChecksBanner cert={cert} />
         <StagingShareToggle serial={cert.serial} />
 
         <div className="mt-8 text-sm text-muted-foreground">
           <Link to="/certificate/$id" params={{ id: cert.serial }} className="hover:text-foreground underline-offset-4 hover:underline">
-            Public certificate page →
+            {t("cert.publicPage")}
           </Link>{" "}
           ·{" "}
           <Link to="/verify/$id" params={{ id: cert.serial }} className="hover:text-foreground underline-offset-4 hover:underline">
-            Verify URL →
+            {t("cert.verifyUrl")}
           </Link>
         </div>
       </div>

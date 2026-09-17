@@ -150,6 +150,38 @@ export type Database = {
         }
         Relationships: []
       }
+      course_translations: {
+        Row: {
+          certification_id: string
+          created_at: string
+          id: string
+          lang: string
+          payload: Json
+        }
+        Insert: {
+          certification_id: string
+          created_at?: string
+          id?: string
+          lang: string
+          payload: Json
+        }
+        Update: {
+          certification_id?: string
+          created_at?: string
+          id?: string
+          lang?: string
+          payload?: Json
+        }
+        Relationships: [
+          {
+            foreignKeyName: "course_translations_certification_id_fkey"
+            columns: ["certification_id"]
+            isOneToOne: false
+            referencedRelation: "certifications"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       enrollments: {
         Row: {
           certification_id: string

@@ -4,6 +4,7 @@ import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { ArrowRight } from "lucide-react";
 import { CourseGenerator } from "@/components/course/CourseGenerator";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/catalog")({
   head: () => ({
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/catalog")({
 });
 
 function Catalog() {
+  const { t } = useI18n();
   const [rows, setRows] = useState<any[]>([]);
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").order("title").then(({ data }) => setRows(data ?? []));
@@ -25,10 +27,10 @@ function Catalog() {
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
-        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ Catalog</div>
-        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter sm:text-5xl">Pick a certification.</h1>
+        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {t("catalog.eyebrow")}</div>
+        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter sm:text-5xl">{t("catalog.h1")}</h1>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-          Each track is one short quiz away from a verified credential you can share to LinkedIn.
+          {t("catalog.sub")}
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -48,7 +50,7 @@ function Catalog() {
                 ))}
               </div>
               <div className="mt-4 flex items-center gap-1 text-sm font-medium text-emerald-700">
-                Start <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
+                {t("catalog.start")} <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
               </div>
             </Link>
           ))}

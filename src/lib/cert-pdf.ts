@@ -28,7 +28,13 @@ export interface CertPdfData {
   }>;
   totalHours?: number;
   programmeTitle?: string;
+  /** Second-copy language. When set (and not "en"), a translated certificate page is appended. */
+  language?: CertLang;
+  /** Translated course title for the second-copy page. */
+  translatedTitle?: string;
 }
+
+export type CertLang = "en" | "fr" | "es" | "pt" | "ar";
 
 export interface BuiltCertPdf {
   bytes: Uint8Array;
@@ -171,6 +177,11 @@ export async function buildCertificatePdf(data: CertPdfData): Promise<BuiltCertP
   doc.setFontSize(9);
   doc.setTextColor(20);
   doc.text(dateStr.toUpperCase(), W - 22, H - 17, { align: "right" });
+
+  // Second copy in the chosen language — the English page above stays the official record.
+  if (data.language && data.language !== "en") {
+    await drawTranslatedCertificatePage(doc, data, qrDataUrl);
+  }
 
   // Optional transcript page
   if (data.modules && data.modules.length > 0) {
@@ -409,4 +420,260 @@ function drawTranscriptPage(doc: jsPDF, data: CertPdfData) {
   doc.setTextColor(20);
   const dateStr = new Date(data.issuedAt).toLocaleDateString("en-GB", { day: "2-digit", month: "long", year: "numeric" });
   doc.text(dateStr.toUpperCase(), W - 22, H - 17, { align: "right" });
+}
+/* ------------------------------------------------------------------ *
+ * Second copy of the certificate in the learner's chosen language.
+ * Rendered on a canvas so accents and Arabic script (shaping + RTL)
+ * come out exactly as the browser draws them, then placed as a full
+ * page. Falls back silently when no canvas is available (e.g. tests).
+ * ------------------------------------------------------------------ */
+
+const CERT_LABELS: Record<Exclude<CertLang, "en">, Record<string, string>> = {
+  fr: {
+    certify: "NOUS CERTIFIONS QUE",
+    completed: "A SUIVI AVEC SUCCÈS",
+    score: "Note finale",
+    ref: "RÉFÉRENCE DU CERTIFICAT",
+    verify: "Vérifier",
+    issued: "DÉLIVRÉ LE",
+    role: "DIRECTEUR DES AFFAIRES ACADÉMIQUES",
+    note: "Copie traduite — la version anglaise constitue le document officiel.",
+    lang: "VERSION FRANÇAISE",
+  },
+  es: {
+    certify: "SE CERTIFICA QUE",
+    completed: "HA COMPLETADO CON ÉXITO",
+    score: "Nota final",
+    ref: "REFERENCIA DE LA CREDENCIAL",
+    verify: "Verificar",
+    issued: "EMITIDO EL",
+    role: "DIRECTOR DE ASUNTOS ACADÉMICOS",
+    note: "Copia traducida: la versión en inglés es el documento oficial.",
+    lang: "VERSIÓN EN ESPAÑOL",
+  },
+  pt: {
+    certify: "CERTIFICA-SE QUE",
+    completed: "CONCLUIU COM ÊXITO",
+    score: "Nota final",
+    ref: "REFERÊNCIA DA CREDENCIAL",
+    verify: "Verificar",
+    issued: "EMITIDO EM",
+    role: "DIRETOR DE ASSUNTOS ACADÉMICOS",
+    note: "Cópia traduzida — a versão em inglês é o documento oficial.",
+    lang: "VERSÃO EM PORTUGUÊS",
+  },
+  ar: {
+    certify: "نشهد بأن",
+    completed: "قد أتمّ بنجاح",
+    score: "النتيجة النهائية",
+    ref: "المرجع الرسمي للشهادة",
+    verify: "التحقق",
+    issued: "تاريخ الإصدار",
+    role: "مدير الشؤون الأكاديمية",
+    note: "نسخة مترجمة — النسخة الإنجليزية هي الوثيقة الرسمية.",
+    lang: "النسخة العربية",
+  },
+};
+
+const CERT_LOCALES: Record<Exclude<CertLang, "en">, string> = {
+  fr: "fr-FR",
+  es: "es-ES",
+  pt: "pt-PT",
+  ar: "ar",
+};
+
+function loadImage(src: string): Promise<HTMLImageElement | null> {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => resolve(null);
+    img.src = src;
+  });
+}
+
+async function drawTranslatedCertificatePage(doc: jsPDF, data: CertPdfData, qrDataUrl: string) {
+  const lang = data.language as Exclude<CertLang, "en">;
+  const L = CERT_LABELS[lang];
+  if (!L || typeof document === "undefined") return;
+
+  const canvas = document.createElement("canvas");
+  const scale = 6; // 297mm x 210mm at ~150dpi
+  const CW = 297 * scale;
+  const CH = 210 * scale;
+  canvas.width = CW;
+  canvas.height = CH;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  const rtl = lang === "ar";
+  const body = rtl
+    ? '"Noto Sans Arabic", "Segoe UI", sans-serif'
+    : 'Inter, Helvetica, Arial, sans-serif';
+  const mm = (v: number) => v * scale;
+  // Text anchor helpers: the layout mirrors for right-to-left languages.
+  const startX = rtl ? CW - mm(22) : mm(22);
+  const endX = rtl ? mm(22) : CW - mm(22);
+  const align: CanvasTextAlign = rtl ? "right" : "left";
+  const alignEnd: CanvasTextAlign = rtl ? "left" : "right";
+
+  // Bidi: let the canvas lay Arabic out right-to-left, and isolate Latin/number runs.
+  ctx.direction = rtl ? "rtl" : "ltr";
+  const ltr = (v: string) => (rtl ? `\u2066${v}\u2069` : v);
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, CW, CH);
+
+  // Frame + corner crops
+  ctx.strokeStyle = "#141414";
+  ctx.lineWidth = mm(0.6);
+  ctx.strokeRect(mm(12), mm(12), CW - mm(24), CH - mm(24));
+  const c = mm(4);
+  ctx.lineWidth = mm(0.5);
+  const corners: Array<[number, number, number, number]> = [
+    [mm(12), mm(12), mm(12) + c, mm(12)], [mm(12), mm(12), mm(12), mm(12) + c],
+    [CW - mm(12) - c, mm(12), CW - mm(12), mm(12)], [CW - mm(12), mm(12), CW - mm(12), mm(12) + c],
+    [mm(12), CH - mm(12) - c, mm(12), CH - mm(12)], [mm(12), CH - mm(12), mm(12) + c, CH - mm(12)],
+    [CW - mm(12) - c, CH - mm(12), CW - mm(12), CH - mm(12)], [CW - mm(12), CH - mm(12) - c, CW - mm(12), CH - mm(12)],
+  ];
+  ctx.beginPath();
+  corners.forEach(([x1, y1, x2, y2]) => { ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); });
+  ctx.stroke();
+
+  // Wordmark (both top corners) — always Latin
+  const wordmark = (x: number, y: number, size: number, anchor: CanvasTextAlign) => {
+    ctx.textAlign = "left";
+    ctx.font = `800 ${mm(size)}px Inter, Helvetica, Arial, sans-serif`;
+    const w = ctx.measureText("CERTIGO").width;
+    const dot = ctx.measureText(".").width;
+    const sx = anchor === "right" ? x - (w + dot) : x;
+    ctx.fillStyle = "#141414";
+    ctx.fillText("CERTIGO", sx, y);
+    ctx.fillStyle = "#10B981";
+    ctx.fillText(".", sx + w, y);
+    ctx.fillStyle = "#141414";
+  };
+  wordmark(mm(22), mm(25), 12, "left");
+  wordmark(CW - mm(22), mm(25), 11, "right");
+
+  ctx.textAlign = alignEnd;
+  ctx.font = `500 ${mm(3)}px ${body}`;
+  ctx.fillStyle = "#787878";
+  ctx.fillText(`${L.lang} · ${ltr(`NO. ${data.serial}`)}`, endX, mm(30));
+
+  ctx.strokeStyle = "#141414";
+  ctx.lineWidth = mm(0.15);
+  ctx.beginPath();
+  ctx.moveTo(mm(22), mm(34));
+  ctx.lineTo(CW - mm(22), mm(34));
+  ctx.stroke();
+
+  // Body
+  ctx.textAlign = align;
+  ctx.fillStyle = "#787878";
+  ctx.font = `600 ${mm(3.4)}px ${body}`;
+  ctx.fillText(L.certify, startX, mm(60));
+
+  ctx.fillStyle = "#141414";
+  ctx.font = `800 ${mm(15)}px ${body}`;
+  ctx.fillText(data.recipientName, startX, mm(78));
+
+  ctx.fillStyle = "#787878";
+  ctx.font = `600 ${mm(3.4)}px ${body}`;
+  ctx.fillText(L.completed, startX, mm(92));
+
+  ctx.fillStyle = "#141414";
+  ctx.font = `700 ${mm(9)}px ${body}`;
+  const title = data.translatedTitle || data.certTitle;
+  const maxTitleW = CW - mm(44);
+  let titleSize = 9;
+  while (titleSize > 5) {
+    ctx.font = `700 ${mm(titleSize)}px ${body}`;
+    if (ctx.measureText(title).width <= maxTitleW) break;
+    titleSize -= 0.4;
+  }
+  ctx.fillText(title, startX, mm(105));
+
+  if (typeof data.scorePct === "number") {
+    ctx.fillStyle = "#5a5a5a";
+    ctx.font = `500 ${mm(3.8)}px ${body}`;
+    ctx.fillText(`${L.score} · ${ltr(`${data.scorePct}%`)}`, startX, mm(116));
+  }
+
+  // QR + reference
+  const qr = await loadImage(qrDataUrl);
+  if (qr) {
+    const qx = rtl ? CW - mm(22) - mm(28) : mm(22);
+    ctx.drawImage(qr, qx, CH - mm(55), mm(28), mm(28));
+  }
+  ctx.textAlign = align;
+  ctx.fillStyle = "#8c8c8c";
+  ctx.font = `500 ${mm(3)}px ${body}`;
+  ctx.fillText(L.ref, startX, CH - mm(22));
+  ctx.fillStyle = "#141414";
+  ctx.font = `700 ${mm(4)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText(ltr(formatReference(data.serial)), startX, CH - mm(17));
+  ctx.fillStyle = "#5a5a5a";
+  ctx.font = `400 ${mm(2.8)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText(`${L.verify}: ${ltr(data.verifyUrl)}`, startX, CH - mm(13));
+
+  // Signature block (centred)
+  const cx = CW / 2;
+  const sigY = CH - mm(40);
+  if (data.signatureDataUrl) {
+    const sig = await loadImage(data.signatureDataUrl);
+    if (sig) ctx.drawImage(sig, cx - mm(32), sigY - mm(20), mm(64), mm(22));
+  }
+  ctx.strokeStyle = "#141414";
+  ctx.lineWidth = mm(0.4);
+  ctx.beginPath();
+  ctx.moveTo(cx - mm(40), sigY);
+  ctx.lineTo(cx + mm(40), sigY);
+  ctx.stroke();
+  ctx.textAlign = "center";
+  ctx.fillStyle = "#5a5a5a";
+  ctx.font = `600 ${mm(3.4)}px ${body}`;
+  ctx.fillText(L.role, cx, sigY + mm(6));
+  ctx.fillStyle = "#8c8c8c";
+  ctx.font = `500 ${mm(3)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText("CERTIGO. INSTITUTE", cx, sigY + mm(10.5));
+
+  // Emerald digital stamp, mirroring the English page — sits just past the role line
+  ctx.font = `600 ${mm(3.4)}px ${body}`;
+  const roleW = ctx.measureText(L.role).width;
+  const stampX = rtl ? cx - roleW / 2 - mm(15) : cx + roleW / 2 + mm(10);
+  const r = mm(12);
+  ctx.strokeStyle = "#10B981";
+  ctx.lineWidth = mm(0.7);
+  ctx.beginPath(); ctx.arc(stampX, sigY + mm(4), r, 0, Math.PI * 2); ctx.stroke();
+  ctx.lineWidth = mm(0.3);
+  ctx.beginPath(); ctx.arc(stampX, sigY + mm(4), r - mm(1.8), 0, Math.PI * 2); ctx.stroke();
+  ctx.fillStyle = "#10B981";
+  ctx.textAlign = "center";
+  ctx.direction = "ltr";
+  ctx.font = `700 ${mm(4)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText("CERTIFIED", stampX, sigY + mm(5));
+  ctx.font = `700 ${mm(2.6)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText("CERTIGO.", stampX, sigY + mm(8.5));
+  ctx.font = `700 ${mm(4)}px Inter, Helvetica, Arial, sans-serif`;
+  ctx.fillText("✓", stampX, sigY - mm(0.5));
+
+  // Issue date + translated-copy note
+  ctx.direction = rtl ? "rtl" : "ltr";
+  ctx.textAlign = alignEnd;
+  ctx.fillStyle = "#8c8c8c";
+  ctx.font = `500 ${mm(3)}px ${body}`;
+  ctx.fillText(L.issued, endX, CH - mm(22));
+  ctx.fillStyle = "#141414";
+  ctx.font = `700 ${mm(4)}px ${body}`;
+  const dateStr = new Date(data.issuedAt).toLocaleDateString(CERT_LOCALES[lang], {
+    day: "2-digit", month: "long", year: "numeric",
+  });
+  ctx.fillText(dateStr, endX, CH - mm(17));
+  ctx.fillStyle = "#8c8c8c";
+  ctx.font = `400 ${mm(2.8)}px ${body}`;
+  ctx.fillText(L.note, endX, CH - mm(13));
+
+  doc.addPage("a4", "landscape");
+  const W = doc.internal.pageSize.getWidth();
+  const H = doc.internal.pageSize.getHeight();
+  doc.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, W, H);
 }

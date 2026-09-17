@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
 import { CourseGenerator } from "@/components/course/CourseGenerator";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,14 +21,15 @@ export const Route = createFileRoute("/")({
 });
 
 const ROLES = [
-  { id: "pm", label: "Product Manager", slug: "product-management-foundations" },
-  { id: "eng", label: "Engineer", slug: "cloud-fundamentals" },
-  { id: "design", label: "Designer", slug: "ux-research-methods" },
-  { id: "data", label: "Data / AI", slug: "prompt-engineering-essentials" },
+  { id: "pm", key: "role.pm", slug: "product-management-foundations" },
+  { id: "eng", key: "role.eng", slug: "cloud-fundamentals" },
+  { id: "design", key: "role.design", slug: "ux-research-methods" },
+  { id: "data", key: "role.data", slug: "prompt-engineering-essentials" },
 ];
 
 function Home() {
   const nav = useNavigate();
+  const { t } = useI18n();
   const [role, setRole] = useState<string | null>(null);
   const [recommended, setRecommended] = useState<any>(null);
 
@@ -48,16 +50,16 @@ function Home() {
       <Header />
 
       <section className="relative mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
-        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ For professionals</div>
+        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {t("home.eyebrow")}</div>
         <h1 className="mt-4 font-display text-5xl font-black tracking-tighter sm:text-7xl">
-          Your next credential,<br />issued in <span className="text-emerald-600">10 minutes</span>.
+          {t("home.h1a")}<br />{t("home.h1b")} <span className="text-emerald-600">{t("home.h1c")}</span>.
         </h1>
         <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-          One short quiz. One QR-verified certificate. One click to LinkedIn. No bulk, no admin, no waiting.
+          {t("home.sub")}
         </p>
 
         <div className="mt-10">
-          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">What do you do?</div>
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">{t("home.what")}</div>
           <div className="mt-3 flex flex-wrap gap-2">
             {ROLES.map((r) => (
               <button
@@ -65,7 +67,7 @@ function Home() {
                 onClick={() => setRole(r.id)}
                 className={"rounded-full border px-4 py-2 text-sm font-medium transition " + (role === r.id ? "border-emerald-600 bg-emerald-50 text-emerald-700" : "border-border hover:border-foreground/40")}
               >
-                {r.label}
+                {t(r.key)}
               </button>
             ))}
           </div>
@@ -74,7 +76,7 @@ function Home() {
         {recommended && (
           <div className="mt-6 rounded-xl border border-border bg-card p-6 shadow-sm">
             <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">
-              <Sparkles className="h-3 w-3" /> Recommended for you
+              <Sparkles className="h-3 w-3" /> {t("home.recommended")}
             </div>
             <h3 className="mt-2 font-display text-2xl font-extrabold tracking-tight">{recommended.title}</h3>
             <p className="mt-1 text-sm text-muted-foreground">{recommended.summary}</p>
@@ -87,14 +89,14 @@ function Home() {
               className="mt-5 bg-emerald-600 text-white hover:bg-emerald-700"
               onClick={() => nav({ to: "/c/$slug", params: { slug: recommended.slug } })}
             >
-              Start in 10 minutes <ArrowRight className="ml-2 h-4 w-4" />
+              {t("home.startNow")} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         )}
 
         <div className="mt-6">
           <Link to="/catalog" className="text-sm font-medium text-muted-foreground underline-offset-4 hover:text-foreground hover:underline">
-            or browse the full catalog →
+            {t("home.browse")}
           </Link>
         </div>
       </section>
@@ -104,9 +106,9 @@ function Home() {
       <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="grid gap-6 sm:grid-cols-3">
           {[
-            { n: "01", t: "Pick a certification", d: "Six career-relevant tracks. Each one is short and to the point." },
-            { n: "02", t: "Pass one quiz", d: "Eight questions. Pass at 70%. Your answers are stored." },
-            { n: "03", t: "Share to LinkedIn", d: "Add to Profile button is pre-filled with your verified credential metadata." },
+            { n: "01", t: t("home.s1t"), d: t("home.s1d") },
+            { n: "02", t: t("home.s2t"), d: t("home.s2d") },
+            { n: "03", t: t("home.s3t"), d: t("home.s3d") },
           ].map((s) => (
             <div key={s.n} className="rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card">
               <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {s.n}</div>
