@@ -5,6 +5,7 @@ import {
 } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
 import { AuthProvider } from "@/lib/auth";
+import { I18nProvider } from "@/lib/i18n";
 import appCss from "../styles.css?url";
 import { useEffect } from "react";
 
@@ -120,9 +121,11 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <CopyGuard />
-        <Outlet />
-        <Toaster />
+        <I18nProvider>
+          <CopyGuard />
+          <Outlet />
+          <Toaster />
+        </I18nProvider>
       </AuthProvider>
     </QueryClientProvider>
   );

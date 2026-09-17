@@ -57,6 +57,13 @@
       "when": 1789298005889,
       "tag": "0007_lock_down_answer_keys_and_definer_functions",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1789638015752,
+      "tag": "0008_course_translations",
+      "breakpoints": true
     }
   ]
 }

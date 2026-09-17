@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { resolveRecipientName } from "@/lib/cert";
+import { useCourseTranslation } from "@/lib/use-course-translation";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/_authenticated/exam/$slug")({
   head: ({ params }) => ({ meta: [{ title: `Exam · ${params.slug} — CERTIGO.` }] }),
@@ -22,12 +24,22 @@ function Exam() {
   const [cert, setCert] = useState<any>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [submitting, setSubmitting] = useState(false);
+  const { t } = useI18n();
+  const { translation, loading: translating } = useCourseTranslation(slug);
 
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setCert(data));
   }, [slug]);
 
-  const questions: Q[] = useMemo(() => (Array.isArray(cert?.questions) ? cert.questions : []), [cert]);
+  const questions: Q[] = useMemo(() => {
+    const base: Q[] = Array.isArray(cert?.questions) ? cert.questions : [];
+    if (!translation) return base;
+    // Option order is preserved by the translator, so answer positions stay valid.
+    return base.map((q, i) => ({
+      q: translation.questions?.[i]?.q ?? q.q,
+      options: q.options.map((o, j) => translation.questions?.[i]?.options?.[j] ?? o),
+    }));
+  }, [cert, translation]);
 
   if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
@@ -76,7 +88,12 @@ function Exam() {
       <Header />
       <div className="mx-auto max-w-2xl px-5 py-12 sm:px-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ Exam</div>
-        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">{cert.title}</h1>
+        <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">{translation?.title ?? cert.title}</h1>
+        {translating && (
+          <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
+            <Loader2 className="h-3 w-3 animate-spin" /> {t("course.translating")}
+          </p>
+        )}
         <p className="mt-2 text-sm text-muted-foreground">{questions.length} questions · pass at {cert.pass_score}%</p>
 
         <div className="mt-8 space-y-6">

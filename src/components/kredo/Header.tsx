@@ -5,6 +5,8 @@ import { useIsAdmin } from "@/lib/use-admin";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 /**
  * CERTIGO. mark — minimalist geometric monogram.
@@ -40,25 +42,26 @@ function CertigoMark({ size = 32 }: { size?: number }) {
   );
 }
 
-const NAV: { to: string; label: string }[] = [
-  { to: "/catalog", label: "Catalog" },
-  { to: "/pricing", label: "Pricing" },
-  { to: "/hr", label: "For HR" },
-  { to: "/contact", label: "Contact" },
+const NAV: { to: string; key: string }[] = [
+  { to: "/catalog", key: "nav.catalog" },
+  { to: "/pricing", key: "nav.pricing" },
+  { to: "/hr", key: "nav.hr" },
+  { to: "/contact", key: "nav.contact" },
 ];
 
 export function Header() {
   const { user, signOut } = useAuth();
   const { isAdmin } = useIsAdmin();
+  const { t } = useI18n();
   const nav = useNavigate();
   const [open, setOpen] = useState(false);
 
   const accountLinks = user
     ? [
-        { to: "/portal", label: "My learning" },
-        { to: "/dashboard", label: "Dashboard" },
-        { to: "/profile", label: "Profile" },
-        ...(isAdmin ? [{ to: "/admin", label: "Admin" }] : []),
+        { to: "/portal", label: t("nav.learning") },
+        { to: "/dashboard", label: t("nav.dashboard") },
+        { to: "/profile", label: t("nav.profile") },
+        ...(isAdmin ? [{ to: "/admin", label: t("nav.admin") }] : []),
       ]
     : [];
 
@@ -82,7 +85,7 @@ export function Header() {
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               activeProps={{ className: "text-sm font-medium text-foreground" }}
             >
-              {l.label}
+              {t(l.key)}
             </Link>
           ))}
           {accountLinks.map((l) => (
@@ -93,6 +96,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           {user ? (
             <Button
               size="sm"
@@ -100,7 +104,7 @@ export function Header() {
               className="hidden md:inline-flex h-9"
               onClick={async () => { await signOut(); nav({ to: "/" }); }}
             >
-              Sign out
+              {t("auth.signOut")}
             </Button>
           ) : (
             <>
@@ -110,14 +114,14 @@ export function Header() {
                 className="hidden md:inline-flex h-9 text-sm"
                 onClick={() => nav({ to: "/auth" })}
               >
-                Sign in
+                {t("auth.signIn")}
               </Button>
               <Button
                 size="sm"
                 className="hidden md:inline-flex h-9 gradient-hero text-white border-0 hover:opacity-95"
                 onClick={() => nav({ to: "/auth" })}
               >
-                Start free trial
+                {t("auth.start")}
               </Button>
             </>
           )}
@@ -142,7 +146,7 @@ export function Header() {
                     onClick={() => setOpen(false)}
                     className="border-b border-border py-3 text-sm font-medium hover:text-[var(--primary)]"
                   >
-                    {l.label}
+                    {t(l.key)}
                   </Link>
                 ))}
                 {accountLinks.map((l) => (
@@ -154,15 +158,15 @@ export function Header() {
                 <div className="mt-6 flex flex-col gap-2">
                   {user ? (
                     <Button variant="outline" onClick={async () => { setOpen(false); await signOut(); nav({ to: "/" }); }}>
-                      Sign out
+                      {t("auth.signOut")}
                     </Button>
                   ) : (
                     <>
                       <Button variant="outline" onClick={() => { setOpen(false); nav({ to: "/auth" }); }}>
-                        Sign in
+                        {t("auth.signIn")}
                       </Button>
                       <Button className="gradient-hero text-white border-0" onClick={() => { setOpen(false); nav({ to: "/auth" }); }}>
-                        Start free trial
+                        {t("auth.start")}
                       </Button>
                     </>
                   )}
