@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as HrRouteImport } from './routes/hr'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ShopRouteImport } from './routes/shop'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
@@ -68,6 +69,11 @@ const PricingRoute = PricingRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShopRoute = ShopRouteImport.update({
+  id: '/shop',
+  path: '/shop',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -145,6 +151,7 @@ export interface FileRoutesByFullPath {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
@@ -167,6 +174,7 @@ export interface FileRoutesByTo {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
@@ -191,6 +199,7 @@ export interface FileRoutesById {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
@@ -215,6 +224,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/shop'
     | '/terms'
     | '/admin'
     | '/dashboard'
@@ -237,6 +247,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/shop'
     | '/terms'
     | '/admin'
     | '/dashboard'
@@ -260,6 +271,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/shop'
     | '/terms'
     | '/_authenticated/admin'
     | '/_authenticated/dashboard'
@@ -284,6 +296,7 @@ export interface RootRouteChildren {
   HrRoute: typeof HrRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  ShopRoute: typeof ShopRoute
   TermsRoute: typeof TermsRoute
   CSlugRoute: typeof CSlugRoute
   CertificateIdRoute: typeof CertificateIdRoute
@@ -348,6 +361,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shop': {
+      id: '/shop'
+      path: '/shop'
+      fullPath: '/shop'
+      preLoaderRoute: typeof ShopRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -476,6 +496,7 @@ const rootRouteChildren: RootRouteChildren = {
   HrRoute: HrRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  ShopRoute: ShopRoute,
   TermsRoute: TermsRoute,
   CSlugRoute: CSlugRoute,
   CertificateIdRoute: CertificateIdRoute,
