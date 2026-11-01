@@ -4,7 +4,7 @@ import QRCode from "qrcode";
 import type { ReactElement } from "react";
 import { flushSync } from "react-dom";
 import { createRoot } from "react-dom/client";
-import { MonochromeCertificate } from "@/components/certigo/MonochromeCertificate";
+import { FormalCertificate } from "@/components/certigo/FormalCertificate";
 import { MonochromeTranscript } from "@/components/certigo/MonochromeTranscript";
 import type { CertificateDocument } from "@/lib/certificate-data";
 
@@ -28,7 +28,11 @@ async function renderNode(node: ReactElement, w: number, h: number): Promise<str
   const root = createRoot(host);
   try {
     flushSync(() => root.render(node));
-    try { await (document as any).fonts?.ready; } catch { /* noop */ }
+    try {
+      const f = (document as any).fonts;
+      await Promise.all(['600 40px "Cormorant Garamond"', 'italic 600 58px "Cormorant Garamond"'].map((q) => f?.load(q)));
+      await f?.ready;
+    } catch { /* noop */ }
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
     await Promise.all(Array.from(host.querySelectorAll("img")).map((img) =>
       img.complete ? null : new Promise((r) => { img.onload = img.onerror = r; })));
@@ -46,14 +50,14 @@ async function renderNode(node: ReactElement, w: number, h: number): Promise<str
 /** Official document order: certificate, translated copy (if any), transcript (if any). */
 async function renderPages(doc: CertificateDocument): Promise<Page[]> {
   const qrDataUrl = await QRCode.toDataURL(doc.verifyUrl, {
-    errorCorrectionLevel: "M", margin: 0, width: 300, color: { dark: "#0a0a0a", light: "#ffffff00" },
+    errorCorrectionLevel: "M", margin: 0, width: 300, color: { dark: "#0B1B3A", light: "#ffffff00" },
   });
   const pages: Page[] = [];
   pages.push({ orientation: "landscape", image: await renderNode(
-    <MonochromeCertificate variant="01" {...doc.certificate} qrDataUrl={qrDataUrl} />, CERT_SIZE.w, CERT_SIZE.h) });
+    <FormalCertificate {...doc.certificate} qrDataUrl={qrDataUrl} />, CERT_SIZE.w, CERT_SIZE.h) });
   if (doc.second) {
     pages.push({ orientation: "landscape", image: await renderNode(
-      <MonochromeCertificate variant="01" {...doc.second} qrDataUrl={qrDataUrl} />, CERT_SIZE.w, CERT_SIZE.h) });
+      <FormalCertificate {...doc.second} qrDataUrl={qrDataUrl} />, CERT_SIZE.w, CERT_SIZE.h) });
   }
   if (doc.transcript) {
     pages.push({ orientation: "portrait", image: await renderNode(

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Download, Loader2, Printer } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
-import { MonochromeCertificate } from "@/components/certigo/MonochromeCertificate";
+import { FormalCertificate } from "@/components/certigo/FormalCertificate";
 import { MonochromeTranscript } from "@/components/certigo/MonochromeTranscript";
 import type { CertificateDocument, CertificateProps, TranscriptProps } from "@/lib/certificate-data";
 
@@ -35,7 +35,7 @@ export function ScaledPage({ w, h, children }: { w: number; h: number; children:
 }
 
 export function CertificateSheet(props: CertificateProps) {
-  return <ScaledPage w={CERT.w} h={CERT.h}><MonochromeCertificate variant="01" {...props} /></ScaledPage>;
+  return <ScaledPage w={CERT.w} h={CERT.h}><FormalCertificate {...props} /></ScaledPage>;
 }
 
 export function TranscriptSheet(props: TranscriptProps) {

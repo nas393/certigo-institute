@@ -1,3 +1,4 @@
+import { Signature } from "@/components/certigo/FormalCertificate";
 import { useEffect, useState } from "react";
 import QRCode from "qrcode";
 
@@ -88,7 +89,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         <header className="flex items-start justify-between border-b border-neutral-900 pb-5">
           <div>
             <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-              <Wordmark /> Certification Office
+              <Wordmark /> Certifications Office
             </div>
             <h1 className="mt-3 font-display text-4xl font-black tracking-tight">
               Official Transcript
@@ -183,7 +184,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
           <div className="col-span-3">
             <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Issuing office</div>
             <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800">
-              Certification Office
+              Certifications Office
             </div>
           </div>
           <div className="col-span-3">
@@ -211,9 +212,11 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
             </div>
           </div>
           <div className="col-span-4 flex flex-col items-center">
+            <div className="scale-[0.8]"><Signature /></div>
             <div className="h-px w-full bg-neutral-900/80" />
-            <div className="mt-2 whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.14em] text-neutral-700">
-              CERTIGO Certification Office
+            <div className="mt-1.5 text-[11px] font-semibold text-neutral-900">Director</div>
+            <div className="whitespace-nowrap font-mono text-[8.5px] uppercase tracking-[0.12em] text-neutral-600">
+              CERTIGO Certifications Office
             </div>
           </div>
           <div className="col-span-3 flex justify-end">
