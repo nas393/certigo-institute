@@ -17,6 +17,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as HrRouteImport } from './routes/hr'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
@@ -68,6 +69,11 @@ const PricingRoute = PricingRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShopRoute = ShopRouteImport.update({
@@ -145,6 +151,7 @@ export interface FileRoutesByFullPath {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/admin': typeof AuthenticatedAdminRoute
@@ -167,6 +174,7 @@ export interface FileRoutesByTo {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/admin': typeof AuthenticatedAdminRoute
@@ -191,6 +199,7 @@ export interface FileRoutesById {
   '/hr': typeof HrRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/shop': typeof ShopRoute
   '/terms': typeof TermsRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
@@ -215,6 +224,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/reset-password'
     | '/shop'
     | '/terms'
     | '/admin'
@@ -237,6 +247,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/reset-password'
     | '/shop'
     | '/terms'
     | '/admin'
@@ -260,6 +271,7 @@ export interface FileRouteTypes {
     | '/hr'
     | '/pricing'
     | '/privacy'
+    | '/reset-password'
     | '/shop'
     | '/terms'
     | '/_authenticated/admin'
@@ -284,6 +296,7 @@ export interface RootRouteChildren {
   HrRoute: typeof HrRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  ResetPasswordRoute: typeof ResetPasswordRoute
   ShopRoute: typeof ShopRoute
   TermsRoute: typeof TermsRoute
   CSlugRoute: typeof CSlugRoute
@@ -349,6 +362,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shop': {
@@ -475,6 +495,7 @@ const rootRouteChildren: RootRouteChildren = {
   HrRoute: HrRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  ResetPasswordRoute: ResetPasswordRoute,
   ShopRoute: ShopRoute,
   TermsRoute: TermsRoute,
   CSlugRoute: CSlugRoute,

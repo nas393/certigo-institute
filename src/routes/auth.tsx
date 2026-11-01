@@ -39,6 +39,17 @@ function AuthPage() {
     const { error } = await supabase.auth.signInWithPassword({ email, password: pw });
     setBusy(false); if (error) toast.error(error.message);
   };
+  const forgot = async () => {
+    if (!email) { toast.error("Enter your email first, then tap “Forgot password?”."); return; }
+    setBusy(true);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/reset-password`,
+    });
+    setBusy(false);
+    // Same message either way, so the form doesn't reveal which emails have accounts.
+    if (error && error.status === 429) toast.error("Too many requests. Please wait a few minutes and try again.");
+    else toast.success("If an account exists for this email, a reset link is on its way.");
+  };
 
 
   return (
@@ -61,6 +72,9 @@ function AuthPage() {
               <div><Label>Email</Label><Input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} /></div>
               <div><Label>Password</Label><Input type="password" required value={pw} onChange={(e) => setPw(e.target.value)} /></div>
               <Button type="submit" disabled={busy} className="w-full">{busy ? "…" : "Sign in"}</Button>
+              <button type="button" onClick={() => void forgot()} disabled={busy} className="w-full text-center text-xs text-muted-foreground underline-offset-4 hover:text-foreground hover:underline">
+                Forgot password?
+              </button>
             </form>
           </TabsContent>
           <TabsContent value="signup">
