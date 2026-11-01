@@ -77,14 +77,14 @@ export function transcriptRows(rec: Pick<CertificateRecord, "skills" | "modules"
   if (rec.modules.length) {
     return rec.modules.slice(0, 8).map((m: any, i: number) => {
       const title = String(m?.title ?? `Module ${i + 1}`);
-      const minutes = Number(m?.minutes) || 12;
+      const minutes = Number(m?.minutes) || 0;
       return {
         code: `M${String(i + 1).padStart(2, "0")}`,
         title: `Module ${i + 1} · ${title}`,
         subject: String(m?.subject ?? title),
         learned: firstSentence(String(m?.learned ?? "")),
         skills: Array.isArray(m?.skills) ? m.skills.map(String) : [],
-        hours: Math.max(1, Math.round((minutes / 60) * 10) / 10),
+        hours: Math.round((minutes / 60) * 10) / 10,
         grade,
         scorePct: rec.score,
       } as TranscriptModule;
@@ -95,7 +95,7 @@ export function transcriptRows(rec: Pick<CertificateRecord, "skills" | "modules"
     title: `Module ${i + 1} · ${title}`,
     subject: title,
     learned: `Applied ${title.toLowerCase()} through lessons, practical exercises and a knowledge check, then passed the ${rec.cert_title} assessment.`,
-    hours: 6,
+    hours: 0,
     grade,
     scorePct: rec.score,
   }));
@@ -138,7 +138,9 @@ export function buildCertificateDocument(
         }
       : undefined;
   const rows = transcriptRows(rec);
-  const hours = Math.round(rows.reduce((s, m) => s + (m.hours || 0), 0) * 10) / 10;
+  // Real lesson time, rounded to the nearest half hour (never inflated).
+  const minutes = rec.modules.reduce((s: number, m: any) => s + (Number(m?.minutes) || 0), 0);
+  const hours = minutes ? Math.max(0.5, Math.round((minutes / 60) * 2) / 2) : 0;
   if (rec.modules.length && hours) { base.hours = hours; if (second) second.hours = hours; }
   const transcript: TranscriptProps | null = rows.length
     ? {
@@ -150,7 +152,7 @@ export function buildCertificateDocument(
         modules: rows,
         finalGrade: gradeFor(rec.score),
         finalScorePct: rec.score,
-        totalHours: Math.round(rows.reduce((s, m) => s + (m.hours || 0), 0) * 10) / 10,
+        totalHours: Math.round((minutes / 60) * 10) / 10 || undefined,
       }
     : null;
   return { serial: rec.serial, verifyUrl, certificate: base, second, transcript };

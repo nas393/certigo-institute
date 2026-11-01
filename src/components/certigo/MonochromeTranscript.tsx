@@ -151,7 +151,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
                     </div>
                   )}
                 </div>
-                <div className="col-span-1 text-right tabular-nums">{m.hours}</div>
+                <div className="col-span-1 text-right tabular-nums">{m.hours || "—"}</div>
                 <div className="col-span-2 text-right tabular-nums">
                   {typeof m.scorePct === "number" ? `${m.scorePct}%` : "—"}
                 </div>
@@ -163,7 +163,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
           {/* Totals */}
           <div className="mt-1 grid grid-cols-12 gap-x-3 border-t border-neutral-900 pt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-700">
             <div className="col-span-8 text-neutral-500">Cumulative result</div>
-            <div className="col-span-1 text-right tabular-nums text-neutral-900">{totalHours}</div>
+            <div className="col-span-1 text-right tabular-nums text-neutral-900">{totalHours || "—"}</div>
             <div className="col-span-2 text-right tabular-nums text-neutral-900">
               {typeof p.finalScorePct === "number" ? `${p.finalScorePct}%` : "—"}
             </div>
