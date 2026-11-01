@@ -45,8 +45,8 @@ async function main() {
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 1800 }, acceptDownloads: true });
   const page = await ctx.newPage();
 
-  const key = process.env.LOVABLE_BROWSER_SUPABASE_STORAGE_KEY;
-  const sess = process.env.LOVABLE_BROWSER_SUPABASE_SESSION_JSON;
+  const key = process.env.E2E_SUPABASE_STORAGE_KEY;
+  const sess = process.env.E2E_SUPABASE_SESSION_JSON;
   await page.goto(BASE, { waitUntil: "domcontentloaded" });
   if (key && sess) await page.evaluate(([k, v]) => window.localStorage.setItem(k, v), [key, sess]);
 

@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
@@ -15,33 +15,71 @@ export const Route = createFileRoute("/_authenticated/exam/$slug")({
   component: Exam,
 });
 
-type Q = { q: string; options: string[] };
+type Item = { i: number; q: string; options: { j: number; text: string }[] };
+type Start =
+  | { status: "ok"; session_id: string; items: Item[] }
+  | { status: "wait"; next_allowed_at: string; attempts: number }
+  | { status: "certified"; serial: string };
 
 function Exam() {
   const { slug } = Route.useParams();
   const { user } = useAuth();
   const nav = useNavigate();
   const [cert, setCert] = useState<any>(null);
+  const [start, setStart] = useState<Start | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [submitting, setSubmitting] = useState(false);
   const { t } = useI18n();
   const { translation, loading: translating } = useCourseTranslation(slug);
 
   useEffect(() => {
-    supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setCert(data));
+    supabase.from("certifications").select("id, slug, title, pass_score").eq("slug", slug).maybeSingle().then(async ({ data }) => {
+      setCert(data);
+      if (!data) return;
+      // The server shuffles questions and options for this attempt and enforces retake waits.
+      const { data: st, error } = await supabase.rpc("start_exam", { _certification_id: data.id });
+      if (error) { toast.error(error.message); return; }
+      setStart(st as unknown as Start);
+    });
   }, [slug]);
 
-  const questions: Q[] = useMemo(() => {
-    const base: Q[] = Array.isArray(cert?.questions) ? cert.questions : [];
-    if (!translation) return base;
-    // Option order is preserved by the translator, so answer positions stay valid.
-    return base.map((q, i) => ({
-      q: translation.questions?.[i]?.q ?? q.q,
-      options: q.options.map((o, j) => translation.questions?.[i]?.options?.[j] ?? o),
+  // Items keep their original question (i) and option (j) indices, so translations still line up.
+  const questions = useMemo(() => {
+    if (start?.status !== "ok") return [];
+    return start.items.map((it) => ({
+      q: translation?.questions?.[it.i]?.q ?? it.q,
+      options: it.options.map((o) => translation?.questions?.[it.i]?.options?.[o.j] ?? o.text),
     }));
-  }, [cert, translation]);
+  }, [start, translation]);
 
-  if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
+  if (start?.status === "certified") {
+    return (
+      <div className="min-h-screen bg-background"><Header />
+        <div className="mx-auto max-w-2xl px-5 py-16 text-center sm:px-8">
+          <h1 className="font-display text-3xl font-black tracking-tighter">You're already certified.</h1>
+          <Button asChild className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700">
+            <Link to="/issued/$serial" params={{ serial: start.serial }}>View certificate</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
+  if (start?.status === "wait") {
+    const when = new Date(start.next_allowed_at);
+    return (
+      <div className="min-h-screen bg-background"><Header />
+        <div className="mx-auto max-w-2xl px-5 py-16 text-center sm:px-8">
+          <h1 className="font-display text-3xl font-black tracking-tighter">Your next attempt opens soon.</h1>
+          <p className="mt-3 text-sm text-muted-foreground">
+            You can retake this exam from <strong>{when.toLocaleString()}</strong>.
+            The second attempt opens 24 hours after the first; later attempts need 7 days between them.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!cert || start?.status !== "ok") return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
   async function submit() {
     if (!user || !cert) return;
@@ -61,8 +99,9 @@ function Exam() {
       email: user.email,
     });
 
-    const { data, error } = await supabase.rpc("grade_and_issue", {
-      _certification_id: cert.id,
+    if (start?.status !== "ok") return;
+    const { data, error } = await supabase.rpc("submit_exam", {
+      _session_id: start.session_id,
       _answers: answers,
       _recipient_name: recipientName,
     });
@@ -75,8 +114,10 @@ function Exam() {
     const score = row?.score ?? 0;
     if (!row?.passed || !row?.serial) {
       setSubmitting(false);
-      toast.error(`You scored ${score}%. Pass mark is ${cert.pass_score}%. Try again.`);
+      toast.error(`You scored ${score}%. Pass mark is ${cert.pass_score}%.`);
       setAnswers({});
+      const { data: st } = await supabase.rpc("start_exam", { _certification_id: cert.id });
+      if (st) setStart(st as unknown as Start);
       return;
     }
     toast.success("Certificate issued.");

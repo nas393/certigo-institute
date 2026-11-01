@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, ShieldCheck, Loader2, Pencil, Check } from "lucide-react";
+import { ArrowRight, Clock, ShieldCheck, Loader2, Check } from "lucide-react";
 import { SkillsMap, normalizeModules } from "@/components/course/SkillsMap";
 import { LessonChecks } from "@/components/course/LessonChecks";
 import { toast } from "sonner";
@@ -57,7 +57,6 @@ function CertDetail() {
       };
     });
   }, [baseModules, translation]);
-  const canEdit = !!user && !!c?.created_by && c.created_by === user.id;
 
   async function enroll() {
     if (!user) { nav({ to: "/auth" }); return; }
@@ -77,15 +76,6 @@ function CertDetail() {
       <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8">
         <div className="flex items-center justify-between gap-3">
           <Link to="/catalog" className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground hover:text-foreground">{t("course.back")}</Link>
-          {canEdit && (
-            <Link
-              to="/build/$slug"
-              params={{ slug }}
-              className="flex items-center gap-1 rounded-full border border-border px-3 py-1 text-xs font-medium hover:border-emerald-600 hover:text-emerald-700"
-            >
-              <Pencil className="h-3 w-3" /> {t("course.edit")}
-            </Link>
-          )}
         </div>
         <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ {c.category}</div>
         <h1 className="mt-2 font-display text-5xl font-black tracking-tighter">{translation?.title ?? c.title}</h1>

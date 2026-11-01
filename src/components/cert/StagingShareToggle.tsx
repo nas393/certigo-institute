@@ -15,7 +15,7 @@ export function StagingShareToggle({ serial }: { serial: string }) {
   const isStaging =
     import.meta.env.DEV ||
     import.meta.env.MODE !== "production" ||
-    (typeof window !== "undefined" && /lovable\.app|localhost|preview/i.test(window.location.hostname) && !/^certigo-institute\.lovable\.app$/i.test(window.location.hostname));
+    (typeof window !== "undefined" && /localhost|-git-|-[a-z0-9]{9}-[a-z0-9-]+\.vercel\.app$/i.test(window.location.hostname));
   if (!isStaging) return null;
 
   const [on, setOn] = useState(false);

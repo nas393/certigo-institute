@@ -1,7 +1,6 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { lovable } from "@/integrations/lovable/index";
 import { useAuth } from "@/lib/auth";
 import { Header } from "@/components/kredo/Header";
 import { Button } from "@/components/ui/button";
@@ -40,10 +39,7 @@ function AuthPage() {
     const { error } = await supabase.auth.signInWithPassword({ email, password: pw });
     setBusy(false); if (error) toast.error(error.message);
   };
-  const google = async () => {
-    const r = await lovable.auth.signInWithOAuth("google", { redirect_uri: window.location.origin + "/dashboard" });
-    if (r.error) toast.error("Google sign-in failed");
-  };
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -53,8 +49,7 @@ function AuthPage() {
         <h1 className="mt-3 font-display text-4xl font-black tracking-tighter">Sign in to CERTIGO<span className="text-emerald-600">.</span></h1>
         <p className="mt-2 text-sm text-muted-foreground">Your certificates are tied to your account.</p>
 
-        <Button variant="outline" className="mt-6 w-full" onClick={google}>Continue with Google</Button>
-        <div className="my-4 text-center font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">or</div>
+        <div className="mt-6" />
 
         <Tabs defaultValue="signin">
           <TabsList className="grid w-full grid-cols-2">

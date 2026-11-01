@@ -18,13 +18,13 @@ Styling: Tailwind v4 via src/styles.css with oklch semantic tokens (no hardcoded
 
 UI primitives: shadcn/ui
 
-Backend: Lovable Cloud (Supabase under the hood) — database, auth, storage, edge logic via createServerFn
+Backend: Supabase (project yatkrfwgwubcrlnnpooc) — database, auth, storage; server logic via createServerFn on Vercel
 
-AI: Lovable AI Gateway — default model google/gemini-2.5-flash (no API keys required)
+AI: none. Courses are added by the admin; users cannot generate courses.
 
 PDF: client-side generation with jspdf + qrcode
 
-Auth: email/password + Google OAuth via lovable.auth.signInWithOAuth("google"). Email confirmation ON.
+Auth: Supabase email/password. Email confirmation ON (needs custom SMTP in Supabase).
 
 i18n: lightweight context (src/lib/i18n.tsx) with EN/FR/ES/AR. RTL support for AR.
 
@@ -50,7 +50,7 @@ Typography: display = bold geometric sans (e.g. system black), body = clean sans
 
 Rules: never use raw text-white/bg-black — only semantic tokens. Every color customizable via tokens.
 
-3. Database Schema (Lovable Cloud / Supabase)
+3. Database Schema (Supabase)
 
 Create via migration:
 
@@ -114,7 +114,6 @@ Security definer function has_role(_user_id uuid, _role app_role) for admin chec
 
 4. Server Functions (src/server/*.functions.ts)
 
-generateCourse({ topic, level, duration, language }) — calls Lovable AI Gateway, structured JSON outline (modules → lessons + final 5–10 question quiz), saves to courses, returns { id }.
 
 getCourse({ id }) — fetches course + user's progress.
 
@@ -222,29 +221,13 @@ Want me to save this as a markdown file in /mnt/documents/ for easy download?
 
 Kredo — Full Rebuild Prompt
 
-Below is a complete, self-contained prompt you can paste into a fresh Lovable project to rebuild this app from scratch.
 
-PRO
 
-This project was built with [Lovable](https://lovable.dev).
+## Hosting
 
-**Live app**: https://certigo-institute.lovable.app
+Vercel project `certigo` (Vite + Nitro build). Environment variables:
 
-## Build with Lovable
+- `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`: public, safe in the browser.
+- `SUPABASE_SERVICE_ROLE_KEY`: server only, used by course translation.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/19e2de17-6e78-44b8-a483-68d726c27e43).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Install with `npm install` (`.npmrc` sets `legacy-peer-deps`), build with `npm run build`.

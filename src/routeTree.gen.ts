@@ -28,7 +28,6 @@ import { Route as CertificateIdRouteImport } from './routes/certificate.$id'
 import { Route as PIdRouteImport } from './routes/p.$id'
 import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
-import { Route as AuthenticatedBuildSlugRouteImport } from './routes/_authenticated/build.$slug'
 import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
 import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
 
@@ -126,11 +125,6 @@ const VerifyIdRoute = VerifyIdRouteImport.update({
   path: '/verify/$id',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuthenticatedBuildSlugRoute = AuthenticatedBuildSlugRouteImport.update({
-  id: '/build/$slug',
-  path: '/build/$slug',
-  getParentRoute: () => AuthenticatedRouteRoute,
-} as any)
 const AuthenticatedExamSlugRoute = AuthenticatedExamSlugRouteImport.update({
   id: '/exam/$slug',
   path: '/exam/$slug',
@@ -162,7 +156,6 @@ export interface FileRoutesByFullPath {
   '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -185,7 +178,6 @@ export interface FileRoutesByTo {
   '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -210,7 +202,6 @@ export interface FileRoutesById {
   '/p/$id': typeof PIdRoute
   '/transcript/$id': typeof TranscriptIdRoute
   '/verify/$id': typeof VerifyIdRoute
-  '/_authenticated/build/$slug': typeof AuthenticatedBuildSlugRoute
   '/_authenticated/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/_authenticated/issued/$serial': typeof AuthenticatedIssuedSerialRoute
 }
@@ -235,7 +226,6 @@ export interface FileRouteTypes {
     | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
-    | '/build/$slug'
     | '/exam/$slug'
     | '/issued/$serial'
   fileRoutesByTo: FileRoutesByTo
@@ -258,7 +248,6 @@ export interface FileRouteTypes {
     | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
-    | '/build/$slug'
     | '/exam/$slug'
     | '/issued/$serial'
   id:
@@ -282,7 +271,6 @@ export interface FileRouteTypes {
     | '/p/$id'
     | '/transcript/$id'
     | '/verify/$id'
-    | '/_authenticated/build/$slug'
     | '/_authenticated/exam/$slug'
     | '/_authenticated/issued/$serial'
   fileRoutesById: FileRoutesById
@@ -440,13 +428,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VerifyIdRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/_authenticated/build/$slug': {
-      id: '/_authenticated/build/$slug'
-      path: '/build/$slug'
-      fullPath: '/build/$slug'
-      preLoaderRoute: typeof AuthenticatedBuildSlugRouteImport
-      parentRoute: typeof AuthenticatedRouteRoute
-    }
     '/_authenticated/exam/$slug': {
       id: '/_authenticated/exam/$slug'
       path: '/exam/$slug'
@@ -469,7 +450,6 @@ interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedPortalRoute: typeof AuthenticatedPortalRoute
   AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
-  AuthenticatedBuildSlugRoute: typeof AuthenticatedBuildSlugRoute
   AuthenticatedExamSlugRoute: typeof AuthenticatedExamSlugRoute
   AuthenticatedIssuedSerialRoute: typeof AuthenticatedIssuedSerialRoute
 }
@@ -479,7 +459,6 @@ const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedPortalRoute: AuthenticatedPortalRoute,
   AuthenticatedProfileRoute: AuthenticatedProfileRoute,
-  AuthenticatedBuildSlugRoute: AuthenticatedBuildSlugRoute,
   AuthenticatedExamSlugRoute: AuthenticatedExamSlugRoute,
   AuthenticatedIssuedSerialRoute: AuthenticatedIssuedSerialRoute,
 }

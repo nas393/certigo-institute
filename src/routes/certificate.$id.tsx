@@ -1,16 +1,15 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
-import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { Download, Loader2 } from "lucide-react";
-import { CertificateCard } from "@/components/cert/CertificateCard";
+import { Loader2 } from "lucide-react";
+import { CertificateSheet, OfficialDocumentButtons } from "@/components/cert/CertificateView";
 import { DigitalBadge } from "@/components/cert/DigitalBadge";
 import { LinkedInButton } from "@/components/cert/LinkedInButton";
-import { CertChecksBanner } from "@/components/dev/CertChecksBanner";
-import { downloadCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference } from "@/lib/cert";
-import { useI18n, languageName } from "@/lib/i18n";
+import { useAuth } from "@/lib/auth";
+import { buildCertificateDocument, fetchCertificateRecord, type CertificateRecord } from "@/lib/certificate-data";
+import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/certificate/$id")({
   head: ({ params }) => ({
@@ -24,61 +23,55 @@ export const Route = createFileRoute("/certificate/$id")({
 
 function CertPage() {
   const { id } = Route.useParams();
-  const [cert, setCert] = useState<any>(null);
-  const [view, setView] = useState<"digital" | "print">("digital");
-  const { t, lang } = useI18n();
+  const { user } = useAuth();
+  const [rec, setRec] = useState<CertificateRecord | null | undefined>(undefined);
+  const [view, setView] = useState<"digital" | "certificate">("certificate");
+  const { t } = useI18n();
 
-  useEffect(() => {
-    supabase.rpc("verify_certificate", { lookup: id })
-      .then(({ data }: { data: any }) => {
-        const row = Array.isArray(data) ? data[0] : data;
-        if (!row) return;
-        setCert({ ...row, certifications: { title: row.cert_title, issuer_name: row.issuer_name } });
-      });
-  }, [id]);
+  useEffect(() => { fetchCertificateRecord(id).then(setRec); }, [id]);
+  // Public page shows the official English certificate; the owner's PDF adds their language copy.
+  const doc = useMemo(() => (rec ? buildCertificateDocument(rec) : null), [rec]);
 
-  if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
+  if (rec === undefined) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
+  if (!rec || !doc) {
+    return <div className="min-h-screen bg-background"><Header /><p className="mx-auto max-w-2xl px-5 py-16 text-center text-muted-foreground">Certificate not found.</p></div>;
+  }
 
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  const verifyUrl = `${origin}/verify/${cert.serial}`;
-  const certTitle = cert.certifications?.title ?? "CERTIGO. Certificate";
-  const issuerName = cert.certifications?.issuer_name ?? "CERTIGO.";
+  const isOwner = !!user && rec.recipient_id === user.id;
+  const issuerName = rec.issuer_name || "CERTIGO.";
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <div className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ Public certificate</div>
-        <h1 className="mt-3 font-display text-3xl font-black tracking-tighter">{cert.recipient_name}</h1>
-        <p className="mt-1 text-sm text-muted-foreground">{certTitle} · {formatReference(cert.serial)}</p>
+        <h1 className="mt-3 font-display text-3xl font-black tracking-tighter">{rec.recipient_name}</h1>
+        <p className="mt-1 text-sm text-muted-foreground">{rec.cert_title} · {formatReference(rec.serial)}{rec.revoked ? " · REVOKED" : ""}</p>
 
         <div className="mt-4 flex flex-wrap gap-2">
+          <Button variant={view === "certificate" ? "default" : "outline"} onClick={() => setView("certificate")}>Certificate</Button>
           <Button variant={view === "digital" ? "default" : "outline"} onClick={() => setView("digital")}>{t("cert.digital")}</Button>
-          <Button variant={view === "print" ? "default" : "outline"} onClick={() => setView("print")}>{t("cert.print")}</Button>
-          <Button
-            onClick={() => downloadCertificatePdf({ serial: cert.serial, recipientName: cert.recipient_name, certTitle, issuerName, issuedAt: cert.issued_at, scorePct: cert.score, verifyUrl, language: lang })}
-            className="bg-emerald-600 text-white hover:bg-emerald-700"
-          >
-            <Download className="mr-2 h-4 w-4" /> {t("cert.download")}
-          </Button>
-          <LinkedInButton certTitle={certTitle} issuerName={issuerName} issuedAt={cert.issued_at} serial={cert.serial} verifyUrl={verifyUrl} />
-        </div>
-
-        <div className="mt-8">
-          {view === "digital" ? (
-            <DigitalBadge serial={cert.serial} recipientName={cert.recipient_name} certTitle={certTitle} issuerName={issuerName} issuedAt={cert.issued_at} verifyUrl={verifyUrl} />
-          ) : (
-            <CertificateCard serial={cert.serial} recipientName={cert.recipient_name} certTitle={certTitle} issuedAt={cert.issued_at} score={cert.score} verifyUrl={verifyUrl} />
+          {isOwner && !rec.revoked && (
+            <>
+              <OfficialDocumentButtons doc={doc} />
+              <LinkedInButton certTitle={rec.cert_title} issuerName={issuerName} issuedAt={rec.issued_at} serial={rec.serial} verifyUrl={doc.verifyUrl} />
+            </>
           )}
         </div>
-
-        {lang !== "en" && (
-          <p className="mt-4 text-xs text-muted-foreground">
-            {t("cert.bilingualNote", { lang: languageName(lang) })}
+        {!isOwner && (
+          <p className="mt-3 text-xs text-muted-foreground">
+            Only the certificate holder can download the official PDF.{" "}
+            <Link to="/verify/$id" params={{ id: rec.serial }} className="underline underline-offset-4">Print a verification summary</Link> instead.
           </p>
         )}
 
-        <CertChecksBanner cert={cert} />
+        <div className="mt-8">
+          {view === "digital" ? (
+            <DigitalBadge serial={rec.serial} recipientName={rec.recipient_name} certTitle={rec.cert_title} issuerName={issuerName} issuedAt={rec.issued_at} verifyUrl={doc.verifyUrl} />
+          ) : (
+            <CertificateSheet {...doc.certificate} />
+          )}
+        </div>
       </div>
     </div>
   );

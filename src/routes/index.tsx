@@ -5,7 +5,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
-import { CourseGenerator } from "@/components/course/CourseGenerator";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
@@ -101,7 +100,6 @@ function Home() {
         </div>
       </section>
 
-      <CourseGenerator />
 
       <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="grid gap-6 sm:grid-cols-3">
