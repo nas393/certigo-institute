@@ -19,7 +19,8 @@ type Item = { i: number; q: string; options: { j: number; text: string }[] };
 type Start =
   | { status: "ok"; session_id: string; items: Item[] }
   | { status: "wait"; next_allowed_at: string; attempts: number }
-  | { status: "certified"; serial: string };
+  | { status: "certified"; serial: string }
+  | { status: "payment_required" };
 
 function Exam() {
   const { slug } = Route.useParams();
@@ -59,6 +60,19 @@ function Exam() {
           <h1 className="font-display text-3xl font-black tracking-tighter">You're already certified.</h1>
           <Button asChild className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700">
             <Link to="/issued/$serial" params={{ serial: start.serial }}>View certificate</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
+  if (start?.status === "payment_required") {
+    return (
+      <div className="min-h-screen bg-background"><Header />
+        <div className="mx-auto max-w-2xl px-5 py-16 text-center sm:px-8">
+          <h1 className="font-display text-3xl font-black tracking-tighter">Unlock this exam first.</h1>
+          <p className="mt-3 text-sm text-muted-foreground">Buy this certificate exam or a monthly pass on the course page. The lessons stay free.</p>
+          <Button asChild className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700">
+            <Link to="/c/$slug" params={{ slug }}>Back to the course</Link>
           </Button>
         </div>
       </div>

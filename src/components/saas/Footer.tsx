@@ -4,13 +4,12 @@ import { ShieldCheck } from "lucide-react";
 export function Footer() {
   const cols: { title: string; links: { to: string; label: string }[] }[] = [
     { title: "Platform", links: [
-      { to: "/product", label: "Credential Governance" },
-      { to: "/security", label: "Security" },
-      { to: "/verify", label: "Verification" },
+      { to: "/catalog", label: "Courses" },
+      { to: "/about", label: "How we assess" },
       { to: "/pricing", label: "Pricing" },
     ]},
     { title: "Company", links: [
-      { to: "/contact", label: "Contact sales" },
+      { to: "/contact", label: "Contact" },
     ]},
     { title: "Legal", links: [
       { to: "/privacy", label: "Privacy Policy" },
@@ -32,7 +31,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-sm text-sm text-white/60">
-              Credential infrastructure for the modern workforce. Issue, manage and verify with enterprise-grade governance.
+              Practical courses and certificates anyone can verify, for working professionals.
             </p>
           </div>
           {cols.map((c) => (
@@ -52,7 +51,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center">
           <span>© {new Date().getFullYear()} CERTIGO. All rights reserved.</span>
-          <span>Built for trust. Engineered for scale.</span>
+          <span>Every certificate can be checked by QR code or number.</span>
         </div>
       </div>
     </footer>

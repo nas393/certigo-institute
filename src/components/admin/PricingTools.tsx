@@ -8,7 +8,7 @@ import { toast } from "sonner";
 
 export function PricingTools({ categories, onDone }: { categories: string[]; onDone: () => void | Promise<void> }) {
   const [category, setCategory] = useState("");
-  const [price, setPrice] = useState("10");
+  const [price, setPrice] = useState("50");
   const [busy, setBusy] = useState(false);
 
   const [serial, setSerial] = useState("");

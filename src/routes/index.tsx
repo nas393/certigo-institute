@@ -6,14 +6,15 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
 import { useI18n } from "@/lib/i18n";
+import { HomeProof } from "@/components/home/HomeProof";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CERTIGO. — Your next credential, issued in 10 minutes" },
-      { name: "description", content: "Earn a verified professional credential in ten minutes. One quiz, one share-ready certificate, one click to LinkedIn." },
+      { title: "CERTIGO. — Prove what you can do" },
+      { name: "description", content: "Learn the essentials free, pass a real exam, and get a certificate employers can verify in seconds." },
       { property: "og:title", content: "CERTIGO. — Verified credentials for professionals" },
-      { property: "og:description", content: "Earn a verified credential in ten minutes. Share it to LinkedIn in one click." },
+      { property: "og:description", content: "Learn free, pass a real exam, share a certificate anyone can verify." },
     ],
   }),
   component: Home,
@@ -117,11 +118,13 @@ function Home() {
         </div>
       </section>
 
+      <HomeProof />
+
       <VerificationPlayground />
 
       <footer className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="border-t border-border pt-6 font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">
-          CERTIGO<span className="text-emerald-600">.</span> · © {new Date().getFullYear()} · <Link to="/terms" className="hover:text-foreground">Terms</Link> · <Link to="/privacy" className="hover:text-foreground">Privacy</Link> · <Link to="/contact" className="hover:text-foreground">Contact</Link>
+          CERTIGO<span className="text-emerald-600">.</span> · © {new Date().getFullYear()} · <Link to="/about" className="hover:text-foreground">How we assess</Link> · <Link to="/terms" className="hover:text-foreground">Terms</Link> · <Link to="/privacy" className="hover:text-foreground">Privacy</Link> · <Link to="/contact" className="hover:text-foreground">Contact</Link>
         </div>
       </footer>
     </div>

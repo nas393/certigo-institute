@@ -44,8 +44,8 @@ function CertigoMark({ size = 32 }: { size?: number }) {
 
 const NAV: { to: string; key: string }[] = [
   { to: "/catalog", key: "nav.catalog" },
-  { to: "/shop", key: "nav.shop" },
   { to: "/pricing", key: "nav.pricing" },
+  { to: "/about", key: "nav.about" },
   { to: "/hr", key: "nav.hr" },
   { to: "/contact", key: "nav.contact" },
 ];
@@ -120,7 +120,7 @@ export function Header() {
               <Button
                 size="sm"
                 className="hidden md:inline-flex h-9 gradient-hero text-white border-0 hover:opacity-95"
-                onClick={() => nav({ to: "/auth" })}
+                onClick={() => nav({ to: "/catalog" })}
               >
                 {t("auth.start")}
               </Button>
@@ -166,7 +166,7 @@ export function Header() {
                       <Button variant="outline" onClick={() => { setOpen(false); nav({ to: "/auth" }); }}>
                         {t("auth.signIn")}
                       </Button>
-                      <Button className="gradient-hero text-white border-0" onClick={() => { setOpen(false); nav({ to: "/auth" }); }}>
+                      <Button className="gradient-hero text-white border-0" onClick={() => { setOpen(false); nav({ to: "/catalog" }); }}>
                         {t("auth.start")}
                       </Button>
                     </>

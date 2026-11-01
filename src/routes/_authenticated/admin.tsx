@@ -5,6 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { useIsAdmin } from "@/lib/use-admin";
 import { ContactInbox } from "@/components/admin/ContactInbox";
+import { PaymentSettings } from "@/components/admin/PaymentSettings";
 import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -229,7 +230,8 @@ function AdminPanel() {
 
         {tab === "pricing" && (
           <div className="mt-8">
-            <PricingTools categories={categories} onDone={load} />
+            <PaymentSettings />
+            <div className="mt-4"><PricingTools categories={categories} onDone={load} /></div>
           </div>
         )}
 

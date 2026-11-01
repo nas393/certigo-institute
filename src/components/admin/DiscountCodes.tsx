@@ -20,7 +20,7 @@ type Code = {
   note: string;
 };
 
-const blank = { code: "", percent_off: "20", certification_id: "", max_redemptions: "", expires_at: "", note: "" };
+const blank = { code: "", percent_off: "20", applies_to: "any", certification_id: "", max_redemptions: "", expires_at: "", note: "" };
 
 function randomCode() {
   const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -55,12 +55,13 @@ export function DiscountCodes({ courses, userId }: { courses: CourseOption[]; us
     const { error } = await supabase.from("discount_codes").insert({
       code,
       percent_off: percent,
-      certification_id: form.certification_id || null,
+      applies_to: form.applies_to,
+      certification_id: form.applies_to === "pass" ? null : form.certification_id || null,
       max_redemptions: form.max_redemptions ? Math.max(1, Math.round(Number(form.max_redemptions))) : null,
       expires_at: form.expires_at ? new Date(`${form.expires_at}T23:59:59`).toISOString() : null,
       note: form.note.trim(),
       created_by: userId ?? null,
-    });
+    } as any);
     setSaving(false);
     if (error) {
       toast.error(/unique|duplicate/i.test(error.message) ? "That code already exists." : error.message);
@@ -100,7 +101,7 @@ export function DiscountCodes({ courses, userId }: { courses: CourseOption[]; us
           <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-emerald-700">◆ Discounts</div>
           <h2 className="mt-2 font-display text-2xl font-extrabold tracking-tight">Discount codes</h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Share a code to take a percentage off one course or every course. Learners enter it in the shop.
+            Share a code to take a percentage off a certificate exam, the monthly pass, or both. Learners enter it at checkout; 100% makes it free.
           </p>
         </div>
         <div className="flex gap-2">
@@ -128,7 +129,16 @@ export function DiscountCodes({ courses, userId }: { courses: CourseOption[]; us
               <Input id="d-pct" inputMode="numeric" value={form.percent_off} onChange={(e) => setForm({ ...form, percent_off: e.target.value })} />
             </div>
             <div>
-              <Label htmlFor="d-course">Applies to</Label>
+              <Label htmlFor="d-use">Use on</Label>
+              <select id="d-use" className="flex h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
+                value={form.applies_to} onChange={(e) => setForm({ ...form, applies_to: e.target.value })}>
+                <option value="any">Any purchase</option>
+                <option value="single">Single certificate only</option>
+                <option value="pass">Monthly pass only</option>
+              </select>
+            </div>
+            <div>
+              <Label htmlFor="d-course">Course</Label>
               <select
                 id="d-course"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 text-sm"

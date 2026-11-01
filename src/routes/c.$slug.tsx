@@ -11,12 +11,13 @@ import { LessonChecks } from "@/components/course/LessonChecks";
 import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
 import { useCourseTranslation } from "@/lib/use-course-translation";
+import { CheckoutPanel, useCheckoutInfo, money } from "@/components/checkout/Checkout";
 
 export const Route = createFileRoute("/c/$slug")({
   head: ({ params }) => ({
     meta: [
       { title: `${params.slug} — CERTIGO.` },
-      { name: "description", content: "Earn this CERTIGO. credential in 10 minutes." },
+      { name: "description", content: "Learn the essentials free, then prove it with a verified CERTIGO. certificate exam." },
     ],
   }),
   component: CertDetail,
@@ -31,6 +32,7 @@ function CertDetail() {
   const [enrolling, setEnrolling] = useState(false);
   const { t, lang } = useI18n();
   const { translation, loading: translating, error: translateError } = useCourseTranslation(slug);
+  const { info, reload: reloadAccess } = useCheckoutInfo(c?.id);
 
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setC(data));
@@ -68,6 +70,7 @@ function CertDetail() {
     toast.success("Enrolled — this course is now in your learning portal.");
   }
 
+  const lessonMinutes = baseModules.reduce((n: number, m: any) => n + (Number(m?.minutes) || 0), 0);
   if (!c) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
   return (
@@ -96,18 +99,18 @@ function CertDetail() {
         <div className="mt-8 grid gap-3 sm:grid-cols-4">
           <div className="rounded-lg border border-border p-4">
             <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{t("course.price")}</div>
-            <div className="mt-2 text-2xl font-black" data-testid="course-price">{formatPrice(c.price_cents)}</div>
-            <div className="text-xs text-muted-foreground">{t("course.perCredential")}</div>
+            <div className="mt-2 text-2xl font-black" data-testid="course-price">{info ? money(info.single_cents, info.currency) : formatPrice(c.price_cents)}</div>
+            <div className="text-xs text-muted-foreground">lessons free · pay to certify</div>
           </div>
           <div className="rounded-lg border border-border p-4">
             <Clock className="h-4 w-4 text-muted-foreground" />
-            <div className="mt-2 text-2xl font-black">~10 min</div>
-            <div className="text-xs text-muted-foreground">{c.question_count} {t("course.questions")}</div>
+            <div className="mt-2 text-2xl font-black">{lessonMinutes ? `${Math.round(lessonMinutes / 5) * 5} min` : "—"}</div>
+            <div className="text-xs text-muted-foreground">of lessons · {modules.length} modules</div>
           </div>
           <div className="rounded-lg border border-border p-4">
             <ShieldCheck className="h-4 w-4 text-muted-foreground" />
-            <div className="mt-2 text-2xl font-black">{c.pass_score}%</div>
-            <div className="text-xs text-muted-foreground">{t("course.toPass")}</div>
+            <div className="mt-2 text-2xl font-black">{c.question_count} Qs</div>
+            <div className="text-xs text-muted-foreground">exam · {c.pass_score}% {t("course.toPass")}</div>
           </div>
           <div className="rounded-lg border border-border p-4">
             <div className="text-2xl font-black">QR</div>
@@ -123,25 +126,30 @@ function CertDetail() {
           ) : (
             <Button size="lg" variant="outline" disabled={enrolling} onClick={enroll}>
               {enrolling ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-              {user ? t("course.enroll") : t("course.enrollSignIn")}
+              {user ? "Start the free lessons" : t("course.enrollSignIn")}
             </Button>
           )}
-          <Button
-            size="lg"
-            className="bg-emerald-600 text-white hover:bg-emerald-700"
-            onClick={() => {
-              if (!user) nav({ to: "/auth" });
-              else nav({ to: "/exam/$slug", params: { slug } });
-            }}
-          >
-            {user ? t("course.startExam") : t("course.startSignIn")} <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          {info?.access.access && (
+            <Button size="lg" className="bg-emerald-600 text-white hover:bg-emerald-700" onClick={() => nav({ to: "/exam/$slug", params: { slug } })}>
+              {t("course.startExam")} <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          )}
           {enrolled && (
             <Link to="/portal" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:underline">
               {t("course.openLearning")}
             </Link>
           )}
         </div>
+        {info?.access.access && info.access.via === "pass" && info.access.until && (
+          <p className="mt-2 text-xs text-muted-foreground">Your monthly pass is active until {new Date(info.access.until).toLocaleDateString()}.</p>
+        )}
+        {info && !info.access.access && (
+          <div className="mt-8">
+            <h2 className="font-display text-xl font-extrabold tracking-tight">Get certified</h2>
+            <p className="mt-1 text-sm text-muted-foreground">Read the lessons for free. When you're ready, unlock the exam: pass it and your verified certificate is issued instantly.</p>
+            <div className="mt-4"><CheckoutPanel certificationId={c.id} info={info} onPaid={() => void reloadAccess()} /></div>
+          </div>
+        )}
 
         <SkillsMap modules={modules} fallback={(translation?.skills?.length ? translation.skills : c.skills) ?? []} />
         <LessonChecks certificationId={c.id} modules={modules} />
