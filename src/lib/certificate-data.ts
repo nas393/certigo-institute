@@ -1,5 +1,6 @@
 import { supabase } from "@/integrations/supabase/client";
-import { CERT_LABELS, type MonoCertProps } from "@/components/certigo/MonochromeCertificate";
+import { CERT_LABELS } from "@/components/certigo/MonochromeCertificate";
+import type { FormalCertProps } from "@/components/certigo/FormalCertificate";
 import type { MonoTranscriptProps, TranscriptModule } from "@/components/certigo/MonochromeTranscript";
 
 /**
@@ -27,7 +28,7 @@ export interface CertificateRecord {
 export type DocLang = keyof typeof CERT_LABELS;
 export const DOC_LOCALES: Record<DocLang, string> = { en: "en-GB", fr: "fr-FR", es: "es-ES", pt: "pt-PT", ar: "ar" };
 
-export type CertificateProps = Omit<MonoCertProps, "variant" | "qrDataUrl">;
+export type CertificateProps = Omit<FormalCertProps, "qrDataUrl">;
 export type TranscriptProps = Omit<MonoTranscriptProps, "qrDataUrl">;
 
 export interface CertificateDocument {
@@ -122,6 +123,7 @@ export function buildCertificateDocument(
     skills: certificateSkills(rec),
     description: rec.summary ? firstSentence(rec.summary) : undefined,
     moduleCount: rec.modules.length || undefined,
+    passMark: rec.pass_score || undefined,
   };
   const lang = (opts.lang ?? "en") as DocLang;
   const second: CertificateProps | undefined =
