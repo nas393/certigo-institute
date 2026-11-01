@@ -85,6 +85,13 @@
       "when": 1789644133455,
       "tag": "0011_tighten_definer_execute_grants",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1793555380764,
+      "tag": "0012_certifications_column_grants_exclude_answer_keys",
+      "breakpoints": true
     }
   ]
 }
