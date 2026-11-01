@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { ArrowRight } from "lucide-react";
-import { CourseGenerator } from "@/components/course/CourseGenerator";
 import { useI18n } from "@/lib/i18n";
 
 export const Route = createFileRoute("/catalog")({
@@ -56,7 +55,6 @@ function Catalog() {
           ))}
         </div>
       </div>
-      <CourseGenerator />
     </div>
   );
 }

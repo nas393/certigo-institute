@@ -89,8 +89,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "CERTIGO. — Verified credentials, instantly" },
       { name: "twitter:description", content: "CERTIGO. turns any skill into a verified, QR-checked credential employers trust. From knowledge to verified proof — instantly." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fa968dfd-8290-4094-a1ed-f62431fe9fee" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/fa968dfd-8290-4094-a1ed-f62431fe9fee" },
+      { property: "og:image", content: "/og.png" },
+      { name: "twitter:image", content: "/og.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

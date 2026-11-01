@@ -15,9 +15,7 @@
     "test:e2e": "node tests/e2e/official-print-pdf.spec.mjs"
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "^1.54.8",
     "@hookform/resolvers": "^5.2.2",
-    "@lovable.dev/cloud-auth-js": "^1.1.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.8",
@@ -47,9 +45,9 @@
     "@supabase/supabase-js": "^2.116.0",
     "@tailwindcss/vite": "^4.2.1",
     "@tanstack/react-query": "^5.102.8",
-    "@tanstack/react-router": "^1.170.35",
-    "@tanstack/react-start": "^1.168.52",
-    "@tanstack/router-plugin": "^1.168.37",
+    "@tanstack/react-router": "1.170.41",
+    "@tanstack/react-start": "1.168.60",
+    "@tanstack/router-plugin": "1.168.42",
     "browserslist": "^4.28.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -86,7 +84,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@lovable.dev/vite-tanstack-config": "2.26.5",
+    "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/node": "^22.16.5",
@@ -112,13 +110,6 @@
     "vitest": "^4.1.9"
   },
   "overrides": {
-    "dompurify": "^3.4.15",
-    "fflate": "^0.8.3",
-    "browserslist": "^4.28.9",
-    "js-yaml": "^4.3.1",
-    "ws": "^8.21.0",
-    "undici": "^7.29.0",
-    "sharp": "^0.35.4",
     "esbuild": ">=0.25.12"
   }
 }
