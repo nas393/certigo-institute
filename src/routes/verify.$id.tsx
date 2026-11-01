@@ -2,7 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
-import { ShieldCheck, ShieldX, Loader2, ArrowRight, Check, X } from "lucide-react";
+import { ShieldCheck, ShieldX, Loader2, ArrowRight, Check, X, Printer } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { OfficialDocumentButtons } from "@/components/cert/CertificateView";
+import { useAuth } from "@/lib/auth";
+import { buildCertificateDocument, fetchCertificateRecord, type CertificateDocument } from "@/lib/certificate-data";
 import { formatReference } from "@/lib/cert";
 import { computeTrust, formatLongDate, type VerificationRecord } from "@/lib/trust";
 
@@ -38,6 +42,8 @@ function VerifyOne() {
   const { id } = Route.useParams();
   const [state, setState] = useState<"loading" | "ok" | "miss" | "revoked">("loading");
   const [r, setR] = useState<VerificationRecord | null>(null);
+  const { user } = useAuth();
+  const [ownerDoc, setOwnerDoc] = useState<CertificateDocument | null>(null);
 
   useEffect(() => {
     supabase.rpc("verify_record", { lookup: id }).then(({ data }: { data: any }) => {
@@ -46,6 +52,13 @@ function VerifyOne() {
       setState(data.revoked ? "revoked" : "ok");
     });
   }, [id]);
+
+  // Official PDF and print are for the certificate holder only (sign-in can finish after the record loads).
+  useEffect(() => {
+    const rec = r as any;
+    if (!rec || !user || rec.recipient_id !== user.id || rec.revoked) { setOwnerDoc(null); return; }
+    fetchCertificateRecord(id).then((full) => setOwnerDoc(full ? buildCertificateDocument(full) : null));
+  }, [r, user, id]);
 
   if (state === "loading") return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
@@ -71,8 +84,17 @@ function VerifyOne() {
   return (
     <div className="relative min-h-screen bg-background">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(20,83,45,0.12)_0%,rgba(20,83,45,0)_70%)]" />
-      <Header />
-      <div className="relative mx-auto max-w-3xl px-5 py-10 sm:px-8 sm:py-14">
+      <div className="print:hidden"><Header /></div>
+      <div className="relative mx-auto max-w-3xl px-5 py-10 sm:px-8 sm:py-14 print:py-0">
+        <div className="mb-6 flex flex-wrap gap-2 print:hidden">
+          <Button variant="outline" onClick={() => window.print()} className="min-h-[44px]">
+            <Printer className="mr-2 h-4 w-4" /> Print verification summary
+          </Button>
+          {ownerDoc && <OfficialDocumentButtons doc={ownerDoc} />}
+        </div>
+        <p className="mb-4 hidden text-xs text-neutral-600 print:block">
+          Verification summary printed {new Date().toLocaleString("en-GB")} from {typeof window !== "undefined" ? window.location.href : ""}. This summary is not a certificate.
+        </p>
         <div className={"flex items-center gap-2 rounded-xl border-2 px-4 py-3 font-mono text-[10px] uppercase tracking-[0.32em] " + (revoked ? "border-destructive bg-destructive/5 text-destructive" : "border-emerald-600 bg-emerald-600/5 text-emerald-700")}>
           {revoked ? <ShieldX className="h-4 w-4" /> : <ShieldCheck className="h-4 w-4" />}
           CERTIGO<span>.</span> {revoked ? "REVOKED — do not accept" : "VERIFIED"}
@@ -170,7 +192,7 @@ function VerifyOne() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-4 text-sm">
+        <div className="mt-6 flex flex-wrap gap-4 text-sm print:hidden">
           <Link to="/certificate/$id" params={{ id: r.serial }} className="inline-flex items-center gap-1 font-medium text-emerald-700 hover:underline">
             Open certificate <ArrowRight className="h-3 w-3" />
           </Link>

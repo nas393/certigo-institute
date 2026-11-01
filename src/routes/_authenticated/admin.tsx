@@ -26,6 +26,7 @@ type Course = {
   category: string;
   summary: string;
   price_cents: number;
+  published?: boolean;
   pass_score: number;
   question_count: number;
   skills: string[] | null;
@@ -68,7 +69,7 @@ function AdminPanel() {
   const load = useCallback(async () => {
     const { data } = await supabase
       .from("certifications")
-      .select("id, slug, title, category, summary, price_cents, pass_score, question_count, skills")
+      .select("id, slug, title, category, summary, price_cents, pass_score, question_count, skills, published")
       .order("category")
       .order("title");
     setCourses((data ?? []) as Course[]);
@@ -98,6 +99,14 @@ function AdminPanel() {
     if (error) { toast.error(error.message); return; }
     setCourses((rows) => (rows ?? []).map((r) => (r.id === c.id ? { ...r, price_cents: cents } : r)));
     toast.success(`${c.title} is now ${formatPrice(cents)}.`);
+  }
+
+  async function togglePublished(c: Course) {
+    const next = !(c.published ?? true);
+    const { error } = await supabase.from("certifications").update({ published: next }).eq("id", c.id);
+    if (error) { toast.error(error.message); return; }
+    setCourses((rows) => (rows ?? []).map((r) => (r.id === c.id ? { ...r, published: next } : r)));
+    toast.success(`${c.title} is now ${next ? "published" : "hidden from the catalogue"}.`);
   }
 
   function startEdit(c: Course) {
@@ -261,7 +270,7 @@ function AdminPanel() {
                 <div key={c.id} className="rounded-2xl border border-border bg-card p-5 shadow-card">
                   <div className="flex flex-wrap items-start justify-between gap-4">
                     <div className="min-w-0">
-                      <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">◆ {c.category} · {formatPrice(c.price_cents)}</div>
+                      <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">◆ {c.category} · {formatPrice(c.price_cents)}{c.published === false && <span className="ml-2 rounded bg-amber-100 px-1.5 py-0.5 text-amber-800">Hidden · awaiting approval</span>}</div>
                       <div className="mt-1 font-display text-xl font-extrabold tracking-tight">{c.title}</div>
                       <div className="mt-1 text-xs text-muted-foreground">/{c.slug} · {c.question_count} questions · pass {c.pass_score}%</div>
                     </div>
@@ -284,6 +293,7 @@ function AdminPanel() {
                       <Button size="sm" variant="outline" onClick={() => void toggleResults(c)}>
                         <Users className="mr-1.5 h-3.5 w-3.5" /> Results <ChevronDown className={"ml-1 h-3 w-3 transition " + (openResults === c.id ? "rotate-180" : "")} />
                       </Button>
+                      <Button size="sm" variant={c.published === false ? "default" : "outline"} onClick={() => void togglePublished(c)}>{c.published === false ? "Approve & publish" : "Unpublish"}</Button>
                       <Button size="sm" variant="outline" onClick={() => startEdit(c)}><Pencil className="mr-1.5 h-3.5 w-3.5" /> Edit</Button>
                       <Button size="sm" variant="outline" className="text-destructive" onClick={() => void remove(c)}><Trash2 className="mr-1.5 h-3.5 w-3.5" /> Delete</Button>
                       <Link to="/c/$slug" params={{ slug: c.slug }} className="inline-flex items-center gap-1 text-xs font-medium text-muted-foreground hover:text-foreground">

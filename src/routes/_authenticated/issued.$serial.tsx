@@ -1,18 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Header } from "@/components/kredo/Header";
-import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { Download, Loader2 } from "lucide-react";
-import { CertificateCard } from "@/components/cert/CertificateCard";
+import { Loader2 } from "lucide-react";
+import { CertificateSheet, OfficialDocumentButtons, TranscriptSheet } from "@/components/cert/CertificateView";
 import { DigitalBadge } from "@/components/cert/DigitalBadge";
 import { LinkedInButton } from "@/components/cert/LinkedInButton";
-import { CertChecksBanner } from "@/components/dev/CertChecksBanner";
 import { StagingShareToggle } from "@/components/cert/StagingShareToggle";
-import { downloadCertificatePdf } from "@/lib/cert-pdf";
 import { formatReference } from "@/lib/cert";
-import { toast } from "sonner";
-import sigImg from "@/assets/signature-director.png";
+import { useAuth } from "@/lib/auth";
+import { buildCertificateDocument, fetchCertificateRecord, type CertificateRecord } from "@/lib/certificate-data";
 import { useI18n, languageName } from "@/lib/i18n";
 import { useCourseTranslation } from "@/lib/use-course-translation";
 
@@ -23,57 +20,26 @@ export const Route = createFileRoute("/_authenticated/issued/$serial")({
 
 function Issued() {
   const { serial } = Route.useParams();
-  const [cert, setCert] = useState<any>(null);
-  const [view, setView] = useState<"digital" | "print">("digital");
-  const [downloading, setDownloading] = useState(false);
+  const { user } = useAuth();
+  const [rec, setRec] = useState<CertificateRecord | null | undefined>(undefined);
+  const [view, setView] = useState<"digital" | "certificate" | "transcript">("certificate");
   const { t, lang } = useI18n();
-  const { translation } = useCourseTranslation(cert?.certifications?.slug);
+  const { translation } = useCourseTranslation(rec?.slug);
 
-  useEffect(() => {
-    supabase.from("certificates")
-      .select("serial, recipient_name, issued_at, score, certifications(slug, title, issuer_name, skills, modules)")
-      .eq("serial", serial).maybeSingle()
-      .then(({ data }) => setCert(data));
-  }, [serial]);
+  useEffect(() => { fetchCertificateRecord(serial).then(setRec); }, [serial]);
+  const doc = useMemo(
+    () => (rec ? buildCertificateDocument(rec, { lang, translatedTitle: translation?.title }) : null),
+    [rec, lang, translation],
+  );
 
-  if (!cert) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
-
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  const verifyUrl = `${origin}/verify/${cert.serial}`;
-  const certTitle = cert.certifications?.title ?? "CERTIGO. Certificate";
-  const issuerName = cert.certifications?.issuer_name ?? "CERTIGO.";
-
-  async function download() {
-    setDownloading(true);
-    try {
-      const courseModules = Array.isArray(cert.certifications?.modules) ? cert.certifications.modules : [];
-      const skills: string[] = cert.certifications?.skills?.length
-        ? cert.certifications.skills
-        : lessonSkills(courseModules);
-      const modules = courseModules.length
-        ? buildLessonTranscript(courseModules, cert.score)
-        : buildTranscriptModules(skills, certTitle, cert.score);
-      const signatureDataUrl = await fetch(sigImg).then((r) => r.blob()).then(blobToDataUrl).catch(() => undefined);
-      await downloadCertificatePdf({
-        serial: cert.serial,
-        recipientName: cert.recipient_name,
-        certTitle,
-        issuerName,
-        issuedAt: cert.issued_at,
-        scorePct: cert.score,
-        verifyUrl,
-        signatureDataUrl,
-        skills,
-        modules,
-        programmeTitle: certTitle,
-        language: lang,
-        translatedTitle: translation?.title,
-        totalHours: modules.reduce((s: number, m: TranscriptModuleRow) => s + m.hours, 0),
-      });
-    } catch (e: any) {
-      toast.error(e.message ?? "PDF failed");
-    } finally { setDownloading(false); }
+  if (rec === undefined) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
+  if (!rec || !doc || rec.recipient_id !== user?.id) {
+    return <div className="min-h-screen bg-background"><Header /><p className="mx-auto max-w-2xl px-5 py-16 text-center text-muted-foreground">This certificate isn't linked to your account.</p></div>;
   }
+  const cert = rec;
+  const certTitle = rec.cert_title;
+  const issuerName = rec.issuer_name || "CERTIGO.";
+  const verifyUrl = doc.verifyUrl;
 
   return (
     <div className="min-h-screen bg-background">
@@ -84,11 +50,10 @@ function Issued() {
         <p className="mt-2 text-sm text-muted-foreground">{formatReference(cert.serial)} · {t("cert.score")} {cert.score}%</p>
 
         <div className="mt-6 flex flex-wrap gap-2">
+          <Button variant={view === "certificate" ? "default" : "outline"} onClick={() => setView("certificate")} className="min-h-[44px]">Certificate</Button>
+          {doc.transcript && <Button variant={view === "transcript" ? "default" : "outline"} onClick={() => setView("transcript")} className="min-h-[44px]">Transcript</Button>}
           <Button variant={view === "digital" ? "default" : "outline"} onClick={() => setView("digital")} className="min-h-[44px]">{t("cert.digital")}</Button>
-          <Button variant={view === "print" ? "default" : "outline"} onClick={() => setView("print")} className="min-h-[44px]">{t("cert.print")}</Button>
-          <Button onClick={download} disabled={downloading} className="min-h-[44px] bg-emerald-600 text-white hover:bg-emerald-700">
-            <Download className="mr-2 h-4 w-4" /> {downloading ? t("cert.generating") : t("cert.download")}
-          </Button>
+          <OfficialDocumentButtons doc={doc} />
           <LinkedInButton
             certTitle={certTitle}
             issuerName={issuerName}
@@ -109,20 +74,10 @@ function Issued() {
               issuedAt={cert.issued_at}
               verifyUrl={verifyUrl}
             />
+          ) : view === "transcript" && doc.transcript ? (
+            <div className="mx-auto max-w-2xl"><TranscriptSheet {...doc.transcript} /></div>
           ) : (
-            <CertificateCard
-              serial={cert.serial}
-              recipientName={cert.recipient_name}
-              certTitle={certTitle}
-              issuedAt={cert.issued_at}
-              score={cert.score}
-              verifyUrl={verifyUrl}
-              skills={
-                cert.certifications?.skills?.length
-                  ? cert.certifications.skills
-                  : lessonSkills(Array.isArray(cert.certifications?.modules) ? cert.certifications.modules : [])
-              }
-            />
+            <CertificateSheet {...doc.certificate} />
           )}
         </div>
 
@@ -132,7 +87,6 @@ function Issued() {
           </p>
         )}
 
-        <CertChecksBanner cert={cert} />
         <StagingShareToggle serial={cert.serial} />
 
         <div className="mt-8 text-sm text-muted-foreground">
@@ -147,93 +101,4 @@ function Issued() {
       </div>
     </div>
   );
-}
-
-function blobToDataUrl(blob: Blob): Promise<string> {
-  return new Promise((res, rej) => {
-    const r = new FileReader();
-    r.onload = () => res(String(r.result));
-    r.onerror = () => rej(r.error);
-    r.readAsDataURL(blob);
-  });
-}
-
-/**
- * Build transcript modules with subject label and short "what was learned"
- * summary so the academic transcript reads as more than a one-word title.
- * Draws from `certifications.skills` (real-world capabilities) and falls back
- * to a course-title outline of 6 modules when no skills are configured.
- */
-interface TranscriptModuleRow {
-  code: string;
-  title: string;
-  hours: number;
-  grade: string;
-  scorePct?: number;
-  subject: string;
-  learned: string;
-  skills?: string[];
-}
-
-/** Union of the job skills each lesson maps to (used when the course has none of its own). */
-function lessonSkills(modules: any[]): string[] {
-  const out: string[] = [];
-  modules.forEach((m) => {
-    (Array.isArray(m?.skills) ? m.skills : []).forEach((s: any) => {
-      const v = String(s).trim();
-      if (v && !out.includes(v)) out.push(v);
-    });
-  });
-  return out.slice(0, 8);
-}
-
-/** Transcript rows built from the real lessons of the course, incl. their job skills. */
-function buildLessonTranscript(modules: any[], score: number): TranscriptModuleRow[] {
-  const grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "Pass";
-  return modules.slice(0, 8).map((m: any, i: number) => {
-    const title = String(m?.title ?? `Module ${i + 1}`);
-    const minutes = Number(m?.minutes) || 12;
-    return {
-      code: `M${String(i + 1).padStart(2, "0")}`,
-      title: `Module ${i + 1} · ${title}`,
-      subject: String(m?.subject ?? title),
-      learned: String(m?.learned ?? ""),
-      skills: Array.isArray(m?.skills) ? m.skills.map(String) : [],
-      hours: Math.max(1, Math.round(minutes / 60 * 10) / 10),
-      grade,
-      scorePct: score ?? undefined,
-    };
-  });
-}
-function buildTranscriptModules(
-  skills: string[],
-  courseTitle: string,
-  score: number,
-): TranscriptModuleRow[] {
-  const grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "Pass";
-  const source = skills.length ? skills : defaultOutline(courseTitle);
-  return source.slice(0, 8).map((title, i) => ({
-    code: `M${String(i + 1).padStart(2, "0")}`,
-    title: `Module ${i + 1} · ${title}`,
-    subject: title,
-    learned: learnedSummary(title, courseTitle),
-    hours: 6,
-    grade,
-    scorePct: score ?? undefined,
-  }));
-}
-function defaultOutline(courseTitle: string): string[] {
-  return [
-    `Foundations of ${courseTitle}`,
-    `Core frameworks & terminology`,
-    `Applied case studies`,
-    `Tools & workflows`,
-    `Measurement & evaluation`,
-    `Capstone assessment`,
-  ];
-}
-function learnedSummary(skill: string, courseTitle: string): string {
-  // A short, professional summary the graduate can point to on a CV.
-  // Keeps to one sentence per module so the transcript stays scannable.
-  return `Applied ${skill.toLowerCase()} through short lessons, practical exercises and a knowledge check, then demonstrated competency on the ${courseTitle} assessment.`;
 }

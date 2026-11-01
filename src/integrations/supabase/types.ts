@@ -107,6 +107,7 @@ export type Database = {
           modules: Json
           pass_score: number
           price_cents: number
+          published: boolean
           question_count: number
           questions: Json
           skills: string[]
@@ -124,6 +125,7 @@ export type Database = {
           modules?: Json
           pass_score?: number
           price_cents?: number
+          published?: boolean
           question_count?: number
           questions?: Json
           skills?: string[]
@@ -141,6 +143,7 @@ export type Database = {
           modules?: Json
           pass_score?: number
           price_cents?: number
+          published?: boolean
           question_count?: number
           questions?: Json
           skills?: string[]
@@ -405,6 +408,13 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      certificate_document: { Args: { lookup: string }; Returns: Json }
+      exam_status: { Args: { _certification_id: string }; Returns: Json }
+      start_exam: { Args: { _certification_id: string }; Returns: Json }
+      submit_exam: {
+        Args: { _answers: Json; _recipient_name: string; _session_id: string }
+        Returns: { passed: boolean; score: number; serial: string }[]
+      }
       admin_bulk_set_price: {
         Args: { _category: string; _price_cents: number }
         Returns: number
@@ -504,7 +514,7 @@ export type Database = {
       }
     }
     Enums: {
-      app_role: "admin" | "learner"
+      app_role: "admin" | "learner" | "verifier"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -632,7 +642,7 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
-      app_role: ["admin", "learner"],
+      app_role: ["admin", "learner", "verifier"],
     },
   },
 } as const

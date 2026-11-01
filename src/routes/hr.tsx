@@ -49,7 +49,7 @@ function HrChecker() {
     setBusy(true);
     const { data, error } = await supabase.rpc("verify_serials", { _serials: serials });
     setBusy(false);
-    if (error) { toast.error("Verification failed. Try again."); return; }
+    if (error) { toast.error(/approved organisations|not authenticated/i.test(error.message) ? "Bulk verification is for approved organisations. Sign in with an approved account, or contact CERTIGO for access." : "Verification failed. Try again."); return; }
     setRows((data ?? []) as SerialCheck[]);
     // Each check is logged as a real verification event — refresh the live counters.
     await loadStats();
