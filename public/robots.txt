@@ -1,0 +1,11 @@
+# CERTIGO: public pages may be indexed. Account pages are private.
+User-agent: *
+Allow: /
+Disallow: /dashboard
+Disallow: /portal
+Disallow: /profile
+Disallow: /admin
+Disallow: /issued/
+Disallow: /exam/
+Disallow: /reset-password
+# A Sitemap line will be added once the production domain is set.

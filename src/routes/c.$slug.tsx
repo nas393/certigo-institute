@@ -35,6 +35,12 @@ function CertDetail() {
   const { translation, loading: translating, error: translateError } = useCourseTranslation(slug);
   const { info, reload: reloadAccess } = useCheckoutInfo(c?.id);
   const [pack, setPack] = useState<LessonPack | null>(null);
+  const [related, setRelated] = useState<Array<{ slug: string; title: string; summary: string }>>([]);
+  useEffect(() => {
+    if (!c?.category) return;
+    supabase.from("certifications").select("slug, title, summary").eq("category", c.category).neq("slug", slug).order("title").limit(3)
+      .then(({ data }) => setRelated((data ?? []) as any));
+  }, [c?.category, slug]);
   useEffect(() => { void loadLessonPack(slug).then(setPack); }, [slug]);
 
   useEffect(() => {
@@ -85,7 +91,15 @@ function CertDetail() {
         <div className="flex items-center justify-between gap-3">
           <Link to="/catalog" className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground hover:text-foreground">{t("course.back")}</Link>
         </div>
-        <div className="mt-4 font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ {c.category}</div>
+        <Link to="/catalog" search={{ category: c.category }} className="mt-4 inline-block font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700 hover:underline">◆ {c.category}</Link>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org", "@type": "Course", name: c.title, description: c.summary,
+          provider: { "@type": "Organization", name: "CERTIGO" },
+          inLanguage: "en", isAccessibleForFree: true,
+          educationalCredentialAwarded: "CERTIGO certificate (exam required)",
+          offers: info ? { "@type": "Offer", category: "Certificate exam", price: (info.single_cents / 100).toFixed(2), priceCurrency: info.currency } : undefined,
+          hasCourseInstance: { "@type": "CourseInstance", courseMode: "online", courseWorkload: lessonMinutes ? `PT${lessonMinutes}M` : undefined },
+        }) }} />
         <h1 className="mt-2 font-display text-5xl font-black tracking-tighter">{translation?.title ?? c.title}</h1>
         <p className="mt-3 text-base text-muted-foreground">{translation?.summary ?? c.summary}</p>
         {lang !== "en" && (
@@ -158,6 +172,20 @@ function CertDetail() {
 
         <SkillsMap modules={modules} fallback={(translation?.skills?.length ? translation.skills : c.skills) ?? []} />
         <LessonChecks certificationId={c.id} modules={modules} />
+        {related.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-display text-xl font-extrabold tracking-tight">More in {c.category}</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              {related.map((r) => (
+                <Link key={r.slug} to="/c/$slug" params={{ slug: r.slug }} className="rounded-xl border border-border bg-card p-4 transition hover:border-emerald-600/40">
+                  <div className="font-semibold leading-snug">{r.title}</div>
+                  <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{r.summary}</p>
+                </Link>
+              ))}
+            </div>
+            <Link to="/catalog" search={{ category: c.category }} className="mt-3 inline-block text-sm text-emerald-700 hover:underline">See all {c.category} courses →</Link>
+          </section>
+        )}
       </div>
     </div>
   );

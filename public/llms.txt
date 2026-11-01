@@ -1,0 +1,16 @@
+# CERTIGO
+
+> CERTIGO is an online platform for practical, job-focused courses and certificates. Lessons are free to read. Learners pay to take a course exam; passing it issues a certificate with a unique number and QR code that anyone can verify online.
+
+Important facts:
+- Pricing: one certificate exam per course, or a 30-day pass that opens every exam. Current prices are on /pricing and in /pricing.md.
+- Exams: questions are drawn at random from a larger bank, shuffled for each attempt and graded on the server. Each course shows its pass mark.
+- Retakes: included until the learner passes; the second attempt opens after 24 hours, later attempts need 7 days between them.
+- Verification: every certificate has a public verification page showing holder, course, issue date and status (valid or revoked).
+- CERTIGO certificates are not university degrees, government qualifications, or professional-body certifications (such as PMP, ACCA or CISSP).
+
+## Key pages
+- [Courses](/catalog): all courses, filterable by category
+- [Pricing](/pricing): certificate and monthly pass prices, FAQ
+- [How we assess](/about): how courses are written, how exams and verification work
+- [Contact](/contact)

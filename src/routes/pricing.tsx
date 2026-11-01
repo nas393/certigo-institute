@@ -13,6 +13,13 @@ export const Route = createFileRoute("/pricing")({
   component: PricingPage,
 });
 
+const FAQ: Array<[string, string]> = [
+  ["What do I get when I pass?", "A certificate with a unique number, a transcript of the lessons and your result, and a public page anyone can use to check it. You can download the official PDF and add it to LinkedIn."],
+  ["What if I fail?", "Your purchase covers retakes until you pass. The second attempt opens 24 hours after the first; later attempts need 7 days between them."],
+  ["Do you have promo codes?", "Sometimes. If you have one, enter it at checkout and the discount is applied automatically."],
+  ["How do employers check a certificate?", "They scan the QR code or enter the certificate number on the verification page. It shows the holder, the course, the date and whether it is still valid."],
+];
+
 function PricingPage() {
   const { info, reload } = useCheckoutInfo(null);
   const single = info ? money(info.single_cents, info.currency) : "";
@@ -54,19 +61,17 @@ function PricingPage() {
         )}
 
         <div className="mt-14 grid gap-8 sm:grid-cols-2">
-          {[
-            ["What do I get when I pass?", "A certificate with a unique number, a transcript of the lessons and your result, and a public page anyone can use to check it. You can download the official PDF and add it to LinkedIn."],
-            ["What if I fail?", "Your purchase covers retakes until you pass. The second attempt opens 24 hours after the first; later attempts need 7 days between them."],
-            ["Do you have promo codes?", "Sometimes. If you have one, enter it at checkout and the discount is applied automatically."],
-            ["How do employers check a certificate?", "They scan the QR code or enter the certificate number on the verification page. It shows the holder, the course, the date and whether it is still valid."],
-          ].map(([q, a]) => (
+          {FAQ.map(([q, a]) => (
             <div key={q}>
               <h3 className="font-semibold">{q}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{a}</p>
             </div>
           ))}
         </div>
-
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org", "@type": "FAQPage",
+          mainEntity: FAQ.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
+        }) }} />
         <div className="mt-14 rounded-2xl border border-border bg-muted/30 p-6">
           <h2 className="font-semibold">For companies and training teams</h2>
           <p className="mt-1 text-sm text-muted-foreground">Want to certify a team? <Link to="/contact" className="underline underline-offset-4">Contact us</Link> and we'll set it up.</p>
