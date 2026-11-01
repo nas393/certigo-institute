@@ -2,6 +2,8 @@ export type CourseModuleView = {
   title: string;
   subject?: string;
   learned?: string;
+  /** Full lesson text: paragraphs, "## " headings and "- " bullets. */
+  body?: string;
   minutes?: number;
   skills?: string[];
   check?: { q?: string; options?: string[] };
@@ -15,7 +17,8 @@ export function normalizeModules(raw: unknown): CourseModuleView[] {
       title: String(m.title ?? "").trim() || "Module",
       subject: String(m.subject ?? "").trim(),
       learned: String(m.learned ?? "").trim(),
-      minutes: Number(m.minutes) || 12,
+      body: typeof m.body === "string" ? m.body : "",
+      minutes: Number(m.minutes) || 0,
       skills: Array.isArray(m.skills) ? m.skills.map((s: any) => String(s)).filter(Boolean) : [],
       check:
         m.check && Array.isArray(m.check.options)
@@ -32,10 +35,10 @@ export function SkillsMap({ modules, fallback = [] }: { modules: CourseModuleVie
   return (
     <section className="mt-10 rounded-xl border border-border bg-card p-6">
       <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">
-        ◆ Skills applied in the real professional world
+        ◆ Skills covered
       </div>
       <p className="mt-2 text-sm text-muted-foreground">
-        Each lesson maps to skills hiring managers actually list in job descriptions.
+        What each lesson teaches you to do.
       </p>
 
       {rows.length > 0 ? (

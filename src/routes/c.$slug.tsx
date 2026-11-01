@@ -12,6 +12,7 @@ import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
 import { useCourseTranslation } from "@/lib/use-course-translation";
 import { CheckoutPanel, useCheckoutInfo, money } from "@/components/checkout/Checkout";
+import { loadLessonPack, type LessonPack } from "@/content/lessons";
 
 export const Route = createFileRoute("/c/$slug")({
   head: ({ params }) => ({
@@ -33,6 +34,8 @@ function CertDetail() {
   const { t, lang } = useI18n();
   const { translation, loading: translating, error: translateError } = useCourseTranslation(slug);
   const { info, reload: reloadAccess } = useCheckoutInfo(c?.id);
+  const [pack, setPack] = useState<LessonPack | null>(null);
+  useEffect(() => { void loadLessonPack(slug).then(setPack); }, [slug]);
 
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setC(data));
@@ -44,7 +47,9 @@ function CertDetail() {
       .then(({ data }) => setEnrolled(!!data));
   }, [user, c?.id]);
 
-  const baseModules = useMemo(() => normalizeModules(c?.modules), [c]);
+  const baseModules = useMemo(() => normalizeModules(c?.modules).map((m, i) => ({
+    ...m, body: pack?.bodies[i] ?? m.body, minutes: pack?.minutes[i] ?? m.minutes,
+  })), [c, pack]);
   const modules = useMemo(() => {
     if (!translation) return baseModules;
     return baseModules.map((m: any, i: number) => {

@@ -100,6 +100,14 @@ export function LessonChecks({
                   </div>
                   <div className="mt-1 font-display text-lg font-extrabold tracking-tight">{m.title}</div>
                   {m.learned && <p className="mt-1 text-sm text-muted-foreground">{m.learned}</p>}
+                  {m.body && (
+                    <details className="group mt-3">
+                      <summary className="cursor-pointer select-none text-sm font-semibold text-emerald-700 hover:underline">
+                        <span className="group-open:hidden">Read the lesson</span><span className="hidden group-open:inline">Hide the lesson</span>
+                      </summary>
+                      <LessonBody text={m.body} />
+                    </details>
+                  )}
                 </div>
                 <div className="flex shrink-0 items-center gap-2">
                   {done[i] && (
@@ -108,7 +116,7 @@ export function LessonChecks({
                     </span>
                   )}
                   <span className="flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground">
-                    <Clock className="h-3 w-3" /> {m.minutes ?? 12}m
+                    <Clock className="h-3 w-3" /> {m.minutes ? `${m.minutes}m` : "—"}
                   </span>
                 </div>
               </div>
@@ -195,5 +203,24 @@ export function LessonChecks({
         })}
       </div>
     </section>
+  );
+}
+
+/** Renders lesson text: blank-line paragraphs, "## " headings, "- " bullet lists. */
+function LessonBody({ text }: { text: string }) {
+  const blocks = text.trim().split(/\n\s*\n/);
+  return (
+    <div className="mt-3 space-y-3 text-[14.5px] leading-relaxed text-foreground/90">
+      {blocks.map((b, i) => {
+        const lines = b.split("\n").map((l) => l.trim()).filter(Boolean);
+        if (lines[0]?.startsWith("## ")) {
+          return <h4 key={i} className="pt-2 font-display text-base font-extrabold tracking-tight">{lines[0].slice(3)}</h4>;
+        }
+        if (lines.every((l) => l.startsWith("- "))) {
+          return <ul key={i} className="list-disc space-y-1 pl-5">{lines.map((l, j) => <li key={j}>{l.slice(2)}</li>)}</ul>;
+        }
+        return <p key={i}>{lines.join(" ")}</p>;
+      })}
+    </div>
   );
 }
