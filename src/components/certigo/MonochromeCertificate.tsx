@@ -22,20 +22,24 @@ export interface MonoCertProps {
   locale?: string;
   /** Small line under the certificate, e.g. "Translated copy". */
   footnote?: string;
+  /** Facts printed in the assessment strip. */
+  moduleCount?: number;
+  hours?: number;
 }
 
 export interface CertLabels {
   certify: string; completed: string; skills: string; ref: string;
   issued: string; status: string; passed: string; office: string;
+  assessment: string; exam: string; modules: string; hours: string; verify: string; number: string;
 }
 
 /** Certificate wording. English is the official record; other languages are translated copies. */
 export const CERT_LABELS: Record<"en" | "fr" | "es" | "pt" | "ar", CertLabels & { note: string }> = {
-  en: { certify: "This is to certify that", completed: "has successfully completed", skills: "Skills applied in the real professional world", ref: "Credential Ref", issued: "Issued", status: "Status", passed: "Passed", office: "CERTIGO Certification Office", note: "" },
-  fr: { certify: "Nous certifions que", completed: "a suivi avec succès", skills: "Compétences appliquées dans le monde professionnel", ref: "Référence du certificat", issued: "Délivré le", status: "Statut", passed: "Réussi", office: "Bureau de certification CERTIGO", note: "Copie traduite — la version anglaise constitue le document officiel." },
-  es: { certify: "Se certifica que", completed: "ha completado con éxito", skills: "Competencias aplicadas en el mundo profesional", ref: "Referencia de la credencial", issued: "Emitido el", status: "Estado", passed: "Aprobado", office: "Oficina de Certificación CERTIGO", note: "Copia traducida: la versión en inglés es el documento oficial." },
-  pt: { certify: "Certifica-se que", completed: "concluiu com êxito", skills: "Competências aplicadas no mundo profissional", ref: "Referência da credencial", issued: "Emitido em", status: "Estado", passed: "Aprovado", office: "Gabinete de Certificação CERTIGO", note: "Cópia traduzida — a versão em inglês é o documento oficial." },
-  ar: { certify: "نشهد بأن", completed: "قد أتمّ بنجاح", skills: "مهارات مطبّقة في العالم المهني", ref: "المرجع الرسمي للشهادة", issued: "تاريخ الإصدار", status: "الحالة", passed: "ناجح", office: "مكتب الشهادات في CERTIGO", note: "نسخة مترجمة — النسخة الإنجليزية هي الوثيقة الرسمية." },
+  en: { certify: "This is to certify that", completed: "has successfully completed", skills: "Skills assessed", ref: "Credential reference", issued: "Issued", status: "Status", passed: "Passed", office: "CERTIGO Certification Office", assessment: "Assessment", exam: "Online examination", modules: "Modules", hours: "Learning hours", verify: "Scan or visit to verify", number: "Certificate No.", note: "" },
+  fr: { certify: "Nous certifions que", completed: "a suivi avec succès", skills: "Compétences évaluées", ref: "Référence du certificat", issued: "Délivré le", status: "Statut", passed: "Réussi", office: "Bureau de certification CERTIGO", assessment: "Évaluation", exam: "Examen en ligne", modules: "Modules", hours: "Heures de formation", verify: "Scannez ou visitez pour vérifier", number: "Certificat n°", note: "Copie traduite — la version anglaise constitue le document officiel." },
+  es: { certify: "Se certifica que", completed: "ha completado con éxito", skills: "Competencias evaluadas", ref: "Referencia de la credencial", issued: "Emitido el", status: "Estado", passed: "Aprobado", office: "Oficina de Certificación CERTIGO", assessment: "Evaluación", exam: "Examen en línea", modules: "Módulos", hours: "Horas de formación", verify: "Escanee o visite para verificar", number: "Certificado n.º", note: "Copia traducida: la versión en inglés es el documento oficial." },
+  pt: { certify: "Certifica-se que", completed: "concluiu com êxito", skills: "Competências avaliadas", ref: "Referência da credencial", issued: "Emitido em", status: "Estado", passed: "Aprovado", office: "Gabinete de Certificação CERTIGO", assessment: "Avaliação", exam: "Exame online", modules: "Módulos", hours: "Horas de formação", verify: "Digitalize ou visite para verificar", number: "Certificado n.º", note: "Cópia traduzida — a versão em inglês é o documento oficial." },
+  ar: { certify: "نشهد بأن", completed: "قد أتمّ بنجاح", skills: "المهارات المُقيَّمة", ref: "المرجع الرسمي للشهادة", issued: "تاريخ الإصدار", status: "الحالة", passed: "ناجح", office: "مكتب الشهادات في CERTIGO", assessment: "التقييم", exam: "امتحان عبر الإنترنت", modules: "الوحدات", hours: "ساعات التعلّم", verify: "امسح الرمز أو زر الرابط للتحقق", number: "رقم الشهادة", note: "نسخة مترجمة — النسخة الإنجليزية هي الوثيقة الرسمية." },
 };
 
 export const MONO_OPTIONS: { key: MonoVariant; label: string; hint: string }[] = [
@@ -99,7 +103,7 @@ function OfficeSeal({ label }: { label: string }) {
     <div className="relative flex flex-col items-center">
       <div className="relative h-20 w-20"><DigitalStamp /></div>
       <div className="mt-2 h-px w-64 bg-neutral-900/80" />
-      <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-700">{label}</div>
+      <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.16em] text-neutral-800">{label}</div>
     </div>
   );
 }
@@ -153,6 +157,12 @@ function MetaRow({ id, date, verifyUrl }: { id: string; date: string; score?: nu
 function Variant01(p: MonoCertProps) {
   const L = { ...CERT_LABELS.en, ...p.labels };
   const verifyUrl = p.verifyUrl ?? (typeof window !== "undefined" ? `${window.location.origin}/verify/${p.certificateId}` : `/verify/${p.certificateId}`);
+  const verifyText = verifyUrl.replace(/^https?:\/\//, "");
+  const label = "font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500";
+  const value = "mt-1 font-mono text-[12px] uppercase tracking-[0.1em] text-neutral-900";
+  const facts: Array<[string, string]> = [[L.assessment, L.exam]];
+  if (p.moduleCount) facts.push([L.modules, String(p.moduleCount)]);
+  if (p.hours) facts.push([L.hours, String(p.hours)]);
   return (
     <div dir={p.dir ?? "ltr"} className="relative aspect-[1.414/1] w-full overflow-hidden bg-white text-neutral-900 ring-2 ring-neutral-900">
       {/* corner crops */}
@@ -164,78 +174,81 @@ function Variant01(p: MonoCertProps) {
 
       <div className="relative flex h-full flex-col px-16 py-12">
         <header className="flex items-start justify-between">
-          <div className="font-display text-lg font-black tracking-tighter text-neutral-900">
-            <Wordmark />
-          </div>
-          <div className="text-right">
-            <div className="font-display text-sm font-black uppercase tracking-widest text-neutral-900">
-              <Wordmark />
-            </div>
-            <div className="mt-1 font-mono text-[9px] uppercase tracking-[0.32em] text-neutral-500">
-              No. {p.certificateId}
-            </div>
+          <div className="font-display text-xl font-black tracking-tighter text-neutral-900"><Wordmark /></div>
+          <div className="text-end">
+            <div className={label}>{L.number}</div>
+            <div className="mt-1 font-mono text-[14px] font-bold tracking-[0.08em] text-neutral-900">{p.certificateId}</div>
           </div>
         </header>
 
-        <div className="mt-12 font-mono text-[10px] uppercase tracking-[0.45em] text-neutral-500">
-          {L.certify}
-        </div>
-        <h2 className="mt-3 font-display text-5xl font-black leading-tight tracking-tight">
-          {p.recipientName}
-        </h2>
+        <div className="flex flex-1 flex-col justify-center py-4">
+        <div className={label}>{L.certify}</div>
+        <h2 className="mt-2 font-display text-[56px] font-black leading-tight tracking-tight">{p.recipientName}</h2>
 
-        <div className="mt-8 max-w-3xl font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-          {L.completed}
-        </div>
-        <div className="mt-2 font-display text-2xl font-bold tracking-tight">
-          {p.courseTitle}
-        </div>
+        <div className={"mt-6 " + label}>{L.completed}</div>
+        <div className="mt-1.5 font-display text-[30px] font-bold leading-snug tracking-tight">{p.courseTitle}</div>
         {p.description && (
-          <p className="mt-4 max-w-2xl text-[12px] leading-relaxed text-neutral-600">
-            {p.description}
-          </p>
+          <p className="mt-2 max-w-3xl text-[13px] leading-relaxed text-neutral-600">{p.description}</p>
         )}
 
-        {p.skills && p.skills.length > 0 && (
-          <div className="mt-6 border-y border-neutral-900/10 py-3">
-            <div className="font-mono text-[9px] uppercase tracking-[0.34em] text-neutral-400">
-              {L.skills}
-            </div>
-            <div className="mt-2 flex flex-wrap gap-2">
-              {p.skills.slice(0, 8).map((s) => (
-                <span
-                  key={s}
-                  className="rounded-sm bg-neutral-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-neutral-800"
-                >
-                  {s}
-                </span>
-              ))}
-            </div>
+        <div className="mt-7 grid grid-cols-12 gap-6 border-y border-neutral-900/10 py-4">
+          <div className="col-span-6">
+            {p.skills && p.skills.length > 0 && (
+              <>
+                <div className={label}>{L.skills}</div>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {p.skills.slice(0, 8).map((s) => (
+                    <span key={s} className="rounded-sm bg-neutral-100 px-2.5 py-1 font-mono text-[12px] font-bold tracking-[0.02em] text-neutral-800">{s}</span>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
-        )}
+          <div className="col-span-6 grid grid-cols-[1.5fr_1fr_1fr] gap-4">
+            {facts.map(([k, v]) => (
+              <div key={k}><div className={label}>{k}</div><div className={value + " normal-case"}>{v}</div></div>
+            ))}
+          </div>
+        </div>
+        </div>
 
-        <div className="mt-auto pt-10">
+        <div className="pt-2">
           <div className="flex items-end justify-between">
-            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-              <div className="text-[8px] tracking-[0.4em] text-neutral-400">{L.ref}</div>
-              <div className="mt-1 text-neutral-800"><Wordmark /> {p.certificateId}</div>
-              <div className="mt-3">
-                <VerifyQR url={verifyUrl} dataUrl={p.qrDataUrl} size={68} align="left" />
+            <div className="flex items-end gap-3">
+              <div className="rounded-[2px] bg-white p-1 ring-1 ring-neutral-900/10" style={{ width: 76, height: 76 }}>
+                <QRImage url={verifyUrl} dataUrl={p.qrDataUrl} size={76} />
+              </div>
+              <div>
+                <div className={label}>{L.verify}</div>
+                <div className="mt-1 font-mono text-[11px] tracking-[0.02em] text-neutral-900">{verifyText}</div>
               </div>
             </div>
             <OfficeSeal label={L.office} />
-            <div className="text-end font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-              <div className="text-[8px] tracking-[0.4em] text-neutral-400">{L.issued}</div>
-              <div className="mt-1 text-neutral-800">{fmtDate(p.issueDate, p.locale)}</div>
-              <div className="mt-3 text-[8px] tracking-[0.4em] text-neutral-400">{L.status}</div>
-              <div className="mt-1 font-bold text-emerald-700">{L.passed}</div>
+            <div className="text-end">
+              <div className={label}>{L.issued}</div>
+              <div className={value}>{fmtDate(p.issueDate, p.locale)}</div>
+              <div className={"mt-3 " + label}>{L.status}</div>
+              <div className="mt-1 font-mono text-[13px] font-bold uppercase tracking-[0.14em] text-emerald-700">{L.passed}</div>
             </div>
           </div>
-          {p.footnote && <div className="mt-4 text-center text-[10px] text-neutral-500">{p.footnote}</div>}
+          {p.footnote && <div className="mt-3 text-center text-[11px] text-neutral-500">{p.footnote}</div>}
         </div>
       </div>
     </div>
   );
+}
+
+/** Bare QR image (no caption). */
+function QRImage({ url, dataUrl, size }: { url: string; dataUrl?: string; size: number }) {
+  const [src, setSrc] = useState<string>(dataUrl ?? "");
+  useEffect(() => {
+    if (dataUrl) { setSrc(dataUrl); return; }
+    let live = true;
+    QRCode.toDataURL(url, { errorCorrectionLevel: "M", margin: 0, color: { dark: "#0a0a0a", light: "#ffffff00" }, width: size * 4 })
+      .then((d) => { if (live) setSrc(d); }).catch(() => {});
+    return () => { live = false; };
+  }, [url, dataUrl, size]);
+  return src ? <img src={src} alt="" className="h-full w-full object-contain" /> : null;
 }
 
 /* ───────────────────────── Variant 02 — Editorial Serif ───────────────────────── */

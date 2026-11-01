@@ -61,9 +61,8 @@ function VerifyQR({ url, size = 96, dataUrl }: { url: string; size?: number; dat
       <div className="rounded-[2px] bg-white p-1 ring-1 ring-neutral-900/10" style={{ width: size, height: size }}>
         {src ? <img src={src} alt="" className="h-full w-full object-contain" /> : null}
       </div>
-      <div className="flex items-center gap-1.5 whitespace-nowrap font-mono text-[7.5px] uppercase tracking-[0.16em] text-neutral-700">
-        <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600" />
-        Verified · <Wordmark /> Registry
+      <div className="flex items-center gap-1.5 whitespace-nowrap font-mono text-[8px] uppercase tracking-[0.16em] text-neutral-700">
+        Scan to verify
       </div>
     </div>
   );
@@ -88,17 +87,17 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         {/* Masthead */}
         <header className="flex items-start justify-between border-b border-neutral-900 pb-5">
           <div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.45em] text-neutral-500">
+            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
               <Wordmark /> Certification Office
             </div>
             <h1 className="mt-3 font-display text-4xl font-black tracking-tight">
               Official Transcript
             </h1>
           </div>
-          <div className="text-right font-mono text-[10px] uppercase tracking-[0.32em] text-neutral-500">
-            <div className="text-[8px] tracking-[0.4em] text-neutral-400">Document</div>
+          <div className="text-right font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
+            <div className="text-[9px] tracking-[0.2em] text-neutral-400">Document</div>
             <div className="mt-1 text-neutral-800">Transcript · No. {p.certificateId}</div>
-            <div className="mt-2 text-[8px] tracking-[0.4em] text-neutral-400">Issued</div>
+            <div className="mt-2 text-[9px] tracking-[0.2em] text-neutral-400">Issued</div>
             <div className="mt-1 text-neutral-800">{fmtDate(p.issueDate)}</div>
           </div>
         </header>
@@ -106,16 +105,16 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         {/* Recipient + programme */}
         <section className="mt-5 grid grid-cols-12 gap-6">
           <div className="col-span-7">
-            <div className="font-mono text-[9px] uppercase tracking-[0.4em] text-neutral-500">Conferred upon</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-500">Conferred upon</div>
             <div className="mt-1 font-display text-3xl font-black tracking-tight">
               {p.recipientName}
             </div>
           </div>
           <div className="col-span-5">
-            <div className="font-mono text-[9px] uppercase tracking-[0.4em] text-neutral-500">Programme</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-500">Programme</div>
             <div className="mt-1 font-display text-base font-bold leading-snug">{p.programmeTitle}</div>
             {p.cohort && (
-              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.28em] text-neutral-500">
+              <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.2em] text-neutral-500">
                 Cohort · {p.cohort}
               </div>
             )}
@@ -176,25 +175,25 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         {/* Verified metadata strip */}
         <section className="mt-4 grid grid-cols-12 gap-4 rounded-md border border-neutral-200 bg-neutral-50 px-4 py-3">
           <div className="col-span-3">
-            <div className="font-mono text-[8px] uppercase tracking-[0.28em] text-neutral-400">Issuer</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Issuer</div>
             <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800">
               <Wordmark />
             </div>
           </div>
           <div className="col-span-3">
-            <div className="font-mono text-[8px] uppercase tracking-[0.28em] text-neutral-400">Issuing office</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Issuing office</div>
             <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800">
               Certification Office
             </div>
           </div>
           <div className="col-span-3">
-            <div className="font-mono text-[8px] uppercase tracking-[0.28em] text-neutral-400">Assessment</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Assessment</div>
             <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800">
               Online examination
             </div>
           </div>
           <div className="col-span-3">
-            <div className="font-mono text-[8px] uppercase tracking-[0.28em] text-neutral-400">Status</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Status</div>
             <div className="mt-1 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-600" /> Verified · live
             </div>
@@ -204,7 +203,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
         {/* Footer: signature + QR */}
         <footer className="mt-auto grid grid-cols-12 items-end gap-4 pt-5">
           <div className="col-span-5">
-            <div className="font-mono text-[8px] uppercase tracking-[0.28em] text-neutral-400">Credential Ref</div>
+            <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-400">Credential Ref</div>
             <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.18em] text-neutral-800"><Wordmark /> {p.certificateId}</div>
             <div className="mt-2 max-w-[240px] text-[9.5px] leading-snug text-neutral-500">
               This transcript is registered in the public CERTIGO. registry.
@@ -213,7 +212,7 @@ export function MonochromeTranscript(p: MonoTranscriptProps) {
           </div>
           <div className="col-span-4 flex flex-col items-center">
             <div className="h-px w-full bg-neutral-900/80" />
-            <div className="mt-2 whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.2em] text-neutral-700">
+            <div className="mt-2 whitespace-nowrap font-mono text-[9px] uppercase tracking-[0.14em] text-neutral-700">
               CERTIGO Certification Office
             </div>
           </div>

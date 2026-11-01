@@ -120,6 +120,8 @@ export function buildCertificateDocument(
     certificateId: rec.serial,
     verifyUrl,
     skills: certificateSkills(rec),
+    description: rec.summary ? firstSentence(rec.summary) : undefined,
+    moduleCount: rec.modules.length || undefined,
   };
   const lang = (opts.lang ?? "en") as DocLang;
   const second: CertificateProps | undefined =
@@ -134,6 +136,8 @@ export function buildCertificateDocument(
         }
       : undefined;
   const rows = transcriptRows(rec);
+  const hours = Math.round(rows.reduce((s, m) => s + (m.hours || 0), 0) * 10) / 10;
+  if (rec.modules.length && hours) { base.hours = hours; if (second) second.hours = hours; }
   const transcript: TranscriptProps | null = rows.length
     ? {
         recipientName: rec.recipient_name,

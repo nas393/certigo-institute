@@ -18,6 +18,9 @@ export const TRANSCRIPT_SIZE = { w: 794, h: 1123 }; // A4 portrait at 96 dpi
 
 interface Page { orientation: "landscape" | "portrait"; image: string }
 
+/** 4× = about 380 dpi on A4, so text stays sharp when zoomed or printed. */
+const RENDER_SCALE = 4;
+
 async function renderNode(node: ReactElement, w: number, h: number): Promise<string> {
   const host = document.createElement("div");
   host.style.cssText = `position:fixed;left:-100000px;top:0;width:${w}px;height:${h}px;background:#fff;pointer-events:none;`;
@@ -30,10 +33,10 @@ async function renderNode(node: ReactElement, w: number, h: number): Promise<str
     await Promise.all(Array.from(host.querySelectorAll("img")).map((img) =>
       img.complete ? null : new Promise((r) => { img.onload = img.onerror = r; })));
     const canvas = await html2canvas(host, {
-      backgroundColor: "#ffffff", scale: 2, useCORS: true,
+      backgroundColor: "#ffffff", scale: RENDER_SCALE, useCORS: true,
       width: w, height: h, windowWidth: w, windowHeight: h,
     });
-    return canvas.toDataURL("image/jpeg", 0.95);
+    return canvas.toDataURL("image/jpeg", 0.92);
   } finally {
     root.unmount();
     host.remove();
@@ -66,6 +69,12 @@ export async function buildCertificatePdf(doc: CertificateDocument): Promise<jsP
     if (i > 0) pdf.addPage("a4", p.orientation);
     const [w, h] = p.orientation === "landscape" ? [297, 210] : [210, 297];
     pdf.addImage(p.image, "JPEG", 0, 0, w, h, undefined, "FAST");
+    // Invisible text layer: makes the PDF searchable and lets readers copy the key facts.
+    pdf.setFontSize(8);
+    pdf.text([doc.certificate.recipientName, doc.certificate.courseTitle, `Certificate No. ${doc.serial}`, doc.verifyUrl].join("\n"), 10, 10, { renderingMode: "invisible" } as any);
+    // The QR area and verify line open the verification page when clicked.
+    if (p.orientation === "landscape") pdf.link(14, 160, 110, 34, { url: doc.verifyUrl });
+    else pdf.link(150, 245, 50, 45, { url: doc.verifyUrl });
   });
   pdf.setProperties({ title: `CERTIGO certificate ${doc.serial}`, subject: doc.verifyUrl, creator: "CERTIGO" });
   return pdf;
