@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SUPPORT_EMAIL } from "@/lib/site-config";
 import { useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
@@ -7,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Send, Building2 } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -20,14 +22,19 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const [busy, setBusy] = useState(false);
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formEl = e.currentTarget;
+    const f = new FormData(formEl);
+    const v = (k: string) => String(f.get(k) ?? "");
     setBusy(true);
-    setTimeout(() => {
-      setBusy(false);
-      toast.success("Message sent — we'll respond within 1 business day.");
-      (e.target as HTMLFormElement).reset();
-    }, 600);
+    const { error } = await (supabase as any).rpc("submit_contact", {
+      _name: v("name"), _email: v("email"), _company: v("company"), _role: v("role"), _message: v("message"),
+    });
+    setBusy(false);
+    if (error) return toast.error(error.message);
+    toast.success("Message sent. We'll get back to you by email.");
+    formEl.reset();
   };
   return (
     <div className="min-h-screen bg-background">
@@ -40,7 +47,7 @@ function ContactPage() {
             Talk to a real <span className="gradient-text">credentials team.</span>
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-            Sales, security review, partnerships or general questions — we read every message and reply within one business day.
+            Sales, security review, partnerships or general questions. We read every message.
           </p>
         </div>
       </section>
@@ -49,10 +56,9 @@ function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           <aside className="space-y-4">
             {[
-              { icon: Mail, t: "Email", d: "hello@certigo.institute" },
+              { icon: Mail, t: "Email", d: SUPPORT_EMAIL ?? "Use the form on this page" },
               { icon: Building2, t: "Enterprise", d: "Dedicated onboarding & SLAs" },
-              { icon: Send, t: "Response time", d: "Within 1 business day" },
-            ].map(({ icon: Icon, ...c }) => (
+                          ].map(({ icon: Icon, ...c }) => (
               <div key={c.t} className="rounded-xl border border-border bg-card p-5">
                 <div className="flex items-center gap-3">
                   <span className="grid h-9 w-9 place-items-center rounded-lg gradient-hero text-white">

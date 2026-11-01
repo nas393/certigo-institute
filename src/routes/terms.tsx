@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { LEGAL_EMAIL } from "@/lib/site-config";
+import { ContactLine } from "@/components/ContactLine";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
 
@@ -29,7 +31,7 @@ function TermsPage() {
         <Section title="6. Liability">To the maximum extent permitted by law, our aggregate liability is limited to fees paid in the 12 months preceding the claim.</Section>
         <Section title="7. Term &amp; termination">Either party may terminate for material breach with 30 days' notice. Credential verification URLs remain available for the credential lifetime where commercially reasonable.</Section>
         <Section title="8. Governing law">These terms are governed by the laws applicable at the registered seat of CERTIGO. Institute.</Section>
-        <Section title="9. Contact">legal@certigo.institute</Section>
+        <Section title="9. Contact"><ContactLine email={LEGAL_EMAIL} /></Section>
       </article>
       <Footer />
     </div>

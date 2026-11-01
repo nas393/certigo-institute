@@ -4,6 +4,7 @@ import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { useIsAdmin } from "@/lib/use-admin";
+import { ContactInbox } from "@/components/admin/ContactInbox";
 import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,7 +42,7 @@ type Stats = {
   courses: number; learners: number; enrollments: number; attempts: number;
   certificates: number; revoked: number; verifications: number; active_codes: number; avg_price_cents: number;
 };
-type Tab = "courses" | "pricing" | "codes";
+type Tab = "courses" | "pricing" | "codes" | "messages";
 
 const blank = {
   slug: "", title: "", category: "", summary: "",
@@ -213,7 +214,7 @@ function AdminPanel() {
         )}
 
         <div className="mt-8 flex flex-wrap gap-2">
-          {([["courses", "Courses & results"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"]] as Array<[Tab, string]>).map(([id, label]) => (
+          {([["courses", "Courses & results"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"], ["messages", "Messages"]] as Array<[Tab, string]>).map(([id, label]) => (
             <button
               key={id}
               onClick={() => setTab(id)}
@@ -229,6 +230,12 @@ function AdminPanel() {
         {tab === "pricing" && (
           <div className="mt-8">
             <PricingTools categories={categories} onDone={load} />
+          </div>
+        )}
+
+        {tab === "messages" && (
+          <div className="mt-8">
+            <ContactInbox />
           </div>
         )}
 

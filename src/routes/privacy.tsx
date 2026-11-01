@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { PRIVACY_EMAIL } from "@/lib/site-config";
+import { ContactLine } from "@/components/ContactLine";
 import { Header } from "@/components/kredo/Header";
 import { Footer } from "@/components/saas/Footer";
 
@@ -34,7 +36,7 @@ function PrivacyPage() {
           A current list of sub-processors is available on request. We notify customers in advance of material changes.
         </Section>
         <Section title="5. Your rights">
-          You may request access, rectification, erasure, portability or restriction of processing at any time by emailing privacy@certigo.institute.
+          You may request access, rectification, erasure, portability or restriction of processing at any time through <ContactLine email={PRIVACY_EMAIL} />.
         </Section>
         <Section title="6. Retention">
           Credential records are retained for the lifetime of the credential to enable verification. Account data is retained while your account is active and for 12 months thereafter.
@@ -43,7 +45,7 @@ function PrivacyPage() {
           We rely on Standard Contractual Clauses for transfers outside the EEA / UK and offer EU data residency on request.
         </Section>
         <Section title="8. Contact">
-          privacy@certigo.institute
+          <ContactLine email={PRIVACY_EMAIL} />
         </Section>
       </article>
       <Footer />
