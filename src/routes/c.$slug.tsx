@@ -54,7 +54,7 @@ function CertDetail() {
   }, [user, c?.id]);
 
   const baseModules = useMemo(() => normalizeModules(c?.modules).map((m, i) => ({
-    ...m, body: pack?.bodies[i] ?? m.body, minutes: pack?.minutes[i] ?? m.minutes,
+    ...m, body: pack?.bodies[i] ?? m.body, minutes: pack?.minutes[i] ?? m.minutes, slides: pack?.slides?.[i],
   })), [c, pack]);
   const modules = useMemo(() => {
     if (!translation) return baseModules;

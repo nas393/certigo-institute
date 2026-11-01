@@ -2,7 +2,9 @@
  * Full lesson texts, one JSON file per course slug (lessons are free and public).
  * Exam questions and answers are NOT here: they live only in the database.
  */
-export interface LessonPack { slug: string; minutes: number[]; bodies: string[] }
+import type { Slide } from "@/components/course/LessonSlides";
+
+export interface LessonPack { slug: string; minutes: number[]; bodies: string[]; slides?: Slide[][] }
 
 const packs = import.meta.glob<{ default: LessonPack }>("./*.json");
 

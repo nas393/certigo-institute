@@ -1,0 +1,417 @@
+=== 12
+SLIDE Your job has changed | You are measured by what your team achieves, not by what you produce yourself; Doing the work yourself feels productive but leaves the team under-used; Your new output is a team that delivers without you in every detail | Success = the team's results
+SLIDE Your three jobs | Make the goal clear: what good looks like and why it matters; Remove obstacles the team cannot solve alone; Grow people with stretching work and useful feedback | Clarity, obstacles, growth
+SLIDE Your first 30 days | Meet every team member one to one; Ask what helps them and what gets in the way; Act visibly on at least one thing you heard; Understand before you change | Listen first, then act
+SLIDE Delegation has four parts | Outcome: what finished looks like; Deadline: when it is due; Decision authority: what they decide alone; Check-ins: when you review together | Agree all four up front
+SLIDE Match support to experience | New task: show an example and check in often; Familiar task: agree the result and step back; Increase autonomy as they prove it | Support follows experience
+SLIDE Traps to avoid | Taking work back at the first problem; Delegating only boring tasks; Giving responsibility without authority or information | Delegate ownership, not just tasks
+BODY
+The day you become a manager, the way your work is judged changes. Until now you were measured by your own output: the reports you wrote, the sales you closed, the problems you fixed. From now on you are measured by what your team achieves. This sounds obvious, but it is the shift most new managers struggle with, because the habits that made them good at their old job now work against them.
+
+## Why doing it yourself feels right, and why it fails
+
+Most people are promoted because they were very good at the work. So when a deadline is tight or a task is going badly, the natural instinct is to step in and do it yourself. It feels productive, and in the short term it often is. But every time you do the work of someone in your team, three things happen. You lose time you should be spending on managing. Your team member loses the chance to learn. And the team learns that if they wait long enough, you will do it for them. After a few months you are exhausted, the team is under-used, and the results depend entirely on how many hours you can work.
+
+The goal is the opposite: a team that can deliver good results even when you are not looking at every detail. That is your real output now.
+
+## Your three core jobs
+
+It helps to think of management as three jobs.
+
+- Make the goal clear. Everyone in the team should know what good work looks like, what the priorities are, and why they matter. Confusion about goals is the single most common cause of wasted effort.
+- Remove obstacles. Some problems your team cannot solve alone: a decision that needs your authority, a missing resource, a conflict with another department. Clearing these is one of the most valuable things you can do.
+- Grow people. Give each person work that stretches them a little, and feedback that helps them improve. A team that keeps getting better is the best long-term result a manager can produce.
+
+When you are unsure what to do with your time, ask which of these three jobs needs attention most.
+
+## Building trust in your first weeks
+
+People decide very quickly whether they trust a new manager. Trust grows when people see you do what you say, treat them fairly and listen before you judge. In your first weeks:
+
+- Meet every team member individually. Ask what helps them do good work, what gets in the way, and what they would change if they were in your place.
+- Act visibly on at least one thing you heard. It does not need to be big. Fixing a small, long-standing annoyance shows that speaking up is worth it.
+- Be honest about what you do not know yet. Pretending to know everything damages trust faster than admitting you are still learning.
+- Avoid changing everything at once. Processes often exist for reasons you cannot see on day one. Understand why things are done a certain way before you change them.
+
+If you were promoted from within the team, there is an extra challenge: your former peers now report to you. Acknowledge this openly. Explain that your role has changed and that you will need to make decisions they may not always like, and that you will be fair and transparent when you do.
+
+## Delegation: the core skill
+
+Delegation is how your team's capacity grows beyond your own. But delegation is not simply handing over tasks you do not want. Done badly, it creates confusion, rework and frustration. Done well, it develops people and frees you to manage.
+
+Good delegation agrees four things up front:
+
+- The outcome. What does finished look like? Show an example if you have one. "Prepare the stock report" is vague; "a one-page summary of stock by warehouse, with any item below safety stock highlighted" is clear.
+- The deadline. When is it due, and is there any flexibility?
+- The decision authority. What can the person decide alone, and what needs your input? For example: "You can correct small data errors yourself, but flag any difference above 5%."
+- The check-in points. When will you look at progress together? Agreeing this in advance means your check-ins feel like support, not suspicion.
+
+## Matching support to experience
+
+How closely you support someone should depend on their experience with that specific task, not on their seniority or your general opinion of them. A very experienced person doing something new for the first time needs more support on that task; a junior person who has done a task many times needs very little.
+
+For a new task, show a finished example, walk through the first one together and check in more often. As the person proves they can do it, step back: agree the result and let them choose the method. The aim is to increase their autonomy step by step until the task is fully theirs.
+
+## A worked example
+
+A supervisor in a food distribution company used to prepare the weekly stock report herself every Friday afternoon. It took three hours and kept her from visiting customers. She decided to delegate it to a team member who was good with spreadsheets but had never prepared the report.
+
+She agreed the outcome by showing him two previous reports and explaining who reads them and what they look for. She set the deadline: Thursday at 6 p.m., so she had time to review it before the Friday meeting. She defined his decision authority: he could fix obvious data entry errors himself, but should flag any stock difference above 5% to her before finalising. And she agreed check-ins: they would review the first two reports together line by line.
+
+The first report had several mistakes, which they fixed together. The second had one. By the fourth week she only read the summary page. She had recovered three hours a week, and he had learned a skill that made him more valuable to the company.
+
+## Common mistakes
+
+- Taking work back at the first problem. When something goes wrong, help the person fix it, but let them keep ownership. Taking it back teaches them to wait for you.
+- Delegating only boring tasks. If you keep all the interesting work for yourself, people will not grow and will lose motivation.
+- Giving responsibility without authority. Asking someone to deliver a result without the information, access or decision rights they need sets them up to fail.
+- Delegating without agreeing the outcome. If you have a picture of the result in your head but never share it, you will be disappointed and they will be confused.
+
+## Try it
+
+List three tasks you still do yourself that someone in your team could learn. Choose one. Write down the outcome, the deadline, the decision authority and the check-in points you would agree. Then have the conversation this week.
+=== 12
+SLIDE Too many priorities = none | Most teams can focus on 3 to 5 goals at a time; More than that and everything competes; Ask: if we achieve only three things, which matter most? | Fewer goals, more results
+SLIDE Write goals that can be measured | Say what will change, by how much, and by when; "Improve service" is a wish; "Answer 90% of emails within 24 hours by March" is a goal | Result + number + date
+SLIDE One owner per goal | Shared ownership often means no ownership; The owner is responsible for progress, not doing all the work; Others contribute; one person answers for it | Every goal has a name next to it
+SLIDE Explain the why | Link team goals to the company's targets; Show how each person's work contributes; If you can't explain why, question the goal | Purpose drives commitment
+SLIDE Saying no is part of prioritising | Compare every new request with current goals; If it matters more, agree what moves; If not, explain why it waits | Priorities need trade-offs
+SLIDE Traps to avoid | Writing activities instead of outcomes; Changing priorities every week; Setting goals without checking capacity | Stable, realistic, outcome-based
+BODY
+A team can work very hard and still achieve little if it is working on the wrong things. One of a manager's most important jobs is to take broad direction from above, such as "grow sales" or "improve customer satisfaction", and turn it into a small number of clear goals that the team can act on every day.
+
+## Why fewer goals work better
+
+Most teams can genuinely focus on three to five goals at a time. Beyond that, goals start competing for the same time and attention, and people quietly decide for themselves which ones matter. The result is effort spread thinly across many things and few of them finished.
+
+A useful exercise is to ask: if we could only achieve three things this quarter, which three would make the biggest difference? The answer is usually clearer than you expect. Everything else is not forgotten, but it becomes second priority, and the team knows that when there is a conflict, the top goals win.
+
+## Writing goals that can be measured
+
+A useful goal says what will change, by how much, and by when. Compare these:
+
+- "Improve customer service." This is a wish. Nobody can tell whether it has been achieved.
+- "Answer 90% of customer emails within 24 hours by the end of March." This is a goal. Everyone knows what success looks like and can see progress each week.
+
+When you write a goal, check that it describes an outcome rather than an activity. "Make 50 calls a week" is an activity; "sign five new accounts this quarter" is an outcome. Activities can be useful as part of the plan to reach a goal, but the goal itself should describe the result you want. Otherwise people can complete every activity and still miss the point.
+
+Also check that the goal is realistic. A goal that the team believes is impossible does not motivate; it gets ignored. Stretching is good, but people need to believe they have a real chance of success.
+
+## One owner for every goal
+
+Each goal needs one named owner. The owner is not necessarily the person who does all the work; they are the person who tracks progress, raises problems early and answers for the result. When a goal is "owned by the team", it is often owned by nobody: everyone assumes someone else is watching it.
+
+Write the owner's name next to every goal and review progress with that person regularly.
+
+## Connecting goals to the bigger picture
+
+People commit more to goals when they understand why they matter. Explain how the team's goals support the company's targets: for example, how reducing overdue invoices improves cash flow, which allows the company to buy stock and serve customers. Then help each person see how their own work contributes.
+
+If you cannot explain why a goal matters, that is a warning sign. It may be a goal inherited from the past that nobody has questioned, and it may be worth dropping.
+
+## Saying no and making trade-offs
+
+Setting priorities means deciding what you will not do, at least for now. This is where many managers struggle, because new requests arrive constantly from customers, colleagues and senior managers.
+
+When a new request arrives, compare it honestly with your current goals:
+
+- If it matters more than something already planned, accept it and agree openly what will be delayed or dropped. Tell the people affected.
+- If it does not matter more, explain why it will have to wait, and when you could look at it.
+
+Saying "yes" to everything is not helpful; it simply means that everything is done late or badly. A clear, polite "not now, and here's why" is far more professional.
+
+## Keeping goals visible
+
+Goals that are written once and filed away have little effect. Keep them visible: on a shared board, at the start of team meetings, in one-to-ones. A short weekly check, where each owner says whether their goal is on track, at risk or off track, keeps everyone focused and surfaces problems while there is still time to act.
+
+## A worked example
+
+A sales team in a distribution company had eleven different targets, set over the years by different managers: new accounts, repeat orders, visit numbers, overdue invoices, product launches, report deadlines and more. Weekly meetings took ninety minutes and nobody was sure which targets really mattered.
+
+The new manager reviewed them with her director and agreed four goals for the quarter: sign 12 new retail accounts, raise repeat orders from existing accounts by 10%, reduce invoices overdue by more than 60 days to below 5% of sales, and submit visit reports within 48 hours. She wrote each one with a number and a deadline, named an owner for each, and explained how each linked to the company's annual plan.
+
+Weekly meetings shrank to thirty minutes: each owner reported on track, at risk or off track, and the team spent the time on the goals at risk. By the end of the quarter, three of the four goals were met, and the team understood clearly why the fourth had slipped.
+
+## Common mistakes
+
+- Writing activities instead of outcomes, so people stay busy without achieving the result.
+- Changing priorities every week, so nothing is ever finished and people stop taking goals seriously.
+- Setting goals without checking that the team has the time, skills and resources to reach them.
+- Having goals without owners, or with several owners, so nobody feels responsible.
+
+## Try it
+
+Take one vague goal your team has today. Rewrite it so that it states a measurable result, a deadline and a single owner. Then check: does it describe an outcome or an activity? Is it realistic? Can you explain in one sentence why it matters?
+=== 12
+SLIDE What a 1:1 is for | A regular private meeting between you and one team member; Where problems surface early and trust grows; Not a status update that could have been an email | Their time to be heard
+SLIDE Their agenda first | Let them bring the topics; Your role: listen and ask good questions; Task status belongs in team meetings or trackers | It's their meeting
+SLIDE A simple structure | Their topics; Obstacles and how you can help; Development and growth; Agreements for next time | Topics, obstacles, growth, agreements
+SLIDE Rhythm matters | Weekly or every two weeks, at a fixed time; Protect it: cancelling sends a message; If you must move it, reschedule immediately | Reliability builds trust
+SLIDE Listen well | Ask open questions; Let short silences happen; Note agreements so you can follow up | Open questions, real listening
+SLIDE Traps to avoid | Turning it into your instruction list; Only meeting when something is wrong; Forgetting what was agreed | Consistent, two-way, followed up
+BODY
+A one-to-one, usually written 1:1, is a regular private meeting between a manager and one team member. It is one of the simplest and most powerful management tools available. Done well, it is where problems surface early, where trust is built and where people grow. Done badly, it becomes a weekly status report that could have been an email, and both people quietly dread it.
+
+## Why 1:1s matter
+
+Many issues never come up in team meetings. People are reluctant to raise concerns about workload, conflicts with colleagues, mistakes they are worried about or doubts about their career in front of others. A private, regular conversation with their manager gives them a safe space to do so. Managers who hold good 1:1s usually find out about problems weeks earlier than those who do not, when they are still small and easy to fix.
+
+1:1s also build the relationship. When people know they will have your full attention regularly, they trust you more and are more open with you.
+
+## It is their meeting
+
+The most important principle is that the 1:1 belongs mainly to the team member. Their topics come first: what is on their mind, what is blocking them, how they are feeling about their work. Your role is mostly to listen, ask good questions and help.
+
+This means 1:1s should not be used for routine task updates. Status information, such as which orders have shipped or how far a project has progressed, belongs in team meetings or shared trackers where everyone can see it. If your 1:1s are filled with status updates, there is no room left for the conversations that matter.
+
+## A simple structure
+
+A light structure helps both people prepare and keeps the meeting useful:
+
+- Their topics: "What's on your mind this week?" Let them lead.
+- Obstacles: "What's slowing you down, and what can I do about it?" This is where you can often add the most value by removing blockers.
+- Development: "What do you want to get better at, and what would help?" Not every week, but regularly.
+- Agreements: "What will each of us do before next time?" End with clear actions on both sides.
+
+Many managers keep a shared document for each person, where the team member adds topics before the meeting and both of you record agreements afterwards. This builds a useful history over time and makes follow-up easy.
+
+## Rhythm and reliability
+
+Hold 1:1s at a regular rhythm, typically weekly or every two weeks, for thirty minutes or so. Choose a fixed time so they become routine.
+
+Protect them. Cancelling 1:1s repeatedly sends a clear message: you are not a priority. If you genuinely must move one, reschedule it immediately rather than skipping it and waiting for the next slot. Being reliable about something as simple as a recurring meeting is one of the easiest ways to build trust.
+
+## Listening well
+
+Good 1:1s depend on good listening. A few habits help:
+
+- Ask open questions that cannot be answered with yes or no. "How is the new process working for you?" invites a real answer; "Is everything fine?" invites "yes".
+- Let short silences happen. People often say the most important thing after a pause, once they have decided it is safe to say it. Resist the urge to fill every silence.
+- Ask follow-up questions: "Tell me more about that", "What makes you say that?"
+- Do not rush to solve. Sometimes people want to think aloud or be heard before they want advice. You can ask: "Would it help if I suggested something, or do you want to think it through?"
+- Take brief notes of agreements so you can follow up next time.
+
+## When the conversation gets difficult
+
+Sometimes a 1:1 brings up something hard: a personal problem, a complaint about a colleague, frustration with you. Stay calm, thank them for raising it and focus on understanding before reacting. You do not have to solve everything on the spot. It is fine to say: "Thank you for telling me. Let me think about this and come back to you by Thursday." Then make sure you do.
+
+If someone shares something personal, respect their privacy and only share it with others if they agree or if there is a genuine safety or legal reason.
+
+## A worked example
+
+A warehouse team leader started holding 1:1s every two weeks with each of her eight team members. She kept a simple shared document for each person with three headings: your topics, actions agreed and development goals. Before each meeting, team members added the topics they wanted to discuss.
+
+In the first month, two people separately raised concerns about forklifts being driven too fast in a busy loading area, something nobody had ever mentioned in group meetings. She raised it with the operations manager, and a marked pedestrian zone was introduced. Another team member said he wanted to learn stock control; she arranged for him to shadow the inventory clerk. Within three months, the team said in a survey that they felt much more listened to.
+
+## Common mistakes
+
+- Turning the 1:1 into a list of your instructions and updates.
+- Only holding 1:1s when something has gone wrong, so they feel like a warning.
+- Forgetting what was agreed last time, which tells people their concerns do not matter.
+- Doing most of the talking.
+
+## Try it
+
+Prepare three open questions you could ask in your next 1:1 that are not about task status. For example: "What's been the most frustrating part of your week?", "What would make your work easier?", "What do you want to learn this year?" Use at least one of them in your next 1:1.
+=== 12
+SLIDE What feedback is | Information about the effect of someone's behaviour; Helps people keep what works and change what doesn't; About behaviour, never personality | Specific, timely, behavioural
+SLIDE Situation, behaviour, impact | When it happened; What the person actually did; The effect it had | Describe, don't label
+SLIDE Then make it two-way | Ask: "How did you see it?"; There may be context you don't know; Agree together what changes next time | Feedback is a conversation
+SLIDE Timing and balance | Give it soon, while details are fresh; Corrective feedback in private; Specific praise matters as much as correction | Often, soon, specific
+SLIDE Receiving feedback | Ask your team for feedback on your management; Thank, ask questions, don't defend; Show what you changed | Model what you ask for
+SLIDE Traps to avoid | Labelling: "lazy", "careless"; Saving it for the annual review; Hiding the message between compliments | Clear and respectful beats vague and kind
+BODY
+Feedback is information about the effect of someone's behaviour, given so that they can keep doing what works and change what does not. It is one of the most powerful tools a manager has, and one of the most avoided. Many managers either give no feedback until a problem becomes serious, or give feedback so vague that nobody knows what to do with it. Good feedback is specific, timely and focused on behaviour rather than personality.
+
+## Why behaviour, not personality
+
+Compare two comments. "You're rude in meetings." And: "In this morning's client meeting, you interrupted the client twice while they were explaining the problem." The first is a judgement about the person. It makes people defensive and gives them nothing concrete to change. The second describes something that actually happened, which the person can recognise and do differently next time.
+
+Labels such as "lazy", "careless", "negative" or "difficult" almost always make feedback less effective. Describe what you saw and heard instead.
+
+## Situation, behaviour, impact
+
+A simple and reliable pattern for feedback is situation, behaviour, impact:
+
+- Situation: when and where it happened. "In this morning's client meeting…"
+- Behaviour: what the person actually did, as factually as possible. "…you interrupted the client twice while they were explaining the problem."
+- Impact: the effect it had. "They stopped giving details, and we left without the information we needed to prepare the quote."
+
+The same pattern works for positive feedback: "In yesterday's stock count, you double-checked every location with a discrepancy before reporting it. Because of that, the final figures were accurate and we avoided an unnecessary recount."
+
+## Making it a two-way conversation
+
+After describing the situation, behaviour and impact, ask for the other person's view: "How did you see it?" or "What was going on for you?" There may be context you do not know about: unclear instructions, a problem at home, a system that did not work. Listening first makes the conversation fairer and often reveals the real cause.
+
+Then agree together what will be different next time. People are much more likely to follow through on a solution they helped create.
+
+## Timing and balance
+
+Feedback is most useful soon after the event, while details are fresh for both of you. Waiting weeks, or saving it all for an annual review, means the person cannot connect it to what they did, and may have repeated the same mistake many times in the meantime.
+
+Give corrective feedback in private. Criticising someone in front of colleagues damages trust and usually makes them focus on their embarrassment rather than the lesson. Positive feedback can often be given in public, though some people prefer it privately too.
+
+Do not underestimate positive feedback. When you tell people specifically what they did well and why it mattered, they are much more likely to repeat it. Generic praise such as "good job" is pleasant but teaches little; specific praise shows exactly what to keep doing.
+
+Make feedback a regular habit rather than an occasional event. When feedback is frequent and normal, each individual conversation feels less threatening.
+
+## Avoiding the "sandwich"
+
+Some managers hide corrective feedback between two compliments, hoping to soften it. In practice, the real message often gets lost, and people learn to distrust any praise because they wait for the "but". It is better to be clear, respectful and direct about the issue, and to give positive feedback separately when it is genuinely deserved.
+
+## Receiving feedback yourself
+
+Ask your team for feedback on your own management, for example in 1:1s: "What's one thing I could do differently that would help you?" When you receive feedback, thank the person, ask questions to understand it, and avoid defending yourself on the spot. Then show what you changed. People give honest feedback to managers who visibly use it, and they learn from your example how to receive feedback well.
+
+## A worked example
+
+A finance supervisor noticed that one colleague's month-end bank reconciliations were accurate but consistently late. The easy reaction would have been "you're too slow". Instead, she arranged a short private conversation.
+
+She said: "The last two reconciliations arrived on the 6th instead of the 3rd. Because of that, the management report was delayed and the director had to present without final cash figures. What's getting in the way?" The colleague explained that he was waiting for bank statements, which only arrived when requested, and he usually requested them on the 1st. They agreed he would request them on the last working day of each month. The next reconciliation arrived on the 2nd, and she made a point of thanking him specifically for it.
+
+## Common mistakes
+
+- Labelling the person instead of describing what they did.
+- Waiting for the annual review instead of giving feedback when it happens.
+- Hiding the real message between compliments.
+- Giving feedback in front of others when it is corrective.
+- Not listening to the other person's side.
+
+## Try it
+
+Write one piece of positive feedback and one piece of corrective feedback for someone you work with, using situation, behaviour and impact. For the corrective one, add an open question you will ask to hear their view. Deliver the positive one today.
+=== 12
+SLIDE Why coach instead of telling | Telling is quick but creates dependence; Coaching helps people solve problems themselves; You stop being the bottleneck | Grow problem-solvers
+SLIDE When to coach, when to tell | Coach: they have the knowledge and there is time; Tell: safety risk, urgent deadline or missing information; Most everyday problems can be coached | Choose the right mode
+SLIDE Five useful questions | What's the situation and what have you tried?; What outcome do you want?; What options do you see?; What are the risks?; What will you do first, and when? | One question at a time
+SLIDE Let them own it | The person leaves owning the decision and next step; If their plan is reasonable, let them try it; Step in only when the risk is too high | Ownership stays with them
+SLIDE Listen more than you talk | Give them time to think; Don't hint at your preferred answer; Summarise what you heard | Silence is thinking time
+SLIDE Traps to avoid | Questions that steer to your own answer; Coaching in a crisis; Saying "leave it with me" at the end | Coach to build capability
+BODY
+When a team member brings you a problem, the quickest response is usually to tell them the answer. You probably know it, and it takes thirty seconds. But if you do this every time, your team learns to bring you every problem, and you become the bottleneck for every decision. Coaching means helping people find their own solutions, so that they grow and so that the team can solve problems without you.
+
+## The cost of always telling
+
+Telling has real advantages: it is fast and it usually produces a decent answer. But it has hidden costs. People do not develop their own judgement, because they never practise it. They feel less ownership of solutions that were not theirs. And as the team grows, you simply do not have enough hours to answer every question. Many managers who feel overwhelmed are, without realising it, the main decision-maker for dozens of small issues that their team could handle.
+
+Coaching takes a little more time at first and saves a great deal of time later.
+
+## When to coach and when to tell
+
+Coaching is not always the right choice. Tell people directly when:
+
+- there is a safety risk, and there is no time for discussion;
+- there is an urgent deadline and a wrong decision would be costly;
+- the person genuinely does not have the information or experience to work it out.
+
+Coach when the person has the knowledge or experience to find a good answer and there is time to think it through. In practice, most everyday problems fall into this category.
+
+## Questions that help
+
+Coaching is mostly about asking good questions and listening to the answers. A simple sequence works for most situations:
+
+- What is the situation, and what have you tried so far? This helps them describe the problem clearly, which often reveals the answer.
+- What outcome do you want? This focuses on the goal rather than the obstacle.
+- What options do you see? Encourage several options, not just one.
+- What are the risks or downsides of each option? This builds judgement.
+- What will you do first, and when? This turns thinking into action.
+
+Ask one question at a time and give the person time to think. Silence is fine: it usually means they are thinking. Resist the urge to hint at your preferred answer with questions such as "Don't you think it would be better to…?" That is telling in disguise, and people notice.
+
+## Ownership stays with them
+
+The aim of a coaching conversation is for the person to leave owning both the decision and the next step. If their plan is reasonable but different from what you would do, let them try it. They will learn more from their own approach, it may work better than you expect, and you may learn something too.
+
+Step in only if the risk is genuinely too high, for example if a mistake would harm a customer relationship, break a rule or cost a lot of money. Even then, explain your concern and ask them to adjust the plan rather than simply replacing it with yours.
+
+At the end of the conversation, avoid the very common phrase "leave it with me". It feels helpful, but it takes ownership straight back. Instead, ask: "So what's your next step?" and agree when you will check in.
+
+## Coaching in everyday moments
+
+Coaching does not need a formal meeting. Many of the best coaching moments are short conversations at a desk or on the phone, when someone asks, "What should I do about this?" Simply replying "What do you think the options are?" before giving your view starts building the habit. Over time, people start coming to you with problems and a proposed solution, which is exactly what you want.
+
+## A worked example
+
+A new customer service agent came to her manager with a problem: a long-standing customer was demanding a refund for a product bought outside the return period, and was threatening to move their business elsewhere.
+
+The manager could have answered immediately. Instead he asked: "What does our policy say?" She explained that refunds were only possible within 30 days. "What does the customer really need?" She thought about it: the product had developed a fault, and the customer needed a working product, not necessarily money. "What options do you have?" She listed: refuse, escalate, offer a repair, offer a replacement. "What are the risks of each?" Refusing risked losing the customer; a replacement cost less than losing a regular account. "What will you do?" She proposed offering a replacement as a goodwill gesture, which the manager approved. The customer accepted.
+
+Two weeks later, a similar case came in. She handled it alone and simply informed her manager afterwards.
+
+## Common mistakes
+
+- Asking questions while clearly steering towards your own answer.
+- Coaching during a crisis when the person needs a clear instruction.
+- Taking the problem back at the end with "leave it with me".
+- Asking too many questions at once, which overwhelms rather than helps.
+
+## Try it
+
+The next time someone brings you a problem, ask at least three of the five questions above before offering any suggestion of your own. Afterwards, note what happened: did they find a workable solution? How long did it take compared with telling them?
+=== 12
+SLIDE What accountability really is | People do what they committed to; Misses are discussed openly and fairly; Built through clarity and follow-up, not pressure | Clear agreements + consistent follow-up
+SLIDE Make agreements clear | Every action: an owner, a deliverable and a date; Read back actions at the end of meetings; Keep them in one shared place | No owner, no action
+SLIDE Follow up consistently | Check at the agreed points, not randomly; Same tracker, same slot, every time; Routine follow-up feels fair, not personal | Consistency is fairness
+SLIDE When commitments are missed | Start with curiosity: "What happened?"; Remove obstacles and agree a new date; Repeated misses become a performance conversation | Curious first, firm when needed
+SLIDE Lead by example | Keep your own commitments; Admit when you miss one and say how you'll fix it; Teams copy what their manager does | Accountability starts with you
+SLIDE Traps to avoid | Actions without owners or dates; Following up only with people you're unhappy with; Ignoring misses, then exploding later | Calm, regular, visible
+BODY
+Agreeing goals and actions is only half of a manager's job. The other half is making sure that what was agreed actually happens. Accountability means that people do what they committed to, and that when they do not, the reasons are discussed openly and fairly. It is not about pressure, blame or threats. In healthy teams, accountability is built through clear agreements and consistent, predictable follow-up.
+
+## Why accountability breaks down
+
+When commitments are regularly missed, the cause is rarely laziness. More often it is one of these:
+
+- The agreement was never clear. Nobody wrote down who would do what by when, so everyone remembers it differently.
+- Nobody followed up. People learn quickly that deadlines are optional if nobody checks.
+- Follow-up was inconsistent. If the manager checks some people's work and not others', follow-up feels personal and unfair.
+- The obstacles were real. The person hit a problem they could not solve alone and did not feel able to say so.
+
+Each of these can be fixed with simple habits.
+
+## Making agreements clear
+
+Every action agreed in a meeting or conversation needs three things: an owner, a deliverable and a date. "Let's look into the delivery problem" is not an action. "Paulo will send a list of the five most delayed routes, with causes, by Wednesday" is.
+
+A simple habit makes a big difference: at the end of every meeting, read back each action with its owner and date, and ask: "Is that right? Is that realistic?" This catches misunderstandings while everyone is still in the room. Then record the actions in one shared place, such as a tracker, a shared document or a board, where everyone can see them.
+
+## Following up consistently
+
+Check progress at the points you agreed, not randomly. Many teams use a short routine, such as reviewing the action list for five minutes at the start of each weekly meeting. Each owner simply says whether their action is done, late or blocked. Blocked items get help.
+
+Because everyone goes through the same routine, follow-up stops feeling personal. Nobody is singled out; it is simply how the team works. And because it happens every week, small delays are spotted before they become big problems.
+
+If you forget to follow up, people notice. They conclude that the deadline did not really matter, and next time they will treat it that way.
+
+## When commitments are missed
+
+When something is late, start with curiosity, not blame: "The report was due Tuesday and I haven't seen it. What happened?" There may be a genuine obstacle: missing information, a competing urgent request, a system problem. If so, help remove it and agree a new date, and what will be different this time.
+
+If the same person misses commitments repeatedly, it becomes a performance issue, and it needs a more serious conversation. Describe the pattern factually ("this is the fourth deadline missed in two months"), explain the impact on the team and the business, listen to their view, and agree clearly what must change and by when. Record the agreement. Being calm and specific is far more effective than being angry.
+
+Ignoring repeated misses is unfair to the rest of the team, who see that some people are held to commitments and others are not.
+
+## Leading by example
+
+Teams copy their manager. If you arrive late to meetings, forget your own actions or quietly let your deadlines slip, your team will do the same, whatever you say. If you consistently meet your commitments, and when you miss one you say so openly and explain how you will fix it, people are far more likely to behave the same way.
+
+Accountability also applies upwards. If you promised your team you would resolve something with another department, report back on progress, even when the news is not good.
+
+## A worked example
+
+A logistics manager noticed that many actions agreed in weekly meetings were never completed, and the same problems came up again and again. There was no written list; people relied on memory.
+
+He introduced two changes. First, at the end of each meeting, he read back every action with an owner and a date and put them in a shared spreadsheet. Second, each meeting started with a five-minute review of the previous week's list: each owner said done, late or blocked, and blocked items were discussed immediately.
+
+In the first few weeks, several actions were reported late, and he simply asked what had got in the way and agreed new dates. Within a month, most actions were completed on time. Team members said the meetings felt more useful and fairer, because everyone followed the same routine and problems were no longer forgotten.
+
+## Common mistakes
+
+- Agreeing actions without owners or dates.
+- Following up only with the people you are unhappy with.
+- Ignoring missed commitments for months, then reacting angrily.
+- Not keeping your own commitments as a manager.
+
+## Try it
+
+At your next team meeting, end by reading back every action with its owner and date, and put them all in one shared list. At the following meeting, start by reviewing that list for five minutes.

@@ -11,7 +11,7 @@ import { HomeProof } from "@/components/home/HomeProof";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CERTIGO. — Prove what you can do" },
+      { title: "CERTIGO. — Learn it. Pass it. Prove it." },
       { name: "description", content: "Learn the essentials free, pass a real exam, and get a certificate employers can verify in seconds." },
       { property: "og:title", content: "CERTIGO. — Verified credentials for professionals" },
       { property: "og:description", content: "Learn free, pass a real exam, share a certificate anyone can verify." },

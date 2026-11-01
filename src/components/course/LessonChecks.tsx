@@ -1,3 +1,4 @@
+import { LessonSlides } from "@/components/course/LessonSlides";
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { supabase } from "@/integrations/supabase/client";
@@ -94,16 +95,17 @@ export function LessonChecks({
           return (
             <div key={i} className="rounded-xl border border-border bg-card p-5">
               <div className="flex items-start justify-between gap-3">
-                <div>
+                <div className="min-w-0 flex-1">
                   <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
                     Lesson {String(i + 1).padStart(2, "0")}
                   </div>
                   <div className="mt-1 font-display text-lg font-extrabold tracking-tight">{m.title}</div>
                   {m.learned && <p className="mt-1 text-sm text-muted-foreground">{m.learned}</p>}
+                  {(m.slides?.length ?? 0) > 0 && <LessonSlides slides={m.slides!} lessonTitle={`Lesson ${i + 1}`} />}
                   {m.body && (
                     <details className="group mt-3">
                       <summary className="cursor-pointer select-none text-sm font-semibold text-emerald-700 hover:underline">
-                        <span className="group-open:hidden">Read the lesson</span><span className="hidden group-open:inline">Hide the lesson</span>
+                        <span className="group-open:hidden">Read the full lesson</span><span className="hidden group-open:inline">Hide the lesson</span>
                       </summary>
                       <LessonBody text={m.body} />
                     </details>

@@ -4,6 +4,7 @@ export type CourseModuleView = {
   learned?: string;
   /** Full lesson text: paragraphs, "## " headings and "- " bullets. */
   body?: string;
+  slides?: { title: string; points: string[]; takeaway?: string }[];
   minutes?: number;
   skills?: string[];
   check?: { q?: string; options?: string[] };
