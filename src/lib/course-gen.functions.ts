@@ -75,7 +75,7 @@ function toQuestion(raw: any): { q: string; options: string[]; answer_index: num
 }
 
 function wordCount(value: string): number {
-  return value.trim().split(/\\s+/).filter(Boolean).length;
+  return value.trim().split(/\s+/).filter(Boolean).length;
 }
 
 function lessonQualityIssues(module: CourseModule, index: number): string[] {
