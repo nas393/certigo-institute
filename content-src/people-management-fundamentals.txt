@@ -1,75 +1,118 @@
-=== 12
-SLIDE Your job has changed | You are measured by what your team achieves, not by what you produce yourself; Doing the work yourself feels productive but leaves the team under-used; Your new output is a team that delivers without you in every detail | Success = the team's results
-SLIDE Your three jobs | Make the goal clear: what good looks like and why it matters; Remove obstacles the team cannot solve alone; Grow people with stretching work and useful feedback | Clarity, obstacles, growth
-SLIDE Your first 30 days | Meet every team member one to one; Ask what helps them and what gets in the way; Act visibly on at least one thing you heard; Understand before you change | Listen first, then act
-SLIDE Delegation has four parts | Outcome: what finished looks like; Deadline: when it is due; Decision authority: what they decide alone; Check-ins: when you review together | Agree all four up front
-SLIDE Match support to experience | New task: show an example and check in often; Familiar task: agree the result and step back; Increase autonomy as they prove it | Support follows experience
-SLIDE Traps to avoid | Taking work back at the first problem; Delegating only boring tasks; Giving responsibility without authority or information | Delegate ownership, not just tasks
+=== 20
+SLIDE What you will learn | Explain how a manager's role differs from an individual contributor's; Use the Situational Leadership model to choose how much direction to give; Delegate a task using a clear delegation brief; Choose the right level of delegation for a person and task | Four skills you will practise in this lesson
+SLIDE From doer to manager | Individual contributor: judged on personal output; Manager: judged on team results; Linda Hill (Harvard) found new managers' biggest mistake is managing by doing | Your output = your team's output
+SLIDE Situational Leadership | Hersey & Blanchard: no single best style; Match your style to the person's competence and commitment on this task; Four styles: Directing, Coaching, Supporting, Delegating | Diagnose first, then choose the style
+SLIDE The four development levels | D1 low competence, high enthusiasm → Direct; D2 some competence, low commitment → Coach; D3 good competence, variable confidence → Support; D4 high competence and commitment → Delegate | Same person can be D1 on one task and D4 on another
+SLIDE The delegation brief | Outcome and quality standard; Deadline and milestones; Decision authority (level 1–7); Resources and people to involve; Check-in points | Five lines that prevent most delegation failures
+SLIDE Seven levels of delegation | 1 Tell, 2 Sell, 3 Consult, 4 Agree, 5 Advise, 6 Inquire, 7 Delegate (Appelo, Management 3.0); Lower levels = you decide more; Move up a level as trust grows | Say the level out loud
+SLIDE Common mistakes | Using one style for everyone; Taking the task back at the first problem; Delegating responsibility without authority; Forgetting the check-ins | Diagnose, brief, check in, step back
 BODY
-The day you become a manager, the way your work is judged changes. Until now you were measured by your own output: the reports you wrote, the sales you closed, the problems you fixed. From now on you are measured by what your team achieves. This sounds obvious, but it is the shift most new managers struggle with, because the habits that made them good at their old job now work against them.
+## Learning objectives
 
-## Why doing it yourself feels right, and why it fails
+By the end of this lesson you will be able to:
 
-Most people are promoted because they were very good at the work. So when a deadline is tight or a task is going badly, the natural instinct is to step in and do it yourself. It feels productive, and in the short term it often is. But every time you do the work of someone in your team, three things happen. You lose time you should be spending on managing. Your team member loses the chance to learn. And the team learns that if they wait long enough, you will do it for them. After a few months you are exhausted, the team is under-used, and the results depend entirely on how many hours you can work.
+- explain how a manager's role differs from that of an individual contributor;
+- use the Situational Leadership model to decide how much direction and support to give a team member;
+- delegate a task using a five-part delegation brief;
+- choose an appropriate level of delegation for a given person and task.
 
-The goal is the opposite: a team that can deliver good results even when you are not looking at every detail. That is your real output now.
+## Key terms
 
-## Your three core jobs
+- Individual contributor: someone whose performance is judged mainly on their own work output.
+- Manager: someone whose performance is judged mainly on the results of the people they are responsible for.
+- Competence: a person's knowledge and skill for a specific task.
+- Commitment: a person's motivation and confidence to do that task well.
+- Delegation: giving someone responsibility for a result, together with the authority and resources needed to deliver it.
 
-It helps to think of management as three jobs.
+## 1. From doer to manager
 
-- Make the goal clear. Everyone in the team should know what good work looks like, what the priorities are, and why they matter. Confusion about goals is the single most common cause of wasted effort.
-- Remove obstacles. Some problems your team cannot solve alone: a decision that needs your authority, a missing resource, a conflict with another department. Clearing these is one of the most valuable things you can do.
-- Grow people. Give each person work that stretches them a little, and feedback that helps them improve. A team that keeps getting better is the best long-term result a manager can produce.
+When you are promoted, the basis on which you are judged changes. As an individual contributor you were measured on your own output: the orders you processed, the clients you visited, the reports you wrote. As a manager you are measured on what your team delivers.
 
-When you are unsure what to do with your time, ask which of these three jobs needs attention most.
+Linda Hill of Harvard Business School followed a group of new managers through their first year (published as Becoming a Manager). Many expected the job to be mainly about authority and control; in practice it was about building the team's capability and managing many relationships at once. A recurring difficulty was letting go of the hands-on work that had earned them the promotion. Stepping in to do the work yourself whenever results are at risk feels productive, but it overloads you and stops the team from learning.
 
-## Building trust in your first weeks
+A useful test: if you were away for two weeks, what would stop? Every item on that list is something you have not yet built the team to handle.
 
-People decide very quickly whether they trust a new manager. Trust grows when people see you do what you say, treat them fairly and listen before you judge. In your first weeks:
+## 2. Situational Leadership: one style does not fit all
 
-- Meet every team member individually. Ask what helps them do good work, what gets in the way, and what they would change if they were in your place.
-- Act visibly on at least one thing you heard. It does not need to be big. Fixing a small, long-standing annoyance shows that speaking up is worth it.
-- Be honest about what you do not know yet. Pretending to know everything damages trust faster than admitting you are still learning.
-- Avoid changing everything at once. Processes often exist for reasons you cannot see on day one. Understand why things are done a certain way before you change them.
+The Situational Leadership model, developed by Paul Hersey and Ken Blanchard, starts from a simple idea: there is no single best management style. The right style depends on how ready the person is for the specific task in front of them. Readiness has two parts, competence and commitment, and the model describes four development levels:
 
-If you were promoted from within the team, there is an extra challenge: your former peers now report to you. Acknowledge this openly. Explain that your role has changed and that you will need to make decisions they may not always like, and that you will be fair and transparent when you do.
+- D1 – low competence, high commitment. Typical of someone new to a task and keen to learn. They need clear instructions: the Directing style (S1).
+- D2 – some competence, low commitment. The task has turned out harder than expected and enthusiasm has dropped. They need direction and encouragement: the Coaching style (S2).
+- D3 – good competence, variable commitment. They can do the task but may lack confidence or motivation. They need support and listening more than instructions: the Supporting style (S3).
+- D4 – high competence, high commitment. They can do the task well and want to. They need trust and space: the Delegating style (S4).
 
-## Delegation: the core skill
+Two points are often misunderstood. First, development level applies to a task, not to a person: an experienced accountant may be D4 on month-end closing and D1 on a new reporting system. Second, the goal is to move people up the levels over time, so the style you use should change as they grow.
 
-Delegation is how your team's capacity grows beyond your own. But delegation is not simply handing over tasks you do not want. Done badly, it creates confusion, rework and frustration. Done well, it develops people and frees you to manage.
+## 3. The five-part delegation brief
 
-Good delegation agrees four things up front:
+Most delegation failures come from something that was never said. A short, explicit brief prevents them. Before handing over a task, agree five things:
 
-- The outcome. What does finished look like? Show an example if you have one. "Prepare the stock report" is vague; "a one-page summary of stock by warehouse, with any item below safety stock highlighted" is clear.
-- The deadline. When is it due, and is there any flexibility?
-- The decision authority. What can the person decide alone, and what needs your input? For example: "You can correct small data errors yourself, but flag any difference above 5%."
-- The check-in points. When will you look at progress together? Agreeing this in advance means your check-ins feel like support, not suspicion.
+- Outcome and quality standard: what "done" looks like. Show an example if possible.
+- Deadline and milestones: the final date and any intermediate points.
+- Decision authority: what the person can decide alone and what needs your input (see section 4).
+- Resources and people: budget, systems, data and the colleagues they may involve.
+- Check-in points: when you will review progress together. Agreeing these in advance makes check-ins feel like support rather than suspicion.
 
-## Matching support to experience
+## 4. Choosing the level of delegation
 
-How closely you support someone should depend on their experience with that specific task, not on their seniority or your general opinion of them. A very experienced person doing something new for the first time needs more support on that task; a junior person who has done a task many times needs very little.
+Delegation is not all-or-nothing. Jurgen Appelo's "seven levels of delegation" (from the Management 3.0 approach) give a precise vocabulary:
 
-For a new task, show a finished example, walk through the first one together and check in more often. As the person proves they can do it, step back: agree the result and let them choose the method. The aim is to increase their autonomy step by step until the task is fully theirs.
+- 1 Tell: you decide and announce the decision.
+- 2 Sell: you decide and explain why.
+- 3 Consult: you ask for input, then decide.
+- 4 Agree: you decide together.
+- 5 Advise: they decide, after hearing your advice.
+- 6 Inquire: they decide, and tell you afterwards.
+- 7 Delegate: they decide; you do not need to be informed.
 
-## A worked example
+Match the level to the development level from section 2: a D1 person might work at level 3 or 4 on a task, a D4 person at level 6 or 7. Say the level out loud, for example: "On supplier choice, this is a level 5: you decide, but talk to me first."
 
-A supervisor in a food distribution company used to prepare the weekly stock report herself every Friday afternoon. It took three hours and kept her from visiting customers. She decided to delegate it to a team member who was good with spreadsheets but had never prepared the report.
+## Worked example: a sales supervisor in Luanda
 
-She agreed the outcome by showing him two previous reports and explaining who reads them and what they look for. She set the deadline: Thursday at 6 p.m., so she had time to review it before the Friday meeting. She defined his decision authority: he could fix obvious data entry errors himself, but should flag any stock difference above 5% to her before finalising. And she agreed check-ins: they would review the first two reports together line by line.
+Marta has just been promoted to supervise five sales representatives at a food distributor in Luanda. In her first month she is still visiting her old key accounts herself, preparing the weekly sales report and approving every discount request. She works until 9 p.m. and the team waits for her decisions.
 
-The first report had several mistakes, which they fixed together. The second had one. By the fourth week she only read the summary page. She had recovered three hours a week, and he had learned a skill that made him more valuable to the company.
+She lists what would stop if she were away. Three items stand out: the weekly report, discount approvals and visits to two key accounts.
+
+- Weekly report → Pedro. He is good with Excel but has never prepared the report (D1). Marta uses a Directing style: she shows him two past reports, explains who reads them, and writes a brief: one page by Thursday 17:00, stock-outs highlighted; he may fix obvious data errors himself (level 6) but must flag differences above 5% (level 5); they review the first two reports together.
+- Discount approvals → Joana, a senior rep who knows margins well (D4). Marta agrees a level 6 for discounts up to 3%: Joana decides and records it in the CRM; above 3% stays with Marta.
+- Key accounts → Ana, who handled them before but lost confidence after a difficult negotiation (D3). Marta uses a Supporting style: she asks Ana how she wants to approach the next visit, listens, and offers to join the first meeting only as an observer.
+
+Within six weeks Marta has recovered about eight hours a week, and each of the three team members has a clear area of ownership.
+
+## Tool: delegation brief template
+
+Copy this for every task you delegate:
+
+- Task:
+- Outcome and quality standard:
+- Deadline and milestones:
+- Decision authority (level 1–7, and limits):
+- Resources and people to involve:
+- Check-in dates:
+- Development level today (D1–D4) and style I will use:
 
 ## Common mistakes
 
-- Taking work back at the first problem. When something goes wrong, help the person fix it, but let them keep ownership. Taking it back teaches them to wait for you.
-- Delegating only boring tasks. If you keep all the interesting work for yourself, people will not grow and will lose motivation.
-- Giving responsibility without authority. Asking someone to deliver a result without the information, access or decision rights they need sets them up to fail.
-- Delegating without agreeing the outcome. If you have a picture of the result in your head but never share it, you will be disappointed and they will be confused.
+- Using one style for everyone. Over-directing a D4 person feels like micromanagement; leaving a D1 person alone feels like abandonment.
+- Taking the task back at the first problem. Help solve the problem, but leave ownership with the person.
+- Giving responsibility without authority. Asking for a result without the decision rights or information to achieve it.
+- Skipping the check-ins, then discovering a problem at the deadline.
 
-## Try it
+## Self-check
 
-List three tasks you still do yourself that someone in your team could learn. Choose one. Write down the outcome, the deadline, the decision authority and the check-in points you would agree. Then have the conversation this week.
+- A new team member is excited but has never used the ordering system. Which development level and style apply? (Answer: D1, Directing.)
+- What are the five parts of a delegation brief? (Answer: outcome and standard, deadline and milestones, decision authority, resources and people, check-in points.)
+- At delegation level 5, who decides? (Answer: the team member, after hearing your advice.)
+
+## Practical assignment
+
+List everything that would stop if you were away for two weeks. Choose one item, assess the development level of the person you would give it to, and complete a delegation brief using the template above. Hold the delegation conversation this week.
+
+## Summary
+
+- As a manager, your output is your team's results; managing by doing is the most common trap.
+- Diagnose competence and commitment for each task, then choose Directing, Coaching, Supporting or Delegating.
+- Use a five-part brief and name the delegation level, so both sides know exactly who decides what.
 === 12
 SLIDE Too many priorities = none | Most teams can focus on 3 to 5 goals at a time; More than that and everything competes; Ask: if we achieve only three things, which matter most? | Fewer goals, more results
 SLIDE Write goals that can be measured | Say what will change, by how much, and by when; "Improve service" is a wish; "Answer 90% of emails within 24 hours by March" is a goal | Result + number + date

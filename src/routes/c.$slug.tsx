@@ -7,7 +7,7 @@ import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, ShieldCheck, Loader2, Check } from "lucide-react";
 import { SkillsMap, normalizeModules } from "@/components/course/SkillsMap";
-import { LessonChecks } from "@/components/course/LessonChecks";
+import { LessonList } from "@/components/course/LessonList";
 import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
 import { useCourseTranslation } from "@/lib/use-course-translation";
@@ -153,10 +153,10 @@ function CertDetail() {
               {t("course.startExam")} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           )}
-          {enrolled && (
-            <Link to="/portal" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:underline">
-              {t("course.openLearning")}
-            </Link>
+          {modules.length > 0 && (
+            <Button size="lg" variant="outline" onClick={() => nav({ to: "/c/$slug/lesson/$n", params: { slug, n: "1" } })}>
+              Open lesson 1 <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           )}
         </div>
         {info?.access.access && info.access.via === "pass" && info.access.until && (
@@ -171,7 +171,7 @@ function CertDetail() {
         )}
 
         <SkillsMap modules={modules} fallback={(translation?.skills?.length ? translation.skills : c.skills) ?? []} />
-        <LessonChecks certificationId={c.id} modules={modules} />
+        <LessonList slug={slug} certificationId={c.id} modules={modules} />
         {related.length > 0 && (
           <section className="mt-12">
             <h2 className="font-display text-xl font-extrabold tracking-tight">More in {c.category}</h2>
