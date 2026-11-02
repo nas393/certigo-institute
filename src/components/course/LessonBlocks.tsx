@@ -193,3 +193,42 @@ function Diagram({ kind, title, axes, items }: { kind: string; title: string; ax
     </figure>
   );
 }
+
+export interface LessonStep { title: string; text: string }
+
+/**
+ * Splits a lesson into short, focused steps (one screen each) instead of one long page:
+ * Get started (objectives + key terms) · one step per teaching section · worked example ·
+ * tool + common mistakes · wrap up (self-check, assignment, summary).
+ */
+export function lessonSteps(text: string): LessonStep[] {
+  const sections: { h: string; lines: string[] }[] = [];
+  let cur: { h: string; lines: string[] } = { h: "", lines: [] };
+  let inBlock = false;
+  for (const line of text.replace(/\r/g, "").split("\n")) {
+    const t = line.trim();
+    if (t.startsWith(":::")) inBlock = t.length > 3 ? true : false;
+    if (!inBlock && t.startsWith("## ")) { if (cur.h || cur.lines.some((l) => l.trim())) sections.push(cur); cur = { h: t.slice(3), lines: [line] }; }
+    else cur.lines.push(line);
+  }
+  if (cur.h || cur.lines.some((l) => l.trim())) sections.push(cur);
+
+  const group = (h: string) => {
+    const x = h.toLowerCase();
+    if (x.startsWith("learning objectives") || x.startsWith("key terms") || x === "") return "start";
+    if (x.startsWith("tool") || x.startsWith("common mistakes")) return "tool";
+    if (x.startsWith("self-check") || x.startsWith("practical assignment") || x.startsWith("summary")) return "wrap";
+    return "own";
+  };
+  const steps: LessonStep[] = [];
+  let last = "";
+  for (const s of sections) {
+    const g = group(s.h);
+    const body = s.lines.join("\n");
+    if (g !== "own" && g === last && steps.length) { steps[steps.length - 1].text += "\n\n" + body; continue; }
+    const title = g === "start" ? "Get started" : g === "wrap" ? "Wrap up" : g === "tool" ? s.h.replace(/^Tool:\s*/i, "") || "Tools" : s.h.replace(/^\d+\.\s*/, "").replace(/^Worked example:\s*/i, "Example: ");
+    steps.push({ title, text: body });
+    last = g;
+  }
+  return steps;
+}
