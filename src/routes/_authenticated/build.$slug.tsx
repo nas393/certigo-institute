@@ -160,7 +160,7 @@ function Builder() {
             learned: m.learned.trim(),
             minutes: Math.min(30, Math.max(5, Number(m.minutes) || 12)),
             skills: m.skills.split(",").map((s) => s.trim()).filter(Boolean).slice(0, 6),
-            check: { q: m.q.trim(), options: m.options.map((o) => o.trim()).filter(Boolean) },
+            check: { q: m.q.trim(), options: m.options.map((o) => o.trim()) },
             answer_index: Math.min(3, Math.max(0, Number(m.answer_index) || 0)),
             explanation: m.explanation.trim(),
             content: {
