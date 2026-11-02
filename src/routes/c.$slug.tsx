@@ -7,7 +7,6 @@ import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, ShieldCheck, Loader2, Pencil, Check } from "lucide-react";
 import { SkillsMap, normalizeModules } from "@/components/course/SkillsMap";
-import { LessonChecks } from "@/components/course/LessonChecks";
 import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
 import { useCourseTranslation } from "@/lib/use-course-translation";
@@ -141,10 +140,11 @@ function CertDetail() {
             className="bg-emerald-600 text-white hover:bg-emerald-700"
             onClick={() => {
               if (!user) nav({ to: "/auth" });
-              else nav({ to: "/exam/$slug", params: { slug } });
+              else if (!enrolled) void enroll();
+              else nav({ to: "/learn/$slug/$lesson", params: { slug, lesson: "1" } });
             }}
           >
-            {user ? t("course.startExam") : t("course.startSignIn")} <ArrowRight className="ml-2 h-4 w-4" />
+            {user ? (enrolled ? "Start learning" : "Enroll to start learning") : t("course.startSignIn")} <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
           {enrolled && (
             <Link to="/portal" className="text-sm font-medium text-muted-foreground hover:text-foreground hover:underline">
@@ -154,7 +154,22 @@ function CertDetail() {
         </div>
 
         <SkillsMap modules={modules} fallback={(translation?.skills?.length ? translation.skills : c.skills) ?? []} />
-        <LessonChecks certificationId={c.id} modules={modules} />
+        <section className="mt-10">
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ Learning path</div>
+          <h2 className="mt-2 font-display text-2xl font-black tracking-tight">{modules.length} lessons · one step at a time</h2>
+          <div className="mt-5 space-y-3">
+            {modules.map((m: any, i: number) => (
+              <Link key={i} to="/learn/$slug/$lesson" params={{ slug, lesson: String(i + 1) }} className="flex min-h-16 items-center justify-between gap-4 rounded-xl border border-border bg-card p-4 transition hover:border-emerald-600/50">
+                <div className="min-w-0">
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Lesson {String(i + 1).padStart(2, "0")} · {m.minutes ?? 10} min</div>
+                  <div className="mt-1 font-semibold">{m.title}</div>
+                  {m.learned && <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{m.learned}</p>}
+                </div>
+                <ArrowRight className="h-4 w-4 shrink-0 text-emerald-700" />
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
