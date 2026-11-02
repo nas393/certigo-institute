@@ -105,8 +105,13 @@ function AdminPanel() {
 
   async function togglePublished(c: Course) {
     const next = !(c.published ?? true);
+    if (next) {
+      // Same quality rules the database enforces, shown up front.
+      const { data: issues } = await (supabase as any).rpc("course_quality_issues", { _id: c.id });
+      if (Array.isArray(issues) && issues.length) { toast.error(`Not ready to publish: ${issues.join("; ")}`, { duration: 8000 }); return; }
+    }
     const { error } = await supabase.from("certifications").update({ published: next }).eq("id", c.id);
-    if (error) { toast.error(error.message); return; }
+    if (error) { toast.error(error.message, { duration: 8000 }); return; }
     setCourses((rows) => (rows ?? []).map((r) => (r.id === c.id ? { ...r, published: next } : r)));
     toast.success(`${c.title} is now ${next ? "published" : "hidden from the catalogue"}.`);
   }

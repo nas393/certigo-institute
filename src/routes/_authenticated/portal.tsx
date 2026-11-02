@@ -68,7 +68,7 @@ function Portal() {
                   </div>
 
                   <div className="mt-5 flex flex-wrap items-center gap-3">
-                    <Link to="/c/$slug" params={{ slug: c.slug }}>
+                    <Link to="/c/$slug/lesson/$n" params={{ slug: c.slug, n: String(c.nextLesson) }}>
                       <Button variant="outline" size="sm" className="min-h-[40px]">Continue lessons</Button>
                     </Link>
                     {c.passed && c.serial ? (
@@ -77,12 +77,14 @@ function Portal() {
                           <ShieldCheck className="mr-1.5 h-4 w-4" /> View credential
                         </Button>
                       </Link>
-                    ) : (
+                    ) : c.lessonsDone >= c.lessons ? (
                       <Link to="/exam/$slug" params={{ slug: c.slug }}>
                         <Button size="sm" className="min-h-[40px] bg-emerald-600 text-white hover:bg-emerald-700">
                           {c.attempts > 0 ? "Retake the exam" : "Take the exam"} <ArrowRight className="ml-1.5 h-4 w-4" />
                         </Button>
                       </Link>
+                    ) : (
+                      <span className="text-xs text-muted-foreground">Pass {c.lessons - c.lessonsDone} more lesson check{c.lessons - c.lessonsDone === 1 ? "" : "s"} to unlock the exam</span>
                     )}
                     <button onClick={() => void unenroll(c.id)} className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-destructive">
                       <Trash2 className="h-3 w-3" /> Remove
