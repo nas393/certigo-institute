@@ -246,11 +246,17 @@ export const generateCourse = createServerFn({ method: "POST" })
       .map(toQuestion)
       .filter(Boolean) as Array<{ q: string; options: string[]; answer_index: number }>;
 
-    if (questions.length < 8) {
-      console.error("[course-gen] too few usable questions", JSON.stringify(loose).slice(0, 800));
-      throw new Error("The generator must produce all 8 final-exam questions. Please generate again.");
-    }
     const exam = questions.slice(0, 8);
+    const weakExamItems = exam.filter((q) =>
+      q.options.length !== 4 || new Set(q.options.map((option) => option.toLowerCase())).size !== 4,
+    );
+    if (exam.length !== 8 || weakExamItems.length > 0) {
+      console.error("[course-gen] final exam quality gate failed", {
+        questionCount: exam.length,
+        weakItems: weakExamItems.length,
+      });
+      throw new Error("The generator must produce 8 exam questions, each with 4 distinct options. Please generate again.");
+    }
 
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
 
@@ -320,11 +326,12 @@ const SaveInput = z.object({
           exercise: z.string().max(1600),
           takeaways: z.array(z.string().max(240)).max(6),
         }),
-        check: z.object({ q: z.string().max(400), options: z.array(z.string().max(200)).max(4) }),
+        check: z.object({ q: z.string().min(10).max(400), options: z.array(z.string().min(1).max(200)).length(4) }),
         answer_index: z.number().int().min(0).max(3),
         explanation: z.string().max(400),
       }),
     )
+    .min(4)
     .max(8),
 });
 
