@@ -292,9 +292,13 @@ export const generateCourse = createServerFn({ method: "POST" })
     if (error) throw new Error(error.message);
 
     if (keys.length && inserted?.id) {
-      await supabaseAdmin.from("module_keys").insert(
+      const { error: keyInsertError } = await supabaseAdmin.from("module_keys").insert(
         keys.map((k) => ({ certification_id: inserted.id, ...k })),
       );
+      if (keyInsertError) {
+        await supabaseAdmin.from("certifications").delete().eq("id", inserted.id);
+        throw new Error("Could not securely save lesson assessment keys. The generated course was rolled back.");
+      }
     }
 
     return { slug, title };
@@ -333,6 +337,31 @@ const SaveInput = z.object({
     )
     .min(4)
     .max(8),
+}).superRefine((data, ctx) => {
+  data.modules.forEach((module, index) => {
+    const path = ["modules", index, "content"] as (string | number)[];
+    if (wordCount(module.content.introduction) < 60) {
+      ctx.addIssue({ code: "custom", path: [...path, "introduction"], message: "Write an introduction of at least 60 words." });
+    }
+    if (module.content.objectives.length < 3) {
+      ctx.addIssue({ code: "custom", path: [...path, "objectives"], message: "Add at least 3 measurable learning objectives." });
+    }
+    if (module.content.sections.length < 3 || module.content.sections.some((section) => wordCount(section.body) < 55 || wordCount(section.example) < 12)) {
+      ctx.addIssue({ code: "custom", path: [...path, "sections"], message: "Add at least 3 substantial teaching sections with practical examples." });
+    }
+    if (wordCount(module.content.case_study) < 45) {
+      ctx.addIssue({ code: "custom", path: [...path, "case_study"], message: "Add a realistic workplace case study." });
+    }
+    if (wordCount(module.content.exercise) < 25) {
+      ctx.addIssue({ code: "custom", path: [...path, "exercise"], message: "Add a practical exercise with clear steps and an output." });
+    }
+    if (module.content.takeaways.length < 3) {
+      ctx.addIssue({ code: "custom", path: [...path, "takeaways"], message: "Add at least 3 actionable takeaways." });
+    }
+    if (new Set(module.check.options.map((option) => option.toLowerCase())).size !== 4) {
+      ctx.addIssue({ code: "custom", path: ["modules", index, "check", "options"], message: "Knowledge-check options must be distinct." });
+    }
+  });
 });
 
 export const saveCourse = createServerFn({ method: "POST" })
@@ -370,7 +399,8 @@ export const saveCourse = createServerFn({ method: "POST" })
       .eq("id", cert.id);
     if (error) throw new Error(error.message);
 
-    await supabaseAdmin.from("module_keys").delete().eq("certification_id", cert.id);
+    const { error: deleteKeysError } = await supabaseAdmin.from("module_keys").delete().eq("certification_id", cert.id);
+    if (deleteKeysError) throw new Error("Course content was updated, but lesson keys could not be refreshed. Contact support before learners attempt the checks.");
     const keys = data.modules
       .map((m, i) => ({
         certification_id: cert.id,
@@ -379,7 +409,10 @@ export const saveCourse = createServerFn({ method: "POST" })
         explanation: m.explanation,
       }))
       .filter((_, i) => (data.modules[i]?.check.options.length ?? 0) >= 2);
-    if (keys.length) await supabaseAdmin.from("module_keys").insert(keys);
+    if (keys.length) {
+      const { error: insertKeysError } = await supabaseAdmin.from("module_keys").insert(keys);
+      if (insertKeysError) throw new Error("Course content was saved, but lesson answer keys could not be saved. Do not publish this course until corrected.");
+    }
 
     return { ok: true };
   });
