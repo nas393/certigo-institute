@@ -32,6 +32,7 @@ import { Route as TranscriptIdRouteImport } from './routes/transcript.$id'
 import { Route as VerifyIdRouteImport } from './routes/verify.$id'
 import { Route as AuthenticatedExamSlugRouteImport } from './routes/_authenticated/exam.$slug'
 import { Route as AuthenticatedIssuedSerialRouteImport } from './routes/_authenticated/issued.$serial'
+import { Route as CSlugLessonNRouteImport } from './routes/c_.$slug.lesson.$n'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -148,6 +149,11 @@ const AuthenticatedIssuedSerialRoute =
     path: '/issued/$serial',
     getParentRoute: () => AuthenticatedRouteRoute,
   } as any)
+const CSlugLessonNRoute = CSlugLessonNRouteImport.update({
+  id: '/c_/$slug/lesson/$n',
+  path: '/c/$slug/lesson/$n',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -172,6 +178,7 @@ export interface FileRoutesByFullPath {
   '/verify/$id': typeof VerifyIdRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
+  '/c/$slug/lesson/$n': typeof CSlugLessonNRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -196,6 +203,7 @@ export interface FileRoutesByTo {
   '/verify/$id': typeof VerifyIdRoute
   '/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/issued/$serial': typeof AuthenticatedIssuedSerialRoute
+  '/c/$slug/lesson/$n': typeof CSlugLessonNRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/verify/$id': typeof VerifyIdRoute
   '/_authenticated/exam/$slug': typeof AuthenticatedExamSlugRoute
   '/_authenticated/issued/$serial': typeof AuthenticatedIssuedSerialRoute
+  '/c_/$slug/lesson/$n': typeof CSlugLessonNRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -248,6 +257,7 @@ export interface FileRouteTypes {
     | '/verify/$id'
     | '/exam/$slug'
     | '/issued/$serial'
+    | '/c/$slug/lesson/$n'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -272,6 +282,7 @@ export interface FileRouteTypes {
     | '/verify/$id'
     | '/exam/$slug'
     | '/issued/$serial'
+    | '/c/$slug/lesson/$n'
   id:
     | '__root__'
     | '/'
@@ -297,6 +308,7 @@ export interface FileRouteTypes {
     | '/verify/$id'
     | '/_authenticated/exam/$slug'
     | '/_authenticated/issued/$serial'
+    | '/c_/$slug/lesson/$n'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -317,6 +329,7 @@ export interface RootRouteChildren {
   PIdRoute: typeof PIdRoute
   TranscriptIdRoute: typeof TranscriptIdRoute
   VerifyIdRoute: typeof VerifyIdRoute
+  CSlugLessonNRoute: typeof CSlugLessonNRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -482,6 +495,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedIssuedSerialRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/c_/$slug/lesson/$n': {
+      id: '/c_/$slug/lesson/$n'
+      path: '/c/$slug/lesson/$n'
+      fullPath: '/c/$slug/lesson/$n'
+      preLoaderRoute: typeof CSlugLessonNRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -524,6 +544,7 @@ const rootRouteChildren: RootRouteChildren = {
   PIdRoute: PIdRoute,
   TranscriptIdRoute: TranscriptIdRoute,
   VerifyIdRoute: VerifyIdRoute,
+  CSlugLessonNRoute: CSlugLessonNRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

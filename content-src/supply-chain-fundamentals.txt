@@ -1,0 +1,883 @@
+=== 20
+SLIDE What you will learn | Explain the three flows in every supply chain; Map a supply chain using the SCOR process areas; Recognise the bullwhip effect and its causes; Balance cost, service and inventory | Four skills you will practise in this lesson
+SLIDE Three flows | Product flows from supplier to customer; Information flows in both directions; Cash flows back from customer to supplier | Manage all three, not just the trucks
+SLIDE The SCOR model | Plan, Source, Make, Deliver, Return, Enable; Developed by the Supply Chain Council, now maintained by ASCM; For a distributor, Make means repacking, labelling and kitting | A shared language for every link
+SLIDE Mapping your chain | List each stage from origin port to final shop; Note lead time, stock point and owner at each stage; Mark where information and cash move | You cannot improve what you have not mapped
+SLIDE The bullwhip effect | Small changes in consumer demand become big swings upstream; Causes: forecast updating, order batching, price promotions, shortage gaming; Fix with shared data, smaller orders, stable prices | Each link amplifies the noise
+SLIDE The service-cost-cash triangle | More stock raises service but ties up cash; Cheaper transport often means longer lead times; Every decision trades one corner against another | Make the trade-off explicit
+SLIDE Common mistakes | Seeing supply chain as only logistics; Optimising one department at the expense of the chain; Ignoring information and cash flows; Reacting to every order spike | Think end to end
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the three flows that run through every supply chain;
+- map an importer-distributor's supply chain using the SCOR process areas;
+- recognise the bullwhip effect and name its four main causes;
+- describe the trade-off between service level, cost and inventory.
+
+## Key terms
+
+::: terms
+Supply chain: the network of organisations, activities and resources that moves a product from raw material to the final customer
+Supply chain management: planning and coordinating that network so the right product reaches the right place at the right time and cost
+Lead time: the time between placing an order and having the goods available for use or sale
+Upstream and downstream: upstream means towards suppliers, downstream means towards customers
+Stock point: a place in the chain where inventory is held, such as a port warehouse, central warehouse or regional depot
+:::
+
+## 1. Three flows, not one
+
+Many people think supply chain means trucks and warehouses. That is only one of three flows, and problems usually start in the other two.
+
+- Product flow: goods move downstream from the producer, through the port, the importer's warehouse, depots and wholesalers, to the shop shelf.
+- Information flow: orders, forecasts, stock levels and shipping documents. It runs in both directions. A planned supermarket promotion should reach the buyer weeks before the order arrives.
+- Cash flow: customers pay distributors, distributors pay importers or suppliers. In an import business, cash often leaves months before it returns.
+
+For any problem, ask "Which flow broke first?" A stock-out of cooking oil may look like a transport issue, but the root cause is often late information or blocked cash.
+
+## 2. The SCOR model: a common language
+
+The Supply Chain Operations Reference (SCOR) model was developed by the Supply Chain Council and is now maintained by ASCM (the Association for Supply Chain Management). Its classic version groups supply chain work into six process areas. Recent versions rename and expand some, but the classic names are still widely used.
+
+::: diagram steps | The classic SCOR process areas
+Plan: balance demand and supply, set stock targets, decide what to buy and when
+Source: select suppliers, place purchase orders, receive and pay
+Make: transform the product, which for a distributor means repacking, labelling or building promotional packs
+Deliver: manage customer orders, warehousing and transport to the customer
+Return: handle damaged, expired or wrong goods coming back, and returns to suppliers
+Enable: support processes such as data, contracts, compliance, performance measurement and risk management
+:::
+
+How to map your own chain with SCOR, step by step:
+
+::: slides
+SLIDE Step 1: Choose a product family | Pick one family, for example imported sugar | Start narrow
+SLIDE Step 2: Draw every stage | Origin port and ocean transit; Luanda or Lobito port and customs clearance; Central warehouse, regional depot, customer | From supplier to shelf
+SLIDE Step 3: Label each stage | SCOR process at each stage; Typical lead time; Stock held there and who owns it | One line per stage
+SLIDE Step 4: Add information and cash | Purchase order, shipping documents, delivery note; Payment points and terms | Three flows on one map
+SLIDE Step 5: Add up lead times | The total shows how far ahead you must plan; Mark the stage with the widest range | Your planning horizon
+:::
+
+::: quiz
+? A distributor builds promotional packs of cooking oil with a free 1 kg bag of rice. Which SCOR process is this?
+- Source || Source covers buying from suppliers, not changing the product.
+* Make || Building promotional packs transforms the product, so it is Make.
+- Deliver || Deliver starts once the finished product is ready to ship to customers.
+:::
+
+## 3. The bullwhip effect
+
+The bullwhip effect describes how small changes in consumer demand become larger and larger swings in orders as you move upstream. The term was popularised by Lee, Padmanabhan and Whang (1997), who identified four main causes:
+
+- Demand forecast updating: each link forecasts from the orders it receives, not from real consumer demand, and adds its own safety margin.
+- Order batching: customers order once a month or by the full truck, so the supplier sees lumpy demand.
+- Price fluctuations: promotions and expected price rises make buyers stock up, then stop ordering.
+- Rationing and shortage gaming: when supply is short, customers order more than they need to get a bigger share, then cancel later.
+
+Counter-measures: share sell-out data with suppliers, order smaller quantities more often, keep prices stable where possible, and allocate scarce stock on past sales rather than on the size of the latest order.
+
+::: quiz
+? Sugar is scarce and a wholesaler suddenly doubles its usual order. What is the best response?
+- Ship the full order to keep the customer happy || This rewards shortage gaming and starves other customers.
+* Allocate stock based on the customer's past sales || Allocating on history removes the incentive to over-order.
+- Raise the next purchase order by the same amount || The spike may not be real demand, so this feeds the bullwhip.
+:::
+
+## 4. The service, cost and inventory triangle
+
+Every supply chain decision trades three things against each other. More stock raises service but ties up cash and space. The cheapest shipping route may lengthen lead time, which needs more stock. Daily delivery raises service but increases transport cost. Make the trade-off visible and agree it with sales and finance.
+
+## Worked example: mapping sugar at a Luanda distributor
+
+A food importer-distributor in Luanda sells imported white sugar in 50 kg sacks and 1 kg packs. Sales complain about frequent stock-outs, finance complains about too much cash in stock, and the warehouse is full.
+
+The analyst's map shows: supplier production and loading, about 2 weeks; ocean transit, about 5 weeks; port discharge and customs clearance at Luanda, 1 to 3 weeks; transfer to the central warehouse, 2 days; repacking into 1 kg packs (Make), 3 days; delivery to depots in Benguela and Huambo, 4 to 6 days. Total lead time from purchase order to depot shelf: roughly 9 to 12 weeks.
+
+Two findings stand out. The buyer orders from last month's depot orders, not actual sales to shops, so one large wholesaler order triggered an oversized purchase (forecast updating). And sales ran a promotion without telling planning, emptying the depots before the next ship.
+
+::: case | Fixing the sugar chain in Luanda
+The analyst, Helena, must propose one first action to management, based on these two findings.
+? What should Helena propose first?
+- Order an extra vessel to rebuild stock || This adds cash and warehouse pressure without fixing the cause of the swings.
+* Send weekly sell-out data from the top 20 customers to planning, and enter promotions 12 weeks ahead || This fixes the broken information flow behind both findings.
+- Switch to a cheaper supplier || Price is not the problem here, and a new supplier adds risk.
+:::
+
+## Tool: supply chain mapping checklist
+
+- Product family chosen:
+- Stages from supplier to customer (in order):
+- SCOR process at each stage (Plan, Source, Make, Deliver, Return, Enable):
+- Lead time at each stage (minimum and maximum):
+- Stock points and who owns the stock:
+- Key documents and information at each hand-over:
+- Payment points and payment terms:
+- Total lead time:
+- Biggest risk or delay on the map:
+
+## Common mistakes
+
+- Treating supply chain as only transport and warehousing, and ignoring planning and sourcing.
+- Optimising one department, for example buying full vessels to cut freight cost, while the chain pays in excess stock.
+- Forgetting information and cash flows when analysing a stock-out.
+- Reacting to every large order as if it were a change in real demand.
+
+## Self-check
+
+- Name the six process areas of the classic SCOR model. (Answer: Plan, Source, Make, Deliver, Return, Enable.)
+- A distributor repacks rice into smaller bags. Which SCOR process is this? (Answer: Make.)
+- Give two causes of the bullwhip effect. (Answer: any two of demand forecast updating, order batching, price fluctuations, rationing and shortage gaming.)
+
+## Practical assignment
+
+Choose one important product family at your workplace. Use the mapping checklist to draw its supply chain from supplier to customer, including lead times and stock points. Show the map to one colleague in purchasing and one in sales, and ask each where they see the biggest delay.
+
+## Summary
+
+- Every supply chain has three flows: product, information and cash.
+- The SCOR process areas (Plan, Source, Make, Deliver, Return, Enable) give a common language for mapping your chain.
+- Watch for the bullwhip effect and make the service-cost-inventory trade-off explicit.
+=== 20
+SLIDE What you will learn | Calculate a moving-average forecast; Measure forecast accuracy and bias; Turn a forecast into a supply plan; Describe the monthly S&OP cycle | Four skills you will practise in this lesson
+SLIDE Demand vs orders | Plan from real demand, not just orders received; Lost sales from stock-outs hide true demand; Separate base demand from promotions | Clean the history first
+SLIDE Simple forecasting methods | Naive: next month equals last month; Moving average: average of the last n periods; Seasonal adjustment for festive peaks; Judgement for known events | Start simple, then add judgement
+SLIDE Measuring the forecast | Error = actual minus forecast; MAPE shows the average size of the error; Bias shows if you always over or under forecast | Accuracy and bias tell different stories
+SLIDE From forecast to supply plan | Net requirement = forecast + safety stock - stock on hand - stock on order; Plan over the full lead time; Round to order multiples | The plan must cover the lead time
+SLIDE The S&OP cycle | Data gathering; Demand review; Supply review; Pre-S&OP reconciliation; Executive S&OP meeting | One agreed plan for the whole company
+SLIDE Common mistakes | Forecasting from orders that include stock-outs; Adding hidden buffers at every step; No record of forecast error; Sales and supply using different numbers | One number, measured monthly
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate a simple moving-average forecast and adjust it for known events;
+- measure forecast accuracy using MAPE and detect forecast bias;
+- convert a demand forecast into a net purchase requirement;
+- describe the steps of a monthly sales and operations planning (S&OP) cycle.
+
+## Key terms
+
+::: terms
+Demand forecast: an estimate of how much customers will buy in a future period
+Forecast error: the difference between actual demand and the forecast for the same period
+MAPE (mean absolute percentage error): the average size of forecast errors, as a percentage of actual demand
+Bias: a tendency to forecast consistently too high or too low
+Planning horizon: how far ahead the plan looks, at least as long as the total lead time
+S&OP (sales and operations planning): a monthly process that agrees one plan linking sales, supply and finance
+:::
+
+## 1. Start with real demand
+
+A forecast is only as good as the history behind it. Clean the data in four steps:
+
+::: slides
+SLIDE Step 1: Use real demand | Use sales or shipments to customers; Do not use orders you placed on suppliers | Start from the customer
+SLIDE Step 2: Add back lost sales | Stock-outs make recorded sales too low; Estimate missing days from the average of days with stock | Do not let stock-outs shrink the forecast
+SLIDE Step 3: Separate one-offs | Record promotions and tenders apart from base demand; Stops next year's forecast being inflated | Base demand plus events
+SLIDE Step 4: Check seasonality | Many food products peak in December; Patterns change around public holidays | Know your calendar
+:::
+
+## 2. Simple forecasting methods
+
+Three simple methods cover most needs in a distribution business.
+
+- Naive forecast: next month equals last month. Useful as a baseline to beat.
+- Moving average: the average of the last n periods. A 3-month moving average reacts quickly to change. A 6-month average is smoother but slower to react.
+- Seasonal index: if December sales are normally 1.4 times an average month, multiply the base forecast by 1.4 for December. Calculate the index from at least two years of history.
+
+Then apply judgement for known events: a new customer, a lost listing, a planned promotion, or a competitor's stock-out. Record every adjustment and the reason, so you can learn later whether the judgement helped.
+
+Example: a distributor sold 2,800, 3,100 and 3,000 cases of tomato paste in the last three months. The 3-month moving average is (2,800 + 3,100 + 3,000) / 3 = 2,967 cases. Sales confirm a promotion with a supermarket chain next month expected to add 400 cases, so the forecast is 3,367 cases, recorded as 2,967 base plus 400 promotion.
+
+::: quiz
+? Sales of a product were 900, 1,200 and 1,500 cartons in the last three months. What is the 3-month moving average?
+- 1,500 cartons || That is the naive forecast, using only last month.
+* 1,200 cartons || (900 + 1,200 + 1,500) / 3 = 1,200.
+- 3,600 cartons || That is the total, not the average.
+:::
+
+## 3. Measuring forecast accuracy and bias
+
+If you do not measure the forecast, it will not improve. Measure monthly, per product, using two indicators.
+
+- Absolute percentage error for one month = the difference between actual and forecast, ignoring the sign, / actual x 100.
+- MAPE = the average of the absolute percentage errors over several months. Lower is better.
+- Bias = the sum of (forecast - actual) over several months. A large positive total means you forecast too high, which builds excess stock. A large negative total means you forecast too low, which causes stock-outs.
+
+Example over three months: forecasts 1,000, 1,200 and 1,100; actuals 900, 1,000 and 1,000. Absolute percentage errors are 11.1%, 20.0% and 10.0%, so MAPE is about 13.7%. Bias is (100 + 200 + 100) = +400 units: the forecast is consistently too high. Accuracy alone would not show this pattern.
+
+::: quiz
+? A planner's forecasts are below actual demand every month for six months. What does this show?
+- High MAPE only || MAPE shows error size, not direction.
+- Good accuracy || Consistent misses in one direction are a problem, not accuracy.
+* Negative bias, which will cause stock-outs || Forecasting too low every month is negative bias and leads to shortages.
+:::
+
+## 4. From forecast to supply plan
+
+For an importer, the supply plan answers: how much must we order now to cover demand until the next shipment can arrive? A simple net requirement calculation is:
+
+- Net requirement = forecast demand over the lead time and review period + safety stock - stock on hand - stock already on order.
+
+Then round the result to the supplier's order multiple, for example full containers or full pallets. Safety stock is covered in detail in lesson 4.
+
+## 5. The S&OP cycle
+
+Sales and operations planning brings sales, supply chain and finance together every month to agree one plan. A common five-step monthly cycle is:
+
+::: diagram cycle | The monthly S&OP cycle
+Data gathering: update sales history, stock and open orders
+Demand review: sales and marketing agree the unconstrained forecast, including promotions
+Supply review: check suppliers, port, warehouse and transport capacity, and flag gaps
+Pre-S&OP: resolve gaps and prepare options, such as limiting a promotion
+Executive S&OP: senior management chooses options and approves one plan with its financial impact
+:::
+
+## Worked example: cooking oil planning in Luanda
+
+A distributor imports 20-litre and 1-litre cooking oil. Total lead time from order to warehouse is 10 weeks, and the buyer orders every 4 weeks, so each order must cover 14 weeks of demand.
+
+The planner cleans the history. In August the product was out of stock for 9 working days out of 22. Recorded sales of 1-litre oil were 13,000 cartons. Average daily sales on the 13 days with stock were 1,000 cartons, so true August demand was about 22 x 1,000 = 22,000 cartons, not 13,000.
+
+The 3-month moving average after correction is 21,000 cartons per month, about 4,850 per week. Demand for 14 weeks is about 67,900 cartons. Safety stock is set at 8,000 cartons. Stock on hand is 15,000 and 30,000 cartons are already on the water. Net requirement = 67,900 + 8,000 - 15,000 - 30,000 = 30,900 cartons. Rounded up to full containers of 1,800 cartons each, that is 18 containers (32,400 cartons).
+
+::: case | The 18-container decision
+At the executive S&OP meeting, the finance manager, Rui, says cash is tight this month and asks whether all 18 containers are needed now. The planner knows demand is uncertain for the last few weeks of the horizon.
+? What is the best decision?
+- Order all 18 now to protect service || Possible, but it ignores a real cash limit when part of the need can wait.
+- Order only 10 to save cash || This falls well below the net requirement and risks another stock-out.
+* Order 16 now and confirm the last 2 after the next demand review || This covers most of the need and delays only the least certain part.
+- Postpone the order until next month || With a 10-week lead time, delay means certain stock-outs.
+:::
+
+## Tool: monthly forecast review template
+
+- Product and period:
+- Last 3 months actual demand (corrected for stock-outs):
+- Base forecast method and result:
+- Judgement adjustments (event, quantity, owner):
+- Final forecast:
+- Last month absolute percentage error:
+- MAPE over last 3 to 6 months:
+- Bias over last 3 to 6 months (positive or negative):
+- Net requirement and order quantity:
+- Decisions needed at S&OP:
+
+## Common mistakes
+
+- Forecasting from recorded sales that include stock-out periods, so the forecast keeps falling.
+- Each department adding its own hidden buffer, so the final order is far too large.
+- Never measuring forecast error, so nobody knows whether judgement helps.
+- Sales, finance and supply working from different numbers.
+
+## Self-check
+
+- Sales for three months are 400, 500 and 600 units. What is the 3-month moving average? (Answer: 500 units.)
+- A forecast is too high every month by a similar amount. Which indicator shows this? (Answer: bias.)
+- In S&OP, which step checks whether suppliers and warehouses can meet demand? (Answer: the supply review.)
+
+## Practical assignment
+
+Take your five best-selling products. For each, write down last month's forecast and actual demand, calculate the absolute percentage error, and check the last three months for bias. Share the results with your manager and agree one change to how forecasts are made.
+
+## Summary
+
+- Forecast from cleaned, real demand, then add documented judgement for known events.
+- Measure every forecast with MAPE and bias, monthly.
+- Convert forecasts into supply plans over the full lead time, and agree one plan through S&OP.
+=== 20
+SLIDE What you will learn | Classify purchases with the Kraljic matrix; Compare suppliers on total cost of ownership; Score suppliers with a scorecard; Choose single, dual or multiple sourcing | Four skills you will practise in this lesson
+SLIDE The sourcing process | Define the need; Research the market; Request quotes; Evaluate and select; Contract and onboard; Monitor and review | Sourcing is a cycle, not a one-off purchase
+SLIDE The Kraljic matrix | Kraljic (1983): profit impact vs supply risk; Strategic, Leverage, Bottleneck, Non-critical; Each quadrant needs a different strategy | Not every supplier deserves the same effort
+SLIDE Total cost of ownership | Unit price is only part of the cost; Add freight, insurance, duties, port and clearance costs; Add losses, quality failures and stock-holding cost | Compare the landed and lifetime cost
+SLIDE Supplier scorecard | Quality, delivery, cost, service; Weight each criterion; Score monthly or quarterly with data; Share results with the supplier | Measure, share, improve
+SLIDE Single or multiple sourcing | Single: better price and partnership, higher risk; Dual: balance of leverage and security; Multiple: competition, less loyalty | Match the choice to the Kraljic quadrant
+SLIDE Common mistakes | Choosing on unit price only; Treating all suppliers the same way; No written specification; Scoring suppliers by opinion | Data-based relationships last
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- follow a structured six-step sourcing process;
+- classify purchases using the Kraljic matrix and choose a strategy for each quadrant;
+- compare offers using total cost of ownership rather than unit price;
+- build a weighted supplier scorecard and decide between single, dual and multiple sourcing.
+
+## Key terms
+
+::: terms
+Sourcing: finding, selecting and managing the suppliers that provide goods and services
+Specification: a written description of what you are buying, including quality, packaging and labelling requirements
+Total cost of ownership (TCO): the full cost of acquiring, receiving, holding and using a product, not just its price
+Supply risk: the chance that supply will be interrupted or delayed, for example because of few suppliers or long lead times
+Supplier scorecard: a regular, data-based assessment of a supplier's performance against agreed criteria
+:::
+
+## 1. The sourcing process
+
+Good sourcing follows a repeatable cycle. Skipping steps is the most common cause of later problems.
+
+::: slides
+SLIDE Step 1: Define the need | Write a specification; For rice: variety, broken grain %, moisture, bag type, labelling, shelf life on arrival | No specification, no fair comparison
+SLIDE Step 2: Research the market | Who supplies it and from which origins; Typical lead times and risks | Know your options
+SLIDE Step 3: Request quotations | Same specification and quantities to several suppliers; Clear deadline | Comparable offers
+SLIDE Step 4: Evaluate and select | Compare total cost of ownership; Check supplier capability, not price alone | Lowest total cost wins
+SLIDE Step 5: Contract, onboard, monitor | Agree price basis, payment, claims procedure and documents; Track with a scorecard and review yearly | Delivery terms are covered in a separate course
+:::
+
+## 2. The Kraljic matrix
+
+Peter Kraljic (1983) proposed classifying purchases on two dimensions: the profit impact of the item (how much you spend on it and how much it affects your results) and supply risk (how hard it is to secure supply). This gives four quadrants, each with a different strategy.
+
+::: diagram matrix | Kraljic matrix | Supply risk (low → high) | Profit impact (low → high)
+Leverage: high impact, low risk – use competition, tenders and volume
+Strategic: high impact, high risk – build partnerships, share forecasts, develop a backup source
+Non-critical: low impact, low risk – simplify with catalogues or framework agreements
+Bottleneck: low impact, high risk – secure supply with safety stock or longer contracts
+:::
+
+A strategic item might be the main staple you import from a few origins. A bottleneck item might be a special packaging film from one supplier. To apply the matrix, score your top 30 items by spend from 1 to 5 on profit impact and on supply risk, place them on the grid, and write one strategy line per quadrant.
+
+::: quiz
+? A distributor buys large volumes of standard sugar that many exporters can supply. Which strategy fits?
+- Long-term single-source partnership || That suits strategic items with high supply risk.
+* Use competition and tenders to get the best price || High spend with low risk is a leverage item.
+- Hold extra safety stock to secure supply || That is the bottleneck strategy, for hard-to-replace items.
+:::
+
+## 3. Total cost of ownership
+
+The cheapest price is often not the cheapest supplier. Compare landed cost, the full cost of getting goods into your warehouse, then add the costs of poor performance.
+
+- Purchase price per unit.
+- Ocean freight and insurance (depending on the delivery terms agreed).
+- Import duties and taxes, port charges, clearance and agent fees.
+- Inland transport from port to warehouse.
+- Quality losses: damaged bags, short weight, rejected lots.
+- Extra stock needed because of long or unreliable lead times.
+- Admin time spent on claims and follow-up.
+
+Example: Supplier A offers vegetable oil at USD 1,000 per tonne, Supplier B at USD 1,030. A's shipments arrive on average three weeks late and 2% of drums are damaged. The distributor estimates that A's delays force it to hold an extra 100 tonnes of safety stock, costing about USD 2 per tonne bought in financing and storage, and that damage costs USD 20 per tonne. A's real cost is about USD 1,022 per tonne before freight, while B, with reliable delivery and negligible damage, is USD 1,030. The gap is far smaller than the price list suggests, and B may be the better choice for a strategic item.
+
+::: quiz
+? Which cost is part of total cost of ownership but not of the unit price?
+- The supplier's price per tonne || The price itself is the starting point, not an extra cost.
+- The supplier's profit margin || The margin is already inside the price.
+* Extra safety stock needed because the supplier is often late || Unreliable delivery forces you to hold and finance more stock.
+:::
+
+## 4. Supplier scorecards and sourcing strategy
+
+A scorecard turns opinions into facts. Choose four criteria, weight them, and score every quarter from data.
+
+- Quality (for example 30%): percentage of lots accepted without claim.
+- Delivery (30%): percentage of shipments on time and with correct documents.
+- Cost (25%): price compared with market or target, and willingness to share cost changes early.
+- Service (15%): speed of response, handling of claims, flexibility.
+
+Score each criterion from 1 to 5, multiply by its weight and add up. Share the result with the supplier and agree improvement actions.
+
+Then decide how many sources to use. Single sourcing gives better prices and closer cooperation but high risk if the supplier fails. Dual sourcing, for example 70% with a main supplier and 30% with a second, keeps competition and protects supply. Multiple sourcing suits leverage items where many suppliers are equal.
+
+## Worked example: choosing rice suppliers in Lobito
+
+A distributor in Benguela province imports rice through Lobito port. Rice is its largest spend and a strategic item: it buys from only one exporter, and a delayed vessel last year left depots empty for three weeks.
+
+The buyer sends a full specification to four exporters from two origins and scores each using past shipment data or references.
+
+- Exporter 1: lowest price, quality 3, delivery 2, cost 5, service 3. Weighted score = 0.9 + 0.6 + 1.25 + 0.45 = 3.2.
+- Exporter 2: price 2% higher, quality 4, delivery 5, cost 4, service 4. Weighted score = 1.2 + 1.5 + 1.0 + 0.6 = 4.3.
+
+::: case | Rice sourcing decision in Lobito
+The buyer, Teresa, must recommend a sourcing strategy for rice to management. Exporter 2 scores 4.3 but costs 2% more. Exporter 1 scores 3.2, is cheapest, and ships from a different origin.
+? What should Teresa recommend?
+- 100% to Exporter 1 for the lowest price || This repeats last year's risk with a weaker supplier.
+- 100% to Exporter 2 for the best score || Better, but a single source of a strategic item still leaves depots exposed.
+* 70% to Exporter 2 under a 12-month agreement, 30% to Exporter 1 shipment by shipment || Dual sourcing from two origins protects supply and keeps competition.
+- Split equally among all four exporters || Too many sources weakens the partnership a strategic item needs.
+:::
+
+## Tool: supplier evaluation template
+
+- Item and Kraljic quadrant:
+- Specification reference and date:
+- Suppliers invited and quote deadline:
+- Landed cost per unit for each supplier:
+- Estimated cost of delays, damage and claims:
+- Scorecard (quality, delivery, cost, service, with weights):
+- Weighted score per supplier:
+- Recommended sourcing strategy (single, dual, multiple):
+- Contract points to agree (payment, claims, documents, review date):
+
+## Common mistakes
+
+- Choosing suppliers on unit price only and ignoring the cost of delays and losses.
+- Managing every supplier with the same effort, whatever its quadrant.
+- Buying without a written specification, then arguing about quality on arrival.
+- Scoring suppliers from memory or feelings rather than shipment data.
+
+## Self-check
+
+- What are the two dimensions of the Kraljic matrix? (Answer: profit impact and supply risk.)
+- A packaging film is low spend but only one supplier can provide it. Which quadrant is it? (Answer: bottleneck.)
+- Name four criteria commonly used in a supplier scorecard. (Answer: quality, delivery, cost, service.)
+
+## Practical assignment
+
+List the ten items your company spends most on. Place each on the Kraljic matrix with a colleague from purchasing. For the most important strategic item, complete the supplier evaluation template for its current supplier using real data from the last six months.
+
+## Summary
+
+- Follow a six-step sourcing cycle that starts with a written specification.
+- Use the Kraljic matrix to decide how much effort and which strategy each purchase needs.
+- Choose suppliers on total cost of ownership and manage them with a weighted scorecard.
+=== 20
+SLIDE What you will learn | Distinguish cycle stock, safety stock and pipeline stock; Calculate safety stock and a reorder point; Prioritise items with ABC analysis; Choose a review policy | Four skills you will practise in this lesson
+SLIDE Why we hold stock | Cycle stock: from ordering in batches; Safety stock: protects against uncertainty; Pipeline stock: goods in transit; Seasonal and promotional stock | Every unit of stock needs a reason
+SLIDE Average inventory | Average cycle stock = order quantity / 2; Average inventory = Q/2 + safety stock; Bigger orders mean more average stock | Order size drives stock level
+SLIDE Safety stock formula | SS = Z x daily demand variation x square root of lead time; Z = 1.65 for 95% service; Z = 2.33 for 99% service | Higher service costs more stock
+SLIDE Reorder point | ROP = average daily demand x lead time + safety stock; Order when stock on hand plus on order falls to ROP; Recalculate when demand or lead time changes | The trigger for every replenishment
+SLIDE ABC analysis | A items: about 20% of SKUs, about 80% of value; B items: middle group; C items: many SKUs, small value; Control A items most tightly | Focus where the money is
+SLIDE Common mistakes | Same safety stock for every item; Forgetting stock on order; Using quoted not actual lead times; Never updating parameters | Review parameters every quarter
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the purpose of cycle stock, safety stock and pipeline stock;
+- calculate safety stock and a reorder point for an imported product;
+- classify products using ABC analysis to decide where to focus control;
+- choose between continuous review and periodic review policies.
+
+## Key terms
+
+::: terms
+Cycle stock: inventory that results from ordering in batches and is used up between deliveries
+Safety stock: extra inventory held to protect against variation in demand and lead time
+Pipeline stock: inventory already ordered and in transit, for example on a ship or at the port
+Service level: the probability of not running out of stock during a replenishment cycle
+Reorder point (ROP): the stock level at which a new order should be placed
+SKU (stock keeping unit): one specific item, such as 5 kg rice in a particular brand
+:::
+
+## 1. Why we hold inventory
+
+Inventory is cash in physical form. Every unit should have a clear reason to exist. The main types are:
+
+- Cycle stock: if you order 24,000 bags every two months, stock starts high and falls to near zero before the next delivery. On average you hold half the order quantity. Average cycle stock = Q / 2.
+- Safety stock: demand is never exactly as forecast, and ships are sometimes late. Safety stock covers this uncertainty.
+- Pipeline stock: goods on the water or waiting at Luanda or Lobito port. Long import lead times mean large pipeline stock that ties up cash before you can sell it.
+- Seasonal and promotional stock: built up in advance of a known peak, such as the festive season.
+
+Average inventory in the warehouse is approximately Q / 2 + safety stock. This simple formula shows the two main levers: smaller, more frequent orders reduce cycle stock, and better forecasting or more reliable suppliers reduce safety stock.
+
+## 2. Calculating safety stock
+
+When demand varies but lead time is fairly stable, a widely used formula is:
+
+- Safety stock = Z x standard deviation of daily demand x square root of lead time in days.
+
+Z is the service factor from the normal distribution: 1.28 for 90% service, 1.65 for 95%, 2.05 for 98% and 2.33 for 99%.
+
+::: slides
+SLIDE Step 1: Collect demand | Daily or weekly demand for 3 to 6 months; Corrected for stock-outs | Clean data first
+SLIDE Step 2: Average and variation | Excel AVERAGE for mean demand; Excel STDEV.S for standard deviation | Measure the noise
+SLIDE Step 3: Use actual lead time | From recent orders, not the supplier's promise; Include port clearance and inland transport | Real days, not quoted days
+SLIDE Step 4: Choose service level | Match it to the item's importance; Look up the Z value | Higher service, more stock
+SLIDE Step 5: Apply and round up | SS = Z x standard deviation x square root of lead time; Round up to whole units | Write it in the system
+:::
+
+Very high service targets are expensive, so reserve them for the most important items. If lead time varies a lot, safety stock must be larger; more advanced formulas include lead time variation.
+
+::: quiz
+? A buyer raises the service target for an item from 95% to 99%. What happens to safety stock?
+- It stays the same || Safety stock depends directly on Z, which changes.
+* It rises by about 40% || Z rises from 1.65 to 2.33, about 40% higher.
+- It doubles || The increase is large but well below double.
+:::
+
+## 3. The reorder point
+
+The reorder point tells you when to order. It must cover expected demand during the lead time, plus safety stock:
+
+- ROP = average daily demand x lead time in days + safety stock.
+
+Compare the ROP with your inventory position, not only with what is on the shelf. Inventory position = stock on hand + stock on order - customer orders not yet shipped. If you forget stock already on order, you will order twice.
+
+::: quiz
+? Daily demand is 100 units, lead time is 40 days and safety stock is 600 units. What is the ROP?
+- 4,000 units || This forgets the safety stock.
+* 4,600 units || 100 x 40 + 600 = 4,600.
+- 700 units || This adds demand and safety stock without multiplying by lead time.
+:::
+
+## 4. ABC analysis and review policies
+
+You cannot control thousands of SKUs with the same effort. ABC analysis, based on the Pareto principle, ranks items by annual consumption value (annual units x unit cost):
+
+::: diagram pyramid | ABC analysis
+A items: often about 20% of SKUs and about 80% of value – review weekly, count often
+B items: the middle group – review monthly
+C items: many SKUs of small value – simple rules, less frequent review
+:::
+
+Cut-off percentages vary between companies; what matters is that control effort follows value.
+
+Two common review policies are:
+
+- Continuous review: order a fixed quantity when the inventory position reaches the ROP. Good for A items.
+- Periodic review: check at fixed intervals, for example every two weeks, and order up to a target level. Easier to fill a container from one supplier, but safety stock must cover the review period plus the lead time.
+
+## Worked example: 25 kg rice in a Luanda warehouse
+
+A distributor sells 25 kg bags of imported rice. Daily demand over the last six months averaged 400 bags, with a standard deviation of 80 bags. Recent orders took 60 days from purchase order to stock available in the warehouse, including about two weeks at the port. Management wants a 95% service level.
+
+Safety stock = 1.65 x 80 x square root of 60. The square root of 60 is about 7.75, so safety stock = 1.65 x 80 x 7.75 = 1,023 bags.
+
+Reorder point = 400 x 60 + 1,023 = 24,000 + 1,023 = 25,023 bags.
+
+The buyer orders 24,000 bags each time. Average cycle stock = 24,000 / 2 = 12,000 bags. Average warehouse inventory is about 12,000 + 1,023 = 13,023 bags.
+
+::: case | Monday reorder check
+On Monday the buyer, Carla, sees 9,000 bags on hand, 17,000 bags on a vessel, and 1,500 bags in customer orders not yet shipped. The reorder point is 25,023 bags and the order quantity is 24,000.
+? What should Carla do?
+- Order extra, because only 9,000 bags are on the shelf || Ignoring the vessel means ordering far too much.
+* Order 24,000 bags today, because the inventory position of 24,500 is below the ROP || 9,000 + 17,000 - 1,500 = 24,500, which is below 25,023.
+- Wait, because 26,000 bags are on hand and on order || This forgets the 1,500 bags already promised to customers.
+:::
+
+## Tool: reorder point worksheet
+
+- SKU and ABC class:
+- Average daily demand (last 3 to 6 months, corrected):
+- Standard deviation of daily demand:
+- Actual lead time in days (order to available):
+- Target service level and Z value:
+- Safety stock = Z x standard deviation x square root of lead time:
+- Reorder point = daily demand x lead time + safety stock:
+- Order quantity and average cycle stock (Q / 2):
+- Current inventory position (on hand + on order - backorders):
+- Action today (order or wait):
+- Next parameter review date:
+
+## Common mistakes
+
+- Setting the same safety stock (for example "one month") for every item, whatever its variability.
+- Comparing the ROP with stock on hand only and forgetting stock on order.
+- Using the supplier's quoted lead time instead of the actual lead time, including port clearance.
+- Calculating parameters once and never updating them when demand or lead time changes.
+
+## Self-check
+
+- Daily demand averages 200 units, lead time is 30 days and safety stock is 500 units. What is the reorder point? (Answer: 200 x 30 + 500 = 6,500 units.)
+- What is the average cycle stock if you order 10,000 units each time? (Answer: 5,000 units.)
+- Which Z value corresponds to a 95% service level? (Answer: 1.65.)
+
+## Practical assignment
+
+Choose one A item at your workplace. Collect its daily or weekly demand for the last three months and the actual lead times of its last three orders. Complete the reorder point worksheet and compare your result with the current reorder level in your system. Discuss the difference with the planner or buyer.
+
+## Summary
+
+- Hold stock only for a clear reason: cycle, safety, pipeline or seasonal.
+- Safety stock = Z x demand variation x square root of lead time, and ROP = daily demand x lead time + safety stock.
+- Use ABC analysis to focus control on the items that carry most value.
+=== 20
+SLIDE What you will learn | Compare transport modes on cost, speed and reliability; Choose a distribution network design; Calculate cost per tonne and vehicle utilisation; Plan delivery routes | Four skills you will practise in this lesson
+SLIDE Transport modes | Sea: lowest cost per tonne, slowest; Road: flexible, door to door; Rail: efficient for heavy loads on fixed corridors; Air: fastest, most expensive | Match mode to value, urgency and volume
+SLIDE Network designs | Direct from central warehouse; Hub and spoke with regional depots; Cross-docking with no storage; Each trades transport cost against stock | Fewer stock points means less stock, longer trips
+SLIDE Vehicle utilisation | Weigh-out: weight limit reached first; Cube-out: volume limit reached first; Empty kilometres and return loads | A half-empty truck doubles cost per tonne
+SLIDE Cost per tonne | Cost per tonne = trip cost / tonnes carried; 20 t truck at full load vs 60% load; Measure cost per drop for multi-drop routes | Fill the truck before you add trucks
+SLIDE Route planning | Group customers by zone and day; Respect delivery windows; Sequence drops to cut distance; Confirm proof of delivery | Drop density is the key lever
+SLIDE Common mistakes | Choosing the cheapest rate, not the lowest total cost; Dispatching part-loads every day; No proof of delivery; Ignoring return loads | Plan loads, then routes
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- compare the main transport modes on cost, speed, flexibility and reliability;
+- choose between direct, hub-and-spoke and cross-docking distribution designs;
+- calculate cost per tonne and explain how vehicle utilisation affects it;
+- plan a simple delivery route using zones, delivery windows and drop density.
+
+## Key terms
+
+::: terms
+Distribution network: the set of warehouses, depots and transport links used to move goods to customers
+Hub and spoke: a design in which goods move in bulk to regional hubs, then out in smaller loads to customers
+Cross-docking: moving goods from incoming vehicles directly onto outgoing vehicles with little or no storage
+Vehicle utilisation: the share of a vehicle's weight or volume capacity actually used
+Drop density: the number of deliveries a vehicle makes in a given area or route
+Proof of delivery (POD): a signed or electronic record that the customer received the goods
+:::
+
+## 1. Transport modes
+
+Each transport mode has strengths and weaknesses. Choose by comparing cost, speed, flexibility, reliability and the value of the goods.
+
+- Sea: the lowest cost per tonne for long distances and the backbone of food imports through Luanda and Lobito. Slow, and exposed to port delays.
+- Road: the most flexible, door to door, but higher cost per tonne than rail or sea, and road conditions affect transit times.
+- Rail: efficient for heavy, bulky loads over long fixed corridors. In Angola, the Benguela railway links Lobito port with the interior, which can suit regular bulk flows inland.
+- Air: very fast and very expensive, for urgent, high-value or light items.
+
+Most supply chains combine modes: sea to the port, then road or rail inland. Ask which combination gives the lowest total cost for the service you need.
+
+::: quiz
+? A machine is stopped waiting for a small, expensive spare part from Europe. Which mode fits best?
+- Sea, because it is cheapest per tonne || The weeks of delay cost far more than the freight saving.
+* Air, because the part is urgent, light and valuable || Air suits urgent, high-value, light items.
+- Rail, because it is efficient || Rail suits heavy bulk loads on fixed corridors, not urgent imports.
+:::
+
+## 2. Distribution network designs
+
+How many stock points you have, and where, is one of the biggest supply chain decisions.
+
+::: diagram steps | Hub-and-spoke flow for an importer
+Port: Luanda or Lobito, discharge and clearance
+Central warehouse: main stock point
+Trunk transport: full trucks or rail to the regions
+Regional depot or cross-dock: store briefly or transfer the same day
+Local delivery: vans deliver to shops by zone
+:::
+
+Three basic designs are:
+
+- Direct delivery from a central warehouse: all stock is in one place, so total inventory is lowest and control is easiest. But long trips to distant provinces raise transport cost and delivery time.
+- Hub and spoke: bulk trucks or trains move goods to regional depots, which deliver locally. Trunk transport is cheaper per tonne and local service faster, but each depot needs its own stock and staff.
+- Cross-docking: goods leave the depot the same day on local vehicles. This gives hub transport benefits with little extra stock, but needs accurate information and tight timing.
+
+More depots mean cheaper local deliveries but more total stock.
+
+## 3. Vehicle utilisation and cost per tonne
+
+Most transport costs are per trip, not per tonne: the driver, fuel and vehicle cost the same whether the truck is full or not. So utilisation drives cost.
+
+- Cost per tonne = total trip cost / tonnes carried.
+- Weight utilisation = tonnes loaded / legal payload x 100.
+- A vehicle "weighs out" when it reaches its weight limit first (typical for rice, sugar or flour) and "cubes out" when it fills its volume first (typical for light goods such as snacks). Mixing heavy and light products on one vehicle can use both limits better.
+
+Example: a trip from Luanda to a depot costs 400,000 Kz. A full 20-tonne load gives 400,000 / 20 = 20,000 Kz per tonne. If the truck leaves with only 12 tonnes (60% utilisation), the cost is 400,000 / 12 = 33,333 Kz per tonne, two-thirds higher. Waiting one day to consolidate orders into a full load is often cheaper, as long as customer service allows it. Return loads also cut the cost of a round trip.
+
+::: quiz
+? A trip costs 500,000 Kz. The truck can carry 20 tonnes but leaves with 10. What is the cost per tonne?
+- 25,000 Kz || That would be the cost at a full 20-tonne load.
+* 50,000 Kz || 500,000 / 10 = 50,000 Kz per tonne, double the full-load cost.
+- 10,000 Kz || This divides by the wrong number.
+:::
+
+## 4. Route planning for local delivery
+
+For multi-drop routes in a city, the key measure is cost per drop or cost per case delivered. To plan routes:
+
+::: slides
+SLIDE Step 1: Zone the area | Divide by municipality or main road; Give each zone fixed delivery days | Group orders, raise drop density
+SLIDE Step 2: Check delivery windows | Many shops receive only in the morning; Note each customer's window | Respect the customer's clock
+SLIDE Step 3: Sequence and load | Start with the earliest windows and avoid traffic peaks; Load last drop first | Shortest sensible route
+SLIDE Step 4: Confirm delivery | Collect proof of delivery at every stop; Record shortage or damage immediately | No POD, no claim
+:::
+
+## Worked example: depot deliveries in Benguela province
+
+A distributor delivers food products from Luanda to wholesalers and shops in Benguela province. Currently, one truck leaves Luanda every day with whatever has been ordered, often 8 to 12 tonnes on a 20-tonne truck, and delivers directly to 15 to 20 customers spread across the province. Each trip costs about 600,000 Kz, and deliveries are often late.
+
+Current cost per tonne: 600,000 / 10 tonnes on average = 60,000 Kz per tonne.
+
+She proposes a hub-and-spoke design using a small cross-dock at a rented depot in Benguela city. Full 20-tonne trucks leave Luanda three times a week (trunk cost 550,000 Kz per trip, or 27,500 Kz per tonne). At the depot, goods move straight onto two light vans that deliver to customers by zone, with fixed delivery days, at a local cost of about 15,000 Kz per tonne. Total cost is about 42,500 Kz per tonne, plus depot rent and staff.
+
+::: case | Approving the Benguela cross-dock
+The logistics manager, Sónia, presents the plan. The commercial director, Jorge, worries that some shops will now wait up to two days instead of receiving daily trucks.
+? What should Sónia do next?
+- Drop the plan to avoid any complaint || This keeps a cost of 60,000 Kz per tonne and late deliveries.
+* Add depot rent and staff to the comparison, and offer fixed morning delivery days by zone || Total cost decides, and fixed days give customers reliability.
+- Keep daily trucks but load them fuller with any stock || Pushing unordered stock to customers creates returns and disputes.
+:::
+
+## Tool: transport planning checklist
+
+- Shipment or route:
+- Mode(s) chosen and reason (cost, speed, reliability, value):
+- Distribution design used (direct, hub and spoke, cross-dock):
+- Vehicle payload and volume capacity:
+- Planned load (tonnes and cubic metres) and utilisation %:
+- Trip cost and cost per tonne:
+- Number of drops and cost per drop:
+- Delivery windows confirmed:
+- Return load planned (yes or no):
+- Proof of delivery method:
+
+## Common mistakes
+
+- Choosing the cheapest freight rate instead of the lowest total cost, including stock and delays.
+- Sending part-loaded trucks every day because "the customer is waiting", without checking whether consolidation is acceptable.
+- Delivering without proof of delivery, so shortages and claims cannot be resolved.
+- Ignoring empty return trips that could carry returns or other freight.
+
+## Self-check
+
+- A trip costs 300,000 Kz and carries 15 tonnes. What is the cost per tonne? (Answer: 20,000 Kz.)
+- What is cross-docking? (Answer: moving goods from inbound to outbound vehicles with little or no storage.)
+- Which distribution design has the lowest total inventory? (Answer: direct delivery from a single central warehouse.)
+
+## Practical assignment
+
+Collect data for your company's ten most recent delivery trips: trip cost, tonnes carried and number of drops. Calculate utilisation, cost per tonne and cost per drop for each. Identify the two worst trips and propose one change to your logistics manager.
+
+## Summary
+
+- Combine transport modes to get the lowest total cost for the required service.
+- Distribution design trades transport cost against inventory: direct, hub and spoke or cross-docking.
+- Cost per tonne falls sharply as utilisation rises, so plan full loads, then efficient routes.
+=== 20
+SLIDE What you will learn | Calculate OTIF and fill rate; Calculate inventory turns and days of inventory; Calculate the cash-to-cash cycle; Run a simple improvement cycle | Four skills you will practise in this lesson
+SLIDE Service metrics | OTIF: orders delivered on time and in full / total orders; Fill rate: units shipped / units ordered; Define on time and in full before measuring | Measure from the customer's view
+SLIDE Inventory metrics | Inventory turns = cost of goods sold / average inventory; Days of inventory = 365 / turns; Track by product family | Faster turns free up cash
+SLIDE Cash-to-cash cycle | C2C = DIO + DSO - DPO; Days inventory + days receivables - days payables; Long import lead times lengthen the cycle | How long your cash is locked in operations
+SLIDE A balanced scorecard | Service: OTIF, fill rate; Cost: cost per tonne, cost as % of sales; Assets: turns, cash-to-cash; Few KPIs, clear owners | Balance service, cost and cash
+SLIDE Improving performance | Plan-Do-Check-Act cycle; Find root causes with 5 Whys; Pareto the failure reasons; Test one change at a time | Measure, find the cause, fix, check
+SLIDE Common mistakes | Measuring OTIF by your own definition, not the customer's; Chasing one KPI only; Averages that hide problem products; No owner for each KPI | What gets measured and owned gets improved
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate OTIF and fill rate and explain the difference between them;
+- calculate inventory turns and days of inventory on hand;
+- calculate the cash-to-cash cycle and explain how to shorten it;
+- use the Plan-Do-Check-Act cycle and the 5 Whys to improve a supply chain KPI.
+
+## Key terms
+
+::: terms
+KPI (key performance indicator): a measure used to track progress towards an important goal
+OTIF (on time in full): the percentage of orders delivered both on the agreed date and with the full quantity
+Fill rate: the percentage of ordered units (or lines) that were delivered
+Inventory turns: how many times average inventory is sold and replaced in a year
+DIO, DSO and DPO: days inventory outstanding, days sales outstanding and days payables outstanding
+Cash-to-cash cycle: the number of days between paying suppliers and receiving cash from customers
+:::
+
+## 1. Service metrics: OTIF and fill rate
+
+Service should be measured from the customer's point of view. Two KPIs are widely used.
+
+- OTIF = orders delivered on time and in full / total orders x 100.
+- Fill rate = units delivered / units ordered x 100. It can also be measured by order lines.
+
+OTIF is stricter. Before measuring, agree exact definitions with your customers: does "on time" mean the agreed day, or a time window? Does "in full" allow any tolerance? Unclear definitions are the main reason why a supplier reports 95% OTIF while the customer feels it is 70%.
+
+::: quiz
+? A customer orders 10 lines and receives 9 complete lines on the agreed day. How does this order count?
+- As a success for OTIF || One short line makes the order not in full.
+* As an OTIF failure, while fill rate by lines is 90% || OTIF counts the whole order, fill rate counts lines.
+- As a fill rate of 0% || Nine of ten lines were delivered, so fill rate is 90%.
+:::
+
+## 2. Inventory metrics: turns and days of inventory
+
+Inventory turns show how efficiently stock is used.
+
+- Inventory turns = annual cost of goods sold / average inventory value (both at cost).
+- Days of inventory (DIO) = 365 / inventory turns, or average inventory / annual cost of goods sold x 365.
+
+Higher turns mean less cash tied up for the same sales, but very high turns may signal frequent stock-outs. Importers with long lead times naturally have lower turns, so compare with your own history and track turns by product family, because an average can hide slow or obsolete stock.
+
+## 3. The cash-to-cash cycle
+
+The cash-to-cash (C2C) cycle measures how long cash is locked in operations, from the day you pay suppliers until the day customers pay you.
+
+::: slides
+SLIDE Step 1: Days of inventory | DIO = average inventory / annual cost of goods sold x 365; Falls with better forecasts and smaller orders | Cash sitting on shelves
+SLIDE Step 2: Days receivables | DSO = average accounts receivable / annual sales x 365; Falls when deliveries and documents are correct | Cash owed by customers
+SLIDE Step 3: Days payables | DPO = average accounts payable / annual cost of goods sold x 365; Set by supplier payment terms | Supplier credit you use
+SLIDE Step 4: Combine | C2C = DIO + DSO - DPO; Shorter is better | Days your cash is locked in
+:::
+
+Importers that pay suppliers before shipment have very short or zero DPO, which makes managing DIO and DSO even more important.
+
+::: quiz
+? DIO is 80 days, DSO is 30 days and DPO is 10 days. What is the cash-to-cash cycle?
+- 120 days || This adds DPO instead of subtracting it.
+- 60 days || This subtracts DSO by mistake.
+* 100 days || 80 + 30 - 10 = 100 days.
+:::
+
+## 4. A balanced set of KPIs
+
+No single KPI tells the whole story: huge stocks may lift OTIF but damage turns and cash. Use a small, balanced scorecard with one owner per KPI:
+
+- Service: OTIF and fill rate.
+- Cost: transport cost per tonne and total supply chain cost as a percentage of sales.
+- Assets and cash: inventory turns, days of inventory and cash-to-cash cycle.
+- Quality: forecast accuracy (MAPE) and supplier on-time delivery.
+
+SCOR also groups metrics into performance attributes, including reliability, responsiveness, agility, cost and asset management, a useful check on your scorecard's balance.
+
+## 5. Improving performance: PDCA and the 5 Whys
+
+The Plan-Do-Check-Act (PDCA) cycle, associated with W. Edwards Deming, gives a simple structure:
+
+::: diagram cycle | Plan-Do-Check-Act
+Plan: choose one KPI gap, analyse causes and plan a change
+Do: test the change on a small scale, such as one depot or product family
+Check: compare results with the baseline after a fixed period
+Act: adopt the change if it works, adjust it if not, then choose the next gap
+:::
+
+To find causes, sort failures by reason and count them (a Pareto analysis), then ask "why?" repeatedly, usually about five times, until you reach a cause you can act on.
+
+## Worked example: KPI review at a Luanda distributor
+
+A food distributor in Luanda reviews last quarter's performance. It delivered 1,000 orders. 920 arrived on the agreed day, and 850 of those were also complete. OTIF = 850 / 1,000 = 85%. Customers ordered 120,000 cartons and received 114,000. Fill rate = 114,000 / 120,000 = 95%.
+
+Annual cost of goods sold is 6,000 million Kz and average inventory is 1,200 million Kz. Turns = 6,000 / 1,200 = 5. Days of inventory = 365 / 5 = 73 days. Days sales outstanding are 40 days and days payables outstanding are 20 days. Cash-to-cash cycle = 73 + 40 - 20 = 93 days.
+
+The team runs a Pareto analysis on the 150 failed orders. 70 failures are "not in full" because of stock-outs on 1-litre oil and 5 kg sugar. Asking why: the products ran out because the order was late; the order was late because the reorder point was based on a 45-day lead time; actual lead time over the last six months was 65 days because of port delays; nobody updated the parameter. Root cause: planning parameters are not reviewed.
+
+::: case | Choosing the PDCA test
+The supply chain manager, Mateus, must choose one change to test for two months.
+? Which test should he choose?
+- Double safety stock on every item || This hits turns and cash and does not fix the root cause.
+* Recalculate reorder points for the 18 A items using actual lead times, and review them quarterly || This targets the root cause on the items that matter most.
+- Change the definition of OTIF to exclude port delays || This improves the number, not the customer's experience.
+- Ask sales to stop promising delivery dates || This hides the problem and damages customer trust.
+:::
+
+After two months OTIF rises to 91% and turns stay at about 5, so the quarterly review becomes a standard S&OP step.
+
+## Tool: monthly supply chain scorecard
+
+- Period:
+- OTIF (definition agreed with customers):
+- Fill rate (units or lines):
+- Inventory turns and days of inventory (by product family):
+- DSO, DPO and cash-to-cash cycle:
+- Transport cost per tonne:
+- Forecast MAPE and bias:
+- Top three failure reasons (Pareto):
+- Root cause found (5 Whys):
+- PDCA action, owner and check date:
+
+## Common mistakes
+
+- Measuring OTIF with your own definition, so customers do not recognise the number.
+- Chasing one KPI, such as turns, while service or cost gets worse.
+- Reporting company averages that hide the products or depots causing most failures.
+- Having KPIs without named owners or improvement actions.
+
+## Self-check
+
+- Out of 400 orders, 340 were on time and in full. What is OTIF? (Answer: 85%.)
+- Cost of goods sold is 1,000 million Kz and average inventory is 250 million Kz. What are inventory turns? (Answer: 4 turns, about 91 days of inventory.)
+- DIO is 60, DSO is 30 and DPO is 15 days. What is the cash-to-cash cycle? (Answer: 75 days.)
+
+## Practical assignment
+
+Using last month's data, calculate OTIF, fill rate, inventory turns and the cash-to-cash cycle for your business or department. Pick the weakest KPI, run a Pareto analysis of its failures, use the 5 Whys on the biggest reason, and propose one PDCA test to your manager.
+
+## Summary
+
+- Measure service with OTIF and fill rate, using definitions agreed with customers.
+- Track inventory turns, days of inventory and the cash-to-cash cycle (DIO + DSO - DPO) to manage cash.
+- Use a balanced scorecard and the PDCA cycle with 5 Whys to improve one gap at a time.

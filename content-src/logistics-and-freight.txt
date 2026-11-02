@@ -1,0 +1,864 @@
+=== 20
+SLIDE What you will learn | Compare sea, road, air and rail on cost, speed, reliability and flexibility; Use value density and shelf life to narrow the choice; Calculate the in-transit inventory cost of a slow mode; Score transport options with a weighted-factor matrix | Choose the mode on total cost, not freight rate alone
+SLIDE The four main modes | Sea: lowest cost per tonne, slowest, needs ports; Air: fastest, most expensive, limited by weight and volume; Road: door-to-door and flexible, best for short and medium distances; Rail: low cost for heavy, long, regular flows on fixed routes | Most chains combine modes
+SLIDE Three filters before you compare rates | Value density: value per kg or per cubic metre; Urgency and shelf life; Volume and regularity of the flow | High value and urgent points to air, heavy and planned points to sea or rail
+SLIDE In-transit inventory cost | Goods on the move are stock you have paid for but cannot sell; Cost = shipment value x annual carrying rate x transit days / 365; A slow mode adds stock cost and safety stock | Add it to the freight rate before comparing
+SLIDE Weighted-factor scoring | List the factors that matter; Give each a weight that totals 100%; Score each mode 1 to 5; Multiply and add | Makes the decision visible and repeatable
+SLIDE Angola context | Port of Luanda: main gateway for the capital region; Port of Lobito: linked by the Benguela Railway to the Lobito Corridor; Road: main link to most provinces, slower in the rainy season | Plan around ports, corridors and road conditions
+SLIDE Common mistakes | Choosing on freight rate only; Ignoring reliability and transit time variation; Using air to fix poor planning; Forgetting the last kilometre | Total cost and reliability decide
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- compare sea, road, air and rail transport on cost, speed, reliability and flexibility;
+- explain how value density, urgency and shelf life affect the choice of mode;
+- calculate the in-transit inventory cost of a shipment;
+- apply a weighted-factor matrix to choose a transport mode for a real flow.
+
+## Key terms
+
+::: terms
+Multimodal transport: a movement that uses two or more modes, for example sea to a port and then road to a warehouse
+Value density: the value of a product per kilogram or per cubic metre
+Reliability: how consistently a mode or carrier delivers within the promised transit time
+In-transit inventory: stock the company owns that is still moving and cannot yet be sold
+:::
+
+## 1. The four main modes and their trade-offs
+
+Each mode has a typical profile:
+
+- Sea: the lowest cost per tonne over long distances and very large capacity, but slow, dependent on port and shipping schedules, and needing another mode to reach the customer.
+- Air: the fastest option for long distances, but by far the most expensive per kilogram, with limits on piece size and weight. It suits spare parts, medicines and urgent, high-value goods.
+- Road: the most flexible mode, door to door and able to change plans at short notice. Cost per tonne rises with distance, and road and traffic conditions affect reliability.
+- Rail: low cost per tonne for heavy goods moving regularly over long distances. It needs lines and terminals at both ends, so it usually needs road for the first or last leg.
+
+Most supply chains are multimodal, so choose the best mode for each leg.
+
+## 2. Three filters: value density, urgency and volume
+
+Before comparing quotations, apply three filters.
+
+- Value density. For high-value goods such as phones, freight is a small share of product value, so faster modes become affordable. For low-value goods such as sugar, cement or flour, freight is a large share of final cost, so the cheapest mode per tonne usually wins.
+- Urgency and shelf life. A stopped production line or fresh products with short shelf life can justify a faster mode. Long-life goods with planned demand usually cannot.
+- Volume and regularity. A large, steady flow can fill containers, trucks or trains and justify contracts.
+
+::: quiz
+? A distributor imports bagged salt every month in large, steady volumes. Which choice of main mode is most logical?
+- Air freight, because it is the most reliable || Salt has very low value density, so air freight would cost more than the goods are worth.
+* Sea freight, then road for distribution || Low value density and regular volume point to the lowest cost per tonne.
+- Road from the supplier's country for every shipment || Long-distance road is costly per tonne and is not practical for overseas supply.
+:::
+
+## 3. Total cost: adding the cost of time
+
+A slower mode keeps your money tied up in stock for longer. The in-transit inventory cost is:
+
+Shipment value x annual carrying cost rate x transit days / 365
+
+The carrying cost rate is the yearly cost of holding stock as a percentage of its value (cost of capital, insurance, risk). Finance can give you your company's rate.
+
+Example: a shipment worth USD 200,000, a carrying cost rate of 20% per year, 35 days by sea or 5 days by air.
+
+- Sea: 200,000 x 0.20 x 35 / 365 = about USD 3,836.
+- Air: 200,000 x 0.20 x 5 / 365 = about USD 548.
+
+The difference is about USD 3,288. If air costs much more than this in extra freight, sea is still cheaper in total. Slow and unreliable modes also force you to hold more safety stock. Always compare total cost: freight, handling, in-transit stock, safety stock and the cost of a stock-out.
+
+::: quiz
+? A shipment worth USD 50,000 spends 20 days in transit. The carrying cost rate is 25% per year. What is the in-transit inventory cost?
+- About USD 250 || This divides by the wrong number of days. Use transit days / 365.
+* About USD 685 || 50,000 x 0.25 x 20 / 365 = about USD 685.
+- About USD 12,500 || This is the full annual carrying cost, not the cost for 20 days.
+:::
+
+## 4. Weighted-factor scoring
+
+When several factors matter, a weighted-factor matrix makes the decision clear and repeatable.
+
+::: slides
+SLIDE Step 1: List the factors | Total cost; Transit time; Reliability; Flexibility and damage risk | Choose what matters for this flow
+SLIDE Step 2: Weight the factors | Give each factor a percentage; Weights must total 100% | Agree the weights before scoring
+SLIDE Step 3: Score each option | Score 1 (poor) to 5 (excellent); Use quotations and real experience | Score every option on every factor
+SLIDE Step 4: Multiply and add | Score x weight for each factor; Add to get a total per option | Highest total wins
+:::
+
+::: diagram steps | Choosing a transport mode
+Filter: check value density, urgency, shelf life and volume
+Shortlist: keep the modes and routes that pass the filters
+Cost: add freight, handling and in-transit stock cost
+Score: apply the weighted-factor matrix
+Decide and review: choose, keep a backup, review every quarter
+:::
+
+## Worked example: a distributor supplying Huambo
+
+A food distributor imports rice through Angolan ports and supplies wholesalers in the provinces. The Port of Luanda serves the capital region, while the Port of Lobito in Benguela province is linked by the Benguela Railway to the interior and to the Lobito Corridor towards the Democratic Republic of Congo. Most provincial deliveries go by road, and some routes slow down in the rainy season.
+
+For a monthly rice flow to Huambo, the logistics manager weights total cost 40%, reliability 25%, transit time 15%, flexibility 10% and damage risk 10%.
+
+- Option A, Luanda plus road: scores 3, 3, 4, 5, 3. Total: 1.2 + 0.75 + 0.6 + 0.5 + 0.3 = 3.35.
+- Option B, Lobito plus road: scores 4, 4, 4, 4, 3. Total: 1.6 + 1.0 + 0.6 + 0.4 + 0.3 = 3.9.
+
+She chooses Option B and keeps Luanda as a backup.
+
+::: case | An urgent order for Huambo
+Two months later, a Huambo wholesaler places an extra order of 20 tonnes of rice that must arrive within 5 days. The next vessel to Lobito arrives in 12 days, but there is stock in the Luanda warehouse. Rosa must decide.
+? What should Rosa do?
+- Wait for the Lobito vessel because Option B scored higher || The matrix was built for the regular flow. It does not fit an urgent order with a 5-day deadline.
+* Use the backup: send stock from Luanda by road and replenish later || The deadline is an absolute limit, and the backup route exists for exactly this case.
+- Fly the rice to Huambo to be safe || Air is far too expensive for low value density rice when road can meet the deadline.
+:::
+
+## Tool: mode selection checklist
+
+- Product, value per kg and value per cubic metre:
+- Volume per month and regularity:
+- Required delivery date and cost of being late:
+- Options considered (mode and route for each leg):
+- Freight, handling and in-transit inventory cost per option:
+- Factors, weights and scores:
+- Backup option if the first choice fails:
+
+## Common mistakes
+
+- Choosing on the freight rate alone and ignoring stock, handling and stock-out costs.
+- Looking at average transit time and ignoring how much it varies, which drives safety stock.
+- Using air freight regularly to fix poor planning.
+- Forgetting the final road leg, which can be the slowest and most expensive part.
+
+## Self-check
+
+- A shipment worth USD 100,000 travels 30 days and the carrying cost rate is 18% per year. What is the in-transit inventory cost? (Answer: 100,000 x 0.18 x 30 / 365 = about USD 1,479.)
+- Why are low value density goods such as flour usually moved by sea and road rather than air? (Answer: freight is a large share of their value, so the cheapest cost per tonne matters most.)
+- In a weighted-factor matrix, what must the weights add up to? (Answer: 100%.)
+
+## Practical assignment
+
+Choose one regular flow in your company. Complete the checklist, calculate the in-transit inventory cost of the current mode and build a weighted-factor matrix comparing it with one alternative.
+
+## Summary
+
+- Sea and rail move cheap, heavy volume, air buys speed, road gives flexibility and the final leg.
+- Filter by value density, urgency, shelf life and volume before comparing rates.
+- Compare total cost, including in-transit stock, and use a weighted-factor matrix to decide.
+=== 20
+SLIDE What you will learn | Explain FCL and LCL and choose between them; Describe the main container types and TEU; Calculate air freight chargeable weight; Calculate LCL charges using weight or measure | Freight is charged on space as well as weight
+SLIDE Containers and TEU | TEU = twenty-foot equivalent unit; 20-foot = 1 TEU, about 33 cubic metres; 40-foot = 2 TEU, about 67 cubic metres; 40-foot high cube: about 76 cubic metres | Volume and weight limits both apply
+SLIDE Container types | Dry (general purpose): most cargo; Reefer: temperature controlled; Open top and flat rack: oversized cargo; Tank: bulk liquids | Match the container to the product
+SLIDE FCL vs LCL | FCL: you use the whole container, one shipper; LCL: your cargo shares a container with others; LCL costs more per cubic metre and takes longer; FCL often becomes cheaper above a break-even volume | Compare total cost, including handling at both ends
+SLIDE LCL charging: weight or measure | 1 revenue ton = 1 cubic metre or 1,000 kg; Charged on whichever is greater; Example: 4.5 cbm and 2,000 kg = 4.5 revenue tons | Light, bulky goods pay on volume
+SLIDE Air chargeable weight | Volumetric weight = L x W x H in cm / 6,000; Chargeable weight = greater of actual and volumetric; Example: 10 cartons 60 x 50 x 40 cm, 18 kg each = 200 kg chargeable | Measure every carton before booking
+SLIDE Common mistakes | Booking FCL for too little cargo, or LCL for too much; Ignoring weight limits on containers and roads; Using estimated dimensions for air quotes; Forgetting destination LCL charges | Measure, weigh, then compare
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between FCL and LCL shipments and choose between them;
+- describe the main container types and what a TEU is;
+- calculate the chargeable weight of an air freight shipment;
+- calculate an LCL charge using the weight or measure rule.
+
+## Key terms
+
+::: terms
+TEU: twenty-foot equivalent unit, the standard unit for counting containers
+FCL: full container load, a container used by one shipper for its own cargo
+LCL: less than container load, a shipment that shares a container with other shippers' cargo
+Consolidation: combining several small shipments into one larger load, usually done by a freight forwarder
+Volumetric weight: a weight calculated from the size of a package, used when goods are light for their size
+Chargeable weight: the weight on which freight is charged, the greater of actual and volumetric weight
+:::
+
+## 1. Containers and the TEU
+
+The ISO shipping container lets the same box move by ship, truck and train without unloading the cargo. A 20-foot container is 1 TEU and a 40-foot container is 2 TEU. Approximate internal volumes for standard dry containers are:
+
+- 20-foot: about 33 cubic metres.
+- 40-foot: about 67 cubic metres.
+- 40-foot high cube: about 76 cubic metres, around 30 cm taller than a standard 40-foot.
+
+You never use the full volume, because cartons and pallets leave gaps. As a rough guide, a 20-foot holds around 10 industrial pallets of 1.2 x 1.0 m on the floor, and a 40-foot around 20.
+
+Weight is the other limit. Heavy goods such as rice, sugar, flour or tiles often reach the weight limit before the container is full. Maximum payload depends on the container (shown on its door) and on road weight rules at origin and destination, so confirm it with your shipping line or forwarder. This is why heavy goods often travel in 20-foot containers and light, bulky goods in 40-foot or high cube.
+
+Main container types:
+
+- Dry or general purpose: closed boxes for most cargo.
+- Reefer: refrigerated containers for chilled and frozen goods. They need power at the port, on the ship and on the road.
+- Open top and flat rack: for cargo too tall or wide for a normal box, such as machinery.
+- Tank: for bulk liquids such as edible oil.
+
+::: quiz
+? An importer wants to ship 24 tonnes of sugar in bags. Which container is usually the better starting point?
+* 20-foot dry container || Heavy goods reach the weight limit before the space is full, so a smaller box is usually enough.
+- 40-foot high cube || The extra volume is wasted because the weight limit is reached first.
+- Reefer container || Sugar does not need temperature control, and reefers cost more.
+:::
+
+## 2. FCL or LCL?
+
+With FCL you book a whole container. It is packed once, sealed and opened only at destination, so handling, damage risk and transit time are lower. You pay per container, full or not.
+
+With LCL, a forwarder consolidates your cargo with others' in one container and separates it at destination. You pay for the space you use, but there are extra handling steps, extra charges at both ends and usually longer transit times.
+
+LCL charges per cubic metre are higher than the equivalent FCL cost, so above a certain volume a full container becomes cheaper even if not full. This is the break-even volume. Ask for both quotations whenever your volume is near it.
+
+## 3. How LCL is charged: weight or measure
+
+Sea LCL is charged per revenue ton: 1 cubic metre or 1,000 kg, whichever gives the higher figure. A shipment of 4.5 cubic metres weighing 2,000 kg is 4.5 revenue tons by volume and 2.0 by weight, so it is charged as 4.5. At USD 80 per revenue ton, ocean freight is USD 360, before origin and destination charges.
+
+::: quiz
+? An LCL shipment measures 2.5 cubic metres and weighs 1,800 kg. On how many revenue tons is it charged?
+- 1.8 || Weight gives the lower figure here, and the higher figure is charged.
+* 2.5 || 2.5 cubic metres is greater than 1.8 tonnes, so volume decides.
+- 4.3 || Volume and weight are compared, not added.
+:::
+
+## 4. Air freight: chargeable weight
+
+Aircraft space is limited by volume as well as weight, so airlines charge on the greater of actual gross weight and volumetric weight. The standard air freight formula is:
+
+Volumetric weight (kg) = length x width x height in centimetres / 6,000
+
+This equals 167 kg per cubic metre. Check the divisor in your quotation, because courier and express services often use a different one.
+
+::: slides
+SLIDE Step 1: Measure | Measure each carton or pallet in cm; Example: 60 x 50 x 40 cm | Never use estimates
+SLIDE Step 2: Volumetric weight | 60 x 50 x 40 = 120,000; 120,000 / 6,000 = 20 kg per carton; 10 cartons = 200 kg | Size converted to kg
+SLIDE Step 3: Actual weight | 10 cartons x 18 kg = 180 kg; Use gross weight including packing | Weigh, do not guess
+SLIDE Step 4: Compare | 200 kg volumetric vs 180 kg actual; Chargeable weight = 200 kg; At USD 4.50 per kg = USD 900 | The higher figure is charged
+:::
+
+Repacking into cartons that waste less space can reduce the bill.
+
+::: diagram steps | From cargo to freight charge
+Measure and weigh: dimensions in cm and gross weight in kg for every package
+Convert: cubic metres for sea, volumetric weight for air
+Apply the rule: revenue tons for LCL, chargeable weight for air
+Price: multiply by the rate and add local charges
+Compare: LCL against FCL, sea against air
+:::
+
+## Worked example: an importer in Luanda deciding FCL or LCL
+
+A household products distributor in Luanda imports cleaning products. This month's order is 18 cubic metres and 4,200 kg. The forwarder quotes:
+
+- LCL: USD 85 per revenue ton ocean freight plus USD 70 per revenue ton local charges. 18 revenue tons x 155 = USD 2,790.
+- FCL 20-foot: USD 2,100 freight plus USD 600 container charges = USD 2,700.
+
+FCL is cheaper, faster and sealed from origin to Luanda. The break-even is 2,700 / 155 = about 17.4 cubic metres.
+
+::: case | Filling the container
+After booking the 20-foot container, Carla, the logistics coordinator, sees that the order uses 18 of about 28 usable cubic metres. The goods are light, so weight is not a concern. Sales expect steady demand for the same products next month.
+? What should Carla do?
+- Switch back to LCL to avoid paying for empty space || At 18 cubic metres LCL costs USD 2,790, more than the full container at USD 2,700.
+* Ask the supplier to add stock to fill the remaining space || Freight per unit falls because the container cost is fixed, and demand is steady.
+- Change to a 40-foot container || That doubles the space when the current box is not yet full.
+:::
+
+## Tool: freight booking calculator
+
+- Number and type of packages, and dimensions of each (cm):
+- Gross weight per package and total (kg):
+- Total volume (cubic metres) and revenue tons for LCL:
+- Air volumetric weight (total cm3 / 6,000) and chargeable weight:
+- FCL option: container type, quantity and total cost:
+- LCL option: rate per revenue ton x revenue tons, plus local charges:
+- Weight limit confirmed with the line or forwarder: yes or no
+
+## Common mistakes
+
+- Booking LCL above the break-even volume, or FCL for very small volumes.
+- Planning heavy cargo by volume only and exceeding weight limits.
+- Comparing LCL ocean rates only, without origin and destination charges.
+
+## Self-check
+
+- What is the chargeable weight of 5 cartons, each 50 x 40 x 30 cm and 8 kg? (Answer: volumetric 10 kg each, 50 kg total, against 40 kg actual, so 50 kg.)
+- An LCL shipment is 3 cubic metres and 4,500 kg. How many revenue tons is it? (Answer: 4.5, because weight is the greater figure.)
+- How many TEU is a 40-foot high cube container? (Answer: 2 TEU.)
+
+## Practical assignment
+
+Take one recent shipment. Collect package dimensions and weights, calculate revenue tons and air chargeable weight, and check whether FCL or LCL would have been cheaper. Note the break-even volume for that lane.
+
+## Summary
+
+- Containers are counted in TEU, and both volume and weight limit what you can load.
+- FCL is safer and faster, LCL suits small volumes, and the break-even volume tells you which to book.
+- Sea LCL is charged on weight or measure, air freight on the greater of actual and volumetric weight.
+=== 20
+SLIDE What you will learn | Explain the three functions of a bill of lading; Prepare a correct commercial invoice and packing list; Explain when a certificate of origin is needed; Check a document set for consistency | Documents move the goods as much as trucks do
+SLIDE Bill of lading | Receipt for the goods; Evidence of the contract of carriage; Document of title when negotiable | Whoever holds the original can claim the goods
+SLIDE Types of bill of lading | Shipped on board vs received for shipment; Clean vs claused; To order vs straight; Master vs house | Read the face of the B/L carefully
+SLIDE Other transport documents | Sea waybill: not a document of title, fast release; Air waybill: receipt and contract, not negotiable; Telex release: originals surrendered at origin | Choose the document that fits the payment terms
+SLIDE Commercial invoice and packing list | Invoice: seller, buyer, goods, HS code, quantity, value, Incoterm, currency; Packing list: packages, marks, dimensions, weights | Same quantities and weights on every document
+SLIDE Certificate of origin | States where goods were produced; Non-preferential: general proof of origin; Preferential: claims lower duty under a trade agreement | Check requirements with your customs broker
+SLIDE Document consistency check | Same names, addresses, quantities, weights and descriptions; Matches the contract and letter of credit; Under UCP 600 banks check documents only | One wrong digit can delay release
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the three functions of a bill of lading and the main types;
+- describe what a commercial invoice, packing list and certificate of origin must contain;
+- choose between a bill of lading, a sea waybill and a telex release in common situations;
+- check a set of shipping documents for consistency before goods arrive.
+
+## Key terms
+
+::: terms
+Shipper: the party that hands the goods to the carrier, usually the seller
+Consignee: the party named on the transport document to receive the goods
+Bill of lading (B/L): the main sea transport document, issued by the carrier or its agent
+Document of title: a document that gives its holder the right to claim the goods
+HS code: the Harmonized System code, an international product classification used by customs
+:::
+
+## 1. The bill of lading
+
+The bill of lading has three functions:
+
+- Receipt: it confirms the carrier has received the goods, with the number of packages and their apparent condition.
+- Evidence of the contract of carriage: the terms of transport are printed on it or referred to.
+- Document of title: a negotiable B/L represents the goods. Whoever holds the original, properly endorsed, can claim them at destination.
+
+If originals arrive late, the goods wait at the port and charges grow.
+
+The main types:
+
+- Shipped on board or received for shipment. A shipped on board B/L confirms, with a date, that the goods are on the ship. Banks normally require it for letters of credit.
+- Clean or claused. A claused B/L notes problems such as "cartons wet". Buyers and banks usually refuse claused bills.
+- To order or straight. A "to order" B/L can be transferred by endorsement. A straight B/L names one consignee.
+- Master or house: issued by the line to the forwarder, or by the forwarder to the shipper.
+
+::: quiz
+? A letter of credit requires a shipped on board bill of lading. The supplier sends a draft marked "received for shipment". What does this mean?
+- The draft is fine because the carrier has the goods || Received for shipment does not prove the goods are on the vessel, so the bank can refuse it.
+* The draft does not meet the credit and must be corrected || The credit asks for proof of loading on board, with a date.
+- The draft is a sea waybill || It is still a bill of lading, just the wrong type for this credit.
+:::
+
+## 2. Sea waybill, telex release and air waybill
+
+A sea waybill is a receipt and evidence of the contract, but not a document of title. Goods are released to the named consignee without an original.
+
+A telex release (or surrender) happens when the shipper returns the original bills to the carrier at origin, and the carrier tells its destination office to release the goods without them. It saves time, but the seller loses control of the goods once the originals are surrendered.
+
+An air waybill (AWB) is the air freight transport document. Like a sea waybill, it is not a document of title. Road and rail have their own consignment notes.
+
+::: quiz
+? A seller ships to a new buyer who has not yet paid, and the buyer asks for a telex release. What is the main risk for the seller?
+- The goods will be delayed at the port || A telex release speeds up release, it does not delay it.
+* The seller loses control of the goods before being paid || Once the originals are surrendered, the carrier can release the goods without them.
+- The bank will reject the documents || No bank is involved in this situation.
+:::
+
+::: diagram steps | Choosing the sea transport document
+Paid in advance or trusted open account: a sea waybill gives the fastest release
+Seller needs control until payment: use original negotiable bills of lading
+Letter of credit or documentary collection: originals travel through the banks
+Payment received and speed matters: the seller can agree a telex release
+:::
+
+## 3. Commercial invoice, packing list and certificate of origin
+
+The commercial invoice is the seller's bill, used by customs to assess duties and by banks under a letter of credit. It should show:
+
+- seller and buyer names and full addresses, invoice number and date, order reference;
+- a clear description of each product, with HS code;
+- quantity, unit price, total value and currency;
+- the Incoterms rule and named place, for example "CIF Luanda, Incoterms 2020";
+- country of origin, payment terms and number of packages.
+
+The packing list shows the number and type of packages, marks and numbers, contents, net and gross weights and dimensions, plus container and seal numbers.
+
+The certificate of origin states where the goods were produced. It is usually issued or stamped by a chamber of commerce or another authorised body in the exporting country. A non-preferential certificate is general proof of origin. A preferential certificate claims lower or zero duty under a trade agreement, which has its own rules of origin and format.
+
+Requirements vary by country and product and change over time, so for imports into Angola confirm the current list with your licensed customs broker.
+
+## 4. Checking documents for consistency
+
+Under the ICC rules UCP 600, banks examine documents only, not goods, so a small difference can make documents discrepant.
+
+::: slides
+SLIDE Step 1: Start from the contract | Product description; Quantity and price; Incoterms rule and payment terms | The contract is the reference
+SLIDE Step 2: Invoice vs contract | Same products and prices; Same Incoterms rule and place; Correct buyer and seller names | Fix the invoice first
+SLIDE Step 3: Packing list vs invoice | Same products and quantities; Same package count; Weights and marks | Two documents, one story
+SLIDE Step 4: Transport document vs both | Shipper, consignee, notify party; Packages, weight, container and seal numbers; Ports of loading and discharge | Check the draft before originals
+:::
+
+## Worked example: a food importer in Luanda checks a document set
+
+An importer of canned foods in Luanda receives draft documents for two 20-foot containers.
+
+- The invoice and packing list show 3,200 cartons. The B/L draft shows 3,020.
+- The consignee on the B/L is spelled differently from the company's legal name.
+
+She sends one list of corrections the same day, and the line corrects the draft before issuing originals.
+
+::: case | Originals are late
+A month later, a container of tomato paste reaches Luanda, but the original bills are still with the supplier's bank, waiting for the importer's payment under documentary collection. Free time ends in four days. Teresa, the import coordinator, must act.
+? What should Teresa do first?
+- Ask the shipping line to release the goods without originals || The line releases against originals under a negotiable B/L, so it will refuse.
+* Arrange payment so the bank releases the originals, and alert the customs broker || This frees the documents quickly and lets clearance start before free time ends.
+- Wait for the bank to send the documents || Without payment the bank will not release them, and charges will start.
+:::
+
+## Tool: document consistency checklist
+
+- Seller, buyer, consignee and notify party identical everywhere:
+- Product descriptions, HS codes and quantities match:
+- Ports of loading and discharge, Incoterms rule and place correct:
+- B/L type correct (on board, clean, to order or straight):
+- Certificate of origin and other documents required by the broker attached:
+
+## Common mistakes
+
+- Checking documents only after the goods arrive.
+- Using a telex release before payment has been received.
+- Writing vague product descriptions such as "foodstuffs" or "spare parts".
+
+## Self-check
+
+- What are the three functions of a bill of lading? (Answer: receipt for the goods, evidence of the contract of carriage, document of title.)
+- Why does a seller lose control of the goods with a telex release? (Answer: the originals are surrendered, so the carrier can release the goods without them.)
+- What is the difference between a preferential and a non-preferential certificate of origin? (Answer: a preferential one claims lower duty under a trade agreement, a non-preferential one only proves origin.)
+
+## Practical assignment
+
+Compare the order, invoice, packing list and transport document of your next shipment line by line with the checklist. Record every difference and agree with your supplier to send drafts before originals.
+
+## Summary
+
+- A bill of lading is a receipt, evidence of the contract and, when negotiable, a document of title.
+- Invoice, packing list and certificate of origin must give the same facts in the same words.
+- Check drafts before shipment, and confirm local requirements with your customs broker.
+=== 20
+SLIDE What you will learn | Explain what an Incoterms rule decides and what it does not; Name the 11 rules and their two groups; Choose between EXW, FCA, FOB, CIF and DAP; Write the rule and place correctly in a contract | Incoterms rules divide tasks, costs and risks
+SLIDE What Incoterms rules decide | Where the seller delivers and risk passes; Who pays which transport costs; Who arranges carriage and insurance; Who handles export and import clearance | They do not decide price, payment or ownership
+SLIDE The 11 rules | Any mode: EXW, FCA, CPT, CIP, DAP, DPU, DDP; Sea and inland waterway only: FAS, FOB, CFR, CIF | Published by the ICC
+SLIDE Risk and cost are not always the same point | C rules: seller pays main carriage, risk passes at origin; CIF and CIP: seller also buys insurance; CIF minimum cover, CIP higher cover in 2020 | Under CIF the buyer bears the sea risk
+SLIDE Choosing in practice | EXW: buyer does everything, even export clearance; FCA: often better than EXW and better than FOB for containers; CIF or CFR: seller controls freight; DAP: seller delivers to your place, you clear import | Choose who controls the freight
+SLIDE How to write it | Rule + precise named place + Incoterms 2020; Example: FCA supplier's warehouse, full address, Incoterms 2020; Example: CIF Port of Luanda, Incoterms 2020 | A vague place creates disputes
+SLIDE Common mistakes | Using FOB or CIF for containers handed over inland; Thinking CIF means the seller carries the risk at sea; Using DDP when the seller cannot clear import; Forgetting the year version | Read the rule, name the place
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what an Incoterms rule decides and what it does not decide;
+- name the 11 Incoterms 2020 rules and the two groups they belong to;
+- choose between EXW, FCA, FOB, CIF and DAP in common buying and selling situations;
+- write an Incoterms rule correctly in a quotation or contract.
+
+## Key terms
+
+::: terms
+Incoterms rules: standard trade terms published by the International Chamber of Commerce (ICC), current version Incoterms 2020
+Delivery: the point at which the seller has fulfilled its obligation to deliver and risk passes to the buyer
+Risk: responsibility for loss of or damage to the goods
+Named place: the place written after the rule, such as a port or warehouse
+:::
+
+## 1. What an Incoterms rule decides
+
+Each Incoterms rule is a three-letter code that answers four questions between seller and buyer:
+
+- Delivery and risk: where the seller delivers and when risk passes to the buyer.
+- Costs: which transport, handling and other costs each party pays.
+- Tasks: who contracts the carriage and who arranges insurance, if required.
+- Customs: who handles export clearance and who handles import clearance.
+
+Incoterms rules do not set the price, the payment terms, when ownership passes, or what happens if a party breaks the contract. These must be written elsewhere in the sales contract.
+
+::: quiz
+? Does "FOB, Incoterms 2020" also fix when ownership of the goods passes to the buyer?
+- Yes, ownership always passes with risk || Incoterms rules deal with risk, not ownership.
+- Yes, but only under FOB || No Incoterms rule decides ownership.
+* No, ownership must be agreed separately in the contract || Incoterms rules do not cover transfer of ownership, payment or price.
+:::
+
+## 2. The 11 rules in two groups
+
+Rules for any mode of transport, including multimodal:
+
+- EXW, Ex Works: goods made available at the seller's premises. The buyer does everything else, including loading and export clearance.
+- FCA, Free Carrier: the seller delivers to the buyer's carrier at the seller's premises (loaded) or another named place, and clears export.
+- CPT, Carriage Paid To: the seller pays carriage to destination, but risk passes when goods are handed to the first carrier.
+- CIP, Carriage and Insurance Paid To: as CPT, plus the seller insures the goods for the buyer.
+- DAP, Delivered at Place: the seller delivers at the named destination, ready for unloading. The buyer clears import.
+- DPU, Delivered at Place Unloaded: as DAP, but the seller also unloads. It replaced the older DAT rule.
+- DDP, Delivered Duty Paid: the seller delivers, clears import and pays import duties and taxes.
+
+Rules for sea and inland waterway only:
+
+- FAS, Free Alongside Ship: goods placed alongside the vessel at the port of loading.
+- FOB, Free on Board: goods delivered on board the vessel nominated by the buyer.
+- CFR, Cost and Freight: the seller pays freight to the destination port, but risk passes once goods are on board at loading.
+- CIF, Cost, Insurance and Freight: as CFR, plus marine insurance bought by the seller for the buyer.
+
+::: diagram steps | Seller's obligations, from least to most
+EXW: goods ready at the seller's premises
+FCA, FAS, FOB: seller delivers to the buyer's carrier or ship and clears export
+CPT, CFR, CIP, CIF: seller also pays the main carriage, and insurance under CIP and CIF
+DAP, DPU: seller delivers at destination, without or with unloading
+DDP: seller also clears import and pays duties and taxes
+:::
+
+## 3. The C rules: two critical points
+
+Under CPT, CIP, CFR and CIF the seller pays the main carriage to destination, but risk passes at origin.
+
+In Incoterms 2020, CIF requires only minimum cover, in line with Institute Cargo Clauses (C). CIP requires the higher cover of Institute Cargo Clauses (A). The parties can agree higher cover.
+
+::: quiz
+? Goods are sold CIF Port of Luanda, Incoterms 2020. A container is damaged during the sea voyage. Who bears the loss?
+- The seller, because it paid the freight || Under CIF the seller pays freight, but risk has already passed.
+* The buyer, who can claim under the insurance policy || Risk passed when the goods were on board at the port of loading.
+- The shipping line in every case || The line is liable only in limited cases set by the contract of carriage.
+:::
+
+## 4. Choosing a rule in practice
+
+::: slides
+SLIDE Step 1: Who controls freight best? | Who gets better rates; Who has a reliable forwarder; Who needs schedule control | Freight control drives the choice
+SLIDE Step 2: Who can clear customs? | Seller clears export at origin; Buyer clears import at destination; Avoid EXW and DDP when a party cannot do this | Customs must be possible
+SLIDE Step 3: Where should risk pass? | Early: F and C rules; Late: D rules; Decide who insures and at what level | Risk and insurance go together
+:::
+
+Common practical choices:
+
+- EXW: lowest price on paper, but the foreign buyer must load and clear export, which is often difficult. FCA at the seller's premises is usually better.
+- FOB: widely used for bulk cargo. For containers handed over at a terminal before loading, the ICC recommends FCA.
+- CIF or CFR: simple for the buyer, but the seller controls the carrier, schedule and freight cost built into the price.
+- DAP: the seller delivers to the buyer's port, warehouse or site, and the buyer clears import.
+
+Always write the rule, a precise place and the version: "FCA seller's warehouse, full address, Incoterms 2020" or "CIF Port of Luanda, Incoterms 2020". "CIF Angola" leaves room for dispute.
+
+## Worked example: buying rice for a distributor in Luanda
+
+A commodities distributor in Luanda buys rice from Asian exporters, traditionally CIF Luanda. Freight is hidden in the price, sailings slip and insurance is minimum cover. For 500 tonnes in 20-foot containers he compares:
+
+- CIF Port of Luanda, Incoterms 2020: USD 560 per tonne.
+- FCA container terminal at the port of loading, Incoterms 2020: USD 505 per tonne, plus USD 45 freight through his own forwarder and USD 3 for all-risks insurance. Total: USD 553 per tonne.
+
+FCA is cheaper, with better cover and direct schedule control.
+
+::: case | A new supplier offers EXW
+A new supplier of beans offers "EXW factory, Incoterms 2020" at a low price. The factory is 300 km inland in the supplier's country, and the distributor's forwarder has no office there.
+? What should Mário, the buyer, propose?
+- Accept EXW because it is the cheapest price || The distributor would have to load the goods and clear export abroad without a local office.
+* Ask for FCA at the factory, loaded and cleared for export || The seller handles loading and export clearance, and Mário's forwarder still controls freight.
+- Ask for CIF factory || CIF is a sea-only rule and its named place must be the destination port, not a factory.
+:::
+
+## Tool: Incoterms selection checklist
+
+- Mode of transport (sea bulk, container, air, road, multimodal):
+- Who has better freight rates and control of carriers:
+- Where risk should pass, who insures and at what level:
+- Chosen rule, precise named place, Incoterms 2020:
+- Price, payment and ownership terms written separately in the contract:
+
+## Common mistakes
+
+- Using FOB or CIF for containers handed over at an inland terminal or warehouse.
+- Believing that under CIF the seller carries the risk until the destination port.
+- Choosing DDP when the seller cannot clear import in the buyer's country.
+- Writing the rule without a precise named place or the year version.
+
+## Self-check
+
+- Under CFR Luanda, where does risk pass to the buyer? (Answer: when the goods are on board the vessel at the port of loading.)
+- Which Incoterms 2020 rules can be used only for sea and inland waterway transport? (Answer: FAS, FOB, CFR and CIF.)
+- Name two things that Incoterms rules do not decide. (Answer: for example the price, payment terms, transfer of ownership or remedies for breach.)
+
+## Practical assignment
+
+For your three most important international contracts, write down the rule and named place used, check whether they are precise and suit the transport mode, and use the checklist to decide if another rule would give better control or cost.
+
+## Summary
+
+- An Incoterms rule decides delivery and risk, costs, transport and insurance tasks and customs clearance.
+- There are 11 rules: seven for any mode and four for sea and inland waterway only.
+- Choose by who controls freight best, and always write the rule, a precise place and Incoterms 2020.
+=== 20
+SLIDE What you will learn | Plan delivery routes using the savings method; Plan a truck load by weight, volume and drop order; Set and manage delivery windows; Calculate cost per km, OTIF and vehicle utilisation | Good planning is cheaper than more trucks
+SLIDE Route planning basics | Group customers by zone; Sequence drops to reduce distance and avoid traffic peaks; Respect time windows and vehicle limits; Use routing software when routes are many | Plan the route before loading the truck
+SLIDE The savings method | Clarke and Wright (1964); Saving = d(depot,A) + d(depot,B) - d(A,B); Join pairs with the largest savings first; Stop when capacity or time is reached | Combine trips that save the most distance
+SLIDE Load planning | Check weight and volume limits; Load last drop first, first drop last; Heavy goods low and centred; Secure the load | Plan by drop order
+SLIDE Delivery windows | Agree a window with each customer; Narrow windows cost more; Plan in traffic and unloading time; Confirm the day before | A missed window is a failed delivery
+SLIDE Fleet KPIs | Cost per km = total fleet cost / km driven; OTIF = orders on time and in full / total orders; Utilisation = load carried / capacity; Drops per route and empty km | Measure weekly, act on trends
+SLIDE Common mistakes | Routes fixed for years without review; Loading in warehouse order instead of drop order; Ignoring unloading time; Measuring cost but not service | Plan, load, deliver, measure
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- plan delivery routes using zoning and the savings method;
+- plan a truck load by weight, volume and drop sequence;
+- set and manage customer delivery windows;
+- calculate and interpret cost per km, OTIF and vehicle utilisation.
+
+## Key terms
+
+::: terms
+Drop: one delivery stop at a customer
+Delivery window: the agreed time period in which a customer will receive goods
+Payload: the maximum weight a vehicle can legally and safely carry
+OTIF: on time in full, the percentage of orders delivered within the window with the full quantity
+Vehicle utilisation: the share of a vehicle's capacity that is actually used
+:::
+
+## 1. Route planning
+
+Distribution is often the largest logistics cost a distributor controls directly. Good routes reduce kilometres, fuel, overtime and missed deliveries. A simple planning cycle works for most fleets.
+
+::: diagram cycle | Distribution planning cycle
+Zone: divide customers into zones that one vehicle can serve in one shift
+Schedule: set delivery days per zone by order frequency and volume
+Route: group customers into routes within capacity and working hours
+Sequence: order drops around windows, distance and traffic peaks
+Review: compare planned and actual times weekly and adjust
+:::
+
+Routing software can build and sequence routes automatically when there are many, but you still need to understand the logic behind it.
+
+## 2. The savings method
+
+The savings method, published by Clarke and Wright in 1964, starts by imagining that each customer gets its own trip from the depot and back. It then combines customers into shared routes where this saves the most distance. For customers A and B:
+
+Saving(A,B) = distance(depot,A) + distance(depot,B) - distance(A,B)
+
+::: slides
+SLIDE Step 1: Calculate all savings | For every pair of customers; Saving = d(depot,A) + d(depot,B) - d(A,B) | Use real road distances
+SLIDE Step 2: Rank the pairs | Largest saving first; Smallest saving last | The list drives the joins
+SLIDE Step 3: Join pairs into routes | Work down the list; Stay within vehicle capacity and working time; Each customer on one route only | Respect the limits
+SLIDE Step 4: Stop | When no more joins are possible; Then sequence each route; Check the routes on a map | Software does this at scale
+:::
+
+Example: depot to A is 10 km, depot to B is 12 km, A to B is 5 km. Two separate trips cover (2 x 10) + (2 x 12) = 44 km. One route, depot to A to B to depot, covers 10 + 5 + 12 = 27 km. The saving is 10 + 12 - 5 = 17 km.
+
+::: quiz
+? Depot to X is 15 km, depot to Y is 9 km, and X to Y is 20 km. What is the saving from serving X and Y on one route?
+* 4 km || 15 + 9 - 20 = 4 km, a small saving, so this pair ranks low.
+- 24 km || This adds the two depot distances but forgets to subtract the distance between X and Y.
+- 44 km || This is the total distance of the combined route, not the saving.
+:::
+
+## 3. Load planning and delivery windows
+
+A good route can fail if the truck is badly loaded:
+
+- Check weight against payload and volume against cargo space. Heavy goods such as flour or water reach the weight limit first, light goods such as snacks fill the space first. Mixing them often improves utilisation.
+- Load in reverse drop order: the last customer's goods go in first, at the front, and the first customer's goods near the doors.
+- Keep heavy goods low and evenly spread, and secure the load with straps or stretch wrap.
+- Prepare delivery documents in drop order.
+
+Delivery windows are promises. Supermarkets and wholesalers often receive goods only at fixed hours. Narrow windows give customers certainty but cost more, because they reduce drops per route. Include realistic traffic, waiting and unloading time, and confirm deliveries the day before to avoid wasted trips.
+
+## 4. Fleet KPIs
+
+Measure the fleet every week:
+
+- Cost per km = total fleet cost / total km driven. Total cost includes fuel, driver wages, maintenance, tyres, insurance, licences and depreciation or lease.
+- Cost per drop or per tonne delivered, to compare routes and customers.
+- OTIF = orders on time and in full / total orders delivered x 100.
+- Vehicle utilisation = weight or volume carried / capacity x 100.
+- Drops per route, empty km and fuel in litres per 100 km.
+
+Cost KPIs alone mislead. A planner can cut cost by loading fuller and visiting less often while OTIF falls and sales are lost. Review cost and service together.
+
+::: quiz
+? A fleet delivered 1,500 orders last month. 1,260 arrived on time, and 1,200 of those were also complete. What is OTIF?
+- 84% || 1,260 / 1,500 counts on-time orders only, not completeness.
+* 80% || 1,200 / 1,500 = 80%. An order counts only if it is both on time and in full.
+- 95% || 1,200 / 1,260 uses the wrong denominator. Divide by all orders delivered.
+:::
+
+## Worked example: a beverage distributor in Luanda
+
+A beverage distributor runs 12 trucks from a depot in Viana to shops and wholesalers across Luanda, including Cacuaco, Talatona and Kilamba. Routes are three years old. One month of data shows total fleet cost Kz 54,000,000 for 36,000 km, so cost per km is Kz 1,500. OTIF is 1,920 / 2,400 = 80%, and utilisation by weight is 62%.
+
+The supervisor re-zones customers, rebuilds routes with the savings method, moves congested areas to early starts and has trucks loaded in reverse drop order the evening before. After two months, km fall to 31,000 for the same volume, OTIF reaches 91% and utilisation 74%. One truck is released for a new route to Bengo province.
+
+::: case | Late deliveries in Talatona
+After the changes, one route to Talatona still has OTIF of 70%. Drivers say they reach the first shop on time, but spend 50 minutes unloading at a supermarket receiving dock where trucks queue. Joana, the supervisor, reviews the route.
+? What should Joana do first?
+- Add a second truck to the route || This adds cost without fixing the cause, which is waiting at the dock.
+- Tell drivers to drive faster between drops || This is unsafe and does not reduce the waiting time.
+* Agree a fixed receiving slot with the supermarket and plan realistic unloading time || The delay comes from queuing and unloading, so the window and plan must reflect it.
+- Remove the supermarket from the route || This loses an important customer instead of solving the problem.
+:::
+
+## Tool: daily route and load plan
+
+- Date, vehicle and driver:
+- Vehicle payload (kg) and volume (cubic metres):
+- Drops in sequence, with customer, address and window:
+- Weight and volume per drop, total, and utilisation (%):
+- Planned departure, return time and km:
+- Loading order confirmed (last drop loaded first): yes or no
+- Actual times, km and any failed or late deliveries:
+
+## Common mistakes
+
+- Keeping the same routes for years while customers and traffic change.
+- Loading trucks in picking order instead of drop order.
+- Forgetting waiting and unloading time.
+- Measuring cost per km but not OTIF.
+
+## Self-check
+
+- Depot to C is 8 km, depot to D is 6 km, C to D is 4 km. What is the saving from serving C and D on one route? (Answer: 8 + 6 - 4 = 10 km.)
+- A fleet costs Kz 30,000,000 in a month and drives 25,000 km. What is the cost per km? (Answer: Kz 1,200.)
+- Why should the last customer's goods be loaded first? (Answer: so goods for earlier drops are near the doors and nothing needs to be moved at each stop.)
+
+## Practical assignment
+
+Choose one delivery route. Calculate its cost per km, OTIF and utilisation for last month. Use the savings method to test whether two of its drops could be combined with a neighbouring route, and present one improvement to your supervisor.
+
+## Summary
+
+- Zone customers, build routes with the savings method and sequence drops around windows and traffic.
+- Load by weight, volume and reverse drop order.
+- Track cost per km, OTIF and utilisation together, every week.
+=== 20
+SLIDE What you will learn | Build a landed cost for an import; Explain demurrage, detention and common surcharges; Run a freight tender and compare quotations fairly; Score forwarders and carriers with a scorecard | Control freight cost before the invoice arrives
+SLIDE Who does what | Carrier: moves the goods, such as a shipping line, airline or trucker; Freight forwarder: organises transport for you, often across several modes; Customs broker: handles customs clearance | Know who is responsible for each step
+SLIDE Landed cost | Product cost + freight + insurance + origin and destination charges + duties and taxes + inland transport + financing; Landed cost per unit = total / units | Compare suppliers on landed cost
+SLIDE Charges that surprise | Demurrage: container kept in the port terminal beyond free time; Detention: container kept outside the terminal beyond free time; Surcharges: fuel (BAF), currency (CAF), peak season; Terminal handling charges | Ask for all-in quotes and free time in writing
+SLIDE Running a freight tender | Define lanes, volumes and service levels; Send the same template to every bidder; Compare total cost, not base rate; Check capacity and references | Like-for-like comparison
+SLIDE Carrier and forwarder scorecard | On-time pickup and delivery; Invoice accuracy; Transit time reliability; Damage and claims; Communication | Review quarterly, share results
+SLIDE Common mistakes | Comparing base rates only; Letting free time expire; Paying invoices without audit; No written agreement on charges | Audit every invoice
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate the landed cost of an imported product;
+- explain demurrage, detention and common surcharges, and how to avoid unnecessary charges;
+- run a simple freight tender and compare quotations on a like-for-like basis;
+- use a scorecard to manage forwarders and carriers.
+
+## Key terms
+
+::: terms
+Carrier: the company that physically moves the goods, such as a shipping line, airline or trucking company
+Freight forwarder: a company that organises transport for shippers, books carriers and often handles documents
+Landed cost: the total cost of a product delivered to your warehouse, including price, freight, insurance, duties, taxes and handling
+Free time: the period the shipping line allows you to keep its container without extra charge
+Demurrage: a charge for keeping a full container inside the port terminal beyond free time
+Detention: a charge for keeping the line's container outside the terminal beyond free time, until it is returned empty
+:::
+
+Lines use demurrage and detention slightly differently, and some combine them, so read the definitions in the tariff or your contract.
+
+## 1. Landed cost
+
+Comparing suppliers or routes on product price alone is a common and expensive mistake. Landed cost shows the real cost of a product in your warehouse.
+
+::: diagram steps | Building landed cost
+Product cost: supplier's price under the agreed Incoterms rule
+Freight and insurance: main carriage and cargo cover, if not in the price
+Port charges: origin charges if yours, destination handling and documentation
+Duties, taxes and broker fees: as confirmed by your licensed customs broker
+Inland transport and other costs: trucking, inspections, storage, financing
+Per unit: divide the total by the number of units
+:::
+
+Use the landed cost per unit for margin and pricing decisions.
+
+## 2. Demurrage, detention and surcharges
+
+Many freight invoices grow after arrival because of unplanned charges:
+
+- Demurrage and detention. After the free days, daily charges apply and usually rise the longer the container is kept. Late documents, clearance, payment or warehouse space are the usual causes.
+- Surcharges. Ocean rates often have a base rate plus surcharges, such as a bunker adjustment factor (BAF) for fuel, a currency adjustment factor (CAF) and peak season surcharges. They can change monthly.
+- Terminal handling charges (THC), documentation fees and port storage, which in many ports is charged separately from the line's demurrage.
+
+To control them: ask for all-in quotations listing every charge and the validity period; agree free time in writing before shipping, and negotiate more if your clearance usually takes longer; track each container's free time end date; send documents to your broker before the vessel arrives; return empties quickly.
+
+::: quiz
+? Eight containers stay 5 days beyond free time. The contract demurrage rate is USD 40 per container per day. What is the charge?
+- USD 200 || This is for one container only.
+- USD 320 || This is for one day only.
+* USD 1,600 || 8 containers x 5 days x USD 40 = USD 1,600.
+:::
+
+## 3. Running a freight tender
+
+A freight tender, or request for quotation (RFQ), lets you compare providers fairly.
+
+::: slides
+SLIDE Step 1: Define the need | Lanes from origin to destination; Annual and monthly volumes; Container or vehicle types and service level | Clear scope, fair bids
+SLIDE Step 2: One template for all | Base rate and surcharges listed separately; Origin and destination charges; Free time, transit time and payment terms | Like for like
+SLIDE Step 3: Calculate total cost | Use your real volumes; Include every charge; Do not rank on base rate | Total annual cost decides
+SLIDE Step 4: Check beyond price | Capacity and references; Financial stability; Communication and tracking | Cheap but unreliable is expensive
+SLIDE Step 5: Award in writing | Rates, charges and free time in a contract; Consider two providers on key lanes; Set review dates | Write it down
+:::
+
+Splitting volume between two providers on key lanes keeps competition alive and gives a backup.
+
+## 4. Managing forwarders and carriers
+
+After the award, manage providers with facts. A quarterly scorecard covers on-time pickup and delivery, transit time reliability, invoice accuracy, damage and claims handling, and communication. Combine it with a freight audit: before paying, check every invoice against the rate agreement, the shipment details and the agreed free time. Share the scorecard and agree improvement actions.
+
+::: quiz
+? Forwarder A quotes a lower base rate than Forwarder B, but adds a peak season surcharge and higher destination charges. How should you compare them?
+- Choose A because its base rate is lower || The base rate is only part of the cost.
+* Calculate total annual cost for both using your real volumes || Only total cost including all charges gives a like-for-like comparison.
+- Choose B because it has fewer surcharges || Fewer surcharges does not guarantee a lower total.
+:::
+
+## Worked example: a building materials importer in Luanda
+
+A building materials distributor in Luanda imports floor tiles: 10 containers of 1,400 square metres each. Costs: product FOB USD 84,000, ocean freight USD 18,000, insurance USD 600, destination charges USD 4,000, duties, taxes and broker fees as calculated by the broker USD 21,000, trucking USD 3,000. Landed cost: USD 130,600, or about USD 9.33 per square metre against a product price of USD 6.00.
+
+Original documents arrived late and the containers stayed 9 days beyond free time. At USD 60 per container per day under this contract, demurrage was 10 x 9 x 60 = USD 5,400, about USD 0.39 more per square metre.
+
+::: case | Preventing the next charge
+For the next shipment, Helena, the import coordinator, knows clearance usually takes 12 days. The current line gives 7 days of free time, and a tender for the lane is due next month.
+? What should Helena do?
+- Keep the current line and accept demurrage as normal || Demurrage of this size wipes out margin and can be prevented.
+- Choose the bidder with the lowest base rate || A low rate with short free time can cost more in total.
+* Include free time in the tender, compare total cost and track free time daily || Free time matched to clearance time, plus tracking, removes the cause of the charge.
+- Ask the broker to clear faster without sending documents earlier || Clearance depends on documents arriving early.
+:::
+
+## Tool: freight invoice audit checklist
+
+- Shipment reference, container numbers and B/L number:
+- Rate agreement or quotation reference:
+- Base rate and surcharges match the agreement for the shipping date:
+- Origin and destination charges match the quotation:
+- Free time applied as agreed, days charged correct:
+- No duplicate charges or charges for services not used:
+- Currency and exchange rate correct, approved by and date:
+
+## Common mistakes
+
+- Comparing quotations on base rate only.
+- Letting free time expire because documents or payments are late.
+- Paying freight invoices without checking them.
+- Agreeing rates by phone or chat without a written rate agreement.
+
+## Self-check
+
+- What is the difference between demurrage and detention, in the usual definition? (Answer: demurrage is for a full container kept in the terminal beyond free time, detention for a container kept outside the terminal beyond free time.)
+- Five containers stay 4 days beyond free time at USD 50 per container per day. What is the charge? (Answer: 5 x 4 x 50 = USD 1,000.)
+- Why should a tender ask every bidder to use the same template? (Answer: so quotations can be compared like for like on total cost.)
+
+## Practical assignment
+
+Build the landed cost of one recent import item by item and calculate the cost per unit. Audit the freight invoices for that shipment with the checklist and list any charges that did not match the quotation. Agree one action with your forwarder.
+
+## Summary
+
+- Decide on landed cost per unit, not product price or freight rate alone.
+- Prevent demurrage and detention by agreeing free time and preparing documents early.
+- Tender with one template, audit every invoice and manage providers with a quarterly scorecard.

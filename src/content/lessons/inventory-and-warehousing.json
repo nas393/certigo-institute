@@ -1,0 +1,454 @@
+{
+ "slug": "inventory-and-warehousing",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the five main reasons a business holds inventory;\n- identify the elements of holding cost, ordering cost and stock-out cost;\n- calculate the annual holding cost of an item's average inventory;\n- compare two ordering policies using total inventory cost.\n\n## Key terms\n\n::: terms\nCycle stock: the stock used up between one delivery and the next\nSafety stock: extra stock held to protect against higher demand or late deliveries\nHolding (carrying) cost: the cost of keeping stock for a period, usually a percentage of its value per year\nOrdering cost: the cost of placing and receiving one order, regardless of its size\nStock-out: a customer asks for an item and you cannot supply it from stock\n:::\n\n## 1. Why inventory exists\n\nEvery bag of rice or carton of oil in a warehouse is money the business has spent but not yet recovered. Stock is still necessary, because supply and demand rarely move at the same speed. Inventory serves five functions:\n\n- Cycle stock: you buy in batches (a container, a truck) but customers buy a little every day. On average, cycle stock equals half the order quantity.\n- Safety stock: a buffer against demand above forecast and late suppliers.\n- Pipeline (in-transit) stock: goods on a ship, at the port or on a truck to Huambo. Often already paid for, but not yet sellable.\n- Anticipation stock: built before a known peak, such as the festive season, a promotion or an expected price rise.\n- Decoupling stock: held between stages, for example between a central warehouse in Luanda and a branch in Lubango, so a problem at one stage does not stop the next.\n\nAsk of every item: which job is this stock doing? Stock that does none of them is excess.\n\n::: quiz\n? A distributor builds extra stock of sugar in October because a price increase is announced for January. What type of stock is this?\n- Cycle stock || Cycle stock covers normal demand between deliveries, not a planned build-up.\n* Anticipation stock || Correct. It is built ahead of a known event, here a price increase.\n- Pipeline stock || Pipeline stock is goods in transit, not goods built up in the warehouse.\n- Decoupling stock || Decoupling stock separates two stages of the supply chain.\n:::\n\n## 2. Holding cost: what it really costs to keep stock\n\nMany managers treat stock as free once the supplier is paid. In fact it carries costs every day. Build your own carrying cost rate in four steps:\n\n::: slides\nSLIDE Step 1: Capital cost | Money in stock could reduce an overdraft or be invested elsewhere | Use your cost of borrowing or required return\nSLIDE Step 2: Storage cost | Rent or depreciation of the warehouse, electricity, racking and security | Include warehouse labour linked to storage\nSLIDE Step 3: Risk and shrinkage | Insurance, damage, pests, humidity and expiry | Add theft and admin errors\nSLIDE Step 4: Add up and divide | Total yearly cost ÷ average stock value = carrying rate | Example: 15% + 5% + 1% + 3% = 24% per year\n:::\n\nCalculate your own rate rather than copying one from a book. Then:\n\n- Average inventory = (order quantity ÷ 2) + safety stock\n- Annual holding cost = average inventory × unit cost × carrying rate\n\n## 3. Ordering cost and stock-out cost\n\nOrdering cost covers each order's approvals, import documents and clearing, port handling, transport, unloading, inspection and invoice matching. It is roughly the same for a large or small order, so it is treated as a fixed amount per order.\n\nStock-out cost includes lost margin, emergency purchases, extra transport, key account penalties and customers who leave for good. It is often ignored because it is hard to see. Estimate it from the customer orders you could not fill, multiplied by your gross margin per unit.\n\n::: quiz\n? You order half the quantity, twice as often. What happens to annual ordering cost?\n- It halves || Ordering cost depends on the number of orders, which has doubled.\n- It stays the same || Each order costs about the same, so more orders cost more.\n* It doubles || Correct. Twice as many orders means twice the ordering cost, while holding cost falls.\n- It depends on the unit price || Ordering cost is a fixed cost per order, not linked to unit price.\n:::\n\n## 4. The total cost trade-off\n\nLarge, rare orders mean low ordering cost but high holding cost. Small, frequent orders mean the opposite. Cutting safety stock lowers holding cost but raises stock-out risk. The aim is not the lowest stock, but the lowest total cost at the service level the business has chosen.\n\n::: diagram steps | Comparing two ordering policies\nList options: for example order monthly or every two months\nHolding cost: average inventory × unit cost × carrying rate\nOrdering cost: orders per year × cost per order\nStock-out cost: estimate it if service levels differ\nCompare totals: choose the lowest total at the required service level\n:::\n\n## Worked example: rice at a food distributor in Luanda\n\nA food distributor in Luanda sells 60,000 bags of 25 kg rice per year. Each bag costs 18,000 Kz landed. The carrying rate is 24%, each import order costs about 450,000 Kz, and safety stock is 2,000 bags.\n\nCurrent policy: 10,000 bags every two months (6 orders).\n\n- Average inventory = 10,000 ÷ 2 + 2,000 = 7,000 bags\n- Holding cost = 7,000 × 18,000 × 24% = 30,240,000 Kz\n- Ordering cost = 6 × 450,000 = 2,700,000 Kz\n- Total = 32,940,000 Kz per year\n\nProposed policy: 5,000 bags every month (12 orders).\n\n- Average inventory = 5,000 ÷ 2 + 2,000 = 4,500 bags\n- Holding cost = 4,500 × 18,000 × 24% = 19,440,000 Kz\n- Ordering cost = 12 × 450,000 = 5,400,000 Kz\n- Total = 24,840,000 Kz per year\n\nThe monthly policy saves about 8.1 million Kz per year and frees 45 million Kz of working capital. Before deciding, the commercial director checks that the supplier can ship monthly and that port delays will not require more safety stock.\n\n::: case | A discount offer on cooking oil in Luanda\nSofia, a buyer in Luanda, normally orders one month of cooking oil at a time. A supplier offers a 2% discount if she buys three months at once. The company's carrying rate is 24% per year, which is 2% per month, and the warehouse is almost full.\n? What should Sofia do?\n- Accept at once, because a discount always saves money || The discount is only part of the picture. Extra stock also carries holding cost and needs space.\n* Compare the discount with the extra holding cost and check space before deciding || Correct. Average stock rises by about one month of sales for three months, an extra holding cost of about 2% of the order value, which cancels the discount, and space is a real constraint.\n- Refuse, because holding more stock is always wrong || Anticipation stock can be right. The decision should be based on total cost, not a rule.\n- Accept and store the extra oil outside the warehouse || This adds damage and theft risk and hides the true holding cost.\n:::\n\n## Tool: inventory cost worksheet\n\n- Item, unit and annual demand:\n- Unit cost (landed, Kz):\n- Carrying rate (% per year) and how it was built:\n- Cost per order (Kz) and what it includes:\n- Current order quantity and safety stock:\n- Average inventory, annual holding cost and annual ordering cost:\n- Stock-outs last year and estimated lost margin:\n\n## Common mistakes\n\n- Treating stock as free once paid for.\n- Forgetting pipeline stock on the water or at the port.\n- Using a carrying rate copied from a textbook instead of your own costs.\n- Comparing suppliers or order sizes on purchase price only.\n\n## Self-check\n\n- What is the average inventory if you order 4,000 units and hold 500 units of safety stock? (Answer: 4,000 ÷ 2 + 500 = 2,500 units.)\n- Name three elements of holding cost. (Answer: any three of capital, storage, insurance, damage or expiry, shrinkage.)\n- Which cost is hardest to measure and often ignored? (Answer: stock-out cost.)\n\n## Practical assignment\n\nChoose one high-value item. Using the worksheet and data from finance and purchasing, calculate its annual holding and ordering cost under the current policy, then one alternative policy. Share the comparison with your manager.\n\n## Summary\n\n- Stock serves five functions: cycle, safety, pipeline, anticipation and decoupling.\n- Holding, ordering and stock-out costs pull in different directions.\n- Manage for the lowest total cost at the chosen service level, not for the lowest stock.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- classify inventory items into A, B and C classes by annual consumption value;\n- calculate the coefficient of variation to classify items as X, Y or Z;\n- combine ABC and XYZ results into a matrix;\n- choose a stock control policy that fits each class.\n\n## Key terms\n\n::: terms\nAnnual consumption value: annual quantity sold or used multiplied by unit cost\nPareto principle: a small share of causes often accounts for a large share of results\nSKU (stock keeping unit): one specific item tracked separately, such as one brand of 25 kg rice\nStandard deviation: a measure of how far values spread around their average\nCoefficient of variation (CV): standard deviation divided by the mean\n:::\n\n## 1. ABC analysis: ranking by value\n\nA distributor may carry hundreds of SKUs, and no team can control all of them with the same care. ABC analysis applies the Pareto principle to inventory: a few items usually account for most of the money. In many businesses roughly 20% of SKUs represent about 80% of annual value, although the split varies. Follow five steps:\n\n::: slides\nSLIDE Step 1: Annual value | For each SKU: annual units × unit cost | Use cost, not selling price\nSLIDE Step 2: Sort | Rank SKUs from highest to lowest annual value | One list for the whole range\nSLIDE Step 3: Cumulative % | Calculate each SKU's share of total value and the running total | A spreadsheet does this in minutes\nSLIDE Step 4: Cut-offs | A up to about 80% of value, B up to about 95%, C the rest | Write your rule down\nSLIDE Step 5: Assign and record | Put the class in your system and review every 6 to 12 months | Classes change as prices and ranges change\n:::\n\nA items deserve accurate forecasts, frequent review, tight safety stock and frequent counting. C items can be managed with simple rules and larger, less frequent orders. One exception: a low-value item can still be critical, such as a spare part that stops a line or a product a key account insists on. Flag these as critical regardless of class.\n\n::: quiz\n? An item sells 2,000 units per year at a cost of 5,000 Kz. Another sells 50,000 units at 100 Kz. Which ranks higher in ABC analysis?\n* The first item, with 10,000,000 Kz of annual value || Correct. ABC ranks by annual consumption value, and 10 million Kz is larger than 5 million Kz.\n- The second item, because it sells more units || ABC uses value, not units. Ranking by units puts cheap fast movers on top.\n- They rank equally || Their annual values are 10 million Kz and 5 million Kz, so they differ.\n- It depends on the selling price || ABC uses cost, so the selling price is not needed.\n:::\n\n## 2. XYZ analysis: ranking by demand stability\n\nABC shows how much an item matters, but not how hard it is to plan. XYZ adds that dimension by measuring demand stability:\n\n- CV = standard deviation of demand ÷ average demand\n\nUse monthly or weekly sales for at least 6, preferably 12, periods. In Excel, use AVERAGE and STDEV.S. A common set of cut-offs is:\n\n- X: CV below 0.5. Stable and easy to forecast.\n- Y: CV from 0.5 to 1.0. Variable, often seasonal or promotion-driven.\n- Z: CV above 1.0. Erratic, with zero months or occasional large orders.\n\nSome companies use tighter limits; choose yours and apply them consistently. Remove or explain one-off events such as a single large tender first, otherwise a stable item looks erratic.\n\n::: quiz\n? Average monthly demand is 400 units and the standard deviation is 300. What is the XYZ class?\n- X, because demand is above zero every month || Class depends on the CV, not on whether demand is zero.\n- Z, because the standard deviation is large || 300 looks large, but relative to the mean of 400 the CV is 0.75.\n* Y, because the CV is 0.75 || Correct. 300 ÷ 400 = 0.75, which falls between 0.5 and 1.0.\n- It cannot be classified without unit cost || XYZ uses only demand data. Cost is used in ABC.\n:::\n\n## 3. The ABC-XYZ matrix and stock policies\n\nCombining both analyses gives nine cells. The four corners show the logic:\n\n::: diagram matrix | ABC-XYZ corners | Demand variability (X stable → Z erratic) | Annual value (C low → A high)\nAX: high value, stable – replenish often in small lots, low safety stock, weekly review\nAZ: high value, erratic – avoid speculative stock, buy against confirmed orders\nCX: low value, stable – simple min-max, larger orders, rare review\nCZ: low value, erratic – stock little or nothing, order on demand or delist\n:::\n\nThe middle cells follow the same logic. AY items need careful forecasts with sales input and planning for seasons and promotions. B items use the A policies with less frequent reviews. CY items work well on min-max with slightly higher safety stock, which is cheaper than close monitoring.\n\n## Worked example: a food distributor's range in Luanda\n\nA food distributor in Luanda analyses ten SKUs. Annual consumption values, in millions of Kz: rice 1,080; sugar 600; wheat flour 420; cooking oil 200; beans 120; tomato paste 60; powdered milk 36; salt 32; pasta 27; spices 15. Total: 2,590 million Kz.\n\nCumulative percentages: rice 41.7%, sugar 64.9%, flour 81.1%, oil 88.8%, beans 93.4%, tomato paste 95.8%, milk 97.1%, salt 98.4%, pasta 99.4%, spices 100%. Using the rule \"the item that crosses the cut-off stays in the class\":\n\n- A: rice, sugar, flour. 30% of items, 81.1% of value.\n- B: oil, beans, tomato paste. 14.7% of value.\n- C: milk, salt, pasta, spices. 4.2% of value.\n\nSix months of sales for three items:\n\n- Rice (bags): 5,000, 4,800, 5,200, 5,100, 4,900, 5,000. Mean 5,000, standard deviation 141, CV 0.03. X.\n- Cooking oil: 200, 1,000, 300, 900, 400, 800. Mean 600, standard deviation 341, CV 0.57. Y, driven by promotions.\n- Powdered milk (cartons): 0, 150, 0, 0, 300, 150. Mean 100, standard deviation 122, CV 1.22. Z, sold mainly to institutions.\n\nRice (AX) is replenished frequently with low safety stock. Cooking oil (BY) is planned with the marketing calendar. Powdered milk (CZ) is now bought against confirmed institutional orders, freeing space and cash.\n\n::: case | An erratic high-value item in Benguela\nManuel plans stock for a branch in Benguela. Infant formula is an A item with a CV of 1.4, because most sales come from three hospital tenders a year. The sales team asks him to hold three months of stock \"to be safe\".\n? What should Manuel propose?\n- Hold three months of stock as requested || This ties up a lot of cash in a high-value item with expiry risk, and erratic demand may not come.\n- Put it on a simple min-max rule like other items || Min-max suits stable, low-value items, not an AZ item driven by tenders.\n* Buy mainly against confirmed tenders and agree delivery lead times with the hospitals || Correct. For AZ items, buying against firm orders protects service without speculative stock.\n- Delist the item because demand is erratic || Delisting suits CZ items. This item is high value and important to customers.\n:::\n\n## Tool: ABC-XYZ classification template\n\n- SKU code, annual units and unit cost:\n- Annual consumption value and cumulative %:\n- ABC class:\n- Monthly demand for 6 to 12 months, mean, standard deviation and CV:\n- XYZ class and combined cell:\n- Critical item flag and reason:\n- Agreed policy (review frequency, safety stock rule, order method):\n\n## Common mistakes\n\n- Ranking items by units sold instead of by value.\n- Forgetting critical low-value items.\n- Using only two or three months of data.\n- Leaving one-off tenders in the history.\n- Never updating the classes.\n\n## Self-check\n\n- What share of value do C items usually represent with 80% and 95% cut-offs? (Answer: about 5%.)\n- Which Excel functions calculate the CV inputs? (Answer: AVERAGE and STDEV.S.)\n- What policy suits a CX item? (Answer: a simple min-max rule with larger, less frequent orders.)\n\n## Practical assignment\n\nExport last year's sales and cost data. Classify at least 30 SKUs with ABC and XYZ, place them in the matrix, and propose a policy for the three AX items and three CZ items with the largest stock value.\n\n## Summary\n\n- ABC ranks items by annual consumption value so effort goes where the money is.\n- XYZ ranks items by demand stability using the coefficient of variation.\n- The combined matrix links each item to a fitting review frequency, safety stock rule and ordering method.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- calculate a reorder point from demand, lead time and safety stock;\n- calculate safety stock for a chosen service level, including when lead time varies;\n- calculate the economic order quantity (EOQ);\n- adjust EOQ to practical order sizes such as full trucks.\n\n## Key terms\n\n::: terms\nLead time: the time from placing an order to having the goods available for sale\nReorder point (ROP): the stock level at which a new order must be placed\nService level: the probability of not running out during one replenishment cycle\nInventory position: stock on hand plus stock on order, minus stock reserved for customers\nEconomic order quantity (EOQ): the order size that minimises annual ordering plus holding cost\n:::\n\n## 1. The reorder point\n\nIn a reorder point system, you watch the inventory position and place a fixed-size order whenever it falls to the reorder point:\n\n- ROP = (average daily demand × lead time in days) + safety stock\n\nThree practical rules:\n\n- Measure lead time to goods available for sale, including supplier processing, transit, port, clearance and receiving.\n- Compare the ROP with the inventory position, not shelf stock, or you will reorder goods already on the way.\n- Keep units consistent: daily demand with lead time in days.\n\n::: quiz\n? Daily demand is 50 units, lead time 6 days and safety stock 120 units. Shelf stock is 300 and 200 units are on order. Should you order now?\n- Yes, because shelf stock of 300 is below the ROP of 420 || You must compare the inventory position, not shelf stock.\n* No, because the inventory position of 500 is above the ROP of 420 || Correct. 300 on hand + 200 on order = 500, which is above 50 × 6 + 120 = 420.\n- Yes, because safety stock has been used || Safety stock is still intact. The position is above the ROP.\n- No, because the ROP is 300 || The ROP is 50 × 6 + 120 = 420 units.\n:::\n\n## 2. Safety stock and service level\n\nWhen daily demand varies and lead time is fixed, the standard formula is:\n\n- Safety stock = z × σd × √L\n\nσd is the standard deviation of daily demand, L the lead time in days and z the factor matching your service level: 90% = 1.28, 95% = 1.65, 98% = 2.05, 99% = 2.33. Moving from 95% to 99% raises z, and safety stock, by over 40%. Choose service levels by class, for example 98% for AX items sold to key accounts and 90% for C items.\n\nWhen lead time also varies, which is common for imports, use the extended formula:\n\n- Safety stock = z × √(L × σd² + d² × σL²)\n\nHere d is average daily demand and σL the standard deviation of lead time in days. Port and clearance delays can make lead time variation the biggest driver of safety stock.\n\n## 3. The economic order quantity\n\nThe EOQ model balances the two costs from lesson 1. The formula, usually credited to Ford W. Harris (1913), is:\n\n- EOQ = √(2 × D × S ÷ H)\n\nD is annual demand, S the cost per order and H the holding cost of one unit for one year (unit cost × carrying rate). At the EOQ, annual ordering cost equals annual holding cost. The model assumes steady demand and no quantity discounts, so treat it as a guide. Its total cost curve is flat near the EOQ, so you can round to full trucks or supplier minimums at little extra cost. Apply it in four steps:\n\n::: slides\nSLIDE Step 1: Collect data | Annual demand D, cost per order S, unit cost and carrying rate | Use last 12 months of data\nSLIDE Step 2: Calculate H and EOQ | H = unit cost × carrying rate | EOQ = √(2DS ÷ H)\nSLIDE Step 3: List practical options | Full pallets, trucks or containers near the EOQ | Include supplier minimums\nSLIDE Step 4: Compare total cost | (D ÷ Q) × S + (Q ÷ 2) × H for each option | Choose the lowest practical option\n:::\n\n::: diagram steps | Setting replenishment parameters\nClassify: confirm ABC-XYZ class and service level\nMeasure demand: average and standard deviation per day\nMeasure lead time: average and standard deviation in days\nSafety stock and ROP: apply the formulas\nOrder quantity: EOQ rounded to practical sizes\nReview: recalculate at least every quarter\n:::\n\n::: quiz\n? The EOQ is 894 units but trucks carry 600. Total cost at 1,200 units is about 4% above the EOQ cost. What does this show?\n- EOQ is wrong and should be ignored || EOQ is a useful guide. It shows the lowest cost point.\n* The cost curve is flat, so rounding to full trucks costs little || Correct. Near the EOQ, total cost changes slowly, so practical rounding is sensible.\n- You should always order exactly the EOQ || Partial trucks would add transport cost not in the model.\n- Holding cost is zero at 1,200 units || Holding cost rises with order size.\n:::\n\n## Worked example: sugar at a distributor in Luanda\n\nA distributor in Luanda buys 50 kg sugar bags from a supplier in Benguela province: d = 80 bags per day, σd = 20 bags, L = 9 days, 300 selling days, unit cost 30,000 Kz, carrying rate 24%, S = 120,000 Kz, target service level 95% (z = 1.65).\n\n- Safety stock = 1.65 × 20 × √9 = 99 bags\n- ROP = 80 × 9 + 99 = 819 bags\n\nThe supplier's lead time actually varies, with σL = 2 days:\n\n- L × σd² = 9 × 400 = 3,600 and d² × σL² = 6,400 × 4 = 25,600\n- Safety stock = 1.65 × √29,200 = 1.65 × 170.9 = 282 bags, so ROP = 1,002 bags\n\nLead time uncertainty almost triples safety stock, so the planner discusses a fixed weekly delivery slot with the supplier.\n\nOrder quantity: D = 24,000 bags, H = 7,200 Kz.\n\n- EOQ = √(2 × 24,000 × 120,000 ÷ 7,200) = √800,000 = about 894 bags\n- 600 bags (one truck): 4,800,000 + 2,160,000 = 6,960,000 Kz\n- 1,200 bags (two trucks): 2,400,000 + 4,320,000 = 6,720,000 Kz, against about 6,440,000 Kz at the EOQ\n\nThe planner chooses two full trucks, ordering roughly every 15 selling days.\n\n::: case | Repeated stock-outs of cooking oil in Viana\nTeresa, a planner in Viana, set the reorder point for cooking oil using a 7-day lead time. In the last two months the item ran out three times. The last five deliveries took 9, 12, 8, 14 and 11 days.\n? What should Teresa do first?\n- Double the order quantity || Bigger orders reduce ordering frequency but do not fix a reorder point that triggers too late.\n* Recalculate lead time and its variation, then update safety stock and the ROP || Correct. Average lead time is now about 11 days and varies a lot, so the parameters are out of date.\n- Raise the service level to 99% and keep the old lead time || A higher z on wrong inputs still gives a wrong answer.\n- Change supplier immediately || Possibly later, but first fix the parameters and discuss reliability with the supplier.\n:::\n\n## Tool: replenishment parameter sheet\n\n- Item, unit and ABC-XYZ class:\n- d and σd:\n- L and σL, with source:\n- Service level and z:\n- Safety stock, formula used and ROP:\n- D, S, H, EOQ and chosen order quantity:\n- Next review date:\n\n## Common mistakes\n\n- Setting safety stock as \"two weeks of sales\" for every item.\n- Mixing weekly demand with lead time in days.\n- Ignoring lead time variability for imports.\n- Never updating parameters.\n\n## Self-check\n\n- Which z value matches a 95% service level? (Answer: 1.65.)\n- D = 10,000 units, S = 50,000 Kz and H = 4,000 Kz. What is the EOQ? (Answer: √250,000 = 500 units.)\n- At the EOQ, how do ordering and holding costs compare? (Answer: they are equal.)\n\n## Practical assignment\n\nChoose two A items. Collect three to six months of sales and the lead times of the last five orders. Calculate safety stock, ROP and EOQ, compare them with your system settings, and present the differences to your planning team.\n\n## Summary\n\n- Reorder point = lead time demand + safety stock, compared with the inventory position.\n- Safety stock depends on service level and on demand and lead time variability.\n- EOQ balances ordering and holding costs, and its flat cost curve allows practical rounding.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- describe the six main steps of the warehouse flow;\n- apply standard controls at receiving and put-away;\n- choose a suitable picking method for different order profiles;\n- slot products using movement, size, weight and order patterns.\n\n## Key terms\n\n::: terms\nPut-away: moving received goods to a storage location and recording that location\nLocation address: a unique code for each storage position, such as aisle, rack, level and position\nPicking: collecting goods from storage to fulfil customer orders\nStaging: placing checked goods in a marked area, ready for loading\nSlotting: deciding which product goes in which location\n:::\n\n## 1. The six-step warehouse flow\n\nEvery warehouse, from a depot in Malanje to a distribution centre in Viana, follows the same flow. Errors made early travel through to the customer, so each step needs controls.\n\n::: diagram steps | Warehouse flow\nReceiving: check, count and accept goods against the purchase order\nPut-away: move goods to a confirmed location\nStorage: keep goods safe, accessible and recorded\nPicking: collect the right items for each order\nPacking and checking: confirm item, quantity and batch\nDispatch: stage, load, seal and deliver with proof\n:::\n\nReceiving is where you take responsibility for the goods. Follow a standard procedure:\n\n::: slides\nSLIDE Step 1: Prepare | Book a delivery slot | Dock, staff and equipment ready\nSLIDE Step 2: Check documents | Delivery note or container papers against the purchase order | Check seal numbers on containers\nSLIDE Step 3: Count and inspect | Pallets, then cartons per pallet | Damage, wet bags, pests, expiry dates\nSLIDE Step 4: Record and sign | Write every discrepancy on the delivery note before signing | Photograph damage\nSLIDE Step 5: Label and enter | Label item, batch, expiry and quantity | Enter the receipt in the system the same day\n:::\n\nPut-away should be directed: the system or supervisor names the location, and the operator confirms it after placing the pallet, by scanning or writing it on the put-away sheet. Without this, stock is \"somewhere in the warehouse\".\n\n::: quiz\n? A driver delivering 400 bags of flour is in a hurry. The clerk counts 385. What should she do?\n- Sign the note and report the shortage later by phone || Once signed without remarks, the shortage is hard to claim.\n* Write the 15-bag shortage on the delivery note, then sign || Correct. Recording discrepancies before signing protects the company's claim.\n- Refuse the whole delivery || Usually unnecessary. Accept what arrived and record the shortage.\n- Sign \"subject to count\" || This vague remark rarely supports a claim and hides the real figure.\n:::\n\n## 2. Storage: locations and equipment\n\nFixed locations give each SKU the same place, which is easy to learn but wastes space when stock is low. Random (dynamic) locations put a pallet in any free suitable location, which uses space far better but needs an accurate system. Many warehouses combine fixed picking locations at ground level with random reserve locations above.\n\nSelective pallet racking makes every pallet accessible. Drive-in racking stores many pallets of few SKUs densely, but works last in, first out, a problem for products with expiry dates. Block stacking is cheap but limited by safe stacking height.\n\n## 3. Picking, packing and dispatch\n\nPicking is often the largest share of warehouse labour, and most of it is walking. The main methods are:\n\n- Discrete picking: one picker, one order. Simple and accurate for large orders.\n- Batch picking: one picker collects several orders in one trip, then sorts them. Less travel for many small orders.\n- Zone picking: each picker works one area and orders pass between zones.\n- Wave picking: orders are released in timed groups, for example by route or truck departure.\n\nChecking confirms items, quantities and batches before wrapping. At dispatch, stage orders by route, load in reverse drop order, check the load against documents, seal the truck, record the seal number and collect signed proof of delivery.\n\n::: quiz\n? A warehouse has 150 small retail orders a day, all on four delivery routes. Which picking approach fits best?\n- Discrete picking, one order at a time || This means 150 separate walks through the warehouse.\n- Zone picking with one picker per aisle || Possible in large sites, but it adds hand-overs for small orders.\n* Batch picking by route, released in waves || Correct. Grouping orders by route cuts walking and matches truck departures.\n- Picking whatever orders arrive first || Without grouping, travel and missed departures increase.\n:::\n\n## 4. Slotting\n\nGood slotting reduces travel, speeds up picking and improves safety:\n\n- Rank SKUs by pick frequency (order lines per month), not by sales value.\n- Place the fastest movers near dispatch on the main aisle.\n- Use the golden zone, between waist and shoulder height, for the most-picked cartons.\n- Store heavy items such as 50 kg bags at floor level.\n- Group products often ordered together and separate similar-looking items.\n- Review slotting every quarter.\n\n## Worked example: re-slotting a food warehouse in Viana\n\nA food warehouse in Viana handles about 400 order lines per day. Pickers complain of long walks, and two pasta brands with similar cartons are often confused. The supervisor ranks three months of order lines: 20 SKUs generate about 60% of lines, but eight sit at the far end because space happened to be free there.\n\nShe takes four actions:\n\n- Moves the 20 fastest SKUs to ground-level locations in the two aisles nearest dispatch.\n- Separates the two pasta brands and adds large location labels.\n- Introduces directed put-away with the location written on each pallet label and in the system.\n- Switches small retail orders to batch picking by route, released at 07:00 and 11:00 to match truck departures.\n\nShe then measures walking distance on sample orders and picking errors at checking each week.\n\n::: case | An urgent container in Luanda\nAt 16:30 a container of rice arrives at a warehouse in Luanda. The receiving team finishes at 17:00. The supervisor, Carlos, sees that the seal number does not match the documents.\n? What should Carlos do?\n- Unload quickly and check tomorrow || A seal mismatch can mean tampering. Unloading without recording it weakens any claim.\n* Record the mismatch, photograph the seal, inform the transporter and purchasing, then count carefully || Correct. The evidence must be captured before unloading so losses can be claimed.\n- Refuse the container and send it back || Escalate first. Refusal may be right, but the decision belongs to the buyer with full facts.\n- Ignore it because seals are often wrong || A seal mismatch is a key warning sign of theft.\n:::\n\n## Tool: receiving checklist\n\n- Delivery booked and dock ready:\n- Purchase order number and supplier:\n- Seal number checked against documents:\n- Quantity counted vs delivery note:\n- Damage, wet goods or pest signs (photos):\n- Batch and expiry recorded, minimum shelf life met:\n- Discrepancies written before signing:\n- Locations confirmed and receipt entered:\n\n## Common mistakes\n\n- Signing \"subject to count\" and never recording shortages.\n- Letting operators put pallets anywhere without recording the location.\n- Storing fast movers at the back.\n- Using drive-in racking for products that must leave in expiry order.\n\n## Self-check\n\n- Why should put-away be directed? (Answer: so every pallet has a recorded location and can be found.)\n- Where should the most picked cartons go? (Answer: near dispatch, in the golden zone.)\n- In what order should a truck be loaded? (Answer: reverse delivery order, last drop first.)\n\n## Practical assignment\n\nWalk your warehouse from receiving to dispatch with the checklist and note one missing control at each step. List your ten most picked SKUs, mark where they are stored, and propose a new slotting plan to your supervisor.\n\n## Summary\n\n- The warehouse flow has six steps, and receiving errors travel to the customer.\n- Every pallet needs a recorded location.\n- Picking method and slotting decide most labour cost and accuracy.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- plan a cycle counting programme based on ABC classes;\n- calculate inventory record accuracy using count tolerances;\n- apply FIFO and FEFO rotation for food products with expiry dates;\n- identify the main causes of shrinkage and choose controls for each.\n\n## Key terms\n\n::: terms\nCycle counting: counting a small part of the inventory on a regular schedule\nInventory record accuracy (IRA): % of counted locations where system and physical quantity match within tolerance\nFIFO: first in, first out, stock received first is issued first\nFEFO: first expired, first out, the earliest expiry date is issued first\nShrinkage: the gap between system stock value and physical stock value\n:::\n\n## 1. Cycle counting\n\nEvery decision in lessons 1 to 3 assumes the system quantity is right. If the system says 800 bags but the shelf holds 650, the reorder point triggers too late. An annual stock take stops the warehouse and finds errors months after they happened. Cycle counting counts a few locations every day, so causes can still be traced. Build it in five steps:\n\n::: slides\nSLIDE Step 1: Set frequency by class | A monthly, B quarterly, C twice a year | Extra counts for high-theft items\nSLIDE Step 2: Calculate workload | 100 A × 12 + 300 B × 4 + 600 C × 2 = 3,600 counts a year | About 14 per working day\nSLIDE Step 3: Count blind | Counters do not see the system quantity | They cannot simply confirm it\nSLIDE Step 4: Recount differences | Second person recounts anything above tolerance | Freeze movement during counts\nSLIDE Step 5: Find the root cause | Unrecorded receipt, wrong location, wrong unit, unbooked damage, theft | Fix the process, then adjust\n:::\n\n::: quiz\n? Why are cycle counts done \"blind\"?\n- To make counting faster || Blind counts are not faster. Their purpose is accuracy.\n* So counters record what they see instead of confirming the system figure || Correct. Seeing the system number tempts people to agree with it.\n- Because the system quantity is secret || It is not secret. It is hidden only during the count.\n- So no recount is needed || Differences above tolerance are still recounted.\n:::\n\n## 2. Measuring inventory record accuracy\n\nA location is accurate when the count is within the agreed tolerance: tighter for A items (for example zero difference), wider for low-value C items.\n\n- IRA = locations within tolerance ÷ locations counted × 100\n\nTrack it weekly and by cause. The goal is reliable records that planners trust, not numbers that match because the system was adjusted.\n\n## 3. FIFO and FEFO for food products\n\nFood, beverages, dairy and medicines have expiry dates. FIFO issues the oldest received stock first, which works when every batch has the same shelf life. FEFO issues the earliest expiry date first. It is the safer rule for food, because a container that arrives later may contain older production than goods already in stock.\n\n::: diagram steps | FEFO expiry control\nReceive: check minimum remaining shelf life agreed in the contract\nLabel: batch and expiry on every pallet and in the system\nStore: earlier-expiry pallets reachable first\nPick: picking list names the batch, checked at dispatch\nReport: weekly list of stock with less than 90 days left\nAct: promote, transfer or return early, and quarantine expired goods\n:::\n\nSelective racking supports FEFO; drive-in racking and deep floor stacks make it hard. Move expired or damaged food at once to a marked, locked quarantine area and dispose of it under your company procedure and the applicable regulations, so it can never ship by mistake.\n\n::: quiz\n? Batch A arrived in March with expiry in June. Batch B arrived in April with expiry in May. Under FEFO, which is picked first?\n- Batch A, because it arrived first || That is FIFO. FEFO looks at expiry, not arrival.\n* Batch B, because it expires first || Correct. FEFO issues the earliest expiry date first.\n- Whichever is nearer the aisle || Convenience picking causes expiry losses.\n- Both at the same time || Mixing batches makes rotation and traceability harder.\n:::\n\n## 4. Shrinkage control\n\nShrinkage comes from theft, unrecorded damage, administrative errors and short deliveries signed for.\n\n- Shrinkage % = (book value − physical value) ÷ book value × 100\n\nMatch controls to sources:\n\n- Segregation of duties: people who handle stock cannot adjust records.\n- Restricted access, visitor log and CCTV at docks and high-value cages.\n- Two-person checks and sealed trucks for high-value loads.\n- Damage booked the same day with a reason code.\n- Approval levels for adjustments and a monthly review by person and item.\n\n## Worked example: cycle counting at a distributor in Lobito\n\nA food distributor near Lobito port held 850 million Kz of stock in the system, but the annual stock take found 838 million Kz: 12 million Kz, or 1.4%, shrinkage. Also, 2 million Kz of tomato paste had expired in a back row.\n\nThe new manager starts cycle counting. In month one, 176 of 200 blind-counted locations are within tolerance: IRA = 88%. The 24 errors have three causes: 10 receipts entered as cartons instead of trays, 8 picks from the wrong location, and 6 damaged bags thrown away unbooked.\n\nHe adds a unit-of-measure check at receiving, location barcode scanning at picking and a daily signed damage register. Tomato paste is re-stacked by expiry with a weekly near-expiry report. After four months, IRA reaches 97% and no stock has expired for two months.\n\n::: case | A missing 40 bags at month end in Huambo\nRui, a stock controller in Huambo, finds 40 bags of sugar missing in a cycle count two days before month-end closing. The warehouse supervisor asks him to adjust the system now \"so the books are clean\".\n? What should Rui do?\n- Adjust immediately as asked || Adjusting without investigation hides the cause and may hide theft.\n- Ignore it until the annual stock take || The trail goes cold and losses may continue.\n* Recount with a second person, check recent receipts and dispatches, then adjust with approval and a recorded cause || Correct. Verify, investigate and record the cause before adjusting.\n- Ask the supervisor to sign for the loss personally || Blame without facts damages trust and does not fix the process.\n:::\n\n## Tool: cycle count and expiry control sheet\n\n- Location, SKU and ABC class:\n- Count date and counter (blind):\n- System and physical quantity, within tolerance:\n- Recount result:\n- Root cause and corrective action:\n- Batches with expiry dates:\n- Days to earliest expiry and action:\n\n## Common mistakes\n\n- Adjusting the system without finding the cause.\n- Relying only on a year-end stock take.\n- Picking from the nearest pallet instead of the earliest expiry.\n- Letting one person move stock and adjust records.\n\n## Self-check\n\n- 300 locations are counted and 282 are within tolerance. What is the IRA? (Answer: 94%.)\n- Book stock is 400 million Kz and physical stock 392 million Kz. What is shrinkage? (Answer: 2%.)\n- Why is drive-in racking a problem for food? (Answer: it works last in, first out, which blocks FEFO.)\n\n## Practical assignment\n\nBlind count 20 locations holding A items this week, calculate IRA and find the cause of every difference. List all food batches with less than 90 days to expiry and agree an action for each with sales.\n\n## Summary\n\n- Cycle counting by ABC class finds errors early and fixes their causes.\n- FEFO with batch and expiry records prevents expiry losses.\n- Shrinkage falls when controls match its causes.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- calculate inventory record accuracy, order picking accuracy, dock-to-stock time and inventory turns;\n- set up a simple weekly KPI review;\n- apply basic forklift safety rules, using the hierarchy of controls;\n- apply racking safety rules, including the green, amber and red damage classification.\n\n## Key terms\n\n::: terms\nKPI (key performance indicator): a measure with a clear definition and target that shows whether an objective is met\nOrder line: one SKU on one customer order, regardless of quantity\nDock-to-stock time: time from arrival at the dock until goods are in a recorded location and available to pick\nInventory turns: how many times average inventory is sold and replaced in a year\nCapacity plate: the forklift plate showing the maximum load at a given height and load centre\n:::\n\n## 1. Four core warehouse KPIs\n\nFour indicators give a strong picture of accuracy, speed and stock health.\n\n- Inventory record accuracy = locations within tolerance ÷ locations counted × 100\n- Picking accuracy = (lines picked − lines with errors) ÷ lines picked × 100\n- Dock-to-stock time = time receipt and location are confirmed − arrival time\n- Inventory turns = annual cost of goods sold ÷ average inventory at cost, and days of inventory = 365 ÷ turns\n\nMeasure picking accuracy by line, because one order may have 30 lines. Errors include wrong item, quantity, batch or damaged goods. Report errors found at checking and errors found by customers separately; the second kind is the expensive one. Long dock-to-stock time means stock sits invisible to sales and can trigger needless emergency orders. Higher turns free cash, but turns that rise because of stock-outs are not a success, so read turns with service level.\n\n::: quiz\n? 4,000 order lines were picked. Checking found 28 errors and customers reported 8 more. What is picking accuracy?\n- 99.3%, using only the checking errors || Customer-found errors must be included.\n* 99.1%, because (4,000 − 36) ÷ 4,000 = 99.1% || Correct. All 36 errors count.\n- 99.8%, using only customer errors || Errors found at checking are still picking errors.\n- 90.0% || This would mean 400 errors.\n:::\n\n## 2. Making KPIs work\n\nFor each KPI, write down the definition, data source, a target based on your own performance and business needs, and an owner. Hold a short weekly stand-up at a board near dispatch: show eight weeks of trend, discuss the biggest cause of misses and agree one or two actions with names and dates.\n\n## 3. Forklift safety basics\n\nForklifts are essential and a major cause of serious injuries. Apply these rules with your company procedures and the applicable local regulations:\n\n::: slides\nSLIDE Step 1: Authorised drivers only | Trained and authorised operators | Keep a list with training dates\nSLIDE Step 2: Pre-use check every shift | Brakes, steering, horn, lights, forks, chains, tyres, leaks, seatbelt | Tag out and report any failure\nSLIDE Step 3: Lift within capacity | Read the capacity plate | Capacity falls as the load goes higher or further out\nSLIDE Step 4: Travel safely | Forks low, mast tilted back, seatbelt on, speed limits | Horn at corners, no passengers\nSLIDE Step 5: Separate people | Marked walkways, barriers, pedestrian-free dock zones | Eye contact before crossing\n:::\n\nThe hierarchy of controls shows which measures work best against forklift and pedestrian collisions:\n\n::: diagram pyramid | Hierarchy of controls for forklift traffic\nElimination: plan layouts so pedestrians never need to enter forklift areas\nSubstitution: use pedestrian pallet trucks in busy picking aisles\nEngineering controls: barriers, separate walkways and doors\nAdministrative controls: speed limits, one-way routes, training\nPPE: high-visibility vests and safety shoes\n:::\n\n## 4. Racking safety basics\n\nPallet racking holds tonnes above people's heads. Key rules:\n\n- Display a load notice on every rack run and never exceed it. Do not change beam heights without checking with the supplier.\n- Protect uprights at aisle ends with guards and barriers.\n- Never climb racking or stand on forks.\n- Place pallets squarely and never rack damaged pallets.\n- Report every impact, even with no visible damage, and arrange regular inspections by a trained person plus an expert inspection at least once a year.\n\nThe European standard EN 15635 uses a traffic-light classification. Green: damage within limits, record and monitor. Amber: hazardous, unload the area and repair soon, with no new loads. Red: very serious, unload and isolate immediately until repaired.\n\n::: quiz\n? An inspection classes a damaged upright as amber. What should happen?\n- Keep using it but reduce speed nearby || Amber damage must not carry new loads.\n- Nothing until the annual inspection || Amber needs action within a short period.\n* Unload it, put no new loads on it and repair it soon || Correct. Amber means hazardous damage needing prompt repair.\n- Evacuate the whole warehouse || That response fits a collapse, not a single amber upright.\n:::\n\n## Worked example: a KPI and safety review in Luanda\n\nA distribution warehouse in Luanda prepares its first monthly report:\n\n- Turns = 2,400 million Kz cost of goods sold ÷ 300 million Kz average inventory = 8, days of inventory = 365 ÷ 8 = about 46.\n- Picking accuracy = (4,000 − 36) ÷ 4,000 = 99.1%.\n- Dock-to-stock time averages 26 hours because afternoon containers are entered the next day.\n- Inventory record accuracy: 95%.\n\nThe receiving supervisor introduces same-shift system entry and books containers before 13:00; dock-to-stock reaches the new 8-hour target in two months. The safety officer reports two rack impacts in aisle 3; one upright is amber, so the bay is unloaded and the upright replaced within the week. Two forklifts had no pre-use checklists, so supervisors now check forms at 07:30 daily.\n\n::: case | A bent upright in a busy aisle in Cacuaco\nDuring the morning peak in a warehouse in Cacuaco, picker Joana sees a forklift hit an upright in aisle 5. The upright is visibly bent. The shift leader says, \"We are late, keep picking and report it after lunch.\"\n? What should Joana do?\n- Keep picking as instructed || Visible bending may be red damage, and people are working under the load.\n* Stop work in that bay, keep people away and report it to the supervisor at once || Correct. Every impact is reported immediately and the bay isolated until a trained person inspects it.\n- Straighten the upright with a forklift || Never repair racking this way. It weakens the steel further.\n- Move the pallets above it herself || Unloading damaged racking needs a planned, supervised method.\n:::\n\n## Tool: weekly KPI and safety board\n\n- Inventory record accuracy (week, target, trend):\n- Picking accuracy (internal and customer errors):\n- Dock-to-stock time (hours):\n- Turns and days of inventory (monthly):\n- Top cause of misses and actions (owner, date):\n- Forklift pre-use checks completed (% of shifts):\n- Rack impacts and inspection status:\n\n## Common mistakes\n\n- Tracking many KPIs without agreeing actions.\n- Measuring picking accuracy by order instead of by line.\n- Letting an untrained person drive \"just for one pallet\".\n- Leaving amber or red racking damage in use.\n\n## Self-check\n\n- Cost of goods sold is 1,200 million Kz and average inventory 200 million Kz. What are turns and days of inventory? (Answer: 6 turns, about 61 days.)\n- What does dock-to-stock time measure? (Answer: arrival at the dock until goods are recorded in a location and available to pick.)\n- What should you do with red racking damage? (Answer: unload and isolate the area immediately until repaired.)\n\n## Practical assignment\n\nCalculate the four KPIs for last month. Then do a 30-minute safety walk: check forklift pre-use records, look for missing load notices and damaged uprights, and note where pedestrians and forklifts share space. Present your KPIs and three safety actions at your next team meeting.\n\n## Summary\n\n- Four KPIs cover the essentials: record accuracy, picking accuracy, dock-to-stock time and turns.\n- KPIs need a definition, target, owner and a weekly review that leads to action.\n- Forklift and racking safety depend on trained operators, separation, load limits and inspection."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain the five functions of inventory",
+     "Break down holding, ordering and stock-out costs",
+     "Calculate the annual holding cost of average stock",
+     "Compare two ordering policies on total cost"
+    ],
+    "takeaway": "Inventory is money sitting on the floor"
+   },
+   {
+    "title": "Why we hold stock",
+    "points": [
+     "Cycle stock covers demand between deliveries",
+     "Safety stock protects against uncertainty",
+     "Pipeline stock is already paid for and in transit",
+     "Anticipation stock prepares for peaks and price rises",
+     "Decoupling stock separates stages"
+    ],
+    "takeaway": "Every bag in the warehouse should have a job"
+   },
+   {
+    "title": "Holding cost",
+    "points": [
+     "Cost of capital tied up in stock",
+     "Storage space, handling and insurance",
+     "Damage, pests and expiry losses",
+     "Theft and admin errors (shrinkage)",
+     "Expressed as a % of stock value per year"
+    ],
+    "takeaway": "Calculate your own carrying rate"
+   },
+   {
+    "title": "Ordering cost",
+    "points": [
+     "Purchase order and approvals",
+     "Clearing, documents and port handling",
+     "Transport and receiving",
+     "Inspection and invoice matching",
+     "Mostly a fixed cost per order"
+    ],
+    "takeaway": "More orders = more ordering cost"
+   },
+   {
+    "title": "Stock-out cost",
+    "points": [
+     "Lost margin on sales you could not make",
+     "Emergency purchases and transport",
+     "Penalties from key accounts",
+     "Customers who switch for good"
+    ],
+    "takeaway": "The hardest cost to see, often the largest"
+   },
+   {
+    "title": "The trade-off",
+    "points": [
+     "Big, rare orders: low ordering cost, high holding cost",
+     "Small, frequent orders: the opposite",
+     "Too little safety stock: stock-outs rise",
+     "Goal: lowest total cost at the service level you want"
+    ],
+    "takeaway": "Total cost = holding + ordering + stock-out"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Treating stock as free once it is paid for",
+     "Ignoring pipeline stock",
+     "Using a borrowed carrying rate",
+     "Counting only purchase price"
+    ],
+    "takeaway": "Put a kwanza value on every cost"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Classify items with ABC analysis by annual value",
+     "Measure demand variability with the coefficient of variation",
+     "Combine ABC and XYZ into a nine-cell matrix",
+     "Set a stock policy for each cell"
+    ],
+    "takeaway": "Not all items deserve the same attention"
+   },
+   {
+    "title": "ABC analysis",
+    "points": [
+     "Based on the Pareto principle",
+     "Rank items by annual consumption value",
+     "A = top ~80% of value, few items",
+     "B = next ~15%",
+     "C = last ~5%, many items"
+    ],
+    "takeaway": "Annual value = annual units × unit cost"
+   },
+   {
+    "title": "ABC in five steps",
+    "points": [
+     "Calculate annual value per item",
+     "Sort from highest to lowest",
+     "Calculate cumulative % of value",
+     "Set cut-offs (e.g. 80% and 95%)",
+     "Assign A, B or C"
+    ],
+    "takeaway": "Review the classes every 6 to 12 months"
+   },
+   {
+    "title": "XYZ analysis",
+    "points": [
+     "Measures how stable demand is",
+     "Coefficient of variation (CV) = standard deviation ÷ mean",
+     "X = stable, Y = variable, Z = erratic",
+     "Common cut-offs: 0.5 and 1.0"
+    ],
+    "takeaway": "Use at least 6 to 12 periods of data"
+   },
+   {
+    "title": "The ABC-XYZ matrix",
+    "points": [
+     "AX: high value, stable, tight control and frequent replenishment",
+     "AZ: high value, erratic, buy against firm orders",
+     "CX: low value, stable, simple min-max",
+     "CZ: candidate for delisting"
+    ],
+    "takeaway": "Nine cells, nine policies"
+   },
+   {
+    "title": "Worked example",
+    "points": [
+     "Rice: A and X (CV 0.03)",
+     "Cooking oil: B and Y (CV 0.57)",
+     "Powdered milk: C and Z (CV 1.22)",
+     "Each gets a different policy"
+    ],
+    "takeaway": "Value tells you how much it matters, CV how hard it is"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Ranking by units instead of value",
+     "Ignoring critical C items",
+     "Using too little demand history",
+     "Never updating classes"
+    ],
+    "takeaway": "Classify, then act differently"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Calculate a reorder point",
+     "Calculate safety stock for a chosen service level",
+     "Calculate the economic order quantity (EOQ)",
+     "Adjust EOQ to practical pack and truck sizes"
+    ],
+    "takeaway": "Three formulas every planner should know"
+   },
+   {
+    "title": "Reorder point",
+    "points": [
+     "ROP = demand during lead time + safety stock",
+     "Lead time demand = daily demand × lead time in days",
+     "Order when stock on hand + on order falls to ROP"
+    ],
+    "takeaway": "Count stock already ordered, not just stock on the shelf"
+   },
+   {
+    "title": "Safety stock",
+    "points": [
+     "SS = z × σd × √L (demand varies)",
+     "z: 90% = 1.28, 95% = 1.65, 99% = 2.33",
+     "Higher service level = much more stock"
+    ],
+    "takeaway": "Choose the service level by item class"
+   },
+   {
+    "title": "When lead time varies too",
+    "points": [
+     "SS = z × √(L × σd² + d² × σL²)",
+     "Port and customs delays raise σL",
+     "In the example SS rises from 99 to 282 bags"
+    ],
+    "takeaway": "Reliable lead times are cheaper than buffers"
+   },
+   {
+    "title": "EOQ",
+    "points": [
+     "EOQ = √(2DS ÷ H)",
+     "D annual demand, S cost per order, H holding cost per unit per year",
+     "At EOQ, ordering cost = holding cost"
+    ],
+    "takeaway": "Balances the two costs from lesson 1"
+   },
+   {
+    "title": "EOQ in practice",
+    "points": [
+     "The total cost curve is flat near EOQ",
+     "Round to full pallets, trucks or containers",
+     "Check supplier minimums and storage space"
+    ],
+    "takeaway": "EOQ is a guide, not a rule"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Using average demand without variability",
+     "Mixing days and weeks in one formula",
+     "Forgetting stock on order",
+     "Never updating the parameters"
+    ],
+    "takeaway": "Recalculate at least every quarter"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Describe the six steps of warehouse flow",
+     "Apply receiving and put-away controls",
+     "Choose a picking method",
+     "Slot items by movement, size and weight"
+    ],
+    "takeaway": "Most warehouse errors start at receiving"
+   },
+   {
+    "title": "Receiving",
+    "points": [
+     "Book the delivery slot",
+     "Check documents against the purchase order",
+     "Count, inspect and check expiry dates",
+     "Record discrepancies before signing",
+     "Label each pallet"
+    ],
+    "takeaway": "Never sign for what you have not checked"
+   },
+   {
+    "title": "Put-away and storage",
+    "points": [
+     "Fixed locations vs random (dynamic) locations",
+     "Directed put-away to a confirmed location",
+     "Selective racking, drive-in racking, block stacking",
+     "Store by the same unit you pick"
+    ],
+    "takeaway": "Every pallet has an address"
+   },
+   {
+    "title": "Picking methods",
+    "points": [
+     "Discrete: one picker, one order",
+     "Batch: several orders at once",
+     "Zone: each picker owns an area",
+     "Wave: release orders in timed groups"
+    ],
+    "takeaway": "Picking is often the biggest labour cost"
+   },
+   {
+    "title": "Packing and dispatch",
+    "points": [
+     "Check picks against the order",
+     "Stage by route and loading sequence",
+     "Load last drop first",
+     "Seal trucks and record seal numbers",
+     "Get proof of delivery"
+    ],
+    "takeaway": "Dispatch is your last chance to catch errors"
+   },
+   {
+    "title": "Slotting",
+    "points": [
+     "Fast movers closest to dispatch",
+     "Golden zone: waist to shoulder height",
+     "Heavy items low",
+     "Group items often ordered together",
+     "Re-slot when demand changes"
+    ],
+    "takeaway": "Good slotting shortens every pick"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Skipping checks when receiving is busy",
+     "Free-for-all put-away",
+     "Fast movers at the back",
+     "One picking method for every order type"
+    ],
+    "takeaway": "Design the flow, then train it"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Plan an ABC-based cycle counting programme",
+     "Calculate inventory record accuracy",
+     "Apply FIFO and FEFO for food with expiry dates",
+     "Control the main causes of shrinkage"
+    ],
+    "takeaway": "Accurate records are the base of every stock decision"
+   },
+   {
+    "title": "Cycle counting",
+    "points": [
+     "Count a small part of stock every day",
+     "A items most often, C items least",
+     "Blind counts: counters do not see system quantity",
+     "Investigate before adjusting"
+    ],
+    "takeaway": "Find the cause, not just the difference"
+   },
+   {
+    "title": "Inventory record accuracy",
+    "points": [
+     "Location is accurate if count is within tolerance",
+     "Accuracy % = accurate locations ÷ locations counted",
+     "Tighter tolerance for A items"
+    ],
+    "takeaway": "Measure it every week"
+   },
+   {
+    "title": "FIFO and FEFO",
+    "points": [
+     "FIFO: first in, first out",
+     "FEFO: first expired, first out",
+     "FEFO is the rule for food and medicines",
+     "System must record batch and expiry"
+    ],
+    "takeaway": "Pick by expiry date, not by arrival date"
+   },
+   {
+    "title": "Expiry management",
+    "points": [
+     "Minimum remaining shelf life at receiving",
+     "Weekly near-expiry report",
+     "Act early: promote, transfer, return",
+     "Quarantine expired goods"
+    ],
+    "takeaway": "Sell before it expires, never after"
+   },
+   {
+    "title": "Shrinkage control",
+    "points": [
+     "Theft, damage, admin errors, supplier short deliveries",
+     "Segregation of duties",
+     "Restricted access and CCTV",
+     "Sealed trucks and two-person checks"
+    ],
+    "takeaway": "Shrinkage % = loss ÷ book value"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Adjusting without investigation",
+     "Counting only at year end",
+     "Picking from the front pallet regardless of expiry",
+     "One person controls stock and records"
+    ],
+    "takeaway": "Count, investigate, correct, prevent"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Calculate four core warehouse KPIs",
+     "Set targets and review them in a weekly routine",
+     "Apply forklift safety rules",
+     "Apply racking safety and inspection rules"
+    ],
+    "takeaway": "What gets measured and made safe gets managed"
+   },
+   {
+    "title": "Accuracy KPIs",
+    "points": [
+     "Inventory record accuracy = locations within tolerance ÷ counted",
+     "Order picking accuracy = correct lines ÷ lines picked",
+     "Measure errors at checking and from customer claims"
+    ],
+    "takeaway": "Count lines, not just orders"
+   },
+   {
+    "title": "Speed and flow KPIs",
+    "points": [
+     "Dock-to-stock time: arrival to available for picking",
+     "Inventory turns = cost of goods sold ÷ average inventory",
+     "Days of inventory = 365 ÷ turns"
+    ],
+    "takeaway": "Fast receiving means stock is sellable sooner"
+   },
+   {
+    "title": "Using KPIs well",
+    "points": [
+     "Clear definition and data source",
+     "A target and an owner",
+     "Weekly review board",
+     "Look at trends and causes"
+    ],
+    "takeaway": "A KPI without an action is decoration"
+   },
+   {
+    "title": "Forklift safety",
+    "points": [
+     "Trained and authorised operators only",
+     "Daily pre-use checklist",
+     "Never exceed the capacity plate",
+     "Seatbelt, speed limits, horn at corners",
+     "Separate pedestrians from trucks"
+    ],
+    "takeaway": "Separate people and vehicles by design"
+   },
+   {
+    "title": "Racking safety",
+    "points": [
+     "Load notice on every rack",
+     "Green, amber, red damage levels (EN 15635)",
+     "Regular inspection by a trained person",
+     "Report every impact"
+    ],
+    "takeaway": "Never climb racking"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Too many KPIs and no actions",
+     "Measuring orders, not lines",
+     "Untrained drivers \"just moving one pallet\"",
+     "Damaged uprights left in use"
+    ],
+    "takeaway": "Measure, review, act, stay safe"
+   }
+  ]
+ ]
+}

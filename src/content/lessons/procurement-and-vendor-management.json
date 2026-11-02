@@ -1,0 +1,430 @@
+{
+ "slug": "procurement-and-vendor-management",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- describe the seven main steps of the procure-to-pay process and the document produced at each step;\n- write a purchase specification that a supplier cannot misunderstand;\n- perform a three-way match between a purchase order, a goods received note and an invoice;\n- explain why separation of duties and the \"no PO, no order\" rule protect the company.\n\n## Key terms\n\n::: terms\nProcure-to-pay (P2P): the full cycle from identifying a need to paying the supplier\nPurchase requisition: an internal request to buy something, approved by a budget holder\nPurchase order (PO): the official document that commits the company to buy specified goods or services at agreed terms\nGoods received note (GRN): the internal record of what was actually received, in what quantity and condition\nThree-way match: the check that the PO, the GRN and the supplier invoice agree before payment\nMaverick spend: buying that bypasses the agreed procurement process or preferred suppliers\n:::\n\n## 1. The seven steps of procure-to-pay\n\nProcurement is a controlled process that makes sure the company buys the right thing, from the right supplier, at the right total cost, and pays only for what it received. Most organisations follow seven steps.\n\n::: diagram steps | The procure-to-pay cycle\nNeed: a department identifies a requirement and raises a requisition\nSpecification: the need is described precisely so suppliers quote on the same basis\nSourcing: a supplier is selected by catalogue, quotes, RFQ or tender\nPurchase order: item, quantity, price, delivery and payment terms are committed\nReceipt: the delivery is checked and a GRN is recorded\nThree-way match: PO, GRN and invoice are compared\nPayment: the invoice is paid on the agreed terms\n:::\n\nEach step has an owner and leaves a document, so anyone can follow a payment back to the approved need. When a step is skipped, for example ordering by phone without a PO, the company loses control of price, quantity and budget.\n\nTwo principles support the cycle: \"no PO, no order, no payment\", and separation of duties, so that the person who requests, approves, receives and pays is not the same. Both reduce errors and fraud.\n\n## 2. Writing a clear specification\n\nMany supply problems start with a weak specification. \"Plastic bags, good quality\" invites ten offers that cannot be compared. There are two main types:\n\n- Functional specification: describes what the item must do. Example: \"bags must hold 25 kg of rice without tearing when dropped from 1 metre.\"\n- Technical specification: describes exactly what the item must be. Example: \"woven polypropylene, 60 x 95 cm, 80 g/m2, printed two colours, with liner.\"\n\nA good specification states what, how much, when and where, how it will be checked (acceptance criteria) and what extras are needed (labelling, documents, warranty). Agree it with the user before sourcing.\n\n::: quiz\n? The maintenance team asks for \"a pump that can move 20 m3 of water per hour to a 15 m tank\". What type of specification is this?\n- Technical specification || A technical specification states exactly what the item must be, such as brand, model or materials.\n* Functional specification || Correct. It describes the performance required and leaves suppliers free to propose a solution.\n- Purchase order || A PO is the commitment to buy, issued after sourcing, not the description of the need.\n:::\n\n## 3. The purchase order and receipt\n\nThe PO is the company's legal commitment, so it must be complete: PO number, supplier, item code and description, quantity and unit, unit price and currency, delivery date and address, the Incoterms® 2020 rule for imports (for example CIF Luanda), payment terms and a reference to the specification.\n\nAt receipt, check the delivery against the PO, not the supplier's delivery note: count, inspect, and check batch and expiry dates. Write shortages or damage on the delivery note before signing, and record only the accepted quantity on the GRN.\n\n## 4. The three-way match\n\nBefore payment, accounts payable compares the documents line by line.\n\n::: slides\nSLIDE Step 1: Read the PO | Agreed item and quantity; Agreed unit price and terms | What we agreed to buy\nSLIDE Step 2: Read the GRN | Quantity accepted; Rejected or damaged units | What we actually received\nSLIDE Step 3: Read the invoice | Quantity billed; Unit price billed | What the supplier asks us to pay\nSLIDE Step 4: Compare and decide | Pay the lower of received and invoiced quantity; Pay no more than the PO price; Outside tolerance = invoice on hold | Pay only what was ordered and received\n:::\n\nMany companies allow a small tolerance, such as 2%, for rounding.\n\nExample: a PO is for 1,000 cartons at 4,500 Kz. The GRN shows 960 cartons accepted. The invoice is for 1,000 cartons at 4,650 Kz = 4,650,000 Kz. The correct payable amount is 960 x 4,500 = 4,320,000 Kz. Paying the invoice as received would overpay by 330,000 Kz.\n\n::: quiz\n? A PO is for 500 units at 2 USD. The GRN shows 500 units. The invoice is for 500 units at 2.30 USD. The tolerance is 2%. What should accounts payable do?\n- Pay the invoice because the quantity matches || The price is 15% above the PO, far outside the 2% tolerance.\n- Pay 1,150 USD and ask for a credit later || Paying first removes your leverage to correct the price.\n* Put the invoice on hold and ask the buyer to resolve the price || Correct. The price is outside tolerance, so the buyer must get a corrected invoice or credit note.\n:::\n\n## Worked example: a food distributor in Luanda\n\nA food distributor in Luanda found that warehouse consumables spending was 25% above budget. The procurement officer, Rosa, found that supervisors phoned suppliers directly, prices varied between orders and several invoices had no GRN.\n\nRosa wrote specifications for the five main items, obtained three quotes and issued blanket POs with fixed six-month prices. She introduced \"no PO, no payment\", required a GRN for every delivery and set a 2% match tolerance. Six invoices went on hold in the first month and suppliers issued credit notes. Within a quarter, spending was back on budget.\n\n::: case | Urgent film order at the warehouse\nOn a Friday afternoon, warehouse supervisor Manuel runs out of stretch film. He phones the usual supplier, who can deliver 40 rolls tomorrow at 9,800 Kz per roll, while the blanket PO price is 8,500 Kz. No PO has been raised.\n? What should Manuel do?\n- Accept the delivery and raise a PO next week || Raising the PO afterwards is maverick buying and accepts a price 15% above the agreement.\n* Ask the buyer to issue a call-off against the blanket PO at 8,500 Kz before delivery || Correct. The blanket PO exists for exactly this. The order stays controlled and at the agreed price.\n- Pay the driver in cash to save time || Cash payment breaks separation of duties and leaves no audit trail.\n- Refuse all deliveries until Monday || This protects control but stops operations when a compliant option exists.\n:::\n\n## Tool: procure-to-pay control checklist\n\n- Requisition approved by the budget holder, with budget line\n- Specification agreed with the user, including acceptance criteria\n- PO issued before delivery, with price, Incoterm, delivery date and payment terms\n- Delivery checked against the PO, shortages noted before signing\n- GRN recorded for accepted quantity only\n- Three-way match completed and within tolerance\n- Requester, approver, receiver and payer are different people\n\n## Common mistakes\n\n- Writing vague specifications, then rejecting deliveries that technically met them.\n- Signing delivery notes without counting or inspecting the goods.\n- Paying from the invoice alone without checking the GRN.\n\n## Self-check\n\n- What three documents are compared in a three-way match? (Answer: the purchase order, the goods received note and the supplier invoice.)\n- What is the difference between a functional and a technical specification? (Answer: a functional specification states what the item must do; a technical specification states exactly what it must be.)\n- A PO is for 200 units at 10 USD, the GRN shows 180 units, and the invoice is for 200 units at 10 USD. How much should be paid? (Answer: 1,800 USD, for the 180 units received.)\n\n## Practical assignment\n\nChoose one recent purchase in your department. Collect the requisition, PO, GRN and invoice, and check each step of the cycle. Note any missing document or match difference, and share one improvement with your manager this week.\n\n## Summary\n\n- Procure-to-pay has seven steps, each with an owner and a document, so every payment traces back to an approved need.\n- Clear specifications and complete POs prevent most disputes with suppliers.\n- The three-way match and separation of duties stop overpayment, errors and fraud.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- carry out a basic spend analysis and rank categories by value;\n- explain the two dimensions and four quadrants of the Kraljic matrix;\n- place purchase categories on the matrix using simple scoring criteria;\n- choose and justify a sourcing strategy for each quadrant.\n\n## Key terms\n\n::: terms\nCategory: a group of related goods or services bought from a similar supply market, such as packaging or fuel\nSpend analysis: collecting, cleaning and grouping purchase data to see what is bought, from whom and for how much\nProfit impact: how much a category affects cost, margin, quality or revenue\nSupply risk: how difficult or risky it is to obtain the category, for example because of few suppliers or long lead times\nCategory strategy: a plan for how the company will buy a category over the next one to three years\n:::\n\n## 1. Start with a spend analysis\n\nBefore you can decide how to manage purchases, you need to know where the money goes. A basic spend analysis takes 12 months of purchase data from the accounting or ERP system and groups it into categories.\n\n::: slides\nSLIDE Step 1: Extract | Export 12 months of invoices or POs; Include supplier, description, amount and cost centre | Get all the data first\nSLIDE Step 2: Clean | Merge duplicate supplier names; Convert all amounts to one currency | Dirty data hides spend\nSLIDE Step 3: Classify | Assign each line to a category; Keep 15 to 30 categories | Short lists are usable lists\nSLIDE Step 4: Analyse | Rank categories by spend; Count suppliers per category | Find the few categories that matter most\n:::\n\nYou will usually see a Pareto pattern: a few categories account for most of the spend. At a beverage bottler, sugar, preforms, closures and fuel might represent 75% of spend. This tells you where effort pays back most, but spend alone is not enough. A cheap item can stop a factory if it cannot be found.\n\n## 2. The Kraljic matrix\n\nPeter Kraljic introduced his portfolio approach in the Harvard Business Review article \"Purchasing must become supply management\" (1983). It classifies purchases on two dimensions: profit impact (the value of the category and its effect on cost, quality or sales) and supply risk (number of qualified suppliers, substitutes, lead times, import dependency and market stability).\n\n::: diagram matrix | Kraljic matrix | Supply risk (low → high) | Profit impact (low → high)\nLeverage: high impact, low risk – use competition\nStrategic: high impact, high risk – build partnerships\nNon-critical: low impact, low risk – simplify and automate\nBottleneck: low impact, high risk – secure supply\n:::\n\n- Non-critical items, such as office supplies: reduce transaction cost with catalogues, framework agreements or a single distributor. Do not spend buyer time negotiating small amounts.\n- Leverage items, such as fuel or standard cartons from many suppliers: run tenders, consolidate volume, negotiate hard and switch suppliers when it pays.\n- Bottleneck items, such as a spare part for an imported filling machine: hold safety stock, sign longer contracts, qualify alternatives and, where possible, change the specification to a standard item.\n- Strategic items, such as a key raw material with few global suppliers: agree long-term contracts, share forecasts and work together on cost and risk.\n\n::: quiz\n? A distributor buys large volumes of standard corrugated cartons from six local suppliers. Which strategy fits best?\n- Build a long-term partnership with one supplier || Partnership suits strategic items. Here supply risk is low because there are many suppliers.\n* Tender regularly and consolidate volume to get better prices || Correct. High spend and low risk make this a leverage item, so competition creates value.\n- Hold large safety stocks || Safety stock suits bottleneck items with high supply risk.\n:::\n\n## 3. How to score and plot categories\n\nTo make the matrix objective, score each category from 1 (low) to 5 (high). For profit impact, consider annual spend, share of product cost, effect on quality and effect on sales if missing. For supply risk, consider number of qualified suppliers, substitutes, lead time, import or currency dependence and volatility. Average each axis; above 3 counts as high. Ask a buyer, a planner and a finance analyst to score independently, then discuss differences.\n\nExample: packaging film scores impact 4, 4, 3, 3 (average 3.5) and risk 2, 2, 3, 4, 3 (average 2.8). Impact high, risk low: a leverage item.\n\n## 4. From matrix to category plan\n\nFor each important category, write a one-page plan: objectives, current situation, chosen strategy, actions with owners and dates, and KPIs. Positions change: a leverage item can become a bottleneck when import licences tighten or a currency crisis reduces the supplier base. Review the matrix at least once a year. A common goal is to move bottleneck items to non-critical by standardising specifications or developing local suppliers.\n\n::: quiz\n? After new import restrictions, only one supplier can still deliver a low-cost label adhesive. What has happened to this item?\n- It has moved from bottleneck to leverage || Leverage means low risk. Risk has increased, not decreased.\n- It has stayed non-critical because the cost is low || Low cost does not make it non-critical when supply risk is high.\n* It has moved from non-critical to bottleneck || Correct. Impact is still low, but supply risk is now high, so the strategy must change to securing supply.\n:::\n\n## Worked example: a construction contractor in Benguela\n\nA construction company in Benguela spends about 2.4 million USD a year. The procurement manager, Paulo, scored the main categories with the site engineer and finance controller. Cement and rebar (impact 4.5, risk 2.5) were leverage: tender every six months and consolidate volume. Site office supplies were non-critical: one framework agreement. Hydraulic parts for an imported excavator were a bottleneck: keep critical seals and filters in stock and qualify a second source. Ready-mix concrete from the only plant within reach was strategic: a project-long agreement with shared pour schedules.\n\nThe team stopped negotiating stationery and focused on the cement tender, which delivered better prices. The parts stock later prevented a two-week stoppage when a seal failed.\n\n::: case | Ready-mix price increase in Benguela\nThe only ready-mix plant within delivery distance of Paulo's project announces an 8% price increase. The project needs 6,000 m3 over 18 months and has no realistic alternative.\n? What should Paulo do?\n- Issue a tender to force the price down || With only one supplier, a tender creates no real competition and may damage the relationship.\n- Threaten to switch to another plant || The supplier knows there is no other plant within reach, so the threat is not credible.\n* Meet the plant, review the cost drivers and agree a longer volume commitment with joint cost reduction || Correct. This is a strategic item, so partnership and shared planning work better than pressure.\n- Accept the increase without discussion || Partnership does not mean passive acceptance. Paulo should still understand and negotiate the increase.\n:::\n\n## Tool: Kraljic category scoring template\n\n- Category name, annual spend and number of suppliers:\n- Impact scores 1 to 5 (spend, cost share, quality, sales effect) and average:\n- Risk scores 1 to 5 (suppliers, substitutes, lead time, import dependence, volatility) and average:\n- Quadrant:\n- Strategy and top three actions:\n- KPI and review date:\n\n## Common mistakes\n\n- Using spend alone and ignoring low-value items that can stop operations.\n- Tendering a strategic partner every year as if it were a leverage supplier.\n- Plotting the matrix once and never updating it when markets change.\n\n## Self-check\n\n- What are the two dimensions of the Kraljic matrix? (Answer: profit impact and supply risk.)\n- A spare part is cheap but available from only one overseas supplier with a long lead time. Which quadrant is it? (Answer: bottleneck.)\n- What strategy suits leverage items? (Answer: use competition, consolidate volume and negotiate on price and terms.)\n\n## Practical assignment\n\nExport 12 months of purchases for your department. Group them into no more than 15 categories, score the top eight on impact and risk using the template, and plot them on the matrix. Choose one category and write three actions that match its quadrant.\n\n## Summary\n\n- A spend analysis shows where money goes and which categories deserve attention.\n- The Kraljic matrix combines profit impact and supply risk into four quadrants: non-critical, leverage, bottleneck and strategic.\n- Each quadrant needs a different strategy, recorded in a category plan and reviewed when the market changes.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose between an RFI, an RFQ and an RFP for a given purchase;\n- pre-qualify suppliers using clear minimum requirements;\n- build and apply a weighted scoring model, including a price-scoring formula;\n- document and communicate a supplier award decision.\n\n## Key terms\n\n::: terms\nRFI (request for information): asks suppliers to describe their capabilities, used to learn about the market\nRFQ (request for quotation): asks for prices on a clearly specified product or service\nRFP (request for proposal): asks suppliers to propose a solution, where approach, quality and service matter as well as price\nPre-qualification: checking that a supplier meets minimum requirements before evaluating its offer\nWeighted scoring: scoring each offer against agreed criteria, each with a percentage weight\n:::\n\n## 1. Choosing the right request\n\nThe type of request depends on how well you understand the need and the market.\n\n- Use an RFI when exploring. A distributor considering solar power for its warehouse may ask companies what systems they offer, without comparing prices yet.\n- Use an RFQ when the specification is clear and suppliers compete mainly on price and delivery, for example 5,000 pallets of a defined size.\n- Use an RFP when suppliers must propose how they will meet a need, for example a transport contract for deliveries to 12 provinces.\n\nEvery request should state the background, specification or scope, quantities, delivery requirements, commercial terms (Incoterm, currency, payment terms), response format, deadline and evaluation criteria. Telling suppliers how they will be judged produces more comparable offers.\n\n::: quiz\n? A company wants a supplier to design and run a cold-chain delivery service, but has not decided on vehicles or routes. Which request fits?\n- RFQ || An RFQ needs a clear specification. Here the solution itself is still open.\n* RFP || Correct. Suppliers must propose a solution, and method and service quality matter as much as price.\n- Purchase order || A PO is issued after a supplier has been selected.\n:::\n\n## 2. Pre-qualification\n\nBefore scoring, check pass-or-fail requirements: valid company registration and tax status; financial stability, such as recent accounts or bank references; capacity and references from similar clients; relevant certificates, for example ISO 9001 for quality management or ISO 22000 for food safety; and agreement to your supplier code of conduct with a conflict-of-interest declaration. A supplier that fails is not scored, however attractive its price.\n\n## 3. Building a weighted scoring model\n\nWeighted scoring makes the decision transparent and reduces personal bias.\n\n::: diagram steps | Weighted scoring method\nChoose criteria: four to six factors that matter, such as price, quality, lead time, payment terms, service\nSet weights: give each a percentage, totalling 100%\nDefine the scale: 1 = poor, 3 = acceptable, 5 = excellent, described in writing\nScore offers: two or three evaluators score independently, then agree\nCalculate: multiply score by weight and add the results\n:::\n\nFor a leverage item, price may carry 50% or more. For a strategic item, quality and reliability usually weigh more. Price is scored with a formula: price score = (lowest price ÷ offer price) × maximum score. The lowest offer gets full marks and others are scaled down in proportion.\n\nFix and record the criteria and weights before opening offers. Changing weights after seeing prices is the most common way evaluations become unfair or open to accusations of favouritism.\n\n::: quiz\n? The lowest offer is 80,000 USD. Another offer is 100,000 USD. Using a 5-point price score, what does the second offer score?\n- 5.0 || Only the lowest offer receives full marks.\n- 3.0 || Check the formula: 80,000 ÷ 100,000 = 0.8, then multiply by 5.\n* 4.0 || Correct. 80,000 ÷ 100,000 × 5 = 4.0.\n:::\n\n## 4. Award, approval and debrief\n\nWrite a short evaluation report: what was bought, who was invited and responded, pre-qualification results, the scoring table, the recommendation and risks. Submit it for approval according to authority limits. Confirm the award with a contract or PO, then give unsuccessful suppliers brief feedback, such as \"your lead time was 30 days longer than the winner's\". This keeps good suppliers interested.\n\n::: slides\nSLIDE Step 1: Write the report | Who was invited and who responded; Pre-qualification results; Scoring table and recommendation | Evidence for the decision\nSLIDE Step 2: Get approval | Follow the company's authority limits; Flag risks and conflicts of interest | The right person signs\nSLIDE Step 3: Confirm the award | Issue the contract or PO; Restate price, delivery and service levels | Put the agreement in writing\nSLIDE Step 4: Debrief bidders | Tell unsuccessful suppliers promptly; Give one or two specific reasons | Feedback keeps good suppliers engaged\n:::\n\n## Worked example: transport tender at a distributor in Luanda\n\nA distributor in Luanda needs a carrier for weekly deliveries to Huambo and Benguela. It issued an RFP to five carriers; three passed pre-qualification (one lacked valid vehicle insurance). Weights were fixed first: price 40%, on-time record 25%, fleet 20%, payment terms 15%.\n\nMonthly prices: A 9,000,000 Kz, B 10,000,000 Kz, C 12,000,000 Kz. Price scores: A 5.0, B 4.5, C 3.75. Other scores (on-time, fleet, payment): A 2, 3, 4; B 5, 4, 3; C 4, 5, 5.\n\n- A: (5.0 x 0.40) + (2 x 0.25) + (3 x 0.20) + (4 x 0.15) = 3.70\n- B: (4.5 x 0.40) + (5 x 0.25) + (4 x 0.20) + (3 x 0.15) = 4.30\n- C: (3.75 x 0.40) + (4 x 0.25) + (5 x 0.20) + (5 x 0.15) = 4.25\n\nCarrier B won, although it was not the cheapest. References showed Carrier A often missed delivery slots, which would cost more in lost sales than the price difference.\n\n::: case | A late request to change the weights\nAfter the offers are opened, the sales manager, Joana, asks procurement officer Nuno to raise the price weight from 40% to 70% so that the cheapest carrier, A, wins.\n? What should Nuno do?\n- Change the weights because sales is the internal customer || Changing weights after seeing prices makes the evaluation unfair and hard to defend.\n* Keep the agreed weights, explain why, and record Joana's concern in the evaluation report || Correct. Weights fixed in advance protect fairness. Her concern can be noted for future tenders.\n- Cancel the tender and award directly to Carrier A || This ignores the agreed process and the evidence on reliability.\n- Ask Carrier B to match Carrier A's price || Using one bidder's price to pressure another after opening is unfair to the other bidders.\n:::\n\n## Tool: RFQ/RFP and scoring checklist\n\n- Request type chosen (RFI, RFQ or RFP) and reason\n- Specification or scope agreed with the user\n- Commercial terms stated: Incoterm, currency, payment terms, offer validity\n- Pass-or-fail pre-qualification requirements listed\n- Criteria, weights (total 100%) and scale fixed before opening offers\n- At least two independent evaluators\n- Evaluation report, approval and feedback to all bidders\n\n## Common mistakes\n\n- Changing criteria or weights after seeing the offers.\n- Comparing offers based on different specifications or Incoterms.\n- Choosing on price alone when quality, lead time or service affect total cost.\n- Keeping no written record of how the decision was made.\n\n## Self-check\n\n- Which request would you use to buy 1,000 cartons of a fully defined size? (Answer: an RFQ.)\n- Using the formula lowest price ÷ offer price × 5, what score does an offer of 125 USD get if the lowest offer is 100 USD? (Answer: 4.0.)\n- Why must weights be fixed before offers are opened? (Answer: so the evaluation is fair and cannot be adjusted to favour a particular supplier.)\n\n## Practical assignment\n\nChoose a purchase your team will make in the next three months. Decide whether it needs an RFI, RFQ or RFP, list the pre-qualification requirements, and draft four to six weighted criteria with a scoring scale. Ask a colleague to review the weights before any request is sent.\n\n## Summary\n\n- Use an RFI to learn, an RFQ to compare prices on a clear specification, and an RFP to compare solutions.\n- Pre-qualify suppliers first, then score offers with criteria and weights fixed in advance.\n- Record the evaluation, get the right approval and give feedback to every bidder.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain total cost of ownership and its three groups of costs;\n- calculate the landed cost per unit of an imported product;\n- explain how the Incoterms® 2020 rule changes which costs are included in a supplier's price;\n- compare two supplier offers on total cost rather than unit price.\n\n## Key terms\n\n::: terms\nTotal cost of ownership (TCO): all the costs of acquiring, using and disposing of a product or service over its life\nLanded cost: the total cost of a product once it has arrived at the buyer's warehouse, including price, transport, insurance, duties, taxes and fees\nIncoterms® 2020: International Chamber of Commerce rules that define which costs and risks the seller and the buyer each carry\nCIF value: cost of goods plus insurance and freight to the named destination port\nDemurrage: a charge for keeping a container beyond the free time allowed by the shipping line\n:::\n\n## 1. Total cost of ownership\n\nBuyers are often judged on unit price, but price is only part of what the company pays.\n\n::: diagram pyramid | Total cost of ownership: what you see and what you do not\nPurchase price: the visible part, on the quotation\nAcquisition costs: freight, insurance, duties, port, clearing, inland transport\nOwnership costs: storage, financing stock, inspection, rejects, maintenance, energy\nEnd-of-life costs: disposal, recycling or resale value\n:::\n\nTCO matters most for equipment and imports. A forklift that is 10% cheaper but uses more energy and needs imported parts with long lead times can cost much more over five years. A supplier with a 90-day lead time forces you to hold more safety stock, and tie up more cash, than one with a 30-day lead time. To use TCO, list every cost element for each option over the same period and volume, then compare the totals.\n\n::: quiz\n? Forklift A costs 20,000 USD and 3,000 USD a year to run. Forklift B costs 18,000 USD and 4,000 USD a year. Over five years, which has the lower TCO?\n- Forklift B, because its price is lower || B's higher running costs add 5,000 USD over five years, more than its 2,000 USD price advantage.\n* Forklift A, at 35,000 USD against 38,000 USD || Correct. A: 20,000 + 5 x 3,000 = 35,000. B: 18,000 + 5 x 4,000 = 38,000.\n- They cost the same over five years || Add the price and five years of running costs for each to see the difference.\n:::\n\n## 2. Incoterms® 2020 and what the price includes\n\nWhen comparing import offers, first check the Incoterm, because it decides which costs are already in the price:\n\n- EXW (Ex Works): the buyer collects from the seller's premises and pays almost everything.\n- FOB (Free On Board, sea only): the seller loads the goods on the vessel; the buyer pays sea freight and insurance.\n- CFR (Cost and Freight): the seller pays freight to the destination port; the buyer arranges insurance.\n- CIF (Cost, Insurance and Freight): the seller pays freight and minimum insurance to the destination port, but risk passes to the buyer when goods are loaded at origin.\n- DAP (Delivered at Place): the seller delivers to a named place; the buyer pays import duties.\n- DDP (Delivered Duty Paid): the seller delivers with import duties and taxes paid.\n\n::: quiz\n? Supplier 1 quotes 950 USD per tonne FOB. Supplier 2 quotes 1,000 USD per tonne CIF Luanda. Which is cheaper?\n- Supplier 1, because 950 is lower than 1,000 || The FOB price excludes sea freight and insurance, so the prices are not comparable yet.\n- Supplier 2, because CIF always costs less || CIF is not always cheaper. It depends on the freight and insurance you would pay yourself.\n* You cannot tell until freight and insurance are added to the FOB offer || Correct. Convert both offers to the same basis before comparing.\n:::\n\n## 3. Building a landed cost calculation\n\n::: slides\nSLIDE Step 1: Price | Supplier price for the whole shipment; Converted to one currency at a dated rate | Start from the invoice value\nSLIDE Step 2: CIF value | Add freight and insurance if not included | Same basis for every offer\nSLIDE Step 3: Duties and taxes | Duty is a percentage of the customs value; Confirm basis and rate for your tariff code with a broker | Never copy rates from old files\nSLIDE Step 4: Local costs | Port handling and storage; Clearing agent and inspection; Bank charges; Inland transport | Small fees add up on low-value goods\nSLIDE Step 5: Per unit | Divide the total by saleable units | Landed cost per unit drives your price\n:::\n\nMany countries, following WTO customs valuation rules, base duty on a CIF value, but always confirm with your customs broker. If your company can recover import VAT or a similar tax, it is a cash-flow cost rather than a final cost; ask finance how to treat it.\n\n## Worked example: importing canned tomatoes into Luanda\n\nA food distributor in Luanda imports one container of 2,000 cartons at 10 USD per carton FOB. All percentages are example figures for teaching only, not Angolan legal rates. Real rates depend on the tariff code and current law and must be confirmed with a licensed customs broker.\n\n- Goods value FOB: 20,000 USD\n- Sea freight (example quote): 3,000 USD\n- Insurance (example: 1% of FOB plus freight): 230 USD\n- CIF value: 23,230 USD\n- Customs duty (example: 10% of CIF): 2,323 USD\n- Other import fees (example: 2% of CIF): 465 USD\n- Port, clearing, bank charges and inland transport (examples): 2,200 USD\n- Total landed cost: 28,218 USD, or 14.11 USD per carton\n\nThe landed cost is about 41% above the FOB price. A second supplier offers 10.50 USD CIF Luanda (CIF value 21,000 USD). With the same example rates and fees: 21,000 + 2,100 + 420 + 2,200 = 25,720 USD, or 12.86 USD per carton. The higher unit price is cheaper by 1.25 USD per carton, and its 45-day lead time (against 75 days) reduces safety stock too.\n\n::: case | Choosing a flour supplier in Lobito\nBuyer Teresa must import wheat flour into Lobito. Supplier A quotes 380 USD per tonne FOB with a 70-day lead time. Supplier B quotes 425 USD per tonne CIF Lobito with a 35-day lead time. Freight and insurance would add about 55 USD per tonne to Supplier A.\n? What should Teresa conclude?\n- Choose A because its price is 45 USD lower || A's price excludes about 55 USD of freight and insurance, so it is not lower on a CIF basis.\n* Choose B, because its CIF-equivalent price is lower and its shorter lead time reduces stock holding || Correct. A becomes about 435 USD CIF, against 425 for B, and B needs less safety stock.\n- Choose either, because duties will be the same || Duties based on CIF value would also be higher for A.\n:::\n\n## Tool: landed cost template\n\n- Product, tariff code and saleable units:\n- Supplier price, Incoterm and exchange rate with date:\n- Freight and insurance (if not included) and CIF value:\n- Customs duty (rate confirmed by broker):\n- Other import taxes and fees (recoverable or not):\n- Port, storage, demurrage risk, clearing and inspection:\n- Bank charges and inland transport:\n- Total landed cost and cost per unit:\n\n## Common mistakes\n\n- Comparing an FOB offer directly with a CIF or DDP offer.\n- Forgetting port, clearing and inland transport costs.\n- Using an old exchange rate or copying duty rates from an old shipment.\n- Ignoring rejects and delays, which raise the real cost per saleable unit.\n\n## Self-check\n\n- What are the three groups of costs in total cost of ownership? (Answer: acquisition, ownership and end-of-life costs.)\n- Under CIF, who pays the main sea freight? (Answer: the seller, to the named destination port.)\n- A shipment has a total landed cost of 15,000 USD for 1,000 saleable units. What is the landed cost per unit? (Answer: 15 USD.)\n\n## Practical assignment\n\nTake one recent import or high-value purchase. Using the template, rebuild its landed cost from the supplier invoice, freight bill, customs documents and other charges. Compare the landed cost per unit with the unit cost used in your pricing or budget, and report the difference to your manager.\n\n## Summary\n\n- Total cost of ownership looks beyond price to acquisition, ownership and end-of-life costs.\n- Landed cost adds freight, insurance, duties, fees and inland transport to the price, per saleable unit.\n- Always check the Incoterm and compare offers on landed cost, using confirmed rather than assumed rates.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain BATNA, reservation point, target and ZOPA;\n- calculate the zone of possible agreement for a simple price negotiation;\n- prepare a one-page negotiation plan for a supplier meeting;\n- use conditional trade-offs instead of one-way concessions.\n\n## Key terms\n\n::: terms\nBATNA: best alternative to a negotiated agreement, meaning what you will do if this negotiation fails\nReservation point: the least favourable deal you will accept; beyond it you walk away\nTarget: the realistic best outcome you aim for\nZOPA (zone of possible agreement): the range between the two sides' reservation points, where a deal is possible\nInterests: the underlying needs behind a negotiating position\nConcession: something one side gives up to move towards agreement\n:::\n\n## 1. BATNA: your source of power\n\nThe term BATNA was made popular by Roger Fisher and William Ury in Getting to Yes (1981), from the Harvard Negotiation Project. Their point is simple: your power depends largely on how good your alternatives are. If another qualified supplier can deliver at a similar price, you can say no. If you have no alternative, the supplier knows you must accept.\n\n::: slides\nSLIDE Step 1: List alternatives | Another supplier; A different specification; Importing directly; Delaying the purchase | What happens if we do not agree?\nSLIDE Step 2: Value each one | Landed cost; Lead time; Risk | Put a number on every option\nSLIDE Step 3: Pick your BATNA | The best realistic alternative | This sets your walk-away point\nSLIDE Step 4: Improve it | Get a written second quote before the meeting; Estimate the supplier's BATNA too | Stronger alternatives mean stronger position\n:::\n\nA supplier with spare capacity and few other customers has a weak BATNA, which strengthens your position.\n\n## 2. Reservation point, target and ZOPA\n\nYour BATNA sets your reservation point. If a second supplier offers 520 USD per tonne landed, there is little reason to pay more than 520 USD, so that is your reservation point. Your target is the best realistic outcome based on market prices, for example 490 USD. Your opening offer is lower but must be defensible with facts, for example 470 USD. Never reveal your reservation point.\n\nThe supplier has its own reservation point, the lowest price it will accept. You will not know it exactly, but you can estimate it from market data and past behaviour.\n\n::: diagram steps | Building the ZOPA (buyer view, USD per tonne)\nBuyer opening offer 470: ambitious but backed by facts\nSeller reservation point 480: the lowest the seller will accept\nBuyer target 490: the realistic best outcome\nBuyer reservation point 520: set by the BATNA\nSeller opening price 540: the supplier's first demand\n:::\n\nThe ZOPA is the overlap between the two reservation points: here 480 to 520 USD. Any price inside it is better for both sides than no deal. If the seller's minimum were 540 and the buyer's maximum 520, there would be no ZOPA on price, and the parties would need to change other terms, such as volume or payment terms, to create one.\n\n::: quiz\n? A buyer will pay at most 12,000 Kz per unit. The seller will accept no less than 12,500 Kz. What is the ZOPA?\n- 12,000 to 12,500 Kz || This range lies between the limits but neither side will accept a price inside it.\n* There is no ZOPA on price alone || Correct. The seller's minimum is above the buyer's maximum, so other terms must change for a deal.\n- 12,250 Kz, the midpoint || Splitting the difference does not create agreement when both limits are breached.\n:::\n\n## 3. Positions, interests and variables\n\nA position is what someone says: \"We need a 6% increase.\" An interest is why: perhaps the supplier's costs rose with the exchange rate, or its bank wants faster payment. Fisher and Ury recommend focusing on interests, not positions. Ask open questions such as \"What is driving the increase?\", then list tradable variables: price and review mechanism, volume and contract length, payment terms, delivery and minimum order quantity, packaging, warranty and rebates. The best trades cost you little but are worth a lot to the supplier.\n\n## 4. Trading concessions\n\nWrite a one-page plan and agree authority limits with your manager. In the meeting, trade rather than give: \"If you can hold the price at 495 USD, then we can commit to a 12-month volume.\" Make concessions smaller as you approach your limit, avoid splitting the difference early, and confirm every agreed point in writing the same day.\n\n::: quiz\n? Which statement is the best way to make a concession?\n- \"OK, we can accept 60-day payment terms.\" || This gives value away without getting anything back.\n* \"If you deliver weekly instead of monthly, then we can accept 60-day payment terms.\" || Correct. A conditional offer trades one variable for another.\n- \"Let us split the difference and finish.\" || Splitting early rewards an extreme opening and leaves value on the table.\n:::\n\n## Worked example: rice supply negotiation in Luanda\n\nA food importer in Luanda buys about 2,400 tonnes of rice a year. The supplier announces an increase from 500 to 540 USD per tonne CIF. The buyer, Carlos, prepares: a second trader quotes 525 USD but with a 60-day lead time, adding about 5 USD per tonne in extra stock cost, so his BATNA is worth about 530 USD. Reservation point 530, target 510, opening offer 500, supported by export market prices.\n\nIn the meeting, open questions reveal that the supplier's real problem is cash flow under 90-day payment terms. They agree 512 USD per tonne, 45-day terms and a 12-month volume commitment, with a review if the market moves more than 5%. Against 540 USD, Carlos saves 28 USD per tonne, about 67,200 USD a year. Finance confirms that paying earlier costs less than the saving.\n\n::: case | Packaging price rise at a bottler in Viana\nA beverage company in Viana receives a 10% price increase from its preform supplier. Buyer Sílvia has no second qualified supplier, and the contract renews in three weeks.\n? What should Sílvia do first?\n- Accept the increase to protect supply || Accepting without preparation gives away value and ignores the supplier's interests.\n* Get a written quote from an alternative supplier and ask the current supplier what is driving the increase || Correct. This improves her BATNA and uncovers interests before she negotiates.\n- Refuse any increase and threaten to switch || A threat with no real alternative is not credible.\n- Propose to split the difference at 5% || Splitting before understanding the costs rewards the opening demand.\n:::\n\n## Tool: one-page negotiation plan\n\n- Objective:\n- Our BATNA and how to improve it:\n- Our reservation point, target and opening offer:\n- Supplier's likely BATNA, reservation point and interests:\n- Estimated ZOPA:\n- Variables to trade (value to us, value to them):\n- Authority limits agreed with my manager:\n\n## Common mistakes\n\n- Entering a negotiation without a BATNA, so you cannot say no.\n- Revealing your reservation point or budget early.\n- Negotiating only on price and ignoring payment terms, volume and service.\n- Ending the meeting without a written summary.\n\n## Self-check\n\n- What does BATNA stand for? (Answer: best alternative to a negotiated agreement.)\n- A buyer's maximum is 50 USD and a seller's minimum is 44 USD. What is the ZOPA? (Answer: 44 to 50 USD.)\n- What is the difference between a position and an interest? (Answer: a position is what someone says they want; an interest is the underlying reason or need behind it.)\n\n## Practical assignment\n\nChoose a supplier negotiation that will happen in the next month, such as a price increase or contract renewal. Complete the one-page plan, including your BATNA, reservation point, target and at least four tradable variables. Review it with your manager before the meeting.\n\n## Summary\n\n- Your BATNA is your source of power: develop and improve it before you negotiate.\n- A deal is possible only inside the ZOPA, between the two reservation points.\n- Focus on interests, trade several variables with \"if… then…\" offers, and confirm agreements in writing.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose and calculate key supplier performance indicators, including OTIF;\n- build a weighted supplier scorecard and use it in a review meeting;\n- assess supply risks using likelihood and impact, and choose a response such as dual sourcing;\n- check that a supply contract contains the main clauses that protect the buyer.\n\n## Key terms\n\n::: terms\nKPI (key performance indicator): a measurable value showing how well a supplier performs against an agreed target\nOTIF (on time in full): the percentage of orders delivered on the agreed date and in the full ordered quantity\nSupplier scorecard: a regular report combining several KPIs into a weighted score for each supplier\nDual sourcing: buying the same item from two qualified suppliers to reduce dependence on one\nRisk register: a list of identified risks with their likelihood, impact, owner and response\n:::\n\n## 1. Measuring supplier performance\n\nSelecting a good supplier is only the beginning. The most useful supplier KPIs are:\n\n- OTIF = orders delivered on time and in full ÷ total orders × 100. An order counts only if both date and quantity are correct.\n- Quality rate: rejected units ÷ units received × 100, or quality complaints per month.\n- Lead time: average days from PO to receipt, and its variability, which drives safety stock.\n- Invoice accuracy: the percentage of invoices that pass the three-way match first time.\n- Responsiveness: how quickly the supplier answers queries and resolves problems.\n\nAgree definitions and targets with the supplier in advance. \"On time\" may mean the agreed day or a one-day window. Without a shared definition, you will argue about the numbers rather than the performance.\n\nExample: a packaging supplier received 40 POs last quarter. 34 arrived on time, but 4 of those were short. OTIF = (34 − 4) ÷ 40 × 100 = 75%.\n\n::: quiz\n? A supplier delivered 50 orders. 46 were on time, and 3 of those on-time orders were incomplete. What is the OTIF?\n- 92% || This is on-time delivery only. It ignores the 3 incomplete orders.\n* 86% || Correct. (46 − 3) ÷ 50 × 100 = 86%.\n- 94% || Check the calculation: only 43 orders were both on time and in full.\n:::\n\n## 2. The weighted supplier scorecard\n\nA scorecard combines four to six KPIs into one score so suppliers can be compared and tracked.\n\n::: slides\nSLIDE Step 1: Choose KPIs | Match KPIs to the category; Delivery for bottleneck items; Price for leverage items | Measure what matters for this supplier\nSLIDE Step 2: Weight them | Weights total 100% | Show what matters most\nSLIDE Step 3: Set the scale | Example: OTIF 95% or more = 5, 90 to 94% = 4, 85 to 89% = 3, 80 to 84% = 2, below 80% = 1 | Agree the scale in advance\nSLIDE Step 4: Score and classify | 4.0 or more = preferred; 3.0 to 3.9 = acceptable; Below 3.0 = improvement plan | One number, clear consequences\nSLIDE Step 5: Review together | Quarterly meeting; Corrective actions with owners and dates; Reward good results with volume | A scorecard is a conversation tool\n:::\n\n## 3. Supply risk management and dual sourcing\n\nSupply risk management follows a repeating cycle.\n\n::: diagram cycle | Supply risk management cycle\nIdentify: list risks such as supplier failure, port congestion, currency shortages, quality failure, single sourcing\nAssess: score likelihood and impact 1 to 5 and multiply, giving 1 to 25\nRespond: avoid, reduce, transfer or accept each risk\nMonitor: review the risk register at least quarterly\n:::\n\nThe four responses: avoid (change the specification or supplier), reduce (dual sourcing, safety stock, audits), transfer (insurance, contract clauses, Incoterm choice) or accept (low risks, with monitoring).\n\nDual sourcing, for example 70% to the main supplier and 30% to a second, keeps both qualified and gives a ready alternative. It costs something: smaller volumes may mean slightly higher prices and more management time. Use it where a stockout is costly, such as strategic and bottleneck items.\n\n::: quiz\n? A company buys fire insurance for its warehouse stock. Which risk response is this?\n- Avoid || Avoiding means removing the risk, for example by changing supplier or specification.\n- Reduce || Reducing lowers likelihood or impact, for example with sprinklers or safety stock.\n* Transfer || Correct. Insurance moves the financial impact to another party.\n:::\n\n## 4. Contract basics\n\nImportant suppliers should have a framework or supply agreement covering: parties, scope and specification; price, currency, payment terms and price review; Incoterm, lead time and delivery documents; performance targets such as OTIF and consequences of failure; quality, inspection, warranty and rejected goods; duration, renewal and termination; confidentiality, force majeure, governing law and dispute resolution. Do not simply sign a supplier's standard terms. Have important contracts reviewed by your legal department or a qualified lawyer.\n\n## Worked example: label supplier scorecard in Luanda\n\nA beverage company in Luanda buys labels from two suppliers, with weights OTIF 40%, quality 30%, lead time 15%, invoice accuracy 15%.\n\n- Supplier X: scores 4, 5, 4, 3 = 1.6 + 1.5 + 0.6 + 0.45 = 4.15 (preferred)\n- Supplier Y: scores 1, 3, 3, 4 = 0.4 + 0.9 + 0.45 + 0.6 = 2.35 (improvement plan)\n\nSupplier Y explained that delays came from importing label stock. It agreed to hold four weeks of raw material locally, with monthly OTIF reviews for three months. Volume moved from 50/50 to 70/30 in favour of X, but labels are a bottleneck item, so both suppliers stayed qualified.\n\n::: case | Single supplier for bottle closures\nA bottler in Luanda buys all its closures from one importer. Planner Edson notes that OTIF has fallen from 95% to 81% in two quarters and that a stockout would stop the filling line within five days.\n? What should Edson recommend first?\n- Terminate the contract immediately || Without a qualified alternative, termination creates the stockout it aims to prevent.\n- Wait for the next annual review || The risk is high and rising, so waiting is not acceptable.\n* Hold a scorecard review with the supplier and start qualifying a second source || Correct. This addresses current performance and reduces single-source risk.\n- Double the order quantities and say nothing || Extra stock helps briefly, but the root cause and the dependency remain.\n:::\n\n## Tool: supplier review checklist\n\n- KPIs defined and agreed with the supplier\n- Weights total 100% and scoring scale written down\n- Scorecard calculated monthly or quarterly and shared\n- Corrective action plan with owners and dates\n- Risk register updated: likelihood, impact, owner, response\n- Second source qualified for strategic and bottleneck items\n- Contract reviewed: price, delivery, quality, penalties, termination\n\n## Common mistakes\n\n- Tracking too many KPIs, so no one acts on any of them.\n- Calculating scorecards but never sharing them with suppliers.\n- Drifting into single sourcing by habit rather than by decision.\n- Signing a supplier's standard terms without review.\n\n## Self-check\n\n- How is OTIF calculated? (Answer: orders delivered on time and in full divided by total orders, multiplied by 100.)\n- A risk has likelihood 4 and impact 5. What is its risk score on a 1 to 25 scale? (Answer: 20.)\n- Name two ways to reduce the risk of depending on one supplier. (Answer: for example, qualify a second supplier and hold safety stock.)\n\n## Practical assignment\n\nChoose your three most important suppliers. Calculate their OTIF for the last quarter from PO and GRN data, build a simple four-KPI scorecard and identify the top two supply risks for each. Present the results and one corrective action to your manager this week.\n\n## Summary\n\n- Measure suppliers with a few agreed KPIs, especially OTIF, quality and lead time.\n- Use a weighted scorecard and regular reviews to drive improvement.\n- Manage risk with a register, dual sourcing where it matters, and contracts that cover the key clauses."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Describe the seven steps of the procure-to-pay process",
+     "Write a clear purchase specification",
+     "Perform a three-way match before payment",
+     "Spot and prevent maverick buying"
+    ],
+    "takeaway": "Four skills for controlled, auditable buying"
+   },
+   {
+    "title": "The procure-to-pay cycle",
+    "points": [
+     "Need → Specification → Sourcing → Purchase order → Receipt → Three-way match → Payment",
+     "Each step has an owner and a document",
+     "Skipping a step creates risk"
+    ],
+    "takeaway": "Every payment should trace back to an approved need"
+   },
+   {
+    "title": "Need and specification",
+    "points": [
+     "Purchase requisition states what, how much, when and budget line",
+     "Functional spec: what it must do",
+     "Technical spec: exactly what it must be"
+    ],
+    "takeaway": "Unclear specs cause wrong deliveries and disputes"
+   },
+   {
+    "title": "Sourcing and the purchase order",
+    "points": [
+     "Choose method by value and risk: catalogue, quotes, RFQ or tender",
+     "The PO is the legal commitment to buy",
+     "PO states item, quantity, price, Incoterm, delivery date and payment terms"
+    ],
+    "takeaway": "No PO, no order"
+   },
+   {
+    "title": "Receipt",
+    "points": [
+     "Check quantity, condition, batch and expiry against the PO",
+     "Record a goods received note (GRN)",
+     "Note shortages and damage on the delivery note before signing"
+    ],
+    "takeaway": "Sign only for what you actually received"
+   },
+   {
+    "title": "Three-way match",
+    "points": [
+     "Compare PO, GRN and supplier invoice line by line",
+     "Price, quantity and terms must agree within tolerance",
+     "Mismatch = invoice on hold until resolved"
+    ],
+    "takeaway": "Pay only what was ordered, received and invoiced"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Ordering before a PO exists",
+     "Vague specifications",
+     "Signing delivery notes without counting",
+     "Paying from the invoice alone"
+    ],
+    "takeaway": "Separate duties: who orders, who receives, who pays"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Run a basic spend analysis",
+     "Place purchase categories on the Kraljic matrix",
+     "Choose a strategy for each quadrant",
+     "Turn the result into a simple category plan"
+    ],
+    "takeaway": "Spend your effort where the risk and value are"
+   },
+   {
+    "title": "Spend analysis first",
+    "points": [
+     "Group 12 months of spend by category",
+     "Rank by value (Pareto: few categories hold most spend)",
+     "Note supplier count and supply risk for each"
+    ],
+    "takeaway": "You cannot set strategy for spend you cannot see"
+   },
+   {
+    "title": "The Kraljic matrix",
+    "points": [
+     "Kraljic (1983), Harvard Business Review",
+     "Axis 1: profit impact (spend, effect on margin or quality)",
+     "Axis 2: supply risk (few suppliers, scarcity, long lead times)"
+    ],
+    "takeaway": "Four quadrants, four different strategies"
+   },
+   {
+    "title": "Four quadrants",
+    "points": [
+     "Non-critical: low impact, low risk → simplify",
+     "Leverage: high impact, low risk → compete",
+     "Bottleneck: low impact, high risk → secure supply",
+     "Strategic: high impact, high risk → partner"
+    ],
+    "takeaway": "Different items need different treatment"
+   },
+   {
+    "title": "Scoring categories",
+    "points": [
+     "Score impact and risk 1 to 5 with set criteria",
+     "Use several scorers to reduce bias",
+     "Plot and discuss borderline cases"
+    ],
+    "takeaway": "Agree the criteria before you score"
+   },
+   {
+    "title": "From matrix to category plan",
+    "points": [
+     "Objectives, current state, strategy, actions, KPIs",
+     "Review once a year or when the market changes",
+     "Move bottleneck items towards non-critical where possible"
+    ],
+    "takeaway": "A matrix is only useful if it drives action"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Using spend alone",
+     "Treating every supplier the same",
+     "Squeezing strategic suppliers like leverage ones",
+     "Never revisiting the matrix"
+    ],
+    "takeaway": "Re-plot when markets move"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose between RFI, RFQ and RFP",
+     "Build weighted evaluation criteria",
+     "Score and compare supplier offers fairly",
+     "Document the award decision"
+    ],
+    "takeaway": "A fair, transparent and defensible supplier choice"
+   },
+   {
+    "title": "RFI, RFQ or RFP?",
+    "points": [
+     "RFI: learn what the market offers",
+     "RFQ: price for a clearly specified item",
+     "RFP: proposals for a solution where approach and quality matter"
+    ],
+    "takeaway": "Match the document to how well you know the need"
+   },
+   {
+    "title": "Supplier pre-qualification",
+    "points": [
+     "Legal registration and tax status",
+     "Financial stability",
+     "Capacity and references",
+     "Quality and food safety certificates where relevant"
+    ],
+    "takeaway": "Only qualified suppliers go to the scoring stage"
+   },
+   {
+    "title": "Weighted scoring",
+    "points": [
+     "Set criteria and weights before opening bids",
+     "Weights add to 100%",
+     "Score each criterion 1 to 5",
+     "Weighted score = score × weight"
+    ],
+    "takeaway": "Decide what matters before you see the offers"
+   },
+   {
+    "title": "Scoring price fairly",
+    "points": [
+     "Lowest price gets full marks",
+     "Others: lowest price ÷ their price × maximum score",
+     "Keeps price comparable with other criteria"
+    ],
+    "takeaway": "A formula avoids arguments"
+   },
+   {
+    "title": "Award and debrief",
+    "points": [
+     "Write an evaluation report",
+     "Get approval at the right authority level",
+     "Inform winners and losers, with feedback"
+    ],
+    "takeaway": "Transparency builds supplier trust"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Changing weights after seeing bids",
+     "Comparing offers on different specifications",
+     "Price as the only criterion",
+     "No written record"
+    ],
+    "takeaway": "Same questions, same rules, same records"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain total cost of ownership",
+     "Build a landed cost calculation for an imported product",
+     "Compare suppliers on total cost, not unit price",
+     "Identify hidden costs before you buy"
+    ],
+    "takeaway": "The cheapest price is not always the lowest cost"
+   },
+   {
+    "title": "Total cost of ownership",
+    "points": [
+     "Acquisition costs: price, freight, duties, fees",
+     "Ownership costs: storage, financing, quality failures, maintenance",
+     "End-of-life costs: disposal or resale"
+    ],
+    "takeaway": "Look at the whole life of the purchase"
+   },
+   {
+    "title": "Landed cost",
+    "points": [
+     "Cost of the goods delivered to your warehouse",
+     "Price + freight + insurance + duties and taxes + port and clearing + inland transport",
+     "Divide by units to get cost per unit"
+    ],
+    "takeaway": "Know your real cost before you set a selling price"
+   },
+   {
+    "title": "Incoterms® 2020 and cost",
+    "points": [
+     "EXW and FOB: buyer pays main freight and insurance",
+     "CIF and CFR: seller pays main freight to destination port",
+     "DAP and DDP: seller delivers further"
+    ],
+    "takeaway": "The Incoterm decides which costs are in the price"
+   },
+   {
+    "title": "Example landed cost",
+    "points": [
+     "FOB 20,000 USD + freight 3,000 + insurance 230 = CIF 23,230",
+     "Example duty, fees, port, clearing, transport added",
+     "Example figures only, not legal rates"
+    ],
+    "takeaway": "Always confirm real rates with your customs broker"
+   },
+   {
+    "title": "Hidden costs",
+    "points": [
+     "Currency movement and bank charges",
+     "Demurrage and storage at port",
+     "Rejects, short shipments and claims",
+     "Cost of capital tied up in stock"
+    ],
+    "takeaway": "A cheap supplier with long lead time can cost more"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Comparing FOB with CIF offers",
+     "Forgetting port and clearing costs",
+     "Using old exchange rates",
+     "Ignoring quality and delay costs"
+    ],
+    "takeaway": "Compare like with like, on landed cost per unit"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Define BATNA, reservation point and ZOPA",
+     "Calculate a zone of possible agreement",
+     "Prepare a one-page negotiation plan",
+     "Use trade-offs instead of one-way concessions"
+    ],
+    "takeaway": "Preparation decides most negotiations"
+   },
+   {
+    "title": "BATNA",
+    "points": [
+     "Best alternative to a negotiated agreement",
+     "Fisher and Ury, Getting to Yes (1981)",
+     "Your walk-away power comes from your alternatives"
+    ],
+    "takeaway": "Improve your BATNA before you negotiate"
+   },
+   {
+    "title": "Reservation point and target",
+    "points": [
+     "Reservation point: the worst deal you will accept",
+     "Target: the realistic best outcome",
+     "Opening offer: ambitious but defensible"
+    ],
+    "takeaway": "Never reveal your reservation point"
+   },
+   {
+    "title": "ZOPA",
+    "points": [
+     "Zone of possible agreement",
+     "Exists only where buyer's maximum ≥ seller's minimum",
+     "Example: buyer max 520 USD, seller min 480 USD → ZOPA 480–520"
+    ],
+    "takeaway": "No ZOPA = no deal, or change the terms"
+   },
+   {
+    "title": "Interests and variables",
+    "points": [
+     "Positions: what each side says it wants",
+     "Interests: why they want it",
+     "Variables: price, volume, payment terms, delivery, contract length"
+    ],
+    "takeaway": "More variables = more ways to agree"
+   },
+   {
+    "title": "Trading concessions",
+    "points": [
+     "Use \"If you…, then we…\"",
+     "Never give without getting",
+     "Make smaller concessions as you move"
+    ],
+    "takeaway": "Trade, do not give away"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Negotiating with no alternative",
+     "Focusing only on price",
+     "Splitting the difference too early",
+     "No written summary"
+    ],
+    "takeaway": "Prepare, trade, confirm in writing"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose and calculate supplier KPIs",
+     "Build a weighted supplier scorecard",
+     "Identify and reduce supply risks",
+     "Check the key clauses of a supply contract"
+    ],
+    "takeaway": "Measure, review, protect"
+   },
+   {
+    "title": "Supplier KPIs",
+    "points": [
+     "OTIF: orders delivered on time and in full ÷ total orders",
+     "Quality: defect or rejection rate",
+     "Lead time and its variability",
+     "Responsiveness and invoice accuracy"
+    ],
+    "takeaway": "Measure only what you will act on"
+   },
+   {
+    "title": "The supplier scorecard",
+    "points": [
+     "Four to six KPIs with weights",
+     "Score monthly or quarterly",
+     "Share results with the supplier",
+     "Agree corrective action plans"
+    ],
+    "takeaway": "A scorecard is a conversation tool"
+   },
+   {
+    "title": "Supply risk management",
+    "points": [
+     "Identify: list what could go wrong",
+     "Assess: likelihood × impact",
+     "Respond: avoid, reduce, transfer or accept"
+    ],
+    "takeaway": "Focus on high-likelihood, high-impact risks"
+   },
+   {
+    "title": "Dual sourcing and other responses",
+    "points": [
+     "Second qualified supplier for critical items",
+     "Safety stock for long lead times",
+     "Local alternatives for import-dependent items"
+    ],
+    "takeaway": "Single sourcing is a risk you should choose, not drift into"
+   },
+   {
+    "title": "Contract basics",
+    "points": [
+     "Parties, scope and specification",
+     "Price, payment and price review",
+     "Delivery, Incoterm and penalties",
+     "Quality, warranty, termination and disputes"
+    ],
+    "takeaway": "If it is not written, it is hard to enforce"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Too many KPIs",
+     "Scorecards never shared with suppliers",
+     "Single source by habit",
+     "Signing supplier standard terms unread"
+    ],
+    "takeaway": "Review suppliers regularly, not only when things go wrong"
+   }
+  ]
+ ]
+}

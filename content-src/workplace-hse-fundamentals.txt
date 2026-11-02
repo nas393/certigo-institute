@@ -1,0 +1,782 @@
+=== 20
+SLIDE What you will learn | Tell the difference between a hazard and a risk; Classify events as accidents, incidents or near misses; Explain incidents with the Swiss cheese model; Calculate a lost-time injury frequency rate and choose leading indicators | Four skills you will practise in this lesson
+SLIDE Hazard versus risk | Hazard: something with the potential to cause harm; Risk: how likely harm is and how serious it would be; A forklift is a hazard, a forklift reversing in a busy aisle is a high risk | Control the risk, not just the label
+SLIDE Accident, incident, near miss | Incident: any unplanned event that caused or could have caused harm; Accident: an incident that caused injury, ill health or damage; Near miss: an incident with no harm this time | Near misses are free lessons
+SLIDE The Swiss cheese model | James Reason: defences are layers with holes; Active failures by people at the front line; Latent conditions created by design, planning and management; Harm happens when holes line up | Look for the holes behind the person
+SLIDE Lagging and leading indicators | Lagging: measure harm after it happens, such as LTIFR; Leading: measure prevention activity, such as inspections and near-miss reports; LTIFR = lost-time injuries x 1,000,000 / hours worked | Use both, act on leading indicators
+SLIDE Safety culture and systems | Culture: how people behave when no one is watching; Safety culture ladder: pathological, reactive, calculative, proactive, generative; ISO 45001 and ISO 14001 use Plan-Do-Check-Act | Systems on paper need culture in practice
+SLIDE Common mistakes | Using hazard and risk as the same word; Counting only injuries; Blaming the last person involved; Treating HSE as the safety officer's job only | HSE is part of every supervisor's role
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between a hazard and a risk using examples from your workplace;
+- classify events as accidents, incidents or near misses;
+- use the Swiss cheese model to explain why incidents happen;
+- calculate a lost-time injury frequency rate and choose useful leading indicators.
+
+## Key terms
+
+::: terms
+Hazard: anything with the potential to cause harm, such as a moving forklift, a chemical or electricity
+Risk: the combination of how likely it is that a hazard causes harm and how serious that harm would be
+Incident: any unplanned event that caused, or could have caused, injury, ill health, damage or environmental harm
+Near miss: an incident where no one was hurt and nothing was damaged, but harm could easily have happened
+Lagging indicator: a measure of harm that has already happened
+Leading indicator: a measure of the activities that prevent harm
+:::
+
+## 1. Hazard, risk and types of event
+
+HSE stands for health, safety and environment: harm that develops over time (such as hearing loss), sudden harm (such as falls) and harm to air, water and soil.
+
+A hazard is the thing that can cause harm. A risk describes how likely the harm is and how bad it would be. A drum of diesel is a hazard. The risk is low when the drum is sealed, on a drip tray, in a ventilated store. The risk is high when the same drum is open next to a welding job. The hazard is the same, but the risk is not. Your job as a supervisor is to keep risk as low as reasonably possible.
+
+The second distinction is between types of event:
+
+- Accident: an incident that caused harm, such as a hand cut on a pallet strap.
+- Near miss: an incident with no harm, such as a box falling one metre from a picker.
+- Unsafe condition: for example, a blocked fire exit.
+- Unsafe act: for example, riding on forklift forks.
+
+The causes of today's near miss can cause tomorrow's serious injury, so report and investigate near misses.
+
+::: quiz
+? A sealed LPG cylinder is stored in a locked, ventilated cage outside the building. Which statement is correct?
+- There is no hazard because the cylinder is sealed || The gas can still cause harm, so the hazard remains.
+* The gas is a hazard, and the storage keeps the risk low || Correct. The hazard is unchanged, but good storage reduces likelihood and severity.
+- The risk is high because LPG is flammable || Flammability makes it a hazard, but the controls make the risk low.
+:::
+
+## 2. Why incidents happen: the Swiss cheese model
+
+It is tempting to blame the last person involved. The Swiss cheese model, developed by the psychologist James Reason, shows why this is rarely the full answer. Each defence in a workplace (equipment design, procedures, training, supervision, PPE) is like a slice of cheese with holes, because no defence is perfect. An incident happens when the holes in several layers line up at the same moment.
+
+Reason described two kinds of holes. Active failures are unsafe acts at the front line, such as a driver skipping a pre-use check, with an immediate effect. Latent conditions are weaknesses created earlier by design, planning or management, such as a missing guard or an unrealistic production target, and they can lie hidden for months.
+
+::: slides
+SLIDE Question 1: Which defences should have stopped this? | List equipment, procedures, training, supervision and PPE | Name every layer
+SLIDE Question 2: Which defences failed, and why? | Separate active failures from latent conditions | Look behind the person
+SLIDE Question 3: What made the failure likely? | Planning, design, targets or resources | Latent conditions are what managers can fix
+:::
+
+::: quiz
+? A picker is hit by a pallet truck in an aisle with no marked walkway, during a shift when three trucks unload at once. Which is a latent condition?
+- The picker was walking quickly || That is an active failure at the front line.
+- The driver did not sound the horn || That is also an active failure.
+* The loading schedule puts three trucks in the bay at once || Correct. It is a planning decision made earlier that made the incident likely.
+:::
+
+## 3. Measuring HSE performance: lagging and leading indicators
+
+Lagging indicators count harm after it has happened. The most common is the lost-time injury frequency rate (LTIFR):
+
+LTIFR = number of lost-time injuries x 1,000,000 / total hours worked
+
+Some organisations use a 200,000-hour base, so check before comparing. Lagging indicators move only after someone is hurt, and a low rate can hide serious risks.
+
+Leading indicators measure prevention: near misses reported, inspections completed, corrective actions closed on time, toolbox talks held, staff trained. Rising near-miss reports are often a good sign of trust.
+
+## 4. Safety culture and management systems
+
+Safety culture is how people behave about safety when no one is watching. The safety culture ladder associated with Patrick Hudson describes five stages: pathological ("as long as we are not caught"), reactive (attention only after incidents), calculative (systems driven by management), proactive (people look for problems before harm) and generative (safety is part of how everyone works). Supervisors move a team up by stopping unsafe work, thanking reporters and fixing problems quickly.
+
+The international standards ISO 45001 (occupational health and safety) and ISO 14001 (environmental management) are both built on the Plan-Do-Check-Act cycle, which you can use in your own team without a certified system.
+
+::: diagram cycle | Plan-Do-Check-Act in HSE
+Plan: assess risks and set HSE objectives
+Do: put controls, training and procedures in place
+Check: inspect, measure indicators and investigate incidents
+Act: correct problems and improve the system
+:::
+
+## Worked example: a food distribution warehouse in Luanda
+
+A food distributor runs a warehouse in Viana with 180 workers. Last year there were 2 lost-time injuries: a back injury while lifting rice bags and a foot crushed by a pallet truck. Each worker averaged 2,200 hours.
+
+Total hours = 180 x 2,200 = 396,000. LTIFR = 2 x 1,000,000 / 396,000 = about 5.1 per million hours.
+
+::: case | Low injury numbers at the Viana warehouse
+Supervisor Carla has calculated an LTIFR of 5.1. Her manager says the warehouse is safe because there were only two injuries. Carla has seen almost no near-miss reports and many skipped inspections.
+? What should Carla propose for next quarter?
+- Keep tracking only LTIFR and aim for zero injuries || LTIFR alone moves only after harm and hides the weak prevention work.
+* Add leading indicators: 10 near-miss reports a month, 100% of weekly inspections, actions closed within 30 days || Correct. These measure prevention and will reveal risks before injuries happen.
+- Discipline the two injured workers to send a message || Blame discourages reporting and ignores latent conditions.
+- Stop reporting first-aid cases to keep numbers low || Hiding data makes the warehouse less safe, not more.
+:::
+
+After three months near-miss reports rose to 14 per month, mostly about loading bay congestion, which led to a new truck booking schedule.
+
+## Tool: HSE indicator dashboard template
+
+- Period and total hours worked:
+- Lost-time injuries and LTIFR (state the base):
+- First-aid cases:
+- Near misses and unsafe conditions reported:
+- Planned inspections completed (%):
+- Corrective actions closed on time (%):
+- Toolbox talks held:
+- Three main issues and actions agreed:
+
+## Common mistakes
+
+- Using hazard and risk as if they mean the same thing.
+- Measuring only injuries. A low LTIFR does not prove a workplace is safe.
+- Blaming the last person involved instead of looking for latent conditions.
+- Treating HSE as the safety officer's job only.
+
+## Self-check
+
+- A pallet falls from racking at night and nobody is hurt. What type of event is this? (Answer: a near miss, a type of incident.)
+- Name one active failure and one latent condition. (Answer: for example, skipping a pre-use check, and a missing guard.)
+- A site has 1 lost-time injury in 250,000 hours. What is the LTIFR on a 1,000,000-hour base? (Answer: 4.)
+
+## Practical assignment
+
+Collect last year's injury records and hours worked for your area and calculate the LTIFR. Choose three leading indicators that fit your team, set a monthly target for each, and share them at your next team meeting.
+
+## Summary
+
+- A hazard can cause harm. Risk is how likely and how serious that harm is, and your job is to control risk.
+- Incidents happen when several defences fail together. Look for latent conditions, not just the person.
+- Track lagging indicators like LTIFR, but manage with leading indicators that show prevention work.
+=== 20
+SLIDE What you will learn | Follow the five steps of a risk assessment; Identify hazards with walk-throughs, task observation and records; Rate risk with a 5 x 5 likelihood x severity matrix; Record findings, set controls and decide when to review | Four skills you will practise in this lesson
+SLIDE Step 1: identify hazards | Walk the workplace and watch the task; Ask workers what worries them; Check incident records, manuals and safety data sheets; Remember routine, non-routine and emergency work | You cannot control what you have not found
+SLIDE Step 2: who might be harmed and how | Workers doing the task and people nearby; Visitors, drivers, cleaners and contractors; Vulnerable people: new, young, pregnant or lone workers; Describe the harm, not just the person | Think beyond the operator
+SLIDE Step 3: evaluate the risk | Likelihood 1 to 5 x severity 1 to 5; Score from 1 to 25; Example bands: 1-4 low, 5-9 medium, 10-16 high, 20-25 very high; Rate again after controls for residual risk | The score sets the priority
+SLIDE Job safety analysis | Break the task into steps; List hazards for each step; Add controls for each hazard; Useful for non-routine or high-risk jobs | One step, one hazard, one control
+SLIDE Steps 4 and 5: record and review | Record hazards, people, scores, controls, owner and date; Tell the workers what the assessment says; Review after incidents, changes or at a set date | A risk assessment is a living document
+SLIDE Common mistakes | Copying generic assessments; Doing it at the desk without seeing the task; Rating risk once and never again; Not sharing it with workers | Assess the real job, with the real team
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the five steps of a workplace risk assessment;
+- identify hazards using walk-throughs, task observation and records;
+- rate risks with a 5 x 5 likelihood x severity matrix before and after controls;
+- record a risk assessment and decide when it must be reviewed.
+
+## Key terms
+
+::: terms
+Risk assessment: a careful, documented look at what could cause harm in your work and whether you have done enough to prevent it
+Likelihood: how probable it is that harm will occur in the current situation
+Severity: how serious the harm would be if it did occur
+Risk rating: the score that combines likelihood and severity, used to set priorities
+Residual risk: the risk that remains after controls are in place
+Job safety analysis (JSA): a method that breaks one task into steps and identifies hazards and controls for each step
+:::
+
+## 1. The five steps of risk assessment
+
+Most risk assessment formats follow the same logic. A widely used version is the five-step approach published by the UK Health and Safety Executive.
+
+::: diagram steps | Five steps to risk assessment
+Identify hazards: walk the area, watch the task, check records
+Who might be harmed and how: workers, others nearby, vulnerable people
+Evaluate and control: rate likelihood x severity, choose controls
+Record and implement: write it down, assign actions, brief workers
+Review: after incidents, changes, concerns or at a set date
+:::
+
+Step 1: identify hazards. Do not do this from the office. Walk through the area and watch the task from start to finish. Ask workers what goes wrong, because they know the shortcuts. Check incident reports, equipment manuals and safety data sheets. Think about routine work, non-routine work such as cleaning and maintenance, and emergencies such as power cuts.
+
+Step 2: decide who might be harmed and how. Start with the people doing the task, then people nearby, then those easily forgotten: cleaners, security guards, truck drivers, visitors and contractors. Give extra thought to new starters, young workers, pregnant workers and people working alone. Describe the harm: "picker struck by falling cartons", not just "pickers".
+
+::: quiz
+? A supervisor writes a risk assessment for a loading bay using only last year's form, without visiting the bay. What is the main problem?
+- The form is too short || Length is not the issue. Accuracy is.
+* Hazards are found by watching the real task and talking to workers || Correct. Step 1 requires seeing the work as it is done today.
+- Only HSE staff may write risk assessments || Supervisors are often the best people to assess their own areas.
+:::
+
+## 2. Evaluating risk with a likelihood x severity matrix
+
+Step 3 asks how big each risk is, so you deal with the biggest first. A common tool is the 5 x 5 matrix. Likelihood runs from 1 rare, 2 unlikely, 3 possible, 4 likely, to 5 almost certain. Severity runs from 1 minor (first aid), 2 moderate (medical treatment), 3 serious (lost-time injury), 4 major (permanent disability), to 5 catastrophic (one or more deaths).
+
+::: slides
+SLIDE Rate likelihood | 1 rare to 5 almost certain | Based on today's controls
+SLIDE Rate severity | 1 first aid to 5 fatality | Use the most likely serious outcome
+SLIDE Multiply | Risk rating = likelihood x severity | Score from 1 to 25
+SLIDE Compare with bands | Example: 1-4 low, 5-9 medium, 10-16 high, 20-25 very high | Each organisation sets its own bands
+SLIDE Rate again after controls | The new score is the residual risk | Still high means controls are not enough
+:::
+
+In the example bands, low risks are managed with normal procedures, medium risks need better controls within an agreed time, high risks need urgent action, and very high risks mean stop the work. Rate as a small group, ideally a supervisor and two workers, so one opinion does not decide everything.
+
+::: quiz
+? A task has likelihood 3 and severity 5. Using the example bands, what is the rating?
+- 8, medium || You added the scores. The rating is likelihood multiplied by severity.
+- 15, medium || 15 is correct, but it falls in the high band (10-16).
+* 15, high || Correct. 3 x 5 = 15, which is in the 10-16 high band.
+:::
+
+## 3. Job safety analysis, recording and review
+
+For a specific non-routine or high-risk task, a job safety analysis gives more detail: write the task, break it into 5 to 10 steps, list what could go wrong at each step, and write the control. For example, changing a ceiling light: step 1 position the platform (hazard: tipping on uneven floor; control: check floor, lock wheels); step 2 isolate the circuit (hazard: shock; control: switch off, lock, tag and test dead).
+
+Step 4 is to record: hazard, who could be harmed, existing controls, rating, extra controls, owner, due date and residual risk. Share it with the workers, because an assessment in a drawer protects no one. Step 5 is review: after an incident, when something changes (equipment, layout, chemicals, staff), when workers raise concerns, and at a fixed interval such as once a year.
+
+## Worked example: a construction site in Benguela
+
+A contractor is building a three-storey office block in Benguela. Supervisor Rosa assesses "moving blocks to the first floor". She finds workers carrying blocks up a ladder, an unprotected slab edge, blocks stacked near the edge, and the hoist area open to people passing below.
+
+She rates the slab edge: workers are near it all day with no barrier, likelihood 4; a 3-metre fall onto rubble could cause major injury, severity 4. Risk = 16, high. Falling blocks: likelihood 3 x severity 4 = 12, high.
+
+::: case | The open slab edge in Benguela
+Rosa has rated the slab edge at 16 (high) and falling blocks at 12 (high). The foreman wants to keep working today because the concrete truck arrives tomorrow.
+? What should Rosa do?
+- Allow work to continue if workers promise to stay away from the edge || This relies on behaviour only and leaves a high risk uncontrolled.
+- Give everyone hard hats and continue || Hard hats help with falling objects but do nothing for falls from the edge.
+* Fit guardrails with toe boards and fence the area below the hoist before work continues || Correct. These physical controls cut both high risks before anyone is exposed.
+- Record the risk and review it next month || A high risk needs urgent action, not a later review.
+:::
+
+With guardrails, the hoist used instead of the ladder, stacks kept 2 metres from the edge and an exclusion zone, the new ratings were 1 x 4 = 4 (low) and 2 x 4 = 8 (medium). Rosa recorded the actions, briefed the gang and set a review for the second floor.
+
+## Tool: risk assessment record template
+
+- Activity or area, assessors and date:
+- Hazard:
+- Who might be harmed and how:
+- Existing controls:
+- Likelihood x severity = risk rating:
+- Additional controls, owner and due date:
+- Residual risk rating:
+- Workers briefed (date and signatures):
+- Next review date or trigger:
+
+## Common mistakes
+
+- Copying a generic assessment instead of assessing the real task.
+- Assessing from the desk without watching the work.
+- Rating only the worst imaginable outcome, so nothing is prioritised.
+- Never reviewing after changes or incidents, or not sharing findings with workers.
+
+## Self-check
+
+- What are the five steps of risk assessment? (Answer: identify hazards, who might be harmed and how, evaluate and control, record and implement, review.)
+- What is residual risk? (Answer: the risk that remains after controls are in place.)
+- Give two triggers for reviewing an assessment. (Answer: any two of an incident, a change, a worker concern or a fixed interval.)
+
+## Practical assignment
+
+Choose one task in your area with no written risk assessment or an old one. Watch it, talk to two workers, and complete the template with ratings before and after controls. Brief the team on the result.
+
+## Summary
+
+- Follow the five steps: identify, who and how, evaluate, record, review.
+- Rate each risk with likelihood x severity, act on the highest scores first, and rate again for residual risk.
+- A risk assessment is only useful if it reflects the real task, is shared with workers and is kept up to date.
+=== 20
+SLIDE What you will learn | Name the five levels of the hierarchy of controls; Explain why higher controls are more reliable; Choose controls for a real hazard in the right order; Use permits, lockout-tagout and PPE correctly | Four skills you will practise in this lesson
+SLIDE The hierarchy of controls | Elimination: remove the hazard; Substitution: replace with something less hazardous; Engineering: isolate people from the hazard; Administrative: change the way people work; PPE: protect the individual | Work from the top down
+SLIDE Why the order matters | Top levels work without relying on people; Lower levels depend on behaviour every day; PPE fails silently when worn wrongly; Combine levels for strong protection | Design out before you hand out
+SLIDE Engineering controls | Machine guards and interlocks; Local exhaust ventilation; Guardrails and barriers; Physical separation of people and vehicles | Put something between the person and the hazard
+SLIDE Administrative controls | Safe work procedures and training; Permit-to-work for high-risk jobs; Lockout-tagout for energy isolation; Signs, job rotation and supervision | Only as good as the people who follow them
+SLIDE PPE: the last line | Select for the specific hazard; Fit, train and inspect; Replace when damaged or expired; Supervisors must enforce use | PPE protects one person, only when worn correctly
+SLIDE Common mistakes | Going straight to PPE; Calling a sign a control; Forgetting new hazards created by controls; Not checking controls still work | Ask: can we remove it first
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- name the five levels of the hierarchy of controls in the correct order;
+- explain why controls at the top of the hierarchy are more reliable than those at the bottom;
+- choose a combination of controls for a real workplace hazard;
+- apply permit-to-work, lockout-tagout and PPE rules correctly.
+
+## Key terms
+
+::: terms
+Control measure: an action or device that reduces the likelihood or severity of harm
+Hierarchy of controls: a ranked list of control types, from most effective (elimination) to least effective (PPE)
+Engineering control: a physical change that separates people from a hazard, such as a guard or ventilation
+Permit-to-work: a written system that authorises a specific high-risk job, under stated conditions, for a stated time
+Lockout-tagout (LOTO): a procedure that isolates and locks off energy sources so equipment cannot start during maintenance
+:::
+
+## 1. The five levels of the hierarchy
+
+Once a risk assessment shows which risks need action, you must decide how to control them. The hierarchy of controls, promoted by agencies such as the US National Institute for Occupational Safety and Health (NIOSH) and used in ISO 45001, gives the order in which to consider options.
+
+::: diagram pyramid | Hierarchy of controls
+Elimination: remove the hazard, e.g. deliver goods at ground level so no one works at height
+Substitution: replace it, e.g. water-based cleaner instead of flammable solvent, 25 kg bags instead of 50 kg
+Engineering controls: isolate people, e.g. machine guards, guardrails, local exhaust ventilation
+Administrative controls: change the work, e.g. procedures, permits, training, signs, rotation
+PPE: protect the worker, e.g. boots, gloves, hearing protection, harnesses, respirators
+:::
+
+Work from the top. For each level ask: "Is this reasonably practicable here?" Only move down when the higher level is not possible or does not reduce the risk enough.
+
+::: quiz
+? A warehouse replaces 50 kg sugar bags with 25 kg bags to reduce back injuries. Which level of control is this?
+- Elimination || The lifting still happens, so the hazard is not removed.
+* Substitution || Correct. A lighter load replaces a more hazardous one.
+- Administrative control || This changes the load itself, not the way people work.
+:::
+
+## 2. Why the order matters
+
+Controls at the top work without depending on people. If the hazard is gone, no one can be hurt by it, even on a bad day. A fixed guard protects every operator on every shift. Administrative controls and PPE depend on people behaving correctly every time, and they are weakened by fatigue, time pressure and poor supervision.
+
+PPE protects only the wearer, only when it fits and is worn correctly, and it fails without warning: a dust mask that does not seal around a beard gives little protection, but the worker feels protected. In a hot Luanda summer, PPE is also uncomfortable, which is one reason people remove it.
+
+In practice you usually combine levels. For noise from a compressor you might buy a quieter model (substitution), enclose the existing one (engineering), limit time near it (administrative) and provide hearing protection for maintenance (PPE). Also check that a control does not create a new hazard: a guard that makes cleaning difficult may encourage people to remove it.
+
+## 3. Permits, lockout-tagout and PPE
+
+A permit-to-work is used for high-risk, non-routine jobs such as hot work, confined spaces, work at height and electrical work. It states the job, location, hazards, required controls and isolations, gas test results where needed, who issues, accepts and does the work, the time limits, and the hand-back when the area is safe. The issuer should visit the site and check controls before signing.
+
+Lockout-tagout is used when equipment is cleaned, repaired or adjusted.
+
+::: slides
+SLIDE Prepare and notify | Identify every energy source: electrical, hydraulic, pneumatic, gravity, pressure; Tell affected people | Know all the energy
+SLIDE Shut down and isolate | Stop the machine normally; Isolate each source at its isolation point | Isolate, do not just switch off
+SLIDE Lock and tag | Each worker fits a personal lock and a named tag | One person, one lock
+SLIDE Release stored energy | Bleed pressure, block raised parts | Hidden energy still kills
+SLIDE Verify | Try to start and test dead before touching | Only the lock owner removes the lock
+:::
+
+When PPE is needed, follow four steps: select it for the specific hazard (check section 8 of the safety data sheet for chemicals), fit it to each worker, train people to wear, check and store it, and maintain and enforce it by replacing damaged items and correcting anyone not wearing it, every time.
+
+::: quiz
+? A fitter has isolated and locked off a conveyor. What must happen before he puts his hands in?
+- His supervisor signs the logbook || Paperwork does not prove the machine is safe.
+- He removes the guard quickly before anyone notices || That ignores the remaining LOTO steps.
+* He releases stored energy and tests that the machine cannot start || Correct. Verification is the step that proves isolation worked.
+:::
+
+## Worked example: an oil and gas support base in Soyo
+
+A company in Soyo cleans drilling equipment parts. Workers degrease parts by hand in an open tank of flammable solvent. They report headaches and dry skin, and there was a small fire when a grinder was used nearby. Fire was rated 3 x 5 = 15 (high) and solvent exposure 4 x 3 = 12 (high).
+
+::: case | Solvent cleaning at the Soyo base
+Supervisor Mateus has a budget for one improvement this month. Workers wear cotton gloves and there is a "No smoking" sign. A supplier offers a water-based degreaser that trials show cleans most parts.
+? Which first step gives the biggest risk reduction?
+- Buy better gloves and masks for everyone || PPE is the last line and leaves the fire risk unchanged.
+- Add more warning signs around the tank || Signs do not change the hazard or the exposure.
+* Switch most cleaning to the water-based degreaser || Correct. Substitution removes most of the solvent, cutting both fire and exposure risk.
+- Rotate workers so each spends less time at the tank || Rotation spreads exposure but leaves the fire hazard in place.
+:::
+
+Mateus then added a lidded parts washer with local exhaust ventilation for the remaining solvent, moved it 10 metres from grinding, required hot-work permits within that zone, and issued nitrile gloves and glasses. New ratings: fire 1 x 5 = 5, exposure 2 x 2 = 4.
+
+## Tool: control selection checklist
+
+- Hazard and current risk rating:
+- Elimination: can we remove the hazard or task?
+- Substitution: is there a less hazardous material, process or equipment?
+- Engineering: can we guard, enclose, ventilate, separate or add barriers?
+- Administrative: what procedure, permit, training or supervision is needed?
+- PPE: what exactly, for whom, to which standard?
+- Does any control create a new hazard?
+- Residual risk rating and who checks the controls:
+
+## Common mistakes
+
+- Going straight to PPE because it is quick and cheap.
+- Calling a warning sign a control when it does not change the hazard.
+- Allowing guards to be removed or interlocks bypassed to keep production moving.
+- Issuing a permit without visiting the job, or never checking controls still work.
+
+## Self-check
+
+- Put these in order of effectiveness: PPE, substitution, engineering, elimination, administrative. (Answer: elimination, substitution, engineering, administrative, PPE.)
+- Name two jobs that normally need a permit-to-work. (Answer: any two of hot work, confined space, work at height, electrical work.)
+- Who may remove a personal lock? (Answer: only the person who fitted it.)
+
+## Practical assignment
+
+Pick one risk in your area where the main control today is PPE or a sign. Use the checklist with two workers to find at least one control from a higher level, and present it with its cost and new risk rating to your manager this week.
+
+## Summary
+
+- Choose controls in this order: elimination, substitution, engineering, administrative, PPE.
+- Higher controls protect everyone without relying on behaviour.
+- Use permits and lockout-tagout for high-risk work, and make sure PPE is selected, fitted, trained and enforced.
+=== 20
+SLIDE What you will learn | Assess manual handling with TILE; Control work at height and vehicle risks; Use safe isolation and read a safety data sheet; Choose the right fire extinguisher | Four skills you will practise in this lesson
+SLIDE Manual handling: TILE | Task: twisting, reaching, carrying distance; Individual: strength, training, health; Load: weight, size, grip, stability; Environment: floor, space, light, heat | Avoid, assess, reduce
+SLIDE Working at height | Avoid work at height where possible; Prevent falls with guardrails and platforms; Mitigate with nets or fall arrest harnesses; Ladders: short tasks, 3 points of contact, 1 in 4 angle | Collective protection before personal
+SLIDE Vehicles and forklifts | Separate pedestrians and vehicles; Trained, authorised drivers only; Daily pre-use checks; Never exceed rated capacity or carry passengers | Keep people and vehicles apart
+SLIDE Electrical and chemical hazards | Isolate, lock and test before work; Inspect cables and plugs, use residual current devices; GHS pictograms on labels; SDS: 16 sections, check 2, 4, 7 and 8 | Read the SDS before using a chemical
+SLIDE Fire | Fire triangle: fuel, heat, oxygen; Remove one side to stop a fire; Match extinguisher to fire class; PASS: Pull, Aim, Squeeze, Sweep | Raise the alarm first, fight only if safe
+SLIDE Common mistakes | Lifting without checking the load; Leaning ladders on unstable surfaces; Walking in forklift aisles; Using water on electrical or oil fires | Know the hazard, use the control
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- assess a manual handling task using the TILE method;
+- choose controls for work at height and vehicle movements;
+- apply safe electrical isolation and use a safety data sheet to handle chemicals;
+- select the right fire extinguisher for a given type of fire.
+
+## Key terms
+
+::: terms
+Manual handling: lifting, carrying, pushing, pulling or holding a load by hand or bodily force
+Work at height: work in any place where a person could fall a distance and be injured, including from a ladder or truck bed
+Rated capacity: the maximum load a forklift or lifting device is designed to handle safely, shown on its data plate
+Safety data sheet (SDS): a supplier document describing a chemical's hazards and how to use, store and handle it safely
+Fire triangle: the three elements a fire needs: fuel, heat and oxygen
+:::
+
+## 1. Manual handling and working at height
+
+Manual handling is one of the most common causes of injury in warehouses, factories and construction sites, mainly to the back, shoulders and hands. Avoid it where possible (pallet trucks, conveyors, hoists), assess what remains, and reduce the risk.
+
+::: slides
+SLIDE T for Task | Twisting, stooping, reaching above shoulders; Long carrying distances or many repetitions | How is the body moving
+SLIDE I for Individual | Strength, training and health; New or recovering from injury | Who is lifting
+SLIDE L for Load | Heavy, bulky, hard to grip, unstable or hot | What is being lifted
+SLIDE E for Environment | Uneven or slippery floor, tight space, poor light, heat | Where is the lift
+:::
+
+Controls include lighter bags, storing heavy items between knee and shoulder height, two-person lifts, and good technique: plan the lift, keep the load close to the waist, bend the knees, and do not twist.
+
+For work at height, use this order: avoid (work from the ground, for example with extension poles), prevent (platforms, scaffolds with guardrails, mobile elevated work platforms), then mitigate (safety nets or a fall-arrest harness on a suitable anchor). Ladders are for short, light tasks only: inspect first, place on firm level ground, use the 1-in-4 rule (one unit out for every four up, about 75 degrees), keep three points of contact, and do not overreach.
+
+::: quiz
+? Workers carry 50 kg bags 15 metres across an uneven yard. Which TILE factors are clearly involved?
+- Individual only || The problem is mainly in the task, load and environment.
+* Task, Load and Environment || Correct. Carrying distance, heavy load and uneven floor all raise the risk.
+- Environment only || The weight and carrying distance also matter.
+:::
+
+## 2. Vehicles and forklifts
+
+Forklifts, trucks and reversing vehicles are a major hazard in warehouses, yards and ports. Main controls: segregation (marked walkways, barriers, separate doors for people and vehicles); trained and authorised drivers only, with no passengers; pre-use checks every shift (brakes, steering, horn, lights, tyres, forks, hydraulics, seat belt); never exceeding the rated capacity; travelling with forks low; and visibility aids such as mirrors, reversing alarms, warning lights and high-visibility clothing.
+
+## 3. Electrical and chemical hazards
+
+Electricity can cause shock, burns and fire. Inspect cables and plugs before use and remove damaged items. Use residual current devices (RCDs), which cut power quickly if current leaks to earth, especially for portable tools and wet work. Do not overload sockets. Only competent electricians work on systems, using isolation, lockout-tagout and testing dead.
+
+Under the Globally Harmonized System (GHS), used in many countries, chemical labels carry red-diamond pictograms with the signal word "Danger" or "Warning". The GHS safety data sheet has 16 sections. The most useful at work are section 2 (hazard identification), section 4 (first aid), section 7 (handling and storage) and section 8 (exposure controls and personal protection). Keep an SDS for every chemical where workers can reach it, store incompatible chemicals apart, and never decant into unlabelled or drink bottles.
+
+## 4. Fire
+
+A fire needs fuel, heat and oxygen. Prevention controls all three: good housekeeping, control of ignition sources such as hot work, smoking and faulty wiring, and flammable liquids in closed containers in ventilated areas.
+
+::: diagram steps | Fire classes and suitable extinguishers
+Class A, ordinary solids (wood, paper, cardboard): water, foam or dry powder
+Class B, flammable liquids (diesel, solvents): foam, CO2 or dry powder
+Class C, flammable gases (LPG): dry powder, and isolate the gas supply
+Live electrical equipment: CO2 or dry powder, never water
+Class F, cooking oils and fats: wet chemical
+:::
+
+This is a common system, but classifications differ between countries, so always read the extinguisher label. If there is a fire, raise the alarm first. Fight it only if it is small, you are trained and you have a clear escape route. Use PASS: Pull the pin, Aim at the base, Squeeze the handle, Sweep side to side.
+
+::: quiz
+? A fire starts in an electrical distribution panel. Which extinguisher should you use?
+- Water || Water conducts electricity and can electrocute the user.
+- Foam || Most foam extinguishers are not suitable for live electrical equipment.
+* CO2 || Correct. CO2 is suitable for electrical fires and leaves no residue.
+:::
+
+## Worked example: a distribution warehouse in Lobito
+
+A distributor near Lobito port stores sugar, cooking oil and cleaning products. In one month there were two back strains and a forklift near miss. The supervisor found 50 kg bags carried 15 metres, pickers crossing the forklift aisle anywhere, bleach stored next to an acid descaler, and only water extinguishers by the cooking oil.
+
+::: case | Four hazards at the Lobito warehouse
+Supervisor Joaquim must choose which finding to fix today. A forklift reversed within one metre of a picker yesterday, and pickers still cross the main aisle at any point.
+? What should Joaquim act on first?
+- Order new extinguishers for the oil area || Important, but it can wait a day without leaving people exposed to the highest current risk.
+* Mark a walkway and set barriered crossing points for the forklift aisle || Correct. Yesterday's near miss shows a serious, immediate risk of a pedestrian being struck.
+- Run a training session on lifting technique || Training is useful but is a weaker control and not the most urgent issue.
+- Write a new chemical storage procedure || Separating the chemicals is quick, but the forklift risk is more serious.
+:::
+
+He also installed a roller conveyor and asked suppliers for 25 kg bags, separated the chemicals as section 7 of both SDSs required, and replaced the water extinguishers with foam, adding CO2 by the electrical panel.
+
+## Tool: hazard walk-round checklist
+
+- Heavy or awkward loads lifted by hand? TILE done?
+- Work at height: platforms and guardrails in place? Ladders inspected?
+- Pedestrian walkways marked and respected?
+- Forklift pre-use checks done today? Drivers authorised?
+- Cables, plugs and panels in good condition? RCDs used?
+- Every chemical labelled, with an SDS available, incompatibles apart?
+- Correct extinguishers present, inspected and unobstructed?
+- Fire exits and escape routes clear?
+
+## Common mistakes
+
+- Lifting without first checking the weight and stability of the load.
+- Using ladders for long or heavy tasks instead of a platform.
+- Allowing pedestrians in forklift aisles because "it's quicker".
+- Using a water extinguisher on an electrical or oil fire.
+
+## Self-check
+
+- What does TILE stand for? (Answer: Task, Individual, Load, Environment.)
+- Which SDS section tells you what PPE to wear? (Answer: section 8.)
+- What does PASS stand for? (Answer: Pull, Aim, Squeeze, Sweep.)
+
+## Practical assignment
+
+Use the hazard walk-round checklist in your area this week. For every "no", write the hazard, a control from the highest practical level, an owner and a date, and share the list with your manager.
+
+## Summary
+
+- Assess manual handling with TILE, and for work at height follow avoid, prevent, mitigate.
+- Separate people from vehicles, check forklifts every shift and never exceed rated capacity.
+- Isolate electricity before work, read the SDS before using chemicals, and match the extinguisher to the fire.
+=== 20
+SLIDE What you will learn | Explain why near-miss reporting matters; Take the right immediate actions after an incident; Find root causes with the 5 Whys; Write corrective actions that prevent repeat events | Four skills you will practise in this lesson
+SLIDE Why report near misses | Same causes as serious incidents; Free chance to fix problems; Reporting must be easy and fast; Thank reporters, give feedback | No blame for honest reports
+SLIDE Immediate actions | Make the area safe; Give first aid and get medical help; Preserve the scene and evidence; Report to the supervisor and HSE; Start the investigation quickly | Safety first, facts second
+SLIDE Gather the facts | People: witnesses and those involved; Place: photos and sketches of the scene; Parts: equipment, tools, materials; Paper: procedures, permits, training records | Facts before opinions
+SLIDE The 5 Whys | Start with the problem statement; Ask why, answer with facts; Repeat until you reach a cause you can fix; Usually 3 to 5 levels | Stop at a system cause, not a person
+SLIDE Corrective actions | Fix immediate, underlying and root causes; Use the hierarchy of controls; Owner, due date and check of effectiveness; Share lessons across sites | An action not closed is a hazard still open
+SLIDE Common mistakes | Concluding "human error" and stopping; Actions like "be more careful"; Changing the scene before evidence is taken; Never checking actions worked | Fix the system, not the person
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain why near-miss reporting is important and how to encourage it;
+- take the correct immediate actions after an incident;
+- use the 5 Whys method to find the root cause of an incident;
+- write corrective actions with an owner, due date and effectiveness check.
+
+## Key terms
+
+::: terms
+Immediate cause: the act or condition that directly led to the incident, such as a missing guard
+Underlying cause: the reason the immediate cause existed, such as no inspection of guards
+Root cause: the basic system failure that, if fixed, prevents the same type of incident happening again
+Corrective action: an action taken to remove the cause of an incident and prevent recurrence
+Just culture: an approach where people are not blamed for honest mistakes, but reckless or deliberate violations are still dealt with
+:::
+
+## 1. Near-miss reporting
+
+Near misses come from the same causes as serious incidents, so each one is a free chance to fix a problem before someone is hurt. People only report if it is easy and safe. Make reporting simple, with a short card or phone message covering what happened, where, when and a suggestion. Apply a just culture, so honest reporters are never disciplined. Give feedback within about a week on what was done, and thank reporters publicly.
+
+## 2. Immediate actions and gathering facts
+
+When an incident happens, the supervisor acts in a fixed order.
+
+::: diagram steps | Immediate actions after an incident
+Make safe: stop machines, isolate energy, barrier the area
+Care for people: first aid and medical help
+Preserve the scene: photos, keep equipment, do not clean up
+Report: manager and HSE, following company procedure
+Investigate: start quickly while memories are fresh
+:::
+
+Serious incidents may also need reporting to the authorities, so follow your organisation's procedure. The investigation team should include the supervisor, someone from HSE and, where possible, a worker who knows the task. Gather facts from four sources, often called the four Ps: people (interview the injured person and witnesses separately, with open questions and no blame), place (photos, measurements, a sketch, lighting and floor conditions), parts (equipment, tools, PPE and materials, kept aside) and paper (procedures, risk assessments, permits, training and maintenance records, rosters). Then write a timeline of before, during and after.
+
+::: quiz
+? A worker's hand is cut by a machine. After first aid, a colleague starts cleaning the blood and repairing the guard. What should the supervisor do?
+- Let him continue so production restarts quickly || Repairs now destroy evidence needed to find the cause.
+* Stop the clean-up, keep the area barriered and photograph it first || Correct. The scene must be preserved once people are safe.
+- Send everyone home for the day || This does not preserve evidence or start the investigation.
+:::
+
+## 3. Finding the root cause with the 5 Whys
+
+The 5 Whys is a simple root-cause method that comes from the Toyota Production System. You start with a clear problem statement and ask "Why?" repeatedly, answering each time with a fact.
+
+::: slides
+SLIDE Write the problem statement | What, where, when | "Glove pulled into roller 3 on 4 March"
+SLIDE Ask why and answer with evidence | One fact per answer | No guessing
+SLIDE Keep asking | Ask why about each answer | Follow each branch separately
+SLIDE Stop at a system cause | Missing procedure, unclear responsibility, design or planning weakness | Often about five whys
+SLIDE Check the logic backwards | "Because of this, that happened" at each step | It must make sense in reverse
+:::
+
+A related tool, the fishbone diagram developed by Kaoru Ishikawa, groups possible causes into categories such as people, methods, machines, materials and environment, and helps a team brainstorm before using the 5 Whys. Never stop at "human error": people make mistakes, so ask why the system allowed the mistake to cause harm.
+
+::: quiz
+? An investigation ends with "Root cause: operator did not follow the procedure." What is wrong?
+* It stops at the person instead of asking why the procedure was not followed || Correct. Ask why again: was it unclear, impractical or unsupervised?
+- It should name the operator in the report || Naming people does not explain or prevent the incident.
+- The 5 Whys must always have exactly five answers || The number is a guide. The key is reaching a system cause.
+:::
+
+## 4. Corrective actions that work
+
+Write actions that address immediate, underlying and root causes. Use the hierarchy of controls, preferring guards and design changes to reminders. Make each action specific, with an owner and a due date: "Install a fixed guard on roller 3, maintenance supervisor, by 15 March" is clear, while "be more careful" is not. Track actions in a register, verify effectiveness after closing, and share lessons with other shifts and sites.
+
+## Worked example: a plastics factory in Huambo
+
+At a plastics packaging factory in Huambo, an operator cleaning a running conveyor had his glove pulled off by a roller. He was not hurt and reported it. The 5 Whys found: the roller was unguarded because the guard had been removed for cleaning and not refitted; operators clean while running because restarting takes 20 minutes and shifts are measured only on output; and there was no cleaning procedure, no planned cleaning time, and guards were not on the inspection checklist.
+
+::: case | The conveyor near miss in Huambo
+Production manager Domingos receives the 5 Whys report. He must approve one set of corrective actions today.
+? Which set should he approve?
+- Give the operator a written warning and retrain all operators || Blame discourages reporting and leaves the guard and planning causes unfixed.
+- Put a "Do not clean while running" sign on the conveyor || A sign is a weak control and ignores the output pressure behind the behaviour.
+* Refit the guard today, fit an interlocked guard, write a LOTO cleaning procedure with planned time, and add guards to the checklist || Correct. This fixes immediate, underlying and root causes with clear owners.
+- Ask the HSE officer to watch the line for a week || Temporary supervision does not change the system.
+:::
+
+Each action got an owner and date, and the supervisor thanked the operator at the toolbox talk and shared the lessons with the other two lines.
+
+## Tool: incident investigation template
+
+- Date, time, location and type of event:
+- Problem statement:
+- Immediate actions taken:
+- Facts (people, place, parts, paper) and timeline:
+- 5 Whys (why 1 to why 5):
+- Immediate, underlying and root causes:
+- Corrective actions (action, control level, owner, due date):
+- Effectiveness check (date and result):
+- Lessons shared with:
+
+## Common mistakes
+
+- Concluding "human error" and stopping there.
+- Writing weak actions such as "be more careful".
+- Cleaning up or repairing before evidence is collected.
+- Punishing near-miss reporters, or closing actions without checking they work.
+
+## Self-check
+
+- What are the four Ps of fact gathering? (Answer: people, place, parts, paper.)
+- When should you stop asking "Why?" (Answer: when you reach a system cause that can be fixed to prevent recurrence.)
+- What should every corrective action include? (Answer: a specific action, an owner, a due date and a later effectiveness check.)
+
+## Practical assignment
+
+Take one recent near miss or minor incident in your area. With one colleague, complete the template, including a 5 Whys analysis and at least two corrective actions, and agree owners and dates with your manager.
+
+## Summary
+
+- Make near-miss reporting easy, safe and rewarded, and always give feedback.
+- After an incident: make safe, give care, preserve the scene, report, then gather facts from people, place, parts and paper.
+- Use the 5 Whys to reach system causes, and write specific actions with owners, dates and effectiveness checks.
+=== 20
+SLIDE What you will learn | Identify environmental aspects and impacts; Segregate waste using the waste hierarchy; Respond to a spill in four steps; Plan emergencies, run drills and deliver toolbox talks | Four skills you will practise in this lesson
+SLIDE Aspects and impacts | Aspect: an activity that interacts with the environment; Impact: the change it causes; Diesel storage leads to risk of soil contamination; ISO 14001 uses this approach | Control the aspect to prevent the impact
+SLIDE Waste hierarchy and segregation | Reduce, reuse, recycle, recover, dispose; Separate general, recyclable and hazardous waste; Hazardous: used oil, batteries, oily rags, chemical containers; Label bins and train staff | Segregate at source
+SLIDE Spill response | Stop the source if safe; Contain with spill kit and drain covers; Clean up with absorbents; Report and dispose as hazardous waste | Know where the spill kit is
+SLIDE Emergency plans | Credible scenarios: fire, spill, injury, gas leak; Roles: wardens, first aiders, headcount; Alarms, escape routes, assembly point; External contacts and site plan | A plan nobody knows is no plan
+SLIDE Drills and toolbox talks | Tabletop, partial and full drills; Time the evacuation and review; Toolbox talk: 10 to 15 minutes, one topic; Make it practical and ask questions | Practise before the real event
+SLIDE Common mistakes | Mixing hazardous and general waste; Empty or locked spill kits; Drills never held or never reviewed; Toolbox talks read from paper | Prepared teams respond calmly
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- identify environmental aspects and impacts in your workplace;
+- segregate waste correctly using the waste hierarchy;
+- respond to a small spill using a four-step method;
+- prepare an emergency plan, run a drill and deliver a toolbox talk.
+
+## Key terms
+
+::: terms
+Environmental aspect: an activity, product or service that can interact with the environment, such as storing fuel
+Environmental impact: the change to the environment caused by an aspect, such as soil or water contamination
+Hazardous waste: waste that can harm people or the environment, such as used oil, batteries and solvents
+Emergency plan: a written plan describing how people will respond to foreseeable emergencies
+Toolbox talk: a short, informal safety briefing held at the workplace, usually before a shift or task
+:::
+
+## 1. Environmental aspects, impacts and waste
+
+Environmental incidents can harm communities, water supplies and a company's reputation. The international standard ISO 14001 uses a simple idea that any supervisor can apply: list the activities in your area and identify their aspects and impacts. Fuel storage can leak into soil and groundwater. Vehicle washing can send oily water into drains. Generators produce emissions, noise and diesel use. Packaging creates solid waste. Control significant aspects as you would safety risks: drip trays and bunded storage for fuel, oil separators for wash water, generator maintenance, and good waste management.
+
+::: diagram pyramid | The waste hierarchy
+Reduce: use less, e.g. buy in bulk to cut packaging
+Reuse: use pallets and drums again
+Recycle: turn cardboard, film and metal into new material
+Recover: extract energy or value from waste
+Dispose: authorised disposal site, last option
+:::
+
+Segregation at source makes the hierarchy work. Provide labelled, colour-coded bins for at least three streams: general, recyclable (cardboard, plastic film, metal) and hazardous (used oil, oily rags, batteries, fluorescent tubes, chemical containers, used absorbents). Store hazardous waste in a covered, bunded area and hand it only to licensed collectors, keeping transfer records.
+
+::: quiz
+? Is "storing 5,000 litres of diesel" an aspect or an impact?
+* An aspect || Correct. It is an activity that can interact with the environment.
+- An impact || The impact would be the soil or water contamination if it leaked.
+- Neither, because the tank is sealed || Sealed storage reduces risk but is still an aspect to manage.
+:::
+
+## 2. Spill response
+
+Every area that stores liquids should have a spill kit nearby: absorbent pads, socks, granules, drain covers, gloves, goggles and disposal bags. Choose the right kit: oil-only kits absorb hydrocarbons but repel water, while general or chemical kits are needed for other liquids.
+
+::: slides
+SLIDE Stop | Stop the source if safe: close the valve, upright the drum; Check the SDS, remove ignition sources | Your safety first
+SLIDE Contain | Socks or booms around the spill; Cover nearby drains | Stop it spreading
+SLIDE Clean up | Pads and granules, outside to inside; Bag used materials as hazardous waste | Label the bags
+SLIDE Report | Tell the supervisor, record and investigate | Find out why it happened
+:::
+
+For large spills, spills into water or spills you cannot handle safely, evacuate, raise the alarm and follow the emergency plan.
+
+## 3. Emergency preparedness and toolbox talks
+
+ISO 45001 and ISO 14001 both expect organisations to prepare for emergencies. A practical plan covers credible scenarios (fire, spill, gas leak, serious injury, flooding, local risks), how the alarm is raised, roles (coordinator, fire wardens, first aiders, headcount), escape routes and an assembly point away from vehicle routes, a headcount method that includes visitors and contractors, checked external contact numbers, and a site plan showing extinguishers, first-aid and spill kits.
+
+Plans must be practised. A tabletop exercise talks through a scenario around a table. A partial drill tests one part, such as one building's evacuation. A full drill involves the whole site. After each drill, review timings, alarm audibility and warden performance, and fix gaps.
+
+A toolbox talk is a 10 to 15 minute briefing on one topic linked to today's work: say why it matters with a real example, give three practical rules, ask questions such as "Where is the nearest spill kit?", and record attendance. Speak the team's daily language and let workers lead sometimes.
+
+::: quiz
+? The team talks through a gas leak scenario around a table to check roles. What type of exercise is this?
+- Full drill || A full drill involves the whole site physically responding.
+* Tabletop exercise || Correct. It tests decisions and roles through discussion.
+- Partial drill || A partial drill physically tests one part of the plan.
+:::
+
+## Worked example: a logistics yard at Luanda port
+
+A logistics company runs a container yard at Luanda port with reach stackers, a 20,000-litre diesel tank and a workshop. During refuelling, a hose split and about 200 litres of diesel flowed towards a storm drain.
+
+::: case | Diesel spill at the port yard
+Refuelling operator Nelson sees diesel spreading from a split hose towards a storm drain 10 metres away. The pump is still running and the spill kit is beside the tank.
+? What should Nelson do first?
+- Run to the office to report the spill || Reporting matters, but diesel keeps flowing while he is away.
+* Stop the pump, then cover the drain and place socks around the spill || Correct. Stop the source, then contain it before it reaches the drain.
+- Hose the diesel away with water || This spreads the diesel and sends it into the drain.
+- Start absorbing the diesel with pads at once || Cleaning before stopping and containing lets the spill keep spreading.
+:::
+
+Nelson stopped, contained and cleaned up the spill, and the waste went to a licensed collector. The investigation found no hose inspection schedule and no bund, so weekly hose checks, a bunded refuelling pad and an extra spill kit were added. A partial drill a month later showed one spill kit was locked away, so it was moved to an open cabinet.
+
+## Tool: emergency preparedness checklist
+
+- Credible emergency scenarios listed:
+- Alarm tested and audible everywhere:
+- Wardens and first aiders named, trained, with deputies:
+- Escape routes clear, assembly point marked:
+- Headcount covers visitors and contractors:
+- External numbers checked this month:
+- Spill kits stocked, unlocked, right type:
+- Last drill date, type and actions closed:
+
+## Common mistakes
+
+- Mixing hazardous with general waste because no separate bins exist.
+- Spill kits that are empty, locked or the wrong type.
+- Emergency plans that are never practised or reviewed.
+- Reading toolbox talks from a sheet without discussion.
+
+## Self-check
+
+- What are the four steps of spill response? (Answer: stop, contain, clean up, report.)
+- Name three waste streams to segregate. (Answer: general, recyclable, hazardous.)
+- Name the three types of emergency drill. (Answer: tabletop, partial, full.)
+
+## Practical assignment
+
+Walk your area with the checklist and fix one gap this week. Then deliver a 10-minute toolbox talk on spill response or evacuation using the structure in section 3, and record attendance.
+
+## Summary
+
+- Identify aspects and impacts, and manage waste with the hierarchy and segregation at source.
+- Respond to spills with stop, contain, clean up, report, using the right kit.
+- Practise emergency plans with drills, and use toolbox talks to keep HSE part of daily work.
