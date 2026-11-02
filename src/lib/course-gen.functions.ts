@@ -320,3 +320,43 @@ export const saveCourse = createServerFn({ method: "POST" })
 
     return { ok: true };
   });
+
+
+const BuilderInput = z.object({ slug: z.string().min(1).max(100) });
+
+/** Returns private lesson answer keys only to the course creator. */
+export const getCourseForBuilder = createServerFn({ method: "GET" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((data: unknown) => BuilderInput.parse(data))
+  .handler(async ({ data, context }) => {
+    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const { data: cert, error } = await supabaseAdmin
+      .from("certifications")
+      .select("id, slug, title, category, summary, skills, modules, created_by")
+      .eq("slug", data.slug)
+      .maybeSingle();
+    if (error) throw new Error(error.message);
+    if (!cert) throw new Error("Course not found.");
+    if (cert.created_by !== context.userId) throw new Error("You can only edit courses you created.");
+
+    const { data: keys, error: keyError } = await supabaseAdmin
+      .from("module_keys")
+      .select("module_index, answer_index, explanation")
+      .eq("certification_id", cert.id);
+    if (keyError) throw new Error(keyError.message);
+
+    return {
+      title: cert.title,
+      category: cert.category,
+      summary: cert.summary,
+      skills: cert.skills ?? [],
+      modules: (Array.isArray(cert.modules) ? cert.modules : []).map((raw: any, index: number) => {
+        const key = (keys ?? []).find((item: any) => item.module_index === index);
+        return {
+          ...raw,
+          answer_index: key?.answer_index ?? 0,
+          explanation: key?.explanation ?? "",
+        };
+      }),
+    };
+  });
