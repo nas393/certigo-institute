@@ -31,7 +31,7 @@ export const Route = createFileRoute("/_authenticated/learn/$slug/$lesson")({
 
 function LessonReader() {
   const { slug, lesson: lessonParam } = Route.useParams();
-  const lessonIndex = Math.max(0, Number.parseInt(lessonParam, 10) - 1 || 0);
+  const lessonIndex = Math.max(0, (Number.parseInt(lessonParam, 10) || 1) - 1);
   const { user } = useAuth();
   const navigate = useNavigate();
   const [course, setCourse] = useState<any>(null);
@@ -121,6 +121,7 @@ function LessonReader() {
         <h1 className="mt-7 font-display text-3xl font-black tracking-tight sm:text-4xl">{lesson.title ?? "Lesson"}</h1>
         {lesson.subject && <p className="mt-2 text-sm font-medium text-emerald-700">{lesson.subject}</p>}
         {lesson.learned && <p className="mt-5 text-lg leading-8 text-muted-foreground">{lesson.learned}</p>}
+        {!!lesson.skills?.length && <section className="mt-5"><div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Skills practised in this lesson</div><div className="mt-2 flex flex-wrap gap-2">{lesson.skills.map((skill, i) => <span key={i} className="rounded-full border border-border bg-card px-3 py-1.5 text-xs">{skill}</span>)}</div></section>}
 
         {content.introduction && <section className="mt-8"><h2 className="text-xl font-bold">Introduction</h2><p className="mt-3 whitespace-pre-line text-base leading-8">{content.introduction}</p></section>}
         {!!content.objectives?.length && <section className="mt-8 rounded-xl border border-border bg-card p-5"><h2 className="font-bold">By the end, you should be able to</h2><ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-6">{content.objectives.map((x, i) => <li key={i}>{x}</li>)}</ul></section>}
