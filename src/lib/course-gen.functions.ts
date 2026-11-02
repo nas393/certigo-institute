@@ -22,6 +22,14 @@ export type CourseModule = {
   learned: string;
   minutes: number;
   skills: string[];
+  content: {
+    introduction: string;
+    objectives: string[];
+    sections: Array<{ heading: string; body: string; example: string }>;
+    case_study: string;
+    exercise: string;
+    takeaways: string[];
+  };
   check: { q: string; options: string[] };
 };
 
@@ -80,10 +88,11 @@ Given a skill, produce:
 - category: one short category
 - summary: one paragraph
 - skills: 4-8 real-world professional skills covered
-- modules: 4-8 lessons. Each has title, subject, learned (2-3 sentences on what the learner walks away with),
-  minutes (10-15), skills (2-4 job-relevant skills this specific lesson maps to), and check:
-  a single knowledge-check question with q, options (exactly 4) and answer_index (0-3) plus a short
-  explanation of why that answer is right.
+- modules: 4-8 lessons. Each has title, subject, learned (2-3 sentences), minutes (5-15), skills (2-4),
+  and content with introduction (100-150 words), objectives (3-5 measurable bullets), sections (3-5
+  objects each with heading, body (100-160 words) and practical workplace example), case_study
+  (a realistic scenario and decision), exercise (a task the learner can perform at work), takeaways
+  (3-5 concise points). Also include check with q, exactly 4 options, answer_index (0-3), explanation.
 - questions: exactly 8 final-exam multiple-choice questions with q, options (4) and answer_index (0-3).
 Questions must be practical and unambiguous. Reply with JSON only.`;
 
@@ -107,7 +116,7 @@ export const generateCourse = createServerFn({ method: "POST" })
           { role: "system", content: SYSTEM },
           {
             role: "user",
-            content: `Skill: ${data.skill}\n\nReturn json with keys: title, category, summary, skills[], modules[{title, subject, learned, minutes, skills[], check:{q, options[4], answer_index, explanation}}], questions[{q, options[4], answer_index}].`,
+            content: `Skill: ${data.skill}\n\nReturn json with keys: title, category, summary, skills[], modules[{title, subject, learned, minutes, skills[], content:{introduction, objectives[], sections:[{heading,body,example}], case_study, exercise, takeaways[]}, check:{q, options[4], answer_index, explanation}}], questions[{q, options[4], answer_index}].`,
           },
         ],
       }),
@@ -153,6 +162,18 @@ export const generateCourse = createServerFn({ method: "POST" })
         learned: (str(m.learned ?? m.outcome ?? m.description) || `Applied practice in ${mTitle.toLowerCase()}.`).slice(0, 600),
         minutes,
         skills: strList(m.skills, 4),
+        content: {
+          introduction: str(m.content?.introduction).slice(0, 3000),
+          objectives: strList(m.content?.objectives, 6).map((x) => x.slice(0, 240)),
+          sections: (Array.isArray(m.content?.sections) ? m.content.sections : []).slice(0, 6).map((section: any) => ({
+            heading: str(section?.heading).slice(0, 140),
+            body: str(section?.body).slice(0, 2400),
+            example: str(section?.example).slice(0, 1000),
+          })).filter((section: any) => section.heading || section.body),
+          case_study: str(m.content?.case_study).slice(0, 2400),
+          exercise: str(m.content?.exercise).slice(0, 1600),
+          takeaways: strList(m.content?.takeaways, 6).map((x) => x.slice(0, 240)),
+        },
         check: check ? { q: check.q, options: check.options } : { q: "", options: [] },
       };
       modules.push(mod);
@@ -231,6 +252,18 @@ const SaveInput = z.object({
         learned: z.string().max(600),
         minutes: z.number().int().min(5).max(30),
         skills: z.array(z.string().min(1).max(60)).max(6),
+        content: z.object({
+          introduction: z.string().max(3000),
+          objectives: z.array(z.string().max(240)).max(6),
+          sections: z.array(z.object({
+            heading: z.string().max(140),
+            body: z.string().max(2400),
+            example: z.string().max(1000),
+          })).max(6),
+          case_study: z.string().max(2400),
+          exercise: z.string().max(1600),
+          takeaways: z.array(z.string().max(240)).max(6),
+        }),
         check: z.object({ q: z.string().max(400), options: z.array(z.string().max(200)).max(4) }),
         answer_index: z.number().int().min(0).max(3),
         explanation: z.string().max(400),
@@ -267,6 +300,7 @@ export const saveCourse = createServerFn({ method: "POST" })
           learned: m.learned,
           minutes: m.minutes,
           skills: m.skills,
+          content: m.content,
           check: m.check,
         })) as any,
       })
