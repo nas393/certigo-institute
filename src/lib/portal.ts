@@ -10,6 +10,7 @@ export type PortalCourse = {
   pass_score: number;
   lessons: number;
   lessonsDone: number;
+  nextLesson: number;
   attempts: number;
   bestScore: number;
   passed: boolean;
@@ -38,9 +39,12 @@ export function usePortalCourses(userId: string | undefined) {
     const rows = (enr.data ?? []).map((e: any) => {
       const cf = e.certifications ?? {};
       const lessons = Array.isArray(cf.modules) ? cf.modules.length : 0;
-      const done = new Set(
+      const doneIndexes = new Set(
         (prog.data ?? []).filter((p: any) => p.certification_id === e.certification_id && p.correct).map((p: any) => p.module_index),
-      ).size;
+      );
+      const done = doneIndexes.size;
+      const nextLesson = Array.from({ length: lessons }, (_, i) => i).find((i) => !doneIndexes.has(i));
+      const resumeLesson = nextLesson === undefined ? Math.max(1, lessons) : nextLesson + 1;
       const mine = (att.data ?? []).filter((a: any) => a.certification_id === e.certification_id);
       return {
         id: cf.id,
@@ -51,6 +55,7 @@ export function usePortalCourses(userId: string | undefined) {
         pass_score: cf.pass_score ?? 70,
         lessons,
         lessonsDone: done,
+        nextLesson: resumeLesson,
         attempts: mine.length,
         bestScore: mine.reduce((m: number, a: any) => Math.max(m, a.score ?? 0), 0),
         passed: mine.some((a: any) => a.passed),
