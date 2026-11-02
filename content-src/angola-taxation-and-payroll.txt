@@ -1,0 +1,832 @@
+=== 20
+SLIDE What you will learn | Name the bodies that collect taxes and contributions in Angola; Classify the main taxes a business deals with; Apply the withholding principle to any payment; Check NIFs on payroll and invoices | Four skills for this lesson
+SLIDE Two collectors | AGT administers and collects taxes such as IRT, IVA and Imposto Industrial; INSS registers workers and collects social security contributions; Laws and budget changes are published in the Diário da República | Two bodies, two sets of returns and deadlines
+SLIDE The main taxes | IRT: tax on income from work, Groups A, B and C; Imposto Industrial: tax on company profits; IVA: tax on consumption, standard rate 14%; Imposto de Selo, Imposto Predial and IAC: other taxes | Classify by what the tax hits
+SLIDE The withholding principle | Who bears the tax?; Who deducts it?; Who delivers it, and by when? | Withheld tax belongs to the State, not the company
+SLIDE The NIF | Número de Identificação Fiscal of a person or company; Needed on payroll records, invoices and returns; Missing or wrong NIFs block deductions and create errors | Check the NIF before the first payment
+SLIDE Rules change | Lei n.º 14/25 (OGE 2026) brought a new IRT table from 1 January 2026; A new IRPS code was approved in June 2026, expected from 1 January 2027; Always confirm on AGT and INSS sites | Learn the method, check the figures
+SLIDE Common mistakes | Using withheld tax as working capital; Paying freelancers without checking withholding; Using an old table; Missing NIFs | Classify, check, deduct, deliver
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain which public bodies collect taxes and social security contributions in Angola;
+- classify the main taxes a business meets and the payments each one applies to;
+- apply the withholding principle: who bears a tax, who deducts it and who delivers it;
+- check that NIFs and identification data on payroll and invoices are complete.
+
+## Key terms
+
+::: terms
+AGT: Administração Geral Tributária, the state body that administers and collects taxes in Angola
+INSS: Instituto Nacional de Segurança Social, the body that registers employers and workers and collects social security contributions
+NIF: Número de Identificação Fiscal, the tax identification number of a person or company
+Withholding: deducting tax from a payment at source and delivering it to the State on behalf of the person who earns the income
+Taxpayer: the person or company that bears a tax under the law
+Diário da República: the official gazette in which laws and decrees are published
+:::
+
+## 1. Two collectors: AGT and INSS
+
+Every monthly payroll in Angola creates obligations towards two public bodies. The AGT administers taxes: it registers taxpayers, receives returns, collects payments and carries out audits. The INSS registers employers and workers and collects the contributions that fund pensions and other benefits. Each has its own registrations, returns and deadlines.
+
+The rules come from laws and decrees published in the Diário da República. Tax codes, such as the Código do IRT and the Código do IVA, set the permanent rules. The annual State Budget law (Lei do Orçamento Geral do Estado, or OGE) often changes rates and limits for that year. For 2026 the OGE is Lei n.º 14/25, of 30 December 2025, which introduced a new IRT table from 1 January 2026.
+
+On 25 June 2026 the National Assembly approved a new personal income tax code, the IRPS (Imposto sobre o Rendimento das Pessoas Singulares), which is expected to replace the current IRT model from 1 January 2027. This course teaches the 2026 rules, but its methods will still apply under the new code.
+
+::: tip | Check the current law
+Rates, tables and limits in this course were checked against 2025–2026 sources. They change often, so confirm every figure on the AGT and INSS websites or in the Diário da República before you use it.
+:::
+
+## 2. The main taxes a business meets
+
+Classify each tax by what it hits: income from work, profit, consumption, property or transactions.
+
+- IRT (Imposto sobre o Rendimento do Trabalho): tax on income from work. Group A covers employees. Group B covers self-employed professionals and company managers and officers. Group C covers income of individuals from industrial and commercial activities.
+- Imposto Industrial: tax on the profits of companies.
+- IVA (Imposto sobre o Valor Acrescentado): tax on consumption, charged on sales of goods and services. The standard rate is 14%.
+- Other taxes: Imposto de Selo (stamp duty), Imposto Predial (property) and IAC (investment income such as interest and dividends).
+
+Payroll staff work mostly with Group A. When a payer with organised or simplified accounts pays a self-employed professional (Group B), IRT is generally withheld at 6.5% of the service value.
+
+::: quiz
+? A company pays a self-employed electrician who has no employment contract. Which IRT group applies to his fee?
+- Group A, because he works for the company || Group A is only for employees working under an employment relationship.
+* Group B, because he is a self-employed professional || Correct. Fees of self-employed professionals fall under Group B, usually with withholding by the company.
+- Group C, because electricity is an industrial activity || Group C covers individuals running industrial or commercial businesses, not professional fees.
+:::
+
+## 3. The withholding principle and the NIF
+
+For any payment, ask: who bears the tax, who deducts it, and who delivers it by when? For IRT Group A, the employee bears the tax, the employer deducts it when paying the salary, and the employer delivers it to the AGT by the end of the month following payment (Código do IRT, article 11).
+
+::: slides
+SLIDE Step 1: Identify the payee | Employee, self-employed professional or company?; Check the contract and the NIF | The payee decides the rule
+SLIDE Step 2: Identify the income type | Salary, fee, rent, interest or a sale?; Find the tax and the group | One payment, one classification
+SLIDE Step 3: Check the current rule | Table or rate in force for this month; Exemptions and limits | Never rely on memory
+SLIDE Step 4: Deduct, record and deliver | Deduct on payment; Post to a tax payable account; Pay the State by the deadline | Withheld tax is a debt to the State
+:::
+
+Withheld tax is held in trust for the State. Under the 2026 budget law, failing to deliver withheld IRT, or delivering less than was withheld, carries a fine equal to the amount not delivered (reduced from twice that amount), and criminal proceedings may still apply.
+
+The NIF must appear in employee master data, on invoices and in returns. A purchase invoice without the buyer's correct NIF can cost the company its right to deduct input IVA (lesson 5).
+
+::: diagram steps | From payslip to the State
+Calculate: the employer calculates gross pay
+Deduct: employee INSS and IRT are withheld
+Pay: net pay goes to the employee
+Deliver to INSS: contributions by the 10th of the following month
+Deliver to AGT: IRT by the end of the following month
+:::
+
+::: quiz
+? Who delivers the IRT withheld from an employee's salary to the AGT?
+- The employee, through an annual return || The employee bears the tax, but delivery is the employer's duty.
+- The bank that transfers the salary || Banks process payments but are not the withholding agent for salaries.
+* The employer, by the end of the following month || Correct. The employer withholds and delivers the tax.
+:::
+
+## Worked example: a new distributor in Viana
+
+A small distributor of cleaning products in Viana, Luanda, starts trading with eight employees. In month one it pays salaries, a self-employed IT technician (Kz 200,000) and office rent. The bookkeeper builds a tax map. Salaries: IRT Group A by the table, plus INSS (3% employee, 8% employer). IT technician: Group B, so she withholds 6.5%, Kz 13,000, pays him Kz 187,000 and records Kz 13,000 as IRT payable. Rent: she confirms the applicable tax with the accountant before paying. Two employees have no NIF on file, so she collects proof before payroll closes.
+
+::: case | Cash is tight at the Viana distributor
+In the second month a supplier demands Kz 900,000. The owner tells the bookkeeper, Teresa, to use the Kz 420,000 of withheld IRT and INSS to pay the supplier and to "settle the State next month".
+? What should Teresa do?
+- Follow the instruction, because the owner decides on payments || The money withheld belongs to the State and the INSS, so using it exposes the company to fines and interest.
+* Explain that withheld amounts are debts to the State and propose another way to pay the supplier || Correct. She protects the company and offers a solution such as a payment plan with the supplier.
+- Pay the supplier and record nothing until next month || Hiding the liability makes the problem worse and breaks basic accounting controls.
+- Deliver only the IRT and keep the INSS money || Both amounts are withheld from workers and carry penalties if delivered late.
+:::
+
+## Tool: monthly tax map
+
+- Payee name, NIF and type (employee, self-employed, company):
+- Nature of payment (salary, fee, rent, purchase):
+- Tax and group that apply:
+- Rate or table used, and date checked on the AGT site:
+- Amount withheld:
+- Body that receives it (AGT or INSS) and deadline:
+- Account where the liability is recorded:
+
+## Common mistakes
+
+- Using withheld tax or contributions as working capital.
+- Paying self-employed professionals without checking withholding.
+- Applying last year's table or an old spreadsheet limit.
+- Accepting invoices or hiring staff without a correct NIF.
+
+## Self-check
+
+- Which body collects social security contributions? (Answer: the INSS.)
+- Under which IRT group are employees taxed? (Answer: Group A.)
+- What are the three withholding questions? (Answer: who bears the tax, who deducts it, who delivers it and by when.)
+
+## Practical assignment
+
+List every type of payment your company made last month, complete a tax map line for each, and check two figures on the AGT website.
+
+## Summary
+
+- The AGT collects taxes and the INSS collects social security contributions, each with its own returns and deadlines.
+- Classify every payment by payee and income type before you apply a rate or table.
+- Withheld amounts are debts to the State and must be delivered on time.
+=== 20
+SLIDE What you will learn | Identify taxable income under IRT Group A; Exclude non-taxable items within their limits; Calculate taxable income after INSS; Apply the table method to calculate IRT | From gross pay to IRT in four steps
+SLIDE What is taxable | Salaries, wages, overtime, bonuses and other pay; Benefits in kind; Employee INSS is deducted before the table is applied | Start from everything paid
+SLIDE Non-taxable items | Meal and transport allowances up to Kz 30,000 per month; Family allowance up to 5% of base salary; Documented business travel expenses | Only the excess over a limit is taxed
+SLIDE The table method | Find the bracket for the taxable income; IRT = fixed amount + rate x (income - lower limit); Record the working | One formula for every bracket
+SLIDE The 2026 table | Exempt up to Kz 150,000 a month; Rates from 16% to 25% over 11 brackets; Annex I of Lei n.º 14/25 | Use the table in force for the payment month
+SLIDE A worked calculation | Gross Kz 700,000, INSS Kz 21,000; Taxable Kz 679,000, bracket Kz 500,000 to 1,000,000; IRT = 87,250 + 20% x 179,000 = Kz 123,050 | Show every step
+SLIDE Common mistakes | Applying the top rate to all income; Forgetting to deduct INSS first; Treating a whole allowance as exempt; Using last year's table | Base, bracket, table date
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- identify which payments to an employee are taxable under IRT Group A;
+- exclude non-taxable allowances correctly, taxing only the excess over a limit;
+- calculate monthly taxable income after the employee's INSS contribution;
+- apply the IRT table method to calculate the tax to withhold.
+
+## Key terms
+
+::: terms
+Gross remuneration: everything paid to the employee for work in the month, in cash or in kind
+Non-taxable income: amounts the IRT Code excludes from tax, sometimes only up to a limit
+Taxable income (matéria colectável): the amount to which the IRT table is applied
+Bracket (escalão): a band of income with its own fixed amount and rate
+Fixed amount (parcela fixa): the tax set by the table for income up to the lower limit of the bracket
+Marginal rate: the rate applied to the part of income above the lower limit of the bracket
+:::
+
+## 1. What is taxable under Group A
+
+Group A covers employees. The IRT Code taxes salaries, wages, overtime, bonuses and other additional remuneration, and benefits in kind (for example a company house or car used privately). The starting point is everything the employee received for work in the month.
+
+Some amounts are not taxable, at least up to a limit. According to the IRT Code and the PwC Angola tax summary (reviewed June 2026), the main items are:
+
+- Meal and transport allowances, up to Kz 30,000 per month. Sources differ on whether the limit applies to each allowance or to both together, so confirm with your accountant or the AGT. The part above the limit is taxable.
+- Family allowance, up to 5% of base salary.
+- Business travel expenses, when properly documented.
+- The employee's own social security contributions.
+
+The key method is "limit, then excess". If an employee receives a meal allowance of Kz 45,000 and no transport allowance, Kz 30,000 is not taxable and Kz 15,000 is added to taxable income.
+
+::: quiz
+? An employee receives a transport allowance of Kz 42,000 and no meal allowance. How much of it is taxable?
+- Kz 42,000, because allowances are always taxable || Allowances are non-taxable up to the legal limit.
+- Nothing, because transport allowances are exempt || The exclusion applies only up to Kz 30,000 a month.
+* Kz 12,000, the part above the Kz 30,000 limit || Correct. Only the excess over the limit is taxed.
+:::
+
+## 2. From gross to taxable income
+
+The IRT Code (article 7) deducts the employee's mandatory social security contribution from total remuneration before the table is applied. The formula is:
+
+Taxable income = gross remuneration - non-taxable amounts - employee INSS contribution
+
+The employee INSS contribution is 3% of the contribution base (lesson 3). Calculate it first, because IRT depends on it.
+
+## 3. The table method
+
+Angola's IRT is progressive: higher income falls into higher brackets. Each bracket has a lower limit, a fixed amount and a marginal rate. The formula for every bracket is:
+
+IRT = fixed amount + marginal rate x (taxable income - lower limit of the bracket)
+
+The 2026 table (Annex I of Lei n.º 14/25, as reproduced by PwC and other professional sources) is, per month:
+
+- Up to Kz 150,000: exempt.
+- Kz 150,000 to 200,000: Kz 12,500 + 16% of the excess over Kz 150,000.
+- Kz 200,000 to 300,000: Kz 31,250 + 18% of the excess over Kz 200,000.
+- Kz 300,000 to 500,000: Kz 49,250 + 19% of the excess over Kz 300,000.
+- Kz 500,000 to 1,000,000: Kz 87,250 + 20% of the excess over Kz 500,000.
+- Kz 1,000,000 to 1,500,000: Kz 187,250 + 21% of the excess over Kz 1,000,000.
+- Higher brackets continue with rates of 22%, 23%, 24% and 24.5%, up to 25% above Kz 10,000,000.
+
+Note that the published fixed amounts in the lower brackets do not follow a smooth pattern: tax jumps to Kz 12,500 as soon as taxable income passes Kz 150,000. Apply the table exactly as published and confirm unusual results with the AGT.
+
+::: slides
+SLIDE Step 1: Add up gross pay | Salary, overtime, bonuses, benefits in kind | Everything paid for work
+SLIDE Step 2: Remove non-taxable amounts | Allowances up to their limits, documented travel | Tax only the excess
+SLIDE Step 3: Deduct employee INSS | 3% of the contribution base | INSS comes before IRT
+SLIDE Step 4: Apply the table | Find the bracket, fixed amount + rate x excess | Check the table date
+:::
+
+Example: gross pay of Kz 700,000, all taxable, gives INSS of Kz 21,000 and taxable income of Kz 679,000. This falls in the Kz 500,000 to 1,000,000 bracket, so IRT = 87,250 + 20% x 179,000 = 87,250 + 35,800 = Kz 123,050. A common error is to charge 20% on the whole Kz 679,000 (Kz 135,800).
+
+::: diagram steps | IRT calculation
+Gross pay: all remuneration for the month
+Less non-taxable: allowances within limits and other exclusions
+Less employee INSS: 3% contribution
+Taxable income: the base for the table
+Apply table: fixed amount + rate x excess
+:::
+
+::: tip | Check the current law
+The 2026 table and the Kz 30,000 allowance limit were verified in 2026 sources. The new IRPS code is expected to replace this table from 1 January 2027. Always download the table in force from the AGT site.
+:::
+
+::: quiz
+? Taxable income is Kz 400,000. Using the 2026 table, what is the IRT?
+* Kz 68,250 || Correct: 49,250 + 19% x 100,000 = 68,250.
+- Kz 76,000 || This applies 19% to the whole Kz 400,000 and ignores the table structure.
+- Kz 49,250 || This is only the fixed amount and leaves out the tax on the excess.
+:::
+
+## Worked example: a warehouse supervisor at a Lobito logistics company
+
+A logistics company near Lobito port pays its warehouse supervisor a base salary of Kz 520,000, overtime of Kz 60,000 and a meal allowance of Kz 35,000 (no transport allowance). Gross pay is Kz 615,000. The company includes allowances in the INSS base, so employee INSS is 3% x 615,000 = Kz 18,450. The non-taxable part of the meal allowance is Kz 30,000. Taxable income = 615,000 - 30,000 - 18,450 = Kz 566,550, in the Kz 500,000 to 1,000,000 bracket. IRT = 87,250 + 20% x 66,550 = 87,250 + 13,310 = Kz 100,560. Net pay before other deductions = 615,000 - 18,450 - 100,560 = Kz 495,990.
+
+::: case | A payslip query in Lobito
+The supervisor complains that his IRT rose after his meal allowance went from Kz 25,000 to Kz 35,000. The payroll clerk, Rui, must answer him.
+? What is the best explanation?
+- The whole allowance became taxable once it passed Kz 30,000 || Only the excess over the limit is taxable, not the whole allowance.
+* The Kz 5,000 above the Kz 30,000 limit is now taxable, and the extra pay also raises INSS || Correct. He shows the working step by step.
+- The company moved him to a higher table by mistake || The table is the same for all employees. The base changed.
+:::
+
+## Tool: IRT working paper
+
+- Employee, NIF and month:
+- Gross pay by item (salary, overtime, bonus, benefits in kind, allowances):
+- Non-taxable amounts and limit applied:
+- Employee INSS (3%):
+- Taxable income:
+- Bracket, fixed amount, rate and lower limit:
+- IRT = fixed amount + rate x excess:
+- Table source and date checked:
+
+## Common mistakes
+
+- Applying the marginal rate to the whole income instead of only the excess.
+- Forgetting to deduct the employee's INSS before applying the table.
+- Treating a whole allowance as exempt when it exceeds the limit.
+- Using last year's table in January.
+
+## Self-check
+
+- What is deducted from gross pay before the IRT table is applied? (Answer: non-taxable amounts and the employee's INSS contribution.)
+- What is the IRT on taxable income of Kz 150,000 in 2026? (Answer: nothing, it is within the exempt band.)
+- What does the fixed amount represent? (Answer: the tax set for income up to the lower limit of the bracket.)
+
+## Practical assignment
+
+Take three real payslips from different salary levels in your company. Recalculate IRT with the working paper and the current AGT table, and explain any difference.
+
+## Summary
+
+- Start from all remuneration, remove non-taxable amounts within their limits, then deduct employee INSS.
+- IRT = fixed amount + marginal rate x excess over the bracket's lower limit.
+- Always use the table in force for the payment month and record your working.
+=== 20
+SLIDE What you will learn | Explain who must register with the INSS; Calculate employee and employer contributions; Prepare the monthly remuneration sheet and payment; Estimate the cost of late payment | Social security from registration to payment
+SLIDE Rates in force | Employee: 3% of the contribution base; Employer: 8%, total 11%; Presidential Decree n.º 227/18 | Proposed increases are not law until published
+SLIDE The contribution base | Gross remuneration including cash supplements; Benefits in kind converted to cash value; Certain items excluded by the decree, such as family allowance | Check the exclusion list
+SLIDE The contribution cycle | Register employer and workers; Calculate contributions; Declare the remuneration sheet; Pay by the 10th of the following month; Reconcile | Same steps every month
+SLIDE Late payment | Default interest of 1% per month; Fines of one to eight times the average monthly remuneration; Workers' benefits may be affected | Pay on time, every time
+SLIDE Worked example | Base Kz 4,800,000 for 12 workers; Employee 3% = Kz 144,000, employer 8% = Kz 384,000; Total Kz 528,000 by the 10th | Two lines on the payroll summary
+SLIDE Common mistakes | Not registering new workers; Using base salary only; Forgetting the employer share in budgets; Paying without the remuneration sheet | Register, calculate, declare, pay
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the employer's duty to register itself and its workers with the INSS;
+- calculate employee and employer social security contributions on the correct base;
+- prepare the monthly remuneration sheet and payment by the deadline;
+- estimate the cost of paying contributions late.
+
+## Key terms
+
+::: terms
+Social security: the public system that protects workers through pensions and other benefits, funded by contributions
+Contribution base: the remuneration on which contribution rates are calculated
+Employee contribution: the share deducted from the worker's pay
+Employer contribution: the share the company pays on top of gross pay
+Remuneration sheet (folha de remunerações): the monthly list of workers and their remuneration sent to the INSS
+Default interest: interest charged when contributions are paid after the deadline
+:::
+
+## 1. Registration and rates
+
+Every employer must register with the INSS and register each worker it hires, so that contributions are credited to the right person. A worker who is not registered may lose benefits even if money was deducted from his pay. Make INSS registration part of the onboarding checklist, together with the contract and the NIF.
+
+The rules are set by Presidential Decree n.º 227/18, of 27 September. The rates in force are:
+
+- Employee: 3% of the contribution base, deducted from pay.
+- Employer: 8% of the contribution base, paid by the company.
+- Total: 11%.
+
+A law-firm summary of the decree notes that retired workers who continue to work contribute 8%, with the employer also paying 8%.
+
+In 2025 the press reported proposals to raise the rates to 5% for employees and 10% for employers. In mid-2025 the INSS confirmed that this increase was not yet in force. Apply the published decree until a new one appears in the Diário da República.
+
+::: tip | Check the current law
+The 3% and 8% rates come from Decree n.º 227/18 and were still reported as in force in 2025–2026. Check the INSS website for any new decree before each new year.
+:::
+
+## 2. The contribution base
+
+The base is the worker's gross remuneration, including cash supplements and benefits in kind converted to their cash value. The decree excludes some items. A law-firm summary lists family allowance, holiday payments and complementary social protection. Because exclusions matter, keep a copy of the decree's list next to your payroll settings and review each new pay element against it.
+
+Method: for each worker, add all remuneration items, remove excluded items, and multiply the result by 3% (employee) and 8% (employer).
+
+::: quiz
+? A worker's contribution base is Kz 250,000. What are the employee and employer contributions?
+- Kz 2,500 and Kz 8,000 || These use 1% and about 3%, not the rates in force.
+* Kz 7,500 and Kz 20,000 || Correct: 3% x 250,000 and 8% x 250,000.
+- Kz 20,000 and Kz 7,500 || The rates are reversed: the employee pays 3%, the employer 8%.
+:::
+
+## 3. The monthly contribution cycle
+
+Contributions follow the same cycle every month.
+
+::: slides
+SLIDE Step 1: Register | New employer and new workers before or at hiring | No registration, no credit
+SLIDE Step 2: Calculate | Base x 3% and base x 8% for each worker | Use the payroll system
+SLIDE Step 3: Declare | Send the remuneration sheet to the INSS | Names, numbers and pay must match payroll
+SLIDE Step 4: Pay | By the 10th day of the following month | Same deadline as the sheet
+SLIDE Step 5: Reconcile | Payroll totals vs sheet vs bank payment | Investigate any difference
+:::
+
+The decree sets payment by the 10th day of the month after the month the contributions relate to, and a 2026 law-firm labour bulletin confirms that the remuneration sheet and payment are both due by the 10th. The same bulletin notes that companies with more than 20 employees must file contributions electronically. Family allowance paid under Presidential Decree n.º 95/26 must also be shown on the monthly payslip.
+
+::: diagram cycle | INSS contribution cycle
+Register: employer and every new worker
+Calculate: 3% employee and 8% employer on the base
+Declare: remuneration sheet to the INSS
+Pay: by the 10th of the following month
+Reconcile: payroll, sheet and bank must agree
+:::
+
+Late payment is expensive. According to the summary of Decree n.º 227/18, default interest is 1% per month on the debt, and administrative fines range from one to eight times the average monthly remuneration.
+
+::: quiz
+? Contributions for March are due. By which date must they be paid?
+- 31 March || Contributions are paid in the month after the month they relate to.
+* 10 April || Correct. The deadline is the 10th of the following month.
+- 30 April || The end of the following month is the IRT deadline, not the INSS deadline.
+:::
+
+## Worked example: a bakery in Huambo
+
+A bakery in Huambo has 12 workers. The February contribution base, after removing excluded items, is Kz 4,800,000. Employee contributions are 3% x 4,800,000 = Kz 144,000, deducted from pay. Employer contributions are 8% x 4,800,000 = Kz 384,000, a cost to the bakery. The total to pay with the remuneration sheet is Kz 528,000, due by 10 March. The owner considers paying two months late. At 1% default interest per month, interest would be about Kz 5,280 per month, around Kz 10,560 for two months, before any fine. The bookkeeper recommends paying on time and planning cash for the employer share in the monthly budget.
+
+::: case | A new baker without INSS registration
+The bakery hires a new baker on 15 February. The manager, Júlia, finds on 5 March that he was never registered with the INSS, but 3% was deducted from his February pay.
+? What should Júlia do first?
+- Refund the 3% and leave him off the sheet until April || He worked in February, so he must be declared and the employer share is still due.
+* Register him now and include him on the February remuneration sheet before the 10th || Correct. This credits his contributions and meets the deadline.
+- Keep the deduction and register him at the end of the year || The deduction is already a debt to the INSS and he risks losing benefits.
+- Ask the baker to register himself and pay his own share || Registration and payment of both shares are the employer's duty.
+:::
+
+## Tool: monthly INSS checklist
+
+- New workers this month registered with the INSS (names and numbers):
+- Leavers removed with correct last pay date:
+- New pay elements checked against the exclusion list:
+- Contribution base total:
+- Employee 3% total and employer 8% total:
+- Remuneration sheet submitted (date):
+- Payment made (date, amount, reference):
+- Reconciliation: payroll = sheet = bank (signed by reviewer):
+
+## Common mistakes
+
+- Hiring workers without registering them with the INSS.
+- Calculating contributions on base salary only and leaving out supplements.
+- Forgetting the 8% employer cost in budgets and quotations.
+- Paying without submitting the remuneration sheet, or the reverse.
+
+## Self-check
+
+- What are the employee and employer rates under Decree n.º 227/18? (Answer: 3% and 8%.)
+- What is the deadline for paying contributions? (Answer: the 10th of the following month.)
+- What happens if contributions are paid late? (Answer: default interest of 1% per month and possible fines.)
+
+## Practical assignment
+
+Take last month's payroll. Recalculate employee and employer contributions for five workers, and check that the totals match the remuneration sheet and the bank payment.
+
+## Summary
+
+- Register the company and every worker. Contributions are 3% from the employee and 8% from the employer.
+- The base is gross remuneration minus the items the decree excludes.
+- Declare and pay by the 10th of the following month and reconcile every month.
+=== 20
+SLIDE What you will learn | Follow the eight-step gross-to-net method; Build a complete payslip; Calculate the employer's total cost; Reconcile payroll totals to payments | A payroll you can explain line by line
+SLIDE Step 1 to 3 | Collect inputs: attendance, overtime, hires, leavers; Calculate gross pay item by item; Calculate employee INSS at 3% | Inputs first, then gross
+SLIDE Step 4 to 6 | Calculate taxable income and IRT; Apply other authorised deductions; Calculate net pay | Gross - deductions = net
+SLIDE Step 7 and 8 | Calculate employer cost: gross + 8% INSS; Issue payslips and reconcile totals | Cost is more than gross
+SLIDE Example payslip | Gross Kz 480,000, INSS Kz 14,400; Taxable Kz 435,600, IRT Kz 75,014; Advance Kz 25,000, net Kz 365,586 | Every line traceable
+SLIDE Gross-to-net reconciliation | Total gross - total deductions = total net; Total net = bank transfer file; IRT and INSS totals = amounts to deliver | If totals do not agree, do not pay
+SLIDE Common mistakes | Late or missing inputs; Deducting without authorisation; Ignoring employer cost; Paying before reconciling | Cut-off, calculate, check, pay
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- apply the eight-step gross-to-net method to a monthly payroll;
+- build a complete payslip with earnings, deductions and net pay;
+- calculate the employer's total cost of an employee;
+- reconcile payroll totals to the bank file and to the amounts due to AGT and INSS.
+
+## Key terms
+
+::: terms
+Payroll input: any data that changes pay this month, such as overtime, absences, hires and leavers
+Cut-off date: the last day inputs are accepted for this month's payroll
+Gross pay: total earnings before any deduction
+Net pay: the amount transferred to the employee after all deductions
+Employer cost: gross pay plus the employer's social security contribution
+Gross-to-net reconciliation: a check that payroll totals agree with each other and with payments
+:::
+
+## 1. The eight-step gross-to-net method
+
+A reliable payroll follows the same sequence every month. Each step uses the result of the step before, so the order matters.
+
+- Step 1. Collect inputs before the cut-off date: attendance, approved overtime, absences, new hires, leavers, salary changes and advances.
+- Step 2. Calculate gross pay item by item: base salary, overtime, allowances, bonuses and benefits in kind.
+- Step 3. Calculate the employee INSS contribution: 3% of the contribution base.
+- Step 4. Calculate taxable income and IRT with the table method (lesson 2).
+- Step 5. Apply other deductions the employee has authorised in writing or that the law requires, such as repayment of a salary advance.
+- Step 6. Calculate net pay: gross pay minus all deductions.
+- Step 7. Calculate employer cost: gross pay plus 8% employer INSS.
+- Step 8. Issue payslips and reconcile totals before payment.
+
+Overtime and absence rules come from the Lei Geral do Trabalho and any collective agreement. Keep the rates your company applies in a written payroll policy, approved by HR, so every clerk calculates them the same way.
+
+::: diagram steps | Gross to net
+Inputs: attendance, overtime, hires, leavers, advances
+Gross pay: all earnings item by item
+Employee INSS: 3% of the contribution base
+IRT: table applied to taxable income
+Other deductions: authorised or legally required
+Net pay: gross minus deductions
+Employer cost: gross plus 8% INSS
+:::
+
+::: quiz
+? Why must the employee INSS be calculated before IRT?
+- Because INSS is paid to the State first || The payment order does not matter here.
+* Because the employee INSS is deducted to find taxable income for IRT || Correct. IRT depends on the INSS result.
+- Because the INSS rate is higher than the IRT rate || The order comes from the formula, not the size of the rates.
+:::
+
+## 2. Building a full payslip
+
+The worked example below shows a complete payslip. Use the slides to follow it line by line.
+
+::: slides
+SLIDE Earnings | Base salary Kz 400,000, overtime Kz 50,000; Meal allowance Kz 20,000, transport allowance Kz 10,000 | Gross pay Kz 480,000
+SLIDE Employee INSS | 3% x 480,000 = Kz 14,400 | Allowances included in the base in this example
+SLIDE Taxable income | 480,000 - 30,000 non-taxable allowances - 14,400 INSS | Kz 435,600
+SLIDE IRT | Bracket Kz 300,000 to 500,000, 49,250 + 19% x 135,600 | IRT Kz 75,014
+SLIDE Net pay and cost | Net = 480,000 - 14,400 - 75,014 - 25,000 advance = Kz 365,586; Employer cost = 480,000 + 38,400 = Kz 518,400 | Two totals every manager needs
+:::
+
+The two allowances together total Kz 30,000, so they are fully non-taxable whether the limit is read per allowance or combined. If they were higher, only the excess would be taxed.
+
+::: tip | Check the current law
+This payslip uses the 2026 IRT table, the Kz 30,000 allowance limit and INSS rates of 3% and 8%. Confirm each one on the AGT and INSS websites before you use the example as a template.
+:::
+
+## 3. Reconcile before you pay
+
+The gross-to-net reconciliation catches most payroll errors before money leaves the bank. Check four equations:
+
+- Total gross pay - total deductions = total net pay.
+- Total net pay = total of the bank transfer file.
+- Total IRT withheld = IRT payable to the AGT this month.
+- Total employee INSS + employer INSS = amount on the remuneration sheet.
+
+Then compare this month with last month. Every change above a set threshold (for example 5% of total net pay, or any individual change above Kz 100,000) needs an explanation: a new hire, a leaver, a salary increase or overtime.
+
+::: quiz
+? Total net pay on the payroll report is Kz 18,640,000 but the bank file totals Kz 18,890,000. What should the clerk do?
+- Pay the bank file, because the bank total is usually correct || A difference means someone may be overpaid or missing.
+- Adjust the payroll report to match the bank file || Forcing totals to agree hides the error.
+* Stop and find the Kz 250,000 difference before payment || Correct. Payroll is not paid until the totals agree.
+:::
+
+## Worked example: a sales representative at a Luanda food distributor
+
+A food distributor in Luanda pays a sales representative a base salary of Kz 400,000, overtime of Kz 50,000 for approved Saturday deliveries, a meal allowance of Kz 20,000 and a transport allowance of Kz 10,000. He received a salary advance of Kz 50,000 last month, repaid in two instalments as he agreed in writing. The payslip shows gross pay of Kz 480,000. Deductions are INSS Kz 14,400, IRT Kz 75,014 and advance repayment Kz 25,000, a total of Kz 114,414. Net pay is Kz 365,586. The company also pays employer INSS of Kz 38,400, so his monthly cost is Kz 518,400, about 8% more than gross pay. The finance manager uses employer cost, not gross pay, in the sales budget.
+
+::: case | Overtime arrives after cut-off
+Cut-off is the 20th. On the 26th, the sales supervisor sends overtime for six drivers, Kz 310,000 in total, and asks the payroll clerk, Nelson, to add it before payment on the 28th. The payroll has already been reviewed and approved.
+? What should Nelson do?
+- Add it quietly, because the drivers worked the hours || Changing an approved payroll without review breaks the control.
+* Follow the late-input procedure: get written approval, recalculate, and repeat the review and reconciliation || Correct. Late inputs can be accepted only with approval and a full re-check.
+- Refuse and tell the supervisor the drivers will never be paid || The hours are owed. They can be paid in a later run if not approved now.
+- Pay the overtime in cash outside payroll || Cash outside payroll skips IRT and INSS and creates a compliance risk.
+:::
+
+## Tool: payslip checklist
+
+- Employee name, NIF, INSS number, job title and period:
+- Earnings by item (base, overtime, allowances, bonus, benefits in kind):
+- Gross pay:
+- Employee INSS (3%) and base used:
+- Taxable income and IRT:
+- Other deductions with authorisation reference:
+- Net pay and bank account:
+- Family allowance shown with its reference, where paid:
+- Employer INSS (8%) and total employer cost (internal report):
+
+## Common mistakes
+
+- Accepting inputs after cut-off without approval and re-checking.
+- Deducting amounts the employee has not authorised.
+- Budgeting with gross pay instead of employer cost.
+- Paying before the gross-to-net reconciliation is complete.
+
+## Self-check
+
+- What is step 7 of the gross-to-net method? (Answer: calculate employer cost, gross pay plus 8% INSS.)
+- Total gross is Kz 2,000,000 and total deductions are Kz 380,000. What must total net be? (Answer: Kz 1,620,000.)
+- Why compare payroll with last month? (Answer: to detect and explain unusual changes before payment.)
+
+## Practical assignment
+
+Choose one payslip from your company. Rebuild it with the payslip checklist and the eight steps, then run the four reconciliation equations on last month's payroll totals.
+
+## Summary
+
+- Follow eight steps in order: inputs, gross, INSS, IRT, other deductions, net, employer cost, reconcile.
+- Every payslip line must be traceable to an input, a rule or an authorisation.
+- Never pay until gross, deductions, net, bank file and tax totals agree.
+=== 20
+SLIDE What you will learn | Explain how IVA taxes value added at each stage; Choose the correct rate and regime; Calculate IVA payable from output and input IVA; Check that invoices support deduction | IVA from invoice to return
+SLIDE How IVA works | Charged on sales of goods and services; Each business pays only on the value it adds; The final consumer bears the full tax | Output - input = IVA payable
+SLIDE Rates | Standard rate 14%; 5% on food and agricultural inputs listed in the code's tables; 7% on some hotel and restaurant services, with conditions | Check the product before you invoice
+SLIDE Regimes | General regime: turnover or imports above Kz 350 million; Simplified regime: Kz 25 million to 350 million; Regime decides how IVA is calculated | Know your company's regime
+SLIDE Input IVA rules | Valid invoice with the company's correct NIF; Purchase linked to taxable activity; Exempt sales give no right to deduct | No valid invoice, no deduction
+SLIDE Worked example | Output 14% x 12,000,000 = Kz 1,680,000; Valid input Kz 910,000; IVA payable Kz 770,000 | One faulty invoice cost Kz 70,000
+SLIDE Common mistakes | Deducting IVA without a valid invoice; Wrong rate on products; Treating IVA collected as revenue; Late invoices | Invoice right, deduct right
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain how IVA taxes the value added at each stage of a supply chain;
+- choose the correct IVA rate and identify the company's regime;
+- calculate IVA payable from output IVA and deductible input IVA;
+- check that a purchase invoice supports a deduction.
+
+## Key terms
+
+::: terms
+IVA: Imposto sobre o Valor Acrescentado, Angola's value added tax on goods and services
+Output IVA: IVA the company charges on its sales
+Input IVA: IVA the company pays on its purchases
+IVA payable: output IVA minus deductible input IVA for the period
+Exempt supply: a sale on which no IVA is charged and for which input IVA cannot be deducted
+Periodic return: the monthly declaration of output and input IVA sent to the AGT
+:::
+
+## 1. How IVA works: the credit method
+
+IVA is a tax on consumption. Each business in the chain charges IVA on its sales (output IVA), deducts the IVA it paid on its purchases (input IVA) and pays the difference to the AGT. This is the credit method: IVA payable = output IVA - input IVA. If input is higher than output, the company has a credit.
+
+The result is that each business pays tax only on the value it adds, and the final consumer bears the full tax. For the business, IVA collected is not revenue: it is money owed to the State, and input IVA is not a cost when it can be deducted.
+
+::: diagram steps | IVA along a supply chain (standard rate 14%)
+Importer sells for Kz 100,000 + 14,000 IVA: pays Kz 14,000
+Distributor sells for Kz 150,000 + 21,000 IVA: pays 21,000 - 14,000 = Kz 7,000
+Retailer sells for Kz 200,000 + 28,000 IVA: pays 28,000 - 21,000 = Kz 7,000
+Consumer pays Kz 228,000: bears all Kz 28,000, which is 14% of Kz 200,000
+:::
+
+The importer in the chain also paid IVA at customs on import, which it deducts in the same way. The principle is the same at every stage.
+
+::: quiz
+? A distributor charges Kz 2,100,000 output IVA and has Kz 1,400,000 of deductible input IVA in the month. What is the position?
+- A credit of Kz 700,000 || A credit arises only when input is higher than output.
+* Kz 700,000 payable to the AGT || Correct: 2,100,000 - 1,400,000.
+- Kz 2,100,000 payable, because input IVA is a cost || Deductible input IVA reduces the amount payable.
+:::
+
+## 2. Rates and regimes
+
+According to the PwC Angola tax summary (reviewed June 2026), the main rates are:
+
+- Standard rate: 14%.
+- 5% on food and agricultural inputs listed in Tables I and II of the IVA Code.
+- 7% on certain hotel and restaurant services, subject to conditions.
+- Special rates of 1% and 2% for some operations in Cabinda.
+
+The 2026 budget law also allows a 5% rate on the import of industrial equipment, on request and with AGT approval, and exempts transactions made through payment platforms and instant mobile transfers authorised by the BNA.
+
+The regime decides how IVA is calculated. The general regime applies to entities with annual turnover or imports above Kz 350 million. The simplified regime covers turnover or imports between Kz 25 million and Kz 350 million, with its own calculation. When turnover passes a threshold, the 2026 budget law requires the company to change regime by the end of the month after the triggering operation. Your accountant must confirm which regime applies.
+
+::: tip | Check the current law
+IVA rates, product tables and regime thresholds change through budget laws. Check the IVA Code and the AGT site before you set up a product rate in your billing system.
+:::
+
+## 3. Invoices and the right to deduct
+
+Input IVA is deductible only when it is supported by a valid invoice and linked to the company's taxable activity.
+
+::: slides
+SLIDE Check 1: Supplier details | Name, address and NIF of the supplier | A real, registered supplier
+SLIDE Check 2: Buyer details | Your company's exact name and NIF | Wrong NIF, no deduction
+SLIDE Check 3: Amounts and rate | Price, IVA rate and IVA amount shown separately | The rate must suit the product
+SLIDE Check 4: Business purpose | Purchase used for taxable sales | Exempt activity gives no deduction
+:::
+
+Invoices must be issued on time. The PwC summary notes a fine of 0.2% of the value of each invoice issued late, and fines of 7% or 15% of the invoice value for invoices left out of the SAF-T file sent to the AGT. Good invoicing protects both the seller and the buyer.
+
+::: quiz
+? A supplier invoice shows IVA of Kz 70,000 but the buyer's NIF is wrong. What should the accounts clerk do?
+- Deduct it, because the IVA was paid || Without a valid invoice the deduction can be rejected in an audit.
+- Record the IVA as a cost and forget it || The company may recover it once the invoice is corrected.
+* Hold the deduction and ask the supplier for a corrected invoice || Correct. Deduct only when the invoice is valid.
+:::
+
+## Worked example: a hardware distributor in Luanda
+
+A hardware distributor in Cazenga, Luanda, is in the general regime and sells only standard-rated goods. In June its sales are Kz 12,000,000 before IVA, so output IVA is 14% x 12,000,000 = Kz 1,680,000. Purchases from local suppliers total Kz 7,000,000 before IVA, with Kz 980,000 of IVA. One invoice of Kz 500,000 (IVA Kz 70,000) shows another company's NIF, so the accountant excludes it until corrected. Deductible input IVA is Kz 910,000. IVA payable for June = 1,680,000 - 910,000 = Kz 770,000. The faulty invoice costs the company Kz 70,000 of cash this month until it is fixed.
+
+::: case | A large customer asks for "no IVA"
+A building contractor offers to buy Kz 3,000,000 of materials from the hardware distributor if the sales manager, Carla, issues the invoice "without IVA" and gives a 5% discount.
+? What should Carla do?
+- Accept, because the customer is large and pays cash || Leaving out IVA on a taxable sale is illegal, and the distributor still owes the tax.
+- Issue an invoice without IVA but record IVA in the accounts || The invoice and the accounts would not match, which an audit will detect.
+* Refuse to remove IVA and, if needed, negotiate the price before IVA || Correct. IVA at 14% must be charged, and commercial terms are negotiated on the net price.
+- Ask the customer to pay the IVA later in cash || IVA must appear on the invoice when the sale is made.
+:::
+
+## Tool: monthly IVA review checklist
+
+- Company regime confirmed (general or simplified):
+- Sales invoices issued on time and included in SAF-T:
+- Rate on each product checked against the IVA Code tables:
+- Output IVA total:
+- Purchase invoices checked (supplier NIF, our NIF, IVA shown, business purpose):
+- Invoices held back pending correction:
+- Deductible input IVA total:
+- IVA payable or credit, and return submission date:
+
+## Common mistakes
+
+- Deducting input IVA without a valid invoice in the company's name and NIF.
+- Applying 14% to products in the reduced-rate tables, or the reverse.
+- Treating IVA collected as sales revenue in management reports.
+- Issuing invoices late or leaving them out of the SAF-T file.
+
+## Self-check
+
+- What is the formula for IVA payable? (Answer: output IVA minus deductible input IVA.)
+- What is the standard IVA rate in Angola? (Answer: 14%.)
+- Who bears the full IVA in a supply chain? (Answer: the final consumer.)
+
+## Practical assignment
+
+Take ten purchase invoices from last month. Check each one with the four invoice checks, and list any that should not have been deducted.
+
+## Summary
+
+- IVA payable = output IVA - input IVA, so each business pays only on the value it adds.
+- The standard rate is 14%, with reduced rates for listed goods and services. Know your regime.
+- Deduct input IVA only with a valid invoice that shows your company's correct NIF.
+=== 20
+SLIDE What you will learn | Build a monthly and annual compliance calendar; Keep payroll and tax records that pass an audit; Estimate the cost of late payment; Design payroll controls | Compliance as a routine, not a crisis
+SLIDE Monthly deadlines | INSS remuneration sheet and payment: 10th of the following month; IRT withheld: end of the month after payment; IVA periodic return: monthly, check the AGT calendar | Put every date in one calendar
+SLIDE Annual deadlines | Modelo 2 employer IRT return: in February; Annual review of tables and rates in January; Other annual filings: check the current year's calendar | Plan January and February early
+SLIDE Penalties | Non-delivery of withheld IRT: fine equal to the amount not delivered (2026); INSS: 1% default interest per month plus fines; Late invoices: 0.2% of each invoice | Late costs more than early
+SLIDE Payroll controls | Segregation of duties; Maker-checker review; Master data change control; Variance analysis and headcount reconciliation | Four controls stop most errors and fraud
+SLIDE Records | Contracts, NIF and INSS numbers; Inputs, approvals and payslips; Returns, payment proofs and reconciliations | If it is not recorded, it did not happen
+SLIDE Common mistakes | Relying on memory for deadlines; One person doing everything; No proof of payment kept; No month-on-month check | Calendar, controls, records
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- build a monthly and annual compliance calendar for payroll and IVA;
+- keep payroll and tax records that support an audit;
+- estimate the cost of late delivery of IRT and INSS;
+- apply four payroll controls: segregation of duties, maker-checker review, master data control and variance analysis.
+
+## Key terms
+
+::: terms
+Compliance calendar: a list of every filing and payment deadline with owner and status
+Segregation of duties: splitting a process so no single person can prepare, approve and pay
+Maker-checker: a control in which one person prepares and a second person reviews before approval
+Master data: permanent employee data such as salary, bank account, NIF and INSS number
+Variance analysis: comparing this month with last month and explaining significant changes
+Ghost employee: a fictitious or departed person still being paid
+:::
+
+## 1. The compliance calendar
+
+Missed deadlines usually come from relying on memory. A compliance calendar lists every obligation, its legal source, its owner and its status. The verified deadlines in this course are:
+
+- INSS: remuneration sheet and payment by the 10th of the month following the month of pay (Decree n.º 227/18).
+- IRT Group A: withheld tax delivered to the AGT by the end of the month following payment (IRT Code, article 11).
+- IVA: monthly periodic return and payment. Take the exact date from the current AGT tax calendar.
+- Modelo 2: the employer's annual IRT declaration, filed in February for the previous year (IRT Code, article 12).
+
+Add company-specific items: the payroll cut-off date, the January update of tax tables, and any annual labour filings your lawyer confirms. A 2026 law-firm bulletin, for example, listed the submission of salary records to the labour inspectorate by the end of June.
+
+::: diagram cycle | Monthly payroll compliance cycle
+Cut-off: inputs approved by the set date
+Calculate: gross to net, IRT and INSS
+Review: maker-checker and variance analysis
+Approve and pay: net pay to employees
+Deliver: INSS by the 10th, IRT by month end
+Reconcile and file: proofs, ledgers and records
+:::
+
+::: quiz
+? February salaries are paid on 27 February. By when must the withheld IRT reach the AGT?
+- 10 March || The 10th of the following month is the INSS deadline.
+- 28 February || IRT is delivered in the month after payment.
+* 31 March || Correct. IRT is due by the end of the month following payment.
+:::
+
+## 2. Penalties for late or missing delivery
+
+Penalties make late compliance expensive. Verified examples from professional sources:
+
+- IRT: under the 2026 budget law, failing to deliver withheld IRT, or delivering less, carries a fine equal to the amount not delivered, and criminal proceedings may apply.
+- INSS: default interest of 1% per month on the debt, and administrative fines from one to eight times the average monthly remuneration.
+- Invoices: 0.2% of the value of each invoice issued late.
+
+Example: a company withholds Kz 1,200,000 of IRT and does not deliver it. The fine alone can equal Kz 1,200,000, so the company may pay Kz 2,400,000 for a debt of Kz 1,200,000, plus any interest.
+
+::: tip | Check the current law
+Penalty levels and deadlines were checked in 2025–2026 sources and can change through budget laws or the new IRPS code. Confirm on the AGT and INSS websites and with a qualified accountant.
+:::
+
+## 3. Four payroll controls
+
+Payroll is a common target for error and fraud because it moves large amounts every month. Four controls prevent most problems.
+
+::: slides
+SLIDE Control 1: Segregation of duties | HR changes master data, payroll calculates, finance approves and pays | No one person controls the whole process
+SLIDE Control 2: Maker-checker | A second person reviews the payroll before approval | Review the calculation, not just the total
+SLIDE Control 3: Master data change control | Salary or bank changes need a signed form and approval | Most payroll fraud starts in master data
+SLIDE Control 4: Variance analysis and headcount check | Compare with last month, and match HR list, payroll and INSS sheet | Every change needs a reason
+:::
+
+Variance analysis in practice: last month total net pay was Kz 18,200,000 and this month it is Kz 19,650,000, an increase of Kz 1,450,000 (8.0%). The clerk must explain the change, for example two new hires, one promotion and Saturday overtime. A headcount check matches three lists: HR active staff, payroll and the INSS remuneration sheet. A name on payroll but not in HR is a possible ghost employee.
+
+::: quiz
+? The payroll list has 64 names, HR shows 63 active staff and the INSS sheet has 63 workers. What is the first step?
+- Pay all 64, then check next month || Paying first risks paying a ghost employee.
+* Identify the extra name and confirm with HR whether the person is still employed || Correct. The difference must be explained before payment.
+- Add the extra person to the INSS sheet || This would declare a person who may not be an employee.
+:::
+
+## Worked example: closing the year at a construction company in Benguela
+
+A construction company in Benguela has 140 workers. In January the payroll supervisor updates the calendar: Modelo 2 for the previous year is due in February, so she reconciles total annual IRT withheld from payroll to the twelve monthly payment proofs. She finds that October IRT, Kz 2,350,000, was paid on 5 December, after the 30 November deadline, and reports it to the finance director for regularisation with the AGT. She also checks that each monthly INSS payment matches the remuneration sheet. Finally, she downloads the 2026 IRT table, updates the payroll system, tests three payslips and keeps the test file as evidence.
+
+::: case | A bank account change by email
+On the 24th, the payroll clerk at the Benguela company, Mateus, receives an email from a site engineer asking to change his salary bank account before payment on the 27th.
+? What should Mateus do?
+- Change the account so the engineer is paid on time || Email requests are a common fraud method, and no approval was given.
+- Ignore the email until next year || A real request must still be handled through the proper process.
+* Ask for the signed change form, confirm by phone with the engineer and get approval before updating || Correct. Master data changes need verification and approval.
+- Pay this month's salary in cash to be safe || Cash payments outside the process create new risks.
+:::
+
+## Tool: payroll compliance calendar and control log
+
+- Obligation, legal source and deadline:
+- Owner and reviewer:
+- Date filed or paid, and proof reference:
+- Monthly variance explanation (above threshold):
+- Headcount check: HR, payroll and INSS totals:
+- Master data changes this month, with approvals:
+- Tables and rates last checked on AGT and INSS sites (date):
+
+## Common mistakes
+
+- Relying on memory instead of a written calendar.
+- Letting one person change master data, run payroll and release payment.
+- Keeping no proof of tax and contribution payments.
+- Paying without a month-on-month variance check.
+
+## Self-check
+
+- What is the deadline for the employer's Modelo 2 return? (Answer: February, for the previous year.)
+- What is maker-checker? (Answer: one person prepares, a second person reviews before approval.)
+- Which three lists are matched in a headcount check? (Answer: HR active staff, payroll and the INSS remuneration sheet.)
+
+## Practical assignment
+
+Build your company's compliance calendar for the next three months with owners and deadlines. Then run a headcount check on this month's payroll and record the result.
+
+## Summary
+
+- Put every deadline in one calendar: INSS by the 10th, IRT by the end of the following month, IVA monthly, Modelo 2 in February.
+- Late delivery is costly: fines, interest and possible criminal liability.
+- Segregation of duties, maker-checker, master data control and variance analysis prevent most payroll errors and fraud.

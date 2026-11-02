@@ -1,0 +1,787 @@
+=== 20
+SLIDE What you will learn | Explain what internal control is and its three objectives; Name and apply the five COSO components; Describe the roles in the IIA Three Lines Model; Use the fraud triangle to see why controls matter | Internal control is everyone's job
+SLIDE What internal control is | A process run by the board, management and staff; Gives reasonable assurance, never absolute assurance; Objectives: operations, reporting, compliance | Controls make losses unlikely, not impossible
+SLIDE The five COSO components | Control environment; Risk assessment; Control activities; Information and communication; Monitoring activities | All five must be present and work together
+SLIDE The control environment | Tone at the top and ethical values; Clear structure, authority and responsibility; Competent people held accountable | Weak tone at the top defeats good procedures
+SLIDE The Three Lines Model | Governing body: oversight and accountability; Management: first-line roles own risk, second-line roles support and challenge; Internal audit: independent assurance and advice | Lines are roles, not boxes on an organisation chart
+SLIDE The fraud triangle | Pressure: a financial or personal need; Opportunity: a weak or missing control; Rationalisation: a story that makes it feel acceptable | Controls remove the opportunity
+SLIDE Common mistakes | Thinking controls are the auditors' job; Expecting zero risk; Ignoring the control environment; Letting auditors run controls | Management owns controls, audit gives assurance
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what internal control is and the three groups of objectives it serves;
+- name and apply the five components of the COSO Internal Control – Integrated Framework;
+- describe the roles of the governing body, management and internal audit in the IIA Three Lines Model;
+- use the fraud triangle to explain why controls reduce the risk of fraud.
+
+## Key terms
+
+::: terms
+Internal control: a process carried out by the board, management and staff to give reasonable assurance that objectives will be achieved
+Reasonable assurance: a high but not absolute level of confidence, because any control can fail or be bypassed
+Control activity: a specific action, such as an approval or a reconciliation, that reduces a risk
+Fraud: an intentional act to obtain an unfair or illegal gain, usually by deception or concealment
+:::
+
+## 1. What internal control is and why it matters
+
+Every company faces risks: stock that disappears, a supplier paid twice, a report that overstates revenue, a regulatory penalty. Internal control is how an organisation manages these risks every day. It is not a department or a file of procedures, but a process run by people at every level.
+
+The most widely used framework comes from COSO, the Committee of Sponsoring Organizations of the Treadway Commission. Its Internal Control – Integrated Framework was first published in 1992 and updated in 2013. COSO groups the objectives of internal control into three categories:
+
+- Operations: effective and efficient use of resources, including protecting assets such as cash and stock.
+- Reporting: reliable financial and non-financial reports for management, shareholders, banks and tax authorities.
+- Compliance: following the laws, regulations and contracts that apply to the business.
+
+Notice the words "reasonable assurance". People make mistakes, employees can collude and managers can override rules, so controls make losses unlikely but never impossible. Controls also cost money: always ask whether the benefit justifies the cost.
+
+::: quiz
+? A sales director says: "Our controls are so strong that fraud is impossible here." What is wrong with this statement?
+- Nothing, strong controls remove all risk || No control system removes all risk.
+* Controls give reasonable assurance, not absolute assurance || Correct. Controls can always fail or be bypassed.
+- Fraud prevention is only the auditors' responsibility || Management owns the controls. Auditors give assurance.
+:::
+
+## 2. The five COSO components
+
+COSO says effective internal control needs five components, all present and working together. The 2013 update supports them with 17 principles, such as commitment to integrity and ethical values, and considering the potential for fraud when assessing risk.
+
+::: diagram steps | The five COSO components
+Control environment: tone at the top, ethics, structure, competence and accountability
+Risk assessment: identify and analyse risks to objectives, including fraud risk and change
+Control activities: approvals, reconciliations, segregation of duties and system controls
+Information and communication: quality information reaches the right people on time
+Monitoring activities: ongoing checks and separate evaluations, with weaknesses reported and fixed
+:::
+
+The control environment is the foundation: if the general manager ignores the rules, staff will too. You cannot choose controls before you know what could go wrong, and monitoring checks that controls keep working as people and systems change. Use the components to review any process:
+
+::: slides
+SLIDE Step 1: Name the objective | What must this process achieve?; Example: pay only valid supplier invoices, once, at the right amount | Controls exist to protect objectives
+SLIDE Step 2: List what could go wrong | Fake supplier; Duplicate payment; Wrong price or quantity | Think like a fraudster and like a tired clerk
+SLIDE Step 3: Match each risk to a control | Second person approves new suppliers; System blocks duplicate invoice numbers; Three-way match before payment | One risk can need more than one control
+SLIDE Step 4: Check the other four components | Does management respect the rules?; Do people get the reports they need?; Who checks that the controls work? | A control activity alone is not enough
+:::
+
+::: quiz
+? At a distributor, the warehouse manager often skips the monthly stock count and the general manager never comments. Which COSO component is weakest?
+- Information and communication || The rule is known. Leadership tolerates breaking it.
+* Control environment || Correct. Accepting rule-breaking sets a weak tone at the top.
+- Risk assessment || The risk is understood. The weakness is attitude and accountability.
+- Monitoring activities || Monitoring suffers, but the root weakness is the tone at the top.
+:::
+
+## 3. The Three Lines Model and the fraud triangle
+
+The Institute of Internal Auditors (IIA) published the Three Lines Model in 2020, updating the earlier "three lines of defence". It describes roles, not departments:
+
+- Governing body (board and audit committee): accountable to stakeholders, sets direction and risk appetite, and protects internal audit's independence.
+- Management, first-line roles: sales, warehouse, accounts payable and others who deliver products and services. They own the risks and run daily controls.
+- Management, second-line roles: risk management, compliance, quality and HSE, giving expertise, monitoring and challenge.
+- Internal audit, third-line role: independent assurance and advice to the governing body. It reports functionally to the audit committee and does not run the controls it audits.
+
+External auditors and regulators add assurance from outside. The IIA also issues the Global Internal Audit Standards, which in general terms cover independence, objectivity, competence, and how audit work is planned, performed and reported.
+
+Why do controls matter for fraud? The criminologist Donald Cressey described three conditions usually present when a trusted employee commits fraud, now called the fraud triangle: pressure (a debt, an unrealistic target), opportunity (a weak or missing control) and rationalisation ("I will pay it back"). Management cannot remove all pressure, but it can remove opportunity.
+
+## Worked example: cash gaps at a Luanda branch
+
+A food distributor runs a cash-and-carry branch in Cazenga, Luanda. One cashier receives cash sales, records them, prepares the bank deposit and reconciles the bank. Over four months deposits are 4.8 million Kz lower than recorded sales. The cashier blames cash refunds.
+
+Using COSO: the branch manager never reviews the reconciliation and there is no refund rule (control environment), one person does every cash step (control activities), and head office compared totals only after four months (monitoring). The opportunity is clear. Pressure and rationalisation are unknown and must not be assumed.
+
+::: case | Cash differences at the Cazenga branch
+Finance manager Isabel has confirmed the 4.8 million Kz gap. The cashier does every cash task alone. The general manager asks what to do now.
+? What should Isabel recommend first?
+- Dismiss the cashier immediately || The facts are not known yet. The gap could come from errors or refunds.
+* Separate the cash duties now and ask for an independent review of the gap || Correct. This stops further loss and establishes facts before anyone is blamed.
+- Ask the cashier to write a report explaining the differences || The person questioned should not investigate their own work.
+- Wait for the external auditors at year end || The loss grows. Management owns the controls and must act now.
+:::
+
+## Tool: Internal control health check
+
+- Objective of the process written down and known by the team
+- Main risks listed, including fraud risks
+- Each key risk linked to at least one control, with an owner
+- Incompatible duties separated or compensated by review
+- Managers follow the same rules as staff
+- Reports reach the right person on time and are reviewed
+- Weaknesses recorded, with an action, owner and date
+
+## Common mistakes
+
+- Thinking controls are the job of finance or internal audit only.
+- Expecting controls to remove all risk instead of reducing it to an acceptable level.
+- Asking internal auditors to run daily controls, which destroys their independence.
+
+## Self-check
+
+- Name the five COSO components. (Answer: control environment, risk assessment, control activities, information and communication, monitoring activities.)
+- Which role in the Three Lines Model gives independent assurance to the board? (Answer: internal audit, the third-line role.)
+- Which side of the fraud triangle can management most directly reduce? (Answer: opportunity, by designing and running good controls.)
+
+## Practical assignment
+
+Choose one process in your department. Write its objective, list three things that could go wrong and the control covering each, and mark the weakest COSO component. Discuss it with your manager.
+
+## Summary
+
+- Internal control is a process run by people that gives reasonable assurance over operations, reporting and compliance.
+- COSO's five components must all be present and working, starting with a strong control environment.
+- In the Three Lines Model management owns risk and controls, while internal audit gives independent assurance.
+=== 20
+SLIDE What you will learn | Classify controls as preventive, detective, manual or automated; Apply segregation of duties to a process; Design an authorisation matrix; Write a complete control description | Good design comes before good testing
+SLIDE Preventive and detective controls | Preventive: stop the error before it happens; Detective: find it afterwards so it can be corrected; Strong processes use both | Prevent where you can, detect what slips through
+SLIDE Manual and automated controls | Manual: performed by a person, open to fatigue and override; Automated: performed by the system, consistent every time; IT-dependent manual: a person acts on a system report | Automate repetitive, high-volume checks
+SLIDE Segregation of duties | Separate authorising, holding assets, recording and reconciling; No one person controls a transaction from start to end; Use compensating controls in small teams | Two people are harder to fool than one
+SLIDE Authorisation matrix | Lists who can approve what, up to which amount; Built on risk and materiality; Must be enforced in the system | Thresholds invite splitting, so monitor them
+SLIDE Describing a control | Who performs it; What is checked and against what; When and how often; Evidence kept; What happens to exceptions | If it is not written, it cannot be tested
+SLIDE Common mistakes | Relying only on detective controls; Approvers who rubber-stamp; One user with too many system rights; No follow-up on exceptions | Design for the risk, not for the form
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- classify controls as preventive or detective and as manual, automated or IT-dependent manual;
+- apply segregation of duties and choose compensating controls;
+- design a simple authorisation matrix;
+- write a testable control description.
+
+## Key terms
+
+::: terms
+Preventive control: a control that stops an error or fraud before it happens, such as a system credit limit block
+Detective control: a control that finds an error or fraud after it happens, such as a bank reconciliation
+Segregation of duties: dividing incompatible tasks between different people so that no one person controls a whole transaction
+Compensating control: an extra control that reduces a risk when the normal control cannot be applied
+Authorisation matrix: a document that sets who may approve which transactions, and up to what amount
+:::
+
+## 1. Classifying controls
+
+First, classify by timing. A preventive control acts before the transaction is completed: the system refuses an order above the customer's credit limit, or a payment needs a second approval. A detective control acts afterwards: a bank reconciliation or a review of stock adjustments. Preventive controls usually cost less because they stop the loss, but detective controls remain essential because no preventive control is perfect. Some writers add corrective and directive controls, such as policies and training.
+
+Second, classify by method. A manual control is performed by a person, such as a supervisor signing a goods received note. It is flexible but open to fatigue and override. An automated control is performed by the system every time, such as an ERP rule blocking an invoice whose price differs from the order by more than 2%. It is consistent, but only as good as its configuration. An IT-dependent manual control is a person reviewing a system report, so it depends on both the review and the report.
+
+::: diagram matrix | Control types with examples | Timing (preventive → detective) | Method (manual → automated)
+Automated preventive: the system blocks a sale above the customer's credit limit
+Automated detective: a daily exception report lists possible duplicate payments
+Manual preventive: a manager signs the purchase order before it goes to the supplier
+Manual detective: the finance manager reviews and signs the monthly bank reconciliation
+:::
+
+::: quiz
+? Every morning the credit controller prints a system list of customers over their credit limit and calls each one. What type of control is this?
+- Automated preventive || The system blocks nothing. A person acts on a report.
+* IT-dependent manual and detective || Correct. A person reviews a system report after the event.
+- Manual preventive || The sales have already happened, so it detects.
+- Directive || A directive control is a policy, not a daily review.
+:::
+
+## 2. Segregation of duties
+
+Segregation of duties (SoD) means no one person controls a transaction from start to finish. Separate four types of task:
+
+- Authorising: approving a purchase, a payment, a credit note or a new supplier.
+- Custody: holding or handling the asset, such as cash, cheques or stock.
+- Recording: entering the transaction in the system or the books.
+- Reconciling and checking: comparing records with reality, such as bank reconciliations or stock counts.
+
+A person with two of these for the same asset can both commit and hide a fraud. A storekeeper who posts stock adjustments can remove goods and change the record. A clerk who creates suppliers and releases payments can pay a fake supplier.
+
+To check SoD, draw a grid with people across the top and tasks down the side, and look for anyone with two incompatible tasks. Also check ERP access rights, because what people can do in the system matters more than their job title. Where small teams cannot separate duties, use compensating controls: management review of detailed reports, compulsory leave, job rotation or surprise counts by head office.
+
+## 3. Authorisation matrices and control descriptions
+
+An authorisation matrix, or delegation of authority, says who can approve each transaction type and up to what amount. To build one:
+
+::: slides
+SLIDE Step 1: List transaction types | Purchase orders; Payments; Credit notes and discounts; New suppliers and bank detail changes | Cover every way money or stock can leave
+SLIDE Step 2: Set thresholds by risk | Example: supervisor up to 2 million Kz; Head of department up to 10 million Kz; Director above that | Higher risk, higher approver
+SLIDE Step 3: Add rules | Approvers cannot approve their own requests; Splitting a purchase to stay below a limit is forbidden; Deputies are named for absences | Rules stop the obvious workarounds
+SLIDE Step 4: Enforce and monitor | Configure limits in the ERP; Review a monthly report of orders just below thresholds; Update after every change of role | A matrix on paper only is not a control
+:::
+
+Thresholds create a red flag: split purchases, such as several orders just under a limit to one supplier on one day.
+
+Every key control also needs a clear description answering five questions: who performs it, what is checked and against what, when and how often, what evidence is kept, and what happens to exceptions. Weak: "Payments are reviewed." Strong: "Every Friday the finance manager compares each payment in the bank file with an approved invoice, signs the list and sends differences to the CFO before release."
+
+::: quiz
+? The authorisation matrix lets a branch manager approve orders up to 5 million Kz. You find orders of 4.9, 4.8 and 4.95 million Kz to one supplier on one day. What is the most likely issue?
+- The supplier has raised its prices || Prices do not explain three orders just under the limit.
+- The matrix thresholds are too high || The orders appear split to avoid the limit.
+* A purchase was split to stay below the approval limit || Correct. Together they total 14.65 million Kz, which needed a higher approver.
+- The branch manager has no authority to order || The manager may order up to 5 million Kz, but not split a larger purchase.
+:::
+
+## Worked example: a one-person stores function in Lobito
+
+A building materials distributor has a depot near Lobito port with a storekeeper, a sales clerk and a depot manager. The storekeeper receives and issues goods, keeps ERP stock records and does the monthly count: custody, recording and checking for one asset, a clear SoD conflict. Cement shows frequent negative adjustments, all posted by the storekeeper.
+
+::: case | Stock adjustments at the Lobito depot
+Auditor Teresa reports that the storekeeper received, recorded and counted all cement stock and posted 46 negative adjustments in three months. The depot manager says there is no budget for another storekeeper.
+? Which recommendation best fixes the design weakness?
+- Ask the storekeeper to be more careful with adjustments || Care does not remove the conflict of duties.
+- Hire an additional storekeeper immediately || There is no budget, so this is not practical.
+* Remove adjustment rights from the storekeeper, let the depot manager approve adjustments and run monthly counts with someone from head office || Correct. This separates custody from recording and checking at low cost.
+- Stop doing monthly stock counts to save time || This removes a detective control.
+:::
+
+## Tool: Control design checklist
+
+- Risk the control addresses:
+- Preventive or detective:
+- Manual, automated or IT-dependent manual:
+- Performer, and are they independent of the activity?
+- What is compared with what:
+- Frequency and timing:
+- Evidence kept and where:
+- Exception handling and escalation:
+- SoD conflicts checked, including system access:
+
+## Common mistakes
+
+- Relying only on detective controls when a cheap system block exists.
+- Approvers who sign without looking at documents.
+- Giving one system user rights to create suppliers and release payments.
+- Writing vague control descriptions that nobody can test.
+
+## Self-check
+
+- Is a monthly bank reconciliation preventive or detective? (Answer: detective, because it finds errors after the transactions.)
+- Name the four types of duty that segregation of duties separates. (Answer: authorising, custody, recording, and reconciling or checking.)
+- Three orders of 9.5 million Kz go to one supplier on one day, and the limit is 10 million Kz. What is the red flag? (Answer: a split purchase of 28.5 million Kz.)
+
+## Practical assignment
+
+Draw an SoD grid for one process you know and circle any conflicts. For each, propose a separation of duties or a compensating control, and write one full control description using the five questions.
+
+## Summary
+
+- Classify controls by timing (preventive or detective) and method (manual, automated or IT-dependent manual) and use a mix.
+- Segregate authorising, custody, recording and checking, or compensate in small teams.
+- Enforced authorisation matrices and clear descriptions make controls testable.
+=== 20
+SLIDE What you will learn | Describe key controls in procure-to-pay; Describe key controls in order-to-cash; Apply inventory and cash controls, including bank reconciliations; Recognise common fraud red flags | Know the process, then the risk, then the control
+SLIDE Procure-to-pay | Requisition, purchase order, goods receipt, invoice, payment; Three-way match before paying; Supplier master changes approved independently | Most payment fraud starts in the supplier master file
+SLIDE Order-to-cash | Customer set-up and credit limit, order, dispatch, invoice, receipt; Credit notes and discounts approved; Receipts matched to the right invoices | Revenue and cash must match what left the warehouse
+SLIDE Inventory | Controlled receipt and issue; Cycle counts with ABC focus; Adjustments approved by someone independent | Shrinkage = book stock minus counted stock
+SLIDE Cash and bank | Monthly bank reconciliation reviewed by an independent person; Dual authorisation for transfers; Petty cash on an imprest system | Old reconciling items are a warning sign
+SLIDE Fraud red flags | Supplier shares bank account or address with an employee; Orders just below approval limits; Lapping of customer receipts; Frequent adjustments by one user | A red flag is a reason to look, not proof
+SLIDE Common mistakes | Paying from a copy invoice; Changing bank details on an email request; Counts done by the storekeeper alone; Unreviewed reconciliations | Verify bank detail changes by phone
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the main steps and key controls in procure-to-pay and order-to-cash;
+- apply inventory controls and calculate a stock shrinkage rate;
+- explain how a bank reconciliation and dual authorisation protect cash;
+- recognise common fraud red flags in each process and say what to check next.
+
+## Key terms
+
+::: terms
+Procure-to-pay (P2P): the process from identifying a need to paying the supplier
+Order-to-cash (O2C): the process from receiving a customer order to collecting the cash
+Three-way match: checking that the purchase order, goods received note and supplier invoice agree before payment
+Supplier master file: the system record of each supplier's name, tax number, address and bank details
+Lapping: hiding a stolen customer receipt by applying a later customer's payment to the first customer's account
+Red flag: a pattern or event that suggests a higher risk of error or fraud and calls for more checking
+:::
+
+## 1. Procure-to-pay controls
+
+The P2P process connects purchasing, the warehouse and finance. Each step has a typical risk and a key control.
+
+::: diagram steps | Procure-to-pay key controls
+Requisition: a need is approved by budget holder within the authorisation matrix
+Purchase order: buyer selects an approved supplier at agreed prices, order approved before sending
+Goods receipt: stores count and inspect goods and record a goods received note (GRN)
+Invoice: accounts payable records the invoice and performs the three-way match
+Payment: finance releases payment with dual authorisation, only for matched and approved invoices
+:::
+
+Two controls deserve attention. First, the supplier master file: anyone who can change a supplier's bank account can redirect payments. Changes need independent approval outside accounts payable and a call to a known supplier contact, never to a number on the request. Second, the three-way match: quantity and price on the purchase order, GRN and invoice must agree before payment.
+
+P2P red flags include a supplier sharing a bank account or address with an employee, consecutive invoice numbers from one supplier, purchase orders dated after the invoice, orders just below approval limits, and one invoice paid twice under slightly different numbers.
+
+::: quiz
+? Accounts payable receives an email, apparently from a fuel supplier, asking to pay all future invoices to a new bank account. What is the correct control response?
+- Update the bank details because the email uses the supplier's logo || Logos and emails are easy to fake.
+* Confirm the change by calling a known contact on a number already on file, then get independent approval || Correct. Verification through a trusted channel is the key control.
+- Reply to the email and ask for a signed letter || The fraudster controls that email and can fake a letter.
+:::
+
+## 2. Order-to-cash controls
+
+O2C starts when a customer is created. Key controls are: new customers approved with a credit limit based on a credit check; sales orders blocked automatically above the credit limit; dispatch only against an approved order, with a delivery note signed by the customer; invoices generated from the dispatch so that every delivery is billed; receipts recorded promptly and matched to the correct invoices; and credit notes, discounts and write-offs approved within the authorisation matrix by someone outside sales.
+
+A classic O2C fraud is lapping, sometimes called teeming and lading. It works like this:
+
+::: slides
+SLIDE Step 1: Theft | A cashier who also posts receipts keeps Customer A's payment of 3 million Kz; Customer A's account still shows the debt | The theft starts small
+SLIDE Step 2: Cover-up | When Customer B pays 3.5 million Kz, the cashier posts it to Customer A; Now Customer B's account looks unpaid | One theft hides another
+SLIDE Step 3: The chain grows | Customer C's payment covers Customer B, and so on; The fraud needs constant attention | The cashier rarely takes leave
+SLIDE Step 4: Detection | Customers complain about statements; Receipts posted late or to the wrong customer; Ageing worsens with no clear reason | Send statements and split duties
+:::
+
+Other O2C red flags are large credit notes just after month end, discounts approved by the salesperson who earns the commission, and write-offs on accounts the customer says it paid.
+
+## 3. Inventory, cash and bank controls
+
+Inventory is often a distributor's largest asset. Restrict access to stores, document every receipt and issue, and count regularly. Many companies use cycle counting with ABC analysis: high-value A items are counted monthly, B items quarterly, C items twice a year. Counts should be done or observed by someone independent of the storekeeper, and adjustments approved by a manager who does not handle stock.
+
+Measure losses with the shrinkage rate: shrinkage % = (book quantity − counted quantity) ÷ book quantity × 100. If the system shows 12,400 bags of rice and the count finds 12,152, shrinkage is 248 bags, or 248 ÷ 12,400 = 2.0%. At a cost of 20,000 Kz per bag, the loss is 4,960,000 Kz.
+
+For cash and bank, the key detective control is the monthly bank reconciliation. It should be prepared by someone who cannot record receipts or payments, and signed by a reviewer who checks old or unusual reconciling items. Payments should need two authorisers in the electronic banking system. Petty cash should work on an imprest system: a fixed float, topped up only against approved receipts, with surprise counts. Red flags include old reconciling items, missing deposit slips and unfamiliar payees.
+
+::: quiz
+? Who should prepare the monthly bank reconciliation?
+- The cashier who records receipts || The cashier could hide a theft in the reconciliation.
+* Someone who cannot record receipts or payments || Correct. Independence lets the reconciliation detect errors and fraud.
+- The bank's relationship manager || The bank does not run your internal controls.
+:::
+
+## Worked example: rice shrinkage in a Viana warehouse
+
+A food distributor in Viana finds rice shrinkage of 2.0% this quarter, against 0.3% before. The adjustment report shows 80% of adjustments posted by one night-shift supervisor, mostly on Saturdays, as "damaged bags". No damaged stock was kept.
+
+::: case | Rising shrinkage at the Viana warehouse
+Auditor Nelson finds rice shrinkage of 2.0%, worth about 4.96 million Kz. Most adjustments were posted by one supervisor as "damaged bags", with no damaged stock kept as evidence.
+? What should Nelson do next?
+- Report that the supervisor has stolen the rice || A red flag is not proof. Nelson needs evidence.
+* Check access rights, compare adjustments with security and gate records, and recommend that damaged goods be inspected and approved before any write-off || Correct. This gathers evidence and fixes the control gap at the same time.
+- Accept the adjustments because damage is normal in warehouses || The sudden increase and the pattern of one user on one day need explanation.
+- Recount the stock every day for a month || Costly, and it does not fix who can post adjustments.
+:::
+
+## Tool: Process red-flag checklist
+
+- P2P: suppliers sharing bank details or addresses with employees
+- P2P: orders just below approval limits or purchase orders dated after invoices
+- P2P: bank detail changes without phone verification
+- O2C: credit notes or discounts soon after month end
+- O2C: receipts posted late or to a different customer
+- Inventory: adjustments concentrated on one user, shift or product
+- Cash: reconciling items older than one month or late reconciliations
+- People: an employee who never takes leave or refuses to share tasks
+
+## Common mistakes
+
+- Paying from a copy or scanned invoice without a matching purchase order and GRN.
+- Changing supplier bank details on the basis of an email or letter alone.
+- Letting the storekeeper count stock without an independent person.
+- Signing a bank reconciliation without examining the reconciling items.
+
+## Self-check
+
+- Which three documents are compared in a three-way match? (Answer: the purchase order, the goods received note and the supplier invoice.)
+- Book stock is 5,000 cartons and the count is 4,900. What is the shrinkage rate? (Answer: 100 ÷ 5,000 = 2%.)
+- Why do customer complaints about statements suggest lapping? (Answer: their payments have been posted to other accounts, so their own accounts look unpaid.)
+
+## Practical assignment
+
+Choose one process in your company: P2P, O2C, inventory or cash. Draw its main steps, write the key control at each step, and run three red flags from the checklist on last month's data, for example a list of stock adjustments by user. Share any unusual results with your manager.
+
+## Summary
+
+- P2P depends on a protected supplier master file, the three-way match and dual payment authorisation.
+- O2C depends on credit limits, billing from dispatch, correct receipt posting and approved credit notes.
+- Independent counts, approved adjustments and reviewed bank reconciliations protect stock and cash, and red flags tell you where to look.
+=== 20
+SLIDE What you will learn | Build an audit universe; Score inherent and residual risk on a risk matrix; Turn risk scores into an annual audit plan; Plan a single engagement | Audit where the risk is, not where it is easy
+SLIDE The audit universe | Every auditable unit: processes, branches, systems, projects; Owner and size for each; Updated every year | You cannot rank what you have not listed
+SLIDE Risk assessment | Inherent risk: before controls; Residual risk: after controls; Score likelihood x impact on a 1–5 scale | Score = likelihood x impact
+SLIDE The risk matrix | High impact and high likelihood: audit this year; High impact, low likelihood: audit periodically; Low impact, high likelihood: monitor with data | Colour shows priority at a glance
+SLIDE From scores to a plan | Rank units by residual score; Set audit frequency by risk band; Match planned audits to available auditor days | Keep a reserve for special requests
+SLIDE Engagement planning | Objectives and scope; Risk and control matrix; Terms of reference agreed with management | A clear scope prevents arguments later
+SLIDE Common mistakes | Auditing the same areas every year; Ignoring fraud and IT risks; Planning 100% of auditor days; Not updating the plan when risks change | The plan is a living document
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- build an audit universe for your organisation;
+- score inherent and residual risk using likelihood and impact on a risk matrix;
+- convert risk scores into an annual audit plan that fits the available auditor days;
+- prepare the main elements of an engagement plan.
+
+## Key terms
+
+::: terms
+Audit universe: the full list of units, processes, systems and projects that could be audited
+Inherent risk: the level of risk before taking account of controls
+Residual risk: the level of risk that remains after existing controls
+Risk appetite: the amount of risk the governing body is willing to accept to achieve objectives
+Risk and control matrix (RCM): a table linking each risk in a process to its controls and planned tests
+:::
+
+## 1. Building the audit universe
+
+Internal audit never has enough people to audit everything every year, so it must decide where to look. A risk-based plan puts audit effort where the risks to the company's objectives are greatest. The IIA's Global Internal Audit Standards expect the chief audit executive to base the plan on a documented risk assessment and to discuss it with senior management and the board.
+
+The starting point is the audit universe: a list of everything that could be audited. Build it from the organisation chart, the chart of accounts, the list of systems and the strategic plan. A distributor's universe might include procure-to-pay, order-to-cash, inventory in each warehouse, treasury, payroll, fleet and fuel, IT access, each provincial branch, and major projects such as a new ERP. For each unit, record the owner, its size (revenue, spending or stock value) and the date and result of the last audit.
+
+## 2. Scoring risk with a matrix
+
+For each unit, score likelihood and impact on a scale of 1 (very low) to 5 (very high). Impact considers money, reputation, regulation and the effect on operations. Likelihood considers complexity, volume of transactions, cash handling, staff turnover, recent changes, past findings and fraud history. Risk score = likelihood x impact, so scores run from 1 to 25.
+
+Score inherent risk first, then judge the controls. If management has strong, recently tested controls, residual risk is lower. Use the bands: 15–25 high, 8–14 medium, 1–7 low.
+
+::: diagram matrix | Risk matrix and audit response | Likelihood (low → high) | Impact (low → high)
+High impact, low likelihood: audit periodically and check that contingency plans exist
+High impact, high likelihood: priority, audit this year
+Low impact, low likelihood: low priority, cover in a three-year cycle
+Low impact, high likelihood: monitor with data analytics or management self-review
+:::
+
+::: quiz
+? A branch's cash process scores likelihood 4 and impact 4 before controls. Recent audits found the controls strong, and residual risk is judged at likelihood 2, impact 4. What is the residual score and band?
+- 16, high || 16 is the inherent score. Residual risk takes the controls into account.
+* 8, medium || Correct. 2 x 4 = 8, which falls in the medium band of 8–14.
+- 6, low || Check the calculation: 2 x 4 is 8, not 6.
+- 4, low || Likelihood and impact are multiplied, not reduced to one factor.
+:::
+
+## 3. From risk scores to an annual plan
+
+Turn the ranked list into a plan with these steps:
+
+::: slides
+SLIDE Step 1: Rank the universe | Sort units by residual risk score; Flag new risks such as a new system or new province | Highest risk first
+SLIDE Step 2: Set frequency | High risk: every year; Medium risk: every two years; Low risk: every three years or by analytics | A common rule, adjust to your context
+SLIDE Step 3: Estimate days | Typical audit: planning, fieldwork, reporting; Example: 25 days for P2P, 15 for a branch | Base estimates on past audits
+SLIDE Step 4: Check capacity | 3 auditors x 200 available days = 600 days; Keep about 15% for follow-up and special requests; 510 days for planned audits | Never plan 100% of your time
+SLIDE Step 5: Approve and update | Discuss with senior management; Approval by the audit committee; Review at least every six months | The plan changes when risks change
+:::
+
+Once an audit is in the plan, plan the engagement itself. Agree the objectives (for example, "assess whether supplier payments are valid, accurate and authorised"), the scope (processes, locations, period), the main risks, and the timing. Record this in terms of reference shared with the process owner. Then prepare a risk and control matrix listing each risk, the expected controls and the test you will perform. This becomes the backbone of the fieldwork in the next lesson.
+
+::: quiz
+? The audit team has 3 auditors with 200 available days each and keeps 15% in reserve. How many days are available for planned audits?
+- 600 days || This ignores the reserve for follow-up and special requests.
+- 450 days || The reserve is 15% of 600, which is 90 days, not 150.
+* 510 days || Correct. 600 − (15% x 600) = 600 − 90 = 510 days.
+- 690 days || The reserve reduces available days, it does not add to them.
+:::
+
+## Worked example: planning audits for a national distributor
+
+A consumer goods distributor operates in several Angolan provinces with a three-person audit team based in Luanda. The head of audit scores five units:
+
+- Fleet and fuel: likelihood 4, impact 4, controls weak, residual 16 (high).
+- Procure-to-pay: likelihood 3, impact 5, controls partly tested, residual 15 (high).
+- Huambo branch cash: likelihood 4, impact 3, residual 12 (medium).
+- Payroll: likelihood 2, impact 4, residual 8 (medium).
+- Office supplies: likelihood 3, impact 1, residual 3 (low).
+
+Fleet and fuel and P2P go into this year's plan. Huambo cash and payroll go into the two-year cycle. Office supplies are covered by a quarterly data review instead of a full audit.
+
+::: case | A request to audit marketing
+Head of audit Rosa has a plan of 510 days, fully allocated to high-risk units. A director asks her to replace the P2P audit with a 25-day audit of marketing events, because he dislikes the marketing manager. Marketing scores a residual risk of 6.
+? How should Rosa respond?
+- Accept, because directors decide what internal audit does || Internal audit must stay objective. The plan is approved by the audit committee based on risk.
+- Refuse and say nothing more || A flat refusal ignores the chance that the director knows something important.
+* Ask what specific concerns he has, re-score marketing if there is new information, and take any change to the plan to the audit committee || Correct. Rosa listens, stays risk-based and keeps the approval process.
+- Audit marketing in her own free time to keep him happy || This hides the work from the plan and still compromises objectivity.
+:::
+
+## Tool: Audit universe and risk ranking template
+
+- Auditable unit and owner:
+- Size (revenue, spend or stock value):
+- Inherent likelihood (1–5) and impact (1–5):
+- Key controls and last test result:
+- Residual likelihood and impact, residual score:
+- Risk band (high 15–25, medium 8–14, low 1–7):
+- Last audit date and rating:
+- Planned year and estimated days:
+
+## Common mistakes
+
+- Auditing the same comfortable areas every year while new risks go unexamined.
+- Leaving fraud, IT access and new projects out of the audit universe.
+- Planning every available day and having no time for investigations or follow-up.
+- Treating the annual plan as fixed when the business changes during the year.
+
+## Self-check
+
+- What is the difference between inherent and residual risk? (Answer: inherent risk ignores controls, residual risk is what remains after controls.)
+- A unit scores likelihood 5 and impact 3. What is its score and band? (Answer: 15, high.)
+- Who should approve the annual audit plan? (Answer: the audit committee or board, after discussion with senior management.)
+
+## Practical assignment
+
+List ten auditable units in your company or department. Score each for likelihood and impact on a 1–5 scale, calculate the risk score, and place them on a risk matrix. Identify the three units you would audit first and explain why to your manager.
+
+## Summary
+
+- A risk-based plan starts with a complete audit universe.
+- Score likelihood x impact for inherent and residual risk and use a matrix to set priorities.
+- Fit the plan to available days, keep a reserve, get audit committee approval and update it as risks change.
+=== 20
+SLIDE What you will learn | Perform a walkthrough; Distinguish test of design from test of operating effectiveness; Choose a sample and calculate a sampling interval; Prepare a complete working paper | Evidence is what turns opinion into a finding
+SLIDE Walkthroughs | Follow one transaction from start to end; Inspect documents and system screens at each step; Confirms how the process really works | Never test a control you have not seen
+SLIDE Design versus operation | Test of design: would the control prevent or detect the risk if it ran as described?; Test of operating effectiveness: did it run consistently over the period? | A well-designed control can still fail in practice
+SLIDE Testing techniques | Inquiry: ask; Observation: watch; Inspection: examine documents; Reperformance: redo the control | Inquiry alone is never enough
+SLIDE Sampling | Random or systematic selection; Sample size grows with control frequency; Interval = population ÷ sample size | Every item needs a fair chance of selection
+SLIDE Working papers | Objective, source and procedure; Results and exceptions; Conclusion, preparer and reviewer | Another auditor must reach the same conclusion
+SLIDE Common mistakes | Testing without a walkthrough; Choosing easy samples; Ignoring exceptions; Working papers without conclusions | If it is not documented, it was not done
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- perform a walkthrough to confirm how a process and its controls really work;
+- explain the difference between a test of design and a test of operating effectiveness;
+- choose a sample, calculate a sampling interval and evaluate exceptions;
+- prepare a working paper that another auditor can review and rely on.
+
+## Key terms
+
+::: terms
+Walkthrough: following one transaction through a process from start to end to confirm how it works
+Test of design: assessing whether a control, if performed as described, would address the risk
+Test of operating effectiveness: testing whether a control actually operated consistently during the period
+Sampling: testing a selection of items to reach a conclusion about the whole population
+Exception: a sample item where the control did not operate as required
+Working paper: the documented record of audit work, evidence and conclusions
+:::
+
+## 1. Walkthroughs and the two tests
+
+Fieldwork starts with understanding. In a walkthrough you take one real transaction, for example a supplier payment, and follow it from the requisition to the bank statement. At each step you talk to the person who does the work, inspect the document or system screen, and note who did what and when. Walkthroughs often show that the real process differs from the written procedure.
+
+Then you test each key control from your risk and control matrix in two stages. The test of design asks: if this control works as described, would it prevent or detect the risk? A manager approving payments without seeing the invoice is badly designed, so there is no point testing it further. Report it as a design weakness. The test of operating effectiveness asks: did the control actually work, consistently, throughout the period? A well-designed approval that was skipped in March is not operating effectively.
+
+## 2. Testing techniques and evidence
+
+Auditors use four main techniques, from weakest to strongest evidence:
+
+::: diagram pyramid | Strength of audit evidence
+Reperformance: the auditor redoes the control, such as reperforming a bank reconciliation
+Inspection: examining documents, signatures, system logs and records
+Observation: watching the control being performed
+Inquiry: asking people how the control works
+:::
+
+Inquiry is useful but never enough on its own, because people describe what should happen, not always what does. Combine techniques. Data analytics, such as running the full payment file for duplicates, can also test 100% of a population.
+
+Evidence should be sufficient (enough to support the conclusion), reliable (from a trustworthy source, ideally independent or system-generated), relevant (linked to the objective) and useful (helps the organisation meet its goals). A bank statement obtained directly from the bank is more reliable than a photocopy provided by the person being audited.
+
+::: quiz
+? To test whether the monthly bank reconciliation is reviewed, an auditor asks the finance manager, who says "Yes, I review it every month." What should the auditor do next?
+- Accept the answer, because the manager is senior || Inquiry alone is the weakest evidence, whatever the person's position.
+* Inspect a sample of reconciliations for evidence of review and check some reconciling items || Correct. Inspection and partial reperformance give much stronger evidence.
+- Ask the accountant whether the manager reviews it || This is still inquiry and still weak evidence.
+- Record the control as ineffective || There is no evidence yet that it failed. The auditor must test before concluding.
+:::
+
+## 3. Sampling and evaluating results
+
+When a population is large, test a sample. Use random selection (a random number generator) or systematic selection (every nth item after a random start). Avoid choosing items because they are easy to find. A commonly used guide links sample size to how often the control runs:
+
+- Annual control: 1 item.
+- Quarterly: 2 items.
+- Monthly: 2 to 5 items.
+- Weekly: 5 to 15 items.
+- Daily or many times a day: 25 to 60 items.
+
+Here is how to draw a systematic sample:
+
+::: slides
+SLIDE Step 1: Define the population | All supplier payments January–June; 2,400 payments in the bank file; Confirm the file is complete | Test the right population
+SLIDE Step 2: Set sample size | Control runs many times a day; Choose 25 items | Use your audit's sampling guide
+SLIDE Step 3: Calculate the interval | Interval = 2,400 ÷ 25 = 96; Random start between 1 and 96, for example 37 | One random start, then fixed steps
+SLIDE Step 4: Select items | Items 37, 133, 229, 325 and so on; Test each against the control attribute | Record every item tested
+SLIDE Step 5: Evaluate | 2 exceptions in 25 = 8% deviation rate; Compare with tolerable rate set in advance; Find the cause of each exception | Never dismiss an exception as a one-off without evidence
+:::
+
+If the deviation rate is above the tolerable rate you set during planning, conclude that the control is not operating effectively. Either way, look at the cause: a single new clerk, a system outage, or a deliberate override tell very different stories.
+
+::: quiz
+? An auditor needs 20 credit notes from a population of 1,000. What is the sampling interval?
+- 20 || 20 is the sample size, not the interval.
+* 50 || Correct. 1,000 ÷ 20 = 50, after a random start between 1 and 50.
+- 200 || Check the division: 1,000 ÷ 20 is 50.
+:::
+
+## Worked example: testing payment approvals
+
+An auditor at a services company in Talatona tests whether every supplier payment over 5 million Kz has two approvals in the e-banking system. The walkthrough confirms the design. From 2,400 payments she draws 25 using an interval of 96 and finds 2 payments approved by only one person, both on the same day, when the second approver was travelling.
+
+Her working paper records the objective, the population and its source, the sample method, a list of the 25 items with tick marks, the 2 exceptions, the cause, a conclusion, and her name and date. The audit manager reviews and signs it.
+
+::: case | Two exceptions in the payment sample
+Auditor Ana finds 2 exceptions in 25 payments (8%). Her tolerable deviation rate is 4%. The finance manager says: "Those were urgent payments, the system is fine, please do not report it."
+? What should Ana conclude?
+- The control is effective because the system is well designed || Design was confirmed, but the test of operation shows the control was bypassed.
+- Increase the sample until the rate falls below 4% || Testing more items only to get a better result is biased.
+* The control did not operate effectively, and she should document the cause and report it || Correct. 8% exceeds the 4% tolerable rate, and an urgency exception with no approved procedure is itself a control gap.
+- Remove the two urgent payments from the population || Excluding exceptions after testing hides the problem.
+:::
+
+## Tool: Working paper checklist
+
+- Audit name, working paper reference and period
+- Objective of the test and control tested
+- Population, source and how completeness was checked
+- Sampling method, sample size and interval
+- Procedure performed and attributes tested
+- Results, with tick marks explained
+- Exceptions and their causes
+- Conclusion linked to the objective
+- Preparer and reviewer names and dates
+
+## Common mistakes
+
+- Testing controls before doing a walkthrough, so the wrong control is tested.
+- Choosing samples that are convenient instead of random or systematic.
+- Explaining away exceptions without finding their cause.
+- Working papers with evidence but no conclusion, or never reviewed.
+
+## Self-check
+
+- What is the difference between a test of design and a test of operating effectiveness? (Answer: design asks whether the control would work if performed, operation asks whether it actually worked over the period.)
+- A population of 1,500 invoices and a sample of 30. What is the sampling interval? (Answer: 1,500 ÷ 30 = 50.)
+- Which technique gives the strongest evidence: inquiry, observation, inspection or reperformance? (Answer: reperformance.)
+
+## Practical assignment
+
+Choose one control in your area, such as the approval of credit notes. Perform a walkthrough of one transaction, then select a systematic sample of 10 items from last month and test them. Record your work on one page using the working paper checklist.
+
+## Summary
+
+- Start with a walkthrough, then test design before testing operating effectiveness.
+- Combine techniques and collect sufficient, reliable, relevant and useful evidence.
+- Use random or systematic samples, evaluate every exception and document work so a reviewer reaches the same conclusion.
+=== 20
+SLIDE What you will learn | Write a finding using condition, criteria, cause, effect and recommendation; Find root causes with the five whys; Rate findings and agree action plans; Follow up and escalate overdue actions | A finding is only useful if it leads to action
+SLIDE Anatomy of a finding | Condition: what is; Criteria: what should be; Cause: why it happened; Effect: so what; Recommendation: what to do | Five parts, every time
+SLIDE Root cause | Ask "why?" until you reach a cause management can fix; Often a process, system or skills gap; People errors usually have a deeper cause | Fix the cause, not the symptom
+SLIDE Rating findings | High: significant loss, fraud or regulatory exposure; Medium: control gap with moderate effect; Low: improvement opportunity | Rate on effect and likelihood, not on effort
+SLIDE Management action plans | Specific action; Named owner; Realistic due date; Agreed at the closing meeting | No owner, no action
+SLIDE The audit report | Executive summary and overall rating; Objectives and scope; Findings with management responses | Write for a busy director
+SLIDE Follow-up | Track every action; Verify evidence before closing; Report overdue actions to the audit committee | Closed means verified, not promised
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write an audit finding using condition, criteria, cause, effect and recommendation;
+- use the five whys to find the root cause of a control failure;
+- rate findings and agree specific management action plans;
+- follow up actions, verify evidence and escalate when actions are late or risks are accepted.
+
+## Key terms
+
+::: terms
+Condition: what the auditor found, supported by evidence
+Criteria: the standard used to judge the condition, such as a policy, procedure, contract or law
+Root cause: the underlying reason a problem happened, which if fixed prevents it from happening again
+Management action plan: the specific action, owner and due date that management commits to
+Follow-up: the process of checking that agreed actions have been implemented and work
+:::
+
+## 1. Writing a finding
+
+A good finding answers five questions in a fixed order. This structure is used by internal auditors worldwide because it gives management everything needed to decide and act.
+
+::: diagram steps | Anatomy of an audit finding
+Condition: what is happening, with facts and numbers
+Criteria: what should happen, citing the policy or rule
+Cause: why the gap exists, the root cause
+Effect: the consequence or risk, quantified where possible
+Recommendation: what should be done to fix the cause
+:::
+
+Example. Condition: in a sample of 25 supplier payments, 3 duplicate payments totalling 7.2 million Kz were made between January and June. Criteria: the payments procedure requires a three-way match and blocks duplicate invoice numbers. Cause: the duplicate check in the ERP was switched off during a system upgrade in December and never switched back on. Effect: 7.2 million Kz overpaid, recovered from only one supplier so far, and continued risk of duplicates. Recommendation: reactivate the duplicate invoice check, run a full duplicate analysis on all payments since December, and add the control settings to the upgrade checklist.
+
+Notice that the recommendation addresses the cause, not just the condition. Simply recovering the 7.2 million Kz would leave the system open to the same problem next month.
+
+## 2. Root cause and rating
+
+People often stop at the first explanation, usually "the clerk made a mistake". The five whys technique, which comes from the Toyota Production System, keeps asking why until you reach a cause that management can fix.
+
+::: slides
+SLIDE Why 1 | Why were duplicates paid?; The clerk entered two invoices with slightly different numbers | The symptom
+SLIDE Why 2 | Why did the system accept them?; The duplicate check was switched off | A control failed
+SLIDE Why 3 | Why was it off?; It was disabled for the December upgrade | A change caused it
+SLIDE Why 4 | Why was it not restored?; No post-upgrade checklist of control settings existed | The root cause: a process gap
+:::
+
+Then rate the finding so readers know what matters most. Many audit teams use three levels. High: significant financial loss, fraud, regulatory breach or a key control missing. Medium: a control gap with a moderate effect, or a high-risk control that works only partly. Low: a minor weakness or an improvement opportunity. Base the rating on effect and likelihood, the same logic as the risk matrix in lesson 4.
+
+::: quiz
+? A finding says: "The stock count was not signed by the supervisor. Recommendation: the supervisor should sign the count." What is missing?
+- The condition || The condition is stated: the count was not signed.
+- The recommendation || A recommendation is given, though it is weak.
+* The criteria, cause and effect || Correct. Without them, management does not know which rule applies, why it happened or why it matters.
+- The rating || A rating is helpful, but the bigger gap is three of the five parts of the finding.
+:::
+
+## 3. Reporting and follow-up
+
+Discuss draft findings with the process owner as you go, then hold a closing meeting to confirm facts and agree actions. Each management action plan needs a specific action, a named owner and a realistic due date. "Finance will improve controls" is not an action. "The AP supervisor will reactivate the duplicate check by 15 March and send the system log to audit" is.
+
+The final report usually contains an executive summary with an overall rating, the objectives and scope, the findings ranked by rating with management responses, and appendices. Write for a busy director: put the most important message on the first page.
+
+Follow-up is where audit adds value. Keep a register of all open actions. When an owner says an action is complete, verify evidence before closing it: a system screenshot, a signed reconciliation, a re-test of a small sample. Report overdue high-rated actions to the audit committee. If management decides not to act and accept a risk that the chief audit executive believes is beyond the organisation's risk appetite, the Standards expect the matter to be discussed with senior management and, if still unresolved, raised with the board.
+
+::: quiz
+? The warehouse manager emails audit: "Action complete, adjustments now need approval." What should the auditor do before closing the action?
+- Close it, because the owner confirmed it in writing || A written statement is still only inquiry. Closure needs evidence.
+* Check the system settings and test a few recent adjustments for approval || Correct. Verifying evidence confirms the action was implemented and works.
+- Wait until next year's full audit || Follow-up should happen when the action is due, not a year later.
+:::
+
+## Worked example: reporting a fuel finding in Benguela
+
+An auditor at a transport company in Benguela finds that fuel card transactions for 12 trucks exceed the expected consumption by 18% over six months, worth about 9 million Kz. The policy requires monthly reconciliation of fuel cards to trip logs. The cause: the fleet supervisor left in March and nobody was assigned the reconciliation. She rates the finding high.
+
+::: case | Softening the fuel finding
+The operations director asks auditor Sofia to rate the fuel finding as low and remove the 9 million Kz figure, saying it will "embarrass the team" before the board meeting.
+? What should Sofia do?
+- Agree, because good relations with management matter most || Changing a rating under pressure breaks audit objectivity and misleads the board.
+* Keep the rating and figure, offer to check the calculation together, and include the director's response and actions in the report || Correct. Sofia stays objective and factual and still gives management a fair voice.
+- Remove the finding and mention it verbally to the CEO || Unreported findings cannot be tracked or followed up.
+- Increase the rating to show independence || Ratings must follow the evidence, not be used to make a point.
+:::
+
+## Tool: Finding and action plan template
+
+- Title and rating (high, medium or low):
+- Condition, with facts and numbers:
+- Criteria, citing the policy, procedure or law:
+- Root cause, after the five whys:
+- Effect, quantified where possible:
+- Recommendation addressing the cause:
+- Management action, owner and due date:
+- Follow-up evidence required to close:
+
+## Common mistakes
+
+- Writing conditions without criteria, so management disputes whether anything is wrong.
+- Stopping at "human error" instead of finding the process cause.
+- Accepting vague action plans with no owner or date.
+- Closing actions on the owner's word without checking evidence.
+
+## Self-check
+
+- Name the five parts of an audit finding. (Answer: condition, criteria, cause, effect, recommendation.)
+- Why should a recommendation address the cause and not only the condition? (Answer: so the problem does not happen again.)
+- What makes a management action plan complete? (Answer: a specific action, a named owner and a due date.)
+
+## Practical assignment
+
+Take one recent problem in your department, such as a stock difference or a late payment. Write it as a finding using the template, apply the five whys to reach the root cause, and propose an action with an owner and date. Discuss it with your manager.
+
+## Summary
+
+- Every finding needs condition, criteria, cause, effect and a recommendation that fixes the cause.
+- Use the five whys to reach root causes, rate findings on effect and likelihood, and agree specific actions.
+- Follow up with evidence and escalate overdue actions and unacceptable risk acceptance.

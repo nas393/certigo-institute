@@ -1,0 +1,787 @@
+=== 20
+SLIDE What you will learn | Explain what IFRS is and who uses it in Angola; Apply the qualitative characteristics of useful information; Classify items using the five elements; Explain the going concern assumption | The foundation for every other lesson
+SLIDE IFRS in brief | Issued by the IASB, an independent standard-setter; Older standards are called IAS, newer ones IFRS; Interpretations (IFRIC) clarify specific issues | One global language for financial reporting
+SLIDE IFRS and the PGC in Angola | Banks report under IFRS following BNA rules; Most other companies use the Plano Geral de Contabilidade (PGC); Some large companies and groups also prepare IFRS accounts | Many finance teams work with both systems
+SLIDE The Conceptual Framework | Not a standard and does not override standards; Guides the IASB and helps when no standard applies; Defines users, qualitative characteristics and elements | The reasons behind the rules
+SLIDE Qualitative characteristics | Fundamental: relevance and faithful representation; Enhancing: comparability, verifiability, timeliness, understandability; Materiality is part of relevance | Useful information is relevant and faithful
+SLIDE The five elements | Assets and liabilities; Equity as the residual interest; Income and expenses | No past event, no asset or liability
+SLIDE Common mistakes | Recording future plans as assets or liabilities; Treating owner money as income; Assuming PGC figures are IFRS figures | Test every item against the definitions
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what IFRS Accounting Standards are, who issues them and who uses them in Angola;
+- apply the fundamental and enhancing qualitative characteristics of useful financial information;
+- classify transactions using the five elements defined in the Conceptual Framework;
+- explain the going concern assumption and why it matters.
+
+## Key terms
+
+::: terms
+IFRS Accounting Standards: the standards issued by the International Accounting Standards Board (IASB), including older standards called IAS
+Conceptual Framework: the IASB document that sets out the objective of financial reporting, the qualities of useful information and the definitions of the elements
+Primary users: existing and potential investors, lenders and other creditors who rely on general purpose financial reports
+Materiality: information is material if omitting, misstating or obscuring it could reasonably be expected to influence users' decisions
+Going concern: the assumption that the entity will continue operating for the foreseeable future
+:::
+
+## 1. What IFRS is and who uses it
+
+IFRS Accounting Standards are issued by the IASB, an independent body overseen by the IFRS Foundation. Older standards are called IAS, for example IAS 2 Inventories. Newer ones are called IFRS, for example IFRS 15 Revenue from Contracts with Customers.
+
+In Angola, the Banco Nacional de Angola (BNA) required banks to prepare their financial statements under IFRS, with the largest banks starting in 2016 and the others in 2017. Most other companies prepare statutory accounts under the Plano Geral de Contabilidade (PGC), approved by Decree 82/01 of 16 November 2001. Some large companies and subsidiaries of foreign groups also prepare IFRS accounts, voluntarily or for their parent and lenders. So many finance staff work with both systems.
+
+The PGC and IFRS differ in many details, such as leases, revenue timing and provisions. Never assume a PGC figure is an IFRS figure.
+
+::: tip | Scope of this course
+This course gives you a working foundation in the main standards. It does not make you an IFRS-certified accountant. Check complex cases with a qualified accountant or your auditor.
+:::
+
+## 2. The Conceptual Framework and qualitative characteristics
+
+The Conceptual Framework (revised in 2018) is not a standard and does not override any standard. It guides the IASB and helps preparers choose a policy when no standard applies. Its objective is to provide information useful to primary users deciding whether to provide resources to the entity.
+
+Information is useful when it has two fundamental qualitative characteristics:
+
+- Relevance: it can make a difference to decisions because it has predictive value, confirmatory value or both. Materiality is an entity-specific aspect of relevance.
+- Faithful representation: it shows the substance of what it claims to represent. Ideally it is complete, neutral and free from error.
+
+Four enhancing characteristics make such information more useful: comparability, verifiability, timeliness and understandability. Cost is a constraint: benefits should justify the cost of reporting.
+
+The Framework suggests an order for applying the fundamental characteristics:
+
+::: diagram steps | Applying the fundamental characteristics
+Identify the phenomenon: decide which economic event could be useful to users
+Find the most relevant information: choose the type of information that would be most relevant if available
+Test faithful representation: check whether that information is available and can be faithfully represented
+Fall back if needed: if not, repeat with the next most relevant type of information
+:::
+
+::: quiz
+? Management wants to leave a large disputed customer debt out of the notes because it looks bad. Which characteristic is most at risk?
+- Timeliness || Timeliness is about getting information to users in time, not about leaving it out.
+* Faithful representation || Leaving out material information makes the statements incomplete and not neutral.
+- Understandability || The issue is not clarity. The information is missing altogether.
+:::
+
+## 3. The five elements and going concern
+
+The Framework defines five elements. Every amount in the statements must meet one definition.
+
+- Asset: a present economic resource controlled by the entity as a result of past events. An economic resource is a right that has the potential to produce economic benefits.
+- Liability: a present obligation of the entity to transfer an economic resource as a result of past events.
+- Equity: the residual interest in the assets after deducting all liabilities.
+- Income: increases in assets, or decreases in liabilities, that increase equity, other than contributions from owners.
+- Expenses: decreases in assets, or increases in liabilities, that decrease equity, other than distributions to owners.
+
+To classify an item, follow these steps:
+
+::: slides
+SLIDE Step 1: Find the past event | What has already happened? A delivery, a signed lease, a payment or an announcement | No past event, no asset or liability
+SLIDE Step 2: Test for a right or obligation | Does the entity control a right to benefits? Or does it have no practical ability to avoid a transfer? | Control and obligation are the key tests
+SLIDE Step 3: Check the effect on equity | Does equity change? Is the change from owners or from operations? | Owner transactions are not income or expenses
+SLIDE Step 4: Recognise and measure | Is recognition relevant and faithful? Which measurement basis applies? | Definition first, then recognition
+:::
+
+Going concern is the underlying assumption. Under IAS 1, management assesses it for at least twelve months from the end of the reporting period and discloses material uncertainties, such as a loan in default.
+
+::: quiz
+? A company receives Kz 50,000,000 from its shareholders as new share capital. How is this classified?
+- Income, because cash increased || Contributions from owners are excluded from the definition of income.
+- A liability, because the money must be used carefully || There is no obligation to transfer resources, so it is not a liability.
+* An increase in equity, not income || Owner contributions increase equity directly without passing through profit or loss.
+:::
+
+## Worked example: classifying items at a Luanda trading company
+
+A food trading company in Luanda prepares IFRS accounts for its foreign parent at 31 December 2025. The accountant reviews four items:
+
+- A rice purchase order signed in December for February delivery, unpaid. Neither side has performed, so nothing is recorded yet.
+- Trucks leased for five years. The company controls their use, so IFRS 16 requires a right-of-use asset and a lease liability.
+- A marketing plan for 2026. No past event, so no element.
+
+::: case | The year-end bonus at a Viana distributor
+Marta, chief accountant of a distributor in Viana, sees that on 15 December 2025 the board announced a Kz 18,000,000 bonus for 2025 sales staff, payable in March 2026. Her manager wants to record it when paid.
+? What should Marta do?
+- Record it in March 2026 when the cash leaves || IFRS uses accrual accounting, so the payment date does not decide when the expense is recognised.
+* Recognise an expense and a liability of Kz 18,000,000 in 2025 || The announcement created a present obligation for service already given, so it belongs in 2025.
+- Only disclose it in the notes || A present obligation that can be measured reliably must be recognised, not just disclosed.
+- Record it as a reduction of equity || A staff bonus is an expense, not a distribution to owners.
+:::
+
+## Tool: element classification checklist
+
+- Item description and amount (Kz):
+- Past event that created it (date and document):
+- Right controlled, or obligation that cannot be avoided:
+- Element (asset, liability, equity, income or expense):
+- Transaction with owners (yes or no):
+- Difference between PGC and IFRS treatment (if any):
+
+## Common mistakes
+
+- Recording an asset or liability without a past event, for example a budget or plan.
+- Treating owner contributions as income.
+- Sending PGC statutory figures to a group or bank as IFRS figures without adjustment.
+
+## Self-check
+
+- What are the two fundamental qualitative characteristics? (Answer: Relevance and faithful representation.)
+- Name the five elements of financial statements. (Answer: Assets, liabilities, equity, income and expenses.)
+- For how long, at minimum, must management look ahead when assessing going concern under IAS 1? (Answer: At least twelve months from the end of the reporting period.)
+
+## Practical assignment
+
+Take ten balances from your latest trial balance. Use the checklist to note the past event, the element and any PGC and IFRS difference. Discuss one difference with your manager.
+
+## Summary
+
+- IFRS Accounting Standards are issued by the IASB. In Angola, banks report under IFRS and most other companies use the PGC.
+- Useful information is relevant and faithfully represented. Enhancing characteristics make it more useful.
+- Every amount must meet the definition of an asset, liability, equity, income or expense.
+=== 20
+SLIDE What you will learn | List the components of a complete set of financial statements; Classify items as current or non-current; Prepare a simple indirect cash flow; Trace the links between statements | Three statements, one story
+SLIDE The complete set (IAS 1) | Statement of financial position; Statement of profit or loss and OCI; Statement of changes in equity; Statement of cash flows and notes; Comparatives for the prior period | Every component has comparatives
+SLIDE General features | Fair presentation and going concern; Accrual basis and materiality; No offsetting unless a standard allows it; Consistent presentation | Rules that apply to every statement
+SLIDE Current or non-current | Assets realised within 12 months or the operating cycle are current; Liabilities due within 12 months are current; No right at year-end to defer for 12 months means current | Conditions at the reporting date decide
+SLIDE Statement of cash flows (IAS 7) | Operating, investing and financing activities; Indirect method starts from profit; Adjust for non-cash items and working capital | Profit is not cash
+SLIDE How they link | Profit goes to retained earnings; Closing equity equals equity in the balance sheet; Closing cash equals cash in the balance sheet | Tie the statements together every time
+SLIDE Looking ahead: IFRS 18 | Replaces IAS 1 from 1 January 2027; New categories and subtotals in profit or loss; Disclosure of management-defined performance measures | Ask about your transition plan
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list the components of a complete set of financial statements under IAS 1;
+- classify assets and liabilities as current or non-current;
+- prepare a simple statement of cash flows using the indirect method;
+- trace how profit, equity and cash link between the statements.
+
+## Key terms
+
+::: terms
+Statement of financial position: assets, liabilities and equity at the end of the reporting period, often called the balance sheet
+Statement of profit or loss and other comprehensive income: income and expenses for the period, split into profit or loss and other comprehensive income (OCI)
+Other comprehensive income: income and expenses that IFRS requires to be shown outside profit or loss, such as revaluation surpluses on property
+Statement of changes in equity: shows how each component of equity moved during the period
+Cash equivalents: short-term, highly liquid investments that are readily convertible to known amounts of cash with an insignificant risk of changes in value
+:::
+
+## 1. The complete set of financial statements
+
+IAS 1 Presentation of Financial Statements requires a complete set:
+
+- a statement of financial position at the end of the period;
+- a statement of profit or loss and other comprehensive income for the period, as one statement or two;
+- a statement of changes in equity;
+- a statement of cash flows, prepared under IAS 7;
+- notes, including material accounting policy information;
+- comparative information for the previous period.
+
+IAS 1 also sets general features: fair presentation, going concern, accrual basis, materiality and aggregation, no offsetting unless a standard permits it, and consistent presentation.
+
+::: tip | IFRS 18 is coming
+IFRS 18 Presentation and Disclosure in Financial Statements replaces IAS 1 for annual periods beginning on or after 1 January 2027. It adds operating, investing and financing categories to profit or loss, required subtotals such as operating profit, and disclosure of management-defined performance measures. Ask your group or auditor about the transition plan.
+:::
+
+## 2. Current and non-current classification
+
+An asset is current when the entity expects to realise, sell or consume it in its normal operating cycle, holds it mainly for trading, expects to realise it within twelve months after the reporting period, or it is unrestricted cash. A liability is current when it will be settled in the normal operating cycle, is held mainly for trading, is due within twelve months after the reporting period, or the entity does not have the right at the end of the reporting period to defer settlement for at least twelve months. Everything else is non-current.
+
+For bank loans, use these steps:
+
+::: slides
+SLIDE Step 1: Read the repayment schedule | List each instalment and its due date | Start from the loan contract
+SLIDE Step 2: Split at twelve months | Instalments due within 12 months after year-end are current; The rest is non-current | One loan, two lines
+SLIDE Step 3: Check covenants at year-end | Was a covenant breached on or before the reporting date? Can the lender now demand repayment? | A breach can make the whole loan current
+SLIDE Step 4: Check the waiver date | A waiver received after year-end does not change the classification; Disclose it in the notes | Get waivers before year-end
+:::
+
+::: quiz
+? A Luanda importer holds maize flour that it expects to sell within eight months. How is it classified?
+- Non-current asset, because it is held in a warehouse || Location does not matter. Expected realisation within the operating cycle does.
+* Current asset || Inventory sold in the normal operating cycle is current.
+- Equity, because it was paid for with the owners' cash || Inventory is an asset whatever the source of funding.
+:::
+
+## 3. How the statements link
+
+Check three links every period:
+
+- Profit or loss for the year is added to retained earnings in the statement of changes in equity, and dividends are deducted.
+- Closing total equity in the statement of changes in equity equals equity in the statement of financial position.
+- Closing cash and cash equivalents in the statement of cash flows equals cash in the statement of financial position.
+
+IAS 7 classifies cash flows into operating, investing and financing activities. Operating cash flow can be shown with the direct method (cash received and paid) or the indirect method, which starts from profit and adjusts it:
+
+- add back depreciation and other non-cash expenses;
+- subtract increases in inventory and receivables, or add decreases;
+- add increases in payables, or subtract decreases.
+
+::: diagram steps | How the statements link
+Profit or loss: profit for the year is calculated
+Changes in equity: profit is added to retained earnings and dividends are deducted
+Financial position: closing equity and all year-end balances are shown
+Cash flows: changes in balances explain the movement in cash
+Notes: policies and details support every line
+:::
+
+::: quiz
+? Profit is Kz 10,000,000, depreciation is Kz 2,000,000 and inventory increased by Kz 3,000,000. There are no other adjustments. What is operating cash flow?
+- Kz 15,000,000 || An increase in inventory uses cash, so it is subtracted, not added.
+- Kz 11,000,000 || Depreciation is a non-cash expense and must be added back.
+* Kz 9,000,000 || 10,000,000 + 2,000,000 − 3,000,000 = 9,000,000.
+:::
+
+## Worked example: linking the statements at a Huambo wholesaler
+
+A Huambo wholesaler prepares 2025 IFRS statements (ignore tax). Opening equity is share capital Kz 20,000,000 and retained earnings Kz 30,000,000. Profit for the year is Kz 12,000,000 and dividends paid are Kz 4,000,000.
+
+Statement of changes in equity: retained earnings 30,000,000 + 12,000,000 − 4,000,000 = Kz 38,000,000. Total equity is 20,000,000 + 38,000,000 = Kz 58,000,000, which must equal equity in the balance sheet.
+
+Cash flow (indirect method): profit 12,000,000 + depreciation 3,000,000 − increase in inventory 5,000,000 − increase in receivables 4,000,000 + increase in payables 2,000,000 = operating cash flow Kz 8,000,000. Investing: equipment bought for Kz 6,000,000. Financing: dividends paid Kz 4,000,000. Net change in cash: 8,000,000 − 6,000,000 − 4,000,000 = −Kz 2,000,000. Opening cash of Kz 9,000,000 gives closing cash of Kz 7,000,000, which must match the balance sheet.
+
+Profit was Kz 12,000,000, yet cash fell. The cash flow statement explains why.
+
+::: case | The covenant breach at a Lobito logistics company
+A logistics company in Lobito has a Kz 100,000,000 bank loan. Kz 25,000,000 is due in 2026 and the rest later. At 31 December 2025 it breached a covenant, so the bank can demand full repayment. The bank signed a waiver on 20 January 2026.
+? How should the loan be shown at 31 December 2025?
+- Kz 25,000,000 current and Kz 75,000,000 non-current, because of the waiver || The waiver came after year-end, so at the reporting date there was no right to defer settlement.
+* Kz 100,000,000 current, with the January waiver disclosed in the notes || At the reporting date the lender could demand repayment, so the full loan is current.
+- Kz 100,000,000 non-current, because most is due after 2026 || The repayment schedule no longer decides once the lender can demand payment.
+- Net the loan against cash in the bank || IAS 1 does not allow offsetting assets and liabilities in this case.
+:::
+
+## Tool: statement tie-out checklist
+
+- Profit in profit or loss equals profit in the statement of changes in equity:
+- Closing equity equals equity in the statement of financial position:
+- Closing cash in the cash flow statement equals cash in the balance sheet:
+- Loans split into current and non-current portions:
+- Comparatives included and consistent with last year:
+
+## Common mistakes
+
+- Classifying a whole loan as non-current when part is due within twelve months.
+- Relying on a waiver received after year-end.
+- Forgetting to add back depreciation in the indirect cash flow.
+
+## Self-check
+
+- Name the components of a complete set of financial statements. (Answer: Statement of financial position, statement of profit or loss and OCI, statement of changes in equity, statement of cash flows, notes and comparatives.)
+- What are the three activities in a statement of cash flows? (Answer: Operating, investing and financing.)
+- Which standard replaces IAS 1 from 1 January 2027? (Answer: IFRS 18.)
+
+## Practical assignment
+
+Take your company's latest statements and tick the three links. Then check how each loan is split between current and non-current, and note any covenant.
+
+## Summary
+
+- IAS 1 requires five components plus comparatives, prepared on general features such as accrual and going concern.
+- Current and non-current classification depends on twelve months and on rights at the reporting date.
+- Profit, equity and cash must tie between the statements.
+=== 20
+SLIDE What you will learn | Explain the core principle of IFRS 15; Apply the five-step model; Allocate a price using stand-alone selling prices; Choose between point in time and over time | Revenue follows the transfer of control
+SLIDE The core principle | Recognise revenue for the transfer of goods or services; At the amount the entity expects to be entitled to; Not when the invoice or cash arrives | Control, not cash
+SLIDE The five steps | 1 Identify the contract; 2 Identify performance obligations; 3 Determine the transaction price; 4 Allocate the price; 5 Recognise revenue | Use the same order every time
+SLIDE Variable consideration | Rebates, discounts, penalties and bonuses; Estimate with expected value or most likely amount; Include only if a significant reversal is highly unlikely | Estimate, then constrain
+SLIDE Allocation | Use relative stand-alone selling prices; Allocated price = total × (SSP ÷ total SSPs); Discounts are spread across obligations | Share the price fairly
+SLIDE Point in time or over time | Over time if the customer consumes benefits as you perform; Or controls the asset as it is built; Or no alternative use with a right to payment | Otherwise at a point in time
+SLIDE Common mistakes | Recognising bundles as one sale; Ignoring expected rebates; Recognising revenue on invoicing | Follow all five steps
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the core principle of IFRS 15 Revenue from Contracts with Customers;
+- apply the five-step model to a customer contract;
+- allocate a transaction price using relative stand-alone selling prices;
+- decide whether revenue is recognised at a point in time or over time.
+
+## Key terms
+
+::: terms
+Contract: an agreement between two or more parties that creates enforceable rights and obligations
+Performance obligation: a promise to transfer a distinct good or service to the customer
+Transaction price: the consideration the entity expects to be entitled to for the promised goods or services, excluding amounts collected for third parties such as VAT
+Stand-alone selling price: the price at which the entity would sell a good or service separately to a customer
+Variable consideration: amounts that can change, such as discounts, rebates, refunds, bonuses or penalties
+Contract liability: the obligation to transfer goods or services for which the customer has already paid
+:::
+
+## 1. The core principle and the five steps
+
+The core principle of IFRS 15 is that an entity recognises revenue to show the transfer of promised goods or services to customers, at the amount it expects to be entitled to in exchange. Revenue follows the transfer of control, not the invoice date or the cash.
+
+::: diagram steps | The IFRS 15 five-step model
+Identify the contract: check that an enforceable contract with a customer exists
+Identify performance obligations: list each distinct good or service promised
+Determine the transaction price: estimate the consideration, including variable amounts
+Allocate the price: share it across obligations using stand-alone selling prices
+Recognise revenue: when, or as, each obligation is satisfied
+:::
+
+How to apply each step:
+
+::: slides
+SLIDE Step 1: The contract | Approved by both parties and rights identified; Payment terms identified and commercial substance; Collection of the consideration is probable | No valid contract, no revenue yet
+SLIDE Step 2: Performance obligations | Is the good or service capable of being distinct? Is it separately identifiable in the contract? | Distinct promises are accounted for separately
+SLIDE Step 3: Transaction price | Start from the contract price; Estimate rebates and penalties; Exclude VAT collected for the State | Expected entitlement, not list price
+SLIDE Step 4: Allocation | Find each stand-alone selling price; Allocate in proportion to those prices | A bundle discount is shared
+SLIDE Step 5: Recognition | Point in time when control passes; Or over time as the work is done | Check the control indicators
+:::
+
+For step 3, estimate variable consideration using the expected value (a probability-weighted amount, useful for many similar contracts) or the most likely amount (useful when there are only two outcomes, such as a bonus earned or not). Include it only to the extent that it is highly probable that a significant reversal of revenue will not occur later.
+
+::: quiz
+? A supplier sells a cold room and installs it. Any local contractor could do the installation. How many performance obligations are there, most likely?
+- One, because both are on the same invoice || Being on one invoice does not decide the question. Being distinct does.
+* Two: the cold room and the installation || The installation is a standard service others can provide, so it is distinct from the equipment.
+- None until the customer pays || Payment timing does not determine performance obligations.
+:::
+
+## 2. Point in time or over time
+
+Revenue is recognised over time if one of three criteria is met:
+
+- the customer receives and consumes the benefits as the entity performs, for example a monthly cleaning or security service;
+- the entity's work creates or improves an asset that the customer controls as it is created, for example building on the customer's land;
+- the asset has no alternative use to the entity and the entity has an enforceable right to payment for performance completed to date.
+
+If none applies, revenue is recognised at a point in time. Indicators that control has passed include: a present right to payment, legal title, physical possession, the significant risks and rewards of ownership, and customer acceptance.
+
+::: quiz
+? A security company in Luanda guards a client's warehouse for twelve months for Kz 24,000,000 paid in advance. How is revenue recognised?
+- Kz 24,000,000 when the cash is received || Cash received in advance is a contract liability, not revenue.
+- Kz 24,000,000 at the end of the twelve months || The client receives the benefit every day, so waiting until the end is wrong.
+* Over time, about Kz 2,000,000 per month || The client consumes the service as it is provided, so revenue is recognised over time.
+:::
+
+## Worked example: a generator and maintenance in Luanda
+
+An equipment company in Luanda signs a contract on 1 January 2025 to deliver a generator and provide two years of maintenance for a total of Kz 12,000,000, paid in full on delivery. It sells the generator alone for Kz 10,000,000 and two years of maintenance alone for Kz 2,500,000.
+
+Step 1: there is an approved contract and payment is collected. Step 2: two performance obligations, the generator and the maintenance service. Step 3: transaction price Kz 12,000,000. Step 4: total stand-alone prices are Kz 12,500,000, so the generator receives 12,000,000 × 10,000,000 ÷ 12,500,000 = Kz 9,600,000 and the maintenance receives 12,000,000 × 2,500,000 ÷ 12,500,000 = Kz 2,400,000. Step 5: generator revenue of Kz 9,600,000 is recognised on delivery. Maintenance revenue is recognised over time, Kz 1,200,000 a year (Kz 100,000 a month).
+
+Revenue for 2025 is 9,600,000 + 1,200,000 = Kz 10,800,000. At 31 December 2025 the company shows a contract liability of Kz 1,200,000 for the maintenance still to be provided.
+
+::: case | The cement rebate in Benguela
+A building materials distributor in Benguela sells cement to a contractor at Kz 5,000 per bag. The contractor earns a 4% rebate on all purchases in the year if it buys more than 100,000 bags. By 31 March it has bought 30,000 bags, and the project plan and past orders make it highly probable it will pass 100,000.
+? What revenue should Ana, the accountant, recognise for the first quarter?
+- Kz 150,000,000, and record the rebate when it is paid || The expected rebate is variable consideration and must be estimated now.
+* Kz 144,000,000, with a refund liability of Kz 6,000,000 || 30,000 × 5,000 = 150,000,000, less the 4% rebate that is highly probable to be paid.
+- No revenue until the year ends || Control of the cement has passed, so revenue is recognised on delivery.
+- Kz 156,000,000, because the contractor is a key account || Revenue is never increased by a rebate given to the customer.
+:::
+
+## Tool: five-step contract review template
+
+- Customer and contract reference:
+- Step 1 contract criteria met (approval, rights, payment terms, substance, collectability):
+- Step 2 performance obligations listed:
+- Step 3 transaction price, including variable consideration and method used:
+- Step 4 stand-alone selling prices and allocation:
+- Step 5 point in time or over time, and evidence of control:
+- Contract liability or contract asset at period end:
+
+## Common mistakes
+
+- Recognising a bundle as one sale when it holds distinct obligations.
+- Recognising revenue when the invoice is issued rather than when control passes.
+- Ignoring expected rebates and volume discounts until they are paid.
+- Treating advance payments as revenue instead of a contract liability.
+
+## Self-check
+
+- What is the core principle of IFRS 15? (Answer: Recognise revenue for the transfer of goods or services at the amount the entity expects to be entitled to.)
+- How is a transaction price allocated to performance obligations? (Answer: In proportion to their relative stand-alone selling prices.)
+- Name two methods for estimating variable consideration. (Answer: Expected value and most likely amount.)
+
+## Practical assignment
+
+Choose one customer contract at your workplace that includes more than one good or service. Complete the five-step template and compare the result with how revenue is currently recorded.
+
+## Summary
+
+- Revenue follows the transfer of control, not invoices or cash.
+- Apply the five steps in order: contract, obligations, price, allocation, recognition.
+- Estimate variable consideration and allocate bundles using stand-alone selling prices.
+=== 20
+SLIDE What you will learn | Measure inventory at the lower of cost and NRV; Calculate the cost of PPE; Calculate straight-line depreciation; Explain the annual review of useful life and residual value | Two standards, many daily decisions
+SLIDE IAS 2: cost of inventory | Purchase price and non-recoverable import duties; Transport and handling to the warehouse; Less trade discounts | Costs to bring goods to their present location
+SLIDE IAS 2: what to exclude | Abnormal waste; Selling costs and general admin overheads; Most storage costs | Expense these when incurred
+SLIDE Lower of cost and NRV | NRV = estimated selling price less costs to complete and sell; Compare item by item; Write down to NRV and expense the loss | Never carry stock above what it will recover
+SLIDE IAS 16: initial cost | Purchase price and non-recoverable duties; Delivery, installation and testing; Exclude training and opening events | Capitalise what makes the asset work
+SLIDE Depreciation | Depreciable amount = cost − residual value; Straight-line, diminishing balance or units of production; Review life and residual value every year | Match cost to the years of use
+SLIDE Common mistakes | Including selling costs in inventory; Capitalising training; Never reviewing useful lives | Check costs before you capitalise
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- measure inventory at the lower of cost and net realisable value under IAS 2;
+- calculate the initial cost of an item of property, plant and equipment under IAS 16;
+- calculate straight-line depreciation and carrying amount;
+- explain why useful life and residual value are reviewed each year.
+
+## Key terms
+
+::: terms
+Net realisable value (NRV): the estimated selling price in the ordinary course of business less the estimated costs of completion and the costs needed to make the sale
+Property, plant and equipment (PPE): tangible items held for use in production, supply, rental or administration and expected to be used for more than one period
+Depreciable amount: the cost of an asset less its residual value
+Residual value: the amount the entity would receive today from disposing of the asset if it were already of the age and condition expected at the end of its useful life
+Carrying amount: the amount at which an asset is shown after deducting accumulated depreciation and impairment losses
+:::
+
+## 1. Inventories (IAS 2)
+
+IAS 2 requires inventory to be measured at the lower of cost and net realisable value.
+
+Cost includes all costs to bring the goods to their present location and condition: the purchase price, import duties and other taxes that are not recoverable, transport and handling to the warehouse, and other directly attributable costs, less trade discounts and rebates. Exclude abnormal waste, storage costs (unless needed in the production process), administrative overheads that do not help bring the goods to their location, and selling costs. Recoverable VAT is not part of cost.
+
+For interchangeable items, use FIFO (first in, first out) or the weighted average cost formula. LIFO is not permitted under IFRS.
+
+Steps for the year-end NRV test:
+
+::: slides
+SLIDE Step 1: List risky items | Slow-moving, damaged or near expiry; Items whose selling price has fallen | Focus where risk is high
+SLIDE Step 2: Estimate selling price | Use prices after the reporting date where available; Use current price lists and offers | Evidence, not hope
+SLIDE Step 3: Deduct costs to sell | Distribution, commissions and repacking; NRV = selling price − these costs | Net, not gross
+SLIDE Step 4: Compare and write down | Compare cost and NRV item by item; Write down to NRV and expense the difference | Lower of the two
+:::
+
+::: quiz
+? Which cost should be included in the cost of imported sugar under IAS 2?
+- Salaries of the sales team || Selling costs are excluded from inventory cost.
+* Non-recoverable import duties || Duties that cannot be recovered are part of the purchase cost.
+- Recoverable VAT on the purchase || Recoverable VAT is reclaimed, so it is not part of cost.
+:::
+
+## 2. Property, plant and equipment (IAS 16)
+
+An item of PPE is recognised when future economic benefits are probable and its cost can be measured reliably. It is first measured at cost:
+
+- purchase price, including import duties and non-recoverable purchase taxes, less trade discounts;
+- directly attributable costs to bring the asset to the location and condition needed for it to operate, such as site preparation, delivery, installation, professional fees and testing;
+- the initial estimate of dismantling and site restoration costs, where there is an obligation.
+
+Costs that are not capitalised include staff training, opening ceremonies, advertising and general administration.
+
+After recognition, choose the cost model (cost less accumulated depreciation and impairment) or the revaluation model (fair value less later depreciation and impairment) for each class of assets.
+
+::: diagram steps | The life of an item of PPE
+Recognise: probable benefits and a reliable cost
+Measure cost: purchase price plus directly attributable costs
+Choose a model: cost model or revaluation model for the whole class
+Depreciate: allocate the depreciable amount over the useful life
+Review yearly: update useful life, residual value and method if expectations change
+Derecognise: on disposal, with the gain or loss in profit or loss
+:::
+
+Depreciation allocates the depreciable amount (cost less residual value) over the useful life. Common methods are straight-line (equal amounts each year), diminishing balance (a fixed rate on the carrying amount) and units of production (based on output or use). Depreciation starts when the asset is available for use. Significant parts with different lives, such as an engine and a body, are depreciated separately. Residual value and useful life are reviewed at least at each financial year-end, and changes are applied going forward. If there are signs that an asset is worth less than its carrying amount, test it for impairment under IAS 36.
+
+::: quiz
+? A truck costs Kz 60,000,000, has a residual value of Kz 6,000,000 and a useful life of six years. What is the annual straight-line depreciation?
+- Kz 10,000,000 || This ignores the residual value.
+* Kz 9,000,000 || (60,000,000 − 6,000,000) ÷ 6 = 9,000,000.
+- Kz 11,000,000 || The residual value is deducted, not added.
+:::
+
+## Worked example: rice and a delivery truck in Luanda
+
+A food distributor in Luanda holds 1,000 bags of rice at a cost of Kz 20,000 per bag at 31 December. A competitor's low-price import has pushed the expected selling price down to Kz 22,000 per bag, and distribution and commission cost Kz 3,000 per bag. NRV is 22,000 − 3,000 = Kz 19,000 per bag. Since NRV is below cost, the rice is written down by 1,000 × (20,000 − 19,000) = Kz 1,000,000, recognised as an expense. The rice is carried at Kz 19,000,000.
+
+The company also bought a delivery truck: purchase price Kz 55,000,000, non-recoverable import duties Kz 4,000,000 and delivery Kz 1,000,000. Cost is Kz 60,000,000. With a residual value of Kz 6,000,000 and a life of six years, depreciation is Kz 9,000,000 a year. After two years the carrying amount is 60,000,000 − 18,000,000 = Kz 42,000,000.
+
+::: case | The new flour line in Lobito
+A food processor in Lobito installs a new milling line. Costs: equipment Kz 200,000,000, non-recoverable import duties Kz 20,000,000, transport and installation Kz 15,000,000, testing Kz 3,000,000, staff training Kz 4,000,000 and an opening event Kz 2,000,000.
+? What cost should Joana, the accountant, capitalise?
+- Kz 244,000,000, all costs of the project || Training and the opening event are not needed to bring the asset into working condition.
+* Kz 238,000,000 || Equipment, duties, installation and testing are directly attributable. Training and the event are expensed.
+- Kz 220,000,000, equipment and duties only || Installation and testing are directly attributable and must be capitalised.
+- Kz 200,000,000, the supplier invoice only || IAS 16 cost includes duties and directly attributable costs, not just the invoice.
+:::
+
+## Tool: year-end inventory and PPE checklist
+
+- Inventory cost formula used (FIFO or weighted average):
+- Costs included in inventory reviewed (duties, freight, handling):
+- Slow-moving, damaged and expiring items listed:
+- NRV calculated item by item and write-downs recorded:
+- New PPE additions checked against directly attributable costs:
+- Useful lives and residual values reviewed and approved:
+- Fixed asset register reconciled to the general ledger:
+- Impairment indicators considered:
+
+## Common mistakes
+
+- Including selling or storage costs in inventory cost.
+- Writing down inventory in total instead of item by item.
+- Capitalising training, opening events or general overheads.
+- Leaving useful lives unchanged for years even when assets are used differently.
+
+## Self-check
+
+- How is inventory measured under IAS 2? (Answer: At the lower of cost and net realisable value.)
+- Which cost formula is not permitted under IFRS? (Answer: LIFO.)
+- What is the depreciable amount? (Answer: Cost less residual value.)
+
+## Practical assignment
+
+Select five slow-moving inventory items and calculate NRV for each using current prices and selling costs. Then choose two recent fixed asset additions and check that only directly attributable costs were capitalised.
+
+## Summary
+
+- Inventory is carried at the lower of cost and NRV, tested item by item.
+- PPE is measured at cost, including all directly attributable costs.
+- Depreciation spreads cost less residual value over the useful life, reviewed each year.
+=== 20
+SLIDE What you will learn | Measure a lease liability and right-of-use asset; Apply the short-term and low-value exemptions; Translate foreign currency transactions; Account for exchange differences | Two standards that matter in Angola
+SLIDE IFRS 16: the lessee model | Right-of-use asset and lease liability at commencement; Liability = present value of lease payments; Discount at implicit rate or incremental borrowing rate | Most leases go on the balance sheet
+SLIDE After commencement | Interest increases the liability; Payments reduce the liability; Right-of-use asset is depreciated | Interest plus depreciation replace rent
+SLIDE Exemptions | Short-term leases of 12 months or less; Leases of low-value assets; Expense payments on a straight-line basis | Optional, but disclose the choice
+SLIDE IAS 21: functional currency | Currency of the main economic environment; Usually the kwanza for Angolan operations; Foreign currency transactions start at spot rate | Know your functional currency
+SLIDE Year-end translation | Monetary items at the closing rate; Non-monetary items at historical rate; Differences on monetary items go to profit or loss | Payables move, inventory does not
+SLIDE Common mistakes | Treating a long lease as rent; Capitalising exchange losses into stock; Using an old rate at year-end | Retranslate every monetary balance
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- measure the lease liability and right-of-use asset for a simple lease under IFRS 16;
+- apply the short-term and low-value lease exemptions;
+- record foreign currency transactions at the spot rate under IAS 21;
+- calculate and record exchange differences on monetary items at the reporting date.
+
+## Key terms
+
+::: terms
+Lease: a contract that conveys the right to control the use of an identified asset for a period of time in exchange for consideration
+Right-of-use asset: an asset that represents the lessee's right to use the leased asset over the lease term
+Lease liability: the present value of the lease payments not yet paid
+Functional currency: the currency of the primary economic environment in which the entity operates
+Monetary items: units of currency held, and assets and liabilities to be received or paid in a fixed or determinable number of currency units, such as cash, receivables, payables and loans
+:::
+
+## 1. Leases (IFRS 16)
+
+Under IFRS 16, a lessee recognises almost all leases on the balance sheet. At the commencement date it recognises:
+
+- a lease liability, measured at the present value of lease payments not yet paid, discounted at the interest rate implicit in the lease or, if that cannot be readily determined, the lessee's incremental borrowing rate;
+- a right-of-use asset, measured at the lease liability plus payments made at or before commencement, initial direct costs and estimated restoration costs, less lease incentives received.
+
+Two optional exemptions allow payments to be expensed on a straight-line basis instead: short-term leases (a lease term of twelve months or less, with no purchase option) and leases of low-value assets, such as laptops or small office equipment.
+
+How to account for a simple lease:
+
+::: slides
+SLIDE Step 1: Check it is a lease | Identified asset; The lessee gets most of the benefits and directs its use | Control of use for a period
+SLIDE Step 2: Find the payments and rate | Fixed payments over the lease term; Implicit rate or incremental borrowing rate | Write down your inputs
+SLIDE Step 3: Measure at commencement | Lease liability = present value of payments; Right-of-use asset = liability plus adjustments | Two entries on day one
+SLIDE Step 4: Each period | Liability + interest − payment; Depreciate the right-of-use asset | Interest falls each year
+:::
+
+::: quiz
+? A company in Luanda rents a car park for ten months with no purchase option and chooses the exemption. How is it accounted for?
+- A right-of-use asset and lease liability || The short-term exemption allows the company to avoid recognising these.
+* Lease payments are expensed on a straight-line basis || A lease of twelve months or less qualifies for the short-term exemption.
+- No entry until the end of the lease || The payments are expensed as the car park is used, not at the end.
+:::
+
+## 2. Foreign currency (IAS 21)
+
+The kwanza has depreciated sharply against the US dollar in several periods in recent years, so foreign currency accounting has a large effect on Angolan financial statements, especially for importers with USD payables and banks with foreign currency balances.
+
+::: diagram steps | Foreign currency transactions under IAS 21
+Determine functional currency: the currency of the main economic environment, usually the kwanza for Angolan operations
+Initial recognition: translate each transaction at the spot rate on the transaction date
+Reporting date: translate monetary items at the closing rate and keep non-monetary items at the historical rate
+Settlement: record the difference between the carrying amount and the amount paid or received
+Recognise differences: exchange differences on monetary items go to profit or loss
+:::
+
+Non-monetary items carried at historical cost, such as inventory, PPE and prepayments, are not retranslated. That is why a devaluation increases a USD payable but does not increase the cost of the stock already received. The stock is still tested for NRV under IAS 2. If an economy is classified as hyperinflationary, IAS 29 also applies, so check with your auditor whether it applies for the period.
+
+::: quiz
+? Which item is retranslated at the closing rate at year-end?
+- Imported inventory bought in USD || Inventory is non-monetary and stays at the historical rate.
+- A USD advance paid for future goods || A prepayment for goods is non-monetary.
+* A USD loan payable to a foreign supplier || A loan is a monetary item, so it is retranslated at the closing rate.
+:::
+
+## Worked example: a warehouse lease and a USD payable in Luanda
+
+A distributor in Luanda leases a warehouse for three years. It pays Kz 10,000,000 at the end of each year, and its incremental borrowing rate is 10%. The present value factors are 0.909091, 0.826446 and 0.751315, a total of 2.486852. The lease liability at commencement is 10,000,000 × 2.486852 = Kz 24,868,520, and the right-of-use asset is the same.
+
+Year 1: interest 10% × 24,868,520 = Kz 2,486,852. Liability: 24,868,520 + 2,486,852 − 10,000,000 = Kz 17,355,372. Depreciation: 24,868,520 ÷ 3 = Kz 8,289,507. The total expense of Kz 10,776,359 replaces the Kz 10,000,000 rent of the old approach. In year 3 the liability reaches zero.
+
+The same company buys goods for USD 100,000 on credit. Using illustrative rates only: Kz 900 per USD on the purchase date, Kz 950 at 31 December and Kz 980 on payment in February. Inventory and the payable are first recorded at Kz 90,000,000. At year-end the payable is retranslated to Kz 95,000,000, with an exchange loss of Kz 5,000,000 in profit or loss. On payment, the company pays Kz 98,000,000 and records a further loss of Kz 3,000,000 in the new year.
+
+::: case | The devaluation loss at a Viana importer
+At year-end, an importer in Viana has USD payables that create an exchange loss of Kz 40,000,000 after a sharp kwanza depreciation. The commercial director, Rui, asks the accountant to add the loss to the cost of the inventory so that profit looks better.
+? What should the accountant do?
+- Add the loss to inventory as Rui asks || Exchange differences on monetary items are not part of inventory cost under IAS 2 and IAS 21.
+- Defer the loss until the payables are paid || IAS 21 requires retranslation at the closing rate at each reporting date.
+* Recognise the Kz 40,000,000 loss in profit or loss and explain the rule to Rui || Exchange differences on monetary items go to profit or loss in the period they arise.
+- Keep the payables at the original rate || Monetary items must be translated at the closing rate.
+:::
+
+## Tool: lease and foreign currency year-end template
+
+- List of all lease contracts, with term, payments and rate:
+- Exemptions applied (short-term or low-value) and justification:
+- Lease liability schedule (opening, interest, payments, closing):
+- Right-of-use asset depreciation calculated:
+- Functional currency confirmed:
+- Closing rate used and its source:
+- All foreign currency monetary balances retranslated:
+- Exchange gains and losses posted to profit or loss:
+
+## Common mistakes
+
+- Treating a multi-year lease as a simple rent expense.
+- Using the wrong discount rate or forgetting payments made before commencement.
+- Retranslating inventory or PPE at the closing rate.
+- Capitalising exchange losses into inventory, or leaving payables at the original rate.
+
+## Self-check
+
+- How is a lease liability measured at commencement? (Answer: At the present value of the lease payments not yet paid.)
+- Name the two optional IFRS 16 exemptions. (Answer: Short-term leases and leases of low-value assets.)
+- At what rate are monetary items translated at the reporting date? (Answer: The closing rate.)
+
+## Practical assignment
+
+List every lease at your company, including vehicles, warehouses and equipment, and mark which qualify for an exemption. Then list all USD balances at the last month-end and check that each monetary balance was retranslated at the closing rate.
+
+## Summary
+
+- IFRS 16 puts most leases on the balance sheet as a right-of-use asset and a lease liability.
+- Foreign currency transactions start at the spot rate. Monetary items are retranslated at the closing rate.
+- Exchange differences on monetary items go to profit or loss, never into inventory cost.
+=== 20
+SLIDE What you will learn | Decide between a provision and a contingent liability; Measure a provision; Classify events after the reporting period; Prepare for an external audit | Close the year with confidence
+SLIDE Provision criteria (IAS 37) | Present obligation from a past event; Probable outflow of resources; Reliable estimate | All three or no provision
+SLIDE Measuring provisions | Best estimate of the amount to settle; Expected value for large populations; Most likely outcome for single obligations | Estimate, document, review
+SLIDE Contingencies | Contingent liability: disclose unless remote; Contingent asset: disclose if probable; Recognise an asset only if virtually certain | Disclose, do not recognise
+SLIDE Events after the reporting period (IAS 10) | Adjusting: evidence of conditions at year-end; Non-adjusting: conditions that arose after year-end; Disclose material non-adjusting events | Ask when the condition existed
+SLIDE Preparing for an audit | Prepared-by-client list and reconciliations; Supporting documents and schedules; Management representation letter | Organised evidence saves weeks
+SLIDE Common mistakes | Provisions for future losses; Adjusting for post-year-end fires; Late or missing reconciliations | Evidence and timing decide
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- decide whether to recognise a provision or disclose a contingent liability under IAS 37;
+- measure a provision using the expected value or the most likely outcome;
+- classify events after the reporting period as adjusting or non-adjusting under IAS 10;
+- prepare a year-end file for an external audit.
+
+## Key terms
+
+::: terms
+Provision: a liability of uncertain timing or amount
+Constructive obligation: an obligation created by an entity's established practice, published policy or specific statement that gives others a valid expectation that it will act
+Contingent liability: a possible obligation whose existence will be confirmed by uncertain future events, or a present obligation that is not recognised because an outflow is not probable or cannot be measured reliably
+Adjusting event: an event after the reporting period that gives evidence of conditions that existed at the end of the reporting period
+Non-adjusting event: an event after the reporting period that shows conditions that arose after the end of the reporting period
+:::
+
+## 1. Provisions and contingencies (IAS 37)
+
+A provision is recognised only when all three conditions are met: the entity has a present obligation (legal or constructive) as a result of a past event, an outflow of resources is probable (more likely than not), and a reliable estimate can be made.
+
+::: diagram steps | IAS 37 decision path
+Present obligation: is there a legal or constructive obligation from a past event?
+Probable outflow: is an outflow more likely than not?
+Reliable estimate: can the amount be estimated reliably?
+Recognise a provision: if all three answers are yes
+Disclose or ignore: otherwise disclose a contingent liability, unless the outflow is remote
+:::
+
+Measure a provision at the best estimate of the amount needed to settle the obligation at the reporting date. For a large population of items, such as product warranties, use the expected value. For a single obligation, such as one court case, the most likely outcome is usually the best estimate. Discount the provision when the time value of money is material.
+
+No provisions are made for future operating losses. A restructuring provision needs a detailed formal plan and a valid expectation among those affected. A contingent asset is disclosed when an inflow is probable and recognised only when it is virtually certain.
+
+::: quiz
+? A customer sues a company. Its lawyer says the company will probably lose and estimates a payment of Kz 15,000,000. What should the company do?
+- Disclose a contingent liability only || When the outflow is probable and can be measured, a provision is required.
+* Recognise a provision of Kz 15,000,000 || There is a present obligation, a probable outflow and a reliable estimate.
+- Wait until the court decides || IAS 37 requires recognition when the criteria are met, not when the case ends.
+:::
+
+## 2. Events after the reporting period (IAS 10)
+
+IAS 10 covers events between the end of the reporting period and the date the statements are authorised for issue. Adjusting events change the amounts in the statements. Examples: the settlement of a court case that confirms an obligation existed at year-end, a customer's bankruptcy that shows a receivable was already impaired, or inventory sold below cost after year-end, giving evidence of NRV.
+
+Non-adjusting events do not change the amounts. If material, disclose their nature and an estimate of the financial effect. Examples: a warehouse fire after year-end, a major acquisition, or a large currency movement after year-end. Dividends declared after the reporting period are not a liability at year-end. There is one exception: if management decides after year-end to liquidate the entity or stop trading, the going concern basis cannot be used.
+
+::: quiz
+? A distributor's year ends on 31 December. On 15 January a fire destroys a warehouse that was in good condition at year-end. What should be done?
+- Write down the warehouse at 31 December || The fire happened after year-end, so it does not reflect conditions at the reporting date.
+- Ignore it completely || A material non-adjusting event must be disclosed.
+* Disclose it as a non-adjusting event with an estimate of its effect || This gives users information about a significant event without changing year-end amounts.
+:::
+
+## 3. Preparing for an external audit
+
+Under International Standards on Auditing (ISAs), the auditor gives an opinion on whether the statements are fairly presented. An unmodified opinion is the clean result. A modified opinion can be qualified, adverse, or a disclaimer of opinion. Good preparation reduces errors, delays and audit adjustments.
+
+::: slides
+SLIDE Step 1: Agree the timetable | Meet the auditor before year-end; Agree the prepared-by-client list and deadlines | Plan before the year closes
+SLIDE Step 2: Reconcile every key balance | Bank, receivables, payables, inventory and fixed assets; Clear old reconciling items | No unexplained differences
+SLIDE Step 3: Build the evidence file | Contracts, invoices, count sheets and confirmations; Schedules for provisions, leases and FX | One schedule per balance
+SLIDE Step 4: Review judgements | NRV, useful lives, provisions and going concern; Events after the reporting period | Document your reasoning
+SLIDE Step 5: Sign off | Draft statements reviewed against IFRS; Management representation letter signed | Accurate and complete
+:::
+
+## Worked example: warranty provision at a Luanda appliance distributor
+
+An appliance distributor in Luanda sold 10,000 fridges in 2025 with a one-year warranty. Past data shows 5% need minor repairs costing Kz 20,000 each and 1% need major repairs costing Kz 100,000 each. The expected value is 10,000 × (5% × 20,000 + 1% × 100,000) = 10,000 × (1,000 + 1,000) = Kz 20,000,000. The company recognises a warranty provision of Kz 20,000,000 at 31 December 2025.
+
+::: case | A customer collapses after year-end in Benguela
+A wholesaler in Benguela closes its year on 31 December 2025. On 10 February 2026, before the statements are approved, its largest customer, owing Kz 30,000,000 since November, is declared insolvent. The customer's problems began in 2025.
+? What should the finance manager, Carlos, do?
+- Disclose it only as a non-adjusting event || The insolvency gives evidence that the receivable was already impaired at year-end.
+* Adjust the 2025 statements by impairing the receivable || This is an adjusting event because it confirms conditions that existed at the reporting date.
+- Record the loss in 2026 when the insolvency was declared || IAS 10 requires adjustment when the event gives evidence of year-end conditions.
+- Make no entry until the liquidator pays out || The expected loss must be reflected now, based on the best evidence available.
+:::
+
+## Tool: audit readiness checklist
+
+- Audit timetable and prepared-by-client list agreed:
+- Bank reconciliations complete, with confirmations requested:
+- Receivables ageing and impairment review:
+- Inventory count results and NRV review:
+- Fixed asset register reconciled:
+- Schedules for provisions, contingencies, leases and FX:
+- Events after the reporting period reviewed up to the approval date:
+- Going concern assessment documented:
+- Management representation letter drafted:
+
+## Common mistakes
+
+- Recognising provisions for future operating losses or general risks.
+- Ignoring constructive obligations created by company practice.
+- Adjusting the statements for events that arose after year-end.
+- Starting reconciliations only when the auditors arrive.
+
+## Self-check
+
+- What are the three conditions for recognising a provision? (Answer: A present obligation from a past event, a probable outflow and a reliable estimate.)
+- Is a warehouse fire after year-end an adjusting event? (Answer: No, it is a non-adjusting event and is disclosed if material.)
+- Name the types of modified audit opinion. (Answer: Qualified, adverse and disclaimer of opinion.)
+
+## Practical assignment
+
+Prepare a draft audit readiness checklist for your company's next year-end. List all legal cases and warranty or guarantee obligations, and decide for each whether it is a provision, a contingent liability or neither.
+
+## Summary
+
+- A provision needs a present obligation, a probable outflow and a reliable estimate.
+- Adjusting events change year-end amounts. Material non-adjusting events are disclosed.
+- Reconciled balances, documented judgements and an organised file make audits faster and cleaner.

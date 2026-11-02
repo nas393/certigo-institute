@@ -1,0 +1,910 @@
+=== 20
+SLIDE What you will learn | Structure a professional email in six parts; Put the main point first with BLUF; Choose a formal, neutral or informal register; Avoid false friends and errors common to Portuguese speakers | Clear, polite, correct emails
+SLIDE The six-part email | Subject line; Greeting; Purpose (BLUF); Details; Call to action; Close and signature | Every part has one job
+SLIDE BLUF: bottom line up front | State your purpose in the first one or two sentences; Then give the background; Busy readers decide in seconds | Do not hide the request in paragraph three
+SLIDE Register | Formal: new contacts, complaints, legal matters; Neutral: most business emails; Informal: colleagues you know well | Neutral is the safe default
+SLIDE False friends | Actually = in fact, not currently; Pretend = fingir, not intend; Assist = help, not attend; Eventually = in the end, not possibly | Check the word you translate
+SLIDE Grammar traps | Information, equipment, advice and feedback have no plural; I agree, not I am agree; Discuss the price, not discuss about; Depend on, not depend of | Learn the correct pattern as a phrase
+SLIDE Before you press send | Subject line says topic and action; Request is clear and dated; Tone fits the reader; No false friends | Read it once as the receiver
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- structure a professional email using a six-part model;
+- apply the BLUF principle so the reader sees your main point first;
+- choose a formal, neutral or informal register for a given reader;
+- avoid false friends and grammar errors typical of Portuguese speakers.
+
+## Key terms
+
+::: terms
+Register: the level of formality of your language, chosen to fit the reader and situation
+BLUF: bottom line up front, a writing principle that puts the main point or request at the start
+Call to action: the sentence that tells the reader exactly what you want them to do and by when
+False friend: a word that looks like a word in your language but has a different meaning
+Uncountable noun: a noun with no plural form, such as information or equipment
+:::
+
+## 1. The six-part email
+
+Busy international readers look at the subject line and the first two sentences, then decide what to do. A predictable structure helps them find what they need.
+
+The purpose sentence applies BLUF, a principle widely used in military and business writing: put the bottom line up front. Portuguese business writing often begins with context and courtesy and reaches the request at the end. In English, the request comes first and the background follows.
+
+::: slides
+SLIDE Step 1: Subject line | Topic plus action or date; Example: PO 4471 – revised ETA needed by 12 May | The reader should know the topic before opening
+SLIDE Step 2: Greeting | Dear Mr Chen or Dear Ms Patel for new contacts; Hello Sarah or Hi Sarah for regular contacts | Use the family name until invited otherwise
+SLIDE Step 3: Purpose (BLUF) | I am writing to ask for a revised arrival date for PO 4471; One or two sentences only | The main point comes first
+SLIDE Step 4: Details and call to action | Give facts, numbers and references; Then say what you need and by when | Could you confirm the new date by Thursday 12 May?
+SLIDE Step 5: Close and signature | Kind regards or Best regards; Full name, job title, company, phone | Make it easy to reply or call
+:::
+
+::: diagram steps | The six-part professional email
+Subject line: topic plus action or deadline
+Greeting: Dear Mr/Ms + family name, or Hello + first name
+Purpose: the main point in one or two sentences (BLUF)
+Details: facts, figures, references, attachments
+Call to action: what you need, from whom, by when
+Close: Kind regards, full name, title, contact details
+:::
+
+## 2. Choosing the right register
+
+Use formal English for first contact, complaints, contracts and senior external people, neutral English for most daily emails, and informal English only for colleagues you know well.
+
+- Formal: "I would be grateful if you could send the certificate of origin." / "Please do not hesitate to contact me."
+- Neutral: "Could you send the certificate of origin?" / "Let me know if you have any questions."
+
+Choose one level and keep it through the whole email. Mixing "Dear Sir" with "Thanks a lot, see ya" sounds careless.
+
+Literal translations sound old-fashioned: "I remain at your disposal" (fico ao dispor) is less natural than "Please let me know if you need anything else". "Exmo. Senhor" becomes "Dear Mr Silva", not "Excellent Sir".
+
+::: quiz
+? You are writing to a new client in Dubai for the first time. Which opening is most appropriate?
+- Hi there, hope you're good! || Too informal for a first external contact.
+* Dear Mr Al Mansoori, I am writing to introduce our company and our rice range. || Correct. Formal greeting with the family name and a clear purpose in the first sentence.
+- Excellent Sir, with my best compliments, I come by this means to present ourselves. || A literal translation from Portuguese that sounds unnatural.
+:::
+
+## 3. False friends and grammar traps
+
+Portuguese and English share many Latin words, but some false friends have different meanings and cause real misunderstandings.
+
+- Actually means "in fact" (na verdade), not "currently". For "atualmente" write currently or at present.
+- Pretend means "fingir". For "pretender" write intend or plan: "We intend to order 500 tonnes."
+- Assist means "help". For "assistir a uma reunião" write attend a meeting.
+- Attend means "be present at". For "atender o telefone" write answer the phone; for "atender clientes" write serve customers.
+- Eventually means "in the end". For "eventualmente" write possibly or if necessary.
+- Realise means "understand". For "realizar uma reunião" write hold a meeting; for "realizar um pagamento" write make a payment.
+- Compromise means a middle solution. For "compromisso" write commitment or appointment.
+
+Grammar transfer also causes errors. Information, equipment, advice and feedback are uncountable: write "some information", "two pieces of equipment", never "informations". Write "I agree", not "I am agree". You discuss a price, not "discuss about" a price. Things depend on something, not "depend of". Use for with a period: "We have worked with them for three years", not "since three years".
+
+::: quiz
+? A colleague writes to a supplier: "Actually we pretend to increase our order." What does the supplier understand?
+- That your company currently plans a bigger order || That is what the writer meant, but not what the words say.
+* That, in fact, you are only pretending to increase the order || Correct. Actually means "in fact" and pretend means "fingir". Write: "We currently plan to increase our order."
+- That the order will eventually increase || Neither word means "eventually".
+:::
+
+## Worked example: a revised shipment date in Luanda
+
+Ana, an import coordinator at a Luanda food distributor, is chasing a late rice shipment (PO 4471, due 5 May). Her first draft:
+
+"Dear Sir, Good morning, I hope you are well. We are your client since five years. Actually we have many clients waiting. I am writing to ask informations about the PO 4471. We pretend to know the new date. Best regards."
+
+The request comes late, and the draft contains four errors: "since five years", "informations", "actually" and "pretend". Her revision:
+
+"Subject: PO 4471 – revised ETA needed by Thursday 12 May
+
+Dear Mr Chen,
+
+I am writing to ask for a revised arrival date for PO 4471 (1,000 t rice, original ETA 5 May).
+
+We have not yet received an update, and several customers are waiting for this stock.
+
+Could you confirm the new ETA and the vessel name by Thursday 12 May?
+
+Kind regards,
+Ana Domingos, Import Coordinator"
+
+::: case | The supplier's late reply at a Luanda distributor
+Paulo, a buyer at a Luanda distributor, receives this from a Brazilian supplier: "We eventually may delay the sugar shipment." He must reply today.
+? What is the best way for Paulo to respond?
+- Reply: "Ok, thank you for the information, we will wait." || He has not asked for the facts or a date.
+* Reply: "Thank you for letting us know. Could you confirm whether the shipment will be delayed and, if so, the new ETA by Friday?" || Best. The supplier probably meant "eventualmente" (possibly). Paulo checks the meaning politely and asks for a clear answer with a deadline.
+- Reply: "We are very surprised you eventually delay the shipment. This is not acceptable." || Aggressive, and he misreads "eventually" as a confirmed delay.
+:::
+
+## Tool: email checklist
+
+- Subject line: topic, reference and action or date
+- Greeting matches the relationship (Dear Mr/Ms or Hello + first name)
+- Purpose stated in the first one or two sentences
+- Call to action says what, who and by when
+- One register used throughout
+- False friends checked: actually, pretend, assist, attend, eventually, realise
+- Uncountable nouns used correctly: information, equipment, advice, feedback
+
+## Common mistakes
+
+- Starting with long courtesies and placing the request at the end.
+- Translating word for word from Portuguese, such as "Excellent Sir" or "we pretend".
+- Asking for action without a deadline.
+
+## Self-check
+
+1. What does BLUF mean and where does the main point go? (Answer: Bottom line up front, the main point or request goes in the first one or two sentences.)
+
+2. How do you write "Pretendemos realizar uma reunião" correctly? (Answer: "We intend to hold a meeting.")
+
+3. What is wrong with "Please send us the informations"? (Answer: Information is uncountable, so write "Please send us the information.")
+
+## Practical assignment
+
+Check three emails you sent in English this month against the checklist. Rewrite one using the six-part model and BLUF, and list every false friend or grammar trap you find.
+
+## Summary
+
+- A professional email has six parts, with the purpose first (BLUF).
+- Neutral register suits most business emails; keep one register throughout.
+- Learn the common false friends and uncountable nouns to avoid embarrassing errors.
+
+=== 20
+SLIDE What you will learn | Run or follow a meeting through its five stages; Agree and disagree politely with the cushion-reason-alternative pattern; Check understanding and clarify; Use video-call phrases and summarise actions | Speak up with confidence
+SLIDE The five meeting stages | Open and set the purpose; Go through the agenda; Discuss; Summarise; Agree actions and close | A clear structure helps non-native speakers
+SLIDE Agreeing | Strong: I completely agree; Partial: I agree up to a point; Neutral: I see what you mean | Show how much you agree
+SLIDE Disagreeing politely | Cushion: I see your point, but...; Reason: a fact or number; Alternative: What if we...? | Disagree with the idea, not the person
+SLIDE Clarifying | Sorry, could you repeat that?; So what you are saying is...; Just to check, do you mean...? | Checking is professional, not weak
+SLIDE Video calls | You are on mute; Your audio is breaking up; Can everyone see my screen?; Can I come in here? | Short, polite, practical phrases
+SLIDE Actions: who, what, when | Name the person; State the task; Give the date; Send a written summary the same day | No owner, no action
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- follow and lead a meeting through its five stages using standard phrases;
+- agree and disagree politely using the cushion-reason-alternative pattern;
+- check understanding and ask for clarification on calls;
+- summarise a meeting with clear action items (who, what, when).
+
+## Key terms
+
+::: terms
+Agenda: the list of topics to be covered in a meeting, in order
+Chair: the person who leads the meeting and keeps it on time
+Cushion: a short phrase that softens what follows, such as "I see your point, but"
+Paraphrase: repeating what someone said in your own words to check understanding
+Action item: a task agreed in a meeting, with an owner and a deadline
+:::
+
+## 1. The five stages of a meeting
+
+Meetings in English follow a predictable pattern. Knowing the stages helps you follow the conversation and choose when to speak.
+
+::: diagram steps | Five stages of a business meeting
+Open: welcome people and state the purpose
+Agenda: list the topics and the time available
+Discuss: take each point, invite views, manage time
+Summarise: repeat what was decided
+Actions and close: confirm who does what by when, then thank people
+:::
+
+Useful phrases for each stage:
+
+- Open: "Thanks for joining. The purpose of today's call is to agree the delivery plan for June."
+- Agenda: "We have three points to cover in thirty minutes."
+- Discuss: "Let's move on to point two." / "Maria, what's your view?" / "We're running short of time."
+- Summarise: "So, to sum up, we have agreed to split the order into two shipments."
+- Close: "Thanks, everyone. I'll send the minutes by end of day."
+
+If you are not the chair, you can still use stage language to take part: "Before we move on, can I add something on point one?"
+
+## 2. Agreeing and disagreeing politely
+
+English speakers in business rarely say "No" or "You are wrong" directly, because it can sound rude. Agreement also has degrees.
+
+- Strong agreement: "I completely agree." / "Exactly."
+- Partial agreement: "I agree up to a point." / "That's true, but..."
+- Neutral: "I see what you mean." (This does not mean you agree.)
+- Polite disagreement: "I'm not sure I agree." / "I see it slightly differently."
+
+For disagreement, use a three-step pattern: cushion, reason, alternative.
+
+::: slides
+SLIDE Step 1: Cushion | I see your point, but...; I understand why you say that, however... | Soften before you disagree
+SLIDE Step 2: Reason | Give a fact, a number or a constraint; Our warehouse in Viana is already at 90% capacity | Facts make disagreement objective
+SLIDE Step 3: Alternative | What if we...?; Would it be possible to...? | Move the discussion forward
+SLIDE Put it together | I see your point, but our warehouse is at 90% capacity.; What if we received the second lot in July? | Polite, factual and constructive
+:::
+
+Compare: "No, that's impossible, we have no space" with "I understand the need to ship everything now, but our warehouse is already at 90% capacity. Would it be possible to split the shipment?" The second version keeps the relationship and leads to a solution.
+
+::: quiz
+? The supplier says: "We suggest shipping all 40 containers in one vessel." You cannot accept. What is the best reply?
+- That's a bad idea, we can't do it. || Direct and with no reason or alternative. It may damage the relationship.
+* I see the advantage, but our port clearance capacity is 20 containers a week. Could we split it into two vessels? || Correct. Cushion, reason, then alternative.
+- I see what you mean. || This sounds polite, but the supplier may think you agree.
+:::
+
+## 3. Clarifying, checking and video calls
+
+Video calls bring poor connections and different accents. Asking for clarification is a professional skill: misunderstanding a quantity or date costs far more than one extra question.
+
+- Asking for repetition: "Sorry, could you repeat the last figure?" / "Could you speak a little more slowly?"
+- Paraphrasing: "So what you're saying is that the vessel leaves on the 14th, not the 4th?"
+- Checking: "Just to check, is that price per tonne or per container?"
+- Spelling: "Could you spell that, please?" Numbers like 14 and 40, or 15 and 50, are often confused, so say "one-four" or confirm in the chat.
+
+Video-call phrases:
+
+- "I think you're on mute."
+- "Your audio is breaking up. Could you turn off your camera?"
+- "Can everyone see my screen?"
+- "Sorry, go ahead." (when two people speak at once)
+- "Can I come in here?" (to interrupt politely)
+- "I'll put the figures in the chat."
+
+::: quiz
+? On a call, a supplier says the price is "fifteen dollars per bag" but the line is bad. What should you say?
+- OK, fifty dollars, noted. || You have assumed the number. Fifteen and fifty are easily confused.
+- Sorry, I didn't understand anything. || Too vague. The speaker does not know what to repeat.
+* Just to check, is that one-five, fifteen dollars per bag? || Correct. You paraphrase the exact figure and confirm it.
+:::
+
+## Worked example: a weekly supplier call from Lobito
+
+Joaquim is logistics manager at a distribution company that receives cargo at Lobito port. He chairs a weekly call with a freight forwarder in Durban.
+
+"Joaquim: Thanks for joining, Peter. The purpose of today's call is to agree the plan for the next two vessels. We have two points.
+
+Peter: The first vessel can arrive on the 14th.
+
+Joaquim: Sorry, just to check, one-four, the 14th?
+
+Peter: Yes, the 14th.
+
+Joaquim: Great. On point two, you suggested delivering all containers to our yard in one day. I see the advantage, but we can only unload 15 trucks a day. Would it be possible to deliver over two days?
+
+Peter: Yes, that works.
+
+Joaquim: So, to sum up: Peter confirms the vessel arrives on the 14th, and deliveries take place on the 15th and 16th. I'll send the summary by email today."
+
+Joaquim's follow-up email lists actions in the who-what-when format: "Peter – confirm truck schedule – by Friday 10 May. Joaquim – book unloading team – by Monday 13 May."
+
+::: case | The production meeting in Benguela
+Luísa is a project engineer at a construction company in Benguela. In a video meeting, a foreign consultant proposes ordering all the cement for the next three months now. Luísa knows the site store holds only one month of stock, and cement can harden in humid storage.
+? What should Luísa say?
+- Nothing, because the consultant is senior. || Her information prevents a costly problem. Silence is not professional here.
+- "No, that is wrong. We cannot store it." || Correct facts, but the direct "that is wrong" may create conflict.
+* "I see the logic of buying in bulk, but our store holds one month of stock and humidity is a risk. What if we fixed the price for three months but took delivery monthly?" || Best. Cushion, reason with facts, and a constructive alternative.
+- "I see what you mean." || It sounds like agreement, so the order may go ahead.
+:::
+
+## Tool: meeting phrase card
+
+- Open: The purpose of today's meeting is to...
+- Agenda: We have [number] points to cover in [time].
+- Invite: What's your view, [name]?
+- Agree: I completely agree / I agree up to a point.
+- Disagree: I see your point, but [fact]. What if we [alternative]?
+- Clarify: Just to check, do you mean...?
+- Interrupt: Sorry, can I come in here?
+- Summarise: So, to sum up, we have agreed...
+- Actions: [Name] will [task] by [date].
+
+## Common mistakes
+
+- Saying "I see what you mean" when you disagree.
+- Disagreeing without giving a reason or an alternative.
+- Pretending to understand a figure instead of checking it.
+- Ending the meeting without owners and dates for actions.
+
+## Self-check
+
+1. Name the three steps for disagreeing politely. (Answer: Cushion, reason, alternative.)
+
+2. Why should you say "one-five" when confirming the number 15 on a call? (Answer: Because fifteen and fifty sound similar, and spelling out the digits avoids a costly mistake.)
+
+3. What three elements must every action item have? (Answer: Who, what and when.)
+
+## Practical assignment
+
+In your next meeting or call in English, use at least three phrases from the meeting phrase card. Afterwards, write a short summary email with all action items in the who-what-when format, and send it within two hours.
+
+## Summary
+
+- Meetings follow five stages, and each stage has standard phrases you can learn.
+- Disagree politely with a cushion, a factual reason and an alternative.
+- Check figures and dates, and close every meeting with who, what and when.
+
+=== 20
+SLIDE What you will learn | Make requests at the right level of politeness; Use first and second conditionals to make offers and proposals; Soften negative messages with hedging language; Prepare with BATNA and follow negotiation stages | Firm on substance, soft on language
+SLIDE The politeness ladder | Send the price list (command); Can you send...?; Could you send...?; Would you mind sending...?; I was wondering if you could send... | Choose the level for the situation
+SLIDE Conditionals for deals | First conditional: If you confirm today, we will pay 30% in advance; Second conditional: If we ordered more, would you lower the price?; Second is more tentative | If-then language links what you give to what you get
+SLIDE Softening language | Slightly, a little, rather; I'm afraid that...; It seems that...; Not very competitive instead of bad | Make the message clear but less sharp
+SLIDE Negotiation stages | Prepare; Open; Explore; Propose and bargain; Close and confirm in writing | Do not skip preparation
+SLIDE BATNA | Best alternative to a negotiated agreement (Fisher and Ury); Know your walk-away point; Calculate the numbers before the call | Your BATNA is your power
+SLIDE Close in writing | Summarise the agreed price, volume, Incoterm, payment and dates; Send the same day | What is not written can be forgotten
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose the right level of politeness for a request using modal verbs;
+- use first and second conditionals to make offers and tentative proposals;
+- soften negative messages with hedging language;
+- prepare a supplier negotiation using BATNA and calculate the value of a concession.
+
+## Key terms
+
+::: terms
+Modal verb: a verb such as can, could, would, may or might that changes the strength of a statement or request
+Conditional: a sentence with "if" that links a condition to a result
+Hedging: language that makes a statement less direct, such as "slightly" or "it seems"
+Concession: something you give up in a negotiation in return for something else
+BATNA: best alternative to a negotiated agreement, the option you take if the negotiation fails
+:::
+
+## 1. Polite requests: the politeness ladder
+
+In English, an imperative ("Send me the price list") often sounds like an order, especially in writing, even if the Portuguese equivalent sounds fine. English speakers make requests more polite with modal verbs and indirect questions.
+
+::: diagram pyramid | The politeness ladder (most polite at the top)
+I was wondering if you could...: very polite, for large favours or senior contacts
+Would you mind + -ing...?: polite, for requests that may cause effort
+Could you...? / Would you...?: standard polite request for most business emails
+Can you...?: neutral, for colleagues and routine tasks
+Imperative (Send...): direct, use only with please and for simple instructions
+:::
+
+Indirect questions are more polite: "Could you tell me when the vessel will arrive?" Note the word order: the subject comes before the verb ("when the vessel will arrive", not "when will the vessel arrive").
+
+::: quiz
+? You need a supplier to send a corrected invoice. It is their mistake, but the relationship matters. Which request is best?
+- Send the correct invoice now. || An imperative without please sounds like an order and may damage goodwill.
+* Could you send us a corrected invoice by Friday, please? || Correct. Polite modal, clear request and a deadline.
+- I was wondering if maybe, perhaps, you could possibly look at the invoice. || Too indirect for a simple correction. The request and deadline are lost.
+:::
+
+## 2. Conditionals for offers and proposals
+
+Negotiation is an exchange, and conditionals express it.
+
+The first conditional (if + present, will + verb) is for real, firm offers: "If you confirm the order today, we will pay 30% in advance." The second conditional (if + past, would + verb) is more tentative. It lets you test an idea without committing: "If we ordered 1,500 tonnes instead of 1,000, would you reduce the price?" Use the second conditional to explore and the first conditional when you are ready to commit.
+
+State your condition first and your concession second: "If you can deliver by 30 June, we can accept your price." The other side cannot take the concession and ignore the condition.
+
+::: slides
+SLIDE Step 1: Explore with the second conditional | If we extended the contract to 12 months, would you consider a lower price? | Testing, not promising
+SLIDE Step 2: Listen and quantify | How much lower could you go? | Ask for a number, not a feeling
+SLIDE Step 3: Offer with the first conditional | If you reduce the price by 3%, we will sign a 12-month contract | Condition first, concession second
+SLIDE Step 4: Confirm | So, just to confirm, USD 504.40 per tonne for 12 months | Repeat the exact figures
+:::
+
+Calculate every concession first. A supplier offers rice at USD 520 per tonne CFR Luanda for 1,000 tonnes. A 3% discount is 520 × 0.03 = USD 15.60 per tonne, so the new price is USD 504.40. On 1,000 tonnes this is a saving of USD 15,600. This tells you what you can offer in return.
+
+## 3. Softening language
+
+Hedging keeps your position but protects the relationship.
+
+- Add "slightly", "a little" or "rather": "The price is slightly higher than we expected."
+- Use "I'm afraid": "I'm afraid we can't accept these terms."
+- Use "not very" with a positive word: "This offer is not very competitive" instead of "This offer is bad."
+- Use "it seems" or "it appears": "It seems there is a difference in the quantity."
+- Use modals: "We may need to look at other suppliers."
+
+Do not over-soften: one or two softeners per sentence are enough.
+
+::: quiz
+? A supplier's new price is 8% above the market. Which response is firm but polite?
+- Your price is ridiculous. || Rude and gives no basis for discussion.
+- Maybe the price could possibly be perhaps a bit different? || So soft that the supplier may not see a problem.
+* I'm afraid the price is rather high compared with other offers we have received. || Correct. Clear message, softened with "I'm afraid" and "rather".
+:::
+
+## Worked example: negotiating sugar supply for a Luanda distributor
+
+Marta is a buyer at a food distributor in Luanda. A supplier offers 500 tonnes of sugar at USD 600 per tonne, with 100% payment before shipment.
+
+Preparation. Marta lists her BATNA, a term from Fisher and Ury's book Getting to Yes (1981): a second supplier offers USD 615 per tonne with 50% payment before shipment. She calculates that a price above USD 615 makes the second supplier better, so USD 615 is her walk-away point. She wants better payment terms because cash is tight.
+
+On the call:
+
+"Marta: Thank you for the offer. The price is acceptable, but I'm afraid 100% payment before shipment is difficult for us. If we confirmed 500 tonnes today, would you accept 50% before shipment and 50% against documents?
+
+Supplier: We could accept 70% before shipment.
+
+Marta: If you accept 50%, we will commit to a second order of 500 tonnes next quarter.
+
+Supplier: Agreed.
+
+Marta: So, just to confirm: 500 tonnes at USD 600 per tonne CFR Luanda, 50% before shipment, 50% against documents, and a second order next quarter. I'll send this in writing today."
+
+::: case | Price increase from a flour supplier
+Sérgio buys wheat flour for a bakery chain in Luanda. The supplier emails: "From next month our price rises from USD 480 to USD 510 per tonne." Sérgio buys 200 tonnes a month and has a second supplier offering USD 495.
+? What should Sérgio do?
+- Reply: "We accept, thank you." || He accepts USD 6,000 per month in extra cost without negotiating, even though he has a better alternative.
+- Reply: "This increase is unacceptable. We will stop buying from you." || Aggressive and it closes the door before exploring options.
+* Reply: "I'm afraid this increase is rather high for us. If we committed to 200 tonnes a month for six months, would you consider keeping the price at USD 490?" || Best. Softened, uses the second conditional to explore, and his BATNA of USD 495 tells him what is reasonable.
+:::
+
+## Tool: negotiation preparation template
+
+- Our objective: price, volume, payment terms, delivery date
+- Our BATNA and walk-away point (with numbers)
+- Concessions we can offer, and what we want in return for each
+- Value of each concession calculated in USD or Kz
+- Exploring questions (second conditional): If we..., would you...?
+- Offers (first conditional): If you..., we will...
+- Softeners ready: I'm afraid, slightly, rather, not very
+- Written confirmation sent the same day
+
+## Common mistakes
+
+- Using imperatives in requests to suppliers ("Send me...").
+- Giving a concession without asking for something in return.
+- Wrong word order in indirect questions ("Could you tell me when will the vessel arrive?").
+- Negotiating without knowing your BATNA in numbers.
+- Over-softening until the message is unclear.
+
+## Self-check
+
+1. Correct this request: "Can you tell me what is the price?" (Answer: "Could you tell me what the price is?")
+
+2. A supplier offers USD 400 per tonne for 2,000 tonnes. What is a 2% discount worth in total? (Answer: USD 8 per tonne, so USD 16,000 in total.)
+
+3. When do you use the second conditional in a negotiation? (Answer: To explore an idea tentatively without committing.)
+
+## Practical assignment
+
+Choose one supplier negotiation or request you have this month. Complete the preparation template, including your BATNA and the value of each concession. Write your opening email using at least one polite modal, one second conditional and one softener.
+
+## Summary
+
+- Climb the politeness ladder with modals and indirect questions.
+- Use the second conditional to explore and the first conditional to commit, condition first.
+- Soften the language, not the substance, and always know your BATNA.
+
+=== 20
+SLIDE What you will learn | Structure a presentation with signposting language; Describe trends with the right verbs, adverbs and prepositions; Calculate and express percentage change and percentage points; Read numbers the English way | Guide your audience through the numbers
+SLIDE Three-part structure | Tell them what you will tell them; Tell them; Tell them what you told them | Repetition helps listeners
+SLIDE Signposting | Introduce: Today I will cover three points; Move on: Let's turn to...; Visuals: As you can see on this chart...; Conclude: To sum up... | Signposts are road signs for listeners
+SLIDE Trend verbs | Up: rise, increase, grow, recover; Down: fall, decrease, decline, drop; Top and bottom: peak, reach a low; No change: level off, remain stable, fluctuate | Pick the verb that matches the line
+SLIDE Degree and speed | Sharply, dramatically, significantly; Steadily, gradually; Slightly, marginally | One adverb, chosen with care
+SLIDE Prepositions | From 2,400 to 3,000 tonnes; Rose by 600 tonnes (the difference); An increase of 25% (with a noun); Stood at 3,000 tonnes (a level) | Small words, big meaning
+SLIDE Numbers | % change = (new - old) / old x 100; Margin 12% to 15% = 3 percentage points; English: 1,500.75 Portuguese: 1.500,75 | Check decimals and commas
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- structure a business presentation using signposting language;
+- describe trends accurately with verbs, adverbs and prepositions;
+- calculate percentage change and distinguish percent from percentage points;
+- say fractions, percentages and large numbers correctly in English.
+
+## Key terms
+
+::: terms
+Signposting: phrases that tell the audience where you are in the presentation and what comes next
+Trend: the general direction in which a figure moves over time
+Percentage change: the change between two values expressed as a percentage of the starting value
+Percentage point: the simple difference between two percentages, such as 12% to 15% = 3 points
+Visual: a chart, table or image used to support what you say
+:::
+
+## 1. Structure and signposting
+
+Listeners cannot go back and re-read, so a presentation needs a clearer structure than a written report. A well-known rule of thumb is: tell them what you are going to tell them, tell them, then tell them what you told them. This repetition feels unnatural to some speakers, but it helps an international audience follow you.
+
+Signposting language connects the parts, like road signs on a journey.
+
+::: diagram steps | Presentation structure with signposts
+Introduce: Good morning. Today I'd like to present our first-half results.
+Outline: I'll cover three points: volumes, margins and next steps.
+Develop: Let's start with volumes... Moving on to margins...
+Refer to visuals: As you can see on this chart... If you look at the red line...
+Conclude: To sum up... The key message is...
+Questions: I'd be happy to take any questions.
+:::
+
+Other useful signposts: "This brings me to my next point", "Let me give you an example", "I'll come back to that later", "To put it another way". When someone asks a difficult question, you can say "That's a good question. Let me check the figures and come back to you this afternoon."
+
+::: quiz
+? You have finished talking about sales volumes and want to start on costs. What do you say?
+- And costs. || Too abrupt. The audience may not notice that you changed topic.
+* That covers volumes. Let's now turn to costs. || Correct. You close one section and clearly open the next.
+- As you can see, costs. || "As you can see" refers to a visual, not a change of topic.
+:::
+
+## 2. Describing trends
+
+When you show a chart, describe what the line does. Choose a verb for the direction, an adverb or adjective for the size and speed, and the correct preposition.
+
+- Up: rise, increase, grow, go up, recover (after a fall).
+- Down: fall, decrease, decline, drop, go down.
+- Top and bottom: peak at, reach a high of, hit a low of, bottom out.
+- Little or no change: remain stable, level off, stay flat, fluctuate (move up and down).
+
+Most verbs have a noun form: "Sales rose sharply" or "There was a sharp rise in sales". Use adverbs with verbs and adjectives with nouns. For size and speed, use dramatically or sharply for large changes, significantly or steadily for clear ones, and slightly or marginally for small ones.
+
+Prepositions carry the numbers:
+
+- from... to...: "Volumes rose from 2,400 to 3,000 tonnes."
+- by (the difference): "Volumes rose by 600 tonnes."
+- of (after a noun): "There was an increase of 25%."
+- at (a level): "Volumes stood at 3,000 tonnes in June."
+
+::: slides
+SLIDE Step 1: Name the figure and period | Sales of rice in the first half of 2026 | Start with what the chart shows
+SLIDE Step 2: Describe the direction | Rose, fell, peaked, levelled off | One clear verb
+SLIDE Step 3: Add size and numbers | Rose sharply from 2,400 to 3,000 tonnes | Adverb plus from... to...
+SLIDE Step 4: Explain the reason | This was mainly due to two new supermarket accounts | Numbers plus reason equals insight
+:::
+
+::: quiz
+? Margin went from 10% in March to 14% in April. Which sentence is correct?
+- Margin increased of 4 points. || After the verb "increase", use "by" for the difference, not "of".
+* Margin increased by 4 percentage points to 14%. || Correct. "By" for the difference, "to" for the new level, and "percentage points" for the gap between two percentages.
+- Margin increased in 4% at 14%. || Both prepositions are wrong.
+:::
+
+## 3. Numbers, fractions and percentages
+
+Percentage change is calculated as (new value - old value) / old value x 100. If sales rose from 2,400 to 3,000 tonnes, the change is 600 / 2,400 x 100 = 25%.
+
+Percent and percentage points are different. If gross margin rises from 12% to 15%, it rose by 3 percentage points, but by 25% in relative terms (3 / 12 x 100). Saying "margin rose by 3%" is ambiguous and can mislead a board.
+
+Fractions make numbers easier to hear: a quarter (25%), a third (about 33%), half (50%), two-thirds (about 67%), three-quarters (75%). Use approximation words: "just over a third", "almost half", "roughly two-thirds".
+
+Watch the punctuation. English uses a point for decimals and a comma for thousands: 1,500.75. Portuguese uses the opposite: 1.500,75. Write "USD 1.5 million" and say "one point five million dollars". Say "two thousand four hundred", never "two thousands".
+
+::: tip | Read your numbers aloud
+Before the presentation, read every number on your slides aloud once. You will find the numbers that are hard to say and can round them or turn them into fractions.
+:::
+
+## Worked example: half-year results at a Luanda distributor
+
+Carlos, a sales manager at an FMCG distributor in Luanda, presents first-half results to a regional director from Dubai. His slide shows monthly flour sales: January 2,400 t, peak in March at 3,300 t, a drop in April to 2,700 t, then steady growth to 3,000 t in June.
+
+"Good morning. Today I'll cover three points: volumes, margins and next steps. Let's start with volumes. As you can see on this chart, flour sales rose sharply from 2,400 tonnes in January and peaked at 3,300 tonnes in March. They then fell to 2,700 tonnes in April because of a supply delay, before recovering steadily to 3,000 tonnes in June. Overall, that is an increase of 25% over the half-year. Moving on to margins, gross margin improved by 3 percentage points, from 12% to 15%. To sum up, volumes are up by a quarter and margins are healthier. I'd be happy to take any questions."
+
+::: case | The board question in Lobito
+Rosa, a finance analyst at a logistics firm in Lobito, presents to foreign shareholders. Port handling costs went from USD 200,000 to USD 230,000. A shareholder asks: "So what was the change?"
+? What is the best answer?
+- "Costs rose by 30%." || The difference is USD 30,000, but the percentage change is 30,000 / 200,000 = 15%, not 30%.
+* "Costs rose by USD 30,000, an increase of 15%, mainly because of higher volumes." || Best. Correct absolute and percentage change with "by" and "of", plus the reason.
+- "Costs increased of 15 percentage points." || Wrong preposition, and percentage points are used only for the difference between two percentages.
+- "Costs went up a lot." || Vague. Shareholders expect figures.
+:::
+
+## Tool: presentation checklist
+
+- Opening states the topic and the number of points
+- Each section opens and closes with a signpost
+- Every chart is introduced: "As you can see on this chart..."
+- Trend sentences use verb + adverb + from/to/by + reason
+- Percentage changes calculated and checked
+- Percent and percentage points used correctly
+- Decimal points and thousand commas in English format
+- Answer prepared for the three most likely questions
+
+## Common mistakes
+
+- Reading the slides word for word instead of explaining them.
+- Using "of" after a verb: "increased of 10%" instead of "increased by 10%".
+- Confusing percent with percentage points.
+- Writing 1.500,75 on an English slide.
+
+## Self-check
+
+1. Sales went from 800 to 1,000 units. What is the percentage change? (Answer: 200 / 800 x 100 = 25%.)
+
+2. Which preposition expresses the difference: "Sales rose ___ 200 units"? (Answer: By.)
+
+3. How do you write one thousand five hundred kwanzas and fifty cents in English format? (Answer: Kz 1,500.50.)
+
+## Practical assignment
+
+Take one chart from a recent report at your workplace. Write and practise a 60-second explanation using at least three signposts, two trend verbs with adverbs, one percentage change you have calculated, and the correct prepositions.
+
+## Summary
+
+- Structure your talk and guide listeners with signposting phrases.
+- Describe trends with verb + adverb + preposition + reason.
+- Calculate percentage change correctly and keep percent and percentage points separate.
+
+=== 20
+SLIDE What you will learn | Apply plain English principles to business writing; Choose active or passive voice deliberately; Structure a report with the Pyramid Principle and SCQA; Write clear bullet points | Easy to read, quick to act on
+SLIDE Plain English | Short sentences, about 15 to 20 words on average; Everyday words; Verbs instead of nouns; Active voice | Write for a busy reader
+SLIDE Active and passive | Active: The warehouse team counted the stock; Passive: The stock was counted; Use active for responsibility | Passive hides who did it
+SLIDE The Pyramid Principle | Barbara Minto: start with the main message; Then the key arguments; Then the supporting data | Answer first, details after
+SLIDE SCQA introduction | Situation; Complication; Question; Answer | Four sentences that frame any report
+SLIDE Bullet points | Introduce with a lead-in line; Same grammatical form for every bullet; About three to seven bullets | Parallel and short
+SLIDE Report structure | Summary; Background; Findings; Recommendations; Next steps | The summary goes first
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- apply plain English principles to make business writing clearer;
+- choose between active and passive voice for a purpose;
+- structure a short report using the Pyramid Principle and SCQA;
+- write parallel, well-introduced bullet points.
+
+## Key terms
+
+::: terms
+Plain English: clear, direct writing that the intended reader can understand the first time
+Active voice: the subject does the action, as in "The driver delivered the goods"
+Passive voice: the subject receives the action, as in "The goods were delivered"
+Nominalisation: turning a verb into a noun, such as "make a decision" instead of "decide"
+Pyramid Principle: a method by Barbara Minto that puts the main message first, followed by supporting arguments
+:::
+
+## 1. Plain English principles
+
+Many learners believe long sentences and complex words sound professional. International readers, many of whom also use English as a second language, prefer short, clear text. Plain English does not mean simple ideas. It means ideas expressed so the reader understands them the first time.
+
+- Keep sentences short. A common guideline is an average of 15 to 20 words, with one main idea per sentence.
+- Use everyday words: "use" not "utilise", "start" not "commence", "help" not "facilitate", "about" not "with regard to".
+- Use verbs, not nominalisations: "We decided" not "We made a decision"; "Please review" not "Please carry out a review of".
+- Cut empty phrases: "due to the fact that" becomes "because"; "at this point in time" becomes "now".
+- Speak to the reader: "You must sign the form" is clearer than "The form must be signed by the applicant".
+
+You can measure sentence length quickly. If a 240-word paragraph has 8 sentences, the average is 30 words per sentence, so split some sentences.
+
+::: quiz
+? Which sentence follows plain English principles?
+- With regard to the shipment, a decision was made to effect a postponement. || Nominalisations, passive voice and formal words make this hard to read.
+* We decided to postpone the shipment. || Correct. Short, active, with a verb instead of a nominalisation.
+- The shipment, with regard to which a decision has been taken, has been postponed. || Long and passive, with the main point at the end.
+:::
+
+## 2. Active and passive voice
+
+In the active voice the subject does the action: "The supplier delayed the shipment." In the passive voice the subject receives the action: "The shipment was delayed." Portuguese writers often use passive or impersonal forms ("Foi verificado que...") and translate them directly. In English, too much passive makes text long and unclear about responsibility.
+
+Use the active voice by default, especially for actions and recommendations: "The logistics team will check all containers by Friday." Use the passive deliberately when the doer is unknown or unimportant ("The warehouse was built in 2015"), or when you want to be diplomatic and avoid blame ("A mistake was made in the invoice").
+
+To change passive to active, ask "Who did it?" and make that the subject. "The stock count was not completed" becomes "The night shift did not complete the stock count."
+
+::: quiz
+? A report says: "It was decided that the prices will be reviewed." What is the main problem?
+- The verbs are in the wrong tense. || The tenses are acceptable.
+- The sentence is too short. || Length is not the problem.
+* The reader does not know who decided or who will review the prices. || Correct. Two passives hide responsibility. Write: "The commercial director decided that the pricing team will review prices by June."
+:::
+
+## 3. The Pyramid Principle and SCQA
+
+Barbara Minto developed the Pyramid Principle while working as a consultant. Its core idea is to start with the answer. Put the main message at the top, then group the key arguments that support it, then give the data behind each argument. A busy manager can stop reading after the first paragraph and still know what you recommend.
+
+::: diagram pyramid | The Pyramid Principle
+Main message: the answer or recommendation in one sentence
+Key arguments: three or so reasons that support the message
+Supporting data: facts, figures and examples for each argument
+:::
+
+Minto also suggests opening with SCQA: Situation (what the reader already knows), Complication (what has changed), Question (what this raises), Answer (your main message). The question is often implied rather than written.
+
+::: slides
+SLIDE S: Situation | We import 1,000 tonnes of rice a month through Luanda port | Start with what the reader knows
+SLIDE C: Complication | Clearance time rose from 7 to 15 days in Q2 | What has changed
+SLIDE Q: Question | How do we avoid stock-outs? | Often implied, not written
+SLIDE A: Answer | Increase safety stock to three weeks and add a second clearing agent | Your main message
+:::
+
+Bullet points help readers scan. Introduce the list with a lead-in line, use the same grammatical form in every bullet (all verbs or all nouns), and keep to about three to seven items. "Recommendations: increase safety stock / adding a second agent / the supplier should..." is not parallel. "Increase... / Add... / Ask..." is.
+
+## Worked example: a monthly stock report in Luanda
+
+Helena, a supply planner at a food distributor in Luanda, must send a short report in English to the group office. Her first draft began: "It is with regard to the situation of stock that this report is presented. A verification was carried out and it was found that some products are in rupture."
+
+"Rupture" is a false friend from "rutura de stock"; the English term is stock-out. Her revised version applies plain English, active voice and SCQA:
+
+"Subject: May stock report – action needed on two SKUs
+
+Summary: We need to reorder cooking oil and tomato paste this week to avoid stock-outs in June.
+
+Situation: We hold an average of four weeks of stock across 120 SKUs.
+
+Complication: Cooking oil and tomato paste fell to one week of cover after a 20% rise in supermarket orders.
+
+Recommendations:
+- Place an emergency order for 2 containers of cooking oil by 15 May.
+- Increase the safety stock for both SKUs to three weeks.
+- Review demand forecasts with the sales team every two weeks."
+
+::: case | The site report in Benguela
+Nuno, a site manager at a construction company in Benguela, must report a two-week delay to a foreign client. His draft: "Due to the fact that a non-arrival of materials occurred, it was not possible for the completion of the slab to be effected."
+? What is the best revision?
+- "The slab was not completed due to the fact that materials did not arrive." || Better, but still passive and wordy, and the impact is missing.
+* "The slab will be completed two weeks late, on 20 June, because the steel delivery arrived late. We have booked a second crew to recover one week." || Best. Main message first, active voice, plain words, and an action.
+- "Unfortunately there were some problems with materials." || Vague. The client needs dates and causes.
+- "The supplier failed to deliver, so the delay is not our responsibility." || Blaming without facts or a plan damages trust.
+:::
+
+## Tool: plain English report checklist
+
+- Main message or recommendation in the first two sentences
+- SCQA used to frame the introduction
+- Average sentence length 15 to 20 words
+- Everyday words instead of formal ones (use, start, help, about)
+- Verbs instead of nominalisations
+- Active voice for actions and recommendations
+- Bullet lists introduced, parallel and three to seven items long
+- Every action has an owner and a date
+
+## Common mistakes
+
+- Putting the conclusion at the end of a long report.
+- Writing long passive sentences translated from Portuguese.
+- Using false friends such as "rupture" for stock-out.
+- Mixing grammatical forms in bullet lists.
+
+## Self-check
+
+1. Rewrite in plain English: "We will carry out an investigation of the incident." (Answer: "We will investigate the incident.")
+
+2. What are the four parts of SCQA? (Answer: Situation, complication, question, answer.)
+
+3. When is the passive voice a good choice? (Answer: When the doer is unknown or unimportant, or to be diplomatic and avoid blame.)
+
+## Practical assignment
+
+Take a report or long email you wrote recently. Measure the average sentence length, change at least five passives to active, replace nominalisations with verbs, and rewrite the opening using SCQA so the main message comes first.
+
+## Summary
+
+- Plain English means short sentences, everyday words, verbs and active voice.
+- The Pyramid Principle puts the answer first, supported by arguments and data.
+- Frame reports with SCQA and write parallel bullet points.
+
+=== 20
+SLIDE What you will learn | Write a clear, firm complaint; Apologise professionally using a five-step structure; Use the LAST method on the phone; Follow up and escalate in stages | Solve the problem, keep the relationship
+SLIDE Complaint structure | Context and reference; Facts of the problem; Impact; Action requested; Deadline | Facts, not emotions
+SLIDE Firm, not aggressive | We have not received... not You failed to...; I would like you to...; Please confirm by... | Describe the problem, not the person
+SLIDE Apology in five steps | Acknowledge; Apologise; Explain briefly; Fix; Prevent | Own the problem
+SLIDE LAST on the phone | Listen; Apologise; Solve; Thank | Calm the customer before you solve
+SLIDE Follow-up ladder | Friendly reminder; Firm reminder with a deadline; Escalation to a manager; Formal notice | Raise the level step by step
+SLIDE Useful phrases | I'm writing to inform you that...; I apologise for the inconvenience caused; I would appreciate it if...; As a gesture of goodwill... | Polite words, clear message
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a complaint that is clear and firm without being aggressive;
+- apologise professionally using a five-step structure;
+- handle an angry customer on the phone with the LAST method;
+- follow up and escalate an unresolved problem in stages.
+
+## Key terms
+
+::: terms
+Complaint: a formal statement that a product or service did not meet what was agreed
+Credit note: a document that reduces the amount a customer owes, often after damaged or missing goods
+Escalation: passing an unresolved problem to a more senior person
+Gesture of goodwill: something offered to keep the relationship, without admitting legal fault
+Follow-up: a message sent to check progress on an earlier request
+:::
+
+## 1. Writing a complaint
+
+A good complaint gets a fast solution. The reader should see the problem, its impact and what you want in under a minute. Emotion slows the reply because the reader becomes defensive.
+
+::: diagram steps | Structure of a business complaint
+Context: order number, date, product, quantity
+Problem: the facts, with evidence (photos, delivery note)
+Impact: the effect on your business, in numbers if possible
+Action requested: replacement, credit note, refund or visit
+Deadline: when you need an answer
+:::
+
+Be firm about the facts and polite in the language. Describe the problem, not the person. "You failed to deliver" accuses. "We have not received the goods" states a fact. Use "I would like you to" or "Please confirm by" for the action.
+
+::: quiz
+? Which sentence is firm and professional?
+- You are completely unreliable and always late. || Emotional and personal, with no facts.
+* The goods on PO 2210 arrived six days after the agreed date of 3 May. || Correct. A fact with a reference and a date.
+- Maybe there was a small delay, sorry to bother you. || Too soft. The supplier may not treat it as a complaint.
+:::
+
+## 2. Apologising and the LAST method
+
+When your company makes a mistake, a professional apology protects the relationship. Use five steps.
+
+::: slides
+SLIDE Step 1: Acknowledge | Thank you for letting us know about the damaged bags on delivery 5521 | Show you understand the problem
+SLIDE Step 2: Apologise | I apologise for the inconvenience this has caused | Sincere and short
+SLIDE Step 3: Explain briefly | The bags were damaged during unloading in our warehouse | A reason, not an excuse
+SLIDE Step 4: Fix | We will issue a credit note today and replace the bags on Thursday | A concrete solution with a date
+SLIDE Step 5: Prevent | We have added a check before loading | Show it will not happen again
+:::
+
+Avoid "We are sorry if you feel upset". It suggests the problem is the customer's feelings. Say "We are sorry that the bags arrived damaged." Do not blame others: "Our driver is new" sounds like an excuse.
+
+On the phone, use the LAST method, a customer-service technique: Listen without interrupting, Apologise, Solve, Thank. Useful phrases: "I understand why you're frustrated", "Let me check that for you", "What I can do is...", "Thank you for your patience".
+
+::: quiz
+? An angry customer calls about a wrong invoice. According to LAST, what should you do first?
+- Explain that the invoicing system is complicated. || That is an excuse, and it comes before listening.
+* Let the customer explain fully without interrupting. || Correct. Listening first calms the customer and gives you the facts.
+- Offer a 10% discount immediately. || You do not yet know the problem or whether a discount is right.
+:::
+
+## 3. Following up and escalating
+
+Problems are often solved on the second or third message. Raise the level step by step so you stay polite but show the matter is serious.
+
+- Friendly reminder: "I'm just following up on my email of 10 May about the damaged bags."
+- Firm reminder: "I have not yet received a reply. Please confirm the credit note by Friday 17 May."
+- Escalation: "As this is still open, I am copying Mr Santos, our Commercial Director."
+- Formal notice: "If we do not receive the credit note by 24 May, we will deduct the amount from the next payment, as allowed under clause 8."
+
+Only threaten actions you can take and that the contract allows. Check the contract before writing a formal notice.
+
+## Worked example: damaged flour in Huambo
+
+Teresa is a key account manager at a distributor in Luanda. A supermarket in Huambo received 2,000 bags of 50 kg flour, but 120 bags were torn. Price: Kz 25,000 per bag. The credit due is 120 x 25,000 = Kz 3,000,000.
+
+Her reply:
+
+"Subject: Delivery 5521 – credit note and replacement
+
+Dear Mr Mendes,
+
+Thank you for sending the photos of the torn bags on delivery 5521. I apologise for the inconvenience this has caused your store.
+
+The bags were damaged when the pallets were loaded in our warehouse. We will issue a credit note of Kz 3,000,000 for the 120 bags today and deliver replacements on Thursday 16 May.
+
+We have also introduced a pallet check before every loading.
+
+Kind regards,
+Teresa Costa, Key Account Manager"
+
+::: case | The unpaid rebate in Soyo
+Fernando, a buyer at an oil-services firm in Soyo, has waited six weeks for a USD 12,000 rebate from a foreign supplier. He sent one friendly reminder three weeks ago and has had no reply. The contract allows deduction from future payments after written notice.
+? What should Fernando do now?
+- Send a formal notice saying he will deduct the amount tomorrow. || Too fast. He has skipped the firm reminder and escalation steps.
+* Send a firm reminder with a deadline: "I have not yet received a reply about the USD 12,000 rebate. Please confirm payment by Friday 24 May." || Best. It is the next step on the ladder: polite, clear and dated.
+- Write: "You are ignoring us and this is very unprofessional." || Emotional and personal. It invites a defensive reply.
+- Wait another month. || The problem stays open and the cash is lost.
+:::
+
+## Tool: problem-handling template
+
+- Reference: order, invoice or delivery number and date
+- Facts: what happened, with quantities and evidence
+- Impact: effect on our business, in USD or Kz where possible
+- Action requested or offered: replacement, credit note, refund, visit
+- Deadline: a specific date
+- Apology (if our fault): acknowledge, apologise, explain, fix, prevent
+- Follow-up step: friendly reminder, firm reminder, escalation, formal notice
+
+## Common mistakes
+
+- Writing when angry and using personal language.
+- Complaining without evidence, figures or a requested action.
+- Apologising with "sorry if you feel" or blaming a colleague.
+- Escalating straight to a threat without reminders.
+
+## Self-check
+
+1. What are the five parts of a business complaint? (Answer: Context, problem, impact, action requested, deadline.)
+
+2. What does LAST stand for? (Answer: Listen, apologise, solve, thank.)
+
+3. 80 cartons at Kz 18,000 each are missing. What credit should you request? (Answer: 80 x 18,000 = Kz 1,440,000.)
+
+## Practical assignment
+
+Find one open problem with a supplier or customer at your workplace. Write the email in English using the problem-handling template, decide which step of the follow-up ladder you are on, and ask a colleague to check the tone before sending.
+
+## Summary
+
+- Complain with facts, impact, a requested action and a deadline.
+- Apologise in five steps and use LAST on the phone.
+- Follow up step by step, and threaten only what the contract allows.

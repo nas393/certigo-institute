@@ -1,0 +1,435 @@
+{
+ "slug": "excel-and-data-for-business",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the tidy data rules and apply them to a sales or finance list;\n- convert a range into an Excel Table and use structured references;\n- identify wrong data types, especially numbers and dates stored as text;\n- sort, filter and use data validation to keep data clean at the point of entry.\n\n## Key terms\n\n::: terms\nRecord: one complete item of data, such as one invoice line or one delivery, held in one row\nField: one attribute of a record, such as date, customer or amount, held in one column\nExcel Table: a named, structured range created with Ctrl+T that expands automatically and supports structured references\nData type: the kind of value in a cell, mainly number, text, date or logical (TRUE or FALSE)\nData validation: an Excel feature that restricts what can be typed into a cell\n:::\n\n## 1. The tidy data rules\n\nMost Excel problems start with how the data was typed, not with the formulas. The statistician Hadley Wickham described \"tidy data\" (2014): each variable forms a column, each observation forms a row, and each type of observational unit forms a table. In office language:\n\n- One header row at the top, with a short, unique name for each column.\n- One record per row: one invoice line, one delivery, one payment.\n- One field per column: do not put \"Luanda - Cliente X\" in one cell when region and customer are two fields.\n- No blank rows, no merged cells and no subtotal rows inside the data.\n- One kind of data per column: a quantity column contains only numbers.\n\nReports and totals belong on a separate sheet. Every tool in this course (SUMIFS, XLOOKUP, PivotTables, charts) assumes this shape.\n\n::: quiz\n? A sales assistant has a sheet with a bold subtotal row after each province. What is the main problem?\n- The bold font slows Excel down || Formatting is not the issue. The subtotal rows are.\n* Subtotal rows inside the data will be counted again by sorts, filters and PivotTables || Correct. Totals belong in a report, not in the data list.\n- Provinces should be in separate files || One list with a Province column is easier to analyse.\n:::\n\n## 2. Excel Tables and data types\n\nOnce your list is tidy, click any cell in it, press Ctrl+T, confirm \"My table has headers\" and click OK. On the Table Design tab, name it, for example Sales.\n\nA Table expands automatically when you add a row below it, so formulas, charts and PivotTables based on it include the new data. A formula typed in one row fills the whole column. You can use structured references, which are easier to read than cell addresses: =SUM(Sales[Amount]) adds the Amount column, and =[@Qty]*[@Price] multiplies values in the same row. Finally, the Total Row (Table Design, Total Row) adds totals that respect filters.\n\n::: slides\nSLIDE Step 1: Tidy the range | Remove blank rows and merged cells; One header row with unique names | Structure before tools\nSLIDE Step 2: Create the Table | Click inside the data; Press Ctrl+T and confirm headers | One shortcut\nSLIDE Step 3: Name it | Table Design then Table Name; Use a clear name such as Sales | Names make formulas readable\nSLIDE Step 4: Check data types | Numbers right, text left by default; Fix numbers and dates stored as text | Wrong types break formulas\n:::\n\nExcel treats text and numbers differently. When no alignment has been applied, numbers align to the right and text to the left. A number that sits on the left, often with a small green triangle, is probably stored as text and SUM will ignore it. Dates are numbers too: Excel stores each date as a serial number (in the standard Windows date system, 1 January 1900 is 1), which is why you can subtract dates. =C2-B2 gives the days between an invoice date in B2 and a payment date in C2, and =TODAY()-B2 gives the age of an unpaid invoice. A date that aligns left is text. You will fix these problems in Lesson 4.\n\n## 3. Sorting, filtering and data validation\n\nFor sorting on more than one level, use Data, Sort, then Add Level: for example Province A to Z, then Amount largest to smallest. Select a cell inside the Table, not one column, or you will separate values from their rows.\n\nPress Ctrl+Shift+L to turn filter arrows on or off. A normal SUM still adds hidden rows. The Table Total Row uses the SUBTOTAL function, for example =SUBTOTAL(109,Sales[Amount]), which adds only visible rows.\n\nData validation stops bad data before it enters. Select the column, choose Data, Data Validation, and set what to allow:\n\n- List: a drop-down of allowed values, typed as Luanda,Benguela,Huambo or taken from a range.\n- Whole number or Decimal: for example quantity between 1 and 10000.\n- Date: for example dates in the current year only.\n\nOn the Error Alert tab, choose Stop so wrong entries are refused. To find existing errors, use Circle Invalid Data.\n\n::: diagram steps | Setting up a clean data sheet\nTidy: one header row, one record per row, no blanks or merged cells\nTable: press Ctrl+T and name the Table\nTypes: check numbers, text and dates are stored correctly\nValidate: add drop-down lists and limits for key columns\nUse: sort, filter and total with the Total Row\n:::\n\n::: quiz\n? Customers are typed as \"Cliente A\", \"CLIENTE A\" and \"Cliente A Lda\" in the same column. What prevents this in future?\n- Sort the column alphabetically every week || Sorting shows the problem but does not prevent it.\n- Make the column bold || Formatting does not control what people type.\n* Add a data validation list based on the official customer list || Correct. Users can only pick valid names from the drop-down.\n:::\n\n## Worked example: a beverage distributor in Luanda\n\nA beverage distributor in Luanda keeps a daily orders sheet filled in by four sales assistants. It has merged title cells, a blank row after each day, and provinces typed in several ways (\"Luanda\", \"LDA\", \"luanda \"). The finance assistant, Joana, gets a monthly SUM of 18,400,000 Kz while the invoicing system shows 21,150,000 Kz.\n\nShe finds 14 amounts aligned left: pasted from an email and stored as text, so SUM ignored them. She deletes the title and blank rows, creates a Table called Orders, converts the amounts and adds a Province drop-down. The total now matches.\n\n::: case | The orders sheet that does not add up\nJoana's SUM is 2,750,000 Kz lower than the invoicing report. She sees left-aligned numbers in the Amount column and three spellings of Luanda in the Province column.\n? What should Joana do first?\n- Add 2,750,000 Kz manually to the total || This hides the problem and the error will return next month.\n* Find and convert the amounts stored as text, then rebuild the sheet as a Table || Correct. Text amounts are ignored by SUM. Fixing types and structure solves the cause.\n- Rebuild the report in a new file || The same bad data would be copied across.\n:::\n\n## Tool: clean data sheet checklist\n\n- One header row, unique short names, no merged cells\n- No blank rows, subtotals or notes inside the data\n- Data converted to a Table with a clear name\n- Numbers and dates right-aligned (stored as values, not text)\n- Drop-down lists on text fields such as province, product and salesperson\n- Limits on quantity, price and date columns\n\n## Common mistakes\n\n- Merging cells or leaving blank rows inside a data list.\n- Allowing free typing in name fields, which creates several spellings of the same customer.\n- Sorting a single column and separating values from their rows.\n- Using SUM on filtered data and expecting only visible rows.\n\n## Self-check\n\n- Why does a SUM sometimes ignore values that look like numbers? (Answer: they are stored as text.)\n- Which shortcut creates an Excel Table? (Answer: Ctrl+T.)\n- Which data validation option stops a user from entering a wrong value? (Answer: an Error Alert set to Stop.)\n\n## Practical assignment\n\nChoose one list you use every week, such as orders, payments or stock. Apply the tidy data rules, convert it to a named Table, and add a drop-down list to at least one text column. Note how many errors you found and fixed.\n\n## Summary\n\n- Keep data as a tidy list: one header row, one record per row, one field per column.\n- Excel Tables expand automatically, fill formulas down and make formulas readable.\n- Check data types, then use sorting, filtering and data validation to keep data clean.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- write formulas with SUM, AVERAGE and IF and apply the order of operations;\n- calculate totals and counts with conditions using SUMIFS and COUNTIFS;\n- explain and choose between relative, absolute and mixed cell references;\n- check a formula before you share a report.\n\n## Key terms\n\n::: terms\nFormula: a calculation that starts with = and returns a result\nFunction: a built-in formula with a name, such as SUM or IF, that takes arguments in brackets\nArgument: an input to a function, separated from the next by a comma\nCriteria: a condition used to decide which rows to include, such as \"Luanda\" or \">=1000000\"\nAbsolute reference: a cell reference with $ signs, such as $F$1, that does not change when copied\n:::\n\n## 1. Formula basics: SUM, AVERAGE and order of operations\n\nEvery formula starts with an equals sign. Excel follows the usual order of operations: brackets first, then multiplication and division, then addition and subtraction. =100+50*2 gives 200, but =(100+50)*2 gives 300. When in doubt, add brackets.\n\n=SUM(C2:C200) adds every number in the range. =AVERAGE(C2:C200) gives the mean. AVERAGE ignores empty cells and text, but it includes zeros, so a zero typed for \"no sale yet\" will pull the average down. =MAX and =MIN give the highest and lowest values, and =COUNT counts cells containing numbers.\n\nA key rule of good spreadsheets is: put inputs in cells, not inside formulas. If the VAT rate or commission rate is typed inside a hundred formulas, someone will miss one when it changes. Put the rate in one labelled cell and refer to it.\n\n::: tip | Excel in Portuguese\nIn Portuguese Excel, function names are translated (IF is SE, SUMIFS is SOMA.SE.S) and arguments are separated by semicolons. The logic is the same.\n:::\n\n## 2. IF, SUMIFS and COUNTIFS\n\nIF asks one question and gives one of two answers:\n\n=IF(logical_test, value_if_true, value_if_false)\n\nFor example, with actual sales in D2 and target in E2: =IF(D2>=E2,\"Target met\",\"Below target\"). The test uses comparison operators: = equal, <> not equal, >, <, >= and <=. Text results must be in double quotes. IF can also calculate: =IF(D2>=E2,D2*2%,0) pays a 2% bonus only when the target is met.\n\nSUMIFS adds values that meet one or more conditions. The sum range comes first:\n\n=SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)\n\nWith Province in column A, Product in column B and Amount in column C:\n\n- =SUMIFS(C:C,A:A,\"Luanda\") gives total sales in Luanda.\n- =SUMIFS(C:C,A:A,\"Luanda\",B:B,\"Rice 25kg\") gives Luanda sales of one product.\n- =SUMIFS(C:C,A:A,H2) uses the province typed in cell H2, which is better than typing it inside the formula.\n\nCOUNTIFS counts rows that meet conditions and has no sum range:\n\n- =COUNTIFS(A:A,\"Benguela\") counts orders from Benguela.\n- =COUNTIFS(A:A,\"Luanda\",C:C,\">=1000000\") counts Luanda orders of 1,000,000 Kz or more.\n\nOperators go inside the quotes. To use a cell, join them with &: =COUNTIFS(C:C,\">=\"&H1). AVERAGEIFS works the same way as SUMIFS.\n\n::: slides\nSLIDE Step 1: Define the question | What to add or count, and under which conditions; Example: Luanda sales of Rice 25kg | Say it in words first\nSLIDE Step 2: Choose the sum range | Column of values to add, such as C:C; COUNTIFS has no sum range | Sum range goes first in SUMIFS\nSLIDE Step 3: Add criteria pairs | Range then condition, A:A then \"Luanda\"; Add a pair for each condition | Every pair is one filter\nSLIDE Step 4: Use cells for criteria | =SUMIFS(C:C,A:A,H2); Change H2 to change the result | Reusable formulas\nSLIDE Step 5: Check by hand | Filter the data and compare with the Total Row | Never skip the check\n:::\n\n::: quiz\n? Which formula gives the total amount (column C) for Huambo orders of product \"Sugar 50kg\" (column B), with province in column A?\n- =SUMIFS(A:A,C:C,\"Huambo\",B:B,\"Sugar 50kg\") || The sum range must be the Amount column, C:C.\n* =SUMIFS(C:C,A:A,\"Huambo\",B:B,\"Sugar 50kg\") || Correct. Sum range first, then each criteria range with its condition.\n- =COUNTIFS(C:C,A:A,\"Huambo\",B:B,\"Sugar 50kg\") || COUNTIFS counts rows and has no sum range.\n:::\n\n## 3. Relative, absolute and mixed references\n\nWhen you copy a formula, Excel adjusts the cell references. A relative reference such as C2 becomes C3 when copied one row down. This is what you want for row-by-row calculations.\n\nSometimes one cell must stay fixed, such as a commission rate in F1 or a grand total. An absolute reference uses dollar signs: $F$1 does not change when copied. A mixed reference locks only one part: F$1 locks the row, $F1 locks the column. Mixed references are useful for tables that are copied both down and across. While editing a formula, click on a reference and press F4 to cycle through C2, $C$2, C$2 and $C2.\n\nExample: amounts are in C2:C50 and the grand total is in C51. In D2, the share of total is =C2/$C$51. Copied down, it becomes =C3/$C$51, =C4/$C$51 and so on. Without the dollar signs, the second row would divide by C52, which is empty, and show #DIV/0!.\n\n::: diagram matrix | The four reference types | Column locked (no → yes) | Row locked (no → yes)\nF$1: row locked, column changes when copied across\n$F$1: absolute, nothing changes when copied\nF1: relative, row and column both change\n$F1: column locked, row changes when copied down\n:::\n\n::: quiz\n? A commission rate is in cell H1. Which formula in D2 can be copied down for all salespeople?\n- =C2*H1 || When copied, H1 becomes H2, H3 and so on, which are empty.\n* =C2*$H$1 || Correct. The rate cell is locked, while C2 adjusts for each row.\n- =$C$2*H1 || This locks the sales value and lets the rate move, the opposite of what is needed.\n:::\n\n## Worked example: monthly sales summary in Benguela\n\nA food distributor's branch in Benguela has a Table with 1,240 order lines for October: Salesperson (column A), Product (B) and Amount in Kz (C). The branch manager wants, for each of five salespeople, total sales, number of orders, average order value and whether the 15,000,000 Kz target was met.\n\nThe sales assistant, Mário, lists the five names in H2:H6 and types the target in K1. In I2 he writes =SUMIFS(C:C,A:A,H2), in J2 =COUNTIFS(A:A,H2), in L2 =I2/J2 for average order value, and in M2 =IF(I2>=$K$1,\"Met\",\"Not met\"). He copies the row down. For the first salesperson, I2 shows 16,800,000 Kz and J2 shows 280 orders, so the average order is 16,800,000 / 280 = 60,000 Kz and the target is met.\n\n::: case | The target column that is wrong\nMário copied =IF(I2>=K1,\"Met\",\"Not met\") down five rows. Three salespeople with less than 15,000,000 Kz now show \"Met\".\n? What is the cause and fix?\n- The IF function cannot compare numbers || IF compares numbers without any problem.\n- The amounts must be rounded first || Rounding does not change which side of the target they are on.\n* K1 moved to K2, K3 and so on when copied, so lock it as $K$1 || Correct. The empty cells count as zero, so every amount looks above target.\n- The text \"Met\" needs single quotes || Excel uses double quotes for text, which are already correct.\n:::\n\n## Tool: formula quality checklist\n\n- Inputs such as rates and targets in labelled cells, not inside formulas\n- Fixed cells locked with $ before copying\n- Criteria taken from cells where possible\n- One result checked by hand or with a filter and the Total Row\n- Formulas shown with Ctrl+` to look for inconsistent rows\n- Trace Precedents used on the key totals (Formulas tab)\n\n## Common mistakes\n\n- Forgetting the $ on a rate or total cell, so copied formulas point to empty cells.\n- Putting the criteria range first in SUMIFS instead of the sum range.\n- Typing numbers inside formulas instead of referring to input cells.\n- Comparing text that has hidden extra spaces, so \"Luanda \" does not match \"Luanda\".\n\n## Self-check\n\n- What is the result of =(10+20)*3? (Answer: 90.)\n- Which argument comes first in SUMIFS? (Answer: the sum range.)\n- What does pressing F4 do when editing a reference? (Answer: it cycles between relative, absolute and mixed references.)\n\n## Practical assignment\n\nTake a sales or expense list from your work and build a summary table with SUMIFS, COUNTIFS and an IF test against a target in a separate input cell. Check one result by hand using a filter.\n\n## Summary\n\n- SUM, AVERAGE and IF cover most daily calculations, and inputs belong in cells.\n- SUMIFS and COUNTIFS total and count rows that meet several conditions.\n- Lock fixed cells with $ (F4) so that formulas copy correctly.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the three parts of every lookup: lookup value, lookup array and return array;\n- use XLOOKUP to bring prices, names or regions from one list into another;\n- use VLOOKUP correctly in older versions of Excel, including exact and approximate match;\n- handle missing values with IFERROR and XLOOKUP's if_not_found argument.\n\n## Key terms\n\n::: terms\nLookup value: the value you are searching for, such as a product code or customer number\nLookup array: the column that is searched for the lookup value\nReturn array: the column that holds the result you want, such as the price\nExact match: a lookup that returns a result only when the value is found exactly\nApproximate match: a lookup that returns the nearest band, used for tiers such as discounts\n#N/A: the error Excel shows when a lookup value is not found\n:::\n\n## 1. How a lookup works\n\nMany office tasks combine two lists. An order export has product codes but no prices. A payments file has customer numbers but no salesperson. Copying values by hand is slow and creates errors. A lookup function does it automatically: \"find this value in that column and return the matching value from another column.\"\n\nEvery lookup has three parts: what you look for (the lookup value), where you look (the lookup array), and what you bring back (the return array). The lookup value must be stored the same way in both lists. If the code is 1050 as a number in one list and \"1050\" as text in the other, the lookup fails.\n\nKeep reference lists, such as the price list or customer list, in their own Tables on a separate sheet, with one row per code and no duplicates.\n\n## 2. XLOOKUP and VLOOKUP\n\nXLOOKUP is available in Microsoft 365, Excel 2021 and later, and Excel for the web. Its structure is:\n\n=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])\n\nWith a price list Table called Prices that has columns Code and Price, and the order's product code in A2:\n\n=XLOOKUP(A2,Prices[Code],Prices[Price],\"Not found\")\n\nXLOOKUP uses exact match by default, can return a column to the left or right of the lookup column, and does not break when columns are inserted.\n\nIn Excel 2019 and older versions, use VLOOKUP:\n\n=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])\n\nFor example =VLOOKUP(A2,$F$2:$H$500,3,FALSE) searches for A2 in the first column of F2:H500 and returns the value from the third column (H). Three rules: the lookup column must be the first column of the range, the range must be locked with $ before copying, and the last argument must be FALSE for exact match. If you leave it out, VLOOKUP uses approximate match and can return a wrong price without any error.\n\n::: slides\nSLIDE Step 1: Prepare the reference list | One row per code, no duplicates; Convert to a Table such as Prices | Clean list, reliable lookup\nSLIDE Step 2: Check the code types | Codes as numbers in both lists, or text in both; Remove extra spaces | Same value, same type\nSLIDE Step 3: Write the lookup | =XLOOKUP(A2,Prices[Code],Prices[Price],\"Not found\"); Older Excel: =VLOOKUP(A2,$F$2:$H$500,3,FALSE) | Exact match for codes\nSLIDE Step 4: Review the misses | Filter for \"Not found\" or #N/A; Fix codes or update the list | Every miss has a reason\n:::\n\n::: quiz\n? A colleague uses =VLOOKUP(A2,$F$2:$H$500,3) to find prices for product codes. What is the risk?\n- The formula cannot be copied down || It can be copied, because the range is locked.\n* Without FALSE it uses approximate match and may return a wrong price with no error || Correct. Always use FALSE for exact codes.\n- VLOOKUP cannot return the third column || It can return any column to the right of the first.\n:::\n\n## 3. Approximate match for bands and handling errors\n\nApproximate match is useful for bands such as volume discounts or commission tiers. Build a small table of lower limits sorted from smallest to largest:\n\n- 0 Kz: 0% discount\n- 500,000 Kz: 2% discount\n- 2,000,000 Kz: 4% discount\n- 5,000,000 Kz: 6% discount\n\nWith limits in J2:J5, rates in K2:K5 and the order value in D2:\n\n=XLOOKUP(D2,$J$2:$J$5,$K$2:$K$5,,-1)\n\nMatch mode -1 means \"exact match or the next smaller value\". An order of 2,600,000 Kz is not in the table, so XLOOKUP takes the next smaller limit, 2,000,000 Kz, and returns 4%. The discount is 2,600,000 x 4% = 104,000 Kz. The older equivalent is =VLOOKUP(D2,$J$2:$K$5,2,TRUE), which requires the limits sorted in ascending order.\n\nWhen a value is not found, lookups return #N/A. Other errors you will meet are #REF! (a reference no longer exists), #VALUE! (wrong type of value, such as text in a calculation), #DIV/0! (division by zero) and #NAME? (a misspelt function name, or a function your version does not have). IFERROR replaces any error with a value of your choice:\n\n=IFERROR(VLOOKUP(A2,$F$2:$H$500,3,FALSE),\"Check code\")\n\nWith XLOOKUP, use its own if_not_found argument instead. Do not wrap every formula in IFERROR from the start. First understand why errors appear, because IFERROR also hides real mistakes such as a deleted column.\n\n::: diagram steps | Building a reliable lookup\nClean the reference list: one row per code, no duplicates\nMatch the types: codes as numbers or text in both lists\nWrite the lookup: XLOOKUP, or VLOOKUP with FALSE\nLock and copy: use Table names or $ references\nReview misses: investigate before adding IFERROR\n:::\n\n::: quiz\n? Using the discount table above, what rate does an order of 499,000 Kz get with match mode -1?\n* 0% || Correct. 499,000 Kz is below 500,000 Kz, so the next smaller limit is 0 Kz.\n- 2% || 2% starts at exactly 500,000 Kz.\n- #N/A || Approximate match returns the next smaller band, not an error.\n:::\n\n## Worked example: pricing an order export in Huambo\n\nA distributor's branch in Huambo receives a daily order export with 600 lines showing product code and quantity but no price. The price list Table, Prices, has 180 codes. The sales assistant, Teresa, adds a Price column with =XLOOKUP([@Code],Prices[Code],Prices[Price],\"Not found\") and a Value column with =[@Qty]*[@Price].\n\nTwelve lines show \"Not found\". Teresa filters them and finds two causes: seven codes were exported as text with a space at the end, and five belong to a new product not yet on the price list. She cleans the codes and asks the commercial team for the new price.\n\n::: case | Twelve orders without a price\nTeresa's report must go to the branch manager by 10:00. Twelve of 600 lines show \"Not found\" and the total is 3,100,000 Kz lower than expected.\n? What should Teresa do?\n- Wrap the formula in IFERROR to show 0 and send the report || The total would be wrong and nobody would know why.\n- Type the missing prices by hand from memory || Typed prices overwrite the formula and may be wrong.\n* Filter the twelve lines, fix the code format and report the new product codes || Correct. She removes the cause and the report stays accurate.\n- Delete the twelve lines from the export || Real orders would disappear from the report.\n:::\n\n## Tool: lookup setup checklist\n\n- Reference list in its own Table, one row per code, no duplicates\n- Code column type checked in both lists (number or text)\n- Extra spaces removed from codes\n- XLOOKUP used where available, VLOOKUP always with FALSE for codes\n- Ranges locked or Table names used\n- Band tables sorted smallest to largest for approximate match\n- Misses reviewed before adding IFERROR or if_not_found\n\n## Common mistakes\n\n- Leaving out FALSE in VLOOKUP when looking up codes.\n- Copying a VLOOKUP without locking the table range.\n- Matching a number in one list against text in the other.\n- Hiding all errors with IFERROR before finding their cause.\n\n## Self-check\n\n- What are the three parts of a lookup? (Answer: lookup value, lookup array and return array.)\n- What does FALSE mean as the last argument of VLOOKUP? (Answer: exact match.)\n- In which order must a band table for approximate match be sorted? (Answer: smallest to largest.)\n\n## Practical assignment\n\nFind a report at work where you copy prices, names or regions by hand. Replace the manual step with XLOOKUP or VLOOKUP, and list every \"not found\" value with its cause.\n\n## Summary\n\n- A lookup finds a value in one column and returns the matching value from another.\n- Use XLOOKUP where available, and VLOOKUP with FALSE in older versions.\n- Use approximate match for bands, and investigate errors before hiding them with IFERROR.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- diagnose common problems in data exported from systems or received by email;\n- clean text with TRIM, CLEAN, SUBSTITUTE, PROPER and UPPER;\n- extract and convert values with LEFT, RIGHT, MID, LEN, VALUE and TEXT;\n- use Remove Duplicates, Text to Columns and Flash Fill safely.\n\n## Key terms\n\n::: terms\nRaw data: the original export or file, before any changes\nHelper column: a temporary column with a cleaning formula, next to the original data\nDelimiter: a character that separates values in one cell, such as a comma, hyphen or semicolon\nDuplicate: a record that appears more than once, defined by the columns you choose\nNon-breaking space: an invisible character, often from websites or systems, that TRIM does not remove\n:::\n\n## 1. Diagnose before you clean\n\nData from accounting systems, bank statements, emails and colleagues is rarely clean. Before cleaning, scan the data and name the problems. The most common ones are:\n\n- Extra spaces: \"Luanda \" or \"  Cliente B\", which break SUMIFS and lookups.\n- Inconsistent case: \"LUANDA\", \"luanda\", \"Luanda\".\n- Several values in one cell: \"1050 - Rice 25kg\" or \"Silva, Ana\".\n- Numbers and dates stored as text, aligned left.\n- Duplicates: the same invoice exported twice.\n\nThen follow a safe workflow. Keep the raw export on its own sheet and never change it. Clean in helper columns next to the data, or on a copy. Check row counts and totals after every step. When the cleaned column is correct, copy it and use Paste Special, Values to replace the formulas, then delete the helper columns.\n\n::: diagram cycle | Safe data cleaning cycle\nKeep raw: save the original export untouched\nDiagnose: list spaces, case, combined fields, types and duplicates\nClean: use helper columns, functions and tools\nCheck: compare row counts and totals with the source\nFinalise: paste values and document what you changed\n:::\n\n## 2. Text functions\n\nText functions return a cleaned copy of a value. Write them in a helper column, copy down, and check the result.\n\n- =TRIM(A2) removes spaces at the start and end and reduces double spaces between words to one.\n- =CLEAN(A2) removes non-printing characters that some systems add.\n- =SUBSTITUTE(A2,CHAR(160),\" \") replaces non-breaking spaces with normal spaces, so =TRIM(SUBSTITUTE(A2,CHAR(160),\" \")) handles both.\n- =PROPER(A2) gives Title Case, =UPPER(A2) and =LOWER(A2) change all letters.\n- =LEFT(A2,4) takes the first 4 characters, =RIGHT(A2,3) the last 3, and =MID(A2,6,10) takes 10 characters starting at position 6.\n- =LEN(A2) counts characters, which helps to spot hidden spaces: \"Luanda\" has 6, \"Luanda \" has 7.\n- =VALUE(A2) converts a number stored as text into a real number.\n- =TEXT(B2,\"dd/mm/yyyy\") or =TEXT(C2,\"#,##0\") turns a value into formatted text, useful for labels. Do not use TEXT on columns you will calculate with, because the result is text.\n\nTo join values, use & : =B2&\" - \"&C2 gives \"Luanda - Cliente A\".\n\n::: quiz\n? =LEN(A2) returns 8 for a cell that shows \"Benguela\". What does this tell you?\n- The cell contains a formula || LEN counts characters in the displayed value, not formulas.\n* There are no hidden spaces, because Benguela has 8 letters || Correct. A higher number would point to extra spaces or hidden characters.\n- The cell is stored as a number || \"Benguela\" is text, and LEN works on text.\n:::\n\n## 3. Remove Duplicates, Text to Columns and Flash Fill\n\nThree built-in tools on the Data tab do in seconds what formulas do in minutes. They change data once and do not update when the source changes, so use them on a copy.\n\nRemove Duplicates (Data, Remove Duplicates) deletes rows that repeat in the columns you tick. Choose carefully: ticking only Customer would delete every order except the first for each customer. For an invoice list, ticking Invoice Number and Line is usually right. To review before deleting, flag duplicates first with =COUNTIFS(A:A,A2)>1, which shows TRUE for repeated values.\n\nText to Columns (Data, Text to Columns) splits one column into several. Choose Delimited when a character such as a hyphen or comma separates the parts, or Fixed width when each part has the same length. In the last step you can set a column's format: choose Text to keep leading zeros in codes such as 00125, or Date with DMY order to convert dates typed as day/month/year.\n\nFlash Fill (Data, Flash Fill, or Ctrl+E, available since Excel 2013) learns from examples. Type the result you want for the first one or two rows, such as the first name taken from \"Ana Silva\", then press Ctrl+E. Excel fills the rest following the pattern. Always check the results, because Flash Fill guesses the pattern and can be wrong on unusual rows.\n\n::: slides\nSLIDE Step 1: Copy the raw data | Work on a copy sheet; Note the row count and total | Protect the source\nSLIDE Step 2: Split combined fields | Text to Columns or Flash Fill; Set codes to Text to keep zeros | One field per column\nSLIDE Step 3: Clean text | TRIM, CLEAN, SUBSTITUTE and PROPER in helper columns | Standard values match\nSLIDE Step 4: Fix types and duplicates | VALUE for text numbers; Flag with COUNTIFS, then Remove Duplicates | Know what you delete\nSLIDE Step 5: Check and finalise | Compare counts and totals; Paste values and delete helpers | Document the changes\n:::\n\n::: quiz\n? A customer code column shows 125 instead of 00125 after splitting with Text to Columns. What should you have done?\n- Used Remove Duplicates first || Duplicates are not related to the missing zeros.\n- Used PROPER on the column || PROPER changes letter case only.\n* Set the code column format to Text in the last step of Text to Columns || Correct. Text format keeps the leading zeros.\n:::\n\n## Worked example: cleaning a customer payments export in Lubango\n\nA distributor's office in Lubango receives a monthly bank export with 2,150 payment lines. The finance assistant, Rui, needs total payments per customer. His SUMIFS results are too low and some customers appear twice.\n\nRui copies the export to a new sheet and records 2,150 rows and a total of 96,400,000 Kz. The Description column holds \"CLI-0458 PAGAMENTO FACTURA\". He uses Text to Columns with the space as delimiter and keeps the code as Text. He finds 40 codes with a non-breaking space and fixes them with =TRIM(SUBSTITUTE(A2,CHAR(160),\" \")). COUNTIFS on Bank Reference flags 36 lines exported twice. He removes duplicates on Bank Reference only. The final sheet has 2,114 rows, 2,150 - 36, and the total falls by the value of the duplicated lines, which he lists in a note for his manager.\n\n::: case | Duplicates in the payments export\nRui wants to remove duplicate payments. The export has Date, Customer Code, Amount and Bank Reference. Some customers pay the same amount twice in a month on purpose.\n? Which columns should Rui tick in Remove Duplicates?\n- Customer Code only || This would delete every payment except the first for each customer.\n- Customer Code and Amount || Real repeat payments of the same amount would be deleted.\n* Bank Reference only, after flagging repeats with COUNTIFS || Correct. Each real payment has a unique bank reference, so repeats are true duplicates.\n- All columns except Date || Real payments on different days would be treated as one.\n:::\n\n## Tool: data cleaning log template\n\n- File name, source and date received:\n- Rows and total before cleaning:\n- Problems found (spaces, case, combined fields, types, duplicates):\n- Functions and tools used, by column:\n- Columns that define a duplicate:\n- Rows removed and why:\n- Rows and total after cleaning:\n- Checked by and date:\n\n## Common mistakes\n\n- Cleaning the only copy of the raw data.\n- Removing duplicates on the wrong columns and deleting real records.\n- Accepting Flash Fill results without checking unusual rows.\n- Using TEXT on numbers that must still be calculated.\n\n## Self-check\n\n- Which function removes extra spaces but not non-breaking spaces? (Answer: TRIM.)\n- Which shortcut runs Flash Fill? (Answer: Ctrl+E.)\n- Why should you count rows before and after cleaning? (Answer: to confirm that no real records were lost or added.)\n\n## Practical assignment\n\nTake one export you receive every month. Follow the safe cleaning cycle, use at least two text functions and one built-in tool, and fill in the cleaning log.\n\n## Summary\n\n- Keep the raw data, diagnose problems and clean in helper columns.\n- TRIM, CLEAN, SUBSTITUTE, VALUE and the extract functions fix most text problems.\n- Remove Duplicates, Text to Columns and Flash Fill are fast, but check counts and results.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the four areas of a PivotTable and what each does;\n- build a PivotTable that analyses sales by region, product and month;\n- use Value Field Settings, Show Values As and date grouping;\n- add slicers, drill down to detail and refresh a PivotTable correctly.\n\n## Key terms\n\n::: terms\nPivotTable: an interactive summary of a data list that groups and totals values without formulas\nField: a column of the source data, shown in the PivotTable Fields list\nValues area: where numbers are summarised, for example as a sum, count or average\nSlicer: a set of buttons that filters a PivotTable with one click\nRefresh: the action that updates a PivotTable after the source data changes\n:::\n\n## 1. What a PivotTable does\n\nA PivotTable answers questions such as \"What did we sell by province this quarter?\" or \"Which products grew month by month?\" from thousands of rows, without writing a formula. It reads the source data and summarises it in a separate table that you can rearrange by dragging fields.\n\nThe PivotTable Fields pane has four areas:\n\n- Rows: categories listed down the side, such as Region or Product.\n- Columns: categories across the top, such as Month.\n- Values: the numbers to summarise, such as Amount or Quantity.\n- Filters: a field used to filter the whole table, such as Sales Channel.\n\nThe source must follow the tidy data rules from Lesson 1: one header row, one record per row, no blank rows or subtotals. Make it an Excel Table, so the PivotTable includes new rows when you refresh.\n\n::: diagram steps | Building a sales PivotTable\nPrepare: tidy data in a named Excel Table\nInsert: Insert, PivotTable, new worksheet\nArrange: fields into Rows, Columns, Values and Filters\nShape: summary type, number format, Show Values As, grouping\nUse: sort, add slicers, refresh and check the total\n:::\n\n## 2. Building and shaping a PivotTable\n\nTo build one, click any cell in your Table, choose Insert, PivotTable, select New Worksheet and click OK. Then drag fields from the list into the areas. For \"sales by region\", drag Region to Rows and Amount to Values.\n\nExcel usually sums numeric fields, but if the column contains blanks or text it may count them instead. Check the label: \"Sum of Amount\" or \"Count of Amount\". To change it, click the field in Values, choose Value Field Settings and select Sum, Count, Average, Max or Min. In the same window, click Number Format and set a thousands separator with no decimals for kwanzas.\n\nShow Values As (in Value Field Settings or by right-clicking a value) changes how numbers are presented. Useful options are % of Grand Total (each region's share), % of Column Total (product mix within each month), and Difference From (change versus the previous month).\n\nTo sort, right-click a value and choose Sort, Largest to Smallest. To see which rows make up a number, double-click it: Excel creates a new sheet with the detail records. This is the fastest way to check a surprising result.\n\n::: slides\nSLIDE Step 1: Region in Rows | Drag Region to Rows; Drag Amount to Values | First view in seconds\nSLIDE Step 2: Fix the summary | Check Sum of Amount, not Count; Set number format with thousands separator | Right measure, readable numbers\nSLIDE Step 3: Add months | Drag Date to Columns; Group by Months and Years | Trend across the top\nSLIDE Step 4: Add product detail | Drag Product to Rows under Region; Collapse or expand with the buttons | Drill from region to product\nSLIDE Step 5: Show shares | Show Values As % of Grand Total | Size and share together\n:::\n\n::: quiz\n? A PivotTable shows \"Count of Amount\" for each region and the values look too small. What should you do?\n- Delete the PivotTable and build it again || A quick setting change is enough.\n* Open Value Field Settings and change the summary to Sum || Correct. Count gives the number of rows, not the total value.\n- Move Amount to the Rows area || That would list each amount as a category.\n:::\n\n## 3. Dates, slicers and refresh\n\nMonths are the most common way to analyse sales. If dates are real dates (not text), right-click any date in the PivotTable, choose Group, and select both Months and Years. Newer versions may group dates automatically. Selecting Years as well as Months is essential when the data covers more than one year, otherwise January 2025 and January 2026 are added together.\n\nSlicers make a PivotTable easy for managers to use. Click inside it, go to PivotTable Analyze, Insert Slicer, and tick fields such as Region or Salesperson. A Timeline (Insert Timeline) works the same way for dates.\n\nA PivotTable does not update automatically. After you add or change source data, right-click it and choose Refresh, or use Data, Refresh All. Before sending a report, compare the PivotTable's grand total with the total of the source Table.\n\n::: quiz\n? Your sales data covers January 2025 to October 2026. You group dates by Months only. What happens?\n- Excel shows an error || Grouping by months alone is allowed.\n- Each month appears twice, once per year || That only happens when Years is also selected.\n* The same month from different years is added together || Correct. Select Months and Years to keep each year separate.\n:::\n\n## Worked example: quarterly sales review for a distributor in Luanda\n\nA consumer goods distributor in Luanda has a Table called Sales with 9,800 order lines for July to September: Date, Region (Luanda, Benguela, Huambo, Huíla), Product, Salesperson and Amount. The commercial manager asks the sales analyst, Helena, three questions: sales by region, the top product in each region, and the monthly trend.\n\nHelena builds a PivotTable with Region in Rows and Amount in Values. The total is 480,000,000 Kz, the same as the Table total. Luanda shows 264,000,000 Kz. With Show Values As, % of Grand Total, Luanda is 264,000,000 / 480,000,000 = 55%. She adds Product under Region and sorts largest to smallest, and Rice 25kg is the top product in three regions. Finally she moves Date to Columns, grouped by Months and Years. Benguela fell from 42,000,000 Kz in July to 31,000,000 Kz in September, a drop of 11,000,000 / 42,000,000 = 26%. She double-clicks September Benguela to see the detail and finds that one large wholesale customer did not order.\n\n::: case | A drop in Benguela\nThe commercial manager sees Benguela's 26% drop and wants to cut the Benguela sales budget immediately. Helena has the PivotTable open in the meeting.\n? What should Helena do first?\n- Agree, because the PivotTable total matches the source || The total is right, but the cause of the drop is not yet known.\n* Double-click the September Benguela value and show which customers did not order || Correct. The detail shows that one wholesale customer caused most of the drop, which needs a different action.\n- Remove Benguela from the report to avoid confusion || Hiding data does not answer the manager's question.\n- Change the summary to Average to soften the drop || Changing the measure would mislead the manager.\n:::\n\n## Tool: PivotTable report checklist\n\n- Source is a tidy, named Excel Table\n- Summary type checked (Sum, not Count) and number format set\n- Dates grouped by Months and Years\n- Sorted so the largest items appear first\n- Show Values As used where shares or changes matter\n- Slicers added for the filters managers use most\n- Refreshed, and grand total checked against the source\n\n## Common mistakes\n\n- Building a PivotTable on a plain range, so new rows are missed.\n- Forgetting to refresh after the data changes.\n- Reporting Count of Amount instead of Sum of Amount.\n- Grouping by months without years when data covers more than one year.\n\n## Self-check\n\n- Which area holds the numbers that are summarised? (Answer: Values.)\n- How do you see the records behind a PivotTable value? (Answer: double-click the value.)\n- Why should you select Years when grouping dates by month? (Answer: so the same month in different years is not added together.)\n\n## Practical assignment\n\nBuild a PivotTable from your team's sales or expense data showing totals by region or cost centre and by month, with one slicer. Check the grand total against the source and share one insight with your manager.\n\n## Summary\n\n- A PivotTable summarises a tidy Table through Rows, Columns, Values and Filters.\n- Value Field Settings, Show Values As and date grouping turn totals into answers.\n- Use slicers and drill-down, and always refresh and check the total before sending.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose the right chart type for comparison, trend, composition and target messages;\n- apply design rules that make charts quick to read;\n- use conditional formatting and sparklines to highlight exceptions and trends;\n- lay out a one-page dashboard for a manager.\n\n## Key terms\n\n::: terms\nKPI: key performance indicator, a measure that shows progress against an important objective\nChart type: the form of a chart, such as column, bar, line or pie\nData-ink ratio: the share of a chart's ink that shows data rather than decoration\nConditional formatting: formatting that changes automatically depending on a cell's value\nSparkline: a tiny chart inside one cell that shows a trend\nDashboard: a one-page view of the main KPIs for a specific audience\n:::\n\n## 1. Choosing the right chart\n\nA manager looks at a chart for a few seconds. Choose the chart from the message you want to give, not from what looks attractive. Four messages cover most office reports:\n\n- Comparison between categories (sales by region, by salesperson): a column chart, or a horizontal bar chart when names are long or there are many items. Sort from largest to smallest.\n- Trend over time (monthly sales, weekly cash): a line chart, with time on the horizontal axis from left to right.\n- Composition, or part of a whole (share of sales by channel): a pie chart only with a few slices, otherwise a 100% stacked bar.\n- Actual versus target: a column chart with the target as a line (a combo chart: Insert, Combo Chart, set Target to Line).\n\nTo create a chart, select the data (or click a PivotTable and use PivotChart) and use Insert, Recommended Charts, then check that its type matches your message.\n\n::: quiz\n? A sales supervisor wants to show how monthly sales changed from January to October. Which chart fits best?\n- Pie chart || A pie shows parts of a whole, not change over time.\n* Line chart || Correct. A line chart shows a trend over time most clearly.\n- Horizontal bar chart sorted by value || Sorting by value would break the time order.\n:::\n\n## 2. Design rules that managers understand\n\nEdward Tufte, in The Visual Display of Quantitative Information (1983), introduced the data-ink ratio: most of the ink in a chart should show data, not decoration. Apply it with these steps:\n\n::: slides\nSLIDE Step 1: Write a message title | \"Benguela sales fell 26% in Q3\", not \"Sales chart\" | The title is the conclusion\nSLIDE Step 2: Remove clutter | Delete 3D effects, heavy gridlines and borders; Remove the legend if there is one series | Less decoration, more data\nSLIDE Step 3: Label directly | Add data labels or label lines at their end; Format numbers in millions of Kz | No guessing values\nSLIDE Step 4: Use colour with purpose | Grey for context, one strong colour for the focus | Colour points to the message\nSLIDE Step 5: Keep axes honest | Bar and column axes start at zero; Same scale when comparing charts | Honest scales build trust\n:::\n\nStarting a column axis at a value above zero makes small differences look huge, so keep it at zero. Line charts can start above zero when the change is what matters, but say so in the label. Avoid using red and green as the only signal, because some people cannot easily tell them apart. Add icons, labels or position as well.\n\n## 3. Conditional formatting and sparklines\n\nConditional formatting (Home, Conditional Formatting) makes a table easier to read without a chart:\n\n- Data bars show the size of each value inside its cell.\n- Colour scales shade cells from low to high, useful for a table of regions by month.\n- Icon sets show status, such as arrows for up, flat and down.\n- Highlight Cells Rules mark values greater than, less than or equal to a number.\n- A formula rule (New Rule, Use a formula) highlights whole rows. With variance in column F, select A2:F20 and use =$F2<0 to colour every row where actual is below target. The $ locks column F while the row changes, as you learned in Lesson 2.\n\nSparklines (Insert, Sparklines, Line) put a small trend chart in one cell, for example the 12-month trend next to each product's total. They let a manager scan many trends in one column.\n\nVariance is the most common KPI calculation. With actual in D2 and target in E2: =D2-E2 gives the variance in Kz, and =(D2-E2)/E2, formatted as a percentage, gives the variance %. Actual 27,000,000 Kz against a target of 30,000,000 Kz gives (27,000,000 - 30,000,000) / 30,000,000 = -10%.\n\n::: diagram pyramid | One-page dashboard layout\nHeadline KPIs: 3 to 5 numbers with variance versus target\nTrends: line charts of the main KPIs over time\nBreakdowns: sorted bar or column charts by region, product or salesperson\nDetail: a table with conditional formatting and sparklines\n:::\n\n::: quiz\n? You select A2:F20 and create the rule =$F2<0. What does the $ do?\n- It makes the rule apply only to row 2 || The row is not locked, so it moves with each row.\n* It keeps the rule checking column F while the row changes || Correct. Every cell in a row looks at that row's variance in column F.\n- It converts the rule into currency || $ in a formula locks a reference and has nothing to do with currency.\n:::\n\n## Worked example: a monthly dashboard for a distributor in Cabinda\n\nA distributor's branch in Cabinda sends the regional director a 6-sheet workbook each month with 14 charts, including 3D pies with ten slices. The director says she cannot see whether the branch is on target. The sales assistant, Pedro, redesigns it as one page.\n\nAt the top, he shows four KPIs: sales (27,000,000 Kz, -10% versus target), number of active customers, average order value, and overdue receivables. Below, a line chart shows sales against target for the last 12 months. Next, a sorted bar chart shows sales by salesperson with the target as a line. At the bottom, a product table uses data bars, a sparkline per product and the =$F2<0 rule to highlight products below target. All visuals use PivotTables from one Sales Table, with a slicer for month, so next month he only adds data and clicks Refresh All.\n\n::: case | The ten-slice pie chart\nThe director wants to know which of ten product groups drive Cabinda's sales. Pedro's current report shows a 3D pie chart with ten slices in similar colours.\n? What should Pedro use instead?\n- A larger 3D pie chart with a legend || Ten slices remain hard to compare, and 3D distorts their size.\n* A horizontal bar chart sorted from largest to smallest, with data labels || Correct. Bars are easy to compare and sorting shows the main drivers at once.\n- A line chart of the ten product groups || Line charts suit trends over time, not a single-period comparison.\n- A table with every cell in a different colour || Too many colours hide the message.\n:::\n\n## Tool: dashboard review checklist\n\n- Audience and the three questions it must answer are written down\n- 3 to 5 headline KPIs, each with target and variance\n- Each chart type matches its message (comparison, trend, composition, target)\n- Titles state the message\n- Bar and column axes start at zero, no 3D effects\n- Conditional formatting highlights exceptions only\n- Built from Tables and PivotTables, refreshed and totals checked\n\n## Common mistakes\n\n- Using pie charts with many slices or for trends over time.\n- Starting column axes above zero, so differences look larger than they are.\n- Relying only on red and green to show status.\n- Putting too many charts on one page without a clear order.\n\n## Self-check\n\n- Which chart best shows a trend over time? (Answer: a line chart.)\n- What is the variance % for actual 18,000,000 Kz and target 20,000,000 Kz? (Answer: -10%.)\n- What does the data-ink ratio recommend? (Answer: most of a chart's ink should show data, not decoration.)\n\n## Practical assignment\n\nTake one report you send to your manager and redesign it as a one-page dashboard with KPIs at the top, one trend chart, one sorted comparison chart and one table with conditional formatting. Ask your manager whether the main message is clear in ten seconds.\n\n## Summary\n\n- Choose the chart from the message: comparison, trend, composition or target.\n- Remove clutter, write message titles and keep axes honest.\n- Use conditional formatting, sparklines and a clear one-page layout to show exceptions."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Structure data in the tidy format, one row per record and one column per field",
+     "Convert a range into an Excel Table and use structured references",
+     "Recognise and fix wrong data types",
+     "Sort, filter and control input with data validation"
+    ],
+    "takeaway": "Clean structure first, analysis second"
+   },
+   {
+    "title": "Tidy data rules",
+    "points": [
+     "One header row with unique names",
+     "One record per row, one field per column",
+     "No blank rows, merged cells or subtotals inside the data",
+     "One kind of data per column"
+    ],
+    "takeaway": "Excel tools assume this shape"
+   },
+   {
+    "title": "Excel Tables",
+    "points": [
+     "Click inside the data and press Ctrl+T",
+     "The Table grows when you add rows",
+     "Formulas fill down automatically",
+     "Structured references like =SUM(Sales[Amount])"
+    ],
+    "takeaway": "Name every Table"
+   },
+   {
+    "title": "Data types",
+    "points": [
+     "Numbers align right, text aligns left by default",
+     "Dates are stored as serial numbers",
+     "A green triangle often means a number stored as text"
+    ],
+    "takeaway": "If it aligns left, check it"
+   },
+   {
+    "title": "Sorting and filtering",
+    "points": [
+     "Data then Sort for several levels",
+     "Ctrl+Shift+L turns filters on or off",
+     "Total Row uses SUBTOTAL so it counts only visible rows"
+    ],
+    "takeaway": "Sort to see order, filter to see a subset"
+   },
+   {
+    "title": "Data validation",
+    "points": [
+     "Data then Data Validation",
+     "Allow a List, whole numbers or dates",
+     "Add an input message and a Stop error alert",
+     "Circle Invalid Data finds old errors"
+    ],
+    "takeaway": "Prevent errors at the point of entry"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Merged cells and blank rows inside data",
+     "Typing the same name three ways",
+     "Dates typed as text",
+     "Sorting one column alone"
+    ],
+    "takeaway": "Fix the structure before the formulas"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Build formulas with SUM, AVERAGE and IF",
+     "Summarise data with SUMIFS and COUNTIFS",
+     "Use relative, absolute and mixed references correctly",
+     "Check your formulas for errors"
+    ],
+    "takeaway": "The core formulas of office work"
+   },
+   {
+    "title": "Formula basics",
+    "points": [
+     "Every formula starts with =",
+     "Brackets first, then multiply and divide, then add and subtract",
+     "=SUM(C2:C100) adds a range",
+     "=AVERAGE(C2:C100) ignores blanks but counts zeros"
+    ],
+    "takeaway": "Read a formula from the inside out"
+   },
+   {
+    "title": "The IF function",
+    "points": [
+     "=IF(test, value if true, value if false)",
+     "=IF(D2>=E2,\"Target met\",\"Below target\")",
+     "Text results go in double quotes"
+    ],
+    "takeaway": "One question, two answers"
+   },
+   {
+    "title": "SUMIFS and COUNTIFS",
+    "points": [
+     "=SUMIFS(sum range, criteria range, criteria)",
+     "=SUMIFS(C:C,A:A,\"Luanda\")",
+     "=COUNTIFS(A:A,\"Luanda\",C:C,\">=1000000\")",
+     "Add more pairs for more conditions"
+    ],
+    "takeaway": "Totals and counts with conditions"
+   },
+   {
+    "title": "Cell references",
+    "points": [
+     "Relative A1 changes when copied",
+     "Absolute $A$1 never changes",
+     "Mixed A$1 or $A1 locks one part",
+     "Press F4 to cycle through them"
+    ],
+    "takeaway": "Lock what must not move"
+   },
+   {
+    "title": "Checking formulas",
+    "points": [
+     "Ctrl+` shows all formulas",
+     "Formulas then Trace Precedents",
+     "Check one result by hand"
+    ],
+    "takeaway": "Test before you trust"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Forgetting to lock a rate or total cell",
+     "Typing criteria wrongly or with extra spaces",
+     "Hard-coding numbers inside formulas"
+    ],
+    "takeaway": "Put inputs in cells, not in formulas"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Look up prices, names and codes with XLOOKUP",
+     "Use VLOOKUP with exact match in older Excel versions",
+     "Use approximate match for bands such as discounts",
+     "Handle missing values with IFERROR and the if_not_found argument"
+    ],
+    "takeaway": "Bring data together from two lists"
+   },
+   {
+    "title": "How a lookup works",
+    "points": [
+     "A lookup value, such as a product code",
+     "A list to search, such as the code column",
+     "A column to return, such as the price"
+    ],
+    "takeaway": "Find this, return that"
+   },
+   {
+    "title": "XLOOKUP",
+    "points": [
+     "=XLOOKUP(A2,Prices[Code],Prices[Price],\"Not found\")",
+     "Exact match by default",
+     "Looks left or right",
+     "In Microsoft 365 and Excel 2021 or later"
+    ],
+    "takeaway": "The modern default"
+   },
+   {
+    "title": "VLOOKUP",
+    "points": [
+     "=VLOOKUP(A2,$F$2:$H$500,3,FALSE)",
+     "Code must be in the first column",
+     "FALSE means exact match",
+     "Column number breaks if columns are inserted"
+    ],
+    "takeaway": "Always type FALSE for codes"
+   },
+   {
+    "title": "Approximate match for bands",
+    "points": [
+     "Table of lower limits sorted smallest to largest",
+     "XLOOKUP match mode -1 finds exact or next smaller",
+     "VLOOKUP with TRUE does the same"
+    ],
+    "takeaway": "Use for discount and commission tiers"
+   },
+   {
+    "title": "Errors and IFERROR",
+    "points": [
+     "#N/A means not found",
+     "=IFERROR(formula,\"Check code\")",
+     "Find why it failed before hiding it"
+    ],
+    "takeaway": "Hide errors only after you understand them"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "VLOOKUP without FALSE",
+     "Not locking the lookup range",
+     "Codes stored as text in one list and numbers in the other",
+     "Hiding every error with IFERROR"
+    ],
+    "takeaway": "Same code, same type, exact match"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Diagnose common data quality problems in exports",
+     "Clean text with TRIM, CLEAN, SUBSTITUTE, PROPER and UPPER",
+     "Extract and convert values with LEFT, RIGHT, MID, LEN, TEXT and VALUE",
+     "Use Remove Duplicates, Text to Columns and Flash Fill"
+    ],
+    "takeaway": "Clean once, report many times"
+   },
+   {
+    "title": "A safe cleaning workflow",
+    "points": [
+     "Keep the raw export untouched",
+     "Clean in helper columns",
+     "Check counts and totals",
+     "Paste as values when finished"
+    ],
+    "takeaway": "Never clean the only copy"
+   },
+   {
+    "title": "Text functions",
+    "points": [
+     "=TRIM(A2) removes extra spaces",
+     "=PROPER(A2) gives Title Case",
+     "=SUBSTITUTE(A2,CHAR(160),\" \") replaces non-breaking spaces",
+     "=CLEAN(A2) removes non-printing characters"
+    ],
+    "takeaway": "Most mismatches are hidden spaces"
+   },
+   {
+    "title": "Extract and convert",
+    "points": [
+     "=LEFT(A2,3) and =RIGHT(A2,4)",
+     "=MID(A2,5,2) and =LEN(A2)",
+     "=VALUE(A2) turns text into a number",
+     "=TEXT(B2,\"dd/mm/yyyy\") turns a date into text"
+    ],
+    "takeaway": "Split and convert with formulas"
+   },
+   {
+    "title": "Built-in tools",
+    "points": [
+     "Data then Remove Duplicates",
+     "Data then Text to Columns, Delimited or Fixed width",
+     "Flash Fill with Ctrl+E"
+    ],
+    "takeaway": "Tools are fast but not live"
+   },
+   {
+    "title": "Duplicates",
+    "points": [
+     "Decide which columns define a duplicate",
+     "Count before and after",
+     "COUNTIFS greater than 1 flags them first"
+    ],
+    "takeaway": "Know what you delete"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Cleaning the original file",
+     "Removing duplicates on the wrong columns",
+     "Trusting Flash Fill without checking",
+     "Turning numbers into text with TEXT"
+    ],
+    "takeaway": "Check every step"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Build a PivotTable from an Excel Table",
+     "Analyse sales by region, product and month",
+     "Use Value Field Settings, Show Values As and date grouping",
+     "Add slicers and refresh correctly"
+    ],
+    "takeaway": "Answer business questions in minutes"
+   },
+   {
+    "title": "What a PivotTable does",
+    "points": [
+     "Summarises thousands of rows without formulas",
+     "Rows, Columns, Values and Filters areas",
+     "Drag fields to change the view"
+    ],
+    "takeaway": "Same data, many views"
+   },
+   {
+    "title": "Building one",
+    "points": [
+     "Click in the Table, Insert then PivotTable",
+     "New worksheet",
+     "Drag Region to Rows and Amount to Values"
+    ],
+    "takeaway": "Start with one question"
+   },
+   {
+    "title": "Shaping the result",
+    "points": [
+     "Value Field Settings for Sum, Count or Average",
+     "Number Format for Kz",
+     "Show Values As % of Grand Total"
+    ],
+    "takeaway": "Choose the right measure"
+   },
+   {
+    "title": "Dates and months",
+    "points": [
+     "Right-click a date, Group, Months and Years",
+     "Selecting both keeps years apart",
+     "Month in Columns shows a trend"
+    ],
+    "takeaway": "Group dates, do not retype them"
+   },
+   {
+    "title": "Slicers and refresh",
+    "points": [
+     "Insert Slicer for region or salesperson",
+     "Data then Refresh All after new data",
+     "Double-click a value to see the detail rows"
+    ],
+    "takeaway": "Refresh before you send"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Source data not in a Table",
+     "Forgetting to refresh",
+     "Count instead of Sum",
+     "Grouping months without years"
+    ],
+    "takeaway": "Check the total against the source"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose the right chart for the message",
+     "Design charts that managers understand quickly",
+     "Highlight exceptions with conditional formatting and sparklines",
+     "Lay out a one-page dashboard"
+    ],
+    "takeaway": "Show the message, not just the numbers"
+   },
+   {
+    "title": "Choose by message",
+    "points": [
+     "Compare categories: column or bar chart",
+     "Trend over time: line chart",
+     "Part of a whole with few parts: pie or 100% stacked bar",
+     "Actual versus target: column with a target line"
+    ],
+    "takeaway": "Decide the message first"
+   },
+   {
+    "title": "Design rules",
+    "points": [
+     "Title that states the message",
+     "Start bar axes at zero",
+     "Remove 3D, gridline clutter and extra colours",
+     "Label data directly"
+    ],
+    "takeaway": "Every mark should carry data"
+   },
+   {
+    "title": "Conditional formatting",
+    "points": [
+     "Data bars and colour scales for size",
+     "Icon sets for status",
+     "Formula rule such as =$F2<0 for exceptions"
+    ],
+    "takeaway": "Make exceptions visible"
+   },
+   {
+    "title": "Sparklines",
+    "points": [
+     "Insert then Sparklines then Line",
+     "One small trend per row",
+     "Good for 12 months per product"
+    ],
+    "takeaway": "Trend at a glance"
+   },
+   {
+    "title": "Dashboard layout",
+    "points": [
+     "KPIs at the top, trends in the middle, detail at the bottom",
+     "One page, one audience",
+     "Same colours and scales throughout"
+    ],
+    "takeaway": "Most important top left"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Pie charts with many slices",
+     "Truncated bar axes",
+     "Red and green as the only signal",
+     "Too many charts on one page"
+    ],
+    "takeaway": "Fewer charts, clearer message"
+   }
+  ]
+ ]
+}

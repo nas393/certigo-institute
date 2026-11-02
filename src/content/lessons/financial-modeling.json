@@ -1,0 +1,417 @@
+{
+ "slug": "financial-modeling",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what a financial model is and the main types used in a commercial business;\n- organise a model into inputs, calculations and outputs;\n- apply standard colour and formula conventions, including one formula per row;\n- build simple error checks that show when a model is broken.\n\n## Key terms\n\n::: terms\nFinancial model: a spreadsheet that turns assumptions about a business into forecast results such as profit, cash and returns\nInput (assumption): a value typed in by the modeller, such as a price, volume, exchange rate or growth rate\nCalculation: a formula that combines inputs and other calculations\nOutput: the summary results decision-makers read, such as a forecast income statement, cash flow or NPV\nHard-coding: typing a number directly into a formula, such as =B5*1.14, instead of referencing an input cell\nError check: a formula that returns zero when the model is consistent and flags a problem when it is not\n:::\n\n## 1. What a financial model is for\n\nA financial model is a decision tool. It answers questions such as \"What profit will we make if rice volumes grow 8% and the kwanza weakens?\" A good model lets you change one assumption and see the effect on every result.\n\nCommon types in a commercial business:\n\n- Budget and forecast models: monthly or yearly income statement and cash flow for the next 12 to 36 months.\n- Three-statement models: income statement, balance sheet and cash flow statement, linked so that they always agree.\n- Project appraisal models: the cash flows of one investment, used to calculate NPV, IRR and payback.\n- Pricing and margin models: the cost build-up and margin per SKU or customer.\n\n## 2. Inputs, calculations, outputs\n\nThe most important design rule is to separate three kinds of content, usually on separate sheets.\n\n::: diagram steps | How a well-structured model flows\nInputs: every assumption typed once, with unit and source\nCalculations: formulas only, built from inputs, flowing left to right and top to bottom\nOutputs: income statement, cash flow, KPIs and charts for management\nChecks: error tests that confirm the model is consistent\n:::\n\nHow to set up the structure, step by step:\n\n::: slides\nSLIDE Step 1: Define the question | Write the decision the model supports on the cover sheet; Agree period, frequency and currency | Purpose drives design\nSLIDE Step 2: Fix the timeline | Periods across columns, in the same columns on every sheet; Column E is always the first period | Same column, same period\nSLIDE Step 3: Build the input sheet | One row per assumption; Columns for unit, value per period and source | Every number has one home\nSLIDE Step 4: Build calculations | Reference inputs, never retype them; One idea per row | Short formulas are easy to check\nSLIDE Step 5: Build outputs and checks | Outputs only pull from calculations; Sum all checks into one cell | One cell tells you the model is healthy\n:::\n\n::: quiz\n? A sales manager types the new exchange rate directly into ten different formulas. What is the main problem?\n- The file will become too large to open || File size is not the issue with this practice.\n* The next change must be made ten times and one will probably be missed || An input should live in one cell so that one change updates the whole model.\n- Excel cannot multiply by exchange rates || Excel handles this calculation without any problem.\n:::\n\n## 3. Formatting and formula conventions\n\nConventions let any reader see at a glance what a cell is. The most widely used colour code:\n\n- Blue font: hard-coded inputs.\n- Black font: formulas and calculations.\n- Green font: links that pull a value from another sheet or file.\n\nOther good-practice rules, many of them set out in the FAST Standard (Flexible, Appropriate, Structured, Transparent), a free public modelling standard:\n\n- One formula per row: the formula in the first period column is copied across the whole row without change. If the row says \"Revenue = Volume × Price\", every column uses that formula.\n- No hard-coding: =E12*1.14 hides the 14%. Put 14% in an input cell and write =E12*(1+E$5).\n- Units on every row: Kz, USD, tonnes, days or %.\n- Short formulas: split long formulas into helper rows.\n- Lookups instead of copied values: use XLOOKUP to pull a price by SKU code from the price list rather than retyping it.\n\nA simple check makes errors visible. If revenue by product must equal total revenue, add a row: Check = Total revenue − SUM(revenue by product). If any check is not zero, the cover sheet shows \"ERROR\".\n\n::: quiz\n? In a revenue row, columns E to O use =E8*E9, but column J uses =J8*25000. What should you do?\n- Leave it, because the result in column J looks reasonable || A reasonable-looking number today can hide a wrong number tomorrow.\n- Colour column J blue so people know it is different || Blue means a pure input, not a formula with a hidden number.\n* Move 25,000 into the price input row and restore the same formula as the rest of the row || This restores one formula per row and removes the hidden number.\n:::\n\n## Worked example: rebuilding a pricing model in Luanda\n\nA commercial analyst at a food distributor in Luanda inherits the sugar pricing file. It has one sheet and formulas like =C14*1.17+3500. Nobody knows what 1.17 or 3,500 mean.\n\nShe rebuilds it in three sheets. Inputs: USD cost per tonne, exchange rate (Kz per USD), freight and clearing per tonne, target gross margin % and pack size, each in blue with unit and source. Calculations: landed cost per tonne in Kz = (USD cost + freight) × exchange rate + clearing; cost per 1 kg pack = landed cost ÷ 1,000; selling price = cost ÷ (1 − target margin). Outputs: a price list by pack, pulled with XLOOKUP.\n\nThe 1.17 turned out to be a 17% mark-up on cost, which is only a 14.5% gross margin (0.17 ÷ 1.17), not the 17% management expected. Now the margin is an input, and a check confirms every price on the list delivers at least the target margin.\n\n::: case | The forecast the director wants by Friday\nJorge, a planning analyst in Viana, must build a 12-month sales forecast for the commercial director by Friday. He is tempted to start typing numbers into one sheet to save time.\n? What should Jorge do first?\n- Copy last year's file and overwrite the numbers || Old files carry old errors and hidden hard-codes into the new model.\n* Agree the question, timeline and list of inputs, then build input, calculation and output blocks || Thirty minutes of structure saves hours of fixing and makes the model easy to review.\n- Build the charts first so the director sees progress || Outputs built before the logic will have to be redone.\n- Put all numbers in one sheet and colour them later || Mixing inputs and formulas is what makes models impossible to check.\n:::\n\n## Tool: model structure checklist\n\n- Question the model answers, written on the cover sheet\n- Period, frequency and currency agreed\n- Separate inputs, calculations and outputs\n- Same timeline columns on every sheet\n- Inputs blue, formulas black, links green\n- One formula per row, copied across\n- No hard-coded numbers inside formulas\n- Units on every row\n- Error checks summed into one cell on the cover sheet\n- Version number and date in the file name\n\n## Common mistakes\n\n- Mixing inputs and formulas on the same rows, so nobody knows what can be changed.\n- Hiding numbers inside formulas.\n- Breaking one formula per row with a \"special\" column.\n- Using IFERROR to hide errors instead of fixing them.\n\n## Self-check\n\n- What do blue, black and green font normally mean in a model? (Answer: inputs, formulas, and links to other sheets or files.)\n- Why should a row use one formula across all periods? (Answer: so it can be checked once and copied safely, with no hidden exceptions.)\n- A 25% mark-up on cost gives what gross margin? (Answer: 20%, because 0.25 ÷ 1.25 = 0.20.)\n\n## Practical assignment\n\nTake one spreadsheet you use often at work. Mark each cell as input, calculation or output, and find every hard-coded number inside a formula. Move at least three of them into a labelled input block and add one error check.\n\n## Summary\n\n- A financial model turns assumptions into results to support a decision.\n- Separate inputs, calculations and outputs on one consistent timeline.\n- Use colour conventions, one formula per row, no hard-coding and visible checks.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- lay out an income statement forecast from revenue down to net profit;\n- build a revenue forecast from volume and price drivers;\n- forecast cost of sales and gross margin using unit landed cost;\n- forecast operating expenses by separating fixed and variable costs.\n\n## Key terms\n\n::: terms\nRevenue driver: an input that explains revenue, such as volume, price, number of customers or market share\nNet price: list price minus discounts, rebates and promotional support\nCost of sales (COGS): the cost of the goods sold, including purchase price, freight, duties and clearing\nGross margin: gross profit as a percentage of revenue\nOperating expenses (opex): costs of running the business, such as salaries, rent, transport and marketing\nEBITDA: earnings before interest, tax, depreciation and amortisation\n:::\n\n## 1. The structure of the forecast\n\nAn income statement forecast follows the same order as the accounts, so finance and management can compare it with actual results.\n\n::: diagram steps | Income statement forecast, line by line\nRevenue: volume × net price, by product or channel\nGross profit: revenue minus cost of sales\nEBITDA: gross profit minus operating expenses\nEBIT: EBITDA minus depreciation and amortisation\nNet profit: EBIT minus interest and tax\n:::\n\nFor tax, use the rate confirmed by your finance team or tax adviser, held as an input. Most commercial forecasts focus on the lines down to EBITDA, because those are the lines sales and operations control.\n\n## 2. Building revenue from drivers\n\nA single growth rate (\"revenue +15%\") cannot be tested or managed. A driver-based forecast splits revenue into parts you can explain:\n\n- Volume × price: units, bags or tonnes multiplied by net price per unit. This is the standard for a distributor.\n- Bottom-up: volume and price by SKU, channel (wholesale, retail, key accounts) or major customer, totalled with SUMIFS.\n- Top-down: market size × your market share, useful as a cross-check.\n\nHow to build the revenue block:\n\n::: slides\nSLIDE Step 1: Choose the level | SKU, brand or channel, based on data you actually have; Keep the top SKUs separate and group the tail | Detail where it matters\nSLIDE Step 2: Base volume | Last 12 months actual by line; Remove one-offs such as a single tender | Start from clean history\nSLIDE Step 3: Volume growth | Separate inputs for market growth, distribution gains and new customers | Each assumption has an owner\nSLIDE Step 4: Net price | List price change as an input; Minus discounts and rebates as % of list price | Revenue is what you keep\nSLIDE Step 5: Cross-check | Compare total growth with history and market size; Check stock and import capacity | Can we actually supply it?\n:::\n\n::: quiz\n? A sales director forecasts revenue growth of 25% by typing 1.25 in one cell. What is the best improvement?\n- Reduce it to 15% to be safe || A smaller guess is still a guess with no drivers behind it.\n* Split it into volume growth by channel and net price change, each as its own input || Separate drivers can be explained, tested and owned.\n- Leave it, because the director knows the market || Knowledge should be captured as testable drivers in the model.\n:::\n\n## 3. Cost of sales and gross margin\n\nThere are two ways to forecast cost of sales:\n\n- Gross margin %: cost of sales = revenue × (1 − margin %). Quick, but it hides what drives cost.\n- Unit cost: cost of sales = volume × landed cost per unit. Better for importers, because landed cost depends on supplier price, freight, duties, clearing and the exchange rate.\n\nLanded cost per unit in Kz = (supplier price in USD + freight and insurance per unit) × exchange rate + duties and clearing per unit. If the kwanza weakens and selling prices do not move at once, margin falls. A unit cost model shows this immediately; a fixed margin % never will.\n\n::: tip | Hold the exchange rate as an input\nKeep the Kz per USD rate in one input row per period. Every imported cost then updates when you change it.\n:::\n\n## 4. Operating expenses\n\nSplit opex by behaviour:\n\n- Fixed costs: rent, salaries, insurance, IT. Forecast from the current run-rate, grown by an inflation input. Forecast salaries as headcount × average cost per employee.\n- Variable costs: transport, loading, commissions. Forecast per unit (Kz per tonne delivered) or as a % of revenue.\n\nThen check opex as a % of revenue against history. If revenue grows 20% and opex stays flat, ask whether that is realistic.\n\n::: quiz\n? Which cost is best forecast as Kz per tonne delivered?\n- Office rent || Rent is fixed and does not change with tonnes delivered.\n- Finance team salaries || Salaries are forecast as headcount × average cost.\n* Third-party transport to customers || Transport cost rises with each tonne delivered, so it is variable.\n:::\n\n## Worked example: rice forecast for a Luanda distributor\n\nA distributor in Luanda sold 120,000 bags of 25 kg rice last year at an average net price of Kz 22,000, giving revenue of Kz 2,640 million. The analyst builds next year's forecast from drivers:\n\n- Volume: +8% (market growth plus two new wholesale customers) = 129,600 bags.\n- Net price: +10% = Kz 24,200 per bag.\n- Revenue: 129,600 × 24,200 = Kz 3,136.3 million.\n- Landed cost per bag, from USD price, freight, clearing and the forecast exchange rate: Kz 19,844, so gross profit per bag is Kz 4,356 (18%).\n- Gross profit: 129,600 × 4,356 = Kz 564.5 million.\n- Opex: fixed Kz 250 million plus variable distribution at 3% of revenue (Kz 94.1 million) = Kz 344.1 million.\n- EBITDA: 564.5 − 344.1 = Kz 220.4 million, or 7.0% of revenue.\n\nBecause landed cost is driven by the exchange rate input, the director can see immediately what a weaker kwanza does to the 18% margin.\n\n::: case | Volume growth for cooking oil in Benguela\nTeresa, a sales manager in Benguela, wants the cooking oil forecast to show 30% volume growth because \"the market is growing fast\". Last year volume grew 6%, and warehouse space is already full.\n? How should the analyst respond?\n- Enter 30% to keep the sales team motivated || A forecast is a planning tool, not a motivation target.\n- Replace it with last year's 6% without discussion || History matters, but Teresa may know about real new business.\n* Ask Teresa to split the 30% into named drivers such as new customers and distribution gains, and check warehouse and import capacity || This turns an opinion into testable drivers and checks whether the volume can be supplied.\n:::\n\n## Tool: revenue and margin build template\n\n- Product or channel:\n- Base volume (last 12 months) and unit:\n- Volume growth drivers and owner of each:\n- List price change %:\n- Discounts and rebates % of list:\n- Net price per unit:\n- Landed cost per unit (USD price, freight, duties, clearing, exchange rate):\n- Gross profit per unit and margin %:\n- Fixed opex and inflation %:\n- Variable opex per unit or % of revenue:\n\n## Common mistakes\n\n- Forecasting revenue as one growth percentage with no drivers.\n- Using list price and forgetting discounts and rebates.\n- Holding margin % fixed when the exchange rate moves.\n- Treating all opex as fixed, or all as variable.\n\n## Self-check\n\n- What is the formula for revenue in a driver-based forecast for a distributor? (Answer: volume × net price.)\n- Why is unit landed cost better than a fixed margin % for an importer? (Answer: it shows the effect of supplier price, freight and exchange rate changes on margin.)\n- Give one example of a fixed and one of a variable operating cost. (Answer: for example, rent is fixed and transport per tonne is variable.)\n\n## Practical assignment\n\nPick one product line you manage. Build a one-year revenue and gross profit forecast using volume, net price and landed cost per unit as separate inputs. Change the exchange rate by 10% and note the effect on gross margin.\n\n## Summary\n\n- Lay out the forecast in income statement order down to EBITDA and net profit.\n- Build revenue from volume × net price, by product or channel.\n- Use unit landed cost for cost of sales and split opex into fixed and variable.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain how the income statement, balance sheet and cash flow statement link;\n- calculate DSO, DIO, DPO and the cash conversion cycle;\n- forecast working capital balances from days assumptions;\n- build an indirect cash flow and explain why profit is not the same as cash.\n\n## Key terms\n\n::: terms\nNet working capital (trade): receivables plus inventory minus payables\nDSO (days sales outstanding): average number of days customers take to pay\nDIO (days inventory outstanding): average number of days stock is held before it is sold\nDPO (days payables outstanding): average number of days the business takes to pay suppliers\nCash conversion cycle: DSO + DIO − DPO, the days cash is tied up in trading\nCorkscrew: a calculation of opening balance + additions − deductions = closing balance\n:::\n\n## 1. How the three statements link\n\nA three-statement model is linked so that the balance sheet always balances without any manual \"plug\". The key links form a loop:\n\n::: diagram cycle | Three-statement linkage\nIncome statement: net profit is calculated\nCash flow statement: starts from net profit, adds back depreciation, adjusts for working capital, capex and financing\nClosing cash: opening cash plus net cash flow\nBalance sheet: takes closing cash, fixed assets, working capital, debt and retained earnings\nBalance check: total assets minus total liabilities and equity must equal zero\n:::\n\nEach balance sheet line is built with a corkscrew. Fixed assets: opening + capex − depreciation = closing. Debt: opening + new loans − repayments = closing. Retained earnings: opening + net profit − dividends = closing. If every line follows this pattern and cash comes from the cash flow statement, the balance check will be zero. If it is not zero, find the error. Never force cash to make it balance.\n\n## 2. Working capital days\n\nFor a distributor, working capital is often the biggest use of cash. Days ratios turn balances into drivers you can forecast and manage. Calculate them step by step:\n\n::: slides\nSLIDE Step 1: DSO | Trade receivables ÷ annual revenue × 365; Revenue includes the sales customers owe you for | Days to collect\nSLIDE Step 2: DIO | Inventory ÷ annual cost of sales × 365; Use cost, because stock is valued at cost | Days stock sits\nSLIDE Step 3: DPO | Trade payables ÷ annual cost of sales × 365; Purchases can be used if available | Days to pay suppliers\nSLIDE Step 4: Cash conversion cycle | DSO + DIO − DPO; Compare with last year and with credit terms | Days cash is tied up\n:::\n\nExample: revenue Kz 3,650 million (Kz 10 million per day), cost of sales Kz 2,920 million (Kz 8 million per day), receivables Kz 450 million, inventory Kz 480 million, payables Kz 240 million.\n\n- DSO = 450 ÷ 3,650 × 365 = 45 days.\n- DIO = 480 ÷ 2,920 × 365 = 60 days.\n- DPO = 240 ÷ 2,920 × 365 = 30 days.\n- Cash conversion cycle = 45 + 60 − 30 = 75 days.\n\nFor imported goods paid in advance, cash leaves even earlier, so DPO can be close to zero or effectively negative.\n\n::: quiz\n? Inventory is Kz 300 million and annual cost of sales is Kz 1,825 million. What is DIO?\n- 45 days || Check the division: 300 ÷ 1,825 × 365.\n* 60 days || 300 ÷ 1,825 = 0.164, and 0.164 × 365 = 60 days.\n- 75 days || This would need inventory of about Kz 375 million.\n:::\n\n## 3. Forecasting balances and cash flow\n\nHold days as inputs, then reverse the formula:\n\n- Receivables = DSO × forecast revenue ÷ 365.\n- Inventory = DIO × forecast cost of sales ÷ 365.\n- Payables = DPO × forecast cost of sales ÷ 365.\n\nThe indirect cash flow then reads:\n\n- Operating cash flow = net profit + depreciation − increase in net working capital.\n- Investing cash flow = − capex.\n- Financing cash flow = new loans − repayments − dividends.\n\nWhen the business grows, working capital grows too, and that increase is a cash outflow even when profit is good.\n\n::: quiz\n? Net profit is Kz 150 million, depreciation Kz 30 million and net working capital rises by Kz 138 million. What is operating cash flow?\n* Kz 42 million || 150 + 30 − 138 = 42.\n- Kz 318 million || The increase in working capital must be subtracted, not added.\n- Kz 180 million || This ignores the working capital increase.\n:::\n\n## Worked example: growth that eats cash in Luanda\n\nA beverage distributor in Luanda has the balances above and plans revenue growth of 20% next year: revenue Kz 4,380 million (Kz 12 million per day) and cost of sales Kz 3,504 million (Kz 9.6 million per day). Holding the same days:\n\n- Receivables = 45 × 12 = Kz 540 million.\n- Inventory = 60 × 9.6 = Kz 576 million.\n- Payables = 30 × 9.6 = Kz 288 million.\n- Net working capital = 540 + 576 − 288 = Kz 828 million, up from Kz 690 million.\n\nThe increase of Kz 138 million is cash the business must find. With a forecast net profit of Kz 150 million and depreciation of Kz 30 million, operating cash flow is only Kz 42 million. If the credit team reduces DSO from 45 to 35 days, receivables fall to Kz 420 million, working capital to Kz 708 million, and the cash need drops by Kz 120 million.\n\n::: case | Profit but no cash in Lubango\nRui, finance manager of a distributor in Lubango, reports a record profit, yet the bank overdraft has doubled. The managing director asks what to do first.\n? What should Rui do first?\n- Ask the bank for a bigger overdraft || More funding may be needed, but it treats the symptom, not the cause.\n- Cut the marketing budget || Opex is not the likely cause of the cash gap.\n* Calculate DSO, DIO and DPO for this year and last year to see where cash is tied up || Days ratios show whether customers, stock or supplier terms are absorbing the cash.\n- Stop all purchases for a month || This risks stock-outs before the cause is known.\n:::\n\n## Tool: working capital forecast template\n\n- Annual revenue and cost of sales (actual and forecast):\n- Receivables, inventory, payables (closing balances):\n- DSO, DIO, DPO actual:\n- Cash conversion cycle actual:\n- Target days for next year and owner of each:\n- Forecast balances from target days:\n- Change in net working capital (cash in or out):\n- Balance sheet check equals zero:\n\n## Common mistakes\n\n- Plugging cash or equity to force the balance sheet to balance.\n- Using revenue instead of cost of sales for DIO and DPO.\n- Ignoring working capital when presenting a growth plan.\n- Forgetting supplier prepayments for imports.\n\n## Self-check\n\n- Write the formula for the cash conversion cycle. (Answer: DSO + DIO − DPO.)\n- If DSO is 30 days and daily revenue is Kz 5 million, what are receivables? (Answer: Kz 150 million.)\n- Why can a profitable company run out of cash? (Answer: growth in receivables and inventory, or capex and loan repayments, can use more cash than profit generates.)\n\n## Practical assignment\n\nUsing last year's accounts for your business or business unit, calculate DSO, DIO, DPO and the cash conversion cycle. Then calculate how much cash would be released if DSO fell by 10 days, and share the result with your credit team.\n\n## Summary\n\n- Net profit, capex, working capital and financing link the three statements, and the balance sheet must balance without a plug.\n- DSO, DIO and DPO turn working capital balances into forecastable drivers.\n- Growth consumes cash through working capital, so always forecast cash, not only profit.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- separate fixed and variable costs for a product, depot or customer;\n- calculate contribution margin per unit and contribution margin ratio;\n- calculate break-even volume, break-even revenue and margin of safety;\n- use unit economics to test a discount or volume request.\n\n## Key terms\n\n::: terms\nUnit economics: revenue and costs expressed per unit, such as per case, bag, tonne or customer\nVariable cost: a cost that rises with each unit sold, such as purchase cost or delivery per case\nFixed cost: a cost that stays the same within a range of volume, such as rent and salaries\nContribution margin (CM): price minus variable cost per unit\nBreak-even point: the volume or revenue at which profit is zero\nMargin of safety: how far sales can fall before the business makes a loss\n:::\n\n## 1. Contribution margin\n\nEvery unit sold contributes money to pay fixed costs. Once fixed costs are covered, each extra unit adds its full contribution to profit.\n\n- Contribution margin per unit = net price − variable cost per unit.\n- Contribution margin ratio = CM per unit ÷ net price.\n\nBe careful about classification. Purchase cost, delivery per case and sales commissions are variable. Rent, salaries and truck leases are fixed. Some costs are semi-fixed: a second truck becomes necessary only above a certain volume. Treat these as fixed within a stated volume range.\n\nCM is not the same as gross margin. Gross margin uses cost of sales from the accounts, which may exclude variable delivery and commissions. For decisions about price and volume, use CM.\n\n::: quiz\n? A case sells for Kz 8,000. Purchase cost is Kz 6,400 and delivery is Kz 400 per case. What is the CM ratio?\n- 20% || This uses only purchase cost and forgets delivery.\n* 15% || CM = 8,000 − 6,400 − 400 = 1,200, and 1,200 ÷ 8,000 = 15%.\n- 25% || CM cannot be higher than the gross margin before delivery.\n:::\n\n## 2. Break-even analysis\n\n::: diagram steps | Break-even analysis in five steps\nClassify costs: list fixed costs per month and variable costs per unit\nContribution margin: net price minus variable cost per unit\nBreak-even volume: fixed costs divided by CM per unit\nBreak-even revenue: fixed costs divided by CM ratio\nMargin of safety: compare expected volume with break-even\n:::\n\nThe formulas:\n\n- Break-even volume = fixed costs ÷ CM per unit.\n- Break-even revenue = fixed costs ÷ CM ratio.\n- Margin of safety = (expected volume − break-even volume) ÷ expected volume.\n- Volume for a target profit = (fixed costs + target profit) ÷ CM per unit.\n\nIn Excel, Goal Seek (Data > What-If Analysis > Goal Seek) finds the volume that sets the profit cell to zero, which is a useful check on your formula.\n\nHow to apply it to a new depot, step by step:\n\n::: slides\nSLIDE Step 1: Fixed costs | Rent Kz 3.0m, staff Kz 6.0m, truck lease and other Kz 4.5m; Total Kz 13.5m per month | Costs you pay even with zero sales\nSLIDE Step 2: CM per case | Price Kz 12,000 minus purchase Kz 9,600 minus delivery Kz 600; CM = Kz 1,800 (15%) | What each case contributes\nSLIDE Step 3: Break-even | 13.5m ÷ 1,800 = 7,500 cases per month; Revenue = 7,500 × 12,000 = Kz 90m | Check: 13.5m ÷ 15% = Kz 90m\nSLIDE Step 4: Margin of safety | Expected 9,000 cases; (9,000 − 7,500) ÷ 9,000 = 16.7% | Profit = 1,500 × 1,800 = Kz 2.7m\n:::\n\n## 3. Testing discounts with unit economics\n\nA price cut comes straight out of contribution. In the depot above, a 5% discount reduces price from Kz 12,000 to Kz 11,400 and CM from Kz 1,800 to Kz 1,200, a fall of one third. Break-even rises from 7,500 to 11,250 cases (13.5m ÷ 1,200).\n\nTo keep the same total contribution after a discount: required volume = current total CM ÷ new CM per unit. At 9,000 cases, current CM is Kz 16.2 million; at Kz 1,200 per case you need 13,500 cases, which is 50% more volume.\n\n::: quiz\n? With CM at Kz 1,800 per case and fixed costs at Kz 13.5 million, how many cases are needed for a profit of Kz 4.5 million?\n- 7,500 cases || That is break-even, with zero profit.\n- 12,500 cases || Check the sum: (13.5m + 4.5m) ÷ 1,800.\n* 10,000 cases || (13.5m + 4.5m) ÷ 1,800 = 10,000 cases.\n:::\n\n## Worked example: a new depot in Huambo\n\nA food distributor plans a depot in Huambo selling cooking oil and rice in cases. Using the numbers in the slides, fixed costs are Kz 13.5 million per month and CM is Kz 1,800 per case. Break-even is 7,500 cases per month, or Kz 90 million revenue. The sales plan expects 9,000 cases, giving a margin of safety of 16.7% and a monthly profit of Kz 2.7 million.\n\nManagement wants Kz 4.5 million profit per month to justify the investment. That needs 10,000 cases. The analyst shows that this is achievable only if the depot wins two more wholesale customers, so the plan includes a named customer target. She also adds a semi-fixed cost: above 11,000 cases a second truck (Kz 1.5 million per month) is needed, which raises fixed costs to Kz 15 million.\n\n::: case | A key account asks for 5% off in Huambo\nA wholesaler buying 3,000 cases a month from the Huambo depot asks Carla, the depot manager, for a 5% discount in exchange for 10% more volume. CM is Kz 1,800 per case and would fall to Kz 1,200.\n? What should Carla do?\n- Accept, because 10% more volume grows revenue || Revenue grows a little, but CM falls from Kz 5.4m to Kz 3.96m.\n* Show that the account would need 4,500 cases to keep CM at Kz 5.4m, and counter-offer a smaller rebate tied to volume tiers || 5.4m ÷ 1,200 = 4,500 cases, so 3,300 cases destroys value, and a tiered rebate protects CM.\n- Refuse and stop serving the customer || Losing 3,000 cases would push the depot towards break-even.\n- Accept but cut delivery frequency without telling the customer || This damages trust and does not fix the economics.\n:::\n\n## Tool: break-even calculator\n\n- Product, depot or customer:\n- Net price per unit:\n- Variable costs per unit (purchase, delivery, commission):\n- CM per unit and CM ratio:\n- Fixed costs per month (and volume range they apply to):\n- Break-even volume and revenue:\n- Expected volume and margin of safety:\n- Volume needed for target profit:\n- Volume needed to keep CM after a proposed discount:\n\n## Common mistakes\n\n- Using gross margin instead of contribution margin for pricing decisions.\n- Forgetting step changes in fixed costs, such as an extra truck or shift.\n- Judging a discount by its effect on revenue instead of contribution.\n\n## Self-check\n\n- Write the break-even volume formula. (Answer: fixed costs ÷ contribution margin per unit.)\n- Fixed costs are Kz 10 million and the CM ratio is 20%. What is break-even revenue? (Answer: Kz 50 million.)\n- What does a margin of safety of 10% mean? (Answer: sales can fall by 10% before the business makes a loss.)\n\n## Practical assignment\n\nChoose one product, route or customer you manage. Calculate its CM per unit, break-even volume and margin of safety. Then calculate how much extra volume a 3% discount would require to keep the same total contribution.\n\n## Summary\n\n- Contribution margin is price minus variable cost and pays for fixed costs before profit.\n- Break-even volume = fixed costs ÷ CM per unit, and margin of safety shows your buffer.\n- Always test discounts with unit economics before agreeing them.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the time value of money and the role of the discount rate;\n- calculate NPV, IRR and payback for a simple investment;\n- use the Excel functions NPV, IRR, XNPV and XIRR correctly;\n- model kwanza devaluation as an explicit scenario assumption.\n\n## Key terms\n\n::: terms\nPresent value (PV): the value today of a future cash flow, calculated as cash flow ÷ (1 + r)^t\nDiscount rate (hurdle rate): the minimum annual return the business requires, reflecting the cost of funds and risk\nNet present value (NPV): the sum of the present values of all cash flows, including the initial investment\nInternal rate of return (IRR): the discount rate at which NPV equals zero\nPayback period: the time needed for cumulative cash flows to recover the investment\nPass-through: the share of a currency movement that can be recovered through higher selling prices\n:::\n\n## 1. Time value of money\n\nMoney received today can be reinvested or used to repay debt, so it is worth more than the same amount received later. To compare cash flows from different years, convert each one to today's value: PV = cash flow ÷ (1 + r)^t, where r is the discount rate and t the year.\n\nThe discount rate is set by finance and reflects the cost of funding (often a weighted average cost of capital) plus project risk. One rule is critical in Angola: match currency and rate. Discount USD cash flows at a USD rate and kwanza cash flows at a kwanza rate. A kwanza rate is normally higher, because it includes expected kwanza inflation and devaluation.\n\n## 2. NPV, IRR and payback\n\n::: diagram steps | Investment appraisal process\nCash flows: investment, yearly operating cash flows and any residual value\nCurrency and rate: choose USD or Kz and the matching hurdle rate\nDiscount: PV of each year's cash flow\nDecide: NPV, IRR and payback compared with policy\nStress-test: scenarios for volume, price and exchange rate\n:::\n\n- NPV: accept if NPV is above zero, because the project earns more than the hurdle rate. When comparing projects, prefer the higher NPV.\n- IRR: accept if IRR is above the hurdle rate. IRR can mislead when cash flows change sign more than once or when projects differ in size, so use it alongside NPV.\n- Payback: the years until cumulative cash flow turns positive. It ignores cash after payback and the time value of money, but it is a simple liquidity and risk measure.\n\nIn Excel, NPV treats the first value as year 1. Put the year 0 investment outside: =NPV(rate, C5:G5) + B5, where B5 is the negative investment. IRR includes year 0: =IRR(B5:G5). When cash flows fall on irregular dates, use XNPV and XIRR with a row of dates.\n\nCalculating NPV step by step for a USD 500,000 project returning USD 160,000 a year for 5 years at 15%:\n\n::: slides\nSLIDE Step 1: Lay out cash flows | Year 0: −500,000; Years 1 to 5: +160,000 each | Cash, not profit\nSLIDE Step 2: Discount factors at 15% | 0.8696, 0.7561, 0.6575, 0.5718, 0.4972 | Factor = 1 ÷ 1.15^t\nSLIDE Step 3: Present values | 139,130 + 120,983 + 105,203 + 91,481 + 79,548 = 536,345 | Sum of discounted inflows\nSLIDE Step 4: NPV | 536,345 − 500,000 = +36,345; IRR about 18%, above 15% | Accept in the base case\nSLIDE Step 5: Payback | 500,000 ÷ 160,000 = 3.1 years | Cash recovered in year 4\n:::\n\n::: quiz\n? An analyst writes =NPV(15%, B5:G5), where B5 is the year 0 investment. What is wrong?\n- Nothing, the formula is correct || Excel discounts B5 by one year as if it were a year 1 cash flow.\n* The investment is discounted by one year, so it should be added outside the function || Use =NPV(15%, C5:G5) + B5.\n- NPV needs the rate as 0.15 written in a different cell || 15% and 0.15 are the same value in Excel.\n:::\n\n## 3. Modelling currency risk\n\nMany investments in Angola are paid in USD (imported equipment) while the cash flows are earned in kwanzas. If the kwanza weakens and selling prices are not raised in step, the USD value of those cash flows falls.\n\nModel this explicitly:\n\n- Input: assumed annual kwanza devaluation against the USD, per year.\n- Input: pass-through %, the share of devaluation recovered through price increases.\n- Calculation: USD cash flow = base USD cash flow × (1 − devaluation × (1 − pass-through)) ^ year.\n\nThese are scenario assumptions, not forecasts. Agree the range with finance and show results for several cases.\n\n::: quiz\n? Annual kwanza earnings stay at the same Kz amount while the kwanza loses value against the USD. What happens to a USD-based NPV?\n- It rises, because the kwanza amount is unchanged || The same kwanzas buy fewer dollars, so USD cash flows fall.\n* It falls, because each year's kwanza cash converts into fewer dollars || Lower USD cash flows reduce the present value.\n- It stays the same, because the discount rate absorbs it || A USD rate does not include kwanza devaluation.\n:::\n\n## Worked example: a rice repacking line in Luanda\n\nA distributor in Luanda considers a line that repacks bulk rice into 1 kg packs. The imported machine costs USD 500,000. Extra cash flow, earned in kwanzas, is worth USD 160,000 a year at today's exchange rate for 5 years. The finance director sets a USD hurdle rate of 15%.\n\n- Base case (prices fully follow the exchange rate): NPV +USD 36,345, IRR about 18%, payback 3.1 years.\n- Devaluation scenario (assumption: kwanza loses 15% of its USD value each year, no price pass-through): USD cash flows become 136,000, 115,600, 98,260, 83,521 and 70,993. NPV falls to about −USD 146,700 and payback stretches to almost 5 years.\n- Same devaluation with 50% pass-through: NPV about −USD 63,700.\n\nThe project creates value only if the business can pass most of any devaluation into prices. The analyst recommends approval subject to a pricing policy that reviews pack prices whenever the exchange rate moves by more than an agreed threshold.\n\n::: case | The board meeting on the repacking line\nSofia presents the repacking line to the board of a Luanda distributor. A director says: \"IRR is 18%, above our 15% hurdle. Approve it.\" Sofia's devaluation scenario shows a negative NPV without price pass-through.\n? What should Sofia recommend?\n- Approve, because IRR beats the hurdle rate || That is true only in the base case and ignores currency risk.\n- Reject, because one scenario is negative || A negative scenario is a risk to manage, not automatically a reason to reject.\n* Approve on condition of a price review policy, and show NPV under each devaluation and pass-through case || This links the decision to the assumption that drives value.\n:::\n\n## Tool: investment appraisal checklist\n\n- Investment amount, currency and timing:\n- Yearly operating cash flows (cash, not profit):\n- Residual value at the end:\n- Model currency and matching hurdle rate:\n- NPV, IRR and payback (base case):\n- Devaluation % and pass-through % assumptions:\n- NPV under each scenario:\n- Key condition or risk control for approval:\n\n## Common mistakes\n\n- Including the year 0 investment inside Excel's NPV function.\n- Discounting profit instead of cash flow.\n- Discounting kwanza cash flows at a USD rate.\n\n## Self-check\n\n- What does an NPV above zero mean? (Answer: the project returns more than the hurdle rate and creates value.)\n- An investment of 400,000 returns 100,000 a year. What is the payback? (Answer: 4 years.)\n- Which Excel functions handle cash flows on irregular dates? (Answer: XNPV and XIRR.)\n\n## Practical assignment\n\nChoose a real or proposed investment at your workplace, such as a vehicle, machine or system. Lay out its cash flows for five years, calculate NPV, IRR and payback in Excel, and add one currency scenario with devaluation and pass-through as inputs.\n\n## Summary\n\n- Discount future cash flows to today with a hurdle rate in the same currency as the cash flows.\n- NPV is the main decision rule, with IRR and payback as support.\n- Model kwanza devaluation and price pass-through as explicit, visible assumptions.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the difference between sensitivity analysis and scenario analysis;\n- build a scenario switch using CHOOSE or XLOOKUP;\n- use data tables, Goal Seek and a tornado chart to find the drivers that matter;\n- present a model's results to management with the recommendation first.\n\n## Key terms\n\n::: terms\nSensitivity analysis: changing one input at a time to see its effect on a result\nScenario analysis: changing several related inputs together to describe a possible future\nScenario switch: an input cell that selects which set of assumptions the model uses\nData table: an Excel What-If Analysis tool that recalculates a result for a list of input values\nTornado chart: a bar chart ranking drivers by their impact on a result, largest at the top\n:::\n\n## 1. Sensitivity and scenarios\n\nSensitivity analysis answers: \"Which input matters most?\" You move one input, for example price by ±10%, keeping everything else fixed. Scenario analysis answers: \"What happens if this future occurs?\" A downside scenario might combine lower volume, a weaker kwanza and lower margin, because these often happen together.\n\nBuild scenarios with a switch, step by step:\n\n::: slides\nSLIDE Step 1: Scenario input block | Three columns: Base, Downside, Upside; One row per driver that changes | All scenario values in one place\nSLIDE Step 2: Switch cell | One blue input cell holding 1, 2 or 3; Name it Scenario | One cell controls the model\nSLIDE Step 3: Live column | =CHOOSE(Scenario, base, downside, upside) per row; Or XLOOKUP on the scenario name | Calculations use only the live column\nSLIDE Step 4: Results summary | Copy key outputs for each scenario as values; Or use a data table on the switch cell | Compare side by side\n:::\n\nMake each scenario internally consistent. A downside with a weaker kwanza should also show higher landed costs, not only lower volume.\n\n::: quiz\n? A model's downside case reduces volume by 10% but keeps the exchange rate and margin unchanged. What is the main weakness?\n- It needs a fourth scenario || More scenarios do not fix an inconsistent one.\n* Related drivers that usually move together have not been changed || A realistic downside combines linked risks such as volume, exchange rate and margin.\n- Volume should never be changed in a scenario || Volume is one of the most important scenario drivers.\n:::\n\n## 2. Data tables, Goal Seek and tornado charts\n\nExcel provides three tools under Data > What-If Analysis:\n\n- Data table: a one-way table shows a result for a list of values of one input. A two-way table shows a result for two inputs, for example NPV by annual cash flow and discount rate. For the repacking line from lesson 5, NPV ranges from about +USD 148,900 (cash flow 180,000, rate 12%) to about −USD 62,200 (cash flow 140,000, rate 18%).\n- Goal Seek: finds the input value that gives a target result, such as the price that makes NPV zero.\n- Scenario Manager: stores named sets of inputs, though a switch is more transparent.\n\nA tornado chart ranks drivers. Move each driver up and down by the same %, record the change in profit, and sort the bars from largest to smallest. Then use a matrix to decide where to focus:\n\n::: diagram matrix | Driver focus matrix | Uncertainty (low → high) | Impact on result (low → high)\nControl: high impact, low uncertainty – track closely and lock in\nManage: high impact, high uncertainty – run scenarios and agree mitigations\nSimplify: low impact, low uncertainty – use a simple assumption\nWatch: low impact, high uncertainty – review periodically\n:::\n\n::: quiz\n? Which tool finds the selling price at which a project's NPV equals zero?\n- A tornado chart || A tornado chart ranks drivers but does not solve for a target value.\n* Goal Seek || Goal Seek changes one input until a formula reaches the target value.\n- Conditional formatting || Formatting changes how cells look, not their values.\n:::\n\n## 3. Presenting a model to management\n\nExecutives want the answer, not the spreadsheet. The Pyramid Principle, developed by Barbara Minto, recommends starting with the main conclusion, then the key supporting arguments, then the detailed data.\n\n- Slide 1: recommendation and the key number (for example, \"Approve, NPV +USD 36,000, subject to a price review policy\").\n- Slide 2: the three to five assumptions that drive the result.\n- Slide 3: scenarios and the tornado chart.\n- Slide 4: risks, mitigations and the decision needed.\n\nBefore sending, check that all error checks are zero, inputs are labelled with sources, and the file name has a version and date.\n\n## Worked example: budget sensitivity in Lubango\n\nA beverage distributor in Lubango builds next year's budget. Base case: 100,000 cases at Kz 10,000, gross margin 20%, fixed costs Kz 120 million. Revenue is Kz 1,000 million, gross profit Kz 200 million and operating profit Kz 80 million.\n\nThe analyst moves each driver by ±10%, one at a time:\n\n- Price ±10% with unit cost unchanged: gross profit moves by Kz 100 million, so profit ranges from −Kz 20 million to Kz 180 million.\n- Volume ±10%: gross profit moves by Kz 20 million (10,000 cases × Kz 2,000), so profit ranges from Kz 60 million to Kz 100 million.\n- Fixed costs ±10%: profit moves by Kz 12 million.\n\nThe tornado chart puts price at the top. The downside scenario (volume −10%, margin 18%) gives revenue of Kz 900 million and profit of Kz 42 million. The upside (volume +10%, margin 21%) gives Kz 1,100 million revenue and Kz 111 million profit. The analyst recommends a monthly price review as the main control.\n\n::: case | Ten minutes with the managing director\nPaulo, a commercial analyst in Lubango, has ten minutes to present the budget model to the managing director. His file has 14 sheets and 30 charts.\n? How should Paulo open the presentation?\n- Walk through the model sheet by sheet so the director sees the work || The director needs the decision, not a tour of the spreadsheet.\n- Show all 30 charts quickly to cover everything || Too much detail hides the message.\n* State the recommendation and profit range first, then the top three drivers and the main risk || This follows the Pyramid Principle and uses the time for the decision.\n- Start with the methodology and data sources || Sources belong in the appendix unless asked.\n:::\n\n## Tool: model review and presentation checklist\n\n- All error checks equal zero\n- Scenario switch returns to Base\n- Key assumptions listed with source and owner\n- Base, downside and upside results side by side\n- Tornado chart of top drivers\n- One-page summary with the recommendation first\n- Risks, mitigations and decision requested\n- Version and date in the file name\n\n## Common mistakes\n\n- Building a downside that is only slightly worse than base.\n- Changing drivers inconsistently within a scenario.\n- Presenting the spreadsheet instead of the message.\n- Leaving the scenario switch on Downside when sending the file.\n\n## Self-check\n\n- What is the difference between sensitivity and scenario analysis? (Answer: sensitivity changes one input at a time; a scenario changes several related inputs together.)\n- Which Excel function can pick the active value from base, downside and upside columns using a switch cell? (Answer: CHOOSE, or XLOOKUP on the scenario name.)\n- What should the first slide of a model presentation contain? (Answer: the recommendation and the key number.)\n\n## Practical assignment\n\nAdd a scenario switch with Base, Downside and Upside to a model you use at work. Run a ±10% sensitivity on price, volume and fixed costs, draw a simple tornado chart, and prepare a one-page summary with your recommendation first.\n\n## Summary\n\n- Use sensitivity to find the drivers that matter and scenarios to describe consistent futures.\n- A scenario switch with CHOOSE or XLOOKUP keeps one model for all cases.\n- Present the answer first, then drivers, scenarios and risks."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain what a financial model is and the main types",
+     "Organise a model into inputs, calculations and outputs",
+     "Apply colour and formula conventions",
+     "Build error checks"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "What a model is for",
+    "points": [
+     "A decision tool, not a report",
+     "Turns assumptions into profit, cash and returns",
+     "Change one input and every result updates"
+    ],
+    "takeaway": "Start from the decision it supports"
+   },
+   {
+    "title": "Inputs, calculations, outputs",
+    "points": [
+     "Inputs typed once with unit and source",
+     "Calculations are formulas only",
+     "Outputs pull from calculations",
+     "Checks confirm consistency"
+    ],
+    "takeaway": "Separate the three kinds of content"
+   },
+   {
+    "title": "Colour conventions",
+    "points": [
+     "Blue font for inputs",
+     "Black font for formulas",
+     "Green font for links to other sheets or files"
+    ],
+    "takeaway": "A reader sees at a glance what a cell is"
+   },
+   {
+    "title": "One formula per row",
+    "points": [
+     "The first period formula is copied across the row unchanged",
+     "No special columns",
+     "Split long formulas into helper rows"
+    ],
+    "takeaway": "Check once, trust the whole row"
+   },
+   {
+    "title": "No hard-coding",
+    "points": [
+     "=E12*1.14 hides an assumption",
+     "Put 14% in an input cell and reference it",
+     "Use XLOOKUP to pull prices by code"
+    ],
+    "takeaway": "Every number has one home"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Mixing inputs and formulas",
+     "Hidden numbers in formulas",
+     "Using IFERROR to hide errors",
+     "Building charts before logic"
+    ],
+    "takeaway": "Structure first, numbers second"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Lay out the income statement forecast",
+     "Build revenue from volume and price drivers",
+     "Forecast cost of sales and gross margin",
+     "Split opex into fixed and variable"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "The income statement",
+    "points": [
+     "Revenue minus cost of sales = gross profit",
+     "Minus opex = EBITDA",
+     "Minus depreciation = EBIT",
+     "Minus interest and tax = net profit"
+    ],
+    "takeaway": "Forecast from the top down, line by line"
+   },
+   {
+    "title": "Revenue drivers",
+    "points": [
+     "Revenue = volume × net price",
+     "Build by SKU, channel or customer",
+     "Net price = list price minus discounts and rebates"
+    ],
+    "takeaway": "Drivers you can explain and test"
+   },
+   {
+    "title": "Cost of sales",
+    "points": [
+     "Method 1: gross margin %",
+     "Method 2: landed cost per unit × volume",
+     "Landed cost moves with the exchange rate"
+    ],
+    "takeaway": "Use unit cost when import costs drive margin"
+   },
+   {
+    "title": "Operating expenses",
+    "points": [
+     "Fixed: rent, salaries, insurance, grown by inflation",
+     "Variable: distribution and commissions per unit or % of revenue",
+     "Headcount × average cost"
+    ],
+    "takeaway": "Know which costs move with volume"
+   },
+   {
+    "title": "Sanity checks",
+    "points": [
+     "Compare growth with history and market",
+     "Check capacity and stock availability",
+     "Review gross margin % and opex % of revenue"
+    ],
+    "takeaway": "Every forecast needs a reason"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Forecasting revenue as one growth rate",
+     "Ignoring discounts and rebates",
+     "Fixed margin % when FX moves",
+     "Treating all opex as fixed"
+    ],
+    "takeaway": "Drivers, not guesses"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain how the three statements link",
+     "Calculate DSO, DIO and DPO",
+     "Forecast working capital from days",
+     "Build an indirect cash flow"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Three linked statements",
+    "points": [
+     "Net profit flows to cash flow and retained earnings",
+     "Capex and depreciation move fixed assets",
+     "Closing cash goes to the balance sheet"
+    ],
+    "takeaway": "The balance sheet must balance"
+   },
+   {
+    "title": "Working capital days",
+    "points": [
+     "DSO = receivables ÷ revenue × 365",
+     "DIO = inventory ÷ COGS × 365",
+     "DPO = payables ÷ COGS × 365"
+    ],
+    "takeaway": "Days turn balances into drivers"
+   },
+   {
+    "title": "Cash conversion cycle",
+    "points": [
+     "CCC = DSO + DIO − DPO",
+     "Days your cash is tied up",
+     "Shorter cycle = less funding needed"
+    ],
+    "takeaway": "Every day costs cash"
+   },
+   {
+    "title": "Forecasting balances",
+    "points": [
+     "Receivables = DSO × revenue ÷ 365",
+     "Inventory = DIO × COGS ÷ 365",
+     "Payables = DPO × COGS ÷ 365"
+    ],
+    "takeaway": "Hold days as inputs"
+   },
+   {
+    "title": "Indirect cash flow",
+    "points": [
+     "Net profit plus depreciation",
+     "Minus increase in working capital",
+     "Minus capex, plus or minus financing"
+    ],
+    "takeaway": "Profit is not cash"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Plugging cash to force a balance",
+     "Forgetting working capital in growth plans",
+     "Mixing revenue and COGS in day formulas"
+    ],
+    "takeaway": "Let the cash flow drive cash"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Separate fixed and variable costs",
+     "Calculate contribution margin per unit and ratio",
+     "Calculate break-even volume and revenue",
+     "Test discounts with unit economics"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Contribution margin",
+    "points": [
+     "Price minus variable cost per unit",
+     "CM ratio = CM ÷ price",
+     "Pays for fixed costs first, then profit"
+    ],
+    "takeaway": "The engine of every unit"
+   },
+   {
+    "title": "Break-even volume",
+    "points": [
+     "Fixed costs ÷ CM per unit",
+     "Break-even revenue = fixed costs ÷ CM ratio",
+     "Below it you lose money"
+    ],
+    "takeaway": "Know your minimum"
+   },
+   {
+    "title": "Margin of safety",
+    "points": [
+     "(Expected volume − break-even) ÷ expected volume",
+     "Shows how far sales can fall before loss"
+    ],
+    "takeaway": "A buffer against bad months"
+   },
+   {
+    "title": "Target profit volume",
+    "points": [
+     "(Fixed costs + target profit) ÷ CM per unit",
+     "Use Goal Seek in Excel to check"
+    ],
+    "takeaway": "Plan backwards from the goal"
+   },
+   {
+    "title": "The discount trap",
+    "points": [
+     "A 5% price cut can remove a third of CM",
+     "Required volume = old total CM ÷ new CM per unit"
+    ],
+    "takeaway": "Test before you agree"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Calling semi-fixed costs variable",
+     "Using gross margin instead of CM",
+     "Agreeing discounts on revenue, not CM"
+    ],
+    "takeaway": "Think per unit, then per month"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain the time value of money",
+     "Calculate NPV, IRR and payback",
+     "Use NPV and IRR in Excel correctly",
+     "Model kwanza devaluation as a scenario"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Time value of money",
+    "points": [
+     "Kz or USD today is worth more than the same amount later",
+     "PV = cash flow ÷ (1 + r)^t",
+     "r is the hurdle rate"
+    ],
+    "takeaway": "Discount future cash to today"
+   },
+   {
+    "title": "NPV",
+    "points": [
+     "Sum of discounted cash flows minus investment",
+     "NPV above zero creates value at the hurdle rate",
+     "Excel: =NPV(rate, years 1 to n) + year 0"
+    ],
+    "takeaway": "The main decision rule"
+   },
+   {
+    "title": "IRR and payback",
+    "points": [
+     "IRR: the rate that makes NPV zero",
+     "Accept if IRR is above the hurdle rate",
+     "Payback: years to recover the investment"
+    ],
+    "takeaway": "Useful, but secondary to NPV"
+   },
+   {
+    "title": "Currency consistency",
+    "points": [
+     "USD cash flows at a USD rate",
+     "Kz cash flows at a higher Kz rate",
+     "Never mix the two"
+    ],
+    "takeaway": "Match currency and discount rate"
+   },
+   {
+    "title": "Devaluation scenario",
+    "points": [
+     "Kz earnings convert to fewer USD each year",
+     "Model devaluation % and price pass-through as inputs",
+     "Compare NPV across scenarios"
+    ],
+    "takeaway": "Make currency risk visible"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Including year 0 inside Excel NPV",
+     "Using profit instead of cash flow",
+     "Ignoring currency risk on imported equipment"
+    ],
+    "takeaway": "Cash, timing, currency"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Tell sensitivity from scenario analysis",
+     "Build a scenario switch",
+     "Use data tables, Goal Seek and tornado charts",
+     "Present a model with the answer first"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Sensitivity vs scenario",
+    "points": [
+     "Sensitivity: change one input at a time",
+     "Scenario: change several linked inputs together",
+     "Base, downside and upside"
+    ],
+    "takeaway": "Two different questions"
+   },
+   {
+    "title": "The scenario switch",
+    "points": [
+     "One input cell selects 1, 2 or 3",
+     "CHOOSE or XLOOKUP picks the active values",
+     "Every output updates"
+    ],
+    "takeaway": "One model, many futures"
+   },
+   {
+    "title": "Data tables and Goal Seek",
+    "points": [
+     "One-way and two-way data tables",
+     "Goal Seek finds the input for a target result"
+    ],
+    "takeaway": "Excel What-If Analysis"
+   },
+   {
+    "title": "Tornado chart",
+    "points": [
+     "Move each driver by the same percentage",
+     "Rank by impact on profit",
+     "Biggest bar at the top"
+    ],
+    "takeaway": "Focus on what matters most"
+   },
+   {
+    "title": "Presenting to management",
+    "points": [
+     "Answer first, then reasons, then data",
+     "One-page summary",
+     "Key assumptions and risks visible"
+    ],
+    "takeaway": "Lead with the recommendation"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Downside that is not really down",
+     "Mixing inconsistent assumptions",
+     "Showing the model instead of the message"
+    ],
+    "takeaway": "Test, then tell the story"
+   }
+  ]
+ ]
+}
