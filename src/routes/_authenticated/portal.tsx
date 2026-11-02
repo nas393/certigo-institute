@@ -68,7 +68,7 @@ function Portal() {
                   </div>
 
                   <div className="mt-5 flex flex-wrap items-center gap-3">
-                    <Link to="/c/$slug" params={{ slug: c.slug }}>
+                    <Link to="/learn/$slug/$lesson" params={{ slug: c.slug, lesson: "1" }}>
                       <Button variant="outline" size="sm" className="min-h-[40px]">Continue lessons</Button>
                     </Link>
                     {c.passed && c.serial ? (
