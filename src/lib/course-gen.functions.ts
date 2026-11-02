@@ -74,6 +74,30 @@ function toQuestion(raw: any): { q: string; options: string[]; answer_index: num
   return { q: q.slice(0, 400), options: options.map((o) => o.slice(0, 200)), answer_index: answer };
 }
 
+function wordCount(value: string): number {
+  return value.trim().split(/\\s+/).filter(Boolean).length;
+}
+
+function lessonQualityIssues(module: CourseModule, index: number): string[] {
+  const prefix = `Lesson ${index + 1}`;
+  const issues: string[] = [];
+  const content = module.content;
+  if (wordCount(content.introduction) < 60) issues.push(`${prefix}: introduction is too short`);
+  if (content.objectives.length < 3) issues.push(`${prefix}: needs at least 3 measurable objectives`);
+  if (content.sections.length < 3) issues.push(`${prefix}: needs at least 3 teaching sections`);
+  content.sections.forEach((section, sectionIndex) => {
+    if (wordCount(section.body) < 55) issues.push(`${prefix}, section ${sectionIndex + 1}: explanation is too short`);
+    if (wordCount(section.example) < 12) issues.push(`${prefix}, section ${sectionIndex + 1}: workplace example is too short`);
+  });
+  if (wordCount(content.case_study) < 45) issues.push(`${prefix}: case study needs more workplace detail`);
+  if (wordCount(content.exercise) < 25) issues.push(`${prefix}: practical exercise needs clear steps and an output`);
+  if (content.takeaways.length < 3) issues.push(`${prefix}: needs at least 3 actionable takeaways`);
+  if (!module.check.q || module.check.options.length !== 4 || new Set(module.check.options.map((x) => x.toLowerCase())).size !== 4) {
+    issues.push(`${prefix}: knowledge check must have a question and 4 distinct options`);
+  }
+  return issues;
+}
+
 function slugify(input: string) {
   return input
     .toLowerCase()
@@ -82,19 +106,41 @@ function slugify(input: string) {
     .slice(0, 60);
 }
 
-const SYSTEM = `You design short professional certifications for CERTIGO., a credential platform.
-Given a skill, produce:
-- title: a crisp professional certification title (no quotes, no "CERTIGO")
-- category: one short category
-- summary: one paragraph
-- skills: 4-8 real-world professional skills covered
-- modules: 4-8 lessons. Each has title, subject, learned (2-3 sentences), minutes (5-15), skills (2-4),
-  and content with introduction (100-150 words), objectives (3-5 measurable bullets), sections (3-5
-  objects each with heading, body (100-160 words) and practical workplace example), case_study
-  (a realistic scenario and decision), exercise (a task the learner can perform at work), takeaways
-  (3-5 concise points). Also include check with q, exactly 4 options, answer_index (0-3), explanation.
-- questions: exactly 8 final-exam multiple-choice questions with q, options (4) and answer_index (0-3).
-Questions must be practical and unambiguous. Reply with JSON only.`;
+const SYSTEM = `You are a senior instructional designer and subject-matter expert creating rigorous, job-relevant professional certifications for CERTIGO.
+
+DESIGN THE COURSE
+- Interpret the requested skill as a real occupational capability, not a broad encyclopedia topic.
+- Define a coherent progression from foundational understanding to applied judgement and execution.
+- Create 4-8 distinct lessons. Each lesson must teach a different capability; do not repeat the same advice under different titles.
+- State the intended professional audience and practical work context in the course summary.
+- Use clear international English. Explain technical terms on first use. Avoid motivational filler, vague claims, and generic statements.
+
+LESSON QUALITY STANDARD — EVERY LESSON MUST INCLUDE
+1. title: specific capability-led title.
+2. subject: the precise concept or work process taught.
+3. learned: 2-3 concrete sentences describing what the learner will know and be able to do.
+4. minutes: realistic focused study time, normally 8-15.
+5. skills: 2-4 observable job skills.
+6. content:
+   - introduction: 80-130 words. Explain the business/work relevance and connect to prior knowledge.
+   - objectives: 3-5 measurable outcomes beginning with action verbs (e.g. calculate, diagnose, compare, apply, recommend).
+   - sections: 3-5 substantial sections. Each body should be 90-150 words, explain one concept or method, and include a practical example of at least 25 words. Do not pad with repetition.
+   - case_study: at least 70 words. Include a plausible workplace situation, relevant facts or constraints, a decision the learner must make, and the rationale for a strong response.
+   - exercise: at least 40 words. Give a task with clear inputs, steps, and a tangible output the learner can produce at work.
+   - takeaways: 3-5 concise, actionable points.
+7. check: one applied question with exactly 4 plausible, distinct options, one defensible correct answer, answer_index (0-3), and an explanation that teaches why the answer is correct and why the tempting alternative is weaker.
+
+ASSESSMENT DESIGN
+- Final exam: exactly 8 questions, mapped across the course outcomes and lessons.
+- Prefer realistic decisions, diagnosis, calculations, prioritisation, and application over trivia or definition recall.
+- Distractors must be plausible and reflect common professional mistakes. Avoid joke answers, overlapping options, "all/none of the above", and clues from option length.
+- Do not repeat a lesson knowledge-check question in the final exam.
+- Never invent laws, standards, statistics, citations, or country-specific requirements. If the skill requires jurisdiction-specific or time-sensitive facts and no verified source material is provided, clearly qualify the content and teach the general principle instead.
+- Use realistic examples with explicit assumptions. Do not present invented scenarios or illustrative figures as real facts.
+- Be precise, practical, internally consistent, and suitable for adult professionals. Do not claim the credential guarantees employment, legal compliance, or a specific business result.
+
+OUTPUT
+Return valid JSON only. Follow the requested field names and content structure exactly. Do not include markdown fences or commentary.`;
 
 export const generateCourse = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
@@ -186,13 +232,23 @@ export const generateCourse = createServerFn({ method: "POST" })
       }
     });
 
+    const lessonIssues = modules.flatMap((module, index) => lessonQualityIssues(module, index));
+    if (modules.length < 4 || lessonIssues.length > 0) {
+      console.error("[course-gen] lesson quality gate failed", lessonIssues.slice(0, 30));
+      throw new Error(
+        modules.length < 4
+          ? "The generator returned fewer than 4 usable lessons. Please try generating again."
+          : "The generated lessons did not meet the content-quality standard. Please generate again; no incomplete course was published.",
+      );
+    }
+
     const questions = (Array.isArray(loose.questions) ? loose.questions : [])
       .map(toQuestion)
       .filter(Boolean) as Array<{ q: string; options: string[]; answer_index: number }>;
 
-    if (questions.length < 4) {
+    if (questions.length < 8) {
       console.error("[course-gen] too few usable questions", JSON.stringify(loose).slice(0, 800));
-      throw new Error("The generator could not write a full exam. Try rephrasing the skill.");
+      throw new Error("The generator must produce all 8 final-exam questions. Please generate again.");
     }
     const exam = questions.slice(0, 8);
 
