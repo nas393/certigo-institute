@@ -97,13 +97,13 @@ function Builder() {
               answer_index: Number(m.answer_index) || 0,
               explanation: String(m.explanation ?? ""),
               introduction: String(m.content?.introduction ?? ""),
-              objectives: Array.isArray(m.content?.objectives) ? m.content.objectives.join("\\n") : "",
+              objectives: Array.isArray(m.content?.objectives) ? m.content.objectives.join("\n") : "",
               sections: Array.isArray(m.content?.sections) && m.content.sections.length
                 ? m.content.sections.map((x: any) => ({ heading: String(x.heading ?? ""), body: String(x.body ?? ""), example: String(x.example ?? "") }))
                 : [{ heading: "", body: "", example: "" }],
               case_study: String(m.content?.case_study ?? ""),
               exercise: String(m.content?.exercise ?? ""),
-              takeaways: Array.isArray(m.content?.takeaways) ? m.content.takeaways.join("\\n") : "",
+              takeaways: Array.isArray(m.content?.takeaways) ? m.content.takeaways.join("\n") : "",
             }))
           : [emptyModule()],
       });
@@ -165,11 +165,11 @@ function Builder() {
             explanation: m.explanation.trim(),
             content: {
               introduction: m.introduction.trim(),
-              objectives: m.objectives.split("\\n").map((x) => x.trim()).filter(Boolean).slice(0, 6),
+              objectives: m.objectives.split("\n").map((x) => x.trim()).filter(Boolean).slice(0, 6),
               sections: m.sections.map((x) => ({ heading: x.heading.trim(), body: x.body.trim(), example: x.example.trim() })).filter((x) => x.heading || x.body || x.example),
               case_study: m.case_study.trim(),
               exercise: m.exercise.trim(),
-              takeaways: m.takeaways.split("\\n").map((x) => x.trim()).filter(Boolean).slice(0, 6),
+              takeaways: m.takeaways.split("\n").map((x) => x.trim()).filter(Boolean).slice(0, 6),
             },
           })),
         },
