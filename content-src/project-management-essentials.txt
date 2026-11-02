@@ -1,0 +1,809 @@
+=== 20
+SLIDE What you will learn | Tell a project apart from routine operations; Name the five process groups of the project life cycle; Explain trade-offs with the triple constraint; Write a one-page project charter | Four skills for starting any project well
+SLIDE What a project is | Temporary: a clear start and end; Unique: creates a specific result; Progressive elaboration: details become clearer over time; Operations repeat, projects end | If it never ends, it is operations
+SLIDE The triple constraint | Scope, time and cost are linked; Change one and at least one other moves; Quality sits in the middle | Every extra request has a price
+SLIDE Five process groups | Initiating; Planning; Executing; Monitoring and controlling; Closing | Monitoring runs alongside the work from day one
+SLIDE The project charter | Purpose and business case; SMART objectives; High-level scope and exclusions; Milestones, budget and top risks; Sponsor, project manager and authority | No charter, no project
+SLIDE Key roles | Sponsor: owns the business case and funding; Project manager: plans and leads the work; Team members: deliver the work; Stakeholders: affected by or able to affect the project | Name every role in writing
+SLIDE Common mistakes | Starting work without a charter; Vague objectives; No named sponsor; Skipping the closing phase | A one-page charter prevents most of these
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between a project and routine operations;
+- describe the five process groups of the project life cycle and what happens in each;
+- apply the triple constraint to explain trade-offs between scope, time and cost;
+- write a one-page project charter with SMART objectives.
+
+## Key terms
+
+::: terms
+Project: a temporary piece of work undertaken to create a unique product, service or result
+Operations: ongoing, repetitive work such as daily deliveries
+Project life cycle: the series of phases a project passes through from start to finish
+Sponsor: the senior person who owns the business case, funds the project and makes key decisions
+Project charter: a short document that formally authorises the project and the project manager
+Deliverable: any product, result or document the project must produce
+:::
+
+## 1. What makes something a project
+
+The Project Management Institute (PMI) defines a project as a temporary endeavour undertaken to create a unique product, service or result. Temporary means it has a defined start and end. Unique means the result has not been produced in exactly this way before: a new warehouse in Viana, a new ERP module, a product launch.
+
+Operations are different: receiving trucks, processing orders and paying suppliers happen every day and never finish. A simple test: if the work will be repeated next month in the same way, it is operations; if it has a finish line and a unique result, it is a project. Projects also involve progressive elaboration: the plan becomes more detailed as you learn more, which is why it is reviewed regularly.
+
+Every project is limited by the triple constraint: scope (what will be delivered), time (when) and cost (how much). If the sponsor adds scope, then time or cost must increase, or quality will suffer. When someone asks "can we also add this?", the professional answer is "yes, and this is what it will cost".
+
+::: quiz
+? A distributor delivers to 300 shops every week. It also plans to open a cold room in Lubango by June. Which is a project?
+- The weekly deliveries || Weekly deliveries repeat with no finish line. That is operations.
+* The cold room opening || It is temporary (it ends in June) and creates a unique result, so it is a project.
+- Both are projects || Only work with a defined end and a unique result is a project. Deliveries are routine.
+- Neither, because both are logistics || The department does not matter, only whether the work is temporary and unique.
+:::
+
+## 2. The project life cycle: five process groups
+
+The PMI's PMBOK Guide groups project management work into five process groups. They are a useful map for any project, large or small.
+
+::: diagram steps | The five process groups
+Initiating: define the need, appoint the sponsor and project manager, approve the charter
+Planning: detail scope, schedule, budget, risks and communication
+Executing: do the work, lead the team, buy and receive what is needed
+Monitoring and controlling: compare progress with the plan and correct deviations
+Closing: get acceptance, hand over, release resources and record lessons learned
+:::
+
+Initiating produces an approved project charter. Planning produces the scope, schedule, budget, risk register and communication plan, which together form the project management plan. Executing is where most of the time and money are spent. Monitoring and controlling is not a phase at the end: it runs alongside executing from the first day. Closing makes sure the project actually finishes: the result is accepted, contracts are closed and lessons are recorded. The groups overlap: on a long project you may plan the next stage while executing the current one.
+
+::: tip | International certifications
+PMP (from PMI) and PRINCE2 are widely recognised international certifications. This course teaches core concepts used in both, but it does not prepare you for either.
+:::
+
+## 3. Writing a project charter
+
+The charter is the birth certificate of a project: one or two pages, signed by the sponsor, giving the project manager authority to use people and money. Write it in five steps:
+
+::: slides
+SLIDE Step 1: State the purpose | Describe the problem or opportunity; Explain the business case in one paragraph; Link it to a company goal | Why are we doing this?
+SLIDE Step 2: Set SMART objectives | Specific, Measurable, Achievable, Relevant, Time-bound; Example: 2,000 pallet positions operating by 30 June | Vague goals cannot be controlled
+SLIDE Step 3: Define high-level scope | List the main deliverables; State what is out of scope; Note key assumptions and constraints | Exclusions prevent arguments later
+SLIDE Step 4: Add milestones, budget and risks | Three to six key dates; Budget estimate; Top three risks | Rough numbers beat none
+SLIDE Step 5: Name roles and sign | Sponsor and project manager; Authority limits of the project manager; Sponsor signature and date | A signature turns a plan into a mandate
+:::
+
+SMART objectives are the core of the charter. "Improve the warehouse" is not an objective. "Operate the new Viana warehouse with 2,000 pallet positions and the warehouse system live by 30 June, within a budget of 150 million Kz" is.
+
+::: quiz
+? Which item belongs in the project charter rather than in the detailed plan?
+- The daily task list for each team member || That level of detail comes later, in planning.
+- The hour-by-hour go-live script || This is a detailed execution document prepared much later.
+* The sponsor's name and the project manager's authority limits || The charter formally authorises the project and says who decides what.
+- Supplier invoices for the racking || Invoices are records produced during executing.
+:::
+
+## Worked example: a new warehouse in Viana
+
+A food distributor in Luanda needs more storage. Carlos, a logistics coordinator, is asked to "sort out the new warehouse". He first writes a charter. Purpose: the current warehouse is full and trucks are rented as temporary storage. Objective: operate a leased warehouse in Viana with 2,000 pallet positions and the warehouse system live by 30 June, within 150 million Kz. In scope: floor repairs, racking, IT network, staff training and stock transfer. Out of scope: buying new forklifts, because the existing fleet will be moved. Milestones: lease signed 15 February, racking installed 15 May, go-live 30 June. Risks: customs delay on imported racking, unstable power supply. Sponsor: the commercial director. Carlos may approve purchases up to 2 million Kz.
+
+::: case | Pressure to start at once
+Two days after the first meeting, the sponsor tells Carlos: "Forget the paperwork. Order the racking today, we will work out the rest later." The racking supplier quotes 60 million Kz with a 10-week lead time.
+? What should Carlos do?
+- Order the racking immediately to please the sponsor || Committing 60 million Kz without an agreed layout and scope risks buying the wrong racking.
+* Agree the one-page charter with the sponsor this week, then order once scope and budget are signed || A charter takes hours, not weeks, and it protects both the sponsor and the budget.
+- Refuse to act until a full detailed plan is complete || Detailed planning can follow. The charter is the minimum.
+- Ask the supplier to decide the layout || The supplier does not own the business case or the scope.
+:::
+
+## Tool: one-page project charter template
+
+- Project name and date:
+- Purpose and business case:
+- SMART objectives:
+- In scope (main deliverables):
+- Out of scope:
+- Key milestones, assumptions and constraints:
+- Budget estimate:
+- Top three risks:
+- Sponsor, project manager and authority limits:
+- Sponsor signature:
+
+## Common mistakes
+
+- Treating a project like routine work, with no plan, end date or owner.
+- Writing vague objectives such as "improve service" that nobody can measure.
+- Starting without a named sponsor, so nobody makes decisions when problems arise.
+- Skipping closing, so nobody confirms the result was accepted.
+
+## Self-check
+
+- What two characteristics define a project? (Answer: it is temporary and it creates a unique result.)
+- In which process group is the charter approved? (Answer: Initiating.)
+- If the sponsor adds scope but the deadline is fixed, what must change? (Answer: cost must rise, for example more people, or quality is put at risk.)
+
+## Practical assignment
+
+Choose one piece of work in your department that has a finish date. Write a one-page charter for it with at least two SMART objectives and three out-of-scope items, and ask the likely sponsor to review it this week.
+
+## Summary
+
+- A project is temporary and unique; operations are repetitive and ongoing.
+- The five process groups are initiating, planning, executing, monitoring and controlling, and closing.
+- A signed one-page charter with SMART objectives, scope limits and named roles is the minimum start for any project.
+=== 20
+SLIDE What you will learn | Write a scope statement with acceptance criteria; Build a work breakdown structure (WBS); Apply the 100% rule; Recognise scope creep and gold plating | Scope is the foundation of every plan
+SLIDE The scope statement | Product scope: features of the result; Project scope: work needed to deliver it; Acceptance criteria for each deliverable; Exclusions, assumptions, constraints | If it is not written, it is not in scope
+SLIDE What a WBS is | A hierarchy of deliverables; Built by decomposition; Lowest level: work packages; Focus on nouns (deliverables), not verbs | The WBS is the map of all the work
+SLIDE The 100% rule | The WBS contains all the work, and only that work; Children add up to 100% of the parent; Include project management itself | Nothing missing, nothing extra
+SLIDE Good work packages | One owner; Can be estimated for time and cost; Rule of thumb: about 8 to 80 hours of effort; Clear done definition | Small enough to manage, big enough to matter
+SLIDE The WBS dictionary | Description of each work package; Owner and acceptance criteria; Estimates and dependencies | One line per package prevents confusion
+SLIDE Scope creep and gold plating | Creep: uncontrolled additions; Gold plating: extras nobody asked for; Both consume time and money | Every change goes through change control
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a scope statement with clear acceptance criteria and exclusions;
+- build a work breakdown structure (WBS) by decomposing deliverables into work packages;
+- apply the 100% rule to check that a WBS is complete;
+- recognise scope creep and gold plating and explain how to prevent them.
+
+## Key terms
+
+::: terms
+Scope: the total work, and only the work, required to deliver the project's results
+Acceptance criteria: the conditions a deliverable must meet before the customer or sponsor accepts it
+Work breakdown structure (WBS): a hierarchical breakdown of all project deliverables into smaller, manageable parts
+Work package: the lowest level of the WBS, which can be estimated, scheduled and given to one owner
+Scope creep: uncontrolled growth of scope without adjusting time, cost or resources
+Gold plating: adding extra features that were not requested, usually with good intentions
+:::
+
+## 1. The scope statement
+
+Most late project problems begin as unclear scope. The scope statement, written during planning, expands the high-level scope in the charter. It has two parts. Product scope describes the result: for example, a sales app with product catalogue, prices and order entry. Project scope describes the work needed to deliver it: configuration, testing, training and go-live support.
+
+For every main deliverable, write acceptance criteria. "Training done" is weak. "All 40 sales representatives have completed a two-hour session and each has entered three test orders without help" is strong, because anyone can check it. Then list exclusions (what you will not do), assumptions (what you believe is true, such as "the ERP price list is correct") and constraints (fixed limits, such as "go-live before the start of the sales campaign").
+
+::: quiz
+? Which acceptance criterion is best for a new delivery-route plan?
+- Routes are improved and drivers are happy || Neither "improved" nor "happy" can be measured, so acceptance will become an argument.
+* All 25 routes are loaded in the system and tested for one week with at least 95% of deliveries on time || It is specific and measurable, so anyone can check it.
+- The logistics manager likes the new routes || Personal opinion is not a criterion. Agree measurable conditions in advance.
+- Routes are finished as soon as possible || This is a deadline wish, not a quality condition.
+:::
+
+## 2. Building a work breakdown structure
+
+A WBS breaks the total scope into smaller pieces until each can be estimated and assigned. It is the basis for the schedule, budget and risk analysis. A WBS is organised around deliverables (nouns: "tablets configured"), not activities (verbs: "configure tablets"). Activities come later, when you build the schedule.
+
+::: diagram pyramid | Levels of a WBS
+Project: the final result, for example the sales app rollout
+Major deliverables: the main parts, such as devices, training, go-live
+Sub-deliverables: smaller parts of each main deliverable
+Work packages: the lowest WBS level, with one owner, an estimate and a done definition
+Activities: the tasks to produce each work package, listed in the schedule, not in the WBS
+:::
+
+Follow these steps to build it:
+
+::: slides
+SLIDE Step 1: Start from the scope statement | Write the final deliverable at the top; Gather the team who will do the work; Use sticky notes or a spreadsheet | People who do the work see what is missing
+SLIDE Step 2: Choose level 2 | Split by major deliverable or by phase; Always add a project management branch; Number each branch 1, 2, 3 | Keep one logic at each level
+SLIDE Step 3: Decompose | Split each branch into smaller deliverables; Stop when a part can be estimated and owned; Rule of thumb: 8 to 80 hours of effort | Too big cannot be controlled, too small wastes time
+SLIDE Step 4: Check the 100% rule | Children must add up to 100% of the parent; Nothing outside the scope; Nothing in scope left out | Read each branch and ask what is missing
+SLIDE Step 5: Write the WBS dictionary | Describe each work package; Name the owner; Add acceptance criteria and estimates | The dictionary removes ambiguity
+:::
+
+The 100% rule is the most important quality test. The WBS must include all of the work defined by the scope, including project management itself, and nothing outside it. At each level, the child elements must add up to exactly the parent. If an item is in the WBS but not in the scope, remove it or raise a change request. If work in the scope has no place in the WBS, it will not be planned, estimated or done.
+
+## Worked example: rolling out a sales app in Luanda and Benguela
+
+A consumer goods distributor is giving 40 sales representatives in Luanda and Benguela tablets with an order-entry app linked to its ERP. Inês, the sales operations coordinator, builds this WBS with the IT analyst and two supervisors:
+
+- 1 Project management: 1.1 charter and plan, 1.2 weekly status reports, 1.3 closure report.
+- 2 App configuration: 2.1 product catalogue and prices loaded, 2.2 customer master data cleaned, 2.3 ERP integration working.
+- 3 Devices: 3.1 40 tablets purchased, 3.2 tablets set up and tested.
+- 4 Testing: 4.1 test scripts, 4.2 user acceptance test signed.
+- 5 Training: 5.1 training guide in Portuguese, 5.2 sessions in Luanda, 5.3 sessions in Benguela.
+- 6 Go-live: 6.1 cut-over from paper orders, 6.2 four weeks of support.
+
+When checking the 100% rule, a supervisor asks: "Who withdraws the old paper order books?" It was nobody's job, so Inês adds 6.3 paper process withdrawn. Printing invoices from the tablet is not in the charter, so it goes on the exclusions list.
+
+::: case | A new request during testing
+In week 6, during user testing, the sales director says: "While you are at it, add a customer loyalty-points screen. It should be easy." The IT analyst estimates two extra weeks and 3 million Kz.
+? What should Inês do?
+- Add it quietly, because the director is senior || This is scope creep: time and cost grow with no decision, and the go-live date is put at risk.
+- Refuse, because the scope is closed || Scope can change, but only through a controlled decision.
+* Record a change request with the two-week and 3 million Kz impact and ask the sponsor to decide || Change control makes the trade-off visible, and the sponsor decides with full information.
+- Ask the IT analyst to build it at night || Hidden extra work still costs money and hides the real impact.
+:::
+
+## Tool: WBS quality checklist
+
+- Top level matches the objective in the charter.
+- Level 2 uses one logic: deliverables or phases.
+- Project management has its own branch.
+- Each work package has one owner.
+- Each work package can be estimated for time and cost.
+- Children add up to 100% of each parent.
+- A WBS dictionary entry exists for each work package.
+
+::: quiz
+? A WBS for a product launch has these level-2 items: packaging, advertising, distribution to shops. Which 100% rule problem is most likely?
+- It has too many levels || The question concerns completeness, not depth.
+- Packaging should be an activity || Packaging is a deliverable, so it is correctly a noun in the WBS.
+- The items must all have the same cost || The 100% rule concerns completeness, not equal cost.
+* Project management and regulatory items, such as label approval, are missing || The 100% rule requires all the work, including management and any required approvals.
+:::
+
+## Common mistakes
+
+- Listing activities instead of deliverables, which makes the WBS a long to-do list.
+- Building the WBS alone, so the people who will do the work cannot point out what is missing.
+- Forgetting the project management branch: meetings, reports and closure take real time.
+- Accepting small additions informally until they add up to weeks of delay.
+
+## Self-check
+
+- What is the difference between product scope and project scope? (Answer: product scope describes the result, project scope describes the work to deliver it.)
+- What does the 100% rule require? (Answer: the WBS contains all of the scope and nothing outside it, with children adding up to each parent.)
+- What is gold plating? (Answer: adding extras that nobody asked for.)
+
+## Practical assignment
+
+Take the charter you wrote in Lesson 1. With two colleagues who will do the work, build a WBS of at least three levels, check it against the 100% rule and write a dictionary line for five work packages.
+
+## Summary
+
+- A scope statement with acceptance criteria and exclusions prevents most late arguments.
+- A WBS decomposes deliverables into work packages that can be estimated and owned.
+- The 100% rule and change control protect the project from missing work and scope creep.
+=== 20
+SLIDE What you will learn | Turn work packages into an activity list; Use the four dependency types; Calculate the critical path and float; Read and build a Gantt chart | Scheduling turns scope into dates
+SLIDE Dependency types | Finish-to-start: most common; Start-to-start: tasks begin together; Finish-to-finish: tasks end together; Start-to-finish: rare | Know why each link exists
+SLIDE Leads and lags | Lag: a forced wait, such as concrete curing; Lead: the next task starts early; External dependencies: customs, permits, suppliers | External links need extra attention
+SLIDE Critical path method | Forward pass gives earliest dates; Backward pass gives latest dates; Float = late start minus early start | Critical path = longest path, zero float
+SLIDE Example result | Paths: 6, 8 and 9 weeks; Critical path A-D-E-F = 9 weeks; Racking order and installation have 1 week of float | Delay on the critical path delays the project
+SLIDE Gantt charts | Bars show activity duration on a timeline; Arrows show dependencies; Diamonds show milestones; Critical tasks highlighted | Easy to read, easy to share
+SLIDE Compressing the schedule | Crashing: add resources, costs more; Fast tracking: overlap tasks, adds risk; Only compress critical activities | Shortening a non-critical task changes nothing
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- turn work packages into a list of activities with durations;
+- choose the right dependency type between two activities;
+- calculate the critical path and float using a forward and backward pass;
+- build a simple Gantt chart and explain how to shorten a schedule.
+
+## Key terms
+
+::: terms
+Activity: a task with a duration that produces part of a work package
+Dependency: a logical link that controls the order of two activities
+Critical path: the longest path through the network, which sets the shortest possible project duration
+Float (slack): the time an activity can be delayed without delaying the project end date
+Milestone: a significant point or event with zero duration, such as "racking installed"
+Gantt chart: a bar chart that shows activities against a timeline
+:::
+
+## 1. Activities and dependencies
+
+For each work package, list the activities needed and estimate each duration with the person who will do the work. Then link them. There are four dependency types:
+
+- Finish-to-start (FS): B cannot start until A finishes. Racking cannot be installed until the floor is repaired. This is the most common type.
+- Start-to-start (SS): B cannot start until A starts. Stock labelling can start once stock transfer has started.
+- Finish-to-finish (FF): B cannot finish until A finishes. Testing cannot finish until configuration finishes.
+- Start-to-finish (SF): B cannot finish until A starts. It is rare, for example the old system stays on until the new one starts.
+
+A lag is a required wait, for example seven days for a concrete floor to cure. A lead lets the next activity start early. Also note why each link exists: mandatory (physically required), discretionary (a preferred practice) or external (customs, a landlord, a permit office). External dependencies need early follow-up.
+
+::: quiz
+? The old stock system cannot be switched off until the new warehouse system starts. Which dependency describes this?
+- Finish-to-start || In finish-to-start, the second task waits for the first to finish completely.
+- Start-to-start || Start-to-start links the starts of two tasks, not the end of one to the start of the other.
+* Start-to-finish || The old system cannot finish until the new one starts, which is start-to-finish.
+- Finish-to-finish || Finish-to-finish links two end points, not an end to a start.
+:::
+
+## 2. The critical path method (CPM)
+
+CPM finds which activities control the end date. Draw the activities as boxes with arrows for the dependencies (a network diagram), then calculate.
+
+::: diagram steps | Critical path method
+List activities: durations and predecessors for each
+Draw the network: boxes for activities, arrows for dependencies
+Forward pass: early start and early finish, left to right
+Backward pass: late finish and late start, right to left
+Calculate float: late start minus early start
+Mark the critical path: the chain with zero float
+:::
+
+::: slides
+SLIDE Forward pass | Early start of first activities = 0; Early finish = early start + duration; With two predecessors, take the larger early finish | The project end = largest early finish
+SLIDE Backward pass | Late finish of the last activity = project end; Late start = late finish - duration; With two successors, take the smaller late start | Work from right to left
+SLIDE Float | Total float = late start - early start; Zero float = critical; Positive float = can slip without delaying the end | Watch near-critical paths too
+SLIDE Act on the result | Manage critical tasks daily; Use float to level resources; Recalculate when dates change | The critical path can move
+:::
+
+## Worked example: the Viana warehouse schedule
+
+Carlos, the coordinator from Lesson 1, simplifies his plan to six activities (durations in weeks):
+
+- A Repair floor and paint: 3, no predecessor.
+- B Order and import racking: 5, no predecessor.
+- C Install racking: 2, after A and B.
+- D Install IT network and warehouse system: 3, after A.
+- E Train staff on the system: 2, after D.
+- F Transfer stock and go live: 1, after C and E.
+
+Forward pass: A runs 0 to 3, B 0 to 5. C waits for both, so it starts at 5 (the larger) and finishes at 7. D runs 3 to 6, E 6 to 8. F waits for C (7) and E (8), so it starts at 8 and finishes at week 9.
+
+Backward pass from week 9: F late start 8. E and C late finish 8, late start 6. D late finish 6, late start 3. B late finish 6, late start 1. A must finish before C (late start 6) and D (late start 3), so its late finish is 3 and late start 0.
+
+Float: A 0, B 1, C 1, D 0, E 0, F 0. The critical path is A-D-E-F, 9 weeks. The racking path B-C-F takes 8 weeks, so it has one week of float.
+
+Carlos then draws a Gantt chart in a spreadsheet, with critical bars in red and a go-live diamond at week 9.
+
+::: case | Bad news from two suppliers
+In week 2, the racking importer says the container will clear customs one week late. The same day, the IT contractor says the network will take four weeks instead of three.
+? Which delay threatens the 9-week go-live?
+- The racking delay only, because imports are always critical || Racking (B) has one week of float, so a one-week slip uses the float but does not move go-live.
+* The IT delay, because D is on the critical path || D has zero float, so every extra week moves go-live. Carlos must recover it, for example by adding a second technician.
+- Neither, because the plan has enough float everywhere || D, E and F have no float at all.
+- Both delays add up to two weeks of project delay || Each delay must be checked against its own path's float. Only the IT delay moves the end date by one week.
+:::
+
+## 3. Gantt charts and schedule compression
+
+A Gantt chart, named after Henry Gantt, shows activities as bars on a timeline, which makes it easy to share. Show dependencies as arrows, milestones as diamonds and the critical path in a different colour, and update it weekly.
+
+If the schedule is too long, there are two standard techniques. Crashing adds resources to critical activities, such as a second installation team, which usually increases cost. Fast tracking performs activities in parallel that were planned in sequence, such as starting training before the system is fully configured, which increases risk. Only compress activities on the critical path, and recalculate afterwards, because another path may become critical.
+
+::: quiz
+? To win one week, a coordinator adds a second crew to an activity with three weeks of float. What happens to the end date?
+- It moves one week earlier || The activity was not critical, so finishing it early does not change the end date.
+* It does not change, and the extra crew costs money || Only shortening critical activities shortens the project.
+- It moves three weeks earlier || Float shows how much an activity can slip, not how much time is gained.
+- It moves later because of extra people || Adding people to a non-critical task does not delay the end date.
+:::
+
+## Tool: schedule build checklist
+
+- Every work package has at least one activity.
+- Durations were estimated with the people who do the work.
+- External dependencies (customs, permits, landlords) are marked.
+- Forward and backward passes are complete.
+- Critical path is highlighted on the Gantt chart.
+- Milestones match the charter dates.
+- Baseline saved before work starts.
+
+## Common mistakes
+
+- Listing tasks with dates but no dependencies.
+- Ignoring external dependencies such as customs clearance or permits.
+- Spending effort on speeding up non-critical tasks.
+- Never updating the Gantt chart, so it shows the plan, not reality.
+
+## Self-check
+
+- What is the most common dependency type? (Answer: finish-to-start.)
+- An activity has early start 4 and late start 6. What is its float? (Answer: 2 time units.)
+- What is the difference between crashing and fast tracking? (Answer: crashing adds resources and cost, fast tracking overlaps activities and adds risk.)
+
+## Practical assignment
+
+Take six to ten activities from your own project, write their durations and predecessors, and do a forward and backward pass on paper. Mark the critical path and show it to your sponsor on a simple Gantt chart.
+
+## Summary
+
+- Dependencies set the order of activities, and external ones need early follow-up.
+- The critical path is the longest path with zero float, and it sets the end date.
+- A Gantt chart communicates the schedule, and only compressing critical tasks shortens it.
+=== 20
+SLIDE What you will learn | Choose an estimating method; Build a bottom-up budget with contingency; Calculate PV, EV, AC, CPI and SPI; Forecast the final cost | Budgets you can defend and control
+SLIDE Estimating methods | Analogous: compare with a past project; Parametric: unit rate x quantity; Bottom-up: sum all work packages; Three-point: (O + 4M + P) / 6 | More detail = more accuracy
+SLIDE Reserves | Contingency reserve: for identified risks; Management reserve: for the unexpected; Cost baseline = estimates + contingency; Budget = baseline + management reserve | Reserves are planned, not hidden
+SLIDE Earned value terms | PV: planned value of work scheduled; EV: planned value of work done; AC: actual cost of work done; BAC: total budget | Compare what you did with what you planned
+SLIDE Performance indices | CPI = EV / AC; SPI = EV / PV; Above 1 = good, below 1 = problem; CV = EV - AC, SV = EV - PV | Two numbers answer two questions
+SLIDE Forecasting | EAC = BAC / CPI if trends continue; Act early when CPI or SPI is below 1; Report the forecast, not only spend to date | Early numbers predict the end
+SLIDE Common mistakes | Comparing spend with budget only; Forgetting contingency; Ignoring exchange-rate exposure; Measuring percent complete by feel | Measure progress with objective rules
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose between analogous, parametric, bottom-up and three-point estimating;
+- build a bottom-up budget with a contingency reserve;
+- calculate PV, EV, AC, CPI and SPI and interpret the results;
+- forecast the final cost of a project using earned value.
+
+## Key terms
+
+::: terms
+Cost baseline: the approved, time-phased budget used to measure cost performance
+Contingency reserve: money set aside for identified risks
+Management reserve: money held by the sponsor for unforeseen work within the scope
+Planned value (PV): the budgeted value of the work scheduled to be done by a date
+Earned value (EV): the budgeted value of the work actually completed by that date
+Actual cost (AC): the money actually spent on the work completed by that date
+:::
+
+## 1. Estimating methods
+
+Choose the method by how much you know:
+
+- Analogous: use a similar past project. "The Huambo depot fit-out cost about 90 million Kz, and this one is similar in size." Quick, but rough.
+- Parametric: use a unit rate times a quantity. "Racking at a quoted price per pallet position, times 2,000 positions." Good when reliable rates exist.
+- Bottom-up: estimate every work package in the WBS and add them up. Slowest, but the most accurate and easiest to defend.
+- Three-point: for uncertain items, estimate optimistic (O), most likely (M) and pessimistic (P), then calculate (O + 4M + P) / 6. This weighted average is the PERT formula.
+
+Example of a three-point estimate: customs clearance and local transport for imported racking could cost 2 million Kz (O), 2.5 million (M) or 4 million (P). Estimate = (2 + 10 + 4) / 6 = 2.67 million Kz.
+
+For imported items priced in USD, record the exchange rate you assumed, because a change in the kwanza rate changes the budget.
+
+## 2. Building the budget
+
+Start bottom-up from the WBS. Add a contingency reserve for the risks in your risk register, then the sponsor may hold a management reserve for the unknown. The cost baseline is the work package estimates plus contingency, spread over time. The total project budget is the baseline plus management reserve. The project manager controls contingency; using management reserve needs the sponsor's approval.
+
+::: quiz
+? A coordinator sets aside money for a known risk that customs clearance may take longer and cost more. What is this money called?
+- Management reserve || Management reserve covers unforeseen events and is held by the sponsor.
+* Contingency reserve || Money for identified risks is contingency, part of the cost baseline.
+- Earned value || Earned value measures completed work, not money set aside.
+- Actual cost || Actual cost is money already spent.
+:::
+
+## 3. Earned value management (EVM)
+
+Comparing spending with budget is misleading. If you have spent half the budget, is that good? Only if half the work is done. EVM answers this by comparing three numbers at a status date.
+
+::: slides
+SLIDE Step 1: Find PV | Look at the time-phased baseline; Sum the budget for work scheduled to date | What should be done by now?
+SLIDE Step 2: Find EV | Measure the percent complete of each work package; EV = percent complete x budget of that package; Sum all packages | What is actually done, in budget terms?
+SLIDE Step 3: Find AC | Take actual costs from invoices and timesheets; Include committed costs consistently | What did the done work cost?
+SLIDE Step 4: Calculate and interpret | CPI = EV / AC; SPI = EV / PV; Below 1 means over budget or behind schedule | Then forecast EAC = BAC / CPI
+:::
+
+Use objective rules for percent complete, such as 0/100 (no credit until finished) or 50/50 (half at start, half at finish) for short work packages, rather than "it feels about 70% done".
+
+::: diagram matrix | Reading CPI and SPI together | SPI: schedule (behind → ahead) | CPI: cost (over budget → under budget)
+Behind schedule, under budget: check whether work is being delayed to save money
+Ahead of schedule, under budget: performing well, confirm the measurements
+Behind schedule, over budget: urgent recovery plan needed
+Ahead of schedule, over budget: speed is being bought, check if it is needed
+:::
+
+::: quiz
+? At a status date, PV is 5 million Kz, EV is 4 million Kz and AC is 4 million Kz. What do the indices show?
+- Over budget and behind schedule || CPI = 4 / 4 = 1.0, so cost is exactly on plan.
+* On budget but behind schedule || CPI = 1.0 shows cost on plan, and SPI = 4 / 5 = 0.8 shows less work done than planned.
+- Under budget and ahead of schedule || SPI is 0.8, below 1, so the project is behind.
+- On budget and on schedule || EV is lower than PV, so the schedule has slipped.
+:::
+
+## Worked example: an ERP module rollout in Benguela
+
+A logistics company in Benguela is rolling out a new ERP finance module. Budget at completion (BAC) is 20 million Kz, spread evenly over 10 weeks. Rosa, the project coordinator, reports at the end of week 4:
+
+- PV: 4 weeks of 10 were planned, so 40% x 20 million = 8 million Kz.
+- EV: work completed is assessed at 30%, so 30% x 20 million = 6 million Kz.
+- AC: actual costs to date are 7.5 million Kz.
+
+Cost variance CV = EV - AC = 6 - 7.5 = -1.5 million Kz. Schedule variance SV = EV - PV = 6 - 8 = -2 million Kz.
+
+CPI = 6 / 7.5 = 0.80: for every 1 Kz spent, the project gets 0.80 Kz of planned work. SPI = 6 / 8 = 0.75: the project is progressing at 75% of the planned rate.
+
+Forecast: EAC = BAC / CPI = 20 / 0.80 = 25 million Kz. If nothing changes, the project will cost 5 million Kz more than budget.
+
+::: case | Reporting bad numbers
+Rosa's finance manager says: "We have spent only 7.5 million of 20 million, so tell the sponsor we are fine." Rosa's figures show CPI 0.80 and SPI 0.75.
+? What should Rosa report?
+- That the project is fine, because only 37.5% of the budget is spent || Spend alone ignores how much work was done. Only 30% of the work is complete.
+- That the project is 2 million Kz over budget || CV is -1.5 million Kz, and the -2 million is schedule variance.
+* That the project is behind schedule and over budget, with a forecast of 25 million Kz, and a recovery proposal || EVM shows both problems early, when there is still time to act.
+- Nothing until week 8, when the numbers are clearer || Early indices are a warning. Waiting removes the options for recovery.
+:::
+
+## Tool: budget and EVM template
+
+- Work package, owner, estimate (Kz or USD) and estimating method:
+- Exchange rate assumed for USD items:
+- Contingency for each major risk:
+- Cost baseline by week or month:
+- Management reserve held by the sponsor:
+- Status date, PV, EV, AC:
+- CV, SV, CPI, SPI:
+- EAC and action if CPI or SPI is below 0.95:
+
+## Common mistakes
+
+- Reporting spend against budget without measuring work done.
+- Estimating top-down only, then discovering missing work packages.
+- Hiding contingency inside estimates, so nobody knows the real reserve.
+- Ignoring currency exposure on imported equipment.
+- Judging percent complete by feeling instead of agreed rules.
+
+## Self-check
+
+- Which estimating method sums all the work packages? (Answer: bottom-up.)
+- EV is 9 million Kz and AC is 10 million Kz. What is CPI? (Answer: 0.9, so the project is over budget.)
+- What does SPI below 1 mean? (Answer: less work has been done than planned by this date.)
+
+## Practical assignment
+
+Take three work packages from your project. Estimate each one using a different method (analogous, parametric, three-point), add a contingency line for your biggest risk, and calculate CPI and SPI at your next status date.
+
+## Summary
+
+- Bottom-up estimates plus contingency form a cost baseline you can defend.
+- PV, EV and AC show what was planned, what was done and what it cost.
+- CPI and SPI below 1 are early warnings, and EAC = BAC / CPI forecasts the final cost.
+=== 20
+SLIDE What you will learn | Write risks as cause, event and effect; Score risks with probability x impact; Choose a risk response; Map stakeholders and plan communication | Fewer surprises, fewer conflicts
+SLIDE Risk or issue? | Risk: uncertain, may happen; Issue: already happening; Risks go in the risk register, issues in the issue log | Manage risks before they become issues
+SLIDE Probability x impact | Score each from 1 to 5; Score = P x I, from 1 to 25; Agree rating bands in advance | Focus on the highest scores first
+SLIDE Threat responses | Avoid: change the plan to remove it; Transfer: pass to a third party, such as insurance; Mitigate: reduce probability or impact; Accept: monitor and keep a fallback | Every risk needs an owner
+SLIDE Opportunity responses | Exploit: make it certain; Enhance: increase probability or impact; Share: partner with others; Accept: take it if it comes | Risks can be positive too
+SLIDE Power and interest grid | Manage closely: high power, high interest; Keep satisfied: high power, low interest; Keep informed: low power, high interest; Monitor: low power, low interest | Effort follows position on the grid
+SLIDE Communication plan | Who needs what; Format and channel; Frequency; Who sends it | Right message, right person, right time
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a project risk as a clear cause, event and effect statement;
+- score risks with a probability x impact matrix and rank them in a risk register;
+- choose a suitable response for threats and opportunities;
+- map stakeholders on a power and interest grid and build a communication plan.
+
+## Key terms
+
+::: terms
+Risk: an uncertain event that, if it happens, has a positive or negative effect on the project objectives
+Issue: a problem that is already happening and needs action now
+Risk register: a list of identified risks with their scores, responses, owners and status
+Risk owner: the person responsible for monitoring a risk and carrying out the response
+Stakeholder: any person or group who can affect, or is affected by, the project
+Communication plan: a table showing who receives what information, how, how often and from whom
+:::
+
+## 1. Identifying and scoring risks
+
+A risk is uncertain; an issue is already happening. "The racking container may be held at the port" is a risk. "The container is held at the port" is an issue. Manage risks early so they do not become issues.
+
+Write each risk in three parts: because of a cause, an event may happen, which would lead to an effect. For example: "Because the racking is imported, customs clearance at Luanda port may take longer than planned, which would delay installation and go-live." This makes the response clearer, because you can act on the cause or the effect.
+
+Score each risk from 1 (very low) to 5 (very high) for probability and for impact on time, cost or quality. Multiply: P x I gives a score from 1 to 25. Agree bands with the sponsor in advance. In this course's examples, 15 to 25 is red (act now), 8 to 14 is amber (plan a response) and 1 to 7 is green (monitor).
+
+::: slides
+SLIDE Step 1: Identify | Workshop with the team; Review lessons learned from past projects; Check each WBS branch | Ask what could go wrong and what could go better
+SLIDE Step 2: Assess | Score probability 1 to 5; Score impact 1 to 5; Multiply and rank | Highest score first
+SLIDE Step 3: Plan responses | Avoid, transfer, mitigate or accept; Cost of response less than the risk | Pick a response you can afford
+SLIDE Step 4: Assign owners and review | One owner per risk; Review the register every week or fortnight; Close risks that have passed | A register nobody reviews is decoration
+:::
+
+## 2. Responding to risks
+
+For threats, there are four common responses. Avoid: change the plan so the risk cannot happen, for example buying racking from a local stockist instead of importing. Transfer: pass the financial impact to a third party, for example insurance or a fixed-price contract. Mitigate: reduce probability or impact, for example ordering early and using an experienced clearing agent. Accept: do nothing now, but monitor and keep a fallback plan.
+
+For opportunities (positive risks), the responses are exploit, enhance, share and accept. If a supplier may offer a discount for early payment, you might enhance the chance by preparing payment approval in advance.
+
+::: quiz
+? A coordinator buys insurance for imported equipment against damage in transport. Which risk response is this?
+- Avoid || Avoiding would mean changing the plan so the risk cannot occur.
+- Mitigate || Mitigation reduces probability or impact. Insurance shifts the financial loss to the insurer.
+* Transfer || Insurance transfers the financial impact to a third party.
+- Accept || Accepting means taking no action except monitoring.
+:::
+
+## 3. Stakeholders and communication
+
+List everyone who can affect or is affected by the project: sponsor, users, finance, IT, suppliers, landlord, authorities and customers. Then place them on a power and interest grid, often called Mendelow's matrix.
+
+::: diagram matrix | Power and interest grid | Interest (low → high) | Power (low → high)
+Keep satisfied: high power, low interest – brief, focused updates and early warning of decisions
+Manage closely: high power, high interest – involve in key decisions and meet regularly
+Monitor: low power, low interest – general information, minimum effort
+Keep informed: low power, high interest – regular updates, listen to their concerns
+:::
+
+Then build a communication plan with one row per stakeholder group: what they need, format, channel (meeting, email, WhatsApp group, notice board), frequency and the sender. A RACI chart can also clarify roles for key deliverables: Responsible (does the work), Accountable (one person who approves), Consulted and Informed.
+
+## Worked example: launching a new rice brand in Benguela
+
+A food distributor is launching a new own-brand rice in Benguela province in eight weeks. Teresa, the brand coordinator, runs a risk workshop. Two top risks:
+
+- Because packaging is printed abroad, delivery may be late, which would delay the launch. P 4, I 4 = 16 (red). Response: mitigate by approving artwork two weeks early and asking for a partial air shipment. Owner: procurement officer.
+- Because shops have limited shelf space, key retailers may refuse a new brand, which would reduce sales. P 3, I 4 = 12 (amber). Response: mitigate with a launch display offer. Owner: sales supervisor.
+
+Her stakeholder grid: the sponsor and the sales manager are manage closely; the finance director is keep satisfied; the sales representatives and warehouse team are keep informed; the transport contractor is monitor.
+
+::: case | The quiet finance director
+In week 5, the finance director refuses to release payment for launch displays because "nobody told me about this cost". Teresa had sent updates only to the sales team.
+? What should Teresa change first?
+- Escalate a complaint about the finance director to the CEO || The real gap was communication. Escalating damages a key relationship.
+* Brief the finance director now and add a short fortnightly cost update for her to the communication plan || She has high power and low interest, so she must be kept satisfied with focused information.
+- Add the finance director to every project meeting || Too much detail for a low-interest stakeholder. Focused updates work better.
+- Pay the displays from the sales budget without telling finance || This hides the cost and breaks financial controls.
+:::
+
+## Tool: risk register and communication plan columns
+
+- Risk ID and statement (cause, event, effect):
+- Probability (1–5), impact (1–5), score and colour:
+- Response type and actions:
+- Owner and review date:
+- Status (open, closed, became an issue):
+- Stakeholder, grid position and what they need:
+- Format, channel, frequency and sender:
+
+::: quiz
+? A warehouse team will use a new system daily but has little say in decisions. Where are they on the grid?
+- Manage closely || They have high interest but not high power.
+- Keep satisfied || Keep satisfied is for high power, low interest stakeholders.
+- Monitor || They have high interest, so minimum effort is not enough.
+* Keep informed || High interest and low power means regular updates and listening to their concerns.
+:::
+
+## Common mistakes
+
+- Writing risks as vague words such as "budget" or "IT" instead of cause, event and effect.
+- Filling in the register once and never reviewing it.
+- Giving risks to "the team" instead of one named owner.
+- Communicating only with the people you see every day.
+
+## Self-check
+
+- What is the difference between a risk and an issue? (Answer: a risk may happen, an issue is already happening.)
+- A risk has probability 3 and impact 5. What is its score? (Answer: 15.)
+- Which quadrant needs the most attention? (Answer: high power, high interest, manage closely.)
+
+## Practical assignment
+
+Hold a 30-minute risk workshop with your team. Write five risks as cause, event and effect, score them, and assign an owner to each. Then place ten stakeholders on a power and interest grid and fill in one communication plan row for each quadrant.
+
+## Summary
+
+- Write risks as cause, event and effect, and score them with probability x impact.
+- Choose avoid, transfer, mitigate or accept for threats, and name one owner per risk.
+- Position stakeholders by power and interest and plan who gets what, how and when.
+=== 20
+SLIDE What you will learn | Run execution with a kick-off and weekly rhythm; Write a status report with RAG ratings; Control changes with a change request process; Close a project and capture lessons learned | Finish what you start
+SLIDE Kick-off and rhythm | Kick-off: objectives, roles, plan, rules; Weekly team meeting; Fortnightly sponsor update; Logs for issues, decisions and changes | A steady rhythm keeps control
+SLIDE Status reports | Overall RAG; Progress against milestones; CPI and SPI; Top risks and issues; Decisions needed | One page, every week, same format
+SLIDE RAG rules | Green: on plan within tolerance; Amber: off plan but recoverable by the team; Red: outside tolerance, sponsor decision needed | Define RAG in numbers, not mood
+SLIDE Change control | Log the request; Assess impact on scope, time, cost, risk; Decide: sponsor or change board; Update the plan and tell everyone | No change without a decision
+SLIDE Closing | Acceptance sign-off; Handover to operations; Close contracts and release staff; Lessons learned and archive | A project is not done until it is closed
+SLIDE Lessons learned | What went well; What went wrong; What we would do differently; Share with the next project | Learn once, use many times
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- set up a kick-off meeting and a weekly control rhythm for execution;
+- write a one-page status report using clear RAG rules;
+- apply a change control process to a change request;
+- close a project with acceptance, handover and lessons learned.
+
+## Key terms
+
+::: terms
+Kick-off meeting: the first meeting of the full team to agree objectives, roles, plan and working rules
+Status report: a regular summary of progress, performance, risks, issues and decisions needed
+RAG status: a red, amber or green rating of a project or part of it against agreed rules
+Tolerance: the allowed deviation from plan before the sponsor must be involved
+Change request: a formal proposal to change scope, schedule, budget or another baseline
+Lessons learned: knowledge gained during the project that should be applied to future projects
+:::
+
+## 1. Executing with a rhythm
+
+Execution starts with a kick-off meeting. Present the charter objectives, the WBS, the schedule with its critical path, the main risks, roles (a RACI chart helps) and the working rules: how you will meet, report and escalate. Then keep a steady rhythm: a weekly team meeting of 30 to 45 minutes on progress, blockers and the next two weeks, and a regular sponsor update.
+
+Keep three simple logs: the issue log (problems happening now, with owner and due date), the decision log (what was decided, by whom, when) and the change log. Many disputes at the end of a project are settled in minutes when a decision log exists.
+
+## 2. Status reports and RAG
+
+A good status report fits on one page and uses the same format every time: overall RAG, progress against milestones, CPI and SPI from earned value, top risks and issues, and decisions needed from the sponsor.
+
+RAG only works if the rules are defined in advance with numbers. Agree tolerances with the sponsor, for example plus or minus one week on the go-live date and 5% on budget. Then:
+
+- Green: on plan, within tolerance.
+- Amber: off plan, but the team can recover within tolerance.
+- Red: outside tolerance, or will be, and the sponsor must decide.
+
+This is a form of management by exception, one of the principles of PRINCE2: the sponsor does not need to manage every detail, but must be told immediately when tolerances are threatened. Watch out for "watermelon reporting": green on the outside, red on the inside.
+
+::: quiz
+? The agreed tolerance is plus or minus 5% on budget. The forecast now shows 8% over, and the team has no way to recover it. What is the RAG status for cost?
+- Green, because money is still available || The forecast is already outside the agreed tolerance.
+- Amber, to avoid alarming the sponsor || Amber means the team can recover within tolerance, which is not true here.
+* Red, with a request for a sponsor decision || Outside tolerance means red and a decision from the sponsor.
+- No rating until the project finishes || RAG is a warning tool. It is useful only if reported early.
+:::
+
+## 3. Change control
+
+Changes are normal. Uncontrolled changes are what damage projects. Every change to scope, schedule or budget follows the same process:
+
+::: diagram steps | Change control process
+Log: record the request, who asked and why
+Assess: impact on scope, time, cost, quality and risk
+Recommend: options, including doing nothing
+Decide: sponsor or change board approves, rejects or defers
+Update and communicate: revise baselines, plans and the change log, and inform the team
+:::
+
+The project manager does not approve changes outside their authority; the sponsor or a change board does. Approved changes update the baseline, so later performance is measured against the new plan. Rejected changes are also recorded, so they do not return every month.
+
+::: quiz
+? A sales manager asks a team member in the corridor to add a new report to the system. The team member agrees and starts work. What went wrong?
+- Nothing, because small changes do not need control || Small changes add up, and nobody assessed the time and cost.
+- The team member should have asked the supplier first || The supplier does not decide on scope.
+* The change was not logged, assessed and approved by the sponsor or change board || Every change must follow the change control process before work starts.
+- The report should have been added after closing || Timing is not the issue. The missing decision is.
+:::
+
+## 4. Closing the project
+
+Closing is often skipped because the team is already busy with the next task. Do it in these steps:
+
+::: slides
+SLIDE Step 1: Confirm acceptance | Check every deliverable against its acceptance criteria; Get written sign-off from the sponsor or customer | No sign-off, no closure
+SLIDE Step 2: Hand over | Train the operations team; Transfer documents, passwords and warranties; Agree support for the first weeks | Operations must own the result
+SLIDE Step 3: Close commercial and admin items | Pay final invoices; Close contracts and purchase orders; Release staff and equipment | Unclosed orders become future problems
+SLIDE Step 4: Lessons learned | What went well; What went wrong; What we would do differently | Write actions, not complaints
+SLIDE Step 5: Report and archive | Final report against objectives, budget and dates; Archive files where others can find them; Thank the team | Celebrate and recognise the team
+:::
+
+## Worked example: the Viana warehouse, from execution to closure
+
+Back at the Viana warehouse, Carlos holds a kick-off with the IT contractor, the racking installer, the warehouse supervisor and finance. Each Friday he sends a one-page report. In week 6 the IT network is one week late but the contractor has added a technician, so IT is amber. In week 7 the sponsor asks for 200 more pallet positions. Carlos logs the change: 9 million Kz, one extra week, racking from the same supplier. The sponsor approves the cost but asks to keep the go-live date. Carlos fast-tracks by training staff while the extra racking is installed, updates the baseline and informs the team.
+
+Go-live happens on 30 June. Carlos gets sign-off against the charter objectives, hands over the system manuals and warranties to the warehouse manager, closes the purchase orders, and runs a one-hour lessons learned session. Three actions come out: start customs paperwork before the order is confirmed, include the warehouse supervisor from the charter stage, and keep a generator on site from day one.
+
+::: case | Pressure to report green
+In week 8, the racking installer is ten days behind. The tolerance on go-live is one week, and the installer cannot add a crew. The sponsor has an important board meeting on Monday and says: "Please keep everything green this week."
+? What should Carlos report?
+- Green, and recover quietly next week || This is watermelon reporting. The board would be misled and the sponsor would lose options.
+- Amber, because the delay might be recovered || Amber means the team can recover within tolerance. Here it cannot.
+* Red, with two recovery options and their cost, so the sponsor can decide before the board meeting || Outside tolerance requires a sponsor decision. Giving options turns bad news into a decision.
+- Remove the schedule section from the report this week || Hiding information breaks trust and the purpose of reporting.
+:::
+
+## Tool: one-page status report template
+
+- Project, report date, overall RAG:
+- Milestones: planned date, forecast date, RAG:
+- Budget: BAC, AC, EAC, CPI, SPI:
+- Achieved this period:
+- Planned next period:
+- Top three risks and issues with owners:
+- Change requests: pending, approved, rejected:
+- Decisions needed from the sponsor:
+
+## Common mistakes
+
+- Reporting RAG by mood instead of agreed tolerances.
+- Accepting changes in corridors or WhatsApp without logging and assessing them.
+- Declaring the project finished at go-live without acceptance and handover.
+- Running lessons learned as a blame session, or not at all.
+
+## Self-check
+
+- What does red mean under clear RAG rules? (Answer: outside tolerance, sponsor decision needed.)
+- What are the five steps of change control? (Answer: log, assess, recommend, decide, update and communicate.)
+- Name three closing activities. (Answer: any three of acceptance sign-off, handover, closing contracts, releasing staff, lessons learned, final report and archive.)
+
+## Practical assignment
+
+Write next week's status report for your project using the template above. Agree written RAG tolerances with your sponsor and set up a change log with at least the request, impact, decision and date.
+
+## Summary
+
+- Execution needs a kick-off, a weekly rhythm and logs for issues, decisions and changes.
+- RAG based on agreed tolerances supports management by exception and honest reporting.
+- Every change goes through change control, and every project ends with acceptance, handover and lessons learned.

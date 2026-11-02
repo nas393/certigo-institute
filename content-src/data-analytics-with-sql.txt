@@ -1,0 +1,898 @@
+=== 20
+SLIDE What you will learn | Explain tables, rows, columns and keys; Read a sales schema with customers, products, orders and order_lines; Identify the grain of a table; Follow a five-step analytics workflow | Understand the data before you write SQL
+SLIDE The relational model | Data is stored in tables of rows and columns; Proposed by E. F. Codd in 1970; Tables are linked by shared key values; SQL is the standard language to query them | Many tables, linked by keys
+SLIDE Keys | Primary key: uniquely identifies each row; Foreign key: points to a primary key in another table; Keys never repeat inside their own table | Keys make joins possible
+SLIDE The sample sales schema | customers: who buys; products: what we sell; orders: one row per order; order_lines: one row per product on an order | One customer has many orders, one order has many lines
+SLIDE Grain | The grain is what one row represents; orders has one row per order; order_lines has one row per product per order | Always ask what one row means
+SLIDE The analytics workflow | Ask a precise business question; Find the tables and columns; Write the query; Check the result; Communicate the insight | The query is only step three
+SLIDE Common mistakes | Starting to write SQL before the question is clear; Ignoring the grain; Trusting a number without checking it; Mixing up order totals and line totals | Precise question, known grain, checked result
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what tables, rows, columns, primary keys and foreign keys are
+- read a simple sales schema and describe how its tables are related
+- identify the grain of a table and explain why it matters for totals
+- apply a five-step analytics workflow to a business question
+
+## Key terms
+
+::: terms
+Table: a set of data about one kind of thing, such as customers or orders, organised in rows and columns
+Row: one record in a table, for example one order
+Column: one attribute recorded for every row, for example order date
+Primary key: a column whose value uniquely identifies each row in a table
+Foreign key: a column that holds the primary key of a row in another table, linking the two tables
+Grain: what exactly one row in a table represents
+:::
+
+## 1. Tables, rows and keys
+
+Most business systems used by distributors, such as ERP, invoicing and stock systems, store their data in a relational database. The relational model was proposed by E. F. Codd in 1970. Its idea is simple: data is kept in tables, each table holds one kind of thing, and tables are connected through shared values called keys. SQL (Structured Query Language) is the standard language used to ask questions of these tables. It is an ISO standard, but each database product, such as PostgreSQL, SQL Server, MySQL or Oracle, adds its own small differences, called dialects.
+
+Each table has a primary key. In a customers table this is usually customer_id. No two customers can share the same customer_id, even if two shops have the same name. A foreign key is a column in one table that holds the primary key of another table. The orders table contains customer_id, which tells you which customer placed each order. This link is what lets you combine tables later in the course.
+
+Storing customers once and pointing to them with a key avoids repeating the same name and address on thousands of orders. If a customer moves from Viana to Cacuaco, you change one row, not thousands.
+
+::: quiz
+? In the orders table, customer_id appears many times. What kind of key is it in that table?
+- A primary key || A primary key cannot repeat inside its own table. Here customer_id repeats.
+* A foreign key || Correct. It points to the primary key of the customers table.
+- A duplicate error || Repeating a foreign key is normal: one customer places many orders.
+:::
+
+## 2. The sample sales schema and its grain
+
+This course uses one sample schema that looks like a typical food and household goods distributor:
+
+- customers: customer_id, customer_name, segment (wholesale, supermarket, retail), province, city
+- products: product_id, product_name, category (rice, sugar, flour, cooking oil), pack_size, list_price
+- orders: order_id, customer_id, order_date, status (delivered, cancelled, pending), salesperson
+- order_lines: order_line_id, order_id, product_id, quantity, unit_price, discount_pct
+
+The relationships are one-to-many. One customer has many orders, and one order has many order lines. Each order line refers to one product.
+
+The grain is what one row represents. In orders the grain is one order. In order_lines the grain is one product on one order. This matters because revenue lives at line level. An order line for 40 bags of rice at 18,500 Kz per bag has a line amount of 40 × 18,500 = 740,000 Kz. If the same order also has 25 bags of sugar at 21,000 Kz (525,000 Kz), the order total is 740,000 + 525,000 = 1,265,000 Kz. Order totals are built by adding line amounts, never the other way round.
+
+::: slides
+SLIDE Step 1: List the tables | Note the name of each table; Write one sentence on what it holds | Know your building blocks
+SLIDE Step 2: Find the primary keys | customer_id, product_id, order_id, order_line_id; Each value is unique in its table | One key per table
+SLIDE Step 3: Find the foreign keys | orders.customer_id links to customers; order_lines.order_id links to orders; order_lines.product_id links to products | Draw the arrows
+SLIDE Step 4: State the grain | orders: one row per order; order_lines: one row per product per order | Grain decides how you add up
+:::
+
+::: quiz
+? Where should you calculate revenue in the sample schema?
+- In the customers table || Customers do not record what was sold.
+- In the orders table || Orders hold the date and status, not quantities or prices.
+* In the order_lines table, as quantity × unit_price || Correct. Revenue is recorded at line level and added up to orders.
+:::
+
+## 3. The analytics workflow
+
+Good SQL starts before you type. Use these five steps for every request.
+
+::: diagram steps | The analytics workflow
+Ask: turn the request into a precise question with a measure, a period and filters
+Find: identify the tables, columns and grain that hold the answer
+Query: write the SQL, starting small and building up
+Check: compare with a known total and look for gaps or duplicates
+Communicate: give the answer, the reason and a recommended action
+:::
+
+A precise question names the measure (revenue, quantity, number of orders), the period (October 2026), and the filters (delivered orders only, Benguela province). "How are sales?" is not a question you can query. "What was delivered revenue in Benguela in October 2026, by product category?" is.
+
+The check step protects your reputation. Compare your total with a figure people trust, such as the invoicing report. Count the rows. Look at the smallest and largest values. A total that is exactly double the expected figure usually means rows were duplicated.
+
+## Worked example: a food distributor in Luanda
+
+A food distributor in Luanda supplies supermarkets and wholesalers in several provinces. The sales manager, Teresa, asks the analyst, Miguel: "How did supermarkets do last month?" Miguel rewrites it as: "Delivered revenue from customers in the supermarket segment, for October 2026, by province." He finds segment and province in customers, the date and status in orders, and quantity and unit price in order_lines. He notes that revenue must be added at line level and that cancelled orders must be excluded. After writing the query, he compares the grand total with the invoicing report for the same month before sending the result.
+
+::: case | A vague request at the Luanda office
+Teresa asks Miguel for "supermarket sales" by tomorrow morning. The orders table includes 312 cancelled orders in October, and the invoicing report shows 1.84 billion Kz of delivered sales for all segments.
+? What should Miguel do first?
+- Start writing SQL on the orders table straight away || Without a precise question he may include cancelled orders or use the wrong period.
+* Confirm the measure, period and filters, then map them to tables and columns || Correct. A precise question tells him exactly which data and filters to use.
+- Export all four tables to Excel and decide later || This moves the problem elsewhere and risks errors with large data.
+- Send the total of all orders, including cancelled ones || Cancelled orders are not sales and would overstate the result.
+:::
+
+## Tool: query request template
+
+- Business question in one sentence
+- Measure: revenue, quantity, orders, customers or margin
+- Period: start date and end date
+- Filters: status, segment, province, category
+- Breakdown: by month, province, product or salesperson
+- Tables and columns needed, with the grain of each
+- Check figure: a trusted total to compare against
+
+## Common mistakes
+
+- Writing SQL before the question has a measure, period and filters.
+- Ignoring the grain and adding an order-level value across order lines.
+- Including cancelled or pending orders in revenue.
+- Sending a result without comparing it to a trusted total.
+
+## Self-check
+
+- What is the difference between a primary key and a foreign key? (Answer: a primary key uniquely identifies rows in its own table, a foreign key points to the primary key of another table.)
+- What is the grain of the order_lines table? (Answer: one product on one order.)
+- What should every precise analytics question contain? (Answer: a measure, a period and filters, often with a breakdown.)
+
+## Practical assignment
+
+Ask your IT or systems team for the list of tables behind your sales or invoicing reports. For four of them, write down the primary key, any foreign keys and the grain. Then rewrite one recent request from your manager using the query request template.
+
+## Summary
+
+- Relational databases store data in linked tables, joined through primary and foreign keys.
+- Know the grain of every table before you add anything up.
+- Follow the workflow: ask, find, query, check, communicate.
+=== 20
+SLIDE What you will learn | Write SELECT and FROM to choose columns; Filter rows with WHERE and logical operators; Sort with ORDER BY; Limit results with LIMIT, TOP or FETCH FIRST | The four clauses behind most business lists
+SLIDE SELECT and FROM | FROM names the table; SELECT names the columns; Use aliases with AS for clear headings; Calculated columns such as quantity * unit_price | Ask only for the columns you need
+SLIDE WHERE | Comparison: =, <>, >, <, >=, <=; Lists and ranges: IN and BETWEEN; Patterns: LIKE with %; Missing values: IS NULL, never = NULL | WHERE keeps only matching rows
+SLIDE AND, OR and brackets | AND is evaluated before OR; Always put brackets around OR conditions; Test with a small known example | Brackets prevent silent errors
+SLIDE ORDER BY and limits | ORDER BY column ASC or DESC; Sort on several columns in order; LIMIT in PostgreSQL and MySQL; TOP in SQL Server, FETCH FIRST in standard SQL | A top 10 needs ORDER BY first
+SLIDE Logical processing order | FROM, then WHERE, then SELECT, then ORDER BY, then LIMIT; Explains why aliases fail in WHERE; Explains why a limit without sort is random | Written order is not run order
+SLIDE Common mistakes | Using = NULL; Forgetting brackets with OR; LIMIT without ORDER BY; Text values without quotes | Small syntax, big consequences
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write SELECT and FROM statements that return the columns a business question needs
+- filter rows with WHERE using comparison, IN, BETWEEN, LIKE and IS NULL
+- combine conditions with AND and OR correctly using brackets
+- sort and limit results to produce lists such as the top 10 customers
+
+## Key terms
+
+::: terms
+Clause: one part of an SQL statement, such as SELECT, FROM or WHERE
+Alias: a temporary name for a column or table, given with AS
+Condition: a test in WHERE that is true or false for each row
+NULL: a marker meaning the value is missing or unknown, not zero and not blank text
+Logical processing order: the order in which the database evaluates the clauses, which differs from the order you write them
+:::
+
+## 1. SELECT and FROM
+
+Every query starts with two clauses. FROM says which table to read and SELECT says which columns to return. To list customers and their province:
+
+SELECT customer_name, province
+FROM customers
+
+SELECT * returns every column. It is useful for a first look, but in reports you should name the columns you need. This makes the query faster, clearer and safer if the table changes.
+
+You can calculate new columns and give them readable names with an alias:
+
+SELECT order_id, product_id, quantity, unit_price, quantity * unit_price AS line_amount
+FROM order_lines
+
+For a line of 60 cartons of cooking oil at 14,200 Kz, line_amount is 60 × 14,200 = 852,000 Kz. If discount_pct is 5, the net amount is quantity * unit_price * (1 - discount_pct / 100.0), which is 852,000 × 0.95 = 809,400 Kz. Writing 100.0 rather than 100 avoids integer division in some databases, where 5 / 100 would give 0.
+
+## 2. Filtering rows with WHERE
+
+WHERE keeps only the rows for which the condition is true. Text and dates go in single quotes, numbers do not.
+
+SELECT order_id, customer_id, order_date
+FROM orders
+WHERE status = 'delivered' AND order_date >= '2026-10-01' AND order_date < '2026-11-01'
+
+The main operators are:
+
+- Comparison: =, <> (not equal), >, <, >=, <=
+- IN for a list: WHERE province IN ('Luanda', 'Benguela', 'Huíla')
+- BETWEEN for an inclusive range: WHERE quantity BETWEEN 10 AND 50
+- LIKE for patterns, where % means any characters: WHERE product_name LIKE 'Rice%'
+- IS NULL and IS NOT NULL for missing values
+
+NULL needs special care. A condition such as salesperson = NULL is never true, because NULL means unknown. Always write salesperson IS NULL.
+
+AND is evaluated before OR. This query looks correct but is not:
+
+WHERE status = 'delivered' AND province = 'Luanda' OR province = 'Bengo'
+
+It returns delivered orders in Luanda plus all orders in Bengo, including cancelled ones. The safe version uses brackets:
+
+WHERE status = 'delivered' AND (province = 'Luanda' OR province = 'Bengo')
+
+::: slides
+SLIDE Step 1: Write the business filter in words | Delivered orders only; October 2026; Luanda or Bengo | Words first, SQL second
+SLIDE Step 2: Translate each part | status = 'delivered'; order_date >= '2026-10-01' AND order_date < '2026-11-01'; province IN ('Luanda', 'Bengo') | One condition per business rule
+SLIDE Step 3: Join with AND | Combine all rules with AND; Put any OR inside brackets or use IN | Brackets make intent explicit
+SLIDE Step 4: Test on a known case | Pick one order you know should appear; Pick one that should not | Prove the filter works
+:::
+
+::: quiz
+? Which condition correctly finds customers with no salesperson recorded?
+- WHERE salesperson = NULL || Comparing with NULL is never true, so no rows are returned.
+- WHERE salesperson = '' || This finds empty text, which is different from a missing value.
+* WHERE salesperson IS NULL || Correct. IS NULL is the only reliable test for missing values.
+:::
+
+## 3. Sorting, limiting and the logical processing order
+
+ORDER BY sorts the result. ASC is ascending (the default) and DESC is descending. You can sort on several columns: ORDER BY province ASC, line_amount DESC sorts by province, then by amount within each province.
+
+To return only the first rows, the syntax depends on the dialect:
+
+- PostgreSQL, MySQL and SQLite: LIMIT 10 at the end
+- SQL Server: SELECT TOP 10 at the start
+- Standard SQL, also supported by PostgreSQL and Oracle: FETCH FIRST 10 ROWS ONLY
+
+A limit without ORDER BY returns any 10 rows, not the biggest 10. The database does not promise any order unless you ask for one.
+
+The database does not run the clauses in the order you write them. Understanding the logical processing order explains many errors.
+
+::: diagram steps | Logical processing order of a simple query
+FROM: read the table
+WHERE: keep only rows that meet the conditions
+SELECT: compute the columns and aliases
+ORDER BY: sort the result
+LIMIT: keep the first rows
+:::
+
+Because WHERE runs before SELECT, you cannot use a column alias such as line_amount inside WHERE in most databases. Repeat the expression instead: WHERE quantity * unit_price > 1000000. ORDER BY runs after SELECT, so ORDER BY line_amount DESC works.
+
+::: quiz
+? An analyst writes a query with LIMIT 10 but no ORDER BY to find the ten largest order lines. What is the problem?
+- LIMIT only works with SELECT * || LIMIT works with any column list.
+* The database may return any ten rows, not the largest ones || Correct. Without ORDER BY there is no guaranteed order.
+- LIMIT must come before WHERE || LIMIT is written last, after ORDER BY.
+:::
+
+## Worked example: a top 10 list in Benguela
+
+A distributor's branch in Benguela wants the ten largest order lines delivered in October 2026 for flour, to check pricing. The branch analyst, Rosa, works from a prepared table called sales_lines that already contains order_date, status, province, category, customer_name, quantity and unit_price.
+
+SELECT customer_name, order_date, quantity, unit_price, quantity * unit_price AS line_amount
+FROM sales_lines
+WHERE status = 'delivered' AND province = 'Benguela' AND category = 'flour' AND order_date >= '2026-10-01' AND order_date < '2026-11-01'
+ORDER BY line_amount DESC
+LIMIT 10
+
+She checks the first row by hand: 120 bags at 16,000 Kz is 1,920,000 Kz, which matches the invoice.
+
+::: case | The top customers list that included Bengo
+Rosa's colleague Paulo sends a list of "delivered sales in Luanda or Bengo". A manager notices a cancelled order of 3,400,000 Kz from Bengo on the list. Paulo's WHERE clause is status = 'delivered' AND province = 'Luanda' OR province = 'Bengo'.
+? What is the best fix?
+- Delete the cancelled row from the exported file || The query is still wrong and will fail again next month.
+* Put brackets around the OR conditions or use province IN ('Luanda', 'Bengo') || Correct. AND is evaluated before OR, so the status filter did not apply to Bengo.
+- Change AND to OR everywhere || This would return even more wrong rows.
+- Add ORDER BY status || Sorting does not change which rows are returned.
+:::
+
+## Tool: query review checklist
+
+- Columns named explicitly, with clear aliases
+- Text and dates in single quotes
+- Every OR inside brackets, or replaced with IN
+- IS NULL used for missing values
+- Date range written as start inclusive, end exclusive
+- ORDER BY present whenever a limit is used
+- First row checked by hand against the source
+
+## Common mistakes
+
+- Writing = NULL instead of IS NULL.
+- Mixing AND and OR without brackets.
+- Using LIMIT or TOP without ORDER BY.
+- Using a SELECT alias inside WHERE.
+
+## Self-check
+
+- Why can you not use = NULL to find missing values? (Answer: NULL means unknown, so the comparison is never true. Use IS NULL.)
+- Which runs first, WHERE or SELECT? (Answer: WHERE.)
+- How do you write a top 5 in SQL Server? (Answer: SELECT TOP 5 with an ORDER BY.)
+
+## Practical assignment
+
+Using a database or a practice copy at work, write a query that lists the 10 largest delivered order lines for one product category in the last full month. Check the first row against the invoice and note any filter you had to correct.
+
+## Summary
+
+- SELECT and FROM choose the columns and table, and aliases make results readable.
+- WHERE filters rows, and brackets, quotes and IS NULL prevent silent errors.
+- ORDER BY with a limit produces top lists, and the logical processing order explains alias errors.
+=== 20
+SLIDE What you will learn | Use COUNT, SUM, AVG, MIN and MAX; Group results with GROUP BY; Filter groups with HAVING; Build a sales-by-province report | From thousands of rows to one useful table
+SLIDE Aggregate functions | COUNT(*) counts rows; COUNT(column) ignores NULLs; COUNT(DISTINCT column) counts unique values; SUM, AVG, MIN, MAX | One value from many rows
+SLIDE GROUP BY | One output row per group; Every non-aggregated SELECT column must be in GROUP BY; Group by province, month, category or salesperson | Split, calculate, combine
+SLIDE WHERE versus HAVING | WHERE filters rows before grouping; HAVING filters groups after aggregation; HAVING can use SUM, COUNT and AVG | Rows first, groups second
+SLIDE Average order value | Revenue divided by number of distinct orders; Not AVG of line amounts; SUM(amount) / COUNT(DISTINCT order_id) | Know what you are averaging
+SLIDE Share of total | Province revenue divided by total revenue; Check that shares add up to 100% | Shares make big numbers readable
+SLIDE Common mistakes | Columns missing from GROUP BY; Aggregates in WHERE; AVG at the wrong grain; Counting rows instead of customers | Check the grain of every measure
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- use COUNT, SUM, AVG, MIN and MAX to summarise sales data
+- write GROUP BY queries that produce one row per province, month or category
+- choose correctly between WHERE and HAVING
+- calculate average order value and share of total correctly
+
+## Key terms
+
+::: terms
+Aggregate function: a function that returns one value from many rows, such as SUM or COUNT
+GROUP BY: the clause that splits rows into groups that share the same values
+HAVING: the clause that filters groups after aggregation
+COUNT(DISTINCT): counts the number of different values in a column
+Average order value: total revenue divided by the number of distinct orders
+:::
+
+## 1. Aggregate functions
+
+Managers rarely want thousands of rows. They want totals, counts and averages. In this lesson we use a prepared reporting view called sales_lines. It combines the four tables from Lesson 1 into one row per order line, with order_id, order_date, status, customer_id, province, segment, category and line_amount. Lesson 4 shows how such a view is built with joins.
+
+The five standard aggregate functions are:
+
+- COUNT(*): number of rows
+- COUNT(column): number of rows where that column is not NULL
+- COUNT(DISTINCT column): number of different values
+- SUM(column) and AVG(column): total and average, ignoring NULLs
+- MIN(column) and MAX(column): smallest and largest values
+
+SELECT COUNT(*) AS lines, COUNT(DISTINCT order_id) AS orders, COUNT(DISTINCT customer_id) AS customers, SUM(line_amount) AS revenue
+FROM sales_lines
+WHERE status = 'delivered'
+
+The difference between COUNT(*) and COUNT(DISTINCT customer_id) is important. If 150 customers placed 1,200 orders with 4,800 lines, COUNT(*) gives 4,800, not the number of customers.
+
+::: quiz
+? A manager asks how many different customers bought in October. Which expression answers this from sales_lines?
+- COUNT(*) || This counts order lines, which is much higher than the number of customers.
+- SUM(customer_id) || Adding ID numbers gives a meaningless figure.
+* COUNT(DISTINCT customer_id) || Correct. It counts each customer once, however many lines they have.
+:::
+
+## 2. GROUP BY and the sales-by-province report
+
+GROUP BY splits the rows into groups, calculates the aggregates for each group and combines the results into one row per group. This is often called split, apply, combine.
+
+::: diagram steps | How a GROUP BY query works
+Filter rows: WHERE keeps delivered orders in the period
+Split: rows are grouped by province
+Apply: SUM and COUNT are calculated for each group
+Filter groups: HAVING removes groups that fail a test
+Sort: ORDER BY puts the biggest provinces first
+:::
+
+The rule to remember: every column in SELECT that is not inside an aggregate function must appear in GROUP BY. Here is a sales-by-province report for October 2026:
+
+SELECT province, SUM(line_amount) AS revenue, COUNT(DISTINCT order_id) AS orders, SUM(line_amount) / COUNT(DISTINCT order_id) AS avg_order_value
+FROM sales_lines
+WHERE status = 'delivered' AND order_date >= '2026-10-01' AND order_date < '2026-11-01'
+GROUP BY province
+ORDER BY revenue DESC
+
+You can group by more than one column, for example GROUP BY province, category, to get one row for each combination.
+
+::: slides
+SLIDE Step 1: Decide the rows of the report | One row per province; Put province in SELECT and GROUP BY | The breakdown becomes the GROUP BY
+SLIDE Step 2: Decide the measures | Revenue with SUM; Orders with COUNT(DISTINCT order_id); Average order value as a ratio | Each measure is an aggregate
+SLIDE Step 3: Filter the rows | Delivered status; Period with start and end date | WHERE before grouping
+SLIDE Step 4: Filter and sort the groups | HAVING for minimum size; ORDER BY revenue DESC | Largest first for managers
+:::
+
+## 3. WHERE versus HAVING, and averages at the right grain
+
+WHERE filters individual rows before grouping. HAVING filters whole groups after the aggregates are calculated. You cannot write WHERE SUM(line_amount) > 50000000, because the sum does not exist yet when WHERE runs. Use HAVING:
+
+GROUP BY province
+HAVING SUM(line_amount) > 50000000
+
+Use WHERE for row rules, such as status and date, and HAVING for group rules, such as "provinces with more than 20 orders".
+
+Averages need care. AVG(line_amount) gives the average line, not the average order. Suppose Huambo had three orders worth 1,200,000 Kz, 800,000 Kz and 400,000 Kz, made of 2, 3 and 1 lines. Revenue is 2,400,000 Kz. Average order value is 2,400,000 / 3 = 800,000 Kz. AVG(line_amount) would give 2,400,000 / 6 = 400,000 Kz, half the true figure. Always divide the sum by the count of the thing you want to average.
+
+Share of total helps managers compare provinces. If Luanda has 1,100,000,000 Kz out of 1,840,000,000 Kz in total, its share is 1,100,000,000 / 1,840,000,000 × 100 = 59.8%. Check that all shares add up to 100%.
+
+::: quiz
+? You want only categories with more than 100 orders in the month. Where does the condition COUNT(DISTINCT order_id) > 100 go?
+- In WHERE || WHERE runs before grouping, so the count does not exist yet.
+* In HAVING || Correct. HAVING filters groups after the aggregates are calculated.
+- In ORDER BY || ORDER BY sorts groups but does not remove any.
+:::
+
+## Worked example: monthly sales by province
+
+A distributor of rice, sugar and flour operates in Luanda, Benguela, Huambo and Huíla. The commercial manager wants October 2026 delivered revenue by province, with orders and average order value, and only provinces above 50 million Kz. The analyst, Filipe, runs the province query with HAVING SUM(line_amount) > 50000000. Huíla shows 64,000,000 Kz from 80 orders, so its average order value is 64,000,000 / 80 = 800,000 Kz. He adds the province totals, compares them with the 1,840,000,000 Kz invoicing figure and adds a share-of-total column before sending.
+
+::: case | The average that looked too low
+Filipe's colleague reports that the average order in Benguela fell to 310,000 Kz. The sales team says orders have not changed. The colleague used AVG(line_amount) on sales_lines, and the team recently began splitting orders into more lines by pack size.
+? What is the most likely explanation?
+- Benguela customers are buying less || The sales team sees no change, and the method has a known flaw.
+* The query averages lines, not orders, so more lines per order lower the result || Correct. Average order value must be SUM(line_amount) / COUNT(DISTINCT order_id).
+- AVG ignores large orders || AVG includes all non-NULL values.
+- The query needs ORDER BY || Sorting does not change an average.
+:::
+
+## Tool: aggregation checklist
+
+- The breakdown columns appear in both SELECT and GROUP BY
+- Every measure uses an aggregate function
+- Row filters (status, dates) are in WHERE
+- Group filters (minimum revenue or orders) are in HAVING
+- Averages are calculated as sum divided by count at the right grain
+- Totals reconciled with a trusted report
+- Shares of total add up to 100%
+
+## Common mistakes
+
+- Leaving a non-aggregated column out of GROUP BY.
+- Putting an aggregate condition in WHERE instead of HAVING.
+- Using AVG(line_amount) as average order value.
+- Using COUNT(*) when the question asks for customers or orders.
+
+## Self-check
+
+- What does COUNT(column) ignore? (Answer: rows where that column is NULL.)
+- When does HAVING run compared with GROUP BY? (Answer: after grouping and aggregation.)
+- How do you calculate average order value from line data? (Answer: SUM(line_amount) / COUNT(DISTINCT order_id).)
+
+## Practical assignment
+
+Write a query that shows last month's delivered revenue, number of orders and average order value by province or branch. Add a share-of-total column in SQL or Excel, and reconcile the grand total with your invoicing report.
+
+## Summary
+
+- Aggregate functions turn many rows into totals, counts and averages.
+- GROUP BY creates one row per group, and HAVING filters those groups.
+- Average and count at the right grain: orders, customers or lines.
+=== 20
+SLIDE What you will learn | Combine tables with INNER JOIN and LEFT JOIN; Use keys and table aliases; Find customers with no orders; Avoid duplicated rows | Joins rebuild the business picture
+SLIDE INNER JOIN | Returns only rows that match in both tables; ON states the matching keys; Example: orders ON customer_id | Matches only
+SLIDE LEFT JOIN | Keeps all rows from the left table; Missing matches show as NULL; Use it to find customers without orders | Keep everything on the left
+SLIDE Table aliases | FROM orders o JOIN customers c; Write o.customer_id and c.customer_id; Prevents ambiguous column errors | Short names, clear queries
+SLIDE Row multiplication | Joining one row to many repeats the one-side values; Summing an order-level value over lines inflates it | Check the grain after every join
+SLIDE The LEFT JOIN trap | A WHERE filter on the right table removes the NULL rows; Put right-table filters in ON instead | WHERE can turn LEFT into INNER
+SLIDE Safe join procedure | Count rows before and after; Check keys are unique on the one side; Reconcile totals | Trust only checked joins
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between INNER JOIN and LEFT JOIN
+- write joins between customers, orders, order_lines and products using keys and aliases
+- find records with no match, such as customers who did not order
+- detect and prevent duplicated rows caused by joins
+
+## Key terms
+
+::: terms
+Join: combining rows from two tables using a matching condition
+INNER JOIN: returns only the rows that have a match in both tables
+LEFT JOIN: returns all rows from the left table and matching rows from the right, with NULL where there is no match
+Join key: the columns used to match rows, usually a foreign key and a primary key
+Row multiplication: an increase in rows, and in totals, when one row matches many rows in the other table
+:::
+
+## 1. INNER JOIN and LEFT JOIN
+
+In Lesson 1 the data was split across four tables. A join brings it back together. You state the tables and how their keys match:
+
+SELECT o.order_id, o.order_date, c.customer_name, c.province
+FROM orders o
+INNER JOIN customers c ON o.customer_id = c.customer_id
+
+The letters o and c are table aliases. They keep the query short and tell the database which table each column comes from. Without them, customer_id would be ambiguous because both tables have it.
+
+INNER JOIN keeps only rows with a match on both sides. An order whose customer_id does not exist in customers disappears. In most databases JOIN on its own means INNER JOIN.
+
+LEFT JOIN keeps every row of the left table, the first one named, and fills the right-side columns with NULL when there is no match. This is how you find customers who did not buy:
+
+SELECT c.customer_id, c.customer_name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id AND o.order_date >= '2026-10-01' AND o.order_date < '2026-11-01'
+WHERE o.order_id IS NULL
+
+This is often called an anti-join, and it gives the sales team a ready call list.
+
+There are two other join types. RIGHT JOIN is a LEFT JOIN with the tables swapped, and FULL OUTER JOIN keeps unmatched rows from both sides. MySQL does not support FULL OUTER JOIN directly.
+
+::: diagram matrix | Join types | Keeps unmatched rows of the right table (no → yes) | Keeps unmatched rows of the left table (no → yes)
+LEFT JOIN: all left rows, matching right rows only
+FULL OUTER JOIN: all rows from both tables
+INNER JOIN: matching rows only
+RIGHT JOIN: all right rows, matching left rows only
+:::
+
+::: quiz
+? You need a list of all products, including those that never sold, with their total quantity sold. Which join do you use from products to order_lines?
+- INNER JOIN || Products with no sales would disappear from the list.
+* LEFT JOIN from products to order_lines || Correct. All products are kept, and those without sales show NULL, which you can turn into 0.
+- No join, only the products table || Quantities sold are in order_lines, so a join is needed.
+:::
+
+## 2. Building the full sales view
+
+To rebuild the sales_lines view used in Lesson 3, join all four tables, starting from the table with the finest grain:
+
+SELECT ol.order_line_id, o.order_id, o.order_date, o.status, c.customer_name, c.province, c.segment, p.category, ol.quantity * ol.unit_price AS line_amount
+FROM order_lines ol
+INNER JOIN orders o ON ol.order_id = o.order_id
+INNER JOIN customers c ON o.customer_id = c.customer_id
+INNER JOIN products p ON ol.product_id = p.product_id
+
+The grain stays at one row per order line, because each line matches exactly one order, one customer and one product. Joining from the many side to the one side keeps the grain.
+
+::: slides
+SLIDE Step 1: Start from the finest grain | Begin with order_lines; Note the row count | The base table sets the grain
+SLIDE Step 2: Join one table at a time | Add orders, then customers, then products; Write each ON with both keys | Small steps, easy checks
+SLIDE Step 3: Count again | Row count should stay the same; A higher count means a key is not unique | Same rows, same grain
+SLIDE Step 4: Reconcile the total | SUM(line_amount) should match the invoicing report | Numbers prove the join
+:::
+
+## 3. Pitfalls: duplicated rows and the LEFT JOIN trap
+
+Row multiplication happens when you join from the one side to the many side and then add a value stored on the one side. Suppose orders has a delivery_fee column. Order 5021 has a fee of 15,000 Kz and four lines. After joining orders to order_lines, the fee appears on four rows. SUM(delivery_fee) gives 4 × 15,000 = 60,000 Kz instead of 15,000 Kz. Fix this by summing the fee from orders alone, or by aggregating lines to order level first and then joining.
+
+The same happens when the one side is not unique. If a price table has an old and a new row for one product, every sale of that product is doubled.
+
+The LEFT JOIN trap: a condition on the right table placed in WHERE removes the NULL rows, so the LEFT JOIN behaves like an INNER JOIN. In the anti-join above, the date filter is in ON for this reason. If it were in WHERE, customers without October orders would be removed before you could find them.
+
+::: quiz
+? An analyst joins orders to order_lines and sums delivery_fee. The result is three times the finance figure. What is the most likely cause?
+- The database rounds fees || Rounding cannot triple a total.
+- The orders table has missing fees || Missing fees would lower the total, not raise it.
+* Each fee is repeated on every line of its order || Correct. Order-level values must be summed before joining to lines.
+:::
+
+## Worked example: inactive customers in Huíla
+
+A distributor's branch in Lubango wants a list of Huíla wholesale customers who ordered in September 2026 but not in October. The analyst, Ana, first selects customers with a September order, using an INNER JOIN to orders with the September date range and SELECT DISTINCT c.customer_id. She then LEFT JOINs those customers to October orders, with the October date filter in the ON clause, and keeps rows where o.order_id IS NULL. Of 46 September buyers, 9 did not order in October. Their September purchases totalled 41,000,000 Kz, which shows the sales manager the value at risk.
+
+::: case | The doubled stock value
+Ana's colleague joins order_lines to a product price table to value October sales at standard cost. The result is 2.1 billion Kz, but revenue was only 1.4 billion Kz. The price table has 1,180 rows for 950 products.
+? What should he check first?
+- Whether October had unusually high sales || The gap is too large and the table counts point to a data problem.
+- Whether the costs are in USD || A currency mix-up is possible but the row counts give a clearer signal.
+* Whether product_id is unique in the price table || Correct. 1,180 rows for 950 products means some products have several rows, which duplicates sales lines.
+:::
+
+## Tool: join check template
+
+- Base table and its grain
+- Row count before the join
+- Join type chosen and why (INNER or LEFT)
+- Keys used in ON, written with table aliases
+- Is the key unique on the one side? (check with GROUP BY key HAVING COUNT(*) > 1)
+- Row count after the join
+- Right-table filters placed in ON for LEFT JOINs
+- Total reconciled with a trusted figure
+
+## Common mistakes
+
+- Using INNER JOIN when unmatched rows must be kept.
+- Summing an order-level value after joining to order lines.
+- Putting a right-table filter in WHERE after a LEFT JOIN.
+- Not checking that the key is unique on the one side.
+
+## Self-check
+
+- What does LEFT JOIN return when there is no match? (Answer: the left row with NULL in the right-table columns.)
+- How do you find customers with no orders in a period? (Answer: LEFT JOIN to orders with the period in ON, then WHERE o.order_id IS NULL.)
+- Why does a join sometimes increase totals? (Answer: one row matches many rows, so its values are repeated.)
+
+## Practical assignment
+
+Build the sales_lines view for your own data by joining your order lines, orders, customers and products tables. Record the row count after each join and reconcile the final total with the invoicing report. Then list customers who bought last month but not this month.
+
+## Summary
+
+- INNER JOIN keeps matches only, and LEFT JOIN keeps all rows from the left table.
+- Joining many to one keeps the grain, while joining one to many repeats values.
+- Count rows, check key uniqueness and reconcile totals after every join.
+=== 20
+SLIDE What you will learn | Classify data with CASE WHEN; Replace NULLs with COALESCE; Prevent division by zero with NULLIF; Group dates by month in several dialects | Clean inputs, trusted outputs
+SLIDE CASE WHEN | Tests conditions in order; Returns the first matching result; ELSE catches everything else | Build business categories in SQL
+SLIDE COALESCE and NULLIF | COALESCE returns the first non-NULL value; NULLIF(a, b) returns NULL when a equals b; Use NULLIF on divisors | Handle missing and zero values on purpose
+SLIDE Standardising text | TRIM removes spaces; UPPER or LOWER fixes case; Map spellings with CASE or a lookup table | One value per real thing
+SLIDE Date ranges | Start inclusive, end exclusive; order_date >= start AND order_date < next start; Works for dates and timestamps | Avoid BETWEEN with timestamps
+SLIDE Month truncation | PostgreSQL: DATE_TRUNC('month', d); SQL Server 2022: DATETRUNC(month, d); MySQL: DATE_FORMAT(d, '%Y-%m-01'); Standard: EXTRACT(YEAR FROM d) and EXTRACT(MONTH FROM d) | Same idea, different syntax
+SLIDE Common mistakes | CASE conditions in the wrong order; Replacing NULL with 0 when unknown is meant; BETWEEN on timestamps; Mixed text spellings | Clean deliberately and document it
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- use CASE WHEN to classify customers, products and orders into business groups
+- handle missing values with COALESCE and avoid division by zero with NULLIF
+- standardise inconsistent text values with TRIM, UPPER and mapping
+- filter and group dates by month, and adapt the syntax to your database dialect
+
+## Key terms
+
+::: terms
+CASE WHEN: an expression that returns a value based on conditions tested in order
+COALESCE: a function that returns the first value in its list that is not NULL
+NULLIF: a function that returns NULL when its two arguments are equal
+Date truncation: cutting a date back to the start of its month, week or year
+Half-open range: a date range that includes the start date and excludes the end date
+Dialect: the version of SQL used by one database product
+:::
+
+## 1. Classifying with CASE WHEN
+
+Business reports use categories that are not stored in the database: order size bands, customer tiers, on-time or late. CASE WHEN creates them in the query:
+
+SELECT order_id, order_total,
+CASE WHEN order_total >= 5000000 THEN 'Large'
+WHEN order_total >= 1000000 THEN 'Medium'
+ELSE 'Small' END AS order_band
+FROM order_totals
+
+The conditions are tested from top to bottom and the first true one wins. An order of 6,000,000 Kz is true for both the first and second conditions, but it becomes Large because that condition comes first. If you put the 1,000,000 Kz test first, every large order would be called Medium. Always order bands from the most specific or highest down.
+
+CASE also works inside aggregates, which lets you build several measures in one query. SUM(CASE WHEN category = 'rice' THEN line_amount ELSE 0 END) AS rice_revenue gives rice revenue next to total revenue on the same row.
+
+::: quiz
+? A CASE expression tests order_total >= 1000000 first and order_total >= 5000000 second. What happens to an order of 7,000,000 Kz?
+* It is classified by the first condition, as Medium || Correct. The first true condition wins, so the order of tests matters.
+- It is classified as Large because that value is higher || CASE does not look for the best match, only the first true one.
+- The query returns an error || The syntax is valid, but the logic is wrong.
+:::
+
+## 2. Missing values, zero values and inconsistent text
+
+COALESCE returns the first non-NULL value. COALESCE(discount_pct, 0) treats a missing discount as zero, which is correct if the business rule says no discount was given. COALESCE(salesperson, 'Unassigned') makes missing salespeople visible in a report instead of a blank. Decide on purpose: replacing an unknown cost with 0 would make margins look better than they are.
+
+NULLIF prevents division by zero. Margin percentage is (revenue - cost) / revenue × 100. If a product had no revenue, dividing by zero causes an error in most databases. Write:
+
+SELECT product_id, (revenue - cost) * 100.0 / NULLIF(revenue, 0) AS margin_pct
+FROM product_margins
+
+For a product with revenue of 2,500,000 Kz and cost of 2,150,000 Kz, margin is 350,000 / 2,500,000 × 100 = 14%. For a product with zero revenue, the result is NULL instead of an error.
+
+Text often arrives in several spellings: 'Luanda', 'LUANDA', ' luanda'. Use TRIM to remove leading and trailing spaces and UPPER or LOWER to fix case: UPPER(TRIM(province)). Map remaining variants, such as 'LDA', with CASE WHEN or, better, a small lookup table that the team maintains.
+
+::: diagram steps | A cleaning sequence for a sales extract
+Profile: count NULLs and distinct values in each key column
+Standardise: TRIM and UPPER text, CAST numbers and dates
+Fill: COALESCE missing values where a business rule allows it
+Classify: build bands and groups with CASE WHEN
+Validate: reconcile totals and row counts with the source
+:::
+
+## 3. Working with dates
+
+Dates are the most common source of reporting errors. Two methods prevent most of them.
+
+First, use half-open ranges. Many order_date columns are timestamps with a time of day. BETWEEN '2026-10-01' AND '2026-10-31' includes only the first second of 31 October, so orders later that day are lost. Write:
+
+WHERE order_date >= '2026-10-01' AND order_date < '2026-11-01'
+
+This works for dates and timestamps, and the next period always starts where the last one ended.
+
+Second, group by the start of the month. The function differs by dialect:
+
+- PostgreSQL and Snowflake: DATE_TRUNC('month', order_date)
+- SQL Server 2022 and later: DATETRUNC(month, order_date), and in older versions DATEFROMPARTS(YEAR(order_date), MONTH(order_date), 1)
+- MySQL: DATE_FORMAT(order_date, '%Y-%m-01')
+- Standard SQL: EXTRACT(YEAR FROM order_date) and EXTRACT(MONTH FROM order_date), grouped together
+
+::: slides
+SLIDE Step 1: Check the column type | Is order_date a date or a timestamp; Look at a few values | Type decides the method
+SLIDE Step 2: Write a half-open range | order_date >= '2026-10-01'; order_date < '2026-11-01' | Start inclusive, end exclusive
+SLIDE Step 3: Truncate to month | Use your dialect's function; Give it an alias such as sales_month | One row per month
+SLIDE Step 4: Group and sort | GROUP BY the truncated month; ORDER BY sales_month | Ready for trends
+:::
+
+::: quiz
+? Order_date is a timestamp. Which filter returns all orders placed in October 2026?
+- order_date BETWEEN '2026-10-01' AND '2026-10-31' || This misses orders placed after midnight at the start of 31 October.
+* order_date >= '2026-10-01' AND order_date < '2026-11-01' || Correct. The half-open range includes every moment of October.
+- order_date = '2026-10' || A month is not a single date value.
+:::
+
+## Worked example: cleaning a branch extract
+
+A distributor's branch in Huambo sends a monthly sales extract to head office. The province column contains 'Huambo', 'HUAMBO ' and 'Hbo'. Discount is blank for many lines, and order_date is a timestamp. The analyst, Carlos, applies UPPER(TRIM(province)) and maps 'HBO' to 'HUAMBO' with CASE WHEN. He uses COALESCE(discount_pct, 0) because the sales policy says a blank discount means none was given. He groups by DATE_TRUNC('month', order_date) in PostgreSQL. After cleaning, the province shows one value and October revenue rises from 412,000,000 Kz to 436,500,000 Kz, matching the invoicing report.
+
+::: case | The missing end-of-month sales
+The finance manager says October revenue in the head office report is 24,500,000 Kz lower than invoicing. Carlos's colleague used order_date BETWEEN '2026-10-01' AND '2026-10-31'. Many large wholesale orders are entered on the last afternoon of the month.
+? What should Carlos change?
+- Add the missing 24,500,000 Kz as a manual adjustment || This hides the cause and the gap will return every month.
+- Use BETWEEN '2026-10-01' AND '2026-11-01' || This would include orders from the first moment of 1 November.
+* Use order_date >= '2026-10-01' AND order_date < '2026-11-01' || Correct. A half-open range captures the whole last day without overlap.
+- Remove the date filter completely || The report would then include every month.
+:::
+
+## Tool: data cleaning log
+
+- Column checked and problem found
+- Number of rows affected
+- Rule applied (TRIM, UPPER, mapping, COALESCE, CAST)
+- Business reason and who approved it
+- Date filter method (half-open range)
+- Month function used and database dialect
+- Total before and after cleaning, reconciled with the source
+
+## Common mistakes
+
+- Ordering CASE conditions from lowest to highest.
+- Replacing NULL with 0 when the value is truly unknown.
+- Using BETWEEN with timestamp columns.
+- Copying a date function from another dialect without testing it.
+
+## Self-check
+
+- What does COALESCE(salesperson, 'Unassigned') return when salesperson is NULL? (Answer: 'Unassigned'.)
+- Why use NULLIF(revenue, 0) in a margin formula? (Answer: it turns a zero divisor into NULL and avoids a division error.)
+- How do you group by month in PostgreSQL? (Answer: DATE_TRUNC('month', order_date).)
+
+## Practical assignment
+
+Take one monthly extract you use. Profile three key columns for NULLs and spelling variants, write the cleaning rules in SQL, and record them in the cleaning log. Rewrite any BETWEEN date filters as half-open ranges and compare the totals.
+
+## Summary
+
+- CASE WHEN builds business categories, and the first true condition wins.
+- COALESCE and NULLIF handle missing and zero values on purpose.
+- Use half-open date ranges and your dialect's month function for reliable monthly reports.
+=== 20
+SLIDE What you will learn | Structure queries with CTEs; Rank rows with ROW_NUMBER and RANK; Calculate running totals and month-on-month growth; Turn results into a short insight | From query to decision
+SLIDE CTEs | WITH name AS (query); Break a long query into named steps; Each step can use the previous one | Readable, testable SQL
+SLIDE Window functions | Calculate across rows without collapsing them; OVER defines the window; PARTITION BY splits into groups; ORDER BY sets the sequence | Keep the detail, add context
+SLIDE Ranking | ROW_NUMBER: 1, 2, 3 with no ties; RANK: ties share a rank, then gaps; Top N per group: filter rank <= N | Top products per province
+SLIDE Running totals | SUM(revenue) OVER (ORDER BY sales_month); Year-to-date with PARTITION BY year | Cumulative performance
+SLIDE Month-on-month growth | LAG(revenue) gives the previous month; Growth % = (this - last) / last x 100; Use NULLIF on last | Compare with the right base
+SLIDE Insight for managers | Answer first; Two or three supporting facts; One recommended action | What, why, what next
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- structure a multi-step query with common table expressions (CTEs)
+- use ROW_NUMBER and RANK to find the top items in each group
+- calculate running totals and month-on-month growth with window functions
+- write a short, answer-first insight for a manager
+
+## Key terms
+
+::: terms
+CTE: a common table expression, a named temporary result defined with WITH and used in the main query
+Window function: a function that calculates across a set of rows related to the current row, without grouping them into one row
+PARTITION BY: splits rows into groups for a window function
+LAG: returns a value from a previous row in the window, such as last month's revenue
+Running total: a cumulative sum that adds each new row to all previous rows
+:::
+
+## 1. Common table expressions
+
+Real analysis has several steps: clean, summarise, compare. Nesting queries inside each other quickly becomes unreadable. A CTE gives each step a name:
+
+WITH monthly AS (
+SELECT DATE_TRUNC('month', order_date) AS sales_month, SUM(line_amount) AS revenue
+FROM sales_lines
+WHERE status = 'delivered'
+GROUP BY DATE_TRUNC('month', order_date)
+)
+SELECT sales_month, revenue
+FROM monthly
+ORDER BY sales_month
+
+You can define several CTEs separated by commas, each using the ones before it. Because each step has a name, you can run and check it on its own. CTEs are part of standard SQL and are supported by PostgreSQL, SQL Server, Oracle and MySQL 8.0 and later.
+
+::: quiz
+? Why do analysts use CTEs for multi-step analysis?
+- They make queries run faster in every database || Speed depends on the database and the query.
+* They split a long query into named steps that are easier to read and check || Correct. Each step can be tested on its own.
+- They permanently store results in a new table || A CTE exists only while the query runs.
+:::
+
+## 2. Window functions: ranking and running totals
+
+GROUP BY collapses rows into one row per group. A window function keeps every row and adds a calculation across related rows. The OVER clause defines the window: PARTITION BY says which rows belong together, and ORDER BY sets the sequence inside each group. Window functions were added to the SQL standard in 2003 and are supported by all major databases, including MySQL from version 8.0.
+
+To find the top three products by revenue in each province:
+
+WITH product_sales AS (
+SELECT province, product_name, SUM(line_amount) AS revenue
+FROM sales_lines
+GROUP BY province, product_name
+),
+ranked AS (
+SELECT province, product_name, revenue, ROW_NUMBER() OVER (PARTITION BY province ORDER BY revenue DESC) AS rn
+FROM product_sales
+)
+SELECT province, product_name, revenue
+FROM ranked
+WHERE rn <= 3
+
+ROW_NUMBER gives 1, 2, 3 with no ties. RANK gives tied rows the same number and then skips: 1, 2, 2, 4. DENSE_RANK does not skip: 1, 2, 2, 3. You filter on the rank in an outer query because window functions are calculated after WHERE.
+
+A running total adds each month to the months before it: SUM(revenue) OVER (ORDER BY sales_month) AS cumulative_revenue. Add PARTITION BY EXTRACT(YEAR FROM sales_month) to restart it every January and get year-to-date revenue.
+
+::: slides
+SLIDE Step 1: Summarise in a CTE | Revenue by month or by product; One row per item you will compare | Window functions work best on summaries
+SLIDE Step 2: Define the window | PARTITION BY the group, such as province; ORDER BY the measure or the month | Who is compared with whom
+SLIDE Step 3: Choose the function | ROW_NUMBER or RANK for top lists; SUM OVER for running totals; LAG for previous values | One function per question
+SLIDE Step 4: Filter in an outer query | WHERE rn <= 3; Window results cannot be filtered in the same WHERE | Rank first, filter after
+:::
+
+## 3. Month-on-month growth
+
+LAG(revenue) OVER (ORDER BY sales_month) returns the revenue of the previous row, which is last month. Growth is then:
+
+growth % = (this month - last month) / last month × 100
+
+WITH monthly AS (...),
+compared AS (
+SELECT sales_month, revenue, LAG(revenue) OVER (ORDER BY sales_month) AS prev_revenue
+FROM monthly
+)
+SELECT sales_month, revenue, prev_revenue, (revenue - prev_revenue) * 100.0 / NULLIF(prev_revenue, 0) AS mom_growth_pct
+FROM compared
+
+If September revenue was 1,600,000,000 Kz and October 1,840,000,000 Kz, growth is (1,840,000,000 - 1,600,000,000) / 1,600,000,000 × 100 = 15%. The first month has no previous month, so its growth is NULL. Make sure no month is missing from the data, or LAG will compare with the wrong month. Month-on-month changes can reflect seasonality and working days, so also compare with the same month last year where data allows.
+
+::: quiz
+? September revenue was 800,000,000 Kz and October revenue was 720,000,000 Kz. What is the month-on-month growth?
+- +10% || The direction is wrong. Revenue fell.
+* -10% || Correct. (720 - 800) / 800 × 100 = -10%.
+- -11.1% || This divides by October instead of September. The base is the previous month.
+:::
+
+## 4. Turning results into an insight
+
+Managers need the answer, not the query. The Pyramid Principle, developed by Barbara Minto, recommends starting with the main message and then giving the supporting points.
+
+::: diagram pyramid | An answer-first insight
+Main message: the answer to the question in one sentence
+Supporting facts: two or three numbers that prove it
+Data and method: source, period and filters used
+:::
+
+A good insight has three parts: what happened, why, and what to do next. Keep it short and round the numbers.
+
+## Worked example: October performance note
+
+A distributor in Luanda sells rice, sugar, flour and cooking oil in five provinces. The commercial director asks why October was strong. The analyst, Sílvia, runs the monthly CTE with LAG and finds 15% month-on-month growth. A second query with ROW_NUMBER by province shows that 5 kg rice packs are the top product in three provinces. She writes: "October delivered revenue rose 15% to 1.84 billion Kz. Most of the increase came from rice in Luanda and Benguela, where two new wholesale customers placed large orders. We recommend confirming their November volumes and checking rice stock cover for the next six weeks."
+
+::: case | The growth figure for the board
+Sílvia's colleague reports that revenue "grew 40% in October". Checking his query, she sees that September is missing from the monthly CTE because of a system migration, so LAG compared October with August.
+? What should Sílvia recommend?
+- Send the 40% figure because it is technically correct for the data || The data is incomplete, so the comparison is misleading.
+* Restore the missing month or label the comparison clearly as October versus August || Correct. LAG takes the previous row, so a missing month gives a wrong base.
+- Replace LAG with a running total || A running total answers a different question.
+- Remove ORDER BY from the window || Without ORDER BY there is no reliable previous row.
+:::
+
+## Tool: insight note template
+
+- Question asked, in one sentence
+- Main message: the answer with one key number
+- Supporting fact 1: the biggest driver
+- Supporting fact 2: a comparison (last month or last year)
+- Recommended action and owner
+- Data note: source tables, period, filters, dialect
+
+## Common mistakes
+
+- Filtering on ROW_NUMBER in the same WHERE clause.
+- Calculating growth with a missing month in the data.
+- Dividing by the current month instead of the previous one.
+- Sending a table of numbers without a main message.
+
+## Self-check
+
+- What is the difference between ROW_NUMBER and RANK? (Answer: ROW_NUMBER never gives ties, RANK gives tied rows the same rank and then skips.)
+- Which function returns last month's value in a monthly series? (Answer: LAG.)
+- What comes first in an answer-first insight? (Answer: the main message.)
+
+## Practical assignment
+
+Build a monthly revenue CTE for the last 12 months of your data. Add a running total and month-on-month growth with LAG, and list the top three products per province with ROW_NUMBER. Write a five-line insight note for your manager using the template.
+
+## Summary
+
+- CTEs break analysis into named, testable steps.
+- Window functions rank, accumulate and compare rows without collapsing them.
+- Growth uses the previous month as the base, and insights start with the answer.

@@ -1,0 +1,866 @@
+=== 20
+SLIDE What you will learn | Describe the seven stages of the B2B sales process; Qualify prospects with BANT; Calculate conversion rates and weighted pipeline value; Work backwards from a target to the activity you need | A pipeline turns a target into daily actions
+SLIDE Seven stages | Prospect; Qualify; Discover needs; Propose; Negotiate; Close; After-sales and account growth | Each stage needs a clear exit criterion
+SLIDE Qualifying with BANT | Budget: can they pay and on what terms; Authority: who really decides; Need: a real problem you can solve; Timing: when they will buy | Drop weak prospects early
+SLIDE Pipeline stages | Lead: a name and a contact; Qualified: BANT confirmed; Proposal: offer received and a date set to discuss it; Won or lost: order received or a clear no | Move a deal only when the customer acts
+SLIDE Conversion rates | Stage rate = deals reaching the next stage ÷ deals entering the stage; Overall rate = stage rates multiplied together; Example: 40% × 50% × 50% = 10% | Measure your own rates every month
+SLIDE Weighted pipeline | Deal value × stage probability; Add the results to get a forecast; Compare the forecast with the remaining target | Weighted value, not total value, predicts sales
+SLIDE Common mistakes | Chasing every friendly lead; No exit criteria; Forecasting from hope; Stopping prospecting when busy | Fill the top, manage the middle, protect the base
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the seven stages of the B2B sales process in FMCG distribution;
+- qualify a prospect using the BANT checklist;
+- calculate stage conversion rates and the weighted value of a pipeline;
+- work backwards from a sales target to the number of leads you need.
+
+## Key terms
+
+::: terms
+B2B sale: a sale to a business that resells or uses the product, such as a wholesaler, supermarket, cantina or hotel
+Lead: a business that might buy from you but has not yet been qualified
+Pipeline: the list of all open opportunities, grouped by the stage they have reached
+Conversion rate: the percentage of opportunities that move from one stage to the next
+Weighted pipeline value: the value of each open deal multiplied by its probability of being won, added together
+:::
+
+## 1. The seven stages of the B2B sales process
+
+Selling to businesses is a process, not a single conversation. A supermarket buyer in Talatona or a wholesaler in the Kikolo market buys after several contacts, and each contact has a job. In FMCG distribution the process has seven stages:
+
+- Prospecting: finding businesses that could buy, for example by walking a market or asking customers for referrals.
+- Qualifying: checking whether the prospect is worth your time.
+- Discovering needs: understanding how the customer buys and makes money.
+- Proposing: presenting an offer of range, prices, terms and service that fits those needs.
+- Negotiating: agreeing the final terms.
+- Closing: getting the first order, opening the account and having the credit limit approved.
+- After-sales and growth: delivering on time, solving problems and growing the range.
+
+Give every stage an exit criterion: a customer action that proves the deal has moved. For example, a deal leaves "Proposing" only when the buyer has received the offer and agreed a date to discuss it.
+
+::: diagram steps | The B2B sales process
+Prospect: build a list of target outlets
+Qualify: confirm budget, authority, need and timing
+Discover: learn how the customer buys and sells
+Propose: offer range, price, terms and service
+Negotiate: agree terms by trading concessions
+Close: first order, account opened, credit approved
+After-sales: deliver well and grow the account
+:::
+
+## 2. Qualifying prospects with BANT
+
+BANT is a widely used checklist for deciding whether a prospect deserves your time:
+
+- Budget: can the business pay, in cash or on terms you can accept? A new cantina may only be able to buy cash.
+- Authority: who decides? In a family wholesaler it is often the owner, not the shop manager.
+- Need: does the customer have a real problem you can solve, such as frequent stock-outs from its current supplier?
+- Timing: when will it buy? Before the festive season, or never?
+
+If two or more BANT elements are unknown or negative, keep the prospect on a watch list but do not invest heavy effort yet.
+
+::: quiz
+? A new mini-market owner in Viana likes your products but says his brother-in-law decides all purchases. Which BANT element is not yet confirmed?
+- Budget || Nothing suggests he cannot pay.
+* Authority || Correct. You are talking to someone who does not make the decision, so you need to meet the brother-in-law.
+- Need || He likes the products, which suggests a need exists.
+- Timing || Timing is unclear, but the main gap is who decides.
+:::
+
+## 3. Pipeline stages and conversion rates
+
+A simple FMCG pipeline uses four stages: Lead, Qualified, Proposal, and Won or Lost. Each month, measure how many deals moved forward:
+
+- Stage conversion rate = deals that reached the next stage ÷ deals that entered the stage × 100
+- Overall conversion rate = the stage rates multiplied together
+
+Then use your rates to work backwards from your target:
+
+::: slides
+SLIDE Step 1: Set the target | Example: 6 new wholesale accounts this quarter | Start from the result you need
+SLIDE Step 2: Use your own rates | Lead to qualified 40%; Qualified to proposal 50%; Proposal to won 50% | Use last quarter's real data
+SLIDE Step 3: Work backwards | Proposals = 6 ÷ 0.5 = 12; Qualified = 12 ÷ 0.5 = 24; Leads = 24 ÷ 0.4 = 60 | Overall rate = 10%
+SLIDE Step 4: Plan the activity | 60 leads in 13 weeks is about 5 new leads per week | Put prospecting time into your weekly route
+:::
+
+Next, forecast with the weighted pipeline. Give each stage a probability from your own history, for example Qualified 20% and Proposal 50%, multiply each deal value by it and add the results.
+
+::: quiz
+? You have two proposals worth 8,000,000 Kz each at 50% probability and five qualified deals worth 4,000,000 Kz each at 20%. What is the weighted pipeline value?
+- 36,000,000 Kz || This is the total value of all deals, not the weighted value.
+- 8,000,000 Kz || This counts only the proposals. Add the qualified deals: 5 × 4,000,000 × 20% = 4,000,000 Kz.
+* 12,000,000 Kz || Correct. 2 × 8,000,000 × 50% = 8,000,000 plus 5 × 4,000,000 × 20% = 4,000,000.
+- 18,000,000 Kz || Check the probabilities: 50% for proposals, 20% for qualified deals.
+:::
+
+## Worked example: new mini-market accounts in Cazenga
+
+Edna is a sales representative for a food distributor in Luanda. Her quarterly target is 30,000,000 Kz of sales from new accounts in Cazenga. A new mini-market's orders in its first quarter average 2,500,000 Kz, so she needs 12 new accounts.
+
+Her rates last quarter: lead to qualified 50%, qualified to proposal 60%, proposal to won 40%. Working backwards:
+
+- Proposals needed = 12 ÷ 0.4 = 30
+- Qualified prospects needed = 30 ÷ 0.6 = 50
+- Leads needed = 50 ÷ 0.5 = 100
+- Overall conversion = 50% × 60% × 40% = 12%
+
+That is about 8 new leads per week. Edna adds one prospecting hour to each route day and asks every customer for one referral. After six weeks her weighted pipeline is 14,000,000 Kz against a 30,000,000 Kz target, so she agrees with her supervisor where extra leads will come from instead of waiting for the quarter to end.
+
+::: case | The big wholesaler in Kikolo
+Mateus is 40% below target with six weeks left. A large wholesaler in Kikolo has asked for his price list three times but never ordered. The owner is always travelling, and the shop manager cannot decide anything.
+? What should Mateus do?
+- Send a lower price to tempt the shop manager || Price does not fix a missing decision-maker.
+* Treat the deal as unqualified, ask for a meeting with the owner and spend more time on new qualified leads || Correct. Authority and timing are unconfirmed. Mateus needs the owner, and his target needs more qualified deals.
+- Count the deal at 50% in his forecast because the customer is interested || Interest is not an exit criterion. The forecast would be inflated.
+- Visit the shop manager daily until he orders || He cannot decide, so this wastes route time.
+:::
+
+## Tool: pipeline review checklist
+
+- Target for the period and gap to date:
+- Number and value of deals in each stage, exit criteria met (yes or no):
+- Stage conversion rates this month compared with last quarter:
+- Weighted pipeline value compared with the remaining target:
+- Deals with no customer action for 30 days:
+- New leads needed next month to keep the pipeline full:
+
+## Common mistakes
+
+- Spending time on prospects who fail BANT because they are friendly.
+- Moving deals forward because of a feeling instead of a customer action.
+- Forecasting from total pipeline value instead of weighted value.
+- Treating the first order as the end of the process.
+
+## Self-check
+
+- What are the four BANT elements? (Answer: budget, authority, need and timing.)
+- If 30 of 80 qualified deals reached the proposal stage, what is the conversion rate? (Answer: 30 ÷ 80 = 37.5%.)
+- Why is a 100 million Kz pipeline not a 100 million Kz forecast? (Answer: each deal has a probability of being won, so the forecast is the weighted value.)
+
+## Practical assignment
+
+Place every open opportunity in a stage using the exit criteria and calculate your weighted pipeline value. Then calculate how many new leads you need next month and add that prospecting time to your route plan.
+
+## Summary
+
+- The B2B sales process has seven stages, from prospecting to after-sales, each with a customer-action exit criterion.
+- BANT protects your time, and stage conversion rates show how much activity a target needs.
+- Forecast with weighted pipeline value and act early when it falls short of the target.
+=== 20
+SLIDE What you will learn | Classify accounts with ABC analysis; Combine revenue and margin in a portfolio matrix; Describe what each trade channel needs; Map the roles in a buying centre | Not every customer deserves the same effort
+SLIDE ABC analysis | Rank customers by 12 months of net sales; Calculate each customer's cumulative share; A = first 80% of sales, B = next 15%, C = last 5% | Effort follows value
+SLIDE Add margin | Revenue hides discounts and cost to serve; Calculate gross margin per account after all discounts; Subtract delivery, merchandising and credit costs | Big is not always profitable
+SLIDE Portfolio matrix | Protect: high revenue, high margin; Develop: low revenue, high margin; Fix terms: high revenue, low margin; Serve efficiently: low revenue, low margin | Each box has its own strategy
+SLIDE Channel needs | Wholesaler: price, credit, availability; Supermarket: listing terms, promotions, store delivery; Cantina: small drops, cash, fast movers; HoReCa: consistent quality, catering packs | Sell to the customer's business model
+SLIDE The buying centre | Initiator, user, influencer, decider, buyer, gatekeeper; Described by Webster and Wind (1972); One person can hold several roles | Know everyone who shapes the decision
+SLIDE Common mistakes | Same visit frequency for all; Ignoring cost to serve; Selling only to the buyer; One pitch for every channel | Segment first, then tailor
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- classify a customer base into A, B and C accounts using cumulative revenue;
+- calculate gross margin per account and place accounts in a portfolio matrix;
+- explain how the needs of wholesalers, supermarkets, cantinas and HoReCa customers differ;
+- identify the six roles of a buying centre in a customer's business.
+
+## Key terms
+
+::: terms
+Segmentation: dividing customers into groups that need a different level or type of service
+ABC analysis: ranking customers by revenue and grouping them by their cumulative share of sales
+Cost to serve: the cost of delivering, merchandising, financing and supporting one account
+Gross margin: net revenue minus the cost of the goods sold
+Buying centre: all the people in a customer's business who take part in a purchase decision
+:::
+
+## 1. ABC analysis of your accounts
+
+The Pareto principle observes that a small share of causes often produces a large share of results. In sales, a minority of customers usually provides most of the revenue. ABC analysis turns this into a method:
+
+::: slides
+SLIDE Step 1: List and rank | Export 12 months of sales per customer; Sort from largest to smallest | Use net sales after discounts
+SLIDE Step 2: Cumulative share | Divide each customer's sales by total sales; Add the percentages down the list | The last customer reaches 100%
+SLIDE Step 3: Set cut-offs | A: customers making up the first 80% of sales; B: the next 15%; C: the last 5% | Common cut-offs, adjust them to your business
+SLIDE Step 4: Act on the classes | Visit frequency, service level and manager time differ by class | Review the classes every six months
+:::
+
+Class A usually contains a few accounts, such as supermarket chains and large wholesalers, while class C contains many small cantinas. C customers still matter: together they give reach and often better margins. They simply need a lower-cost service model, such as telesales, a wholesaler partner or a van route.
+
+## 2. Adding margin: the customer portfolio matrix
+
+Revenue shows size, not profit. A large chain may demand extra discounts, long terms and delivery to many stores. For each A and B account, calculate:
+
+- Net revenue = invoiced sales − rebates and off-invoice discounts
+- Gross margin = net revenue − cost of goods sold
+- Gross margin % = gross margin ÷ net revenue × 100
+
+Where you can, also subtract the cost to serve: delivery, merchandising, promoters and the cost of credit. Then place each account in the matrix.
+
+::: diagram matrix | Customer portfolio matrix | Revenue (low → high) | Gross margin % (low → high)
+Develop: low revenue, high margin – grow range and volume
+Protect: high revenue, high margin – invest in the relationship
+Serve efficiently: low revenue, low margin – lower the cost to serve
+Fix terms: high revenue, low margin – renegotiate discounts and service
+:::
+
+::: quiz
+? A hotel group buys 15,000,000 Kz a year from you at an 18% gross margin, well above your average. Your average account buys 40,000,000 Kz. Where does it sit in the matrix?
+- Protect || Protect requires high revenue as well as high margin.
+* Develop || Correct. Margin is high but revenue is low, so the aim is to grow its volume and range.
+- Fix terms || Fix terms is for high-revenue, low-margin accounts.
+- Serve efficiently || Its margin is high, so it deserves more than the lowest-cost service.
+:::
+
+## 3. Customer needs by channel and the buying centre
+
+Each trade channel makes money in a different way, so each has different needs:
+
+- Wholesalers and cash & carry: low unit price, credit, availability of full truckloads and fast stock turnover.
+- Supermarkets: listing terms, promotions, planograms, on-time delivery to each store and correct invoices.
+- Traditional trade and cantinas: small drops, cash or short credit, a narrow fast-moving range and regular visits.
+- HoReCa (hotels, restaurants, catering): consistent quality, catering pack sizes and reliable supply for fixed menus.
+
+Inside a business customer, the decision is rarely made by one person. Webster and Wind (1972) called the group involved in a purchase the buying centre. Its roles are:
+
+- Initiator: notices the need, for example a store manager reporting empty shelves.
+- User: works with the product, such as a hotel chef.
+- Influencer: shapes the buying criteria, such as a quality controller or the finance manager.
+- Decider: makes the final choice, often the owner or the category manager.
+- Buyer: places the order and negotiates terms.
+- Gatekeeper: controls access to people and information, such as an assistant.
+
+One person may hold several roles. In a family cantina the owner may be decider, buyer and user. In a supermarket chain, six different people may be involved.
+
+::: quiz
+? A hotel's executive chef rejects a new flour because it gives poor results in the bakery, even though purchasing liked the price. Which role is the chef playing?
+* User and influencer || Correct. The chef uses the product, and his opinion shapes the decision.
+- Gatekeeper || A gatekeeper controls access to people or information, not the quality decision.
+- Buyer || The buyer places the order. Here that is the purchasing department.
+- Initiator || The initiator notices the need to buy in the first place.
+:::
+
+## Worked example: two supermarket accounts in Luanda
+
+A food distributor in Luanda reviews its A accounts. Chain X bought 120,000,000 Kz net last year at a 6% gross margin, which is 7,200,000 Kz. Chain Y bought 40,000,000 Kz at 15%, which is 6,000,000 Kz. X is three times larger but earns only 20% more gross margin.
+
+Next, she deducts cost to serve. X needs deliveries to nine stores and two merchandisers (3,000,000 Kz a year), so it contributes 4,200,000 Kz. Y takes deliveries at one warehouse (500,000 Kz), so it contributes 5,500,000 Kz.
+
+She places X in "Fix terms" and prepares a proposal: central delivery in exchange for keeping the current discount. Y goes in "Develop", with a plan to grow its range from 25 to 40 products and to meet its finance manager, an influencer she had never visited.
+
+::: case | Visit frequency in Huambo
+Joana manages traditional trade for a distributor in Huambo. Her two reps visit all 180 C-class cantinas every week, each ordering about 60,000 Kz per visit. Meanwhile her six A-class wholesalers complain that they rarely see a rep and have started buying from a competitor.
+? What should Joana do?
+- Stop serving all C customers because they are small || Together they give reach and margin. Dropping them loses sales.
+* Move most cantinas to a fortnightly route or a wholesaler partner, and give A accounts weekly visits || Correct. Visit frequency should follow value, and C customers need a lower cost to serve.
+- Keep the routes and hire a third rep for the wholesalers || This adds cost without fixing the allocation of effort.
+- Ask the A wholesalers to phone in their orders || A accounts are the ones that most need personal attention.
+:::
+
+## Tool: account segmentation worksheet
+
+- Customer name, channel and ABC class:
+- Net revenue last 12 months (Kz):
+- Gross margin (Kz and %):
+- Estimated cost to serve (delivery, merchandising, credit):
+- Portfolio matrix box (Protect, Develop, Fix terms, Serve efficiently):
+- Buying centre: names for initiator, user, influencer, decider, buyer, gatekeeper:
+- Visit frequency and service model agreed:
+
+## Common mistakes
+
+- Giving every customer the same visit frequency and service.
+- Judging accounts on revenue only and ignoring discounts and cost to serve.
+- Building a relationship with the buyer only and missing the decider and influencers.
+- Using the same sales pitch for a wholesaler, a supermarket and a hotel.
+
+## Self-check
+
+- What share of sales do A customers usually represent under common ABC cut-offs? (Answer: about the first 80% of sales.)
+- An account has net revenue of 50,000,000 Kz and cost of goods of 44,000,000 Kz. What is its gross margin %? (Answer: 6,000,000 ÷ 50,000,000 = 12%.)
+- Who is the decider in a buying centre? (Answer: the person who makes the final choice, often the owner or category manager.)
+
+## Practical assignment
+
+Export last year's sales by customer, run an ABC analysis and calculate gross margin for your top ten accounts. Place them in the portfolio matrix and, for two of them, write down every buying centre role you know and the roles you have not yet met.
+
+## Summary
+
+- ABC analysis shows where revenue comes from, and visit frequency and service should follow it.
+- Margin and cost to serve show which accounts to protect, develop, fix or serve more efficiently.
+- Sell to the channel's business model and to the whole buying centre, not only the buyer.
+=== 20
+SLIDE What you will learn | Contrast transactional and consultative selling; Plan a call with SPIN questions; Present with feature-advantage-benefit; Handle objections with a five-step method | Ask more, tell less
+SLIDE Consultative selling | Start from the customer's business problem; Diagnose before you propose; Measure success by the customer's results | Be a business adviser, not an order-taker
+SLIDE SPIN questions | Situation: facts about the business; Problem: difficulties and dissatisfaction; Implication: consequences of the problem; Need-payoff: value of solving it | Developed by Neil Rackham
+SLIDE Feature-advantage-benefit | Feature: what the product is or has; Advantage: what it does; Benefit: what it means for this customer | Link every benefit to a need the buyer stated
+SLIDE Five steps for objections | Listen fully; Acknowledge the concern; Clarify with a question; Respond with evidence; Confirm and move on | Never argue with an objection
+SLIDE Common FMCG objections | Your price is too high; I already have a supplier; I have no shelf space; Just send me a price list | Most objections are requests for information
+SLIDE Common mistakes | Pitching before asking; Listing features; Discounting at the first price objection; Treating an objection as a rejection | Diagnose, link, confirm
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between transactional and consultative selling;
+- plan a sales call using the four types of SPIN questions;
+- turn product features into customer benefits using feature-advantage-benefit;
+- handle common FMCG objections with a five-step method.
+
+## Key terms
+
+::: terms
+Consultative selling: selling by diagnosing the customer's business needs and proposing a solution to them
+SPIN: a questioning sequence of Situation, Problem, Implication and Need-payoff questions
+Feature: a fact about a product, such as pack size, shelf life or packaging
+Benefit: what a feature means for a specific customer, linked to a need they have expressed
+Objection: a concern or reason the customer gives for not buying yet
+:::
+
+## 1. From order-taking to consultative selling
+
+Many sales visits in FMCG are transactional: the rep checks the shelf, writes the order and leaves. That works for routine re-orders. But when you want a new listing, a bigger range or a new customer, you must show the buyer how you help their business. Consultative selling starts from the customer's problems, such as slow-moving stock, empty shelves, low margins or an unreliable supplier, and proposes a solution only after diagnosing them.
+
+## 2. SPIN questions
+
+Neil Rackham developed the SPIN model from research into thousands of sales calls, published in his book SPIN Selling (1988). He found that in larger sales, successful salespeople asked more questions about problems and their consequences, and that implication and need-payoff questions were linked to success. SPIN gives four types of question, used roughly in order:
+
+::: diagram steps | The SPIN sequence
+Situation: collect facts about the customer's business
+Problem: uncover difficulties and dissatisfaction
+Implication: explore the consequences of those problems
+Need-payoff: let the customer state the value of a solution
+:::
+
+Plan your questions before the call. Here is the sequence for a supermarket buyer who stocks a competitor's rice:
+
+::: slides
+SLIDE Situation | How many stores do you supply from your warehouse; How often does rice arrive | Ask only the facts you cannot find beforehand
+SLIDE Problem | How often do you run out of 5 kg rice before the next delivery | Look for dissatisfaction
+SLIDE Implication | When the shelf is empty, where do your customers buy their rice; What does a weekend of empty shelves cost in lost sales | Make the problem bigger and clearer
+SLIDE Need-payoff | If delivery came twice a week, what would that mean for your sales | The buyer states the benefit in their own words
+:::
+
+Too many situation questions bore buyers. Do your homework first by looking at the shelf, the price tags and the customer's other suppliers.
+
+::: quiz
+? "If your stock-outs fell by half, what would that be worth to you each month?" What type of SPIN question is this?
+- Situation || Situation questions collect facts. This question asks about value.
+- Problem || Problem questions uncover a difficulty, which is already known here.
+- Implication || Implication questions explore consequences of a problem, not the value of solving it.
+* Need-payoff || Correct. It asks the buyer to state the value of a solution.
+:::
+
+## 3. Feature, advantage, benefit
+
+When you present your offer, translate each feature into a benefit for this customer:
+
+- Feature: what the product is or has. "Our cooking oil comes in 20-litre containers with a tap."
+- Advantage: what the feature does. "The tap lets your cooks pour exactly what they need."
+- Benefit: what it means for this customer, linked to a need they stated. "You told me spillage is wasting oil in your kitchen. This reduces that waste."
+
+A benefit only works if it connects to a need the customer has said aloud, which is why SPIN comes before FAB.
+
+## 4. Handling objections
+
+An objection is not a rejection. It usually means the buyer needs more information or is testing your offer. Use five steps:
+
+- Listen fully without interrupting.
+- Acknowledge the concern: "I understand that price matters a lot in this market."
+- Clarify with a question: "When you say too high, compared with which product and which pack?"
+- Respond with evidence: cost per kilo, rate of sale, delivery reliability, margin for the retailer.
+- Confirm: "Does that answer your concern?" Then move towards the next step.
+
+For a price objection, compare value, not just price. If your 25 kg bag costs 500 Kz more but your service ends stock-outs, show the margin the customer loses on an empty shelf. Never cut price at the first objection: it tells the buyer that your first price was not real.
+
+::: quiz
+? A cantina owner says, "I already have a supplier." What is the best first response?
+- Offer a 5% discount at once || Discounting before you understand the concern gives away margin.
+* Acknowledge it and ask what the current supplier does well and what could be better || Correct. Clarifying questions reveal whether there is a problem you can solve.
+- Explain that your company is the biggest in the province || This is about you, not about the customer's needs.
+- Leave a price list and go || You learn nothing, and price lists rarely sell on their own.
+:::
+
+## Worked example: a catering company in Soyo
+
+Domingos sells food products to HoReCa customers. A catering company in Soyo prepares meals for industrial camps and buys flour from another supplier. Instead of presenting his catalogue, Domingos plans SPIN questions.
+
+Situation: the caterer bakes 2,000 rolls a day. Problem: deliveries often arrive late. Implication: when flour runs out, the caterer buys from local shops at a higher price and once missed a client's breakfast service. Need-payoff: the manager says reliable weekly delivery would protect the contract.
+
+Domingos then uses FAB: "We hold safety stock in our Soyo depot (feature), so we can deliver every Monday (advantage), which means you will not need emergency purchases and your camp contract is protected (benefit)." When the manager objects that the price is 3% higher, Domingos acknowledges, clarifies, and shows that one emergency purchase at local shop prices costs more than a month of the price difference.
+
+::: case | Price objection at a wholesaler in Benguela
+Rita visits a wholesaler in Benguela. The owner says: "Your sugar is 1,000 Kz per bag more than the other distributor. Lower your price or I will not buy." Last month the other distributor failed to deliver for two weeks.
+? What should Rita do first?
+- Match the competitor's price immediately || This gives away margin before Rita knows what the owner values.
+- Explain that her company never changes prices || This ends the conversation without addressing the concern.
+* Acknowledge the concern and ask what the two-week stock-out cost him || Correct. An implication question helps the owner compare the price difference with the cost of unreliable supply.
+- Offer extra credit days instead || A concession given without understanding the need is still a concession lost.
+:::
+
+## Tool: call planning sheet
+
+- Customer, channel and objective for this call:
+- Facts already known (do not ask about these):
+- Two situation questions I still need:
+- Two problem questions:
+- Two implication questions:
+- One need-payoff question:
+- Three FAB statements linked to likely needs:
+- Likely objections and my evidence for each:
+
+## Common mistakes
+
+- Starting the presentation before asking any questions.
+- Listing features without linking them to a need the customer has stated.
+- Asking too many situation questions that the rep could have answered by observing.
+- Discounting at the first price objection.
+- Arguing with the customer instead of clarifying the objection.
+
+## Self-check
+
+- What do the letters SPIN stand for? (Answer: situation, problem, implication, need-payoff.)
+- What turns an advantage into a benefit? (Answer: linking it to a need the customer has stated.)
+- What is the third step in handling an objection? (Answer: clarify the concern with a question.)
+
+## Practical assignment
+
+Choose one customer you want to grow this week. Fill in the call planning sheet, conduct the call, and afterwards write down which questions produced the most useful answers and which objection you met.
+
+## Summary
+
+- Consultative selling diagnoses the customer's business problems before proposing a solution.
+- SPIN questions build the case for change, and FAB links your offer to stated needs.
+- Handle objections by listening, acknowledging, clarifying, responding with evidence and confirming.
+=== 20
+SLIDE What you will learn | Explain what makes an account a key account; Calculate share of wallet; Build a one-page key account plan; Map relationships and plan joint business planning | Key accounts are managed, not just served
+SLIDE What is a key account | Large current or potential value; Strategic for your brands or region; Needs tailored terms and a dedicated manager | Few accounts, deep relationships
+SLIDE Bow-tie and diamond | Bow-tie: one salesperson talks to one buyer; Diamond: many contacts on both sides, function to function | Move from bow-tie to diamond
+SLIDE Share of wallet | Your sales to the account in a category ÷ the account's total purchases in that category; Example: 50m ÷ 200m = 25% | Growth room = the share you do not yet have
+SLIDE The account plan | Account facts and strategy; Performance and share of wallet; Objectives and actions; Relationship map; Risks and review dates | One page, updated every quarter
+SLIDE Relationship mapping | Who decides, who uses, who evaluates, who coaches you; Attitude: supporter, neutral or opponent; Strength of your contact with each person | Never depend on one contact
+SLIDE Joint business planning | Shared annual objectives; Agreed actions from both sides; Joint KPIs and quarterly business reviews | Grow the category together
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what makes an account a key account and how bow-tie and diamond relationships differ;
+- calculate share of wallet and the growth potential of an account;
+- build a one-page key account plan;
+- map the relationships in an account and run a joint business planning process.
+
+## Key terms
+
+::: terms
+Key account: a customer whose current or potential value makes it strategic, so it receives a dedicated manager and a tailored plan
+Key account management (KAM): the planned, long-term management of key accounts across all functions of the supplier
+Share of wallet: your sales to an account in a category as a percentage of everything the account buys in that category
+Relationship map: a chart of the people in an account, their role, their attitude to you and the strength of your contact
+Joint business planning (JBP): a process in which supplier and customer agree shared objectives, actions and KPIs for a period
+:::
+
+## 1. What makes a key account
+
+A key account is not simply a big customer. It is one where your business has a lot to win or lose: a supermarket chain in Luanda, a national wholesaler or a hotel group. Typical criteria are revenue and margin, growth potential, strategic value (for example, the account sets prices in a region) and the need for tailored terms and service.
+
+The relationship model matters. In a bow-tie relationship, one salesperson talks to one buyer. All information passes through two people, and if either leaves, the relationship is at risk. In a diamond relationship, people meet function to function: your logistics team talks to their warehouse, your finance team to their accounts payable, your marketing team to their category manager, and the key account manager coordinates. KAM aims to move important accounts from bow-tie towards diamond.
+
+::: tip | Practical tip
+Ask yourself: if your main contact left the account tomorrow, who else there would take your call?
+:::
+
+## 2. Share of wallet and the account plan
+
+Share of wallet shows how much room you have to grow inside an account:
+
+- Share of wallet = your sales to the account in a category ÷ the account's total purchases in that category × 100
+- Growth potential = the account's total category purchases − your sales
+
+Estimate the account's total purchases from shelf space, store counts or what the buyer tells you. Then build the plan.
+
+::: slides
+SLIDE Step 1: Analyse | Account history, strategy and store plans; Your sales, margin and share of wallet | Know their business before yours
+SLIDE Step 2: Set objectives | SMART objectives for sales, share of wallet, range and margin | Example: share of wallet from 25% to 35% in 12 months
+SLIDE Step 3: Plan actions | New listings, promotions, service improvements and visits | Each action has an owner and a date
+SLIDE Step 4: Map relationships | Roles, attitudes and contact strength | Fill the gaps in the map
+SLIDE Step 5: Review | Quarterly review with the account and your manager | Update the plan, do not file it
+:::
+
+::: diagram cycle | The key account planning cycle
+Analyse: account situation, performance and share of wallet
+Plan: objectives, actions, owners and dates
+Execute: deliver listings, promotions and service
+Review: quarterly business review with the customer
+:::
+
+::: quiz
+? A chain buys 300,000,000 Kz of rice a year. You supply 60,000,000 Kz. What is your share of wallet?
+- 5% || Check the division: 60,000,000 ÷ 300,000,000.
+* 20% || Correct. 60,000,000 ÷ 300,000,000 × 100 = 20%, leaving 240,000,000 Kz of potential.
+- 30% || This would require sales of 90,000,000 Kz.
+- 60% || The figure 60 is the value in millions, not the share.
+:::
+
+## 3. Relationship mapping and joint business planning
+
+Using the buying centre idea, list every person who affects your business in the account and record three things for each:
+
+- Role: the economic decision-maker who approves money, users (store managers, chefs), technical evaluators who check quality, prices or logistics, and a coach, someone inside who wants you to succeed and guides you.
+- Attitude: supporter, neutral or opponent.
+- Contact strength: strong, weak or none.
+
+The gaps are your actions. An opponent who decides needs a plan. A decision-maker you have never met is a risk.
+
+With your most important accounts, go further with joint business planning. Supplier and customer agree shared annual objectives (for example, grow category sales by 15%), actions from both sides (you supply promotions and reliable delivery, they give displays and listings), joint KPIs (on-shelf availability, sales, margin) and quarterly business reviews to check progress. JBP turns negotiation about discounts into a plan to grow the category for both sides.
+
+::: quiz
+? Your only contact at a key account is the buyer. The finance director, who approves new suppliers, has never met you. What is the best action?
+- Wait until the buyer introduces you || This leaves the risk unchanged and depends on one person.
+- Go around the buyer without telling him || This can damage your strongest relationship.
+* Agree with the buyer to request a meeting with the finance director, for example in a business review || Correct. It builds a diamond relationship while respecting your existing contact.
+- Send the finance director your price list by email || A price list does not build a relationship or address finance concerns.
+:::
+
+## Worked example: edible oil in a Luanda supermarket chain
+
+Ana is key account manager for a food distributor. A supermarket chain with 12 stores in Luanda buys about 200,000,000 Kz of edible oil a year. Ana supplies 50,000,000 Kz, a share of wallet of 25%, so 150,000,000 Kz is going to competitors.
+
+Her relationship map shows a strong contact with the buyer (supporter), no contact with the category manager (decider for new listings) and a weak contact with the logistics manager, who is unhappy about late deliveries (opponent).
+
+Her plan for the next 12 months sets a SMART objective: raise share of wallet to 35% (70,000,000 Kz). Actions: fix delivery reliability with her logistics team and invite the logistics manager to a monthly call; ask the buyer to introduce her to the category manager; propose two new pack sizes and one promotion per quarter. She proposes a joint business plan with on-shelf availability above an agreed level as a shared KPI.
+
+::: case | The champion leaves
+Carlos manages a national wholesaler account in Lubango. His coach, the purchasing manager who always supported him, has just resigned. Carlos has no other strong contacts in the account, and the annual price negotiation starts in a month.
+? What should Carlos do first?
+- Offer a larger discount to protect the business || Price does not replace relationships and may not be needed.
+* Update the relationship map and ask for introductions to the new purchasing manager and the owner || Correct. He must rebuild contacts quickly, starting with those who will decide.
+- Follow the old manager to his new company || That may be useful later, but the current account is at risk now.
+- Wait until the new manager contacts him || Waiting loses time before the negotiation.
+:::
+
+## Tool: one-page key account plan
+
+- Account, channel, stores and strategy:
+- Sales, margin and share of wallet by category (last 12 months):
+- SMART objectives for the next 12 months:
+- Key actions with owner and date:
+- Relationship map: name, role, attitude, contact strength:
+- Joint KPIs agreed with the customer:
+- Main risks and next review date:
+
+## Common mistakes
+
+- Treating every large customer as a key account without a plan.
+- Depending on one contact in a bow-tie relationship.
+- Writing the account plan once and never reviewing it.
+- Ignoring opponents on the relationship map.
+
+## Self-check
+
+- What is the difference between a bow-tie and a diamond relationship? (Answer: bow-tie connects one salesperson with one buyer, diamond connects people function to function on both sides.)
+- An account buys 80,000,000 Kz of flour and you supply 20,000,000 Kz. What is your share of wallet? (Answer: 25%.)
+- What does JBP add to a normal negotiation? (Answer: shared objectives, actions from both sides, joint KPIs and regular reviews.)
+
+## Practical assignment
+
+Choose your most important account. Estimate its share of wallet in your main category, draw its relationship map and write a one-page plan with three SMART objectives. Review it with your supervisor this week.
+
+## Summary
+
+- Key accounts need a dedicated manager, a written plan and diamond-style relationships.
+- Share of wallet shows the growth potential inside an account.
+- Relationship maps and joint business plans protect and grow the account over time.
+=== 20
+SLIDE What you will learn | Follow the price waterfall from list price to pocket price; Calculate margin and markup; Set payment terms and credit limits; Calculate trade promotion ROI and negotiate with BATNA | Every concession has a price
+SLIDE The price waterfall | List price; Minus on-invoice discounts = invoice price; Minus rebates, free goods, early-payment and logistics allowances = pocket price | Manage the pocket price, not the list price
+SLIDE Margin and markup | Markup = profit ÷ cost; Margin = profit ÷ selling price; Cost 8,000 and price 10,000 gives markup 25% and margin 20% | Always say which one you mean
+SLIDE Payment terms and credit | Credit limit = average monthly purchases × payment term in months, plus a buffer; DSO = receivables ÷ credit sales × days | Longer terms tie up your cash
+SLIDE Trade promotion ROI | Incremental volume × normal margin; Minus promotion cost; Divided by promotion cost | Measure against baseline sales
+SLIDE Negotiation with BATNA | Know your best alternative; Set target and walk-away points; Trade, never give: if you then we | Fisher and Ury, Getting to Yes
+SLIDE Common mistakes | Confusing margin and markup; Ignoring off-invoice costs; Giving terms without a credit check; Promotions with no baseline | Know the numbers before you negotiate
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the price waterfall from list price to pocket price;
+- calculate margin and markup and convert one into the other;
+- set payment terms and a credit limit and calculate the cost of longer terms;
+- calculate the return on a trade promotion and prepare a negotiation using BATNA.
+
+## Key terms
+
+::: terms
+List price: the price on your official price list before any discount
+Pocket price: what you actually keep from a sale after all on-invoice and off-invoice discounts and allowances
+Margin: profit as a percentage of the selling price
+Markup: profit as a percentage of the cost price
+BATNA: best alternative to a negotiated agreement, what you will do if no deal is reached
+:::
+
+## 1. The price waterfall, margin and markup
+
+The price on your price list is rarely what you keep. Discounts and allowances flow out of it like water down steps:
+
+::: diagram steps | The price waterfall
+List price: the official price list
+On-invoice discounts: volume, channel and promotional discounts
+Invoice price: what appears on the invoice
+Off-invoice deductions: rebates, free goods, early-payment discount, logistics and listing fees
+Pocket price: what the business really keeps
+:::
+
+Two customers on the same invoice price can have very different pocket prices. Calculate it for every key account.
+
+Retailers think in margin, suppliers often in markup. Use the right one:
+
+- Markup = (selling price − cost) ÷ cost × 100
+- Margin = (selling price − cost) ÷ selling price × 100
+- To give a retailer a target margin: shelf price = retailer's cost ÷ (1 − margin)
+
+Example: a retailer buys a carton at 8,000 Kz and sells it at 10,000 Kz. Profit is 2,000 Kz, so markup is 25% and margin is 20%. If the retailer wants a 25% margin, the shelf price must be 8,000 ÷ 0.75 = 10,667 Kz, not 10,000 Kz.
+
+::: quiz
+? A supermarket buys a product at 6,000 Kz and sells it at 7,500 Kz. What is the retailer's margin?
+- 25% || That is the markup: 1,500 ÷ 6,000.
+* 20% || Correct. 1,500 ÷ 7,500 = 20%.
+- 15% || Recheck the profit: 7,500 − 6,000 = 1,500 Kz.
+- 80% || That is the cost as a share of the selling price.
+:::
+
+## 2. Payment terms and credit limits
+
+Payment terms are part of the price. If a customer pays in 60 days instead of 30, you finance its stock for an extra month. Manage credit with three tools:
+
+- Credit limit: average monthly purchases × payment term in months, plus a small buffer for peaks, approved by finance after checking payment history.
+- Days sales outstanding (DSO) = receivables ÷ credit sales for the period × days in the period. It shows how quickly customers really pay.
+- Cost of extra terms = extra receivables × your annual cost of capital.
+
+Offer an early-payment discount only if it costs less than your cost of borrowing.
+
+## 3. Trade promotion ROI
+
+A promotion is an investment. Measure it against baseline sales, what you would have sold without it:
+
+- Incremental volume = promotion volume − baseline volume
+- Incremental gross profit = incremental volume × normal gross profit per unit
+- Promotion cost = discount × all units sold on promotion + fixed fees (display, leaflet)
+- ROI = (incremental gross profit − promotion cost) ÷ promotion cost × 100
+
+Example: cooking oil sells 1,000 cartons a week at 4,000 Kz gross profit per carton. A four-week promotion gives 1,000 Kz off per carton plus a 1,500,000 Kz display fee, and sells 6,000 cartons. Incremental volume is 2,000 cartons, worth 8,000,000 Kz of gross profit. Cost is 6,000,000 Kz of discount plus 1,500,000 Kz of fees, 7,500,000 Kz in total. ROI = 500,000 ÷ 7,500,000 = about 7%. Also check for a dip after the promotion when customers have stocked up.
+
+::: quiz
+? A promotion costs 4,000,000 Kz and generates 3,000,000 Kz of incremental gross profit. What is its ROI?
+- 75% || This is incremental profit ÷ cost, before subtracting the cost.
+- 25% || The result is negative, because the promotion cost more than it earned.
+* −25% || Correct. (3,000,000 − 4,000,000) ÷ 4,000,000 = −25%. The promotion lost money.
+- 133% || This divides cost by profit.
+:::
+
+## 4. Negotiating with BATNA
+
+Fisher and Ury, in Getting to Yes (1981), introduced BATNA, the best alternative to a negotiated agreement. Prepare every negotiation in four steps:
+
+::: slides
+SLIDE Step 1: Know your BATNA | What will you do if there is no deal | A strong alternative gives you confidence
+SLIDE Step 2: Estimate theirs | Who else can supply them and at what cost | Their alternatives limit what they can demand
+SLIDE Step 3: Set your points | Opening position; Target; Walk-away point | Never go below the walk-away point
+SLIDE Step 4: Plan trades | List what is cheap for you but valuable to them | Use if you, then we
+:::
+
+Never give a concession without getting something back: "If you give us a second display in all stores, then we can offer an extra 1%."
+
+## Worked example: a chain asks for more
+
+A supermarket chain in Luanda buys 50,000,000 Kz a month (600,000,000 Kz a year) from a distributor. The buyer asks for an extra 3% discount and payment terms of 60 days instead of 30.
+
+The key account manager calculates: 3% of 600,000,000 Kz is 18,000,000 Kz a year. Thirty extra days means about 50,000,000 Kz more in receivables. At a 20% annual cost of capital, that costs 10,000,000 Kz a year. Together the request costs 28,000,000 Kz.
+
+Her BATNA is to sell the volume through wholesalers at a lower margin. She opens at no change, targets a 1% extra discount, and sets her walk-away at 1.5% with 30-day terms. She offers: "If you list our two new products and give us an end-of-aisle display each quarter, then we can give 1% more and keep 30 days."
+
+::: case | Terms request from a cash & carry in Lobito
+A cash & carry in Lobito buys 20,000,000 Kz a month on 30-day terms and pays on average after 45 days. Its owner asks Beatriz, the account manager, to raise its credit limit and move to 45-day terms.
+? What should Beatriz do?
+- Agree, because the customer already pays in 45 days || Accepting late payment as the new rule rewards it and adds more credit risk.
+- Refuse and stop deliveries until payment improves || This may lose a good account without a discussion.
+- Increase the limit but keep 30 days on paper || The limit would rise without fixing late payment.
+* Discuss payment discipline first and offer longer terms only in exchange for something, such as higher volume or on-time payment || Correct. Terms are part of the price, so trade them for value after checking credit with finance.
+:::
+
+## Tool: negotiation preparation sheet
+
+- Customer request and its cost in Kz per year:
+- Current pocket price and margin for this account:
+- My BATNA and their likely BATNA:
+- Opening position, target and walk-away point:
+- Concessions I can trade (cheap for me, valuable for them):
+- What I will ask for in return:
+- Credit limit, DSO and finance approval:
+
+## Common mistakes
+
+- Confusing margin and markup when quoting to retailers.
+- Looking at invoice price and forgetting off-invoice costs.
+- Extending terms or credit limits without checking payment history.
+- Running promotions without a baseline or measuring their ROI.
+
+## Self-check
+
+- Cost 5,000 Kz, selling price 6,250 Kz: what are the markup and the margin? (Answer: markup 25%, margin 20%.)
+- What is the pocket price? (Answer: what you keep after all on-invoice and off-invoice discounts and allowances.)
+- What does BATNA stand for? (Answer: best alternative to a negotiated agreement.)
+
+## Practical assignment
+
+Choose one key account and calculate its pocket price for your best-selling product, its DSO and the ROI of its last promotion. Prepare a negotiation sheet for your next meeting with that account.
+
+## Summary
+
+- Manage pocket price, not list price, and know the difference between margin and markup.
+- Payment terms, credit limits and promotions have a real cost that you can calculate.
+- Prepare negotiations with BATNA, target and walk-away points, and trade every concession.
+=== 20
+SLIDE What you will learn | Choose a route-to-market model; Calculate numeric and weighted distribution and out-of-stock rate; Calculate strike rate and drop size; Set and cascade SMART sales targets | What gets measured gets managed
+SLIDE Route-to-market models | Direct to large accounts; Through wholesalers and sub-distributors; Pre-sell with later delivery; Van sales with immediate delivery | Match the model to the outlet's value
+SLIDE Distribution KPIs | Numeric distribution = outlets stocking ÷ outlets in the universe; Weighted distribution = their category sales ÷ total category sales; Out-of-stock rate = listed outlets with no stock ÷ listed outlets | Be on the shelf where shoppers buy
+SLIDE Call KPIs | Strike rate = visits with an order ÷ total visits; Drop size = sales value ÷ number of orders; Visit frequency by ABC class | Fewer, bigger drops lower cost to serve
+SLIDE Rep capacity | Visits per day × route days per month; Example: 20 × 22 = 440 visits | Plan routes before you plan targets
+SLIDE SMART targets | Specific, measurable, achievable, relevant, time-bound; Cascade from company to territory to rep; Build from distribution gains and rate of sale | Every target needs a plan behind it
+SLIDE Common mistakes | Measuring only sales value; Chasing numeric distribution in low-value outlets; Ignoring out-of-stocks; Targets with no route plan | Measure, review, act
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose a route-to-market model for different types of outlet;
+- calculate numeric distribution, weighted distribution and out-of-stock rate;
+- calculate strike rate, drop size and the visit capacity of a sales rep;
+- set and cascade SMART sales targets and review them in a monthly cycle.
+
+## Key terms
+
+::: terms
+Route to market (RTM): the way products travel from the supplier to each type of outlet, and who sells and delivers at each step
+Numeric distribution: the percentage of outlets in a universe that stock your product
+Weighted distribution: the share of total category sales made by the outlets that stock your product
+Strike rate: the percentage of visits that end with an order
+Drop size: the average value of one order or delivery
+:::
+
+## 1. Route-to-market models
+
+No single model serves every outlet in Angola economically. Common models are:
+
+- Direct: your own reps sell and your trucks deliver, used for supermarket chains, large wholesalers and HoReCa groups.
+- Indirect: you sell to wholesalers or sub-distributors who serve cantinas and small shops, used where outlets are small and far apart.
+- Pre-sell: a rep takes the order and a truck delivers later, which gives larger, planned drops.
+- Van sales: the rep sells and delivers from the vehicle in one visit, useful for cash customers and markets.
+
+Choose by outlet value and cost to serve. Your ABC classes from Lesson 2 help: A accounts usually go direct, many C outlets through wholesalers or van routes.
+
+## 2. Distribution and availability KPIs
+
+Selling is pointless if the product is not on the shelf where shoppers buy. Three KPIs measure this:
+
+- Numeric distribution = outlets stocking your product ÷ outlets in the universe × 100
+- Weighted distribution = category sales of the outlets that stock you ÷ total category sales of the universe × 100
+- Out-of-stock rate = listed outlets with no stock at the visit ÷ listed outlets visited × 100
+
+Example: a territory has 200 outlets selling rice. 120 stock your brand, so numeric distribution is 60%. Those 120 outlets make 80% of the territory's rice sales, so weighted distribution is 80%. Weighted distribution higher than numeric means you are in the bigger outlets, which is good. If it is lower, you are mainly in small outlets.
+
+::: quiz
+? 50 of 250 outlets stock your flour. Those 50 outlets make 40% of the area's flour sales. What are your numeric and weighted distribution?
+* 20% numeric, 40% weighted || Correct. 50 ÷ 250 = 20%, and the stocking outlets make 40% of category sales.
+- 40% numeric, 20% weighted || The two figures are reversed.
+- 50% numeric, 40% weighted || 50 is the number of outlets, not a percentage.
+- 20% numeric, 60% weighted || 60% is the share made by the outlets that do not stock you.
+:::
+
+## 3. Call KPIs and journey planning
+
+On each route, measure how productive visits are:
+
+- Strike rate = visits with an order ÷ total visits × 100
+- Drop size = sales value ÷ number of orders
+- Visit frequency: A outlets weekly, B fortnightly, C monthly is a common starting point
+- Rep capacity = visits per day × route days per month
+
+A rep can usually make more visits per day in a dense market than on a rural route. Use your own data. Then build a journey plan that fits the capacity.
+
+::: slides
+SLIDE Step 1: Count outlets by class | Example: 30 A, 80 B, 150 C outlets | Use your ABC list
+SLIDE Step 2: Set frequency | A weekly, B fortnightly, C monthly | Visits per month: 30 × 4 + 80 × 2 + 150 × 1 = 430
+SLIDE Step 3: Check capacity | 20 visits a day × 22 days = 440 visits | 430 fits one rep
+SLIDE Step 4: Draw the route | Group outlets by area and day; Same day each week for A outlets | Customers plan their orders around your visit
+:::
+
+::: diagram cycle | Monthly route-to-market review cycle
+Plan: targets, journey plans and outlet lists
+Visit: follow the route and take orders
+Execute: check stock, shelf, price and promotion in store
+Measure: distribution, out-of-stock, strike rate and drop size
+Review: compare with target and adjust the plan
+:::
+
+::: quiz
+? A rep made 300 visits and took 210 orders worth 31,500,000 Kz. What are the strike rate and drop size?
+- 70% and 105,000 Kz || 105,000 Kz is sales per visit. Drop size divides by orders, not visits.
+* 70% and 150,000 Kz || Correct. 210 ÷ 300 = 70%, and 31,500,000 ÷ 210 = 150,000 Kz.
+- 143% and 150,000 Kz || Strike rate divides orders by visits, not visits by orders.
+- 70% and 210,000 Kz || 210 is the number of orders, not the drop size.
+:::
+
+## 4. Setting SMART sales targets
+
+Targets should be SMART: specific, measurable, achievable, relevant and time-bound, a framework described by George Doran in 1981. Cascade the company target down to region, territory and rep, and build each one from its sources of growth, not as a flat percentage. Sources include new outlets (numeric distribution gains), more products per outlet, better availability (fewer out-of-stocks) and larger drop sizes.
+
+## Worked example: a territory in Benguela
+
+Paulo supervises a territory in Benguela for a distributor of rice, sugar and pasta. In September his rep made 400 visits and took 240 orders worth 33,600,000 Kz. Strike rate is 60%, drop size 140,000 Kz. Of 200 rice outlets, 110 stock the brand (55% numeric distribution). On visits to stocking outlets, 22 had no stock, an out-of-stock rate of 20%.
+
+Paulo sets an October target with its sources: recover half the out-of-stocks through better order suggestions, open 10 new outlets, and raise the strike rate to 65% by planning each call. The target becomes specific: 38,000,000 Kz, with 120 outlets stocking and an out-of-stock rate below 10%, reviewed every Friday.
+
+::: case | High strike rate, low drop size
+Sara is a rep in Luanda with a 90% strike rate, the best in the team, but her drop size is 45,000 Kz against a team average of 120,000 Kz. Delivery costs per order are the same for everyone, and her route is losing money.
+? What should her supervisor do first?
+- Praise her strike rate and change nothing || Her orders are too small to cover the cost to serve.
+- Move her to a van-sales route at once || This may help, but the cause has not been diagnosed.
+- Tell her to visit fewer customers || Fewer visits alone do not make orders bigger.
+* Review her outlet mix and orders to see if she can sell more range per call or serve small outlets less often || Correct. Diagnose why drops are small, then act on range per call, visit frequency or the route model.
+:::
+
+## Tool: monthly territory KPI scorecard
+
+- Outlet universe by ABC class:
+- Numeric and weighted distribution by key product:
+- Out-of-stock rate at visit:
+- Visits, orders, strike rate and drop size by rep:
+- Journey plan compliance (planned visits completed):
+- Sales against SMART target and sources of the gap:
+- Three actions for next month:
+
+## Common mistakes
+
+- Measuring only sales value and ignoring distribution and availability.
+- Chasing numeric distribution in low-value outlets while weighted distribution stays low.
+- Setting targets without checking route capacity.
+- Treating a high strike rate as success when drop sizes are too small.
+
+## Self-check
+
+- How is weighted distribution different from numeric distribution? (Answer: weighted counts the stocking outlets' share of category sales, numeric counts their share of outlet numbers.)
+- A rep makes 18 visits a day for 22 days. What is the monthly capacity? (Answer: 396 visits.)
+- What does the T in SMART stand for? (Answer: time-bound.)
+
+## Practical assignment
+
+Calculate last month's numeric distribution, out-of-stock rate, strike rate and drop size for your territory. Compare them with your target, find the biggest gap, and agree one action with your supervisor.
+
+## Summary
+
+- Choose the route-to-market model by outlet value and cost to serve.
+- Distribution, out-of-stock, strike rate and drop size explain why sales are on or off target.
+- Build SMART targets from their sources of growth and review them in a monthly cycle.

@@ -1,0 +1,807 @@
+=== 20
+SLIDE What you will learn | Describe what a front-line supervisor is responsible for; Manage the move from peer to supervisor; Build credibility by leading by example; Use Tuckman's stages to lead a team as it develops | Four skills for your first months as a supervisor
+SLIDE The supervisor's job | Link between management plans and the floor; Results through people: safety, quality, delivery, cost (SQDC); Plan, organise, check and support | You are judged on the team's results
+SLIDE From peer to supervisor | Talk to the team early; Keep friendships but end favours; Learn the standards before enforcing them; Make early decisions consistently | Same people, new relationship
+SLIDE Credibility | Kouzes and Posner: credibility is the foundation of leadership; Do what you say you will do; Follow every rule you enforce | Small promises build big trust
+SLIDE Tuckman's stages | Forming: polite and unsure; Storming: conflict and testing; Norming: agreed ways of working; Performing: independent and effective; Adjourning: the team ends | Conflict is a normal stage
+SLIDE Leading each stage | Forming: give direction and roles; Storming: name and resolve conflict; Norming: reinforce good habits; Performing: delegate and develop | Read the stage, then adapt
+SLIDE Common mistakes | Trying to stay one of the gang; Breaking rules in front of the team; Treating storming as failure; Doing the work instead of supervising | Lead by example every shift
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the main responsibilities of a front-line supervisor;
+- apply a practical plan for the move from team member to supervisor;
+- explain how supervisors build credibility by leading by example;
+- identify a team's stage of development using Tuckman's model and choose how to respond.
+
+## Key terms
+
+::: terms
+Front-line supervisor: the first level of management, directly responsible for a team doing the operational work
+Credibility: the degree to which people believe and trust what a leader says and does
+Leading by example: showing the behaviour you expect from others through your own daily actions
+Team development: the stages a group goes through as it learns to work together
+:::
+
+## 1. What a supervisor is responsible for
+
+A front-line supervisor is the first level of management: the shift leader of 15 pickers in a Viana warehouse, the foreman of a concrete crew in Benguela or the head of tellers in a bank branch. In every setting, the supervisor links management plans to the people doing the work.
+
+The job is usually measured in four areas, often summarised as SQDC: Safety, Quality, Delivery (output and deadlines) and Cost. A good supervisor plans the work, organises people and equipment, checks results during the shift and supports the team to solve problems. You still need technical knowledge, but your main tool is now other people.
+
+Many new supervisors spend almost all their time doing the work themselves. If the team cannot run for one hour without you, you are still a worker with a title, not yet a supervisor.
+
+::: quiz
+? A new shift leader spends most of the shift driving a forklift because he is the fastest driver. What is the main problem?
+- He is breaking safety rules || Driving a forklift is not unsafe if he is trained. The issue is his role.
+* He is not doing the supervisor's work of planning, checking and supporting || Correct. While he drives, nobody is managing safety, quality and output for the whole team.
+- He should drive more slowly to set an example || Speed is not the issue. The issue is that he has stopped supervising.
+:::
+
+## 2. From peer to supervisor
+
+Many supervisors are promoted from inside the team. Yesterday you were a colleague, today you assign work and correct mistakes. The move is easier if you manage it deliberately rather than hoping people adjust.
+
+::: slides
+SLIDE Step 1: Talk to the team early | Hold a short meeting in your first days; Say what will change and what will not; Ask what helps them do a good job | Silence creates rumours
+SLIDE Step 2: Talk privately to friends | Speak one-to-one with close friends in the team; Explain that you must treat everyone the same; Ask for their support | Friendship stays, favours stop
+SLIDE Step 3: Learn the standards | Check procedures, targets and safety rules; Ask your manager what success looks like; Find out what the last supervisor did well | Know the rules before you enforce them
+SLIDE Step 4: Make early decisions carefully | Be consistent from the first day; Explain the reason for decisions; Admit what you do not know yet | Your first decisions set the pattern
+:::
+
+With a colleague who also wanted the job, acknowledge it privately, recognise their skills and give them real responsibility, but do not let them undermine your decisions in public.
+
+## 3. Credibility and leading by example
+
+James Kouzes and Barry Posner, in their long-running research on leadership, concluded that credibility is the foundation of leadership: people follow leaders they believe. Their short rule is "Do what you say you will do". On the floor, credibility is built or lost through small, visible acts:
+
+- You wear your PPE every time, even for "just a minute" on the floor.
+- You keep promises, even small ones such as "I will check your overtime hours by Friday".
+- You apply rules the same way to everyone, including your friends.
+
+If you break a rule you enforce, the rule loses its force. People watch what you do more than what you say.
+
+## 4. Tuckman's stages of team development
+
+Bruce Tuckman (1965) described four stages of group development: forming, storming, norming and performing. In 1977 Tuckman and Mary Ann Jensen added adjourning. The model shows that conflict and confusion are normal stages, not proof of failure.
+
+::: diagram steps | Tuckman's stages of team development
+Forming: people are polite and unsure – the leader gives direction, roles and rules
+Storming: disagreements and testing of limits – the leader names conflicts and resolves them fairly
+Norming: the team agrees on ways of working – the leader reinforces good habits
+Performing: the team works well with little supervision – the leader delegates and develops people
+Adjourning: the team ends or changes – the leader recognises results and manages the transition
+:::
+
+Teams can move backwards: a new member, supervisor or system can send a performing team back to storming. Recognise the stage and adjust your style.
+
+::: quiz
+? A sales team that worked well for a year now argues about territories after three new reps joined. Which stage is it most likely in?
+- Performing, because it has experience || Open conflict about roles is not typical of performing.
+- Adjourning, because the team is ending || The team is not ending, it has grown.
+* Storming, because new members have changed the team || Correct. New members often send a team back to storming. The leader should clarify roles and resolve conflicts.
+- Norming, because rules are being agreed || There is no agreement yet, only argument.
+:::
+
+## Worked example: A new shift leader at a beverage plant in Cacuaco
+
+::: case | Promoted over a friend in Cacuaco
+Domingas has worked six years on the bottling line of a beverage plant in Cacuaco. She is promoted to leader of the night shift of 12 operators. Her friend Joaquim also applied. In the first week two operators arrive 20 minutes late, and Joaquim jokes that Domingas will not say anything because she is one of them.
+? What should Domingas do first?
+- Ignore the lateness this week to keep the team friendly || This sets a pattern that the rules do not apply. Credibility is lost early.
+* Speak privately to the late operators about the start time, and separately to Joaquim about his support || Correct. She applies the standard consistently and deals with Joaquim's challenge privately and respectfully.
+- Give a formal written warning to everyone who was late || A formal step is too strong as a first response and may not follow company procedure.
+- Ask her manager to deal with the lateness || This tells the team that she cannot act as their supervisor.
+:::
+
+Domingas then tells the whole shift that start times and safety rules apply equally to everyone. Seeing a team between forming and storming, she gives clear direction and roles.
+
+## Tool: First 30 days supervisor checklist
+
+- Hold a team meeting in the first week: what changes, what stays the same.
+- Have a private conversation with each close friend and with any rival for the job.
+- Read the procedures, targets and safety rules for your area.
+- Start a promise list and close every item weekly.
+- Identify the team's Tuckman stage and write one action for that stage.
+- Check that you follow every rule you enforce, starting with PPE and start times.
+
+## Common mistakes
+
+- Trying to stay "one of the gang" and avoiding difficult conversations.
+- Doing the work yourself instead of planning, checking and supporting.
+- Breaking small rules in front of the team, such as skipping PPE.
+- Treating conflict in the storming stage as a sign of failure.
+
+## Self-check
+
+1. What do the letters SQDC stand for? (Answer: Safety, Quality, Delivery and Cost.)
+2. What is the short rule for building credibility according to Kouzes and Posner? (Answer: Do what you say you will do.)
+3. A team that worked well goes back to arguing after a reorganisation. What has happened? (Answer: it has moved back to the storming stage, which is normal after a major change.)
+
+## Practical assignment
+
+This week, identify the Tuckman stage of your team and write down two pieces of evidence for your choice. Then list three small promises you have made to team members and close them before Friday.
+
+## Summary
+
+- A supervisor is measured on the team's safety, quality, delivery and cost, not on personal output.
+- Credibility comes from consistency: follow every rule you enforce and keep small promises.
+- Tuckman's stages help you read the team and change your style as it develops.
+=== 20
+SLIDE What you will learn | Run a 10 to 15 minute daily huddle or toolbox talk; Calculate the people and hours a shift needs; Use a visual management board to track the shift; Write standard work for a key task | Plan the shift before the shift starts
+SLIDE The daily huddle | Standing, at the board, same time every day; Safety, yesterday, today, problems, recognition; 15 minutes maximum | Short, regular and visual
+SLIDE Toolbox talks | Safety briefing before work starts; One risk linked to today's tasks; Ask questions and record attendance | Common on construction and maintenance sites
+SLIDE Workload planning | Hours needed = volume ÷ rate; People needed = hours needed ÷ productive hours; Round up and plan cover for absence | Do the maths the day before
+SLIDE Visual management | Plan against actual, hour by hour; Green = on target, red = behind; Problems listed with owner and date | Anyone can see the status in 10 seconds
+SLIDE Standard work | The current best way to do a task; Important steps, key points and reasons (TWI); Basis for training and improvement | No standard, no improvement
+SLIDE Common mistakes | Huddles that become long speeches; Planning by feeling instead of numbers; Boards that are never updated | Plan, show, check, improve
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- run a short, structured daily huddle or toolbox talk;
+- calculate the labour hours and number of people a shift needs;
+- set up and use a simple visual management board;
+- write standard work for a key task using steps, key points and reasons.
+
+## Key terms
+
+::: terms
+Daily huddle: a short standing meeting at the start of a shift to review safety, results, the plan and problems
+Toolbox talk: a short safety briefing given at the work site before a task starts
+Productive hours: the hours a person can actually work on tasks after breaks, meetings and cleaning
+Visual management: showing targets, status and problems on boards so everyone can see them at a glance
+Standard work: the documented current best method for doing a task safely and correctly
+:::
+
+## 1. The daily huddle and toolbox talk
+
+A daily huddle is a short meeting, held standing, at the same time and place every shift, usually in front of the team's board. It replaces long, irregular meetings and gives every person the same information before work starts. On construction and maintenance sites the start-of-shift meeting is often called a toolbox talk and focuses on the safety risks of the day's tasks.
+
+Keep the huddle to 10–15 minutes and use the same agenda every day:
+
+::: diagram steps | A 15-minute huddle agenda
+Safety: incidents, near misses and today's main risk
+Yesterday: results against target – what went well, what went wrong
+Today: volumes, priorities and who does what
+Problems: issues that need action – with an owner and a deadline
+Recognition: thank a person or the team for something specific
+:::
+
+Two rules make huddles work. First, problems that need long discussion are taken outside the huddle with only the people involved. Second, the supervisor asks questions as well as giving information. "What could stop us today?" is often the most useful question of the shift.
+
+::: tip | Toolbox talk on site
+Choose one risk linked to today's work, for example working at height on the second-floor slab. Ask a worker to explain the control measures in their own words, and record who attended.
+:::
+
+## 2. Workload planning: doing the maths
+
+Many supervisors plan by feeling: "We usually manage with six people." Planning with numbers is more reliable and helps you argue for resources.
+
+::: slides
+SLIDE Step 1: Volume | How much work is expected? Orders, lines, pallets, trucks or customers | Get the forecast the day before
+SLIDE Step 2: Rate | The standard rate per person per hour; Use measured rates, not guesses | Example: 60 order lines per picker per hour
+SLIDE Step 3: Hours needed | Volume ÷ rate = labour hours needed | 1,800 lines ÷ 60 = 30 hours
+SLIDE Step 4: People needed | Labour hours ÷ productive hours per person; Always round up | 30 ÷ 6.5 = 4.6, so 5 pickers
+:::
+
+Productive hours matter. In an 8-hour shift with a one-hour break and 30 minutes for the huddle, cleaning and handover, a person has about 6.5 productive hours, not 8. If you divide by 8 you will plan too few people and the shift will run late.
+
+Then check the plan against reality: decide in advance who covers likely absences, and match tasks to skills so that a new employee is not alone on the most complex orders.
+
+::: quiz
+? A dispatch team must load 9 trucks. Loading one truck takes a two-person team 40 minutes. How many team-hours are needed?
+- 4.5 team-hours || 9 × 40 = 360 minutes, which is 6 hours, not 4.5.
+* 6 team-hours || Correct. 9 × 40 = 360 minutes = 6 hours of work for one two-person team.
+- 9 team-hours || This assumes one hour per truck, but each truck takes 40 minutes.
+- 3 team-hours || This halves the time because there are two people, but the rate is already per team.
+:::
+
+## 3. Visual management boards
+
+A visual management board lets anyone see the status of the shift in about ten seconds. A simple board for a warehouse, production line or sales team has four parts:
+
+- Targets for the shift or day, for example orders shipped, units produced or customer visits.
+- Plan against actual, updated every hour or every two hours.
+- Colour status: green when on target, red when behind.
+- A problem list with each problem, its owner and its deadline.
+
+Hour-by-hour tracking is especially powerful. If the line should produce 400 cartons per hour and the board shows 310 at 9:00, the team reacts at 9:00, not at the end of the shift. A whiteboard and markers are enough. What matters is that the team updates the board, discusses it in the huddle and uses it to trigger action.
+
+## 4. Standard work
+
+Standard work is the current best known way to do a task safely, with good quality and in a reasonable time. A central idea of the Toyota Production System, it is the basis for training and for later improvement.
+
+A practical format comes from the Job Instruction method of the Training Within Industry (TWI) programme. For each task, write:
+
+- Important steps: what to do, in order.
+- Key points: anything that makes or breaks the job, especially safety and quality.
+- Reasons: why each key point matters.
+
+Keep it to one page, with photos where useful, and post it where the work is done.
+
+::: quiz
+? Why is standard work needed before improving a task?
+- Because it guarantees the task will never change || Standard work is meant to be improved over time.
+* Because it gives a stable baseline to compare new methods against || Correct. Without a standard, you cannot measure whether a change is an improvement.
+- Because it replaces the need for training || Standard work is the basis for training, not a replacement for it.
+:::
+
+## Worked example: Planning tomorrow's shift at a distribution warehouse in Viana
+
+::: case | Short of pickers in Viana
+Manuel supervises the day shift at a food distribution warehouse in Viana. Tomorrow's forecast is 2,100 order lines. The standard rate is 60 lines per picker per hour and each picker has 6.5 productive hours. He has 5 pickers on the roster.
+? What should Manuel do?
+- Keep 5 pickers and ask them to work faster || 2,100 ÷ 60 = 35 hours. Five pickers give only 32.5 hours, so the plan fails before it starts.
+* Plan 6 pickers by moving one person from another task or arranging approved overtime || Correct. 35 ÷ 6.5 = 5.4, so he needs 6 pickers, and he closes the gap the day before.
+- Plan 8 pickers to be safe || Over-staffing wastes labour cost. The calculation shows 6 are enough.
+- Wait to see the real volume tomorrow morning || By then it is too late to find people. Planning is done the day before.
+:::
+
+At the next huddle Manuel shows the plan on the board: 2,100 lines, 6 pickers and an hourly target of about 320 lines. At 11:00 the board shows red. The team identifies a broken scanner as the cause, and a replacement is in use by 11:30.
+
+## Tool: Shift planning checklist
+
+- Volume forecast for tomorrow received.
+- Labour hours calculated: volume ÷ standard rate.
+- People needed calculated using productive hours, rounded up.
+- Names assigned to tasks, matching skills to complexity.
+- Cover planned for likely absences.
+- Board prepared with targets and an hourly plan.
+- Huddle agenda ready: safety, yesterday, today, problems, recognition.
+- Standard work posted for key tasks.
+
+## Common mistakes
+
+- Letting the huddle become a 40-minute speech.
+- Dividing by shift length instead of productive hours.
+- Boards that still show last week's numbers.
+
+## Self-check
+
+1. What are the five items of the huddle agenda in this lesson? (Answer: safety, yesterday's results, today's plan, problems and recognition.)
+2. A team must pick 1,200 lines at 50 lines per hour, with 6 productive hours per picker. How many pickers are needed? (Answer: 1,200 ÷ 50 = 24 hours, and 24 ÷ 6 = 4 pickers.)
+3. What three things does a TWI job breakdown record? (Answer: important steps, key points and reasons.)
+
+## Practical assignment
+
+Calculate the people needed for tomorrow's shift using the volume ÷ rate method. Then run tomorrow's huddle with the five-item agenda and time it.
+
+## Summary
+
+- A short daily huddle with a fixed agenda gives everyone the same information and surfaces problems early.
+- Plan people with numbers: volume ÷ rate ÷ productive hours, rounded up.
+- Visual boards and standard work make status and methods clear to the whole team.
+=== 20
+SLIDE What you will learn | Explain Herzberg's two-factor theory; Separate hygiene factors from motivators in your team; Check that work is shared fairly; Give recognition that is specific and timely | Motivation is built every shift
+SLIDE Herzberg's two factors | Hygiene factors: pay, conditions, policies, relationships, security; Motivators: achievement, recognition, responsibility, growth, the work itself; Fixing hygiene removes complaints but does not create drive | Two different sets of levers
+SLIDE What a supervisor controls | Many hygiene factors: tools, water, rotas, respect; Many motivators: recognition, responsibility, learning; Pay is often outside your control | Focus on what you can change
+SLIDE Fairness | People compare effort and reward with others (Adams' equity theory); Perceived unfairness reduces effort; Make rules for overtime and rotas visible | Fair matters more than generous
+SLIDE Recognition that works | Specific behaviour; Impact on the team or customer; Timely, the same day if possible; Sincere and suited to the person | Say what, why and thank you
+SLIDE Low-cost motivators | Explain why the work matters; Give ownership of a task or area; Cross-train and teach; Ask for ideas and act on them | Most motivators cost nothing
+SLIDE Common mistakes | Thinking money is the only motivator; Generic "good job" praise; Favouritism in overtime and rotas | Fix irritants, recognise, involve
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain Herzberg's two-factor theory and the difference between hygiene factors and motivators;
+- identify which factors in your own team you can influence;
+- check whether overtime, shifts and tasks are shared fairly;
+- give recognition that is specific, timely and sincere.
+
+## Key terms
+
+::: terms
+Motivation: the energy and willingness a person brings to their work
+Hygiene factor: a condition of work that causes dissatisfaction when it is poor but does not create motivation when it is good
+Motivator: a factor connected to the work itself that creates real satisfaction and effort
+Recognition: noticing and acknowledging a person's specific effort or result
+Equity: the feeling that rewards and treatment are fair compared with others
+:::
+
+## 1. Herzberg's two-factor theory
+
+In the late 1950s the psychologist Frederick Herzberg and his colleagues asked employees to describe times when they felt very good and very bad about their jobs. The answers fell into two different groups, which became the two-factor theory, also called motivation-hygiene theory.
+
+Hygiene factors are the conditions around the job: pay, working conditions, company policies, supervision, relationships with colleagues and job security. When they are poor, people are dissatisfied and complain. When they are good, complaints stop, but people are not necessarily motivated.
+
+Motivators are connected to the work itself: achievement, recognition, responsibility, the work itself, advancement and growth. These create real satisfaction and extra effort.
+
+The key lesson is that these are two separate scales. Fixing the broken fan in the packing area removes a source of anger, but it will not make people proud of their work. Giving someone responsibility for training new staff can create pride, but it will not stop complaints about a broken toilet.
+
+::: diagram matrix | Combining Herzberg's two factors | Motivators (low → high) | Hygiene factors (low → high)
+Few complaints, low drive: conditions are good but people do the minimum
+Ideal: good conditions and motivating work – few complaints, high effort
+Worst case: poor conditions and dull work – complaints and low effort
+Motivated but complaining: the work is meaningful but conditions are poor
+:::
+
+::: quiz
+? After the canteen was renovated, complaints fell but output did not rise. What does Herzberg's theory suggest?
+- The renovation was a waste of money || It removed dissatisfaction, which is valuable, but it is only a hygiene factor.
+* The canteen is a hygiene factor, so motivators such as recognition and responsibility are needed to raise effort || Correct. Hygiene factors remove complaints, motivators create drive.
+- Output will rise later when people get used to it || The theory says hygiene improvements do not create motivation on their own.
+:::
+
+## 2. What a supervisor can influence
+
+Supervisors often say: "I cannot motivate my team because I do not control pay." It is true that pay, contracts and company policies are usually decided above you. But many hygiene factors and most motivators are in your hands:
+
+- Hygiene you can influence: working tools and equipment, drinking water, clean toilets, fair rotas, a schedule published in advance, respectful language.
+- Motivators you can influence: recognition, responsibility for an area or task, learning new skills, involvement in decisions, explaining why the work matters.
+
+A useful exercise is to ask the team at a huddle: "What is the one thing that makes your work harder every day?" Fix what you can within a week and report back. Fixing small irritants quickly builds trust and creates space for motivators to work.
+
+## 3. Fairness and equity
+
+J. Stacy Adams' equity theory (1963) explains that people compare what they put into work (effort, time, skill) and what they get out (pay, recognition, opportunities) with what others get. If they believe the balance is unfair, they reduce effort, complain or leave.
+
+Supervisors control many of the things people compare: overtime, choice of shifts, easy and hard tasks, training opportunities and who gets thanked. A simple calculation shows how unfairness can appear without anyone intending it. Suppose a team of 4 shared 40 overtime hours last month. An equal share is 10 hours each. If one person received 22 hours and another only 2, the team will notice.
+
+Make the rules visible: a published overtime rota, rotation of unpopular tasks and clear criteria for who goes on training.
+
+::: quiz
+? A team of 5 shared 50 overtime hours. One operator received 20 hours. How many hours above an equal share is that?
+- 5 hours || An equal share is 50 ÷ 5 = 10 hours, so the difference is 10, not 5.
+* 10 hours || Correct. An equal share is 10 hours and he received 20, which is double.
+- 15 hours || Check the equal share first: 50 ÷ 5 = 10.
+- 20 hours || 20 is his total, not the difference.
+:::
+
+## 4. Recognition that works
+
+Recognition is one of Herzberg's motivators and costs nothing, but it is often done badly. "Good job, everyone" is easy to say and quickly forgotten. Effective recognition has four features:
+
+::: slides
+SLIDE 1 Specific | Name the exact behaviour or result; "You found the damaged pallet before loading" | Not just "good job"
+SLIDE 2 Impact | Explain why it mattered; "The customer received a full, clean order" | Link effort to results
+SLIDE 3 Timely | The same day where possible; Do not wait for the annual review | Recognition loses value with time
+SLIDE 4 Sincere and suitable | Some people like public praise, others prefer private thanks; Ask or observe | Fit the person
+:::
+
+Other low-cost motivators include giving an experienced operator ownership of a machine or area, asking a strong performer to train new staff, rotating people so they learn new skills, and letting the team choose how to meet a target.
+
+## Worked example: Low morale at a retail branch in Huambo
+
+::: case | Bonus cut at the Huambo branch
+Teresa supervises 9 sales assistants at a retail branch in Huambo. The company has reduced the quarterly bonus and sales have fallen. Two assistants complain that the same colleague always gets the morning shift, which has fewer customers and finishes early.
+? What should Teresa do first?
+- Tell the team the bonus decision is final and they must work harder || This ignores the fairness problem and offers nothing she controls.
+- Promise to get the bonus restored || She cannot control this, and a broken promise damages credibility.
+* Publish a rotating shift schedule and start giving specific recognition for good sales work || Correct. She fixes a fairness issue she controls and adds a motivator that costs nothing.
+- Give the complaining assistants the morning shift permanently || This simply moves the unfairness to other people.
+:::
+
+Teresa also asks the team which small irritants slow them down. They mention a broken price scanner. She has it repaired within a week and reports back at the huddle.
+
+## Tool: Team motivation check
+
+- List the hygiene complaints you hear most often and mark which you can fix.
+- Fix at least one irritant this week and tell the team.
+- Check overtime, shifts and hard tasks for fair distribution.
+- Publish rotas and the rules for overtime.
+- Give at least one specific recognition per day.
+- Give one person new responsibility or a learning opportunity this month.
+
+## Common mistakes
+
+- Believing pay is the only motivator, so nothing can be done.
+- Giving generic praise that does not name the behaviour.
+- Allowing favouritism in shifts, overtime or training.
+- Promising things outside your control.
+
+## Self-check
+
+1. Is pay a hygiene factor or a motivator in Herzberg's theory? (Answer: a hygiene factor.)
+2. What are the four features of effective recognition? (Answer: specific, explains the impact, timely, and sincere and suited to the person.)
+3. According to equity theory, what do people compare? (Answer: their own inputs and rewards with those of others.)
+
+## Practical assignment
+
+Ask your team for the one irritant that most slows them down and fix it, or escalate it, within a week. Give three pieces of specific recognition this week using the four features.
+
+## Summary
+
+- Hygiene factors prevent dissatisfaction and motivators create effort. You need both.
+- Fairness in rotas, overtime and tasks is a powerful driver of motivation.
+- Specific, timely recognition and real responsibility are low-cost motivators that every supervisor controls.
+=== 20
+SLIDE What you will learn | Write clear, measurable performance standards; Diagnose the cause of a performance gap; Document performance issues with facts; Apply progressive discipline fairly | Fair, consistent and documented
+SLIDE Clear standards | Observable and measurable; Explained and understood by the employee; Example: picking errors of 0.5% of lines or less | People cannot meet a standard they do not know
+SLIDE Diagnose the gap | Can't do: lack of skill → train; Won't do: knows but does not → discuss, then consequences; System: tools, process, workload → fix the system | Find the cause before you act
+SLIDE Documenting | Date, time and place; What happened, in facts; The standard and the impact; What was said and agreed | Facts, not opinions
+SLIDE Progressive discipline | Informal conversation; Recorded verbal warning; Written warning; Final written warning; Formal process with HR | Proportionate steps, applied consistently
+SLIDE Fairness principles | Consistent for everyone; Prompt; Proportionate; Right to explain; Company procedure and the law | Involve HR before any formal step
+SLIDE Common mistakes | Waiting until the problem is serious; Notes full of opinions; Disciplining a training or system problem; Different treatment for friends | Act early, record facts, be consistent
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write performance standards that are clear and measurable;
+- diagnose whether a performance gap is a skill, will or system problem;
+- document a performance issue using facts;
+- explain the steps of progressive discipline and the principles that make it fair.
+
+## Key terms
+
+::: terms
+Performance standard: a clear, measurable description of the expected result or behaviour
+Performance gap: the difference between the standard and what the person actually achieves
+Documentation: a written, factual record of performance issues, conversations and agreements
+Progressive discipline: a series of steps of increasing seriousness used to correct repeated or serious problems
+Misconduct: breaking a work rule, such as a safety rule, attendance rule or company policy
+:::
+
+## 1. Setting clear standards
+
+People cannot meet a standard they do not know. Before you correct anyone, check that the standard is clear, measurable and has been explained. Compare "Work carefully" with "Picking errors must be 0.5% of lines or less", or "Be safe" with "Hard hats must be worn at all times inside the site fence".
+
+Good standards describe results (output, quality, deadlines) and behaviours (attendance, safety, customer treatment). They are written down, explained when people start and kept visible, for example in standard work sheets or on the team board.
+
+A small calculation turns a feeling into a fact. A picker made 18 errors in 1,200 lines last week. Her error rate is 18 ÷ 1,200 = 1.5%, three times the 0.5% standard. Now you have a specific gap to discuss, not a general complaint that she is "careless".
+
+::: quiz
+? Which is the clearest performance standard for a delivery driver?
+- Drive safely and be polite to customers || This is a good intention, but it cannot be measured.
+- Try to deliver most orders on time || "Most" and "try" are not measurable.
+* Complete the vehicle check before departure and deliver 95% of orders within the agreed time window || Correct. It is specific, observable and measurable.
+- Be a good representative of the company || This is too general to check.
+:::
+
+## 2. Diagnosing the cause of a gap
+
+Before choosing an action, find the cause. Robert Mager and Peter Pipe, in their classic book on analysing performance problems, suggested asking whether the person could do the task if their life depended on it. If not, it is a skill problem. If yes, something else is stopping them. In practice, supervisors can sort most gaps into three types:
+
+- Can't do (skill or knowledge): the person has not been trained or has forgotten. Action: train, demonstrate and use standard work.
+- Won't do (motivation or attitude): the person knows how but does not do it. Action: a clear conversation, agreed expectations and, if it continues, consequences.
+- System problem: tools, process, workload or unclear instructions prevent good work. Action: fix the system, not the person.
+
+Discipline is only appropriate for "won't do" problems and misconduct. Disciplining someone who was never trained, or whose scanner is broken, is unfair and does not solve the problem.
+
+## 3. Documenting the facts
+
+If an issue may need further action, write a short note on the same day. Good documentation records facts that another person could check, not opinions such as "lazy" or "bad attitude".
+
+::: slides
+SLIDE 1 When and where | Date, time and place; Who was present | Write it on the same day
+SLIDE 2 What happened | Observable facts only; "Arrived at 07:40 for a 07:00 start" | Not "he is always late"
+SLIDE 3 Standard and impact | Which rule or standard applies; The effect on safety, customers or the team | Link the fact to the standard
+SLIDE 4 What was said and agreed | The employee's explanation; The agreed action and review date | Ask the employee to read the note
+:::
+
+Keep notes confidential and store them as your company procedure requires.
+
+## 4. Progressive discipline
+
+Progressive discipline means using steps of increasing seriousness when a problem continues. A common sequence is shown below. The exact steps, who may apply them and the time limits depend on your company's procedures and on the law.
+
+::: diagram steps | A typical progressive discipline sequence
+Informal conversation: discuss the gap, listen, agree the standard and a review date
+Recorded verbal warning: a formal conversation, noted in writing
+Written warning: a letter stating the problem, the standard and the consequences of repeating it
+Final written warning: a clear statement that further problems may lead to serious sanctions
+Formal disciplinary process: managed with HR, following company procedure and the law
+:::
+
+Serious misconduct, such as violence, theft or deliberately dangerous behaviour, may go directly to a formal process. Whatever the step, apply four fairness principles. Be consistent: the same rule for everyone, including friends. Be prompt: act soon after the event. Be proportionate: the response matches the seriousness. Give the person the right to explain before you decide.
+
+In Angola, disciplinary sanctions and dismissal are regulated by the General Labour Law (Lei Geral do Trabalho) and by company internal rules. The procedures and time limits are specific, so always involve HR or a legal adviser before any formal step.
+
+::: quiz
+? An operator has been late three times this month and has never been spoken to about it. What is the right first step?
+- A written warning, because it happened three times || Skipping the informal step is not proportionate when nothing has been said before.
+* An informal conversation to state the standard, hear his explanation and agree a review date || Correct. Start with the lowest step and find the cause.
+- Report him to HR for dismissal || This is far out of proportion for a first conversation.
+- Ignore it unless it happens again || Waiting lets the problem grow and seems unfair to punctual colleagues.
+:::
+
+## Worked example: Repeated PPE breach at a construction site in Benguela
+
+::: case | No hard hat on the Benguela site
+Nelson is a foreman on a building site in Benguela. A carpenter, Adilson, has been seen twice without his hard hat. Nelson gave him an informal reminder last week and noted it. Today he finds Adilson again without the hat, under a scaffold where materials are being lifted.
+? What should Nelson do?
+- Give another friendly reminder because Adilson is a skilled worker || Skill does not change the rule. A third informal reminder sends the message that the rule is optional.
+* Stop the work immediately, then take the next step in the company procedure with HR and document the facts || Correct. Safety comes first, and the documented earlier reminder supports a proportionate next step.
+- Dismiss Adilson on the spot || A foreman rarely has this authority, and procedure and the right to explain must be respected.
+- Wait to see if he does it a fourth time || This exposes Adilson and others to serious risk.
+:::
+
+## Tool: Fair discipline checklist
+
+- Is the standard clear, written and known by the employee?
+- Is the gap measured with facts?
+- Have I checked whether it is a skill, will or system problem?
+- Have I given the employee the chance to explain?
+- Is my response consistent with how others were treated?
+- Is the step proportionate to the issue and the previous history?
+- Have I documented the facts on the same day?
+- Have I involved HR before any formal step?
+
+## Common mistakes
+
+- Waiting until the problem becomes serious before speaking.
+- Writing opinions instead of facts.
+- Disciplining someone for a training or system problem.
+- Treating friends and others differently.
+- Taking formal action without HR or the proper procedure.
+
+## Self-check
+
+1. A picker made 12 errors in 800 lines. What is the error rate? (Answer: 12 ÷ 800 = 1.5%.)
+2. What are the three types of performance gap? (Answer: can't do, won't do and system problems.)
+3. Name the four fairness principles in this lesson. (Answer: consistent, prompt, proportionate and the right to explain.)
+
+## Practical assignment
+
+Choose one key task in your team and check that its standard is written and measurable. If it is not, rewrite it and explain it at your next huddle.
+
+## Summary
+
+- Clear, measurable standards come before any correction.
+- Diagnose the cause first. Discipline is only for won't-do problems and misconduct.
+- Progressive discipline must be documented, consistent and proportionate, and must follow company procedure and the law.
+=== 20
+SLIDE What you will learn | Recognise task and relationship conflict; Describe the five Thomas-Kilmann conflict modes; Choose the right mode for the situation; Mediate between two team members | Conflict handled early is conflict handled cheaply
+SLIDE Types of conflict | Task conflict: work, methods, resources; Relationship conflict: personal tension and respect; Ignored task conflict often becomes personal | Separate the people from the problem
+SLIDE Thomas-Kilmann modes | Two dimensions: assertiveness and cooperativeness; Competing, collaborating, compromising, avoiding, accommodating; No mode is always right | Choose the mode, do not default
+SLIDE When to use each mode | Competing: emergencies and safety; Collaborating: important issues with time to talk; Compromising: quick, fair middle ground; Avoiding: trivial issues or cooling down; Accommodating: the issue matters more to the other side | Match the mode to the situation
+SLIDE Interests, not positions | Position: what people say they want; Interest: why they want it; Fisher and Ury, Getting to Yes | Solve for interests
+SLIDE Mediation steps | Meet each person separately; Joint meeting with ground rules; Each side speaks, the other listens; Find interests and options; Agree actions in writing and follow up | The supervisor guides, the parties decide
+SLIDE Common mistakes | Ignoring conflict and hoping it disappears; Taking sides before hearing both; Mediating harassment instead of escalating it | Act early, stay neutral, escalate when needed
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- distinguish task conflict from relationship conflict;
+- describe the five Thomas-Kilmann conflict modes;
+- choose an appropriate conflict mode for a given situation;
+- mediate a conflict between two team members using a step-by-step process.
+
+## Key terms
+
+::: terms
+Task conflict: disagreement about work content, methods, priorities or resources
+Relationship conflict: personal tension, dislike or lack of respect between people
+Assertiveness: the degree to which a person tries to satisfy their own concerns
+Cooperativeness: the degree to which a person tries to satisfy the other person's concerns
+Mediation: a process in which a neutral person helps others reach their own agreement
+:::
+
+## 1. Understanding conflict in a team
+
+Conflict is normal wherever people share equipment, space, targets and time. On the floor it often starts as task conflict: the day shift leaves the loading bay untidy, two crews want the crane at the same time, two sales reps claim the same customer. Task conflict can be useful because it brings problems into the open. But if it is ignored, it often becomes relationship conflict, where people stop talking, blame each other and form groups.
+
+Warning signs include people refusing to work together, repeated complaints about the same person, silence in huddles and errors at handover. The earlier the supervisor acts, the easier the solution.
+
+## 2. The Thomas-Kilmann conflict modes
+
+Kenneth Thomas and Ralph Kilmann described five ways of handling conflict, based on two dimensions: assertiveness (how much you try to satisfy your own concerns) and cooperativeness (how much you try to satisfy the other person's concerns).
+
+::: diagram matrix | Thomas-Kilmann conflict modes | Cooperativeness (low → high) | Assertiveness (low → high)
+Competing: assertive and uncooperative – one side wins
+Collaborating: assertive and cooperative – work together for a solution that meets both sides' needs
+Avoiding: unassertive and uncooperative – postpone or step away
+Accommodating: unassertive and cooperative – give the other side what they want
+:::
+
+The fifth mode, compromising, sits in the middle: each side gives up something to reach a quick, acceptable solution.
+
+No mode is always right. The skill is choosing deliberately:
+
+- Competing: in emergencies or safety issues where a quick, firm decision is needed, such as "Nobody enters the cold room until the leak is repaired."
+- Collaborating: when the issue is important, a long-term solution is needed and there is time to talk.
+- Compromising: when a fair middle ground is acceptable and time is short, such as splitting crane time.
+- Avoiding: when the issue is trivial or people need time to calm down. Overused, it lets problems grow.
+- Accommodating: when the issue matters much more to the other person, or to keep goodwill.
+
+::: quiz
+? A forklift driver will not stop when a pedestrian is in the aisle, saying he is behind on loading. Which mode should the supervisor use?
+- Collaborating, to find a solution that meets both needs || There is no time for discussion when there is immediate danger.
+* Competing, because safety requires a firm, immediate decision || Correct. The supervisor gives a clear instruction to stop. The loading issue can be discussed later.
+- Accommodating, because loading is behind || Giving way on safety is never acceptable.
+- Avoiding, to let him calm down || Avoiding leaves a serious risk in place.
+:::
+
+## 3. Interests, not positions
+
+Roger Fisher and William Ury, in Getting to Yes (1981), separate positions from interests. A position is what someone says they want: "I want the morning shift." An interest is why they want it: "I need to collect my child from school at 15:00." When people argue about positions, one wins and one loses. When you explore interests, you often find a solution both can accept, such as a shift swap on school days only. Ask "Why is that important to you?" and "What would a good solution look like for you?"
+
+## 4. Mediating between two team members
+
+When two team members cannot resolve a conflict themselves, the supervisor can mediate. Your role is to guide a fair process, not to decide who is right.
+
+::: slides
+SLIDE Step 1: Meet separately | Listen to each person in private; Understand the facts and feelings; Check that the issue is suitable for mediation | Do not take sides yet
+SLIDE Step 2: Set ground rules | Joint meeting in a private place; One person speaks at a time; Respectful language and a focus on the future | Rules make it safe to talk
+SLIDE Step 3: Each side speaks | Each explains their view without interruption; The other summarises what they heard | Being heard reduces anger
+SLIDE Step 4: Find interests and options | Ask why each issue matters; Ask both sides for possible solutions | The parties create the solution
+SLIDE Step 5: Agree and follow up | Write down specific actions and dates; Review after one or two weeks | No follow-up, no change
+:::
+
+Some issues must not be mediated: harassment, discrimination, threats, violence or serious safety breaches. Report these to your manager and HR immediately, following company procedure.
+
+::: quiz
+? In a mediation, one team member keeps interrupting the other. What should the supervisor do?
+- Let him speak because he is clearly upset || This breaks the ground rules, and the other person will stop talking.
+* Remind both of the rule that one person speaks at a time and give the floor back || Correct. Applying the agreed rules keeps the process fair and safe.
+- End the mediation and decide who is right || The supervisor guides the process and does not jump to a decision.
+:::
+
+## Worked example: Shift handover dispute at a flour mill in Lobito
+
+::: case | Blame at the handover in Lobito
+At a flour mill near Lobito, the night shift leader Mário complains that the day shift leaves the packing machines dirty. The day shift leader Lurdes says the night shift leaves pallets in the wrong place. They now avoid each other, and the handover takes 5 minutes instead of the planned 15. Their production manager, Feliciana, decides to act.
+? What should Feliciana do first?
+- Call a joint meeting and tell them to stop arguing || Without understanding each side first, she risks a public argument.
+- Decide which shift is right and issue an instruction || This is competing without the facts, and it creates a winner and a loser.
+* Meet each leader separately to understand the facts and interests before a joint meeting || Correct. Separate meetings prepare a fair mediation and reduce emotion.
+- Wait, since the problem may solve itself || Avoiding has already allowed task conflict to become personal.
+:::
+
+In the joint meeting, both leaders agree that their shared interest is a clean, quick start to every shift. They agree a written handover checklist covering machine cleaning and pallet locations, signed by both shift leaders, and review it after two weeks.
+
+## Tool: Mediation preparation sheet
+
+- What is the conflict about: task, relationship or both?
+- What facts have I checked?
+- What are each person's positions and interests?
+- Is this suitable for mediation, or must it be escalated?
+- Ground rules for the joint meeting.
+- Possible options to suggest if the parties are stuck.
+- Agreed actions, owners and review date.
+
+## Common mistakes
+
+- Ignoring conflict and hoping it disappears.
+- Taking sides before hearing both people.
+- Always using the same conflict mode.
+- Mediating issues such as harassment that must be escalated.
+
+## Self-check
+
+1. What two dimensions does the Thomas-Kilmann model use? (Answer: assertiveness and cooperativeness.)
+2. What is the difference between a position and an interest? (Answer: a position is what someone wants, an interest is why they want it.)
+3. Which mode is usually best for an immediate safety issue? (Answer: competing.)
+
+## Practical assignment
+
+Think of a recent conflict in your team. Identify which Thomas-Kilmann mode you used, then write which mode would have been better and why.
+
+## Summary
+
+- Act early, before task conflict becomes relationship conflict.
+- Choose the Thomas-Kilmann mode that fits the situation, and look for the interests behind positions.
+- Mediate with a fair step-by-step process, and escalate serious issues to HR.
+=== 20
+SLIDE What you will learn | Use the PDCA cycle to test an improvement; Apply 5S to organise a work area; Find root causes with the 5 Whys; Engage the team in daily improvement | Small improvements every week
+SLIDE PDCA | Plan: define the problem and the change; Do: test on a small scale; Check: measure the result; Act: standardise or adjust | Test before you roll out
+SLIDE 5S | Sort, Set in order, Shine, Standardise, Sustain; From the Japanese Seiri, Seiton, Seiso, Seiketsu, Shitsuke; Makes problems and waste visible | A place for everything
+SLIDE 5 Whys | Ask why until you reach a cause you can fix; About five times, as a guide; Base each answer on facts | Fix the cause, not the symptom
+SLIDE Calculating the benefit | Time saved × people × shifts; 10 minutes × 12 people = 2 hours per shift | Numbers win support
+SLIDE Engaging the team | Ask for ideas at the huddle; Idea board with owner and status; Go and see at the gemba; Recognise every idea that is implemented | The people who do the work see the problems
+SLIDE Common mistakes | Changing everything at once; 5S as a one-day clean-up; Stopping at human error | Plan, test, standardise, repeat
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- use the Plan-Do-Check-Act cycle to test an improvement;
+- apply the five steps of 5S to organise a work area;
+- find the root cause of a problem using the 5 Whys;
+- engage the team in small, regular improvements and calculate their benefit.
+
+## Key terms
+
+::: terms
+Continuous improvement: making small, regular improvements to how work is done, also known by the Japanese term kaizen
+PDCA: Plan-Do-Check-Act, a four-step cycle for testing and standardising changes
+5S: a method for organising a workplace in five steps: Sort, Set in order, Shine, Standardise, Sustain
+Root cause: the underlying reason a problem happens, which, when removed, stops it from happening again
+Gemba: the Japanese term for the place where the real work is done
+:::
+
+## 1. The PDCA cycle
+
+The Plan-Do-Check-Act cycle comes from the work of Walter Shewhart and was popularised by W. Edwards Deming, who later preferred the name Plan-Do-Study-Act. It is a simple discipline: test a change on a small scale before you change everything.
+
+::: diagram cycle | Plan-Do-Check-Act
+Plan: define the problem, measure the current situation and decide what to change
+Do: test the change on a small scale, for example on one line or one shift
+Check: measure the result and compare it with the starting point
+Act: if it works, make it the new standard work, if not, adjust and try again
+:::
+
+Example: a warehouse in Viana has too many picking errors on flour bags that look alike. Plan: the error rate is 1.2% and the idea is to add coloured labels to the shelves. Do: test on one aisle for two weeks. Check: errors in that aisle fall to 0.4%. Act: roll out the labels to all aisles and update the standard work.
+
+::: quiz
+? A supervisor has an idea to change the truck loading sequence. What does PDCA recommend?
+- Change the sequence on all shifts immediately to save time || PDCA tests on a small scale first to reduce risk.
+* Test it on one shift, measure the result and then decide || Correct. These are the Do and Check steps before you standardise.
+- Wait until management approves a full project || PDCA encourages small, quick tests that supervisors can run themselves.
+:::
+
+## 2. 5S: organising the workplace
+
+5S comes from Japanese manufacturing and is now used in warehouses, workshops, offices and shops. It makes waste and problems visible: a missing tool, a blocked aisle, an overflowing bin.
+
+::: slides
+SLIDE 1 Sort (Seiri) | Remove what is not needed; Use red tags for items to decide on | Less clutter, fewer accidents
+SLIDE 2 Set in order (Seiton) | A place for everything; Label shelves, outline tools and floor areas | Find anything in 30 seconds
+SLIDE 3 Shine (Seiso) | Clean the area and equipment; Cleaning is also inspection for leaks and damage | Clean to see problems
+SLIDE 4 Standardise (Seiketsu) | Write the standard with photos, checklists and a cleaning rota | Make the good state normal
+SLIDE 5 Sustain (Shitsuke) | Regular audits and review at the huddle; Supervisors lead by example | 5S is a habit, not an event
+:::
+
+You can calculate the benefit. If 5S saves each of 12 pickers 10 minutes per shift looking for scanners, labels and pallet jacks, that is 120 minutes, or 2 hours of labour per shift. Over two shifts a day and 25 working days a month, the team gains 100 hours a month. Numbers like these win support from managers.
+
+## 3. Finding root causes with the 5 Whys
+
+The 5 Whys technique is associated with Toyota. You ask "why?" repeatedly until you reach a cause you can fix. Five is a guide, not a rule.
+
+Example from a packing line: the line stopped for 40 minutes. Why? The carton sealer jammed. Why? The tape roll was the wrong width. Why? The store issued the wrong tape. Why? Two tape widths have similar codes and are stored together. Why? Nobody defined separate locations when the new tape was introduced. The countermeasure is to separate and label the two tapes, not to blame the operator.
+
+Two rules make the 5 Whys useful. Base every answer on facts checked at the gemba, not on guesses in an office. And if the answer is "a person made a mistake", ask why the process allowed that mistake.
+
+::: quiz
+? During a 5 Whys session, the answer to the third why is "the operator was careless". What should the supervisor do?
+- Stop the analysis and warn the operator || Stopping at a person usually misses the real cause in the process.
+* Ask why the process allowed the mistake to happen || Correct. Look for the process cause so the problem does not repeat.
+- Replace the operator with a more experienced one || The same process gap can trap any operator.
+- Accept the answer as the root cause || Carelessness is rarely a root cause that can be fixed.
+:::
+
+## 4. Engaging the team in improvement
+
+The people who do the work see the problems first. Engage them with simple routines. Ask for one improvement idea at the huddle each week. Keep an idea board with columns for new, in test and done, and give each idea an owner. Go to the gemba with the person who suggested the idea. Recognise every idea that is implemented and report results on the board. Small ideas that the team can implement quickly matter more than big projects.
+
+## Worked example: Slow loading at a logistics yard in Lobito
+
+::: case | Delayed trucks at Lobito
+Esperança supervises a loading team at a logistics yard near Lobito port. Trucks wait on average 70 minutes to be loaded, against a target of 45. The team says forklifts often wait for pallets that are not ready, and pallet jacks are left all over the yard.
+? What is the best first step?
+- Buy two more forklifts || This is expensive and does not address the causes the team described.
+* Run a 5 Whys with the team in the yard to find why pallets are not ready, then test one countermeasure with PDCA || Correct. She finds the root cause with facts and tests a change before rolling it out.
+- Tell the drivers to work faster || Pressure without fixing the process does not remove the waiting.
+- Change all procedures at once || With many changes at once it is impossible to know what worked.
+:::
+
+The analysis shows that orders are released to the yard only when the truck arrives. The team tests releasing orders one hour before the booked arrival time on one shift and applies 5S to the pallet jack area. Average waiting time falls on the test shift, so the new method becomes standard work.
+
+## Tool: Improvement idea card
+
+- Problem: what is happening, where and how often?
+- Current measure: time, errors, cost or waiting.
+- Root cause found with the 5 Whys.
+- Proposed change and who will test it.
+- Test plan: where, when and for how long.
+- Result after the test compared with the start.
+- Decision: standardise, adjust or stop.
+
+## Common mistakes
+
+- Changing everything at once without testing.
+- Treating 5S as a one-day clean-up.
+- Stopping the 5 Whys at "human error".
+- Collecting ideas but never implementing or answering them.
+
+## Self-check
+
+1. What are the four steps of PDCA? (Answer: Plan, Do, Check, Act.)
+2. What are the five steps of 5S in English? (Answer: Sort, Set in order, Shine, Standardise, Sustain.)
+3. Eight operators each save 15 minutes per shift. How many hours per shift is that? (Answer: 8 × 15 = 120 minutes, or 2 hours.)
+
+## Practical assignment
+
+Choose one recurring problem in your area. Run a 5 Whys with two team members at the place where it happens, and complete an improvement idea card for one countermeasure to test next week.
+
+## Summary
+
+- PDCA tests changes on a small scale before making them standard.
+- 5S and the 5 Whys make problems visible and find causes you can fix.
+- Engage the team: the people who do the work see the problems and solutions first.

@@ -1,0 +1,858 @@
+=== 20
+SLIDE What you will learn | Explain how customers judge service using five quality dimensions; Describe the zone of tolerance between adequate and desired service; Map moments of truth in a customer journey; Explain the service-profit chain and calculate customer lifetime value | Four skills you will practise in this lesson
+SLIDE Expectations and the zone of tolerance | Desired service: what the customer hopes for; Adequate service: the minimum they accept; Inside the zone the customer is satisfied, below it they leave or complain | Know where the floor is
+SLIDE The five RATER dimensions | Reliability: do what you promised; Assurance: knowledge and courtesy that build trust; Tangibles: premises, equipment, appearance; Empathy: individual attention; Responsiveness: speed and willingness to help | Reliability is the base of everything
+SLIDE Moments of truth | Every contact where a customer forms an opinion; Phone, WhatsApp, counter, delivery, invoice; Jan Carlzon made the idea famous at the airline SAS | Small moments add up to the brand
+SLIDE The service-profit chain | Internal service quality leads to satisfied staff; Satisfied staff stay and deliver more value; Value creates satisfied and loyal customers; Loyalty drives revenue and profit | Look after staff to look after customers
+SLIDE Customer lifetime value | Average spend per visit x visits per year x years as a customer; Multiply by margin to get profit; A lost customer costs the whole stream, not one sale | Think in years, not transactions
+SLIDE Common mistakes | Treating service as smiling only; Promising more than the process can deliver; Ignoring the back-office moments; Judging staff only on speed | Reliability first, warmth always
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain how customers judge service, using the five RATER dimensions and the zone of tolerance;
+- map the moments of truth in a customer journey in your own workplace;
+- explain the service-profit chain and why it matters to a front-line team;
+- calculate a simple customer lifetime value and use it to justify good service.
+
+## Key terms
+
+::: terms
+Customer expectation: what a customer believes should happen when they deal with you, shaped by past experience, promises and word of mouth
+Zone of tolerance: the range between the adequate service a customer will accept and the desired service they hope for
+Moment of truth: any contact in which a customer forms an opinion about your organisation
+Service-profit chain: the link between how staff are treated, the value customers receive, customer loyalty and profit
+Customer lifetime value: the total revenue or profit a customer brings over the whole relationship
+:::
+
+## 1. How customers judge service
+
+Customers do not judge service against a fixed standard. They compare what they receive with what they expected. Expectations come from what you promised (adverts, a salesperson, a sign on the wall), from past experience with you and your competitors, and from what friends and family say.
+
+Researchers describe two levels of expectation. Desired service is what the customer hopes for. Adequate service is the minimum they will accept. The space between them is the zone of tolerance. Inside the zone the customer is satisfied. Below it they complain, or more often leave without saying anything. Notice that the zone can narrow: a customer who has been let down before, or who is in a hurry, accepts much less.
+
+To understand what customers look at, use the five dimensions of service quality developed by the researchers Parasuraman, Zeithaml and Berry for their SERVQUAL questionnaire. They are easy to remember with the word RATER:
+
+- Reliability: doing what you promised, correctly, the first time.
+- Assurance: knowledge and courtesy that make the customer trust you.
+- Tangibles: the premises, equipment, uniforms and documents the customer can see.
+- Empathy: caring, individual attention.
+- Responsiveness: willingness to help and speed of response.
+
+Reliability is often found to matter most. A friendly bank teller does not make up for a transfer that was processed wrongly. Warmth makes good service better, but it cannot replace getting it right.
+
+::: quiz
+? A telecom shop is clean and modern, but customers often leave without their problem solved because staff do not know the new data plans. Which RATER dimension is weakest?
+- Tangibles || The premises are clean and modern, so tangibles are strong.
+* Assurance || Correct. Staff lack the product knowledge that makes customers trust them.
+- Empathy || Nothing suggests staff are uncaring. The gap is knowledge.
+:::
+
+## 2. Moments of truth and the customer journey
+
+Jan Carlzon, who led the airline SAS in the 1980s, made the term "moment of truth" famous. He argued that every brief contact between a customer and an employee decides whether the customer sees the company as good or bad. Today these contacts include phone calls, WhatsApp messages, the website, the security guard at the door, the delivery driver and the invoice.
+
+To map moments of truth, follow these steps:
+
+::: slides
+SLIDE Step 1: Choose one journey | For example opening an account or reporting a fault | One journey at a time
+SLIDE Step 2: List every contact | Before, during and after the visit or call | Include back-office contacts the customer feels
+SLIDE Step 3: Mark what the customer expects | Use the customer's words, not internal jargon | Expectation sets the standard
+SLIDE Step 4: Rate each contact | Green inside the zone of tolerance, red below it | Find the red moments
+SLIDE Step 5: Fix the worst moment first | Agree one change and an owner | Small fixes, quickly
+:::
+
+Some moments matter more than others. The first contact sets the tone, a failure moment (a delay or a mistake) tests the relationship, and the last contact is what the customer remembers when they tell others.
+
+## 3. Why good service pays: the service-profit chain
+
+In 1994 a group of Harvard researchers led by James Heskett published the service-profit chain. It links a chain of causes and effects:
+
+::: diagram steps | The service-profit chain
+Internal service quality: good tools, training and support for staff
+Employee satisfaction: staff who feel equipped and valued
+Retention and productivity: experienced staff who stay and work well
+Customer value: service that solves the customer's need
+Satisfaction and loyalty: customers who return and recommend
+Revenue and profit: growth that comes from loyal customers
+:::
+
+The lesson for supervisors is that customer service starts inside. A call centre agent who waits ten minutes for a slow system, or who cannot get an answer from the billing team, will struggle to serve customers well, however good their attitude.
+
+To show the money behind loyalty, calculate customer lifetime value (CLV):
+
+CLV = average spend per visit x visits per year x years as a customer x profit margin
+
+::: quiz
+? Which link of the service-profit chain is broken when agents cannot reach the billing team to answer customer questions?
+- Customer loyalty || Loyalty will suffer later, but it is not where the chain breaks.
+- Revenue growth || Revenue is the final result, not the cause.
+* Internal service quality || Correct. Staff lack the internal support they need to serve customers.
+:::
+
+## Worked example: a supermarket in Benguela
+
+A supermarket in Benguela notices that some regular families have stopped coming. The manager estimates that a typical family spends 25,000 Kz per visit, visits 50 times a year and stays for about 5 years. The gross margin is 20%.
+
+CLV = 25,000 x 50 x 5 x 20% = 1,250,000 Kz of profit per family.
+
+Losing ten families costs about 12.5 million Kz in future profit. The team maps the shopping journey and finds two red moments: long queues at the tills on Saturday mornings and a rude response when customers ask for items that are out of stock.
+
+::: case | Saturday queues in Benguela
+Supervisor Marta has four tills but only two cashiers on Saturday mornings. Queues reach 20 minutes and some customers leave their baskets. The store manager asks her for a solution by Friday.
+? What should Marta propose first?
+- Put up a sign asking customers to be patient || A sign does not change the wait. Customers stay below their zone of tolerance.
+* Move two shelf staff to the tills from 9:00 to 12:00 on Saturdays, after training them as cashiers || Correct. It fixes the worst moment of truth with existing staff and protects high lifetime value customers.
+- Offer a 5% discount to customers who complain || This pays for the problem without fixing it, and most customers leave without complaining.
+- Ask cashiers to work faster and skip greetings || Speed at the cost of courtesy damages assurance and empathy.
+:::
+
+## Tool: Moment-of-truth map
+
+- Journey chosen (for example, account opening):
+- Contacts in order (before, during, after):
+- Customer expectation at each contact, in their words:
+- Rating for each contact (inside or below the zone of tolerance):
+- RATER dimension most affected:
+- Worst moment and its likely cause:
+- One change, owner and date:
+
+## Common mistakes
+
+- Treating service as smiling only. Reliability comes first.
+- Promising more than your process can deliver, which raises expectations you will then miss.
+- Ignoring back-office moments such as invoices, deliveries and transfers.
+- Judging staff only on speed, which damages assurance and empathy.
+
+## Self-check
+
+- What is the zone of tolerance? (Answer: the range between the adequate service a customer accepts and the desired service they hope for.)
+- Which RATER dimension covers doing what you promised, correctly? (Answer: reliability.)
+- A customer spends 10,000 Kz per visit, 20 times a year, for 4 years, at a 25% margin. What is the CLV in profit? (Answer: 200,000 Kz.)
+
+## Practical assignment
+
+Choose one customer journey in your area, list every contact, and rate each one as inside or below the zone of tolerance. Estimate the lifetime value of a typical customer and present the worst moment of truth, with one proposed fix, to your supervisor this week.
+
+## Summary
+
+- Customers judge service against expectations, and the five RATER dimensions show what they look at.
+- Every contact is a moment of truth. Map them and fix the worst first.
+- The service-profit chain shows that good service starts with how staff are supported, and lifetime value shows what a lost customer really costs.
+=== 20
+SLIDE What you will learn | Use the four skills of active listening; Write empathy statements that sound sincere; Adapt your tone for phone, WhatsApp and chat; Replace negative phrases with positive language | Four skills you will practise in this lesson
+SLIDE Active listening | Give full attention and do not interrupt; Ask open and closed questions; Paraphrase what you heard; Summarise and confirm | Listen to understand, not to reply
+SLIDE Empathy statements | Name the feeling or the impact; Make it specific to the customer; Follow it with action; Avoid "I understand" alone | Empathy then action
+SLIDE Tone on the phone | Smile as you speak, it changes the voice; Slow down and pause; Use the customer's name; Explain silence and holds | The voice carries the attitude
+SLIDE Tone on WhatsApp and chat | Greet and give your name; Short paragraphs, one topic per message; No capitals or many exclamation marks; Confirm and close the conversation | Written words have no tone of voice to soften them
+SLIDE Positive language | Say what you can do, not what you cannot; Replace "problem" with the next step; Give a time, not "soon"; Avoid blame words | Same facts, better experience
+SLIDE Common mistakes | Interrupting to show you know the answer; Copy-paste empathy; Jargon and internal codes; Leaving chats without a close | Listen, acknowledge, act, confirm
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- apply the four skills of active listening in a customer conversation;
+- write empathy statements that sound sincere and lead to action;
+- adapt your tone for face-to-face, phone, WhatsApp and chat service;
+- rewrite negative phrases using positive language.
+
+## Key terms
+
+::: terms
+Active listening: listening with full attention to understand the customer's need and feelings, and showing that you have understood
+Paraphrasing: repeating the customer's message in your own words to check understanding
+Empathy statement: a sentence that recognises how the situation affects the customer
+Open question: a question that invites a full answer, such as "What happened when you tried to pay?"
+Closed question: a question answered with yes, no or a fact, such as "Was it today?"
+Positive language: wording that focuses on what can be done rather than on what cannot
+:::
+
+## 1. Active listening
+
+Many conversations fail because the agent misunderstands the need: she hears "my card is not working", assumes it is blocked, and solves the wrong problem. Active listening prevents this. It has four skills:
+
+::: diagram steps | The four skills of active listening
+Attend: full attention, no interruptions, take notes
+Question: open questions to explore, closed questions to confirm facts
+Paraphrase: repeat the message in your own words
+Summarise: state the need and the agreed next step
+:::
+
+Attend means stopping other tasks, keeping eye contact at the counter, and using short signals such as "I see" on the phone. Do not interrupt.
+
+Question in two stages. Start with open questions ("Can you tell me what happened?") to let the customer explain. Then use closed questions ("Was the payment made on Monday?") to confirm details. Asking only closed questions feels like an interrogation.
+
+Paraphrase what you heard: "So the money left your account, but the supplier says they have not received it. Is that right?" This shows you listened and lets the customer correct you early.
+
+Summarise before you act and at the end: "I will check the transfer reference now and send you the result on WhatsApp by 15:00."
+
+::: quiz
+? A customer at a bank counter says "I came last week and nothing happened." What is the best first response?
+- "That is not possible, we process everything in 48 hours." || This argues before understanding and damages trust.
+* "I am sorry to hear that. Can you tell me what you asked for last week?" || Correct. It acknowledges the customer and uses an open question to understand.
+- "Do you have your reference number?" || A closed question too early. The customer has not yet explained the need.
+:::
+
+## 2. Empathy statements
+
+Empathy is recognising how the situation affects the customer. It is not agreeing that the company was wrong, and it is not apologising for everything. A good empathy statement has three features: it names the feeling or impact, it is specific to this customer, and it is followed by action.
+
+Compare these:
+
+- Weak: "I understand." (Said alone, it sounds automatic.)
+- Better: "I can see how stressful it is to have your salary delayed at the end of the month. Let me check the transfer now."
+- Weak: "Sorry for the inconvenience."
+- Better: "Waiting three days without electricity in the shop must have cost you sales. I will register this as urgent with the technical team."
+
+::: tip | Empathy then action
+Always follow an empathy statement with a concrete step. Empathy without action sounds like a script.
+:::
+
+## 3. Tone across channels
+
+On the phone, the customer cannot see you, so your voice carries all of your attitude. Smiling while you speak really changes the sound of the voice. Speak a little slower than normal, pause after giving important information, and use the customer's name. Never leave silence unexplained: say "I am checking your account now, it will take about one minute" and, if you put the customer on hold, ask permission and return when you said you would.
+
+On WhatsApp and chat, the written words have no tone of voice to soften them, so they can sound colder than you intend. Follow these rules:
+
+::: slides
+SLIDE Open well | Greet the customer and give your name | "Good morning, this is Ana from customer care"
+SLIDE Keep it readable | Short messages, one topic each | Avoid one long block of text
+SLIDE Watch the tone | No capitals, no row of exclamation marks, no slang | Polite and clear beats casual
+SLIDE Set expectations | Say when you will reply if you need to check | "I will reply by 14:00"
+SLIDE Close properly | Confirm the solution and ask if anything else is needed | Never leave a chat open without an end
+:::
+
+## 4. Positive language
+
+Positive language does not hide bad news. It presents the same facts in terms of what can be done. Practise these rewrites:
+
+- "I cannot do that today" becomes "I can have it ready for you tomorrow at 10:00."
+- "That is not my department" becomes "The billing team handles this. I will transfer you and explain your case to them."
+- "You did not send the document" becomes "To finish the request, I just need a copy of your ID."
+- "It will be done soon" becomes "You will receive an SMS by Friday."
+
+Avoid blame words ("you should have"), vague time words ("soon", "later") and negative words ("problem", "unfortunately") where a clear next step works better.
+
+::: quiz
+? Which reply uses positive language best?
+- "Unfortunately we cannot deliver on Saturday." || True, but it only says what is not possible.
+- "Delivery is not my responsibility." || This pushes the customer away and offers nothing.
+* "We can deliver on Monday morning, or you can collect from our Viana warehouse on Saturday." || Correct. It gives the customer clear options they can choose from.
+:::
+
+## Worked example: a telecom call centre in Luanda
+
+An agent at a Luanda telecom call centre receives a call from a small business owner whose internet has been down for two days. The agent listens without interrupting, then paraphrases: "So your connection stopped on Monday, you called twice and nobody came. Is that right?" She then uses an empathy statement and a positive next step: "Two days without internet must be affecting your sales. I am booking a technician for tomorrow between 8:00 and 12:00, and I will send you the reference on WhatsApp now."
+
+::: case | A WhatsApp complaint in Luanda
+Customer Sr. Domingos writes on WhatsApp at 18:40: "THIS IS THE THIRD TIME I WRITE. NOBODY ANSWERS." His prepaid data was charged twice, a total of 6,000 Kz. Agent Lúcia sees the message.
+? What should Lúcia write first?
+- "Please do not write in capitals." || Correcting the customer's style increases his anger.
+* "Good evening Sr. Domingos, this is Lúcia. I am sorry you have had to write three times. I am checking the double charge now and will reply within 10 minutes." || Correct. It greets, gives her name, shows empathy and sets a clear time.
+- "Send your number and the date." || Too abrupt. It ignores the frustration and sounds like a form.
+- "Our system shows no problem." || It argues before checking and closes the conversation badly.
+:::
+
+## Tool: Conversation quality checklist
+
+- Greeted and gave my name:
+- Let the customer explain without interrupting:
+- Used open, then closed questions:
+- Paraphrased the need and got confirmation:
+- Used one specific empathy statement:
+- Used positive language and a clear time:
+- Summarised the next step and closed the conversation:
+
+## Common mistakes
+
+- Interrupting to show that you already know the answer.
+- Copy-paste empathy that sounds the same for every customer.
+- Using jargon and internal codes the customer does not understand.
+- Leaving a chat or WhatsApp conversation without a clear close.
+
+## Self-check
+
+- What are the four skills of active listening? (Answer: attend, question, paraphrase and summarise.)
+- Why should an empathy statement be followed by action? (Answer: without action it sounds like a script.)
+- Rewrite "It will be ready soon" using positive language. (Answer: for example, "It will be ready on Thursday at 15:00.")
+
+## Practical assignment
+
+Collect ten phrases your team often uses with customers that sound negative or vague. Rewrite each one using positive language, test them in real conversations for a week, and share the best five with your team.
+
+## Summary
+
+- Active listening means attending, questioning, paraphrasing and summarising before you act.
+- Good empathy statements are specific and followed by action.
+- Adapt your tone to the channel, and use positive language that tells the customer what you can do.
+=== 20
+SLIDE What you will learn | Handle a complaint with the HEARD method; Use de-escalation techniques with angry customers; Plan a fair service recovery; Know when and how to escalate | Four skills you will practise in this lesson
+SLIDE Why complaints are valuable | Most unhappy customers leave without complaining; A complaint is a chance to keep the customer; Each complaint shows a weakness in the process | Thank the customer for telling you
+SLIDE The HEARD method | Hear the full story; Empathise with the impact; Apologise sincerely; Resolve the issue; Diagnose the cause | Five steps, in order
+SLIDE De-escalation | Stay calm and lower your voice; Use the customer's name; Move to a quiet place; Offer choices | Never say "calm down"
+SLIDE Service recovery | Fix the problem fast; Add a fair gesture when you caused real loss; Follow up to confirm | Recovery done well can increase loyalty
+SLIDE Limits and safety | Set boundaries politely for abuse; Call security for threats; Escalate when beyond your authority | Your safety comes first
+SLIDE Common mistakes | Defending the company first; Over-apologising without fixing; Promising what you cannot deliver; Fixing the case but not the cause | Hear, Empathise, Apologise, Resolve, Diagnose
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- handle a complaint using the five steps of the HEARD method;
+- apply de-escalation techniques when a customer is angry;
+- choose a fair and proportionate service recovery action;
+- decide when to escalate a complaint and how to hand it over.
+
+## Key terms
+
+::: terms
+Complaint: any expression of dissatisfaction from a customer that expects a response
+HEARD: a five-step method for handling complaints: Hear, Empathise, Apologise, Resolve, Diagnose
+De-escalation: actions that reduce a customer's anger so the conversation can move to a solution
+Service recovery: the actions taken to put things right after a service failure
+Service recovery paradox: the finding that a customer whose problem is solved very well can become more loyal than one who never had a problem
+:::
+
+## 1. Why complaints are valuable
+
+Most unhappy customers do not complain. They simply stop buying and tell other people. A customer who complains is giving you a last chance to keep them, and free information about a weakness in your process. That is why the first words to a complaining customer can be "Thank you for telling us."
+
+Record complaints even when they are solved at once. A pattern of small complaints often shows a problem that no single conversation will fix.
+
+## 2. The HEARD method
+
+HEARD is a simple five-step method used by many service teams. Follow the steps in order:
+
+::: diagram steps | The HEARD method
+Hear: let the customer tell the full story without interrupting
+Empathise: show you understand the impact on them
+Apologise: say sorry sincerely for the experience
+Resolve: agree a solution and a time, then act
+Diagnose: find out why it happened and stop it happening again
+:::
+
+Hear. Let the customer finish and take notes. Interrupting makes an angry customer angrier.
+
+Empathise. Use a specific empathy statement: "Three wrong deliveries in a month must be disrupting your shop."
+
+Apologise. A sincere apology does not need to admit legal fault. "I am sorry this has happened" is honest even while you are still checking the facts. Avoid "I am sorry if you feel that way", which sounds like blaming the customer.
+
+Resolve. Offer a solution, or two options, with a clear time. If you need to check, say when you will call back, and call back on time.
+
+Diagnose. After the customer is helped, find the cause. Was it a wrong address in the system, a picking error or a driver problem? Record it so the team can fix it.
+
+::: quiz
+? A customer complains that her new phone was not activated. The agent listens, says sorry, and activates the phone. Which HEARD step is missing?
+- Hear || The agent listened to the complaint.
+- Resolve || The phone was activated, so the problem was resolved.
+* Diagnose || Correct. Nobody checked why activation failed, so it may happen to the next customer.
+:::
+
+## 3. De-escalation with angry customers
+
+An angry customer cannot think clearly about solutions. Your first job is to bring the emotion down. Use these techniques:
+
+::: slides
+SLIDE Control yourself first | Breathe, lower your voice and slow down | Calm is contagious
+SLIDE Let them vent | Do not interrupt or argue while they speak | Anger falls when people feel heard
+SLIDE Use their name and agree with facts | "Sr. Paulo, you are right that you waited two hours" | Agreement on facts is not admitting fault
+SLIDE Change the setting | Invite them to sit or move to a quiet office | An audience keeps anger high
+SLIDE Offer choices | "I can call you at 14:00 or you can wait 20 minutes" | Choice gives back a sense of control
+:::
+
+Avoid trigger phrases such as "calm down", "that is our policy" and "there is nothing I can do". Each one tells the customer they are not taken seriously.
+
+Set limits when necessary. You do not have to accept insults: "I want to help you, Sr. Paulo, and I can do that if we speak without insults." If a customer threatens violence, stop the conversation, move away and call security or your supervisor. Your safety comes first.
+
+## 4. Service recovery
+
+Service recovery means putting things right. A good recovery has three parts: fix the problem quickly, add a fair gesture when the customer suffered real loss or effort, and follow up to confirm the customer is satisfied.
+
+The gesture should be proportionate. A 15-minute queue may need only a sincere apology. A missed delivery that left a restaurant without rice for a weekend may justify free delivery on the next order or a credit note. Agree in advance what front-line staff can offer without approval, for example up to 20,000 Kz in credit, so they can act at once.
+
+The service recovery paradox suggests that a customer whose problem is solved fast and fairly may become more loyal than one who never had a problem. Do not rely on it: it rarely works if the same failure happens twice.
+
+Escalate when the solution is beyond your authority, the customer asks for a manager after you have tried to help, or there is a legal, safety or reputational risk. Hand over the full story so the customer does not have to repeat it.
+
+::: quiz
+? A restaurant received spoiled cooking oil worth 90,000 Kz. Front-line staff may offer up to 20,000 Kz without approval. What should the agent do?
+- Offer 20,000 Kz credit and close the case || This is below the customer's loss and ignores the agent's limit.
+* Replace the oil today and escalate to the supervisor for a credit decision, with the full case notes || Correct. It fixes the problem at once and escalates what is beyond the agent's authority.
+- Tell the customer to write a formal letter || This adds effort and delays the recovery.
+:::
+
+## Worked example: a food distributor in Viana
+
+A food distributor in Viana supplies small shops in Luanda. A shop owner calls, angry, because his order of 40 bags of sugar arrived as salt for the second time this month. The agent uses HEARD: she lets him finish, says "Two wrong deliveries must be very frustrating when your customers are waiting", apologises, and arranges the correct sugar on the afternoon truck with the salt collected at the same time. She then checks the order history and finds that both products share similar codes in the system.
+
+::: case | Wrong delivery for the second time
+The supervisor, Sr. Kiala, reviews the case. The sugar has been delivered and the customer is calmer, but similar product codes caused two errors this month.
+? What should Sr. Kiala do next?
+- Close the case because the customer received the sugar || The cause remains, so the error will happen again.
+- Warn the picker who loaded the wrong product || The similar codes make the error likely for anyone. Blame does not fix the cause.
+* Call the customer to confirm satisfaction, then ask for the product codes to be changed and add a check at loading || Correct. It completes the recovery and fixes the cause, which is the Diagnose step.
+- Give the customer a 50% discount on all orders this year || This is out of proportion and does not fix the cause.
+:::
+
+## Tool: Complaint handling record
+
+- Date, channel and customer:
+- What the customer said happened (in their words):
+- Impact on the customer:
+- Apology given and solution agreed:
+- Recovery gesture (if any) and approval:
+- Escalated to and when:
+- Root cause found:
+- Follow-up date and result:
+
+## Common mistakes
+
+- Defending the company or explaining policy before listening.
+- Apologising many times without fixing anything.
+- Promising what you cannot deliver to end the conversation.
+- Solving the case but not finding the cause.
+
+## Self-check
+
+- What do the letters in HEARD stand for? (Answer: Hear, Empathise, Apologise, Resolve, Diagnose.)
+- Name two phrases to avoid with an angry customer. (Answer: for example, "calm down" and "that is our policy".)
+- When should you escalate a complaint? (Answer: when the solution is beyond your authority, the customer asks after you have tried to help, or there is a legal, safety or reputational risk.)
+
+## Practical assignment
+
+Take the last five complaints in your area. For each one, check which HEARD steps were done well and which were missed. Agree with your supervisor what front-line staff may offer without approval, and write it on one page.
+
+## Summary
+
+- A complaint is a last chance to keep a customer and free information about your process.
+- Use HEARD: Hear, Empathise, Apologise, Resolve and Diagnose.
+- De-escalate first, recover fairly, follow up, and escalate with the full story when needed.
+=== 20
+SLIDE What you will learn | Write a service level agreement with clear targets; Calculate service level and SLA compliance; Explain first contact resolution; Design escalation paths and choose between scripts and flexibility | Four skills you will practise in this lesson
+SLIDE What a service standard is | A measurable promise to customers; Specific, observable and timed; Written so staff and customers can check it | If you cannot measure it, it is not a standard
+SLIDE Service level agreements | Service covered; Target and measure; Hours and channels; Owner and reporting; Internal agreements support external promises | Promise only what the process delivers
+SLIDE Service level and SLA compliance | Service level = answered within target / total offered x 100; A common call centre target is 80% in 20 seconds; Measure response and resolution separately | Know the formula behind the number
+SLIDE First contact resolution | Solved in the first contact with no repeat; Saves cost and customer effort; Needs knowledge, authority and good tools | Solve it once
+SLIDE Escalation paths | Tier 1 front line, Tier 2 specialists, Tier 3 experts or suppliers; Functional escalation to more skill; Hierarchical escalation to more authority | Clear triggers, warm handover
+SLIDE Scripts versus flexibility | Script what must be said, such as identity checks and legal notices; Guide the rest with principles; Allow judgment within limits | Consistent where needed, human everywhere
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a service standard and a simple service level agreement with clear targets;
+- calculate service level and SLA compliance from team data;
+- explain first contact resolution and what improves it;
+- design an escalation path and decide what should be scripted and what should be flexible.
+
+## Key terms
+
+::: terms
+Service standard: a specific, measurable promise about how a service will be delivered
+Service level agreement (SLA): a written agreement that sets the service targets between a provider and its customers
+Operational level agreement (OLA): an internal agreement between teams that supports an external SLA
+First contact resolution (FCR): solving the customer's issue in the first contact, with no need for them to contact you again
+Escalation: passing a case to someone with more skill or more authority
+:::
+
+## 1. Service standards and SLAs
+
+Good intentions do not create consistent service. Standards do. A service standard is specific, observable and timed. "We give fast service" is not a standard. "We answer WhatsApp messages within 15 minutes between 8:00 and 20:00" is.
+
+A service level agreement (SLA) puts standards in writing. It may be with external customers (for example, a distributor's key accounts) or between internal teams. Follow these steps to write one:
+
+::: slides
+SLIDE Step 1: Define the service | What is covered and what is not | "Fault repair for business internet customers"
+SLIDE Step 2: Set the target | A number and a time | "Technician on site within 24 hours"
+SLIDE Step 3: Define the measure | Start and stop points of the clock | Clock starts when the fault is logged
+SLIDE Step 4: Set hours and channels | Working hours, weekends, channels | Phone, WhatsApp and email
+SLIDE Step 5: Name the owner and reporting | Who reports results, how often | Monthly report to the client
+:::
+
+External promises depend on internal teams. If the call centre promises a refund in five days, but finance takes seven days to approve refunds, the promise will fail. An operational level agreement (OLA) between the two teams, such as "finance approves refunds within three working days", makes the external SLA possible.
+
+Two targets are often confused. Response time is how quickly you first reply. Resolution time is how quickly the issue is solved. A customer who gets a fast "we are looking into it" and then waits two weeks has received good response but poor resolution. Set and measure both.
+
+::: quiz
+? Which is a usable service standard?
+- "We always treat customers with respect" || It is a value, but it is not measurable or timed.
+* "Account opening requests are completed within 2 working days of receiving all documents" || Correct. It is specific, measurable and states when the clock starts.
+- "We aim to reply to emails quickly" || "Quickly" cannot be measured or checked.
+:::
+
+## 2. Measuring the standard: service level and SLA compliance
+
+In call centres, service level is usually expressed as a percentage of contacts answered within a target time. A common target is 80% of calls answered within 20 seconds, often written as 80/20. The formula is:
+
+Service level = contacts answered within target / total contacts offered x 100
+
+SLA compliance uses the same idea for any standard:
+
+SLA compliance = cases meeting the target / total cases x 100
+
+For example, a branch receives 420 WhatsApp messages in a week and answers 357 within 15 minutes. SLA compliance = 357 / 420 x 100 = 85%. If the target is 90%, the branch is 5 points below target and should look at when the late replies happen.
+
+## 3. First contact resolution
+
+First contact resolution (FCR) means the customer's issue is solved in the first contact, without a call-back, transfer or repeat visit. It matters because every repeat contact costs the company time and costs the customer effort and patience.
+
+FCR improves when front-line staff have three things: knowledge (training and an up-to-date knowledge base), authority (permission to solve common issues without approval) and tools (system access to see and change the account). If agents must transfer every billing question, FCR will stay low however hard they work.
+
+## 4. Escalation paths, scripts and flexibility
+
+Not every case can be solved at the front line. A clear escalation path tells staff who handles what. Many organisations use tiers:
+
+::: diagram pyramid | Tiered support
+Tier 3: experts, managers or suppliers for rare and complex cases
+Tier 2: specialists for technical, billing or credit issues
+Tier 1: front-line staff who solve most issues at first contact
+:::
+
+There are two directions. Functional escalation moves a case to someone with more skill, for example from a branch teller to the cards team. Hierarchical escalation moves it to someone with more authority, for example a supervisor who can approve a refund. For each type, define the trigger (when to escalate), the route (to whom and through which system) and the handover (the full case notes, so the customer does not repeat the story). A warm transfer, where you introduce the customer and the case to the next person, is better than simply passing the call.
+
+Scripts bring consistency, but too many make staff sound like machines. A practical rule: script what must be said exactly, and guide the rest with principles. Script identity checks, legal and regulatory statements, prices and terms, and safety instructions. Guide greetings, explanations and empathy with principles and examples, and let staff use their own words.
+
+::: quiz
+? A teller can see a customer's card is blocked but cannot unblock it, so she sends the case to the cards team. What type of escalation is this?
+* Functional escalation || Correct. The case moves to a team with more specialist skill and system access.
+- Hierarchical escalation || That would move the case to someone with more authority, such as a manager.
+- Tier 1 resolution || The case was not solved at Tier 1, it was passed on.
+:::
+
+## Worked example: a bank branch in Talatona
+
+A bank branch in Talatona, Luanda, has many complaints about slow account opening. The supervisor checks the data: last month 120 accounts were opened and 78 were completed within the promised 2 working days. SLA compliance = 78 / 120 x 100 = 65%, against a target of 90%.
+
+She maps the process and finds that documents are scanned at the branch but checked by a back-office team that has no time target. Most delays happen there.
+
+::: case | Slow account opening in Talatona
+The supervisor, Sra. Nzinga, must improve SLA compliance from 65% to 90% within three months. Customers are already promised 2 working days.
+? What should she do first?
+- Tell branch staff to promise 5 days instead || This lowers the promise without fixing the process, and customers will compare with competitors.
+* Agree an OLA with the back office to check documents within 1 working day, and track it weekly || Correct. The delay is internal, so an internal agreement supports the external promise.
+- Ask customers to call the back office directly || This adds customer effort and makes the delay their problem.
+- Add a script asking customers to be patient || A script does not fix where the time is lost.
+:::
+
+## Tool: SLA template
+
+- Service covered and exclusions:
+- Target (number and time):
+- Clock start and stop:
+- Hours, days and channels:
+- Supporting internal OLAs:
+- Escalation trigger, route and handover:
+- What is scripted and what is flexible:
+- Owner, report frequency and audience:
+
+## Common mistakes
+
+- Writing standards that cannot be measured, such as "fast" or "excellent".
+- Promising external targets that internal teams cannot support.
+- Measuring response time only and ignoring resolution.
+- Escalating without case notes, so the customer must repeat the story.
+
+## Self-check
+
+- What is the difference between response time and resolution time? (Answer: response is the first reply, resolution is when the issue is solved.)
+- 250 calls are offered and 210 are answered within 20 seconds. What is the service level? (Answer: 84%.)
+- What should always be scripted? (Answer: for example, identity checks, legal statements, prices and terms, and safety instructions.)
+
+## Practical assignment
+
+Choose one service your team delivers. Write a one-page SLA using the template, calculate last month's compliance from your own data, and identify one internal team whose speed affects your result.
+
+## Summary
+
+- A service standard is specific, measurable and timed, and an SLA puts standards in writing.
+- Measure service level, SLA compliance, response and resolution, and support external promises with internal OLAs.
+- Improve first contact resolution with knowledge, authority and tools, use clear escalation paths, and script only what must be said exactly.
+=== 20
+SLIDE What you will learn | Calculate CSAT and Net Promoter Score; Explain Customer Effort Score; Calculate average handling time and FCR; Choose a balanced set of service measures | Four skills you will practise in this lesson
+SLIDE CSAT | "How satisfied were you?" on a 1 to 5 scale; CSAT = responses of 4 or 5 / total responses x 100; Best for a single contact or transaction | Measures the moment
+SLIDE Net Promoter Score | "How likely are you to recommend us?" 0 to 10; Promoters 9-10, passives 7-8, detractors 0-6; NPS = % promoters minus % detractors | Ranges from -100 to +100
+SLIDE Customer Effort Score | Asks how easy it was to get the issue solved; Often a 1 to 7 agreement scale; High effort predicts customers leaving | Make it easy
+SLIDE Average handling time | AHT = (talk + hold + after-call work) / contacts handled; Useful for staffing; Dangerous as a target alone | Speed is not the goal
+SLIDE First contact resolution | FCR = issues solved at first contact / total issues x 100; Measure by survey or by repeat contacts; Usually linked to satisfaction | Solve once
+SLIDE Balance the scorecard | Combine experience, efficiency and quality measures; Read comments, not only scores; Act on what you learn | What gets measured gets managed
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate customer satisfaction (CSAT) and Net Promoter Score (NPS) from survey data;
+- explain what Customer Effort Score (CES) measures and when to use it;
+- calculate average handling time (AHT) and first contact resolution (FCR);
+- choose a balanced set of service measures that do not push staff into bad behaviour.
+
+## Key terms
+
+::: terms
+CSAT: customer satisfaction score, the percentage of customers who say they were satisfied with a contact or transaction
+NPS: Net Promoter Score, the percentage of promoters minus the percentage of detractors
+CES: Customer Effort Score, a measure of how easy it was for the customer to get what they needed
+AHT: average handling time, the average time spent on one contact including talk, hold and after-call work
+FCR: first contact resolution, the percentage of issues solved in the first contact
+:::
+
+## 1. Customer experience measures: CSAT, NPS and CES
+
+CSAT asks customers how satisfied they were, usually on a scale of 1 (very dissatisfied) to 5 (very satisfied), straight after a contact. The most common way to calculate it is:
+
+CSAT = number of 4 and 5 responses / total responses x 100
+
+If 300 customers answer and 240 give 4 or 5, CSAT is 80%. CSAT is useful for judging a single contact, a branch visit or a delivery.
+
+NPS was introduced by Fred Reichheld in 2003. It asks one question: "On a scale of 0 to 10, how likely are you to recommend us to a friend or colleague?" Customers are grouped by their answer:
+
+::: diagram steps | Calculating NPS
+Ask: "How likely are you to recommend us?" on a 0 to 10 scale
+Group: promoters 9-10, passives 7-8, detractors 0-6
+Convert: work out promoters and detractors as a percentage of all responses
+Subtract: NPS = % promoters minus % detractors
+Ask why: read the comments and follow up with detractors
+:::
+
+Passives count in the total but are not added or subtracted. NPS is a number, not a percentage, and ranges from -100 (everyone a detractor) to +100 (everyone a promoter). NPS measures the overall relationship, so it is often asked every few months rather than after every contact.
+
+CES asks how easy it was to get the issue solved, for example "The company made it easy for me to handle my issue", often answered on a 1 to 7 agreement scale. It is useful after service contacts, because customers who have to work hard (calling several times, repeating information, visiting a branch) are more likely to leave.
+
+::: quiz
+? Out of 100 responses, 50 are promoters, 30 passives and 20 detractors. What is the NPS?
+- +50 || This counts only promoters and ignores detractors.
+* +30 || Correct. 50% promoters minus 20% detractors equals +30.
+- +80 || This adds promoters and passives, which is not how NPS works.
+:::
+
+## 2. Efficiency and resolution measures: AHT and FCR
+
+Average handling time measures how long contacts take:
+
+AHT = (total talk time + total hold time + total after-call work) / number of contacts handled
+
+After-call work is the time spent writing notes and completing tasks after the customer has gone. For example, an agent handles 60 calls in a day with 240 minutes of talk, 30 minutes of hold and 90 minutes of after-call work. AHT = (240 + 30 + 90) / 60 = 6 minutes per call.
+
+AHT is essential for planning how many staff you need. As a target on its own it is dangerous. Agents under pressure to cut AHT may rush customers, transfer difficult calls or promise call-backs, which creates repeat contacts.
+
+First contact resolution balances AHT:
+
+FCR = issues solved at first contact / total issues x 100
+
+FCR can be measured by asking customers ("Was your issue solved today?") or by checking whether the same customer contacts you again about the same issue within a set period, such as 7 days.
+
+::: tip | Measures and targets
+A principle known as Goodhart's law warns that when a measure becomes a target, people may improve the number rather than the service. Always pair a speed measure with a quality measure.
+:::
+
+## 3. Building a balanced service scorecard
+
+No single number tells the full story. A balanced scorecard combines three types of measure:
+
+::: slides
+SLIDE Experience measures | CSAT, NPS and CES | How customers feel
+SLIDE Efficiency measures | AHT, service level and response time | How fast and how costly
+SLIDE Quality measures | FCR, call review scores and complaint numbers | Whether the work was done right
+SLIDE Comments | Read what customers write, not only the score | The reason behind the number
+:::
+
+Use the scorecard in a monthly review: look for trends rather than single bad days, compare channels (phone, WhatsApp, branch), and choose one or two actions. Small samples change a lot from month to month, so be careful with conclusions from 20 or 30 responses.
+
+::: quiz
+? A call centre manager sets one target: cut AHT from 7 to 5 minutes. What is the most likely side effect?
+- CSAT will rise because customers like short calls || Short calls help only if the issue is solved.
+- Service level will fall || Shorter calls usually improve service level, not reduce it.
+* Repeat calls will rise and FCR will fall || Correct. Agents rush or transfer customers, so issues are not solved the first time.
+:::
+
+## Worked example: NPS at a telecom provider in Huambo
+
+A telecom provider surveys 400 customers in Huambo after their first three months. The results are: 168 promoters (9-10), 132 passives (7-8) and 100 detractors (0-6).
+
+- Promoters: 168 / 400 = 42%.
+- Detractors: 100 / 400 = 25%.
+- NPS = 42 - 25 = +17.
+
+The team reads the detractors' comments. Most mention the same issue: top-up problems take several days to solve because agents must email another team. Average CES for these contacts is low, and FCR for top-up issues is only 45%.
+
+::: case | Improving NPS in Huambo
+The regional manager, Sr. Chilala, wants to raise NPS from +17. He has budget for one action this quarter.
+? Which action is most likely to raise NPS?
+- Run a radio advert about the network's quality || Adverts do not fix the effort that is creating detractors.
+- Give every surveyed customer free airtime || This may lift one survey but does not fix the cause.
+- Ask agents to tell customers to score 9 or 10 || This distorts the measure and breaks trust.
+* Give Tier 1 agents system access to fix common top-up problems at first contact || Correct. It reduces effort, raises FCR and removes the main reason for detractors.
+:::
+
+## Tool: Monthly service scorecard
+
+- Period, channel and number of responses:
+- CSAT (% of 4 and 5):
+- NPS (% promoters minus % detractors):
+- CES (average score):
+- AHT (talk + hold + after-call work, per contact):
+- FCR (%):
+- Service level or SLA compliance (%):
+- Top three themes from customer comments:
+- One or two actions, owners and dates:
+
+## Common mistakes
+
+- Treating NPS as a percentage or forgetting to subtract detractors.
+- Setting AHT as a target without a quality measure beside it.
+- Reading scores without reading the comments.
+- Drawing strong conclusions from very small samples.
+
+## Self-check
+
+- Which scores count as promoters, passives and detractors? (Answer: 9-10, 7-8 and 0-6.)
+- 50 calls, 200 minutes talk, 25 minutes hold, 75 minutes after-call work. What is the AHT? (Answer: 6 minutes.)
+- Why should AHT be paired with FCR? (Answer: so agents are not pushed to rush customers and create repeat contacts.)
+
+## Practical assignment
+
+Collect one month of service data for your team or channel. Fill in the monthly scorecard with as many measures as you can, calculate NPS or CSAT if survey data exists, and propose one action based on customer comments.
+
+## Summary
+
+- CSAT measures a contact, NPS the relationship and CES the effort the customer had to make.
+- AHT helps with staffing but must be balanced by FCR and quality measures.
+- A balanced scorecard plus customer comments shows what to fix next.
+=== 20
+SLIDE What you will learn | Coach staff with the GROW model; Run a fair call and chat review; Give recognition and feedback with SBI; Find root causes with Pareto analysis and the 5 Whys | Four skills you will practise in this lesson
+SLIDE What a service culture is | How people serve when no one is watching; Shaped by what supervisors notice, reward and tolerate; Built daily, not by posters | You set the standard by what you accept
+SLIDE The GROW coaching model | Goal: what to improve; Reality: what is happening now; Options: possible ways forward; Will: the agreed action and date | Ask more than you tell
+SLIDE Call and chat reviews | Use a short scorecard linked to standards; Review a sample every month; Calibrate scores with other reviewers; Coach, do not punish | Reviews are for learning
+SLIDE Recognition and SBI feedback | Situation: when and where; Behaviour: what the person did; Impact: the effect on the customer or team; Be specific and timely | Catch people doing it right
+SLIDE Fixing root causes | Pareto: find the few causes behind most complaints; 5 Whys: ask why until you reach a cause you can fix; Close the loop with customers and staff | Fix the system, not just the case
+SLIDE Common mistakes | Reviewing only bad calls; Vague praise; Coaching by telling; Fixing complaints one by one forever | Coach, recognise, fix causes
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- coach a team member using the GROW model;
+- run a fair and useful call or chat review with a scorecard;
+- give recognition and feedback using the Situation-Behaviour-Impact (SBI) model;
+- use Pareto analysis and the 5 Whys to fix the root causes of complaints.
+
+## Key terms
+
+::: terms
+Service culture: the shared habits and beliefs that shape how people serve customers when no one is watching
+Coaching: helping a person improve by asking questions and agreeing actions, rather than only giving instructions
+Calibration: a session where reviewers score the same contact and agree how to apply the scorecard consistently
+SBI: a feedback model that describes the Situation, the Behaviour and its Impact
+Root cause: the underlying reason a problem happens, which, if removed, stops it happening again
+:::
+
+## 1. What builds a service culture
+
+A service culture is how people serve when no one is watching. Posters and slogans do not build it. Supervisors build it every day through what they notice, what they reward and what they tolerate. If a supervisor ignores an agent who is rude on WhatsApp, the team learns that rudeness is acceptable. If a supervisor praises an agent who solved a difficult case, the team learns what good looks like.
+
+This connects to the service-profit chain from lesson 1: staff who are coached, recognised and given the tools to solve problems serve customers better. The four tools in this lesson are coaching, call reviews, recognition and root-cause fixing.
+
+## 2. Coaching with GROW
+
+The GROW model, popularised by the coach John Whitmore, gives structure to a coaching conversation. Its strength is that the supervisor asks questions and the team member finds the answer, so they own the action.
+
+::: slides
+SLIDE G: Goal | "What would you like to improve in your WhatsApp replies?" | Agree one specific goal
+SLIDE R: Reality | "What happens now? Let us look at three of your chats." | Facts, not opinions
+SLIDE O: Options | "What could you do differently? What else?" | Let them suggest first
+SLIDE W: Will | "What will you do, and when shall we review it?" | One action, one date
+:::
+
+Keep coaching short (15 to 20 minutes), regular (for example every two weeks) and focused on one skill at a time. Use real examples from the agent's own contacts.
+
+::: quiz
+? In a coaching session, the supervisor says: "Your hold times are too long. From tomorrow, check the knowledge base before you put customers on hold." What is wrong with this?
+- Nothing, it is clear and direct || It is clear, but it is an instruction, not coaching.
+* The supervisor tells instead of asking, so the agent does not explore the reality or own the solution || Correct. GROW asks questions so the agent helps find and commit to the action.
+- The goal is not about customers || Long hold times affect customers directly.
+:::
+
+## 3. Call reviews and recognition
+
+Call and chat reviews (often called quality monitoring) check contacts against your standards. Use a short scorecard of 6 to 10 items linked to what you have trained: greeting and name, active listening, empathy, correct information, positive language, compliance steps, and a clear close. Review a sample of contacts for each person every month, including good ones. Hold calibration sessions where supervisors score the same contact and agree on differences, so agents are scored fairly whoever reviews them.
+
+Share the review with the agent within a few days, listen to the contact together and use it for coaching. If reviews are used only to punish, agents will hide problems.
+
+Recognition is the other half. Use the SBI model, developed by the Center for Creative Leadership, for both praise and correction:
+
+- Situation: "This morning, in the call with the shop owner from Cazenga..."
+- Behaviour: "...you paraphrased his problem and gave him a clear time for the delivery..."
+- Impact: "...and he thanked you and cancelled his complaint."
+
+Specific, timely recognition teaches the whole team what good service looks like. "Good job" teaches nothing.
+
+## 4. Using feedback to fix root causes
+
+Front-line staff solve cases. Supervisors must also stop the same cases coming back. Two simple tools help.
+
+Pareto analysis is based on the observation that a few causes usually create most of the problems. Count complaints by cause for a month, sort them from largest to smallest, and calculate each one's share of the total. Focus on the top two or three.
+
+The 5 Whys, a technique associated with Toyota, asks "why?" repeatedly until you reach a cause you can fix. Five is a guide, not a rule.
+
+Finally, close the loop. Tell the customer what changed, and tell staff what was fixed because of their feedback.
+
+::: diagram cycle | The closed feedback loop
+Collect: complaints, survey comments and staff observations
+Analyse: group by cause and find the biggest with Pareto
+Fix: find the root cause with the 5 Whys and change the process
+Tell: inform customers and staff what changed
+:::
+
+::: quiz
+? A branch has 200 complaints in a month: 90 about queues, 60 about card delivery, 30 about fees and 20 other. What share do the top two causes represent?
+- 45% || That is queues only.
+- 60% || That is not the total of the top two causes.
+* 75% || Correct. Queues and card delivery are 150 of 200 complaints, which is 75%.
+:::
+
+## Worked example: a hotel in Lubango
+
+A hotel in Lubango receives 80 complaints in two months. The front office supervisor sorts them: 36 about slow check-in, 20 about Wi-Fi, 14 about breakfast and 10 other. Check-in is 45% of the total.
+
+She applies the 5 Whys. Why is check-in slow? Guests wait while rooms are finished. Why? Housekeeping does not know which rooms are needed first. Why? Arrival times are not shared. Why? Reservations and housekeeping use separate lists. The fix: a shared arrivals list on the team's WhatsApp group at 10:00 each day, with priority rooms marked.
+
+::: case | Repeated complaints in Lubango
+Two weeks later, check-in complaints fall. But receptionist Joana, who suggested the shared list, feels nobody noticed. Two other staff say their ideas are ignored.
+? What should the supervisor do?
+- Give Joana a bonus and say nothing to the team || Private reward does not show the team that feedback leads to change.
+* Recognise Joana at the team briefing using SBI and ask the team for the next problem to fix || Correct. Public, specific recognition closes the loop and encourages more ideas.
+- Wait for the monthly figures before saying anything || Recognition loses impact when delayed.
+:::
+
+## Tool: Supervisor service routine
+
+- Daily: one recognition using SBI and one short check of the queues or chats:
+- Weekly: review two contacts per agent with the scorecard:
+- Every two weeks: one GROW coaching session per agent:
+- Monthly: calibration session with other reviewers:
+- Monthly: Pareto of complaints by cause and one 5 Whys analysis:
+- Monthly: tell customers and staff what was fixed:
+
+## Common mistakes
+
+- Reviewing only bad contacts, which makes reviews feel like punishment.
+- Giving vague praise such as "good job".
+- Coaching by telling instead of asking.
+- Solving the same complaints one by one forever without fixing the cause.
+
+## Self-check
+
+- What do the letters in GROW stand for? (Answer: Goal, Reality, Options, Will.)
+- What is the purpose of a calibration session? (Answer: to make sure different reviewers score contacts consistently.)
+- What does Pareto analysis help you decide? (Answer: which few causes create most of the problems, so you fix those first.)
+
+## Practical assignment
+
+Sort last month's complaints in your area by cause and find the top two. Run a 5 Whys on the largest one with your team. This week, also give three specific recognitions using SBI and hold one GROW coaching session.
+
+## Summary
+
+- Supervisors build service culture through what they notice, reward and tolerate.
+- Coach with GROW, review contacts fairly with a calibrated scorecard, and recognise good service with SBI.
+- Use Pareto and the 5 Whys to fix root causes, and close the loop with customers and staff.

@@ -1,0 +1,811 @@
+=== 20
+SLIDE What you will learn | Map the seven stages of an import from order to warehouse; Name who does what: supplier, forwarder, shipping line, broker, bank; Calculate total import lead time and a reorder point; Run a shipment with an import file and a pre-arrival checklist | Know the whole chain, not just your step
+SLIDE The seven stages | Order and contract; Supplier documents; Shipping; Arrival at port; Customs clearance; Release from the terminal; Delivery to the warehouse | Every stage has an owner and a deadline
+SLIDE Who does what | Supplier: goods, invoice, export clearance under most rules; Forwarder: books and coordinates transport; Shipping line: carries the container and issues the bill of lading; Customs broker (despachante): declares the goods to customs; Bank: moves payment and sometimes documents | One coordinator holds the file together
+SLIDE The import file | Contract or proforma invoice; Payment record; Shipping documents; Licences and certificates; Customs declaration and receipts; Delivery and receiving notes | One file per shipment, physical or digital
+SLIDE Import lead time | Add every stage: production + to port + transit + clearance + delivery; Example: 21 + 4 + 35 + 10 + 2 = 72 days; Reorder point = daily demand x lead time + safety stock | Plan from realistic times, not the best case
+SLIDE Pre-arrival work | Get document copies as soon as the vessel sails; Check them against the order; Send them to the broker before arrival; Plan payment so originals arrive in time | Clear the paperwork before the box arrives
+SLIDE Common mistakes | Starting clearance only when the ship arrives; No single owner for the shipment; Forgetting container free time; Leaving inland delivery out of the plan | Own the file from order to warehouse
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the seven stages of an import, from purchase order to delivery at your warehouse;
+- identify what the supplier, freight forwarder, shipping line, customs broker and bank each do;
+- calculate the total import lead time and use it to set a reorder point;
+- apply a pre-arrival checklist so that customs clearance can start before the goods arrive.
+
+## Key terms
+
+::: terms
+Freight forwarder: a company that organises transport for the importer, booking space with carriers and coordinating handling and documents
+Shipping line: the ocean carrier that owns or operates the vessel and containers and issues the bill of lading
+Customs broker (despachante oficial): a licensed agent who prepares and submits the customs declaration on behalf of the importer
+Clearance: the customs process of declaring goods, paying duties and taxes and obtaining permission to release them
+Lead time: the total time from placing an order to having the goods available for sale or use
+Import file: the complete set of records for one shipment, from contract to delivery note
+:::
+
+## 1. The seven stages of an import
+
+Every sea import follows the same basic chain.
+
+::: diagram steps | The import process end to end
+Order: agree product, price, Incoterms rule and payment method in a contract or proforma invoice
+Supplier documents: the supplier issues invoice, packing list and certificates
+Shipping: goods are loaded, the vessel sails and the bill of lading is issued
+Arrival: the vessel arrives and the container is discharged at the terminal
+Customs clearance: the broker declares the goods and duties and taxes are paid
+Release: the terminal and shipping line release the container
+Delivery: the container is trucked to the warehouse, unloaded and the empty returned
+:::
+
+At each stage, write down three things in the import file: who is responsible, what document or event proves the stage is complete, and the planned date. For example, the shipping stage is complete when you receive a copy of the bill of lading showing the "shipped on board" date.
+
+## 2. Who does what
+
+Five parties do most of the work, and each owns specific tasks.
+
+- Supplier: produces and packs the goods, issues the commercial documents and, under most Incoterms rules, clears the goods for export.
+- Freight forwarder: books the container, arranges pick-up and loading, tracks the vessel and passes documents. A forwarder may also act as the carrier and issue its own house bill of lading.
+- Shipping line: carries the container, issues the master bill of lading, sets the free time for its containers and charges demurrage and detention.
+- Customs broker: classifies the goods, prepares the customs declaration (in Angola, the Documento Único or DU), submits supporting documents, arranges inspections and pays duties on your behalf. In Angola, only customs brokers approved by the government may process import declarations.
+- Bank: makes the payment and, under a documentary collection or letter of credit, receives and releases the shipping documents.
+
+Inside your company, the import coordinator links buying, finance and the warehouse. A simple rule: one shipment, one owner.
+
+::: quiz
+? A container has arrived but the broker cannot submit the declaration because the original bill of lading is still at the bank. Which party has the documents now?
+- The shipping line || The line issued the bill of lading, but under a documentary collection or letter of credit the originals travel through the banks.
+* The bank, which releases them when payment or acceptance is made || Under bank-based payment methods the originals are held until the importer pays or accepts.
+- The customs broker || The broker can only use documents you give them.
+:::
+
+## 3. Calculating import lead time
+
+Lead time decides when you must order. Add the realistic duration of every stage, not the best case. Then set the reorder point: reorder point = average daily demand x lead time in days + safety stock.
+
+::: slides
+SLIDE Step 1: List the stages | Use the seven-stage chain; Ask each party for realistic times; Check past shipments for evidence | Lead time is a sum, not a guess
+SLIDE Step 2: Add the durations | Production 21 days; To port and loading 4 days; Sea transit 35 days; Clearance and release 10 days; Delivery 2 days | Total lead time = 72 days
+SLIDE Step 3: Set the reorder point | Daily demand 45 cartons; 45 x 72 = 3,240 cartons; Add safety stock of 900 cartons; Reorder point = 4,140 cartons | Order when stock falls to 4,140
+:::
+
+::: quiz
+? Lead time is 60 days, daily demand is 30 units and safety stock is 400 units. What is the reorder point?
+- 1,800 units || This leaves out the safety stock.
+- 2,000 units || Check the multiplication: 30 x 60 = 1,800.
+* 2,200 units || 30 x 60 = 1,800, plus 400 safety stock = 2,200 units.
+:::
+
+## Worked example: a building-materials importer in Luanda
+
+A building-materials importer in Luanda buys ceramic tiles from a supplier in Asia, three containers per month.
+
+The new import coordinator, Teresa, opened an import file for each order. When the vessel sailed, she asked the forwarder for copies of the bill of lading, invoice and packing list. She checked that the importer name, product description, quantities and weights matched the purchase order, and sent the set to the broker eight days before arrival. The broker prepared the declaration, and the bank received the originals in time because payment had been scheduled against the expected arrival date.
+
+Clearance and release time fell from about 18 days to about 9 days. Teresa updated the lead time from 81 to 72 days and lowered the reorder point, which freed warehouse space and cash.
+
+::: case | The vessel is three days from Luanda
+Teresa learns that a tiles container arrives in three days. The broker has the invoice and packing list but not the bill of lading copy. Finance says payment to the bank is planned for next week.
+? What should Teresa do first?
+- Wait until the vessel arrives and then collect all documents || Waiting adds days at the terminal and uses up free time.
+* Get the bill of lading copy from the forwarder today and ask finance to bring the payment forward || The broker needs the full set, and the originals are only released after payment.
+- Ask the shipping line to keep the container on the vessel || Lines do not hold containers on board for one importer.
+- Tell the warehouse to expect the goods in three days || The goods cannot leave the port before clearance and release.
+:::
+
+## Tool: pre-arrival checklist
+
+- Import file opened with contract or proforma, Incoterms rule and payment terms.
+- Planned date and owner written for each of the seven stages.
+- Copies of invoice, packing list and bill of lading received after the vessel sails.
+- Documents checked against the purchase order: names, product, quantity, weights, values.
+- Full set sent to the broker at least 7 days before arrival.
+- Payment timed so original documents reach you before arrival.
+- Container free time and return depot confirmed with the shipping line.
+
+## Common mistakes
+
+- Starting customs work only when the vessel arrives.
+- Having no single owner for the shipment, so problems fall between departments.
+- Using the supplier's best-case lead time instead of your own history.
+- Forgetting free time, inland delivery and empty container return in the plan.
+
+## Self-check
+
+1. Name the seven stages of an import. (Answer: order, supplier documents, shipping, arrival, customs clearance, release, delivery.)
+2. Who prepares and submits the customs declaration? (Answer: the licensed customs broker, the despachante, on the importer's behalf.)
+3. Daily demand is 50 units, lead time 70 days and safety stock 500 units. What is the reorder point? (Answer: 50 x 70 + 500 = 4,000 units.)
+
+## Practical assignment
+
+Choose one shipment now on the water. Draw its seven stages, write the owner and planned date for each, and check which documents are still missing. Send the missing list to the responsible person today.
+
+## Summary
+
+- An import has seven stages, and delays usually happen at the handovers between them.
+- Each party owns specific tasks, and one internal coordinator should own the whole file.
+- Realistic lead time drives the reorder point, and pre-arrival work shortens clearance.
+
+=== 20
+SLIDE What you will learn | Explain the four groups of the Incoterms 2020 rules; Locate the risk and cost transfer points for all 11 rules; Choose the right rule for container shipments; Avoid the most common Incoterms mistakes | The rule decides who carries risk and cost
+SLIDE The four groups | E: EXW, seller makes goods available; F: FCA, FAS, FOB, buyer pays main carriage; C: CPT, CIP, CFR, CIF, seller pays main carriage; D: DAP, DPU, DDP, seller delivers at destination | The letter tells you who pays the main carriage
+SLIDE Risk and cost | E, F and D rules: risk and cost pass at the same place; C rules: risk passes at shipment, cost passes at destination; C rules have two critical points | Under CIF the goods travel at the buyer's risk
+SLIDE Containers | FAS, FOB, CFR, CIF are for sea and inland waterway only; Containers are handed over at the terminal, not on board; Use FCA, CPT or CIP instead | FOB for containers creates a risk gap
+SLIDE Insurance levels | CIF: minimum cover, Institute Cargo Clauses (C); CIP: wider cover, Institute Cargo Clauses (A); Minimum insured value 110% of contract price | Check the cover, or buy your own
+SLIDE EXW and DDP traps | EXW: the buyer must clear export in the seller's country; DDP: the seller must clear import and pay taxes in Angola; Both rarely work for an Angolan importer | Use FCA instead of EXW, DAP instead of DDP
+SLIDE Writing the rule | Rule + named place + Incoterms 2020; Example: FCA Container Yard Ningbo, Incoterms 2020; Make the place as precise as possible | Vague places cause disputes
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the four groups (E, F, C and D) of the 11 Incoterms 2020 rules;
+- identify where risk and where cost pass from seller to buyer under each rule;
+- choose a suitable rule for container shipments instead of using FOB or CIF by habit;
+- apply a checklist to avoid common mistakes such as EXW exports and DDP imports.
+
+## Key terms
+
+::: terms
+Incoterms 2020: the eleven trade terms published by the International Chamber of Commerce (ICC), in force since 1 January 2020
+Delivery point: the place where the seller has delivered and risk passes to the buyer
+Two critical points: under the C rules, risk passes at shipment but the seller pays transport to destination
+Named place: the precise port, terminal or address written after the rule
+:::
+
+## 1. The four groups and where risk and cost pass
+
+Here we look at the rules as an importer must: who pays each cost, and who carries the loss at each point.
+
+::: diagram steps | Incoterms 2020 groups, from least to most seller obligation
+E group: EXW, goods made available at the seller's premises, not loaded and not export-cleared
+F group: FCA, FAS, FOB, the seller delivers to the carrier chosen and paid by the buyer
+C group: CPT, CIP, CFR, CIF, the seller pays main carriage but risk passes at shipment
+D group: DAP, DPU, DDP, the seller carries risk and cost to the named destination
+:::
+
+For each rule, the importer should know the risk point and the cost point:
+
+- EXW: risk and cost pass when goods are made available at the seller's premises. The buyer loads and clears export.
+- FCA: risk and cost pass when goods are handed to the buyer's carrier, loaded at the seller's premises or ready for unloading at another named place. The seller clears export.
+- FAS: risk and cost pass when goods are placed alongside the vessel at the port of loading.
+- FOB: risk and cost pass when goods are on board the vessel at the port of loading.
+- CFR and CIF: risk passes on board at the port of loading. The seller pays freight to the named destination port, and under CIF also insurance.
+- CPT and CIP: risk passes when goods are handed to the first carrier. The seller pays carriage to the named destination, and under CIP also insurance.
+- DAP: risk and cost pass at the named destination, goods ready for unloading. The buyer unloads and clears import.
+- DPU: as DAP, but the seller also unloads. It is the only rule where the seller must unload at destination.
+- DDP: as DAP, but the seller also clears import and pays import duties and taxes.
+
+Only FAS, FOB, CFR and CIF are limited to sea and inland waterway. The other seven work for any mode, including multimodal container transport.
+
+::: quiz
+? You buy rice CFR Luanda. The vessel sinks halfway. Who carries the loss of the goods?
+- The seller, because it paid the freight to Luanda || Paying freight does not mean carrying risk under the C rules.
+* The buyer, because risk passed when the rice was loaded on board || Under CFR risk passes on board at the port of loading, so the buyer needs insurance.
+- The shipping line, always and in full || Carrier liability is limited and depends on the contract of carriage.
+:::
+
+## 2. Containers: why FOB and CIF are often wrong
+
+FOB, CFR and CIF were designed for goods loaded over the ship's rail, such as bagged rice or steel loaded by crane. A container is different. The seller hands it to the terminal days before loading. Under FOB, risk only passes when the container is on board, but the seller has lost control of it days earlier.
+
+The ICC recommends FCA instead of FOB, and CPT or CIP instead of CFR or CIF, for containerised cargo. Under FCA, risk passes when the seller hands the container to the carrier at the terminal or at its own premises, which matches what really happens.
+
+Incoterms 2020 also added an option in FCA: the parties may agree that the buyer instructs its carrier to issue an on-board bill of lading to the seller. This helps with letters of credit.
+
+::: tip | Insurance under CIF and CIP
+CIF requires only minimum cover, Institute Cargo Clauses (C). CIP requires wider cover, Institute Cargo Clauses (A). In both, the minimum insured value is the contract price plus 10%.
+:::
+
+::: quiz
+? A supplier in China offers 20 containers of tiles "FOB Shanghai". Which rule better matches how containers are handed over?
+- EXW Shanghai factory || EXW puts export clearance on you, which is harder, not better.
+- CFR Luanda || CFR is still a sea-only rule with risk on board.
+* FCA named container terminal Shanghai, Incoterms 2020 || FCA passes risk when the container is handed to the carrier, which matches practice.
+:::
+
+## 3. Choosing a rule as an Angolan importer
+
+Use these steps before you sign:
+
+::: slides
+SLIDE Step 1: Check the cargo | Containers: use FCA, CPT or CIP; Bulk or break-bulk loaded by crane: FOB, CFR or CIF can fit | Match the rule to the transport mode
+SLIDE Step 2: Decide who controls freight | F rules: you choose the forwarder and freight rate; C rules: the seller chooses and may add a margin | Controlling freight gives you visibility and choice
+SLIDE Step 3: Check customs duties | Avoid EXW if you cannot clear export abroad; Avoid DDP because the seller must clear import and pay taxes in Angola | Each party should clear customs in its own country
+:::
+
+## Worked example: buying sugar and steel for a Luanda distributor
+
+A Luanda distributor imports bagged sugar in containers and steel bars as break-bulk. The buyer, Jorge, received "FOB Santos" quotes for both.
+
+For the sugar containers, Jorge changed the term to FCA Santos container terminal, Incoterms 2020, with his own forwarder. Because the bank's letter of credit required an on-board bill of lading, he used the FCA on-board bill of lading option. For the steel, loaded by crane, FOB Santos remained suitable. For both, he bought cargo insurance on Institute Cargo Clauses (A) terms at 110% of the invoice value.
+
+::: case | The supplier insists on DDP Luanda
+A new supplier of kitchen equipment offers "DDP Luanda warehouse" so that Jorge has "nothing to do". The supplier has no company or tax registration in Angola.
+? What should Jorge do?
+* Propose DAP Luanda warehouse and let his own broker clear import || Under DAP the seller delivers to the door, but import clearance stays with the registered importer who can do it.
+- Accept DDP because it is the easiest for the buyer || A foreign seller without registration usually cannot clear import in Angola, so goods may get stuck.
+- Change to EXW to save money || EXW moves export clearance abroad to Jorge, which is the opposite problem.
+:::
+
+## Tool: Incoterms selection checklist
+
+- Is the cargo containerised? If yes, use FCA, CPT or CIP, not FOB, CFR or CIF.
+- Can the seller clear export in its country? (If not, avoid EXW.)
+- Can we clear import in Angola ourselves? (If yes, avoid DDP.)
+- Who insures, on which Institute Cargo Clauses and for what value?
+- Is the named place precise (terminal, port or full address)?
+- Is "Incoterms 2020" written next to the rule?
+
+## Common mistakes
+
+- Using FOB or CIF for containers by habit.
+- Thinking the seller carries the risk under CIF because it pays freight.
+- Using EXW or DDP across borders where one party cannot handle customs.
+- Writing only "FOB China" or "CIF Angola" without a precise named place.
+
+## Self-check
+
+1. Under which group of rules does risk pass at a different place from where the seller's cost obligation ends? (Answer: the C group: CPT, CIP, CFR and CIF.)
+2. Which rule does the ICC recommend instead of FOB for containers? (Answer: FCA.)
+3. What insurance does CIP require? (Answer: Institute Cargo Clauses (A), for at least 110% of the contract price.)
+
+## Practical assignment
+
+Take your last five purchase orders. For each, write the Incoterms rule, named place and type of cargo. Mark any where the rule does not fit the cargo or is written without a precise place, and propose the correct wording.
+
+## Summary
+
+- The E, F, C and D groups show who pays the main carriage and where risk passes.
+- C rules have two critical points, so the importer carries the transit risk.
+- For containers, use FCA, CPT or CIP, and always write the rule, a precise place and "Incoterms 2020".
+
+=== 20
+SLIDE What you will learn | Compare the four main payment methods and their risks; Explain how a documentary collection works; Explain how a letter of credit works under UCP 600; Choose a payment method for a supplier relationship | Payment terms are risk decisions
+SLIDE The payment risk ladder | Advance payment: best for seller, riskiest for buyer; Letter of credit: banks commit to pay against documents; Documentary collection: banks pass documents, no guarantee; Open account: best for buyer, riskiest for seller | Risk moves from one party to the other
+SLIDE Documentary collection | Rules: ICC URC 522; D/P: documents released against payment; D/A: documents released against acceptance of a bill of exchange; Banks do not guarantee payment | Cheaper than a letter of credit, less security
+SLIDE Letter of credit | Rules: ICC UCP 600; Issuing bank promises to pay against a complying presentation; Banks deal with documents, not goods; Confirmation adds a second bank's promise | Payment depends on perfect documents
+SLIDE UCP 600 key rules | Credits are irrevocable; Banks have up to 5 banking days to examine documents; Presentation by default within 21 days after shipment and before expiry | Know the time limits
+SLIDE Discrepancies | Data not matching the credit; Late shipment or late presentation; Missing or unsigned documents; Fix by amendment or waiver | Most discrepancies are avoidable
+SLIDE Choosing a method | Consider trust, order value and country risk; Consider bank costs and cash flow; Move to easier terms as trust grows | Negotiate terms, not only price
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- compare advance payment, documentary collection, letter of credit and open account by risk for buyer and seller;
+- explain the steps of a documentary collection under URC 522;
+- explain how a letter of credit works under UCP 600 and why discrepancies happen;
+- choose a suitable payment method for a given supplier and order.
+
+## Key terms
+
+::: terms
+Advance payment: the buyer pays before the goods are shipped
+Open account: the seller ships and the buyer pays later, usually 30 to 90 days after invoice or shipment
+Documentary collection: banks pass the shipping documents to the buyer against payment or acceptance, following ICC URC 522
+Letter of credit: a bank's undertaking to pay the seller when it presents documents that comply with the credit, usually under ICC UCP 600
+Complying presentation: documents that match the terms of the credit, UCP 600 and international standard banking practice
+Discrepancy: a difference between the documents presented and the credit terms
+:::
+
+## 1. The payment risk ladder
+
+Every payment method shares out two risks: the seller's risk of shipping and not being paid, and the buyer's risk of paying and not receiving the right goods.
+
+::: diagram steps | Payment risk ladder, from safest for the seller to safest for the buyer
+Advance payment: seller is fully secure, buyer carries all the risk
+Letter of credit: a bank promises payment against complying documents
+Documentary collection: banks control documents but do not promise payment
+Open account: buyer is fully secure, seller carries all the risk
+:::
+
+Advance payment is common with new suppliers, but the importer depends entirely on the supplier's honesty. Reduce the risk with partial advance, supplier checks or an advance payment guarantee from the supplier's bank.
+
+Open account is cheap and simple, but suppliers offer it only after years of trust or with credit insurance.
+
+## 2. Documentary collection (URC 522)
+
+In a documentary collection, the seller ships and gives the documents to its bank (the remitting bank). That bank sends them to the buyer's bank (the collecting bank) with instructions:
+
+- D/P, documents against payment: the buyer pays and receives the documents, including the bill of lading needed to collect the goods.
+- D/A, documents against acceptance: the buyer accepts a bill of exchange, promising to pay at a later date, and receives the documents now.
+
+The banks follow instructions but do not check that the goods are correct, and they do not guarantee payment. If the buyer refuses, the seller's goods sit at a foreign port. For the importer it is cheaper than a letter of credit, but funds must be ready when documents arrive.
+
+::: quiz
+? Under a D/P collection, when does the importer receive the original bill of lading?
+- When the vessel sails || The documents go through the banks first.
+* When it pays the collecting bank || D/P means documents are released against payment.
+- When it signs a bill of exchange for payment in 60 days || That describes D/A, not D/P.
+:::
+
+## 3. Letters of credit under UCP 600
+
+A letter of credit (LC) moves the payment promise from the buyer to a bank. Most LCs state that they are subject to UCP 600, the ICC's Uniform Customs and Practice for Documentary Credits, 2007 revision. Key rules every importer should know:
+
+- A credit is irrevocable, even if it does not say so.
+- Banks deal with documents, not with goods. If the documents comply, the bank pays, even if the goods are poor quality.
+- The examining bank has a maximum of five banking days after presentation to decide whether the documents comply.
+- If the credit does not say otherwise, original transport documents must be presented within 21 calendar days after shipment, and always before the credit expires.
+- A confirmed LC adds the promise of a second bank, usually in the seller's country.
+
+::: slides
+SLIDE Step 1: Apply | The importer (applicant) asks its bank to issue the credit; It lists documents, dates, Incoterms rule and amount | Write only what you really need
+SLIDE Step 2: Issue and advise | The issuing bank issues the credit; An advising bank in the seller's country passes it to the seller (beneficiary) | The seller checks it can comply
+SLIDE Step 3: Ship and present | The seller ships and prepares the documents; It presents them to the nominated bank before the deadlines | Shipment date and presentation date matter
+SLIDE Step 4: Examine and pay | Banks check the documents against the credit; Complying documents are paid; Discrepant documents can be refused or waived by the applicant | Up to 5 banking days for examination
+SLIDE Step 5: Release | The issuing bank passes the documents to the importer; The importer pays or settles with its bank; The broker uses the bill of lading to start clearance | Documents unlock the goods
+:::
+
+Make an LC easy to comply with: ask only for documents the supplier can produce, set realistic dates and copy the goods description from the proforma. Every extra condition is a possible discrepancy.
+
+::: quiz
+? The goods are shipped on 1 March. The credit is silent on the presentation period and expires on 30 April. What is the latest normal presentation date?
+- 30 April || The credit expiry is a limit, but the 21-day rule applies first.
+* 22 March || UCP 600 sets 21 calendar days after shipment by default, and this falls before expiry.
+- 6 March || Five banking days is the examination time, not the presentation time.
+:::
+
+## Worked example: a food importer in Luanda chooses payment terms
+
+A food importer in Luanda buys canned fish from two suppliers. Supplier A has worked with the company for six years. Supplier B is new and wants 100% advance payment for a first order of USD 180,000.
+
+The import manager, Ana, proposed to Supplier B a confirmed LC instead, subject to UCP 600, requiring a commercial invoice, packing list, full set of clean on-board bills of lading, certificate of origin and health certificate. She asked for a shipment window of six weeks and a 21-day presentation period. For Supplier A, Ana moved from LC to D/P collection, which reduced bank charges while keeping control of the documents. She planned to propose open account after another year of good performance.
+
+::: case | A discrepancy in Supplier B's documents
+Supplier B presents documents on day 18 after shipment. The bank finds that the invoice says "canned sardines in oil" while the credit says "canned sardines in vegetable oil". All other documents comply and the goods are needed for a promotion.
+? What should Ana do?
+- Ask the bank to pay anyway without any formal step || Banks will not pay discrepant documents without the applicant's waiver.
+- Refuse the documents to renegotiate the price || Using a minor discrepancy to cut the price damages trust and delays the goods.
+* Check the goods description with the supplier and, if the goods are correct, give the bank a waiver || A waiver lets the bank accept the documents when the applicant agrees the difference is acceptable.
+- Cancel the credit and pay by open account || An irrevocable credit cannot be cancelled without all parties' agreement.
+:::
+
+## Tool: payment method decision checklist
+
+- How long have we traded with this supplier, and with what record?
+- What is the order value compared with our risk limit?
+- What is the country and bank risk on the supplier's side?
+- Which documents do we need to clear and sell the goods?
+- When will the foreign currency be available for payment?
+- What is the next step to easier terms if performance is good?
+
+## Common mistakes
+
+- Paying 100% in advance to a new supplier without checks.
+- Writing an LC with conditions the supplier cannot meet.
+- Believing an LC protects against poor quality goods.
+- Not having funds ready when collection documents arrive.
+
+## Self-check
+
+1. Which payment method carries the most risk for the importer? (Answer: advance payment.)
+2. Under UCP 600, do banks check the goods or the documents? (Answer: only the documents.)
+3. What is the difference between D/P and D/A? (Answer: D/P releases documents against payment, D/A against acceptance of a bill of exchange.)
+
+## Practical assignment
+
+List your five largest suppliers and the payment method used with each. For one of them, propose a change of method or an improvement to the documents required, with one sentence explaining the benefit.
+
+## Summary
+
+- Payment methods move risk between buyer and seller along a ladder.
+- Documentary collections control documents but give no bank guarantee.
+- Under UCP 600 banks pay against complying documents, so precise credits and documents are essential.
+
+=== 20
+SLIDE What you will learn | Check a commercial invoice and packing list for customs; Distinguish bill of lading types and their uses; Explain the certificate of origin, insurance certificate and pre-shipment inspection; Prepare the Angolan document set with your broker | Customs clears paper first, goods second
+SLIDE Commercial invoice and packing list | Invoice: seller, buyer, description, HS code, quantity, unit price, total, Incoterms rule; Packing list: packages, marks, net and gross weights, volume | They must match each other and the bill of lading
+SLIDE Bill of lading types | Order B/L: transferable by endorsement; Straight B/L: named consignee, not transferable; Shipped on board vs received for shipment; Clean vs claused | Check the type before payment
+SLIDE Master and house B/L | Master B/L: issued by the shipping line; House B/L: issued by the forwarder; Telex release: originals surrendered at origin; Sea waybill: no original needed | Know which document releases your cargo
+SLIDE Other key documents | Certificate of origin; Insurance certificate; Health or phytosanitary certificates where needed; SOLAS verified gross mass | Each one has a clear purpose
+SLIDE Angola document set | Documento Único (customs declaration); Declaration of Customs Value; Loading certificate (ARC, formerly CNCA); Ministry import licence for sensitive goods such as food | Confirm the current list with your licensed broker
+SLIDE Pre-shipment inspection | Independent check of goods before loading; Not mandatory in Angola, but may support faster clearance; Sometimes required by a letter of credit | Inspection reduces surprises at arrival
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- check a commercial invoice and packing list for the data customs needs;
+- explain the main bill of lading types and choose the right one for your payment method;
+- explain the purpose of the certificate of origin, insurance certificate and pre-shipment inspection;
+- prepare, with your customs broker, the document set required for an import into Angola.
+
+## Key terms
+
+::: terms
+Commercial invoice: the seller's bill for the goods and the main basis for customs value
+Packing list: a detailed list of packages, contents, marks, weights and volumes
+Bill of lading: the carrier's receipt for the goods, evidence of the contract of carriage and, in its negotiable form, a document of title
+HS code: the Harmonized System code that classifies goods for customs tariffs
+Certificate of origin: a document stating the country where the goods were produced
+Pre-shipment inspection: an independent check of quantity, quality and sometimes price before goods are loaded
+:::
+
+## 1. Commercial invoice and packing list
+
+Customs uses the commercial invoice to identify the goods and calculate their value. A good invoice shows: seller and buyer names and addresses, invoice number and date, a precise description of goods, HS code, quantity and unit, unit price, total value, currency, Incoterms rule and named place, country of origin and payment terms. Vague descriptions lead to queries and delays.
+
+The packing list shows the number and type of packages, marks and numbers, contents per package, net and gross weights, and volume.
+
+::: tip | The three-document match
+Before anything else, compare the invoice, packing list and bill of lading. The consignee, description, number of packages and gross weight must match across all three.
+:::
+
+## 2. Bill of lading types
+
+The bill of lading (B/L) is the most important shipping document. Learn to read its type:
+
+- Order B/L ("to order" or "to order of a bank"): negotiable, transferred by endorsement. Used with letters of credit and collections because whoever holds the endorsed original controls the goods.
+- Straight B/L: names a consignee and is not transferable.
+- Shipped on board B/L: confirms the goods are on the vessel. Letters of credit usually require this.
+- Received for shipment B/L: confirms only that the carrier received the goods. It becomes "on board" when the carrier adds a dated on-board notation.
+- Clean B/L: no remarks about damaged goods or packaging. A claused B/L, with remarks such as "two pallets broken", is usually refused by banks.
+- Master B/L and house B/L: the shipping line issues the master B/L to the forwarder. The forwarder issues a house B/L to the shipper. You must know which document will release your container in Luanda.
+
+Originals usually come in a set of three. If you pay in advance, a telex release (originals surrendered at loading) or a sea waybill avoids waiting for paper.
+
+::: quiz
+? You pay by letter of credit. Which bill of lading should the credit normally require?
+- A received for shipment bill of lading with no notation || Banks usually require proof that goods are on board.
+* A clean, shipped on board order bill of lading, full set || This gives the bank control of the goods and proof of loading.
+- A sea waybill || A sea waybill is not a document of title, so the bank has no security.
+:::
+
+## 3. Certificates, insurance and inspection
+
+- Certificate of origin: shows where the goods were produced. It is usually issued by a chamber of commerce in the exporting country.
+- Insurance certificate: proves cargo insurance cover, its clauses and insured value.
+- Health, sanitary or phytosanitary certificates: issued by the authorities of the exporting country for food, plants and animal products.
+- SOLAS verified gross mass (VGM): the verified weight of a packed container, required before loading under the SOLAS convention.
+- Pre-shipment inspection (PSI): an inspection company checks quantity, quality and packing before loading and issues a report or certificate.
+
+## 4. The Angolan import document set
+
+The following list is based on the U.S. International Trade Administration's Angola Country Commercial Guide. Rules change, so always confirm the current list with your licensed broker for each product.
+
+::: slides
+SLIDE Registrations and licences | Importer registered with the Ministry of Industry and Trade for each product category; Import licence for sensitive products such as food, medical devices, pharmaceuticals and agricultural inputs | Check before you order, not after shipping
+SLIDE Customs documents | Documento Único (DU), the customs import declaration; Declaration of Customs Value; Commercial invoice and packing list | Prepared and submitted by a government-approved broker
+SLIDE Shipping documents | Loading certificate issued by ARC (formerly CNCA) through the authorised agent in the exporting country; Bill of lading; SOLAS certificate; Terminal handling receipts | The loading certificate must be arranged at origin
+SLIDE Controls on arrival | Pre-shipment inspection no longer mandatory (Presidential Decree 63/13); Voluntary inspection may support green-channel clearance; Food and pharmaceutical imports tested at the port (Presidential Decree 140/16) | Plan time for laboratory testing
+:::
+
+::: diagram steps | Building the document set
+Before order: confirm registration, licence and product requirements with the broker
+Before loading: arrange the loading certificate, certificates of origin and health certificates
+After sailing: collect copies and check the three-document match
+Before arrival: broker prepares the Documento Único and value declaration
+On arrival: inspection, testing, payment of duties and release
+:::
+
+::: quiz
+? A supplier is ready to load, but nobody has arranged the Angolan loading certificate. When must it be arranged?
+* At origin, through the authorised agent in the exporting country, before shipment || The loading certificate is issued at origin for shipments bound for Angolan ports.
+- After arrival in Luanda, by the terminal || It is an origin document, not one issued at arrival.
+- Only if customs selects the container for inspection || It is required for shipments to Angolan ports, not only for inspected ones.
+:::
+
+## Worked example: frozen chicken arriving at Luanda
+
+A food distributor in Luanda imports two reefer containers of frozen chicken. The coordinator, Mateus, checks the documents before arrival. The invoice shows 2,400 cartons, but the packing list shows 2,380. The health certificate is in the correct name, and the loading certificate has been issued.
+
+Mateus asks the supplier for a corrected packing list before the broker submits the Documento Único. The broker also warns that the product will be tested at the port, so Mateus asks the shipping line for additional free time and books power supply for the reefers.
+
+::: case | The corrected document has not arrived
+Two days before arrival, the supplier has not sent the corrected packing list. The broker asks whether to submit the declaration with the documents as they are.
+? What should Mateus do?
+- Submit with the mismatch and explain later || A mismatch can cause queries, inspection or penalties.
+- Change the packing list himself to show 2,400 cartons || Altering a supplier document is never acceptable.
+* Call the supplier, confirm the real quantity loaded, and get the corrected document before submitting || Customs needs documents that agree with each other and with the goods.
+- Ask the bank to correct the document || Banks do not correct commercial documents.
+:::
+
+## Tool: document check template
+
+- Invoice: names, addresses, description, HS code, quantity, unit price, total, currency, Incoterms rule, origin.
+- Packing list: packages, marks, net and gross weights, volume, matching the invoice.
+- Bill of lading: type, consignee, notify party, ports, container and seal numbers, on-board date, clean.
+- Certificates: origin, health or phytosanitary, insurance as required.
+- Angola: registration, licence, loading certificate and broker's document list confirmed.
+
+## Common mistakes
+
+- Vague goods descriptions on the invoice.
+- Accepting a bill of lading type that does not match the payment method.
+- Forgetting the loading certificate until the goods are ready.
+
+## Self-check
+
+1. Which bill of lading type is negotiable by endorsement? (Answer: an order bill of lading.)
+2. What does a claused bill of lading show? (Answer: remarks about damaged goods or packaging.)
+3. Is pre-shipment inspection mandatory for imports into Angola according to the trade guide used here? (Answer: no, but it may support faster clearance or be required by a letter of credit.)
+
+## Practical assignment
+
+Take one recent import file. Use the document check template to review it and list any mismatches or missing items. Discuss the list with your customs broker and agree the standard document list for that product.
+
+## Summary
+
+- Invoice, packing list and bill of lading must match each other.
+- The bill of lading type must suit your payment method.
+- The Angolan document set includes registration, licences, the Documento Único, value declaration and loading certificate, so confirm it with your broker before ordering.
+
+=== 20
+SLIDE What you will learn | List every cost that makes up landed cost; Calculate insurance, CIF value and example duties; Allocate costs to products and convert to kwanzas; Use landed cost to set selling prices | The invoice price is only the start
+SLIDE Landed cost formula | Product price + freight + insurance; + duties and non-recoverable taxes; + port, terminal and clearance costs; + inland transport + bank and finance costs | Landed cost = everything to get goods into your warehouse
+SLIDE Insurance and CIF | Insured value usually 110% of CIF; Example: 1.1 x (FOB + freight) x rate; CIF value often the base for duties | Check the customs value base with your broker
+SLIDE Duties and taxes | Duty rate depends on the HS code; Import VAT may be recoverable if you are registered; Recoverable VAT affects cash, not product cost | Use rates confirmed by your broker
+SLIDE Allocation methods | By value: for mixed goods with similar density; By weight or volume: for freight and handling; By quantity: for similar units | Choose a method and use it consistently
+SLIDE FX impact | Convert USD costs at the rate you expect to pay; A weaker kwanza raises landed cost in Kz; Test the price with plus and minus 5% | Add an FX check before you set prices
+SLIDE Landed cost multiplier | Multiplier = landed cost / FOB value; Example: 60,509 / 48,000 = 1.26; Use it for quick quote checks | Track the multiplier by product and route
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list all the cost elements that make up landed cost;
+- calculate insurance, CIF value and duties using given rates;
+- allocate shipment costs to products and convert them to kwanzas;
+- use landed cost and a landed cost multiplier to check prices and margins.
+
+## Key terms
+
+::: terms
+Landed cost: the total cost of getting goods into your warehouse, ready to sell
+FOB value: the price of the goods loaded on board at the port of loading
+CIF value: cost, insurance and freight to the port of destination, often used as the customs value base
+Customs duty: a tax on imported goods, set by the tariff for each HS code
+Recoverable tax: a tax, such as import VAT for a registered business, that can be offset against tax due and is not a product cost
+Landed cost multiplier: landed cost divided by FOB value
+:::
+
+## 1. The landed cost formula
+
+Many importers price products on the supplier's invoice plus a rough percentage. That hides losses. Landed cost adds every cost until the goods are in your warehouse:
+
+::: diagram steps | Building landed cost
+Product price: the FOB (or FCA) value on the invoice
+Freight: sea freight to the port of destination
+Insurance: cargo insurance premium
+Duties and taxes: customs duty and any non-recoverable taxes
+Port and clearance: terminal handling, broker fees, certificates and documents
+Inland transport: port to warehouse and empty container return
+Finance and FX: bank charges, interest on funds and exchange differences
+:::
+
+If you buy CIF or CFR, the freight is already inside the price, but you still pay destination charges. If you buy EXW, add the origin costs, such as loading and export clearance.
+
+Insurance is commonly calculated on 110% of the CIF value. A simple method is: premium = 1.1 x (FOB + freight) x insurance rate.
+
+::: quiz
+? FOB is USD 20,000, freight USD 2,000, and the insurance rate is 0.5%. What is the approximate premium?
+- USD 100 || This uses only the FOB value and leaves out the 110%.
+* USD 121 || 1.1 x 22,000 x 0.005 = USD 121.
+- USD 110 || This leaves out the freight.
+:::
+
+## 2. Duties and taxes
+
+Customs duty depends on the HS code and the tariff, so correct classification matters. In many countries, including Angola, duties are generally calculated on a CIF-based customs value, but always confirm the base and rates with your broker. Import VAT is usually charged on the customs value plus duty. If your company is registered and can recover the VAT as input tax, it is a cash-flow cost, not part of landed cost. If you cannot recover it, add it to landed cost.
+
+The rates used in this lesson (10% duty and 14% VAT) are examples for practice only. Do not use them for real decisions without checking the current tariff and tax rules.
+
+::: tip | Ask for a pre-clearance estimate
+Before ordering a new product, ask your broker for a written estimate of duty, taxes and fees for the HS code. This prevents surprises after the goods arrive.
+:::
+
+## 3. Allocating costs and converting to kwanzas
+
+When a container holds several products, share the costs fairly:
+
+- By value: duty is usually value-based, so allocate it by value.
+- By weight or volume: freight, handling and trucking are driven by weight or space.
+- By quantity: if all items are similar, divide by units.
+
+Then convert to kwanzas at the exchange rate you expect to pay, not the rate on the order date. Test the result with the kwanza 5% weaker. If the margin disappears, renegotiate or raise prices before the goods arrive.
+
+## Worked example: tomato paste for a Luanda wholesaler
+
+A food wholesaler in Luanda imports two 20-foot containers of tomato paste, 3,200 cartons in total. All rates below are examples.
+
+::: slides
+SLIDE Step 1: CIF value | FOB price USD 48,000; Freight 2 x 2,100 = USD 4,200; Insurance 1.1 x 52,200 x 0.3% = USD 172.26; CIF = USD 52,372.26 | CIF is the base for duty in this example
+SLIDE Step 2: Duty and VAT | Duty at example 10% of CIF = USD 5,237.23; Import VAT at example 14% of (CIF + duty) = USD 8,065.33; The company recovers this VAT, so it is excluded from landed cost | Recoverable VAT is cash, not cost
+SLIDE Step 3: Port, clearance and delivery | Terminal handling 2 x 450 = USD 900; Broker fee USD 600; Certificates and documents USD 300; Trucking to Viana 2 x 350 = USD 700; Bank charges USD 400 | Destination costs add USD 2,900
+SLIDE Step 4: Total and unit cost | Total landed cost = USD 60,509.49; Per carton = 60,509.49 / 3,200 = USD 18.91; At an example rate of 920 Kz per USD = 17,396 Kz per carton | Price from 17,396 Kz, not from the invoice
+SLIDE Step 5: Multiplier and FX test | Multiplier = 60,509.49 / 48,000 = 1.26; If the kwanza weakens 5%, cost per carton rises to about 18,266 Kz | Check the margin at both rates
+:::
+
+The commercial team had planned to sell at 19,000 Kz per carton, based on the invoice price plus a standard mark-up. With the true landed cost, the margin was only about 8.4% at the planned rate and about 3.9% if the kwanza weakened. The team raised the price and renegotiated freight for the next order.
+
+::: case | A cheaper supplier quote
+The buyer, Rui, receives a new quote for tomato paste at FOB USD 46,000, from a port with freight of USD 3,100 per container. The current supplier is FOB USD 48,000 with freight of USD 2,100 per container. Other costs are the same.
+? What should Rui conclude?
+- The new quote saves USD 2,000 and should be accepted || This compares only FOB prices and ignores freight.
+* The new quote costs about USD 52,200 before insurance, the same as now, so there is no real saving || 46,000 + 6,200 = 52,200, equal to 48,000 + 4,200, and duty on CIF will be almost the same.
+- The new quote is always worse because freight is higher || Higher freight can be offset by a lower price, so the totals must be compared.
+- The decision cannot be made without the selling price || Landed cost comparison does not depend on the selling price.
+:::
+
+::: quiz
+? Total landed cost is USD 33,000 and FOB value is USD 25,000. What is the landed cost multiplier?
+- 0.76 || This divides FOB by landed cost.
+- 1.24 || Check the division: 33,000 / 25,000.
+* 1.32 || 33,000 / 25,000 = 1.32.
+:::
+
+## Tool: landed cost template
+
+- Product: FOB or FCA value (USD) and quantity.
+- Origin costs if buying EXW (USD).
+- Freight (USD).
+- Insurance: 1.1 x (FOB + freight) x rate.
+- CIF value.
+- Duty: CIF x duty rate (confirm with broker).
+- Non-recoverable taxes.
+- Terminal handling, broker, certificates and documents.
+- Inland transport and empty return.
+- Bank, finance and FX costs.
+- Total landed cost, cost per unit in USD and Kz, multiplier, Kz cost at plus 5% FX.
+
+## Common mistakes
+
+- Pricing from the invoice plus a fixed percentage.
+- Comparing supplier quotes on FOB price only.
+- Adding recoverable VAT to product cost, or leaving out non-recoverable taxes.
+- Using today's exchange rate when payment will be made weeks later.
+
+## Self-check
+
+1. Which costs are included in CIF value? (Answer: cost of goods, insurance and freight to the destination port.)
+2. Should recoverable import VAT be added to landed cost? (Answer: no, it is a cash-flow cost recovered as input tax.)
+3. FOB is USD 10,000 and landed cost USD 12,800. What is the multiplier? (Answer: 1.28.)
+
+## Practical assignment
+
+Pick one product imported last month. Calculate its landed cost per unit with the template, using actual invoices and broker statements. Compare it with the cost used for pricing and report the difference to your manager.
+
+## Summary
+
+- Landed cost includes every cost from the supplier's price to your warehouse.
+- Use broker-confirmed duty rates and treat recoverable VAT as cash flow.
+- Allocate costs consistently, convert at the expected rate and test FX before pricing.
+
+=== 20
+SLIDE What you will learn | Distinguish demurrage, detention and port storage; Calculate demurrage and detention charges; Prevent and manage import delays; Select forwarders and brokers with weighted scoring and KPIs | Time at the port is money
+SLIDE Three time charges | Demurrage: full container in the terminal after free time, charged by the line; Detention: container outside the terminal after free time, until the empty is returned; Storage: charged by the terminal for cargo in its yard | Know which clock is running
+SLIDE Free time | Set by the shipping line, in days; Can often be extended if negotiated at booking; Starts at discharge or gate-out, as stated in the tariff | Negotiate free time before you need it
+SLIDE Calculating charges | Days over free time x daily rate; Rates usually rise in tiers; Example: 5 days x USD 60 + 1 day x USD 120 = USD 420 | Check every invoice against your dates
+SLIDE Root causes of delay | Late or wrong documents; Missing licences or certificates; Payment or FX not ready; Inspection and testing; No truck or warehouse slot | Most delays start before arrival
+SLIDE Choosing partners | Weighted scoring on licence, experience, communication, cost and network; Ask for references and sample invoices; Agree a service level agreement | Choose on total performance, not lowest fee
+SLIDE Managing partners | KPIs: arrival-to-release days, D&D cost per container, document error rate, on-time delivery; Monthly review meeting; Act on trends | What gets measured gets improved
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between demurrage, detention and port storage;
+- calculate demurrage and detention charges from free time and daily rates;
+- apply a delay prevention routine for each import;
+- choose and manage freight forwarders and customs brokers using weighted scoring and KPIs.
+
+## Key terms
+
+::: terms
+Free time: the number of days the shipping line allows the importer to use its container without charge
+Demurrage: a charge by the shipping line when a full container stays in the terminal after free time
+Detention: a charge by the shipping line when its container is kept outside the terminal after free time, until the empty is returned
+Port storage: a charge by the terminal operator for cargo kept in its yard after its own free period
+Service level agreement (SLA): a written agreement on the service, time standards and KPIs a provider must meet
+KPI: key performance indicator, a measure used to track performance against a target
+:::
+
+## 1. Demurrage, detention and storage
+
+Three different clocks can run on one container, and different parties charge them. Many lines also offer combined free time, often called D&D (demurrage and detention).
+
+::: diagram steps | The container clocks
+Discharge: container lands at the terminal, demurrage and storage free time begin
+In terminal: after free time, demurrage (line) and storage (terminal) accrue
+Gate-out: container leaves the port after clearance and release, detention free time begins
+At warehouse: unloading, detention accrues after free time
+Empty return: the empty container is returned to the depot and the clock stops
+:::
+
+To calculate charges, count days beyond free time and apply the tariff, which usually rises in tiers. All rates in this example are for illustration.
+
+A container has 10 days of demurrage free time and leaves the terminal on day 16, so it has 6 days of demurrage. The tariff is USD 60 per day for days 1 to 5 and USD 120 per day after that. Demurrage = 5 x 60 + 1 x 120 = USD 420. It then has 7 days of detention free time and the empty is returned after 12 days, so 5 days of detention at USD 50 = USD 250. Total for one container: USD 670. For a shipment of ten containers, that is USD 6,700, often more than the broker's fee.
+
+::: quiz
+? A container stays in the terminal four days after free time because customs clearance is late. Who charges demurrage?
+* The shipping line, because its container is held in the terminal || Demurrage is the line's charge for its container staying full in the terminal.
+- The terminal operator, because the cargo is in its yard || The terminal charges storage, which is a separate charge.
+- Customs, as a penalty for late clearance || Customs does not charge demurrage.
+:::
+
+## 2. Preventing and managing delays
+
+Most delays start before the vessel arrives. Use this routine for every shipment:
+
+::: slides
+SLIDE Step 1: Negotiate at booking | Ask for extended free time for slow products; Get the line's tariff in writing; Confirm the empty return depot | Free time is cheapest before shipment
+SLIDE Step 2: Prepare before arrival | Complete documents with the broker; Funds and FX ready for duties and bank documents; Licences and certificates confirmed | Clearance should start on day one
+SLIDE Step 3: Track daily | Watch vessel ETA and discharge date; Update the container clock in your tracker; Flag containers within 3 days of free time | Act before charges start
+SLIDE Step 4: Escalate early | If clearance will exceed free time, ask the line for an extension; Prioritise urgent or perishable containers; Arrange trucks and warehouse slots | An early request is more likely to be accepted
+SLIDE Step 5: Check invoices and learn | Compare D&D invoices with your gate-out and return dates; Dispute errors in writing; Record the root cause of every charge | Each charge is a lesson for the next shipment
+:::
+
+::: quiz
+? A container has been unloaded at the warehouse, but the truck company has not returned the empty for six days. Which charge is now running?
+- Demurrage || Demurrage stops when the container leaves the terminal.
+- Port storage || The container is no longer in the terminal.
+* Detention || Detention runs from gate-out until the empty is returned, after free time.
+:::
+
+## 3. Choosing and managing forwarders and brokers
+
+Choose forwarders and brokers on total performance, not just the lowest fee. A broker who saves you three days of demurrage on ten containers is worth more than a small discount on the fee. Use weighted scoring: list criteria, give each a weight that totals 100%, score each provider from 1 to 5, and multiply.
+
+Typical criteria are: licence and compliance record (25%), experience with your products and Luanda or Lobito ports (25%), communication and tracking (20%), cost transparency (20%), and network and capacity (10%). Ask for references and a sample invoice showing all charges.
+
+::: diagram cycle | Managing logistics partners
+Agree: SLA with services, time standards and KPIs
+Measure: track KPIs for every shipment
+Review: monthly meeting with the provider
+Improve: agree actions on trends and repeat issues
+:::
+
+Useful KPIs include arrival-to-release time in days, demurrage and detention cost per container, document error rate, and on-time delivery to the warehouse.
+
+## Worked example: cutting demurrage at a food distributor
+
+A food distributor in Luanda paid large demurrage bills every month. The logistics manager, Helena, built a container tracker and found that 60% of charged days came from two causes: late original bills of lading and missing import licences.
+
+She agreed with finance to pay bank documents five days before vessel arrival and asked buyers to confirm licences before ordering. She also scored two brokers. Broker A charged less but averaged 12 days from arrival to release. Broker B charged more but averaged 7 days and sent daily updates. Helena moved most volume to Broker B with an SLA of 8 days. Over the next quarter, the company's demurrage costs fell sharply, more than covering the higher broker fees.
+
+::: case | Free time is running out
+Helena sees that four reefer containers of frozen fish have two days of free time left. The broker says testing results will take four more days.
+? What should Helena do first?
+- Wait for the results and pay demurrage when it comes || Waiting without action guarantees extra charges.
+* Ask the shipping line today for a free time extension, explaining the testing delay || Early requests for extension are more likely to be accepted and may save several days of charges.
+- Ask the broker to take the containers out before testing finishes || Goods cannot leave the port before clearance and release.
+- Change broker immediately || Changing broker in the middle of clearance creates more delay.
+:::
+
+## Tool: forwarder and broker scorecard
+
+- Licence and compliance record (weight 25%): score 1–5.
+- Experience with our products and ports (25%): score 1–5.
+- Communication and tracking (20%): score 1–5.
+- Cost transparency (20%): score 1–5.
+- Network and capacity (10%): score 1–5.
+- Weighted total = sum of weight x score.
+- KPIs for SLA: arrival-to-release days, D&D cost per container, document error rate, on-time delivery.
+
+## Common mistakes
+
+- Confusing demurrage, detention and storage, and paying the wrong invoice.
+- Asking for free time extensions only after charges have started.
+- Choosing a broker only on the lowest fee.
+- Not recording the root cause of each delay.
+
+## Self-check
+
+1. When does detention start? (Answer: after the container leaves the terminal, once detention free time is used.)
+2. A container is 3 days over free time at USD 75 per day. What is the charge? (Answer: USD 225.)
+3. Name two KPIs for a customs broker. (Answer: for example arrival-to-release days and document error rate.)
+
+## Practical assignment
+
+List all containers you received last month with discharge, gate-out and empty return dates. Calculate days over free time for each and the cost. Identify the top two root causes and propose one action for each.
+
+## Summary
+
+- Demurrage, detention and storage are separate clocks charged by different parties.
+- Most delays can be prevented with preparation before arrival and daily tracking.
+- Choose partners with weighted scoring and manage them with an SLA and KPIs.
