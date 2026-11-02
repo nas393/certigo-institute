@@ -60,7 +60,7 @@ export function LessonChecks({
     if (!row) return;
     setFeedback((f) => ({
       ...f,
-      [i]: { correct: !!row.correct, correctIndex: row.correct_index ?? 0, explanation: row.explanation ?? "" },
+      [i]: { correct: !!row.correct, correctIndex: row.correct ? c : -1, explanation: row.explanation ?? "" },
     }));
     if (row.correct) setDone((d) => ({ ...d, [i]: true }));
   }

@@ -85,7 +85,7 @@ function LessonPage() {
 /** The lesson's knowledge check, graded on the server and saved to the learner's progress. */
 function LessonCheck({ certificationId, index, q, options, signedIn }: { certificationId: string; index: number; q: string; options: string[]; signedIn: boolean }) {
   const [choice, setChoice] = useState<number | null>(null);
-  const [res, setRes] = useState<{ correct: boolean; correct_index: number; explanation: string } | null>(null);
+  const [res, setRes] = useState<{ correct: boolean; explanation: string | null } | null>(null);
   const [busy, setBusy] = useState(false);
   useEffect(() => { setChoice(null); setRes(null); }, [index]);
   async function check() {
@@ -102,7 +102,7 @@ function LessonCheck({ certificationId, index, q, options, signedIn }: { certifi
       <div className="mt-2 font-semibold">{q}</div>
       <div className="mt-3 space-y-2">
         {options.map((o, j) => {
-          const right = res && res.correct_index === j;
+          const right = res && res.correct && choice === j;
           const wrong = res && !res.correct && choice === j;
           return (
             <button key={j} onClick={() => { setChoice(j); setRes(null); }}
@@ -112,7 +112,7 @@ function LessonCheck({ certificationId, index, q, options, signedIn }: { certifi
           );
         })}
       </div>
-      {res?.explanation && <p className={"mt-3 text-sm " + (res.correct ? "text-emerald-800" : "text-red-700")}>{res.correct ? "Correct. " : "Not quite. "}{res.explanation}</p>}
+      {res && <p className={"mt-3 text-sm " + (res.correct ? "text-emerald-800" : "text-red-700")}>{res.correct ? `Correct. ${res.explanation ?? ""}` : "Not quite. Review the lesson and try again."}</p>}
       {signedIn ? (
         <Button className="mt-4" disabled={choice === null || busy} onClick={() => void check()}>{busy ? "Checking…" : "Check answer"}</Button>
       ) : (

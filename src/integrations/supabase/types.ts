@@ -466,7 +466,7 @@ export type Database = {
         }
         Returns: {
           correct: boolean
-          correct_index: number
+          correct_index: number | null
           explanation: string
         }[]
       }

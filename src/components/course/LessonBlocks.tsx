@@ -10,7 +10,7 @@ import { LessonSlides, type Slide } from "@/components/course/LessonSlides";
 export function LessonBody({ text }: { text: string }) {
   const parts = parse(text);
   return (
-    <div className="space-y-4 text-[15px] leading-relaxed text-foreground/90">
+    <div className="min-w-0 space-y-4 text-[15px] leading-relaxed text-foreground/90 [overflow-wrap:anywhere]">
       {parts.map((p, i) => <Part key={i} p={p} index={i} />)}
     </div>
   );
