@@ -16,14 +16,12 @@ const OUT = "/tmp/browser/certigo-pdf";
 const PORT = process.env.PORT ?? "8080";
 const BASE = `http://localhost:${PORT}`;
 
-async function findRecentSerial() {
-  const { execSync } = await import("node:child_process");
-  const out = execSync(
-    `psql -At -c "SELECT serial FROM public.certificates ORDER BY issued_at DESC LIMIT 1;"`,
-    { encoding: "utf8" },
-  ).trim();
-  if (!out) throw new Error("No certificates in DB — issue one first via the UI.");
-  return out;
+function findConfiguredSerial() {
+  const serial = process.env.E2E_CERTIFICATE_SERIAL?.trim();
+  if (!serial || !/^[A-Za-z0-9-]+$/.test(serial)) {
+    throw new Error("Set E2E_CERTIFICATE_SERIAL to a valid staging certificate serial.");
+  }
+  return serial;
 }
 
 function assert(cond, msg) {
@@ -38,7 +36,7 @@ async function pdfTextLatin1(file) {
 
 async function main() {
   await mkdir(OUT, { recursive: true });
-  const serial = await findRecentSerial();
+  const serial = findConfiguredSerial();
   console.log("Testing serial:", serial);
 
   const browser = await chromium.launch({ headless: true });
