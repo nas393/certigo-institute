@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, Lightbulb, X } from "lucide-react";
 import { LessonSlides, type Slide } from "@/components/course/LessonSlides";
+import { useLessonLabels, lessonLabels, type LessonLabels } from "@/lib/lesson-i18n";
 
 /**
  * Renders a lesson body: paragraphs, "## " headings, "- " lists, and interactive blocks
@@ -53,15 +54,16 @@ function parse(text: string): PartT[] {
 const kv = (l: string) => { const k = l.indexOf(":"); return k > 0 ? [l.slice(0, k).trim(), l.slice(k + 1).trim()] : [l, ""]; };
 
 function Part({ p, index }: { p: PartT; index: number }) {
+  const L = useLessonLabels();
   if (p.kind === "h") return <h3 className="pt-3 font-display text-lg font-extrabold tracking-tight">{p.text}</h3>;
   if (p.kind === "p") return <p>{p.text}</p>;
   if (p.kind === "ul") return <ul className="list-disc space-y-1.5 pl-5">{p.items.map((it, j) => <li key={j}>{it}</li>)}</ul>;
   const { type, args, lines } = p;
   if (type === "terms") return <Terms items={lines.map(kv)} />;
-  if (type === "slides") return <LessonSlides lessonTitle="Walkthrough" slides={lines.filter((l) => l.startsWith("SLIDE ")).map(toSlide)} />;
+  if (type === "slides") return <LessonSlides lessonTitle={L.walkthrough} slides={lines.filter((l) => l.startsWith("SLIDE ")).map(toSlide)} />;
   if (type.startsWith("diagram:")) return <Diagram kind={type.split(":")[1]} title={args[0] ?? ""} axes={[args[1], args[2]]} items={lines.map(kv)} />;
-  if (type === "case") return <Choice title={args[0] ?? "Case"} lines={lines} isCase id={index} />;
-  if (type === "quiz") return <Choice title="Quick check" lines={lines} id={index} />;
+  if (type === "case") return <Choice title={args[0] ?? L.caseLabel} lines={lines} isCase id={index} />;
+  if (type === "quiz") return <Choice title={L.quickCheck} lines={lines} id={index} />;
   if (type === "tip") return (
     <div className="flex gap-3 rounded-xl border border-amber-500/30 bg-amber-50 p-4 text-sm text-amber-950">
       <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" />
@@ -78,16 +80,17 @@ function toSlide(l: string): Slide {
 
 /** Flip cards for key terms: tap to reveal the definition. */
 function Terms({ items }: { items: string[][] }) {
+  const L = useLessonLabels();
   const [open, setOpen] = useState<Record<number, boolean>>({});
   return (
     <div>
-      <div className="mb-2 text-xs text-muted-foreground">Tap a card to see the definition.</div>
+      <div className="mb-2 text-xs text-muted-foreground">{L.tapCard}</div>
       <div className="grid gap-2 sm:grid-cols-2">
         {items.map(([term, def], i) => (
           <button key={i} onClick={() => setOpen((o) => ({ ...o, [i]: !o[i] }))} aria-expanded={!!open[i]}
             className={"min-h-[84px] rounded-xl border p-4 text-left transition " + (open[i] ? "border-emerald-600/40 bg-emerald-50" : "border-border bg-card hover:border-emerald-600/40")}>
             <div className="font-semibold">{term}</div>
-            {open[i] ? <div className="mt-1 text-sm text-foreground/80">{def}</div> : <div className="mt-1 text-xs text-muted-foreground">Tap to reveal</div>}
+            {open[i] ? <div className="mt-1 text-sm text-foreground/80">{def}</div> : <div className="mt-1 text-xs text-muted-foreground">{L.tapReveal}</div>}
           </button>
         ))}
       </div>
@@ -97,6 +100,7 @@ function Terms({ items }: { items: string[][] }) {
 
 /** Case decision or quick quiz: pick an option, see feedback for that option. */
 function Choice({ title, lines, isCase = false, id }: { title: string; lines: string[]; isCase?: boolean; id: number }) {
+  const L = useLessonLabels();
   const [picked, setPicked] = useState<number | null>(null);
   const story = lines.filter((l) => !/^[?*-]\s/.test(l));
   const question = lines.find((l) => l.startsWith("? "))?.slice(2) ?? "";
@@ -106,7 +110,7 @@ function Choice({ title, lines, isCase = false, id }: { title: string; lines: st
   });
   return (
     <div className={"rounded-xl border p-5 " + (isCase ? "border-[#0B1B3A]/20 bg-[#0B1B3A]/[0.03]" : "border-dashed border-emerald-600/40")}>
-      <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-emerald-700">{isCase ? `Case · ${title}` : title}</div>
+      <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-emerald-700">{isCase ? `${L.caseLabel} · ${title}` : title}</div>
       {story.length > 0 && <p className="mt-2 text-[14.5px]">{story.join(" ")}</p>}
       <div className="mt-3 font-semibold">{question}</div>
       <div className="mt-3 space-y-2" role="radiogroup" aria-label={question}>
@@ -128,7 +132,7 @@ function Choice({ title, lines, isCase = false, id }: { title: string; lines: st
           );
         })}
       </div>
-      {picked !== null && <button className="mt-3 text-xs text-muted-foreground underline" onClick={() => setPicked(null)}>Try again</button>}
+      {picked !== null && <button className="mt-3 text-xs text-muted-foreground underline" onClick={() => setPicked(null)}>{L.tryAgain}</button>}
     </div>
   );
 }
@@ -137,6 +141,7 @@ const NAVY = "#0B1B3A", EM = "#10B981";
 
 /** Simple, readable diagrams drawn from text: steps, 2x2 matrix, pyramid, cycle. */
 function Diagram({ kind, title, axes, items }: { kind: string; title: string; axes: (string | undefined)[]; items: string[][] }) {
+  const L = useLessonLabels();
   return (
     <figure className="rounded-xl border border-border bg-card p-4 sm:p-5">
       <figcaption className="mb-3 font-semibold">{title}</figcaption>
@@ -177,7 +182,7 @@ function Diagram({ kind, title, axes, items }: { kind: string; title: string; ax
               </div>
             );
           })}
-          <div className="text-center text-[11px] text-muted-foreground">Top = most effective</div>
+          <div className="text-center text-[11px] text-muted-foreground">{L.topEffective}</div>
         </div>
       )}
       {kind === "cycle" && (
@@ -201,7 +206,7 @@ export interface LessonStep { title: string; text: string }
  * Get started (objectives + key terms) · one step per teaching section · worked example ·
  * tool + common mistakes · wrap up (self-check, assignment, summary).
  */
-export function lessonSteps(text: string): LessonStep[] {
+export function lessonSteps(text: string, L: LessonLabels = lessonLabels("en")): LessonStep[] {
   const sections: { h: string; lines: string[] }[] = [];
   let cur: { h: string; lines: string[] } = { h: "", lines: [] };
   let inBlock = false;
@@ -215,9 +220,9 @@ export function lessonSteps(text: string): LessonStep[] {
 
   const group = (h: string) => {
     const x = h.toLowerCase();
-    if (x.startsWith("learning objectives") || x.startsWith("key terms") || x === "") return "start";
-    if (x.startsWith("tool") || x.startsWith("common mistakes")) return "tool";
-    if (x.startsWith("self-check") || x.startsWith("practical assignment") || x.startsWith("summary")) return "wrap";
+    if (x.startsWith("learning objectives") || x.startsWith("key terms") || x.startsWith("objetivos de aprendizagem") || x.startsWith("termos-chave") || x === "") return "start";
+    if (x.startsWith("tool") || x.startsWith("common mistakes") || x.startsWith("ferramenta") || x.startsWith("erros comuns")) return "tool";
+    if (x.startsWith("self-check") || x.startsWith("practical assignment") || x.startsWith("summary") || x.startsWith("autoavaliação") || x.startsWith("tarefa prática") || x.startsWith("resumo")) return "wrap";
     return "own";
   };
   const steps: LessonStep[] = [];
@@ -226,7 +231,7 @@ export function lessonSteps(text: string): LessonStep[] {
     const g = group(s.h);
     const body = s.lines.join("\n");
     if (g !== "own" && g === last && steps.length) { steps[steps.length - 1].text += "\n\n" + body; continue; }
-    const title = g === "start" ? "Get started" : g === "wrap" ? "Wrap up" : g === "tool" ? s.h.replace(/^Tool:\s*/i, "") || "Tools" : s.h.replace(/^\d+\.\s*/, "").replace(/^Worked example:\s*/i, "Example: ");
+    const title = g === "start" ? L.getStarted : g === "wrap" ? L.wrapUp : g === "tool" ? s.h.replace(/^(Tool|Ferramenta):\s*/i, "") || L.tools : s.h.replace(/^\d+\.\s*/, "").replace(/^(Worked example|Exemplo prático):\s*/i, `${L.example}: `);
     steps.push({ title, text: body });
     last = g;
   }

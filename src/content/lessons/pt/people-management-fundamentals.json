@@ -1,0 +1,436 @@
+{
+  "slug": "people-management-fundamentals",
+  "minutes": [
+    20,
+    20,
+    20,
+    20,
+    20,
+    20
+  ],
+  "bodies": [
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- explicar em que difere o papel de um gestor do papel de um contribuidor individual;\n- usar o modelo de Liderança Situacional para decidir quanta orientação e apoio dar a um membro da equipa;\n- delegar uma tarefa com um briefing de delegação em cinco partes;\n- escolher um nível de delegação adequado para uma determinada pessoa e tarefa.\n\n## Termos-chave\n\n::: terms\nContribuidor individual: alguém cujo desempenho é avaliado sobretudo pelo resultado do seu próprio trabalho\nGestor: alguém cujo desempenho é avaliado sobretudo pelos resultados das pessoas pelas quais é responsável\nCompetência: o conhecimento e a capacidade de uma pessoa para uma tarefa específica\nEmpenho: a motivação e a confiança de uma pessoa para fazer bem essa tarefa\nDelegação: dar a alguém a responsabilidade por um resultado, juntamente com a autoridade e os recursos necessários para o alcançar\n:::\n\n## 1. De executor a gestor\n\nQuando é promovido, muda a base sobre a qual é avaliado. Como contribuidor individual, era medido pelo seu próprio trabalho. Como gestor, é medido pelo que a sua equipa entrega.\n\nLinda Hill, da Harvard Business School, acompanhou um grupo de novos gestores durante o seu primeiro ano. Uma dificuldade recorrente era largar o trabalho prático que lhes tinha valido a promoção. Intervir para fazer o trabalho sempre que os resultados estão em risco parece produtivo, mas sobrecarrega-o e impede a equipa de aprender.\n\nUm teste útil: se estivesse ausente durante duas semanas, o que pararia? Cada item dessa lista é algo para o qual ainda não preparou a equipa.\n\n## 2. Liderança Situacional: não existe um estilo único para todos\n\nO modelo de Liderança Situacional, desenvolvido por Paul Hersey e Ken Blanchard, parte de uma ideia simples: não existe um único melhor estilo de gestão. O estilo certo depende do grau de preparação da pessoa para a tarefa específica que tem à frente. A preparação tem duas partes, competência e empenho, e o modelo faz corresponder quatro níveis de desenvolvimento (D1 a D4) a quatro estilos (S1 a S4):\n\n::: diagram matrix | Liderança Situacional: quatro estilos | Comportamento diretivo (baixo → alto) | Comportamento de apoio (baixo → alto)\nApoiar (S3): para D3 – boa competência, empenho variável – ouvir, encorajar, partilhar decisões\nOrientar (S2, coaching): para D2 – alguma competência, pouco empenho – dirigir e encorajar\nDelegar (S4): para D4 – muita competência e empenho – dar confiança e espaço\nDirecionar (S1): para D1 – pouca competência, muito empenho – dar instruções claras\n:::\n\nHá dois pontos que muitas vezes são mal compreendidos. Primeiro, o nível de desenvolvimento aplica-se a uma tarefa, não a uma pessoa. Segundo, o objetivo é fazer as pessoas subir de nível, por isso o seu estilo deve mudar à medida que elas evoluem.\n\n::: quiz\n? Uma contabilista está em D4 no fecho do mês, mas nunca usou o novo sistema de relatórios. Que estilo se aplica ao novo sistema?\n- Delegar, porque ela tem experiência || O nível de desenvolvimento depende da tarefa, não da experiência geral.\n* Direcionar, porque ela está em D1 nesta tarefa || Correto. Numa tarefa nova, ela precisa de instruções claras, mesmo que seja especialista noutras áreas.\n- Apoiar, porque só lhe falta confiança || Falta-lhe competência neste sistema, não apenas confiança.\n:::\n\n## 3. O briefing de delegação em cinco partes\n\nA maioria das falhas de delegação vem de algo que nunca foi dito. Um briefing curto e explícito evita-as. Antes de entregar uma tarefa, acorde cinco pontos:\n\n::: slides\nSLIDE 1 Resultado e padrão de qualidade | Descreva como é o trabalho \"concluído\"; Mostre um exemplo, se possível | Sem exemplo, não há uma imagem partilhada\nSLIDE 2 Prazo e marcos intermédios | A data final; Pontos intermédios para tarefas mais longas | Os marcos detetam problemas cedo\nSLIDE 3 Autoridade de decisão | O que a pessoa decide sozinha; O que precisa da sua opinião (ver secção 4) | A autoridade deve corresponder à responsabilidade\nSLIDE 4 Recursos e pessoas | Orçamento, sistemas e dados; Colegas que pode envolver | Remova os obstáculos antes de a pessoa começar\nSLIDE 5 Pontos de acompanhamento | Acorde as datas de revisão com antecedência; Assim o acompanhamento é sentido como apoio, não como desconfiança | Coloque as datas nas duas agendas\n:::\n\n## 4. Escolher o nível de delegação\n\nDelegar não é tudo ou nada. Os \"sete níveis de delegação\" de Jurgen Appelo (da abordagem Management 3.0) dão um vocabulário preciso:\n\n- 1 Dizer (Tell): o gestor decide e anuncia a decisão.\n- 2 Vender (Sell): o gestor decide e explica porquê.\n- 3 Consultar (Consult): o gestor pede opiniões e depois decide.\n- 4 Concordar (Agree): decidem em conjunto.\n- 5 Aconselhar (Advise): a pessoa decide, depois de ouvir o conselho do gestor.\n- 6 Inquirir (Inquire): a pessoa decide e informa o gestor depois.\n- 7 Delegar (Delegate): a pessoa decide; o gestor não precisa de ser informado.\n\nFaça corresponder o nível ao nível de desenvolvimento da secção 2: uma pessoa em D1 pode trabalhar no nível 3 ou 4 numa tarefa, uma pessoa em D4 no nível 6 ou 7. Diga o nível em voz alta, por exemplo: \"Na escolha de fornecedores, isto é nível 5: decides tu, mas fala comigo primeiro.\"\n\n::: quiz\n? Diz a um supervisor: \"Escolhe o novo fornecedor de limpeza, mas fala comigo antes de assinar.\" Que nível de delegação é este?\n- Nível 3, Consultar || No nível 3, seria o gestor a decidir depois de ouvir a opinião da pessoa.\n- Nível 7, Delegar || No nível 7, a pessoa não precisaria de falar consigo.\n* Nível 5, Aconselhar || Correto. A pessoa decide, depois de ouvir o seu conselho.\n:::\n\n## Exemplo prático: uma supervisora de vendas em Luanda\n\nA Marta acaba de ser promovida a supervisora de cinco vendedores numa distribuidora alimentar em Luanda. No primeiro mês, ainda visita os seus antigos clientes-chave, prepara o relatório semanal de vendas e aprova todos os descontos. Trabalha até às 21h00 e a equipa fica à espera das suas decisões. O seu teste das duas semanas mostra três itens que parariam: o relatório, a aprovação de descontos e dois clientes-chave.\n\n- Relatório semanal → Pedro, bom em Excel mas novo no relatório (D1). A Marta direciona: mostra-lhe relatórios anteriores e dá-lhe o briefing: uma página até quinta-feira às 17h00, erros nos dados corrigidos por ele sozinho (nível 6), diferenças acima de 5% discutidas primeiro (nível 5).\n- Aprovação de descontos → Joana, vendedora sénior que conhece bem as margens (D4). Nível 6 para descontos até 3%: a Joana decide e regista no CRM. Acima de 3%, a decisão continua com a Marta.\n- Clientes-chave → Ana, que já os acompanhou antes mas perdeu confiança depois de uma negociação difícil (D3). A Marta apoia: pergunta à Ana como quer abordar a próxima visita, ouve e participa apenas como observadora.\n\n::: case | Um pedido de desconto no Cazenga\nUm grande grossista do Cazenga pede à Joana 5% de desconto numa grande encomenda de arroz e quer uma resposta hoje. O limite da Joana é 3%. Ela liga à Marta, que está numa reunião com as finanças.\n? Qual é a melhor forma de a Marta tratar este caso?\n- Dizer à Joana para dar os 5% para não perder a encomenda || Isto passa por cima do limite acordado e ensina à equipa que os limites não são reais.\n* Ligar de volta à Joana, pedir a sua recomendação, decidir em conjunto e, mais tarde, rever se o limite deve mudar || Correto. Acima de 3% a decisão continua com a Marta, mas pedir a opinião da Joana desenvolve o seu discernimento.\n- Assumir o cliente e negociar ela própria com ele || Isto retira à Joana a responsabilidade pelo cliente.\n:::\n\nEm seis semanas, a Marta recuperou cerca de oito horas por semana e três pessoas têm áreas de responsabilidade claras.\n\n## Ferramenta: modelo de briefing de delegação\n\n- Tarefa:\n- Resultado e padrão de qualidade:\n- Prazo e marcos intermédios:\n- Autoridade de decisão (nível 1–7 e limites):\n- Recursos e pessoas a envolver:\n- Datas de acompanhamento:\n- Nível de desenvolvimento atual (D1–D4) e estilo que vou usar:\n\n## Erros comuns\n\n- Usar o mesmo estilo para todos. Direcionar demasiado uma pessoa em D4 é sentido como microgestão; deixar sozinha uma pessoa em D1 é sentido como abandono.\n- Retirar a tarefa ao primeiro problema. Ajude a resolver o problema, mas deixe a responsabilidade com a pessoa.\n- Dar responsabilidade sem autoridade. Pedir um resultado sem dar o poder de decisão ou a informação necessários para o alcançar.\n\n## Autoavaliação\n\n- Um novo membro da equipa está entusiasmado, mas nunca usou o sistema de encomendas. Que nível de desenvolvimento e que estilo se aplicam? (Resposta: D1, Direcionar.)\n- Quais são as cinco partes de um briefing de delegação? (Resposta: resultado e padrão, prazo e marcos intermédios, autoridade de decisão, recursos e pessoas, pontos de acompanhamento.)\n- No nível 5 de delegação, quem decide? (Resposta: o membro da equipa, depois de ouvir o seu conselho.)\n\n## Tarefa prática\n\nFaça a lista de tudo o que pararia se estivesse ausente durante duas semanas. Escolha um item, avalie o nível de desenvolvimento da pessoa a quem o entregaria e preencha um briefing de delegação com o modelo acima. Tenha a conversa de delegação esta semana.\n\n## Resumo\n\n- Como gestor, o seu resultado são os resultados da sua equipa; gerir fazendo é a armadilha mais comum.\n- Avalie a competência e o empenho para cada tarefa e depois escolha Direcionar, Orientar, Apoiar ou Delegar.\n- Use um briefing em cinco partes e diga o nível de delegação, para que os dois lados saibam exatamente quem decide o quê.",
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- escrever objetivos de equipa e individuais que cumpram os critérios SMART;\n- construir um OKR com um objetivo claro e resultados-chave mensuráveis, e calcular o progresso de um resultado-chave;\n- usar a matriz de Eisenhower para separar o trabalho urgente do trabalho importante;\n- desdobrar uma prioridade da empresa em objetivos de equipa e individuais alinhados.\n\n## Termos-chave\n\n::: terms\nPrioridade: uma área de resultados que a organização decidiu ser a mais importante num período\nObjetivo (goal): um resultado específico a alcançar até uma data específica\nValor de base (baseline): o valor de um indicador antes de começar a trabalhar para o melhorar\nObjetivo (objective): nos OKR, uma frase curta e qualitativa sobre o que se quer alcançar\nResultado-chave: nos OKR, um resultado mensurável que mostra se o objetivo foi alcançado\nDesdobramento: traduzir objetivos de nível superior em objetivos de apoio em cada nível abaixo\n:::\n\n## 1. Objetivos SMART\n\nA gestão de topo apresenta muitas vezes as prioridades de forma genérica, como \"melhorar o serviço ao cliente\". Um gestor transforma-as em objetivos que a equipa pode executar e medir. O teste mais usado é o SMART, apresentado por George T. Doran num artigo de 1981 na revista Management Review. Hoje, as letras costumam ler-se assim:\n\n- Specific (Específico): diz claramente o que vai mudar e em que área.\n- Measurable (Mensurável): indica o indicador e a meta, para que qualquer pessoa saiba se foi alcançado.\n- Achievable (Alcançável): exigente, mas realista com as pessoas, o orçamento e o tempo disponíveis.\n- Relevant (Relevante): apoia uma prioridade da equipa ou da empresa.\n- Time-bound (Com prazo): tem uma data-limite e, se necessário, datas intermédias.\n\nEscreva um objetivo SMART em quatro passos:\n\n::: slides\nSLIDE Passo 1: Escolha a área de resultados | Comece pela prioridade da empresa; Exemplo: fiabilidade das entregas | Uma área por objetivo\nSLIDE Passo 2: Escolha um indicador e encontre o valor de base | Um indicador, como as entregas OTIF (no prazo e completas); Encontre o valor atual nos seus dados | Sem valor de base, não há meta real\nSLIDE Passo 3: Defina a meta, a data e o responsável | Valide a meta com as pessoas que vão fazer o trabalho; Indique um único responsável | No artigo de Doran, o A significava \"assignable\" (atribuível)\nSLIDE Passo 4: Escreva-o e teste-o | \"Aumentar o OTIF para os supermercados em Luanda de 82% para 95% até 31 de março\"; Confirme S, M, A, R e T | Uma frase, cinco confirmações\n:::\n\n::: quiz\n? Que objetivo cumpre os cinco critérios SMART?\n- \"Melhorar o serviço ao cliente este ano\" || Não há indicador nem meta, por isso não é específico nem mensurável.\n- \"Ligar a mais clientes todas as semanas\" || Não há valor de base, meta nem prazo.\n* \"Reduzir o tempo de resposta a reclamações de 3 dias para 1 dia até 30 de junho\" || Correto. Indica a área, o indicador, o valor de base, a meta e a data.\n:::\n\n## 2. OKR: objetivos e resultados-chave\n\nOs OKR (Objectives and Key Results, ou seja, objetivos e resultados-chave) foram desenvolvidos na Intel por Andy Grove e tornados conhecidos por John Doerr, que os levou para a Google e os descreveu no seu livro Measure What Matters (2018). Um OKR tem duas partes. O objetivo é o que se quer alcançar: qualitativo, curto e motivador. Os resultados-chave, normalmente três a cinco, mostram em números se se chegou lá. Doerr resume o formato assim: \"Vou [objetivo], medido por [resultados-chave].\"\n\nUm resultado-chave descreve um resultado, não uma atividade. \"Fazer reuniões semanais de planeamento de rotas\" é uma atividade. \"Reduzir as entregas falhadas de 6% para 2% das entregas\" é um resultado. Doerr distingue também OKR comprometidos, que têm de ser totalmente alcançados, de OKR aspiracionais, que são deliberadamente ambiciosos e em que alcançar a maior parte da meta é um bom resultado. Diga à sua equipa de que tipo é cada OKR.\n\nAcompanhe cada resultado-chave como a parte da distância entre o valor de base e a meta:\n\nProgresso = (valor atual − valor de base) ÷ (meta − valor de base) × 100\n\nSe o OTIF começou em 82%, a meta é 95% e agora está em 90%, o progresso é (90 − 82) ÷ (95 − 82) = 8 ÷ 13 = 62%. Reveja-o todas as semanas, enquanto ainda há tempo para agir.\n\n::: quiz\n? Um resultado-chave é \"Aumentar os pontos de venda ativos de 200 para 300\". Agora há 260. Qual é o progresso?\n- 87% || Isto divide 260 por 300. O progresso mede-se a partir do valor de base, não a partir de zero.\n- 23% || Isto divide o ganho por 260 em vez de o dividir pelo ganho planeado de 100.\n* 60% || Correto. (260 − 200) ÷ (300 − 200) = 60 ÷ 100 = 60%.\n:::\n\n## 3. A matriz de Eisenhower: urgente versus importante\n\nNormalmente, os objetivos falham não por estarem mal escritos, mas porque a pressão do dia a dia os põe de lado. A matriz de Eisenhower, com o nome do Presidente dos EUA Dwight D. Eisenhower e popularizada por Stephen Covey em Os 7 Hábitos das Pessoas Altamente Eficazes, classifica cada tarefa com duas perguntas. É urgente: exige atenção agora? É importante: contribui para os nossos objetivos?\n\n::: diagram matrix | A matriz de Eisenhower | Urgência (baixa → alta) | Importância (baixa → alta)\nAgendar: importante, não urgente – formação, corrigir as causas de erros repetidos\nFazer já: importante e urgente – o camião de entregas de um cliente-chave avariou\nEliminar: nem uma coisa nem outra – um relatório que ninguém lê\nDelegar: urgente, não importante – pedidos de rotina e interrupções\n:::\n\nO trabalho sobre os objetivos fica sobretudo no quadrante \"agendar\", o trabalho que mais vezes é adiado. Reserve tempo fixo para ele e classifique as suas tarefas com a matriz todas as semanas.\n\n## 4. Desdobrar objetivos\n\nO desdobramento liga todos os níveis: prioridade da empresa → objetivos do departamento → objetivos da equipa → objetivos individuais. Em cada nível, pergunte: \"O que temos de entregar para que o nível acima tenha sucesso?\" Cada objetivo deve mostrar que objetivo superior apoia. Não se limite a empurrar objetivos para baixo. Doerr recomenda que alguns OKR sejam propostos pelas pessoas que vão fazer o trabalho e depois acordados com o gestor. As pessoas comprometem-se mais com objetivos que ajudaram a definir.\n\n## Exemplo prático: um gestor de distribuição em Luanda\n\nO Ricardo gere a distribuição de um importador alimentar que abastece supermercados em Luanda. A prioridade da empresa é \"Conquistar e manter clientes do comércio moderno\". Os seus dados mostram um OTIF de 82% e entregas falhadas em 6% das entregas. Ele escreve um OKR para o trimestre:\n\nObjetivo: Ser o fornecedor mais fiável dos nossos clientes de supermercados em Luanda.\n\n- KR1: Aumentar o OTIF de 82% para 95% até 31 de março (comprometido).\n- KR2: Reduzir as entregas falhadas de 6% para 2% das entregas até 31 de março (comprometido).\n\nEle desdobra: o supervisor do armazém propõe \"Reduzir os erros de picking de 3% para 1% das linhas de encomenda até 28 de fevereiro\", o que apoia o KR1. A meio de fevereiro, o OTIF está em 90%, ou seja, 62% de progresso no KR1.\n\n::: case | A segunda-feira de manhã do Ricardo\nNa segunda-feira, o Ricardo tem pela frente um gerente de loja a ligar por causa de uma entrega que falta hoje, um relatório semanal que ninguém lê, um pedido de rotina das finanças e uma sessão de formação de motoristas marcada para daqui a duas semanas, que apoia o KR2.\n? Usando a matriz de Eisenhower, o que deve ele fazer com a sessão de formação?\n- Fazê-la primeiro, antes de tudo o resto || É importante, mas a entrega em falta é urgente e importante, por isso vem primeiro.\n- Delegá-la ao seu assistente || Contribui diretamente para o KR2 e precisa do contributo do próprio Ricardo.\n* Reservar tempo fixo para ela na sua agenda esta semana || Correto. O trabalho importante mas não urgente tem de ser agendado, senão as tarefas urgentes continuam a pô-lo de lado.\n:::\n\n## Ferramenta: ficha de definição de objetivos\n\n- Prioridade que este objetivo apoia:\n- Objetivo (qualitativo):\n- Resultados-chave (indicador, valor de base, meta e data para cada um):\n- Comprometido ou aspiracional:\n- Responsável:\n- Verificação SMART (S, M, A, R, T, cada um confirmado):\n- Dia e frequência de revisão:\n\n## Erros comuns\n\n- Definir demasiados objetivos. Três objetivos são foco; quinze são uma lista de desejos.\n- Escrever atividades como resultados-chave. \"Fazer uma sessão de formação\" diz o que vai fazer, não o que vai mudar.\n- Definir uma meta sem valor de base, para que ninguém saiba se é ambiciosa ou insignificante.\n\n## Autoavaliação\n\n- O que significam as letras de SMART? (Resposta: Specific, Measurable, Achievable, Relevant, Time-bound, ou seja, Específico, Mensurável, Alcançável, Relevante e Com prazo.)\n- Um resultado-chave começou em 40, a meta é 60 e o valor atual é 50. Qual é o progresso? (Resposta: 50%.)\n- Na matriz de Eisenhower, o que deve fazer com uma tarefa importante mas não urgente? (Resposta: agendá-la.)\n\n## Tarefa prática\n\nPegue numa prioridade que a sua chefia lhe deu para este trimestre. Encontre os dados de base, escreva um OKR com três resultados-chave usando a ficha e teste cada resultado-chave com o SMART. Partilhe-o com a sua equipa esta semana e peça a cada pessoa que proponha um objetivo de apoio.\n\n## Resumo\n\n- Transforme prioridades genéricas em objetivos SMART com indicador, valor de base, meta, data e responsável.\n- Use os OKR para ligar um objetivo motivador a alguns resultados mensuráveis e acompanhe o progresso desde o valor de base até à meta.\n- Proteja o trabalho importante mas não urgente com a matriz de Eisenhower e desdobre os objetivos para que cada pessoa veja como contribui.",
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- explicar o objetivo de uma reunião individual regular e decidir com que frequência a realizar;\n- planear uma reunião individual com uma agenda em quatro partes;\n- aplicar técnicas de escuta ativa e perguntas abertas durante a conversa;\n- documentar os acordos para que as ações sejam concluídas e revistas.\n\n## Termos-chave\n\n::: terms\nReunião individual (1:1): uma reunião regular e privada entre um gestor e um membro da equipa\nEscuta ativa: ouvir com toda a atenção para compreender tanto os factos como os sentimentos por detrás do que alguém diz, e mostrar essa compreensão\nParafrasear: repetir por palavras próprias o que a outra pessoa disse, para confirmar que compreendeu\nPergunta aberta: uma pergunta a que não se pode responder com \"sim\" ou \"não\" e que convida a explicar\nPergunta fechada: uma pergunta a que se pode responder com \"sim\", \"não\" ou um único facto\nRegisto de ações: uma lista escrita das ações acordadas, cada uma com um responsável e uma data-limite\n:::\n\n## 1. Porque são importantes as reuniões individuais\n\nAs pessoas raramente levantam preocupações, dúvidas ou ideias em frente aos colegas. A reunião individual dá a cada pessoa um tempo regular e protegido com o seu gestor. Andy Grove, em High Output Management, descreveu-a como a reunião do membro da equipa, com a agenda e o tom definidos sobretudo por ele, enquanto o gestor ouve, orienta e aprende. As reuniões individuais regulares revelam problemas antes de se transformarem em prazos falhados ou demissões e criam a confiança de que o feedback e o coaching precisam.\n\nCom que frequência? Um ritmo comum é 30 minutos a cada uma ou duas semanas. Grove ligou a frequência à experiência com a tarefa: mais vezes com alguém novo na função, menos vezes com alguém experiente. Faça primeiro as contas: seis colaboradores diretos a 30 minutos por semana são três horas por semana; de duas em duas semanas são noventa minutos. Escolha um ritmo que consiga manter, porque uma reunião individual cancelada diz às pessoas que não são uma prioridade.\n\n## 2. Uma agenda em quatro partes\n\nUma estrutura repetida torna as reuniões individuais eficientes. Partilhe um documento de agenda curto e peça ao membro da equipa que acrescente os seus temas antes da reunião.\n\n::: diagram steps | A agenda da reunião individual\nOs temas do membro da equipa (cerca de metade do tempo): problemas, ideias e pedidos – isto mostra que a reunião lhe pertence\nOs seus temas: informação de que a pessoa precisa, decisões, observações\nProgresso: resultados-chave da lição 2 e ações acordadas da última vez\nDesenvolvimento e acordos: uma pergunta sobre crescimento e depois um resumo das ações\n:::\n\nPrepare-se durante cinco minutos: leia as suas últimas notas, consulte o registo de ações e escolha os seus um ou dois temas. Reúna-se num local privado e guarde o telemóvel.\n\n## 3. Escuta ativa\n\nO termo escuta ativa foi introduzido pelos psicólogos Carl Rogers e Richard Farson num artigo de 1957. Defendiam que quem ouve deve tentar compreender o significado total de uma mensagem, tanto o conteúdo como os sentimentos por detrás dela, e mostrar a quem fala que compreendeu. Cinco técnicas põem isto em prática:\n\n::: slides\nSLIDE Prestar atenção | Atenção total e contacto visual; Sem telemóvel, sem interromper | A atenção é a primeira mensagem que transmite\nSLIDE Parafrasear | \"Então o principal problema é que o armazém liberta as encomendas tarde?\"; Use as suas palavras e depois confirme | Confirma os factos\nSLIDE Refletir sentimentos | \"Parece que estás frustrado por ninguém te ter dito.\"; Dê nome à emoção que nota | Confirma os sentimentos\nSLIDE Clarificar e resumir | \"Quando dizes que o cliente está descontente, o que é que ele disse exatamente?\"; Resuma os pontos principais no fim de cada tema | Feche o tema com uma compreensão partilhada\nSLIDE Permitir o silêncio | Pergunte e depois espere; Não responda à sua própria pergunta | O silêncio dá às pessoas tempo para pensar\n:::\n\n::: quiz\n? Um membro da equipa diz: \"Ninguém me disse que o horário de entregas tinha mudado e fiquei mal visto à frente do cliente.\" Que resposta reflete sentimentos?\n- \"Porque é que não verificaste o sistema?\" || Soa a culpa e não reconhece o sentimento.\n* \"Parece que te sentiste envergonhado e desapoiado pela equipa.\" || Correto. Dá nome à emoção por detrás das palavras.\n- \"O horário está sempre na pasta partilhada.\" || Defende o processo em vez de ouvir.\n- \"Vamos passar aos números de vendas.\" || Ignora o que a pessoa acabou de dizer.\n:::\n\n## 4. Perguntas abertas e o funil de perguntas\n\nAs perguntas abertas convidam as pessoas a pensar e a explicar. Começam por o quê, como, conte-me ou descreva: \"O que está a dificultar o teu trabalho esta semana?\" \"Conta-me mais sobre o atraso.\" As perguntas fechadas, como \"O relatório está terminado?\", confirmam factos, mas uma reunião feita só de perguntas fechadas torna-se um interrogatório.\n\nUse o funil de perguntas: comece de forma ampla com perguntas abertas, aprofunde com perguntas de exploração e depois confirme com perguntas fechadas. Por exemplo: \"Como estão a funcionar as novas rotas?\" → \"O que acontece à tarde na rota de Cacuaco?\" → \"Então, se passarmos essa entrega para a manhã, isso resolve o problema?\" Cuidado com o \"porquê\": \"Porque é que fizeste isso?\" pode soar a culpa, enquanto \"O que te levou a essa decisão?\" pergunta o mesmo de forma segura.\n\n::: quiz\n? Qual é a melhor pergunta para abrir um tema numa reunião individual?\n- \"A reunião com o cliente correu bem?\" || Uma pergunta fechada só convida a \"sim\" ou \"não\".\n- \"Porque é que o cliente estava descontente?\" || O \"porquê\" pode soar a culpa e assume a resposta.\n* \"Como correu a reunião com o cliente?\" || Correto. Uma pergunta aberta convida a pessoa a explicar por palavras suas.\n:::\n\n## 5. Documentar os acordos\n\nOs acordos falados são muitas vezes recordados de forma diferente por cada pessoa. Mantenha um documento partilhado por membro da equipa com a data, os pontos principais e as ações. Cada ação precisa de o quê, quem e até quando. Inclua as suas próprias ações como gestor, como \"Pedir às finanças o orçamento para a carrinha até sexta-feira\", porque as pessoas reparam quando os gestores não cumprem. Comece cada reunião individual por rever as ações anteriores, um hábito que vai desenvolver na lição 6.\n\n## Exemplo prático: uma supervisora de operações em Viana\n\nA Helena supervisiona seis chefes de equipa de armazém num centro de distribuição em Viana. Agora faz uma reunião individual semanal de 30 minutos com cada chefe. O Paulo diz-lhe que o turno da noite deixa cerca de vinte paletes na zona de carga todas as noites e diz, com alguma irritação, que é sempre ele que se queixa. A Helena reflete: \"Parece que te sentes sozinho com isto.\" O Paulo descontrai e explica que o turno da noite tem um empilhador a menos do que o previsto.\n\n::: case | Fechar a reunião individual da Helena com o Paulo\nFaltam cinco minutos para o fim da reunião. A Helena e o Paulo concordam que reparar o segundo empilhador deve resolver o problema das paletes e que o Paulo vai contar as paletes deixadas todas as manhãs para confirmar.\n? O que deve a Helena fazer antes de a reunião terminar?\n- Confiar que os dois se vão lembrar || Os acordos falados são facilmente esquecidos ou recordados de forma diferente.\n- Enviar ao Paulo um e-mail longo na próxima semana || É tarde demais e não é um registo partilhado revisto na reunião seguinte.\n* Escrever as duas ações nas notas partilhadas com um responsável e uma data, e revê-las na próxima semana || Correto. A Helena vai pedir à manutenção que repare o empilhador até quarta-feira e o Paulo vai contar as paletes durante duas semanas.\n- Prometer que ela própria resolve o problema || Isto retira ao Paulo a responsabilidade e não fica acordada nenhuma ação mensurável.\n:::\n\nNa reunião individual seguinte, a Helena começa pelas ações. O empilhador voltou e a contagem desceu para três paletes.\n\n## Ferramenta: modelo de reunião individual\n\n- Data e membro da equipa:\n- Ações da última vez (feitas, em curso, não feitas):\n- Temas do membro da equipa:\n- Os meus temas:\n- Atualização dos objetivos e resultados-chave:\n- Pergunta de desenvolvimento feita:\n- Novas ações (o quê, quem, até quando):\n- Data da próxima reunião individual:\n\n## Erros comuns\n\n- Cancelar reuniões individuais quando há muito trabalho. Mude a reunião de data se for necessário, mas não a elimine.\n- Transformar a reunião num relatório de situação que podia ter sido um e-mail.\n- Falar mais do que ouvir, ou responder às próprias perguntas.\n- Sair sem ações escritas, e assim nada muda.\n\n## Autoavaliação\n\n- Os temas de quem devem vir primeiro numa reunião individual? (Resposta: os do membro da equipa.)\n- Quais são as três partes de uma ação bem escrita? (Resposta: o que vai ser feito, quem o vai fazer e até quando.)\n- Quais são as três etapas do funil de perguntas? (Resposta: perguntas abertas, perguntas de exploração, perguntas fechadas para confirmar.)\n\n## Tarefa prática\n\nMarque esta semana uma reunião individual com um membro da equipa usando o modelo. Peça-lhe que acrescente primeiro os seus temas. Durante a reunião, use pelo menos uma paráfrase, um reflexo de sentimentos e o funil de perguntas. Registe as ações num documento partilhado e reveja-as na próxima reunião individual.\n\n## Resumo\n\n- As reuniões individuais são a reunião do membro da equipa: regulares, privadas e protegidas.\n- Use uma agenda em quatro partes, a escuta ativa e perguntas abertas para compreender antes de responder.\n- Escreva cada acordo como o quê, quem e até quando, e reveja-o no início da reunião seguinte.",
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- dar feedback positivo e corretivo com o modelo Situação-Comportamento-Impacto (SBI, do inglês Situation-Behaviour-Impact);\n- distinguir comportamento observável de juízos sobre a personalidade;\n- usar o feedforward para orientar uma conversa para a melhoria futura;\n- receber feedback de forma profissional, com uma resposta em quatro passos.\n\n## Termos-chave\n\n::: terms\nFeedback: informação sobre as ações passadas de uma pessoa e o seu efeito, dada para que a pessoa as possa manter ou mudar\nFeedback de reforço: feedback que reconhece um comportamento eficaz para que seja repetido\nFeedback corretivo: feedback sobre um comportamento que precisa de mudar\nComportamento observável: o que uma pessoa realmente disse ou fez, e que outros também poderiam ver ou ouvir\nFeedforward: sugestões centradas no que alguém pode fazer melhor no futuro, em vez de nos erros passados\n:::\n\n## 1. Porque é que o feedback tem de ser acionável\n\n\"Bom trabalho\" e \"Tens de ser mais profissional\" são bem-intencionados, mas nenhum diz à pessoa o que exatamente deve repetir ou mudar. O feedback só é útil se quem o recebe puder agir com base nele: tem de descrever um comportamento específico, explicar porque é importante e chegar a tempo de ser relevante.\n\nDê feedback de reforço e também feedback corretivo. Quando as pessoas só ouvem o gestor falar de problemas, começam a escondê-los. Dê feedback perto do acontecimento, idealmente num dia ou dois, e não o guarde para a avaliação anual. O feedback de reforço pode ser público se a pessoa se sentir à vontade com isso; o feedback corretivo deve ser dado em privado, muitas vezes na reunião individual da lição 3.\n\n## 2. O modelo SBI\n\nO modelo Situação-Comportamento-Impacto (SBI) foi desenvolvido pelo Center for Creative Leadership. Dá ao feedback uma estrutura simples em três partes:\n\n::: slides\nSLIDE Situação | Quando e onde aconteceu; \"Na reunião de ontem às 9 horas com o comprador do supermercado...\" | Ancore o feedback num momento real\nSLIDE Comportamento | O que a pessoa fez ou disse, sem interpretação; \"...apresentaste o plano de promoção com os números de stock de cada loja...\" | O que uma câmara de vídeo gravaria\nSLIDE Impacto | O efeito em si, na equipa, no cliente ou nos resultados; \"...e o comprador aprovou a encomenda na hora, o que poupou uma segunda visita.\" | Ligue-o a objetivos que importam à pessoa\nSLIDE Depois pergunte | \"Como vês isto?\"; Ouça ativamente antes de acordar o passo seguinte | O SBI abre a conversa\n:::\n\nA parte mais difícil é o comportamento. Um juízo é uma conclusão sobre a pessoa: descuidado, preguiçoso, pouco profissional, excelente. Comportamento é o que uma câmara gravaria. \"Foste descuidado com as faturas\" convida a uma discussão. \"Esta semana, três faturas tinham o código de cliente errado\" convida a uma solução.\n\n::: quiz\n? Que frase descreve um comportamento e não um juízo?\n- \"Tens uma má atitude nas reuniões.\" || \"Má atitude\" é um juízo sobre a pessoa.\n- \"Não tens espírito de equipa.\" || Isto rotula a pessoa e não dá nada de específico para mudar.\n* \"Olhaste para o telemóvel durante a maior parte da apresentação do cliente.\" || Correto. Uma câmara poderia gravar isto.\n- \"Pareceste desinteressado no cliente.\" || Isto interpreta o que a pessoa sentiu, o que não se pode observar.\n:::\n\n## 3. Passos para uma conversa de feedback\n\nO SBI abre a conversa; não a termina. Siga estes passos, sobretudo no feedback corretivo:\n\n::: diagram steps | A conversa de feedback\nPreparar: escreva a sua frase SBI e retire as palavras de juízo\nTransmitir: diga-a com calma e de forma breve\nPerguntar: \"Como vês isto?\" e ouça – pode haver uma causa que desconhece\nAcordar: o que a pessoa vai continuar a fazer ou mudar, e o apoio que lhe vai dar\nAcompanhar: repare na mudança e reconheça-a quando acontecer\n:::\n\nO Center for Creative Leadership alargou o modelo para incluir a exploração da intenção da pessoa na etapa \"perguntar\". Evite a \"sanduíche de feedback\", em que a crítica é escondida entre dois elogios: as pessoas aprendem a esperar pela crítica ou não a percebem de todo.\n\n## 4. Feedforward e receber feedback\n\nMarshall Goldsmith, coach de executivos, propôs o feedforward como complemento do feedback. O feedback olha para um passado que não pode ser mudado e que as pessoas muitas vezes defendem. O feedforward pede sugestões para o futuro: escolha um comportamento a melhorar, peça duas ideias a um colega, ouça sem discutir e agradeça. Depois de uma frase SBI, pode perguntar: \"O lançamento do próximo mês é parecido. O que farias de forma diferente?\" Isso transforma uma correção num plano.\n\nOs gestores também têm de saber receber feedback, senão a equipa deixa de o dar. Em Thanks for the Feedback (2014), Douglas Stone e Sheila Heen descrevem três gatilhos que nos bloqueiam: gatilhos de verdade (achamos que o feedback está errado), gatilhos de relação (reagimos a quem o dá) e gatilhos de identidade (ameaça a forma como nos vemos). Responda em quatro passos: agradecer, clarificar (peça um exemplo específico), ponderar (decida mais tarde o que é verdadeiro e útil) e responder (diga o que vai fazer).\n\n::: quiz\n? O seu supervisor diz-lhe que os seus relatórios são difíceis de ler. Pensa: \"Ele escreve relatórios piores do que os meus!\" Que gatilho é este?\n- Gatilho de verdade || Um gatilho de verdade tem a ver com o feedback em si estar certo ou não.\n* Gatilho de relação || Correto. Está a reagir a quem dá o feedback, não ao seu conteúdo.\n- Gatilho de identidade || Um gatilho de identidade ameaça a forma como se vê, por exemplo \"sou um mau gestor\".\n- Gatilho de feedforward || Este não é um dos três gatilhos descritos por Stone e Heen.\n:::\n\n## Exemplo prático: uma coordenadora de clientes-chave em Luanda\n\nA Sílvia gere quatro coordenadores de clientes-chave numa distribuidora de bens de grande consumo (FMCG) em Luanda. O Mário envia muitas vezes as confirmações de encomenda a uma grande cadeia de supermercados ao fim da tarde, e o comprador já se queixou duas vezes. Em vez de lhe chamar \"desorganizado\", a Sílvia prepara o SBI: \"Na segunda e na quarta-feira (situação), as confirmações para a cadeia de supermercados foram enviadas depois das 16h00 (comportamento). O armazém deles planeia a receção até às 14h00, por isso os nossos camiões esperaram cerca de duas horas de cada vez (impacto).\" O Mário explica que espera por um relatório de stock do armazém que muitas vezes chega às 15h00.\n\n::: case | Acordar o passo seguinte com o Mário\nA Sílvia já conhece a causa: o Mário espera por um relatório de stock que chega tarde. O cliente precisa das confirmações antes das 14h00 e a Sílvia quer que o Mário assuma a solução.\n? O que deve a Sílvia fazer a seguir?\n- Dizer ao Mário que se esforce mais para enviar as confirmações a tempo || A causa é um problema de processo, não de esforço.\n* Perguntar \"O que podemos fazer para que as confirmações saiam antes das 14h00?\" e acordar um teste || Correto. Isto é feedforward. O Mário propõe confirmar com base no relatório da manhã e a Sílvia pede ao armazém que o envie até às 10h00.\n- Passar o cliente para outro coordenador || Isto castiga o Mário por um problema do processo.\n- Repetir o feedback para garantir que ele percebeu || Ele já percebeu. A conversa deve agora passar para o futuro.\n:::\n\nDuas semanas depois, todas as confirmações saem antes das 13h00, e a Sílvia dá feedback SBI de reforço.\n\n## Ferramenta: planificador de feedback SBI\n\n- Pessoa e objetivo (reforçar ou corrigir):\n- Situação (quando e onde):\n- Comportamento (o que uma câmara gravaria):\n- Impacto (nas pessoas, no cliente, nos resultados):\n- Palavras de juízo retiradas (verificar):\n- Pergunta para pedir a opinião da pessoa:\n- Pergunta de feedforward para a próxima vez:\n- Passo seguinte acordado e data de acompanhamento:\n\n## Erros comuns\n\n- Usar palavras de juízo como \"preguiçoso\" ou \"pouco profissional\" em vez de comportamentos.\n- Esconder a mensagem numa sanduíche de feedback.\n- Guardar o feedback para a avaliação anual, quando já é tarde demais para ser útil.\n- Dar feedback corretivo à frente dos colegas.\n\n## Autoavaliação\n\n- O que significam as letras SBI? (Resposta: Situation, Behaviour, Impact, ou seja, Situação, Comportamento, Impacto.)\n- \"Foste mal-educado com o cliente\" é um comportamento ou um juízo? (Resposta: um juízo. Um comportamento descreveria o que foi dito ou feito.)\n- Quais são os quatro passos para receber feedback? (Resposta: agradecer, clarificar, ponderar, responder.)\n\n## Tarefa prática\n\nEsta semana, dê um feedback de reforço e um feedback corretivo usando o planificador SBI. Depois de cada um, faça uma pergunta de feedforward. Em seguida, peça a um membro da equipa feedback sobre a sua própria gestão e pratique os passos agradecer-clarificar-ponderar-responder.\n\n## Resumo\n\n- Torne o feedback acionável: comportamento específico, impacto real, dado cedo e no lugar certo.\n- Use o SBI para abrir a conversa, depois ouça, acorde um passo seguinte e use o feedforward para planear o futuro.\n- Receba o feedback com agradecimento e curiosidade, mesmo quando ativa um gatilho em si.",
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- explicar a diferença entre dizer a resposta e fazer coaching;\n- conduzir uma conversa de coaching estruturada com o modelo GROW;\n- fazer perguntas abertas eficazes em cada etapa do GROW;\n- decidir, com critérios claros, se deve dizer a resposta ou fazer coaching numa determinada situação.\n\n## Termos-chave\n\n::: terms\nCoaching: ajudar uma pessoa a melhorar o seu desempenho com perguntas que desenvolvem o seu próprio raciocínio, em vez de dar instruções\nDizer (abordagem diretiva): dar à pessoa a resposta ou a instrução\nModelo GROW: uma estrutura de coaching em quatro etapas: Goal (Objetivo), Reality (Realidade), Options (Opções), Will (Vontade)\nConsciência: uma compreensão clara da situação e de si próprio\nResponsabilidade: o sentimento da pessoa de que uma escolha e os seus resultados lhe pertencem\n:::\n\n## 1. Porque fazer coaching antes de resolver\n\nUm membro da equipa pergunta: \"O cliente quer 10% de desconto. O que devo fazer?\" A resposta mais rápida é responder. Mas se responder sempre, a pessoa aprende a trazer-lhe todos os problemas, o gestor torna-se o estrangulamento e a equipa nunca desenvolve o seu próprio discernimento.\n\nSir John Whitmore, em Coaching for Performance (publicado pela primeira vez em 1992), defendeu que o propósito do coaching é desenvolver a consciência e a responsabilidade. Quando as pessoas pensam elas próprias num problema, compreendem-no melhor e assumem a solução que escolhem. Fazer coaching não é abandonar as pessoas: continua a partilhar conhecimento, mas pergunta primeiro e só aconselha depois de a pessoa ter feito o seu próprio raciocínio.\n\n## 2. O modelo GROW\n\nO GROW é a estrutura mais usada para conversas de coaching. Whitmore popularizou-o e atribui o seu desenvolvimento a trabalho feito com colegas nos anos 1980, incluindo Graham Alexander e Alan Fine.\n\n::: diagram cycle | O modelo GROW\nObjetivo (Goal): acordar o que a pessoa quer alcançar, agora e a longo prazo\nRealidade (Reality): explorar os factos, o que já foi tentado e o que está a impedir\nOpções (Options): gerar várias ações possíveis sem julgar cedo demais\nVontade (Will): acordar o que a pessoa vai fazer, até quando e como vai ultrapassar os obstáculos\n:::\n\nSiga as etapas por ordem, mas seja flexível: se a Realidade mostrar que o objetivo está errado, volte atrás e redefina-o. Dedique tempo a sério à Realidade. Muitos problemas tornam-se fáceis quando os factos ficam claros, e os gestores que saltam esta etapa resolvem o problema errado. Algumas versões chamam à última etapa \"Way forward\" (caminho a seguir).\n\n## 3. Perguntas para cada etapa\n\nO coaching depende de boas perguntas abertas, como praticou na lição 3:\n\n::: slides\nSLIDE Perguntas de Objetivo | \"O que queres alcançar?\"; \"Como seria um bom resultado?\"; \"O que queres tirar dos próximos 20 minutos?\" | Comece pelo destino\nSLIDE Perguntas de Realidade | \"O que está a acontecer agora?\"; \"O que já tentaste e o que aconteceu?\"; \"Quem mais está envolvido?\" | Factos antes de soluções\nSLIDE Perguntas de Opções | \"O que poderias fazer?\"; \"E que mais?\"; \"O que faria a pessoa mais experiente da equipa?\" | A primeira ideia raramente é a melhor\nSLIDE Perguntas de Vontade | \"Que opção vais escolher?\"; \"Qual é o teu primeiro passo, e até quando?\"; \"O que te pode impedir?\" | Termine com uma ação assumida\n:::\n\nMichael Bungay Stanier, em The Coaching Habit, considera \"E que mais?\" a melhor pergunta de coaching, porque a primeira ideia que uma pessoa apresenta raramente é a melhor. Evite perguntas indutoras como \"Já pensaste em ligar ao cliente?\", que são conselhos disfarçados de perguntas. Se tiver uma ideia, apresente-a abertamente perto do fim das Opções (\"Posso acrescentar uma opção?\") e deixe a pessoa decidir.\n\n::: quiz\n? \"O que já tentaste e o que aconteceu?\" pertence a que etapa do GROW?\n- Objetivo (Goal) || As perguntas de Objetivo perguntam o que a pessoa quer alcançar.\n* Realidade (Reality) || Correto. Explora a situação atual e as tentativas anteriores.\n- Opções (Options) || As perguntas de Opções geram novas ações possíveis.\n- Vontade (Will) || As perguntas de Vontade garantem o compromisso com uma ação e uma data específicas.\n:::\n\n## 4. Decidir se deve dizer ou fazer coaching\n\nO coaching nem sempre é a opção certa. Use quatro critérios:\n\n- Urgência: numa crise, como um acidente com um camião ou um cliente que ameaça cancelar hoje, diga.\n- Risco: quando estão em causa a segurança, o cumprimento legal ou grandes somas de dinheiro e existe uma resposta certa clara, diga.\n- Competência: uma pessoa nova na tarefa (D1 na lição 1) ainda não tem em que se apoiar. Ensine primeiro e depois faça coaching à medida que a competência cresce.\n- Recorrência: se o problema vai voltar e a pessoa tem algum conhecimento, faça coaching.\n\nTambém pode calcular o retorno. Um membro da equipa pergunta como tratar um tipo de pedido de cliente três vezes por semana, e responder demora 10 minutos: 30 minutos do seu tempo por semana. Uma conversa de coaching de 45 minutos mais dois acompanhamentos de 15 minutos custam 75 minutos. Ao fim de cerca de duas semanas e meia, o coaching já se pagou, e a pessoa passa a tratar os pedidos sozinha.\n\n::: quiz\n? Um empilhador está a perder combustível no armazém e um operador novo pergunta-lhe o que fazer. Qual é a abordagem certa?\n- Fazer coaching com o GROW, para que ele aprenda a resolver sozinho || Há urgência e risco de segurança, e ele é novo na tarefa.\n- Perguntar \"E que mais?\" até ele encontrar a resposta || Isto atrasa a ação numa situação perigosa.\n- Dizer-lhe para decidir e informar mais tarde || Falta-lhe conhecimento e o risco é demasiado alto.\n* Dizer-lhe claramente o que fazer agora e analisar a situação mais tarde || Correto. A urgência, o risco de segurança e a pouca competência pedem que diga.\n:::\n\n## Exemplo prático: um gestor de vendas em Benguela\n\nO António gere seis vendedores no escritório de uma distribuidora alimentar em Benguela. Todas as semanas, a Rosa pergunta-lhe como responder quando donos de pequenas lojas pedem mais prazo de crédito, e o António decide sempre por ela. A situação não é urgente, a política de crédito é clara, a Rosa tem dois anos de experiência e a questão repete-se, por isso ele faz coaching. Objetivo: a Rosa quer decidir sozinha. Realidade: a maioria dos pedidos vem de bons clientes com problemas sazonais de tesouraria, e a política permite até 15 dias extra para clientes sem faturas em atraso. Opções: a Rosa sugere 15 dias para contas sem atrasos, entregas fracionadas e um pequeno desconto de pronto pagamento.\n\n::: case | Levar a Rosa para a etapa da Vontade\nA Rosa listou três opções. O António tem a sua própria ideia: consultar no sistema o histórico de pagamentos de cada cliente antes de cada visita. Faltam dez minutos de conversa.\n? O que deve o António fazer agora?\n- Escolher a melhor opção pela Rosa para poupar tempo || Isto retira-lhe a responsabilidade e a Rosa vai continuar a perguntar-lhe.\n* Perguntar \"Posso acrescentar uma opção?\", partilhar a sua ideia e depois perguntar à Rosa o que vai fazer e até quando || Correto. Ele dá o conselho abertamente, em último lugar, e deixa a Rosa comprometer-se com a sua própria ação.\n- Terminar a reunião e deixar a Rosa pensar no assunto || Sem a etapa da Vontade, não há ação assumida nem data.\n- Perguntar \"Já pensaste em consultar o histórico de pagamentos?\" || Esta é uma pergunta indutora que disfarça um conselho.\n:::\n\nA Rosa decide consultar o histórico de pagamentos antes das visitas, oferecer até 15 dias às contas sem atrasos e só escalar os outros casos. No mês seguinte, escala dois.\n\n## Ferramenta: cartão de coaching GROW\n\n- Dizer ou fazer coaching? (urgência, risco, competência, recorrência verificados)\n- Objetivo: O que queres alcançar? Como seria um bom resultado?\n- Realidade: O que está a acontecer agora? O que já tentaste?\n- Opções: O que poderias fazer? E que mais? (A minha ideia em último lugar, se necessário.)\n- Vontade: O que vais fazer? Até quando? O que te pode impedir?\n- Data de acompanhamento:\n\n## Erros comuns\n\n- Fazer perguntas indutoras que, na verdade, são conselhos.\n- Saltar a Realidade e passar diretamente às Opções.\n- Terminar sem uma ação assumida e uma data.\n- Fazer coaching numa crise, ou com alguém que ainda não tem conhecimento da tarefa.\n\n## Autoavaliação\n\n- O que significam as quatro letras de GROW? (Resposta: Goal, Reality, Options, Will, ou seja, Objetivo, Realidade, Opções, Vontade.)\n- Indique os quatro critérios para decidir se deve dizer ou fazer coaching. (Resposta: urgência, risco, competência, recorrência.)\n- Porque é que \"Já pensaste em ligar ao cliente?\" é uma pergunta de coaching fraca? (Resposta: é uma pergunta indutora que esconde um conselho.)\n\n## Tarefa prática\n\nDa próxima vez que, esta semana, um membro da equipa lhe trouxer um problema, verifique os quatro critérios para dizer ou fazer coaching. Se o coaching for adequado, use o cartão GROW e não dê a sua própria opção até a pessoa ter apresentado pelo menos três. Registe a ação com que ela se compromete e faça o acompanhamento na sua próxima reunião individual.\n\n## Resumo\n\n- O coaching desenvolve a consciência e a responsabilidade, para que as pessoas assumam as suas soluções e deixem de depender de si.\n- Use o GROW por ordem: Objetivo, Realidade, Opções, Vontade, com perguntas abertas e \"E que mais?\"\n- Diga numa crise, quando o risco é alto ou quando a pessoa é nova na tarefa, e faça coaching quando o problema se vai repetir.",
+    "## Objetivos de aprendizagem\n\nNo final desta lição, será capaz de:\n\n- construir uma matriz RACI que torne claros os papéis numa tarefa ou num processo;\n- criar um registo de ações e calcular uma taxa de conclusão no prazo;\n- tratar um compromisso falhado com uma abordagem estruturada, passo a passo;\n- conduzir uma conversa de desempenho que leve a um plano de melhoria claro.\n\n## Termos-chave\n\n::: terms\nResponsabilização: responder por um resultado, incluindo explicar o que aconteceu se não foi alcançado\nMatriz RACI: uma tabela que mostra, para cada tarefa, quem é Responsável (Responsible), Aprovador (Accountable), Consultado (Consulted) e Informado (Informed)\nRegisto de ações: uma lista partilhada das ações acordadas, com responsáveis, datas-limite e estado\nCompromisso: uma promessa específica de entregar algo até uma data\nLacuna de desempenho: a diferença entre o desempenho esperado e o desempenho real\n:::\n\n## 1. Clarificar papéis com uma matriz RACI\n\nMuitos compromissos falhados não vêm de falta de esforço, mas de papéis pouco claros: duas pessoas pensam cada uma que é a outra que está a fazer a tarefa, ou ninguém sabe quem decide. A matriz RACI é uma ferramenta muito usada para evitar isto. Para cada tarefa, mostra quem é Responsável (R, faz o trabalho), Aprovador (A, a única pessoa que responde pelo resultado e dá a aprovação final), Consultado (C, dá a sua opinião antes do trabalho ou da decisão) e Informado (I, é informado do resultado). Construa-a em cinco passos:\n\n::: slides\nSLIDE Passo 1: Liste as tarefas | Uma linha por tarefa ou decisão; Exemplo: atualização mensal da tabela de preços | Seja específico\nSLIDE Passo 2: Liste os papéis | Uma coluna por papel ou pessoa; Inclua os outros departamentos envolvidos | Nomes, não \"a equipa\"\nSLIDE Passo 3: Preencha as células | R, A, C ou I, ou deixe vazio; O A e o R podem ser a mesma pessoa numa tarefa simples | Cada célula é uma decisão\nSLIDE Passo 4: Verifique as regras | Exatamente um A por linha; Pelo menos um R por linha; Poucos C, porque cada consulta atrasa o trabalho | Um A, sempre\nSLIDE Passo 5: Acorde e partilhe | Reveja-a com todos os envolvidos; Corrija-a para que reflita a realidade | Uma RACI que ninguém acordou é só um desenho\n:::\n\n::: quiz\n? Numa RACI para \"aprovar o limite de crédito de um novo cliente\", o gestor de vendas e o controlador financeiro estão ambos marcados com A. Qual é o problema?\n- Há demasiados C || O problema está na coluna A, não na coluna C.\n* Duas pessoas são aprovadoras, por isso ninguém é claramente dono da decisão || Correto. Cada tarefa precisa de exatamente um A.\n- Ninguém é informado || Podem faltar papéis de Informado, mas o erro principal é o A duplo.\n- O controlador financeiro devia ser R || Isso pode ser verdade, mas não resolve a dupla aprovação.\n:::\n\n## 2. Acompanhar compromissos com um registo de ações\n\nA responsabilização depende do acompanhamento. Mantenha um único registo de ações partilhado pela equipa com estas colunas: número, ação, responsável, data de registo, data-limite, estado (aberta, concluída, atrasada) e notas. Escreva cada ação no momento em que é acordada, usando \"o quê, quem, até quando\" da lição 3. Reveja o registo em cada reunião de equipa e reunião individual, e feche as ações só quando estiverem realmente concluídas. Meça a fiabilidade com um rácio simples:\n\nTaxa de conclusão no prazo = ações concluídas até à data-limite ÷ ações com data-limite no período × 100\n\nSe 20 ações tinham data-limite em março e 17 foram concluídas no prazo, a taxa é 17 ÷ 20 × 100 = 85%. Acompanhe-a todos os meses. Uma taxa em queda é um sinal de sobrecarga ou de uma equipa que aprendeu que os prazos não são acompanhados.\n\n## 3. Tratar um compromisso falhado\n\nResponda cedo, com calma e de forma consistente. Ignorar o primeiro prazo falhado ensina a toda a equipa que os prazos são opcionais.\n\n::: diagram steps | Tratar um compromisso falhado\nVerificar os factos: o que foi acordado, quando e o que foi entregue – use o registo de ações\nFalar em privado e cedo: use o SBI da lição 4\nEncontrar a causa: clareza, capacidade, recursos ou motivação\nAcordar um plano de recuperação: nova data, medidas intermédias e o seu apoio\nAcompanhar: verifique na nova data e reconheça o sucesso\n:::\n\nAdapte a sua resposta à causa. Problemas de clareza e de capacidade precisam de um briefing melhor ou de formação (lição 1). Problemas de recursos, como falta de tempo, ferramentas, informação ou autoridade, exigem que o gestor remova o obstáculo. Só os problemas de motivação pedem uma conversa mais firme sobre as expectativas.\n\n::: quiz\n? Uma coordenadora falha um prazo porque ainda não tem acesso ao sistema de vendas de que precisa. Que causa é esta e o que deve fazer?\n- Motivação, por isso defina expectativas claras com firmeza || Ela não escolheu ignorar a tarefa. Está bloqueada.\n- Capacidade, por isso mande-a para formação || Ela tem a competência. Falta-lhe uma ferramenta.\n* Recursos, por isso trate rapidamente do acesso ao sistema || Correto. Remova o obstáculo e depois acorde uma nova data.\n- Clareza, por isso reescreva o briefing || Ela sabe o que se espera dela. O problema é o acesso.\n:::\n\n## 4. A conversa de desempenho\n\nQuando os problemas continuam apesar destes passos, tenha uma conversa de desempenho estruturada:\n\n- Prepare evidências específicas do registo de ações, dos relatórios e das notas SBI.\n- Indique o objetivo e a lacuna: o que era esperado e o que aconteceu, com exemplos.\n- Ouça e explore as causas. Não decida a causa antes da reunião.\n- Acorde um plano de melhoria: um a três objetivos SMART (lição 2) e o apoio que vai dar.\n- Defina datas de revisão, por exemplo de duas em duas semanas durante dois meses.\n- Escreva um resumo curto, partilhe-o com a pessoa e faça o acompanhamento em cada data.\n\nSe o desempenho continuar sem melhorar, os passos seguintes são formais. Siga os procedimentos disciplinares e de desempenho da sua empresa e envolva os RH cedo, para que qualquer ação respeite a lei laboral angolana e seja justa e consistente.\n\n## Exemplo prático: uma equipa comercial em Luanda\n\nO Fernando lidera cinco pessoas que gerem os preços e as promoções de uma distribuidora alimentar em Luanda. As atualizações da tabela de preços chegam muitas vezes atrasadas e cada pessoa culpa outra. Ele constrói uma RACI para a atualização mensal: o analista de preços é R, o Fernando é A, o controlador financeiro é C nas margens, e as vendas e o apoio ao cliente são I. Antes, tanto o analista como a coordenadora de promoções achavam que eram os aprovadores. Ele também cria um registo de ações: em março, 20 ações têm data-limite e 14 são concluídas no prazo, uma taxa de 70%.\n\n::: case | Os prazos de fornecedores falhados pela Carla\nA maioria das ações atrasadas pertence à Carla, a coordenadora de promoções. O Fernando tratou do acesso dela ao sistema no mês passado, mas desde então ela falhou três prazos de fornecedores. As conversas SBI anteriores não mudaram o padrão.\n? O que deve o Fernando fazer agora?\n- Mencionar o assunto de passagem na próxima reunião de equipa || A crítica em público prejudica a confiança e não é um processo estruturado.\n- Dar-lhe mais um aviso no corredor || Os passos informais já foram tentados e nada está documentado.\n- Iniciar já um processo disciplinar formal || Primeiro deve haver uma conversa de desempenho estruturada e um plano de melhoria, seguindo o procedimento da empresa.\n* Preparar evidências, confirmar o procedimento dos RH e ter uma conversa de desempenho com um plano de melhoria SMART escrito || Correto. Acordam dois objetivos SMART, revisões quinzenais e um resumo escrito.\n:::\n\nEm maio, a taxa de conclusão no prazo da equipa subiu para 90% e a Carla cumpriu todos os prazos de fornecedores.\n\n## Ferramenta: lista de verificação de responsabilização\n\n- RACI preenchida para as principais tarefas:\n- Exatamente um A por tarefa (verificado):\n- Registo de ações num local partilhado, revisto em cada reunião:\n- Taxa de conclusão no prazo este mês:\n- Compromissos falhados tratados em dois dias úteis:\n- Causa identificada (clareza, capacidade, recursos, motivação):\n- Plano de recuperação acordado e com data:\n- Conversas de desempenho documentadas e RH informados quando necessário:\n\n## Erros comuns\n\n- Dar a uma tarefa mais do que um A, ou indicar um departamento em vez de uma pessoa.\n- Ignorar o primeiro prazo falhado e depois reagir com força ao quinto.\n- Assumir que cada compromisso falhado é um problema de motivação.\n- Ter uma conversa de desempenho sem evidências nem registo escrito.\n\n## Autoavaliação\n\n- Quantas pessoas devem ser Aprovador (A) de uma tarefa numa matriz RACI? (Resposta: exatamente uma.)\n- 18 ações tinham data-limite e 12 foram concluídas no prazo. Qual é a taxa de conclusão no prazo? (Resposta: 67%.)\n- Quais são as quatro causas comuns de um compromisso falhado? (Resposta: clareza, capacidade, recursos, motivação.)\n\n## Tarefa prática\n\nEscolha um processo recorrente na sua equipa, construa uma matriz RACI para ele e acorde-a com as pessoas envolvidas. Crie esta semana um registo de ações partilhado e reveja-o na próxima reunião de equipa. No fim do mês, calcule a taxa de conclusão no prazo da sua equipa.\n\n## Resumo\n\n- Torne os papéis claros com uma matriz RACI, com exatamente um aprovador por tarefa.\n- Registe cada compromisso num registo de ações, reveja-o com frequência e meça a taxa de conclusão no prazo.\n- Trate os compromissos falhados cedo e de acordo com a causa, e use uma conversa de desempenho documentada quando os problemas continuam."
+  ],
+  "slides": [
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Explicar em que difere o papel de um gestor do de um contribuidor individual",
+          "Usar o modelo de Liderança Situacional para escolher quanta orientação dar",
+          "Delegar uma tarefa com um briefing de delegação claro",
+          "Escolher o nível de delegação certo para uma pessoa e uma tarefa"
+        ],
+        "takeaway": "Quatro competências que vai praticar nesta lição"
+      },
+      {
+        "title": "De executor a gestor",
+        "points": [
+          "Contribuidor individual: avaliado pelo seu próprio trabalho",
+          "Gestor: avaliado pelos resultados da equipa",
+          "Linda Hill (Harvard) concluiu que o maior erro dos novos gestores é gerir fazendo"
+        ],
+        "takeaway": "O seu resultado = o resultado da sua equipa"
+      },
+      {
+        "title": "Liderança Situacional",
+        "points": [
+          "Hersey & Blanchard: não existe um único melhor estilo",
+          "Adapte o seu estilo à competência e ao empenho da pessoa nesta tarefa",
+          "Quatro estilos: Direcionar, Orientar, Apoiar, Delegar"
+        ],
+        "takeaway": "Primeiro diagnosticar, depois escolher o estilo"
+      },
+      {
+        "title": "Os quatro níveis de desenvolvimento",
+        "points": [
+          "D1 pouca competência, muito entusiasmo → Direcionar",
+          "D2 alguma competência, pouco empenho → Orientar",
+          "D3 boa competência, confiança variável → Apoiar",
+          "D4 muita competência e empenho → Delegar"
+        ],
+        "takeaway": "A mesma pessoa pode estar em D1 numa tarefa e em D4 noutra"
+      },
+      {
+        "title": "O briefing de delegação",
+        "points": [
+          "Resultado e padrão de qualidade",
+          "Prazo e marcos intermédios",
+          "Autoridade de decisão (nível 1–7)",
+          "Recursos e pessoas a envolver",
+          "Pontos de acompanhamento"
+        ],
+        "takeaway": "Cinco linhas que evitam a maioria das falhas de delegação"
+      },
+      {
+        "title": "Sete níveis de delegação",
+        "points": [
+          "1 Dizer, 2 Vender, 3 Consultar, 4 Concordar, 5 Aconselhar, 6 Inquirir, 7 Delegar (Appelo, Management 3.0)",
+          "Níveis mais baixos = o gestor decide mais",
+          "Suba um nível à medida que a confiança cresce"
+        ],
+        "takeaway": "Diga o nível em voz alta"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "Usar o mesmo estilo para todos",
+          "Retirar a tarefa ao primeiro problema",
+          "Delegar responsabilidade sem autoridade",
+          "Esquecer os pontos de acompanhamento"
+        ],
+        "takeaway": "Diagnosticar, dar o briefing, acompanhar, dar espaço"
+      }
+    ],
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Escrever objetivos que cumpram os critérios SMART",
+          "Construir um OKR com um objetivo e resultados-chave mensuráveis",
+          "Classificar o trabalho com a matriz de Eisenhower",
+          "Desdobrar as prioridades da empresa em objetivos de equipa e individuais"
+        ],
+        "takeaway": "De prioridades genéricas a objetivos que as pessoas podem executar"
+      },
+      {
+        "title": "Objetivos SMART",
+        "points": [
+          "Doran (1981): Específico, Mensurável, Alcançável, Relevante, Com prazo",
+          "Indique o indicador, o valor de base, a meta e a data",
+          "Dê a cada objetivo um único responsável identificado"
+        ],
+        "takeaway": "\"Melhorar as vendas\" é um desejo, não um objetivo"
+      },
+      {
+        "title": "OKR",
+        "points": [
+          "Objetivo: o que quer alcançar, curto e motivador",
+          "Resultados-chave: três a cinco resultados mensuráveis",
+          "Doerr: Vou [objetivo], medido por [resultados-chave]"
+        ],
+        "takeaway": "Os resultados-chave medem resultados, não atividades"
+      },
+      {
+        "title": "Acompanhar um resultado-chave",
+        "points": [
+          "Progresso = (atual − valor de base) ÷ (meta − valor de base)",
+          "Exemplo: 82% → meta de 95%, agora 90% = 62%",
+          "Os OKR comprometidos têm de ser cumpridos, os aspiracionais puxam mais alto"
+        ],
+        "takeaway": "Reveja o progresso todas as semanas, não no fim do prazo"
+      },
+      {
+        "title": "A matriz de Eisenhower",
+        "points": [
+          "Urgente e importante: fazer já",
+          "Importante, não urgente: agendar",
+          "Urgente, não importante: delegar",
+          "Nem uma coisa nem outra: eliminar"
+        ],
+        "takeaway": "O trabalho sobre objetivos está em \"importante, não urgente\""
+      },
+      {
+        "title": "Desdobrar objetivos",
+        "points": [
+          "Empresa → departamento → equipa → indivíduo",
+          "Cada objetivo mostra que objetivo superior apoia",
+          "Combine orientação de cima para baixo com propostas de baixo para cima"
+        ],
+        "takeaway": "Todos veem a ligação entre o seu objetivo e o da empresa"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "Demasiados objetivos",
+          "Atividades escritas como resultados-chave",
+          "Metas sem valor de base",
+          "Objetivos definidos uma vez e nunca revistos"
+        ],
+        "takeaway": "Poucos objetivos, medidos com frequência"
+      }
+    ],
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Explicar o objetivo de uma reunião individual",
+          "Planear uma 1:1 com uma agenda simples em quatro partes",
+          "Usar a escuta ativa e perguntas abertas",
+          "Registar os acordos para que sejam cumpridos"
+        ],
+        "takeaway": "A 1:1 é o seu hábito de gestão mais importante"
+      },
+      {
+        "title": "Porquê reuniões individuais",
+        "points": [
+          "Tempo privado e regular com cada membro da equipa",
+          "Grove: a 1:1 é a reunião do membro da equipa",
+          "Os problemas surgem cedo, a confiança cresce"
+        ],
+        "takeaway": "Curta e regular é melhor do que longa e rara"
+      },
+      {
+        "title": "A agenda em quatro partes",
+        "points": [
+          "1 Primeiro os temas do membro da equipa",
+          "2 Os seus temas",
+          "3 Progresso nos objetivos e nas ações",
+          "4 Desenvolvimento e acordos"
+        ],
+        "takeaway": "Deixe a pessoa falar primeiro"
+      },
+      {
+        "title": "Escuta ativa",
+        "points": [
+          "Rogers & Farson (1957): ouvir os factos e os sentimentos",
+          "Parafrasear, refletir, clarificar, resumir",
+          "Permitir o silêncio, evitar interromper"
+        ],
+        "takeaway": "Ouça para compreender, não para responder"
+      },
+      {
+        "title": "Perguntas abertas",
+        "points": [
+          "Comece por o quê, como, conte-me, descreva",
+          "Use o funil: aberta → exploração → fechada para confirmar",
+          "Cuidado com o \"porquê\", pode soar a culpa"
+        ],
+        "takeaway": "Pergunte e depois espere"
+      },
+      {
+        "title": "Documentar os acordos",
+        "points": [
+          "Notas partilhadas de 1:1 para cada pessoa",
+          "Cada ação: o quê, quem, até quando",
+          "Comece a 1:1 seguinte por revê-las"
+        ],
+        "takeaway": "Se não está escrito, não foi acordado"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "Cancelar as 1:1 quando há muito trabalho",
+          "Transformar a 1:1 num relatório de situação",
+          "Falar mais do que ouvir",
+          "Nenhum seguimento por escrito"
+        ],
+        "takeaway": "Proteja o tempo, faça sempre o seguimento"
+      }
+    ],
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Dar feedback com o modelo SBI",
+          "Usar o feedforward para se centrar na melhoria futura",
+          "Receber feedback sem ficar na defensiva",
+          "Escolher o momento e o lugar certos para o feedback"
+        ],
+        "takeaway": "Feedback é informação que as pessoas podem usar"
+      },
+      {
+        "title": "O modelo SBI",
+        "points": [
+          "Center for Creative Leadership",
+          "Situação: quando e onde",
+          "Comportamento: o que viu ou ouviu",
+          "Impacto: o efeito nas pessoas ou nos resultados"
+        ],
+        "takeaway": "Factos, não juízos"
+      },
+      {
+        "title": "Comportamento, não personalidade",
+        "points": [
+          "\"Foste descuidado\" é um juízo",
+          "\"Três faturas tinham o código de cliente errado\" é um comportamento",
+          "Se uma câmara o pudesse gravar, é um comportamento"
+        ],
+        "takeaway": "Descreva, não rotule"
+      },
+      {
+        "title": "Depois do SBI: a conversa",
+        "points": [
+          "Peça a opinião da pessoa e ouça",
+          "Acorde o que manter ou mudar",
+          "Termine com um passo seguinte claro"
+        ],
+        "takeaway": "O SBI abre a conversa, não a termina"
+      },
+      {
+        "title": "Feedforward",
+        "points": [
+          "Marshall Goldsmith: sugestões para o futuro, não críticas ao passado",
+          "Pergunte \"O que posso fazer melhor da próxima vez?\"",
+          "Ouça, agradeça, não discuta"
+        ],
+        "takeaway": "Não pode mudar o passado, só a próxima vez"
+      },
+      {
+        "title": "Receber feedback",
+        "points": [
+          "Stone & Heen: gatilhos de verdade, de relação e de identidade",
+          "Agradecer, clarificar, ponderar, responder",
+          "Separe a mensagem do mensageiro"
+        ],
+        "takeaway": "Peça feedback para dar o exemplo"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "A \"sanduíche\" que esconde a mensagem",
+          "Esperar pela avaliação anual",
+          "Feedback corretivo em público",
+          "Elogios vagos"
+        ],
+        "takeaway": "Específico, atempado e privado quando é corretivo"
+      }
+    ],
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Explicar a diferença entre dizer e fazer coaching",
+          "Conduzir uma conversa de coaching com o modelo GROW",
+          "Fazer perguntas poderosas em cada etapa",
+          "Decidir quando dizer e quando fazer coaching"
+        ],
+        "takeaway": "Ajude as pessoas a encontrar respostas que assumem como suas"
+      },
+      {
+        "title": "Porquê fazer coaching",
+        "points": [
+          "Whitmore: o coaching desenvolve a consciência e a responsabilidade",
+          "Resolver tudo sozinho faz de si o estrangulamento",
+          "As pessoas comprometem-se mais com soluções que elas próprias criam"
+        ],
+        "takeaway": "A sua resposta resolve um problema, a resposta delas cria capacidade"
+      },
+      {
+        "title": "O modelo GROW",
+        "points": [
+          "Goal (Objetivo): o que queres alcançar?",
+          "Reality (Realidade): o que está a acontecer agora?",
+          "Options (Opções): o que poderias fazer?",
+          "Will (Vontade): o que vais fazer, e quando?"
+        ],
+        "takeaway": "Quatro etapas, por ordem, com flexibilidade"
+      },
+      {
+        "title": "Perguntas para cada etapa",
+        "points": [
+          "G: Como seria um bom resultado?",
+          "R: O que já tentaste até agora?",
+          "O: E que mais?",
+          "W: Qual é o teu primeiro passo, e até quando?"
+        ],
+        "takeaway": "Pergunte e depois espere pela resposta"
+      },
+      {
+        "title": "Dizer ou fazer coaching?",
+        "points": [
+          "Dizer: crise, risco de segurança ou legal, pessoa nova na tarefa (D1)",
+          "Coaching: a pessoa tem algum conhecimento, há tempo, o problema vai repetir-se",
+          "Muitas conversas combinam os dois"
+        ],
+        "takeaway": "Diagnostique antes de decidir"
+      },
+      {
+        "title": "O retorno do coaching",
+        "points": [
+          "Resolver: 10 minutos × 3 vezes por semana = 30 minutos por semana",
+          "Coaching: 45 minutos uma vez + dois acompanhamentos de 15 minutos = 75 minutos",
+          "Retorno em cerca de 2,5 semanas"
+        ],
+        "takeaway": "O coaching é um investimento, não um custo"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "Perguntas indutoras que escondem conselhos",
+          "Saltar a Realidade e passar às Opções",
+          "Terminar sem uma ação assumida",
+          "Fazer coaching numa crise"
+        ],
+        "takeaway": "Curioso, paciente, focado na ação"
+      }
+    ],
+    [
+      {
+        "title": "O que vai aprender",
+        "points": [
+          "Clarificar papéis com uma matriz RACI",
+          "Acompanhar compromissos com um registo de ações",
+          "Tratar um compromisso falhado passo a passo",
+          "Conduzir uma conversa de desempenho estruturada"
+        ],
+        "takeaway": "A responsabilização constrói-se com acompanhamento"
+      },
+      {
+        "title": "A matriz RACI",
+        "points": [
+          "Responsável (Responsible): faz o trabalho",
+          "Aprovador (Accountable): responde pelo resultado e dá a aprovação final",
+          "Consultado (Consulted): dá a sua opinião antes",
+          "Informado (Informed): é informado depois"
+        ],
+        "takeaway": "Exatamente um A por tarefa"
+      },
+      {
+        "title": "Construir uma RACI",
+        "points": [
+          "Tarefas nas linhas, papéis nas colunas",
+          "Atribua R, A, C ou I a cada célula",
+          "Verifique: um A, pelo menos um R, poucos C",
+          "Partilhe-a e acorde-a com a equipa"
+        ],
+        "takeaway": "Papéis claros evitam o \"pensei que eras tu a fazer\""
+      },
+      {
+        "title": "O registo de ações",
+        "points": [
+          "Número, ação, responsável, data-limite, estado, notas",
+          "Reveja-o em cada reunião e 1:1",
+          "Taxa no prazo = ações concluídas no prazo ÷ ações com data-limite"
+        ],
+        "takeaway": "O que é revisto é feito"
+      },
+      {
+        "title": "Tratar um compromisso falhado",
+        "points": [
+          "Verifique os factos",
+          "Fale em privado usando o SBI",
+          "Encontre a causa: clareza, capacidade, recursos ou motivação",
+          "Acorde um plano de recuperação e acompanhe"
+        ],
+        "takeaway": "Responda cedo, com calma e sempre"
+      },
+      {
+        "title": "A conversa de desempenho",
+        "points": [
+          "Prepare evidências",
+          "Indique a lacuna: esperado vs. real",
+          "Ouça e acordem a causa",
+          "Plano de melhoria SMART com apoio",
+          "Datas de revisão e registo escrito"
+        ],
+        "takeaway": "Siga o procedimento da empresa e envolva os RH"
+      },
+      {
+        "title": "Erros comuns",
+        "points": [
+          "Mais do que um A por tarefa",
+          "Ignorar o primeiro prazo falhado",
+          "Assumir que a causa é preguiça",
+          "Nenhum registo escrito"
+        ],
+        "takeaway": "Um acompanhamento consistente é um acompanhamento justo"
+      }
+    ]
+  ]
+}

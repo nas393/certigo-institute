@@ -1,0 +1,228 @@
+{
+"title": "Fundamentos de Gestão de Pessoas",
+"summary": "Métodos práticos para delegar, definir objetivos, conduzir reuniões individuais, dar feedback, fazer coaching e criar responsabilização na equipa.",
+"skills": [
+"Liderança situacional e delegação",
+"Definição de objetivos com SMART e OKR",
+"Reuniões individuais (1:1)",
+"Feedback com SBI",
+"Coaching com GROW",
+"Responsabilização e acompanhamento"
+],
+"modules": [
+{
+"title": "Passar de Executor a Gestor",
+"subject": "De executor a gestor: Liderança Situacional e delegação",
+"learned": "Diagnosticar o nível de desenvolvimento de um membro da equipa, escolher um estilo de liderança e delegar com um briefing claro e um nível de delegação definido.",
+"check": {
+"q": "Uma vendedora gere bem clientes-chave há anos, mas perdeu confiança depois de uma negociação difícil. Que estilo se aplica melhor?",
+"options": [
+"Direcionar: dar instruções passo a passo",
+"Apoiar: ouvir, encorajar e partilhar decisões",
+"Delegar: deixá-la completamente sozinha",
+"Orientar: dirigir de perto e explicar cada decisão"
+]
+}
+},
+{
+"title": "Transformar Prioridades em Objetivos Claros",
+"subject": "Objetivos SMART, OKR, a matriz de Eisenhower e o desdobramento de objetivos",
+"learned": "Transformar uma prioridade da empresa em objetivos SMART e OKR, acompanhar o progresso dos resultados-chave e proteger tempo para o trabalho importante.",
+"check": {
+"q": "Um resultado-chave começou em 50, a meta é 90 e o valor atual é 70. Qual é o progresso?",
+"options": [
+"78%",
+"70%",
+"50%",
+"40%"
+]
+}
+},
+{
+"title": "Conduzir Reuniões Individuais Eficazes",
+"subject": "Agenda da 1:1, escuta ativa, perguntas abertas e acordos documentados",
+"learned": "Planear e conduzir uma reunião individual regular que usa a escuta ativa e perguntas abertas e termina com ações escritas.",
+"check": {
+"q": "Uma gestora quer começar uma reunião individual de forma a mostrar que a reunião pertence ao membro da equipa. O que deve fazer primeiro?",
+"options": [
+"Apresentar os números de vendas do mês",
+"Rever os erros do membro da equipa na semana passada",
+"Explicar a nova política da empresa",
+"Perguntar ao membro da equipa o que tem em mente"
+]
+}
+},
+{
+"title": "Dar Feedback que Leva à Ação",
+"subject": "Modelo SBI, feedforward e receber feedback",
+"learned": "Dar feedback de reforço e corretivo claro com o SBI, usar o feedforward e receber feedback sem ficar na defensiva.",
+"check": {
+"q": "Que abertura segue o modelo SBI?",
+"options": [
+"\"Na contagem de stock de terça-feira, saltaste o corredor 4, por isso a contagem ficou errada em 40 caixas.\"",
+"\"És sempre descuidado nas contagens de stock.\"",
+"\"Bom trabalho no geral, mas tens de melhorar.\"",
+"\"Toda a gente diz que não te concentras o suficiente.\""
+]
+}
+},
+{
+"title": "Fazer Coaching Antes de Resolver",
+"subject": "Modelo GROW e a decisão entre dizer ou fazer coaching",
+"learned": "Conduzir uma conversa de coaching com o GROW e decidir quando dizer a resposta é mais adequado do que fazer coaching.",
+"check": {
+"q": "Uma vendedora experiente pergunta pela terceira vez este mês como lidar com uma objeção comum sobre preços. Não há urgência. O que deve o gestor fazer?",
+"options": [
+"Dar novamente a resposta para poupar tempo",
+"Fazer coaching com o GROW para que a vendedora encontre uma abordagem que possa reutilizar",
+"Passar a questão ao diretor comercial",
+"Dizer à vendedora para ler a tabela de preços"
+]
+}
+},
+{
+"title": "Criar Responsabilização com Acompanhamento",
+"subject": "RACI, registos de ações, compromissos falhados e conversas de desempenho",
+"learned": "Clarificar papéis com a RACI, acompanhar ações e responder de forma estruturada a compromissos falhados e lacunas de desempenho.",
+"check": {
+"q": "Um vendedor falha um prazo porque entendeu a tarefa de forma diferente do seu gestor. Que causa é esta?",
+"options": [
+"Motivação",
+"Recursos",
+"Clareza",
+"Capacidade"
+]
+}
+}
+],
+"questions": [
+{
+"q": "Uma nova vendedora está muito entusiasmada, mas nunca usou o sistema de encomendas da empresa. Que estilo de liderança deve a sua supervisora usar para esta tarefa?",
+"options": ["Delegar", "Direcionar", "Apoiar", "Orientar (coaching)"]
+},
+{
+"q": "Após seis semanas com um novo sistema de CRM, uma vendedora tem alguma competência, mas a sua motivação caiu porque é mais difícil do que esperava. Que nível de desenvolvimento e que estilo se aplicam?",
+"options": ["D3 e Apoiar", "D4 e Delegar", "D2 e Orientar", "D1 e Direcionar"]
+},
+{
+"q": "Um supervisor delegou o relatório semanal com um prazo e os dados necessários, mas o analista continua a ligar para perguntar se pode corrigir sozinho os erros nos dados. Que parte do briefing de delegação faltou?",
+"options": ["Autoridade de decisão", "Pontos de acompanhamento", "Prazo e marcos intermédios", "Recursos e pessoas"]
+},
+{
+"q": "Um gestor diz a um chefe de equipa: \"Escolhes tu o novo plano de rotas. Só me dizes depois o que decidiste.\" Que nível de delegação é este?",
+"options": ["Nível 4, Concordar", "Nível 5, Aconselhar", "Nível 7, Delegar", "Nível 6, Inquirir"]
+},
+{
+"q": "Uma supervisora recém-promovida assume ela própria todas as chamadas difíceis de clientes sempre que as metas mensais estão em risco. Qual é o principal perigo deste hábito?",
+"options": ["Ela sobrecarrega-se e a equipa não aprende", "Os clientes vão preferir falar com colaboradores júniores", "A equipa vai receber demasiada autoridade", "As suas metas mensais vão ser definidas demasiado baixas"]
+},
+{
+"q": "Qual destes é um resultado-chave e não uma atividade?",
+"options": ["Fazer uma reunião semanal com todos os motoristas", "Formar todos os motoristas na nova aplicação de entregas", "Aumentar o OTIF de 85% para 95% até 30 de junho", "Visitar todos os clientes de supermercados uma vez por mês"]
+},
+{
+"q": "Um resultado-chave pretende aumentar os pontos de venda ativos de 120 para 200. Agora há 170. Qual é o progresso, arredondado à unidade percentual?",
+"options": ["63%", "85%", "50%", "38%"]
+},
+{
+"q": "Um colega pede-lhe que reencaminhe, na próxima hora, uma tabela de preços de rotina que qualquer pessoa da sua equipa poderia enviar. Usando a matriz de Eisenhower, o que deve fazer?",
+"options": ["Fazê-lo já, pessoalmente", "Agendá-lo para a próxima semana", "Delegá-lo a um membro da equipa", "Eliminá-lo por completo"]
+},
+{
+"q": "Uma equipa alcança 80% da meta num resultado-chave que foi acordado como aspiracional. Como deve o gestor encarar isto?",
+"options": ["Como um fracasso que exige ação disciplinar", "Como um bom resultado para uma meta deliberadamente ambiciosa", "Como prova de que a meta era demasiado fácil", "Como uma razão para deixar de usar OKR"]
+},
+{
+"q": "Durante o desdobramento, um gestor vê que o objetivo de um supervisor de armazém não apoia nenhum objetivo da equipa nem da empresa. O que deve fazer?",
+"options": ["Acrescentar mais resultados-chave ao objetivo", "Marcar o objetivo como aspiracional", "Ignorar, porque os objetivos individuais são separados", "Questionar o objetivo e ligá-lo a um objetivo superior ou substituí-lo"]
+},
+{
+"q": "Segundo Andy Grove, em High Output Management, quem deve definir principalmente a agenda e o tom de uma reunião individual?",
+"options": ["A chefia do gestor", "O departamento de RH", "O membro da equipa", "O gestor"]
+},
+{
+"q": "Um gestor diz: \"Então o principal atraso está na zona de carga e não no picking?\" Que técnica de escuta ativa é esta?",
+"options": ["Refletir sentimentos", "Parafrasear", "Permitir o silêncio", "Prestar atenção"]
+},
+{
+"q": "Qual é a ordem correta das perguntas no funil de perguntas?",
+"options": ["Fechadas, depois abertas, depois de exploração", "De exploração, depois fechadas, depois abertas", "Abertas, depois fechadas, depois de exploração", "Abertas, depois de exploração, depois fechadas para confirmar"]
+},
+{
+"q": "Um gestor tem oito colaboradores diretos e faz uma reunião individual de 30 minutos com cada um de duas em duas semanas. Em média, quanto tempo por semana isto ocupa?",
+"options": ["4 horas", "1 hora", "30 minutos", "2 horas"]
+},
+{
+"q": "Que nota regista melhor um acordo feito numa reunião individual?",
+"options": ["Helena pede à manutenção que repare o empilhador 2 até quarta-feira", "Paulo vai ver o problema das paletes", "Discutida em pormenor a situação do empilhador", "Ambos dão seguimento a isto em breve"]
+},
+{
+"q": "No feedback \"Na segunda-feira enviaste a confirmação depois das 16h00, por isso os nossos camiões esperaram duas horas\", que parte é \"os nossos camiões esperaram duas horas\"?",
+"options": ["Situação", "Comportamento", "Impacto", "Intenção"]
+},
+{
+"q": "Que frase descreve um comportamento observável?",
+"options": ["És desorganizado", "Chegaste 20 minutos depois do briefing das 8h00 na segunda e na terça-feira", "Não te importas com a equipa", "Tens uma má atitude para com os clientes"]
+},
+{
+"q": "Qual destes é um exemplo de feedforward?",
+"options": ["Listar tudo o que um vendedor fez mal no mês passado", "Dar um elogio, depois uma crítica, depois um elogio", "Preencher o formulário de avaliação anual", "Pedir a um colega duas ideias para fazer reuniões mais curtas e simplesmente ouvir"]
+},
+{
+"q": "Porque é que a lição desaconselha a \"sanduíche de feedback\"?",
+"options": ["A mensagem corretiva fica escondida, ou as pessoas aprendem a esperar por ela", "Demora demasiado tempo a preparar", "Só funciona para feedback escrito", "Exige a presença dos RH"]
+},
+{
+"q": "Uma gestora ouve que a sua equipa a acha pouco acessível e pensa: \"Eu não sou assim. Sou uma pessoa aberta.\" Que gatilho, segundo Stone e Heen, é este?",
+"options": ["Gatilho de verdade", "Gatilho de relação", "Gatilho de identidade", "Gatilho de impacto"]
+},
+{
+"q": "Um gestor pergunta: \"Qual é o teu primeiro passo, e até quando?\" Que etapa do GROW é esta?",
+"options": ["Goal (Objetivo)", "Reality (Realidade)", "Options (Opções)", "Will (Vontade)"]
+},
+{
+"q": "Um supervisor com dois anos de experiência pergunta como lidar com um fornecedor que entrega muitas vezes com atraso. Não é urgente e o problema está sempre a voltar. O que deve o gestor fazer?",
+"options": ["Dar já uma instrução clara", "Usar o modelo GROW para lhe fazer coaching", "Assumir a relação com o fornecedor", "Mandá-lo aos RH para formação"]
+},
+{
+"q": "Responder a uma pergunta recorrente de um membro da equipa demora-lhe 15 minutos, quatro vezes por semana. Fazer-lhe coaching para que trate do assunto sozinha demoraria 90 minutos no total. Ao fim de quanto tempo é que o coaching se paga?",
+"options": ["1,5 semanas", "6 semanas", "3 semanas", "4 semanas"]
+},
+{
+"q": "Qual destas é uma pergunta indutora que esconde um conselho?",
+"options": ["O que já tentaste até agora?", "Como seria um bom resultado?", "Não seria melhor ligar primeiro ao cliente?", "Que mais poderias fazer?"]
+},
+{
+"q": "Segundo John Whitmore, o que desenvolve principalmente o coaching na pessoa que o recebe?",
+"options": ["Rapidez e obediência", "Consciência e responsabilidade", "Disciplina e controlo", "Conhecimento da política da empresa"]
+},
+{
+"q": "Numa matriz RACI, que papel responde pelo resultado e dá a aprovação final?",
+"options": ["Responsável (Responsible)", "Aprovador (Accountable)", "Consultado (Consulted)", "Informado (Informed)"]
+},
+{
+"q": "Em abril, 25 ações do registo de ações da equipa tinham data-limite e 20 foram concluídas até à data-limite. Qual é a taxa de conclusão no prazo?",
+"options": ["20%", "125%", "75%", "80%"]
+},
+{
+"q": "Um vendedor falha o prazo de um relatório porque pensava que devia abranger só os clientes de Luanda e não todas as províncias. O que deve o gestor fazer?",
+"options": ["Clarificar o briefing e acordar uma nova data", "Iniciar um processo disciplinar formal", "Mandá-lo para formação em Excel", "Dar-lhe um segundo portátil"]
+},
+{
+"q": "Um membro da equipa falhou um prazo acordado. Qual é o primeiro passo para tratar o compromisso falhado?",
+"options": ["Levantar o assunto na próxima reunião de equipa", "Acordar um novo prazo", "Verificar os factos no registo de ações", "Informar já os RH"]
+},
+{
+"q": "O desempenho não melhorou depois de uma conversa de desempenho documentada e de um plano de melhoria. O que deve o gestor fazer a seguir?",
+"options": ["Deixar de acompanhar para reduzir a pressão", "Mudar a pessoa para outra equipa sem discussão", "Dar um aviso à frente da equipa", "Seguir o procedimento da empresa e envolver os RH"]
+}
+],
+"explanations": [
+"Ela tem boa competência mas empenho variável (D3), por isso o estilo Apoiar é o mais adequado.",
+"Progresso = (70 − 50) ÷ (90 − 50) = 20 ÷ 40 = 50%.",
+"Começar pelos temas do membro da equipa mostra que a reunião individual é a reunião dele.",
+"Indica a situação, o comportamento observável e o impacto, sem juízos.",
+"O problema repete-se, a vendedora tem algum conhecimento e não há urgência, por isso o coaching é o melhor investimento.",
+"Ele não percebeu o que era esperado, por isso a causa é a clareza e a solução é um briefing melhor."
+]
+}

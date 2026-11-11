@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, ShieldCheck, Loader2, Check, BookOpen, QrCode } from "lucide-react";
 import { normalizeModules } from "@/components/course/SkillsMap";
 import { Footer } from "@/components/saas/Footer";
+import { lessonLabels } from "@/lib/lesson-i18n";
 import { LessonList } from "@/components/course/LessonList";
 import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
@@ -42,7 +43,7 @@ function CertDetail() {
     supabase.from("certifications").select("slug, title, summary").eq("category", c.category).neq("slug", slug).order("title").limit(3)
       .then(({ data }) => setRelated((data ?? []) as any));
   }, [c?.category, slug]);
-  useEffect(() => { void loadLessonPack(slug).then(setPack); }, [slug]);
+  useEffect(() => { void loadLessonPack(slug, lang).then(setPack); }, [slug, lang]);
 
   useEffect(() => {
     supabase.from("certifications").select("id, slug, title, issuer_name, category, summary, skills, question_count, pass_score, questions, created_at, created_by, modules, price_cents").eq("slug", slug).maybeSingle().then(({ data }) => setC(data));
@@ -85,6 +86,7 @@ function CertDetail() {
   const lessonMinutes = baseModules.reduce((n: number, m: any) => n + (Number(m?.minutes) || 0), 0);
   if (!c) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
+  const L = lessonLabels(lang);
   const aside = (
     <div className="mt-8 rounded-2xl border border-border bg-card p-5 shadow-sm lg:mt-0">
       <div className="flex items-baseline justify-between">
@@ -92,19 +94,19 @@ function CertDetail() {
           <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{t("course.price")}</div>
           <div className="mt-1 text-3xl font-black" data-testid="course-price">{info ? money(info.single_cents, info.currency) : formatPrice(c.price_cents)}</div>
         </div>
-        <span className="rounded-full bg-emerald-600/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-700">Lessons free</span>
+        <span className="rounded-full bg-emerald-600/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-700">{L.lessonsFree}</span>
       </div>
-      <p className="mt-1 text-xs text-muted-foreground">Pay only when you take the certificate exam.</p>
+      <p className="mt-1 text-xs text-muted-foreground">{L.payOnly}</p>
       <ul className="mt-4 space-y-2.5 border-t border-border pt-4 text-sm">
-        <li className="flex items-center gap-2.5"><BookOpen className="h-4 w-4 text-emerald-700" /> {modules.length} interactive lessons</li>
-        <li className="flex items-center gap-2.5"><Clock className="h-4 w-4 text-emerald-700" /> {lessonMinutes ? `About ${Math.round(lessonMinutes / 5) * 5} min of study` : "Self-paced"}</li>
-        <li className="flex items-center gap-2.5"><ShieldCheck className="h-4 w-4 text-emerald-700" /> {c.question_count}-question exam · {c.pass_score}% {t("course.toPass")}</li>
+        <li className="flex items-center gap-2.5"><BookOpen className="h-4 w-4 text-emerald-700" /> {modules.length} {L.interactiveLessons}</li>
+        <li className="flex items-center gap-2.5"><Clock className="h-4 w-4 text-emerald-700" /> {lessonMinutes ? L.aboutMin.replace("{n}", String(Math.round(lessonMinutes / 5) * 5)) : L.selfPaced}</li>
+        <li className="flex items-center gap-2.5"><ShieldCheck className="h-4 w-4 text-emerald-700" /> {L.questionExam.replace("{n}", String(c.question_count))} · {c.pass_score}% {t("course.toPass")}</li>
         <li className="flex items-center gap-2.5"><QrCode className="h-4 w-4 text-emerald-700" /> <span className="inline-block first-letter:uppercase">{t("course.verifiable")}</span></li>
       </ul>
       <div className="mt-5 grid gap-2">
         {modules.length > 0 && (
           <Button size="lg" className="w-full bg-emerald-600 text-white hover:bg-emerald-700" onClick={() => nav({ to: "/c/$slug/lesson/$n", params: { slug, n: "1" } })}>
-            Start lesson 1 <ArrowRight className="ml-2 h-4 w-4" />
+            {L.startLesson1} <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         )}
         {info?.access.access && (
@@ -119,7 +121,7 @@ function CertDetail() {
         ) : (
           <Button size="lg" variant="outline" className="w-full" disabled={enrolling} onClick={enroll}>
             {enrolling ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-            {user ? "Save to my portal" : t("course.enrollSignIn")}
+            {user ? L.savePortal : t("course.enrollSignIn")}
           </Button>
         )}
       </div>
