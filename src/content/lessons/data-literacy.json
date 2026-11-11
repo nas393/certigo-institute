@@ -1,0 +1,433 @@
+{
+ "slug": "data-literacy",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what data literacy is and why it matters for everyday decisions;\n- classify data by type: qualitative or quantitative, categorical or numerical, time series or cross-sectional;\n- use the DIKW pyramid to describe how data becomes a decision;\n- check a report against six common data quality dimensions.\n\n## Key terms\n\n::: terms\nData literacy: the ability to read, question, interpret and communicate data in order to make decisions\nCategorical data: data that places items in groups, such as province, product line or customer type\nNumerical data: data measured or counted as numbers, such as sales value, units or days late\nTime series: values of the same measure recorded over successive periods, such as monthly sales\nData quality: how fit a dataset is for the decision it supports\n:::\n\n## 1. What data literacy is\n\nData literacy is not about writing formulas or code. It is the ability to read a report or dashboard, ask the right questions about it, interpret what it really says and explain it to others. A sales manager in Luanda who receives a weekly sales pack, a finance officer reading an ageing report and an HR officer reviewing absence figures all need the same four habits: read, question, interpret, communicate.\n\nThe DIKW pyramid is a widely used way to describe this journey. Raw data sits at the base. When you organise it and add context, it becomes information. When you understand patterns and causes, it becomes knowledge. When you use that knowledge to choose the right action, you reach wisdom. Many reports stop at the second level: they show information but never answer \"why?\" or \"what should we do?\". Your job as a data-literate professional is to push the conversation up the pyramid.\n\n::: diagram pyramid | The DIKW pyramid\nWisdom: choosing the right action – \"cut credit to province X and visit the top 10 customers\"\nKnowledge: understanding causes – \"sales fell because two large customers stopped buying\"\nInformation: data with context – \"Benguela sales fell 18% versus last month\"\nData: raw facts – invoice lines, dates, amounts, customer codes\n:::\n\n## 2. Types of data\n\nThe type of data decides what you can calculate and which chart makes sense. Use these questions in order:\n\n::: slides\nSLIDE Step 1: Words or numbers? | Qualitative: comments, reasons, opinions; Quantitative: counts and measurements; Both are useful for decisions | Start by naming the type\nSLIDE Step 2: If categorical, is there an order? | Nominal: no order, e.g. province or product line; Ordinal: ordered, e.g. satisfaction from 1 to 5 or A-B-C customers; Count or compare shares, do not average codes | Customer code 4 is not twice code 2\nSLIDE Step 3: If numerical, counted or measured? | Discrete: counted, e.g. number of orders; Continuous: measured, e.g. weight, kwanza value, delivery time | Both can be averaged\nSLIDE Step 4: One moment or over time? | Cross-sectional: many branches this month; Time series: one branch over 24 months; Time series show trend and seasonality | Compare like periods with like\n:::\n\nA common trap is a numeric code. If a system stores provinces as 1 to 18, the \"average province\" of 7.4 means nothing. Another trap is seasonality: sales of some products in Angola move with the school year, festive seasons or the rainy season, so comparing December with January can mislead. For a time series, compare the same month last year or use a rolling average.\n\n::: quiz\n? A customer survey asks people to rate delivery service from 1 (very poor) to 5 (excellent). What type of data is this?\n- Continuous numerical data || The scale has only five fixed values and the gaps between them are not measured quantities.\n* Ordinal categorical data || Correct. The categories have an order, but the distance between 2 and 3 is not guaranteed to equal the distance between 4 and 5. Report the share of each score.\n- Nominal categorical data || The scores do have a natural order, so they are ordinal, not nominal.\n:::\n\n## 3. Six data quality dimensions\n\nBefore you trust a number, check the data behind it. Data management professionals commonly use six dimensions:\n\n- Accuracy: does the data match reality? (Does the stock report match a physical count?)\n- Completeness: is anything missing? (Are all branches included this month?)\n- Consistency: do systems and reports agree? (Does the sales report match the finance ledger?)\n- Timeliness: is the data recent enough for this decision? (When was it last updated?)\n- Validity: does each value follow the rules? (No negative quantities, valid dates, correct units.)\n- Uniqueness: is each record counted once? (No duplicate customers or invoices.)\n\nA practical method is to pick three numbers in any report and trace them back to their source. If you cannot, treat the whole report with caution.\n\n::: quiz\n? A dashboard shows 1,240 active customers, but the same customer appears three times with slightly different spellings. Which dimension fails?\n- Timeliness || Timeliness is about how recent the data is, not about repeated records.\n- Validity || Each record may follow the format rules. The problem is that one customer is counted more than once.\n* Uniqueness || Correct. Duplicate records inflate the customer count. The number of active customers is overstated.\n- Completeness || Completeness is about missing records. Here there are extra records, not missing ones.\n:::\n\n## Worked example: A monthly report at a food distributor in Viana\n\n::: case | The missing branch in Viana\nMarta is commercial analyst at a food distributor in Viana. The monthly report shows total sales of 412 million Kz, down 9% on last month, and her director wants to cut the marketing budget. Marta notices that the Lubango branch shows zero sales, although trucks left the warehouse all month.\n? What should Marta do first?\n- Send the report as it is because the director needs it today || The director would make a decision based on an incomplete total. A short delay is better than a wrong decision.\n* Check with the Lubango branch and IT whether its invoices were uploaded, then correct and resend the report || Correct. This is a completeness problem. She confirms the cause and fixes the data before anyone acts on it.\n- Remove Lubango from last month too so the comparison is fair || This hides the problem and understates the business. It also changes historical data without a reason.\n- Estimate Lubango's sales using last month's figure || An estimate may help later, but first she must find out whether the real data exists.\n:::\n\nMarta discovers that a system update stopped Lubango's invoices from uploading. Once loaded, total sales are 451 million Kz, roughly level with last month. The planned marketing cut is cancelled. One quality check prevented a costly decision.\n\n## Tool: Data quality checklist for any report\n\n- Source: which system and who prepared it?\n- Period and refresh date: is the data recent enough?\n- Coverage: are all branches, products and channels included?\n- Reconciliation: does the total agree with finance or another trusted source?\n- Units and currency: Kz or USD, units or cases, with or without VAT?\n- Duplicates and blanks: any repeated or missing records?\n- Data type: are categories being averaged as if they were numbers?\n\n## Common mistakes\n\n- Treating numeric codes (province 1–18, customer class 1–4) as real numbers.\n- Comparing months without allowing for seasonality.\n- Accepting a total without checking that all units are included.\n- Forgetting to check whether figures include or exclude VAT.\n\n## Self-check\n\n1. What are the four levels of the DIKW pyramid, from the base up? (Answer: data, information, knowledge, wisdom.)\n2. Is \"number of deliveries per day\" discrete or continuous? (Answer: discrete, because it is counted.)\n3. A report was last refreshed three weeks ago. Which quality dimension is at risk? (Answer: timeliness.)\n\n## Practical assignment\n\nTake one report you receive regularly. List every measure in it and classify each by data type. Then apply the data quality checklist and trace three numbers back to their source. Write down any problem you find and who can fix it.\n\n## Summary\n\n- Data literacy means reading, questioning, interpreting and communicating data, with no coding required.\n- The data type decides which calculations and charts are valid.\n- Check accuracy, completeness, consistency, timeliness, validity and uniqueness before you trust a number.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose the right average (mean, median or mode) for a set of data;\n- use the range to describe how spread out results are;\n- explain the difference between a percentage change and a change in percentage points;\n- calculate simple growth, compound annual growth rate (CAGR) and real growth after inflation.\n\n## Key terms\n\n::: terms\nMean: the sum of all values divided by the number of values\nMedian: the middle value when all values are sorted from smallest to largest\nMode: the value or category that appears most often\nRange: the difference between the largest and the smallest value\nPercentage point: the arithmetic difference between two percentages\nBase effect: a large percentage change caused by a small starting value\n:::\n\n## 1. Choosing the right average\n\nThe word \"average\" usually means the mean, but the mean can mislead when the data is skewed, that is, when a few very large or very small values pull it away from the typical case.\n\nTake nine orders received by a distributor in Kz thousand: 120, 135, 140, 150, 155, 160, 170, 180 and 1,890. The total is 3,100, so the mean is 3,100 ÷ 9 = about 344. The median is the fifth value when sorted: 155. Eight of nine orders are below 200, so the median describes the typical order much better. The one large order, perhaps from a wholesaler, pulls the mean up. The range is 1,890 − 120 = 1,770, which warns you that order sizes vary a lot.\n\n::: diagram steps | Choosing the right average\nIs the data categorical? Use the mode, for example the most common reason for returns\nIs the numerical data skewed by a few extreme values? Use the median, for example order values, salaries, days to pay\nIs the data roughly symmetric? Use the mean, for example daily output of a stable production line\nNot sure? Report both mean and median and explain the gap\n:::\n\nWhen the mean and median are far apart, ask what is causing the gap. Often the answer is a small group of very large customers or a data error, and both are worth knowing.\n\n::: quiz\n? An HR report says the average salary in a department is 950,000 Kz, but most staff earn between 300,000 and 450,000 Kz. What is the most likely explanation?\n- Most staff were paid incorrectly this month || The figure can be explained without any error, so this is not the most likely cause.\n* A few very high salaries are pulling the mean up, so the median would describe a typical salary better || Correct. Salaries are usually skewed. The median shows what a typical employee earns.\n- The mode should have been used because salary is categorical || Salary is numerical, not categorical. The mode is rarely useful for continuous amounts.\n:::\n\n## 2. Percentages and percentage points\n\nA percentage change is relative to the starting value. A percentage point change is the simple difference between two percentages. Suppose your market share in a province rises from 20% to 25%. That is an increase of 5 percentage points, but a relative increase of 25% (5 ÷ 20). Both statements are true, but they sound very different. A presentation that says \"share up 25%\" without explanation may lead people to think share is now 45%.\n\nThe same care applies to margins, interest rates and conversion rates. If gross margin falls from 12% to 9%, say \"down 3 percentage points\", which is a 25% relative fall in margin. Also check the base: a new product that grows from 2 to 6 cases has grown 200%, but this tells you very little. This is the base effect.\n\n::: quiz\n? A bank's non-performing loan ratio rose from 4% to 6%. Which statement is correct?\n- It rose by 2% || This is ambiguous. Readers may think it rose from 4% to 4.08%.\n- It rose by 50 percentage points || The ratio changed by 2 points, not 50. The 50% figure is the relative change.\n* It rose by 2 percentage points, a 50% relative increase || Correct. 6 − 4 = 2 points, and 2 ÷ 4 = 50% relative growth.\n- It rose by 6% || 6% is the new level, not the change.\n:::\n\n## 3. Calculating growth correctly\n\nThree growth calculations cover most business needs.\n\n::: slides\nSLIDE Simple growth | Growth = (new value - old value) / old value; Sales from 40 to 46 million Kz: (46 - 40) / 40 = 15%; Always state the period | Compare with the right base period\nSLIDE CAGR | Use for growth over several years; CAGR = (end / start)^(1/years) - 1; From 100 to 133.1 million Kz in 3 years = 10% per year | A smooth yearly rate for uneven years\nSLIDE Real growth | Removes the effect of inflation; Real = (1 + nominal) / (1 + inflation) - 1; 25% nominal with 20% inflation = about 4.2% real | Volume tells the truth when prices rise\nSLIDE Volume check | Look at units, tonnes or cases as well as value; If value is up but volume is down, growth is price only; Ask how much is price and how much is volume | Kwanza growth can hide fewer sales\n:::\n\nIn an economy where prices change quickly, nominal growth in kwanzas can look strong while real activity is flat or falling. Always ask for volume figures beside value figures, and use the official inflation rate for the same period when you calculate real growth.\n\n## Worked example: Annual review at a rice importer in Luanda\n\n::: case | Is the rice business really growing?\nHélder, sales manager at a rice importer in Luanda, presents to the board: sales value rose from 2.0 billion Kz to 2.5 billion Kz, so \"growth is 25%\". Over the same year tonnes sold fell from 5,000 to 4,600, and inflation for the period was 20%.\n? Which conclusion is most accurate?\n- The business grew strongly by 25% and the team should be rewarded || 25% is nominal value growth. It ignores both inflation and the fall in tonnes.\n- The business grew by 25 percentage points || Growth from 2.0 to 2.5 billion is a relative change of 25%, not a change in percentage points.\n* Real value growth was only about 4% and volume fell 8%, so growth came from higher prices, not more sales || Correct. 1.25 ÷ 1.20 − 1 ≈ 4.2%, and (4,600 − 5,000) ÷ 5,000 = −8%. The team is selling less rice at higher prices.\n- Nothing can be concluded without the median order size || The median is useful for other questions, but the data given already answers this one.\n:::\n\nHélder rewrites the slide: \"Value +25%, real value +4%, volume −8%: we are losing tonnes. Next step: analyse volume by customer and region.\" The board now discusses the right problem.\n\n## Tool: Numbers check before you present\n\n- Have I used the median where data is skewed?\n- Have I shown the range or spread, not only the average?\n- Are percentage changes and percentage-point changes labelled clearly?\n- Have I stated the base value and the period for every growth rate?\n- Have I shown volume as well as value?\n- Have I calculated real growth if inflation is significant?\n\n## Common mistakes\n\n- Reporting only the mean when a few large values distort it.\n- Writing \"up 5%\" when the change is 5 percentage points.\n- Presenting kwanza growth without adjusting for inflation or showing volume.\n- Celebrating very high growth rates that come from a tiny base.\n\n## Self-check\n\n1. Values are 3, 4, 4, 5 and 34. What are the mean and the median? (Answer: mean 10, median 4.)\n2. Market share falls from 30% to 27%. What is the change in percentage points? (Answer: −3 percentage points, a 10% relative fall.)\n3. Sales grow from 50 to 72 million Kz in two years. What is the CAGR? (Answer: (72 ÷ 50)^(1/2) − 1 = 1.2 − 1 = 20% per year.)\n\n## Practical assignment\n\nChoose a growth figure from a recent report at your organisation. Recalculate it, state whether it is nominal or real, and find the volume figure for the same period. Write one sentence that explains how much growth came from price and how much from volume.\n\n## Summary\n\n- Use the median for skewed data such as order values and salaries, and always look at spread.\n- Percentage points and percentages are different: label them clearly.\n- Check growth for base effects, inflation and volume before you celebrate it.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose a suitable chart type for a business question;\n- identify misleading axes and calculate Tufte's lie factor;\n- recognise cherry-picking and other common distortions in charts;\n- read any dashboard using a five-step routine.\n\n## Key terms\n\n::: terms\nAxis baseline: the starting value of a chart axis, usually zero for bar charts\nTruncated axis: an axis that starts above zero, which magnifies differences\nLie factor: the size of an effect shown in a graphic divided by the size of the effect in the data\nCherry-picking: choosing only the data that supports a conclusion and leaving out the rest\nDashboard: a single screen of key measures that shows performance at a glance\n:::\n\n## 1. Matching the chart to the question\n\nEvery good chart answers one question. Before you judge a chart, ask what question it is trying to answer, and whether the chart type suits it:\n\n- Comparing categories (sales by province): bar chart, sorted from largest to smallest.\n- Trend over time (monthly sales for 24 months): line chart.\n- Part of a whole (share of sales by channel): stacked bar, or a pie chart only with two to four slices.\n- Relationship between two measures (price versus volume by customer): scatter plot.\n- Distribution (how many invoices fall into each payment-delay band): histogram.\n\nA pie chart with twelve slices, a 3D bar chart or a line chart for unrelated categories makes the reader work harder and often hides the message.\n\n::: quiz\n? A manager wants to show how the number of days customers take to pay is distributed across 600 invoices. Which chart is best?\n- Pie chart with one slice per customer || 600 slices are unreadable, and a pie shows shares, not distribution.\n* Histogram of invoices by payment-delay band (0–30, 31–60, 61–90, 90+ days) || Correct. A histogram shows how values are spread across ranges.\n- Line chart with invoices in random order || A line chart implies an ordered sequence such as time. Random order gives a meaningless line.\n:::\n\n## 2. Misleading axes and the lie factor\n\nThe most common distortion is a truncated axis on a bar chart. The length of a bar is supposed to represent the value. If the axis starts at 96 instead of zero, a value of 98 gets a bar 2 units tall and a value of 102 gets a bar 6 units tall. The second bar looks three times bigger, although the real difference is about 4%.\n\nEdward Tufte, in The Visual Display of Quantitative Information (1983), proposed the lie factor to measure this:\n\n::: slides\nSLIDE Step 1: Effect in the data | (102 - 98) / 98 = about 4.1%; This is the real change; Use the actual values | Start from the numbers\nSLIDE Step 2: Effect shown in the chart | Bar heights above the axis start: 2 and 6; (6 - 2) / 2 = 200%; This is what the eye sees | Measure what is drawn\nSLIDE Step 3: Lie factor | 200% / 4.1% = about 49; A value near 1 is honest; Tufte treated values far from 1 as serious distortion | This chart exaggerates the change about 49 times\nSLIDE Step 4: Fix it | Start bar charts at zero; For small changes use a line chart and label the values; Or show the change itself as a number | Honest charts build trust\n:::\n\nLine charts may start above zero when the aim is to show variation over time, but the axis must be clearly labelled. Be careful also with dual-axis charts: by choosing the scales of the two axes, almost any two lines can be made to look as if they move together.\n\n## 3. Cherry-picking and missing context\n\nA chart can be technically accurate and still mislead through what it leaves out. Watch for:\n\n- Chosen time windows: starting a trend at an unusually bad month makes recovery look strong.\n- Selected units: showing only the three best branches.\n- No comparison: a number without a target, last year or trend cannot be judged.\n- Cumulative charts: a running total always rises, even when monthly sales are falling.\n\n::: quiz\n? A presentation shows a cumulative sales line that rises every month this year, and the presenter says \"we are growing every month\". What should you ask?\n- Whether the line is in a nice colour || Colour does not change the meaning of the data.\n- Whether a pie chart would be better || A pie chart cannot show change over time either.\n* To see monthly sales, because a cumulative total rises even if each month is lower than the last || Correct. Running totals hide monthly decline. Ask for the monthly figures.\n- Whether the y-axis starts at zero || A useful habit, but it does not address the main problem with cumulative totals.\n:::\n\n## Worked example: The weekly dashboard at a telecom dealer in Huambo\n\n::: diagram steps | Five-step dashboard reading routine\nTitle and period: what is measured, for which dates and filters?\nDefinitions and units: Kz or USD, gross or net, what counts as \"active\"?\nComparisons: against target, last year and recent trend\nExceptions: which items are far off target, up or down?\nAction: what decision or question follows, and who owns it?\n:::\n\n::: case | Good news in Huambo?\nCarla supervises sales at a telecom dealer in Huambo. Her weekly dashboard shows a bar chart of new SIM activations: this week's bar is twice as tall as last week's. Her area manager wants to give the team a bonus. Carla sees that the axis starts at 1,900, with values of 1,950 last week and 2,000 this week.\n? What should Carla do?\n- Approve the bonus because activations doubled || They did not double. The truncated axis makes a small increase look huge.\n* Point out that activations rose about 2.6% (50 on 1,950) and check the result against target and last year before any bonus decision || Correct. She reads the axis, calculates the real change and adds the comparisons a decision needs.\n- Ask IT to change the colours so the chart looks less dramatic || The problem is the axis, not the colour.\n- Ignore the chart because dashboards are unreliable || The data is useful once read correctly.\n:::\n\nCarla finds that 2,000 activations is still 8% below the weekly target. She asks the dashboard owner to start the axis at zero and add a target line.\n\n## Tool: Ten-second chart check\n\n- What question does this chart answer?\n- Is the chart type right for that question?\n- Where does each axis start, and what are the units?\n- What period and which filters are applied?\n- Is there a comparison: target, last year or trend?\n- Is anything missing: other regions, other months, other products?\n- Would the message survive if I read only the numbers?\n\n## Common mistakes\n\n- Judging a bar chart by the shape without reading the axis.\n- Using pie charts with many slices or 3D effects.\n- Accepting a number without a comparison.\n- Mistaking a cumulative total for monthly growth.\n\n## Self-check\n\n1. Which chart type best shows monthly sales over two years? (Answer: a line chart.)\n2. A chart shows an effect of 150% for a real change of 10%. What is the lie factor? (Answer: 15.)\n3. Why must bar charts start at zero? (Answer: because bar length represents the value, so a truncated axis exaggerates differences.)\n\n## Practical assignment\n\nPick one dashboard or report chart you use at work. Run the ten-second chart check and the five-step dashboard routine. If you find a problem, calculate the lie factor where relevant and send a short, polite suggestion to the report owner.\n\n## Summary\n\n- Choose the chart that answers the question: bars compare, lines show trends, scatter plots show relationships.\n- Read the axis before the shape: a truncated axis can create a large lie factor.\n- Ask what is missing: time window, comparisons and excluded units.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain why correlation does not prove causation;\n- test a causal claim using a five-question checklist;\n- recognise selection bias, survivorship bias and Simpson's paradox in business data;\n- estimate the margin of error of a simple survey result.\n\n## Key terms\n\n::: terms\nCorrelation: a relationship in which two measures tend to move together\nCausation: a relationship in which a change in one factor produces a change in another\nConfounding variable: a third factor that influences both measures and creates a false link\nSample: the part of a population that is actually measured\nBias: a systematic error that pushes results in one direction\n:::\n\n## 1. Correlation is not causation\n\nWhen two measures move together, it is tempting to assume one causes the other. Sales of cold drinks and sales of sun hats rise together, but neither causes the other: hot weather drives both. Hot weather is a confounding variable. Other explanations for a correlation are reverse causation (branches with more staff sell more, but perhaps high sales are why they were given more staff) and coincidence.\n\nTo test a causal claim, use these questions, simplified from the criteria proposed by the epidemiologist Austin Bradford Hill (1965):\n\n::: diagram steps | Testing a causal claim\nTime order: did the cause happen before the effect?\nAlternatives: could a confounder, seasonality or a price change explain it?\nDose-response: does more of the cause give more of the effect?\nMechanism: is there a sensible explanation of how it works?\nTest: did a control group without the cause show a different result?\n:::\n\nThe strongest evidence is a controlled test. If you want to know whether a new display stand raises sales, place it in 10 shops, keep 10 similar shops without it as a control group, and compare the change in both groups over the same weeks.\n\n::: quiz\n? Sales in a supermarket rose 20% in the month a new loyalty card was launched. The month was also December. What is the best conclusion?\n- The loyalty card caused a 20% rise || December is a festive month. Seasonality may explain much of the rise.\n* The card may have helped, but the effect must be compared with last December and with stores without the card || Correct. Seasonality is a likely confounder, so a proper comparison is needed.\n- The card had no effect || Nothing in the data proves the card had no effect. We simply cannot tell yet.\n:::\n\n## 2. Sampling and bias\n\nMost business data is a sample. The question is whether the sample is typical of the whole population.\n\n::: slides\nSLIDE Selection bias | The sample is chosen in a way that is not typical; Example: a customer survey only at Luanda stores; Results cannot be applied to the provinces | Check how the sample was chosen\nSLIDE Survivorship bias | You only see the units that survived; In World War II, Abraham Wald advised armouring the parts of returning planes that had no bullet holes; Planes hit there did not return | Ask what you cannot see\nSLIDE Business survivorship | Studying only current customers ignores lost ones; Copying only successful shops ignores failed shops with the same strategy; Exit data is often the most useful | Talk to the customers who left\nSLIDE Non-response bias | Only some people reply to surveys; Very happy or very angry customers reply most; Report the response rate | Silence is also data\n:::\n\nSurvivorship bias is common in sales. If you analyse why current customers buy from you, you learn nothing about why lost customers left. A distributor that wants to reduce churn must collect data on the customers who stopped ordering.\n\n## 3. Simpson's paradox and small samples\n\nSimpson's paradox happens when a trend that appears in every group reverses when the groups are combined. Consider two collectors of overdue invoices:\n\n- Ana: Luanda accounts 80 of 100 collected (80%), provincial accounts 10 of 20 (50%). Total 90 of 120 = 75%.\n- Bruno: Luanda 18 of 20 (90%), provinces 60 of 100 (60%). Total 78 of 120 = 65%.\n\nBruno is better in both segments, yet Ana looks better overall because most of her accounts are in Luanda, where collection is easier. Always break totals down by the main segments before comparing people, branches or products.\n\nSmall samples swing widely. For a survey result given as a percentage, a common rule of thumb for the margin of error at about 95% confidence is 1 ÷ √n. With 100 replies the margin is about ±10 percentage points, with 400 replies about ±5 points, and with 25 replies about ±20 points. A satisfaction score of 70% from 25 customers could easily be anywhere from 50% to 90%.\n\n::: quiz\n? A survey of 100 customers shows 62% prefer the new packaging. Using the 1 ÷ √n rule, what is the approximate range?\n- 61% to 63% || This range is far too narrow for a sample of 100.\n* 52% to 72% || Correct. 1 ÷ √100 = 0.10, so the margin is about ±10 percentage points.\n- 32% to 92% || This is far too wide. That margin would apply to a very small sample.\n- Exactly 62%, because the survey measured it || Any sample has uncertainty. Another 100 customers would give a different result.\n:::\n\n## Worked example: A supplier decision at a construction company in Benguela\n\n::: case | The cheaper cement in Benguela\nRui, procurement officer at a construction company in Benguela, reads a site report: on the six sites using a cheaper cement supplier, defect rates were 30% lower than on sites using the usual supplier. He is asked to switch all 20 sites. He learns that the six sites are all small housing jobs, while the others include large structural works.\n? What should Rui recommend?\n- Switch all 20 sites now because defects are 30% lower || The sites differ in type. The lower defect rate may come from the simpler work, not the cement.\n- Reject the cheaper supplier because the data is useless || The data is not useless. It is just not yet enough to prove the cause.\n* Compare defects by site type and run a controlled trial on similar sites before deciding || Correct. Site type is a likely confounder. A fair comparison on similar sites tests the real effect of the cement.\n- Survey site managers who like the new supplier || This adds selection bias and does not measure defects.\n:::\n\nRui arranges a three-month trial on four pairs of similar sites. Only then does he present a recommendation.\n\n## Tool: Bias and causation checklist\n\n- How was the sample selected, and who is missing?\n- How many observations are there? What is 1 ÷ √n?\n- What was the response rate?\n- Did the cause come before the effect?\n- What confounders could explain the link (season, price, region, customer size)?\n- Do the results hold inside each main segment?\n- Is there a control group or a fair comparison?\n\n## Common mistakes\n\n- Crediting a campaign for growth that came from seasonality.\n- Learning only from successful branches or current customers.\n- Making big decisions from a handful of results.\n- Comparing totals across groups with different mixes.\n\n## Self-check\n\n1. What is a confounding variable? (Answer: a third factor that affects both measures and creates an apparent link.)\n2. Why did Abraham Wald recommend armouring areas without bullet holes? (Answer: because planes hit in those areas did not return, so the damage was invisible.)\n3. What is the approximate margin of error for 400 survey replies? (Answer: about ±5 percentage points.)\n\n## Practical assignment\n\nFind one claim in your workplace of the type \"X led to Y\". Apply the five causal questions and the bias checklist. Write a short note with your conclusion and one way to test the claim fairly.\n\n## Summary\n\n- Correlation can come from confounders, reverse causation or chance; test causal claims before acting.\n- Look for selection, survivorship and non-response bias, and break totals down by segment.\n- Small samples carry large margins of error: use 1 ÷ √n as a quick guide.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- distinguish leading from lagging indicators and choose both for a goal;\n- define a KPI precisely using a KPI card;\n- prioritise measures using an importance and influence grid;\n- ask better questions of data using four question types and the \"so what?\" test.\n\n## Key terms\n\n::: terms\nMetric: any quantity that is measured, such as calls made or invoices issued\nKPI (key performance indicator): a metric directly linked to a key objective, with a target and an owner\nLagging indicator: a measure of a result that has already happened, such as monthly sales\nLeading indicator: an early measure that predicts a future result and can be influenced now\nVanity metric: a number that looks good but does not support any decision\n:::\n\n## 1. Leading and lagging indicators\n\nMost reports are full of lagging indicators: sales, margin, profit, customer losses. They tell you whether you succeeded, but only after it is too late to change the result. Leading indicators give early warning. For a distributor, sales are lagging, while customer visits completed, active outlets, quotes sent and stock cover in days are leading.\n\nGood scorecards pair them. If the lagging KPI is \"monthly sales volume\", useful leading KPIs might be \"planned visits completed\" and \"outlets with no stock-outs\". If visits fall in week 1, you can act before sales fall in week 4.\n\nA simple grid helps decide which measures deserve KPI status:\n\n::: diagram matrix | Which measures deserve attention? | Your ability to influence (low → high) | Importance to the goal (low → high)\nMonitor: important but outside your control, such as exchange rate – track it as context\nKey KPI: important and within your control – set a target and manage it weekly\nDrop: low importance and low influence – remove it from the dashboard\nOperational metric: low importance but easy to influence – let the team manage it\n:::\n\n::: quiz\n? A sales team's goal is to increase monthly revenue. Which is a leading indicator?\n- Monthly revenue || This is the lagging result itself.\n- Last quarter's gross profit || This is also a past result, not an early signal.\n* Number of planned customer visits completed each week || Correct. Visits happen before orders, can be influenced now and predict future sales.\n- Annual market share || Market share is a lagging outcome measured after the period.\n:::\n\n## 2. Defining a KPI properly\n\nMany KPI arguments come from vague definitions. \"Delivery performance\" can mean on time, in full, or both, measured against the promised date or the requested date. Use a KPI card for every KPI:\n\n::: slides\nSLIDE Name and purpose | A clear name, e.g. OTIF (on time in full); Which objective it supports; Why it matters to the customer | One KPI, one purpose\nSLIDE Formula and source | OTIF = orders delivered on time and complete / total orders; Data from the delivery system and signed delivery notes; Define on time: promised date | Write the formula in words and symbols\nSLIDE Frequency and owner | Weekly, by depot; Owner: logistics manager; Reviewed in the Monday meeting | Every KPI needs one owner\nSLIDE Target and threshold | Target: 92%; Alert: below 85% triggers a review; Paired KPI: delivery cost per order | Targets need a counterweight\n:::\n\nExample: in one week a depot dispatched 400 orders. 340 arrived on the promised date, and 316 of those were complete. OTIF = 316 ÷ 400 = 79%. On-time alone would show 85%, which is why the definition matters.\n\nPairing is important because of Goodhart's law, often summarised as \"when a measure becomes a target, it ceases to be a good measure\". If drivers are judged only on speed, they may skip deliveries that are hard to reach. Pair speed with completeness, or volume with margin.\n\n::: quiz\n? Credit sales in a quarter (90 days) were 270 million Kz and receivables at the end were 90 million Kz. Using DSO = receivables ÷ credit sales × days, what is DSO?\n- 3 days || This divides credit sales by receivables and forgets to multiply by the number of days.\n* 30 days || Correct. 90 ÷ 270 × 90 = 30 days. On average customers take about 30 days to pay.\n- 90 days || 90 is the length of the period, not the time customers take to pay.\n- 270 days || This confuses the sales amount with a number of days.\n:::\n\n## 3. Asking good questions of data\n\nAnalytics questions are often grouped into four types, each more valuable than the last: descriptive (what happened?), diagnostic (why did it happen?), predictive (what is likely to happen?) and prescriptive (what should we do?). A good meeting moves through all four instead of stopping at the first.\n\nThen apply the \"so what?\" test to every number on a dashboard. \"Stock-outs rose to 7%\" – so what? \"We lost an estimated 15 million Kz of sales in Cabinda\" – now what? \"Increase safety stock on the top 20 items and review supplier lead times.\" If you cannot answer \"so what?\", the number is probably a vanity metric. To find root causes, the Five Whys technique from the Toyota Production System is useful: ask \"why?\" repeatedly until you reach a cause you can act on.\n\n## Worked example: Choosing KPIs at a beverage distributor in Lubango\n\n::: case | Too many numbers in Lubango\nEduardo is the new regional manager of a beverage distributor in Lubango. His weekly report has 42 measures, including website visits, number of emails sent and total trucks owned. Sales fell 6% last quarter and nobody knows why.\n? What should Eduardo do first?\n- Add more measures so nothing is missed || More measures make it harder to see what matters.\n* Agree the main objective, then choose a few lagging and leading KPIs with full KPI cards, and drop measures that fail the so-what test || Correct. He links the measures to the goal, defines them clearly and removes noise.\n- Keep the report but colour all falling measures red || Colour helps, but 42 undefined measures still hide the cause.\n- Focus only on sales because it is the most important number || Sales is lagging. Without leading KPIs he cannot act early.\n:::\n\nEduardo keeps six KPIs: sales volume, gross margin, active outlets, visits completed, OTIF and DSO. Within a month, the leading KPIs show that active outlets fell in two districts after a salesperson left.\n\n## Tool: KPI card template\n\n- KPI name:\n- Objective it supports:\n- Leading or lagging:\n- Formula (words and symbols):\n- Data source and system:\n- Frequency and level (daily, weekly, by branch):\n- Owner:\n- Target and alert threshold:\n- Paired KPI to prevent gaming:\n- Decision it supports (so what?):\n\n## Common mistakes\n\n- Tracking only lagging results.\n- Using KPIs with no written formula or owner.\n- Setting a single target that invites gaming.\n- Keeping vanity metrics because they look impressive.\n\n## Self-check\n\n1. Is \"quotes sent per week\" leading or lagging for sales? (Answer: leading.)\n2. 500 orders, 450 on time, 420 on time and complete. What is OTIF? (Answer: 420 ÷ 500 = 84%.)\n3. What are the four question types? (Answer: descriptive, diagnostic, predictive and prescriptive.)\n\n## Practical assignment\n\nChoose three measures from your own team report. Complete a KPI card for each, mark it leading or lagging and apply the \"so what?\" test. Propose one measure to drop and one leading indicator to add.\n\n## Summary\n\n- Pair lagging results with leading indicators you can influence now.\n- Define every KPI with a card: formula, source, owner, target and a paired measure.\n- Ask the four question types and test each number with \"so what? now what?\".",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- apply a five-stage cycle to make a data-informed decision;\n- structure a data story using the pyramid principle and the context–insight–action pattern;\n- communicate uncertainty using ranges, scenarios and expected value;\n- apply basic privacy and ethics principles when handling data about people.\n\n## Key terms\n\n::: terms\nData-informed decision: a decision that uses data as key evidence, combined with context and judgement\nData storytelling: presenting data as a clear message with context, insight and a recommended action\nPyramid principle: a structure that puts the main answer first, then the supporting arguments and evidence\nExpected value: the average outcome of a decision, weighting each possible result by its probability\nPersonal data: any information relating to an identified or identifiable person\n:::\n\n## 1. A five-stage decision cycle\n\n\"Data-driven\" can suggest that the numbers decide. In practice, good managers are data-informed: they combine data with knowledge of customers, markets and people. The process below keeps analysis focused and decisions accountable.\n\n::: diagram cycle | The data-informed decision cycle\nFrame: state the decision, the options, the deadline and what evidence would change your mind\nAnalyse: gather the relevant data, check quality and test the main assumptions\nDecide: choose an option, record the reasons and the expected result\nCommunicate: share the decision as a clear story with the uncertainty stated\nReview: compare actual results with the expected result and learn\n:::\n\nThe framing step is the one most often skipped. \"Analyse our sales data\" is not a question. \"Should we open a depot in Huambo next year, yes or no, decision by 30 June?\" is. Writing down in advance what result would change your mind protects you from looking only for evidence that supports what you already believe (confirmation bias).\n\n::: quiz\n? A director asks the analyst to \"look at all our customer data and find something interesting\". What is the best first response?\n- Start building charts of every variable available || Without a decision in mind, the analyst may spend weeks on charts that change nothing.\n* Ask which decision the director is facing and by when, then focus the analysis on that || Correct. Framing the decision first keeps the analysis relevant and fast.\n- Say that the data is not good enough for analysis || That may or may not be true. The first issue is the lack of a clear question.\n:::\n\n## 2. Telling the story with data\n\nBusy decision-makers want the answer first. Barbara Minto's pyramid principle recommends starting with the main conclusion, then giving the few key arguments that support it, then the evidence. Many analysts do the opposite: method, then data, then the conclusion on the last slide.\n\n::: slides\nSLIDE Step 1: Lead with the answer | One sentence: what you recommend and why; Example: open a Huambo depot in Q3 to cut delivery cost and reach 140 new outlets; Put it in the title or first line | The title is the message\nSLIDE Step 2: Give context | Why the question matters now; What the current situation is; Keep it to two or three facts | Context makes numbers meaningful\nSLIDE Step 3: Show the insight | One chart per message; Highlight the key bar or line in a strong colour; Grey out the rest | Remove anything that does not support the message\nSLIDE Step 4: State the action | What, who, by when; What it costs; How success will be measured | End with the decision you need\n:::\n\nA useful frame for each chart is \"What? So what? Now what?\": what the data shows, why it matters and what should happen next.\n\n## 3. Communicating uncertainty\n\nEvery forecast is uncertain. Writing \"sales will be 1,247,832,000 Kz\" suggests false precision. Better: \"about 1.2 billion Kz, likely between 1.1 and 1.4 billion\". For bigger decisions, use three scenarios (best, base and worst case) and state the key assumption behind each, such as exchange rate or volume.\n\nExpected value helps compare options. Suppose opening a new depot has a 60% chance of earning 30 million Kz profit in year one and a 40% chance of losing 10 million Kz. Expected value = (0.6 × 30) + (0.4 × −10) = 18 − 4 = 14 million Kz. Compare this with the alternatives, and also ask whether the organisation can afford the worst case.\n\n::: quiz\n? Option A has a 50% chance of +40 million Kz and a 50% chance of −20 million Kz. Option B gives a certain +12 million Kz. What is the expected value of A, and what else should be considered?\n- 20 million Kz, so A is always better || Expected value is not the only factor. A has a 50% chance of a 20 million loss.\n* 10 million Kz, so B is higher and also has no risk of loss || Correct. (0.5 × 40) + (0.5 × −20) = 10 million Kz, below B's certain 12 million.\n- 60 million Kz, the sum of both outcomes || Expected value weights each outcome by its probability. It is not a simple sum.\n:::\n\n## 4. Privacy and ethics basics\n\nIn Angola, personal data is protected by Lei n.º 22/11 of 17 June (the Personal Data Protection Law), supervised by the Agência de Protecção de Dados (APD). Ask your legal or compliance team how it applies to your work. Practical habits for everyone: collect only the data you need for a stated purpose; anonymise or aggregate data before sharing it; restrict access to files with names, phone numbers, salaries or health information; never send such files to personal email or messaging groups. Ethical use also means presenting data honestly: no cherry-picking, no misleading axes, and stating the limits of your analysis.\n\n## Worked example: A depot decision at an FMCG distributor in Luanda\n\n::: case | The Huambo depot presentation\nSofia, a commercial analyst at an FMCG distributor in Luanda, must present her depot analysis to the board in 15 minutes. She has 25 slides starting with data sources and methods. Her forecast is \"year one profit 18,436,000 Kz\". She also plans to attach the full customer list with phone numbers.\n? What is the best improvement?\n- Add more slides on method so the board trusts the numbers || More method slides push the answer further back and use the board's limited time.\n* Start with the recommendation, show the profit as a range with scenarios, and attach only aggregated customer data || Correct. Answer first, honest uncertainty and data minimisation make the presentation clear and responsible.\n- Remove the forecast because it is uncertain || Uncertain forecasts are still useful when the uncertainty is shown clearly.\n- Email the customer list in advance so the board can review it || Sharing personal data widely is unnecessary and creates privacy risk.\n:::\n\nSofia cuts the deck to six slides. Her title reads: \"Open the Huambo depot in Q3: base case profit 15–20 million Kz in year one.\"\n\n## Tool: Decision brief template\n\n- Decision and deadline:\n- Options considered:\n- Recommendation (one sentence):\n- Three key supporting facts:\n- Range and scenarios (best, base, worst):\n- Key assumptions and risks:\n- Personal data used, and how it is protected:\n- Success measure and review date:\n\n## Common mistakes\n\n- Starting analysis without a clear decision to support.\n- Putting the conclusion on the last slide.\n- Showing forecasts with false precision.\n- Sharing files containing personal data more widely than needed.\n\n## Self-check\n\n1. What are the five stages of the decision cycle? (Answer: frame, analyse, decide, communicate, review.)\n2. What does the pyramid principle put first? (Answer: the main answer or recommendation.)\n3. 70% chance of +10 million Kz and 30% chance of −5 million Kz: what is the expected value? (Answer: 7 − 1.5 = 5.5 million Kz.)\n\n## Practical assignment\n\nTake a decision your team faces this month. Complete the decision brief template, including a range and three scenarios. Present it to your manager in five minutes, answer first, and note their questions.\n\n## Summary\n\n- Frame the decision first, then analyse, decide, communicate and review.\n- Lead with the answer and give each chart one message: what, so what, now what.\n- Show uncertainty honestly and protect personal data in line with Angolan law."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain what data literacy means at work",
+     "Classify data as categorical or numerical, and as cross-sectional or time series",
+     "Use the DIKW pyramid to turn data into decisions",
+     "Check a report against six data quality dimensions"
+    ],
+    "takeaway": "Four skills for reading any report with confidence"
+   },
+   {
+    "title": "What data literacy is",
+    "points": [
+     "The ability to read, question, interpret and communicate data",
+     "No coding needed",
+     "Every manager who reads a report needs it"
+    ],
+    "takeaway": "Read, question, decide, explain"
+   },
+   {
+    "title": "Types of data",
+    "points": [
+     "Quantitative (numbers) vs qualitative (words, opinions)",
+     "Categorical: nominal or ordinal",
+     "Numerical: discrete or continuous"
+    ],
+    "takeaway": "The type decides which summary and chart you can use"
+   },
+   {
+    "title": "Time series vs cross-sectional",
+    "points": [
+     "Time series: one item over many periods",
+     "Cross-sectional: many items at one point in time",
+     "Watch for seasonality in time series"
+    ],
+    "takeaway": "Know which one you are looking at"
+   },
+   {
+    "title": "The DIKW pyramid",
+    "points": [
+     "Data: raw facts",
+     "Information: organised data with context",
+     "Knowledge: patterns and causes",
+     "Wisdom: the right decision"
+    ],
+    "takeaway": "Reports should move you up the pyramid"
+   },
+   {
+    "title": "Six data quality dimensions",
+    "points": [
+     "Accuracy, completeness, consistency",
+     "Timeliness, validity, uniqueness",
+     "Check before you trust"
+    ],
+    "takeaway": "Bad data gives confident wrong answers"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Averaging categories coded as numbers",
+     "Trusting a report without checking the data date",
+     "Ignoring missing values",
+     "Counting duplicates twice"
+    ],
+    "takeaway": "Ask where the numbers came from"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose between mean, median and mode",
+     "Use range to describe spread",
+     "Tell percentages from percentage points",
+     "Calculate growth, CAGR and real growth"
+    ],
+    "takeaway": "Five calculations every manager should know"
+   },
+   {
+    "title": "Mean, median, mode",
+    "points": [
+     "Mean: total divided by count",
+     "Median: the middle value when sorted",
+     "Mode: the most frequent value"
+    ],
+    "takeaway": "One very large value pulls the mean, not the median"
+   },
+   {
+    "title": "When to use which",
+    "points": [
+     "Skewed data such as order values or salaries: median",
+     "Symmetric data: mean",
+     "Categories: mode"
+    ],
+    "takeaway": "Report both mean and median when in doubt"
+   },
+   {
+    "title": "Spread",
+    "points": [
+     "Range = maximum minus minimum",
+     "A wide range means less predictable results",
+     "Look at the spread, not only the average"
+    ],
+    "takeaway": "Two branches with the same average can be very different"
+   },
+   {
+    "title": "Percent vs percentage points",
+    "points": [
+     "Share from 20% to 25% = +5 percentage points",
+     "The same change = +25% relative growth",
+     "Always say which one you mean"
+    ],
+    "takeaway": "Mixing them can exaggerate or hide change"
+   },
+   {
+    "title": "Growth rates",
+    "points": [
+     "Growth = (new - old) / old",
+     "CAGR = (end / start)^(1/years) - 1",
+     "Real growth = (1 + nominal) / (1 + inflation) - 1"
+    ],
+    "takeaway": "High inflation can turn growth into decline"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Using the mean for skewed data",
+     "Adding percentages from different bases",
+     "Ignoring inflation",
+     "Celebrating growth from a tiny base"
+    ],
+    "takeaway": "Check the base before the percentage"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose the right chart for a question",
+     "Spot truncated axes and calculate the lie factor",
+     "Recognise cherry-picking and other tricks",
+     "Read a dashboard in a fixed order"
+    ],
+    "takeaway": "Read the chart before you believe it"
+   },
+   {
+    "title": "Match chart to question",
+    "points": [
+     "Comparison: bar chart",
+     "Trend over time: line chart",
+     "Part of a whole: stacked bar or simple pie with few slices",
+     "Relationship: scatter plot",
+     "Distribution: histogram"
+    ],
+    "takeaway": "The question chooses the chart"
+   },
+   {
+    "title": "Misleading axes",
+    "points": [
+     "Bar charts must start at zero",
+     "Truncated axes exaggerate small changes",
+     "Dual axes can suggest false links"
+    ],
+    "takeaway": "Check the axis before the shape"
+   },
+   {
+    "title": "The lie factor",
+    "points": [
+     "Tufte: size of effect shown divided by size of effect in data",
+     "Close to 1 = honest",
+     "Far from 1 = distorted"
+    ],
+    "takeaway": "Measure the distortion"
+   },
+   {
+    "title": "Cherry-picking",
+    "points": [
+     "Chosen start and end dates",
+     "Selected regions or products only",
+     "Missing comparison or target"
+    ],
+    "takeaway": "Ask what is not shown"
+   },
+   {
+    "title": "Reading a dashboard",
+    "points": [
+     "Title and period",
+     "Definitions and units",
+     "Comparison: target, last year, trend",
+     "Exceptions",
+     "Action"
+    ],
+    "takeaway": "Five steps, every time"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Reading the shape and ignoring the axis",
+     "Pie charts with too many slices",
+     "Trusting colours without a legend",
+     "Missing the date filter"
+    ],
+    "takeaway": "Slow down for ten seconds"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Tell correlation from causation",
+     "Test a causal claim step by step",
+     "Recognise selection bias, survivorship bias and Simpson's paradox",
+     "Judge if a sample is big enough"
+    ],
+    "takeaway": "Most bad decisions start with a wrong cause"
+   },
+   {
+    "title": "Correlation is not causation",
+    "points": [
+     "Two measures moving together may share a third cause",
+     "Reverse causation is possible",
+     "Coincidence is common in large data sets"
+    ],
+    "takeaway": "Ask: what else could explain it?"
+   },
+   {
+    "title": "Testing a causal claim",
+    "points": [
+     "Time order",
+     "Alternative explanations",
+     "Dose-response",
+     "Mechanism",
+     "Test with a control group"
+    ],
+    "takeaway": "Based on Bradford Hill (1965)"
+   },
+   {
+    "title": "Bias in samples",
+    "points": [
+     "Selection bias: the sample is not typical",
+     "Survivorship bias: failures are invisible",
+     "Non-response bias: only some reply"
+    ],
+    "takeaway": "Who is missing from the data?"
+   },
+   {
+    "title": "Simpson's paradox",
+    "points": [
+     "A trend inside every group can reverse in the total",
+     "Caused by different group sizes",
+     "Break totals down by segment"
+    ],
+    "takeaway": "Look inside the total"
+   },
+   {
+    "title": "Small samples",
+    "points": [
+     "Margin of error about 1 / square root of n",
+     "100 replies = about ±10 points",
+     "400 replies = about ±5 points"
+    ],
+    "takeaway": "Small samples swing widely"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Crediting a campaign for seasonal sales",
+     "Surveying only happy customers",
+     "Deciding on ten data points",
+     "Trusting totals without segments"
+    ],
+    "takeaway": "Ask how the data was collected"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Tell leading from lagging indicators",
+     "Define a KPI with a complete KPI card",
+     "Prioritise metrics with a simple grid",
+     "Ask better questions with the four question types and the so-what test"
+    ],
+    "takeaway": "Measure what drives the result"
+   },
+   {
+    "title": "Metrics vs KPIs",
+    "points": [
+     "A metric is any measure",
+     "A KPI is a measure tied to a key objective",
+     "Keep only a few KPIs per role"
+    ],
+    "takeaway": "Fewer, better measures"
+   },
+   {
+    "title": "Leading vs lagging",
+    "points": [
+     "Lagging: result after the fact, e.g. sales, profit",
+     "Leading: early signal you can influence, e.g. visits, quotes, stock cover"
+    ],
+    "takeaway": "Manage leading, report lagging"
+   },
+   {
+    "title": "The KPI card",
+    "points": [
+     "Name and purpose",
+     "Exact formula and source",
+     "Frequency and owner",
+     "Target and alert threshold"
+    ],
+    "takeaway": "No card, no KPI"
+   },
+   {
+    "title": "Goodhart's law",
+    "points": [
+     "When a measure becomes a target, people game it",
+     "Pair KPIs: speed with quality",
+     "Watch for side effects"
+    ],
+    "takeaway": "Balance every target"
+   },
+   {
+    "title": "Four question types",
+    "points": [
+     "What happened?",
+     "Why did it happen?",
+     "What will happen?",
+     "What should we do?"
+    ],
+    "takeaway": "Move from describing to deciding"
+   },
+   {
+    "title": "The so-what test",
+    "points": [
+     "For every number ask: so what?",
+     "Then: now what?",
+     "If no action follows, drop it"
+    ],
+    "takeaway": "Every KPI must lead to a decision"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Follow a five-stage data-informed decision cycle",
+     "Build a data story with the pyramid principle",
+     "Show uncertainty with ranges, scenarios and expected value",
+     "Apply basic privacy and ethics rules"
+    ],
+    "takeaway": "Data informs, people decide"
+   },
+   {
+    "title": "Data-informed decisions",
+    "points": [
+     "Data plus context plus judgement",
+     "Frame the decision before the analysis",
+     "Define what evidence would change your mind"
+    ],
+    "takeaway": "Start with the decision, not the data"
+   },
+   {
+    "title": "The decision cycle",
+    "points": [
+     "Frame",
+     "Analyse",
+     "Decide",
+     "Communicate",
+     "Review"
+    ],
+    "takeaway": "Close the loop with a review"
+   },
+   {
+    "title": "Data storytelling",
+    "points": [
+     "Answer first (pyramid principle)",
+     "Context, insight, action",
+     "One message per chart"
+    ],
+    "takeaway": "Lead with the so what"
+   },
+   {
+    "title": "Showing uncertainty",
+    "points": [
+     "Use ranges, not false precision",
+     "Best, base and worst scenarios",
+     "Expected value = sum of probability x outcome"
+    ],
+    "takeaway": "Honest uncertainty builds trust"
+   },
+   {
+    "title": "Privacy and ethics",
+    "points": [
+     "Lei n.º 22/11 governs personal data in Angola",
+     "Collect only what you need",
+     "Anonymise and restrict access",
+     "Do not cherry-pick"
+    ],
+    "takeaway": "Treat data about people with care"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Starting analysis with no decision in mind",
+     "Burying the answer",
+     "False precision",
+     "Sharing personal data by email"
+    ],
+    "takeaway": "Clear, honest, careful"
+   }
+  ]
+ ]
+}

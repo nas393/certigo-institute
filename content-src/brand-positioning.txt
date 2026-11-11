@@ -1,0 +1,854 @@
+=== 20
+SLIDE What you will learn | Explain what a brand is and what brand equity means; Describe the four levels of Keller's CBBE pyramid; Define positioning and explain why it guides decisions; Diagnose where a brand is weak on the pyramid | A brand lives in the customer's mind
+SLIDE What a brand is | A name, sign or design that identifies a seller; Plus everything customers know, feel and expect; Built at every contact: pack, price, shelf, service, word of mouth | The product is made in the factory, the brand in the mind
+SLIDE Brand equity | The extra value a brand name adds to a product; Shows as price premium, loyalty and easier listings; Aaker: awareness, perceived quality, associations, loyalty | Equity is the reward for consistent positioning
+SLIDE Keller's CBBE pyramid | Salience: who are you?; Performance and imagery: what are you?; Judgements and feelings: what do I think and feel?; Resonance: what about you and me? | Build from the bottom up
+SLIDE What positioning is | The place a brand aims to hold in the target customer's mind; Always relative to competitors; One clear idea beats many weak ones | Positioning is a choice and a sacrifice
+SLIDE Using the pyramid to diagnose | Low awareness: work on salience; Known but seen as poor: fix performance; Liked but not bought again: build resonance | Fix the lowest weak level first
+SLIDE Common mistakes | Confusing the logo with the brand; Trying to appeal to everyone; Skipping levels of the pyramid; Changing the message every campaign | Consistency builds equity
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what a brand is and what brand equity means for a business;
+- describe the four levels of Keller's customer-based brand equity (CBBE) pyramid;
+- define positioning and explain why it guides marketing and sales decisions;
+- diagnose which level of the pyramid is weakest for a brand you work with.
+
+## Key terms
+
+::: terms
+Brand: a name, term, sign, symbol or design that identifies a seller's products and makes them different from competitors
+Brand equity: the extra value a brand name adds to a product, compared with the same product without the name
+Brand associations: everything a customer connects with the brand in memory, such as quality, price level or type of user
+Positioning: the place a brand aims to occupy in the target customer's mind, relative to competing brands
+Customer-based brand equity (CBBE): the effect that what customers know about a brand has on how they respond to its marketing
+:::
+
+## 1. What a brand really is
+
+The American Marketing Association defines a brand as a name, term, design, symbol or other feature that identifies one seller's goods or services as distinct from those of other sellers. For marketing and sales staff, the more useful idea is that a brand is the sum of what customers know, feel and expect when they see the name. A bag of rice is made in a mill, but the brand is built in the mind of the shopper in a Cazenga cantina or the buyer at a Talatona supermarket.
+
+Every contact builds or damages the brand: the pack, the shelf price, stock availability, how the delivery driver treats the shop owner. A sales representative who lets a key outlet run out of stock for two weeks is also managing the brand, badly.
+
+## 2. Brand equity: why brands are worth money
+
+Picture two identical bottles of cooking oil, one with a trusted brand and one with a name nobody knows. If shoppers pay more for the first and ask for it by name, the difference is brand equity.
+
+David Aaker (1991) described four main sources of brand equity:
+
+- Brand awareness: do customers recognise and remember the brand?
+- Perceived quality: do they believe it is good?
+- Brand associations: what ideas come to mind, such as "family", "modern" or "good value"?
+- Brand loyalty: do they buy it again and recommend it?
+
+In practice, strong equity means retailers list the product more easily and the brand holds its price when a cheaper import arrives. Weak equity means you compete on price alone.
+
+::: quiz
+? A cantina owner says: "Customers ask for your flour by name, so I always keep it, even when a cheaper flour is offered to me." Which sources of brand equity does this mainly show?
+- Perceived quality only || Quality may play a part, but the key signal is that customers remember the brand and keep asking for it.
+* Brand awareness and loyalty || Correct. Customers remember the name and ask for it again, which pulls the product through the shop.
+- Brand architecture || Architecture is how a company organises its brands, not how customers behave.
+- A low price || The owner keeps it even though a cheaper option exists, so price is not the reason.
+:::
+
+## 3. Keller's CBBE pyramid
+
+Kevin Lane Keller's customer-based brand equity model explains how equity is built in steps. Each level answers a question the customer asks about the brand.
+
+::: diagram pyramid | Keller's CBBE pyramid
+Resonance: "What about you and me?" – loyalty, attachment, community, active engagement
+Judgements and feelings: "What do I think and feel?" – quality, credibility, warmth, trust
+Performance and imagery: "What are you?" – how well it works, and the image of its users and uses
+Salience: "Who are you?" – awareness, and being remembered at the buying moment
+:::
+
+Performance and judgements are the rational route; imagery and feelings are the emotional route. Strong brands build both. Use the pyramid as a diagnostic tool:
+
+::: slides
+SLIDE Step 1: Test salience | Can target customers name the brand without help?; Do they think of it when they buy the category? | No awareness, no equity
+SLIDE Step 2: Test meaning | Does the product perform as promised?; What image do people have of the typical user? | Performance and imagery give the brand meaning
+SLIDE Step 3: Test response | Do customers judge it good and credible?; What feelings does it create, such as security or pride? | Judgements are rational, feelings are emotional
+SLIDE Step 4: Test resonance | Do they buy it repeatedly?; Do they recommend or defend it? | Resonance is the top of the pyramid
+SLIDE Step 5: Fix the lowest weak level | No loyalty scheme for a brand nobody knows; No awareness campaign for a product that disappoints | Build from the bottom up
+:::
+
+::: quiz
+? A rice brand is widely known in Luanda, but many shoppers say it "breaks easily when cooked". Which level should the team fix first?
+- Salience || Awareness is already high, so this is not the weak point.
+* Performance || Correct. The product fails a basic expectation, and no emotional campaign will fix that.
+- Resonance || Loyalty cannot be built while the product disappoints.
+- Feelings || Emotions matter, but the problem here is functional.
+:::
+
+## 4. Positioning: the choice that guides everything
+
+Positioning is the place you want your brand to hold in the target customer's mind compared with competitors. Al Ries and Jack Trout made the term popular with their book Positioning: The Battle for Your Mind (1981). It is a choice and a sacrifice: a brand cannot be the cheapest, the most premium and the most modern at once. Once chosen, it guides pack, price, distribution, promotion and which outlets the sales team prioritises.
+
+## Worked example: a margarine brand in Benguela
+
+A food distributor in Benguela sells an invented margarine brand, Lumeno. Sales have been flat for a year. The brand manager, Teresa, asks 60 shoppers in three markets questions based on the pyramid:
+
+- Unprompted, 18 of 60 name Lumeno when asked about margarine brands (30%). With the pack shown, 48 recognise it (80%).
+- Of the 48 who recognise it, 36 have tried it, and 30 say the taste is as good as the leader.
+- Only 9 of the 36 triers buy it most of the time (25%).
+- Asked what kind of person buys Lumeno, most answer "I don't know".
+
+Teresa's diagnosis: performance is fine and recognition is high, but unprompted recall is low and imagery is empty. Shoppers like the product but do not think of it at the shelf. She works on salience at the point of purchase and on clear imagery before spending on a loyalty promotion.
+
+::: case | The juice brand in Huambo
+Carlos manages an invented juice brand, Kubala, in Huambo. Awareness and trial are good, but complaints say the bottles leak and the taste varies between batches. His director wants a large radio and television campaign to "build loyalty".
+? What should Carlos recommend?
+- Run the campaign as planned to increase loyalty || Advertising brings more people to a product that disappoints them, which damages equity faster.
+* Fix the packaging and quality first, then plan communication || Correct. Performance is the weak level, and the pyramid is built from the bottom up.
+- Launch a loyalty card for regular buyers || Rewards do not fix a performance problem.
+- Change the logo to look more modern || The problem is the product experience, not the visual identity.
+:::
+
+## Tool: brand pyramid health check
+
+- Brand and target customer:
+- Salience: unprompted recall (%), prompted recognition (%):
+- Performance: does it meet the main need? Top complaint:
+- Imagery: words customers use for the typical user and use occasion:
+- Judgements and feelings: quality rating and main emotion:
+- Resonance: repeat purchase (%) and willingness to recommend:
+- Weakest level and first action:
+
+## Common mistakes
+
+- Thinking that the logo and pack are the brand.
+- Trying to appeal to everyone, which leaves no clear position.
+- Investing in loyalty or emotional campaigns before the product performs well.
+- Changing the message every campaign, so no associations build up.
+
+## Self-check
+
+- What are the four levels of Keller's CBBE pyramid, from bottom to top? (Answer: salience; performance and imagery; judgements and feelings; resonance.)
+- Name Aaker's four main sources of brand equity. (Answer: awareness, perceived quality, brand associations and brand loyalty.)
+- Why is positioning described as a sacrifice? (Answer: choosing one clear position means giving up others, because a brand cannot be everything to everyone.)
+
+## Practical assignment
+
+Ask ten customers or shop owners the health-check questions about one brand you sell, identify the weakest pyramid level and share one action with your manager.
+
+## Summary
+
+- A brand is what customers know, feel and expect, and brand equity is the extra value the name adds.
+- Keller's CBBE pyramid builds from salience to resonance, and you fix the lowest weak level first.
+- Positioning is the deliberate choice of the place your brand holds in the customer's mind.
+=== 20
+SLIDE What you will learn | Segment a market using four bases; Evaluate segments with five tests; Estimate the size of a segment; Write a consumer insight | Segment, target, then position
+SLIDE The STP process | Segmentation: divide the market into groups with similar needs; Targeting: choose which groups to serve; Positioning: decide how to win in their minds | Positioning comes last
+SLIDE Four segmentation bases | Geographic: province, city, urban or rural; Demographic: income, age, household size; Psychographic: lifestyle, values, attitudes; Behavioural: occasion, usage rate, benefit sought | Behaviour often explains most
+SLIDE Five tests for a good segment | Measurable; Substantial; Accessible; Differentiable; Actionable | If you cannot reach it, it is not a target
+SLIDE Sizing a segment | Households × usage per household × price; Then apply a realistic share; State every assumption | A rough number beats a guess
+SLIDE Consumer insight | A human truth that explains behaviour; Observation + motivation + tension; Opens a door for the brand | An insight is not a statistic
+SLIDE Common mistakes | Segmenting only by income; Choosing too many targets; Confusing a fact with an insight | One clear target, one sharp insight
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the segmentation, targeting and positioning (STP) process;
+- segment a market using geographic, demographic, psychographic and behavioural bases;
+- evaluate segments with five tests and estimate a segment's size;
+- write a consumer insight using the observation, motivation and tension structure.
+
+## Key terms
+
+::: terms
+Market segment: a group of customers with similar needs who respond in a similar way to marketing
+Segmentation base: the variable used to divide a market, such as location, income or usage occasion
+Target market: the segment or segments a brand chooses to serve
+Consumer insight: a fresh understanding of what drives customer behaviour that a brand can act on
+Usage occasion: the situation in which a product is bought or used, such as a monthly stock-up or a party
+:::
+
+## 1. The STP process
+
+Positioning never starts with the brand. It starts with the customer. Marketers use a three-step process called STP:
+
+::: diagram steps | The STP process
+Segment: divide the market into groups with similar needs and behaviour
+Evaluate: test each segment for size, reach and fit
+Target: choose the segment or segments to serve
+Insight: understand what really drives the target
+Position: decide the place the brand will hold in their minds
+:::
+
+If you try to sell to "everyone in Luanda", your message becomes vague and no group feels the brand is for them.
+
+## 2. Four segmentation bases
+
+There are four classic bases for dividing consumer markets:
+
+- Geographic: province, city, neighbourhood, urban or rural. Buying habits in Luanda's centre differ from those in a municipality like Cacuaco or in rural Bié.
+- Demographic: income, age, gender, household size, education. Easy to measure, but people with the same income can behave very differently.
+- Psychographic: lifestyle, values, personality, attitudes. For example, "modern young professionals who want convenience" or "traditional cooks who value authentic taste".
+- Behavioural: usage occasion, usage rate (heavy, medium, light), benefit sought (price, quality, convenience) and loyalty status.
+
+Behavioural bases are often the most useful because they are close to buying. In practice, combine two or three bases. A segment such as "large households in peri-urban Luanda who buy in bulk at the start of the month to protect against price rises" is far more useful than "low-income consumers".
+
+::: quiz
+? A detergent brand divides shoppers into "heavy users who wash daily for large families" and "light users who wash twice a week". Which segmentation base is this mainly?
+- Geographic || Location is not mentioned.
+- Psychographic || Values and lifestyle are not the main variable here.
+* Behavioural || Correct. The split is by usage rate, which is a behavioural base.
+- Demographic only || Family size is linked, but the variable used is how much they use the product.
+:::
+
+## 3. Evaluating and sizing segments
+
+Philip Kotler's five tests help you decide whether a segment is worth targeting:
+
+- Measurable: can you estimate its size and buying power?
+- Substantial: is it large or profitable enough?
+- Accessible: can you reach it through your distribution and media?
+- Differentiable: does it respond differently from other segments?
+- Actionable: can you design a programme to serve it with your resources?
+
+Then estimate the size with a simple formula: number of households × usage per household per month × price per unit. State every assumption so others can challenge it.
+
+::: slides
+SLIDE Step 1: Count the customers | Example: 120,000 target households in peri-urban Luanda | Use your own data, census or retailer counts
+SLIDE Step 2: Estimate usage | Example: 10 kg of rice per household per month | Check with shop owners and customers
+SLIDE Step 3: Calculate volume | 120,000 × 10 kg = 1,200,000 kg per month | This is the segment volume
+SLIDE Step 4: Apply a realistic share | 5% share = 60,000 kg = 2,400 bags of 25 kg per month | Compare with your capacity and route plan
+:::
+
+## 4. Writing a consumer insight
+
+A consumer insight is not a fact like "60% of shoppers buy rice in 25 kg bags". It is a human truth that explains why they behave that way and reveals a tension the brand can solve. A useful structure:
+
+- Observation: what the customer does.
+- Motivation: why they do it.
+- Tension: what gets in the way or worries them.
+
+Example: "I buy a 25 kg bag of rice at the start of the month because it protects my family from price rises, but by the third week the bag is often damp or has insects." This insight opens a door: a stronger, resealable bag or a smaller pack size.
+
+Find insights by visiting homes and markets, reading complaints and asking "why" several times.
+
+::: quiz
+? Which of these is a consumer insight rather than a fact?
+- Most mini-markets in Viana open before 7:00 || This is an observation with no motivation or tension.
+* "I want to cook fresh meals for my children, but after a two-hour commute I have no energy to prepare everything from scratch" || Correct. It shows a behaviour, a motivation and a tension a brand can solve.
+- Sales of stock cubes grow in December || This is a sales fact, not a human truth.
+- Our brand has 12% market share in Huambo || This is a business metric.
+:::
+
+## Worked example: cooking oil in Luanda
+
+A distributor in Luanda sells an invented cooking oil brand, Nzolo, to "everyone". The marketing officer, Joana, maps three segments: bulk-buying large households in peri-urban areas, young urban couples buying small packs in supermarkets, and street-food vendors buying 20-litre drums. She applies the five tests. The vendor segment is substantial and accessible through wholesalers, and it responds to different benefits: oil that can be reused for frying without smoking or smelling.
+
+Sizing: she estimates 8,000 vendors in her delivery area using 15 litres per week each. That is 120,000 litres per week. A 10% share would be 12,000 litres, or 600 drums per week.
+
+Her insight: "I fry all day and reuse my oil to save money, but when it turns dark and smoky my customers go to the next stall." Joana now has a clear target and a tension to build a position on.
+
+::: case | Choosing a target in Lubango
+Ana is launching an invented biscuit brand, Doçura, in Lubango with a small budget. She has identified three segments: school children's lunchboxes, office workers' snacks, and families' weekend treats. Only the school segment can be reached through the cantinas her company already serves near schools.
+? Which segment should she target first?
+- All three, to maximise volume || A small budget spread across three segments produces a weak message for each.
+- Office workers, because they have more money || Income alone does not make a segment accessible or actionable for her.
+* School lunchboxes, because it is accessible and actionable with her current distribution || Correct. It passes the accessibility and actionability tests with the resources she has.
+- Weekend family treats, because it is the largest || Size is one test, but she cannot reach it efficiently.
+:::
+
+## Tool: segment evaluation template
+
+- Segment name and description (at least two bases):
+- Estimated size: customers × usage × price =
+- Measurable, substantial, accessible, differentiable, actionable (yes or no each):
+- Main benefit sought:
+- Consumer insight (observation, motivation, tension):
+- Decision: target now, later or not at all:
+
+## Common mistakes
+
+- Segmenting only by income or age.
+- Choosing too many target segments for the budget.
+- Presenting a statistic as an insight.
+- Sizing a segment without writing down the assumptions.
+
+## Self-check
+
+- What does STP stand for? (Answer: segmentation, targeting and positioning.)
+- Name the four classic segmentation bases. (Answer: geographic, demographic, psychographic and behavioural.)
+- What three parts make a consumer insight? (Answer: observation, motivation and tension.)
+
+## Practical assignment
+
+Choose one product you sell. Describe two segments using at least two bases each, apply the five tests and size the better one. Then interview three customers in that segment and write one insight.
+
+## Summary
+
+- Positioning starts with segmentation and targeting, not with the brand.
+- Combine bases, apply the five tests and size segments with stated assumptions.
+- A consumer insight links behaviour, motivation and tension, and gives the brand something to solve.
+=== 20
+SLIDE What you will learn | Write a four-part positioning statement; Choose a frame of reference; Separate points of parity from points of difference; Support the claim with a reason to believe | One sentence that guides every decision
+SLIDE The positioning statement | For [target] who [need]; [Brand] is the [frame of reference]; That [point of difference]; Because [reason to believe] | Internal tool, not an advertising slogan
+SLIDE Frame of reference | The category or competitors you compete against; Tells customers what the brand is for; Changes what counts as different | Choose where to compete
+SLIDE Parity and difference | Points of parity: what you must match to be considered; Points of difference: what makes you the better choice; Keller, Sternthal and Tybout (2002) | Match the basics, win on the difference
+SLIDE Three tests for a point of difference | Desirable: customers care; Deliverable: you can prove and sustain it; Differentiating: competitors do not own it | All three, or it fails
+SLIDE Reason to believe | Product feature, process, origin, guarantee or test result; Must be true and provable | No proof, no position
+SLIDE Common mistakes | Too many benefits; A difference customers do not value; No proof; Treating the statement as a slogan | Sharp, true and provable
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a positioning statement with target, frame of reference, point of difference and reason to believe;
+- choose a frame of reference that tells customers what the brand competes with;
+- separate points of parity from points of difference;
+- test a point of difference for desirability, deliverability and differentiation.
+
+## Key terms
+
+::: terms
+Positioning statement: an internal sentence that defines the target, the category, the main benefit and the proof for a brand
+Frame of reference: the category or set of competitors the brand is compared with
+Point of parity: an attribute the brand must match to be accepted as a real option in the category
+Point of difference: an attribute or benefit customers value that the brand delivers better than competitors
+Reason to believe: the evidence that makes the point of difference credible
+:::
+
+## 1. The four-part positioning statement
+
+A positioning statement is an internal tool. It is not an advertising slogan and customers may never see it. Its job is to make sure marketing, sales, product and service teams all push the brand in the same direction. A common template is:
+
+For [target customer] who [need or insight], [brand] is the [frame of reference] that [point of difference], because [reason to believe].
+
+::: diagram steps | Building a positioning statement
+Target: the segment and its insight from your STP work
+Frame of reference: the category you compete in
+Points of parity: the basics you must match
+Point of difference: the one benefit you win on
+Reason to believe: the proof that makes it credible
+Test: check it is desirable, deliverable and differentiating
+:::
+
+## 2. Frame of reference
+
+The frame of reference tells customers what the brand is and who it competes with. It changes everything else. An invented juice drink positioned in the "children's lunchbox drinks" frame competes with small cartons and must be cheap, safe and easy to carry. The same drink in the "healthy adult refreshment" frame competes with water and natural juice and must show real fruit and low sugar.
+
+Choose the frame where your target already shops, and where your brand can match the basics. A new frame can be powerful, but it costs money to teach customers what it means.
+
+::: quiz
+? A Luanda bakery chain wants its bread to compete with home breakfast rather than with other bakeries. What has it changed?
+- Its reason to believe || The proof has not been discussed.
+* Its frame of reference || Correct. It is choosing a different competitive set, which changes what customers compare it with.
+- Its point of parity only || Points of parity follow from the frame, but the change here is the frame itself.
+- Its target segment || The customers may be the same; the comparison has changed.
+:::
+
+## 3. Points of parity and points of difference
+
+Keller, Sternthal and Tybout (2002) explained that strong positioning needs both:
+
+- Points of parity: what the brand must match to be considered at all. A rice brand must be clean, free of stones and correctly weighed. Failing a point of parity removes you from the list, however strong your difference.
+- Points of difference: what makes the brand the better choice for the target. Choose one main point of difference, two at most.
+
+Test every candidate point of difference before writing it:
+
+::: slides
+SLIDE Test 1: Desirable | Does the target care about it?; Is it linked to the insight?; Would they pay or switch for it? | Customers decide what matters
+SLIDE Test 2: Deliverable | Can operations deliver it every time?; Can we prove it?; Can we sustain it for years? | Do not promise what logistics cannot deliver
+SLIDE Test 3: Differentiating | Does a competitor already own it?; Is it easy to copy? | Owned ideas are hard to take back
+SLIDE Decide | Passes all three: use it; Fails one: improve or drop it | One strong difference beats five weak ones
+:::
+
+## 4. Reason to believe
+
+A reason to believe makes the claim credible. It can be a product feature (a triple-layer bag), a process (rice sorted by machine twice), an origin, a guarantee (replacement if not satisfied) or an independent test. It must be true and provable. Never invent awards, statistics or certifications.
+
+::: quiz
+? A cooking oil brand claims "lighter for your family". Which is the strongest reason to believe?
+- "Families love it" || This is an opinion, not proof of lightness.
+- "Number one choice in Angola" || An unproven ranking claim, and it does not explain why the oil is lighter.
+* "Filtered three times, with lab results on our website" || Correct. A true process plus published test results makes the claim provable.
+- "Now in a new modern bottle" || Packaging does not prove the oil is lighter.
+:::
+
+## Worked example: positioning an invented rice brand
+
+A distributor in Luanda imports an invented rice brand, Lumeno, and the brand manager, Paulo, uses the insight from lesson 2: families buy 25 kg bags to protect against price rises, but the bag often becomes damp or attracts insects.
+
+- Target: large households in peri-urban Luanda who stock up once a month.
+- Frame of reference: 25 kg family rice bags.
+- Points of parity: clean grain, no stones, correct weight, competitive price.
+- Point of difference: stays fresh until the last kilo.
+- Reason to believe: a resealable, triple-layer bag that keeps out moisture and insects.
+
+Statement: "For large families in peri-urban Luanda who stock up on rice for the month, Lumeno is the 25 kg family rice that stays fresh until the last kilo, because it comes in a resealable, triple-layer bag."
+
+Paulo tests it: families said freshness was a real worry (desirable), the supplier can produce the bag at an extra cost the price can absorb (deliverable), and no competitor makes this claim (differentiating).
+
+A services example: an invented private clinic in Talatona could be "the family clinic where you are seen within 30 minutes of your appointment, because we book fewer patients per doctor per hour and publish waiting times daily".
+
+::: case | The detergent claim in Viana
+Rita manages an invented detergent, Brilho, sold in Viana. Her agency proposes the point of difference "the most modern detergent". Shoppers in her research said their main problem is that most detergents foam poorly in the hard water many homes store in tanks. Brilho's formula foams well in hard water, proven in the factory laboratory.
+? Which point of difference should Rita choose?
+- "The most modern detergent" || Vague, not linked to the insight and impossible to prove.
+- "The cheapest detergent in Viana" || Price leadership is not supported by her costs or her insight.
+* "Rich foam even in tank water" || Correct. It is desirable, deliverable with laboratory proof, and no competitor owns it.
+- "Cleans, softens, perfumes and protects colours" || Too many benefits dilute the position.
+:::
+
+## Tool: positioning statement template
+
+- For (target customer):
+- Who (need or insight):
+- Brand name:
+- Is the (frame of reference):
+- Points of parity we must match:
+- That (one point of difference):
+- Because (reason to believe and how we prove it):
+- Tests passed: desirable, deliverable, differentiating (yes or no each):
+
+## Common mistakes
+
+- Listing many benefits instead of choosing one.
+- Choosing a difference customers do not value.
+- Claiming something you cannot prove or deliver every time.
+- Using the positioning statement as an advertising slogan.
+
+## Self-check
+
+- What are the four parts of a positioning statement? (Answer: target, frame of reference, point of difference and reason to believe.)
+- What happens if a brand fails a point of parity? (Answer: customers do not consider it, however strong its point of difference.)
+- Name the three tests for a point of difference. (Answer: desirable, deliverable and differentiating.)
+
+## Practical assignment
+
+Write a positioning statement for one brand you work with using the template. Ask two colleagues from sales and operations to check if the point of difference is desirable, deliverable and differentiating, and revise it.
+
+## Summary
+
+- A positioning statement aligns teams around one target, one frame, one difference and one proof.
+- Match the points of parity, then win on a point of difference that passes the three tests.
+- Every claim needs a true, provable reason to believe.
+=== 20
+SLIDE What you will learn | Build a two-axis perceptual map; Choose axes from real purchase criteria; Interpret clusters and gaps; Profile competitors | See the market as customers see it
+SLIDE What a perceptual map is | A picture of how customers see brands on two attributes; Based on customer perception, not your opinion; Shows clusters, gaps and threats | Perception is the reality you compete in
+SLIDE Six steps | Define category and target; List purchase criteria; Choose two independent axes; Score each brand; Plot; Interpret | Start with customers, not with the chart
+SLIDE Choosing axes | Important to the target; Different between brands; Not linked to each other | Price and quality are the most common pair
+SLIDE Reading the map | Clusters: brands fighting for the same space; Gaps: possible opportunities; Distance from the ideal point | A gap needs demand behind it
+SLIDE Competitor profile | Positioning claim; Price index; Distribution and visibility; Strengths and weaknesses; Likely next move | Know their position before choosing yours
+SLIDE Common mistakes | Using internal opinion as data; Choosing linked axes; Chasing an empty gap | Map, check demand, then decide
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what a perceptual map shows and why it uses customer perceptions;
+- build a two-axis perceptual map in six steps;
+- interpret clusters, gaps and the ideal point on a map;
+- profile a competitor using a structured template.
+
+## Key terms
+
+::: terms
+Perceptual map: a chart that shows how target customers see competing brands on two attributes
+Purchase criteria: the attributes customers use to choose between brands, such as price, taste or availability
+Cluster: a group of brands close together on the map, competing for the same position
+White space: an area of the map with no brand, which may or may not be an opportunity
+Price index: a brand's price divided by the category average price, multiplied by 100
+:::
+
+## 1. What a perceptual map shows
+
+A perceptual map turns customer opinions into a picture. Each axis is an attribute that matters to customers, and each brand is placed where customers see it, not where your company thinks it is. This is the key point: positioning happens in customers' minds, so the map must use their perceptions.
+
+::: diagram matrix | A price-quality perceptual map | Price (low → high) | Perceived quality (low → high)
+Value: high quality at a low price – attractive, but hard to sustain
+Premium: high quality at a high price – needs strong proof
+Economy: low price, basic quality – competes on cost
+Danger zone: high price, low quality – customers leave
+:::
+
+## 2. Building a map in six steps
+
+::: slides
+SLIDE Step 1: Define category and target | Example: 1 kg wheat flour for home baking in Luanda | One map per target segment
+SLIDE Step 2: List purchase criteria | Ask customers and shop owners how they choose; Price, baking result, whiteness, availability, pack | Use their words
+SLIDE Step 3: Choose two axes | Important to the target; Different between brands; Not linked to each other | Avoid "quality" and "taste" together
+SLIDE Step 4: Score each brand | Ask 30 or more target customers to rate each brand from 1 to 5; Calculate the average | Perception data, not opinion
+SLIDE Step 5: Plot and interpret | Place brands on the grid; Look for clusters, gaps and your distance from the ideal point | Then check the gap has demand
+:::
+
+Choosing axes is the most important step. If two attributes are closely linked, brands form a diagonal line and the map tells you nothing new. Price against perceived quality is the most common pair; another is "traditional versus modern" against "everyday versus special occasion".
+
+Calculation: if 40 shoppers rate a flour brand's baking result as 5 (10 shoppers), 4 (18 shoppers) and 3 (12 shoppers), the average score is (10×5 + 18×4 + 12×3) ÷ 40 = (50 + 72 + 36) ÷ 40 = 3.95.
+
+::: quiz
+? A brand team chooses "quality" and "taste" as the two axes for a juice map. What is the likely problem?
+- The map will have too many brands || The number of brands is not affected by the choice of axes.
+* The two attributes are closely linked, so brands will line up diagonally and the map adds little || Correct. Axes should be independent of each other.
+- Customers do not care about taste || Taste is usually important for juice.
+- Price must always be one axis || Price is common but not required.
+:::
+
+## 3. Interpreting the map
+
+Look for three things:
+
+- Clusters: brands close together are direct competitors. Being in a crowded cluster means you need a sharper point of difference or a lower cost.
+- Gaps (white space): an empty area may be an opportunity. But first ask whether customers want a product there. An old saying in marketing asks: is there a market in the gap, or only a gap in the market?
+- The ideal point: ask customers where their ideal brand would sit. Brands closest to it usually win.
+
+If your statement says "premium" but customers place you in the middle, your marketing mix is not delivering the positioning.
+
+## 4. Competitor analysis
+
+A map shows where competitors are. A competitor profile explains why and predicts what they will do. For each main competitor, record:
+
+- Positioning claim: what they say, in their packs and advertising.
+- Price index: their price ÷ category average price × 100. A brand at 3,300 Kz when the category average is 3,000 Kz has a price index of 110.
+- Distribution and visibility: which channels and provinces, shelf presence.
+- Strengths and weaknesses from the customer's point of view.
+- Likely next move: new pack size, promotion, price cut.
+
+::: quiz
+? A cooking oil sells at 2,700 Kz and the category average is 3,000 Kz. What is its price index?
+- 111 || This divides the average by the brand price. Divide the brand price by the average.
+- 30 || This is the price difference in hundreds of kwanzas, not an index.
+* 90 || Correct. 2,700 ÷ 3,000 × 100 = 90, so it is 10% below the average.
+- 27 || This is not the correct formula.
+:::
+
+## Worked example: wheat flour in Luanda
+
+A distributor's brand manager, Nelson, maps five invented 1 kg flour brands for home bakers in Luanda. He asks 50 shoppers to rate each brand on price perception and baking result from 1 to 5. Results: Brands A and B are both seen as cheap with average baking results (scores around 2 and 3). Brand C is expensive with excellent results (4.5). Brand D, his own, scores 3.2 on baking and sits in the middle on price. Brand E is expensive but scores only 2.8, in the danger zone.
+
+Nelson sees that his brand is not distinct: it sits between the economy cluster and the premium leader. Customers' ideal point is "good baking result at a fair price", close to 4 on baking and mid-price. He confirms demand by asking bakers and cantina owners, then decides to improve the flour specification and communicate baking results, moving towards the ideal point rather than cutting price into the crowded economy cluster.
+
+::: case | The empty corner in Benguela
+Lúcia's team maps juice brands in Benguela and finds an empty space: "very premium price, very traditional image". Her director wants to launch a new juice there immediately. No customer interviews have been done about this space.
+? What should Lúcia do first?
+- Launch quickly before a competitor does || Speed does not help if no customers want a product there.
+* Test with target customers whether there is demand in that space || Correct. A gap on a map is only an opportunity if customers want what would fill it.
+- Lower the price of the current brand to fill the gap || This would move the brand away from the gap, not into it.
+- Add more axes to the map || More axes will not answer the question of demand.
+:::
+
+## Tool: perceptual map and competitor checklist
+
+- Category and target segment:
+- Top five purchase criteria (customers' words):
+- Axes chosen and why they are independent:
+- Average scores per brand on each axis (sample size):
+- Clusters, gaps and ideal point observed:
+- Gap demand check (who confirmed it and how):
+- For each competitor: claim, price index, distribution, strengths, weaknesses, likely next move:
+
+## Common mistakes
+
+- Placing brands from internal opinion instead of customer data.
+- Choosing two axes that are closely linked.
+- Treating every empty space as an opportunity without checking demand.
+- Profiling competitors once and never updating.
+
+## Self-check
+
+- Why must a perceptual map use customer perceptions? (Answer: because positioning exists in customers' minds, not in the company's opinion.)
+- What makes a good pair of axes? (Answer: both are important to the target, differ between brands and are not linked to each other.)
+- How do you calculate a price index? (Answer: brand price ÷ category average price × 100.)
+
+## Practical assignment
+
+Choose your category and ask at least 20 target customers to rate four brands on two attributes. Build the map, calculate each brand's price index and present one conclusion about your brand's position to your team.
+
+## Summary
+
+- A perceptual map shows how customers see brands on two independent attributes.
+- Look for clusters, gaps and the ideal point, and always check a gap for demand.
+- Competitor profiles explain positions and help predict competitors' next moves.
+=== 20
+SLIDE What you will learn | Describe the brand relationship spectrum; Choose between master brand, sub-brands and separate brands; Build a good-better-best range; Position price against value | Organise brands so each has a clear job
+SLIDE Brand architecture | How a company organises and names its brands; Shows customers how products relate; Saves money or protects positions | Every brand needs a clear role
+SLIDE Brand relationship spectrum | Branded house: one master brand; Sub-brands: master brand plus a descriptor; Endorsed brands: own name, backed by the master; House of brands: separate brands | Aaker and Joachimsthaler (2000)
+SLIDE Good-better-best | Good: entry price, basic needs; Better: core range, best value; Best: premium, extra benefits | Each tier must be clearly different
+SLIDE Price-value positions | More for more; More for the same; The same for less; Less for much less; More for less | Choose one and deliver it
+SLIDE Price index and tier gaps | Price index = brand price ÷ category average × 100; Keep clear price gaps between tiers | Gaps must match real value differences
+SLIDE Common mistakes | Too many brands; Tiers that look the same; Premium price without premium value | Clear roles, clear gaps
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the four positions on the brand relationship spectrum;
+- choose an appropriate architecture for a new product;
+- build a good-better-best range with clear price gaps;
+- choose a price-value position and calculate a price index.
+
+## Key terms
+
+::: terms
+Brand architecture: the way a company organises, names and links its brands and products
+Master brand: the main brand that gives its name and trust to products under it
+Sub-brand: a product brand that sits under the master brand and adds its own name or descriptor
+Endorsed brand: a brand with its own name that is supported by the company's master brand, often in small print
+Good-better-best: a range structure with three price and quality tiers
+:::
+
+## 1. The brand relationship spectrum
+
+As a company adds products, it must decide how to name them. David Aaker and Erich Joachimsthaler (2000) described this as a spectrum from one brand doing everything to many independent brands.
+
+::: diagram steps | The brand relationship spectrum
+Branded house: one master brand on everything, with simple descriptors
+Sub-brands: master brand plus a product name that adds its own meaning
+Endorsed brands: an independent name, backed by the master brand
+House of brands: separate brands, each with its own position
+:::
+
+- Branded house: cheaper to build because every product benefits from one brand. Risk: one quality problem hurts every product.
+- Sub-brands: let the master brand stretch into a new segment while keeping a link. Example: an invented brand "Kubala" and "Kubala Kids".
+- Endorsed brands: give a new brand credibility from the parent while keeping room for its own position.
+- House of brands: lets a company target very different segments, such as a premium and an economy brand of the same product, without confusing customers. Cost: each brand needs its own investment.
+
+## 2. Choosing the architecture
+
+Ask four questions when adding a product:
+
+::: slides
+SLIDE Question 1: Does the master brand help? | Does its trust transfer to the new product?; Is the category close to what it is known for? | Leverage what customers already believe
+SLIDE Question 2: Could the new product hurt it? | Lower quality or a cheaper price may damage the master brand | Protect the master brand's position
+SLIDE Question 3: Is the target very different? | Very different segments may need a separate brand | One brand cannot mean opposite things
+SLIDE Question 4: Can we afford a new brand? | A new brand needs its own awareness investment | Separate brands are expensive
+:::
+
+::: quiz
+? A company known for premium cooking oil wants to launch a much cheaper oil for price-sensitive shoppers. Which architecture best protects the premium brand?
+- Branded house, using the same name and pack || This risks pulling the premium brand's image down.
+- A sub-brand with the master name large on the pack || The master brand is still exposed to the low-price image.
+* A separate brand in a house of brands approach || Correct. Each brand can hold its own position without damaging the other.
+- No brand at all || Unbranded products build no equity and are hard to sell through retail.
+:::
+
+## 3. Good-better-best and price-value positioning
+
+Many FMCG and retail ranges use three tiers:
+
+::: diagram pyramid | Good-better-best range
+Best: premium quality, extra benefits, highest price and margin
+Better: core range, best value for most customers
+Good: entry price, meets basic needs
+:::
+
+Rules for a tier structure:
+
+- Each tier must be visibly different in product, pack and benefit, not only in price.
+- Keep clear price gaps. If "better" is only slightly more expensive than "good", shoppers trade down or are confused.
+- The middle tier often sells most, so make sure it offers the best value.
+
+Kotler and Armstrong's Principles of Marketing describes five winning value propositions:
+
+- More for more: higher quality at a higher price.
+- More for the same: higher quality at the same price as competitors.
+- The same for less: equal quality at a lower price.
+- Less for much less: basic quality at a much lower price.
+- More for less: the most attractive, but very hard to sustain.
+
+Calculation: if the category average price of a 5 kg flour bag is 4,000 Kz, a good tier at 3,400 Kz has a price index of 85, a better tier at 4,000 Kz has 100, and a best tier at 5,000 Kz has 125. The gaps (85, 100, 125) are wide enough for shoppers to notice, and each must be matched by real differences.
+
+::: quiz
+? A brand sells at a price index of 125 but customers rate its quality the same as the category average. Which price-value position is it really offering?
+- More for more || Quality must be higher to justify the higher price.
+- The same for less || The price is higher, not lower.
+* The same for more, which is not a winning position || Correct. A premium price without premium value loses customers over time.
+- More for less || The price is above average.
+:::
+
+## Worked example: a rice range in Luanda
+
+An importer in Luanda sells one invented rice brand, Lumeno, at a price index of 105. Retailers ask for a cheaper bag, and a hotel customer asks for a premium long-grain rice. The marketing manager, Sandra, builds a range:
+
+- Good: a new separate brand, Bom Grão, at a price index of 85, broken-grain blend, simple pack, sold in cantinas and markets.
+- Better: Lumeno at 105, the core family rice with its freshness bag.
+- Best: Lumeno Gold, a sub-brand at 135, premium long grain in a gift-style bag for supermarkets and hotels.
+
+She uses a separate brand for the good tier to protect Lumeno's quality image, and a sub-brand for the best tier because Lumeno's trust helps a premium product. She checks gross margin per tier so that the good tier does not lose money.
+
+::: case | The flour range in Huambo
+Mário's company sells an invented flour brand at the middle price. Sales want a cheaper version quickly and propose putting the same brand name and pack on a lower-quality flour at a 20% lower price.
+? What should Mário recommend?
+- Accept, because the brand name will help it sell || Shoppers who buy the cheaper flour under the same name may think the main brand has fallen in quality.
+* Launch the cheaper flour under a separate or clearly endorsed brand with a different pack || Correct. This protects the core brand while serving the price-sensitive segment.
+- Lower the price of the current brand by 20% || This destroys margin and does not create a range.
+- Refuse to enter the economy segment || This may leave a growing segment to competitors without analysis.
+:::
+
+## Tool: range and architecture checklist
+
+- Master brand and its current position:
+- New product and target segment:
+- Architecture chosen (branded house, sub-brand, endorsed, house of brands) and why:
+- Tier (good, better, best) and price index:
+- Visible differences from the next tier:
+- Value proposition (more for more, the same for less, etc.):
+- Gross margin per tier checked (yes or no):
+
+## Common mistakes
+
+- Creating too many brands with no clear role.
+- Tiers that look the same and differ only in price.
+- Charging a premium price without a premium benefit.
+- Putting a cheap product under a premium master brand.
+
+## Self-check
+
+- Name the four positions on the brand relationship spectrum. (Answer: branded house, sub-brands, endorsed brands and house of brands.)
+- Why is the middle tier often the most important? (Answer: it usually sells most and must offer the best value.)
+- What is the price index of a 4,500 Kz product when the category average is 3,000 Kz? (Answer: 4,500 ÷ 3,000 × 100 = 150.)
+
+## Practical assignment
+
+List the brands and price tiers in your category and calculate each one's price index. Draw your company's range as good-better-best and identify one gap, overlap or architecture risk to discuss with your manager.
+
+## Summary
+
+- Brand architecture gives every brand a clear role on the spectrum from branded house to house of brands.
+- Good-better-best ranges need visible differences and clear price gaps.
+- Choose a price-value position you can deliver, and check it with the price index.
+=== 20
+SLIDE What you will learn | Write the core of brand guidelines; Align the 4Ps with the positioning; Measure brand health with a funnel; Calculate conversion between funnel stages | Positioning only matters if customers experience it
+SLIDE Brand guidelines | Positioning summary; Logo, colours and typography; Tone of voice; Do and don't examples | One reference for everyone who touches the brand
+SLIDE The 4Ps | Product: delivers the point of difference; Price: matches the value position; Place: reaches the target; Promotion: communicates the difference and proof | McCarthy (1960)
+SLIDE Consistency test | Does each P support the same position?; One contradiction can break it | Customers believe what they experience
+SLIDE The brand funnel | Awareness; Consideration; Preference; Purchase; Loyalty | Find where customers drop out
+SLIDE Measuring awareness | Top-of-mind: first brand named; Unaided: named without help; Aided: recognised when shown | Track the same questions every time
+SLIDE Conversion between stages | Next stage ÷ previous stage × 100; Compare with competitors | The weakest conversion is the priority
+SLIDE Common mistakes | Guidelines that only cover the logo; A mix that contradicts the position; Measuring once and never again | Align, measure, adjust
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list the core contents of a brand guideline document;
+- check that each of the 4Ps supports the positioning;
+- measure brand health with awareness, consideration, preference and loyalty;
+- calculate conversion rates between funnel stages and choose a priority action.
+
+## Key terms
+
+::: terms
+Brand guidelines: a document that explains how the brand looks, speaks and behaves, so everyone applies it the same way
+Marketing mix (4Ps): product, price, place and promotion, the decisions that bring a position to life
+Top-of-mind awareness: the percentage of people who name the brand first, without help
+Consideration: the percentage of people who would think about buying the brand next time
+Brand health tracking: measuring the same brand indicators at regular intervals to see change
+:::
+
+## 1. Brand guidelines
+
+A positioning statement lives in the marketing office. Brand guidelines take it to everyone else: agencies, designers, sales representatives, merchandisers and distributors. Core contents:
+
+- Positioning summary: target, point of difference and reason to believe in plain words.
+- Brand personality and tone of voice: for example "warm, practical, proud of Angolan families".
+- Visual identity: logo use and minimum size, colours, typography, pack layout.
+- Point-of-sale rules: how the brand appears on shelves, posters and branded displays in cantinas and supermarkets.
+- Do and don't examples, with photos.
+
+Keep it short and visual. A 10-page guide that sales teams actually use is worth more than a 100-page manual nobody opens.
+
+## 2. The 4Ps: bringing positioning to life
+
+E. Jerome McCarthy (1960) grouped marketing decisions into four Ps. Each P must support the same position:
+
+::: slides
+SLIDE Product | Delivers the point of difference every time; Pack, size, quality, formulation | The product is the first proof
+SLIDE Price | Matches the price-value position and tier; Check price index and promotions | Deep discounts can undo a premium position
+SLIDE Place | Channels where the target shops; Availability and shelf visibility | Not in stock means not chosen
+SLIDE Promotion | Communicates one point of difference and its proof; Media the target uses, such as radio, social media, point of sale | Say one thing many times
+SLIDE The consistency test | Each P supports the same position?; Fix the P that contradicts it | Customers believe what they experience
+:::
+
+For services, many marketers add three more Ps: people, process and physical evidence. A clinic positioned on "short waiting times" depends as much on its booking process as on its advertising.
+
+::: quiz
+? A brand positioned as "premium freshness" is often sold from damaged boxes in the sun at market stalls with heavy discounts. Which Ps contradict the position?
+- Product only || The product may be fine. The problem is how and where it is sold.
+* Place and price || Correct. Poor storage at outlets and heavy discounts both send a cheap, not premium, message.
+- Promotion only || Advertising cannot fix what shoppers see at the stall.
+- None, because the advertising is correct || Customers believe what they experience more than what they hear.
+:::
+
+## 3. Measuring brand health with the funnel
+
+Brand health shows whether the positioning is working. The brand funnel follows customers from first knowing the brand to staying loyal:
+
+::: diagram steps | The brand funnel
+Awareness: knows the brand (top-of-mind, unaided, aided)
+Consideration: would think about buying it
+Preference: prefers it over other brands
+Purchase: bought it recently
+Loyalty: buys it most of the time and recommends it
+:::
+
+Measure awareness in three ways in a short survey: top-of-mind (first brand named for the category), unaided (any brand named without help) and aided (recognised from a list or the pack). Then ask about consideration, preference, recent purchase and repeat buying.
+
+Calculate conversion between stages: next stage ÷ previous stage × 100. Compare with the main competitor. The stage where your brand loses the most people compared with the competitor is the priority. Many companies also track the Net Promoter Score (Reichheld, 2003): the percentage of customers who score 9 or 10 on "how likely are you to recommend us?" minus the percentage who score 0 to 6.
+
+::: quiz
+? Out of 200 people surveyed, 160 are aware of a brand and 48 would consider it. What is the awareness-to-consideration conversion?
+- 24% || This divides 48 by 200, the total sample, not by those aware.
+* 30% || Correct. 48 ÷ 160 × 100 = 30%.
+- 80% || This is the awareness rate (160 ÷ 200).
+- 48% || This is the number of people, not a conversion rate.
+:::
+
+## Worked example: brand health for a cooking oil in Luanda
+
+A distributor's brand manager, Helena, surveys 300 shoppers in Luanda about her invented oil, Nzolo, and the leading competitor.
+
+- Aware: Nzolo 240 (80%), competitor 270 (90%).
+- Consider: Nzolo 120, competitor 189. Conversion: Nzolo 120 ÷ 240 = 50%, competitor 189 ÷ 270 = 70%.
+- Prefer: Nzolo 60 (60 ÷ 120 = 50%), competitor 95 (95 ÷ 189 = 50%).
+- Buy most often: Nzolo 45 (45 ÷ 60 = 75%), competitor 70 (70 ÷ 95 = 74%).
+
+Nzolo converts as well as the competitor from consideration onwards. The big loss is between awareness and consideration (50% against 70%). Follow-up questions show many shoppers think Nzolo is "only for frying in big quantities". Helena's action: show Nzolo in everyday family cooking in point-of-sale material and radio spots, and repeat the survey in six months with the same questions.
+
+::: case | The guidelines problem in Lobito
+Joaquim is the brand manager of an invented biscuit brand positioned as "the healthy school snack". On a visit to Lobito he finds shop posters made by a local agent showing the biscuits with soft drinks and sweets under the line "party time". Sales in the area are falling.
+? What should Joaquim do?
+- Ignore it, because the agent is helping visibility || Visibility with the wrong message weakens the position.
+- Change the national positioning to "party snack" || One local mistake is not a reason to change a tested position.
+* Replace the posters and give agents short brand guidelines with do and don't examples || Correct. Guidelines help everyone apply the same position at the point of sale.
+- Cut the price in Lobito to recover sales || Price does not fix a confused message.
+:::
+
+## Tool: brand health scorecard
+
+- Positioning summary in one line:
+- 4Ps consistency check: product, price, place, promotion (supports or contradicts):
+- Awareness: top-of-mind %, unaided %, aided %:
+- Consideration %, preference %, recent purchase %, loyalty %:
+- Conversion between each stage, ours compared with the main competitor:
+- Biggest drop-off and likely cause:
+- Action and date of the next survey:
+
+## Common mistakes
+
+- Brand guidelines that cover only the logo and not the positioning and tone.
+- A marketing mix where one P contradicts the others.
+- Measuring brand health once and never repeating it with the same questions.
+- Looking only at awareness and ignoring where customers drop out.
+
+## Self-check
+
+- What are the 4Ps? (Answer: product, price, place and promotion.)
+- What is the difference between unaided and aided awareness? (Answer: unaided means naming the brand without help, aided means recognising it when shown.)
+- How do you find the priority stage in the funnel? (Answer: calculate conversion between stages and find where the brand loses most people compared with competitors.)
+
+## Practical assignment
+
+Check one brand you work with against the 4Ps and note any contradiction. Then survey 20 shoppers with the funnel questions, calculate conversion between stages and propose one action for the weakest stage.
+
+## Summary
+
+- Brand guidelines and a consistent 4Ps turn the positioning into a customer experience.
+- The brand funnel measures awareness, consideration, preference, purchase and loyalty.
+- Conversion between stages shows where to act, and regular tracking shows if it worked.

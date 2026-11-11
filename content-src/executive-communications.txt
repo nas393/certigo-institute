@@ -1,0 +1,830 @@
+=== 20
+SLIDE What you will learn | Explain what senior leaders need from a briefing; State the decision you need in one sentence; Put the answer first with BLUF; Build a Pyramid Principle structure and check it with MECE | Four skills for every briefing
+SLIDE How executives read | Many topics and little time; They must decide, approve, note or advise; Many read the top and stop | Assume you have 60 seconds
+SLIDE Decision focus | Ask what you want the reader to do; Four types: decide, approve, note, advise; Write the ask in one sentence with a deadline | No ask, no briefing
+SLIDE BLUF | Bottom Line Up Front; Answer or request in the first two lines; Reasons, facts and next step follow | Lead with the conclusion
+SLIDE The Pyramid Principle | Barbara Minto, developed at McKinsey; Governing thought at the top; Key arguments below; Evidence at the base | Think bottom-up, present top-down
+SLIDE MECE | Mutually exclusive: no overlaps; Collectively exhaustive: no gaps; Three to five arguments per level | Clean groups are easier to accept
+SLIDE Common mistakes | Telling the story in time order; Hiding the ask at the end; Too many weak arguments; Subject line says update when a decision is needed | Answer first, then support
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what senior leaders need from a briefing and why it differs from a technical report;
+- state the decision you need in one sentence before you write;
+- apply BLUF (Bottom Line Up Front) to emails, notes and briefings;
+- build a message using Minto's Pyramid Principle and check it with the MECE test.
+
+## Key terms
+
+::: terms
+Executive: a senior leader such as a director, CEO or board member who makes decisions across several areas
+Decision focus: designing a message around the action you need the reader to take
+BLUF: Bottom Line Up Front, meaning the conclusion or request comes first and the details after
+Governing thought: the single main message at the top of a Pyramid Principle structure
+MECE: mutually exclusive and collectively exhaustive, a grouping with no overlaps and no gaps
+:::
+
+## 1. How executives read and listen
+
+A managing director in Luanda may deal with a credit line, a customs delay, a staff issue and a pricing decision before lunch. She reads dozens of emails and moves from meeting to meeting. Your message competes with all of them.
+
+Specialists usually write in the order they worked: background, then analysis, then findings, and finally the recommendation. This feels natural because it was the order of discovery. Executives need the reverse. They want to know what you are asking, why it matters and what happens if they say yes or no. If the answer appears on page three, many will never reach it, or they will interrupt you with "So what do you need from me?"
+
+Before writing anything, answer the decision-focus question: what do I want this person to do after reading? Almost every executive message is one of four types:
+
+- Decide: choose between options, for example supplier A or supplier B.
+- Approve: agree to a recommendation you have already made.
+- Note: be informed, with no action needed now.
+- Advise: give input on something you will decide yourself.
+
+Then write the ask in one sentence: "I need your approval by Friday to spend USD 45,000 on a second cold room in Viana." If you cannot write this sentence, you are not ready to write the briefing.
+
+::: quiz
+? A logistics manager has a 20-page analysis of port delays. Before writing a note to the CEO, what should he do first?
+- Summarise each chapter of the analysis in one paragraph || This keeps the order of the analysis, not the order the CEO needs.
+* Write in one sentence what he needs the CEO to decide or know || Correct. The decision focus shapes everything else in the note.
+- Add more charts so the CEO can see the full picture || More material makes the decision harder to find.
+:::
+
+## 2. BLUF: Bottom Line Up Front
+
+BLUF comes from military writing, where readers must understand orders quickly. It means putting the conclusion or request in the first one or two sentences. Everything after that supports it. To apply BLUF:
+
+- Write the ask or conclusion first, in one or two sentences.
+- Add the two or three main reasons.
+- Give the key facts or numbers.
+- State the next step and the deadline.
+- Move detailed analysis to an attachment.
+
+Compare two openings of an email to a commercial director.
+
+Before: "Following our meeting last month, the team has been reviewing sales in the southern provinces, collecting data from distributors and analysing trends over the last two quarters..."
+
+After: "Recommendation: close the Lubango depot and serve Huíla from Benguela from March. This saves about Kz 38 million a year with no expected loss of customers. I need your decision by 15 February."
+
+The second version gives the director everything in three lines. The analysis is still available, but the reader chooses whether to read it.
+
+::: tip | The subject line test
+Make the subject line carry the ask. "Decision needed by 15 Feb: close Lubango depot" works far better than "Southern provinces update".
+:::
+
+## 3. Minto's Pyramid Principle
+
+Barbara Minto developed the Pyramid Principle while working at McKinsey and explained it in her book The Pyramid Principle. Its central idea is that ideas are easier to understand when they are presented top-down: first a single governing thought, then the key arguments that support it, then the evidence for each argument.
+
+::: diagram pyramid | Minto's Pyramid Principle
+Governing thought: the answer or recommendation in one sentence
+Key arguments: three to five reasons that support the answer
+Evidence: data, facts and examples for each argument
+:::
+
+Two rules hold the pyramid together. Vertical logic: each level answers the question raised by the level above. If the governing thought is "We should close the Lubango depot", the reader asks "Why?" and the key arguments answer it. Horizontal logic: ideas on the same level are of the same kind and form a clean group. The MECE test checks this: the arguments should not overlap, and together they should cover the whole case.
+
+You usually think bottom-up, collecting facts until you see a conclusion. You present top-down.
+
+::: slides
+SLIDE Step 1: Define the reader's question | Who is the reader?; What do they already know?; What question is in their mind? | Start from the reader, not from your data
+SLIDE Step 2: Write the governing thought | One sentence that answers the question; Include the action and the main benefit | If it needs two sentences, it is not clear yet
+SLIDE Step 3: Group the arguments | Three to five reasons; Check they are MECE; Order them by importance | Same kind of idea on each level
+SLIDE Step 4: Attach evidence | Two or three facts per argument; Move extra data to an appendix | Evidence supports, it does not lead
+:::
+
+::: quiz
+? A manager's three arguments for buying a new truck are "lower fuel cost", "lower running costs" and "better safety". What is wrong with this grouping?
+- There are too few arguments || Three is a good number for the key-argument level.
+* Fuel cost is part of running costs, so the group is not mutually exclusive || Correct. Merge them, or split running costs into separate items such as fuel and repairs.
+- Safety should never be used to justify an investment || Safety is a valid argument and is often the strongest one.
+:::
+
+## Worked example: a briefing note at a food distributor in Luanda
+
+::: case | Stock-out risk at a Luanda distributor
+Helena is supply planning manager at a food distributor in Luanda. Rice stock covers 18 days, but the next vessel is delayed three weeks at origin. She can buy 400 tonnes locally at USD 60 per tonne above the import price. The CEO has five minutes before a board call.
+? How should Helena open her message?
+- With the history of the shipment and the reasons for the delay || The CEO needs the decision first. The history can go below or in an attachment.
+* "Decision needed today: approve local purchase of 400 t of rice, extra cost about USD 24,000, to avoid a stock-out from day 18" || Correct. BLUF with the ask, the cost and the risk lets the CEO decide in under a minute.
+- With a table comparing five suppliers and their prices || Detail without an ask forces the CEO to work out what is needed.
+- "Please call me when you have time to discuss rice" || This delays the decision and gives no information.
+:::
+
+Helena's pyramid has the governing thought "approve the local purchase today" and three key arguments: a stock-out in 18 days would stop sales to key accounts; the extra cost of about USD 24,000 (400 t × USD 60) is small compared with the margin at risk; the local supplier can deliver in five days. Each argument has one line of evidence, and the quotation is attached.
+
+## Tool: one-sentence briefing planner
+
+- Reader and their role:
+- What they already know:
+- Type of ask (decide, approve, note, advise):
+- My ask in one sentence, with deadline:
+- Key arguments 1, 2 and 3 (MECE check: any overlaps or gaps?):
+- Best evidence for each argument:
+- What goes into the attachment:
+
+## Common mistakes
+
+- Telling the story in the order you discovered it instead of answer first.
+- Hiding the request in the last paragraph, or forgetting it completely.
+- Listing eight weak arguments instead of three strong ones.
+- Using overlapping arguments that make the case look padded.
+- Writing a subject line that says "update" when a decision is needed.
+
+## Self-check
+
+1. What does BLUF stand for? (Answer: Bottom Line Up Front.)
+2. In the Pyramid Principle, what sits at the top? (Answer: the governing thought, the single main message or answer.)
+3. What two conditions does the MECE test check? (Answer: no overlaps between items and no gaps in coverage.)
+
+## Practical assignment
+
+Take the last long email or report you sent to a senior manager. Rewrite its first three lines using BLUF, and draw its pyramid on one page: governing thought, three key arguments and the evidence for each. Ask a colleague which version they would rather receive.
+
+## Summary
+
+- Executives need the decision or answer first, because their time and attention are limited.
+- BLUF puts the conclusion or request in the first lines, with details after.
+- The Pyramid Principle structures ideas top-down, and the MECE test keeps the arguments clean.
+=== 20
+SLIDE What you will learn | Open a message with SCQA; Use situation-complication-resolution for short updates; Write a one-page memo; Turn a weak draft into a strong one | Structure makes the message easy to follow
+SLIDE SCQA | Situation: what the reader already accepts; Complication: what has changed; Question: what it raises; Answer: your recommendation | From Minto's Pyramid Principle
+SLIDE Choose the order | Answer first for busy or supportive readers; Classic SCQA order for sceptical readers; Keep the situation to one or two sentences | Order follows the reader
+SLIDE Situation-complication-resolution | Three-part version for updates and emails; The question stays implied; The resolution is the action | End with the ask or for information only
+SLIDE The one-page memo | Title states the decision; Recommendation with cost and timing; Background, options and risks; Next steps and deadline | Detail goes in attachments
+SLIDE Before and after | Before: history first, vague ask last; After: decision, cost and deadline first; Same facts in a new order | Rewriting is mostly reordering
+SLIDE Common mistakes | Long situation section; Complication that is not a real change; Options with no recommendation; No clear ask | Every paragraph must earn its place
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- apply the SCQA framework (situation, complication, question, answer) to open a message;
+- choose the right order of SCQA elements for a busy, supportive or sceptical reader;
+- use situation-complication-resolution for short updates and emails;
+- write a one-page memo and revise a weak draft into a clear executive message.
+
+## Key terms
+
+::: terms
+Situation: a fact or context the reader already knows and accepts
+Complication: a change, problem or opportunity that creates a reason to act
+Question: the question the complication raises in the reader's mind, often left unwritten
+Resolution: the action proposed or already taken to deal with the complication
+One-page memo: a short decision document with a fixed layout, supported by attachments
+:::
+
+## 1. SCQA: an introduction that earns attention
+
+In The Pyramid Principle, Minto recommends opening a document with a short story in four parts: Situation, Complication, Question and Answer (SCQA). It reminds the reader of what they know, shows what has changed and leads to your answer, which is the top of your pyramid.
+
+- Situation: "We supply 140 supermarkets in Luanda from the Viana warehouse."
+- Complication: "Since the road works began, average delivery time has risen from 1 to 2.5 days and three key accounts have complained."
+- Question (implied): "What should we do?"
+- Answer: "Open a small cross-dock in Talatona for six months, at an estimated cost of Kz 12 million."
+
+::: diagram steps | SCQA
+Situation: a fact the reader already knows and accepts
+Complication: what has changed and creates a problem or opportunity
+Question: the question this raises for the reader
+Answer: your recommendation, the top of the pyramid
+:::
+
+The order can change. For a busy or supportive executive, put the answer first and use the situation and complication as short context. For a sceptical reader, the classic SCQA order builds agreement step by step before you reach the recommendation. In every case keep the situation to one or two sentences. Executives do not need a long reminder of what they already know.
+
+::: quiz
+? Which sentence is the complication? "We sell 3,000 bags of flour a week in Huambo. A new competitor has cut prices by 8% and our volume fell 15% in October. We recommend a targeted promotion for our top 20 customers."
+- "We sell 3,000 bags of flour a week in Huambo" || This is the situation, a fact the reader already knows.
+* "A new competitor has cut prices by 8% and our volume fell 15% in October" || Correct. This change creates the tension that leads to the question "What should we do?"
+- "We recommend a targeted promotion for our top 20 customers" || This is the answer.
+:::
+
+## 2. Situation-complication-resolution for short messages
+
+Many managers use a shorter three-part version: situation, complication, resolution. The question stays implied, and the resolution is the action you propose or have already taken. It works well for emails, short messages to a director and the first slide of a brief presentation.
+
+Example after an incident: "Situation: the Lobito port terminal was closed for 36 hours because of a crane failure. Complication: our two containers of tomato paste missed their truck slot, and stock in Benguela will run out on Thursday. Resolution: I have booked a new slot for Wednesday morning and moved 200 cartons from Luanda by road to cover the gap. No action needed from you."
+
+Notice the last sentence. It tells the reader whether they must act. Always end with the ask or with "for information only".
+
+::: quiz
+? A depot manager emails his director: "Situation: the forklift broke down on Monday. Complication: loading is two hours slower each day. Resolution: a repair is booked for Thursday." What is missing?
+- A longer situation section with the forklift's history || The director already knows the depot. More history only delays the point.
+* A last line saying whether the director must act or it is for information only || Correct. Without it the director does not know if a reply is needed.
+- The implied question written out in full || The question can stay implied in the short three-part version.
+:::
+
+## 3. The one-page memo
+
+A one-page memo forces you to choose what matters. When an organisation uses a standard layout, readers know where to find each element.
+
+::: slides
+SLIDE Step 1: Title and ask | Title states the topic and the decision; Example: Decision needed: approve second cold room | The reader knows why they are reading
+SLIDE Step 2: Recommendation | One short paragraph with the answer; Include cost, benefit and timing | BLUF in memo form
+SLIDE Step 3: Background and options | Two or three lines of situation and complication; Options considered with pros and cons | Show you considered alternatives
+SLIDE Step 4: Risks and mitigation | Main risks of your recommendation; What you will do about each one | Leaders trust writers who name risks
+SLIDE Step 5: Next steps | Who does what by when; Decision needed and deadline | End with the ask
+:::
+
+Aim for about 400 to 500 words. Put spreadsheets, quotations and detailed analysis in attachments, and use short headings so the reader can scan.
+
+::: tip | The 30-second read
+Give your memo to a colleague for 30 seconds, take it back and ask what you want from the reader. If they cannot say it, rewrite the top.
+:::
+
+## Worked example: before and after at a construction company in Benguela
+
+Carlos, a project manager at a construction company in Benguela, needs his director to approve overtime to recover a delay on a school project.
+
+Before: "Dear Director, as you know the school project started in June. In July we had some rain and then the cement delivery was late because the supplier had problems. The team has been working hard. In August two workers were sick. We have now calculated that we are about three weeks behind. The client called last week. There are several possibilities such as overtime or more workers. Please let me know what you think."
+
+After: "Decision needed by Friday: approve weekend overtime for six weeks (about Kz 9.6 million) to hand over the school on the contract date. Situation: the project is on budget but three weeks behind after late cement and heavy rain. Complication: the contract carries a penalty for late handover, and the client has raised the issue. Options: (1) weekend overtime, Kz 9.6 million, recovers the delay; (2) ten temporary workers, similar cost but two weeks lost to hiring and safety induction; (3) accept the delay and risk the penalty. Recommendation: option 1. Risk: fatigue. Mitigation: rotating teams, with no worker on more than two weekends in a row."
+
+The facts are the same, but now the director can decide in one reading.
+
+::: case | Monthly update at an insurance branch in Luanda
+Teresa manages an insurance branch in Luanda. Claims processing time has risen from 10 to 18 days since a new system was installed, and two corporate clients have complained. The system supplier will give six staff two days of extra training at no cost. She must send her monthly update to the regional director.
+? Which opening is best?
+- "This month the branch processed 412 claims, sold 30 new policies and held a fire drill..." || A list of activities hides the real issue and the action.
+- "Claims are slow. Training is needed." || Too short. There are no numbers, no cause and no clear ask.
+* "Claims time rose from 10 to 18 days after the system change. I propose two days of free supplier training for six staff next week. Please confirm I can release them from the counter." || Correct. Complication, resolution and a clear ask in three sentences.
+- "As you know, we installed a new system in September after a long selection process..." || A long situation delays the point.
+:::
+
+## Tool: SCQA and memo checklist
+
+- Situation: one or two sentences the reader already accepts.
+- Complication: a real change, with a number.
+- Question: obvious from the complication.
+- Answer: one sentence with action, cost and timing.
+- Title states the decision needed.
+- Options considered and why you rejected them.
+- Main risks and mitigation.
+- Next steps, owner and deadline.
+- One page, with detail in attachments.
+
+## Common mistakes
+
+- Writing a long situation section about things the reader already knows.
+- Using a "complication" that is not a change, so there is no reason to act.
+- Presenting options without saying which one you recommend.
+- Ending without stating what the reader must do.
+
+## Self-check
+
+1. What do the four letters of SCQA stand for? (Answer: Situation, Complication, Question, Answer.)
+2. When might you put the answer before the situation? (Answer: when the reader is busy or already supportive.)
+3. What should the last line of a situation-complication-resolution update contain? (Answer: the ask, or a clear statement that it is for information only.)
+
+## Practical assignment
+
+Choose one decision you need from a senior manager this month. Write it as a one-page memo: a title with the decision, recommendation, SCQA background, options, risks and next steps. Ask a colleague to do the 30-second read test before you send it.
+
+## Summary
+
+- SCQA opens a message by moving from shared facts to a change, a question and your answer.
+- Situation-complication-resolution is a short version for updates and emails.
+- A one-page memo with a fixed layout makes decisions easy to find and quick to take.
+=== 20
+SLIDE What you will learn | Choose the few numbers that matter; Calculate and explain a variance; Pick a simple chart for the message; Write so-what statements and action titles | Data should lead to a decision
+SLIDE Choose key numbers | Start from the decision; Three to five numbers per message; Round to the precision that matters | Fewer numbers, more attention
+SLIDE Give context | Compare with budget, last year or target; Show variance in value and percent; Name the main driver | A number alone means nothing
+SLIDE Pick the chart | Trend over time: line; Comparing categories: sorted bar; Exact values: small table; Avoid 3D and crowded pies | The message chooses the chart
+SLIDE Remove clutter | Tufte: most ink should show data; Delete heavy gridlines, borders and legends; Grey for context, one colour for the point | Guide the eye
+SLIDE What, so what, now what | What: the fact with a comparison; So what: what it means; Now what: the action | Turn data into a recommendation
+SLIDE Common mistakes | Too many numbers and decimals; Topic titles instead of conclusions; Variance without a driver; Data with no action | The title is the message
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose the three to five numbers that matter for a decision;
+- calculate and explain a variance against budget and last year, including its main driver;
+- select a simple chart that matches the message;
+- write so-what statements and action titles that turn data into a recommendation.
+
+## Key terms
+
+::: terms
+Key metric: one of the few numbers that tell leaders whether things are on track
+Variance: the difference between an actual result and a comparison such as budget or last year
+Driver: the factor that explains most of a change in a result
+Data-ink: the part of a chart that shows actual data rather than decoration
+Action title: a slide or chart title written as a sentence that states the conclusion
+:::
+
+## 1. Choosing the key numbers
+
+Analysts often show everything they calculated. Leaders need the few numbers that answer their question. Start from the decision. If the question is "Should we keep the Huambo depot?", the key numbers might be depot profit, cost per tonne delivered and service level, not forty rows of sales by product.
+
+Apply three rules:
+
+- Limit: three to five numbers per message or slide. With more, nothing stands out.
+- Compare: a number alone means nothing. Show it against budget, last year or target.
+- Round: "Kz 1.24 billion" is easier to remember than "Kz 1,238,456,120". Keep only the precision that affects the decision.
+
+Then explain the variance and its driver. Example: monthly sales were Kz 1,240 million, against a budget of Kz 1,400 million and Kz 1,180 million last year.
+
+- Variance to budget: 1,240 − 1,400 = −160 million, and −160 ÷ 1,400 = −11.4%.
+- Change versus last year: 1,240 − 1,180 = +60 million, and +60 ÷ 1,180 = +5.1%.
+- Driver: sugar sales were Kz 120 million below budget, so sugar explains 120 ÷ 160 = 75% of the gap.
+
+Now the message is clear: "Sales grew 5% on last year but missed budget by 11%, and three-quarters of the gap is sugar." Always divide by the comparison figure (budget or last year), not by the actual.
+
+::: quiz
+? Actual transport cost was Kz 450 million against a budget of Kz 400 million. What is the variance in percent?
+- 11.1% under budget || 50 ÷ 450 uses the wrong base, and the cost is over budget, not under.
+* 12.5% over budget || Correct. (450 − 400) ÷ 400 = 12.5%, an unfavourable variance because cost is higher than planned.
+- 50% over budget || 50 is the variance in millions of kwanzas, not in percent.
+:::
+
+## 2. Choosing simple charts
+
+The message should choose the chart, not the software default. Ask what comparison you are showing:
+
+- Change over time, such as monthly sales or stock days: line chart.
+- Comparison between categories, such as cost by depot: bar chart, sorted from largest to smallest.
+- Parts of a whole with only two or three parts: a simple stacked bar. With more parts, use a bar chart.
+- Actual against target: bars for actual with a target line, or a small table with a variance column.
+- Exact values people will look up: a small table, not a chart.
+
+Edward Tufte, in The Visual Display of Quantitative Information, argued that most of the ink in a chart should show data. Remove what does not: heavy gridlines, borders, 3D effects, shadows, and legends you can replace with direct labels. Cole Nussbaumer Knaflic, in Storytelling with Data, recommends using colour sparingly to direct attention: show context in grey and highlight the one bar or line that carries your message.
+
+::: slides
+SLIDE Step 1: Write the takeaway | One sentence that the chart must prove; Example: Huíla has the highest cost per tonne | Message before chart
+SLIDE Step 2: Choose the chart type | Trend over time: line; Comparing categories: sorted bar; Exact values: small table | Match the chart to the comparison
+SLIDE Step 3: Remove clutter | Delete heavy gridlines, borders and 3D effects; Label data directly instead of using a legend; Round the labels | More data-ink, less decoration
+SLIDE Step 4: Highlight and title | Grey for context, one colour for the point; Put the takeaway in the title | Guide the eye to the message
+:::
+
+## 3. So-what statements and action titles
+
+A simple sequence turns data into a recommendation: What? So what? Now what?
+
+::: diagram steps | From data to decision
+What: the fact or number, with a comparison
+So what: what it means for the business
+Now what: the action you recommend, with owner and date
+:::
+
+Example: "What: stock days for cooking oil rose from 25 to 41. So what: about Kz 85 million of extra cash is tied up, and part of the stock expires in March. Now what: hold the next purchase order and run a promotion with our top supermarkets this month."
+
+Use the same thinking for titles. Replace topic titles such as "Sales by province" with action titles such as "Benguela and Huíla explain 80% of the sales gap". A leader who reads only the titles should understand the story.
+
+::: quiz
+? Which slide title is the best action title?
+- "Q3 margin analysis" || This is a topic, not a conclusion.
+- "Margin by product, July to September" || It describes the chart but not what it shows.
+* "Q3 margin fell 3 points because flour costs rose faster than prices" || Correct. It states the conclusion and the driver in one sentence.
+- "Important margin information for management" || It gives no information at all.
+:::
+
+## Worked example: a monthly review at a beverage distributor in Huambo
+
+::: case | Ten minutes with the regional director
+Joana is sales controller at a beverage distributor in Huambo. Her monthly pack has 14 slides of tables. This month, volume is 9% below budget, mainly because two large wholesalers delayed orders after a price increase. The regional director has given her ten minutes.
+? How should Joana prepare?
+- Present all 14 slides quickly so nothing is missed || Speed does not create clarity. The director will not see the main point.
+- Show one large table with every product and region || The reader must find the message alone, which wastes the ten minutes.
+* Open with "Volume is 9% below budget, and two wholesalers explain most of it", show one sorted bar chart and propose an action || Correct. Key number, driver, simple chart and a now-what make the review useful.
+- Send the slides by email and cancel the meeting || The director asked for a review. A short focused discussion is still needed.
+:::
+
+Joana's chart is a sorted bar of the volume gap by customer, with the two wholesalers in colour and all others in grey. Her title states the conclusion, and her last line proposes visits to both wholesalers this week with a price-volume offer for the director to approve.
+
+## Tool: data slide checklist
+
+- The decision or question this slide supports:
+- Key numbers (no more than five):
+- Comparison for each number (budget, last year, target):
+- Variance in value and percent, and the main driver:
+- Chart type chosen and why:
+- Clutter removed: gridlines, borders, 3D, legend:
+- Action title written as a full sentence:
+- Now what: action, owner and date:
+
+## Common mistakes
+
+- Showing every number calculated instead of the few that matter.
+- Giving a variance without explaining its driver.
+- Dividing by the actual instead of the comparison figure.
+- Using 3D, crowded pie charts or many colours.
+- Writing topic titles instead of conclusions.
+
+## Self-check
+
+1. Sales were Kz 900 million against a budget of Kz 1,000 million. What is the variance in percent? (Answer: −10%, because −100 ÷ 1,000.)
+2. Which chart best shows monthly stock days over a year? (Answer: a line chart.)
+3. What are the three questions that turn data into a recommendation? (Answer: What? So what? Now what?)
+
+## Practical assignment
+
+Take one slide or table from your next management report. Cut it to no more than five numbers, add a comparison and variance for each, choose the simplest chart, and rewrite the title as an action title. Show the before and after to your manager.
+
+## Summary
+
+- Leaders need a few key numbers, each with a comparison, a variance and a driver.
+- Choose the simplest chart for the comparison and remove everything that is not data.
+- What, so what, now what and action titles turn data into a decision.
+=== 20
+SLIDE What you will learn | Build a storyline by writing slide titles first; Structure a board paper around the decision; Apply appendix discipline; Anticipate questions and time-box your slot | From story to decision in the meeting
+SLIDE Storyline first | Start with the governing thought; Write one action title per slide; Read the titles only to test the flow | Story before design
+SLIDE Board paper structure | Purpose: decision, discussion or information; Executive summary and resolution; Options, financials and risks; Appendices | The decision is visible on page one
+SLIDE Appendix discipline | Test: does the reader need this to decide?; If not, move it to the appendix; Number and reference each appendix | Short main paper, full evidence behind it
+SLIDE Anticipate questions | Think as each board member; Run a pre-mortem; Prepare backup slides for the top questions | No surprises in the room
+SLIDE Time-boxing | Present for half the slot or less; About two minutes per main slide; Prepare a two-minute version | Leave time to decide
+SLIDE Common mistakes | Designing slides before the story; Thirty slides for a twenty-minute slot; Burying the resolution; Reading the slides aloud | Fewer slides, more decision
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- build a storyline for an executive presentation by writing the slide titles first;
+- structure a board paper so the decision and recommendation are clear;
+- apply appendix discipline to keep the main document short;
+- anticipate likely questions and time-box a presentation within its agenda slot.
+
+## Key terms
+
+::: terms
+Storyline: the sequence of key messages that carries the audience from the situation to your recommendation
+Storyboard: a plan of a presentation written as a list of slide titles before any slide is designed
+Board paper: a written document submitted to a board or executive committee to support a decision or give information
+Appendix: supporting material placed after the main document and used only if needed
+Time-boxing: fixing a strict time limit for each part of a presentation or meeting
+:::
+
+## 1. Building the storyline
+
+Many people open presentation software and start designing slides. Experienced presenters start with the story. Write your governing thought (lesson 1), then your SCQA opening (lesson 2), then one action title for each main slide. Read only the titles in order. If they tell the whole story, the structure works. Then check that the content of each slide proves its title.
+
+::: slides
+SLIDE Step 1: Write the governing thought | One sentence with your recommendation; Example: Approve a second bagging line in Lobito | Everything else supports it
+SLIDE Step 2: Sketch the titles | One action title per main slide; About six slides for a 30-minute slot | Story before design
+SLIDE Step 3: Read the titles only | Do they tell the full story in order?; Remove any slide that adds no new message | Test the flow
+SLIDE Step 4: Build each slide | Content must prove the title; Move extra detail to the appendix | One message per slide
+:::
+
+A typical storyline for a decision: the recommendation, why we need to act, options considered, why our option is best, cost and benefit, risks and how we manage them, and the decision we need today.
+
+## 2. Board papers and appendix discipline
+
+Boards and executive committees usually receive written papers before the meeting so that members can prepare. A clear standard structure helps them find the decision quickly.
+
+::: diagram steps | Board paper structure
+Cover: title, author, date and purpose (for decision, discussion or information)
+Executive summary: the recommendation and the resolution requested, in half a page
+Background: short situation and complication
+Options and analysis: alternatives considered and why the recommendation is best
+Financial impact and risks: cost, benefit, funding, risks and mitigation
+Resolution and appendices: exact wording to approve, then supporting detail
+:::
+
+The resolution is the exact sentence the board will approve, for example: "The board approves capital expenditure of up to USD 1.2 million for a second bagging line at the Lobito plant, to be funded from the 2026 capex budget." Writing it precisely forces you to state the amount, scope and funding.
+
+Appendix discipline means testing every page with one question: does the reader need this to make the decision? If not, it goes to the appendix. Number each appendix and refer to it in the main text ("see Appendix B for supplier quotations"). Aim for a main paper of a few pages that a director can read in about ten minutes.
+
+::: quiz
+? A manager wants to include eight pages of supplier technical data in the main body of a board paper. What should he do?
+- Keep it in the body so the board sees how much work was done || Volume does not equal quality. It hides the decision.
+* Summarise the key point in one line and move the data to a numbered appendix || Correct. The board sees the conclusion and can check the detail if needed.
+- Delete the data completely to keep the paper short || The evidence should still be available to anyone who wants it.
+:::
+
+## 3. Anticipating questions
+
+Executives judge a proposal partly by how well you handle questions. Prepare them in advance:
+
+- Think as each member: the finance director will ask about cost, payback and funding; operations about feasibility and timing; legal and compliance about contracts and regulation; the CEO about strategy and risk.
+- Run a pre-mortem, a technique described by psychologist Gary Klein: imagine the project has failed one year from now and list all the reasons why. Each reason is a likely question.
+- Write a short answer for the top five questions and prepare a backup slide in the appendix for each.
+
+## 4. Time-boxing
+
+Discussion is where decisions are made, so plan to present for half your agenda slot or less. For a 30-minute slot that means about 15 minutes: one minute to open, six main slides at about two minutes each (12 minutes), and two minutes to close and state the decision needed. The other 15 minutes are for questions and discussion.
+
+Meetings often run late. Prepare a two-minute version: the recommendation, the two main reasons and the decision needed. If your slot is cut, deliver that version calmly instead of rushing all the slides.
+
+::: quiz
+? You have a 40-minute agenda slot. Using the half-the-slot rule and about two minutes per main slide, roughly how many main slides should you plan, leaving time to open and close?
+- 20 slides || That would need the full 40 minutes, with no time for discussion.
+- 15 slides || That needs 30 minutes, leaving too little time to discuss.
+* About 8 slides || Correct. Half of 40 is 20 minutes. Leave about 4 minutes to open and close, and 16 minutes gives about 8 slides.
+:::
+
+## Worked example: an investment proposal at a cement plant in Lobito
+
+::: case | Twenty minutes with the board
+Rui, operations director at a cement plant in Lobito, will propose a USD 1.2 million bagging line to reduce truck waiting times. His slot is 20 minutes. His team has prepared 35 slides, starting with the plant's history. The finance director is known to question payback periods.
+? What should Rui do?
+- Present all 35 slides quickly to show the depth of the work || He would run out of time before the decision and leave no room for questions.
+- Keep the history at the start so the board understands the context || The board knows the plant. The history delays the recommendation.
+* Cut to five main slides that open with the recommendation, move the rest to the appendix and prepare a backup slide on payback || Correct. About 10 minutes of story, 10 of discussion, and the finance director's likely question is ready.
+- Send the 35 slides in advance and ask the board to read them || A pre-read helps, but it must be a short paper, and he still needs a focused storyline.
+:::
+
+## Tool: board paper and presentation checklist
+
+- Purpose stated on the cover: decision, discussion or information.
+- Executive summary with the recommendation on page one.
+- Exact resolution wording: amount, scope, funding.
+- Every page passed the "needed to decide?" test.
+- Appendices numbered and referenced.
+- Storyline readable from the titles alone.
+- Top five questions answered, with backup slides.
+- Presentation time no more than half the slot.
+- Two-minute version prepared.
+
+## Common mistakes
+
+- Designing slides before writing the storyline.
+- Bringing far more slides than the slot allows.
+- Burying the recommendation or the resolution at the end.
+- Reading slides aloud instead of telling the story.
+
+## Self-check
+
+1. What question decides whether material goes into the appendix? (Answer: does the reader need this to make the decision?)
+2. What is a pre-mortem? (Answer: imagining the project has failed and listing the reasons why, to find weak points and likely questions.)
+3. How long should you present in a 30-minute slot? (Answer: about 15 minutes or less, leaving the rest for discussion.)
+
+## Practical assignment
+
+For your next presentation to senior managers, write the storyboard as a list of action titles before opening any software. Test it by reading only the titles to a colleague. Then list the five hardest questions you expect and prepare one backup slide for each.
+
+## Summary
+
+- Build the storyline first: governing thought, then action titles, then slide content.
+- A board paper puts the decision and exact resolution up front and keeps detail in appendices.
+- Anticipate questions and present for half the slot so leaders have time to decide.
+=== 20
+SLIDE What you will learn | Map stakeholders with a power-interest grid; Pre-wire decisions before the meeting; Handle tough questions with a clear routine; Say I do not know without losing credibility | Influence happens before and during the meeting
+SLIDE Power-interest grid | Manage closely: high power, high interest; Keep satisfied: high power, low interest; Keep informed: low power, high interest; Monitor: low power, low interest | Engage each group differently
+SLIDE Pre-wiring | Meet key people one-to-one first; Share the draft and ask for concerns; Adapt the proposal; Ask for their support | No surprises in the meeting
+SLIDE Answering routine | Listen fully and pause; Clarify if needed; Answer first in one sentence; Support with one fact and check | Short answers show control
+SLIDE Bridging | Acknowledge the question; Bridge with a linking phrase; Communicate your key message | Answer first, then bridge
+SLIDE Saying I do not know | Say it clearly; Share what you do know; Commit to when you will reply; Follow up on time | Never guess a number
+SLIDE Common mistakes | Surprising a senior person in public; Arguing with a questioner; Bridging to avoid the question; Guessing figures | Prepared, honest, brief
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- map stakeholders using a power-interest grid and choose how to engage each group;
+- pre-wire a decision by meeting key people before the formal meeting;
+- handle difficult questions using a clear answering routine and the bridging technique;
+- say "I don't know" in a way that protects your credibility.
+
+## Key terms
+
+::: terms
+Stakeholder: anyone who can affect, or is affected by, your proposal
+Power-interest grid: a two-by-two map that groups stakeholders by their power over a decision and their interest in it
+Pre-wiring: discussing a proposal one-to-one with key people before the formal meeting
+Bridging: moving honestly from a difficult question to your key message after answering it
+Hostile question: a question asked to challenge, test or embarrass the presenter
+:::
+
+## 1. Stakeholder mapping
+
+A good proposal can still fail if the wrong person is surprised or ignored. Stakeholder mapping helps you see who matters and plan how to engage them.
+
+- List everyone who can affect or will be affected by the decision.
+- Rate each person's power over the decision and interest in it as high or low.
+- Place them on the grid.
+- Note their current position (supporter, neutral or opponent) and what they care about most.
+- Plan an action for each person.
+
+::: diagram matrix | Power-interest grid | Interest (low → high) | Power (low → high)
+Keep satisfied: high power, low interest – brief them on what matters to them and avoid overloading them
+Manage closely: high power, high interest – involve and consult them early
+Monitor: low power, low interest – minimal effort, watch for changes
+Keep informed: low power, high interest – update them regularly and use their support
+:::
+
+People move on the grid. A finance director with low interest in a marketing plan becomes highly interested when the plan needs extra budget.
+
+## 2. Pre-wiring
+
+In many organisations the formal meeting confirms decisions rather than creates them. Pre-wiring means meeting the key people individually before the meeting, so that nobody important hears your proposal for the first time in public.
+
+::: slides
+SLIDE Step 1: Choose who to meet | Usually the manage closely group; Include likely opponents, not only supporters | Two to four people is often enough
+SLIDE Step 2: Share the draft | Explain the recommendation in two minutes; Ask what concerns they have | Listen more than you talk
+SLIDE Step 3: Adapt the proposal | Change what improves it; Note concerns you cannot solve and prepare answers | Their ideas become their proposal too
+SLIDE Step 4: Ask for support | Can I count on your support?; Agree who will speak in the meeting | Clarity before the room
+:::
+
+Pre-wiring is not secret lobbying. Be open about it: "I am sharing this with each committee member before Thursday." In Angolan organisations, as in many others, respect for hierarchy matters. A senior person who feels surprised or bypassed may oppose a proposal they would otherwise support.
+
+::: quiz
+? A manager will propose a new sales incentive scheme at Thursday's executive meeting. The HR director has high power and has questioned incentives before. What should the manager do?
+- Present on Thursday and answer her objections in the meeting || She may feel ambushed, and objections in public are harder to resolve.
+* Meet her before Thursday, share the draft and ask for her concerns || Correct. Pre-wiring lets him adapt the proposal and avoid a public conflict.
+- Leave her out of the discussion because she is likely to object || Ignoring a high-power stakeholder almost guarantees opposition.
+:::
+
+## 3. Handling tough questions
+
+When a senior person challenges you, the way you answer matters as much as the content. Use a simple routine:
+
+- Listen to the whole question without interrupting.
+- Pause for a second or two. It shows control and gives you time to think.
+- Clarify if the question is unclear: "Do you mean the cost this year or over three years?"
+- Answer first, in one sentence (BLUF again).
+- Support with one fact or example.
+- Check: "Does that answer your question?"
+
+Stay calm with hostile questions. Do not argue or take it personally. If the point is valid, say so: "You are right that the payback is longer than our usual target."
+
+The bridging technique, widely used in media training, follows three steps: Acknowledge, Bridge, Communicate. Acknowledge the question, use a linking phrase such as "what matters most here is", then communicate your key message. Example: "Yes, the cost is higher than last year. What matters most is that it removes the fines we paid for late deliveries, which were larger." Bridging must come after a real answer. Using it to avoid questions destroys trust quickly.
+
+Finally, learn to say "I don't know" well. Say it clearly, share what you do know, commit to a time for the full answer, and then follow up on time. For example: "I don't have the Huíla figure with me. I know the total is Kz 210 million. I will send the breakdown by 3 p.m. today." A guessed number that later proves wrong does far more damage than an honest "I don't know".
+
+::: quiz
+? A board member asks for a figure the presenter does not have. Which response is best?
+- Give an approximate figure so the discussion can continue || A guessed figure may be wrong and will damage credibility if it is.
+- Say the question is outside the scope of the presentation || This sounds evasive and annoys the board member.
+* Say she does not have it, give the related figure she knows and promise the answer by a set time || Correct. It is honest, useful and shows control.
+- Ask a colleague in the room to answer instead || Without checking that the colleague knows, this may only move the problem.
+:::
+
+## Worked example: a price increase proposal at an FMCG distributor in Luanda
+
+::: case | The challenge from the finance director
+Mário, a category manager at an FMCG distributor in Luanda, proposes a 6% price increase on pulses. He pre-wired the commercial director but not the finance director. In the meeting she says sharply: "Your volume forecast is optimistic. Where is the evidence?"
+? How should Mário respond?
+- Defend the forecast strongly and say his team knows the market best || Arguing raises tension and does not provide evidence.
+- Use bridging to move to the margin benefits without answering || Bridging without an answer looks evasive to a finance director.
+* Pause, acknowledge the concern, give the main evidence in one sentence and offer the detailed model after the meeting || Correct. Calm, brief and honest, with a clear follow-up.
+- Ask to postpone the decision to the next meeting || This loses momentum when a short, clear answer may be enough.
+:::
+
+After the meeting Mário sends the model within the promised time and adds the finance director to his pre-wiring list for every future pricing proposal.
+
+## Tool: influence and Q&A preparation sheet
+
+- Decision I need and the meeting date:
+- Stakeholders by grid quadrant:
+- Position of each key person and what they care about:
+- Pre-wiring meetings booked (who and when):
+- Concerns raised and how I adapted the proposal:
+- Five toughest questions and one-sentence answers:
+- My key message for bridging:
+- Facts I may not have, and how I will follow up:
+
+## Common mistakes
+
+- Letting a senior stakeholder hear the proposal for the first time in the meeting.
+- Arguing with or interrupting a questioner.
+- Using bridging to avoid answering.
+- Guessing figures instead of saying "I don't know".
+- Promising to follow up and then forgetting.
+
+## Self-check
+
+1. Where on the power-interest grid would you place a director with high power but little interest in your project, and what is the strategy? (Answer: top left, keep satisfied.)
+2. What are the three steps of the bridging technique? (Answer: Acknowledge, Bridge, Communicate.)
+3. What are the four steps to saying "I don't know" well? (Answer: say it clearly, share what you know, commit to when you will reply, follow up on time.)
+
+## Practical assignment
+
+For a proposal you are preparing, draw the power-interest grid with real names. Book at least two pre-wiring conversations this week, including one with a likely opponent. Write your five toughest questions with one-sentence answers.
+
+## Summary
+
+- Map stakeholders by power and interest, and engage each group differently.
+- Pre-wire key decision makers so the formal meeting confirms rather than surprises.
+- Answer tough questions briefly and honestly, bridge only after answering, and say "I don't know" well.
+=== 20
+SLIDE What you will learn | Describe the three pillars of executive presence; Apply calm, clarity and consistency in a crisis; Write a holding statement in the first hour; Align internal and external messages | Presence matters most under pressure
+SLIDE Executive presence | Hewlett: gravitas, communication, appearance; Gravitas matters most; Shown through behaviour, not title | Presence can be learned
+SLIDE Behaviours that build presence | Speak slowly and pause; Take a clear position; Listen and stay composed; Own mistakes | Calm is contagious
+SLIDE The three Cs | Calm: control your tone and pace; Clarity: short facts, no jargon; Consistency: one set of facts for everyone | Trust depends on all three
+SLIDE Holding statement | What happened, confirmed facts only; Concern for those affected; What we are doing; When the next update comes | Say what you know and what you do not
+SLIDE Internal and external | Staff hear first or at the same time; One spokesperson outside; Briefing notes for managers; One source of truth | Same facts, adapted words
+SLIDE Common mistakes | Silence or no comment; Speculating about causes; Different stories inside and outside; Promising what you cannot deliver | Be first, be right, be credible
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the three pillars of executive presence and the behaviours that build each one;
+- apply the three Cs of crisis communication: calm, clarity and consistency;
+- write a holding statement in the first hour of a crisis;
+- plan internal and external communication so that messages stay consistent.
+
+## Key terms
+
+::: terms
+Executive presence: the ability to project confidence, credibility and calm so that others trust your judgement
+Gravitas: seriousness and composure, especially under pressure
+Crisis: an unexpected event that threatens people, operations, reputation or finances and needs urgent decisions
+Holding statement: a short first statement confirming what is known, what is being done and when more information will follow
+Single source of truth: one agreed and updated set of facts that every spokesperson uses
+:::
+
+## 1. Executive presence
+
+Sylvia Ann Hewlett, in her book Executive Presence, describes three pillars: gravitas (how you act), communication (how you speak) and appearance (how you look). In her research, gravitas mattered most. Presence is not a personality type. It is a set of behaviours you can practise, in Portuguese, English or any other language.
+
+- Gravitas: stay composed under pressure, take a clear position, show you understand the business and own your mistakes.
+- Communication: speak slowly, use short sentences, pause before important points, answer first and listen fully.
+- Appearance: dress and present yourself appropriately for the setting, so that nothing distracts from your message.
+
+Simple habits make a difference: arrive prepared, sit where you can see the decision makers, keep your phone away, and when you disagree, do it with facts and respect.
+
+::: quiz
+? A manager is technically excellent but rushes, apologises before speaking and avoids giving an opinion in meetings. Which pillar of executive presence should she work on first?
+- Appearance, because she should dress more formally || Nothing suggests appearance is the problem.
+* Gravitas and communication, by slowing down and stating a clear position || Correct. Composure and a clear view are what make leaders trust her judgement.
+- Technical knowledge, because presence comes from expertise || She already has expertise. The gap is in how she shows it.
+:::
+
+## 2. Calm, clarity and consistency in a crisis
+
+A crisis is when presence is tested most. Use three Cs:
+
+- Calm: control your pace and tone. People read your behaviour before your words.
+- Clarity: short sentences, confirmed facts and plain language, with no jargon or long explanations.
+- Consistency: every spokesperson uses the same facts, and messages do not change without explanation.
+
+The Crisis and Emergency Risk Communication (CERC) principles of the US Centers for Disease Control and Prevention start with "Be first, be right, be credible". There is a tension between being first and being right. Resolve it by saying what you know, what you do not know yet and when you will update. Silence lets rumours fill the gap, especially on social media and messaging groups.
+
+::: diagram cycle | Crisis communication cycle
+Assess: confirm the facts, the people affected and the risks
+Hold: issue a holding statement inside and outside
+Inform: brief staff, customers, authorities and partners
+Update: give new facts at the times you promised
+Review: after the crisis, learn and improve the plan
+:::
+
+## 3. Writing a holding statement
+
+A holding statement buys time without silence. Prepare templates in advance so you only fill in the facts.
+
+::: slides
+SLIDE Step 1: What happened | Confirmed facts only: what, where, when; No speculation about causes or blame | Accuracy first
+SLIDE Step 2: Show concern | Put people first; Name those affected | Empathy before operations
+SLIDE Step 3: What we are doing | Actions already taken; Who we are working with | Show control
+SLIDE Step 4: What people should do | Practical guidance for customers or staff; Who to contact | Make it useful
+SLIDE Step 5: Next update | Give a time and keep it | Promise only what you can deliver
+:::
+
+Example: "At about 14:00 today a fire broke out in part of our warehouse in Viana. All staff were evacuated, and there are no reported injuries. The fire service has the fire under control. We are working with the authorities to understand the cause. Deliveries from Viana are suspended today, and account managers will contact customers directly. We will give a further update by 18:00."
+
+## 4. Internal and external communication
+
+Employees should hear news from the company first, or at least at the same time as the public. Give managers a short briefing note with the facts, key messages and answers to likely questions, so they can speak to their teams. Externally, appoint one spokesperson and keep a log of every statement. Involve legal advisers and inform authorities, insurers, banks, key customers and suppliers as relevant. The words can be adapted for each audience, but the facts must come from one source of truth.
+
+::: quiz
+? During an incident, a supervisor tells staff the cause was a supplier's fault, while the official statement says the cause is under investigation. What principle has been broken?
+- Calm, because the supervisor was emotional || The problem is not tone but conflicting facts.
+* Consistency, because two different versions are circulating || Correct. Conflicting stories destroy trust. Everyone must use the single source of truth.
+- Being first, because the statement was too late || Timing is not the issue here.
+:::
+
+## Worked example: a warehouse fire in Viana
+
+::: case | The first hour after the fire
+Ana is commercial director of a food distributor. A fire has damaged part of the Viana warehouse. Nobody is hurt, but photos are spreading in WhatsApp groups and two key accounts have called. The CEO is travelling and asks Ana to lead communication.
+? What should Ana do first?
+- Wait until the cause is known before saying anything || Silence lets rumours and photos define the story.
+- Tell customers that stock losses will be small, to calm them || She does not know this yet. A promise that proves wrong damages credibility.
+* Agree the confirmed facts with operations, issue a holding statement to staff and customers, and set the next update time || Correct. Calm, clear and consistent, with a promised update.
+- Post a long explanation on social media with photos of the damage || This is not controlled and may include unconfirmed facts.
+:::
+
+Ana then gives account managers a one-page briefing note so every customer hears the same facts, and she updates staff and customers at 18:00 as promised.
+
+## Tool: crisis first-hour checklist
+
+- Confirmed facts: what, where, when, who is affected.
+- People safe and authorities informed.
+- Holding statement approved by the agreed person.
+- Staff informed first or at the same time as the public.
+- One spokesperson named.
+- Briefing note and likely questions for managers.
+- Next update time announced.
+- Log of statements kept.
+
+## Common mistakes
+
+- Saying "no comment" or staying silent.
+- Speculating about causes or blaming others before the facts are known.
+- Giving different stories to staff and to the public.
+- Promising outcomes you cannot guarantee.
+
+## Self-check
+
+1. What are Hewlett's three pillars of executive presence? (Answer: gravitas, communication and appearance.)
+2. What are the three Cs of crisis communication in this lesson? (Answer: calm, clarity and consistency.)
+3. Name the five elements of a holding statement. (Answer: what happened, concern for those affected, what we are doing, what people should do, when the next update comes.)
+
+## Practical assignment
+
+Choose one realistic crisis for your area, such as a product recall, a system failure or a road accident involving a company truck. Write a holding statement template and a one-page briefing note for managers. Agree with your manager who would approve and who would speak.
+
+## Summary
+
+- Executive presence rests on gravitas, communication and appearance, and it can be practised.
+- In a crisis, calm, clarity and consistency build trust: say what you know and what you do not.
+- A prepared holding statement and one source of truth keep internal and external messages aligned.

@@ -1,0 +1,862 @@
+=== 20
+SLIDE What you will learn | The three conversations inside every hard talk; Intent versus impact; Contribution instead of blame; Deciding whether to raise an issue | Four ideas to use before any difficult conversation
+SLIDE When conversations become difficult | The stakes are high; Opinions differ; Emotions run strong; Typical reactions: silence or attack | Definition from Crucial Conversations
+SLIDE Culture and context | High-context communication (Edward T. Hall); Respect for hierarchy and dignity; Silence is not always agreement | Check, do not assume
+SLIDE The three conversations | What happened; Feelings; Identity | Stone, Patton and Heen, Difficult Conversations (1999)
+SLIDE Three errors about what happened | The truth assumption; The intention invention; The blame frame | Explore stories, separate intent from impact, map contribution
+SLIDE Feelings and identity | Unspoken feelings leak out; Identity threats create defensiveness; Protect the other person's dignity | Ground yourself first
+SLIDE Raise it or let it go | Is the problem mainly inside me; Is there a better route, such as a process change; Do I have a purpose I can achieve | If you let it go, really let it go
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the three conversations that take place inside every difficult conversation;
+- distinguish intent from impact, and blame from contribution;
+- recognise how a threat to identity makes people defensive;
+- decide whether to raise an issue or let it go.
+
+## Key terms
+
+::: terms
+Difficult conversation: any conversation where the stakes matter, opinions differ and emotions run high
+What happened conversation: the part of the conversation about facts, intentions and who is to blame
+Feelings conversation: the part about the emotions both people bring, whether spoken or not
+Identity conversation: the internal question of what the situation says about who I am
+Contribution: what each person did, or failed to do, that helped create the situation
+Intent and impact: what a person meant to do, compared with the effect it actually had on others
+:::
+
+## 1. What makes a conversation difficult
+
+Most managers know the feeling. You need to tell a supervisor that his reports are late again, refuse a key client's request for extra credit, or tell a colleague that her behaviour in meetings is hurting the team. You delay, you rehearse, and sometimes you avoid it completely.
+
+The authors of Crucial Conversations (Patterson, Grenny, McMillan and Switzler) give a useful definition: a conversation becomes crucial when the stakes are high, opinions vary and emotions run strong. When all three are present, people tend to fall into one of two habits. Silence means avoiding, hinting or agreeing on the surface. Violence means attacking, labelling or forcing a decision. Both damage results and relationships.
+
+In many Angolan workplaces, respect for hierarchy and for older colleagues is an important value, and communication is often indirect. People may hint, use an intermediary, or say "sim, chefe" when they do not agree. The anthropologist Edward T. Hall called this a high-context style, where meaning is carried by the relationship, tone and setting as much as by the words. This style protects dignity and harmony. But it also means that a junior employee may never raise a problem with a manager, and a manager may wrongly assume that silence means agreement. Individuals differ, so treat this as something to check, not as a rule about any person.
+
+## 2. The three conversations
+
+Douglas Stone, Bruce Patton and Sheila Heen of the Harvard Negotiation Project, in their book Difficult Conversations (1999), showed that every difficult conversation is really three conversations happening at the same time.
+
+::: diagram steps | The three conversations (Stone, Patton and Heen)
+What happened: who said what, who is right, who meant what, who is to blame
+Feelings: are my feelings valid, should I express them, what about theirs
+Identity: what does this say about me, am I competent, am I a good person, am I respected
+:::
+
+The what happened conversation. Three errors make it harder. The truth assumption is the belief that "I am right and you are wrong", when usually each person has different information and different interpretations. The intention invention is assuming we know what the other person meant, usually something negative, based only on the impact on us. The blame frame is looking for who is at fault, which makes the other person defend themselves instead of solving the problem. The alternatives are to explore each other's stories, to separate intent from impact ("You probably did not mean it, but the effect was..."), and to map contribution: what did each of us do that helped create this?
+
+The feelings conversation. Feelings are often the real issue, but we leave them out because work "should be" rational. Unspoken feelings leak out anyway, as sarcasm, coldness or anger. You do not need to share every emotion, but you need to know what you feel and to acknowledge what the other person feels.
+
+The identity conversation. This one happens inside each person. A sales representative told that his numbers are low may hear "you are not good at your job". A senior employee corrected by a younger manager may feel that his respect is in question, especially where seniority matters. When identity feels threatened, people become defensive or shut down. Grounding your own identity ("I can be a good manager and still make mistakes") keeps you calmer, and protecting the other person's dignity keeps them open.
+
+::: quiz
+? A warehouse supervisor says: "Paulo left the gate open because he does not care about security." Which error is this?
+- The truth assumption || The truth assumption is about believing your view of the facts is the only correct one. Here the error is about motive.
+* The intention invention || Correct. The supervisor has assumed a negative motive based only on the impact.
+- The identity conversation || The identity conversation is about what the situation means for the speaker, not about guessing another person's motive.
+:::
+
+## 3. Sorting a conversation before you have it
+
+Before any difficult conversation, sort what is going on into the three conversations. It takes about ten minutes and changes how you open.
+
+::: slides
+SLIDE Step 1: What happened | Write the facts you would both agree on; Note where your stories differ; Separate their intent from the impact on you | Facts first, stories second
+SLIDE Step 2: My contribution | What did I do or fail to do; Was I clear about expectations; Did I raise it early enough | Contribution is not the same as blame
+SLIDE Step 3: Feelings | Name your feelings precisely; Imagine what they may be feeling; Decide what to share | Unspoken feelings leak out
+SLIDE Step 4: Identity | What is at stake for me; What is at stake for them; How can I protect their dignity | A threatened identity creates defensiveness
+:::
+
+## 4. Raise it or let it go?
+
+Not every issue needs a conversation. Ask three questions. Is the real problem mainly inside me, in my own feelings or identity, rather than between us? Is there a better way to fix it, such as changing a process or a form? Do I have a purpose that a conversation can achieve? If you decide to let an issue go, really let it go, without carrying resentment. If an issue repeats, affects results or safety, or affects other people's rights, raise it.
+
+::: quiz
+? A team leader is irritated that a colleague greets him without using his title. It has no effect on work. What is the most sensible first step?
+- Raise it at the next team meeting || Public correction would damage the relationship over an issue with no work impact.
+- Report it to HR as disrespect || This escalates a minor issue before any reflection.
+* Check whether this is mainly his own identity concern before deciding to raise it || Correct. Some issues are mostly internal. If it still matters after reflection, he can raise it privately.
+:::
+
+## Worked example: overdue invoices at a distributor in Viana
+
+Esperança is credit manager at a food distributor in Viana. Domingos, a key account manager, has 12 years with the company and is older than her. Three of his clients are more than 60 days overdue, with 18 million Kz outstanding. Twice she has emailed him. He replied "vou tratar" (I will deal with it) and nothing changed. She is angry and believes he protects his clients at the company's expense.
+
+She sorts the situation. What happened: three clients, 18 million Kz, more than 60 days, two emails. Her story is "he does not care". Another possible story is that he fears losing the clients or did not understand the urgency. Her contribution: she used only email, never explained the cash impact and never met him. Feelings: frustration, and anxiety about her own targets. Identity: for her, "am I respected as a manager?" and for him, "am I still trusted as a senior person?"
+
+::: case | The overdue accounts in Viana
+Esperança decides to talk to Domingos. She needs results this month, and she knows the sales team respects him.
+? How should she approach it?
+- Send a firm email listing his overdue clients and copy the commercial director || A public escalation threatens his identity and is likely to make him defensive. It also skips a direct conversation.
+* Ask for a private meeting, start with the shared facts and say she wants to understand what is happening with these clients || Correct. A private setting protects his dignity, and starting from facts and curiosity avoids the blame frame.
+- Raise it at the weekly sales meeting so everyone understands the rule || Public criticism of a senior colleague causes loss of face and resistance.
+- Wait until month-end and let the finance director deal with it || Avoiding the conversation lets the debt grow and leaves her own contribution unaddressed.
+:::
+
+In the meeting, Domingos explained that one client was waiting for a credit note the company had never issued. Two weeks later, two of the three accounts had paid.
+
+## Tool: three conversations worksheet
+
+- The facts we would both agree on:
+- My story about what happened:
+- Their likely story:
+- The impact on me, and what their intent might have been:
+- My contribution:
+- My feelings, and their likely feelings:
+- What is at stake for my identity, and for theirs:
+- Raise it or let it go, and why:
+
+## Common mistakes
+
+- Treating the conversation as a message to deliver rather than a conversation to have. You miss information you do not have.
+- Assuming that silence or "sim, chefe" means agreement.
+- Confusing contribution with blame. Recognising your part does not remove the other person's responsibility.
+- Leaving feelings out completely. They return later as tension or resentment.
+
+## Self-check
+
+- What are the three conversations? (Answer: what happened, feelings and identity.)
+- What is the difference between intent and impact? (Answer: intent is what the person meant, impact is the effect on others. Usually we only know the impact.)
+- Why should you map your own contribution? (Answer: most problems are created jointly, and recognising your part reduces defensiveness and helps find solutions.)
+
+## Practical assignment
+
+Choose one difficult conversation you have been avoiding at work. Complete the three conversations worksheet for it. Then decide, with reasons, whether to raise it or let it go.
+
+## Summary
+
+- Difficult conversations combine high stakes, different views and strong emotions.
+- Each one contains three conversations: what happened, feelings and identity.
+- Replace certainty, assumed intentions and blame with curiosity, intent versus impact, and contribution.
+=== 20
+SLIDE What you will learn | Set a purpose you can achieve; Separate facts from stories; Identify your contribution; Choose the right time, place and channel | Preparation decides most outcomes
+SLIDE Three good purposes | Learn their story; Express your view and feelings; Solve the problem together | Stone, Patton and Heen
+SLIDE Start with heart | What do I want for myself; For the other person; For the relationship | Avoid the either honest or kind trap
+SLIDE The ladder of inference | Data, selected data, meanings, assumptions, conclusions, beliefs, actions; We climb in seconds | Chris Argyris, popularised by Peter Senge
+SLIDE Facts versus stories | Fact: a camera could record it; Story: our judgement of it; Lead with facts, offer stories tentatively | He is lazy is a story
+SLIDE Your contribution | Clear expectations; Earlier feedback; Resources and support | Ask them what you could do differently
+SLIDE Time, place and channel | Private, never in front of others; Calm moment with enough time; Face to face for serious topics | Protect dignity through the setting
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- set a purpose for a difficult conversation that you can actually achieve;
+- separate observable facts from stories using the ladder of inference;
+- identify your own contribution to the situation;
+- choose an appropriate time, place and channel, and complete a preparation template.
+
+## Key terms
+
+::: terms
+Purpose: what you want the conversation to achieve, stated so that it does not depend on the other person admitting fault
+Observable fact: something a video camera could record, such as dates, numbers or words actually said
+Story: the interpretation, judgement or conclusion we add to the facts
+Ladder of inference: a model of how we move very quickly from selected data to conclusions and actions
+Path to Action: the sequence see and hear, tell a story, feel, then act, described in Crucial Conversations
+:::
+
+## 1. Set a purpose you can achieve
+
+Many difficult conversations fail before they start because the purpose is wrong. "Make him admit he was wrong", "show her who is in charge" or "make him change his attitude" are purposes you cannot control and that invite resistance.
+
+Stone, Patton and Heen suggest three purposes for what they call a learning conversation:
+
+- learn their story: how they see the situation and why;
+- express your views and feelings clearly;
+- problem-solve together: find a way forward that works for both.
+
+The Crucial Conversations authors add a practice called "start with heart". Before you begin, ask yourself what you really want for yourself, for the other person and for the relationship. Then ask: what would I do now if I really wanted these results? This protects you from the "fool's choice", the belief that you must choose between being honest and being kind. Good preparation lets you be both.
+
+A good purpose is specific. Not "talk to Kiluange about lateness", but "understand why Kiluange is arriving late, explain the impact on the crew, and agree a plan for the next 30 days".
+
+## 2. Separate facts from stories
+
+The ladder of inference, developed by Chris Argyris and popularised by Peter Senge in The Fifth Discipline (1990), shows how we climb from what we observe to what we do, usually in seconds and without noticing.
+
+::: diagram pyramid | The ladder of inference (read from the bottom up)
+Actions: we act on our beliefs
+Beliefs: we adopt beliefs about the person or the world
+Conclusions: we draw conclusions
+Assumptions: we make assumptions based on those meanings
+Meanings: we add meanings from our own experience
+Selected data: we notice only some of what happened
+Observable data: everything a camera could record
+:::
+
+The Crucial Conversations Path to Action describes the same thing: we see and hear, we tell ourselves a story, we feel, and we act. The feeling comes from the story, not directly from the facts. Change the story and you change the feeling.
+
+To prepare, climb down the ladder. Write the facts using the camera test. "He is lazy" is a story. "He arrived after 08:30 on 6 of the last 10 working days" is a fact. Then write your story separately and label it as one possible explanation.
+
+Facts also let you show the impact precisely. Suppose a loading crew of 4 people waits 40 minutes each time their foreman is late. That is 4 x 40 = 160 person-minutes per late day. Over 6 late days it is 6 x 160 = 960 minutes, or 16 working hours lost in two weeks. A number like this is far more persuasive than "you are always late".
+
+::: quiz
+? Which statement is an observable fact?
+- She does not respect the deadline || "Does not respect" is a judgement about her attitude, a story.
+* The report was sent on Tuesday at 15:00, and the deadline was Monday at 17:00 || Correct. A camera or the email system could confirm it.
+- She is overloaded and disorganised || This is an interpretation. It may be true, but it is not a fact.
+:::
+
+## 3. Find your contribution
+
+Ask yourself honestly: did I make my expectations clear? Did I give feedback early, or did I wait until I was angry? Did the person have the tools, training and information they needed? Did I avoid the issue for months?
+
+In hierarchical workplaces, team members rarely tell a manager what the manager did wrong, so you must look for it yourself, and invite it in the conversation: "Is there anything I am doing that makes this harder?"
+
+## 4. Choose time, place and channel
+
+The setting sends a message before you say a word.
+
+- Place: private, never in front of colleagues or clients. Public criticism causes loss of face and closes the conversation. Consider sitting side by side rather than behind your desk.
+- Time: not when you are angry, not just before the person leaves for the day, and with enough time, usually 30 to 45 minutes.
+- Channel: face to face for anything serious. Email and WhatsApp remove tone and invite misreading. Use them to arrange the meeting and to confirm agreements, not for the conversation itself.
+- Notice: give a short, neutral heads-up: "I would like 30 minutes tomorrow to talk about the delivery schedule." Surprise attacks create defensiveness.
+- Language: use the language the person is most comfortable in for serious topics, and the forms of address they expect.
+
+Here is the full preparation process step by step.
+
+::: slides
+SLIDE 1 Purpose | Learn, express, problem-solve; What do I want for me, them and us | Write it in one sentence
+SLIDE 2 Facts | Use the camera test; Dates, numbers, words said; Calculate the impact | Climb down the ladder
+SLIDE 3 Stories | Write my story; Write two other possible stories; Hold them tentatively | My story is one of several
+SLIDE 4 Contribution | My part in the problem; What I will acknowledge | Owning my part invites them to own theirs
+SLIDE 5 Setting | Private place; Calm time with enough minutes; Face to face; Neutral heads-up | The setting is part of the message
+:::
+
+::: quiz
+? A manager wants to discuss a supervisor's repeated errors. Which plan is best?
+- Send a detailed WhatsApp message tonight so the supervisor has time to think || Text removes tone and is easily misread. It works for arranging a meeting, not for the conversation.
+- Raise it at the morning briefing so the team learns from it || Public correction causes loss of face and defensiveness.
+* Book 45 minutes in a private room tomorrow morning with a short neutral heads-up || Correct. Private, calm, enough time and no surprise.
+:::
+
+## Worked example: a foreman on a construction site in Benguela
+
+Adilson is site manager on a housing project in Benguela. His foreman, Kiluange, is respected by the crew but has arrived late on 6 of the last 10 days. Adilson's first story is "he is losing interest". He prepares.
+
+- Purpose: understand the cause, explain the impact, agree a plan for 30 days.
+- Facts: 6 late days, average 40 minutes, crew of 4 waiting, 16 hours lost, concrete pour delayed once.
+- Other stories: transport problems, a family situation, unclear start time since the schedule changed.
+- Contribution: Adilson changed the start time to 07:00 by message and never confirmed it in person. He has said nothing for two weeks.
+- Setting: the site office at 13:00 after lunch, door closed, 45 minutes.
+
+::: case | The late foreman in Benguela
+Adilson is about to start. Kiluange is 15 years older than him and respected by the whole crew.
+? Which opening fits his preparation best?
+- "You are late all the time and the crew is laughing at you." || This is a story and a label. It attacks his identity in front of an imagined audience.
+* "I want to talk about the start time. You have arrived after 07:00 on six days, and I want to understand what is happening." || Correct. It states facts, signals curiosity and shows respect.
+- "Senhor Kiluange, everything is fine, I just wanted to chat." || Hiding the purpose wastes the preparation and confuses the message.
+- "Head office is complaining, so I have no choice but to warn you." || Blaming others avoids ownership and damages trust.
+:::
+
+Kiluange explained that the new 07:00 start clashed with the only bus from his area. They agreed on a 07:30 start for him with a later finish, and the crew briefing moved to 07:30.
+
+## Tool: preparation template
+
+- My purpose in one sentence (learn, express, problem-solve):
+- What I want for myself, for them and for the relationship:
+- Facts (camera test), with dates and numbers:
+- Impact, calculated where possible:
+- My story, and two other possible stories:
+- My contribution:
+- Place, time, length and channel:
+- Heads-up message I will send:
+- My first two sentences:
+
+## Common mistakes
+
+- Choosing a purpose that depends on the other person admitting fault.
+- Presenting a story ("you are careless") as if it were a fact.
+- Preparing a speech instead of preparing to listen.
+- Holding the conversation in public, by message, or when angry.
+
+## Self-check
+
+- What are the three purposes of a learning conversation? (Answer: learn their story, express your views and feelings, problem-solve together.)
+- What is the camera test? (Answer: asking whether a video camera could record it. If yes, it is a fact. If not, it is a story.)
+- Why is WhatsApp a poor channel for a difficult conversation? (Answer: it removes tone and body language and is easily misread.)
+
+## Practical assignment
+
+Take the conversation you chose in Lesson 1 and complete the preparation template. Include at least one impact calculation and two alternative stories.
+
+## Summary
+
+- Set a purpose you can control: learn, express, problem-solve.
+- Climb down the ladder of inference and lead with facts.
+- Own your contribution and choose a private, calm, face-to-face setting.
+=== 20
+SLIDE What you will learn | Open from the third story; Use contrasting to make it safe; Listen with inquiry, paraphrasing and acknowledgment; Respond to emotions | The first minute sets the tone
+SLIDE The third story | How a neutral observer would describe it; Not my story, not theirs; Invite them as a partner | Stone, Patton and Heen
+SLIDE Contrasting | I do not want...; I do want...; Repairs misunderstanding of your intent | From Crucial Conversations
+SLIDE Active listening | Coined by Carl Rogers and Richard Farson; Listen to understand, not to reply; Listen for facts, feelings and identity | Understanding is not agreement
+SLIDE Three listening skills | Inquiry: open questions; Paraphrasing: check understanding; Acknowledgment: recognise feelings | Ask, paraphrase, acknowledge, ask again
+SLIDE Acknowledging emotions | Name the feeling you notice; Do not argue with it; Do not rush to fix it | Naming a feeling helps reduce it
+SLIDE Hierarchy and silence | People may not contradict a superior; Ask specific open questions; Allow silence and follow up later | Make it safe to speak
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- open a difficult conversation from the third story;
+- use contrasting to prevent misunderstanding of your intent;
+- listen actively using inquiry, paraphrasing and acknowledgment;
+- acknowledge emotions without agreeing or arguing.
+
+## Key terms
+
+::: terms
+Third story: a description of the problem that a neutral observer, and both of you, could accept
+Contrasting: a two-part statement saying what you do not intend and what you do intend
+Active listening: listening to understand the speaker's meaning and feelings, and showing that you have understood
+Open question: a question that cannot be answered with yes or no, often starting with what or how
+Paraphrasing: restating in your own words what you heard, to check and show understanding
+Acknowledgment: showing that you recognise the other person's feelings, without necessarily agreeing
+:::
+
+## 1. Open from the third story
+
+Most people open a difficult conversation from inside their own story: "Your team keeps sending wrong invoices." The other person immediately hears an accusation and starts defending. Stone, Patton and Heen recommend starting from the third story: the way a neutral observer, a mediator for example, would describe the situation. It is not your story and not theirs. It describes the difference between you without judging it.
+
+Compare these openings:
+
+- Your story: "Your drivers are always late and you do nothing about it."
+- Third story: "We seem to see the delivery delays differently. I would like to understand how you see them and share how they are affecting the branch."
+
+The third story opening has three parts: describe the difference neutrally, state your purpose, and invite the other person in as a partner in solving it.
+
+::: slides
+SLIDE Step 1: Describe the difference | Neutral words both could accept; No blame or labels | We see this differently
+SLIDE Step 2: State your purpose | Understand, share, solve; Keep it short | I want us to find a way forward
+SLIDE Step 3: Invite them in | Ask for their view first; Make them a partner | How do you see it
+SLIDE Step 4: Contrast if needed | I do not want X; I do want Y | Repair misunderstood intent quickly
+:::
+
+Contrasting, from Crucial Conversations, is useful when the other person may misread your intent. "I am not saying your work is poor. I value what you have built in this team. I do want to talk about the last three stock counts." Contrasting is not an apology and does not weaken the message. It makes it safe to hear the message.
+
+Respect matters in the opening. With a senior colleague, use the forms of address they expect, thank them for their time, and acknowledge their experience before raising the issue. Respect in the form makes clarity in the content easier to accept.
+
+::: quiz
+? Which opening is closest to the third story?
+- "Your team has caused three stock-outs this month." || This is your story. It assigns blame from the first sentence.
+* "We have had three stock-outs this month, and I think we see the causes differently. Can we look at it together?" || Correct. It states a shared fact, names the difference neutrally and invites partnership.
+- "I do not want to complain, but everyone is unhappy with your team." || Vague, blaming and hiding behind "everyone". It is not neutral.
+:::
+
+## 2. Active listening
+
+The term active listening was introduced by the psychologists Carl Rogers and Richard Farson in 1957. The idea is simple: listen to understand the other person's meaning and feelings, and show them that you have understood. Most people listen while preparing their reply. In a difficult conversation, that guarantees an argument.
+
+Stone, Patton and Heen describe three listening skills:
+
+- Inquiry: ask open questions to learn their story. "How did this look from your side?" "What happened next?" "What would help?"
+- Paraphrasing: restate what you heard. "So, if I understand correctly, the supplier delivered late twice and you had no stock to send. Is that right?"
+- Acknowledgment: recognise the feelings behind the words. "It sounds like you felt blamed for something outside your control."
+
+Listen for all three conversations: the facts they see, the feelings behind them, and what the situation means for their identity.
+
+::: diagram cycle | The listening loop
+Ask: an open question about their view
+Listen: attend fully, without interrupting or planning a reply
+Paraphrase: check that you understood correctly
+Acknowledge: name the feeling you notice
+:::
+
+Repeat the loop until the person feels understood. A good test: could you explain their view so well that they would say "yes, exactly"? Only then share your own view.
+
+## 3. Acknowledging emotions
+
+Acknowledging a feeling is not agreeing with a position. You can say "I can see this has been very frustrating for you" and still disagree about what should happen. Research by psychologist Matthew Lieberman suggests that putting feelings into words can reduce their intensity, which is why naming an emotion often calms a conversation.
+
+Useful phrases: "It sounds like...", "I can see that...", "I imagine that was difficult." Avoid "I know exactly how you feel", "calm down" and "you should not feel that way".
+
+In many hierarchical settings, a team member may not express disagreement or emotion to a manager directly. Watch for signs such as short answers, looking down, or "sim, sim" without detail. Ask specific open questions, allow silence, and offer another chance: "Think about it, and we can talk again tomorrow." Some people speak more openly with a trusted colleague present. Ask what they prefer.
+
+::: quiz
+? An employee says: "Nobody told me the procedure changed, and now I am the one being blamed." What is the best acknowledgment?
+- "Calm down, nobody is blaming you." || Telling someone to calm down dismisses the feeling and often increases it.
+- "The procedure was in the email, so that is not true." || This argues the facts before acknowledging the feeling.
+* "It sounds like you feel blamed for something you were not told about." || Correct. It names the feeling and the reason, without agreeing or arguing.
+:::
+
+## Worked example: call quality in a customer service team in Talatona
+
+Teresa leads a customer service team in Talatona. Celeste, usually one of her best agents, has seen her quality score fall from 92% to 74% in two months. Teresa opens from the third story: "Your quality scores have changed a lot since August, and I do not know what is behind it. I would like to understand how you see it."
+
+Celeste answers briefly: "Everything is fine." Teresa paraphrases and waits. After a silence, Celeste says the new system freezes during calls and she has been blamed for long waiting times.
+
+::: case | The agent who says everything is fine
+Celeste now adds, with some anger: "And everyone else is slow too, but you only talk to me."
+? What should Teresa do next?
+- Defend herself by explaining that she will talk to the others later || This turns the focus to Teresa and starts an argument about fairness.
+- Ignore the comment and go back to the quality scores || Ignoring the feeling leaves Celeste feeling unheard, so she stays defensive.
+* Acknowledge the feeling, then ask an open question about the system problem || Correct. "It sounds like you feel singled out. Tell me more about when the system freezes." This keeps her talking.
+- Tell her that comparing herself with others is unprofessional || This labels her and threatens her identity, closing the conversation.
+:::
+
+By listening first, Teresa learned about a system fault affecting the whole team, which IT fixed within a week.
+
+## Tool: opening and listening checklist
+
+- My third story opening (difference, purpose, invitation):
+- A contrasting statement, if I may be misunderstood:
+- Three open questions I will ask:
+- A paraphrase I will use to check understanding:
+- Feelings I expect, and how I will acknowledge them:
+- Respectful forms of address I will use:
+- How I will invite a quiet person to speak:
+
+## Common mistakes
+
+- Opening with your conclusion instead of the third story.
+- Asking "why did you do that?", which sounds like an accusation. Ask "what happened?" instead.
+- Paraphrasing in a way that adds your judgement.
+- Taking silence or "sim" as full agreement.
+
+## Self-check
+
+- What are the three parts of a third story opening? (Answer: describe the difference neutrally, state your purpose, invite them in as a partner.)
+- Name the three listening skills. (Answer: inquiry, paraphrasing and acknowledgment.)
+- Does acknowledging a feeling mean you agree? (Answer: no, it shows you understand the feeling, not that you accept their position.)
+
+## Practical assignment
+
+In two work conversations this week, practise the listening loop: ask an open question, paraphrase, and acknowledge a feeling. Note how the other person responds.
+
+## Summary
+
+- Open from the third story and use contrasting to make it safe.
+- Listen with inquiry, paraphrasing and acknowledgment until they feel understood.
+- Acknowledge emotions without arguing, and make it safe for quiet people to speak.
+=== 20
+SLIDE What you will learn | Give performance feedback with SBI; Make a request with DESC; Say no with Yes-No-Yes; Deliver bad news clearly | Clear about the message, kind to the person
+SLIDE Clear and respectful | Respect in form, clarity in content; Too much softening hides the message; Check that the message was received | Indirect is fine, unclear is not
+SLIDE SBI feedback | Situation; Behaviour; Impact; then ask and agree | Center for Creative Leadership
+SLIDE The DESC script | Describe; Express; Specify; Consequences | From Asserting Yourself by Sharon and Gordon Bower
+SLIDE The positive no | Yes to your interests; No to the request; Yes to an alternative | William Ury
+SLIDE Delivering bad news | Headline first; Reason; Impact on them; What happens next | Do not bury the message
+SLIDE After the message | Pause and allow reactions; Listen and acknowledge; Do not reopen a decision that is final | Silence gives time to absorb
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- give feedback on a performance problem using the SBI model;
+- make a clear request using the DESC script;
+- say no to a request using the positive no;
+- deliver bad news clearly and respectfully.
+
+## Key terms
+
+::: terms
+SBI: a feedback model that describes the Situation, the Behaviour and its Impact
+DESC script: an assertive request structure of Describe, Express, Specify and Consequences
+Positive no: a way of refusing that starts from your interests and offers an alternative
+Headline: the main message, stated in the first one or two sentences
+Euphemism: a soft or vague word used in place of a direct one, which can hide the real message
+:::
+
+## 1. Clear and respectful at the same time
+
+In many workplaces, including in Angola, people value politeness, indirectness and protecting the other person's face. These are strengths. The risk is that a message becomes so soft that it is not received. "Maybe, when you have time, you could look at the reports" may be heard as optional. The person leaves thinking everything is fine, and three months later is surprised by a warning.
+
+The principle is: respectful in form, clear in content. Use respectful address, a private setting and a calm tone, but make sure the core message is stated in plain words and checked: "To be sure I explained it well, what will you change from Monday?"
+
+## 2. Performance problems: SBI
+
+The Situation-Behaviour-Impact model was developed by the Center for Creative Leadership. It keeps feedback factual and specific.
+
+::: diagram steps | SBI feedback, with a request
+Situation: when and where it happened
+Behaviour: what the person did or said, as a camera would record it
+Impact: the effect on results, colleagues or clients
+Ask and agree: invite their view, then agree what will change
+:::
+
+Example: "In yesterday's client meeting in Talatona (situation), you interrupted the client three times while she was explaining her complaint (behaviour). She told me afterwards that she felt we were not listening, and she has delayed her next order (impact). How did the meeting look from your side?"
+
+Behaviour must be observable. "You were rude" is a judgement. "You interrupted her three times" is behaviour. The impact makes the feedback matter. Without it, the person may see the comment as personal preference.
+
+::: quiz
+? Which is a behaviour statement in the SBI sense?
+- You were unprofessional in the meeting || "Unprofessional" is a judgement, not an observable behaviour.
+- You do not care about our clients || This is a story about motive.
+* You arrived 25 minutes after the client meeting started || Correct. It is specific and observable.
+:::
+
+## 3. Making a request: the DESC script
+
+When you need someone to change something, the DESC script, from the assertiveness book Asserting Yourself by Sharon and Gordon Bower, gives a clear four-step structure:
+
+- Describe the situation objectively: "The stock report has reached me after Friday 12:00 on the last four Fridays."
+- Express how it affects you or the work: "I am worried because I cannot place supplier orders before the weekend."
+- Specify what you want: "I need the report by Friday 10:00."
+- Consequences: state the positive result, and if needed the next step: "That way we avoid the Monday stock-outs. If it is not possible, I need to know by Thursday so we can find a solution."
+
+Keep consequences factual and proportionate. A threat ("or you will be fired") turns a request into a fight.
+
+## 4. Saying no: the positive no
+
+William Ury, co-founder of the Harvard Negotiation Project, describes the positive no in his book The Power of a Positive No as a Yes-No-Yes structure:
+
+- Yes: say yes to your own interests and values. "Our priority is to keep supplying you reliably and to protect our cash flow."
+- No: say a clear no to the request. "So we cannot extend your credit to 90 days."
+- Yes: propose an alternative. "What we can offer is 45 days with a 2% discount for payment in 30."
+
+The first yes explains why you are refusing, so the no does not feel personal. The final yes keeps the relationship and the business going.
+
+## 5. Delivering bad news
+
+People hearing bad news want the message first. If you spend five minutes on introduction, anxiety rises and they stop listening. Follow these steps.
+
+::: slides
+SLIDE Step 1: Prepare | Know the facts and the reasons; Know what is final and what is open; Choose a private setting | Never improvise bad news
+SLIDE Step 2: Headline first | State the news in one or two sentences; Use plain words, no euphemisms | Do not bury the message
+SLIDE Step 3: Reason and impact | Explain why, briefly; Explain what it means for them | Be honest about what you do not know
+SLIDE Step 4: Pause and listen | Allow silence; Acknowledge reactions; Answer questions | Do not fill the silence with excuses
+SLIDE Step 5: Next steps | What happens next and when; What support is available; When you will talk again | End with a clear path
+:::
+
+Be clear about what is final. If the decision is made, do not suggest it might change just to reduce discomfort. That creates false hope and loses trust later.
+
+::: quiz
+? A key client asks a sales manager for free delivery on all orders. The company cannot afford it. Which reply follows the positive no?
+- "I will see what I can do," with no follow-up || This avoids the no and leaves the client with false hope.
+* "We want to keep your costs low and our service reliable, so we cannot offer free delivery on all orders. We can offer it on orders above 2 million Kz." || Correct. Yes to interests, a clear no, then a yes to an alternative.
+- "No, that is company policy." || A bare no with no interest or alternative feels personal and closes the discussion.
+:::
+
+## Worked example: cutting overtime at a branch in Lubango
+
+Mário manages a distribution branch in Lubango. Volumes have fallen, and head office has decided to cut overtime from about 40 hours to a maximum of 10 hours per person per month from next month. For a warehouse worker, this is a real loss of income. Mário prepares: the decision is final, the reason is lower volumes, the change starts on the 1st, and the company will review overtime again in three months.
+
+He meets the team in the warehouse office, not by notice on the wall. He opens with the headline: "I have difficult news. From the 1st of next month, overtime will be limited to 10 hours per person per month." He explains the reason in two sentences, then stops and lets people react.
+
+::: case | The overtime meeting in Lubango
+A senior worker, Edvaldo, says angrily: "We have families. Ten hours is nothing. You must ask head office to change this."
+? What is Mário's best response?
+- Promise to ask head office to reverse the decision || The decision is final. A false promise creates hope that will be broken and damages trust.
+- Tell Edvaldo that complaining will not help || This dismisses a real concern and threatens his dignity in front of the team.
+- Say he personally disagrees with the decision but has no choice || Distancing himself undermines the message and the company's credibility.
+* Acknowledge the impact, be clear the decision is final, and explain what is open: the three-month review and fair sharing of the 10 hours || Correct. Honest about what is final, respectful of the feelings, and clear on next steps.
+:::
+
+## Tool: hard message planner
+
+- The core message in one sentence:
+- Model I will use (SBI, DESC, positive no, bad news steps):
+- Facts and observable behaviour:
+- Impact or reason:
+- What is final, and what is open for discussion:
+- Alternative or next step I can offer:
+- How I will check the message was understood:
+
+## Common mistakes
+
+- Softening the message so much that the person does not hear it.
+- Describing judgements ("lazy", "rude") instead of behaviour.
+- Saying no without explaining your interests or offering any alternative.
+- Burying bad news after a long introduction, or suggesting a final decision may change.
+
+## Self-check
+
+- What do the letters SBI stand for? (Answer: Situation, Behaviour, Impact.)
+- What are the three parts of a positive no? (Answer: yes to your interests, no to the request, yes to an alternative.)
+- When delivering bad news, what comes first? (Answer: the headline, the main message in one or two sentences.)
+
+## Practical assignment
+
+Write one piece of SBI feedback and one positive no for real situations at your work. Read them aloud, remove any judgements or euphemisms, and use at least one of them this week.
+
+## Summary
+
+- Be respectful in form and clear in content, and check the message was received.
+- Use SBI for performance feedback, DESC for requests and Yes-No-Yes for refusals.
+- Deliver bad news headline first, then reasons, a pause and next steps.
+=== 20
+SLIDE What you will learn | Recognise an emotional hijack; Calm yourself in the moment; Handle anger and tears; Choose a conflict style; Take a useful break | Stay in control of yourself first
+SLIDE The amygdala hijack | Term popularised by Daniel Goleman; Threat response overrides clear thinking; Signs: heat, fast heart, raised voice | Notice it early
+SLIDE Calming yourself | Slow breathing with a longer exhale; STOP: stop, take a breath, observe, proceed; Notice your story | You cannot calm others if you are not calm
+SLIDE De-escalation steps | Lower your voice and pace; Listen and acknowledge; Find a point of agreement; Refocus on the shared purpose | Never say calm down
+SLIDE Anger and tears | Anger: do not match it, acknowledge it; Tears: pause, offer time, do not abandon the topic | Strong emotion is information
+SLIDE Thomas-Kilmann modes | Competing; Collaborating; Compromising; Avoiding; Accommodating | Choose the mode, do not default to it
+SLIDE Taking a break | Name the break and the reason; Agree when you will return; Return within a day or two | A break is not an escape
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- recognise the signs of an emotional hijack in yourself and others;
+- use simple techniques to stay calm during a difficult conversation;
+- respond appropriately to anger, tears and silence;
+- choose a conflict-handling mode using the Thomas-Kilmann model, and take a constructive break.
+
+## Key terms
+
+::: terms
+Amygdala hijack: a sudden emotional reaction in which the brain's threat response overrides calm thinking
+De-escalation: actions that reduce emotional intensity so that a conversation can continue
+Assertiveness: the degree to which you try to satisfy your own concerns
+Cooperativeness: the degree to which you try to satisfy the other person's concerns
+Constructive break: a short, agreed pause with a clear time to return
+:::
+
+## 1. What happens when emotions take over
+
+The psychologist Daniel Goleman, in Emotional Intelligence (1995), popularised the term amygdala hijack. The amygdala is a part of the brain that reacts to threats. When we feel attacked, criticised or humiliated, it can trigger a fight, flight or freeze response before the thinking part of the brain has time to respond. Heart rate rises, the voice gets louder or very quiet, and we say things we later regret.
+
+A difficult conversation feels like a threat because identity is at stake. Your first job is not to manage the other person but to notice your own signals: heat in the face, a tight chest, a fast heartbeat, the urge to interrupt or to leave.
+
+Simple techniques help you stay in control:
+
+- Breathe slowly, making each exhale longer than the inhale. Some people use box breathing: breathe in for 4 counts, hold for 4, breathe out for 4, hold for 4.
+- Use STOP: Stop, Take a breath, Observe what you feel and what is happening, Proceed with intention.
+- Notice your story (Lesson 2). "He is trying to humiliate me" is a story. Ask what else might be true.
+- Ground your identity: "I can handle criticism and still be a good manager."
+
+::: quiz
+? During a meeting, a supervisor feels his face getting hot as a colleague criticises his team. What should he do first?
+- Respond immediately so the criticism does not go unanswered || Responding during a hijack usually leads to words you regret.
+* Slow his breathing and notice the story he is telling himself before he answers || Correct. Calming the body and checking the story restores clear thinking.
+- Leave the room without saying anything || Leaving without explanation looks like avoidance and damages trust.
+:::
+
+## 2. De-escalation: when the other person is upset
+
+When the other person becomes angry, the natural reaction is to defend yourself or match their volume. Both make it worse. Follow these steps instead.
+
+::: slides
+SLIDE Step 1: Stay calm | Lower your voice and slow your pace; Relaxed, open posture | Your calm is contagious
+SLIDE Step 2: Listen | Let them speak without interrupting; Do not argue the facts yet | People calm down when they feel heard
+SLIDE Step 3: Acknowledge | Name the emotion and its cause; I can see this matters a lot to you | Acknowledging is not agreeing
+SLIDE Step 4: Find agreement | Agree with what is true or shared; We both want the delivery to work | Common ground lowers the temperature
+SLIDE Step 5: Refocus | Return to the shared purpose; Offer a choice or a break | Give them back some control
+:::
+
+Anger. Do not say "calm down", which suggests the feeling is not valid. Do not take personal attacks personally, but do set a limit on abuse: "I want to hear your concerns. I cannot continue if we shout at each other. Shall we take ten minutes?" If there is any threat of violence, end the meeting, ensure safety and involve HR or security.
+
+Tears. Tears do not mean the conversation has failed. Pause, offer water or tissues, and say "Take your time." Ask whether they would like a few minutes. Do not rush to say "it is not so serious" if it is, and do not drop the topic completely. Return to it gently, today or at an agreed time.
+
+Silence. In a hierarchical setting, silence may mean disagreement that cannot be said to a superior, or simply time to think. Wait. Then ask an open question, or offer to continue later.
+
+## 3. Choosing how to handle the conflict
+
+The Thomas-Kilmann Conflict Mode Instrument, developed by Kenneth Thomas and Ralph Kilmann in the 1970s, describes five ways of handling conflict, based on two dimensions: assertiveness and cooperativeness.
+
+::: diagram matrix | Thomas-Kilmann conflict modes | Cooperativeness (low → high) | Assertiveness (low → high)
+Competing: high assertiveness, low cooperativeness – use when a quick, firm decision is needed, such as safety
+Collaborating: high assertiveness, high cooperativeness – use when both sets of concerns are too important to compromise
+Avoiding: low assertiveness, low cooperativeness – use when the issue is minor or emotions need time to cool
+Accommodating: low assertiveness, high cooperativeness – use when the issue matters more to them or you are wrong
+:::
+
+The fifth mode, compromising, sits in the middle: each side gives up part of what it wants. It is useful when time is short and the stakes are moderate.
+
+No mode is always right. The problem is defaulting to one. Many managers in hierarchical organisations default to competing ("because I said so") with juniors and to accommodating with superiors. Choose deliberately based on the issue.
+
+::: quiz
+? A forklift driver refuses to wear his seatbelt because it is uncomfortable. Which mode fits best?
+- Accommodating, to keep him motivated || Safety rules cannot be dropped to keep someone happy.
+- Avoiding, because he will learn eventually || Avoiding a serious safety risk can lead to injury.
+* Competing on the rule, while listening to the comfort issue || Correct. The rule is not negotiable, but the comfort problem can be solved together.
+:::
+
+## 4. Taking a constructive break
+
+A break is useful when one of you is too emotional to think clearly. Name it and agree when you will return: "I think we both need some time. Let us stop here and meet again tomorrow at 10:00." A break with no return time feels like avoidance or punishment. Return as agreed.
+
+## Worked example: a shift change at a port operator in Lobito
+
+Nzinga supervises crane operators at a logistics company at Lobito port. She tells Joaquim, an operator with ten years' experience, that he will move to night shifts for two months to cover a vacancy. Joaquim stands up and shouts: "Always me! You favour the young ones."
+
+Nzinga notices her heart racing. She breathes out slowly and stays seated. She says in a low voice: "I can see this feels unfair to you, Joaquim. Tell me why." He explains that his wife works nights at the hospital and someone must stay with their children.
+
+::: case | The night-shift move in Lobito
+Joaquim is calmer but still upset. The vacancy must be covered, and two other operators could do it.
+? What should Nzinga do now?
+- Insist on the decision, since she is the supervisor || This is competing when collaboration is possible. It ignores important new information.
+- Cancel the change and say she will find another solution alone || This accommodates fully but leaves the vacancy unsolved and teaches that shouting works.
+* Acknowledge the childcare problem, explain the coverage need and explore options together, such as a rotation || Correct. Both concerns matter, so collaborating fits best.
+- Tell him to calm down and continue tomorrow || "Calm down" dismisses him, and delaying without a reason wastes the progress made.
+:::
+
+They agreed a rotation: three operators would each cover the night shift for three weeks, and Joaquim would take his turn after his wife's schedule changed.
+
+## Tool: in-the-moment checklist
+
+- My warning signs today:
+- Breathe: longer exhale, or box breathing:
+- STOP: stop, take a breath, observe, proceed:
+- What story am I telling myself, and what else might be true:
+- Acknowledge their feeling in one sentence:
+- Point of agreement I can name:
+- Conflict mode I am choosing, and why:
+- If needed, break and return time:
+
+## Common mistakes
+
+- Matching the other person's volume or tone.
+- Saying "calm down" or "do not cry".
+- Defaulting to the same conflict mode in every situation.
+- Taking a break without agreeing when to return.
+
+## Self-check
+
+- What is an amygdala hijack? (Answer: a sudden emotional reaction where the brain's threat response overrides clear thinking.)
+- What are the two dimensions of the Thomas-Kilmann model? (Answer: assertiveness and cooperativeness.)
+- What makes a break constructive? (Answer: it is named, agreed and has a clear time to return.)
+
+## Practical assignment
+
+Write down your personal warning signs of an emotional hijack. In your next tense conversation, use STOP once and note what changed. Then identify which conflict mode you used most this week.
+
+## Summary
+
+- Notice your own hijack signs and calm yourself before trying to calm others.
+- De-escalate by staying calm, listening, acknowledging, finding agreement and refocusing.
+- Choose a conflict mode deliberately and use breaks with a clear return time.
+=== 20
+SLIDE What you will learn | Solve problems using interests, not positions; Agree clear actions; Document the conversation; Know when to involve HR | The conversation is not finished until the follow-up is done
+SLIDE Principled negotiation | Separate people from the problem; Focus on interests, not positions; Invent options for mutual gain; Use objective criteria | Fisher and Ury, Getting to Yes (1981)
+SLIDE Positions and interests | Position: what someone says they want; Interest: why they want it; Ask why and what for | Interests open up options
+SLIDE Agreeing actions | Who does what by when; How we will know it worked; Ask them to summarise | A polite yes is not always agreement
+SLIDE Documenting | Summary within 24 hours; Facts, actions, dates; Neutral language | If it is not written, it did not happen
+SLIDE The follow-up cycle | Agree; Document; Check in; Review | Recognise progress or escalate fairly
+SLIDE When to involve HR | Harassment, discrimination or threats; Possible misconduct or safety breaches; Repeated failure after documented support; Any disciplinary step | Follow the formal procedure
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- solve problems jointly by focusing on interests rather than positions;
+- agree specific actions with owners and deadlines, and check real agreement;
+- document a difficult conversation in a factual follow-up note;
+- decide when a situation must be referred to HR.
+
+## Key terms
+
+::: terms
+Position: what a person says they want or demand
+Interest: the underlying need, concern or goal behind a position
+Objective criteria: fair standards independent of either side's will, such as policy, market price or past practice
+Follow-up note: a short written summary of what was discussed and agreed, shared after the conversation
+Performance improvement plan: a formal, documented plan with goals, support and review dates for an employee whose performance is below standard
+:::
+
+## 1. Solve the problem together
+
+Once both sides feel understood, move to problem-solving. Roger Fisher and William Ury, in Getting to Yes (1981), describe principled negotiation, based on four principles:
+
+- Separate the people from the problem: be soft on the person, firm on the issue.
+- Focus on interests, not positions.
+- Invent options for mutual gain before deciding.
+- Insist on objective criteria to choose between options.
+
+The difference between positions and interests is the key. A position is what someone says they want: "I need the delivery van every morning." The interest is why: "My clients in Cacuaco close at midday." Two positions can conflict while the interests behind them can both be met. To find interests, ask "why is that important to you?" or "what would that give you?"
+
+::: slides
+SLIDE Step 1: Define the problem | Agree a neutral statement of the problem; Not whose fault it is | Use the third story
+SLIDE Step 2: List interests | Their interests; Your interests; Shared interests | Ask why is that important
+SLIDE Step 3: Generate options | Brainstorm several options; Do not judge while generating | More options, better agreements
+SLIDE Step 4: Apply criteria | Policy, cost, fairness, past practice; Choose the option that meets most interests | Fair criteria avoid a battle of wills
+:::
+
+::: quiz
+? A supervisor insists: "I will not work on Saturdays." What is the best next question?
+- "Do you understand that Saturday work is required?" || This repeats the company's position and invites a power struggle.
+* "What makes Saturdays difficult for you?" || Correct. It looks for the interest behind the position, which opens up options.
+- "Would you prefer a written warning?" || A threat ends problem-solving before it starts.
+:::
+
+## 2. Agree clear actions
+
+Many good conversations end with "OK, let us improve" and nothing changes. Close with specific actions: who will do what, by when, and how you will both know it worked. Use SMART where possible: specific, measurable, achievable, relevant, time-bound. "Improve the stock report" becomes "Send the stock report by Friday 10:00 every week, starting this Friday, with zero missing SKUs."
+
+Check real agreement. In a hierarchical culture, "sim, chefe" may mean respect, not commitment. Ask the person to summarise the agreement in their own words, and ask: "What could stop this from working?" Their answer often reveals the real obstacles.
+
+## 3. Document and follow up
+
+Send a short follow-up note within 24 hours. Keep it factual and neutral: the date, the topic, the main points, the agreed actions with owners and dates, and the next meeting. Invite corrections: "Please let me know if I have missed anything." This creates a shared record, prevents different memories later, and shows that the agreement is serious.
+
+For performance issues, consistent notes matter. If the problem continues and becomes formal, HR will need evidence that the person was told clearly, supported and given time to improve.
+
+::: diagram cycle | The follow-up cycle
+Agree: specific actions, owners and dates
+Document: follow-up note within 24 hours
+Check in: short meetings at agreed dates
+Review: recognise progress, adjust, or escalate
+:::
+
+At each check-in, recognise progress sincerely. If the agreement is not kept, return to the conversation using SBI, and if needed move to a formal step.
+
+## 4. When to involve HR
+
+Most difficult conversations are part of normal management. But some situations must go to HR, and early involvement protects everyone:
+
+- harassment, discrimination, threats or violence;
+- possible misconduct, such as theft, fraud or serious safety breaches;
+- health problems or personal crises beyond your role to handle;
+- repeated failure to improve after documented conversations and support;
+- any disciplinary action, change of contract or possible dismissal.
+
+In Angola, disciplinary procedures are governed by the General Labour Law (Lei Geral do Trabalho), which sets formal steps an employer must follow. Do not start a disciplinary process, issue warnings or make promises about the outcome on your own. Ask HR or legal advisers which procedure and deadlines apply, and keep your notes ready.
+
+::: quiz
+? During a performance conversation, an employee says a colleague has been sending her offensive messages. What should the manager do?
+- Tell her to sort it out directly with her colleague || Possible harassment must not be left to the employee to resolve alone.
+- Promise to keep it secret and do nothing yet || A manager cannot promise secrecy when there may be harassment, and inaction leaves her at risk.
+* Listen, thank her for raising it, and refer it promptly to HR || Correct. Harassment is a clear HR matter, and early referral protects her and the company.
+:::
+
+## Worked example: a missed agreement at a factory in Viana
+
+Luzia manages production at a food processing plant in Viana. After a difficult conversation, she agreed with a line supervisor, Paulo, that line changeover time would fall from 50 to 35 minutes within four weeks, with extra training from the maintenance team. She sent a follow-up note the same day. At the two-week check-in, changeover time is still 48 minutes, and Paulo says the training never happened.
+
+::: case | The missed changeover target in Viana
+Luzia checks and confirms that maintenance did not deliver the training.
+? What should Luzia do?
+- Refer Paulo to HR for a formal warning because the target was missed || The company did not deliver its part of the agreement, so formal action would be unfair.
+* Acknowledge the missed training, arrange it with a date and adjust the timeline in an updated note || Correct. Both sides had actions, and a fair review adjusts the plan when the company's part was not delivered.
+- Drop the target since circumstances have changed || The goal is still valid. Dropping it removes accountability.
+- Tell Paulo to find another way to reach 35 minutes by the original date || This ignores the agreed support and damages trust.
+:::
+
+The training took place the following week. Four weeks later, changeover time was 36 minutes, and Luzia recognised Paulo's progress at the team meeting.
+
+## Tool: agreement and follow-up template
+
+- Problem, stated neutrally:
+- Their interests and my interests:
+- Options considered:
+- Criteria used to choose:
+- Agreed actions (who, what, by when, how we will know):
+- Their summary in their own words:
+- Possible obstacles:
+- Follow-up note sent on:
+- Check-in dates:
+- HR involvement needed? Why:
+
+## Common mistakes
+
+- Arguing over positions instead of exploring interests.
+- Ending with vague promises and no dates.
+- Not sending a follow-up note, so memories differ later.
+- Starting disciplinary action alone, or involving HR too late in serious cases.
+
+## Self-check
+
+- What are the four principles of principled negotiation? (Answer: separate people from the problem, focus on interests, invent options for mutual gain, use objective criteria.)
+- What should a follow-up note contain? (Answer: date, topic, main points, actions with owners and dates, next meeting, and an invitation to correct it.)
+- Name two situations that must go to HR. (Answer: for example, harassment and any disciplinary action.)
+
+## Practical assignment
+
+After your next difficult conversation, use the agreement template and send a follow-up note within 24 hours. Put the check-in dates in both calendars.
+
+## Summary
+
+- Solve problems by focusing on interests, generating options and using fair criteria.
+- Agree specific actions, check real agreement and document them within 24 hours.
+- Follow up, recognise progress, and involve HR early in serious or formal cases.

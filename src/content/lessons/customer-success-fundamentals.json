@@ -1,0 +1,443 @@
+{
+ "slug": "customer-success-fundamentals",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what customer success is and how it differs from customer service and sales;\n- describe the five stages of the B2B customer lifecycle;\n- calculate churn rate, customer retention rate and gross revenue retention;\n- estimate customer lifetime value and use it to justify retention work.\n\n## Key terms\n\n::: terms\nCustomer success: a proactive function that makes sure customers achieve the business results they bought for, so that they renew and grow\nChurn: customers or revenue lost when accounts cancel, do not renew or reduce their contract\nCustomer retention rate (CRR): the percentage of customers at the start of a period who are still customers at the end\nGross revenue retention (GRR): the share of starting recurring revenue kept after churn and downgrades, excluding any growth\nCustomer lifetime value (CLV): the total gross profit a customer is expected to generate over the whole relationship\nDesired outcome: the result the customer needs, delivered in the way they expect to experience it\n:::\n\n## 1. What customer success is\n\nIn a B2B company the first sale is only the start. A bank selling a cash-management service to companies, a telecom provider connecting a firm's branches, a software company licensing an ERP, or a distributor supplying a supermarket chain: each earns most of its profit over years of renewals and repeat orders.\n\nCustomer success (CS) makes sure those customers get the result they paid for. It differs from two neighbouring functions:\n\n- Customer service is reactive: it solves problems when the customer makes contact, and is measured on speed and quality of resolution.\n- Sales wins new customers and new contracts, and is measured on bookings.\n- Customer success is proactive: it monitors each account, acts before problems grow, and links the customer's use of your product to their business goals. It is measured on retention, expansion and customer outcomes.\n\nA useful way to think about the customer's goal is the desired outcome: what they must achieve (for example, \"reduce stock-outs in our 12 stores\") plus how they expect to get there (\"with weekly deliveries and one contact person\"). Deliver the result in a painful way and the customer may still leave.\n\nThe B2B lifecycle has five stages, and CS owns or supports each one:\n\n::: diagram cycle | The B2B customer lifecycle\nOnboard: set up the account and agree success criteria\nAdopt: users actually use the product or service\nRealise value: the customer sees measurable business results\nRenew: the contract or supply agreement is extended\nExpand and advocate: the customer buys more and recommends you\n:::\n\n::: quiz\n? A company client calls its bank because a transfer failed, and the relationship manager fixes it within an hour. Which function did this work?\n* Customer service, because it was a reactive fix to a problem the client raised || Correct. Fast resolution is service. Success would mean spotting the risk earlier or linking the service to the client's goals.\n- Customer success, because the client ended up satisfied || Satisfaction after a fix is good service. Customer success is proactive work towards outcomes.\n- Sales, because it protected the bank's revenue || Sales wins new business. It does not usually fix operational problems.\n:::\n\n## 2. Measuring retention: the core formulas\n\nYou cannot manage retention without measuring it. Calculate these four numbers for the same period, usually a quarter or a year:\n\n::: slides\nSLIDE 1 Logo churn rate | Customers lost in the period ÷ customers at the start × 100 | Counts accounts, not money\nSLIDE 2 Customer retention rate | CRR = (E − N) ÷ S × 100 | E end, N new, S start customers\nSLIDE 3 Revenue churn | Recurring revenue lost from cancellations and downgrades ÷ starting recurring revenue × 100 | Shows the money impact\nSLIDE 4 Gross revenue retention | GRR = (starting revenue − churn − downgrades) ÷ starting revenue × 100 | Never above 100%\n:::\n\nNew customers are excluded from CRR. If you include them, strong sales can hide the fact that you are losing existing accounts. Track logo and revenue measures together: losing one large account may be 2% of your logos but 20% of your revenue.\n\nThe business case is strong. Frederick Reichheld and W. Earl Sasser (1990) studied service companies and found that, in the industries they examined, reducing customer defections by 5% raised profits by 25% to 85%, because loyal customers buy more over time, cost less to serve and refer others.\n\n::: quiz\n? A company had 80 customers on 1 January, won 15 new customers during the year and had 85 on 31 December. What is its customer retention rate?\n- 106% || This divides end customers by start customers and ignores the new customers.\n- 94% || Check the formula again: (85 − 15) ÷ 80.\n* 87.5% || Correct. (85 − 15) ÷ 80 × 100 = 87.5%. It lost 10 of its original 80 customers.\n:::\n\n## 3. Customer lifetime value\n\nCustomer lifetime value (CLV) tells you what a customer is worth over the whole relationship. A simple B2B formula is:\n\nCLV = average annual revenue per customer × gross margin % × expected lifetime in years\n\nExpected lifetime can be estimated as 1 ÷ annual churn rate. If 20% of customers leave each year, the average customer stays about 1 ÷ 0.20 = 5 years.\n\nCLV supports decisions: how much you can spend on onboarding, whether a dedicated account manager is justified, and what one point of churn is worth. Because lifetime is 1 ÷ churn, cutting churn from 20% to 10% doubles expected lifetime from 5 to 10 years, and roughly doubles CLV.\n\n## Worked example: a business software reseller in Luanda\n\nA company in Luanda resells and supports accounting software for small and medium businesses. Each client pays an average of 1,800,000 Kz per year for licences and support, and gross margin is 40%. Last year it started with 120 clients, won 30 and ended with 126.\n\n- CRR = (126 − 30) ÷ 120 × 100 = 80%. It lost 24 clients, so logo churn = 24 ÷ 120 = 20%.\n- Expected lifetime = 1 ÷ 0.20 = 5 years.\n- CLV = 1,800,000 × 0.40 × 5 = 3,600,000 Kz of gross profit per client.\n\nIf churn fell to 15%, lifetime would rise to about 6.7 years and CLV to about 4,800,000 Kz. Across 120 clients that is roughly 144 million Kz of extra lifetime gross profit, far more than the cost of one customer success manager.\n\n::: case | Where to start at the software reseller\nThe general manager, Helena, asks the new CS lead, Jorge, to reduce churn. Exit notes show that most of the 24 lost clients stopped using the software within six months of buying it.\n? What should Jorge do first?\n- Offer every client a 10% discount at renewal || A blanket discount cuts margin on every account and does not fix the cause, which is low early usage.\n* Review how recent clients were onboarded and add clear success criteria and usage checks in the first 90 days || Correct. The data points to failure early in the lifecycle, so fixing onboarding and adoption attacks the real cause.\n- Ask sales to win 30 more clients to replace the lost ones || New sales do not stop the leak, and replacing customers usually costs more than keeping them.\n- Wait for the next renewal season and call clients then || By then most at-risk clients have already decided to leave.\n:::\n\n## Tool: retention baseline sheet\n\n- Period measured:\n- Customers at start (S), new (N) and end (E):\n- Logo churn % and CRR %:\n- Starting recurring revenue, revenue lost to churn, revenue lost to downgrades:\n- Revenue churn % and GRR %:\n- Average annual revenue per customer and gross margin %:\n- Expected lifetime (1 ÷ churn) and CLV:\n- Top three reasons customers left:\n\n## Common mistakes\n\n- Treating customer success as a renamed support desk that only reacts to tickets.\n- Measuring only logo churn, so the loss of one large account goes unnoticed.\n- Including new customers in the retention rate, which hides losses.\n- Waiting until the renewal date to discuss value with the customer.\n\n## Self-check\n\n- What is the key difference between customer service and customer success? (Answer: service reacts to problems the customer raises; success works proactively so the customer reaches their business outcomes.)\n- A firm starts with 50 customers, wins 10 and ends with 52. What is its CRR? (Answer: (52 − 10) ÷ 50 × 100 = 84%.)\n- If annual churn is 25%, what is the expected customer lifetime? (Answer: 1 ÷ 0.25 = 4 years.)\n\n## Practical assignment\n\nUsing last year's data for your portfolio or team, complete the retention baseline sheet. Calculate logo churn, CRR, GRR and CLV, and list the three most common reasons customers left. Share the results with your manager.\n\n## Summary\n\n- Customer success is proactive: it makes sure B2B customers achieve their desired outcomes so that they renew and grow.\n- Measure retention with logo churn, CRR, revenue churn and GRR, and always exclude new customers and growth.\n- CLV = annual revenue × gross margin × expected lifetime, so lower churn directly increases lifetime value.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain why time-to-value predicts retention and calculate it;\n- run a sales-to-customer-success handover using a checklist;\n- plan and lead a kickoff meeting with a new customer;\n- write a phased onboarding plan with SMART success criteria.\n\n## Key terms\n\n::: terms\nOnboarding: the structured period after signing in which the customer is set up, trained and guided to first results\nTime-to-value (TTV): the time between contract start and the moment the customer first achieves a result they care about\nFirst value milestone: the first specific, measurable result agreed with the customer\nSuccess criteria: measurable statements of what the customer must achieve for the project to count as a success\nKickoff meeting: the first formal meeting with the customer team to confirm goals, roles, plan and dates\nExecutive sponsor: the senior customer manager who owns the business goal and can remove obstacles\n:::\n\n## 1. Why the first 90 days matter\n\nWhen a B2B customer signs, someone has promised their own management that the purchase will solve a problem. Until a result appears, the purchase is only a cost and a risk. If results are slow, users drift back to old habits, such as the old spreadsheet, the old supplier or the manual process, and the sponsor starts to doubt the decision. Many accounts that churn at renewal were really lost during onboarding.\n\nThat is why customer success teams track time-to-value:\n\nTTV (days) = date the first value milestone is reached − contract start date\n\nIf three new corporate clients reached their first value milestone after 35, 60 and 85 days, the average TTV is (35 + 60 + 85) ÷ 3 = 60 days. Track TTV by segment and product, and set a target. You have two levers: shorten the time to the first result, and make that result visible to the people who decide on renewal.\n\n::: quiz\n? A supermarket chain has bought a demand-planning service from a distributor. Which is the best first value milestone?\n- The supply contract is signed by both parties || Signing is the start of onboarding, not a result for the customer.\n- All buyers have completed the training || Training is an activity. It does not prove a business result.\n* Stock-outs on the top 50 products fall below the agreed target for one full month || Correct. It is specific, measurable and tied to the reason the customer bought.\n:::\n\n## 2. Handover and kickoff\n\nSales knows why the customer bought. If that knowledge stays in the salesperson's head, the customer is asked the same questions twice and promises get lost. Run a formal sales-to-CS handover before you contact the customer. Capture:\n\n- the business goals and the pain that triggered the purchase;\n- exactly what was promised: scope, dates, prices, service levels and special conditions;\n- the stakeholders: executive sponsor, day-to-day lead, end users, and anyone who opposed the purchase;\n- the risks: tight deadlines, limited IT capacity, a competitor that was also considered.\n\nThen hold a kickoff meeting with the customer team, following this agenda:\n\n::: slides\nSLIDE 1 Introductions and roles | Who is who on both sides; Name the executive sponsor and the day-to-day lead | No sponsor means no escalation path\nSLIDE 2 Confirm goals | Restate why they bought; Agree two or three success criteria | Use their words and numbers\nSLIDE 3 Review the plan | Phases, milestones and dates; What the customer must provide and when | Onboarding is a joint project\nSLIDE 4 Agree ways of working | Meeting rhythm, channels and escalation route; A weekly 30-minute check-in suits most accounts | Decide this now, not during a crisis\nSLIDE 5 Next steps | Actions, owners and dates | Send the written summary within 24 hours\n:::\n\n## 3. The onboarding plan and success criteria\n\nOnboarding is a joint project, not something you do to the customer. Write a phased plan that shows what each side does and by when:\n\n::: diagram steps | A phased onboarding plan\nHandover: sales passes goals, promises and stakeholders to CS\nKickoff: confirm goals, roles, success criteria and dates\nSet-up: configure, integrate and load data, with customer inputs on time\nTraining and adoption: train users by role and check real usage\nFirst value milestone: confirm the agreed result with the sponsor\nTransition: move to the ongoing success plan and regular reviews\n:::\n\nSuccess criteria should be SMART: Specific, Measurable, Achievable, Relevant and Time-bound, the acronym George Doran published in 1981 for management objectives. Compare \"improve our reporting\" with \"by 31 March, the finance team produces the monthly sales report from the new system within three working days of month end, without manual spreadsheets\". Agree two or three criteria, in the customer's words, and get the sponsor to confirm them in writing.\n\n::: quiz\n? Which success criterion is SMART?\n- The client will be happier with our deliveries || Happiness is not defined or measurable, and there is no date.\n* Late deliveries fall below 10% of trips by 30 June, measured from tracking reports || Correct. It is specific, measurable, realistic, relevant and has a deadline.\n- Use the new system as much as possible this year || \"As much as possible\" cannot be measured and is not a business result.\n:::\n\n## Worked example: a telecom provider in Luanda\n\nThe enterprise unit of a telecom provider in Luanda sold a managed network and vehicle-tracking service to a logistics company with eight depots and 120 trucks, for 48,000,000 Kz a year. In the past, new enterprise clients waited an average of 75 days for any result. The account manager, Carla, changed the approach:\n\n- Handover: the salesperson explained that the client bought tracking to cut late deliveries to supermarkets, currently 18% of trips.\n- Kickoff (day 5): the operations director agreed to be executive sponsor. Success criterion: late deliveries below 10% of trips by day 60.\n- Set-up (days 5–25): devices were installed depot by depot, starting with the busiest depot in Viana, so results appeared there first.\n- Training (days 20–35): dispatchers learned the live map and late-trip alerts, and Carla checked log-ins weekly.\n- First value milestone (day 38): the Viana depot recorded 9% late trips for two weeks running.\n\nTTV fell from 75 to 38 days, and the sponsor presented the Viana result to his board.\n\n::: case | The missing data at the Lobito depot\nOn day 30 the Lobito depot still has no devices, because the client's IT team has not sent the vehicle list. The milestone date is close and the depot manager tells colleagues that \"the system does not work\".\n? What should Carla do?\n- Wait quietly, because the delay is the client's fault || Silence lets a false story grow, and the sponsor may blame the provider.\n- Install devices on any available trucks without the list || Installing without accurate data creates reporting errors and rework later.\n* Escalate the blocked action to the sponsor, showing the impact on the milestone and asking for a date for the list || Correct. The sponsor owns the outcome and can remove internal blockers. Facts and dates keep the plan on track.\n- Move the milestone to day 90 without telling anyone || Changing goals silently destroys trust and hides the risk.\n:::\n\n## Tool: onboarding plan template\n\n- Customer and contract start date:\n- Executive sponsor and day-to-day lead (both sides):\n- Business goals, in the customer's words:\n- Success criteria (two or three, SMART):\n- First value milestone and target date:\n- Phases with owners and dates (handover, kickoff, set-up, training, first value, transition):\n- Customer inputs required and due dates:\n- Risks and mitigation:\n- Weekly check-in time and escalation route:\n\n## Common mistakes\n\n- Starting without a handover, so the customer repeats everything and promises are lost.\n- Defining success as \"training completed\" or \"system live\" instead of a business result.\n- Running onboarding without an executive sponsor, so blockers cannot be removed.\n- Training everyone at once instead of by role, in the order that value will appear.\n\n## Self-check\n\n- How do you calculate TTV? (Answer: the date the first value milestone is reached minus the contract start date.)\n- Name four things a sales-to-CS handover should capture. (Answer: goals and pains, what was promised, stakeholders, risks.)\n- Rewrite \"improve delivery performance\" as a SMART criterion. (Answer: for example, \"late deliveries below 10% of trips by 30 June, measured from tracking reports\".)\n\n## Practical assignment\n\nChoose one customer who signed in the last six months. Calculate their TTV, or estimate it if no milestone was set. Then complete the onboarding plan template for your next new customer and review the success criteria with their sponsor.\n\n## Summary\n\n- Value delayed is risk created: measure time-to-value and work to shorten it.\n- A structured handover and a kickoff with a named executive sponsor set onboarding up to succeed.\n- Use a phased, joint plan with two or three SMART success criteria and a clear first value milestone.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the difference between leading and lagging indicators of churn;\n- choose signals for the main health dimensions: usage, outcomes, relationship and support;\n- build and calculate a simple weighted health score;\n- set thresholds and use the score, with account value, to prioritise your time.\n\n## Key terms\n\n::: terms\nHealth score: a single number or colour that summarises how likely an account is to renew and grow\nLeading indicator: a signal that changes before the outcome, such as falling usage before a cancellation\nLagging indicator: a signal that shows an outcome after it has happened, such as churn or a lost renewal\nAdoption rate: the share of licensed or expected users, sites or products actually in use\nWeighting: the importance given to each dimension in the total score\nCalibration: checking the score against what actually happened to accounts and adjusting it\n:::\n\n## 1. Why a health score\n\nAn account manager with 40 accounts cannot study every account in depth every week. A health score turns many signals into one view, so you can see which accounts need attention now.\n\nIts value comes from leading indicators. Churn and lost renewals are lagging: when you see them it is too late. Falling usage, a champion who stops replying or rising complaints usually appear months earlier. Group signals into four dimensions, and add a fifth if useful:\n\n- Usage: is the customer using what they bought? Examples: adoption rate (active users ÷ licensed users), log-in frequency, order frequency against the agreed pattern.\n- Outcomes: are they reaching their success criteria? Examples: progress against the success plan, measured business results.\n- Relationship: do you have access and goodwill? Examples: an active executive sponsor and champion, attendance at reviews, survey scores.\n- Support: what is their experience of problems? Examples: number and severity of tickets, open escalations, repeat issues.\n- Commercial (optional): payment delays, requests for price cuts, downgrades.\n\nChoose signals you can measure every month from real data. A score built on guesses will not be trusted.\n\n::: quiz\n? Which of these is a leading indicator of churn?\n* Active users at a client fell from 45 to 28 over two months || Correct. Falling usage appears before a cancellation and gives you time to act.\n- The client did not renew its contract last month || This is the outcome itself, a lagging indicator.\n- Revenue from the client fell 30% last year || Last year's revenue describes what has already happened.\n:::\n\n## 2. Building a weighted score\n\nFollow five steps:\n\n::: slides\nSLIDE 1 Choose signals | One to three per dimension; Data you can collect every month | Simple beats complete\nSLIDE 2 Define scoring rules | Convert each signal to 0–100; Example: adoption 80% or more = 100, 60–79% = 70, 40–59% = 40, below 40% = 10 | Same rule for every account\nSLIDE 3 Set weights | Weights add up to 100%; More weight for signals that best predicted past churn | Start with judgement, then test\nSLIDE 4 Calculate | Multiply each dimension score by its weight; Add the results | The total runs from 0 to 100\nSLIDE 5 Set thresholds and actions | For example green 75+, amber 50–74, red below 50; Each colour triggers a defined action | A score without action is decoration\n:::\n\nThe formula is: health score = sum of (dimension score × weight).\n\nThresholds are your choice; the ones above are only a starting point. Then calibrate: take accounts that churned or downgraded last year and check what their score was six months before. If many looked green, your signals or weights are wrong. Review the model every quarter.\n\n::: quiz\n? A team finds that most accounts that churned last year were green six months before they left. What should it do?\n- Lower the green threshold so more accounts look healthy || This makes the score even less accurate.\n* Review which signals and weights failed to predict churn and adjust the model || Correct. This is calibration: the score must reflect what actually happens to accounts.\n- Stop using the score and rely on the account managers' opinions || Judgement matters, but without data, early warnings are easily missed.\n:::\n\n## 3. Using the score to prioritise\n\nHealth alone does not tell you where to spend time. Combine it with account value:\n\n::: diagram matrix | Health and value: where to spend time | Health score (low → high) | Account value (low → high)\nRescue: high value, low health – senior attention and a save plan now\nGrow: high value, high health – success plan, expansion and references\nScale: low value, low health – standard recovery playbook and group training\nNurture: low value, high health – light-touch and automated check-ins\n:::\n\n## Worked example: a food distributor in Viana\n\nA food distributor in Viana supplies 60 key accounts: supermarkets, hotels and restaurant chains. The key account team built a monthly score:\n\n- Usage (35%): orders placed against the agreed weekly frequency, and the number of product categories ordered.\n- Outcomes (25%): fill rate and sell-through against agreed targets.\n- Relationship (20%): access to the buyer and a senior sponsor, and attendance at the last business review.\n- Support (10%): complaints and credit notes in the last 90 days.\n- Commercial (10%): days overdue against payment terms.\n\nA hotel group in Luanda scored usage 60, outcomes 70, relationship 40, support 80 and commercial 50.\n\nScore = 60 × 0.35 + 70 × 0.25 + 40 × 0.20 + 80 × 0.10 + 50 × 0.10 = 21 + 17.5 + 8 + 8 + 5 = 59.5, which is amber.\n\nThe hotel group is 6% of key account revenue, so it needs attention soon. The weak relationship score explained the drop: a new purchasing manager had joined and had never met the team.\n\n::: case | The new purchasing manager\nThe hotel group's new purchasing manager has asked two competitors for quotes. Orders have fallen from three a week to two. The account manager, Mário, has only ever dealt with the previous buyer.\n? What should Mário do first?\n- Email a new price list with a 5% discount || Discounting before understanding the new manager's priorities gives away margin and may not address the real issue.\n* Request a meeting with the new manager and the operations director to understand their goals and review service results || Correct. Relationship is the weakest dimension. Rebuilding access to decision makers and showing value treats the cause.\n- Wait for next month's score to confirm the trend || The leading indicators are already clear, and waiting lets competitors build the relationship first.\n- Ask his manager to assign a different account manager || Nothing suggests the problem is Mário. The account needs ownership and action.\n:::\n\n## Tool: health score design sheet\n\n- Dimensions and weights (total 100%):\n- Signals per dimension and data source:\n- Scoring rule for each signal (0–100):\n- Thresholds for green, amber and red:\n- Action triggered by each colour:\n- Owner and monthly update date:\n- Calibration date and result (did churned accounts score low early?):\n\n## Common mistakes\n\n- Using so many signals that nobody understands or trusts the score.\n- Relying on lagging indicators such as last year's revenue.\n- Never calibrating the weights against real churn.\n- Calculating a score but defining no action for amber and red accounts.\n\n## Self-check\n\n- What is the difference between a leading and a lagging indicator? (Answer: a leading indicator changes before the outcome; a lagging indicator shows it afterwards.)\n- Usage 80 (40%), outcomes 50 (30%), relationship 60 (20%), support 90 (10%). What is the score? (Answer: 32 + 15 + 12 + 9 = 68.)\n- How do you calibrate a health score? (Answer: compare earlier scores with what actually happened to accounts, then adjust signals and weights.)\n\n## Practical assignment\n\nBuild a health score for ten of your accounts in a spreadsheet using the design sheet. Place each account in the health and value matrix, pick the three that need action most, and agree one action for each with your manager.\n\n## Summary\n\n- Health scores use leading indicators across usage, outcomes, relationship and support to show risk early.\n- Score each dimension 0–100, apply weights that total 100%, add them up and set thresholds with defined actions.\n- Combine health with account value to prioritise, and calibrate the model against real churn every quarter.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- write a success plan that links customer goals to measurable results;\n- structure and run a quarterly business review (QBR);\n- calculate return on investment and payback period for a customer;\n- tell a short, quantified value story.\n\n## Key terms\n\n::: terms\nSuccess plan: a shared document listing the customer's goals, metrics, baselines, targets, actions, owners and dates\nQuarterly business review (QBR): a regular strategic meeting with the customer's decision makers to review results and agree next goals\nValue realisation: the point at which the customer can see and measure the benefit they expected\nBaseline: the value of a metric before you started, used to measure improvement\nReturn on investment (ROI): the net benefit of a purchase compared with its cost, as a percentage\nPayback period: the time it takes for the benefits to repay the cost\n:::\n\n## 1. The success plan\n\nCustomers renew when they can prove value, and proof needs a baseline and a target. The success plan is a living document agreed with the sponsor, usually built at the end of onboarding. For each goal it records:\n\n- the business goal, in the customer's words;\n- the metric and how it is measured;\n- the baseline;\n- the target and the date;\n- the actions on both sides, with owners;\n- the current status.\n\nIt follows a simple cycle:\n\n::: diagram cycle | The success plan cycle\nAgree goals: confirm goals, baselines and targets with the sponsor\nExecute: both sides carry out the agreed actions\nMeasure: track the metrics monthly from real data\nReview: present the results at the QBR\nReset: update goals and targets for the next period\n:::\n\nIf the customer has no baseline, measure one in the first weeks, even roughly. Without it you cannot show improvement.\n\n::: quiz\n? A client says your service has \"helped a lot\" but nobody recorded how things were before you started. What is the main risk at renewal?\n- The client will ask for more training || Training is not the issue. The issue is proving value.\n* The client cannot prove the value to its management, so the renewal is easier to cut || Correct. Without a baseline, improvement cannot be measured and the budget holder sees only a cost.\n- The success plan will have too many goals || The number of goals is not the problem described here.\n:::\n\n## 2. Running a QBR\n\nA QBR (some companies call it an executive business review) is neither a sales pitch nor a support meeting. It is a conversation with decision makers about business results. Use this structure:\n\n::: slides\nSLIDE 1 Goals recap | Restate the goals from the success plan; Confirm they are still the priorities | Start with their agenda\nSLIDE 2 Results versus targets | Baseline, target and actual for each metric; Be honest about misses | Numbers first, opinions second\nSLIDE 3 Value delivered | ROI or cost saved; One short value story | Translate results into money or risk\nSLIDE 4 Issues and lessons | What did not work and why; What both sides will change | Raising problems yourself builds trust\nSLIDE 5 Next quarter | Updated goals and recommendations; Clear asks with owners | End with agreed actions\n:::\n\nPreparation matters as much as the meeting. About a week before, hold a short pre-meeting with your champion to check the numbers and avoid surprises. Send the deck two days ahead. Make sure the executive sponsor attends: if only operational staff come, it becomes an operational review. Keep it to about an hour, spend most of it on results and next goals, and send a written summary of actions within 24 hours. Hold QBRs quarterly for the largest accounts and twice a year for mid-sized ones.\n\n## 3. ROI and the value story\n\nTwo calculations turn results into business language:\n\nROI = (benefit − cost) ÷ cost × 100\n\nPayback period (months) = cost ÷ monthly benefit\n\nCount only benefits the customer accepts, use their own figures where possible, and state your assumptions. Then wrap the numbers in a four-sentence value story: the situation and baseline, what was done, the result in numbers, and the next step. A sponsor can repeat a short story to their board; they cannot repeat a spreadsheet.\n\n::: quiz\n? A client pays 10,000,000 Kz a year for a service and agrees it produces 14,000,000 Kz of annual benefit. What is the ROI?\n- 140% || This divides benefit by cost without subtracting the cost first.\n* 40% || Correct. (14,000,000 − 10,000,000) ÷ 10,000,000 × 100 = 40%.\n- 4% || The net benefit is 4,000,000 Kz, but ROI divides it by the cost.\n:::\n\n## Worked example: a bank's corporate team in Luanda\n\nA bank in Luanda provides an online payments and payroll platform to a distribution company with 350 employees, for 9,600,000 Kz a year. Before, the client's three-person finance team needed six working days a month to process supplier payments and payroll by hand, and the company paid suppliers late-payment penalties.\n\nThe success plan set two goals: processing time down to two days by month six, and no supplier penalties. At the QBR, relationship manager Sofia showed:\n\n- Processing time: baseline 6 days, target 2, actual 2. Time saved = 4 days × 3 staff × 12 months = 144 staff-days a year. At an estimated 40,000 Kz per staff-day, that is 5,760,000 Kz.\n- Supplier penalties: baseline 6,000,000 Kz a year, now close to zero.\n- Total annual benefit: 11,760,000 Kz. ROI = (11,760,000 − 9,600,000) ÷ 9,600,000 × 100 = 22.5%. Payback = 9,600,000 ÷ 980,000 per month, about 9.8 months.\n\nHer value story: \"In January your team spent six days a month on payments and paid supplier penalties. You moved payroll and supplier payments onto the platform. Processing now takes two days and penalties have stopped, worth about 11.8 million Kz this year. Next quarter we propose adding collections to save a further day.\"\n\n::: case | The finance director challenges the numbers\nDuring the QBR, the client's finance director says: \"Your 40,000 Kz per staff-day is too high. Our real cost is 30,000.\"\n? What should Sofia do?\n- Defend her figure because it came from a general estimate || Arguing about assumptions makes the value story look like a sales trick.\n* Accept the client's figure, recalculate on the spot and show the result || Correct. At 30,000 Kz the benefit is 10,320,000 Kz and ROI is about 7.5%, still positive. Using the customer's numbers makes the value credible.\n- Skip the ROI slide and move straight to the roadmap || Avoiding the challenge leaves doubt about value in the decision maker's mind.\n- Promise corrected figures by email and stop discussing value || The calculation is simple enough to do live, and delay loses the moment.\n:::\n\n## Tool: QBR preparation checklist\n\n- Success plan updated with latest actuals:\n- Results versus baseline and target for each goal:\n- ROI and payback calculated with the customer's figures:\n- Value story written in four sentences:\n- Issues and lessons we will raise ourselves:\n- Recommendations and asks for next quarter:\n- Pre-meeting with champion held:\n- Executive sponsor confirmed to attend:\n- Summary and action list sent within 24 hours:\n\n## Common mistakes\n\n- Running the QBR as a product demonstration or a sales pitch.\n- Presenting activity (\"we closed 120 tickets\") instead of business results.\n- Using optimistic figures the customer does not accept.\n- Holding the review without the executive sponsor.\n\n## Self-check\n\n- Name the five parts of a QBR. (Answer: goals recap, results versus targets, value delivered, issues and lessons, next quarter goals and asks.)\n- A service costs 6,000,000 Kz and saves 750,000 Kz a month. What is the payback period? (Answer: 6,000,000 ÷ 750,000 = 8 months.)\n- What four elements make up a value story? (Answer: situation and baseline, action, result in numbers, next step.)\n\n## Practical assignment\n\nChoose one important account. Build or update its success plan with baselines and targets, calculate ROI using figures the customer accepts, and write a four-sentence value story. Use them to prepare your next business review with that customer.\n\n## Summary\n\n- A success plan with baselines and targets turns your service into measurable value.\n- A good QBR reviews results against goals with decision makers and ends with agreed next steps.\n- Express value as ROI and payback in the customer's own numbers, inside a short story they can repeat.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- recognise early warning signs of churn in B2B accounts;\n- separate controllable from uncontrollable churn and find root causes;\n- run a structured save play for an at-risk account;\n- manage a renewal with a 120-day timeline and a weighted renewal forecast.\n\n## Key terms\n\n::: terms\nAt-risk account: an account showing signals that it may not renew or may reduce its contract\nControllable churn: churn caused by things your company can influence, such as poor onboarding, service failures or low adoption\nUncontrollable churn: churn caused by events outside your influence, such as the customer closing or being taken over\nSave play: a planned set of actions to recover an at-risk account\nChampion: a person inside the customer organisation who supports your solution and helps you internally\nRenewal forecast: an estimate of the recurring revenue expected to renew in a period\n:::\n\n## 1. Early warning signs and root causes\n\nB2B customers rarely leave without warning. The signs fall into five groups:\n\n- Usage: falling log-ins, orders or volumes, or users returning to old tools.\n- Relationship: the champion or sponsor leaves, meetings are cancelled, replies slow down, nobody senior attends reviews.\n- Support: repeated or unresolved escalations.\n- Commercial: late payments, requests for price cuts, questions about the contract end date or notice period.\n- Organisational: a merger, new management, budget cuts, or a tender for the service you provide.\n\nOne signal means watch closely. Two or more from different groups means act now.\n\nBefore acting, find the cause. Classify it as controllable or uncontrollable, then use the 5 Whys: keep asking \"why?\" until you reach a cause you can fix. For example: \"Your price is too high\" → why? They do not see enough value → why? Only 30% of users are active → why? New staff were never trained after the first trainer left. The real problem is a training gap, not price.\n\n::: quiz\n? A client's champion has resigned and the client paid its last two invoices 45 days late. Usage is stable. What should the account manager do?\n- Nothing yet, because usage is still stable || Two signals from different groups, relationship and commercial, are enough to act.\n* Treat the account as at risk, find the new decision makers and investigate the payment delays || Correct. Combined signals call for action before usage also falls.\n- Offer a discount to secure the renewal early || A discount does not address the lost champion or the cause of late payment.\n:::\n\n## 2. The save play\n\nWhen an account is at risk, follow a structured save play:\n\n::: slides\nSLIDE 1 Detect and confirm | Check the signals with data; Talk to the day-to-day contact | Facts before reactions\nSLIDE 2 Diagnose the root cause | Use the 5 Whys; Separate controllable from uncontrollable | Price is often a symptom\nSLIDE 3 Build a rescue plan | Actions, owners and dates; What success looks like in 30 to 60 days | Fix the cause, not the symptom\nSLIDE 4 Engage the right level | Your executive meets their executive; Admit failures clearly | Senior attention shows commitment\nSLIDE 5 Execute and track | Review the plan weekly; Update the health score | Close the loop with the sponsor\n:::\n\nUse discounts only as a last resort, and trade them for something of value, such as a longer term or wider scope. A discount that does not fix the cause only delays churn.\n\n## 3. The renewal timeline and forecast\n\nRenewals fail when they start too late. Work back from the renewal date:\n\n::: diagram steps | A 120-day renewal timeline\n120 days before: review health, risks and stakeholders and agree the renewal strategy internally\n90 days: hold a value review with the sponsor and confirm needs for the next term\n60 days: send the renewal proposal with options and map approvers and procurement steps\n30 days: resolve final issues and agree the signature route\nRenewal date: contract signed and a new success plan started\n:::\n\nTwo adjustments. First, check the notice period: if the contract renews automatically unless notice is given before a certain date, the real decision date comes earlier. Second, large companies, banks and public bodies often need long internal approvals, so start earlier with them.\n\nManagers need a renewal forecast. Place each renewal in a category with a probability your company agrees, for example commit 90%, probable 60%, at risk 25%. Then:\n\nWeighted forecast = sum of (contract value × probability)\n\n::: quiz\n? Three renewals are due this quarter: 20 million Kz at 90%, 10 million Kz at 50% and 8 million Kz at 25%. What is the weighted forecast?\n- 38 million Kz || That is the total contract value, not the weighted forecast.\n- 21 million Kz || Recheck each line: 18 + 5 + 2.\n* 25 million Kz || Correct. 20 × 0.9 + 10 × 0.5 + 8 × 0.25 = 18 + 5 + 2 = 25 million Kz.\n:::\n\n## Worked example: an IT services company in Luanda\n\nA company in Luanda provides managed IT support and email to a hotel group with hotels in Luanda and Benguela, for 30,000,000 Kz a year. With 120 days to renewal, the account's health score fell from 78 to 48. The champion, the IT manager, had resigned. Tickets from Benguela had doubled. The new finance director had asked about the notice period.\n\nThe account manager, Rui, applied the 5 Whys. Tickets doubled because of email outages in Benguela. Outages happened because the local internet link was unstable and no backup link was set up. No backup existed because the Benguela hotel opened after onboarding and was set up in a hurry. The root cause was controllable: incomplete set-up.\n\nHis rescue plan: install the backup link within two weeks, have his director meet the group's general manager to admit the failure and present the plan, send a monthly reliability report, and train the new IT coordinator. At the 90-day value review, tickets were back to normal.\n\n::: case | The discount demand\nAt 60 days, the finance director says: \"We will renew only with a 20% discount.\" The health score has recovered to 70 and reliability is fixed.\n? What should Rui do?\n- Accept at once to secure the renewal || This gives away 6,000,000 Kz a year without testing whether price is the real issue.\n* Ask what lies behind the request, show the value review results, and offer options such as a smaller discount for a longer term || Correct. Understand the driver, anchor on value, and trade any concession for something in return.\n- Refuse to discuss price at all || Rigid refusal can push the client towards a tender. Negotiation at renewal is normal.\n- Complain to the hotel group's chief executive about the finance director || Going over a decision maker's head damages the relationship.\n:::\n\n## Tool: at-risk account plan\n\n- Account, contract value and renewal date:\n- Notice period and real decision date:\n- Warning signals observed and their groups:\n- Root cause (5 Whys) and controllable or uncontrollable:\n- Rescue actions, owners and dates:\n- Executive engagement planned (who meets whom):\n- Success measure for the next 30 to 60 days:\n- Forecast category and probability:\n\n## Common mistakes\n\n- Offering a discount before understanding the cause.\n- Missing the notice period, so the client leaves before talks begin.\n- Starting renewal conversations 30 days before the end date.\n- Ignoring a departed champion until the renewal is already lost.\n\n## Self-check\n\n- Name three of the five groups of churn warning signs. (Answer: any three of usage, relationship, support, commercial, organisational.)\n- Is \"the client was taken over by a group that uses a competitor\" controllable or uncontrollable? (Answer: uncontrollable.)\n- What happens at 90 days before renewal? (Answer: a value review with the sponsor to confirm results and needs for the next term.)\n\n## Practical assignment\n\nList every renewal in your portfolio for the next six months. For each, note the notice period, health score and forecast category, and calculate the weighted forecast. Complete an at-risk account plan for the riskiest one.\n\n## Summary\n\n- Watch for warning signs in five groups and act when two or more appear.\n- Use the 5 Whys to find the root cause, then run a save play that fixes it before price is discussed.\n- Manage renewals from 120 days out, respect notice periods, and forecast with weighted probabilities.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- distinguish upsell from cross-sell and recognise expansion signals;\n- run an expansion conversation based on customer outcomes;\n- calculate net revenue retention (NRR) and compare it with gross revenue retention;\n- turn satisfied customers into references and case studies, step by step.\n\n## Key terms\n\n::: terms\nUpsell: selling more of the same product or a higher tier, such as more users, more volume or a premium service level\nCross-sell: selling a different, related product or service to an existing customer\nExpansion revenue: extra recurring revenue from existing customers through upsell, cross-sell or price increases\nNet revenue retention (NRR): recurring revenue kept from existing customers after expansion, downgrades and churn, as a percentage of starting revenue\nAdvocacy: actions customers take to recommend you, such as references, referrals and case studies\nReference customer: a customer who agrees to speak to prospects about their experience\n:::\n\n## 1. Earning the right to expand\n\nExpansion follows value. A customer who has not yet reached their goals will see any new offer as pressure. A good rule: propose expansion only to healthy accounts with documented results.\n\nLook for expansion signals:\n\n- usage near the limit, such as 95% of licences in use or volumes regularly above the contract;\n- new sites, branches, departments or projects;\n- questions about products or features the customer does not have;\n- strong results in the success plan;\n- growth in the customer's own business, such as new contracts won.\n\nThen run the conversation in four steps:\n\n::: slides\nSLIDE 1 Start from their goals | Review the results so far; Ask about next year's priorities | Their plan, not your quota\nSLIDE 2 Connect the gap | Show where the current scope limits their goal; Use usage data and success plan results | Make the need visible\nSLIDE 3 Propose and quantify | One option with expected benefit and cost; ROI in their numbers | One clear option beats five\nSLIDE 4 Agree next steps | Who decides and by when; Bring in sales if your company splits the roles | Agree the role split internally first\n:::\n\n::: quiz\n? A telecom client with 200 mobile lines adds 50 more lines and also buys a fleet-tracking service. Which is which?\n- Both are cross-sells, because the client bought more || Adding more of the same service is an upsell, not a cross-sell.\n* The 50 lines are an upsell and fleet tracking is a cross-sell || Correct. More of the same is upsell, and a different related service is cross-sell.\n- The 50 lines are a cross-sell and fleet tracking is an upsell || This reverses the definitions.\n:::\n\n## 2. Net revenue retention\n\nNRR shows whether your existing customer base grows or shrinks on its own:\n\nNRR = (starting recurring revenue + expansion − contraction − churn) ÷ starting recurring revenue × 100\n\nGRR, from lesson 1, uses the same formula without expansion, so it can never exceed 100%. NRR above 100% means existing customers are growing even with no new sales. Track both: a high NRR with a low GRR means a few large accounts are hiding a leaky base. Distributors can apply the same logic to the annual purchases of key accounts.\n\n::: quiz\n? Starting recurring revenue is 200 million Kz. Expansion is 30 million, contraction 10 million and churn 20 million. What are NRR and GRR?\n* NRR 100% and GRR 85% || Correct. NRR = (200 + 30 − 10 − 20) ÷ 200 = 100%. GRR = (200 − 10 − 20) ÷ 200 = 85%.\n- NRR 115% and GRR 100% || This counts the expansion but ignores contraction and churn.\n- NRR 85% and GRR 100% || The labels are swapped, and GRR cannot ignore losses.\n:::\n\n## 3. Advocacy: references and case studies\n\nSatisfied customers help you win new ones. Advocacy works like a ladder, from small actions to large ones:\n\n::: diagram pyramid | The advocacy ladder\nPublic case study: named results shared publicly or in a joint presentation\nReference calls: speaking to prospects on request\nReferrals: introducing you to other companies\nTestimonial: a short quote you may use\nPositive feedback: high satisfaction or a promoter score\n:::\n\nNet Promoter Score, introduced by Fred Reichheld in 2003, labels customers who answer 9 or 10 as promoters, a good place to look for advocates. To build a case study: choose a healthy account with measured results; ask the sponsor after a successful review; interview them about the challenge, the solution and the results; draft it with numbers; and get written approval before using it. Many banks and public bodies have strict rules about naming suppliers. Do not overuse a reference: limit requests and thank them each time.\n\n## Worked example: an ingredients distributor in Luanda\n\nA distributor in Luanda supplies wheat flour to industrial bakeries under annual supply agreements, worth 1,200,000,000 Kz a year at the start of the year. During the year two bakeries closed (churn 60 million Kz), three reduced volumes (contraction 40 million Kz), and ten added yeast and bread improvers or higher contracted volumes (expansion 150 million Kz).\n\n- NRR = (1,200 + 150 − 40 − 60) ÷ 1,200 × 100 = 104.2%.\n- GRR = (1,200 − 40 − 60) ÷ 1,200 × 100 = 91.7%.\n\nOne bakery chain with six outlets had a green health score, ordered 20% above contract every month and was opening two outlets. The key account manager, Nuno, proposed a higher contracted volume with scheduled deliveries, plus a trial of bread improvers, showing the cost of the emergency orders it was placing.\n\n::: case | The case study request\nAfter a strong business review, the bakery chain's owner says he is very pleased with the service. Nuno would like to use the chain as a case study.\n? What is the best approach?\n- Write the case study from internal sales data and post it on social media || Publishing without approval breaks trust and may breach the customer's confidentiality.\n* Ask the owner whether he will share his story, interview him and get written approval of the final text || Correct. Permission, the customer's own words and approval make the case study credible and protect the relationship.\n- Offer a discount in exchange for a five-star online review || Paying for reviews makes them unreliable and can damage both companies' reputations.\n- Give the owner's number to every prospect who asks for a reference || Overusing a reference without asking turns an advocate into an annoyed customer.\n:::\n\n## Tool: expansion and advocacy checklist\n\n- Health score green and success plan results documented:\n- Expansion signals observed:\n- Customer goal the expansion supports:\n- Proposed option, expected benefit, cost and ROI:\n- Decision maker and timeline:\n- Advocacy level the customer is ready for:\n- Written approval obtained for any public use:\n- Reference requests this year:\n\n## Common mistakes\n\n- Pitching expansion to accounts that have not yet achieved value.\n- Reporting NRR without GRR, so losses are hidden by a few big accounts.\n- Overusing the same reference customers.\n- Publishing names or results without written approval.\n\n## Self-check\n\n- What is the difference between upsell and cross-sell? (Answer: upsell is more of the same or a higher tier; cross-sell is a different, related product.)\n- Start 100 million Kz, expansion 15, contraction 5, churn 5. What is NRR? (Answer: (100 + 15 − 5 − 5) ÷ 100 = 105%.)\n- Which customers are the best candidates for a case study? (Answer: healthy accounts with measured results and a willing sponsor.)\n\n## Practical assignment\n\nCalculate NRR and GRR for your portfolio for the last 12 months. Identify two healthy accounts showing expansion signals and plan an outcome-based conversation for each. Identify one candidate for a reference or case study.\n\n## Summary\n\n- Expansion follows value: look for signals in healthy accounts and start from the customer's goals.\n- NRR includes expansion and GRR does not, so report both to see the true health of your base.\n- Climb the advocacy ladder with permission, and protect your references by not overusing them."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain what customer success is and how it differs from service and sales",
+     "Describe the B2B customer lifecycle",
+     "Calculate churn, retention rate and gross revenue retention",
+     "Estimate customer lifetime value"
+    ],
+    "takeaway": "Retention is a number you can manage"
+   },
+   {
+    "title": "Customer success vs customer service",
+    "points": [
+     "Service is reactive and fixes problems the customer raises",
+     "Success is proactive and drives the customer's business outcomes",
+     "Sales wins new contracts"
+    ],
+    "takeaway": "Success acts before the customer calls"
+   },
+   {
+    "title": "The B2B customer lifecycle",
+    "points": [
+     "Onboard",
+     "Adopt",
+     "Realise value",
+     "Renew",
+     "Expand and advocate"
+    ],
+    "takeaway": "Each stage has its own risks"
+   },
+   {
+    "title": "Measuring churn",
+    "points": [
+     "Logo churn = customers lost ÷ customers at start",
+     "Revenue churn = recurring revenue lost ÷ starting recurring revenue",
+     "Track both every quarter"
+    ],
+    "takeaway": "One large account can hide behind a good logo rate"
+   },
+   {
+    "title": "Retention rate and GRR",
+    "points": [
+     "CRR = (E − N) ÷ S × 100",
+     "GRR = (start − churn − downgrades) ÷ start × 100",
+     "Always exclude new customers and growth"
+    ],
+    "takeaway": "GRR can never exceed 100%"
+   },
+   {
+    "title": "Customer lifetime value",
+    "points": [
+     "CLV = annual revenue × gross margin × expected lifetime",
+     "Expected lifetime ≈ 1 ÷ annual churn rate",
+     "Halving churn roughly doubles CLV"
+    ],
+    "takeaway": "Retained accounts compound value"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Treating CS as a support desk",
+     "Measuring only logo churn",
+     "Including new customers in retention",
+     "Talking about value only at renewal"
+    ],
+    "takeaway": "Measure, then act early"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain why time-to-value predicts retention",
+     "Run a sales-to-CS handover",
+     "Lead a kickoff meeting",
+     "Write a phased onboarding plan with SMART success criteria"
+    ],
+    "takeaway": "Many renewals are decided during onboarding"
+   },
+   {
+    "title": "Time-to-value",
+    "points": [
+     "TTV = first value milestone date − contract start date",
+     "Track the average by segment",
+     "Shorter TTV means earlier proof"
+    ],
+    "takeaway": "Every week saved builds confidence"
+   },
+   {
+    "title": "The sales-to-CS handover",
+    "points": [
+     "Goals and pains",
+     "What was promised",
+     "Stakeholders and opponents",
+     "Risks"
+    ],
+    "takeaway": "The customer should not repeat the story"
+   },
+   {
+    "title": "The kickoff meeting",
+    "points": [
+     "Roles and executive sponsor",
+     "Goals and success criteria",
+     "Plan and customer inputs",
+     "Ways of working and next steps"
+    ],
+    "takeaway": "Send the summary within 24 hours"
+   },
+   {
+    "title": "The phased plan",
+    "points": [
+     "Handover, kickoff, set-up",
+     "Training and adoption by role",
+     "First value milestone, then transition"
+    ],
+    "takeaway": "A joint plan with owners on both sides"
+   },
+   {
+    "title": "SMART success criteria",
+    "points": [
+     "Specific, Measurable, Achievable, Relevant, Time-bound",
+     "Use the customer's words and numbers",
+     "Two or three criteria are enough"
+    ],
+    "takeaway": "Results, not activities"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "No handover",
+     "Success defined as go-live",
+     "No executive sponsor",
+     "Training everyone at once"
+    ],
+    "takeaway": "Plan for the first result"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain leading and lagging indicators",
+     "Choose signals for usage, outcomes, relationship and support",
+     "Build and calculate a weighted health score",
+     "Use thresholds to prioritise accounts"
+    ],
+    "takeaway": "See risk months before renewal"
+   },
+   {
+    "title": "Leading vs lagging",
+    "points": [
+     "Lagging: churn, lost renewal, last year's revenue",
+     "Leading: falling usage, silent champion, rising complaints",
+     "Health scores rely on leading signals"
+    ],
+    "takeaway": "By the time churn shows, it is too late"
+   },
+   {
+    "title": "The health dimensions",
+    "points": [
+     "Usage and adoption",
+     "Outcomes against the success plan",
+     "Relationship and access",
+     "Support experience",
+     "Commercial behaviour (optional)"
+    ],
+    "takeaway": "One to three signals per dimension"
+   },
+   {
+    "title": "Building the score",
+    "points": [
+     "Choose signals",
+     "Score each 0–100",
+     "Set weights that total 100%",
+     "Multiply and add"
+    ],
+    "takeaway": "Health = sum of score × weight"
+   },
+   {
+    "title": "Thresholds and actions",
+    "points": [
+     "Example: green 75+, amber 50–74, red below 50",
+     "Each colour triggers a defined action"
+    ],
+    "takeaway": "A score without action is decoration"
+   },
+   {
+    "title": "Health and value",
+    "points": [
+     "Rescue: high value, low health",
+     "Grow: high value, high health",
+     "Scale and nurture lower-value accounts"
+    ],
+    "takeaway": "Spend time where risk and value meet"
+   },
+   {
+    "title": "Calibrate",
+    "points": [
+     "Check past scores of churned accounts",
+     "Adjust signals and weights",
+     "Review every quarter"
+    ],
+    "takeaway": "Trust comes from accuracy"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Write a success plan with baselines and targets",
+     "Run a quarterly business review",
+     "Calculate ROI and payback",
+     "Tell a quantified value story"
+    ],
+    "takeaway": "Renewals follow proven value"
+   },
+   {
+    "title": "The success plan",
+    "points": [
+     "Goal in the customer's words",
+     "Metric, baseline, target and date",
+     "Actions and owners on both sides",
+     "Current status"
+    ],
+    "takeaway": "No baseline, no proof"
+   },
+   {
+    "title": "The success plan cycle",
+    "points": [
+     "Agree goals",
+     "Execute",
+     "Measure",
+     "Review at the QBR",
+     "Reset"
+    ],
+    "takeaway": "A living document, not a file"
+   },
+   {
+    "title": "QBR structure",
+    "points": [
+     "Goals recap",
+     "Results versus targets",
+     "Value delivered",
+     "Issues and lessons",
+     "Next quarter goals and asks"
+    ],
+    "takeaway": "Their agenda, not your sales pitch"
+   },
+   {
+    "title": "Preparing the QBR",
+    "points": [
+     "Pre-meeting with your champion",
+     "Send the deck two days before",
+     "Executive sponsor must attend",
+     "Summary within 24 hours"
+    ],
+    "takeaway": "No surprises in the room"
+   },
+   {
+    "title": "ROI and payback",
+    "points": [
+     "ROI = (benefit − cost) ÷ cost × 100",
+     "Payback = cost ÷ monthly benefit",
+     "Use the customer's own figures"
+    ],
+    "takeaway": "Conservative numbers are credible numbers"
+   },
+   {
+    "title": "The value story",
+    "points": [
+     "Situation and baseline",
+     "Action",
+     "Result in numbers",
+     "Next step"
+    ],
+    "takeaway": "Four sentences the sponsor can repeat"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Recognise early warning signs of churn",
+     "Diagnose root causes with the 5 Whys",
+     "Run a structured save play",
+     "Manage renewals with a 120-day timeline and a weighted forecast"
+    ],
+    "takeaway": "Most churn is visible in advance"
+   },
+   {
+    "title": "Early warning signs",
+    "points": [
+     "Usage falls",
+     "Champion or sponsor leaves",
+     "Repeated escalations",
+     "Late payments or price challenges",
+     "Merger, budget cuts or a tender"
+    ],
+    "takeaway": "Two signals from different groups means act"
+   },
+   {
+    "title": "Controllable vs uncontrollable",
+    "points": [
+     "Controllable: poor onboarding, service failures, low adoption",
+     "Uncontrollable: closure, merger, loss of funding",
+     "Focus effort on what you can change"
+    ],
+    "takeaway": "Price is often a symptom, not the cause"
+   },
+   {
+    "title": "The save play",
+    "points": [
+     "Detect and confirm",
+     "Diagnose the root cause",
+     "Build a rescue plan",
+     "Engage the right level",
+     "Execute and track"
+    ],
+    "takeaway": "Fix the cause before discussing price"
+   },
+   {
+    "title": "The renewal timeline",
+    "points": [
+     "120 days: internal risk review",
+     "90 days: value review with sponsor",
+     "60 days: proposal",
+     "30 days: negotiation and signature route"
+    ],
+    "takeaway": "Start earlier when approvals are slow"
+   },
+   {
+    "title": "Weighted renewal forecast",
+    "points": [
+     "Forecast = sum of contract value × probability",
+     "Categories such as commit, probable, at risk",
+     "Update weekly near renewal"
+    ],
+    "takeaway": "Honest forecasts protect the business"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Discount as the first response",
+     "Missing the notice period",
+     "Starting renewal talks at 30 days",
+     "Ignoring a departed champion"
+    ],
+    "takeaway": "Early, honest, value-based"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Distinguish upsell from cross-sell",
+     "Spot expansion signals",
+     "Calculate net revenue retention",
+     "Turn happy customers into references and case studies"
+    ],
+    "takeaway": "Growth from customers you already have"
+   },
+   {
+    "title": "Upsell and cross-sell",
+    "points": [
+     "Upsell: more of the same or a higher tier",
+     "Cross-sell: a different, related product",
+     "Both must serve the customer's goals"
+    ],
+    "takeaway": "Value first, offer second"
+   },
+   {
+    "title": "Expansion signals",
+    "points": [
+     "Usage near the limit",
+     "New sites, branches or departments",
+     "Questions about products they lack",
+     "Strong success plan results"
+    ],
+    "takeaway": "Healthy accounts with proof are ready"
+   },
+   {
+    "title": "Net revenue retention",
+    "points": [
+     "NRR = (start + expansion − contraction − churn) ÷ start × 100",
+     "Above 100% means the base grows without new customers",
+     "Compare with GRR"
+    ],
+    "takeaway": "The gap shows how much expansion hides losses"
+   },
+   {
+    "title": "The advocacy ladder",
+    "points": [
+     "Public case study",
+     "Reference calls",
+     "Referrals",
+     "Testimonials",
+     "Positive feedback"
+    ],
+    "takeaway": "Ask the right customers at the right time"
+   },
+   {
+    "title": "Building a case study",
+    "points": [
+     "Choose a healthy account with measured results",
+     "Interview the sponsor",
+     "Draft with numbers",
+     "Get written approval"
+    ],
+    "takeaway": "Never publish without permission"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Pitching to unhealthy accounts",
+     "Reporting NRR without GRR",
+     "Overusing references",
+     "Paying for reviews"
+    ],
+    "takeaway": "Earn the right to grow"
+   }
+  ]
+ ]
+}
