@@ -1,0 +1,887 @@
+=== 20
+SLIDE What you will learn | Design pipeline stages that follow the buyer's progress; Write exit criteria as verifiable buyer actions; Use BANT and MEDDIC as qualification gates; Calculate stage probabilities from your own history | A stage is a fact about the customer, not a feeling
+SLIDE Seller activity vs buyer progress | "I sent the offer" is seller activity; "The buyer agreed a date to review it" is buyer progress; Stages built on buyer actions forecast better | Ask: what did the customer do?
+SLIDE A B2B distributor pipeline | Identified; Qualified; Needs confirmed; Offer submitted; Terms agreed; Won or Lost | Five to seven stages are enough
+SLIDE Writing an exit criterion | Name the buyer action; Name the evidence; Name who checks it | If you cannot show it, the deal has not moved
+SLIDE Qualification gates | BANT: budget, authority, need, timing; MEDDIC: metrics, economic buyer, decision criteria, decision process, identify pain, champion | Qualify before you invest time
+SLIDE Stage probability from history | Deals won from a stage ÷ closed deals that passed that stage; Use at least a year of data; Review every quarter | Your history beats a textbook percentage
+SLIDE Common mistakes | Stages named after seller tasks; Exit criteria nobody checks; Copying probabilities from another company; Too many stages | Publish one stage dictionary for the whole team
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain why pipeline stages must describe the buyer's progress, not the seller's activity;
+- write exit criteria for each stage as verifiable buyer actions;
+- apply BANT and MEDDIC as qualification gates;
+- calculate stage probabilities from your own closed deals.
+
+## Key terms
+
+::: terms
+Sales pipeline: all open sales opportunities, each placed in the stage it has reached
+Stage: a step in the buying and selling process, such as Qualified or Offer submitted
+Exit criterion: the verifiable event that must happen before a deal can move to the next stage
+Qualification: checking that an opportunity is real and worth the sales team's time
+Stage probability: the share of deals at a stage that were eventually won, based on past results
+:::
+
+## 1. Stages that follow the buyer
+
+Weak pipelines often use stages that describe what the salesperson did, such as "Visit made" or "Price list sent". A rep can do both while the customer decides nothing. Such a pipeline looks full and forecasts badly.
+
+A healthy pipeline uses stages that mark buyer progress. Design it in five steps:
+
+- Map how your customers buy. A supermarket chain in Talatona may need a listing meeting, a category manager's approval and a supplier registration. A family wholesaler in Kikolo may decide in one conversation with the owner.
+- Choose five to seven stages. Fewer hides problems; more creates confusion.
+- Write one exit criterion per stage as a buyer action with evidence.
+- Set a stage probability from your own history (section 3).
+- Publish a stage dictionary so every rep and manager uses the same definitions.
+
+::: diagram steps | A B2B distributor pipeline with exit criteria
+Identified: outlet fits the target profile and a contact is known
+Qualified: BANT confirmed in a meeting with the decision-maker
+Needs confirmed: buyer agrees the range, volumes and service needed
+Offer submitted: buyer has the written offer and a review date is set
+Terms agreed: price, credit and delivery terms accepted in writing
+Won or Lost: first order received and account opened, or a clear no
+:::
+
+::: slides
+SLIDE Step 1: Name the buyer action | Not "I sent the offer" but "the buyer agreed a review date" | Start from what the customer does
+SLIDE Step 2: Name the evidence | Email, signed form, meeting note or order number | Evidence must be visible to the manager
+SLIDE Step 3: Name who checks | Rep self-checks daily and manager spot-checks weekly | Unchecked criteria are soon ignored
+SLIDE Step 4: Test it | Give two reps the same deal and ask which stage it is in | Same answer means a clear criterion
+:::
+
+## 2. Qualification as the first gate
+
+The most important exit criterion is the one into Qualified, because every later metric depends on it. Two widely used checklists help.
+
+BANT asks four questions: Budget (can the customer pay, in cash or on terms you accept?), Authority (are you talking to the person who decides?), Need (is there a real problem you can solve?) and Timing (when will they buy?).
+
+MEDDIC, which came out of enterprise technology sales in the 1990s, is deeper and suits larger or longer deals, such as a B2B services contract or a supermarket chain listing: Metrics (the measurable gain for the customer), Economic buyer (who controls the money), Decision criteria (how options will be judged), Decision process (the steps and people involved), Identify pain (the business problem) and Champion (a person inside the customer who actively supports you).
+
+Use BANT for small, fast deals such as a new cantina. Use MEDDIC above a value you define.
+
+::: quiz
+? A hotel's purchasing officer loves your new cooking oil range, but the general manager signs every supplier contract and has not met you. Which MEDDIC element is missing?
+- Identify pain || The hotel may well have a problem to solve. The bigger gap is who controls the money.
+* Economic buyer || Correct. The general manager controls the decision and the budget, and you have not met him.
+- Champion || The purchasing officer may become your champion. That is a strength, not the gap.
+- Metrics || Metrics matter, but you cannot agree them without the economic buyer.
+:::
+
+## 3. Stage probabilities from your own history
+
+A stage probability tells you how likely a deal at that stage is to be won. Do not copy percentages from a book or another company. Calculate them from your own closed deals:
+
+- Stage probability = deals won that passed through the stage ÷ all closed deals (won plus lost) that passed through the stage × 100
+
+Use only closed deals, at least twelve months of data, and review every quarter. Example: 60 closed deals reached Qualified and 15 were won, so Qualified = 25%. 30 reached Offer submitted and 12 were won, so Offer submitted = 40%.
+
+::: quiz
+? Last year 50 closed deals reached Offer submitted. 20 were won and 30 were lost. Ten more are still open. What is the stage probability?
+- 33% || This divides 20 by 60 and wrongly includes the open deals.
+- 50% || There is no basis for 50%. Use your own results.
+* 40% || Correct. 20 won ÷ 50 closed = 40%. Open deals are excluded.
+- 60% || This is the loss rate, not the win probability.
+:::
+
+## Worked example: the HoReCa pipeline in Luanda
+
+Rui manages HoReCa sales for a food distributor in Luanda. His team's pipeline had eight stages, including "Visit made" and "Samples delivered", and showed 140,000,000 Kz, but the team won only a small part of it each quarter.
+
+Rui rewrites the stages using the six-stage model above. He adds exit criteria: a deal is Qualified only after a meeting with the person who signs supplier contracts, and Terms agreed needs a signed credit application. He then checks every open deal against the new criteria.
+
+- 18 deals worth 52,000,000 Kz had no meeting with a decision-maker and move back to Identified.
+- 6 deals worth 21,000,000 Kz had no contact for 90 days and are closed as lost.
+- The real pipeline is 67,000,000 Kz.
+
+The number is smaller but true: Rui needs more qualified hotels, not more samples.
+
+::: case | The cleaning contract in Talatona
+Sílvia sells office cleaning contracts for a B2B services firm in Luanda. An office building in Talatona asked for a quote worth 3,600,000 Kz a month. She sent it two weeks ago. The administrator said "it looks good" but has not set a meeting. Sílvia's manager asks which stage the deal is in.
+? What is the most accurate answer?
+- Terms agreed, because the administrator liked the price || Liking a price is not acceptance. There is no written agreement.
+* Needs confirmed, because the offer has no agreed review date yet || Correct. The offer was sent, but the exit criterion for Offer submitted needs a review date. Her next step is to get one.
+- Won, because the building has no other supplier || No order or contract exists, so the deal cannot be won.
+- Remove it from the pipeline || The deal is still active. It just has not reached the next stage.
+:::
+
+## Tool: stage dictionary template
+
+- Stage name:
+- Exit criterion (buyer action):
+- Evidence required:
+- Who checks it and how often:
+- Stage probability from last 12 months:
+- Typical days in this stage:
+
+## Common mistakes
+
+- Naming stages after seller tasks, so deals move without any customer decision.
+- Writing exit criteria that nobody checks.
+- Copying stage probabilities from another company instead of using your own closed deals.
+- Using so many stages that reps cannot agree where a deal belongs.
+
+## Self-check
+
+- Why is "price list sent" a weak stage? (Answer: it is a seller activity and proves no buyer progress.)
+- What are the six elements of MEDDIC? (Answer: metrics, economic buyer, decision criteria, decision process, identify pain, champion.)
+- 40 closed deals reached Qualified and 10 were won. What is the stage probability? (Answer: 25%.)
+
+## Practical assignment
+
+Write a stage dictionary for your team using the template. Then take your five largest open deals and check each one against the exit criteria. Record how many had to move back a stage.
+
+## Summary
+
+- Pipeline stages must track what the buyer does, each with a verifiable exit criterion.
+- BANT and MEDDIC protect the Qualified stage, which every later metric depends on.
+- Stage probabilities come from your own closed deals and are reviewed every quarter.
+=== 20
+SLIDE What you will learn | List the minimum fields every opportunity needs; Set up a pipeline in a spreadsheet or CRM; Apply data quality dimensions and hygiene rules; Calculate a completeness score | Bad data makes every metric wrong
+SLIDE One source of truth | One pipeline file or CRM for the whole team; No private lists; If it is not in the system, it does not exist | Managers review only what is recorded
+SLIDE Minimum fields | Account and contact role; Value and how it was calculated; Stage and stage-entry date; Close date; Next step with date; Owner and source | A next step without a date is not a next step
+SLIDE Spreadsheet set-up | One row per opportunity; Drop-down lists for stage and channel; Dates in date format; A separate stage history tab | Structure prevents errors
+SLIDE Data quality dimensions | Completeness; Accuracy; Timeliness; Consistency; Validity; Uniqueness | Check each one with a simple rule
+SLIDE Hygiene rules | Past close date = update or close; No activity in 30 days = stale; Every lost deal needs a reason | Rules make hygiene automatic
+SLIDE The hygiene routine | Daily: update after each visit; Weekly: exception report before review; Monthly: duplicates and archive | Small, regular checks beat a big clean-up
+SLIDE Common mistakes | Free-text stages; Optimistic close dates pushed forward; Duplicates; Lost deals never closed | Clean data is a habit, not a project
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list the minimum fields every opportunity record needs;
+- set up a clean pipeline in a spreadsheet or any CRM;
+- apply six data quality dimensions and simple hygiene rules;
+- calculate a data completeness score for your pipeline.
+
+## Key terms
+
+::: terms
+Single source of truth: one agreed place where all pipeline data is kept and from which all reports are produced
+Required field: information that must be filled in before a record is accepted
+Data dictionary: a short document that defines every field, its format and its allowed values
+Stale opportunity: an open deal with no recorded customer activity for a set number of days
+Close date slippage: moving a deal's expected close date later, often more than once
+:::
+
+## 1. The minimum viable opportunity record
+
+Metrics, forecasts and reviews are only as good as the data behind them. Many Angolan sales teams work from WhatsApp messages and one Excel file per rep. A well-built spreadsheet can work as well as a CRM. The problem is data that is incomplete, inconsistent or kept in private lists.
+
+Start with one rule: one source of truth. All opportunities live in one shared file or CRM, and every report comes from it.
+
+Every opportunity then needs a minimum set of fields:
+
+- Account name and segment (wholesaler, supermarket, HoReCa, corporate).
+- Main contact and their role in the decision.
+- Value, and how it was calculated (for example, monthly volume × price × 12).
+- Stage and the date the deal entered that stage.
+- Expected close date.
+- Next step and its date.
+- Owner (the responsible rep) and lead source.
+- Created date, and for closed deals, the result and the lost reason.
+
+::: slides
+SLIDE Step 1: One row per opportunity | Each deal is one row and each field is one column | No merged cells or blank rows
+SLIDE Step 2: Lock the lists | Use data validation drop-downs for stage, segment, owner and lost reason | Free text creates ten spellings of one stage
+SLIDE Step 3: Format the dates | Close date, stage-entry date and next-step date in real date format | Dates you can sort and calculate with
+SLIDE Step 4: Keep a history tab | Each time a stage changes, add a row with deal ID, old stage, new stage and date | History lets you calculate conversion and cycle time later
+:::
+
+## 2. Data quality dimensions and hygiene rules
+
+Six data quality dimensions are useful for a pipeline, each checked with a simple rule:
+
+- Completeness: are all required fields filled? Rule: no deal enters Qualified without value, close date and next step.
+- Accuracy: does the record match reality? Rule: managers spot-check three deals per rep weekly.
+- Timeliness: is it up to date? Rule: update within 24 hours of a customer contact.
+- Consistency: is the same thing recorded the same way? Rule: values always in Kz, annual or monthly as defined.
+- Validity: do values follow the allowed format? Rule: stage comes from the drop-down.
+- Uniqueness: is each deal recorded once? Rule: search for the account before creating a deal.
+
+Add three hygiene rules: a past close date must be updated or the deal closed, 30 days without customer activity marks a deal stale, and a close date moved more than twice is discussed in the weekly review.
+
+A simple way to track progress is a completeness score:
+
+- Completeness score = records with all required fields ÷ total open records × 100
+
+::: quiz
+? A pipeline has 80 open deals. 62 have all required fields filled. What is the completeness score?
+- 62% || This uses the number of complete records as a percentage without dividing by the total.
+* 77.5% || Correct. 62 ÷ 80 × 100 = 77.5%.
+- 22.5% || This is the share of incomplete records.
+- 81% || Check the division: 62 ÷ 80 = 0.775.
+:::
+
+## 3. The hygiene routine
+
+Clean data comes from small, regular habits, not a big clean-up.
+
+::: diagram cycle | The pipeline hygiene cycle
+Capture: rep records every customer contact within 24 hours
+Validate: required fields and drop-downs block bad entries
+Review: weekly exception report shows stale, past-due and incomplete deals
+Correct: owners fix or close the flagged deals before the review meeting
+:::
+
+Daily, reps update each deal after a visit or call. Weekly, a coordinator sends an exception report the day before the pipeline review, and reps fix flagged deals before the meeting. Monthly, the manager removes duplicates, checks lost reasons and archives closed deals.
+
+::: quiz
+? A rep's deal shows a close date of 15 March. Today is 2 April and there is no order. What does the hygiene rule require?
+- Leave it, because the customer may still order || A past close date makes the forecast wrong. It must be acted on.
+- Move the date to the end of the year to be safe || A random date hides the problem and damages accuracy.
+* Update the close date with the customer's real timing, or close the deal as lost || Correct. The record must reflect reality, based on the latest customer contact.
+- Delete the record || Deleting removes history that is needed for win rates and lost reasons.
+:::
+
+## Worked example: an IT services firm in Luanda
+
+An IT services firm in Luanda has four account managers, each with their own Excel file. The commercial director merges them and finds:
+
+- 112 open deals, but 9 were duplicates entered by two people.
+- Values mixed monthly fees and annual contract values.
+- 41 deals had a close date in the past.
+- Only 58 of the 103 unique deals had a next step with a date.
+
+She creates one shared spreadsheet with a data dictionary: values are annual contract value in Kz, stages come from a drop-down, and next step and date are required from Qualified onwards. Fourteen past-due deals are closed as lost, with reasons.
+
+After four weeks, completeness rises from 56% (58 ÷ 103) to 91%, and the pipeline falls from 410,000,000 Kz to a trustworthy 265,000,000 Kz.
+
+::: case | The close date that keeps moving
+Joaquim sells to supermarkets for a food distributor. A chain in Luanda has been in his pipeline at Offer submitted for five months. He has moved the close date forward four times. Each time he says the buyer is "about to decide". The exception report flags the deal.
+? What should his manager do?
+- Accept the new date because Joaquim knows the customer best || Four delays without new evidence suggest the deal is not progressing.
+- Remove the deal from Joaquim's targets || This does not solve the data or the deal problem.
+* Ask what the buyer has done since the last date and agree to move it back a stage or close it unless there is new evidence || Correct. Stage and date must be based on buyer actions. Repeated slippage is a warning sign.
+- Raise the stage probability to make up for the delay || Probability comes from history, not from the manager's wish.
+:::
+
+## Tool: weekly hygiene checklist
+
+- All deals created this week have every required field filled:
+- No open deal has a close date in the past:
+- Every deal from Qualified onwards has a next step with a date:
+- Stale deals (no activity for 30 days) listed and owners notified:
+- Deals with close dates moved more than twice listed for review:
+- Lost deals have a lost reason from the list:
+- Completeness score this week compared with last week:
+
+## Common mistakes
+
+- Letting reps type stage names as free text, so reports cannot group them.
+- Mixing monthly and annual values in one value column.
+- Accepting a next step with no date, such as "follow up".
+- Leaving dead deals open instead of closing them as lost with a reason.
+
+## Self-check
+
+- Name the six data quality dimensions. (Answer: completeness, accuracy, timeliness, consistency, validity, uniqueness.)
+- What does a close date in the past require? (Answer: update it from real customer timing or close the deal.)
+- Why keep a stage history tab? (Answer: it lets you calculate conversion rates and cycle times later.)
+
+## Practical assignment
+
+Write a one-page data dictionary for your pipeline. Then run the hygiene checklist on your current pipeline, calculate the completeness score, and fix or close every deal with a past close date.
+
+## Summary
+
+- Keep one source of truth with a minimum set of required fields for every deal.
+- Check completeness, accuracy, timeliness, consistency, validity and uniqueness with simple rules.
+- Run a daily, weekly and monthly hygiene routine so the pipeline stays clean.
+=== 20
+SLIDE What you will learn | Calculate pipeline coverage and the coverage you need; Calculate win rate and stage conversion; Measure sales cycle length; Use the sales velocity formula | Five numbers explain most pipeline problems
+SLIDE Pipeline coverage | Open pipeline for the period ÷ remaining target; Required coverage ≈ 1 ÷ win rate; Win rate 25% needs about 4x | A fixed 3x rule may not fit your business
+SLIDE Win rate | Won ÷ (won + lost); Exclude open deals; Calculate by count and by value | Count and value tell different stories
+SLIDE Stage conversion | Deals that reach the next stage ÷ deals that entered the stage; Shows where deals get stuck | Fix the weakest stage first
+SLIDE Sales cycle length | Average days from created to won; Use won deals only; Track by segment | Long cycles need earlier prospecting
+SLIDE Sales velocity | Opportunities × win rate × average deal size ÷ cycle length; Result in Kz per day | Four levers to grow sales
+SLIDE Common mistakes | Counting open deals in win rate; One coverage rule for all segments; Averages hiding big deals | Measure by segment and by rep
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate pipeline coverage and the coverage your win rate requires;
+- calculate win rate and stage conversion rates correctly;
+- measure average deal size and sales cycle length;
+- use the sales velocity formula to choose where to improve.
+
+## Key terms
+
+::: terms
+Pipeline coverage ratio: open pipeline value expected to close in a period divided by the target still to be achieved
+Win rate: the share of closed opportunities that were won
+Stage conversion rate: the share of deals entering a stage that move on to the next stage
+Sales cycle length: the average number of days from creating an opportunity to winning it
+Average deal size: the average value of won deals
+Sales velocity: the value of sales a pipeline produces per day
+:::
+
+## 1. Pipeline coverage
+
+Coverage tells you whether there is enough pipeline to reach the target.
+
+- Coverage ratio = open pipeline value with close dates in the period ÷ target still to be achieved in the period
+
+Example: the quarterly target for new business is 90,000,000 Kz. 30,000,000 Kz is already won, so 60,000,000 Kz remains. Open deals closing this quarter total 150,000,000 Kz. Coverage = 150 ÷ 60 = 2.5x.
+
+Many teams use a 3x rule of thumb. Better: calculate the coverage your own win rate requires, required coverage ≈ 1 ÷ win rate (by value). At 25% you need about 4x, at 50% about 2x. Count only deals that passed the Qualified exit criterion.
+
+::: quiz
+? A team wins 20% of its pipeline value. The remaining target this quarter is 40,000,000 Kz. About how much qualified pipeline does it need?
+- 80,000,000 Kz || This assumes a 50% win rate.
+- 120,000,000 Kz || This uses the 3x rule of thumb, not the team's own win rate.
+- 48,000,000 Kz || This adds 20% to the target instead of dividing by the win rate.
+* 200,000,000 Kz || Correct. Required coverage = 1 ÷ 0.20 = 5x, and 5 × 40,000,000 = 200,000,000 Kz.
+:::
+
+## 2. Win rate and stage conversion
+
+Win rate measures how often you win once a deal is decided:
+
+- Win rate (by count) = deals won ÷ (deals won + deals lost) × 100
+- Win rate (by value) = value won ÷ (value won + value lost) × 100
+
+Never include open deals. Calculate both versions: a 40% count win rate with a 20% value win rate means you win small deals and lose large ones.
+
+Stage conversion rates show where deals get stuck:
+
+- Stage conversion = deals that reached the next stage ÷ deals that entered this stage × 100
+
+If Qualified to Needs confirmed is 70% but Offer submitted to Terms agreed is 30%, the problem is the offer or negotiation. Fix the weakest stage first.
+
+## 3. Sales cycle length and sales velocity
+
+Calculate sales cycle length from won deals only, and by segment: a mini-market may take 10 days, a supermarket chain listing 120 days.
+
+Sales velocity combines four metrics into one number:
+
+- Sales velocity = (number of qualified opportunities × win rate × average deal size) ÷ average sales cycle length in days
+
+The result is the value of sales your pipeline produces per day.
+
+::: slides
+SLIDE Step 1: Count qualified opportunities | Example: 40 open qualified deals in the supermarket segment | Only deals that passed the Qualified gate
+SLIDE Step 2: Find win rate and deal size | Win rate by count 30% and average won deal 6,000,000 Kz | Use the last 12 months
+SLIDE Step 3: Find cycle length | Average 60 days from created to won | Won deals only
+SLIDE Step 4: Calculate | 40 × 0.30 × 6,000,000 ÷ 60 = 1,200,000 Kz per day | About 36,000,000 Kz per 30 days
+SLIDE Step 5: Test the levers | Win rate 30% to 35% gives 1,400,000 Kz per day | Each lever can be modelled the same way
+:::
+
+::: diagram steps | The four levers of sales velocity
+More qualified opportunities: prospect more and improve lead sources
+Higher win rate: qualify harder and improve offers
+Larger deal size: sell a wider range or more volume per account
+Shorter sales cycle: reach the decision-maker earlier and remove delays
+:::
+
+::: quiz
+? A rep has 20 qualified opportunities, a 25% win rate, an average deal of 4,000,000 Kz and a 50-day cycle. What is her sales velocity?
+* 400,000 Kz per day || Correct. 20 × 0.25 × 4,000,000 ÷ 50 = 400,000 Kz per day.
+- 1,600,000 Kz per day || This forgets to apply the 25% win rate.
+- 20,000,000 Kz per day || This forgets to divide by the 50-day cycle.
+- 100,000 Kz per day || Check the calculation: 20 × 0.25 = 5 deals, 5 × 4,000,000 = 20,000,000, ÷ 50 = 400,000.
+:::
+
+## Worked example: the supermarket channel
+
+Helena runs the modern trade team for an FMCG distributor in Luanda. Her new business target for the quarter is 120,000,000 Kz and nothing is won yet. Her metrics from the last 12 months:
+
+- Closed deals: 24 won, 56 lost, so the win rate by count is 24 ÷ 80 = 30%.
+- Value won 96,000,000 Kz, value lost 384,000,000 Kz, so the win rate by value is 96 ÷ 480 = 20%.
+- Average won deal = 96,000,000 ÷ 24 = 4,000,000 Kz.
+- Average cycle = 75 days.
+- Open qualified pipeline closing this quarter: 300,000,000 Kz in 45 deals.
+
+Coverage is 300 ÷ 120 = 2.5x, but her value win rate of 20% means she needs about 5x, or 600,000,000 Kz. Velocity is 45 × 0.30 × 4,000,000 ÷ 75 = 720,000 Kz per day, or about 65,000,000 Kz in a 90-day quarter, well short of 120,000,000 Kz.
+
+The gap between count and value win rates shows she loses large deals. Lost reasons point to credit terms for big wholesalers, so she agrees a clear credit policy with finance and asks the team for more qualified opportunities.
+
+::: case | Which lever first?
+Domingos manages B2B sales for a security services firm in Luanda. His velocity is low. Qualified opportunities 30, win rate 45%, average deal 12,000,000 Kz a year, cycle 140 days. Competitors report shorter cycles because they meet the company administrator in the first week.
+? Which lever should he work on first?
+- Win rate, by cutting prices || His win rate is already high, and price cuts reduce margin.
+* Cycle length, by reaching the economic buyer earlier || Correct. A 140-day cycle is his weakest lever, and the evidence shows a clear fix.
+- Deal size, by adding more guards to each offer || Larger offers may lower his win rate and do not fix the slow cycle.
+- Number of opportunities, by adding unqualified leads || Unqualified leads inflate the count but not real velocity.
+:::
+
+## Tool: monthly pipeline metrics sheet
+
+- Target remaining this period (Kz):
+- Qualified pipeline closing this period (Kz):
+- Coverage ratio and required coverage (1 ÷ value win rate):
+- Win rate by count and by value, last 12 months:
+- Stage conversion rate for each stage:
+- Average deal size by segment:
+- Average sales cycle by segment (days):
+- Sales velocity (Kz per day) and its change from last month:
+
+## Common mistakes
+
+- Including open deals in the win rate, which makes it look lower than it is.
+- Using a fixed 3x coverage rule without checking your own win rate.
+- Mixing segments, so a few large supermarket deals hide many small wholesale deals.
+- Tracking the metrics but never deciding which lever to improve.
+
+## Self-check
+
+- 18 deals won, 42 lost, 15 open. What is the win rate by count? (Answer: 18 ÷ 60 = 30%.)
+- What does required coverage of 1 ÷ win rate mean at a 33% win rate? (Answer: about 3x the remaining target.)
+- What are the four inputs to sales velocity? (Answer: qualified opportunities, win rate, average deal size, sales cycle length.)
+
+## Practical assignment
+
+Calculate your team's coverage, win rate by count and value, average deal size, cycle length and sales velocity for the last 12 months. Choose the weakest lever and write one action to improve it this month.
+
+## Summary
+
+- Coverage shows if the pipeline is big enough, and your win rate tells you how big it must be.
+- Win rate excludes open deals, and the gap between count and value win rates is a signal.
+- Sales velocity combines opportunities, win rate, deal size and cycle into Kz per day.
+=== 20
+SLIDE What you will learn | Build a weighted pipeline forecast; Use forecast categories Commit, Best case and Pipeline; Combine base business and new business; Present the forecast as a range | A forecast is a number you can defend
+SLIDE Weighted pipeline | Deal value × stage probability; Add the results; Objective but weak with few large deals | Good for many small deals
+SLIDE Forecast categories | Closed: already won; Commit: high confidence, evidence-based; Best case: could close if things go well; Pipeline: open but unlikely this period; Omitted: excluded | Categories add the rep's judgement
+SLIDE Rules for Commit | Buyer confirmed timing; Decision-maker engaged; Order or contract process known; No open blockers | Commit is a promise, not a hope
+SLIDE Base plus new business | Base: repeat orders from existing customers; New: pipeline deals; Forecast each separately | Distributors live on base business
+SLIDE Forecast as a range | Floor = Closed + Commit; Most likely = floor + part of Best case; Ceiling = floor + all Best case | Show the range and the risks
+SLIDE Common mistakes | Total pipeline used as forecast; Commit without evidence; Ignoring base business trends | Compare two methods and explain the gap
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate a weighted pipeline forecast;
+- classify deals into the forecast categories Commit, Best case and Pipeline;
+- combine base business and new business in one forecast;
+- present the forecast as a range with its main risks.
+
+## Key terms
+
+::: terms
+Sales forecast: an estimate of the sales that will be achieved in a defined period
+Weighted pipeline: the sum of each open deal's value multiplied by its stage probability
+Forecast category: a judgement label for each deal, such as Commit, Best case or Pipeline
+Commit: deals the owner is highly confident will close in the period, backed by evidence
+Best case: deals that could close in the period if things go well
+Base business: repeat sales from existing customers that do not pass through the new business pipeline
+:::
+
+## 1. Two ways to forecast the pipeline
+
+The weighted pipeline method multiplies each deal's value by its stage probability (from lesson 1) and adds the results. It is objective and quick. It works well when you have many deals of similar size, such as new mini-market accounts. It works badly with a few large deals: a 50,000,000 Kz supermarket listing at 40% adds 20,000,000 Kz to the forecast, but the real result will be 0 or 50,000,000 Kz.
+
+The forecast category method adds the judgement of the person closest to the deal. Many CRM systems use similar labels:
+
+- Closed: already won in the period.
+- Commit: the owner is highly confident it will close in the period, and there is evidence.
+- Best case: it could close in the period if things go well.
+- Pipeline: open, but unlikely to close in this period.
+- Omitted: excluded from this period's forecast.
+
+Commit must follow strict rules, otherwise it becomes a list of hopes. A deal is Commit only if the buyer has confirmed the timing, the decision-maker is engaged, the order or contract process is known (for example, the purchase order steps and supplier registration) and there are no open blockers such as credit approval.
+
+::: diagram pyramid | Forecast categories by certainty
+Closed: already won and booked
+Commit: high confidence with evidence
+Best case: could close if things go well
+Pipeline: open but unlikely this period
+:::
+
+::: quiz
+? A hotel buyer says he "will probably order" your new rice range this month, but the credit application is not yet approved. Which category fits?
+- Closed || No order has been received.
+- Commit || An open blocker, credit approval, means it fails the Commit rules.
+* Best case || Correct. It could close this month if credit is approved, but it is not certain.
+- Omitted || The deal is active and could still close in the period.
+:::
+
+## 2. Base business plus new business
+
+For a distributor, most monthly sales come from existing customers who reorder: wholesalers, supermarkets and HoReCa accounts. These sales do not pass through the new business pipeline, so forecast them separately.
+
+::: slides
+SLIDE Step 1: Base business | Average monthly sales from existing accounts over the last three months | Adjust for known seasonality and lost accounts
+SLIDE Step 2: Known changes | Add confirmed price changes or promotions and remove accounts that stopped buying | Use facts, not hopes
+SLIDE Step 3: New business | Closed + Commit + a share of Best case from the pipeline | Use your own history for the share
+SLIDE Step 4: Total and range | Base + new business, shown as floor, most likely and ceiling | Explain the main risks
+:::
+
+Example for the month: base business averaged 400,000,000 Kz over the last three months. One wholesaler that bought 20,000,000 Kz a month has moved to a competitor, so the base forecast is 380,000,000 Kz.
+
+## 3. Building the range
+
+Present the new business forecast as a range rather than one number:
+
+- Floor = Closed + Commit
+- Most likely = Closed + Commit + Best case × your historical Best case conversion
+- Ceiling = Closed + Commit + all Best case
+
+Then compare it with the weighted pipeline. If the two differ a lot, find out why: often weak Commit deals or old deals sitting in late stages.
+
+::: quiz
+? Closed is 10,000,000 Kz, Commit 25,000,000 Kz and Best case 30,000,000 Kz. Historically, 40% of Best case closes. What is the most likely new business forecast?
+- 35,000,000 Kz || This is the floor: Closed plus Commit only.
+- 65,000,000 Kz || This is the ceiling: it assumes all Best case closes.
+* 47,000,000 Kz || Correct. 10 + 25 + 30 × 0.40 = 47,000,000 Kz.
+- 26,000,000 Kz || This applies 40% to all categories, including Closed and Commit.
+:::
+
+## Worked example: the monthly forecast for the B2B and key accounts channel
+
+Nuno leads the B2B and key accounts channel for an FMCG distributor in Luanda. He must send the monthly forecast to the commercial director on the third working day.
+
+Base business: existing accounts averaged 250,000,000 Kz a month over the last three months. A supermarket chain has confirmed a promotion that historically adds about 10,000,000 Kz, and one HoReCa group worth 6,000,000 Kz a month has stopped buying. Base forecast = 250 + 10 − 6 = 254,000,000 Kz.
+
+New business, from his team's categories:
+
+- Closed: 8,000,000 Kz.
+- Commit: 22,000,000 Kz (three deals, each with the buyer's confirmed date and credit approved).
+- Best case: 40,000,000 Kz. Historically 35% of Best case closes.
+
+New business range: floor 30,000,000 Kz, most likely 30 + 14 = 44,000,000 Kz, ceiling 70,000,000 Kz.
+
+The weighted pipeline for deals closing this month is 52,000,000 Kz, higher than the most likely figure. Nuno checks and finds two old deals sitting at Terms agreed with no activity for 60 days. He moves them back, and the weighted figure falls to 45,000,000 Kz, close to the category forecast.
+
+His forecast: 284,000,000 Kz floor, 298,000,000 Kz most likely, 324,000,000 Kz ceiling. Main risk: the large Best case deal with a hotel group in the Ilha that depends on a tasting next week.
+
+::: case | The big deal in Commit
+Teresa, a key account manager, puts a 60,000,000 Kz first order from a new wholesaler in Benguela into Commit for this month. The owner said "yes, this month" by phone, but no purchase order exists, the credit limit is not approved, and nobody has met the owner's partner, who co-signs large purchases.
+? What should her manager do?
+- Keep it in Commit because the owner said yes || A verbal yes without credit approval and the second signatory fails the Commit rules.
+* Move it to Best case and agree actions to meet the partner and get credit approved || Correct. The evidence does not support Commit. Clear actions can move it up later.
+- Remove it from the forecast completely || The deal is active and could close, so Best case is more accurate than removing it.
+- Keep it in Commit but halve its value || Changing the value hides the real risk. Categories should reflect evidence.
+:::
+
+## Tool: monthly forecast template
+
+- Base business: three-month average (Kz):
+- Known changes (promotions, lost accounts, price changes):
+- Base forecast (Kz):
+- New business Closed (Kz):
+- New business Commit (Kz), each deal with evidence:
+- New business Best case (Kz) and historical conversion %:
+- Floor, most likely and ceiling (Kz):
+- Weighted pipeline for the period, and the reason for any gap:
+- Top three risks and upsides:
+
+## Common mistakes
+
+- Using total pipeline value as the forecast.
+- Allowing deals into Commit on a verbal promise without evidence.
+- Forecasting only new business and ignoring trends in base business.
+- Giving one number without the range and the main risks.
+
+## Self-check
+
+- Why is the weighted method weak for a few large deals? (Answer: each deal will close at full value or zero, not at its weighted value.)
+- What must be true for a deal to be in Commit? (Answer: confirmed timing, decision-maker engaged, order process known, no open blockers.)
+- What is the forecast floor? (Answer: Closed plus Commit.)
+
+## Practical assignment
+
+Prepare next month's forecast using the template. Classify every deal closing next month into a category with evidence, calculate the floor, most likely and ceiling, and compare them with the weighted pipeline.
+
+## Summary
+
+- The weighted pipeline is objective, and forecast categories add evidence-based judgement.
+- Distributors must forecast base business and new business separately.
+- Present the forecast as a floor, most likely and ceiling, with the main risks.
+=== 20
+SLIDE What you will learn | Separate the forecast call, pipeline review and deal review; Run a weekly review with a fixed agenda; Read pipeline movement with a waterfall; Ask evidence-based questions | A good review changes what happens next week
+SLIDE Three different meetings | Forecast call: will we hit the number?; Pipeline review: is the pipeline healthy?; Deal review: how do we win this deal? | Do not mix them in one long meeting
+SLIDE Before the meeting | Data updated by a fixed deadline; Exception report shared; Dashboard with targets and coverage | No updating during the meeting
+SLIDE A 60-minute agenda | Numbers vs target; Pipeline movement; Stuck and slipped deals; Top deals; Actions | Same agenda every week
+SLIDE The pipeline waterfall | Opening + new − won − lost ± value changes = closing; Shows where value came from and went | Movement matters more than size
+SLIDE Evidence-based questions | What did the customer do last?; Have we met the decision-maker?; What must happen to close by the date?; What is the next step and date? | Ask for facts, not feelings
+SLIDE Common mistakes | Storytelling about every deal; No action log; Blaming instead of coaching; Cancelling when busy | Every action has an owner and a date
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- distinguish the forecast call, the pipeline review and the deal review;
+- run a weekly pipeline review with a fixed agenda and preparation;
+- read pipeline movement using a pipeline waterfall;
+- ask evidence-based questions and record actions with owners and dates.
+
+## Key terms
+
+::: terms
+Pipeline review: a regular meeting that checks the health of the whole pipeline: size, coverage, movement and stuck deals
+Deal review: a coaching discussion on how to win one specific opportunity
+Forecast call: a short meeting to agree the expected result for the period
+Pipeline waterfall: a reconciliation showing how the pipeline changed from the start to the end of a period
+Slipped deal: a deal whose close date moved out of the current period
+:::
+
+## 1. Three meetings, three purposes
+
+Many sales meetings try to do everything at once: reps tell long stories and nobody knows what will change. Separate three conversations:
+
+- The forecast call answers one question: will we reach the number this period? It uses the categories from lesson 4 and takes 15 to 30 minutes.
+- The pipeline review checks the health of the whole pipeline: is there enough, is it moving, and where is it stuck? It looks at the pipeline as a system.
+- The deal review is coaching on one large or difficult deal: who decides, what do they need, and what is our plan?
+
+A weekly pipeline review can include a short forecast check and one or two deal reviews, but each part needs its own time box.
+
+## 2. The weekly review: preparation and agenda
+
+Good reviews are prepared. Agree a data deadline, for example Thursday at 12:00, by which every rep updates stages, close dates and next steps. The coordinator then shares the hygiene exception report from lesson 2 and a one-page dashboard: target, closed to date, coverage, Commit and Best case, and new pipeline created this week. Nobody updates the CRM during the meeting.
+
+::: diagram steps | A 60-minute weekly pipeline review
+Numbers vs target (10 min): closed, forecast range and coverage
+Pipeline movement (10 min): the waterfall since last week
+Stuck and slipped deals (15 min): stale deals and repeated slippage
+Top deals (15 min): the five largest deals closing this period
+Actions (10 min): owners and dates recorded in the action log
+:::
+
+The pipeline waterfall shows how the pipeline changed during the week:
+
+- Closing pipeline = opening pipeline + new deals added − deals won − deals lost ± value changes
+
+::: slides
+SLIDE Step 1: Opening pipeline | Monday 1: open qualified pipeline 180,000,000 Kz | Take a snapshot each week
+SLIDE Step 2: Additions | New qualified deals this week: 25,000,000 Kz | Shows prospecting health
+SLIDE Step 3: Exits | Won 15,000,000 Kz and lost 20,000,000 Kz | Check the lost reasons
+SLIDE Step 4: Changes | Value reduced on two deals: minus 10,000,000 Kz | Ask why each value changed
+SLIDE Step 5: Closing pipeline | 180 + 25 − 15 − 20 − 10 = 160,000,000 Kz | Pipeline shrank because exits were larger than new deals
+:::
+
+::: quiz
+? Opening pipeline is 200,000,000 Kz. This week the team added 30,000,000 Kz, won 25,000,000 Kz, lost 15,000,000 Kz and there were no value changes. What is the closing pipeline?
+- 230,000,000 Kz || This adds new deals but ignores the won and lost deals.
+* 190,000,000 Kz || Correct. 200 + 30 − 25 − 15 = 190,000,000 Kz.
+- 160,000,000 Kz || This subtracts the new deals instead of adding them.
+- 175,000,000 Kz || This subtracts only the won deals. Lost deals also leave the pipeline.
+:::
+
+## 3. Asking evidence-based questions
+
+The manager's questions decide the quality of the meeting. Questions such as "How is it going?" or "Do you feel good about this one?" invite stories. Evidence-based questions ask for facts:
+
+- What did the customer do since last week?
+- Have we met the person who signs, and what did they say?
+- What has to happen for this deal to close by the date in the system?
+- What is the next step, and on what date?
+- What could make us lose this deal?
+
+Keep the tone of coaching, not punishment. If reps are attacked for honest bad news, they will hide it, and the forecast gets worse. Record every agreed action in an action log with an owner and a date, and start the next review by checking last week's actions.
+
+::: quiz
+? During the review, a rep says a supermarket deal "is going very well, the buyer likes us". Which follow-up question is most useful?
+- Are you confident about this one? || This asks for a feeling, not evidence.
+- Why has it not closed yet? || This sounds like blame and may produce excuses.
+* What has the buyer done since last week, and what is the next step and date? || Correct. It asks for buyer actions and a dated next step.
+- Can you increase the value of the deal? || Value is not the issue. The question is whether the deal is progressing.
+:::
+
+## Worked example: Monday reviews in Luanda
+
+Paula and her co-manager run the B2B and key accounts channel for a food distributor in Luanda, with seven reps covering wholesalers, supermarkets and HoReCa. Their Monday meeting took two hours: each rep talked through every deal, and actions were rarely written down.
+
+They redesign it:
+
+- Data deadline Friday at 15:00. The coordinator sends the exception report and dashboard by 17:00.
+- The meeting takes 60 minutes with the agenda above.
+- A shared action log records owner, action and date.
+
+In the first month the waterfall shows a pattern: each week, deals lost are larger than new deals added, and the pipeline shrinks from 310,000,000 Kz to 250,000,000 Kz. The cause is clear: reps busy with key accounts have stopped prospecting. The managers agree a minimum of 20,000,000 Kz of new qualified pipeline per week for the team and track it in every review. Two months later, the pipeline is back above 300,000,000 Kz.
+
+::: case | The review that became storytelling
+Carlos's weekly review lasts 90 minutes. Reps describe each customer visit in detail, and the meeting ends without decisions. The forecast missed by 25% last month, and two large deals slipped without warning.
+? What should Carlos change first?
+- Make the meeting longer so every deal can be discussed || More time for stories will not produce better decisions.
+- Ask reps to bring printed notes about every visit || More detail does not focus the meeting on the pipeline's health.
+* Set a data deadline, use a fixed agenda that focuses on movement, slipped deals and top deals, and keep an action log || Correct. Preparation, structure and recorded actions turn the meeting into a management tool.
+- Cancel the meeting and review the CRM alone || Without the team, there is no coaching and no shared commitment.
+:::
+
+## Tool: weekly review agenda and action log
+
+- Data deadline and who sends the exception report:
+- Target, closed to date and forecast range:
+- Coverage ratio this week compared with last week:
+- Waterfall: opening, added, won, lost, value changes, closing:
+- Stale and slipped deals to discuss:
+- Five largest deals: next step and date for each:
+- Action log: action, owner, due date, status at next meeting:
+
+## Common mistakes
+
+- Letting reps tell stories about every deal instead of following the agenda.
+- Updating the CRM during the meeting instead of before it.
+- Agreeing actions but not recording owners and dates.
+- Punishing bad news, so reps hide problems until it is too late.
+
+## Self-check
+
+- What is the purpose of a deal review? (Answer: to coach on how to win one specific deal.)
+- Write the waterfall formula. (Answer: closing = opening + added − won − lost ± value changes.)
+- Give one evidence-based question. (Answer: for example, what has the customer done since last week?)
+
+## Practical assignment
+
+Set a data deadline for your team, build the one-page dashboard and run next week's review with the 60-minute agenda. Calculate the waterfall and start an action log with owners and dates.
+
+## Summary
+
+- Separate the forecast call, the pipeline review and the deal review.
+- Prepare with a data deadline and dashboard, and use the waterfall to see movement.
+- Ask for evidence, coach instead of blaming, and record every action with an owner and date.
+=== 20
+SLIDE What you will learn | Set targets top-down and bottom-up and reconcile them; Write SMART targets and split them by month; Design balanced territories; Measure forecast accuracy and bias | Good targets and territories make the pipeline fair and realistic
+SLIDE Top-down vs bottom-up | Top-down: company budget split across teams; Bottom-up: account potential and pipeline per rep; Reconcile the gap openly | Neither method alone is enough
+SLIDE SMART targets | Specific; Measurable; Achievable; Relevant; Time-bound (Doran, 1981) | A target must be clear and checkable
+SLIDE Territory design | List accounts; Classify A, B, C; Set visit frequency; Calculate workload; Group by geography; Check balance | Balance potential and workload
+SLIDE Forecast accuracy | Accuracy = 1 − absolute(actual − forecast) ÷ actual; Track monthly per rep and team | Measure it to improve it
+SLIDE Forecast bias | Bias = (forecast − actual) ÷ actual; Positive = over-forecasting; Negative = sandbagging | Consistent bias is fixable
+SLIDE Improve with PDCA | Plan: set rules; Do: forecast; Check: accuracy, bias, probabilities; Act: adjust | Calibrate stage probabilities every quarter
+SLIDE Common mistakes | Targets only top-down; Unequal territories; Never measuring accuracy; Changing rules every month | Fair targets, balanced territories, steady learning
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- set sales targets top-down and bottom-up and reconcile the two;
+- write SMART targets and split an annual target by month;
+- design sales territories that balance potential and workload;
+- calculate forecast accuracy and bias and use them to improve.
+
+## Key terms
+
+::: terms
+Top-down target: a target that starts from the company budget and is split across regions, teams and reps
+Bottom-up target: a target built from the potential of each account and each rep's pipeline
+Territory: the group of accounts or the area that one rep is responsible for
+Account potential: the total amount a customer could buy in your categories, from any supplier
+Forecast accuracy: how close the forecast was to the actual result
+Forecast bias: a consistent tendency to forecast too high or too low
+:::
+
+## 1. Setting targets
+
+Targets can be set in two ways. Top-down starts from the company budget, for example 4.8 billion Kz for the B2B channel next year, and splits it by region and rep. Bottom-up starts from each account: what it buys today, its potential, and the new business the pipeline can realistically produce.
+
+Do both and compare. If bottom-up is 4.2 billion Kz, the 600,000,000 Kz gap needs a specific plan, such as new accounts in Huambo, not just a bigger number for each rep.
+
+Write each target as SMART: specific, measurable, achievable, relevant and time-bound, a framework first described by George T. Doran in 1981. "Grow sales" is not a target. "Win 300,000,000 Kz of new HoReCa business in Luanda between January and June" is.
+
+Split annual targets by month using your own seasonality: each month's share of annual sales over the last two or three years, not one twelfth each.
+
+::: quiz
+? A rep's annual target is 600,000,000 Kz. Over the last three years, March averaged 7% of annual sales. What is a fair March target?
+- 50,000,000 Kz || This is one twelfth of the year and ignores seasonality.
+* 42,000,000 Kz || Correct. 600,000,000 × 7% = 42,000,000 Kz.
+- 70,000,000 Kz || This is 7% of 1,000,000,000 Kz, not of 600,000,000 Kz.
+- 35,000,000 Kz || Check the calculation: 7% of 600,000,000 is 42,000,000.
+:::
+
+## 2. Designing balanced territories
+
+A territory should give each rep fair potential and a workload one person can cover. Otherwise one rep cannot visit all accounts while another lacks the potential to reach target.
+
+::: slides
+SLIDE Step 1: List and classify | List every account with current sales and potential, then classify by ABC analysis | A accounts are the few that give most of the value
+SLIDE Step 2: Set visit frequency | Example: A weekly, B every two weeks, C monthly | Frequency follows value and needs
+SLIDE Step 3: Calculate workload | Visits per month = accounts × visits per month for each class | Compare with each rep's capacity
+SLIDE Step 4: Group and balance | Group accounts by geography, such as Viana, Cazenga or Talatona, then compare potential and workload per rep | Adjust boundaries until both are close
+:::
+
+Example of workload: a territory has 10 A accounts (4 visits a month), 30 B accounts (2 visits) and 60 C accounts (1 visit). Workload = 40 + 60 + 60 = 160 visits a month. A rep who can make 8 visits a day for 20 working days has a capacity of 160 visits, so the territory is fully loaded and leaves no time for prospecting. Move some C accounts to telesales or another rep.
+
+::: diagram matrix | Territory balance check | Potential (low → high) | Workload (low → high)
+Overloaded, low potential: move C accounts to telesales
+Overloaded, high potential: split or add support
+Under-loaded, low potential: merge or add accounts
+Under-loaded, high potential: room to add prospecting
+:::
+
+## 3. Measuring and improving forecast accuracy
+
+You cannot improve a forecast you do not measure. Track two numbers every month, per rep and for the team:
+
+- Forecast accuracy = 1 − (absolute difference between actual and forecast ÷ actual)
+- Forecast bias = (forecast − actual) ÷ actual
+
+Example: forecast 110,000,000 Kz, actual 100,000,000 Kz. Accuracy = 1 − 10 ÷ 100 = 90%, bias = +10% (too high). One month tells you little. A rep at +15% for six months is optimistic. A rep always at −15% is probably sandbagging: holding deals back to beat the forecast.
+
+Use the Plan-Do-Check-Act cycle to improve:
+
+::: diagram cycle | Improving forecast accuracy with PDCA
+Plan: agree stage definitions, Commit rules and stage probabilities
+Do: forecast every month with the same method
+Check: measure accuracy and bias per rep, and compare stage probabilities with real win rates
+Act: recalibrate probabilities, coach biased reps and fix unclear rules
+:::
+
+Each quarter, recalculate stage probabilities from the latest closed deals, as in lesson 1. Review lost deals: if many are lost at Terms agreed for the same reason, fix that reason.
+
+::: quiz
+? A rep forecast 80,000,000 Kz and the actual result was 100,000,000 Kz. What are her accuracy and bias?
+- Accuracy 80%, bias +20% || The sign is wrong: she forecast too low, so bias is negative.
+- Accuracy 75%, bias −25% || These divide by the forecast instead of the actual.
+- Accuracy 120%, bias −20% || Accuracy cannot be above 100% with this formula.
+* Accuracy 80%, bias −20% || Correct. 1 − 20 ÷ 100 = 80%, and (80 − 100) ÷ 100 = −20%.
+:::
+
+## Worked example: rebalancing territories in Luanda
+
+A food distributor has four B2B reps in Luanda. Last year the Talatona rep reached 140% of target and the Cacuaco rep 70%. The commercial director suspects the territories.
+
+She lists all 420 accounts, classifies them by ABC analysis and calculates workload and potential for each territory. Talatona has 30% of the team's potential but only 20% of the workload. Cacuaco has 35% of the workload but only 15% of the potential.
+
+She moves 25 B accounts from Cacuaco to telesales and gives the Cacuaco rep 8 A accounts in Viana. Both territories now hold 22% to 28% of potential with similar workload.
+
+She also starts tracking forecast accuracy. After three months, the team's accuracy is 84%, with one rep consistently at +20% bias. Coaching on the Commit rules brings that rep's bias down to +6%.
+
+::: case | The rep who always beats the forecast
+Fátima, a sales rep for a distributor in Benguela, has beaten her forecast by 18% to 25% every month for six months. Her manager likes the results, but the warehouse keeps running short of stock at the end of each month because purchasing plans from the forecast.
+? What should the manager do?
+- Praise Fátima and change nothing, because results are good || The negative bias causes stock-outs, so the forecast is hurting the business.
+* Show her the bias data, review her Best case deals together and agree to forecast deals she expects to close || Correct. A consistent negative bias suggests sandbagging, and better forecasts help purchasing and stock.
+- Raise her target by 25% as a penalty || This punishes good results and encourages more hiding.
+- Ignore her forecast and let purchasing guess || This removes the information purchasing needs.
+:::
+
+## Tool: target and territory review checklist
+
+- Top-down target and bottom-up target, and the plan to close the gap:
+- Each target written as SMART:
+- Monthly split based on historical seasonality:
+- Accounts per territory classified A, B, C:
+- Workload (visits per month) compared with rep capacity:
+- Potential per territory as % of the team total:
+- Forecast accuracy and bias per rep, last six months:
+- Stage probabilities recalibrated this quarter (yes or no):
+
+## Common mistakes
+
+- Setting targets only top-down, with no link to account potential.
+- Giving reps territories with very different potential or workload.
+- Measuring forecast accuracy for one month and drawing conclusions.
+- Changing the forecasting rules every month, so accuracy cannot improve.
+
+## Self-check
+
+- What is the difference between top-down and bottom-up targets? (Answer: top-down splits the company budget, bottom-up builds from account potential and pipeline.)
+- Forecast 50,000,000 Kz, actual 40,000,000 Kz. What is the bias? (Answer: +25%, over-forecasting.)
+- What does a consistent negative bias suggest? (Answer: sandbagging, or holding deals back.)
+
+## Practical assignment
+
+Calculate forecast accuracy and bias for your team for the last six months. Then calculate the monthly workload of one territory and compare it with the rep's capacity.
+
+## Summary
+
+- Set targets top-down and bottom-up, reconcile the gap and write them as SMART.
+- Balance territories on both potential and workload using ABC analysis.
+- Track forecast accuracy and bias every month and improve with PDCA.

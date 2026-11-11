@@ -1,0 +1,432 @@
+{
+ "slug": "demand-planning-sop",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the difference between demand, sales and orders;\n- clean a sales history for stock-outs, outliers and promotions;\n- apply ABC-XYZ segmentation to decide where planning effort goes;\n- choose the right level of detail and horizon for a forecast.\n\n## Key terms\n\n::: terms\nDemand plan: the agreed forecast of what customers will buy, by product and period, used to drive supply decisions\nCensored demand: recorded sales that are lower than real demand because stock was not available\nBaseline demand: the normal level of demand without promotions, tenders or one-off events\nCoefficient of variation (CV): standard deviation of demand divided by average demand\nPlanning horizon: how far into the future the forecast looks\n:::\n\n## 1. What exactly are we forecasting?\n\nAn importer of rice, sugar and flour into Luanda commits money months before the goods sell, because an order placed today may arrive three or four months later. The demand plan drives that decision, so it must describe what customers will want, not what the warehouse happened to ship. Four numbers are often confused:\n\n- Customer orders: close to true demand, but inflated when customers over-order for fear of shortages.\n- Invoiced sales: what you delivered, lower than demand whenever you were out of stock.\n- Purchase orders on suppliers: your own supply decisions, never demand history.\n- True demand: what customers would have bought with full availability. This is what you forecast.\n\nMost distributors start from invoiced sales, the most reliable data in the ERP, and correct them, adding unfulfilled order lines or lost-sale notes where they exist.\n\n::: quiz\n? Your system shows 600 t of sugar invoiced in March, but the warehouse had no stock for the last 10 days of the month. Which statement is correct?\n- March demand was 600 t || Invoices only show what you could deliver, not what customers wanted.\n* March demand was probably higher than 600 t || Stock was missing for a third of the month, so recorded sales are censored.\n- March should be removed from the history || Removing a month loses information. Adjust it instead.\n:::\n\n## 2. Cleaning the history step by step\n\nA clean history matters more than a clever method. Work through four steps:\n\n::: slides\nSLIDE Step 1: Correct stock-outs | Find periods without stock; Replace with average daily sales x days in the period | Note every adjustment\nSLIDE Step 2: Investigate outliers | Flag unusual values; Ask sales and finance why | Never delete without a reason\nSLIDE Step 3: Separate events | Split promotions and tenders from baseline | Forecast them separately\nSLIDE Step 4: Align the calendar | Adjust for selling days and holidays | Compare like with like\n:::\n\nStock-out correction: a 25 kg flour bag sold 1,800 bags in 20 days with stock, then had 10 days without stock in a 30-day month. Average daily sales = 1,800 / 20 = 90 bags, so estimated demand = 90 x 30 = 2,700 bags. Using 1,800 would make the next forecast too low and cause the next stock-out.\n\nOutliers: flag any month more than about two standard deviations from the average. A flag is a question, not an answer. A spike may be a typing error, a one-off tender, or a real increase because a competitor left the market. Only the first two should be corrected.\n\nPromotions: if a promotion sold an extra 300 cases, record 300 as uplift and keep the baseline. Plan the uplift again only if the promotion is repeated.\n\n## 3. ABC-XYZ segmentation: where to spend effort\n\nA distributor with 400 SKUs cannot review every forecast every month. ABC-XYZ segmentation combines two views:\n\n- ABC by value: A items are the few that make about 80% of sales value, B the next 15%, C the long tail. These cut-offs are conventions.\n- XYZ by variability, using CV: X stable, Y variable, Z erratic. Cut-offs such as CV below 0.5 for X and above 1.0 for Z are common.\n\nExample: rice 5 kg sells an average of 4,000 bags a month with a standard deviation of 600, so CV = 0.15, an X item. A specialty pulse averaging 50 cases with a standard deviation of 70 has CV = 1.4, a Z item.\n\n::: diagram matrix | ABC-XYZ: planning approach | Variability (X stable → Z erratic) | Value (C low → A high)\nAX: high value, stable – statistical forecast, monthly review\nAZ: high value, erratic – planner and sales review, more safety stock\nCX: low value, stable – automate fully\nCZ: low value, erratic – order on demand or review the range\n:::\n\n## 4. Level of detail and horizon\n\nForecasts are more accurate when aggregated, because SKU errors partly cancel out. Use product family and month for the S&OP plan, cash budget and container bookings, SKU and month for purchase orders, and SKU and province only where stock sits in regional depots.\n\nThe horizon must be longer than the total lead time. If rice takes four months from order to available stock, a three-month forecast cannot support today's order. A practical choice is 12 to 18 months for families and 4 to 6 months for SKUs.\n\n::: quiz\n? Total lead time for imported sugar is four months. What is the minimum forecast horizon for SKU purchase orders?\n- One month || A one-month view cannot cover goods that arrive in four months.\n- Three months || This still ends before the order arrives.\n* More than four months || The forecast must cover the lead time plus the review period.\n:::\n\n## Worked example: cleaning rice history in Luanda\n\nA food importer in Luanda sells 25 kg rice bags in five provinces. Its new planner, Teresa, cleans the history:\n\n- In May the warehouse was out of stock for 8 of 31 days. Invoiced sales were 9,200 bags in 23 days. Teresa estimates 9,200 / 23 x 31 = 12,400 bags of demand.\n- August shows 31,000 bags against a usual 12,000 to 13,000. Sales confirm a one-off food-basket tender of 18,000 bags. Teresa records 18,000 as an event and keeps 13,000 as baseline.\n- October shows 1,250 bags. Finance confirms a keying error: the real figure is 12,500. She corrects it.\n\nRice 25 kg is an AX item, so it is forecast statistically and reviewed monthly.\n\n::: case | A sugar spike before the festive season\nIn November, 1 kg sugar sales at a Luanda distributor jumped from about 40,000 to 65,000 packs because one wholesaler bought heavily after hearing that a competitor's ship was delayed. Planner Joaquim is preparing the history.\n? What should Joaquim do with the November figure?\n- Use 65,000 as normal demand || This inflates the baseline with a one-off buying wave.\n* Keep about 40,000 as baseline and record 25,000 as an event || Forward buying is usually followed by a dip, so separating it protects both months.\n- Delete November from the history || Deleting loses the real baseline and the evidence of the event.\n- Raise the December forecast by 25,000 || The wholesaler has already bought, so December is more likely to fall.\n:::\n\n## Tool: data-cleansing checklist\n\n- Item and unit (bags, cases, tonnes):\n- Periods with stock-out and the adjustment made:\n- Outliers flagged and cause confirmed by:\n- Promotions, tenders and one-off deals recorded separately:\n- Selling days and calendar effects noted:\n- ABC class and XYZ class:\n- Forecast level (family, SKU, province) and horizon:\n\n## Common mistakes\n\n- Using purchase orders, or uncorrected shipments, as demand.\n- Deleting outliers without finding the cause.\n- Leaving promotions and tenders inside the baseline.\n- Giving every SKU the same attention.\n\n## Self-check\n\n- Why do stock-outs make recorded sales lower than demand? (Answer: customers who could not buy are not recorded, so sales are censored.)\n- A product averages 200 cases a month with a standard deviation of 50. What is its CV? (Answer: 50 / 200 = 0.25, a stable X item.)\n- At what level should vessel and container bookings be planned? (Answer: product family and month.)\n\n## Practical assignment\n\nPull 24 months of sales for your top five items. Mark stock-outs, outliers and promotions, calculate the CV and complete the checklist.\n\n## Summary\n\n- Forecast true customer demand, and correct invoiced sales for stock-outs, errors and events.\n- Use ABC-XYZ segmentation to focus effort where value and variability are high.\n- Match the forecast level to the decision and keep the horizon longer than the total lead time.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- recognise the four common demand patterns: level, trend, seasonal and intermittent;\n- calculate naive, weighted moving average and exponential smoothing forecasts;\n- build and apply a seasonal index;\n- choose a suitable method for each type of item.\n\n## Key terms\n\n::: terms\nTime series: demand recorded at regular intervals, such as monthly sales\nNaive forecast: a forecast equal to the last actual value, used as a benchmark\nSmoothing constant (alpha): the weight between 0 and 1 that exponential smoothing gives to the latest actual\nSeasonal index: the ratio of a period's typical demand to the demand of an average period\nIntermittent demand: demand with many periods of zero sales\n:::\n\n## 1. Know the pattern, then choose the method\n\nPlot 24 to 36 months of cleaned history before choosing a method. Most series show one or more of four patterns:\n\n::: diagram steps | Choosing a forecasting method\nLevel: stable around an average – moving average or simple exponential smoothing\nTrend: steady rise or fall – Holt's method (exponential smoothing with trend)\nSeasonal: repeating peaks such as December – seasonal indices or Holt-Winters\nIntermittent: many zero months – Croston's method or order on demand\n:::\n\nAlways start with a benchmark. The naive forecast says next month equals last month, and the seasonal naive says next December equals last December. Any method must beat them on accuracy (lesson 3). If it cannot, check the data first.\n\n## 2. Weighted moving average and exponential smoothing\n\nA simple moving average treats each month the same. A weighted moving average gives more weight to recent months, and the weights must add up to 1.\n\nExample: rice sales were 900 t in July, 1,000 t in August and 1,200 t in September. With weights 0.2, 0.3 and 0.5 (most recent highest), the October forecast = 0.2 x 900 + 0.3 x 1,000 + 0.5 x 1,200 = 180 + 300 + 600 = 1,080 t. A simple 3-month average gives 1,033 t, slower to follow the rise.\n\nExponential smoothing, developed in the 1950s and built into most planning software, gives every past month a weight that shrinks with age. You only need the last forecast and the latest actual:\n\n::: slides\nSLIDE Step 1: Start the model | Use an average of the first months as the first forecast | One starting value is enough\nSLIDE Step 2: Choose alpha | 0.1 to 0.3 for stable items; Higher values react faster but follow noise | Test alpha on past data\nSLIDE Step 3: Update each month | New forecast = alpha x actual + (1 - alpha) x old forecast | Only two numbers needed\nSLIDE Step 4: Check the errors | Errors always on one side mean a trend | Then add a trend term with Holt's method\n:::\n\nCalculation: the 50 kg sugar forecast for September was 1,000 bags, actual demand was 1,200 and alpha is 0.3. October forecast = 0.3 x 1,200 + 0.7 x 1,000 = 360 + 700 = 1,060 bags. If October actual is 1,100, November = 0.3 x 1,100 + 0.7 x 1,060 = 330 + 742 = 1,072 bags.\n\nSimple smoothing lags behind a trend. Holt's method adds a second smoothed value for the trend: the forecast h months ahead = level + h x trend. With a level of 1,072 bags and a trend of +15 bags a month, the forecast three months ahead is 1,072 + 3 x 15 = 1,117 bags. The Holt-Winters method adds a third component for seasonality. Excel's FORECAST.ETS function uses this family of methods.\n\n::: quiz\n? Last month's forecast was 500 cartons, actual demand was 600 and alpha is 0.2. What is the new forecast?\n- 600 cartons || That is the naive forecast.\n* 520 cartons || 0.2 x 600 + 0.8 x 500 = 120 + 400 = 520.\n- 580 cartons || This would need an alpha of 0.8.\n:::\n\n## 3. Seasonality: indices for festive peaks\n\nMany food categories peak before the December festive season. The classical ratio-to-average method handles this in five steps:\n\n- Step 1: average each calendar month's sales over at least two years.\n- Step 2: divide by the overall monthly average to get the index. The 12 indices add up to about 12.\n- Step 3: deseasonalise the history by dividing each month's sales by its index.\n- Step 4: forecast the deseasonalised series with a moving average or smoothing.\n- Step 5: reseasonalise by multiplying the forecast by the index of the target month.\n\nExample: over two years, sugar sold an average of 2,000 t a month and December averaged 2,600 t. December index = 2,600 / 2,000 = 1.30. February averaged 1,700 t, an index of 0.85. If the deseasonalised forecast is 2,100 t a month, the December forecast = 2,100 x 1.30 = 2,730 t and February = 2,100 x 0.85 = 1,785 t.\n\n::: quiz\n? A product's November index is 1.15 and the deseasonalised forecast is 4,000 cases. What is the November forecast?\n- 3,478 cases || This divides by the index instead of multiplying.\n- 4,000 cases || This ignores the seasonal index.\n* 4,600 cases || 4,000 x 1.15 = 4,600.\n:::\n\n## 4. Intermittent items and judgement\n\nSome items sell in only a few months, such as an ingredient bought by two bakeries. Averages and smoothing give a small, misleading number every month. Croston's method (Croston, 1972) forecasts two things separately: the size of orders when they occur and the interval between them. For low-value intermittent items, consider ordering on demand or a simple min-max rule.\n\nStatistical methods only see the past. Add judgement for known future events, such as a lost customer or a new listing, but record each adjustment and its reason. Lesson 3 shows how to test whether adjustments help.\n\n## Worked example: flour forecast for a Luanda importer\n\nA distributor sells 50 kg flour bags to bakeries. Planner Domingos tests three methods on 12 months of cleaned history. Average errors are 14% for naive, 11% for a 3-month moving average and 8% for exponential smoothing (alpha 0.2) with seasonal indices. He selects the last.\n\nThe December index is 1.25 and the deseasonalised forecast is 16,000 bags, so December = 20,000 bags. A new bakery chain opening in December will buy about 1,500 bags, recorded as a judgement adjustment: final forecast 21,500 bags.\n\n::: case | Choosing a method for dried beans\nPlanner Ana in Benguela plans dried beans. Sales have risen by about 3% a month for a year as a new wholesaler grows, with no clear seasonal pattern. Her 6-month moving average forecast has been below actual sales for nine months in a row.\n? What should Ana change?\n- Use a 12-month moving average to make the forecast smoother || A longer average lags even further behind a trend.\n* Switch to Holt's method, which adds a trend component || The pattern is a trend, and Holt's method projects it forward.\n- Use seasonal indices || There is no seasonal pattern to model.\n- Keep the method and add a fixed 10% each month || An untested manual uplift can simply replace one bias with another.\n:::\n\n## Tool: method selection template\n\n- Item and ABC-XYZ class:\n- History length and cleaning done (yes/no):\n- Pattern seen: level, trend, seasonal, intermittent:\n- Benchmark: naive or seasonal naive:\n- Method chosen and parameters (alpha, weights, indices):\n- Error of the method compared with the benchmark:\n- Judgement adjustments and reasons:\n- Next review date:\n\n## Common mistakes\n\n- Applying a complex model to uncleaned history.\n- Setting alpha too high, so the forecast chases random noise.\n- Building seasonal indices from a single year, which may contain one-off events.\n- Forecasting intermittent items with averages and holding stock every month.\n\n## Self-check\n\n- What is the seasonal naive forecast for next December? (Answer: last December's actual demand.)\n- Forecast 800, actual 1,000, alpha 0.25. What is the new forecast? (Answer: 0.25 x 1,000 + 0.75 x 800 = 850.)\n- Which method suits a steady upward trend? (Answer: Holt's method.)\n\n## Practical assignment\n\nTake one A item. Plot 24 months of cleaned history, identify its pattern, and calculate next month's forecast with naive, a weighted moving average and exponential smoothing (alpha 0.2). Keep the three numbers to compare with actual demand next month.\n\n## Summary\n\n- Identify the demand pattern and always compare your method against a naive benchmark.\n- Weighted moving averages and exponential smoothing react faster than simple averages. Holt adds trend and Holt-Winters adds seasonality.\n- Use seasonal indices for peaks, Croston's method for intermittent items and documented judgement for known events.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- calculate MAD, MAPE and WAPE for an item or a product family;\n- measure bias and use a tracking signal to detect a biased forecast;\n- apply forecast value added (FVA) analysis to test each step of the forecasting process;\n- choose the correct lag at which to measure accuracy for imported products.\n\n## Key terms\n\n::: terms\nForecast error: forecast minus actual for one period, so a positive error means an over-forecast\nMAD (mean absolute deviation): the average size of the errors in units, ignoring the sign\nWAPE (weighted absolute percentage error): total absolute error divided by total actual demand\nBias: the tendency of a forecast to be consistently too high or too low\nTracking signal: cumulative error divided by MAD, used to detect bias\nForecast lag: the number of periods between when a forecast was made and the period it forecasts\n:::\n\n## 1. Measuring the size of the error\n\nMeasure error in units and in percentages. Take one flour item over four months, with forecasts of 500, 520, 480 and 510 t and actuals of 450, 560, 400 and 470 t:\n\n::: slides\nSLIDE Step 1: Errors | Forecast - actual = +50, -40, +80, +40 | Keep the sign for bias\nSLIDE Step 2: MAD | Absolute errors 50, 40, 80, 40 = 210 in total; MAD = 210 / 4 = 52.5 t | Average error in units\nSLIDE Step 3: MAPE | Percentage errors 11.1%, 7.1%, 20.0%, 8.5%; MAPE = 46.7 / 4 = 11.7% | Simple average of percentages\nSLIDE Step 4: WAPE | Total actual = 1,880 t; WAPE = 210 / 1,880 = 11.2% | Big months count more\n:::\n\nMAPE treats every period and every item equally. Across a portfolio this misleads: a small spice item that sold 10 cases against a forecast of 20 has a 100% error and can dominate the average, while a 1% error on 5,000 t of rice hardly counts. WAPE weights errors by volume, or by value if you calculate in kwanzas, so it reflects business impact. Use WAPE for family and company reports. If management prefers a positive number, report accuracy = 100% - WAPE.\n\n::: quiz\n? Rice was forecast at 1,000 t and sold 900 t. A spice was forecast at 20 cases and sold 10. Which measure gives a fair picture of the business impact?\n- A simple MAPE of the two items || The spice item's 100% error dominates the average.\n* WAPE calculated in kwanzas || Errors are weighted by value, so rice counts much more.\n- The naive forecast || That is a benchmark method, not an error measure.\n:::\n\n## 2. Bias and the tracking signal\n\nAccuracy measures size. Bias measures direction. In the example, the sum of errors is +50 - 40 + 80 + 40 = +130 t, and bias % = 130 / 1,880 = 6.9%. Over four months the forecast was too high, which builds excess stock and ties up cash and foreign currency.\n\nThe tracking signal turns this into an alarm: tracking signal = cumulative error / MAD = 130 / 52.5 = 2.5. A common rule of thumb is to review the forecast when the tracking signal moves outside about plus or minus 4. A value near zero means errors are balancing out. A steady movement towards the limit means the method or the inputs are biased, for example a sales team that forecasts high to make sure stock is available.\n\nBias is often more damaging than random error. Random errors partly cancel out and are covered by safety stock. Bias accumulates: a 7% over-forecast on a container-based import programme becomes several containers of excess stock every quarter.\n\n::: quiz\n? With error = forecast - actual, a tracking signal has moved from -1 to -5 over six months. What does it show?\n- The forecast is accurate || A value beyond -4 signals a problem.\n- The forecast is consistently too high || A negative signal means actuals are above forecasts.\n* The forecast is consistently too low || Negative cumulative errors mean under-forecasting, so stock-outs are likely.\n:::\n\n## 3. Forecast value added (FVA)\n\nForecast value added analysis, popularised by Michael Gilliland, asks a simple question: does each step in the forecasting process make the forecast better or worse? Measure the error of each step against the same actuals.\n\n::: diagram steps | FVA: measure every step\nNaive forecast: the free benchmark\nStatistical forecast: should beat naive\nSales and marketing adjustment: should beat statistical\nFinal consensus forecast: approved in S&OP, should be the best\n:::\n\nExample for a flour family over six months: naive WAPE 18%, statistical WAPE 12%, after sales adjustments 14%. The statistical model added 6 points of value. The sales adjustments destroyed 2 points. The answer is not to stop listening to sales, but to accept only adjustments based on specific information, such as a confirmed customer order or a lost listing, and to track FVA by person or team.\n\n## 4. Measuring at the right lag\n\nFor imported goods, the forecast that matters is the one used when the order was placed. If rice has a three-month lead time, the June forecast that drove the purchase order was made in March: the lag-3 forecast. Measuring the forecast made at the start of June (lag 0) makes accuracy look better than it was, because most of the month is already known. Save a snapshot of the forecast every month so you can measure at the lead-time lag.\n\n## Worked example: an accuracy report at a Luanda distributor\n\nA distributor of rice, sugar and flour prepares its first accuracy report for the S&OP meeting, at lag 3 and family level:\n\n- Rice: WAPE 9%, bias +2%, tracking signal +1.1. Healthy.\n- Sugar: WAPE 15%, bias -11%, tracking signal -4.6. Repeated under-forecasting before the December peak caused stock-outs.\n- Flour: final WAPE 13%, statistical WAPE 10%. Manual adjustments made it worse.\n\nActions: the planner reviews the sugar seasonal indices for November and December with sales, and every flour adjustment now needs a written reason.\n\n::: case | Sales overrides on pulses\nPlanner Hélder in Luanda sees that the sales director has raised the dried beans forecast by 20% every month for six months to be safe. The statistical WAPE is 11%, the final WAPE is 19% and bias is +17%. The warehouse holds four months of beans.\n? What should Hélder bring to the next demand review?\n- A request to remove sales from forecasting || Sales input is valuable when it is based on specific information.\n* An FVA report showing the override adds error and bias, plus a rule that adjustments need a reason || Data shows the cost of the habit and keeps sales involved under clear rules.\n- A higher safety stock to cover the errors || The problem is over-forecasting, so more stock makes it worse.\n- A proposal for new forecasting software || The statistical forecast is already better. The process is the issue.\n:::\n\n## Tool: monthly forecast accuracy report\n\n- Product family and level (SKU or family):\n- Lag measured (lead time in months):\n- WAPE this month and 6-month average:\n- Bias % and direction:\n- Tracking signal and items outside plus or minus 4:\n- FVA by step: naive, statistical, final:\n- Top five items by absolute error, and causes:\n- Actions agreed and owners:\n\n## Common mistakes\n\n- Reporting a simple average MAPE across hundreds of items, dominated by small ones.\n- Looking only at accuracy and ignoring bias.\n- Measuring the latest forecast (lag 0) instead of the one that drove the order.\n- Never comparing results with a naive forecast.\n\n## Self-check\n\n- Forecast 300, actual 250. What is the error, and is it over or under? (Answer: +50, an over-forecast.)\n- Total absolute error is 90 and total actual is 1,000. What is WAPE? (Answer: 9%.)\n- What does FVA compare? (Answer: the error of each process step against the previous step and the naive forecast.)\n\n## Practical assignment\n\nTake your top 10 items. For the last six months, find the forecast made at the lead-time lag and the actual sales. Calculate WAPE, bias and the tracking signal for each, and list the three items with the largest bias.\n\n## Summary\n\n- Use MAD and WAPE for the size of error, and prefer WAPE over simple MAPE for portfolios.\n- Track bias and the tracking signal, because consistent errors build excess stock or stock-outs.\n- Use FVA to keep only process steps that improve the forecast, and measure at the lead-time lag.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- break down the end-to-end lead time for an imported product;\n- calculate safety stock that covers both demand and lead-time variability;\n- calculate a net requirement and convert it into a container order;\n- use time fences to decide which parts of the plan can still change.\n\n## Key terms\n\n::: terms\nEnd-to-end lead time: the time from deciding to order until stock is available to sell\nReview period: the time between two ordering decisions for the same item\nPipeline stock: stock already ordered but not yet received, at origin, on the water or at the port\nNet requirement: the quantity still needed after allowing for stock on hand and stock on order\nTime fence: a point in the planning horizon that sets which changes are allowed\n:::\n\n## 1. End-to-end lead time\n\nThe lead time an importer must plan with is much longer than the sailing time. For a container of rice from Asia to Luanda it includes five stages:\n\n::: diagram steps | End-to-end lead time for imported rice\nOrder and payment set-up: purchase approval, foreign currency and letter of credit or transfer\nSupplier production and loading: milling, bagging, booking and loading at origin\nSea freight: transit time, including any transhipment\nPort and clearance: discharge, document checks, customs and inspection\nDelivery and receipt: transport to the warehouse and quality check\n:::\n\nRecord the actual days of each stage for your last 10 to 20 shipments, then calculate the average and standard deviation. Foreign currency access and port clearance can vary as much as sea freight, or more, and that variability drives safety stock.\n\n## 2. Safety stock with demand and lead-time variability\n\nThe basic safety stock formula covers demand variability only. When both demand and lead time vary, and are independent, a widely used formula is:\n\n- SS = Z x square root of (LT x σd² + d² x σLT²)\n\nHere Z is the service factor (1.65 for about a 95% cycle service level), LT is average lead time, d is average demand per period, σd is the standard deviation of demand per period and σLT is the standard deviation of lead time. Use the same time unit for all of them.\n\n::: slides\nSLIDE Step 1: Collect inputs | Average demand d = 800 t a month; Demand standard deviation = 150 t; Lead time 3 months, standard deviation 0.5 month | Same time unit for all\nSLIDE Step 2: Demand part | LT x σd² = 3 x 22,500 = 67,500 | Risk from demand\nSLIDE Step 3: Lead-time part | d² x σLT² = 640,000 x 0.25 = 160,000 | Risk from delays\nSLIDE Step 4: Combine | Square root of 227,500 = 477 t; SS = 1.65 x 477 = 787 t | About one month of sales\n:::\n\nThe lead-time part is more than twice the demand part. Reducing the variability of payment set-up and port clearance would cut safety stock more than a better forecast would. This is why planners, procurement and logistics must work together.\n\n::: quiz\n? Demand is very stable, but port clearance time varies widely. Which action reduces safety stock most?\n- Improve the forecasting method || Demand variability is already small.\n* Reduce variability in clearance time || Lead-time variability is the larger part of the formula here.\n- Lengthen the review period || A longer review period increases the stock needed.\n:::\n\n## 3. Net requirement and container rounding\n\nWith a monthly review, each order must cover demand until the following order can arrive: lead time plus review period.\n\n- Net requirement = forecast over (lead time + review period) + safety stock - stock on hand - stock on order.\n\nContinuing the example: forecast 800 t a month, lead time 3 months and review 1 month, so cover = 4 x 800 = 3,200 t. Stock on hand is 1,100 t and stock on order is 1,600 t.\n\nNet requirement = 3,200 + 787 - 1,100 - 1,600 = 1,287 t.\n\nRound to feasible quantities. If a 20-foot container carries 25 t of bagged rice in this trade, 1,287 / 25 = 51.5, so order 52 containers = 1,300 t. Then check constraints: supplier minimums, warehouse space when the goods arrive, and the cash and foreign currency available. If a constraint applies, the S&OP process decides the trade-off (lesson 5).\n\nFor seasonal products, add up the forecast for each month of the cover period instead of using one average. An order placed in September for arrival in December must include the December index.\n\n::: quiz\n? Cover forecast 2,000 t, safety stock 400 t, stock on hand 600 t, stock on order 900 t. What is the net requirement?\n- 500 t || This leaves out the safety stock.\n* 900 t || 2,000 + 400 - 600 - 900 = 900 t.\n- 1,800 t || This forgets the stock already on order.\n:::\n\n## 4. Time fences: what can still change\n\nThe forecast changes every month, but an importer cannot change goods already loaded. Time fences set the rules:\n\n- Frozen zone (for example 0 to 3 months): goods ordered, paid or on the water. No changes except emergencies approved by management.\n- Slushy zone (for example 3 to 5 months): orders placed or being negotiated. Changes need supply and finance approval.\n- Liquid zone (beyond 5 months): forecasts and planned orders can change freely.\n\nSet the fences from your real lead times, not from habit.\n\n## Worked example: sugar order for the festive season\n\nA Luanda importer plans 50 kg sugar with a three-month lead time and monthly review. In August, planner Isabel prepares the order that will arrive in November. Her cover period is August to November, with seasonal forecasts of 2,000, 2,000, 2,200 and 2,400 t: a total of 8,600 t. Safety stock is 900 t, stock on hand 1,900 t, and 4,000 t are on order, arriving in September and October.\n\nNet requirement = 8,600 + 900 - 1,900 - 4,000 = 3,600 t, or 144 containers of 25 t.\n\nThe bank confirms foreign currency for only 3,000 t. Isabel prepares options for S&OP: 3,000 t now and 600 t next month from a faster supplier, or protecting key accounts if the gap remains.\n\n::: case | Port delay on a flour shipment\nA distributor in Lobito expects 1,000 t of wheat flour next week, but the shipping line reports a three-week delay at transhipment. Stock on hand covers two weeks of sales. The following shipment is already in the frozen zone.\n? What should planner Mateus do first?\n- Cancel the following shipment to save cash || It is frozen, and stock is about to run short, not too high.\n* Calculate the shortage week by week and agree allocation and local purchase options with sales || Quantifying the gap lets the business decide on allocation or bridging supply.\n- Raise all future forecasts by three weeks of sales || The delay is a supply problem, not a change in demand.\n- Wait for the ship and tell customers when stock runs out || Customers and sales need a warning before the stock-out.\n:::\n\n## Tool: purchase order calculation sheet\n\n- Item, unit and container size:\n- Lead time by stage (days) and total average:\n- Lead-time standard deviation:\n- Forecast for each month of the cover period:\n- Safety stock (formula and result):\n- Stock on hand, and stock on order with arrival dates:\n- Net requirement and rounded order quantity:\n- Constraints checked: supplier, warehouse, cash, foreign currency:\n- Time fence zone of the order:\n\n## Common mistakes\n\n- Using sailing time instead of end-to-end lead time.\n- Calculating safety stock from demand variability only when payment and port delays vary widely.\n- Forgetting stock already on order, which leads to double ordering.\n- Changing orders inside the frozen zone because the latest forecast moved.\n\n## Self-check\n\n- Which two quantities are subtracted in the net requirement? (Answer: stock on hand and stock on order.)\n- Lead time 2 months, review 1 month, forecast 500 t a month. What is the cover quantity? (Answer: 3 x 500 = 1,500 t.)\n- In which time fence zone should changes be avoided? (Answer: the frozen zone.)\n\n## Practical assignment\n\nFor one imported A item, record the actual lead time of each stage for the last five shipments. Calculate the average and standard deviation, then recalculate safety stock and the next order with the calculation sheet. Compare the result with your current order.\n\n## Summary\n\n- Plan with end-to-end lead time, including payment set-up and port clearance.\n- Safety stock must cover both demand and lead-time variability, and delays can be the bigger risk.\n- Order the net requirement, rounded to containers and checked against constraints, within the limits set by time fences.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the purpose of sales and operations planning (S&OP) and its outputs;\n- run the five steps of a monthly S&OP cycle with clear inputs and outputs;\n- prepare decision options for the executive meeting;\n- use scenarios to plan for port delays, foreign currency limits and supply risks.\n\n## Key terms\n\n::: terms\nS&OP: a monthly decision process that balances demand and supply and agrees one plan across sales, supply chain and finance\nUnconstrained forecast: what customers would buy if supply were unlimited\nConstrained plan: the plan after supply, capacity and cash limits are applied\nProduct family: a group of items planned together, such as rice or sugar\nScenario: an alternative plan prepared for a possible event, such as a port delay\nIntegrated business planning (IBP): a broader form of S&OP that links fully to financial plans and strategy\n:::\n\n## 1. What S&OP is and is not\n\nS&OP is a monthly process in which sales, marketing, supply chain and finance agree one plan for the next 12 to 24 months, at product family level, in units and in money. It is a decision process: its output is a set of approved decisions, not a pile of reports. For an importer, those decisions include how many containers or vessel lots to buy, which customers get priority in a shortage, how much foreign currency to request and whether to run a promotion.\n\nS&OP is not the weekly purchasing meeting. Detailed SKU and weekly decisions belong to the planners. S&OP sets the frame they work within.\n\n## 2. The five-step monthly cycle\n\nMost companies follow a five-step cycle across the month:\n\n::: diagram cycle | The monthly S&OP cycle\nData gathering (week 1): close the month, update actuals, stock, open orders and accuracy\nDemand review (week 2): agree the unconstrained consensus forecast and its assumptions\nSupply review (weeks 2 to 3): test the forecast against suppliers, port, warehouse, transport and cash\nPre-S&OP (week 3): resolve gaps and prepare options with their financial impact\nExecutive S&OP (week 4): decide, approve one plan and record decisions\n:::\n\nDemand review. Led by the demand planner with sales and marketing. Inputs are the statistical forecast, sales intelligence, promotions, tenders and the accuracy report. The output is a consensus forecast by family with clear assumptions, for example a December uplift of 30% or a new wholesaler in Huambo from March, plus upside and downside risks.\n\nSupply review. Led by supply planning with procurement, logistics and the warehouse. Inputs are the consensus forecast, open orders, supplier capacity, shipping schedules, the port situation, warehouse space and available foreign currency. The output is a constrained supply plan and a list of gaps, for example sugar short by 1,200 t in December.\n\nPre-S&OP. A working meeting of the planners with the sales, supply and finance managers. They resolve what they can and prepare two or three options for each remaining gap.\n\nExecutive S&OP. The general manager chairs a one-hour meeting: performance review, decisions on gaps, approval of the plan and key risks. Every decision is recorded with an owner and a date.\n\n::: quiz\n? In which step is the unconstrained forecast tested against port and warehouse capacity?\n- Demand review || Demand review agrees what customers want, without supply limits.\n* Supply review || Supply review checks the forecast against capacity and flags gaps.\n- Executive S&OP || Executives decide on gaps already analysed. They do not do the analysis.\n:::\n\n## 3. Preparing options and scenarios\n\nExecutives should receive choices, not raw data. For each gap, the pre-S&OP team uses the same four steps:\n\n::: slides\nSLIDE Step 1: Describe the gap | Family, month, units and value; Cause, such as a delayed vessel or a currency limit | One sentence per gap\nSLIDE Step 2: List options | Local purchase, allocation to key accounts, delaying a promotion, another pack size | Two or three real options\nSLIDE Step 3: Show the impact | Service, margin, cash and foreign currency for each option | The same measures for every option\nSLIDE Step 4: Recommend | The team's preferred option and why | The team recommends, executives decide\n:::\n\nScenarios prepare the business for known risks. A practical approach is to keep the base plan plus two scenarios for the top risks, for example port congestion adding four weeks, or foreign currency available for only 70% of planned imports. Each scenario shows the effect on stock, service and cash, and the trigger that activates it, so the response is fast when the event happens.\n\n::: quiz\n? What should the pre-S&OP send to the executive meeting about a sugar shortage?\n- The full SKU-level forecast file || Too much detail hides the decision.\n- A request for executives to analyse the shortage || Analysis belongs to the team before the meeting.\n* Two or three options with their service, cost and cash impact, plus a recommendation || Executives need clear choices and consequences to decide quickly.\n:::\n\n## Worked example: December planning at a Luanda importer\n\nIn September, the demand review of a rice, sugar and flour importer agrees a December consensus forecast of 3,000 t of sugar, including a 30% festive uplift. The supply review shows that only 2,200 t can arrive by early December, because one supplier has a loading delay. The gap is 800 t.\n\nThe pre-S&OP prepares three options:\n\n- A: buy 500 t from a local repacker at a higher cost, reducing margin but protecting supply.\n- B: allocate the available sugar, giving key accounts 100% and wholesalers 75% of their forecast.\n- C: buy 300 t locally and apply a lighter allocation.\n\nThe team recommends C. The executive meeting approves it, records the decision with owners and dates, and asks finance to update the cash forecast.\n\n::: case | Disagreement at the demand review\nAt a Luanda distributor, the sales director wants a flour forecast of 12,000 bags for March because of a planned campaign. The statistical forecast is 9,000 bags, and last year's similar campaign added about 1,500 bags. The supply planner says the warehouse can hold only 11,000 bags in March.\n? What is the best outcome of the demand review?\n- Agree 11,000 bags, the warehouse limit || Capacity limits belong in the supply review, not in the demand forecast.\n* Agree 10,500 bags with the campaign assumption recorded, and pass the space issue to the supply review || The forecast follows the evidence, and the constraint is handled in the right step.\n- Accept 12,000 bags because sales knows customers best || The record shows a smaller uplift, and unsupported overrides add bias.\n- Postpone the decision to the executive meeting || Executives decide on gaps. The demand review must deliver a forecast.\n:::\n\n## Tool: S&OP calendar and agenda template\n\n- Data gathering: date, owner, data sources:\n- Demand review: date, chair, attendees, outputs:\n- Supply review: date, chair, attendees, outputs:\n- Pre-S&OP: date, attendees, gap list and options:\n- Executive S&OP: date, chair, attendees:\n- Executive agenda: KPIs, decisions on gaps, plan approval, scenarios, actions:\n- Decision log: decision, owner, due date:\n\n## Common mistakes\n\n- Discussing hundreds of SKUs instead of product families.\n- Mixing demand and supply, for example cutting the forecast because supply is short.\n- Bringing problems to executives without options.\n- Running S&OP without finance, so the plan never matches the budget.\n\n## Self-check\n\n- Name the five steps of the cycle. (Answer: data gathering, demand review, supply review, pre-S&OP, executive S&OP.)\n- What is the output of the supply review? (Answer: a constrained supply plan and a list of gaps.)\n- Why should the demand forecast stay unconstrained? (Answer: so the business sees the real demand it may miss and can decide how to respond.)\n\n## Practical assignment\n\nDraft an S&OP calendar for next month with the template, with dates, owners and attendees for each step. Choose one current supply gap and prepare two or three options with their service, cost and cash impact.\n\n## Summary\n\n- S&OP is a monthly decision process that agrees one plan in units and money at family level.\n- The five steps separate demand from supply, then resolve gaps through clear options.\n- Prepared scenarios for port, currency and supply risks make the response faster.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- choose a balanced set of KPIs for demand, supply, customer service and finance;\n- calculate fill rate, OTIF, days of cover and plan adherence;\n- set up governance with clear roles, a RACI and a decision log;\n- assess the maturity of an S&OP process and choose the next improvement step.\n\n## Key terms\n\n::: terms\nFill rate: the share of ordered units or cases that are shipped from stock\nOTIF (on time in full): the share of orders delivered on the agreed date with the full quantity\nDays of cover: how many days current stock will last at the expected rate of demand\nPlan adherence: how closely actual receipts match the approved supply plan\nRACI: a chart that shows who is Responsible, Accountable, Consulted and Informed for each task\nDecision log: a record of every S&OP decision with its owner, date and follow-up\n:::\n\n## 1. A balanced set of KPIs\n\nS&OP manages trade-offs, so its KPIs must show both sides. Holding more stock improves fill rate but hurts cash. A balanced set has four groups, with one or two measures each:\n\n- Demand: forecast accuracy (WAPE) and bias at the lead-time lag, by family.\n- Supply: plan adherence (received against planned quantity) and supplier on-time loading.\n- Customer: fill rate and OTIF.\n- Finance: days of cover, value of ageing or near-expiry stock, and gross margin against plan.\n\nEach KPI needs a written definition, a data source, an owner and a target. Without a definition, sales and supply calculate the same KPI differently and argue about the number instead of the problem.\n\n## 2. Calculating key KPIs\n\nFour calculations cover most S&OP dashboards:\n\n::: slides\nSLIDE Fill rate | Customers ordered 10,000 cases and 9,400 were shipped from stock; Fill rate = 9,400 / 10,000 = 94% | Measures availability\nSLIDE OTIF | 500 orders delivered, 430 on time and in full; OTIF = 430 / 500 = 86% | Late or short counts as a fail\nSLIDE Days of cover | Stock 2,400 t, forecast 800 t a month = 26.7 t a day; Cover = 2,400 / 26.7 = 90 days | Use forward demand, not past sales\nSLIDE Plan adherence | Planned receipts 3,000 t, actual receipts 2,550 t; Adherence = 2,550 / 3,000 = 85% | Shows supply reliability\n:::\n\nOTIF is usually lower than fill rate because one late or short line fails the whole order. Read the KPIs together: 90 days of cover with a 94% fill rate suggests the wrong mix of stock, too much of some items and too little of others. The response is a mix review by SKU, not more total stock.\n\n::: quiz\n? A distributor shipped 18,000 of the 20,000 cases ordered. What is the fill rate?\n- 11% || This divides the shortfall by the quantity shipped.\n- 10% || This is the shortfall rate, not the fill rate.\n* 90% || 18,000 / 20,000 = 90%.\n:::\n\n## 3. Governance: making S&OP a habit\n\nS&OP can fade after a few months when executives skip meetings, decisions are not followed up and the meetings drown in detail. Clear governance prevents this:\n\n- Executive sponsor: the general manager or commercial director, who chairs the executive meeting and insists on one set of numbers.\n- Process owner: often the head of planning, who runs the calendar, templates and decision log.\n- RACI: one person accountable for each step. For the forecast, the demand planner is responsible, the sales director accountable, finance consulted and the warehouse informed.\n- Fixed calendar: dates set for the whole year, and meetings shortened rather than cancelled.\n- Decision log: reviewed at the start of every executive meeting.\n\n::: diagram pyramid | S&OP maturity stages\nAdvanced: scenarios, profit optimisation and links to strategy\nIntegrated: plan linked to budget, cash and foreign currency\nStandard: monthly cycle, one consensus forecast, basic KPIs\nReactive: firefighting and different numbers in each department\n:::\n\nAssess your stage honestly and move up one stage at a time. A reactive company should first set up the monthly calendar and one forecast, not buy advanced planning software.\n\n::: quiz\n? A company holds monthly S&OP meetings with one forecast, but the plan is not linked to the budget or cash plan. What is the best next step?\n- Buy advanced scenario-planning software || Software does not fix the missing link with finance.\n* Bring finance into the cycle and show the plan in kwanzas and foreign currency || This moves the company from the standard to the integrated stage.\n- Stop the meetings until the data is perfect || Stopping destroys the habit, and data improves through use.\n:::\n\n## Worked example: a KPI dashboard at a Luanda importer\n\nAn importer of rice, sugar and flour has run S&OP for six months. Its one-page dashboard for October shows:\n\n- Rice: WAPE 9%, bias +2%, fill rate 97%, 55 days of cover.\n- Sugar: WAPE 16%, bias -10%, fill rate 85%, 25 days of cover.\n- Flour: WAPE 12%, bias +8%, fill rate 98%, 120 days of cover and 40 t close to expiry.\n\nThe executive sponsor focuses on two decisions: sugar's negative bias before the festive peak, and excess flour. The meeting raises sugar's December plan and confirms extra shipping space, stops flour purchases for one cycle and approves a promotion on near-expiry stock. Both decisions go into the log with owners and dates.\n\n::: case | The meeting nobody attends\nAt a distributor in Huambo, the executive S&OP meeting has been postponed three times in four months because the general manager was travelling. Sales and supply now work from different forecasts again, and nobody follows up decisions.\n? What should the process owner, Rosa, propose?\n- Pause S&OP until the general manager has more time || This ends the process and its benefits.\n- Send the slides by email instead of meeting || Without a meeting, nobody makes or owns decisions.\n* A fixed annual calendar, a named deputy chair, a 45-minute agenda and a decision log review at the start || This protects the rhythm and ownership, the usual weak points of S&OP.\n- Hire a consultant to chair the meeting || A consultant cannot replace internal ownership of decisions.\n:::\n\n## Tool: S&OP health check\n\n- KPIs defined in writing, with owner and target (yes/no):\n- One consensus forecast used by sales, supply and finance:\n- Calendar fixed for 12 months, and meetings held this quarter:\n- Executive sponsor chaired the last three meetings:\n- RACI agreed for each step:\n- Decision log updated and reviewed:\n- Plan shown in units, kwanzas and foreign currency:\n- Current maturity stage and next step:\n\n## Common mistakes\n\n- Tracking 20 or more KPIs, so nothing gets attention.\n- KPIs without definitions or owners, which leads to arguments about numbers.\n- Executives delegating the meeting, which removes decision power.\n- Buying planning software before the process and roles work.\n\n## Self-check\n\n- 450 of 500 orders were on time and in full. What is OTIF? (Answer: 90%.)\n- Stock is 600 t and demand is 300 t a month. What is the cover? (Answer: about 60 days.)\n- What does the A in RACI stand for? (Answer: Accountable, the one person who owns the result.)\n\n## Practical assignment\n\nComplete the S&OP health check for your company or department. Calculate fill rate, OTIF and days of cover for your top three product families last month, and propose one action to move up one maturity stage.\n\n## Summary\n\n- Use a balanced set of KPIs for demand, supply, customer and finance, each with a definition and an owner.\n- Read KPIs together: high cover with a low fill rate means a mix problem, not a volume problem.\n- Make S&OP stick with an executive sponsor, a fixed calendar, a RACI and a decision log."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Distinguish demand, sales, shipments and orders",
+     "Clean history for stock-outs, outliers and promotions",
+     "Segment items with ABC-XYZ analysis",
+     "Choose the right forecast level and horizon"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "What to forecast",
+    "points": [
+     "True demand is what customers wanted, not what you shipped",
+     "Shipments miss lost sales",
+     "Supplier orders are a supply decision, not demand"
+    ],
+    "takeaway": "Forecast the customer, not the warehouse"
+   },
+   {
+    "title": "Cleaning stock-outs",
+    "points": [
+     "Find periods with zero stock",
+     "Estimate demand from days with stock",
+     "Flag every adjusted value"
+    ],
+    "takeaway": "Censored demand makes forecasts too low"
+   },
+   {
+    "title": "Outliers and promotions",
+    "points": [
+     "Flag points far from the usual range",
+     "Find the cause before changing anything",
+     "Split promotion uplift from baseline"
+    ],
+    "takeaway": "Clean the reason, not just the number"
+   },
+   {
+    "title": "ABC-XYZ segmentation",
+    "points": [
+     "ABC by value",
+     "XYZ by coefficient of variation",
+     "AX items are important and stable, CZ items are minor and erratic"
+    ],
+    "takeaway": "Spend planning time where it pays"
+   },
+   {
+    "title": "Level and horizon",
+    "points": [
+     "Families for vessels, capacity and cash",
+     "SKUs for purchase orders",
+     "Horizon longer than total lead time"
+    ],
+    "takeaway": "Aggregate forecasts are more accurate"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Forecasting from supplier orders",
+     "Deleting outliers without asking why",
+     "Leaving promotions in the baseline",
+     "Same effort on every SKU"
+    ],
+    "takeaway": "Clean data first, then forecast"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Use naive and seasonal naive forecasts as benchmarks",
+     "Calculate weighted moving averages and exponential smoothing",
+     "Build seasonal indices for festive peaks",
+     "Choose a method for each demand pattern"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Demand patterns",
+    "points": [
+     "Level: stable around an average",
+     "Trend: rising or falling",
+     "Seasonal: repeating yearly peaks",
+     "Intermittent: many zero periods"
+    ],
+    "takeaway": "Identify the pattern before choosing a method"
+   },
+   {
+    "title": "Benchmarks",
+    "points": [
+     "Naive: next month equals last month",
+     "Seasonal naive: next December equals last December",
+     "Every method must beat them"
+    ],
+    "takeaway": "If you cannot beat naive, simplify"
+   },
+   {
+    "title": "Weighted moving average",
+    "points": [
+     "More weight on recent months",
+     "Weights add up to 1",
+     "Example weights 0.2, 0.3, 0.5"
+    ],
+    "takeaway": "Reacts faster than a simple average"
+   },
+   {
+    "title": "Exponential smoothing",
+    "points": [
+     "New forecast = alpha x actual + (1 - alpha) x old forecast",
+     "Low alpha is smooth, high alpha reacts fast",
+     "Holt adds trend, Holt-Winters adds seasonality"
+    ],
+    "takeaway": "One number carries the whole history"
+   },
+   {
+    "title": "Seasonal indices",
+    "points": [
+     "Index = month average / overall monthly average",
+     "Deseasonalise, forecast, then reseasonalise",
+     "Use at least two years of history"
+    ],
+    "takeaway": "The December peak is handled by the index"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Complex models on dirty data",
+     "Alpha too high, chasing noise",
+     "Seasonal index from one year only",
+     "Averages for intermittent items"
+    ],
+    "takeaway": "Simple, clean and tested beats complex"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Calculate MAD, MAPE and WAPE",
+     "Measure bias and a tracking signal",
+     "Use forecast value added to test each step",
+     "Measure accuracy at the right lag"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "Error measures",
+    "points": [
+     "Error = forecast - actual",
+     "MAD: average absolute error in units",
+     "MAPE: average of percentage errors",
+     "WAPE: total absolute error / total actual"
+    ],
+    "takeaway": "WAPE is best for a portfolio"
+   },
+   {
+    "title": "Why MAPE misleads",
+    "points": [
+     "Small items create huge percentages",
+     "Selling 10 against a forecast of 20 is a 100% error",
+     "Weight errors by volume or value"
+    ],
+    "takeaway": "Report WAPE at family level"
+   },
+   {
+    "title": "Bias and tracking signal",
+    "points": [
+     "Bias = sum of errors",
+     "Tracking signal = cumulative error / MAD",
+     "Outside about plus or minus 4 means review"
+    ],
+    "takeaway": "Direction matters as much as size"
+   },
+   {
+    "title": "Forecast value added",
+    "points": [
+     "Compare the error at each step: naive, statistical, after sales input",
+     "Keep steps that reduce error",
+     "Popularised by Michael Gilliland"
+    ],
+    "takeaway": "Every touch must earn its place"
+   },
+   {
+    "title": "Measure at lead-time lag",
+    "points": [
+     "Save the forecast made when the order was placed",
+     "Lag 3 for a 3-month lead time",
+     "Last-minute forecasts look good but buy nothing"
+    ],
+    "takeaway": "Measure what drove the decision"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Averaging MAPE across tiny items",
+     "Ignoring bias",
+     "Measuring only the latest forecast",
+     "No naive benchmark"
+    ],
+    "takeaway": "Accuracy, bias and value added"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Break down end-to-end lead time for an import",
+     "Calculate safety stock for demand and lead-time variability",
+     "Calculate a net requirement and round to containers",
+     "Use time fences to manage changes"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "End-to-end lead time",
+    "points": [
+     "Order approval and payment set-up",
+     "Supplier production and loading",
+     "Sea freight",
+     "Port, customs and delivery to the warehouse"
+    ],
+    "takeaway": "Plan on the full chain, not the sailing time"
+   },
+   {
+    "title": "Safety stock with two risks",
+    "points": [
+     "Demand varies and lead time varies",
+     "SS = Z x square root of (LT x demand variance + demand squared x LT variance)",
+     "Delays can be the bigger risk"
+    ],
+    "takeaway": "Protect against both"
+   },
+   {
+    "title": "Net requirement",
+    "points": [
+     "Forecast over lead time plus review period",
+     "Plus safety stock",
+     "Minus stock on hand and stock on order"
+    ],
+    "takeaway": "Order the gap, not the forecast"
+   },
+   {
+    "title": "Rounding and constraints",
+    "points": [
+     "Full containers or vessel lots",
+     "Supplier minimum quantities",
+     "Warehouse space, cash and foreign currency"
+    ],
+    "takeaway": "A feasible plan beats a perfect one"
+   },
+   {
+    "title": "Time fences",
+    "points": [
+     "Frozen: loaded or paid, no changes",
+     "Slushy: ordered, changes need approval",
+     "Liquid: free to plan"
+    ],
+    "takeaway": "Know what can still change"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Sailing time used as lead time",
+     "Lead-time variability ignored",
+     "Stock on order forgotten",
+     "Frozen orders changed"
+    ],
+    "takeaway": "Plan the whole pipeline"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain the purpose and outputs of S&OP",
+     "Run the five steps of the monthly cycle",
+     "Prepare decision options for the executive meeting",
+     "Use scenarios for port, currency and supply risks"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "What S&OP is",
+    "points": [
+     "Monthly process to balance demand and supply",
+     "One agreed plan in units and money",
+     "Product families over 12 to 24 months"
+    ],
+    "takeaway": "A decision process, not a report"
+   },
+   {
+    "title": "The five steps",
+    "points": [
+     "Data gathering",
+     "Demand review",
+     "Supply review",
+     "Pre-S&OP",
+     "Executive S&OP"
+    ],
+    "takeaway": "Each step feeds the next"
+   },
+   {
+    "title": "Demand and supply reviews",
+    "points": [
+     "Demand: unconstrained consensus forecast with assumptions",
+     "Supply: suppliers, port, warehouse, cash",
+     "Gaps shown in units and kwanzas"
+    ],
+    "takeaway": "Separate what customers want from what you can supply"
+   },
+   {
+    "title": "Pre-S&OP",
+    "points": [
+     "Resolve what can be resolved",
+     "Prepare two or three options per big gap",
+     "Show service, cost and cash impact"
+    ],
+    "takeaway": "Decisions, not data, go to executives"
+   },
+   {
+    "title": "Executive meeting",
+    "points": [
+     "One hour, fixed agenda",
+     "Approve the plan and decide on gaps",
+     "Record decisions with owners"
+    ],
+    "takeaway": "Leave with one number"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Too much SKU detail",
+     "Cutting the forecast to match supply",
+     "No options prepared",
+     "Finance absent"
+    ],
+    "takeaway": "Families, options, decisions"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Choose a balanced set of S&OP KPIs",
+     "Calculate fill rate, OTIF and days of cover",
+     "Set up governance roles and a decision log",
+     "Assess S&OP maturity and plan next steps"
+    ],
+    "takeaway": "Four skills you will practise in this lesson"
+   },
+   {
+    "title": "A balanced KPI set",
+    "points": [
+     "Demand: WAPE and bias",
+     "Supply: plan adherence and supplier on-time loading",
+     "Customer: fill rate and OTIF",
+     "Finance: days of cover, ageing stock, margin"
+    ],
+    "takeaway": "Watch the trade-offs together"
+   },
+   {
+    "title": "Key calculations",
+    "points": [
+     "Fill rate = units shipped / units ordered",
+     "OTIF = orders on time and in full / all orders",
+     "Days of cover = stock / average daily demand"
+    ],
+    "takeaway": "Simple, defined, monthly"
+   },
+   {
+    "title": "Governance",
+    "points": [
+     "Executive sponsor chairs",
+     "Process owner runs the calendar",
+     "RACI for every step",
+     "Decision log reviewed monthly"
+    ],
+    "takeaway": "A process without owners fades"
+   },
+   {
+    "title": "Maturity stages",
+    "points": [
+     "Reactive: firefighting",
+     "Standard: monthly cycle and one forecast",
+     "Integrated: linked to finance",
+     "Advanced: scenarios and profit focus"
+    ],
+    "takeaway": "Move up one stage at a time"
+   },
+   {
+    "title": "Making it stick",
+    "points": [
+     "Fixed calendar, meetings never cancelled",
+     "Same templates every month",
+     "Decisions followed up",
+     "Early wins shown"
+    ],
+    "takeaway": "Discipline before software"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Too many KPIs",
+     "KPIs without owners",
+     "Executives skipping meetings",
+     "Buying software first"
+    ],
+    "takeaway": "Few measures, real decisions"
+   }
+  ]
+ ]
+}

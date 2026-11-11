@@ -1,0 +1,846 @@
+=== 20
+SLIDE What you will learn | Separate decision quality from outcome; Check a decision with the six elements of decision quality; Turn a narrow request into the real question; Set scope with a decision hierarchy | A good decision starts with the right question
+SLIDE Decision versus outcome | A decision is an irrevocable allocation of resources (Ronald Howard); You control the decision, not the outcome; Judge the process at the moment of choice | Good decisions can still meet bad luck
+SLIDE Six elements of decision quality | Appropriate frame; Creative alternatives; Relevant and reliable information; Clear values and trade-offs; Sound reasoning; Commitment to action | The chain is only as strong as its weakest link
+SLIDE Narrow framing | "Should we do X or not?" hides other options; Ask why the request matters; Restate as "How can we best achieve Y?" | Heath brothers, Decisive (2013)
+SLIDE The decision statement | Who decides; What is decided and by when; Constraints; Measurable success criteria | One sentence the whole team accepts
+SLIDE The decision hierarchy | Given: already decided, not open now; Focus: what we decide in this process; Deferred: decided later or by others | Keeps meetings on the main choice
+SLIDE Common mistakes | Treating one option as the question; Solving a symptom; Scope too wide or too narrow; No success criteria before analysis | Spend time on the question first
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between a decision and an outcome;
+- apply the six elements of decision quality to check a decision;
+- turn a narrow "whether or not" request into a clear decision statement;
+- use a decision hierarchy to separate given, focus and deferred decisions.
+
+## Key terms
+
+::: terms
+Decision: a commitment of resources that cannot easily be taken back
+Outcome: what happens after the decision, partly because of luck
+Frame: how a decision is defined, including its purpose, scope and options
+Decision statement: one sentence saying who decides what, by when, within which limits and criteria
+Decision hierarchy: a sorting of linked decisions into given, focus and deferred
+:::
+
+## 1. Decision quality: judge the decision, not only the result
+
+In decision analysis, the field developed by Ronald Howard at Stanford University, a decision is an irrevocable allocation of resources. Discussing a rice contract is not a decision; signing it is.
+
+The outcome is what happens next, and it is different from the decision. A distributor can choose a supplier with care and still lose money because a ship waits three weeks outside Luanda port. If you judge only by results, you learn the wrong lessons (Lesson 6).
+
+What makes a decision good at the moment you make it? The book Decision Quality by Carl Spetzler and colleagues at the Strategic Decisions Group uses six elements:
+
+::: diagram steps | The six elements of decision quality
+Appropriate frame: we are solving the right problem, with the right scope
+Creative alternatives: we have several real, different options
+Relevant and reliable information: we know what matters and how certain it is
+Clear values and trade-offs: we agree what we want and will give up
+Sound reasoning: we combine the above logically
+Commitment to action: the people who must act are ready
+:::
+
+The elements work like a chain: the decision is only as strong as its weakest link. Before any major decision, rate each element from 0% to 100%. The lowest score shows where to work next.
+
+::: quiz
+? A director has an excellent spreadsheet comparing two truck models, but the operations manager who must run the trucks refuses to support the plan. Which element is weakest?
+- Sound reasoning || The calculation itself is fine.
+- Creative alternatives || More options might help, but the clearest gap is elsewhere.
+* Commitment to action || The person who must carry out the decision is not on board.
+- Appropriate frame || Nothing suggests the problem is wrongly defined.
+:::
+
+## 2. Find the real question
+
+A common warning sign of a poor frame is the "whether or not" decision: "Should we open a depot in Huambo, yes or no?" Chip and Dan Heath, in Decisive (2013), call this narrow framing: one option and its opposite, with other routes never seen. Use four steps to widen the frame:
+
+::: slides
+SLIDE Step 1: State the trigger | What happened that makes us think we must decide? | Write it as a fact, not an opinion
+SLIDE Step 2: Ask why it matters | Why is this a problem?; Ask "why" two or three times; Stop at a goal the business truly cares about | Find the objective behind the option
+SLIDE Step 3: Restate the question | Change "Should we do X?" into "How can we best achieve Y?"; Y is the objective you found | The new question invites more options
+SLIDE Step 4: Write the decision statement | Who decides; What and by when; Constraints; Success criteria | One sentence the team signs up to
+:::
+
+Example: a sales manager in Benguela asks, "Should we hire two more sales representatives?" Why? Orders from small shops in Lobito are falling, and the company wants to grow volume there. The real question: "How can we best grow small-shop volume in Benguela and Lobito?" Now hiring is one option among several: a van-sales route, a wholesaler partnership or better credit terms. The decision statement: "The Commercial Director will decide by 30 June how to grow small-shop volume in Benguela and Lobito by 15%, within 40 million Kz and without increasing overdue receivables."
+
+## 3. Set the scope with a decision hierarchy
+
+A large decision is linked to many smaller ones. Discussing all of them at once makes meetings go in circles. The decision hierarchy, a standard decision analysis tool, sorts them into three levels:
+
+::: diagram pyramid | The decision hierarchy
+Given: decisions already made or policies we accept, not open for discussion now
+Focus: the decisions we will make in this process
+Deferred: decisions that follow later, or that others will make
+:::
+
+List every decision people mention and ask: is it already fixed (given), must we decide it now (focus), or can it wait (deferred)? Agree the list with the decision owner. In Benguela, the given is staying in the market; the focus is the channel model and investment; deferred are hiring and van choice.
+
+::: quiz
+? During a meeting on whether and how to serve Huambo, a manager starts arguing about which forklift brand to buy. Where does this item belong?
+- Given || It has not been decided, so it is not a given.
+- Focus || It does not need to be decided now.
+* Deferred || It depends on the main decision, so it comes later.
+- It should be removed from the list || It is a real decision, just a later one.
+:::
+
+## Worked example: an importer reviewing its rice supplier
+
+A food importer in Luanda buys rice from one Asian supplier. Last quarter two shipments arrived late, and a weaker kwanza raised landed cost per tonne by 9%. The purchasing manager, Sílvia, asks: "Should we drop our supplier?"
+
+Trigger: two late shipments and a 9% cost rise. Why it matters: stock-outs lose sales and costs squeeze margin. Real question: "How can we secure reliable rice supply at the lowest landed cost for 12 months, with acceptable currency risk?" Decision statement: "The Commercial Director, with Finance, will decide by 15 August the 12-month rice sourcing plan, to keep stock-outs below 5 days per quarter and landed cost within budget."
+
+Hierarchy: given, rice stays a core category; focus, number of suppliers and payment currency; deferred, shipping line. Options now go beyond "drop or keep": split volume 70/30 with a second supplier, add a late-delivery penalty, or hold more safety stock. Rating the six elements shows information as the weakest link (50%), because nobody has the second supplier's delivery record. Next step: request references and shipment data.
+
+::: case | The depot request from Lubango
+The regional manager in Lubango writes: "Sales are down 12% this year. We need our own depot here. Please approve 150 million Kz."
+? What should the Commercial Director do first?
+- Approve it, because the regional manager knows the market || Approving now skips the frame. The depot is one option, not the question.
+- Reject it, because 150 million Kz is too much || Rejecting is also a "whether or not" answer.
+* Ask why sales fell and restate the question as how best to recover sales in the region || This widens the frame. The cause may be stock-outs, prices or credit.
+- Ask Finance to model the depot in detail || Modelling one option wastes time before the frame is agreed.
+:::
+
+## Tool: decision framing sheet
+
+- Trigger (facts only):
+- Why it matters (the objective behind the request):
+- Restated question ("How can we best..."):
+- Decision owner and deadline:
+- Success criteria (measurable):
+- Constraints (budget, time, policy):
+- Given, focus and deferred decisions:
+- Decision quality score per element (0–100%) and weakest link:
+
+## Common mistakes
+
+- Treating a request for one option as the question itself ("Should we buy X?").
+- Solving a symptom, such as falling sales, without asking why.
+- Starting analysis before agreeing success criteria.
+
+## Self-check
+
+- What is the difference between a decision and an outcome? (Answer: you control the decision. The outcome also depends on luck.)
+- Name the six elements of decision quality. (Answer: appropriate frame, creative alternatives, relevant and reliable information, clear values and trade-offs, sound reasoning, commitment to action.)
+- What are the three levels of a decision hierarchy? (Answer: given, focus and deferred.)
+
+## Practical assignment
+
+Choose one decision waiting on your desk. Fill in the framing sheet and share the decision statement with the people involved before any analysis starts.
+
+## Summary
+
+- A decision is judged by its process at the moment of choice, not only by its outcome.
+- Check the six elements of decision quality and strengthen the weakest link first.
+- Turn "whether or not" requests into a real question, then set the scope with a decision hierarchy.
+=== 20
+SLIDE What you will learn | Generate at least three real alternatives; Build a weighted decision matrix; Calculate expected value with a decision tree; Choose the right comparison tool | More options, then a fair comparison
+SLIDE Widen your options | Vanishing options test; Multitracking: develop several options at once; Find who has solved this problem before | Aim for three to five real options
+SLIDE Weighted decision matrix | Must-haves screen out options; Wants get weights totalling 100%; Score 1 to 5, multiply, add up | Agree weights before you score
+SLIDE Sensitivity check | Change the top weight by 10 points; Does the winner change?; Small gaps mean discuss, not decide | The matrix informs, it does not decide
+SLIDE Decision tree symbols | Square: a decision you control; Circle: an uncertain event; End point: the result in Kz | Read left to right, calculate right to left
+SLIDE Expected value | EV = sum of probability × outcome; Probabilities on each chance node add up to 1; Compare EV and the worst case | EV is the long-run average, not a promise
+SLIDE Common mistakes | Fake options to justify a favourite; Weights set after scoring; Precise numbers from guesses; Ignoring the downside | A tool is only as good as its inputs
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- generate at least three genuine alternatives for a business decision;
+- build and check a weighted decision matrix;
+- calculate expected value using a simple decision tree;
+- choose between a matrix and a decision tree for a given decision.
+
+## Key terms
+
+::: terms
+Alternative: a distinct course of action that could achieve the objective
+Criterion: a factor used to compare options, such as landed cost or delivery reliability
+Weight: the relative importance of a criterion, with all weights adding up to 100%
+Expected value (EV): the probability-weighted average of the possible outcomes of an option
+Decision tree: a diagram showing choices, uncertain events, their probabilities and the final results
+:::
+
+## 1. Widen your options
+
+Teams often compare too few options, sometimes only one. In Decisive, Chip and Dan Heath suggest ways to widen the set:
+
+- The vanishing options test: imagine none of the current options is allowed. What would you do then?
+- Multitracking: develop two or three options in parallel, so nobody gets attached to one idea.
+- Find someone who has solved the problem: another branch, a partner abroad or a competitor's public practice.
+
+Aim for three to five real options, meaning options you would actually be willing to choose.
+
+## 2. The weighted decision matrix
+
+When several options must be compared on several criteria, a weighted decision matrix makes the trade-offs visible.
+
+::: slides
+SLIDE Step 1: Screen with must-haves | Pass or fail criteria, such as food safety certification; Remove options that fail | No score can rescue a failed must-have
+SLIDE Step 2: Weight the wants | List three to six criteria from your success criteria; Give each a weight so the total is 100% | Agree weights before seeing scores
+SLIDE Step 3: Score each option | Use a 1 to 5 scale for each criterion; Base scores on data where possible | Write down the evidence for each score
+SLIDE Step 4: Calculate and test | Multiply each score by its weight and add up; Change the top weight by 10 points | If the winner changes, discuss the trade-off
+:::
+
+Example: an importer compares three possible second suppliers of rice, all with valid quality certificates. Weights: landed cost 40%, on-time delivery record 30%, quality consistency 20%, payment terms 10%.
+
+- Supplier A scores 4, 2, 4, 3: (4 × 0.4) + (2 × 0.3) + (4 × 0.2) + (3 × 0.1) = 1.6 + 0.6 + 0.8 + 0.3 = 3.3.
+- Supplier B scores 3, 4, 4, 4: 1.2 + 1.2 + 0.8 + 0.4 = 3.6.
+- Supplier C scores 5, 2, 3, 2: 2.0 + 0.6 + 0.6 + 0.2 = 3.4.
+
+Supplier B leads. Sensitivity check: if cost rises to 50% and on-time delivery falls to 20%, C scores 3.7 and B 3.5. The winner depends on how much the business values reliability over price, and that is the real conversation.
+
+::: quiz
+? An option scores 4 on a criterion weighted 50%, 3 on one weighted 30% and 2 on one weighted 20%. What is its weighted score?
+- 3.0 || That is the simple average of the scores. Weights must be applied.
+* 3.3 || Correct: 2.0 + 0.9 + 0.4 = 3.3.
+- 3.5 || Check each multiplication again.
+- 9.0 || That adds the raw scores without weights.
+:::
+
+## 3. Decision trees and expected value
+
+A matrix suits many criteria with little uncertainty. When the result depends on an uncertain event, such as demand or a currency move, use a decision tree: a square for a decision you control, a circle for an uncertain event, and an end point showing the result.
+
+::: diagram steps | Building a decision tree
+Draw the decision: a square with one branch per option
+Add uncertain events: a circle on each branch, one branch per possible event
+Assign probabilities: the branches from each circle add up to 1
+Value each end point: the net result in Kz for that path
+Roll back: multiply and add from right to left to get each option's EV
+Compare: look at EV, worst case and whether the business can absorb it
+:::
+
+Expected value is the average result you would get if you could repeat the decision many times. It is not a promise for this one decision, so always check the worst case too.
+
+::: quiz
+? A new product line has a 70% chance of earning 100 million Kz and a 30% chance of losing 50 million Kz. What is its expected value?
+- 50 million Kz || That ignores the probabilities.
+- 85 million Kz || The loss must be subtracted, not ignored.
+* 55 million Kz || Correct: (0.7 × 100) − (0.3 × 50) = 70 − 15 = 55 million Kz.
+- 70 million Kz || That counts only the good outcome.
+:::
+
+## Worked example: a depot in Huambo
+
+A distributor based in Luanda must decide how to serve Huambo for the next three years. Two options remain:
+
+- Option 1: open its own depot. Investment and running costs are included in the results.
+- Option 2: serve Huambo from Luanda through a third-party transport company.
+
+The sales team estimates a 60% chance of strong demand and a 40% chance of weak demand. Finance values each end point as net contribution over three years:
+
+- Depot, strong demand: +500 million Kz. Depot, weak demand: −150 million Kz.
+- Third-party transport, strong demand: +250 million Kz. Weak demand: +80 million Kz.
+
+Roll back:
+
+- EV of the depot = (0.6 × 500) + (0.4 × −150) = 300 − 60 = 240 million Kz.
+- EV of third-party transport = (0.6 × 250) + (0.4 × 80) = 150 + 32 = 182 million Kz.
+
+The depot has the higher EV by 58 million Kz, but a 40% chance of losing 150 million Kz. The Commercial Director asks: can we absorb that loss, and can we learn more before committing? The team adds a third option: third-party transport for one year, then decide on the depot with real demand data. Lesson 4 explains why such staged decisions are often wise.
+
+::: case | Two transport partners in Lobito
+A logistics manager in Lobito compares two transport partners. Partner X (cheaper) scores 3.62 and Partner Y (safer) scores 3.58. He plans to sign with X tomorrow.
+? What should the manager do first?
+- Sign with Partner X, because it has the higher score || A gap of 0.04 is far smaller than the error in the scores. The number cannot decide alone.
+* Run a sensitivity check and discuss the cost versus safety trade-off with the decision owner || Correct. Such a small gap means the weights decide the winner, so the trade-off must be made openly.
+- Add more criteria until one partner clearly wins || Adding criteria after scoring is a way of steering the result.
+- Split the volume 50/50 to avoid choosing || Splitting may be valid, but only after the trade-off has been understood.
+:::
+
+## Tool: option comparison template
+
+- Decision statement:
+- Options (at least three real ones):
+- Must-haves (pass or fail):
+- Criteria and weights (total 100%):
+- Scores 1–5 with evidence:
+- Weighted totals:
+- Sensitivity check result:
+- Key uncertain event, probabilities and Kz results:
+- EV and worst case per option:
+- Recommended option and why:
+
+## Common mistakes
+
+- Adding fake options to make a favourite look good.
+- Setting or changing weights after seeing the scores.
+- Treating guessed numbers as precise, for example deciding on a 0.04 difference.
+- Choosing on EV alone without asking whether the business can survive the worst case.
+
+## Self-check
+
+- What does the vanishing options test ask? (Answer: what you would do if none of the current options were allowed.)
+- How do you calculate expected value? (Answer: multiply each outcome by its probability and add the results.)
+- When is a decision tree better than a matrix? (Answer: when the result depends mainly on an uncertain event, such as demand or a currency move.)
+
+## Practical assignment
+
+Take the decision you framed in Lesson 1. Generate at least three real options, then compare them with a weighted matrix or a decision tree. Run one sensitivity check and show the result to a colleague.
+
+## Summary
+
+- Widen options first with the vanishing options test and multitracking.
+- A weighted matrix makes trade-offs visible, and a sensitivity check shows how robust the winner is.
+- A decision tree gives each option an expected value, but always compare it with the worst case.
+=== 20
+SLIDE What you will learn | Explain System 1 and System 2 thinking; Recognise anchoring, confirmation bias, overconfidence and sunk cost; Apply debiasing techniques; Run a pre-mortem | Biases are predictable, so they can be managed
+SLIDE Two systems of thinking | System 1: fast, automatic, intuitive; System 2: slow, effortful, logical; Biases come from System 1 shortcuts | Kahneman, Thinking, Fast and Slow (2011)
+SLIDE Anchoring | The first number shapes later estimates; Supplier first quotes and last year's budget act as anchors; Make your own estimate before you see theirs | Tversky and Kahneman (1974)
+SLIDE Confirmation bias | We look for evidence that supports what we already believe; We question unwelcome data harder; Ask: what would prove me wrong? | Seek disconfirming evidence
+SLIDE Sunk cost and overconfidence | Past spending cannot be recovered and should not drive the choice; Plans are usually too optimistic (planning fallacy) | Only future costs and benefits count
+SLIDE The pre-mortem | Imagine the decision has failed; Each person writes reasons alone; Share, rank and act on the top risks | Gary Klein, Harvard Business Review (2007)
+SLIDE Common mistakes | Thinking you are immune; Debiasing only others; Discussing before independent estimates; Using the pre-mortem after the decision | Build debiasing into the process
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain how fast, intuitive thinking produces predictable biases;
+- recognise anchoring, confirmation bias, overconfidence and the sunk cost fallacy in business decisions;
+- apply simple debiasing techniques before a decision;
+- run a pre-mortem with your team.
+
+## Key terms
+
+::: terms
+System 1 and System 2: fast, automatic thinking compared with slow, effortful, logical thinking
+Cognitive bias: a systematic error in judgement that happens in predictable situations
+Anchoring: the tendency for an initial number to pull later estimates towards it
+Confirmation bias: the tendency to seek and favour information that supports what we already believe
+Sunk cost fallacy: continuing a course of action because of money or effort already spent
+Pre-mortem: a meeting where the team imagines the decision has failed and explains why
+:::
+
+## 1. Why smart people make predictable errors
+
+Daniel Kahneman, in Thinking, Fast and Slow (2011), describes two modes of thinking. System 1 is fast and automatic: it "feels" that a price is fair. System 2 is slow and effortful: it calculates a landed cost. System 1 is usually right, but its shortcuts fail in predictable ways. These systematic errors are cognitive biases.
+
+Seniority does not remove biases, and busy executives rely more on System 1. The answer is to build checks into the decision process.
+
+## 2. Four biases that cost businesses money
+
+Anchoring. In 1974 Amos Tversky and Daniel Kahneman showed that people's estimates are pulled towards a starting number, even an irrelevant one. In business, a supplier's first quote, last year's budget or the first figure said in a meeting all act as anchors. Example: a buyer receives a quote for maize at USD 400 per tonne and "negotiates" to 380, without checking that comparable offers start lower.
+
+Confirmation bias. Once we favour an option, we notice supporting facts and question unwelcome ones harder. A director who wants a new depot dismisses wholesalers' payment delays as "temporary".
+
+Overconfidence and the planning fallacy. Kahneman and Tversky named the planning fallacy: we underestimate the time, costs and risks of our own plans, for example a warehouse project that "will take three months".
+
+Sunk cost fallacy. Money already spent cannot be recovered, yet people continue failing projects "because we have invested so much". The right question is: from today, which option gives the best future result?
+
+::: quiz
+? A manager says: "We have spent 80 million Kz on this brand launch, so we cannot stop now." Which bias is this?
+- Anchoring || Anchoring is about a starting number pulling estimates. Here the issue is past spending.
+- Confirmation bias || The manager is not selecting evidence. He is using past costs as a reason.
+- Planning fallacy || The planning fallacy concerns optimistic plans, not money already spent.
+* Sunk cost fallacy || Correct. The 80 million Kz is spent either way. Only future costs and benefits matter.
+:::
+
+## 3. Debiasing techniques
+
+You cannot switch biases off, but you can design the process so that they do less damage.
+
+::: slides
+SLIDE Independent estimates first | Each person writes an estimate before discussion; Then share and discuss the spread | Prevents the first speaker from anchoring the room
+SLIDE Consider the opposite | Ask: what would have to be true for the other option to be better?; Name one fact that would change your mind | Fights confirmation bias
+SLIDE Take the outside view | Find a reference class of similar past projects; Start from their real average, then adjust | Kahneman and Lovallo call this the outside view
+SLIDE Assign a challenger | One person argues against the favoured option; Rotate the role so it is not personal | Makes dissent safe
+SLIDE Run a pre-mortem | Imagine the decision failed; List the reasons; Fix the biggest risks now | Done before the final decision
+:::
+
+The pre-mortem was proposed by the psychologist Gary Klein in the Harvard Business Review (2007). Saying "it has gone wrong" instead of "what might go wrong?" gives everyone permission to speak.
+
+::: diagram steps | Running a pre-mortem
+Brief: explain the decision and the plan in a few minutes
+Imagine failure: "It is 12 months from now and this decision has failed badly"
+Write alone: each person writes every reason they can think of, in silence
+Share: go round the room, one reason per person each time, until all are listed
+Rank: choose the three to five most likely or most damaging reasons
+Act: change the plan or add controls, each with an owner
+:::
+
+::: quiz
+? A CEO opens a meeting by saying: "I expect the new depot to sell 1 billion Kz in year one. What do you think?" Which bias is most at risk?
+* Anchoring || Correct. The first number spoken pulls everyone's estimates towards it.
+- Sunk cost fallacy || No money has been spent yet, so this is not a sunk cost issue.
+- Planning fallacy || It may be optimistic, but the main risk is that the room anchors on his figure.
+- Hindsight bias || Hindsight bias is about judging the past, not estimating the future.
+:::
+
+## Worked example: the Malanje depot
+
+A distributor opened a depot in Malanje two years ago and has invested 300 million Kz. The depot has never reached break-even. At the review, the regional director says: "After 300 million, closing would be a waste."
+
+The Commercial Director separates sunk from future costs. The 300 million Kz is gone in every option. The team compares only the next 12 months:
+
+- Continue as now: expected contribution of −40 million Kz.
+- Close and serve Malanje from another depot by third-party transport: one-off closing cost of 25 million Kz, then +10 million Kz contribution. Net: −15 million Kz.
+
+Closing is better by 25 million Kz. A pre-mortem on the closing plan finds three risks: key wholesalers switch to a competitor, the transport partner is late, and staff leave before the handover. Controls: visit the top ten wholesalers, test the transport partner for a month, and agree retention bonuses for two key staff.
+
+::: case | The maize quote in Lobito
+A buyer at a food importer in Lobito receives a first quote for yellow maize at USD 420 per tonne. Her manager tells her: "Try to get it down to 400." She has not asked any other supplier.
+? What should she do first?
+- Negotiate hard to reach 400 as instructed || The 420 quote is acting as an anchor. 400 may still be far above the market.
+- Accept 420 to protect the relationship || This accepts the anchor completely, with no check on value.
+* Get at least two independent quotes and her own estimate of a fair price before negotiating || Correct. Building her own reference point removes the power of the first anchor.
+- Ask the supplier to justify the price in writing || The explanation may be useful, but it still starts from the supplier's anchor.
+:::
+
+## Tool: bias checklist before a decision
+
+- Did each person give an independent estimate before discussion?
+- What is the first number we heard, and could it be anchoring us?
+- What evidence would prove our favoured option wrong? Have we looked for it?
+- What did similar past projects really cost and take? (outside view)
+- Are we using past spending as a reason? Remove it and compare again.
+- Has someone argued seriously for the other option?
+- Have we run a pre-mortem, and are the top risks owned?
+
+## Common mistakes
+
+- Believing that experience makes you immune to bias.
+- Seeing biases in others' proposals but not in your own.
+- Running a pre-mortem after the decision is already announced, when nobody will speak freely.
+
+## Self-check
+
+- What is the difference between System 1 and System 2 thinking? (Answer: System 1 is fast and automatic. System 2 is slow, effortful and logical.)
+- Why is money already spent irrelevant to a new decision? (Answer: it cannot be recovered whatever you choose, so only future costs and benefits can differ between options.)
+- What sentence starts a pre-mortem? (Answer: "Imagine it is some months from now and this decision has failed. Why?")
+
+## Practical assignment
+
+Before your next important meeting, ask each participant to write their estimate or recommendation privately first. Then run a 20-minute pre-mortem on one decision your team is about to make, and record the top three risks with owners.
+
+## Summary
+
+- Biases are predictable errors from fast thinking, and seniority does not remove them.
+- Watch for anchoring, confirmation bias, overconfidence and sunk costs.
+- Build debiasing into the process: independent estimates, outside view, a challenger and a pre-mortem.
+=== 20
+SLIDE What you will learn | Distinguish risk from uncertainty; Build simple scenarios on two key uncertainties; Classify decisions as one-way or two-way doors; Keep a risk register | Prepare for many futures, not one forecast
+SLIDE Risk versus uncertainty | Risk: probabilities can be estimated; Uncertainty: probabilities are unknown; Frank Knight (1921) | Most big decisions involve both
+SLIDE Scenario planning | Pick the two most uncertain, most important drivers; Build a 2x2 of four futures; Test each option in all four | Used by Shell since the 1970s
+SLIDE Robust choices | Look for options that work acceptably in every scenario; Add signposts that tell you which future is arriving | Robust beats optimal for one future
+SLIDE One-way and two-way doors | Type 1: hard or impossible to reverse, decide carefully; Type 2: easy to reverse, decide fast and test | Jeff Bezos, Amazon letter to shareholders (2015)
+SLIDE The risk register | Risk, cause, likelihood 1 to 5, impact 1 to 5; Score = likelihood × impact; Owner, response and trigger | Avoid, reduce, transfer or accept
+SLIDE Common mistakes | Planning for one forecast; Treating every decision as Type 1; Risk registers that nobody updates; No owners for risks | Match the effort to the reversibility
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- distinguish risk from uncertainty;
+- build four simple scenarios and test options against them;
+- classify a decision as reversible or irreversible and adjust your process;
+- record and score risks in a risk register.
+
+## Key terms
+
+::: terms
+Risk: a situation where possible outcomes and their probabilities can be reasonably estimated
+Uncertainty: a situation where probabilities cannot be reliably estimated
+Scenario: a consistent, plausible description of a possible future, used to test decisions
+Type 1 and Type 2 decisions: decisions that are hard to reverse compared with decisions that are easy to reverse
+Risk register: a table of risks with their likelihood, impact, owner and planned response
+:::
+
+## 1. Risk and uncertainty
+
+The economist Frank Knight, in Risk, Uncertainty and Profit (1921), drew a useful line. Under risk you can estimate probabilities, such as the share of trucks that break down each year. Under uncertainty you cannot, as with a major regulatory change. Expected value (Lesson 2) works for risk. Deep uncertainty needs tools that do not depend on one forecast: scenarios, staged decisions and robust options.
+
+## 2. Scenario planning
+
+Scenario planning became known through Shell, which used it from the 1970s under planners such as Pierre Wack. The aim is to prepare for several plausible futures, not to predict one.
+
+::: slides
+SLIDE Step 1: Set the question and horizon | How should we source rice for two years? | Keep it specific
+SLIDE Step 2: List driving forces | Currency, demand, port delays, regulation | Include what you cannot control
+SLIDE Step 3: Pick two key uncertainties | Most important and most uncertain | These become the axes
+SLIDE Step 4: Describe four futures | A name and a short, consistent story each | Names make scenarios memorable
+SLIDE Step 5: Test options and set signposts | Score each option in each future; Choose early signals | Prefer options that survive all four
+:::
+
+::: diagram matrix | Four futures for an importer | Kwanza movement (stable → sharp fall) | Consumer demand (weak → strong)
+Smooth growth: strong demand, stable currency – expand volume and stock
+Busy but squeezed: strong demand, sharp fall – protect margin, reprice quickly
+Quiet market: weak demand, stable currency – control costs, cut slow lines
+Perfect storm: weak demand, sharp fall – protect cash, reduce dollar exposure
+:::
+
+An option that is best in one scenario but disastrous in another is fragile. A robust option performs acceptably in all four. Signposts, such as the exchange rate trend or port waiting times, show which future is arriving.
+
+::: quiz
+? Why do managers build several scenarios instead of one forecast?
+- To find the single most likely future and plan for it || That is forecasting. Scenarios deliberately cover several futures.
+* To test which options still work acceptably across several plausible futures || Correct. The goal is a robust choice and early warning signals.
+- To calculate an exact expected value || Scenarios are used where probabilities are hard to estimate.
+- To avoid making a decision until the future is clear || Scenarios support decisions now. They do not replace them.
+:::
+
+## 3. One-way doors and two-way doors
+
+In his 2015 letter to shareholders, Jeff Bezos of Amazon described two kinds of decisions. Type 1 decisions are one-way doors, hard to reverse, such as buying land for a warehouse. Type 2 decisions are two-way doors, such as a one-month price test in one province.
+
+Type 1 decisions deserve the full process from Lessons 1 to 3. Type 2 decisions should be made quickly, close to the work, with a review date and a stop rule. Treating every decision as Type 1 makes an organisation slow. You can often split a Type 1 decision into Type 2 steps: a trial order before a long contract, or renting before buying.
+
+## 4. The risk register
+
+Record the main risks of the chosen option so they are managed, not just discussed. ISO 31000 is the international standard giving guidelines on risk management. A simple register includes:
+
+- Risk and its cause.
+- Likelihood (1 = rare to 5 = almost certain) and impact (1 = minor to 5 = severe).
+- Score = likelihood × impact. A risk rated 4 for likelihood and 5 for impact scores 20 and needs action now.
+- Response: avoid, reduce, transfer (for example insurance or a contract clause) or accept.
+- Owner, and a trigger that shows the risk is happening.
+
+::: quiz
+? A risk has likelihood 3 and impact 4. Another has likelihood 5 and impact 2. Which should get attention first, using the score?
+* The first, with a score of 12 against 10 || Correct: 3 × 4 = 12 and 5 × 2 = 10.
+- The second, because it is almost certain || Likelihood alone is not the score. Impact matters too.
+- Both equally, because the scores are the same || Check the multiplication: 12 and 10.
+- Neither, because both are below 15 || Thresholds are set by each company. A score of 12 still needs a response.
+:::
+
+## Worked example: choosing a sugar supplier under currency risk
+
+A distributor in Luanda must choose a sugar source for the next six months. An overseas supplier offers a landed cost of 450,000 Kz per tonne at today's exchange rate, but 80% of that cost (360,000 Kz) is paid in US dollars 90 days later. A local supplier offers a fixed 500,000 Kz per tonne.
+
+Finance tests a stress case of a 20% weaker kwanza before payment. The dollar part then rises by 72,000 Kz (20% of 360,000), and the imported cost becomes 522,000 Kz per tonne. If the team judges a 30% chance of the stress case, the expected cost of importing is (0.7 × 450,000) + (0.3 × 522,000) = 315,000 + 156,600 = 471,600 Kz, still below the local price. But in the stress case the import is 22,000 Kz per tonne more expensive.
+
+The director chooses a robust split: 60% import, 40% local, with the local share reviewed after three months. The risk register lists currency movement: likelihood 3, impact 4, score 12, owner Finance, response reduce, trigger a weakening above an agreed level.
+
+::: case | The price test in Uíge
+A sales manager wants to test a new cooking oil price list in Uíge for one month. The director wants a six-week study first, while competitors change prices now.
+? How should the director handle this decision?
+- Keep the six-week study, because pricing affects margin || Margin matters, but a one-month test in one province can be reversed. A long study costs time.
+* Treat it as a two-way door: approve the test with a review date and a stop rule || Correct. The decision is easy to reverse, so speed and learning are worth more than extra analysis.
+- Apply the new prices nationally to get more data || That turns a small reversible test into a large, harder-to-reverse decision.
+- Ask the Board to decide || Escalating a Type 2 decision makes the organisation slow.
+:::
+
+## Tool: uncertainty and risk sheet
+
+- Is this a Type 1 or Type 2 decision? Can it be split into smaller steps?
+- Two key uncertainties and the four scenario names:
+- Result of each option in each scenario:
+- Most robust option:
+- Signposts to watch and how often:
+- Top risks: likelihood, impact, score, owner, response, trigger:
+- Review date:
+
+## Common mistakes
+
+- Planning for one forecast only.
+- Treating every decision as Type 1, so the organisation becomes slow.
+- Treating a Type 1 decision as Type 2 because the team is in a hurry.
+- Writing a risk register once and never updating it.
+
+## Self-check
+
+- What is the difference between risk and uncertainty? (Answer: under risk, probabilities can be estimated. Under uncertainty, they cannot be reliably estimated.)
+- What makes an option robust? (Answer: it performs acceptably in all the scenarios, not only the most likely one.)
+- How do you calculate a risk score in a simple register? (Answer: likelihood × impact, each on a 1 to 5 scale.)
+
+## Practical assignment
+
+Take one current decision. Classify it as Type 1 or Type 2. If it is Type 1, build four scenarios on two key uncertainties and list the top five risks in a register with owners. If it is Type 2, set a review date and a stop rule and decide this week.
+
+## Summary
+
+- Use expected value for risk, and scenarios and robust options for deep uncertainty.
+- Match the effort to the door: slow down for one-way doors, move fast on two-way doors.
+- A risk register with scores, owners, responses and triggers turns worry into action.
+=== 20
+SLIDE What you will learn | Choose the right decision mode; Assign decision roles with RAPID; Use RACI for execution; Practise disagree and commit | Clear roles make faster, better decisions
+SLIDE Decision modes | Decide alone; Consult, then decide; Decide together; Delegate | Vroom and Yetton: match the mode to the situation
+SLIDE RAPID roles | Recommend; Agree; Perform; Input; Decide | Bain and Company, "Who Has the D?" (2006)
+SLIDE One D only | Exactly one person or body holds the D; Use the Agree role sparingly; Input is advice, not a vote | Unclear D means slow decisions
+SLIDE RACI for execution | Responsible: does the work; Accountable: one owner of the result; Consulted; Informed | RAPID for the choice, RACI for the tasks
+SLIDE Disagree and commit | Speak up fully before the decision; Commit fully after it; Agree what new facts would reopen it | Amazon leadership principle
+SLIDE Groupthink | Pressure for agreement hides doubts; Leader speaks last; Ask for written views first | Irving Janis (1972)
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose the right decision mode for a situation;
+- assign decision roles using the RAPID framework;
+- use a RACI chart to organise the work that follows a decision;
+- apply "disagree and commit" and prevent groupthink.
+
+## Key terms
+
+::: terms
+Decision rights: the agreed answer to who recommends, who must agree, who gives input and who decides
+RAPID: a framework of five decision roles: Recommend, Agree, Perform, Input and Decide
+RACI: a chart of task roles: Responsible, Accountable, Consulted and Informed
+Disagree and commit: stating your disagreement openly before a decision, then fully supporting it once made
+Groupthink: a group's drive for agreement that suppresses doubts and alternatives
+:::
+
+## 1. Choose the decision mode
+
+Not every decision should be made the same way. Victor Vroom and Philip Yetton (1973) developed a model showing that the best level of team involvement depends on the situation. A practical simplification uses four modes:
+
+- Decide alone: time is short, you have the information and the team will accept it.
+- Consult, then decide: others hold key information but you own the result.
+- Decide together: everyone's commitment is essential and there is time.
+- Delegate: someone closer to the work has the knowledge to own it.
+
+Ask: who has the information, how important is commitment, and how much time is there? A truck breakdown at 6 a.m. needs one fast decider. A new commission plan needs consultation.
+
+## 2. RAPID: who has the D?
+
+Slow decisions often come from unclear roles, not poor analysis. Paul Rogers and Marcia Blenko of Bain and Company described the RAPID framework in "Who Has the D?" (Harvard Business Review, 2006). The letters are a memory aid, not the order of work:
+
+::: diagram steps | RAPID in the order work happens
+Input: people with relevant facts or expertise give their views
+Recommend: one person or team gathers input, analyses and proposes a decision
+Agree: those with formal approval rights (for example legal or compliance) can block, within their area only
+Decide: one person or body makes the final call and commits the organisation
+Perform: the people who carry out the decision do the work
+:::
+
+Two rules matter most. First, only one person or body holds the D. Second, use the A role sparingly: every A is a possible veto, and too many A roles create endless negotiation.
+
+::: slides
+SLIDE Step 1: List the key decisions | Choose the 5 to 10 recurring decisions that cause the most delay | Start where friction is highest
+SLIDE Step 2: Assign the D | One name or body per decision; Usually the level closest to the work with enough view | Never two Ds
+SLIDE Step 3: Assign R, A, I and P | R does the analysis; A only where there is a formal right to block; I is advice, not a vote | Keep the A list short
+SLIDE Step 4: Publish and use it | Share the chart; Start each meeting by naming the D | Roles only help if people know them
+:::
+
+RACI is a related tool, better for the work after the decision. Responsible people do the task; one person is Accountable for the result; others are Consulted or Informed. Use RAPID to decide, and RACI to execute.
+
+::: quiz
+? In a RAPID chart, Legal holds the A on a new depot lease. What does that mean?
+- Legal makes the final decision on the depot || The final decision belongs to the D, not the A.
+- Legal must be informed after the decision || That is closer to the I in RACI. The A has more power.
+* Legal must approve the lease terms and can block it on legal grounds || Correct. The A role gives formal approval rights within a defined area.
+- Legal does the work of opening the depot || That is the Perform role.
+:::
+
+## 3. Disagree and commit, and avoid groupthink
+
+Good teams argue before a decision and act together after it. The idea of "disagree and commit" is associated with Intel under Andy Grove and is one of Amazon's leadership principles. It works only with three conditions: people are truly heard before the decision; the D is clear; and the team agrees in advance what new facts would justify reopening the decision.
+
+The opposite danger is groupthink, described by the psychologist Irving Janis (1972): silence taken as agreement, self-censored doubts and pressure on dissenters. The risk is higher where people avoid contradicting a senior leader in public. Remedies:
+
+- The leader speaks last.
+- Ask for written views before discussion.
+- Name a challenger for important decisions.
+- Talk privately with quiet experts before the meeting.
+
+::: quiz
+? After a long debate, the Commercial Director decides to open a new depot. The Finance Manager still disagrees. What does "disagree and commit" ask of her?
+- Keep raising her objection at every meeting until it is accepted || That reopens the decision without new facts and slows execution.
+* Support the decision fully in action, and raise it again only if the agreed new facts appear || Correct. She was heard, the D decided, and now she commits.
+- Stay neutral and let others carry out the plan || Neutrality is not commitment. The plan needs her support.
+- Escalate to the Board to protect herself || That undermines the decision rights the team agreed.
+:::
+
+## Worked example: deciding on a depot in Huambo
+
+A distributor's team has discussed a Huambo depot for months. Each meeting ends with "let us collect more data". The Commercial Director clarifies decision rights.
+
+The RAPID chart:
+
+- Recommend: the Regional Sales Manager for the Central region, with an analyst from Finance.
+- Input: Logistics (routes and costs), Finance (investment and cash), three key wholesalers in Huambo, HR (local hiring).
+- Agree: Legal, on the lease contract only.
+- Decide: the Commercial Director, because the investment is within his approved limit.
+- Perform: Operations, the regional sales team and HR.
+
+Two weeks later the recommendation arrives. Logistics, in writing, prefers third-party transport for one more year. The director chooses the depot with a one-year break clause and agrees with Logistics a reopening condition: monthly volume below an agreed level for four months. The Logistics Manager commits, and a RACI chart is drawn up for the opening tasks.
+
+::: case | The silent meeting in Luanda
+The General Manager of an importer presents his plan to switch all flour purchases to one new supplier. He asks, "Any objections?" Nobody speaks. The purchasing manager, Joana, privately believes the supplier's capacity is too small.
+? What would best reduce the risk in this situation?
+- Take the silence as agreement and sign the contract || Silence in a hierarchy is often not agreement. This is a classic sign of groupthink.
+- Ask Joana publicly why she looks unhappy || Putting one person on the spot may make her defend herself, not share facts.
+* Ask everyone to write down their main concern before discussion, with the leader speaking last || Correct. Written, independent views surface doubts like Joana's without public pressure.
+- Postpone the decision indefinitely until everyone agrees || Waiting for consensus can freeze the decision. The aim is to hear doubts, then decide.
+:::
+
+## Tool: decision rights chart
+
+- Decision:
+- D (one name or body):
+- R (who recommends, and by when):
+- A (who can block, and on what area only):
+- I (whose input is needed):
+- P (who carries it out):
+- Decision mode (alone, consult, together, delegate):
+- Conditions to reopen the decision:
+- RACI chart for the main tasks after the decision:
+
+## Common mistakes
+
+- Two people both believing they hold the D.
+- Giving the A role to many people, so anyone can block.
+- Asking "any objections?" in public and taking silence as agreement.
+- Reopening decisions without new facts after "committing".
+
+## Self-check
+
+- What do the letters in RAPID stand for? (Answer: Recommend, Agree, Perform, Input, Decide.)
+- How is RACI different from RAPID? (Answer: RAPID defines roles in making a decision. RACI defines roles in carrying out tasks.)
+- Name two remedies for groupthink. (Answer: for example, the leader speaks last and views are written before discussion.)
+
+## Practical assignment
+
+Choose one recurring decision that is often delayed in your team. Draw a RAPID chart for it, check that there is exactly one D, and share it with the people involved this week.
+
+## Summary
+
+- Match the decision mode to information, commitment needs and time.
+- RAPID makes decision roles clear, with exactly one D, and RACI organises the work that follows.
+- Argue before, commit after, and use written views and a leader who speaks last to avoid groupthink.
+=== 20
+SLIDE What you will learn | Separate decision quality from outcome; Keep a decision journal; Run an after-action review; Check your calibration | Learn from decisions, not only results
+SLIDE Resulting | Judging a decision only by its outcome; Good decisions can have bad outcomes; Annie Duke, Thinking in Bets (2018) | Ask: was it a good bet when we made it?
+SLIDE Four combinations | Good decision, good outcome: deserved success; Good decision, bad outcome: bad luck; Poor decision, good outcome: dumb luck; Poor decision, bad outcome: fix the process | Do not copy dumb luck
+SLIDE Hindsight bias | After the event, outcomes seem obvious; "I knew it all along"; Write predictions before the outcome is known | Baruch Fischhoff (1975)
+SLIDE The decision journal | Date, context and options; Expected result and probability; Key assumptions; Review date | Write it before you know the outcome
+SLIDE After-action review | What was supposed to happen?; What actually happened?; Why was there a difference?; What will we do next time? | US Army method, now used widely
+SLIDE Calibration | Record your confidence levels; Compare with what really happened; If 80% calls come true only half the time, you are overconfident | Measure your judgement, then improve it
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- separate the quality of a decision from the quality of its outcome;
+- keep a decision journal for important decisions;
+- run an after-action review with your team;
+- check your own calibration using recorded probabilities.
+
+## Key terms
+
+::: terms
+Resulting: judging the quality of a decision only by the quality of its outcome
+Hindsight bias: the feeling, after an event, that we knew all along what would happen
+Decision journal: a written record of a decision made at the time, before the outcome is known
+After-action review (AAR): a structured team discussion after an action to learn what to keep and what to change
+Calibration: how well your stated confidence matches how often you are actually right
+:::
+
+## 1. Do not judge decisions by results alone
+
+In Lesson 1 we separated decisions from outcomes. Annie Duke, a former professional poker player, calls the habit of judging a decision only by its outcome "resulting", in her book Thinking in Bets (2018). A poker player who bets correctly can still lose the hand. A manager who chooses a reliable supplier can still face a ship stuck at port.
+
+Combining the two dimensions gives four cases:
+
+::: diagram matrix | Decision quality versus outcome | Outcome (bad → good) | Decision quality (poor → good)
+Bad luck: good decision, bad outcome – keep the process, check for real warning signs
+Deserved success: good decision, good outcome – repeat the process
+Fix the process: poor decision, bad outcome – learn and change how you decide
+Dumb luck: poor decision, good outcome – do not copy it
+:::
+
+Punishing bad luck teaches people to avoid sensible risks. Rewarding dumb luck teaches them to repeat poor decisions until luck runs out.
+
+A second trap is hindsight bias. The psychologist Baruch Fischhoff (1975) showed that once people know an outcome, they believe they would have predicted it. Reviews then become unfair: "It was obvious the kwanza would fall." Was it obvious at the time? Only a record made before the outcome can answer that.
+
+::: quiz
+? A sales manager gave large credit to a new wholesaler without any checks. The wholesaler paid on time. How should the review classify this?
+- Deserved success, because the money was collected || The outcome was good, but the process was poor.
+- Bad luck || Bad luck means a good decision with a bad outcome.
+* Dumb luck, so the process should not be repeated || Correct. A good outcome does not make an unchecked credit decision a good one.
+- No review is needed because nothing went wrong || Good outcomes from poor processes are exactly what reviews must catch.
+:::
+
+## 2. The decision journal
+
+A decision journal protects you from hindsight bias. Write a short entry at the moment of decision, before you know the result.
+
+::: slides
+SLIDE Step 1: Record the decision | Date, decision owner and the decision statement | Takes five minutes
+SLIDE Step 2: Record the options and reasons | Options considered; Why you chose this one; Key assumptions | Assumptions are what you will test later
+SLIDE Step 3: Record your expectations | Expected result in numbers; Your confidence as a percentage; What would make you wrong | Be specific so it can be checked
+SLIDE Step 4: Review on a set date | Compare the outcome with your expectations; Classify it in the four combinations; Note one lesson | Put the review date in your calendar
+:::
+
+Keep the journal for important decisions only, such as Type 1 decisions.
+
+## 3. After-action reviews and calibration
+
+The after-action review was developed by the US Army and is now used widely in business. It is a short team meeting after a project or decision, built on four questions:
+
+- What was supposed to happen?
+- What actually happened?
+- Why was there a difference?
+- What will we keep and what will we change next time?
+
+Hold it soon after the event, focus on process rather than blame, and give each change an owner.
+
+Calibration is the second learning tool. Philip Tetlock's work on forecasting, described in Superforecasting (2015), shows that people who record and score their predictions can improve their judgement. A simple check: collect journal entries where you said you were about 80% confident. If eight out of ten came true, you are well calibrated. If only five did, you are overconfident and should widen your ranges or gather more information.
+
+::: quiz
+? A director reviews ten past decisions where she was "90% sure" of success. Six succeeded. What does this suggest?
+- She is well calibrated || At 90% confidence, about nine out of ten should succeed.
+* She is overconfident and should lower her confidence or test assumptions more || Correct. Six out of ten is well below 90%.
+- She is underconfident || Underconfidence would mean more successes than her stated confidence.
+- Calibration cannot be measured with past decisions || Recorded probabilities are exactly how calibration is measured.
+:::
+
+## Worked example: reviewing the second rice supplier
+
+Six months ago, a Luanda importer chose a second rice supplier using the matrix from Lesson 2. The decision journal recorded: "Expected on-time delivery 90% of shipments, confidence 75%. Key assumption: the supplier's past delivery record is reliable. Review date: 30 March."
+
+On review, one of four shipments arrived 18 days late. Management says: "This supplier was a mistake." The Commercial Director runs an AAR instead.
+
+- What was supposed to happen: four shipments within 5 days of the agreed date.
+- What happened: three on time, one 18 days late because the shipment was moved to a different vessel at a transshipment port.
+- Why: the evaluation checked the supplier's record but never asked about shipping routes and transshipment.
+- Next time: add "route and transshipment risk" as a criterion in the supplier matrix and ask for direct-route options in the contract.
+
+The journal shows the original decision was reasonable with the information available. The team keeps the supplier, fixes one gap in the process and records a new expectation for the next six months.
+
+::: case | The depot that beat its target
+A distributor opened a depot in Cabinda in a hurry, without demand analysis or a risk register. Sales in year one were 30% above target. The General Manager wants to give the regional manager an award and use the same fast approach for three more depots.
+? What should the Commercial Director recommend first?
+- Agree, because the results prove the approach works || This is resulting. One good outcome does not prove the process was good.
+- Close the Cabinda depot to send a message about process || Punishing a good outcome is not useful. The depot is performing.
+* Run an after-action review to find out why sales beat target before copying the approach || Correct. The review shows whether success came from the decision or from luck, such as a competitor leaving.
+- Ask the regional manager to write a decision journal for Cabinda now || A journal written after the outcome is affected by hindsight bias.
+:::
+
+## Tool: decision journal entry
+
+- Date and decision owner:
+- Decision statement:
+- Options considered:
+- Chosen option and main reasons:
+- Key assumptions:
+- Expected result (numbers) and confidence (%):
+- What would make me wrong:
+- Review date:
+- At review: actual result, classification (four combinations), lesson learned:
+
+## Common mistakes
+
+- Praising or blaming people only on the outcome.
+- Writing the journal entry after the result is known.
+- Turning the after-action review into a search for someone to blame.
+- Never comparing stated confidence with real results.
+
+## Self-check
+
+- What is "resulting"? (Answer: judging a decision only by its outcome, not by the quality of the process at the time.)
+- What are the four questions of an after-action review? (Answer: what was supposed to happen, what happened, why there was a difference, what to keep or change.)
+- Why must a decision journal be written before the outcome is known? (Answer: to protect against hindsight bias and give an honest record of what you expected.)
+
+## Practical assignment
+
+Start a decision journal this week. Write an entry for one important decision you are about to make, with a confidence percentage and a review date. Then run a 30-minute after-action review with your team on one decision from the last three months.
+
+## Summary
+
+- Separate decision quality from outcome, and avoid both resulting and hindsight bias.
+- A decision journal written at the time gives an honest record to learn from.
+- After-action reviews and calibration checks turn experience into better judgement.

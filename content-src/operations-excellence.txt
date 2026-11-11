@@ -1,0 +1,898 @@
+=== 20
+SLIDE What you will learn | Define a process and its customer; Build a SIPOC to set process boundaries; Draw a current-state value stream map; Calculate lead time with Little's Law and process cycle efficiency | You cannot improve a process you cannot see
+SLIDE What is a process? | Activities that turn inputs into outputs for a customer; Every process has a start, an end and an owner; Most delays happen between steps, not inside them | Look at the whole flow, not one department
+SLIDE SIPOC | Suppliers, Inputs, Process, Outputs, Customers; One page, 4 to 7 high-level steps; Fix the start and end points first; Used in the Define phase of Six Sigma projects | Agree the scope before you collect data
+SLIDE Value stream mapping | Popularised by Rother and Shook in Learning to See (1998); Shows material and information flow; Data box for each step: cycle time, changeover, uptime, operators; Inventory triangles between steps | Walk the real process, do not map from the office
+SLIDE Value-added or not? | Value-added: the customer would pay for it, it changes the product, done right first time; Necessary non-value-added: required today, for example by law; Pure waste: remove it | Most lead time is waiting
+SLIDE Two key numbers | Little's Law: lead time = work in process ÷ completion rate; Process cycle efficiency = value-added time ÷ lead time; Often only a few percent in offices and warehouses | Measure the queue to find the delay
+SLIDE Common mistakes | Mapping how the process should work, not how it does; Mapping one department only; Skipping the timeline; Jumping to solutions before the current state is clear | Current state first, then future state
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what a process is and who its customer is;
+- build a SIPOC diagram to agree the scope of a process;
+- draw a simple current-state value stream map with a timeline;
+- calculate lead time using Little's Law and process cycle efficiency.
+
+## Key terms
+
+::: terms
+Process: a set of activities that turns inputs into outputs for a customer
+SIPOC: a one-page view of Suppliers, Inputs, Process steps, Outputs and Customers
+Value stream: all the steps, value-adding or not, needed to deliver a product or service to the customer
+Lead time: the total time one unit takes to pass through the process, including waiting
+Work in process (WIP): units that have entered the process but are not yet finished
+Value-added time: time spent on steps that change the product in a way the customer is willing to pay for
+:::
+
+## 1. Seeing work as a process
+
+Operations excellence starts with one idea: every result in your operation comes from a process. A bag of flour leaves a mill in Lobito, a pallet of soft drinks leaves a warehouse in Viana, a loan is paid out by a bank in Luanda: each is the output of a chain of activities with suppliers, inputs, steps, outputs and a customer.
+
+Customers do not see departments. They see one flow, and most delay and cost sits in the hand-offs between departments, where nobody owns the whole. Process thinking means following one unit (an order, a pallet, an application) from start to finish. First ask: who is the customer of this process, and what do they need from it?
+
+## 2. SIPOC: agree the scope
+
+A SIPOC is a one-page table used to agree the boundaries of a process before anyone collects data. It is a standard tool in the Define phase of Six Sigma projects. Build it with the people who do the work:
+
+::: slides
+SLIDE Step 1: Name and boundaries | Give the process a name with a verb | Write the exact start trigger and end point
+SLIDE Step 2: Process steps | List 4 to 7 high-level steps only | Use verb plus noun, for example Check order
+SLIDE Step 3: Outputs and customers | What leaves the process, and who receives it | Note each customer's main requirement
+SLIDE Step 4: Inputs and suppliers | What the process needs to start and run | Who provides each input, inside or outside the company
+:::
+
+Keep it high level and agree it with the process owner. Detail belongs in the value stream map.
+
+::: quiz
+? In a SIPOC for a bakery's dough-mixing process, where does "wheat flour from the mill" belong?
+- Outputs || Flour enters the mixing process, it does not leave it.
+* Inputs, with the mill as a supplier || Correct. Flour is an input and the mill that provides it is the supplier.
+- Customers || A customer receives outputs. The mill provides flour.
+- Process steps || A step is an activity, such as Weigh ingredients, not a material.
+:::
+
+## 3. Value stream mapping
+
+Value stream mapping (VSM) comes from Toyota's practice of drawing material and information flows and was popularised by Mike Rother and John Shook in the book Learning to See (1998). A VSM shows the whole flow on one page, with data. Follow these steps:
+
+- Walk the process yourself (go to the gemba, the place where work is done).
+- Add a data box to each step: cycle time, changeover time, uptime, people.
+- Draw a triangle between steps showing the inventory or documents waiting.
+- Draw how orders, schedules and approvals reach each step.
+
+Then classify each activity. Value-added activity changes the product or service, the customer would pay for it, and it is done right first time. Necessary non-value-added activity is required today, for example a legal check. Everything else is waste to remove.
+
+::: diagram steps | Value stream mapping procedure
+Select: one product family or service type
+Walk: follow the flow from customer back to supplier
+Record: data box for each step and inventory between steps
+Timeline: separate waiting time from process time
+Future state: design the improved flow and an action plan
+:::
+
+## 4. Two key numbers: Little's Law and process cycle efficiency
+
+You can estimate lead time without following a unit for days. Little's Law, proved by John Little in 1961, states that in a stable process:
+
+- Lead time = work in process ÷ completion rate
+
+If 300 pallets wait in a staging area and the team dispatches 100 pallets per day, a new pallet waits about 3 days. To cut lead time, reduce WIP or increase the completion rate.
+
+Process cycle efficiency (PCE) then shows how much of that lead time adds value:
+
+- PCE = value-added time ÷ total lead time
+
+In offices and warehouses it is common to find a PCE of only a few percent: the work is fast, but the queue is long.
+
+::: quiz
+? A claims team has 120 files waiting and closes 30 files per day. What is the approximate lead time for a new file?
+- 30 days || This multiplies instead of dividing.
+- 0.25 days || This divides the wrong way round.
+* 4 days || Correct. 120 ÷ 30 = 4 days.
+- 150 days || Adding the two numbers has no meaning here.
+:::
+
+## Worked example: loan applications in a Luanda bank back office
+
+Customers of a bank back office in Luanda complain that loan approval takes "about two weeks". The operations manager builds a SIPOC (inputs: form, ID, salary statement; steps: Receive, Check, Enter data, Analyse credit, Approve, Disburse) and walks one application through. Touch times are: receive 10 minutes, check documents 20, enter data 20, analyse credit 50, approve 10, disburse 10, a total of 2 hours. On the day she maps, 180 applications are waiting at different steps and the office completes 20 per day.
+
+- Lead time = 180 ÷ 20 = 9 working days
+- Lead time in hours = 9 × 8 = 72 hours
+- PCE = 2 ÷ 72 = 2.8%
+
+The biggest queue, 110 files, sits before credit analysis, waiting for missing salary statements. The future state adds a document check at the branch.
+
+::: case | Slow order dispatch at a Viana warehouse
+A distribution warehouse in Viana takes 3 days to dispatch supermarket orders. Customers want next-day delivery. The supervisor, Carlos, wants to ask head office for a second forklift costing 35 million Kz.
+? What should Carlos do first?
+- Buy the forklift, because more capacity always cuts lead time || Capacity may not be the constraint. Without data he may spend money on the wrong problem.
+* Map the current order-to-dispatch flow and measure WIP at each step || Correct. The map shows where orders wait, which is usually not where people expect.
+- Ask staff to work faster during the day shift || Effort is rarely the cause. Most lead time is waiting between steps.
+- Promise customers next-day delivery and see what happens || This creates failure demand and complaints before the process can deliver.
+:::
+
+## Tool: SIPOC and VSM checklist
+
+- Process name, start trigger and end point:
+- Customer and main requirement:
+- 4 to 7 high-level steps (verb plus noun):
+- Inputs and suppliers for each step:
+- Cycle time, changeover time and people per step:
+- WIP waiting before each step:
+- Total process time and lead time (Little's Law):
+- Process cycle efficiency:
+
+## Common mistakes
+
+- Mapping how the process should work from the procedure manual, not how it really works.
+- Mapping one department only, so the hand-offs and queues stay hidden.
+- Skipping the timeline, which is where the improvement opportunity becomes visible.
+- Jumping to solutions before the team agrees on the current state.
+
+## Self-check
+
+- What do the five letters of SIPOC stand for? (Answer: Suppliers, Inputs, Process, Outputs, Customers.)
+- A warehouse has 400 orders in process and ships 200 per day. What is the lead time? (Answer: 2 days.)
+- Value-added time is 1 hour and lead time is 40 hours. What is the PCE? (Answer: 2.5%.)
+
+## Practical assignment
+
+Choose one process in your area that customers complain about. Build a SIPOC with two colleagues, then walk one unit through the process and record touch time and the WIP before each step. Calculate lead time with Little's Law and the PCE.
+
+## Summary
+
+- Customers see one flow across departments, so improvement starts by mapping the whole process.
+- SIPOC agrees the scope, and a value stream map shows flow, queues and a timeline.
+- Little's Law (lead time = WIP ÷ completion rate) and PCE show that most lead time is waiting.
+=== 20
+SLIDE What you will learn | Explain the Lean idea of value and waste; Identify the eight wastes with TIMWOODS; Run a 5S event step by step; Use a red-tag area and a 5S audit | Waste is anything the customer would not pay for
+SLIDE Lean in one sentence | Deliver value with less waste; Based on the Toyota Production System; Term Lean popularised by Womack, Jones and Roos (1990); Five principles: value, value stream, flow, pull, perfection | Start from the customer
+SLIDE The seven wastes plus one | Taiichi Ohno described seven wastes (muda); Unused skills was added later as the eighth; Memory aid: TIMWOODS | Waste hides in normal routines
+SLIDE TIMWOODS | Transport, Inventory, Motion, Waiting; Overproduction, Over-processing, Defects, Skills | Overproduction makes the other wastes worse
+SLIDE 5S | Sort, Set in order, Shine, Standardise, Sustain; Japanese: seiri, seiton, seiso, seiketsu, shitsuke; A foundation for standard work and safety | 5S is a habit, not a cleaning day
+SLIDE Running 5S | Red-tag items not needed; A place for everything, labelled; Cleaning as inspection; Standards with photos; Weekly audits | Measure with a simple audit score
+SLIDE Common mistakes | Treating 5S as a one-off clean-up; Blaming people for waste in the system; Cutting needed safety stock and calling it Lean; No audit after the event | Make waste visible, then remove it
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the Lean principles of value and waste;
+- identify the eight wastes using the TIMWOODS memory aid;
+- plan and run a 5S event in a work area;
+- apply a red-tag process and score a 5S audit.
+
+## Key terms
+
+::: terms
+Lean: a way of managing operations that delivers customer value with the least waste, based on the Toyota Production System
+Value: what the customer is willing to pay for
+Waste (muda): any activity that uses resources but adds no value for the customer
+TIMWOODS: memory aid for the eight wastes: Transport, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects, Skills
+5S: workplace organisation method: Sort, Set in order, Shine, Standardise, Sustain
+Red tag: a label placed on an item whose need is uncertain, before it is removed or relocated
+:::
+
+## 1. Lean thinking: value and waste
+
+Lean grew out of the Toyota Production System, developed in Japan by Taiichi Ohno and others after the Second World War. The word "Lean" became widely known through the book The Machine That Changed the World by Womack, Jones and Roos (1990). Later, in Lean Thinking (1996), Womack and Jones summarised the approach in five principles:
+
+::: diagram steps | The five Lean principles
+Value: define value from the customer's point of view
+Value stream: map all the steps that deliver that value (lesson 1)
+Flow: make the remaining steps flow without stops and queues
+Pull: produce only when the next step or the customer needs it
+Perfection: improve continuously
+:::
+
+Lean does not mean fewer people or working faster. It means removing activities that consume resources without helping the customer.
+
+## 2. The eight wastes: TIMWOODS
+
+Taiichi Ohno described seven wastes. Many Lean practitioners later added an eighth, unused skills. The memory aid TIMWOODS covers all eight:
+
+- Transport: moving materials or documents more than needed, for example moving flour pallets twice between stores.
+- Inventory: more raw material, work in process or finished goods than needed. It hides problems and ties up cash.
+- Motion: people walking, bending or searching, such as an operator walking 30 metres to fetch a tool.
+- Waiting: people or machines idle, waiting for materials, approvals, information or repair.
+- Overproduction: making more, or earlier, than the customer needs. Ohno considered it the worst waste, because it creates the others.
+- Over-processing: doing more than the customer requires, such as three signatures on a routine payment or a report nobody reads.
+- Defects: errors, rework and scrap, such as underweight bags or a wrongly keyed account number.
+- Skills: not using people's knowledge and ideas.
+
+::: quiz
+? A bakery plant bakes 2,000 extra loaves every evening "in case" orders increase, and many are sold at a discount the next day. Which waste is this mainly?
+- Motion || Motion is unnecessary movement of people, not extra product.
+- Transport || Transport is moving materials, not making too many.
+* Overproduction || Correct. Making more than the customer ordered is overproduction, which also creates inventory and defects.
+- Skills || Skills waste is about unused knowledge and ideas.
+:::
+
+## 3. 5S: the foundation of a stable workplace
+
+5S is a method for organising a workplace so that problems become visible and work becomes easier and safer. It comes from five Japanese words: seiri, seiton, seiso, seiketsu and shitsuke. Run it in this order:
+
+::: slides
+SLIDE Sort (seiri) | Remove everything not needed in the area | Red-tag doubtful items and move them to a holding area
+SLIDE Set in order (seiton) | A place for everything, everything in its place | Label locations, use shadow boards and floor marking
+SLIDE Shine (seiso) | Clean the area and equipment | Cleaning is inspection: look for leaks, cracks and loose parts
+SLIDE Standardise (seiketsu) | Write the standard with photos | Assign daily 5S tasks to named people
+SLIDE Sustain (shitsuke) | Audit regularly and display the score | Leaders check the standard every week
+:::
+
+The red-tag process works like this. During Sort, the team places a red tag on any item whose need is uncertain, recording the item, location, date and who tagged it. Tagged items go to a red-tag area for a fixed period, for example 30 days. If nobody needs them in that time, they are sold, moved to another site or scrapped, with the manager's approval.
+
+A simple 5S audit gives each S a score from 0 to 5, for a total out of 25. Display the score at the area and track it weekly.
+
+::: tip | Cleaning is inspection
+When operators clean their own machine, they find oil leaks, loose bolts and worn belts before they cause a breakdown. Give them a simple form to report what they find.
+:::
+
+::: quiz
+? In which 5S step do you create shadow boards and floor markings?
+- Sort || Sort removes items that are not needed. It does not place the rest.
+* Set in order || Correct. Set in order gives every needed item a clear, labelled place.
+- Shine || Shine is cleaning and inspection.
+- Sustain || Sustain keeps the standard through audits and discipline.
+:::
+
+## Worked example: a waste walk at a flour mill packing area
+
+A flour mill near Lobito packs 25 kg and 50 kg bags. The production manager leads a 60-minute waste walk with a supervisor and two operators, using TIMWOODS as a checklist. They record:
+
+- Transport: empty bags are delivered to a store 80 metres away, then carried again to the packing line.
+- Inventory: 1,200 printed bags of an old design are still kept beside the line.
+- Motion: the operator walks to the office to get the scale calibration weight.
+- Waiting: the sewing machine stops each time thread runs out, because spare cones are kept in the main store.
+- Defects: 1.5% of bags are re-weighed and corrected because the filler drifts.
+- Skills: an operator has an idea for a thread holder but was never asked.
+
+They run a 5S event the following Saturday. Old bags are red-tagged and, after 30 days, recycled. A labelled rack beside the line holds one day of empty bags, spare thread cones and the calibration weight. The team writes a one-page standard with photos and agrees a weekly audit. The first audit scores 9 out of 25. After six weeks the score is 19, and sewing stoppages for thread have stopped.
+
+::: case | Overflowing stores at a bottling plant in Viana
+A soft-drink bottling plant in Viana has a spare parts store so full that technicians spend up to 20 minutes searching for parts during breakdowns. The maintenance manager, Rosa, has one day and four technicians.
+? What should Rosa do first?
+- Buy more shelving so everything fits || More shelving stores more unneeded items and keeps the search problem.
+- Ask technicians to search faster during breakdowns || The cause is the system, not the technicians' speed.
+* Run Sort: red-tag parts not used in the last year and move them to a holding area || Correct. Sort comes first. Removing unneeded items creates space to set the rest in order.
+- Label every shelf as it is today || Labelling before sorting fixes unneeded items in place.
+:::
+
+## Tool: TIMWOODS waste walk sheet
+
+- Area, date and team:
+- Transport observed:
+- Inventory observed (quantity and value):
+- Motion observed (distance or time):
+- Waiting observed (minutes):
+- Overproduction observed:
+- Over-processing observed:
+- Defects observed (rate):
+- Skills not used (ideas from operators):
+- Top three wastes to remove first:
+
+## Common mistakes
+
+- Treating 5S as a one-off cleaning day without a standard and audit.
+- Blaming people for waste that the system creates.
+- Cutting needed safety stock and calling it Lean, then suffering stock-outs.
+- Labelling and organising before sorting out what is not needed.
+
+## Self-check
+
+- Which waste did Ohno consider the worst, and why? (Answer: overproduction, because it creates other wastes such as inventory, transport and defects.)
+- What are the five S's in order? (Answer: Sort, Set in order, Shine, Standardise, Sustain.)
+- What is the purpose of a red-tag area? (Answer: to hold items of doubtful need for a fixed period before deciding to keep, move or dispose of them.)
+
+## Practical assignment
+
+Do a 30-minute waste walk in one area using the TIMWOODS sheet with one colleague. Choose the three biggest wastes and run a Sort step with red tags in that area this week.
+
+## Summary
+
+- Lean delivers customer value with less waste, following five principles from value to perfection.
+- TIMWOODS helps you see eight wastes, and overproduction makes the others worse.
+- 5S (Sort, Set in order, Shine, Standardise, Sustain) builds a stable, visible workplace, sustained by audits.
+=== 20
+SLIDE What you will learn | Calculate takt time from demand and available time; Write standard work with its three elements; Calculate the number of operators needed; Design visual controls for a work area | Standard work is the baseline for improvement
+SLIDE Takt time | Takt = available working time ÷ customer demand; Sets the pace the customer needs; Cycle time above takt means you cannot meet demand | Takt is set by the customer, not the machine
+SLIDE Standard work | Three elements: takt time, work sequence, standard work in process; Written by the people who do the job; The current best way, not a permanent rule | No standard, no improvement
+SLIDE Operators needed | Operators = total work content ÷ takt time; Round up and then balance the work; Use a yamazumi (stacked bar) chart | Balance work so nobody exceeds takt
+SLIDE Visual management | Status visible at a glance in seconds; Floor marking, shadow boards, labels; Production boards: plan versus actual per hour; Andon lights to call for help | If you can see it, you can manage it
+SLIDE Kanban and visual stock | Kanban cards or bins signal when to replenish; Min and max lines on racks; Empty space shows a need | Pull material instead of pushing it
+SLIDE Common mistakes | Writing standards in the office; Ignoring takt and producing at machine speed; Boards that nobody updates; Standards that never change | Update the standard after every improvement
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate takt time from customer demand and available working time;
+- write standard work using its three elements;
+- calculate the number of operators needed to meet takt;
+- design simple visual controls such as production boards, kanban and andon.
+
+## Key terms
+
+::: terms
+Takt time: the pace of customer demand, equal to available working time divided by the number of units demanded
+Cycle time: the actual time a step or operator takes to complete one unit
+Standard work: the current best, agreed way to do a job, based on takt time, work sequence and standard work in process
+Visual management: making the status of work, standards and problems visible at a glance
+Kanban: a card, bin or signal that authorises replenishment or production when material is used
+Andon: a signal, often a light or cord, that an operator uses to call for help when a problem occurs
+:::
+
+## 1. Takt time: the pace of the customer
+
+Takt is a German word for beat or pulse. Takt time tells you how often one unit must be finished to meet customer demand:
+
+- Takt time = available working time ÷ customer demand
+
+Available time is the shift time minus planned breaks and meetings. It does not subtract breakdowns, because those are losses to remove, not part of the plan.
+
+Compare takt time with cycle time at each step. If a step's cycle time is longer than takt, that step cannot keep up and becomes a bottleneck. If cycle time is much shorter than takt, you may be overstaffed or overproducing.
+
+::: quiz
+? A warehouse works 7 hours (420 minutes) per shift and must pick 210 orders. What is the takt time?
+- 0.5 minutes per order || This divides demand by time, the wrong way round.
+* 2 minutes per order || Correct. 420 ÷ 210 = 2 minutes per order.
+- 210 minutes per order || This ignores the demand.
+- 7 minutes per order || This uses hours instead of minutes and ignores the demand.
+:::
+
+## 2. Standard work and line balancing
+
+In Toyota practice, standard work has three elements:
+
+- Takt time: the pace required.
+- Work sequence: the order of tasks an operator follows, with the time for each.
+- Standard work in process: the minimum stock needed between steps to keep work flowing.
+
+Standard work is not a thick procedure manual. It is a one-page sheet, often with photos, written with the operators who do the job. It describes the current best way. When the team finds a better way, the standard is updated. Without a standard, you cannot tell whether a change is an improvement, because there is no stable baseline.
+
+Use this method to calculate how many operators a process needs:
+
+::: slides
+SLIDE Step 1: Measure work content | Time each task with a stopwatch at least 10 times | Use a typical value, not the fastest
+SLIDE Step 2: Add up | Total work content = sum of all task times for one unit | Exclude waiting and walking that can be removed
+SLIDE Step 3: Divide by takt | Operators = total work content ÷ takt time | Round up to a whole person
+SLIDE Step 4: Balance | Share tasks so each operator's load is at or below takt | Show loads on a yamazumi (stacked bar) chart
+:::
+
+::: diagram steps | Building standard work
+Demand: confirm customer demand and available time
+Takt: calculate the pace required
+Observe: time each task at the workplace
+Sequence: write the best order of tasks with operators
+Balance: assign tasks so no load exceeds takt
+Display: post the standard at the workstation
+:::
+
+## 3. Visual management
+
+Visual management means that anyone walking into an area can see in a few seconds whether work is normal or abnormal. Common tools:
+
+- Floor marking and labels: walkways, pallet locations and quarantine zones.
+- Shadow boards: tool outlines so a missing tool is obvious.
+- Production board: plan versus actual for each hour, with a column for the reason for any gap.
+- Kanban: a card or empty bin signals that material should be replenished, so material is pulled, not pushed.
+- Min and max lines on racks: stock below min triggers an order, above max shows overstock.
+- Andon: a light or call button that brings help when a problem stops the work.
+
+An hourly production board is powerful because it turns a shift result, discovered too late, into 8 small results that can be acted on during the shift.
+
+::: quiz
+? What is the main purpose of an hourly plan-versus-actual board?
+- To record who worked overtime || Overtime is tracked elsewhere and is not the purpose of the board.
+- To replace the monthly production report || It supports, not replaces, other reports.
+- To show the machine's maximum speed || The plan should be based on takt, not maximum speed.
+* To show gaps early so the team can react during the shift || Correct. Hourly gaps and their reasons allow fast action.
+:::
+
+## Worked example: bagging line at a flour mill
+
+A flour mill in Lobito must supply 1,800 bags of 25 kg per shift to meet orders. The shift is 8 hours with 30 minutes of breaks, so available time is 7.5 hours.
+
+- Available time = 7.5 × 3,600 = 27,000 seconds
+- Takt time = 27,000 ÷ 1,800 = 15 seconds per bag
+
+The supervisor times each task: fill and weigh 13 seconds, sew 9 seconds, check and code 5 seconds, palletise 14 seconds. Total work content is 41 seconds.
+
+- Operators needed = 41 ÷ 15 = 2.7, rounded up to 3 operators
+
+The current line uses four operators with unclear roles and still misses the target, because the filler stops often and nobody reacts until the end of the shift. The team balances the work: operator 1 fills and weighs (13 s), operator 2 sews, checks and codes (14 s), operator 3 palletises (14 s). Every load is below takt. A whiteboard shows plan versus actual every hour, and an andon light at the filler calls the technician. The fourth operator moves to a new quality-check role.
+
+::: case | Missed targets on a bottling line
+A bottling line in Viana should produce 12,000 bottles per shift, but the shift report shows 10,500 only at the end of the day. The supervisor, Manuel, does not know when or why the gap appeared.
+? What should Manuel introduce first?
+- A bonus for meeting the daily target || Incentives do not show where or why the line falls behind.
+* An hourly plan-versus-actual board with a column for reasons || Correct. Hourly gaps with reasons show when problems happen and allow action during the shift.
+- A longer monthly report with more data || Monthly data arrives too late to act on.
+- A rule that the line must run at maximum speed || Running faster often increases stoppages and defects.
+:::
+
+## Tool: standard work sheet
+
+- Process and workstation:
+- Customer demand per shift and available time:
+- Takt time:
+- Task sequence with time for each task:
+- Total work content and operators needed:
+- Standard work in process between steps:
+- Key quality and safety points, with photos:
+- Date of last update and who approved it:
+
+## Common mistakes
+
+- Writing standards in the office without the operators who do the job.
+- Running machines at maximum speed instead of planning to takt, which creates overproduction.
+- Installing boards that nobody updates or reviews.
+- Treating a standard as permanent instead of updating it after each improvement.
+
+## Self-check
+
+- What are the three elements of standard work? (Answer: takt time, work sequence and standard work in process.)
+- Work content is 60 seconds and takt is 20 seconds. How many operators? (Answer: 3.)
+- What does an andon do? (Answer: it signals a problem and calls for help immediately.)
+
+## Practical assignment
+
+For one process in your area, calculate takt time from this week's demand. Time the main tasks, calculate the operators needed and set up an hourly plan-versus-actual board for one week.
+
+## Summary
+
+- Takt time (available time ÷ demand) sets the pace the customer needs.
+- Standard work combines takt, work sequence and standard WIP, and is the baseline for every improvement.
+- Visual management makes normal and abnormal visible at a glance so teams act during the shift.
+=== 20
+SLIDE What you will learn | Use the PDCA cycle to manage improvement; Build a Pareto chart to choose the problem; Find causes with a fishbone diagram; Drill to root cause with 5 Whys | Solve the right problem, at the root
+SLIDE PDCA | Plan, Do, Check, Act; From Shewhart, popularised by Deming (who preferred PDSA); Small tests before full roll-out | Every improvement is an experiment
+SLIDE Pareto analysis | Named after Vilfredo Pareto by Joseph Juran; A few causes create most of the problem; Sort categories from largest to smallest with a cumulative % | Focus on the vital few
+SLIDE Fishbone (Ishikawa) diagram | Developed by Kaoru Ishikawa; Problem at the head; 6M bones: Man, Machine, Method, Material, Measurement, Mother Nature | Brainstorm possible causes, then test them
+SLIDE 5 Whys | Associated with Toyota and Sakichi Toyoda; Ask why until you reach a cause you can act on; Check each answer with facts | Stop at a process cause, not a person
+SLIDE Problem statement | What, where, when, how much; No cause and no solution inside it; Example: labeller jams cost 420 minutes in March on line 2 | A clear problem is half solved
+SLIDE Common mistakes | Jumping to solutions; Stopping at blame; Not checking causes with data; Skipping Check and Act | Verify, then standardise
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- apply the PDCA cycle to an improvement problem;
+- build a Pareto analysis to choose which problem to solve first;
+- use a fishbone diagram to list possible causes;
+- use 5 Whys to reach a root cause you can act on.
+
+## Key terms
+
+::: terms
+Root cause: the most basic cause which, if removed, stops the problem from returning
+PDCA: Plan-Do-Check-Act, a four-step cycle for testing and standardising improvements
+Pareto analysis: ranking problem categories from largest to smallest to find the few that cause most of the effect
+Fishbone diagram: a cause-and-effect diagram, developed by Kaoru Ishikawa, that groups possible causes into categories
+5 Whys: asking "why?" repeatedly until you reach a root cause
+Countermeasure: an action that removes or controls a root cause
+:::
+
+## 1. PDCA: the improvement cycle
+
+The Plan-Do-Check-Act cycle is based on the work of Walter Shewhart and was popularised by W. Edwards Deming, who later preferred the name Plan-Do-Study-Act. It treats every improvement as an experiment:
+
+::: diagram cycle | Plan-Do-Check-Act
+Plan: define the problem, find the root cause and plan a countermeasure with a target
+Do: test the countermeasure on a small scale
+Check: measure results against the target
+Act: standardise if it worked, or adjust and repeat
+:::
+
+Most of the work is in Plan. A good plan starts with a clear problem statement: what, where, when and how much, with no cause or solution inside. "Labeller jams on line 2 caused 420 minutes of stoppage in March" is a good problem statement. "We need a new labeller" is a solution, not a problem.
+
+## 2. Pareto analysis: choose the vital few
+
+Joseph Juran named the Pareto principle after the economist Vilfredo Pareto: a few causes usually create most of the effect. Juran called them the "vital few". The often-quoted 80/20 ratio is a rule of thumb, not a law.
+
+To build a Pareto analysis:
+
+- Collect data by category, for example stoppage minutes by cause for one month.
+- Sort categories from largest to smallest.
+- Calculate each category's percentage of the total and the cumulative percentage.
+- Draw bars in that order with a cumulative line.
+- Start with the categories that together reach about 70 to 80% of the total.
+
+::: quiz
+? Customer complaints for a month are: late delivery 90, wrong product 60, damaged packs 30, invoice errors 20. What cumulative percentage do the top two causes reach?
+- 45% || This is late delivery alone (90 of 200).
+* 75% || Correct. (90 + 60) ÷ 200 = 75%.
+- 60% || This uses only the second category's number.
+- 90% || This adds the top three, which reach 90%.
+:::
+
+## 3. Fishbone diagram and 5 Whys
+
+Kaoru Ishikawa developed the cause-and-effect diagram, also called the fishbone diagram. Write the problem statement at the head of the fish. Draw the main bones, often using the 6M categories: Man (people), Machine, Method, Material, Measurement and Mother Nature (environment). Then brainstorm possible causes on each bone with the people who do the work.
+
+A fishbone lists possible causes. It does not prove them. Choose the most likely causes and check each one with data or a direct observation at the workplace.
+
+Then use 5 Whys, a method associated with Sakichi Toyoda and Toyota, to go deeper:
+
+::: slides
+SLIDE Step 1: Start from the fact | Write the confirmed problem or cause | Example: the labeller jams
+SLIDE Step 2: Ask why | Answer with facts you have seen | Labels stick together on the reel
+SLIDE Step 3: Ask why again | Continue each answer down one chain | The reels absorb moisture in storage
+SLIDE Step 4: Reach a process cause | Stop when the answer is a cause you can act on | Reels are stored near the washing area without wrapping
+SLIDE Step 5: Countermeasure | Act on the root cause, not the symptom | Move storage and keep reels wrapped until use
+:::
+
+Five is a guide, not a rule. Sometimes three whys are enough, sometimes seven are needed. If an answer ends with a person ("the operator was careless"), ask why the process allowed it.
+
+::: quiz
+? A 5 Whys chain ends with "the driver forgot to check the tyre pressure". What should the team do?
+- Stop here and warn the driver || This stops at blame and the problem will return with another driver.
+* Ask why the process allowed the check to be missed || Correct. A missing checklist or no time for checks is a process cause you can fix.
+- Start a new fishbone from the beginning || The chain is useful. It just needs to go one level deeper.
+- Replace the driver || This removes a person, not the root cause.
+:::
+
+## Worked example: stoppages on a bottling line in Viana
+
+A bottling plant in Viana records 1,000 minutes of unplanned stoppage on line 2 in one month. The team builds a Pareto analysis:
+
+- Labeller jams: 420 minutes (42%, cumulative 42%)
+- Cap feeder faults: 260 minutes (26%, cumulative 68%)
+- Changeovers over standard: 180 minutes (18%, cumulative 86%)
+- Bottle breakage: 90 minutes (9%, cumulative 95%)
+- Other causes: 50 minutes (5%, cumulative 100%)
+
+Labeller jams and cap feeder faults cause 68% of the lost time. The team starts with the labeller. On the fishbone, the Material bone includes "damp label reels", which operators confirm by checking reels before use. The 5 Whys chain leads to reels stored near the washing area without wrapping.
+
+Plan: store reels in a dry area and unwrap them only at the line, target fewer than 100 minutes of jams per month. Do: test for two weeks. Check: jams fall to 45 minutes in two weeks. Act: the storage rule is added to the warehouse standard and the team moves to the cap feeder.
+
+::: case | Wrong deliveries at a Luanda distributor
+A food distributor in Luanda delivers the wrong product to supermarkets about 25 times per month. The logistics manager, Helena, wants to fix it quickly. Her team suggests several actions.
+? What should Helena do first?
+- Fine pickers for every wrong delivery || This blames people before the cause is known and may hide errors.
+- Buy barcode scanners for the warehouse || This may help, but it is a solution chosen before the cause is known.
+* Collect one month of error data by type and run a Pareto analysis || Correct. The data shows which error types matter most, so the team can find root causes with a fishbone and 5 Whys.
+- Ask drivers to check each order at the customer || This adds inspection at the end instead of fixing the cause.
+:::
+
+## Tool: A3 problem-solving template
+
+- Problem statement (what, where, when, how much):
+- Current situation and data (Pareto chart):
+- Possible causes (fishbone by 6M):
+- Confirmed root cause (5 Whys chain):
+- Countermeasures, owner and date:
+- Check: results against target:
+- Act: new standard and what to share with other areas:
+
+## Common mistakes
+
+- Jumping to a solution before the problem is clearly stated.
+- Stopping the 5 Whys at a person instead of a process cause.
+- Treating fishbone ideas as proven causes without checking data.
+- Skipping Check and Act, so the gain is never confirmed or standardised.
+
+## Self-check
+
+- What are the four steps of PDCA? (Answer: Plan, Do, Check, Act.)
+- What are the 6M categories of a fishbone diagram? (Answer: Man, Machine, Method, Material, Measurement, Mother Nature.)
+- In a Pareto analysis, which categories do you tackle first? (Answer: the vital few at the top that together cause most of the problem.)
+
+## Practical assignment
+
+Collect one month of data on one recurring problem in your area. Build a Pareto analysis, take the top category, and complete a fishbone and a 5 Whys chain with your team. Fill in the A3 template up to the countermeasure.
+
+## Summary
+
+- PDCA turns every improvement into a small experiment that is checked and standardised.
+- Pareto analysis focuses effort on the vital few causes.
+- The fishbone lists possible causes, and 5 Whys drills to a process root cause you can act on.
+=== 20
+SLIDE What you will learn | Explain the five DMAIC phases; Separate common-cause from special-cause variation; Calculate defects per million opportunities (DPMO); Calculate and interpret the capability index Cp | Reduce variation to reduce defects
+SLIDE What is Six Sigma? | Developed at Motorola in the 1980s; Data-driven method to reduce defects and variation; 3.4 defects per million at six sigma (with the usual 1.5 sigma shift) | Measure, then improve
+SLIDE DMAIC | Define, Measure, Analyse, Improve, Control; A structured roadmap for projects; Each phase ends with a review | Do not skip Measure
+SLIDE Variation | Common cause: normal, built into the process; Special cause: unusual, has a specific reason; Control charts separate the two (Shewhart) | Do not react to every point
+SLIDE DPMO | DPMO = defects ÷ (units × opportunities) × 1,000,000; Compares processes of different complexity; Lower is better | Define a defect opportunity clearly
+SLIDE Process capability | Cp = (USL − LSL) ÷ (6 × standard deviation); Cp below 1: process cannot meet the specification; Cp of 1.33 or more is a common target | Capability needs a stable process first
+SLIDE Common mistakes | Changing settings after every result; Measuring with an unchecked scale; Using Cp when the process is off-centre; Skipping Control | Stabilise, then improve
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the five phases of DMAIC;
+- distinguish common-cause from special-cause variation;
+- calculate defects per million opportunities (DPMO);
+- calculate and interpret the process capability index Cp.
+
+## Key terms
+
+::: terms
+Six Sigma: a data-driven method, developed at Motorola in the 1980s, for reducing defects by reducing process variation
+DMAIC: Define, Measure, Analyse, Improve, Control, the Six Sigma project roadmap
+Variation: the natural spread of results in any process
+Specification limits: the lower (LSL) and upper (USL) limits the customer accepts
+Standard deviation: a measure of how widely results spread around the average
+DPMO: defects per million opportunities
+:::
+
+## 1. Six Sigma and DMAIC
+
+Six Sigma was developed at Motorola in the 1980s and later adopted by many manufacturing and service companies. Its core idea is that defects come from variation: if every bag, bottle or transaction is slightly different, some will fall outside what the customer accepts. Reduce the variation and defects fall. A process running at "six sigma" quality produces about 3.4 defects per million opportunities, using the conventional assumption that the process average drifts by 1.5 standard deviations over time.
+
+Six Sigma projects follow DMAIC:
+
+::: diagram steps | DMAIC roadmap
+Define: problem, customer requirements, scope (SIPOC) and goal
+Measure: check the measurement system and collect baseline data
+Analyse: find and confirm the root causes with data
+Improve: test and implement solutions
+Control: hold the gain with standards, control charts and a response plan
+:::
+
+The Measure phase is often rushed. Before trusting data, check the measurement system: is the scale calibrated, and do two inspectors get the same result on the same item?
+
+::: quiz
+? A team has confirmed the root cause of underweight bags and wants to make sure the improvement lasts. Which DMAIC phase is this?
+- Measure || Measure collects baseline data before analysis.
+- Analyse || Analyse finds the root cause, which is already confirmed.
+- Define || Define sets the problem and goal at the start.
+* Control || Correct. Control holds the gain with standards, monitoring and a response plan.
+:::
+
+## 2. Understanding variation
+
+No process gives exactly the same result twice. Walter Shewhart, who invented the control chart, separated two kinds of variation, later called common cause and special cause by Deming:
+
+- Common-cause variation: the normal, random spread built into the process, such as small differences in flour density. Reducing it needs a change to the process itself, usually a management decision.
+- Special-cause variation: an unusual result with a specific reason, such as a worn filler valve or a new raw material batch. Find and remove the cause.
+
+A control chart plots results over time with a centre line and control limits, usually set at three standard deviations from the average. Points outside the limits, or clear patterns such as a long run on one side of the average, signal special causes.
+
+Reacting to common-cause variation as if it were special is called tampering. An operator who adjusts the filler after every slightly heavy bag usually increases variation.
+
+## 3. Measuring defects: DPMO
+
+Defects per million opportunities lets you compare processes of different complexity:
+
+- DPMO = defects ÷ (units × opportunities per unit) × 1,000,000
+
+An opportunity is a specific thing that can go wrong and that the customer cares about. Define opportunities clearly before counting, or the result can be inflated.
+
+::: slides
+SLIDE Step 1: Define the unit | For example one account-opening file | One unit is what the customer receives
+SLIDE Step 2: List opportunities | Name, ID number, address, signature, product code | Count only what the customer cares about
+SLIDE Step 3: Count defects | Check a sample of units against each opportunity | Count every defect, not only defective files
+SLIDE Step 4: Calculate | Defects ÷ (units × opportunities) × 1,000,000 | Track DPMO monthly to see progress
+:::
+
+## 4. Process capability: Cp
+
+Process capability compares the spread of a process with the specification. The simplest index is:
+
+- Cp = (USL − LSL) ÷ (6 × standard deviation)
+
+A Cp below 1 means the natural spread is wider than the specification, so defects are certain. Cp of 1.33 or more is a common target. Cp assumes the process is stable and centred. If the average is off-centre, use the related index Cpk, which compares the distance from the average to the nearest limit.
+
+::: quiz
+? A filling process has a specification width of 0.6 kg and a standard deviation of 0.1 kg. What is Cp?
+- 0.6 || This ignores the standard deviation.
+* 1.0 || Correct. 0.6 ÷ (6 × 0.1) = 1.0, so the process only just fits the specification.
+- 6.0 || This divides by the standard deviation without multiplying by 6.
+- 1.33 || This would need a standard deviation of about 0.075 kg.
+:::
+
+## Worked example: flour bag weights and bank files
+
+A flour mill in Lobito packs 25 kg bags. The customer specification is 24.8 to 25.2 kg. A sample of bags gives an average of 25.0 kg and a standard deviation of 0.08 kg.
+
+- Cp = (25.2 − 24.8) ÷ (6 × 0.08) = 0.4 ÷ 0.48 = 0.83
+
+Cp is below 1, so some bags will always fall outside the limits. A control chart shows no special causes, so the spread is common cause. The team finds that the filler valve design causes the spread and, after servicing and a better valve setting, the standard deviation falls to 0.05 kg.
+
+- New Cp = 0.4 ÷ (6 × 0.05) = 0.4 ÷ 0.30 = 1.33
+
+A second example comes from a bank back office in Luanda checks 500 account-opening files, each with 5 opportunities (name, ID number, address, signature, product code). It finds 40 defects.
+
+- DPMO = 40 ÷ (500 × 5) × 1,000,000 = 16,000
+
+The team sets a target to halve DPMO within three months using a checklist at the branch.
+
+::: case | An operator adjusts the filler
+At a sugar packing line in Luanda, an operator adjusts the filler every time a bag is 20 grams heavy or light. Bag weights now vary more than before. Before he started adjusting, all points were inside the control limits with no patterns.
+? What should the supervisor, Teresa, do?
+- Ask the operator to adjust more often || This increases tampering and makes variation worse.
+* Stop the adjustments and investigate the process as a whole || Correct. The points show only common-cause variation, so adjusting after each bag is tampering. Reducing spread needs a process change.
+- Widen the customer specification || The specification belongs to the customer and is not the cause.
+- Inspect every bag and remove the out-of-limit ones || Inspection catches defects but does not reduce variation.
+:::
+
+## Tool: DMAIC project checklist
+
+- Define: problem statement, customer requirement, SIPOC, goal:
+- Measure: measurement system checked, baseline data, DPMO or Cp:
+- Analyse: confirmed root causes with data:
+- Improve: solutions tested, results against goal:
+- Control: standard updated, control chart, response plan, owner:
+
+## Common mistakes
+
+- Adjusting the process after every result (tampering).
+- Measuring with a scale or method that nobody has checked.
+- Using Cp when the process is off-centre, instead of Cpk.
+- Skipping Control, so the process drifts back.
+
+## Self-check
+
+- What are the five phases of DMAIC? (Answer: Define, Measure, Analyse, Improve, Control.)
+- 30 defects are found in 200 units with 3 opportunities each. What is the DPMO? (Answer: 50,000.)
+- What does Cp below 1 mean? (Answer: the process spread is wider than the specification, so defects will occur.)
+
+## Practical assignment
+
+Choose one measurable output in your area. Collect 30 measurements, calculate the average and standard deviation in a spreadsheet, and calculate Cp against the specification. If the output is a document or transaction, calculate DPMO instead.
+
+## Summary
+
+- Six Sigma reduces defects by reducing variation, following DMAIC.
+- Separate common-cause from special-cause variation and avoid tampering.
+- DPMO and Cp turn quality into numbers you can track and improve.
+=== 20
+SLIDE What you will learn | Calculate OEE from availability, performance and quality; Link losses to the six big losses; Run a 15-minute daily huddle; Sustain gains with kaizen and leader standard work | What gets reviewed daily gets improved
+SLIDE OEE | Overall equipment effectiveness; OEE = availability × performance × quality; From Total Productive Maintenance (Nakajima) | One number, three loss types
+SLIDE The three factors | Availability = run time ÷ planned production time; Performance = (ideal cycle time × total count) ÷ run time; Quality = good count ÷ total count | Each factor points to different losses
+SLIDE Six big losses | Breakdowns and setups (availability); Minor stops and reduced speed (performance); Start-up rejects and production rejects (quality) | Attack the biggest loss first
+SLIDE Daily huddle | 10 to 15 minutes, standing, at the board; Yesterday's results, today's plan, problems, actions; Escalate what the team cannot fix | Short, daily, visual
+SLIDE Kaizen and sustaining | Kaizen: continuous small improvements by everyone; Gemba walks by leaders; Leader standard work and audits | Improvement is part of the job
+SLIDE Common mistakes | Using OEE to blame operators; Huddles that become long meetings; Actions with no owner or date; Improvements never standardised | Small, daily and owned
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate overall equipment effectiveness (OEE) from availability, performance and quality;
+- link OEE losses to the six big losses;
+- run a short daily huddle at a visual board;
+- sustain improvement with kaizen, gemba walks and leader standard work.
+
+## Key terms
+
+::: terms
+OEE: overall equipment effectiveness, the share of planned production time that produces good units at the ideal speed
+Availability: run time as a share of planned production time
+Performance: actual output as a share of what the ideal speed would produce in the run time
+Quality: good units as a share of all units produced
+Daily huddle: a short, standing team meeting at a visual board to review results and agree actions
+Kaizen: continuous, small improvements made by everyone, every day
+:::
+
+## 1. OEE: one number, three losses
+
+Overall equipment effectiveness comes from Total Productive Maintenance (TPM), described by Seiichi Nakajima. It measures how well a machine or line uses the time it is planned to run:
+
+- OEE = availability × performance × quality
+
+Calculate each factor in turn:
+
+::: slides
+SLIDE Step 1: Planned production time | Shift time minus planned breaks | Example: 480 − 30 = 450 minutes
+SLIDE Step 2: Availability | Run time = planned time − stop time | Availability = run time ÷ planned production time
+SLIDE Step 3: Performance | Ideal output = run time × ideal rate | Performance = total count ÷ ideal output
+SLIDE Step 4: Quality | Quality = good count ÷ total count | Count rework as not good
+SLIDE Step 5: Multiply | OEE = availability × performance × quality | Check: good count ÷ (planned time × ideal rate)
+:::
+
+Each factor points to different losses, grouped in TPM as the six big losses:
+
+::: diagram steps | From planned time to fully productive time
+Planned production time: shift time minus planned breaks
+Availability losses: breakdowns, setups and adjustments
+Run time: time the line actually runs
+Performance losses: minor stops and reduced speed
+Quality losses: start-up rejects and production rejects
+Fully productive time: good units at the ideal speed
+:::
+
+An OEE of 85% is often quoted as a world-class benchmark for discrete manufacturing, but compare your line mainly with its own past results.
+
+::: quiz
+? A line has availability 90%, performance 80% and quality 95%. What is its OEE?
+- 88.3% || This is the average of the three factors, not the product.
+- 80% || This takes only the lowest factor.
+* 68.4% || Correct. 0.90 × 0.80 × 0.95 = 0.684.
+- 95% || This takes only the highest factor.
+:::
+
+## 2. The daily huddle
+
+Improvement fails when results are reviewed once a month. A daily huddle brings the team together for 10 to 15 minutes, standing at the visual board, at the start of the shift. Use a fixed agenda:
+
+- Safety: any incidents or near misses since yesterday.
+- Yesterday's results: plan versus actual, OEE, quality and delivery.
+- Problems: the top one or two issues, with a short reason.
+- Actions: who does what by when, written on the board.
+- Escalation: problems the team cannot solve go to the next level the same day.
+
+Many organisations link huddles in tiers: the team huddle first, then supervisors, then the site manager, so problems move up quickly and support moves down.
+
+## 3. Kaizen and sustaining the gains
+
+Kaizen is a Japanese word usually translated as "change for the better". In operations it means small improvements made by everyone, every day, as well as focused kaizen events (often three to five days) on one process.
+
+Gains disappear unless leaders build habits to hold them:
+
+::: diagram cycle | Sustaining cycle
+Standard: write the new way as standard work
+Huddle: review results daily at the board
+Gemba walk: leaders go to the workplace to observe and ask
+Kaizen: the team improves and updates the standard
+:::
+
+Leader standard work is a short daily and weekly checklist for supervisors and managers: attend the huddle, walk the line, check one standard, close actions. A gemba walk means going to see the real work and asking questions, not giving orders from the corridor.
+
+::: quiz
+? A team huddle regularly lasts 50 minutes and discusses every issue in detail. What should change?
+- Hold it once a month instead || Monthly reviews are too slow to act on daily problems.
+* Keep to 15 minutes and take detailed problem solving offline with an owner || Correct. The huddle agrees actions and owners, while problem solving happens separately.
+- Cancel the board and use email || Email loses the visual, shared view of results.
+- Invite more managers to the huddle || More people make it longer, not more effective.
+:::
+
+## Worked example: OEE on a bottling line in Viana
+
+A soft-drink bottling line in Viana runs an 8-hour shift (480 minutes) with 30 minutes of planned breaks. The line stopped for 60 minutes (a 40-minute breakdown and a 20-minute changeover). The ideal rate is 120 bottles per minute. The line produced 39,000 bottles, of which 38,220 were good.
+
+- Planned production time = 480 − 30 = 450 minutes
+- Run time = 450 − 60 = 390 minutes
+- Availability = 390 ÷ 450 = 86.7%
+- Ideal output = 390 × 120 = 46,800 bottles
+- Performance = 39,000 ÷ 46,800 = 83.3%
+- Quality = 38,220 ÷ 39,000 = 98.0%
+- OEE = 0.867 × 0.833 × 0.980 = 70.8%
+
+Check: good bottles at the ideal rate would take 38,220 ÷ 120 = 318.5 minutes, and 318.5 ÷ 450 = 70.8%. The biggest loss is performance: minor stops and reduced speed. The team adds a minor-stop tally to the hourly board, discusses the top cause at the daily huddle, and runs a kaizen event on the cap feeder.
+
+::: case | OEE used to blame a shift
+At a bakery plant in Luanda, the plant manager shares OEE by shift. The night shift has the lowest score, and the night supervisor, Joaquim, says operators now hide minor stops so the number looks better.
+? What should the plant manager do?
+- Rank operators by OEE and warn the lowest || This increases hiding and destroys the data.
+- Stop measuring OEE completely || The measure is useful, the way it is used is the problem.
+- Ask the night shift to work harder || Most losses come from equipment and methods, not effort.
+* Use OEE to find losses, not people, and review the top loss with each shift at the huddle || Correct. OEE is a tool to locate losses. When it is used for blame, people hide problems.
+:::
+
+## Tool: daily huddle board
+
+- Date, area and attendees:
+- Safety since yesterday:
+- Plan versus actual and OEE (availability, performance, quality):
+- Top two problems and reasons:
+- Actions with owner and due date:
+- Escalations to the next level:
+- Improvement ideas this week (kaizen):
+
+## Common mistakes
+
+- Using OEE to blame operators, so stops are hidden and data becomes unreliable.
+- Letting huddles become long meetings without clear actions.
+- Writing actions without an owner and a date.
+- Improving a process but not updating the standard, so the gain slips away.
+
+## Self-check
+
+- What three factors make up OEE? (Answer: availability, performance and quality.)
+- Planned time is 400 minutes and stops total 40 minutes. What is availability? (Answer: 90%.)
+- What is a gemba walk? (Answer: a leader going to the real workplace to observe and ask questions.)
+
+## Practical assignment
+
+Calculate OEE for one machine or line for one shift this week, using the steps above. Identify the largest of the three factors' losses, and start a 15-minute daily huddle with your team using the board template.
+
+## Summary
+
+- OEE = availability × performance × quality and shows where time is lost.
+- The six big losses link each OEE factor to concrete problems to attack.
+- Daily huddles, gemba walks, leader standard work and kaizen keep improvement going.

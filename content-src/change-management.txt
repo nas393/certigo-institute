@@ -1,0 +1,810 @@
+=== 20
+SLIDE What you will learn | Tell incremental from transformational change; Use Lewin's unfreeze-change-refreeze model; Score forces with a force field analysis; Write a one-page case for change | Diagnose before you act
+SLIDE Size the change | How many people must work differently?; How deep is the personal change?; How hard is it to go back? | Bigger change needs more structure
+SLIDE Technical side and people side | Technical: system, process, organisation chart; People: do people actually adopt it?; A system that is not used delivers nothing | Change management is the people side
+SLIDE Lewin's three stages | Unfreeze: show why the current way cannot continue; Change: move with training and support; Refreeze: make the new way stable | Most managers skip unfreeze and forget refreeze
+SLIDE Force field analysis | Driving forces push for the change; Restraining forces hold it back; Score each force 1 to 5 and add up each side | Reduce restraining forces first
+SLIDE The case for change | What changes and what does not; Why and why now; Cost of doing nothing in Kz; What will be better | One page, plain language, real figures
+SLIDE Common mistakes | Starting with the solution, not the problem; Treating big change as a small project; Guessing restraining forces from the office | Diagnose with the people affected
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between incremental and transformational change;
+- describe Lewin's three-stage model of change (unfreeze, change, refreeze);
+- carry out a force field analysis and score the forces for and against a change;
+- write a one-page case for change that answers "why", "why now" and "what if we do nothing".
+
+## Key terms
+
+::: terms
+Change management: the structured approach to moving people, processes and systems from the current state to a desired future state
+Future state: how work will be done after the change, described in concrete terms
+Driving forces: pressures that push an organisation towards a change
+Restraining forces: pressures that hold the organisation back or push against the change
+Case for change: a short, evidence-based explanation of why the change is needed and why now
+:::
+
+## 1. What kind of change are you leading?
+
+Incremental change improves what already exists: a new credit approval form or an extra quality check on a packing line. Most daily work stays the same, and the line manager can usually manage it.
+
+Transformational change alters how the organisation works: a new ERP replacing spreadsheets, a route-to-market change from wholesalers to direct delivery, a factory moving from three shifts to two. Roles, skills and habits change for many people at once. These changes need a sponsor, a plan and deliberate work on the people side.
+
+Size a change with three questions. How many people must work differently? How much must each person change (a new screen, or a new job)? How hard is it to go back? The higher the answers, the more structure you need.
+
+Also separate the technical side (system, process, organisation chart) from the people side (whether people actually adopt the new way). Change management is mainly about the people side: a system that is installed but not used delivers no benefit.
+
+## 2. Lewin's three-stage model
+
+Kurt Lewin, a social psychologist working in the 1940s, described change in three stages.
+
+::: diagram steps | Lewin's three-stage model
+Unfreeze: create readiness by showing why the current way can no longer continue
+Change: move to the new way of working with training, support and clear direction
+Refreeze: make the new way stable through systems, rules, habits and rewards
+:::
+
+Unfreezing is the stage most managers skip. People hold on to familiar routines that work well enough. Changing before they see a real problem creates confusion and resistance.
+
+Refreezing is the stage most often forgotten. If old spreadsheets or forms are still available, people slip back to them. "Refreeze" does not mean "never change again": it means the new way is stable enough to deliver results.
+
+::: quiz
+? A Luanda distributor installs a new ERP, but sales staff still keep their own Excel order files "just in case". Which stage of Lewin's model is incomplete?
+- Unfreeze || Staff are already using the ERP, so readiness was at least partly built.
+- Change || The move has happened and the system is live.
+* Refreeze || Correct. The old way is still available, so the new way is not yet stable.
+:::
+
+## 3. Force field analysis
+
+Lewin also developed force field analysis. Any situation is held in balance by driving and restraining forces. To move it, strengthen the drivers or, often more effectively, reduce the restraining forces.
+
+::: slides
+SLIDE Step 1: Describe the change | Write the change in one line; Draw a line down the middle of the page | Be specific: who, what, by when
+SLIDE Step 2: List driving forces | Customer demands, costs, errors, competition; Put them on the left | Use facts, not opinions
+SLIDE Step 3: List restraining forces | Habits, fear of job loss, skills gaps, workload; Put them on the right | Ask the people affected
+SLIDE Step 4: Score each force 1 to 5 | 1 = weak, 5 = very strong; Add up each side | The totals show the balance
+SLIDE Step 5: Plan actions | Reduce the strongest restraining forces first; Reinforce key drivers | Every action has an owner
+:::
+
+Example: a Luanda food distributor wants reps to take orders on tablets. Driving forces: order errors cost about 4 million Kz a month in returns (5), customers want faster delivery (4), management supports it (4). Total = 13. Restraining forces: reps are unsure with the app (4), poor mobile signal in some markets (3), fear that tablets will be used to track them (4). Total = 11. The change is fragile. Reducing the two restraining forces scored 4 (with training and a clear statement on tracking) would shift the balance more than adding pressure.
+
+::: quiz
+? In a force field analysis the drivers total 12 and the restraining forces total 14. What is usually the best next step?
+- Start the change now and push harder || Pushing harder against strong resistance often creates more resistance.
+* Plan actions to reduce the strongest restraining forces || Correct. Reducing restraining forces usually creates less tension than adding pressure.
+- Cancel the change because the score is negative || The score shows where to act, not that the change is wrong.
+:::
+
+## 4. Writing the case for change
+
+Your analysis becomes a short case for change, ideally one page. It should answer five questions in plain language:
+
+- What is changing, and what is not?
+- Why is the change needed (evidence: costs, errors, customer complaints, lost sales)?
+- Why now (what happens if we wait)?
+- What is the cost of doing nothing, in kwanzas or in customers?
+- What will be better for the business and for the people affected?
+
+Saying clearly what is not changing reduces fear: "Your customers, your area and your commission structure stay the same. Only the way orders are captured changes."
+
+## Worked example: moving to direct delivery in Luanda
+
+A beverage distributor in Luanda sells mainly through wholesalers. Margins are falling, so it decides to deliver directly to 1,200 small shops in Cazenga, Viana and Cacuaco. The operations manager, Helena, prepares the case for change.
+
+Forty staff will work differently and routes change completely: it is transformational. Her case shows that wholesaler margins cost about 180 million Kz a year. Her force field analysis scores the drivers at 14 and the restraining forces at 13. The strongest restraining force (5) is the drivers' fear of carrying cash.
+
+::: case | Cash fears in Cacuaco
+Helena presents the plan. Delivery drivers say they will not carry cash in some areas of Cacuaco. The general manager wants to start next month anyway.
+? What should Helena do first?
+- Start next month and deal with problems as they come || This ignores the strongest restraining force and risks a failed launch.
+* Address the cash fear first, for example with mobile payments or cash collection by a separate team, then confirm the start date || Correct. Reducing the strongest restraining force shifts the balance most.
+- Replace the drivers who complain || This increases fear across the team and loses experienced staff.
+:::
+
+## Tool: case for change template
+
+- Change in one line:
+- Size and type (incremental or transformational):
+- Evidence for change (figures):
+- Why now:
+- Cost of doing nothing (Kz per month or year):
+- What is not changing:
+- Top three driving forces and scores:
+- Top three restraining forces and scores:
+- Actions to reduce restraining forces, with owners:
+
+## Common mistakes
+
+- Starting with the solution ("we are installing a new system") before people understand the problem.
+- Treating a transformational change as a small project with one email and a training day.
+- Forgetting to say what is not changing, so people imagine the worst.
+
+## Self-check
+
+- What are Lewin's three stages? (Answer: unfreeze, change, refreeze.)
+- In force field analysis, which side is often more effective to work on? (Answer: reducing the restraining forces.)
+- Name three questions a case for change must answer. (Answer: any three of: what is changing and what is not, why, why now, the cost of doing nothing, what will be better.)
+
+## Practical assignment
+
+Choose one change in your workplace. Size it, carry out a scored force field analysis and write a one-page case for change with the template. Ask one affected colleague what you missed.
+
+## Summary
+
+- Size the change first: incremental changes need light management, transformational changes need a structured approach.
+- Lewin's model reminds you to unfreeze before changing and to refreeze after.
+- Use force field analysis and a clear case for change to show why, why now and the cost of doing nothing.
+=== 20
+SLIDE What you will learn | List Kotter's eight steps in order; Build a guiding coalition; Test a change vision and plan short-term wins; Turn the steps into a dated roadmap | A sequence, not a menu
+SLIDE Kotter's eight steps | 1 Urgency, 2 Coalition, 3 Vision, 4 Communicate; 5 Empower and remove obstacles, 6 Short-term wins; 7 Consolidate gains, 8 Anchor in the culture | Skipping a step only feels faster
+SLIDE Kotter and Lewin | Steps 1 to 3 unfreeze; Steps 4 to 6 make the change; Steps 7 and 8 refreeze | Two models, one logic
+SLIDE The guiding coalition | Position power; Expertise; Credibility; Leadership | Include the people who could block it
+SLIDE A clear vision | Short, concrete, shows benefits; Kotter's test: explain it in about five minutes; Not a project name | People must understand and care
+SLIDE Short-term wins | Visible to many people; Unambiguous; Clearly related to the change | Plan wins, do not hope for them
+SLIDE The roadmap | Activities, owners and dates per step; Capacity maths for training; Linked to the technical plan | One plan for system and people
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list Kotter's eight steps for leading change in the right order;
+- choose members for a guiding coalition and test a change vision;
+- plan short-term wins that build momentum;
+- turn the eight steps into a dated change roadmap.
+
+## Key terms
+
+::: terms
+Sponsor: the senior leader who owns the change, provides resources and is visibly accountable for its success
+Guiding coalition: a group with enough power, expertise and credibility to lead the change together
+Change vision: a short picture of the future state that explains where the change is going and why it is worth it
+Short-term win: an early, visible and unambiguous improvement that is clearly linked to the change
+Change roadmap: a dated plan that combines the project tasks with the people-side activities
+:::
+
+## 1. Kotter's eight steps
+
+John Kotter of Harvard Business School studied why large change efforts fail. In a 1995 Harvard Business Review article and the book Leading Change (1996) he turned common errors, such as too much complacency and declaring victory too soon, into eight steps:
+
+::: diagram steps | Kotter's eight steps for leading change
+1 Create a sense of urgency: show why the change must happen now
+2 Build a guiding coalition: assemble a team with enough power to lead
+3 Form a vision and strategy: describe the future state and how to get there
+4 Communicate the vision: use every channel, repeatedly, and lead by example
+5 Empower action and remove obstacles: change systems and structures that block the vision
+6 Generate short-term wins: plan and celebrate visible early results
+7 Consolidate gains and produce more change: use credibility from wins to go further
+8 Anchor new approaches in the culture: link the new behaviours to success
+:::
+
+The steps build on each other. Organisations often jump straight to step 5 (installing the system) without urgency, a coalition or a vision, and then wonder why people resist.
+
+Link to Lesson 1: steps 1 to 3 unfreeze, steps 4 to 6 change, steps 7 and 8 refreeze.
+
+::: quiz
+? A plant manager announces a new shift structure by email and starts it the next Monday. Which Kotter steps were mainly skipped?
+- Only step 8, anchoring in the culture || Steps much earlier were missed too.
+* Steps 1 to 3: urgency, a coalition and a vision || Correct. Without them, people do not know why the change is needed or who supports it.
+- Only step 6, short-term wins || Wins matter, but the main gap is at the start.
+:::
+
+## 2. Urgency and the guiding coalition
+
+Urgency is not panic. It means enough people see that the current situation is not acceptable. Build it with facts people can see: customer complaints, rejected deliveries, the stock write-off figure. Ask managers to share the data with their teams.
+
+Kotter recommends a coalition that combines four qualities: position power (enough senior people that others cannot easily block the change), expertise (people who know the processes and the technology), credibility (people the workforce respects) and leadership (people who can drive the change, not only manage tasks).
+
+::: slides
+SLIDE Step 1: Name the sponsor | One senior leader owns the change; Visible, not just a signature | No sponsor, no change
+SLIDE Step 2: Add position power | Heads of the most affected functions; Enough seniority to remove blockers | Include the people who could block it
+SLIDE Step 3: Add expertise | Key users who know the process; IT or engineering experts | Real knowledge prevents bad design
+SLIDE Step 4: Add credibility | Respected supervisors and long-serving staff; People colleagues listen to | Trust travels through people
+:::
+
+## 3. Vision and short-term wins
+
+A good vision is short, concrete and shows benefits. Kotter's test: if you cannot explain it in about five minutes and get a reaction showing understanding and interest, it is not ready. Compare "Implement the new ERP system" with "Every order captured once, delivered complete and invoiced on the same day, so customers stop waiting and we stop losing money on errors."
+
+Short-term wins keep momentum and answer critics. Kotter describes a good win as visible, unambiguous and clearly related to the change. Plan them, for example the first branch that invoices on the same day for a full month. Then use the credibility from the wins to tackle bigger problems (step 7) and build the new behaviours into promotions and induction (step 8).
+
+::: quiz
+? Which of these is the best short-term win for a new stock system?
+- "Users feel more positive about the system" || This is hard to measure and easy to argue about.
+- "The project is on budget" || This matters to the project team but is not a visible business result.
+* "Pilot warehouse stock count accuracy rose from 88% to 98% in six weeks" || Correct. It is visible, unambiguous and directly related to the change.
+:::
+
+## 4. Building the change roadmap
+
+Put the eight steps on a timeline next to the technical plan, with activities, owners and dates. Include capacity calculations. For example, if 64 users need ERP training, each session takes 8 people and the trainer can run 2 sessions a day: 64 ÷ 8 = 8 sessions, and 8 ÷ 2 = 4 training days. Schedule them close to go-live so people do not forget.
+
+## Worked example: an ERP at a Luanda distributor
+
+A Luanda food distributor with branches in Lobito and Lubango is replacing spreadsheets with an ERP. The finance director, Rui, is the sponsor. Go-live is in 16 weeks.
+
+Rui's roadmap: weeks 1–2, urgency (he shares the cost of invoice errors and credit notes, about 25 million Kz last year, with all branch managers); weeks 2–3, a coalition of the sales director, the logistics manager, the IT lead, two respected branch supervisors and a senior invoicing clerk; week 4, a one-sentence vision tested on ten staff; week 10, a pilot in the Lobito branch as the first planned short-term win; week 16, go-live.
+
+::: case | The IT-only project
+In week 3 the CEO tells Rui: "This is a system project. Let the IT team run it and keep the sales director out of it. She is too busy."
+? What should Rui do?
+- Agree, because IT knows the system best || Expertise is only one of four qualities. Without sales, the largest group of users has no voice in the coalition.
+- Let IT run it but send the sales director weekly reports || Reports do not give her ownership or the power to remove blockers in her team.
+* Explain that sales staff are the main users and ask that the sales director join the coalition with a limited, focused role || Correct. Position power from the most affected function is essential, and a defined role respects her time.
+- Delay the project until the sales director is less busy || This loses urgency and momentum without solving the problem.
+:::
+
+## Tool: Kotter roadmap template
+
+- Change and sponsor:
+- Step 1 urgency: evidence to share, with whom, by when
+- Step 2 coalition: names and the quality each brings (power, expertise, credibility, leadership)
+- Step 3 vision: one sentence, tested on how many people
+- Step 4 communication: key messages and channels
+- Step 5 obstacles to remove: systems, rules, structures
+- Step 6 planned short-term wins and dates:
+- Steps 7 and 8: next improvements and how the change will be anchored
+
+## Common mistakes
+
+- Jumping straight to implementation without urgency, a coalition or a vision.
+- A coalition made only of IT or only of senior managers, with no respected front-line voices.
+- A vision that is really a project name ("Project Phoenix") with no picture of the future.
+- Declaring victory at go-live, before the new way is anchored.
+
+## Self-check
+
+- What four qualities does Kotter recommend for a guiding coalition? (Answer: position power, expertise, credibility and leadership.)
+- What three features make a good short-term win? (Answer: visible, unambiguous and clearly related to the change.)
+- 40 users need training, 10 per session, 2 sessions a day. How many training days are needed? (Answer: 40 ÷ 10 = 4 sessions, so 2 days.)
+
+## Practical assignment
+
+Draft a Kotter roadmap for your Lesson 1 change. Name the sponsor and four coalition members, test a one-sentence vision on three colleagues and plan one short-term win within eight weeks.
+
+## Summary
+
+- Kotter's eight steps build on each other: urgency, coalition, vision, communication, empowerment, short-term wins, consolidation and anchoring.
+- A strong coalition combines position power, expertise, credibility and leadership.
+- Plan visible, unambiguous wins and put every step on a dated roadmap.
+=== 20
+SLIDE What you will learn | Identify stakeholders and their roles; Use the power/interest grid; Assess current versus desired engagement; Write an engagement plan | Know who matters and where they stand
+SLIDE Four roles in change | Sponsor authorises and funds; Change agent plans and runs; Recipients must work differently; Champions influence peers | One person can hold two roles
+SLIDE Find all stakeholders | Whose work changes?; Who approves or funds?; Who could block or delay?; Who outside is affected? | Do not forget night shifts and representatives
+SLIDE Power/interest grid | Manage closely: high power, high interest; Keep satisfied: high power, low interest; Keep informed: low power, high interest; Monitor: low power, low interest | Positions move, so review the grid
+SLIDE Engagement levels | Unaware, Resistant, Neutral, Supportive, Leading; Mark current (C) and desired (D); Gap = desired minus current | Not everyone needs to lead
+SLIDE Prioritise | Priority = power score × gap; Start with the highest scores; Meet key people one to one first | Spend time where it matters most
+SLIDE Common mistakes | Mapping only managers; Filling the grid alone from assumptions; Making the map once and never updating it | Map together, review often
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- identify the stakeholders of a change and the role each one plays;
+- place stakeholders on a power/interest grid and choose an engagement approach;
+- assess current and desired engagement levels and find the biggest gaps;
+- write a stakeholder engagement plan with owners and dates.
+
+## Key terms
+
+::: terms
+Stakeholder: any person or group who is affected by the change or can influence its success
+Change agent: the person who plans and facilitates the change day to day, such as a project or change lead
+Change recipient: a person whose daily work must change for the change to succeed
+Change champion: a respected employee who volunteers to support peers and give feedback during the change
+Power/interest grid: a 2x2 matrix that groups stakeholders by their influence over the change and their interest in it
+Engagement gap: the difference between a stakeholder's current level of support and the level the change needs
+:::
+
+## 1. Identify stakeholders and their roles
+
+Start with a wide list. Ask: Whose daily work changes? Who must approve or fund it? Who could stop or delay it? Who outside the company is affected, such as customers or transport partners? In a factory, remember the workers' representatives, the safety committee and the night shift, who are easy to forget.
+
+Then give each stakeholder a role. Four roles appear in almost every change:
+
+- Sponsor: authorises the change, provides resources and holds people accountable.
+- Change agent: plans and runs the change activities, often without authority over recipients.
+- Change recipients: the people who must work differently. Their adoption decides the result.
+- Champions: respected people who influence their peers without formal power.
+
+One person can hold two roles: a supervisor is a recipient and also the key channel to the team.
+
+## 2. The power/interest grid
+
+The power/interest grid, often called Mendelow's matrix, sorts stakeholders by two questions. How much power do they have over the change? How interested are they in it, or how strongly does it affect them?
+
+::: diagram matrix | Power/interest grid | Interest (low → high) | Power (low → high)
+Keep satisfied: high power, low interest – brief them, ask for little, avoid surprises
+Manage closely: high power, high interest – involve them in decisions, meet regularly
+Monitor: low power, low interest – general information, watch for changes
+Keep informed: low power, high interest – regular updates, listen to concerns, recruit champions
+:::
+
+Place stakeholders with your coalition, not alone, and review the grid at each milestone. Positions move: workers' representatives may show little interest at first but gain interest and power once job descriptions change.
+
+::: quiz
+? A plant's finance director must approve overtime budgets for the change but does not otherwise care about it. Where does she belong on the grid?
+- Manage closely || Her interest is low, so close involvement would waste her time.
+* Keep satisfied || Correct. She has high power and low interest: brief her, avoid surprises and ask only for what you need.
+- Keep informed || She has high power, not low power.
+:::
+
+## 3. Assess engagement: current versus desired
+
+The grid tells you how to engage. You also need to know where each stakeholder stands. The stakeholder engagement assessment matrix described in the PMBOK Guide uses five levels: Unaware, Resistant, Neutral, Supportive and Leading. For each key stakeholder you mark the current level (C) and the desired level (D).
+
+::: slides
+SLIDE Step 1: List key stakeholders | Start with Manage closely and Keep satisfied; Add key recipient groups | Focus on those who decide the result
+SLIDE Step 2: Mark the current level | Unaware, Resistant, Neutral, Supportive or Leading; Use evidence from conversations | Opinions are not evidence
+SLIDE Step 3: Mark the desired level | Not everyone needs to lead; Sponsors and supervisors usually must | Be realistic
+SLIDE Step 4: Calculate the gap | Score levels 1 to 5; Gap = desired minus current | Big gaps need early action
+SLIDE Step 5: Prioritise | Priority = power score × gap; Act on the highest scores first | Spend time where it matters most
+:::
+
+A simple calculation helps you prioritise. Score the levels from 1 (Unaware) to 5 (Leading), and power from 1 to 5. A maintenance manager with power 5 who is Resistant (2) but needs to be Supportive (4) has a gap of 2 and a priority of 5 × 2 = 10. A group of packers with power 2 who are Unaware (1) but need to be Supportive (4) has a gap of 3 and a priority of 2 × 3 = 6. Start with the maintenance manager.
+
+::: quiz
+? The safety officer has power 3, is Neutral (3) and must be Supportive (4). The sales director has power 4, is Resistant (2) and must be Supportive (4). Who comes first?
+- The safety officer, priority 9 || Priority is power × gap: 3 × 1 = 3, not 9.
+* The sales director, priority 8 || Correct. 4 × 2 = 8, higher than the safety officer's 3 × 1 = 3.
+- Both are equal || The scores are 8 and 3, so they are not equal.
+:::
+
+## 4. The engagement plan
+
+For each priority stakeholder, write what they care about, what you need from them, the action, the owner and the date. Speak to their interest: cost for finance, workload and safety for shift leaders, pay and job security for operators. Meet the most important stakeholders one to one before group meetings, so nobody hears critical news for the first time in public.
+
+## Worked example: reorganising a plant in Viana
+
+A packaging plant in the Viana industrial area plans to replace its separate production and maintenance departments with three area teams, each with operators and technicians under one area leader. About 150 workers are affected. The change agent, Teresa from HR, maps stakeholders with the plant director, who is the sponsor.
+
+On the grid, the plant director and the maintenance manager are Manage closely, the finance director is Keep satisfied, operators and technicians are Keep informed, and the canteen supplier is Monitor. The engagement assessment shows the maintenance manager as Resistant (he will lose his department) and the workers' representatives as Unaware. Teresa's priority scores put the maintenance manager first, then the representatives.
+
+::: case | The maintenance manager in Viana
+Teresa learns that the maintenance manager, Sr. Domingos, has told technicians that "this reorganisation will destroy maintenance quality". He has 20 years at the plant and the technicians trust him.
+? What should Teresa do first?
+- Ask the plant director to order him to support the change || An order may silence him in public but will not change what he tells technicians.
+- Leave him out of meetings so he cannot spread his views || Excluding a high-power stakeholder usually increases resistance.
+* Meet him one to one, listen to his concerns about quality and invite him to design the maintenance standards for the new area teams || Correct. He has high power and high interest, and involving him uses his expertise and credibility.
+- Send all technicians an email explaining the benefits || Mass communication does not deal with the concerns of the most influential person.
+:::
+
+## Tool: stakeholder engagement plan
+
+- Stakeholder (name or group):
+- Role (sponsor, agent, recipient, champion):
+- Power, interest and grid quadrant:
+- Current level (C) and desired level (D):
+- Gap and priority score (power × gap):
+- What they care about:
+- What we need from them:
+- Action, owner and date:
+
+## Common mistakes
+
+- Mapping only managers and forgetting recipient groups, night shifts or workers' representatives.
+- Filling in the grid alone in the office, from assumptions.
+- Treating everyone in the same quadrant the same way, regardless of their concerns.
+- Making the map once and never updating it as positions change.
+
+## Self-check
+
+- What approach does the grid suggest for stakeholders with high power and high interest? (Answer: manage closely: involve them in decisions and meet regularly.)
+- What are the five engagement levels? (Answer: Unaware, Resistant, Neutral, Supportive, Leading.)
+- A stakeholder has power 4, current level 2 and desired level 5. What is the priority score? (Answer: the gap is 3, so 4 × 3 = 12.)
+
+## Practical assignment
+
+With a colleague, list ten stakeholders for your change, place them on the grid, score engagement gaps and priorities, and plan actions for the top three. Hold the first one-to-one this week.
+
+## Summary
+
+- List stakeholders widely and give each one a role: sponsor, change agent, recipient or champion.
+- Use the power/interest grid to decide how to engage, and review it as positions move.
+- Compare current and desired engagement, prioritise by power × gap, and act with named owners and dates.
+=== 20
+SLIDE What you will learn | Recognise the phases of the change curve; Explain the five ADKAR elements; Find a person's barrier point; Choose the right action for the barrier | Organisations change one person at a time
+SLIDE The change curve | Shock and denial; Anger and resistance; Exploration; Commitment | Adapted from Kübler-Ross's work on grief
+SLIDE Leader actions on the curve | Denial: clear, repeated information; Resistance: listen and fix real concerns; Exploration: training and practice; Commitment: recognise and set new goals | Respond to the phase, not to the noise
+SLIDE Endings come first | Bridges: ending, neutral zone, new beginning; Acknowledge what people lose; Do not only sell the gains | Every change starts with a loss
+SLIDE Prosci ADKAR | Awareness of the need; Desire to take part; Knowledge of how; Ability to do it; Reinforcement to sustain it | The order matters
+SLIDE Find the barrier point | Score each element 1 to 5; Barrier point = first score of 3 or lower; Act there before anything else | Fix the first barrier, not the lowest score
+SLIDE Common mistakes | Answering low Desire with more training; Treating all resistance as one problem; Assuming training means ability | Diagnose each person
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the phases of the change curve and what a leader should do at each one;
+- explain the five elements of the Prosci ADKAR model;
+- assess a person or team with ADKAR and find the barrier point;
+- choose actions that address the specific barrier.
+
+## Key terms
+
+::: terms
+Change curve: a model of the emotional reactions people often go through during change, adapted from Elisabeth Kübler-Ross's work on grief
+Transition: the inner, psychological process people go through to come to terms with a change
+ADKAR: Prosci's model of individual change – Awareness, Desire, Knowledge, Ability, Reinforcement
+Barrier point: the first ADKAR element that scores 3 or lower on a 1 to 5 scale
+Proficiency: the level of skill at which a person performs the new way of working without help
+:::
+
+## 1. The change curve
+
+Organisations change only when individuals change, and individuals react emotionally. The change curve is adapted from Elisabeth Kübler-Ross's 1969 work on grief. It was not designed for business, and people do not move through it in a neat order, but it helps leaders recognise reactions and respond in the right way. A common workplace version has four phases:
+
+- Shock and denial: "This will never happen here." Performance may hold up at first. Leader action: give clear information, repeatedly, and explain why.
+- Anger and resistance: "Why are they doing this to us?" Productivity often dips. Leader action: listen, accept emotions and deal with real concerns quickly.
+- Exploration: "Maybe the new system can do this." People start to try. Leader action: training, practice time, encouragement and tolerance of early mistakes.
+- Commitment: "This is how we work now." Performance rises, often above the old level. Leader action: recognise progress and set new goals.
+
+William Bridges made a related point in his transition model: every change starts with an ending. People must let go of the old way (and sometimes old status or friendships), pass through a confusing "neutral zone", and only then make a new beginning. Acknowledge what people are losing; do not just sell what they are gaining.
+
+::: quiz
+? Two weeks after a new route plan, delivery drivers in Huambo complain loudly and productivity has dropped. Which phase are they most likely in, and what should the supervisor do?
+- Commitment, so set higher targets || Complaints and lower productivity are not signs of commitment.
+* Anger and resistance, so listen and fix real problems quickly || Correct. This phase needs listening and quick action on genuine concerns.
+- Shock and denial, so stop communicating until they calm down || Silence makes the dip deeper and longer.
+:::
+
+## 2. The ADKAR model
+
+ADKAR was developed by Jeff Hiatt, founder of Prosci, and is one of the most widely used models of individual change. It says that a person must achieve five outcomes, in order:
+
+::: diagram steps | Prosci ADKAR model
+Awareness: of the need for change – why it is happening
+Desire: to support and take part in the change – a personal choice
+Knowledge: of how to change – training and information
+Ability: to perform the new skills and behaviours in real work
+Reinforcement: to sustain the change – recognition, rewards and follow-up
+:::
+
+The order matters. Training (Knowledge) given to someone who still lacks Desire is often wasted. Desire is usually the hardest element because it is a personal choice: a manager can influence it but cannot order it.
+
+## 3. Using ADKAR to diagnose
+
+The real power of ADKAR is diagnosis. Instead of saying "the team is resisting", you find exactly where each person is stuck.
+
+::: slides
+SLIDE Step 1: Choose the change | Be specific, for example "use the tablet for every order" | Assess one change at a time
+SLIDE Step 2: Score each element 1 to 5 | 1 = not at all, 5 = completely; Use conversation and observation | Score A, D, K, A and R in order
+SLIDE Step 3: Find the barrier point | The first element scoring 3 or lower; Leave later elements for now | Fix the first barrier first
+SLIDE Step 4: Act on the barrier | Awareness: explain why; Desire: address what is in it for them; Knowledge: train; Ability: practice and coaching; Reinforcement: recognise | Match the action to the element
+:::
+
+A worked calculation for a team: a supervisor scores eight sales reps on a new tablet ordering app and averages the results. Awareness 4.5, Desire 2.6, Knowledge 3.8, Ability 2.9, Reinforcement 2.0. The barrier point is Desire (2.6), the first element at 3 or lower. More training would not help yet: the supervisor needs to find out why reps do not want to use the app. The later low scores (Ability and Reinforcement) will need attention afterwards.
+
+::: quiz
+? A warehouse clerk scores Awareness 4, Desire 4, Knowledge 2, Ability 2, Reinforcement 1. Where should the manager act first?
+- Reinforcement, because it has the lowest score || ADKAR is sequential: fix the first barrier, not the lowest score.
+- Desire, because it is always the hardest element || Desire is already high for this clerk.
+* Knowledge, through training on the new process || Correct. Knowledge is the first element at 3 or lower.
+:::
+
+## Worked example: tablets for sales reps in Benguela
+
+A soft-drinks distributor moves its Benguela sales team from paper order books to a tablet app connected to the ERP. After four weeks, only half of the orders come in through the app. The area manager, Carlos, interviews each rep for fifteen minutes and scores ADKAR.
+
+Most reps understand why the company wants the app (Awareness 4). Desire is low (2) for a specific reason: reps fear that orders in the app will be checked against GPS location and that their commission will be cut for any mistake. Carlos takes the concern to the sales director. They agree and announce that the app will not be used to reduce commission during the first three months, and that GPS is used only for route planning. Two weeks later Desire scores rise to 4, and the new barrier is Ability: reps are slow when the mobile signal is weak. Carlos arranges training on the app's offline mode and pairs slower reps with a champion.
+
+::: case | The rep who refuses in Lobito
+Joaquim, the top-performing rep in Lobito, still writes every order on paper and asks the office to type it in. He says: "I sell more than anyone. Why should I change?"
+? What should his manager do first?
+- Send him on the training course again || His Knowledge is not the problem. Training will not create Desire.
+* Talk with him about what he would lose and gain, and link the app to his goals, such as faster commission reports and fewer delivery errors for his customers || Correct. His barrier is Desire, which needs a personal conversation about his interests.
+- Tell the office to stop typing his orders immediately, without explanation || Forcing him without addressing Desire risks losing a top performer and his customers.
+:::
+
+## Tool: ADKAR team assessment
+
+- Change being assessed (one sentence):
+- Person or team:
+- Awareness score (1–5) and evidence:
+- Desire score (1–5) and evidence:
+- Knowledge score (1–5) and evidence:
+- Ability score (1–5) and evidence:
+- Reinforcement score (1–5) and evidence:
+- Barrier point (first score of 3 or lower):
+- Action, owner and date:
+- Date to reassess:
+
+## Common mistakes
+
+- Treating all resistance as one problem instead of finding each person's barrier point.
+- Responding to low Desire with more training.
+- Expecting people to skip the emotional dip, and taking their anger personally.
+- Measuring only Knowledge (training attendance) and assuming Ability follows.
+
+## Self-check
+
+- What do the letters ADKAR stand for? (Answer: Awareness, Desire, Knowledge, Ability, Reinforcement.)
+- What is the barrier point? (Answer: the first ADKAR element that scores 3 or lower.)
+- What was the change curve originally based on? (Answer: Elisabeth Kübler-Ross's work on grief.)
+
+## Practical assignment
+
+Choose three people affected by your change. Have a short conversation with each, score their ADKAR elements and find each barrier point. Plan one specific action per person and agree a date to reassess.
+
+## Summary
+
+- People react emotionally to change: recognise the phase of the change curve and respond to it.
+- ADKAR describes five outcomes each person must reach, in order.
+- Score ADKAR, find the first barrier point and act on that element, not on the lowest score.
+=== 20
+SLIDE What you will learn | Explain four reasons people resist; Choose among six approaches to resistance; Build a communication plan; Measure reach and understanding | Resistance is information
+SLIDE Why people resist | Parochial self-interest; Misunderstanding and lack of trust; Different assessments; Low tolerance for change | Kotter and Schlesinger (1979)
+SLIDE Six approaches | Education and communication; Participation and involvement; Facilitation and support; Negotiation and agreement; Manipulation and co-optation; Explicit and implicit coercion | Start with the first three
+SLIDE The communication plan | Audience; Message; Sender; Channel; Timing; Feedback | Plan who says what, to whom, when
+SLIDE Preferred senders | Senior leaders: the business reasons; Direct supervisors: what it means for me; Brief supervisors before their teams | Trust travels through the line
+SLIDE Measure reach | Reach = attended ÷ target × 100; Check understanding with three questions; Repeat where results are low | One email is not communication
+SLIDE Common mistakes | Coercion first; Teams hear news before supervisors; Ignoring rumours | Answer rumours fast, face to face
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain four common reasons why people resist change;
+- choose among Kotter and Schlesinger's six approaches for dealing with resistance;
+- build a change communication plan that names audience, message, sender, channel and timing;
+- measure whether communication is reaching people and use the feedback.
+
+## Key terms
+
+::: terms
+Resistance: any behaviour that slows, blocks or avoids a change, whether open or hidden
+Change communication plan: a schedule of messages for each audience, with sender, channel, timing and feedback route
+Preferred sender: the person an audience most trusts to deliver a specific type of message
+Feedback loop: a regular way to collect questions, concerns and rumours and respond to them
+Two-way communication: communication that invites questions and answers, not only announcements
+:::
+
+## 1. Why people resist
+
+Resistance is normal and often useful: it can reveal real flaws in the plan. In a 1979 Harvard Business Review article, John Kotter and Leonard Schlesinger described four common reasons:
+
+- Parochial self-interest: people expect to lose something they value, such as status, overtime pay, a team or a customer portfolio.
+- Misunderstanding and lack of trust: people do not understand the change or do not trust those leading it, so they assume the worst.
+- Different assessments: people honestly believe the change is a mistake, sometimes because they see costs that managers do not.
+- Low tolerance for change: some people find change itself stressful and fear they cannot learn the new skills.
+
+Diagnose the reason before acting. A rumour that "the new organisation means job cuts" (misunderstanding) needs a different response from a supervisor who will genuinely lose his department (self-interest).
+
+## 2. Six approaches to resistance
+
+Kotter and Schlesinger described six approaches, each useful in some situations and risky in others:
+
+- Education and communication: when resistance comes from lack of information. It takes time with many people.
+- Participation and involvement: when you need people's knowledge or commitment. It can be slow.
+- Facilitation and support: when people resist because of fear and adjustment problems, for example extra training or time off the line to practise.
+- Negotiation and agreement: when a group will clearly lose and has power to block, for example agreeing changes to shift allowances.
+- Manipulation and co-optation: giving someone a token role to win support. Risky: if people feel tricked, trust collapses.
+- Explicit and implicit coercion: when speed is essential and the change is unpopular, for example new safety rules. It works fast but leaves resentment.
+
+Start with the first three and use the last ones only with care.
+
+::: quiz
+? Forklift drivers will lose a night-shift allowance under a new shift pattern, and their representatives threaten to block it. Which approach fits best?
+- Education and communication || The drivers understand the change well. They will really lose money.
+* Negotiation and agreement || Correct. A group that clearly loses and has the power to block is a case for negotiation.
+- Manipulation and co-optation || This is risky and does not address the real loss.
+:::
+
+## 3. The change communication plan
+
+Most communication failures are not about words but about planning: the wrong person sends the message, at the wrong time, through a channel people ignore. A communication plan fixes this.
+
+::: diagram steps | Building a change communication plan
+Audience: segment by group, such as managers, supervisors, drivers and customers
+Message: what this group needs to know – why, what changes for them, what stays the same
+Sender: the most trusted person for this message
+Channel: face to face, team huddle, WhatsApp group, notice board or email
+Timing: before, during and after go-live, repeated
+Feedback: how questions and rumours come back, and who answers them
+:::
+
+Choose senders carefully. Prosci's research suggests that employees prefer to hear the business reasons for a change from senior leaders, and how the change affects them personally from their direct supervisor. So the general manager explains why; the supervisor explains what it means for each person's job. Brief supervisors before their teams, and give them a short script and a list of likely questions.
+
+Repeat key messages through several channels. One email is not communication. In many Angolan workplaces, face-to-face briefings at shift start and moderated WhatsApp groups reach front-line staff far better than email. Use the language people use every day and avoid jargon.
+
+::: quiz
+? A plant director wants to tell 200 operators by email how a new roster changes their own hours. What is the better plan?
+- Send the email twice to make sure it is read || Repetition helps, but email is a weak channel for front-line staff and the sender is wrong for personal impact.
+* Brief supervisors first, then have them explain the roster face to face at shift start || Correct. Personal impact is best explained by the direct supervisor, face to face.
+- Post the roster on the notice board without comment || This gives no explanation and no chance for questions.
+:::
+
+::: slides
+SLIDE Step 1: Brief leaders first | Sponsor and coalition agree key messages; Prepare questions and answers | One voice from the top
+SLIDE Step 2: Brief supervisors | Before their teams hear anything; Give a script and a question list | Supervisors are the key channel
+SLIDE Step 3: Team briefings | Face to face, at shift start; Why, what changes, what stays the same | Leave time for questions
+SLIDE Step 4: Collect feedback | Question box, WhatsApp, champions; Weekly list of rumours | Answer within one week
+SLIDE Step 5: Measure reach | Attendance and understanding checks; Repeat where reach is low | Reach people before go-live
+:::
+
+Measure reach and understanding. If 85 of 120 operators attended a briefing, reach is 85 ÷ 120 × 100 = 71%. If a three-question check after the briefing shows that 60 of those 85 can explain why the change is happening, only 60 ÷ 120 = 50% of all operators understand it. Plan more sessions before go-live.
+
+## Worked example: a route-to-market change in Luanda
+
+A household-goods distributor is moving from serving shops through wholesalers to using its own pre-sellers and delivery vans. Wholesalers, sales staff and warehouse teams are all affected. A rumour spreads on WhatsApp that half of the warehouse staff will be dismissed.
+
+::: case | The WhatsApp rumour
+The change lead, Mariana, sees the rumour on Monday. The general manager's official announcement is planned for the end of the month. Warehouse staff are visibly worried and two have asked for their final pay calculation.
+? What should Mariana do first?
+- Wait for the official announcement, so the message is not confused || Silence lets the rumour grow, and good people may leave.
+- Post a denial in the WhatsApp group from the HR mailbox || An anonymous written denial from HR has little credibility on its own.
+* Brief the warehouse supervisors today with the facts and a short script, and have the warehouse manager meet staff at shift start || Correct. Fast, face-to-face facts from trusted senders stop a rumour better than any written message.
+- Find out who started the rumour and discipline them || Punishment increases fear and drives concerns underground.
+:::
+
+## Tool: communication plan row
+
+- Audience:
+- What they need to know (why, what changes, what stays the same):
+- Their main concerns:
+- Sender (business reasons from a senior leader, personal impact from the supervisor):
+- Channel:
+- Date and repeat dates:
+- Feedback route and who answers:
+- Reach and understanding target (%):
+
+## Common mistakes
+
+- Treating all resistance as bad, instead of listening for real flaws in the plan.
+- Using coercion first, or using only communication when people will really lose something.
+- Letting teams hear news before their supervisors.
+- Sending one email and assuming everyone has understood.
+
+## Self-check
+
+- Name Kotter and Schlesinger's four reasons for resistance. (Answer: parochial self-interest, misunderstanding and lack of trust, different assessments, low tolerance for change.)
+- Who should usually explain how a change affects an employee's own job? (Answer: their direct supervisor.)
+- 45 of 75 drivers attended a briefing. What is the reach? (Answer: 45 ÷ 75 × 100 = 60%.)
+
+## Practical assignment
+
+List the main audiences for your change and write one row of the communication plan for each. Identify the reason for resistance in the group you think will resist most and choose an approach from Kotter and Schlesinger's six. Brief one supervisor this week using a short script.
+
+## Summary
+
+- Diagnose why people resist before choosing how to respond.
+- Use Kotter and Schlesinger's six approaches with care: start with education, participation and support.
+- Plan who says what, to whom, through which channel and when, and measure reach and understanding.
+=== 20
+SLIDE What you will learn | Explain why changes slide back; Calculate utilisation and proficiency; Use PDCA to stabilise a change; Hand over to a business owner | Go-live is not the finish line
+SLIDE Why change slides back | Old forms and files still available; Managers stop asking; Targets reward the old way; New hires learn workarounds | Remove the way back
+SLIDE Reinforce the change | Lewin: refreeze; Kotter steps 7 and 8; ADKAR: Reinforcement | Three models, one message
+SLIDE Adoption measures | Speed of adoption; Ultimate utilisation; Proficiency | Measure the people side
+SLIDE The calculations | Utilisation = active users ÷ target users × 100; Proficiency = error-free ÷ total transactions × 100; Compare business results with the baseline | No baseline, no proof
+SLIDE PDCA to stabilise | Plan a fix; Do it in one team; Check against the target; Act: standardise or try again | Short cycles of two to four weeks
+SLIDE Handover | Named business owner; Measures and review meeting; Lessons-learned review | Close the project, not the change
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain why changes slide back after go-live and how to reinforce them;
+- calculate adoption measures: utilisation and proficiency;
+- use the PDCA cycle to improve and stabilise a new way of working;
+- hand over a change to the business with clear owners and measures.
+
+## Key terms
+
+::: terms
+Adoption: people actually using the new way of working in their daily jobs
+Utilisation: the share of the target group using the new way, out of all who should
+Proficiency: how well people perform the new way, compared with the expected standard
+Leading indicator: an early measure that shows whether results are likely to come, such as share of orders entered in the new system
+Lagging indicator: a measure of the final business result, such as invoice errors or customer complaints
+Workaround: an unofficial way of doing a task that avoids the new process
+:::
+
+## 1. Why change slides back
+
+Go-live is not the end. Many changes look successful on the first day and are half abandoned three months later. Typical reasons: the old spreadsheet or form is still available; managers stop asking about the new process; targets and bonuses still reward the old behaviour; new employees are trained by colleagues who use workarounds.
+
+Three models you have met point to the same need. Lewin calls it refreezing. Kotter's steps 7 and 8 warn against declaring victory too soon and ask you to anchor new approaches in the culture. In ADKAR, Reinforcement is the final element: without it, people drift back.
+
+Reinforcement works through systems as well as people:
+
+- Remove the old way: switch off old access, collect old forms, stop accepting paper orders.
+- Align measures and rewards: put the new behaviour into KPIs, job descriptions and bonuses.
+- Recognise early adopters publicly, with specific examples.
+- Build the new way into induction, so new hires learn it from day one.
+- Keep managers asking: review the new reports in every weekly meeting.
+
+::: quiz
+? Three months after a new credit approval process, sales managers still approve credit by phone "when it is urgent". What is the most effective reinforcement step?
+- Send a reminder email about the policy || Reminders alone rarely change established workarounds.
+* Configure the ERP so orders above the credit limit cannot be released without the approval workflow, and review exceptions weekly || Correct. Removing the old way and keeping managers asking makes the new process the only path.
+- Run the training again for all sales managers || They know the process. The issue is Reinforcement, not Knowledge.
+:::
+
+## 2. Measuring adoption
+
+Prosci describes three useful measures of the people side: speed of adoption (how fast people move to the new way), ultimate utilisation (how many of the people who should use it actually do) and proficiency (how well they use it). Track them alongside business results.
+
+::: slides
+SLIDE Speed of adoption | Track weekly from go-live; Compare with the planned curve | A slow start means act early
+SLIDE Utilisation | Active users ÷ target users × 100; Count real use, not logins | Who is not using it, and why?
+SLIDE Proficiency | Error-free transactions ÷ total transactions × 100; Time to complete a task | Using it is not the same as using it well
+SLIDE Business results | Lagging indicators: errors, cost, service level; Compare with the baseline in your case for change | Benefits prove the change
+:::
+
+A worked calculation: 60 sales reps should place orders through a new app. In week 8, 48 reps placed at least 90% of their orders in the app. Utilisation = 48 ÷ 60 × 100 = 80%. Of 2,400 orders entered that week, 2,160 needed no correction. Proficiency = 2,160 ÷ 2,400 × 100 = 90%. If the target was 95% utilisation by week 8, the 12 non-users are your list for ADKAR conversations.
+
+Set targets and dates for each measure before go-live, and record the baseline. You cannot prove that invoice errors fell unless you measured them before.
+
+::: quiz
+? 50 clerks should use a new stock system. 40 use it daily, and 900 of their 1,000 stock movements are error-free. What are utilisation and proficiency?
+- Utilisation 90%, proficiency 80% || The figures are swapped: 40 ÷ 50 gives utilisation.
+- Utilisation 40%, proficiency 900% || Both must be expressed as shares of the total.
+* Utilisation 80%, proficiency 90% || Correct. 40 ÷ 50 × 100 = 80% and 900 ÷ 1,000 × 100 = 90%.
+:::
+
+## 3. Stabilise and improve with PDCA
+
+A new process is rarely perfect at go-live. The Plan-Do-Check-Act (PDCA) cycle, popularised by W. Edwards Deming, gives a disciplined way to improve it without losing control.
+
+::: diagram cycle | PDCA cycle for stabilising a change
+Plan: pick one problem from the adoption data and plan a fix
+Do: test the fix in one team or branch
+Check: compare results with the baseline and the target
+Act: standardise the fix in the procedure and training, or try another
+:::
+
+Run short cycles of two to four weeks, led by the process owner. Update the written procedure and the training material each time a fix is standardised, so improvements are not lost when people move on.
+
+## 4. Handover and closing the change
+
+Before the change team steps back, hand the new way over to a named business owner, usually the manager responsible for the process. Agree the measures they will continue to track, the meeting where they will be reviewed and what happens if a measure falls below target. Then hold a lessons-learned review: what worked, what did not, and what you will do differently in the next change.
+
+## Worked example: three months after an ERP go-live
+
+A food distributor in Luanda went live with its new ERP 12 weeks ago, and the project team wants to close. The adoption dashboard shows branch utilisation of 92% in Luanda but 65% in Lubango, invoicing proficiency of 88% against a target of 95%, and invoice errors down from 210 to 90 a month.
+
+::: case | Closing the ERP project
+The sales director says: "Errors are down, the system works. Let's close the project and move the team to the next one."
+? What should the change lead recommend?
+- Close the project now, because the lagging indicator has improved || Declaring victory early is a classic error. Lubango and proficiency are still below target.
+- Keep the whole project team for another six months || This is costly. Most of the work can move to a business owner with a clear plan.
+* Close the project for Luanda, but agree a six-week PDCA plan for Lubango and invoicing proficiency, with a named business owner and a weekly review || Correct. It reinforces the change where it is weak and hands ownership to the business.
+- Remove system access from Lubango users who are not using it || This punishes people before finding their barrier point.
+:::
+
+## Tool: sustainment checklist
+
+- Old forms, files and access removed or locked:
+- New behaviours added to KPIs, job descriptions and induction:
+- Utilisation target, current value and date:
+- Proficiency target, current value and date:
+- Business result baseline and current value:
+- Process owner named:
+- Review meeting and frequency:
+- PDCA improvement in progress:
+- Lessons-learned review date:
+
+## Common mistakes
+
+- Declaring success at go-live and moving the team away too soon.
+- Measuring logins instead of real use and quality.
+- Leaving old systems and forms available "just in case".
+- Closing the project without a business owner and a review routine.
+
+## Self-check
+
+- What are Prosci's three adoption measures? (Answer: speed of adoption, ultimate utilisation and proficiency.)
+- 36 of 45 target users are active in the new system. What is utilisation? (Answer: 36 ÷ 45 × 100 = 80%.)
+- What are the four stages of PDCA? (Answer: Plan, Do, Check, Act.)
+
+## Practical assignment
+
+For your change, choose one utilisation measure, one proficiency measure and one business-result measure, each with a baseline, target and date. Check whether the old way is still available and list what must be removed. Name the business owner and agree a review meeting this week.
+
+## Summary
+
+- Changes slide back unless the old way is removed and the new way is built into measures, rewards and induction.
+- Track speed of adoption, utilisation and proficiency, together with business results against a baseline.
+- Use PDCA to stabilise, then hand over to a business owner and learn lessons for the next change.

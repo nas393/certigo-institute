@@ -1,0 +1,817 @@
+=== 20
+SLIDE What you will learn | Separate key result areas, KPIs and targets; Write SMART KPIs with a definition card; Balance leading and lagging indicators; Calculate a weighted KPI score | Clear expectations come before fair judgement
+SLIDE Role expectations | A job description lists duties, not standards; Break each role into 3–5 key result areas; Give each area one or two KPIs with a target | People can only be judged against standards they knew
+SLIDE SMART (Doran, 1981) | Specific, Measurable, Achievable, Relevant, Time-bound; Doran's original: Assignable, Realistic, Time-related; Two people should agree whether it was met | If it cannot be checked, it is not a goal
+SLIDE KPI definition card | Name and formula; Data source and owner; Frequency, target and weight | The card ends arguments about the number
+SLIDE Leading vs lagging | Lagging: results that already happened, e.g. monthly sales; Leading: activities that predict results, e.g. visits per day; Judge with lagging, coach with leading | Leading indicators give you time to act
+SLIDE Weighted score | Achievement = actual ÷ target × 100; Lower-is-better KPIs: target ÷ actual; Multiply by weight and add up | 50% weight × 90% = 45 points
+SLIDE Common mistakes | Too many KPIs; Only lagging measures; Targets the person cannot influence | 3–6 KPIs per role, agreed at the start
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between key result areas, KPIs and targets;
+- write a KPI that is SMART and has a clear written definition;
+- choose a balance of leading and lagging indicators for a role;
+- calculate a weighted KPI score for a team member.
+
+## Key terms
+
+::: terms
+Key result area (KRA): a main part of a job where results are expected, such as sales growth or stock accuracy
+KPI (key performance indicator): a number that shows how well a person or team performs in a key result area
+Target: the level of a KPI that counts as good performance for a given period
+Lagging indicator: a measure of a result that has already happened, such as monthly sales
+Leading indicator: a measure of an activity or condition that predicts a future result, such as customer visits per day
+:::
+
+## 1. From job description to role expectations
+
+A job description lists duties ("visits customers", "receives goods"). It does not say how well, how much or by when. Fair performance management needs role expectations that answer three questions: which results matter, how they will be measured, and which behaviours are expected while getting them.
+
+A simple structure is to break each role into 3–5 key result areas (KRAs) and give each KRA one or two KPIs with a target. For a sales representative the KRAs might be sales value, outlet coverage, collections and data quality.
+
+Write the expectations down and share them at the start of the period, not at the review. People can only be judged fairly against standards they knew about in advance.
+
+## 2. Writing SMART KPIs
+
+The SMART criteria come from George T. Doran, who published them in Management Review in 1981. His original letters stood for Specific, Measurable, Assignable, Realistic and Time-related. Today most people use Specific, Measurable, Achievable, Relevant and Time-bound. The idea is the same: a goal must be clear enough that two people would agree whether it was met.
+
+::: slides
+SLIDE Step 1: Specific | Name the exact result; "Grow sales" becomes "grow rice sales in Cazenga outlets" | One result per KPI
+SLIDE Step 2: Measurable | Give a formula and a data source; Decide who produces the number | If you cannot count it, you cannot judge it
+SLIDE Step 3: Achievable | Base the target on past results and market conditions; Stretch, but not impossible | Impossible targets kill effort
+SLIDE Step 4: Relevant | Link the KPI to the team's goals; The person must be able to influence it | Do not measure what they cannot control
+SLIDE Step 5: Time-bound | Set the period: week, month or quarter; Set the review date | No date, no target
+:::
+
+A good KPI also has a written definition card: name, formula, data source, frequency, target and owner. For example: "Order accuracy = orders shipped without error ÷ total orders shipped × 100, from the warehouse system, reported weekly, target 99%, owner: dispatch team leader." It stops arguments about how the number was calculated.
+
+::: quiz
+? Which of these is a SMART KPI for a merchandiser?
+- Improve shelf presentation in key stores || This is not measurable and has no time frame.
+* Reach 95% planogram compliance in 20 assigned Talatona outlets, checked weekly, by 31 March || Correct. It is specific, measurable, relevant and time-bound, and it can be checked from store audits.
+- Visit as many stores as possible every month || "As many as possible" cannot be measured against a target.
+:::
+
+## 3. Leading and lagging indicators
+
+A lagging indicator measures a result: monthly sales, gross margin, customer complaints, lost-time injuries. By the time you see it, it is too late to change it. A leading indicator measures an activity or condition that drives the result: customer visits per day, strike rate (orders per visit), quotations sent, cycle counts completed, near misses reported. It gives the manager time to act.
+
+A balanced set for each role mixes both. Use lagging indicators to judge results at the review. Use leading indicators to coach during the period. If a sales representative's monthly sales are low, the leading indicators show why: too few visits, a low strike rate, or a small average order.
+
+::: diagram steps | From role to scorecard
+Key result areas: list the 3–5 areas where the role must deliver
+KPIs: choose one or two measures per area, mixing leading and lagging
+Definitions: write formula, source, frequency and owner
+Targets and weights: set the level for the period and the weight of each KPI
+Agree: share the scorecard with the person at the start of the period
+:::
+
+::: quiz
+? A warehouse manager wants an early warning that stock accuracy will fall. Which indicator should she track weekly?
+- Stock write-offs at year end || This is a lagging indicator and arrives too late.
+- The annual stock-take result || This is also a lagging result.
+* Percentage of planned cycle counts completed || Correct. Cycle counting is an activity that predicts stock accuracy, so it is a leading indicator.
+:::
+
+## 4. Weights and a weighted score
+
+Not all KPIs are equally important. Give each one a weight so that the weights add up to 100%. For each KPI, calculate achievement = actual ÷ target × 100. For KPIs where lower is better, such as overdue debt or error rate, use target ÷ actual × 100 instead. Many companies also cap achievement (for example at 120%) so that one strong KPI cannot hide failure in another. Finally, multiply each achievement by its weight and add up the points.
+
+## Worked example: a sales scorecard in Luanda
+
+A food distributor in Luanda sets this quarterly scorecard for Domingos, a sales representative:
+
+- Sales value: weight 50%, target 40 million Kz, actual 36 million Kz → 90% achievement → 45 points.
+- Active outlets (ordering at least once a month): weight 30%, target 120, actual 132 → 110% → 33 points.
+- Receivables overdue by more than 30 days: weight 20%, target maximum 4 million Kz, actual 5 million Kz → 4 ÷ 5 = 80% → 16 points.
+
+Total: 45 + 33 + 16 = 94%. The leading indicators explain the picture: Domingos made more visits than planned, but his strike rate fell in the last month after a competitor cut prices on rice. His manager now has facts, not just an opinion.
+
+::: case | A vague target for the Viana dispatch team
+The dispatch team at a warehouse in Viana is told to "improve service". Errors are rising, and the team leader, Rosa, is blamed at the monthly meeting. She says nobody ever told her what good service means or how it is measured.
+? What should the operations manager do first?
+- Give Rosa a written warning for poor results || She was never given a clear standard, so a warning is unfair and will not fix the problem.
+* Agree with Rosa two or three defined KPIs, such as order accuracy and on-time dispatch, with targets and a data source || Correct. Clear, agreed expectations come first. Then performance can be measured and coached.
+- Ask Rosa to work longer hours until complaints stop || More hours do not fix an unclear goal and may increase errors.
+:::
+
+## Tool: KPI definition card
+
+- Key result area:
+- KPI name:
+- Formula:
+- Data source and who produces it:
+- Leading or lagging:
+- Frequency of measurement:
+- Target and period:
+- Weight in the scorecard:
+- Can the person influence it? How?
+
+## Common mistakes
+
+- Too many KPIs. With ten or more, nothing feels important. Keep 3–6 per role.
+- Measuring only lagging results, so problems appear when it is too late to coach.
+- Targets the person cannot influence, such as company profit for a forklift driver.
+
+## Self-check
+
+- What do the letters in SMART stand for in the modern version? (Answer: Specific, Measurable, Achievable, Relevant, Time-bound.)
+- Is "customer visits per day" a leading or a lagging indicator? (Answer: leading, because it drives future sales.)
+- A KPI has a 30% weight and 80% achievement. How many points does it add? (Answer: 24 points.)
+
+## Practical assignment
+
+Choose one role in your team. List its key result areas, then complete a KPI definition card for three KPIs, including at least one leading indicator. Agree the cards with the person this week.
+
+## Summary
+
+- Fair performance management starts with written role expectations: KRAs, KPIs, targets and behaviours, shared at the start of the period.
+- Make each KPI SMART and give it a definition card so the number cannot be disputed.
+- Judge results with lagging indicators, coach with leading ones, and combine KPIs with weights.
+=== 20
+SLIDE What you will learn | Explain how MBO and OKRs link individual goals to company goals; Write objectives and outcome-based key results; Score key results on a 0.0–1.0 scale; Separate committed and aspirational OKRs | Every goal should have a line of sight to the company
+SLIDE Management by objectives | Peter Drucker, The Practice of Management (1954); Manager and employee agree objectives together; Results are reviewed against them | The root of modern goal setting
+SLIDE OKRs | Developed by Andy Grove at Intel; Brought to Google by John Doerr in 1999; Objective = what, key results = how we know | 3–5 objectives, 3–5 key results each
+SLIDE Outcomes, not tasks | Task: run a promotion in Lobito; Outcome: raise active outlets in Lobito from 80 to 110; Tasks become initiatives under the key result | If it is a to-do, it is not a key result
+SLIDE Cascade and align | Company sets a few objectives; Departments choose how they contribute; Teams and people propose their own key results | Mix top-down direction with bottom-up ideas
+SLIDE Scoring | Score = (actual − start) ÷ (target − start); Committed OKRs: expect 1.0; Aspirational OKRs: about 0.6–0.7 is a good result | Score honestly, learn, reset
+SLIDE Common mistakes | Too many OKRs; Key results that are tasks; Linking OKR scores directly to pay; Setting and forgetting | Review OKRs every week or two
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain how management by objectives (MBO) and OKRs link individual goals to company goals;
+- write an objective with outcome-based key results;
+- score key results on a 0.0–1.0 scale;
+- choose between committed and aspirational OKRs and decide how they connect to performance reviews.
+
+## Key terms
+
+::: terms
+Goal cascade: the process of turning company goals into department, team and individual goals
+Line of sight: an employee's ability to see how their own work contributes to company results
+Objective: a short, qualitative statement of what you want to achieve
+Key result: a measurable outcome that shows whether the objective has been achieved
+Initiative: a task or project you carry out to move a key result
+:::
+
+## 1. Management by objectives
+
+The idea that people should work towards agreed objectives is not new. Peter Drucker described management by objectives (MBO) in his 1954 book The Practice of Management. In MBO, a manager and an employee agree objectives together, the employee has freedom to decide how to achieve them, and results are reviewed against those objectives.
+
+In many companies MBO became a once-a-year form, forgotten until the review, and goals were private, so nobody could see how they connected.
+
+## 2. OKRs: objectives and key results
+
+OKRs were developed by Andy Grove at Intel in the 1970s as a more frequent and transparent version of MBO. John Doerr, who had worked at Intel, introduced them to Google in 1999 and later described the method in his book Measure What Matters (2018).
+
+An OKR has two parts. The objective says what you want to achieve. It is qualitative and should motivate people: "Become the first-choice supplier for small shops in Benguela." The key results say how you will know you got there. They are measurable outcomes, not tasks: "Increase active outlets in Benguela from 300 to 380." Doerr recommends a small number: about 3–5 objectives, each with 3–5 key results.
+
+::: slides
+SLIDE Step 1: Start from the company | Read the company objectives for the period; Ask which one your team can move most | Contribution, not copying
+SLIDE Step 2: Write the objective | Short and qualitative; It should be clear why it matters | What do we want to achieve?
+SLIDE Step 3: Add key results | Measurable outcomes with a start value and a target; 3–5 per objective | How will we know?
+SLIDE Step 4: List initiatives | Tasks and projects that will move each key result; Keep them separate from the key results | Initiatives are the plan, not the score
+SLIDE Step 5: Review often | Check progress every week or two; Score at the end of the period | OKRs are a habit, not a form
+:::
+
+The most common error is writing tasks as key results. "Run a radio promotion in Lobito" is an initiative. The key result is the outcome the promotion should create, such as "raise average weekly orders in Lobito from 150 to 200".
+
+::: quiz
+? Which of these is a well-written key result for a warehouse team?
+- Organise a training session on picking || This is an initiative, a task you do, not an outcome.
+* Reduce picking errors from 3% to 1% of order lines by 30 June || Correct. It is a measurable outcome with a start value, a target and a date.
+- Work hard to make customers happier || This is neither measurable nor an outcome.
+:::
+
+## 3. Cascading and aligning goals
+
+A pure top-down cascade, where each level copies and splits the goals of the level above, is slow and often produces goals that people do not believe in. Doerr's approach mixes top-down and bottom-up: leaders set a few company objectives, and teams and individuals propose how they will contribute. The manager's job is to check alignment: does each team goal clearly support a company objective, and are any important objectives left without an owner?
+
+::: diagram pyramid | The goal cascade
+Company: 3–5 objectives for the year or quarter
+Department: how sales, operations or finance will contribute
+Team: key results the team can directly move
+Individual: personal goals and KPIs that support the team
+:::
+
+Line of sight matters for motivation and for fairness. When a forklift driver in a Viana warehouse can see that loading accuracy supports the company objective of reliable delivery, the KPI makes sense to him.
+
+## 4. Scoring and the link to reviews
+
+Score each key result from 0.0 to 1.0. When the key result moves from a start value to a target, use: score = (actual − start) ÷ (target − start). If active outlets should grow from 300 to 380 and the team reaches 356, the score is (356 − 300) ÷ (380 − 300) = 56 ÷ 80 = 0.7.
+
+Google's published guidance separates two types. Committed OKRs are promises that must be met, so the expected score is 1.0. Aspirational OKRs are deliberate stretch goals, and a score of about 0.6–0.7 is treated as a good result. Doerr also argues that OKR scores should not be linked directly to pay or ratings, because people then set safe targets. A practical approach is to use KPIs and committed goals for the formal rating, and to use aspirational OKRs for focus, learning and stretch.
+
+::: quiz
+? A key result aims to raise weekly orders from 150 to 200. The team reaches 180. What is the score?
+- 0.9 || This divides 180 by 200 and ignores the start value.
+- 0.3 || This uses the wrong part of the range.
+* 0.6 || Correct. (180 − 150) ÷ (200 − 150) = 30 ÷ 50 = 0.6.
+:::
+
+## Worked example: a branch in Benguela
+
+A distributor's company objective for the year is "Grow our share of small retail outlets". The Benguela branch manager, Helena, meets her team. Together they write the objective "Become the first-choice supplier for small shops in Benguela" with three key results: active outlets from 300 to 380, average order value from 85,000 Kz to 100,000 Kz, and on-time delivery from 88% to 95%. The sales team owns the first two, the dispatch team the third. Initiatives include a route redesign and a small-pack offer. Each representative's personal KPIs (Lesson 1) now include outlets and order value, so everyone has a clear line of sight. Helena reviews progress every two weeks.
+
+::: case | Too many goals in Lobito
+The operations manager at a port logistics company in Lobito receives 14 objectives from head office and passes all of them to each of his four supervisors. After two months, nothing has improved and the supervisors say they do not know what matters most.
+? What should the manager do?
+- Add a bonus to each of the 14 objectives || More pay does not solve a lack of focus, and it can lead to safe, easy targets.
+- Ask each supervisor to choose any goals they like || This loses alignment with the company.
+* Pick the 3–5 company objectives his unit can move most, and agree measurable key results and an owner for each || Correct. Fewer, aligned goals with clear owners create focus and line of sight.
+- Wait until the year-end review to see which goals were met || Waiting removes the chance to correct course.
+:::
+
+## Tool: OKR worksheet
+
+- Company objective supported:
+- Our objective (qualitative):
+- Key result 1 (start → target, date, owner):
+- Key result 2 (start → target, date, owner):
+- Key result 3 (start → target, date, owner):
+- Committed or aspirational:
+- Main initiatives:
+- Review dates:
+
+## Common mistakes
+
+- Setting too many objectives, so nothing has real priority.
+- Writing tasks instead of outcomes as key results.
+- Linking aspirational OKR scores directly to pay, which pushes people to set safe goals.
+- Setting OKRs and not reviewing them until the end of the period.
+
+## Self-check
+
+- Who developed OKRs and who brought them to Google? (Answer: Andy Grove at Intel developed them, and John Doerr brought them to Google.)
+- Is "hold a sales meeting every Monday" a key result or an initiative? (Answer: an initiative.)
+- What score is a good result for an aspirational OKR in Google's approach? (Answer: about 0.6–0.7.)
+
+## Practical assignment
+
+Take one company or department objective for this quarter. With your team, write one team objective with three outcome-based key results, each with a start value, target and owner. Agree a review date every two weeks.
+
+## Summary
+
+- MBO (Drucker) and OKRs (Grove, Doerr) both link individual work to company goals.
+- Objectives say what you want, key results measure outcomes, and initiatives are the tasks.
+- Score key results from 0.0 to 1.0, and keep aspirational OKRs separate from pay decisions.
+=== 20
+SLIDE What you will learn | Explain why year-end-only reviews fail; Give feedback with the SBI model; Keep a fair performance log; Run a short regular one-to-one | No surprises at the review
+SLIDE Why continuous feedback | Memory favours recent events; Problems grow when nobody speaks; People need to know how they are doing now | Feedback is most useful close to the event
+SLIDE The SBI model | Situation: when and where; Behaviour: what you saw or heard; Impact: the effect on results or people | Developed by the Center for Creative Leadership
+SLIDE Feedforward | Marshall Goldsmith's idea; Ask for suggestions about the future, not judgements about the past; Useful after SBI to agree the next step | Look forward, not only back
+SLIDE Performance log | Write short notes close to the event; Facts, date, behaviour, impact, what was agreed; Record good work as well as problems | Based on the critical incident technique (Flanagan, 1954)
+SLIDE One-to-ones | 15–30 minutes, every week or two; Employee's agenda first; KPIs, obstacles, feedback, next steps | A small habit that prevents big problems
+SLIDE Common mistakes | Saving feedback for the review; Judging character instead of behaviour; Logging only negatives; Feedback in public | Specific, timely, private, balanced
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain why a performance review based on memory alone is unfair;
+- give clear feedback using the Situation–Behaviour–Impact (SBI) model;
+- keep a factual performance log that supports a fair review;
+- run a short regular one-to-one meeting.
+
+## Key terms
+
+::: terms
+Continuous feedback: regular comments on performance during the period, not only at the review
+SBI model: a feedback structure of Situation, Behaviour and Impact
+Performance log: a manager's short, dated record of important examples of a person's work
+Critical incident: a specific example of behaviour that was clearly effective or ineffective
+One-to-one: a short, regular private meeting between a manager and one team member
+:::
+
+## 1. Why year-end feedback is not enough
+
+If a manager speaks about performance only once a year, three things go wrong. First, memory is unreliable: managers remember the last few weeks much better than the first months (recency bias, covered in Lesson 4). Second, problems grow, because the person did not know there was a problem. Third, good work goes unrecognised, which reduces motivation.
+
+The aim is simple: there should be no surprises at the review. Everything discussed at the formal review should already have been discussed during the year, close to the time it happened.
+
+## 2. The SBI feedback model
+
+The Situation–Behaviour–Impact model was developed by the Center for Creative Leadership. It keeps feedback factual and specific, so it is easier to accept and harder to argue with. It works for praise and for correction.
+
+::: slides
+SLIDE Step 1: Situation | Say when and where; "At Tuesday's delivery to the Kilamba supermarket…" | Anchor the feedback in a real moment
+SLIDE Step 2: Behaviour | Describe what you saw or heard; No labels like "lazy" or "careless" | Describe it as a camera would
+SLIDE Step 3: Impact | Explain the effect on the customer, team or results; Use facts and numbers where possible | Show why it matters
+SLIDE Step 4: Ask and agree | Ask for their view and listen; Agree the next step together | Feedback is a conversation
+:::
+
+Compare two versions. Weak: "You are careless with deliveries." SBI: "At Tuesday's delivery to the Kilamba supermarket (situation), three cartons of cooking oil were left off the truck (behaviour). The store ran out over the weekend and the buyer called me to complain (impact). What happened?" The second version describes behaviour, not character, and opens a discussion.
+
+After SBI, you can use feedforward, an idea from executive coach Marshall Goldsmith: instead of discussing the past at length, ask for or offer suggestions for the future: "What could we do so that this does not happen on the next delivery?"
+
+::: quiz
+? Which sentence describes behaviour, as SBI requires?
+- You have a bad attitude in meetings || "Bad attitude" is a label, not an observable behaviour.
+* In this morning's meeting you interrupted Ana three times while she presented the stock report || Correct. It describes what was seen, in a specific situation.
+- You never respect your colleagues || "Never" and "respect" are generalisations, not observations.
+:::
+
+## 3. Keeping a fair performance log
+
+A performance log is a short record the manager keeps during the period. It is based on the critical incident technique described by John Flanagan in 1954: collecting specific examples of behaviour that were clearly effective or ineffective. A good log makes the review fair, because it covers the whole period and is based on facts.
+
+Rules for each entry:
+
+- Write it on the same day or soon after.
+- Record the date, the situation, the behaviour and the impact.
+- Write facts, not opinions or guesses about motives.
+- Record good work as well as problems.
+- Note whether you gave feedback and what was agreed.
+- Store it securely and keep it confidential.
+
+Example entry: "12 March. Quarterly stock count, Viana. Joaquim reorganised the count sheets by location, finished two hours early, variance below 0.5%. Thanked him at the team meeting."
+
+::: quiz
+? Which log entry follows the rules?
+- 5 May: Paulo seems unmotivated lately || This is an opinion about motive, not a fact.
+- Paulo is the worst driver on the team || This is a judgement with no date, situation or behaviour.
+* 5 May, Cacuaco route: Paulo arrived 90 minutes late with no call, two shops closed before delivery. Discussed with him, he will call dispatch if delayed. || Correct. It records date, situation, behaviour, impact and the agreed action.
+:::
+
+## 4. The one-to-one meeting
+
+Continuous feedback needs a regular slot. A one-to-one of 15–30 minutes every week or two is enough for most teams. Let the employee's topics come first. Then review the leading KPIs from Lesson 1, discuss obstacles, give feedback (SBI) and agree next steps. Write two or three lines in your log afterwards.
+
+::: diagram cycle | The continuous feedback cycle
+Observe: watch the work and the KPIs
+Record: write a short, factual log entry
+Give feedback: use SBI soon after the event
+Agree: decide the next step together
+Follow up: check progress at the next one-to-one
+:::
+
+## Worked example: a sales team in Luanda
+
+Carla manages six sales representatives for a beverage distributor in Luanda. In the past she reviewed people once a year, and the reviews often ended in arguments. This year she holds 20-minute one-to-ones every two weeks and keeps a log for each person.
+
+In March, she notices that Nelson's orders are entered late, which delays deliveries. She uses SBI: "On Monday and Tuesday this week (situation), your orders reached the system after 16:00 (behaviour). The trucks had already left, so eight shops waited an extra day (impact). What is making it difficult?" Nelson explains that his tablet often loses signal in Cazenga. They agree he will enter orders at midday from the branch. Carla logs the conversation, and logs in May that his orders are now on time. At the year-end review, Nelson already knows everything that is discussed.
+
+::: case | Silence at the Cacuaco warehouse
+A warehouse supervisor in Cacuaco has noticed for three months that Mário leaves the loading bay untidy at the end of shifts. He has said nothing, but plans to give Mário a low rating at the annual review next month.
+? What should the supervisor do?
+- Give the low rating as planned, since the problem is real || Rating someone on a problem never raised is unfair and will damage trust.
+* Raise it now with SBI, agree a clear standard, log it, and follow up in the next weeks || Correct. Mário gets a fair chance to improve, and the review will contain no surprises.
+- Mention it in front of the team so everyone learns || Corrective feedback should be given in private.
+- Tidy the bay himself to avoid conflict || This hides the problem and does not help Mário improve.
+:::
+
+## Tool: performance log entry
+
+- Date:
+- Situation (where, what task):
+- Behaviour observed:
+- Impact (on customer, team, results):
+- Positive or needs improvement:
+- Feedback given? (date):
+- Next step agreed:
+
+## Common mistakes
+
+- Saving feedback for the annual review.
+- Describing character ("lazy") instead of behaviour.
+- Logging only problems, so the record is not balanced.
+- Giving corrective feedback in front of colleagues.
+
+## Self-check
+
+- What do the letters SBI stand for? (Answer: Situation, Behaviour, Impact.)
+- Why should a log record good work as well as problems? (Answer: so the record and the review are balanced and fair.)
+- How long and how often should a one-to-one usually be? (Answer: about 15–30 minutes every week or two.)
+
+## Practical assignment
+
+Start a performance log for each person in your team this week. Give one piece of positive feedback and, if needed, one piece of corrective feedback using SBI, and record both.
+
+## Summary
+
+- Feedback during the year prevents surprises and makes the review fair.
+- SBI describes the situation, the behaviour and its impact, then opens a conversation.
+- A balanced, factual log and regular one-to-ones give you the evidence you need.
+=== 20
+SLIDE What you will learn | Use a rating scale with clear anchors; Combine results and behaviours into one rating; Recognise common rater biases; Run a calibration session | Fair ratings need clear criteria and evidence
+SLIDE Rating scales | Usually 4 or 5 levels; Each level needs a written description; BARS: Smith and Kendall (1963) | Anchors, not adjectives
+SLIDE What and how | Results: KPIs and goals; Behaviours: how the results were achieved; Weight them, e.g. 70% results, 30% behaviours | Both count
+SLIDE Rater biases | Halo and horns; Recency; Central tendency, leniency and severity; Similar-to-me; Contrast | Bias is normal, so build checks
+SLIDE Calibration | Managers meet to compare proposed ratings; Each rating must be backed by evidence; Changes and reasons are recorded | One standard across teams
+SLIDE Running the session | Send ratings and evidence in advance; Discuss outliers and borderline cases; Check patterns across groups | A neutral facilitator helps
+SLIDE Common mistakes | Rating the person, not the performance; Everyone gets a 3; Forcing a curve without thought; No record of changes | Evidence first, number second
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- use a rating scale with clear behavioural anchors;
+- calculate an overall rating that combines results and behaviours;
+- recognise and reduce the most common rater biases;
+- run a calibration session that applies one standard across teams.
+
+## Key terms
+
+::: terms
+Rating scale: a set of levels, usually 4 or 5, used to summarise performance
+Behavioural anchor: a written example of behaviour that describes one level of the scale
+Rater bias: a systematic error in how a manager judges performance
+Calibration: a meeting where managers compare proposed ratings and agree one standard
+Distribution: how ratings are spread across the levels of the scale
+:::
+
+## 1. Rating scales with clear anchors
+
+A rating is only fair if two managers would give the same rating for the same performance. Words like "good" or "excellent" mean different things to different people. The answer is to describe each level. Behaviourally anchored rating scales (BARS) were introduced by Patricia Smith and Lorne Kendall in 1963: each level of the scale is linked to examples of real behaviour.
+
+Example for "Customer service" for a sales representative:
+
+- 5: Anticipates customer needs, solves problems before they arise, customers ask for them by name.
+- 4: Answers every customer within the agreed time and solves most problems alone.
+- 3: Answers customers within the agreed time and escalates problems correctly.
+- 2: Sometimes misses agreed response times, needs reminders.
+- 1: Often misses response times, customers complain.
+
+## 2. Combining results and behaviours
+
+Most systems rate two things: what was achieved (results against KPIs and goals) and how it was achieved (behaviours such as teamwork, safety and integrity). Rating both stops managers from rewarding results achieved in harmful ways.
+
+A simple method is to weight them. If results count 70% and behaviours 30%, and a person scores 4.0 on results and 3.0 on behaviours, the overall score is 4.0 × 0.7 + 3.0 × 0.3 = 2.8 + 0.9 = 3.7. Your company then decides how scores are rounded to a final level, for example 3.5 and above rounds up to 4.
+
+::: diagram matrix | Results and behaviours | Results (low → high) | Behaviours (low → high)
+Develop: good behaviours, results not yet there – coach on skills and priorities
+Role model: strong results and behaviours – recognise and stretch
+Act now: low results and poor behaviours – set a clear plan
+Risky performer: strong results, poor behaviours – address the how, results do not excuse it
+:::
+
+::: quiz
+? Results weigh 60% and behaviours 40%. A supervisor scores 3.0 on results and 4.5 on behaviours. What is the overall score?
+- 3.75 || This is a simple average and ignores the weights.
+* 3.6 || Correct. 3.0 × 0.6 + 4.5 × 0.4 = 1.8 + 1.8 = 3.6.
+- 4.2 || This gives too much weight to behaviours.
+:::
+
+## 3. Common rater biases
+
+Every manager is affected by bias. Knowing the names helps you to spot them.
+
+::: slides
+SLIDE Halo and horns | Halo: one strong point makes everything look good; Horns: one weak point makes everything look bad; Edward Thorndike described the halo effect in 1920 | Rate each criterion separately
+SLIDE Recency | Recent events weigh more than earlier ones; A good December hides a weak year | Use your performance log
+SLIDE Central tendency, leniency, severity | Central tendency: everyone gets the middle score; Leniency: everyone is rated high; Severity: everyone is rated low | Compare your spread with others
+SLIDE Similar-to-me | Higher ratings for people like the rater; Same background, language, school or style | Ask: would I rate a different person the same?
+SLIDE Contrast | Judging a person against the colleague before them; Not against the standard | Rate against the anchors
+:::
+
+The best protection is evidence. A manager who rates from a performance log (Lesson 3) and KPI data (Lesson 1) is much less affected by recency and halo than one who rates from memory.
+
+::: quiz
+? A manager rates a warehouse clerk 5 on every criterion because she is excellent with the computer system, although her safety record is poor. Which bias is this?
+- Recency || Recency is about recent events, not one strong point.
+- Central tendency || Central tendency means rating everyone in the middle.
+* Halo effect || Correct. One strong point is making every criterion look good.
+:::
+
+## 4. Calibration
+
+Different managers have different standards. In calibration, managers who rate similar roles meet, usually with an HR facilitator, to compare proposed ratings before they are final. Steps:
+
+- Before: each manager sends proposed ratings with short evidence.
+- Agree the standard: re-read the level descriptions.
+- Discuss outliers first: the highest and lowest ratings, and borderline cases.
+- Challenge with questions: "What evidence supports a 5?" "Would you give the same rating to someone in my team who did this?"
+- Check patterns: is one team much higher? Do ratings differ between groups, such as men and women, or head office and provinces?
+- Record changes and reasons, so the manager can explain the final rating.
+
+Some companies force a fixed distribution. General Electric under Jack Welch was known for a 20-70-10 split. Forced curves stop leniency, but can be unfair in small or very strong teams. Most organisations use a guideline distribution as a check, not a rule.
+
+## Worked example: calibration at a distributor in Luanda
+
+Three sales managers at a consumer goods distributor in Luanda meet to calibrate 24 representatives. Manager A has rated 7 of her 8 people as 4 or 5. Manager B has rated all of his 8 people as 3. In the discussion, Manager A shows KPI scorecards: only three of her people reached 100% of target. Two ratings are lowered to 3. Manager B admits he rated everyone 3 "to avoid arguments", though his log shows one representative grew active outlets by 25% with excellent customer feedback. That rating is raised to 4. The facilitator records each change and the reason.
+
+::: case | A favourite in Huambo
+At a calibration meeting for a logistics company, a branch manager from Huambo proposes a 5 for a driver who, he says, "is like a son to me, always loyal". When asked for evidence, he cannot name specific results. The driver's on-time delivery KPI is 86% against a 95% target.
+? What should the facilitator do?
+- Accept the 5 because the manager knows his team best || Without evidence the rating may reflect similar-to-me bias, not performance.
+* Ask for evidence against the level descriptions, compare it with the KPI data, and agree a rating the evidence supports || Correct. Calibration applies one standard, and evidence decides the rating.
+- Lower the rating to 1 to send a message || Punishing the manager is also unfair to the driver.
+:::
+
+## Tool: calibration checklist
+
+- Level descriptions shared with all managers:
+- Proposed ratings and evidence sent in advance:
+- Outliers and borderline cases listed:
+- Distribution per manager compared:
+- Patterns checked across groups:
+- Changes and reasons recorded:
+- Feedback to managers on how to explain final ratings:
+
+## Common mistakes
+
+- Rating the person's personality instead of their performance.
+- Giving everyone the middle score to avoid difficult conversations.
+- Applying a forced curve to a small team without judgement.
+- Changing ratings in calibration without recording why.
+
+## Self-check
+
+- Who introduced behaviourally anchored rating scales? (Answer: Patricia Smith and Lorne Kendall, in 1963.)
+- What is the difference between leniency and central tendency? (Answer: leniency rates everyone high, central tendency rates everyone in the middle.)
+- What is the main purpose of calibration? (Answer: to apply one standard across managers, based on evidence.)
+
+## Practical assignment
+
+Before your next rating round, write behavioural anchors for one important criterion in your team. Then review your last ratings: check your spread and look for signs of halo, recency or similar-to-me bias.
+
+## Summary
+
+- Use a rating scale with written behavioural anchors, and rate both results and behaviours.
+- Name and check the common biases: halo, horns, recency, central tendency, leniency, severity, similar-to-me and contrast.
+- Calibrate ratings with evidence so that one standard applies across teams.
+=== 20
+SLIDE What you will learn | Prepare a review with evidence and self-assessment; Run the review in clear stages; Coach with the GROW model; Write a development plan with the 70-20-10 model | A review is a conversation, not a verdict
+SLIDE Preparation | Scorecard and KPI data; Performance log; Employee self-assessment; Draft goals for next period | Prepare as much as for a client meeting
+SLIDE Meeting stages | Open and agree purpose; Employee view first; Manager view with evidence; Agree gaps, goals and development; Close and document | Listen at least as much as you talk
+SLIDE Handling disagreement | Separate facts from interpretation; Look at the evidence together; Allow the employee to add written comments | Disagreement is not disrespect
+SLIDE GROW model | Goal, Reality, Options, Will; Developed by John Whitmore and colleagues; Use questions, not instructions | Let the person find the answer
+SLIDE 70-20-10 | 70% from challenging work; 20% from other people; 10% from courses and reading; McCall, Lombardo and Eichinger, Center for Creative Leadership | A guideline, not an exact formula
+SLIDE Common mistakes | Talking more than listening; Surprises in the review; Development plans that only list courses; No follow-up | Agree, write, follow up
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- prepare a performance review using evidence and an employee self-assessment;
+- run a review conversation in clear stages;
+- use the GROW model to coach during the review;
+- write an individual development plan using the 70-20-10 model.
+
+## Key terms
+
+::: terms
+Self-assessment: the employee's own written view of their performance before the review
+Review conversation: the formal meeting where manager and employee discuss performance for the period
+GROW model: a coaching structure of Goal, Reality, Options and Will
+Individual development plan (IDP): a written plan of the skills a person will develop and how
+70-20-10 model: a guideline that most learning comes from experience, some from other people and a little from formal training
+:::
+
+## 1. Preparing the review
+
+A good review is mostly decided before the meeting. Prepare four things:
+
+- The scorecard with KPI results (Lesson 1) and goal or OKR scores (Lesson 2).
+- Your performance log (Lesson 3), with examples of good work and problems.
+- The employee's self-assessment. Send a short form a week before: main achievements, what was difficult, what support they need, and what they want to learn.
+- A draft of next period's goals.
+
+Book a private room and at least 45–60 minutes. Do not hold the review in an open office or between two other meetings.
+
+## 2. Running the conversation
+
+::: diagram steps | The review conversation
+Open: explain the purpose and agenda, put the person at ease
+Employee first: ask for their view of the period
+Manager's view: share your assessment with evidence, good work first
+Agree: discuss differences, agree the rating, goals and support
+Develop: build the development plan together
+Close: summarise, agree next steps and document
+:::
+
+Asking for the employee's view first shows respect, and often the person names the same issues you planned to raise. When you give your view, use SBI (Lesson 3) and refer to data. Talk about behaviour and results, not personality.
+
+When the employee disagrees, separate facts from interpretation. If the disagreement is about facts ("I did not miss that delivery"), check the records together. If it is about interpretation, explain your standard and listen to theirs. If you still disagree, record both views; many companies allow the employee to add written comments to the review form.
+
+Many managers find it useful to separate the pay discussion from the development discussion, for example by holding them on different days, so the person can focus on learning rather than only on the number.
+
+::: quiz
+? A review starts. What should the manager do first after explaining the purpose?
+- Announce the final rating so there is no suspense || Starting with the rating often shuts down discussion.
+* Ask the employee for their own view of the period || Correct. Hearing their view first builds trust and often brings out the main issues.
+- Read out the list of problems from the log || Starting with problems makes people defensive.
+:::
+
+## 3. Coaching with GROW
+
+The GROW model was developed in the 1980s by John Whitmore and colleagues, and Whitmore described it in his book Coaching for Performance. It helps the person find their own answers through questions.
+
+::: slides
+SLIDE G: Goal | "What would you like to achieve in the next six months?" | Start with what they want
+SLIDE R: Reality | "Where are you now? What has worked so far?" | Facts, not judgement
+SLIDE O: Options | "What could you do? What else?" | Collect several options before choosing
+SLIDE W: Will | "What will you do, and by when? What support do you need?" | End with a commitment
+:::
+
+## 4. The development plan and 70-20-10
+
+The 70-20-10 model comes from research by Morgan McCall, Michael Lombardo and Robert Eichinger at the Center for Creative Leadership. It suggests that about 70% of development comes from challenging work experience, 20% from other people (coaching, mentoring, feedback) and 10% from formal training. Treat it as a guideline, not an exact rule. Its main message for managers: a development plan that only lists courses is weak.
+
+A good individual development plan has one or two development goals, linked to the role or the next role, and actions in all three categories, each with a date and a way to check progress.
+
+::: quiz
+? A supervisor wants to build her planning skills. Which action is in the "70" part of the model?
+- Attend a two-day planning course || This is formal training, the "10" part.
+- Meet a senior planner once a month for advice || This is learning from others, the "20" part.
+* Prepare the weekly shift plan for the warehouse for three months, with review by her manager || Correct. Learning from challenging work is the "70" part.
+:::
+
+## Worked example: a review at a warehouse in Viana
+
+Isabel manages a warehouse in Viana for a food importer. She reviews Pedro, a team leader. Pedro's self-assessment says he is proud of order accuracy (99.2% against 99%) but frustrated by overtime. Isabel's scorecard agrees on accuracy and shows on-time dispatch at 91% against 95%. Her log has two examples of late trucks after slow loading.
+
+Isabel asks Pedro first. He names the late trucks himself. Using GROW, he sets a goal to reach 95% on-time dispatch. Reality: loading starts when the full order is picked. Options: staged loading, an earlier picking cut-off, cross-training two pickers. Will: he will test staged loading from next Monday. His IDP includes leading the shift plan (70), monthly sessions with the transport manager (20) and a short planning course (10).
+
+::: case | A defensive reaction in Talatona
+During a review at an office in Talatona, an accounts assistant, Luísa, becomes upset when her manager mentions three late month-end reports. She says the delays were caused by other departments sending data late.
+? What should the manager do?
+- Insist that the reports were late and move on || This ignores a possible real cause and damages trust.
+* Listen, check the dates of the data received together, and agree what Luísa and the manager can each do next time || Correct. Separating facts from interpretation keeps the review fair and finds the real cause.
+- Remove the comment from the review to avoid conflict || The issue is real, and removing it does not solve it.
+- Postpone the review indefinitely || Delay leaves the issue unresolved.
+:::
+
+## Tool: review preparation checklist
+
+- Scorecard and KPI results ready:
+- Goal or OKR scores ready:
+- Performance log reviewed (positive and negative examples):
+- Self-assessment received:
+- Draft goals for next period:
+- Private room and 45–60 minutes booked:
+- Development ideas (70, 20, 10):
+- Follow-up date:
+
+## Common mistakes
+
+- Talking more than listening.
+- Raising problems for the first time in the review.
+- Writing development plans that only list training courses.
+- Filing the review form and never looking at it again.
+
+## Self-check
+
+- What do the letters GROW stand for? (Answer: Goal, Reality, Options, Will.)
+- In the 70-20-10 model, what does the "20" represent? (Answer: learning from other people, such as coaching and mentoring.)
+- Why ask for the employee's view first? (Answer: it shows respect, builds trust and often brings out the main issues.)
+
+## Practical assignment
+
+Prepare one review using the checklist above. Send a self-assessment form to the employee a week before, and draft a development plan with at least one action in each part of 70-20-10.
+
+## Summary
+
+- Prepare with data, your log and the employee's self-assessment.
+- Run the review in stages, ask for the employee's view first, and use GROW to coach.
+- Write a development plan that uses work experience, other people and training.
+=== 20
+SLIDE What you will learn | Diagnose the cause of a performance gap; Choose the right response for the cause; Write a fair performance improvement plan (PIP); Follow a fair process and involve HR | Fair to the person, fair to the team
+SLIDE Diagnose first | Mager and Pipe, Analyzing Performance Problems (1970); Do they know the standard?; Could they do it if they had to?; Are there obstacles or wrong consequences? | Most gaps are not about attitude
+SLIDE Three causes | Can't: a skill or knowledge gap → train; Blocked: tools, process or resources → fix the environment; Won't: motivation or conduct → clear expectations and consequences | The cure depends on the cause
+SLIDE Escalation steps | Informal conversation; Documented coaching; Performance improvement plan; Formal procedure, with HR | Each step is recorded
+SLIDE The PIP | The gap, with evidence; SMART targets; Support provided; Timeline and review dates; Possible outcomes | No PIP without real support
+SLIDE Fair process | Follow your internal rules and Angolan labour law; Involve HR before formal steps; Keep records of every meeting | Check legal steps with HR or a labour lawyer
+SLIDE Common mistakes | Starting a PIP without diagnosis; Vague targets; No support; Using a PIP only as paperwork for dismissal | The goal is improvement
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- diagnose the cause of a performance gap using Mager and Pipe's questions;
+- choose the right response for a skill gap, an obstacle or a motivation problem;
+- write a fair performance improvement plan (PIP) with SMART targets;
+- follow a fair, documented process and know when to involve HR.
+
+## Key terms
+
+::: terms
+Performance gap: the difference between the expected standard and the actual performance
+Performance improvement plan (PIP): a written plan with targets, support and a timeline to close a performance gap
+Skill deficiency: the person does not know how to do the task
+Obstacle: something in the work environment that prevents good performance, such as missing tools
+Due process: following fair, consistent and documented steps before any decision
+:::
+
+## 1. Diagnose before you act
+
+When performance falls short, many managers assume a motivation problem and move straight to warnings. Robert Mager and Peter Pipe, in their book Analyzing Performance Problems (1970), offered a better route: ask a series of questions before deciding what to do.
+
+- Is the gap important enough to act on?
+- Does the person know what is expected? (Lesson 1)
+- Have they received feedback? (Lesson 3)
+- Could they do it if they really had to? If not, it is a skill deficiency.
+- Are there obstacles: tools, time, information, unclear process?
+- Is good performance punished, or poor performance rewarded? For example, the fastest picker always gets the extra work.
+
+The answers point to three types of cause: the person can't (skill), is blocked (environment), or won't (motivation or conduct). The cure depends on the cause.
+
+::: diagram steps | Diagnosing a performance gap
+Describe the gap: expected standard vs actual, with data
+Check expectations: did they know the standard and get feedback?
+Check skills: could they do it if they had to?
+Check obstacles: tools, time, information, process
+Check consequences: is good work punished or poor work rewarded?
+Choose the response: train, remove obstacles, or set clear expectations and consequences
+:::
+
+::: quiz
+? A new picker makes many errors. When the supervisor watches, he cannot read the location codes on the new labels. What is the cause?
+- A motivation problem || He is trying. He simply cannot read the codes.
+* A skill deficiency || Correct. He does not know how to do the task, so training is the right response.
+- Poor performance is being rewarded || Nothing suggests that errors bring him any benefit.
+:::
+
+## 2. The escalation steps
+
+Respond in proportion. A fair sequence is:
+
+- Informal conversation: use SBI, agree a next step, log it.
+- Documented coaching: a planned meeting, written targets and a follow-up date.
+- Performance improvement plan: when the gap continues despite coaching.
+- Formal procedure: only if the PIP fails, and only with HR involvement.
+
+Conduct problems, such as theft, violence or serious safety breaches, are different. They follow your company's disciplinary procedure, not a PIP.
+
+## 3. Writing a fair PIP
+
+A PIP is a structured opportunity to improve, not a step on the way to dismissal. If a manager has already decided to dismiss, a PIP is dishonest.
+
+::: slides
+SLIDE Part 1: The gap | State the standard and the actual result; Use KPI data and log examples | Facts, not adjectives
+SLIDE Part 2: SMART targets | What must change, by how much, by when; Weekly targets help | "Error rate at or below 2% each week"
+SLIDE Part 3: Support | Training, coaching, tools or a buddy; What the manager will do | No PIP without real support
+SLIDE Part 4: Timeline and reviews | Often 30 to 90 days, depending on the role; Weekly review meetings with notes | Reviews are coaching, not checking
+SLIDE Part 5: Outcomes | What happens if targets are met; What happens if not, according to company procedure | Both signed and dated
+:::
+
+Track progress with simple numbers. If the target is an order error rate at or below 2% and the weekly results are 5%, 4%, 2.5% and 1.8%, the person reached the target in week 4. Review whether it holds for the remaining weeks.
+
+## 4. Fair process and the law
+
+Angola has its own labour legislation, and your company has internal rules on discipline. This course does not describe the legal steps. Before any formal step, involve HR and, if needed, a labour lawyer, so that the process follows current law and internal policy.
+
+Fairness checks: did the person know the standard, have they been told of the gap, did they receive support and enough time, and would you treat another employee in the same way?
+
+::: quiz
+? A manager wants to start a PIP for a sales representative. What must he check first?
+- That HR has a dismissal letter ready || This means the decision is already made, which makes the PIP dishonest.
+- That the targets are higher than the team average || Targets should be fair and based on the role standard.
+* That the representative knew the standard and has received feedback and support || Correct. A PIP is only fair after clear expectations and feedback.
+:::
+
+## Worked example: a sales representative in Lubango
+
+A distributor's branch in Lubango has a sales representative, Victor, whose collections are poor: overdue receivables of 6 million Kz against a target of 3 million Kz for three months. His manager, Fernanda, gave SBI feedback twice and logged it.
+
+She diagnoses with Mager and Pipe's questions. Victor knows the target. But he has never been trained to negotiate payment terms, and the credit team sends the overdue list only once a month. So there is a skill gap and an obstacle. Fernanda arranges for the credit team to send the list weekly and pairs Victor with a senior colleague for two weeks. The 60-day PIP sets targets: overdue receivables down to 4.5 million Kz by day 30 and 3 million Kz by day 60, with weekly reviews. HR reviews the document before both sign. By day 60 the balance is 2.8 million Kz.
+
+::: case | Late trucks in Lubango
+A transport supervisor in Lubango sees that one driver, Jorge, has been late on six of ten deliveries this month. His manager wants to start a PIP immediately. The supervisor has not yet spoken to Jorge.
+? What should happen first?
+- Start the PIP today with a 30-day deadline || Without diagnosis and feedback, the PIP may target the wrong cause and is not fair.
+* Give Jorge SBI feedback, ask about causes, and check route, vehicle and loading times || Correct. Diagnosis comes first, because the delays may be caused by obstacles, not by Jorge.
+- Move Jorge to another route without explanation || This avoids the problem and gives Jorge no chance to understand or improve.
+- Report Jorge to HR for a disciplinary hearing || Lateness without diagnosis or prior feedback does not justify a formal step.
+:::
+
+## Tool: PIP template
+
+- Employee, role, manager:
+- Performance gap (standard vs actual, with evidence):
+- Previous feedback given (dates):
+- Cause identified (skill, obstacle, motivation):
+- SMART targets and dates:
+- Support provided:
+- Review meeting dates:
+- Possible outcomes:
+- HR review (name, date):
+- Signatures and date:
+
+## Common mistakes
+
+- Starting a PIP without diagnosing the cause.
+- Writing vague targets such as "improve attitude".
+- Offering no real support, training or tools.
+- Using a PIP only as paperwork to justify a decision already made.
+
+## Self-check
+
+- Which book offered the questions used to diagnose performance problems? (Answer: Analyzing Performance Problems by Robert Mager and Peter Pipe.)
+- Name the five parts of a PIP from this lesson. (Answer: the gap, SMART targets, support, timeline and reviews, outcomes.)
+- Why is a theft case not handled with a PIP? (Answer: it is a conduct issue and follows the disciplinary procedure.)
+
+## Practical assignment
+
+Choose one current performance gap in your team. Use the diagnosis questions to find the cause, and write down the right response. If a PIP is needed, draft it with the template and review it with HR.
+
+## Summary
+
+- Diagnose the cause before acting: can't, blocked or won't.
+- Escalate in proportion, and write PIPs with clear targets, real support and regular reviews.
+- Keep records and involve HR before any formal step, so the process is fair and follows the law.

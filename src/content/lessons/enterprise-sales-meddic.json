@@ -1,0 +1,439 @@
+{
+ "slug": "enterprise-sales-meddic",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what makes an enterprise sale different from a transactional sale;\n- describe each element of MEDDIC and the two extra elements in MEDDPICC;\n- score an opportunity from 0 to 16 using customer evidence for each element;\n- decide whether to pursue, reset or walk away from an opportunity.\n\n## Key terms\n\n::: terms\nEnterprise sale: a large B2B sale with many stakeholders, a formal buying process and a long sales cycle\nQualification: testing whether an opportunity is real, winnable and worth your effort\nMEDDIC: a qualification framework covering Metrics, Economic buyer, Decision criteria, Decision process, Identify pain and Champion\nMEDDPICC: an extended version of MEDDIC that adds Paper process and Competition\nOpportunity: a specific potential deal with a defined customer, scope, value and expected close date\n:::\n\n## 1. Why enterprise deals are different\n\nSelling a pallet of goods to a cantina is a transactional sale: one buyer, a known price and a decision in minutes. Selling a three-year maintenance contract to an oil and gas service company in Luanda is an enterprise sale:\n\n- Many people take part: users, technical evaluators, finance, procurement, legal and a senior budget holder.\n- The cycle is long, often three to twelve months, with tenders, committees and contract review.\n- The deal is large, so the personal risk for the people deciding is high, and many prefer to delay.\n- Losing late is expensive after months of presales work.\n\nThe biggest risk is not losing a deal. It is spending six months on a deal that was never going to close. Qualification finds this out early, while you can still act.\n\n## 2. The MEDDIC framework\n\nMEDDIC is a qualification framework widely used in enterprise B2B sales. Each letter is a question you must answer with evidence from the customer, not with your own assumptions.\n\n::: diagram steps | The six MEDDIC elements\nMetrics: the measurable gain the customer expects, expressed in numbers\nEconomic buyer: the person with final authority over the money for this purchase\nDecision criteria: the standards the buyer will use to compare the options\nDecision process: the steps, people and dates needed to reach a decision\nIdentify pain: the business problem that makes change necessary now\nChampion: an insider with influence who actively sells for you\n:::\n\nThe elements are not a sequence. You work on all of them in parallel and revisit them at every meeting. Some teams write the I as \"implicate the pain\", stressing the consequences of the problem.\n\nMEDDICC adds a second C for Competition. MEDDPICC adds P for Paper process, the contracting, legal and procurement steps needed to sign, and C for Competition, every alternative the customer is considering, including doing nothing. This course uses MEDDPICC, because banks, mining operators and government-linked buyers usually have formal contract steps that can delay a deal for weeks.\n\n::: quiz\n? The IT manager of a bank tells you: \"We will choose the supplier with the best uptime guarantee and a support team in Luanda.\" Which element has she given you?\n- Metrics || Metrics are measurable business gains, not selection standards.\n* Decision criteria || Correct. These are the standards the bank will use to compare suppliers.\n- Decision process || The process is the steps and dates, not what is judged.\n- Economic buyer || She told you what matters, not who controls the budget.\n:::\n\n## 3. Scoring a deal with evidence\n\nA score turns a feeling into something you can discuss. Score each of the eight MEDDPICC elements 0, 1 or 2.\n\n::: slides\nSLIDE Step 1: List the evidence | What the customer said, showed or sent; Who said it and when | No evidence means 0 or 1\nSLIDE Step 2: Score each letter | 0 = unknown; 1 = partly known or assumed; 2 = confirmed by the customer | Be strict, not hopeful\nSLIDE Step 3: Add the total | Maximum 8 × 2 = 16; Compare it with the deal stage | Late stage plus low score means risk\nSLIDE Step 4: Plan the gaps | Pick the two weakest letters; One action for each, with owner and date | Fix gaps before the next meeting\n:::\n\nExample: M1, E0, D2, D1, P0, I2, C1, C1 = 8 out of 16. Pain and criteria are clear, but nobody has met the budget owner and the contract steps are unknown. Those two letters are next week's work. Many teams also set a minimum score for each pipeline stage.\n\n## 4. Pursue, reset or walk away\n\nQualification has three possible results:\n\n- Pursue: real pain, a path to the economic buyer and a developing champion.\n- Reset: there is pain, but key letters are unknown. Agree a next step that tests them before writing a proposal.\n- Walk away: no real pain, no budget owner, or a tender written around a competitor that you cannot influence.\n\n::: quiz\n? After three meetings, a contact at a retail chain is enthusiastic but cannot name any business problem, and says the budget \"might come next year\". What is the best decision?\n- Send a full proposal to keep interest || A proposal without pain or budget usually goes unanswered.\n- Offer a discount to create urgency || A discount cannot create a business problem.\n* Reset: ask to meet whoever owns the problem and the budget || Correct. The next step must test pain and economic buyer.\n- Mark the deal as lost now || Interest exists, so test it first.\n:::\n\n## Worked example: managed network services for a bank in Luanda\n\nAn IT services company in Luanda is pursuing a three-year managed network contract worth 450,000 USD with a bank that has 18 branches. The account manager, Helena, has met the head of IT four times and feels confident.\n\nShe scores the deal. Pain is confirmed: the bank's incident report shows branch outages stopped card payments 11 times last quarter. The bank shared its technical requirements, so decision criteria are clear. Nobody has put a value on lost transactions, nobody has met the chief operating officer who approves contracts of this size, and the legal steps are unknown. Her score: M1, E0, D2, D1, P0, I2, C1, C1 = 8 out of 16.\n\nHelena resets: she asks the head of IT to help her calculate the cost of an outage and to arrange 30 minutes with the chief operating officer to present it.\n\n::: case | A tender in Lobito\nRui sells maintenance services. A mining operator near Lobito has issued a tender that closes in 10 days. Rui's only contact is a friendly site engineer, and the criteria match a competitor's product almost exactly.\n? What should Rui do?\n- Submit the lowest possible price || Price alone rarely beats criteria written for a competitor, and it destroys margin.\n* Ask if the criteria can still be clarified, and decline to bid if not || Correct. Without influence on the criteria, a bid is likely to fail. Test once, then decide.\n- Submit a standard proposal and hope || This spends time without improving the odds.\n- Ask the engineer for the competitor's price || This is unethical and can disqualify you.\n:::\n\n## Tool: MEDDPICC deal scorecard\n\n- Opportunity, customer and value (Kz or USD):\n- Metrics (score 0–2, evidence):\n- Economic buyer (score, name, evidence):\n- Decision criteria (score, evidence):\n- Decision process (score, evidence):\n- Paper process (score, evidence):\n- Identify pain (score, evidence):\n- Champion (score, name, evidence):\n- Competition (score, evidence):\n- Total out of 16, decision (pursue, reset, walk away) and next two actions:\n\n## Common mistakes\n\n- Filling in MEDDIC as a form instead of using it to plan the next meeting.\n- Scoring a friendly contact with no influence as a champion.\n- Guessing the economic buyer from an organisation chart.\n- Scoring on optimism: a letter you cannot prove is a 1, not a 2.\n\n## Self-check\n\n- What do the P and the second C stand for in MEDDPICC? (Answer: Paper process and Competition.)\n- What is the maximum MEDDPICC score using a 0–2 scale? (Answer: 16, eight elements × 2.)\n- When should you choose \"reset\" rather than \"walk away\"? (Answer: when there is real pain but key elements, such as the economic buyer, are still unknown.)\n\n## Practical assignment\n\nChoose your largest open opportunity. Score it with the MEDDPICC scorecard, writing the evidence for each letter. Identify the two weakest letters and plan one action for each before your next customer meeting this week.\n\n## Summary\n\n- Enterprise sales involve many stakeholders, long cycles and formal processes, so early qualification protects your time.\n- MEDDIC covers Metrics, Economic buyer, Decision criteria, Decision process, Identify pain and Champion. MEDDPICC adds Paper process and Competition.\n- Score each element 0–2 on evidence, then pursue, reset or walk away.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- distinguish real business pain from a nice-to-have;\n- trace a pain chain from symptom to annual cost;\n- apply SPIN questions to plan and run a discovery meeting;\n- calculate the cost of a problem using the customer's own figures.\n\n## Key terms\n\n::: terms\nPain: a business problem with a measurable cost, an owner and a reason to act now\nDiscovery: the meetings in which you diagnose the customer's situation before proposing anything\nPain chain: the link from a visible symptom to its cause, business impact, the people affected and the cost\nSPIN: a questioning sequence of Situation, Problem, Implication and Need-payoff questions\nCost of inaction: what the customer will lose if nothing changes, per month or per year\n:::\n\n## 1. Pain versus nice-to-have\n\nLarge organisations do not change suppliers or systems because something is interesting. They change because a problem costs money, creates risk or blocks a goal a senior person cares about.\n\nUse three tests. Real pain has:\n\n- a cost: lost revenue, extra expense, penalties or risk that can be estimated;\n- an owner: a named person whose results are hurt by the problem;\n- a reason to act now: a deadline, an audit, a new contract, a target or a growing loss.\n\nIf one of these is missing, you are probably looking at a nice-to-have. Nice-to-have projects are the first to be cancelled when budgets are cut.\n\n## 2. The pain chain\n\nCustomers usually describe symptoms: \"Our trucks are always late.\" A symptom is not yet pain. Follow the chain until you reach money and people.\n\n::: diagram steps | The pain chain\nSymptom: what people see, such as late deliveries to stores\nRoot cause: why it happens, such as no route planning\nBusiness impact: lost sales, penalties, overtime or waste\nWho feels it: the manager whose targets suffer\nCost per year: the impact expressed in Kz or USD\n:::\n\nA simple calculation turns the chain into a number. Example: a retail chain in Luanda sells 2,000,000,000 Kz of chilled products a year. Its quality manager estimates that 3% is thrown away because of cold-chain failures. Cost of the problem = 2,000,000,000 × 3% = 60,000,000 Kz a year, or 5,000,000 Kz a month. Always use the customer's own figures and ask them to confirm the result. A number they calculated with you is far more convincing than a number in your brochure.\n\n::: quiz\n? A logistics manager says, \"Our fuel costs are too high.\" Which question best moves this symptom along the pain chain?\n- \"Have you seen our new telematics system?\" || This pitches a solution before the problem is understood.\n* \"What does fuel cost you per month, and how much do you think is wasted?\" || Correct. It moves from symptom to business impact and cost.\n- \"How many trucks do you have?\" || A useful fact, but it does not reveal impact or cost.\n- \"Are you happy with your current supplier?\" || A closed question that does not explore the problem.\n:::\n\n## 3. SPIN questioning\n\nNeil Rackham's research into large sales, published as SPIN Selling (1988), found that successful sellers in complex sales asked more questions about problems and their consequences, and fewer about general facts. His SPIN model gives a practical sequence.\n\n::: slides\nSLIDE Situation | Facts and context: volumes, systems, team size, current suppliers; Research most of these before the meeting | Ask only what you cannot find yourself\nSLIDE Problem | Difficulties and dissatisfaction: \"Where does the process break down?\"; \"How often does that happen?\" | Uncover the problem in their words\nSLIDE Implication | Consequences: \"What does that cost you?\"; \"Who else is affected?\"; \"What happens if it continues for a year?\" | Make the problem bigger and clearer\nSLIDE Need-payoff | Value of a solution: \"If you fixed this, what would it be worth?\"; \"How would it help your targets?\" | Let the buyer state the benefit\n:::\n\nDo not over-ask situation questions: senior buyers become impatient when you ask what you could have researched. Implication questions are where value is built, because they show that a tolerated problem has a large cost.\n\n## 4. Running a discovery meeting\n\nA structured meeting gets better results than a friendly chat. Use five steps:\n\n- Prepare: research the company and person, and write your top five questions.\n- Agree the agenda: time available and what both sides want.\n- Ask and listen: use SPIN, let the customer talk most and note their words.\n- Summarise: the problem, its cost and who it affects. Ask \"Did I understand correctly?\"\n- Agree the next step: a dated action, such as a meeting with the budget owner.\n\n::: tip | Write it down\nSend a short summary email after each meeting. It confirms the pain and gives your contact something to forward.\n:::\n\n::: quiz\n? At the end of a discovery meeting, what should the seller do before agreeing next steps?\n- Present the full product catalogue || Presenting before confirming the problem wastes the diagnosis.\n- Give a price estimate || Price without agreed value invites a discount request.\n* Summarise the problem, its cost and who it affects, and ask the buyer to confirm || Correct. A confirmed summary is the evidence you need for Identify pain.\n- Ask whether the buyer likes your company || This does not test the pain.\n:::\n\n## Worked example: a distribution centre in Viana\n\nA software company is selling a warehouse management system to a retail chain's distribution centre in Viana. The account manager, Carla, first reads the chain's announcements about new stores.\n\nSituation: the centre ships to 22 stores and uses spreadsheets to track stock. Problem: the operations manager admits that stores often receive the wrong products. Implication: Carla asks what this causes. Stores report about 40 wrong lines a week. Each correction needs a return trip and staff time costing about 150,000 Kz, so 40 × 150,000 = 6,000,000 Kz a week, around 300,000,000 Kz a year over 50 weeks. Empty shelves also cost sales that nobody has measured. Need-payoff: the manager says that halving the errors would let him open the four new stores without hiring another shift.\n\nCarla summarises the figures in an email. The manager forwards it to the operations director. The pain now has a cost, an owner and a reason to act: the new stores.\n\n::: case | Discovery at an oil and gas service company\nMarco sells training services. In a first meeting, the HSE manager of an oil and gas service company in Luanda says: \"Our safety training is fine, but we are always looking for good suppliers.\" Marco has 45 minutes.\n? What should Marco do next?\n- Present his full catalogue || This pitches before any problem is found.\n- Offer a 20% discount on a first order || A discount does not create a reason to buy.\n* Ask problem questions, such as which audits found gaps || Correct. He must uncover a real problem first.\n- End the meeting because there is no pain || He has not asked any problem questions yet.\n:::\n\n## Tool: discovery meeting planner\n\n- Customer, person and role:\n- What I already know (situation research):\n- Two problem questions:\n- Two implication questions:\n- One need-payoff question:\n- Customer figures to collect (volumes, costs, frequency):\n- Cost of the problem per month and per year:\n- Next step to propose:\n\n## Common mistakes\n\n- Pitching the product in the first ten minutes, before the problem is understood.\n- Asking too many situation questions that research could answer.\n- Accepting vague pain such as \"efficiency\" without a number or an owner.\n- Ending the meeting without a summary and a dated next step.\n\n## Self-check\n\n- What three features show that pain is real? (Answer: a cost, an owner and a reason to act now.)\n- In SPIN, what is the purpose of implication questions? (Answer: to explore the consequences of a problem so that its size and cost become clear.)\n- A company loses 2% of 500,000,000 Kz annual sales to stock errors. What is the cost? (Answer: 10,000,000 Kz a year.)\n\n## Practical assignment\n\nPlan your next discovery meeting with the planner above. Write at least two implication questions. After the meeting, calculate the cost of the main problem with the customer's figures and send them a short summary email to confirm it.\n\n## Summary\n\n- Real pain has a cost, an owner and a reason to act now.\n- Follow the pain chain from symptom to annual cost, using the customer's own numbers.\n- Use SPIN questions, summarise what you heard and always agree a dated next step.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- link a customer's pain to revenue, cost or risk value drivers;\n- set a baseline, target and gap for each metric;\n- calculate return on investment, payback period and cost of inaction;\n- build a one-page business case that your champion can present internally.\n\n## Key terms\n\n::: terms\nMetrics: the measurable business gains the customer expects from your solution\nValue driver: a way a solution creates value, such as increasing revenue, reducing cost or reducing risk\nBaseline: the measured value of a metric today, before any change\nROI (return on investment): net benefit divided by total cost, shown as a percentage\nPayback period: the time needed for the benefits to repay the initial investment\n:::\n\n## 1. From pain to metrics\n\nIn MEDDIC, Metrics answer the question: \"What measurable result will the customer get, and how much is it worth?\" Identify pain describes the problem. Metrics describe the improvement. Economic buyers approve investments, not products, so they need numbers.\n\nEvery benefit fits one of three value drivers:\n\n- Increase revenue: more sales, faster billing, new customers, fewer lost orders.\n- Reduce cost: less fuel, less waste, less overtime, fewer errors, lower maintenance.\n- Reduce risk: fewer safety incidents, audit findings, penalties or service outages.\n\nFor each metric, agree three numbers with the customer: the baseline (today), the target (after the change) and the gap (the difference). Then multiply the gap by the value of one unit.\n\nBenefit = (baseline − target) × value per unit\n\nExample: a mining operator has 30 hours of unplanned equipment downtime a month. Each hour of downtime costs about 8,000 USD in lost output, according to its production manager. A better maintenance contract is expected to bring downtime to 20 hours. Benefit = (30 − 20) × 8,000 = 80,000 USD a month.\n\n::: diagram steps | From pain to a quantified metric\nPain: the problem the customer has confirmed\nValue driver: revenue, cost or risk\nBaseline: today's measured value\nTarget: the value the customer agrees is realistic\nBenefit: gap × value per unit, per month and per year\n:::\n\n::: quiz\n? A bank processes 1,000 loan files a month with 4% errors. Each error costs 50,000 Kz to correct. A new system is expected to reduce errors to 1%. What is the monthly benefit?\n- 2,000,000 Kz || This is the cost of errors at 4% only, not the improvement.\n* 1,500,000 Kz || Correct. Errors fall from 40 to 10 a month, and 30 × 50,000 = 1,500,000 Kz.\n- 500,000 Kz || This is the cost of the remaining 1% of errors.\n- 150,000 Kz || This uses only 3 errors instead of 30.\n:::\n\n## 2. ROI, payback and cost of inaction\n\nThree calculations appear in almost every business case.\n\n- ROI = (total benefit − total cost) ÷ total cost × 100, over an agreed period such as three years.\n- Payback period = initial investment ÷ monthly net benefit.\n- Cost of inaction = the monthly loss the customer accepts by waiting.\n\n::: slides\nSLIDE Step 1: List all costs | Initial investment: equipment, set-up, training; Running costs per year: fees, support, licences | Include the customer's internal costs too\nSLIDE Step 2: List all benefits | One line per metric; Benefit per year from baseline, target and value per unit | Use only benefits the customer agrees with\nSLIDE Step 3: Calculate ROI | Add benefits and costs over the same period; ROI = (benefits − costs) ÷ costs × 100 | Use the same period for both\nSLIDE Step 4: Calculate payback | Monthly net benefit = monthly benefit − monthly running cost; Payback = investment ÷ monthly net benefit | Shorter payback means lower risk\nSLIDE Step 5: State the cost of inaction | Monthly net benefit lost for each month of delay | Use it to agree a realistic start date\n:::\n\nKeep the numbers conservative. If the customer believes errors could fall by 60% to 80%, use 60% in the business case. A conservative case that survives finance review is worth more than an impressive case that finance rejects.\n\n## 3. The one-page business case\n\nYour champion will often present the case when you are not in the room. A one-page business case contains:\n\n- Problem and its current cost, using the confirmed pain.\n- Options considered, including doing nothing.\n- Costs: initial investment and running costs.\n- Benefits, each with baseline, target and the customer's assumptions.\n- Risks and how they will be managed.\n- Recommendation, ROI, payback and a proposed timeline.\n\nAsk your champion to review the draft before it goes to the economic buyer. They know which numbers finance will question.\n\n::: quiz\n? Why should benefits in a business case use the customer's own figures?\n- Because supplier figures are always wrong || Supplier benchmarks can be useful, but they are not the customer's reality.\n- Because it makes the case shorter || Length is not the reason.\n* Because finance and the economic buyer trust numbers that come from their own operations || Correct. Their own data makes the case credible and defensible internally.\n- Because it avoids the need for an ROI calculation || You still need ROI. The data source is what changes.\n:::\n\n## Worked example: fleet telematics for a logistics company in Lobito\n\nA technology company is selling fleet telematics to a logistics company with 120 trucks operating from Lobito port. Its fleet manager confirms that fuel costs 2,400,000 USD a year and that idling and unauthorised routes waste fuel. After discussion, they agree on a conservative target: a 5% fuel saving.\n\n- Annual benefit: 2,400,000 × 5% = 120,000 USD.\n- Initial investment: 60,000 USD for devices and installation.\n- Running cost: 30,000 USD a year for the platform and support.\n\nOver three years: benefits = 360,000 USD, costs = 60,000 + (3 × 30,000) = 150,000 USD. ROI = (360,000 − 150,000) ÷ 150,000 × 100 = 140%.\n\nMonthly net benefit = (120,000 − 30,000) ÷ 12 = 7,500 USD. Payback = 60,000 ÷ 7,500 = 8 months. Cost of inaction: about 7,500 USD of net benefit lost for every month of delay.\n\nThe fleet manager presents the one-page case to the finance director, who asks only one question: where the 5% came from. Because the figure came from the fleet manager's own fuel records, it is accepted.\n\n::: case | A business case for a retail chain\nSofia sells refrigeration maintenance to a supermarket chain in Luanda. The chain's quality manager agrees that cold-chain failures cost about 60,000,000 Kz a year. Sofia's marketing brochure claims \"up to 70% less waste\". The case goes to the finance director next week.\n? Which saving should Sofia use in the business case?\n- 70%, because it looks impressive || Finance will challenge an unsupported claim first.\n* A lower figure the quality manager agrees is realistic, with the assumption written down || Correct. A conservative, agreed figure survives finance review.\n- No figure, only a service description || Without a number, cost cannot be compared with benefit.\n- 100%, to show confidence || This is not credible.\n:::\n\n## Tool: business case worksheet\n\n- Confirmed pain and current annual cost:\n- Metric 1: baseline, target, value per unit, annual benefit:\n- Metric 2: baseline, target, value per unit, annual benefit:\n- Initial investment and annual running cost:\n- Period used (for example 3 years), total benefits and total costs:\n- ROI (%) and payback period (months):\n- Cost of inaction per month:\n- Customer person who confirmed each figure:\n\n## Common mistakes\n\n- Using your own benchmark figures instead of the customer's data.\n- Inflating benefits until finance stops trusting the whole case.\n- Ignoring implementation costs, internal staff time or running costs.\n- Leaving metrics without a customer owner who will defend them.\n\n## Self-check\n\n- Name the three value drivers. (Answer: increase revenue, reduce cost and reduce risk.)\n- An investment of 40,000 USD gives a monthly net benefit of 5,000 USD. What is the payback period? (Answer: 8 months.)\n- Over three years, benefits are 300,000 USD and costs are 100,000 USD. What is the ROI? (Answer: 200%.)\n\n## Practical assignment\n\nFor one active opportunity, fill in the business case worksheet with at least one metric. Agree the baseline and target with your customer contact this week and calculate ROI, payback and cost of inaction.\n\n## Summary\n\n- Metrics connect the customer's pain to revenue, cost or risk in numbers.\n- Use baseline, target and value per unit, then calculate ROI, payback and cost of inaction.\n- Build a conservative one-page business case that your champion can present for you.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the role of the economic buyer and identify who holds it in a customer organisation;\n- plan how to gain access to the economic buyer;\n- distinguish a champion from a coach and test a potential champion;\n- map stakeholders by influence and support and choose an action for each.\n\n## Key terms\n\n::: terms\nEconomic buyer: the person with final authority over the money for this purchase, who can approve it or stop it\nApproval limits: internal rules that say who may approve spending above certain amounts\nChampion: an insider with power and influence who has a personal reason to want your solution and actively sells it internally\nCoach: a person who gives you useful information but does not have enough influence to drive the decision\nBlocker: an influential person who opposes your solution\n:::\n\n## 1. The economic buyer\n\nThe economic buyer is the person who can release the money for this purchase. It is rarely the first person you meet: often a director, a chief financial officer or a board committee. The economic buyer can say yes when others hesitate, can say no when everyone else supports you, and can often find budget for a strong business case.\n\nThe economic buyer changes with deal size. A 20,000 USD purchase may be approved by a department head, a 2,000,000 USD contract by the executive committee. Most large organisations have written approval limits, so ask about them directly.\n\nUseful questions:\n\n- \"For an investment of this size, who will give the final approval?\"\n- \"Who approved the last project of a similar size?\"\n- \"What happens after your team makes its recommendation?\"\n\nConfirm the answer with at least two people. Contacts sometimes overstate their own authority.\n\n## 2. Gaining access to the economic buyer\n\nEconomic buyers are busy and protect their time. They meet suppliers when there is a business reason, not a product presentation.\n\n::: slides\nSLIDE Step 1: Earn the right | Confirm pain and metrics first; Build a draft business case | Bring a business reason, not a brochure\nSLIDE Step 2: Ask your contact | \"Could we present the business case to the person who approves it?\"; Offer to prepare the meeting together | Make your contact look good\nSLIDE Step 3: Keep it short | Ask for 30 minutes; Agenda: problem, cost, proposed result, decision timeline | Respect senior time\nSLIDE Step 4: Confirm what matters to them | Ask about their priorities and their success criteria; Ask what would stop the project | Their criteria may differ from the team's\n:::\n\nNever go around your contact without their agreement, or they may become a blocker. A contact who refuses all access with no good reason may not have the influence you assumed.\n\n::: quiz\n? A department head says she can approve any purchase, but the deal is worth 900,000 USD and the company's approval limits require board approval above 250,000 USD. Who is the economic buyer?\n- The department head, because she said so || Her claim conflicts with the approval limits.\n* The board, which approves above 250,000 USD || Correct. Written approval limits show who controls money at this level.\n- The procurement manager || Procurement runs the process but rarely owns the budget.\n- The IT users of the solution || Users influence but do not release money.\n:::\n\n## 3. The champion: power, personal win and action\n\nA champion is not simply a friendly contact. A real champion has three features:\n\n- Power and influence: others listen to them and they have access to the economic buyer.\n- Personal win: your solution helps them reach a target, solve their problem or advance their career.\n- Action: they sell for you when you are not in the room.\n\nTest a potential champion by asking them to do something that costs them a little effort or political capital:\n\n- arrange a meeting with the economic buyer;\n- share the decision criteria and the evaluation process;\n- review your business case and tell you what finance will question;\n- tell you honestly where you are weak against competitors.\n\nIf they do these things, they are likely a champion. If they agree but nothing happens, they are probably a coach. Coaches are valuable for information, but they cannot win the deal for you.\n\n::: diagram matrix | Stakeholder map | Support (against → for) | Influence (low → high)\nBlocker: high influence, against – understand and address their concerns\nChampion: high influence, supportive – develop, test and equip with material\nDetractor: low influence, against – monitor and keep informed\nCoach: low influence, supportive – use for information and introductions\n:::\n\n::: quiz\n? Your contact at a bank shares useful information and likes your proposal, but after four weeks has not arranged any meeting with senior managers. What is the best description?\n- A strong champion || A champion acts on your behalf. This contact has not acted.\n- A blocker || A blocker opposes you, and this contact is supportive.\n* A coach, until tested further || Correct. Supportive and helpful, but no evidence of influence or action.\n- The economic buyer || There is no sign that this contact controls the budget.\n:::\n\n## Worked example: a government-linked utility in Luanda\n\nA company sells meter-reading software. Its account manager, Paulo, has worked for two months with a procurement officer at a government-linked utility in Luanda. The officer is friendly and responsive.\n\nPaulo maps the stakeholders. The procurement officer has low influence on the technical choice and is supportive: a coach. The commercial director wants to reduce unbilled consumption, which is one of her targets, and she meets the board every month: a potential champion. The IT manager prefers to build a system in-house: a possible blocker. The deal of about 1,200,000 USD needs board approval, so the board is the economic buyer.\n\nPaulo asks the procurement officer for an introduction to the commercial director, who confirms the problem. He tests her: \"Would you present the business case to the board?\" She agrees and asks for a one-page summary. Paulo also meets the IT manager to hear his concerns.\n\n::: case | The friendly site manager\nNuno sells generator maintenance contracts. His contact at a construction company in Benguela is a site manager who invites him for coffee and praises his offer. The contract is worth 350,000 USD and needs approval from the operations director, whom Nuno has never met. The site manager says, \"Leave it with me.\"\n? What should Nuno do next?\n- Wait, because the site manager supports him || Support without action may never reach the director.\n- Phone the director without telling the site manager || Going around a contact can create a blocker.\n* Ask the site manager to arrange a joint meeting with the director to present the business case || Correct. It tests the champion and creates access to the economic buyer.\n- Cut the price so the site manager can approve it || This destroys margin and rarely works.\n:::\n\n## Tool: stakeholder map template\n\n- Name, role and department:\n- Role in the deal (economic buyer, champion, coach, blocker, user, technical evaluator):\n- Influence (low, medium, high) and support (against, neutral, for):\n- What they care about (personal win and business goal):\n- Evidence of champion behaviour (actions taken for us):\n- Next action with this person, owner and date:\n\n## Common mistakes\n\n- Selling only to the friendly contact and never meeting the people who decide.\n- Going around your contact without agreement, which turns supporters into blockers.\n- Calling someone a champion without testing whether they act for you.\n- Ignoring blockers in the hope that they will not matter.\n\n## Self-check\n\n- What three features does a real champion have? (Answer: power and influence, a personal win, and action on your behalf.)\n- How can you confirm who the economic buyer is? (Answer: ask who approves investments of this size, check the approval limits and confirm with more than one person.)\n- What is the difference between a coach and a champion? (Answer: a coach gives information, a champion has influence and acts for you.)\n\n## Practical assignment\n\nDraw a stakeholder map for one large opportunity this week. Name the economic buyer and the evidence for it. Choose one potential champion and plan a test action you will ask them to take.\n\n## Summary\n\n- The economic buyer controls the money for this deal and changes with deal size.\n- Gain access through your contact by bringing a business reason, not a product pitch.\n- A champion has influence, a personal win and acts for you. Test them, and map every stakeholder by influence and support.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- identify and influence technical, economic and supplier decision criteria;\n- calculate a weighted tender score;\n- map the decision process and the paper process from today to the purchase order;\n- identify all forms of competition, including the do-nothing option, and plan your response.\n\n## Key terms\n\n::: terms\nDecision criteria: the standards the buyer will use to compare and select a solution\nDecision process: the sequence of steps, people and dates through which the buyer reaches a decision\nPaper process: the administrative, legal and procurement steps needed to turn a decision into a signed contract and a purchase order\nTender: a formal request for offers, with fixed rules, deadlines and evaluation criteria\nDo-nothing option: the choice to keep the current situation, which competes with every proposal\n:::\n\n## 1. Decision criteria\n\nDecision criteria fall into three groups:\n\n- Technical: specification, performance, compatibility and service levels.\n- Economic: price, total cost of ownership, payment terms and currency.\n- Supplier: local presence, references, financial strength, certifications and compliance.\n\nCriteria are easiest to influence before they are written down. Once a tender is published, the rules are fixed. During discovery, help the customer define what \"good\" looks like, linked to their pain. For example, if branch outages are the bank's pain, suggest a criterion such as \"four-hour on-site repair in all provinces where the bank has branches\", which suits a supplier with a national team.\n\nMany tenders use weighted scoring. A common method gives the lowest price full price points and others a proportional share: price points = lowest price ÷ your price × price weight. Always read the tender's own formula, as methods vary.\n\nExample: technical weight 60, price weight 40. Supplier A scores 50 technical points and offers 1,000,000 USD. Supplier B scores 42 technical points and offers 800,000 USD (the lowest). A's price points = 800,000 ÷ 1,000,000 × 40 = 32. A's total = 50 + 32 = 82. B's total = 42 + 40 = 82. They tie, so a small technical improvement or price change decides the result.\n\n::: quiz\n? A tender weights technical 70 and price 30, with price points = lowest price ÷ your price × 30. The lowest offer is 450,000 USD. Your offer is 500,000 USD and your technical score is 60. What is your total?\n- 90 || This gives you the full 30 price points, which only the lowest offer receives.\n* 87 || Correct. Price points = 450,000 ÷ 500,000 × 30 = 27, and 60 + 27 = 87.\n- 84 || This takes 6 points off for the price gap instead of using the formula.\n- 57 || This subtracts the price points instead of adding them.\n:::\n\n## 2. Decision process and paper process\n\nThe decision process answers: what steps remain, who takes part in each, and when will each happen? The paper process starts when the decision is made and ends when you have a signed contract and a purchase order. Sellers often forget it, and deals slip by weeks or months.\n\n::: diagram steps | From decision to purchase order\nRecommendation: the evaluation team chooses a preferred supplier\nApproval: the economic buyer or committee approves the spend\nSupplier registration: documents, tax and legal records are checked\nLegal and compliance review: contract terms, guarantees and data clauses\nSignature: authorised signatories sign the contract\nPurchase order: the order is issued and work can start\n:::\n\n::: slides\nSLIDE Step 1: Ask about the steps | \"What happens after your team chooses a supplier?\"; \"Who else must approve?\" | Ask early, not after the decision\nSLIDE Step 2: Ask about past deals | \"How long did the last similar contract take to sign?\"; \"What delayed it?\" | History predicts the future\nSLIDE Step 3: Collect the documents | Supplier registration forms; Required certificates and guarantees; Standard contract template | Send what you can in advance\nSLIDE Step 4: Put dates on each step | Work back from the customer's go-live date; Agree the dates with your champion | Dates turn hope into a plan\n:::\n\nTypical paper steps include supplier registration, compliance checks at banks, bid or performance guarantees in tenders, legal review and signature by authorised signatories. Government-linked buyers follow formal public procurement rules, so read the tender documents carefully and ask for written clarification within the tender's deadlines.\n\n## 3. Competition\n\nIn MEDDPICC, Competition covers every alternative to your proposal:\n\n- Direct competitors offering a similar solution.\n- An in-house solution built by the customer's own team.\n- Doing nothing and living with the problem.\n- Spending the same budget on a different priority.\n\nDoing nothing is often the strongest competitor. This is why pain and metrics matter: the cost of inaction is your answer to it. Against direct competitors, link your strengths to the decision criteria, and ask your champion: \"Who else are you talking to, and what do you like about them?\"\n\n::: quiz\n? A mining operator's maintenance team says it could also keep repairing equipment itself with its own staff. What is this in MEDDPICC?\n- A decision criterion || Criteria are standards for comparing options, not an option itself.\n* Competition from an in-house solution || Correct. Building or doing it in-house is a competitor you must plan against.\n- Part of the paper process || The paper process covers contract and procurement steps.\n- No threat, because it is not a supplier || In-house options often win when the business case is weak.\n:::\n\n## Worked example: a tender from a government-linked buyer in Luanda\n\nA security services company receives a tender from a government-linked agency in Luanda for guarding six sites, worth about 600,000,000 Kz a year. The account manager, Teresa, had met the agency's facilities director three months earlier and helped him describe his problem: frequent guard absences at night.\n\nThe tender includes a criterion she suggested: real-time attendance control for night shifts, with 20 of 100 technical points. Teresa maps the process with her champion: evaluation by a committee, approval by the agency's board, then contract review and a performance guarantee. She asks how long the last contract took from award to signature and learns it took seven weeks, so she arranges the bank guarantee in advance.\n\nShe lists the competition: two direct competitors and the option of renewing the current contract (doing nothing). Her proposal shows the cost of night absences with the agency's own incident records.\n\n::: case | A bank's surprise legal review\nJoana has won the evaluation for a software contract with a bank in Luanda. Her forecast says the deal will close this month. Then the bank's legal department asks for changes to the data protection and liability clauses, and Joana learns the review usually takes four weeks.\n? What should Joana have done earlier?\n- Nothing, because legal reviews cannot be predicted || They can be predicted by asking about past contracts.\n* Asked about the paper process during discovery and sent her standard contract to legal early || Correct. Mapping the paper process early prevents late surprises.\n- Offered a discount to speed up legal || Legal teams review risk, not price.\n- Asked the economic buyer to skip the legal review || Pressuring a bank to skip compliance damages trust.\n:::\n\n## Tool: decision and paper process map\n\n- Decision criteria (technical, economic, supplier) and weights:\n- Criteria we helped to shape:\n- Decision steps, people involved and dates:\n- Paper process steps: registration, compliance, legal, guarantees, signatories, purchase order:\n- Time the last similar contract took to sign:\n- Competitors, including in-house and do nothing:\n- Our answer to each competitor, linked to the criteria:\n\n## Common mistakes\n\n- Responding to a tender you had no part in shaping and expecting to win on price.\n- Treating the decision as the finish line, then waiting weeks for legal and procurement.\n- Ignoring the do-nothing option.\n- Discovering guarantees or registration requirements after the deadline.\n\n## Self-check\n\n- Name the three groups of decision criteria. (Answer: technical, economic and supplier criteria.)\n- What does the paper process cover? (Answer: the administrative, legal and procurement steps from decision to signed contract and purchase order.)\n- Why is doing nothing a competitor? (Answer: the customer can always choose to keep the current situation, so you must show the cost of inaction.)\n\n## Practical assignment\n\nFor one active deal, complete the decision and paper process map with your contact. Ask how long the last similar contract took to sign and what delayed it. Add the dates to your forecast.\n\n## Summary\n\n- Shape the decision criteria early and understand the scoring formula before you price.\n- Map both the decision process and the paper process, with dates, all the way to the purchase order.\n- Plan against every competitor, especially the do-nothing option.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- build a mutual action plan with the customer, from today to go-live;\n- identify a compelling event and work backwards to set realistic dates;\n- run a deal review using MEDDPICC questions;\n- place deals in forecast categories and calculate a weighted pipeline.\n\n## Key terms\n\n::: terms\nMutual action plan: a shared, dated plan of the steps both sides will take to reach a decision and go live\nCompelling event: a business event with a fixed date that forces the customer to decide by a certain time\nDeal review: a structured conversation between a seller and a manager to test a deal against evidence\nForecast category: a label such as commit, best case or pipeline that shows confidence in a deal closing this period\nWeighted pipeline: the sum of each deal's value multiplied by its probability of closing\n:::\n\n## 1. The mutual action plan\n\nA mutual action plan (also called a close plan) lists every step between today and the customer's go-live date, with owners on both sides and dates. Unlike a private sales plan, it is agreed with the customer. A good plan:\n\n- ends at go-live or first value, not at signature;\n- includes customer tasks such as a technical test, board approval and the paper process steps from Lesson 5;\n- has a named owner and a date for each step, and is updated with your champion.\n\nLarge organisations often do not know every step their own purchase requires, so a clear plan makes you look like a partner, not a pusher.\n\n## 2. The compelling event and working backwards\n\nA compelling event is the reason a deal must happen by a date: a store opening, a contract expiry or an audit deadline. Without one, the decision drifts from month to month.\n\n::: slides\nSLIDE Step 1: Find the event | Ask \"What happens if this is not live by that date?\"; Confirm the date with the economic buyer if possible | No consequence means no real deadline\nSLIDE Step 2: List the steps | Implementation, purchase order, signature, legal review, approval, evaluation | Include customer and paper steps\nSLIDE Step 3: Estimate each duration | Ask the customer how long each step took last time; Add a margin for delays | Use their history, not your hopes\nSLIDE Step 4: Work backwards | Subtract durations from the go-live date; The result is the latest decision date | Share the dates with your champion\n:::\n\nExample: a retail chain needs cold storage running when its distribution centre opens on 1 September. Installation takes 8 weeks, so the purchase order is needed by 7 July. Legal review and signature took 4 weeks last time, so board approval is needed by 9 June. The real decision date is early June, not August.\n\n::: diagram cycle | The deal review cycle\nScore: rate each MEDDPICC element 0–2 with evidence\nFind gaps: identify the weakest elements and the biggest risks\nAgree actions: one action per gap, with owner and date\nUpdate the plan: change the mutual action plan and the forecast\n:::\n\n::: quiz\n? A customer wants a system live by 1 November. Installation takes 6 weeks and signature plus purchase order takes 3 weeks. Roughly when must the decision be made?\n- Mid-October || That leaves no time for signature and installation.\n- Late September || That only covers part of the time needed.\n* Late August || Correct. Working back 9 weeks from 1 November gives late August.\n- Early December || That is after the go-live date.\n:::\n\n## 3. Running a deal review\n\nA deal review is a structured conversation between seller and manager about one opportunity. The aim is to find risks while there is time to act, not to blame the seller. Useful questions:\n\n- Metrics: what result has the customer agreed, and who confirmed the numbers?\n- Economic buyer: who is it, how do we know, and when did we last meet them?\n- Decision criteria and process: what are the criteria, and what are the remaining steps and dates?\n- Paper process: what is needed from today to the purchase order?\n- Identify pain: what is the cost of doing nothing, and who owns it?\n- Champion: what has the champion done for us in the last two weeks?\n- Competition: who else is being considered, including doing nothing?\n\nEnd each review with two or three actions, each with an owner and a date.\n\n## 4. Forecasting with evidence\n\nMany sales teams use forecast categories:\n\n- Commit: very high confidence for this period, with economic buyer approval and a mapped paper process.\n- Best case: could close this period if the remaining steps go well.\n- Pipeline: real, but not expected this period.\n\nFor a weighted pipeline, multiply each deal's value by a stage probability. Deal A 500,000 USD at 60% = 300,000 USD, deal B 200,000 USD at 25% = 50,000 USD, total 350,000 USD. Base probabilities on your team's past results.\n\n::: quiz\n? A seller wants to place a deal in \"commit\" for this month. The champion is strong, but nobody has met the economic buyer and legal review has not started. What should the manager say?\n- Agree, because the champion is strong || A champion does not replace approval and contract steps.\n* Keep it in best case until approval and the paper process are confirmed || Correct. Commit needs evidence on both.\n- Remove it from the forecast || The deal is real, just not committed.\n- Commit it and offer a discount || A discount does not replace approval or legal steps.\n:::\n\n## Worked example: a quarterly deal review in Luanda\n\nA sales manager at an equipment supplier in Luanda reviews a 750,000 USD mining deal that André has in commit.\n\nThey score it: M2, E1, D2, D2, P0, I2, C2, C1 = 12 out of 16. The weak elements are the economic buyer (only met once, briefly) and the paper process (unknown). The compelling event is real: a new processing line starts in five months, and installation takes ten weeks.\n\nThey agree three actions: present the business case to the operations director with the champion, the plant manager, within two weeks; get the supplier registration list and contract template from procurement; and share a mutual action plan built back from go-live. The deal moves to best case until these are done.\n\n::: case | The end-of-quarter push\nLúcia's manager asks her to close a 300,000 USD deal with a bank before the quarter ends in two weeks. The bank's committee meets next month, and the bank has no deadline of its own. Lúcia is thinking of offering an extra 15% discount.\n? What should Lúcia do?\n- Offer the 15% discount || Without a compelling event, it often fails and teaches the bank to wait for quarter-end.\n- Ask the committee to meet early for her || This puts her timing above the customer's process.\n* Move the deal to next quarter and agree a dated mutual action plan with her champion || Correct. An honest forecast and a shared plan protect margin and trust.\n- Mark the deal as lost || The deal is real, it belongs to next quarter.\n:::\n\n## Tool: mutual action plan template\n\n- Customer, opportunity and value:\n- Compelling event and date (what happens if missed):\n- Go-live date:\n- Steps working back: evaluation, business case, approval, legal, guarantees, signature, purchase order, installation:\n- For each step: owner on customer side, owner on our side, date, status:\n- Risks and actions agreed at the last deal review:\n- Forecast category and evidence:\n\n## Common mistakes\n\n- Keeping the plan private instead of agreeing it with the customer.\n- Setting the close date from your own quota instead of the customer's process.\n- Holding deal reviews that only ask \"When will it close?\"\n- Not reviewing won and lost deals to learn which elements predicted the result.\n\n## Self-check\n\n- What is a compelling event? (Answer: a business event with a fixed date that forces the customer to decide by a certain time.)\n- Where should a mutual action plan end? (Answer: at go-live or first value for the customer, not at signature.)\n- What is the weighted value of a 400,000 USD deal at 50%? (Answer: 200,000 USD.)\n\n## Practical assignment\n\nBuild a mutual action plan for your most important deal this week. Find the compelling event, work back from go-live and share the draft with your champion. Ask your manager for a 30-minute MEDDPICC deal review on the same deal.\n\n## Summary\n\n- A mutual action plan is shared with the customer, has owners and dates, and ends at go-live.\n- Find the compelling event and work backwards to the real decision date.\n- Use MEDDPICC deal reviews and evidence-based forecast categories, not optimism."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Explain why enterprise deals are different",
+     "Name the six MEDDIC elements and the two MEDDPICC additions",
+     "Score a deal letter by letter with evidence",
+     "Decide to pursue, reset or walk away"
+    ],
+    "takeaway": "Qualification is a discipline, not a feeling"
+   },
+   {
+    "title": "The complex sale",
+    "points": [
+     "Many stakeholders in the buying group",
+     "Cycles of three to twelve months",
+     "Formal procurement, tender and legal steps",
+     "High cost of losing late"
+    ],
+    "takeaway": "The real risk is chasing deals that were never real"
+   },
+   {
+    "title": "MEDDIC",
+    "points": [
+     "Metrics",
+     "Economic buyer",
+     "Decision criteria",
+     "Decision process",
+     "Identify pain",
+     "Champion"
+    ],
+    "takeaway": "Six questions answered with customer evidence"
+   },
+   {
+    "title": "MEDDICC and MEDDPICC",
+    "points": [
+     "MEDDICC adds Competition",
+     "MEDDPICC adds Paper process and Competition",
+     "This course uses MEDDPICC"
+    ],
+    "takeaway": "Agree one version for the whole team"
+   },
+   {
+    "title": "Scoring a deal",
+    "points": [
+     "0 = unknown",
+     "1 = partly known or assumed",
+     "2 = confirmed by the customer",
+     "Maximum 16 for MEDDPICC"
+    ],
+    "takeaway": "Score evidence, not hope"
+   },
+   {
+    "title": "Pursue, reset or walk away",
+    "points": [
+     "Pursue: real pain and a path to the economic buyer",
+     "Reset: pain exists but key letters are unknown",
+     "Walk away: no pain, no budget owner or no chance to influence"
+    ],
+    "takeaway": "Walking away early is a good result"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Treating MEDDIC as a form to fill in",
+     "Confusing a friendly contact with a champion",
+     "Guessing who the economic buyer is",
+     "Scoring on optimism"
+    ],
+    "takeaway": "Evidence for every letter"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Tell real pain from a nice-to-have",
+     "Trace a pain chain to its cost",
+     "Use SPIN questions in discovery",
+     "Run a structured discovery meeting"
+    ],
+    "takeaway": "No pain, no deal"
+   },
+   {
+    "title": "Pain versus nice-to-have",
+    "points": [
+     "Pain has a cost, an owner and a deadline",
+     "A nice-to-have has none of these",
+     "Buyers act on pain, not on features"
+    ],
+    "takeaway": "Find the cost of doing nothing"
+   },
+   {
+    "title": "The pain chain",
+    "points": [
+     "Symptom",
+     "Root cause",
+     "Business impact",
+     "Who feels it",
+     "Cost per year"
+    ],
+    "takeaway": "Connect the problem to money and people"
+   },
+   {
+    "title": "SPIN questions",
+    "points": [
+     "Situation: facts and context",
+     "Problem: difficulties and dissatisfaction",
+     "Implication: consequences of the problem",
+     "Need-payoff: value of solving it"
+    ],
+    "takeaway": "Neil Rackham, SPIN Selling (1988)"
+   },
+   {
+    "title": "Discovery meeting",
+    "points": [
+     "Prepare and research",
+     "Agree the agenda and time",
+     "Ask, listen, take notes",
+     "Summarise and confirm",
+     "Agree the next step"
+    ],
+    "takeaway": "The customer should talk most"
+   },
+   {
+    "title": "Quantify the pain",
+    "points": [
+     "Ask for the customer's own numbers",
+     "Calculate cost per month and per year",
+     "Confirm the figure with them"
+    ],
+    "takeaway": "Their number, not yours"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Pitching before diagnosing",
+     "Too many situation questions",
+     "Accepting vague pain",
+     "No next step agreed"
+    ],
+    "takeaway": "Diagnose before you prescribe"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Identify value drivers",
+     "Set baseline, target and gap",
+     "Calculate ROI and payback",
+     "Build a one-page business case"
+    ],
+    "takeaway": "Metrics turn pain into a decision"
+   },
+   {
+    "title": "Three value drivers",
+    "points": [
+     "Increase revenue",
+     "Reduce cost",
+     "Reduce risk"
+    ],
+    "takeaway": "Every benefit should fit one of these"
+   },
+   {
+    "title": "Baseline, target, gap",
+    "points": [
+     "Baseline: today's measured value",
+     "Target: the value after the change",
+     "Gap × value per unit = benefit"
+    ],
+    "takeaway": "Start from today's real number"
+   },
+   {
+    "title": "ROI and payback",
+    "points": [
+     "ROI = (total benefit − total cost) ÷ total cost × 100",
+     "Payback = investment ÷ monthly net benefit"
+    ],
+    "takeaway": "Show both, use the customer's numbers"
+   },
+   {
+    "title": "Cost of inaction",
+    "points": [
+     "Monthly loss if nothing changes",
+     "Every month of delay costs the buyer"
+    ],
+    "takeaway": "Delay has a price"
+   },
+   {
+    "title": "One-page business case",
+    "points": [
+     "Problem and cost",
+     "Options",
+     "Costs",
+     "Benefits and assumptions",
+     "Risks",
+     "Recommendation and timeline"
+    ],
+    "takeaway": "Written so your champion can present it"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Using your own figures",
+     "Inflated benefits",
+     "Ignoring implementation costs",
+     "No owner for the metric"
+    ],
+    "takeaway": "Conservative numbers win trust"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Identify the economic buyer",
+     "Gain access to the economic buyer",
+     "Find and test a champion",
+     "Map stakeholders by influence and support"
+    ],
+    "takeaway": "People decide, not companies"
+   },
+   {
+    "title": "The economic buyer",
+    "points": [
+     "Has final authority over the money for this purchase",
+     "Can say yes when others say no",
+     "Can veto a decision others support"
+    ],
+    "takeaway": "Usually more senior than your first contact"
+   },
+   {
+    "title": "Finding the economic buyer",
+    "points": [
+     "Ask who approves investments of this size",
+     "Ask about the approval limits",
+     "Confirm with more than one person"
+    ],
+    "takeaway": "Never guess from the organisation chart"
+   },
+   {
+    "title": "The champion",
+    "points": [
+     "Has power and influence",
+     "Has a personal win from your solution",
+     "Sells for you when you are not there"
+    ],
+    "takeaway": "A champion is tested, not assumed"
+   },
+   {
+    "title": "Champion versus coach",
+    "points": [
+     "Coach: gives information, little influence",
+     "Champion: has influence and acts for you",
+     "You need both"
+    ],
+    "takeaway": "Friendly is not the same as powerful"
+   },
+   {
+    "title": "Stakeholder map",
+    "points": [
+     "Champion: high influence, supportive",
+     "Blocker: high influence, against",
+     "Coach: low influence, supportive",
+     "Detractor: low influence, against"
+    ],
+    "takeaway": "Plan an action for each person"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Selling only to the friendly contact",
+     "Going around your contact without agreement",
+     "Never testing the champion",
+     "Ignoring blockers"
+    ],
+    "takeaway": "Map, test, act"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Uncover and shape decision criteria",
+     "Map the decision process with dates",
+     "Map the paper process to signature",
+     "Plan against every competitor, including doing nothing"
+    ],
+    "takeaway": "Know how they will decide before they decide"
+   },
+   {
+    "title": "Decision criteria",
+    "points": [
+     "Technical: specification and performance",
+     "Economic: price and total cost",
+     "Supplier: local presence, references, compliance"
+    ],
+    "takeaway": "Influence criteria early, before the tender"
+   },
+   {
+    "title": "Weighted scoring",
+    "points": [
+     "Each criterion has a weight",
+     "Price score often = lowest price ÷ your price × price weight",
+     "Total = technical points + price points"
+    ],
+    "takeaway": "Know the formula before you price"
+   },
+   {
+    "title": "Decision process",
+    "points": [
+     "Steps from need to decision",
+     "People involved at each step",
+     "Dates for each step"
+    ],
+    "takeaway": "A process without dates is a guess"
+   },
+   {
+    "title": "Paper process",
+    "points": [
+     "Supplier registration",
+     "Legal and compliance review",
+     "Guarantees and contract terms",
+     "Signature and purchase order"
+    ],
+    "takeaway": "Paper steps often take weeks"
+   },
+   {
+    "title": "Competition",
+    "points": [
+     "Direct competitors",
+     "Building it in-house",
+     "Doing nothing",
+     "Spending the budget elsewhere"
+    ],
+    "takeaway": "Doing nothing is often the strongest rival"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Responding to a tender you did not shape",
+     "Assuming signature is the end",
+     "Ignoring the do-nothing option",
+     "Late surprises from legal"
+    ],
+    "takeaway": "Map the process to the purchase order"
+   }
+  ],
+  [
+   {
+    "title": "What you will learn",
+    "points": [
+     "Build a mutual action plan",
+     "Work back from a compelling event",
+     "Run a MEDDPICC deal review",
+     "Forecast with evidence"
+    ],
+    "takeaway": "Close dates come from plans, not hope"
+   },
+   {
+    "title": "Mutual action plan",
+    "points": [
+     "Shared plan agreed with the customer",
+     "Tasks for both sides",
+     "Owners and dates",
+     "Ends at go-live, not signature"
+    ],
+    "takeaway": "A plan the customer owns too"
+   },
+   {
+    "title": "Compelling event",
+    "points": [
+     "A date that forces a decision",
+     "Examples: new site opening, contract expiry, audit",
+     "No event means the date can slip"
+    ],
+    "takeaway": "Find the reason for the deadline"
+   },
+   {
+    "title": "Working backwards",
+    "points": [
+     "Start from the go-live date",
+     "Subtract time for each step",
+     "Find the date the decision is really needed"
+    ],
+    "takeaway": "Work back, not forward"
+   },
+   {
+    "title": "Deal review",
+    "points": [
+     "Score MEDDPICC with evidence",
+     "Find the gaps",
+     "Agree actions",
+     "Update the plan"
+    ],
+    "takeaway": "Review the deal, not the person"
+   },
+   {
+    "title": "Forecast categories",
+    "points": [
+     "Commit: very high confidence",
+     "Best case: possible this period",
+     "Pipeline: real but not this period"
+    ],
+    "takeaway": "Each category needs evidence"
+   },
+   {
+    "title": "Common mistakes",
+    "points": [
+     "Plans only the seller knows",
+     "Close date set by the seller",
+     "Reviews that only ask for the date",
+     "No win-loss learning"
+    ],
+    "takeaway": "Shared plans, honest reviews"
+   }
+  ]
+ ]
+}
