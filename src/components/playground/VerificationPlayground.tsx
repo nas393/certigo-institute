@@ -39,7 +39,7 @@ export function VerificationPlayground() {
   }
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-12 sm:px-8" data-testid="playground">
+    <section className="mx-auto max-w-6xl px-5 py-12 sm:px-8" data-testid="playground">
       <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
         <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">
           <ScanLine className="h-3 w-3" /> Verification playground

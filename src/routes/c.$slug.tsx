@@ -5,8 +5,9 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth";
 import { formatPrice } from "@/lib/money";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock, ShieldCheck, Loader2, Check } from "lucide-react";
-import { SkillsMap, normalizeModules } from "@/components/course/SkillsMap";
+import { ArrowRight, Clock, ShieldCheck, Loader2, Check, BookOpen, QrCode } from "lucide-react";
+import { normalizeModules } from "@/components/course/SkillsMap";
+import { Footer } from "@/components/saas/Footer";
 import { LessonList } from "@/components/course/LessonList";
 import { toast } from "sonner";
 import { useI18n } from "@/lib/i18n";
@@ -84,10 +85,52 @@ function CertDetail() {
   const lessonMinutes = baseModules.reduce((n: number, m: any) => n + (Number(m?.minutes) || 0), 0);
   if (!c) return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
 
+  const aside = (
+    <div className="mt-8 rounded-2xl border border-border bg-card p-5 shadow-sm lg:mt-0">
+      <div className="flex items-baseline justify-between">
+        <div>
+          <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{t("course.price")}</div>
+          <div className="mt-1 text-3xl font-black" data-testid="course-price">{info ? money(info.single_cents, info.currency) : formatPrice(c.price_cents)}</div>
+        </div>
+        <span className="rounded-full bg-emerald-600/10 px-2.5 py-1 text-[11px] font-semibold text-emerald-700">Lessons free</span>
+      </div>
+      <p className="mt-1 text-xs text-muted-foreground">Pay only when you take the certificate exam.</p>
+      <ul className="mt-4 space-y-2.5 border-t border-border pt-4 text-sm">
+        <li className="flex items-center gap-2.5"><BookOpen className="h-4 w-4 text-emerald-700" /> {modules.length} interactive lessons</li>
+        <li className="flex items-center gap-2.5"><Clock className="h-4 w-4 text-emerald-700" /> {lessonMinutes ? `About ${Math.round(lessonMinutes / 5) * 5} min of study` : "Self-paced"}</li>
+        <li className="flex items-center gap-2.5"><ShieldCheck className="h-4 w-4 text-emerald-700" /> {c.question_count}-question exam · {c.pass_score}% {t("course.toPass")}</li>
+        <li className="flex items-center gap-2.5"><QrCode className="h-4 w-4 text-emerald-700" /> <span className="inline-block first-letter:uppercase">{t("course.verifiable")}</span></li>
+      </ul>
+      <div className="mt-5 grid gap-2">
+        {modules.length > 0 && (
+          <Button size="lg" className="w-full bg-emerald-600 text-white hover:bg-emerald-700" onClick={() => nav({ to: "/c/$slug/lesson/$n", params: { slug, n: "1" } })}>
+            Start lesson 1 <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        )}
+        {info?.access.access && (
+          <Button size="lg" variant="outline" className="w-full" onClick={() => nav({ to: "/exam/$slug", params: { slug } })}>
+            {t("course.startExam")} <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        )}
+        {enrolled ? (
+          <span className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-md bg-emerald-600/10 px-4 text-sm font-medium text-emerald-700">
+            <Check className="h-4 w-4" /> {t("course.enrolled")}
+          </span>
+        ) : (
+          <Button size="lg" variant="outline" className="w-full" disabled={enrolling} onClick={enroll}>
+            {enrolling ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
+            {user ? "Save to my portal" : t("course.enrollSignIn")}
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <div className="mx-auto max-w-3xl px-5 py-12 sm:px-8">
+      <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8 lg:grid lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-12">
+        <div className="min-w-0">
         <div className="flex items-center justify-between gap-3">
           <Link to="/catalog" className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground hover:text-foreground">{t("course.back")}</Link>
         </div>
@@ -100,7 +143,7 @@ function CertDetail() {
           offers: info ? { "@type": "Offer", category: "Certificate exam", price: (info.single_cents / 100).toFixed(2), priceCurrency: info.currency } : undefined,
           hasCourseInstance: { "@type": "CourseInstance", courseMode: "online", courseWorkload: lessonMinutes ? `PT${lessonMinutes}M` : undefined },
         }) }} />
-        <h1 className="mt-2 font-display text-5xl font-black tracking-tighter">{translation?.title ?? c.title}</h1>
+        <h1 className="mt-2 font-display text-4xl font-black tracking-tighter sm:text-5xl">{translation?.title ?? c.title}</h1>
         <p className="mt-3 text-base text-muted-foreground">{translation?.summary ?? c.summary}</p>
         {lang !== "en" && (
           <p className="mt-2 flex items-center gap-2 text-xs text-muted-foreground">
@@ -115,50 +158,7 @@ function CertDetail() {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-4">
-          <div className="rounded-lg border border-border p-4">
-            <div className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">{t("course.price")}</div>
-            <div className="mt-2 text-2xl font-black" data-testid="course-price">{info ? money(info.single_cents, info.currency) : formatPrice(c.price_cents)}</div>
-            <div className="text-xs text-muted-foreground">lessons free · pay to certify</div>
-          </div>
-          <div className="rounded-lg border border-border p-4">
-            <Clock className="h-4 w-4 text-muted-foreground" />
-            <div className="mt-2 text-2xl font-black">{lessonMinutes ? `${Math.round(lessonMinutes / 5) * 5} min` : "—"}</div>
-            <div className="text-xs text-muted-foreground">of lessons · {modules.length} modules</div>
-          </div>
-          <div className="rounded-lg border border-border p-4">
-            <ShieldCheck className="h-4 w-4 text-muted-foreground" />
-            <div className="mt-2 text-2xl font-black">{c.question_count} Qs</div>
-            <div className="text-xs text-muted-foreground">exam · {c.pass_score}% {t("course.toPass")}</div>
-          </div>
-          <div className="rounded-lg border border-border p-4">
-            <div className="text-2xl font-black">QR</div>
-            <div className="text-xs text-muted-foreground">{t("course.verifiable")}</div>
-          </div>
-        </div>
-
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          {enrolled ? (
-            <span className="inline-flex min-h-[44px] items-center gap-2 rounded-md bg-emerald-600/10 px-4 text-sm font-medium text-emerald-700">
-              <Check className="h-4 w-4" /> {t("course.enrolled")}
-            </span>
-          ) : (
-            <Button size="lg" variant="outline" disabled={enrolling} onClick={enroll}>
-              {enrolling ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
-              {user ? "Start the free lessons" : t("course.enrollSignIn")}
-            </Button>
-          )}
-          {info?.access.access && (
-            <Button size="lg" className="bg-emerald-600 text-white hover:bg-emerald-700" onClick={() => nav({ to: "/exam/$slug", params: { slug } })}>
-              {t("course.startExam")} <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          )}
-          {modules.length > 0 && (
-            <Button size="lg" variant="outline" onClick={() => nav({ to: "/c/$slug/lesson/$n", params: { slug, n: "1" } })}>
-              Open lesson 1 <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          )}
-        </div>
+        <div className="lg:hidden">{aside}</div>
         {info?.access.access && info.access.via === "pass" && info.access.until && (
           <p className="mt-2 text-xs text-muted-foreground">Your monthly pass is active until {new Date(info.access.until).toLocaleDateString()}.</p>
         )}
@@ -170,7 +170,6 @@ function CertDetail() {
           </div>
         )}
 
-        <SkillsMap modules={modules} fallback={(translation?.skills?.length ? translation.skills : c.skills) ?? []} />
         <LessonList slug={slug} certificationId={c.id} modules={modules} />
         {related.length > 0 && (
           <section className="mt-12">
@@ -186,7 +185,10 @@ function CertDetail() {
             <Link to="/catalog" search={{ category: c.category }} className="mt-3 inline-block text-sm text-emerald-700 hover:underline">See all {c.category} courses →</Link>
           </section>
         )}
+        </div>
+        <aside className="hidden lg:block"><div className="sticky top-24">{aside}</div></aside>
       </div>
+      <Footer />
     </div>
   );
 }

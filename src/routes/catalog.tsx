@@ -151,22 +151,22 @@ function Catalog() {
               return (
                 <Link
                   key={r.slug} to="/c/$slug" params={{ slug: r.slug }}
-                  className="group flex flex-col rounded-xl border border-border bg-card p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600/40"
+                  className="group flex flex-col rounded-xl border border-border bg-card p-4 sm:p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600/40"
                 >
                   <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-emerald-700">{r.category}</div>
                   <h2 className="mt-2 font-display text-lg font-extrabold leading-snug tracking-tight">{r.title}</h2>
                   <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{r.summary}</p>
-                  <div className="mt-3 flex flex-wrap gap-1.5">
+                  <div className="mt-3 hidden flex-wrap gap-1.5 sm:flex">
                     {(r.skills ?? []).slice(0, 3).map((s) => (
                       <span key={s} className="rounded-full bg-muted px-2 py-0.5 text-[10px]">{s}</span>
                     ))}
                   </div>
-                  <div className="mt-auto pt-4">
+                  <div className="mt-auto pt-3 sm:pt-4">
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                       {mods > 0 && <span className="inline-flex items-center gap-1"><Clock className="h-3 w-3" aria-hidden /> {mods} lessons{mins ? ` · ${Math.round(mins / 5) * 5} min` : ""}</span>}
                       <span className="inline-flex items-center gap-1"><ShieldCheck className="h-3 w-3" aria-hidden /> {r.question_count} Qs · {r.pass_score}% to pass</span>
                     </div>
-                    <div className="mt-3 flex items-center justify-between">
+                    <div className="mt-2 flex items-center justify-between sm:mt-3">
                       <span className="text-sm font-bold">{formatPrice(r.price_cents)} <span className="font-normal text-muted-foreground">certificate</span></span>
                       <span className="inline-flex items-center gap-1 text-sm font-medium text-emerald-700">
                         View course <ArrowRight className="h-3 w-3 transition group-hover:translate-x-0.5" aria-hidden />

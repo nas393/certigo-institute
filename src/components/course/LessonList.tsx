@@ -21,7 +21,7 @@ export function LessonList({ slug, certificationId, modules }: { slug: string; c
         <div>
           <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">◆ Lessons</div>
           <h2 className="mt-1 font-display text-2xl font-extrabold tracking-tight">{modules.length} interactive lessons</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Slides, diagrams, workplace cases and quick checks in every lesson. Free to study.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Short steps with slides, diagrams, workplace cases and quick checks. Free to study.</p>
         </div>
         {user && <div className="text-right text-xs text-muted-foreground"><div className="text-2xl font-black text-foreground">{count}/{modules.length}</div>completed</div>}
       </div>
@@ -36,6 +36,11 @@ export function LessonList({ slug, certificationId, modules }: { slug: string; c
               <div className="min-w-0 flex-1">
                 <div className="font-semibold leading-snug">{m.title}</div>
                 {m.learned && <p className="mt-0.5 line-clamp-2 text-sm text-muted-foreground">{m.learned}</p>}
+                {(m.skills?.length ?? 0) > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {m.skills!.slice(0, 3).map((s) => <span key={s} className="rounded-full border border-emerald-600/20 bg-emerald-50/60 px-2 py-0.5 text-[10px] text-emerald-800">{s}</span>)}
+                  </div>
+                )}
                 <div className="mt-1.5 flex flex-wrap gap-x-3 text-[11px] text-muted-foreground">
                   {m.minutes ? <span className="inline-flex items-center gap-1"><Clock className="h-3 w-3" /> {m.minutes} min</span> : null}
                   {(m.slides?.length ?? 0) > 0 && <span className="inline-flex items-center gap-1"><Presentation className="h-3 w-3" /> slides</span>}

@@ -16,7 +16,7 @@ export function HomeProof() {
 
   return (
     <>
-      <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
+      <section className="relative mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ What you receive</div>
         <h2 className="mt-2 font-display text-3xl font-black tracking-tighter">A certificate built to be checked</h2>
         <div className="relative mt-6">
@@ -32,7 +32,7 @@ export function HomeProof() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
+      <section className="relative mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ For employers</div>
         <h2 className="mt-2 font-display text-3xl font-black tracking-tighter">How an employer checks a certificate</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -51,7 +51,7 @@ export function HomeProof() {
       </section>
 
       {courses.length > 0 && (
-        <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
+        <section className="relative mx-auto max-w-6xl px-5 py-12 sm:px-8">
           <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ Inside a course</div>
           <h2 className="mt-2 font-display text-3xl font-black tracking-tighter">See exactly what you'll learn</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-3">

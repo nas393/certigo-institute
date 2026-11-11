@@ -1,9 +1,10 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Header } from "@/components/kredo/Header";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Footer } from "@/components/saas/Footer";
 import { VerificationPlayground } from "@/components/playground/VerificationPlayground";
 import { useI18n } from "@/lib/i18n";
 import { HomeProof } from "@/components/home/HomeProof";
@@ -20,26 +21,17 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const ROLES = [
-  { id: "pm", key: "role.pm", slug: "product-management-foundations" },
-  { id: "eng", key: "role.eng", slug: "cloud-fundamentals" },
-  { id: "design", key: "role.design", slug: "ux-research-methods" },
-  { id: "data", key: "role.data", slug: "prompt-engineering-essentials" },
-];
+const FEATURED = ["people-management-fundamentals", "sales-and-key-account-management", "angola-taxation-and-payroll", "inventory-and-warehousing", "excel-and-data-for-business"];
+type Row = { slug: string; title: string; category: string; modules: unknown };
 
 function Home() {
-  const nav = useNavigate();
   const { t } = useI18n();
-  const [role, setRole] = useState<string | null>(null);
-  const [recommended, setRecommended] = useState<any>(null);
-
+  const [rows, setRows] = useState<Row[] | null>(null);
   useEffect(() => {
-    if (!role) { setRecommended(null); return; }
-    const slug = ROLES.find((r) => r.id === role)?.slug;
-    if (!slug) return;
-    supabase.from("certifications").select("slug,title,summary,skills,category").eq("slug", slug).maybeSingle()
-      .then(({ data }) => setRecommended(data));
-  }, [role]);
+    supabase.from("certifications").select("slug,title,category,modules").then(({ data }) => setRows((data ?? []) as Row[]));
+  }, []);
+  const featured = FEATURED.map((s) => rows?.find((r) => r.slug === s)).filter(Boolean) as Row[];
+  const areas = Object.entries((rows ?? []).reduce<Record<string, number>>((m, r) => ((m[r.category] = (m[r.category] ?? 0) + 1), m), {})).sort((x, y) => y[1] - x[1]);
 
   return (
     <div className="relative min-h-screen bg-background">
@@ -49,60 +41,59 @@ function Home() {
       />
       <Header />
 
-      <section className="relative mx-auto max-w-5xl px-5 pt-16 pb-12 sm:px-8 sm:pt-24">
-        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {t("home.eyebrow")}</div>
-        <h1 className="mt-4 font-display text-5xl font-black tracking-tighter sm:text-7xl">
-          {t("home.h1a")}<br />{t("home.h1b")} <span className="text-emerald-600">{t("home.h1c")}</span>.
-        </h1>
-        <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-          {t("home.sub")}
-        </p>
-
-        <div className="mt-10">
-          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">{t("home.what")}</div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {ROLES.map((r) => (
-              <button
-                key={r.id}
-                onClick={() => setRole(r.id)}
-                className={"rounded-full border px-4 py-2 text-sm font-medium transition " + (role === r.id ? "border-emerald-600 bg-emerald-50 text-emerald-700" : "border-border hover:border-foreground/40")}
-              >
-                {t(r.key)}
-              </button>
-            ))}
+      <section className="relative mx-auto grid max-w-6xl gap-10 px-5 pt-12 pb-10 sm:px-8 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-center">
+        <div>
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">◆ {t("home.eyebrow")}</div>
+          <h1 className="mt-4 font-display text-5xl font-black tracking-tighter sm:text-7xl">
+            {t("home.h1a")}<br />{t("home.h1b")} <span className="text-emerald-600">{t("home.h1c")}</span>.
+          </h1>
+          <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">{t("home.sub")}</p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button asChild size="lg" className="bg-emerald-600 text-white hover:bg-emerald-700">
+              <Link to="/catalog">{t("home.ctaBrowse")} <ArrowRight className="ml-2 h-4 w-4" /></Link>
+            </Button>
+            <Button asChild size="lg" variant="outline"><Link to="/about">{t("home.ctaHow")}</Link></Button>
           </div>
         </div>
 
-        {recommended && (
-          <div className="mt-6 rounded-xl border border-border bg-card p-6 shadow-sm">
-            <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.32em] text-emerald-700">
-              <Sparkles className="h-3 w-3" /> {t("home.recommended")}
-            </div>
-            <h3 className="mt-2 font-display text-2xl font-extrabold tracking-tight">{recommended.title}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{recommended.summary}</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {(recommended.skills ?? []).map((s: string) => (
-                <span key={s} className="rounded-full bg-muted px-2.5 py-1 text-[11px]">{s}</span>
-              ))}
-            </div>
-            <Button
-              className="mt-5 bg-emerald-600 text-white hover:bg-emerald-700"
-              onClick={() => nav({ to: "/c/$slug", params: { slug: recommended.slug } })}
-            >
-              {t("home.startNow")} <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+        <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+          <div className="flex items-baseline justify-between gap-3">
+            <div className="font-display text-lg font-extrabold">{t("home.popular")}</div>
+            <Link to="/catalog" className="text-xs font-medium text-emerald-700 hover:underline">{t("home.allCourses")} →</Link>
           </div>
-        )}
-
-        <div className="mt-6">
-          <Link to="/catalog" className="text-sm font-medium text-muted-foreground underline-offset-4 hover:text-foreground hover:underline">
-            {t("home.browse")}
-          </Link>
+          <p className="text-xs text-muted-foreground">{t("home.popularSub")}</p>
+          <ul className="mt-3 divide-y divide-border">
+            {rows === null
+              ? Array.from({ length: 4 }).map((_, i) => <li key={i} className="py-3"><div className="h-4 w-3/4 animate-pulse rounded bg-muted" /><div className="mt-2 h-3 w-1/3 animate-pulse rounded bg-muted" /></li>)
+              : featured.map((r) => (
+                <li key={r.slug}>
+                  <Link to="/c/$slug" params={{ slug: r.slug }} className="group flex items-center justify-between gap-3 py-3">
+                    <span className="min-w-0">
+                      <span className="block truncate font-semibold group-hover:text-emerald-700">{r.title}</span>
+                      <span className="block truncate text-[11px] text-muted-foreground">{r.category} · {Array.isArray(r.modules) ? r.modules.length : 6} lessons</span>
+                    </span>
+                    <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground transition group-hover:translate-x-0.5 group-hover:text-emerald-700" />
+                  </Link>
+                </li>
+              ))}
+          </ul>
         </div>
       </section>
 
+      {areas.length > 0 && (
+        <section className="relative mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">{t("home.areas")}</div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {areas.map(([cat, n]) => (
+              <Link key={cat} to="/catalog" search={{ category: cat }} className="rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-semibold transition hover:border-emerald-600 hover:text-emerald-700">
+                {cat} <span className="text-muted-foreground">({n})</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
-      <section className="relative mx-auto max-w-5xl px-5 py-12 sm:px-8">
+      <section className="relative mx-auto max-w-6xl px-5 py-12 sm:px-8">
         <div className="grid gap-6 sm:grid-cols-3">
           {[
             { n: "01", t: t("home.s1t"), d: t("home.s1d") },
@@ -122,11 +113,7 @@ function Home() {
 
       <VerificationPlayground />
 
-      <footer className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
-        <div className="border-t border-border pt-6 font-mono text-[10px] uppercase tracking-[0.32em] text-muted-foreground">
-          CERTIGO<span className="text-emerald-600">.</span> · © {new Date().getFullYear()} · <Link to="/about" className="hover:text-foreground">How we assess</Link> · <Link to="/terms" className="hover:text-foreground">Terms</Link> · <Link to="/privacy" className="hover:text-foreground">Privacy</Link> · <Link to="/contact" className="hover:text-foreground">Contact</Link>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
