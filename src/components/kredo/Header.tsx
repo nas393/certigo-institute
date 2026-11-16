@@ -44,6 +44,7 @@ function CertigoMark({ size = 32 }: { size?: number }) {
 
 const NAV: { to: string; key: string }[] = [
   { to: "/catalog", key: "nav.catalog" },
+  { to: "/paths", key: "nav.paths" },
   { to: "/pricing", key: "nav.pricing" },
   { to: "/about", key: "nav.about" },
   { to: "/hr", key: "nav.hr" },
