@@ -16,6 +16,7 @@ import { Route as AuthRouteImport } from './routes/auth'
 import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as HrRouteImport } from './routes/hr'
+import { Route as PathsRouteImport } from './routes/paths'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
@@ -66,6 +67,11 @@ const ContactRoute = ContactRouteImport.update({
 const HrRoute = HrRouteImport.update({
   id: '/hr',
   path: '/hr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PathsRoute = PathsRouteImport.update({
+  id: '/paths',
+  path: '/paths',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricingRoute = PricingRouteImport.update({
@@ -162,6 +168,7 @@ export interface FileRoutesByFullPath {
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
   '/hr': typeof HrRoute
+  '/paths': typeof PathsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -187,6 +194,7 @@ export interface FileRoutesByTo {
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
   '/hr': typeof HrRoute
+  '/paths': typeof PathsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -214,6 +222,7 @@ export interface FileRoutesById {
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
   '/hr': typeof HrRoute
+  '/paths': typeof PathsRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
   '/reset-password': typeof ResetPasswordRoute
@@ -241,6 +250,7 @@ export interface FileRouteTypes {
     | '/catalog'
     | '/contact'
     | '/hr'
+    | '/paths'
     | '/pricing'
     | '/privacy'
     | '/reset-password'
@@ -266,6 +276,7 @@ export interface FileRouteTypes {
     | '/catalog'
     | '/contact'
     | '/hr'
+    | '/paths'
     | '/pricing'
     | '/privacy'
     | '/reset-password'
@@ -292,6 +303,7 @@ export interface FileRouteTypes {
     | '/catalog'
     | '/contact'
     | '/hr'
+    | '/paths'
     | '/pricing'
     | '/privacy'
     | '/reset-password'
@@ -319,6 +331,7 @@ export interface RootRouteChildren {
   CatalogRoute: typeof CatalogRoute
   ContactRoute: typeof ContactRoute
   HrRoute: typeof HrRoute
+  PathsRoute: typeof PathsRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
@@ -381,6 +394,13 @@ declare module '@tanstack/react-router' {
       path: '/hr'
       fullPath: '/hr'
       preLoaderRoute: typeof HrRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/paths': {
+      id: '/paths'
+      path: '/paths'
+      fullPath: '/paths'
+      preLoaderRoute: typeof PathsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pricing': {
@@ -534,6 +554,7 @@ const rootRouteChildren: RootRouteChildren = {
   CatalogRoute: CatalogRoute,
   ContactRoute: ContactRoute,
   HrRoute: HrRoute,
+  PathsRoute: PathsRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
   ResetPasswordRoute: ResetPasswordRoute,

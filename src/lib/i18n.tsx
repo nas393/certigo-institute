@@ -22,6 +22,7 @@ export const LOCALES: Record<LangCode, string> = {
 const DICT: Record<LangCode, Record<string, string>> = {
   en: {
     "nav.catalog": "Catalog",
+    "nav.paths": "Paths",
     "nav.shop": "Shop",
     "nav.pricing": "Pricing",
     "nav.about": "How we assess",
@@ -97,6 +98,7 @@ const DICT: Record<LangCode, Record<string, string>> = {
   },
   fr: {
     "nav.catalog": "Catalogue",
+    "nav.paths": "Parcours",
     "nav.shop": "Boutique",
     "nav.pricing": "Tarifs",
     "nav.about": "Notre méthode",
@@ -172,6 +174,7 @@ const DICT: Record<LangCode, Record<string, string>> = {
   },
   es: {
     "nav.catalog": "Catálogo",
+    "nav.paths": "Rutas",
     "nav.shop": "Tienda",
     "nav.pricing": "Precios",
     "nav.about": "Cómo evaluamos",
@@ -247,6 +250,7 @@ const DICT: Record<LangCode, Record<string, string>> = {
   },
   pt: {
     "nav.catalog": "Catálogo",
+    "nav.paths": "Trilhas",
     "nav.shop": "Loja",
     "nav.pricing": "Preços",
     "nav.about": "Como avaliamos",
@@ -322,6 +326,7 @@ const DICT: Record<LangCode, Record<string, string>> = {
   },
   ar: {
     "nav.catalog": "الدورات",
+    "nav.paths": "المسارات",
     "nav.shop": "المتجر",
     "nav.pricing": "الأسعار",
     "nav.about": "كيف نقيّم",
