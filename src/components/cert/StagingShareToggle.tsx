@@ -11,14 +11,15 @@ import { toast } from "sonner";
  * gated to non-production builds so it never appears on the published site.
  */
 export function StagingShareToggle({ serial }: { serial: string }) {
+  // Hooks first: the staging check can differ between server render (no window) and browser,
+  // so a hook after the early return would change the hook order between renders.
+  const [on, setOn] = useState(false);
   // Show only outside the published production deploy.
   const isStaging =
     import.meta.env.DEV ||
     import.meta.env.MODE !== "production" ||
     (typeof window !== "undefined" && /localhost|-git-|-[a-z0-9]{9}-[a-z0-9-]+\.vercel\.app$/i.test(window.location.hostname));
   if (!isStaging) return null;
-
-  const [on, setOn] = useState(false);
   const origin = typeof window !== "undefined" ? window.location.origin : "";
   const url = `${origin}/verify/${serial}`;
 
