@@ -1,0 +1,475 @@
+{
+ "slug": "import-logistics-and-incoterms",
+ "title": "The import file",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: import stages and roles, lead time sum, pre-arrival work, Incoterms groups, risk vs cost, sea-only rules for containers, CIF vs CIP insurance, EXW/DDP traps, payment risk ladder, D/P vs D/A, UCP 600, discrepancies, B/L types. Calculations checked. Fictional companies."
+ },
+ "content": {
+  "role": "Import Coordinator",
+  "company": "Granite Machinery Parts (fictional), importing machine parts and tools by container",
+  "briefing": "You manage imports end to end: contracts, Incoterms, payment terms, documents and clearance. A new supplier from Asia is starting, and the finance director wants fewer delays and safer payments.",
+  "skills": {
+   "flow": "Import flow and lead time",
+   "terms": "Incoterms",
+   "pay": "Payment methods",
+   "docs": "Documents"
+  },
+  "steps": [
+   {
+    "skill": "flow",
+    "variants": [
+     {
+      "text": "Production 21 days, to port 4 days, sea transit 35 days, clearance 10 days, delivery 2 days. What is the import lead time?",
+      "choices": [
+       {
+        "t": "72 days",
+        "p": 2,
+        "f": "Correct: add every stage. You plan the order 72 days before stock is needed."
+       },
+       {
+        "t": "35 days",
+        "p": 0,
+        "f": "That is only sea transit. Every stage adds time."
+       },
+       {
+        "t": "56 days",
+        "p": 0,
+        "f": "You left out clearance and delivery."
+       }
+      ]
+     },
+     {
+      "text": "The vessel has just sailed. Arrival is in 30 days. What do you do now?",
+      "choices": [
+       {
+        "t": "Get document copies, check them, send to the broker",
+        "p": 2,
+        "f": "Errors found now are fixed before arrival. Clearance takes 3 days, not 10."
+       },
+       {
+        "t": "Wait for the ship to arrive, then start",
+        "p": 0,
+        "f": "Document problems found at arrival cause storage charges."
+       },
+       {
+        "t": "Ask the supplier to call when it arrives",
+        "p": 0,
+        "f": "The supplier's job is done. Pre-arrival work is yours."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "terms",
+    "variants": [
+     {
+      "text": "The supplier offers EXW factory. Export clearance in their country is hard for a foreign buyer. What is the risk?",
+      "choices": [
+       {
+        "t": "You must clear export in their country",
+        "p": 2,
+        "f": "The EXW trap. FCA puts export clearance on the seller."
+       },
+       {
+        "t": "No risk: EXW is the simplest rule",
+        "p": 0,
+        "f": "Simple for the seller. The buyer does everything."
+       },
+       {
+        "t": "The seller pays the main freight",
+        "p": 0,
+        "f": "Under EXW, the buyer pays everything from the factory."
+       }
+      ]
+     },
+     {
+      "text": "A supplier proposes DDP Luanda. What is the trap for the supplier?",
+      "choices": [
+       {
+        "t": "They must clear import and pay duties here",
+        "p": 2,
+        "f": "Few foreign sellers can do that well. Delays at customs follow."
+       },
+       {
+        "t": "They carry no risk until loading",
+        "p": 0,
+        "f": "DDP is the maximum seller obligation."
+       },
+       {
+        "t": "The buyer must arrange sea freight",
+        "p": 0,
+        "f": "Under DDP the seller arranges transport."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "terms",
+    "variants": [
+     {
+      "text": "Goods go in a container, handed over at the inland terminal. Is FOB correct?",
+      "choices": [
+       {
+        "t": "No: use FCA for containers",
+        "p": 2,
+        "f": "FOB is for sea goods loaded on board. Containers are handed over at the terminal."
+       },
+       {
+        "t": "Yes: FOB covers all sea cargo",
+        "p": 0,
+        "f": "Risk stays with the seller after handover, an unclear gap."
+       },
+       {
+        "t": "Yes, if the price is lower",
+        "p": 0,
+        "f": "Price does not fix the risk mismatch."
+       }
+      ]
+     },
+     {
+      "text": "Under CPT Luanda, the seller pays freight to Luanda. When does risk pass to you?",
+      "choices": [
+       {
+        "t": "At handover to the first carrier",
+        "p": 2,
+        "f": "C rules: cost runs to destination, risk passes at origin."
+       },
+       {
+        "t": "On arrival in Luanda",
+        "p": 0,
+        "f": "That confuses cost and risk."
+       },
+       {
+        "t": "When customs clears the goods",
+        "p": 0,
+        "f": "Clearance does not move risk."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "terms",
+    "variants": [
+     {
+      "text": "You buy high-value parts CIF. What insurance does CIF require of the seller?",
+      "choices": [
+       {
+        "t": "Minimum cover, Clauses (C)",
+        "p": 2,
+        "f": "Correct. For wider cover, ask for CIP (Clauses A) or insure yourself."
+       },
+       {
+        "t": "All-risks cover, Clauses (A)",
+        "p": 0,
+        "f": "That is CIP's level under Incoterms 2020."
+       },
+       {
+        "t": "No insurance at all",
+        "p": 0,
+        "f": "CIF includes insurance, but only minimum."
+       }
+      ]
+     },
+     {
+      "text": "How do you write the rule in the contract?",
+      "choices": [
+       {
+        "t": "FCA Container Yard Ningbo, Incoterms 2020",
+        "p": 2,
+        "f": "Rule, exact named place and version."
+       },
+       {
+        "t": "FCA China, under the latest Incoterms",
+        "p": 0,
+        "f": "A country is too vague. Where exactly does risk pass?"
+       },
+       {
+        "t": "FCA supplier, Incoterms rules apply",
+        "p": 0,
+        "f": "No exact place and no version."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pay",
+    "variants": [
+     {
+      "text": "First order with a new supplier: USD 180,000. Trust is low on both sides. Which method?",
+      "choices": [
+       {
+        "t": "Letter of credit",
+        "p": 2,
+        "f": "Banks commit to pay against complying documents. Both sides are protected."
+       },
+       {
+        "t": "Full advance payment",
+        "p": 0,
+        "f": "Best for the seller, riskiest for you."
+       },
+       {
+        "t": "Open account, 60 days",
+        "p": 0,
+        "f": "Best for the buyer; the new supplier will refuse."
+       }
+      ]
+     },
+     {
+      "text": "After 2 years of good orders with this supplier, the bank costs of LCs feel high.",
+      "choices": [
+       {
+        "t": "Move to collection or open account",
+        "p": 2,
+        "f": "As trust grows, move down the ladder and cut bank costs."
+       },
+       {
+        "t": "Keep using LCs forever to be safe",
+        "p": 1,
+        "f": "Safe, but expensive once trust is proven."
+       },
+       {
+        "t": "Switch to full advance payment",
+        "p": 0,
+        "f": "That raises your risk for no reason."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pay",
+    "variants": [
+     {
+      "text": "Under a documentary collection 'D/P', when do you get the documents?",
+      "choices": [
+       {
+        "t": "When you pay",
+        "p": 2,
+        "f": "Documents against payment. D/A means against acceptance of a bill."
+       },
+       {
+        "t": "When you accept a bill",
+        "p": 0,
+        "f": "That is D/A."
+       },
+       {
+        "t": "When the ship sails",
+        "p": 0,
+        "f": "The bank holds documents until payment."
+       }
+      ]
+     },
+     {
+      "text": "Under UCP 600, how long do banks have to examine documents?",
+      "choices": [
+       {
+        "t": "Up to 5 banking days",
+        "p": 2,
+        "f": "Correct. Plan cash and release around it."
+       },
+       {
+        "t": "21 calendar days",
+        "p": 0,
+        "f": "That is the usual presentation limit after shipment."
+       },
+       {
+        "t": "Until the goods arrive",
+        "p": 0,
+        "f": "Examination is separate from arrival."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pay",
+    "variants": [
+     {
+      "text": "The LC requires shipment by 30 June. The bill of lading shows 2 July.",
+      "choices": [
+       {
+        "t": "A discrepancy: the bank may refuse",
+        "p": 2,
+        "f": "Late shipment does not comply. Seek an amendment or a waiver."
+       },
+       {
+        "t": "No problem: 2 days is small",
+        "p": 0,
+        "f": "Banks deal in documents, not intentions. Any mismatch counts."
+       },
+       {
+        "t": "The bank will fix the date",
+        "p": 0,
+        "f": "Banks examine; they do not correct documents."
+       }
+      ]
+     },
+     {
+      "text": "The LC says '500 drill bits'; the invoice says '500 cutting tools'. What do you do?",
+      "choices": [
+       {
+        "t": "Ask the supplier to match the LC wording",
+        "p": 2,
+        "f": "Descriptions must match the credit. Fixed before presentation."
+       },
+       {
+        "t": "Present it; it is the same item",
+        "p": 0,
+        "f": "A wording mismatch is a classic discrepancy."
+       },
+       {
+        "t": "Ask the bank to accept it as is",
+        "p": 1,
+        "f": "Possible as a waiver, but fixing it first is safer."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "docs",
+    "variants": [
+     {
+      "text": "The forwarder issues you a B/L; the shipping line issues one to the forwarder. Which is yours?",
+      "choices": [
+       {
+        "t": "The house B/L",
+        "p": 2,
+        "f": "The forwarder's house B/L. The master B/L is between line and forwarder."
+       },
+       {
+        "t": "The master B/L",
+        "p": 0,
+        "f": "That one is issued by the shipping line to the forwarder."
+       },
+       {
+        "t": "Both are yours",
+        "p": 0,
+        "f": "Each has a different issuer and holder."
+       }
+      ]
+     },
+     {
+      "text": "You want a bill of lading that can be transferred to your bank by endorsement.",
+      "choices": [
+       {
+        "t": "An order B/L",
+        "p": 2,
+        "f": "Transferable by endorsement, often required under LCs."
+       },
+       {
+        "t": "A straight B/L",
+        "p": 0,
+        "f": "Named consignee, not transferable."
+       },
+       {
+        "t": "A sea waybill",
+        "p": 0,
+        "f": "Not a document of title."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "docs",
+    "variants": [
+     {
+      "text": "The commercial invoice is missing the HS code. Why does it matter?",
+      "choices": [
+       {
+        "t": "Customs uses it to classify and set duty",
+        "p": 2,
+        "f": "Without it, clearance stalls and duty may be wrong."
+       },
+       {
+        "t": "It does not matter for customs",
+        "p": 0,
+        "f": "The HS code drives classification and duty."
+       },
+       {
+        "t": "Only the bank needs it",
+        "p": 0,
+        "f": "Customs relies on it first."
+       }
+      ]
+     },
+     {
+      "text": "Documents arrive with different weights on the invoice, packing list and B/L.",
+      "choices": [
+       {
+        "t": "Fix them so all documents match",
+        "p": 2,
+        "f": "Consistency avoids customs queries and LC refusals."
+       },
+       {
+        "t": "Use the highest weight",
+        "p": 0,
+        "f": "Choosing does not fix inconsistent documents."
+       },
+       {
+        "t": "Ignore it; weights vary",
+        "p": 0,
+        "f": "Mismatches trigger inspections and delays."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "flow",
+    "variants": [
+     {
+      "text": "Who books the ship and coordinates transport, documents and customs agents?",
+      "choices": [
+       {
+        "t": "The freight forwarder",
+        "p": 2,
+        "f": "The forwarder coordinates; the broker handles clearance."
+       },
+       {
+        "t": "The supplier, always",
+        "p": 0,
+        "f": "Depends on the Incoterm, and the forwarder does the work."
+       },
+       {
+        "t": "The customs authority",
+        "p": 0,
+        "f": "Customs controls, it does not coordinate."
+       }
+      ]
+     },
+     {
+      "text": "What belongs in the import file?",
+      "choices": [
+       {
+        "t": "Contract, payment, shipping docs, licences",
+        "p": 2,
+        "f": "One complete file speeds clearance and audits."
+       },
+       {
+        "t": "Only the commercial invoice",
+        "p": 0,
+        "f": "Customs and audits need much more."
+       },
+       {
+        "t": "Only the bill of lading",
+        "p": 0,
+        "f": "The B/L alone cannot clear goods."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
