@@ -1,0 +1,475 @@
+{
+ "slug": "change-management",
+ "title": "Tablets for every order",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built only on the course models (Lewin, force field, Kotter, power/interest grid, ADKAR barrier point, Kotter-Schlesinger, communication order, utilisation and proficiency formulas). Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Change Lead",
+  "company": "Meridian Beverages (fictional), a drinks distributor with 140 sales reps and 3 depots",
+  "briefing": "The board approved a new ordering app: every rep must take orders on a tablet instead of paper by the end of the quarter. The IT build is on time. You lead the people side. Go-live is in 10 weeks.",
+  "skills": {
+   "diag": "Diagnosing the change",
+   "plan": "Leading and planning",
+   "people": "People and resistance",
+   "sustain": "Measuring and sustaining"
+  },
+  "steps": [
+   {
+    "skill": "diag",
+    "variants": [
+     {
+      "text": "The CEO calls it 'a small IT project'. 140 reps will change how they work every day, and paper ordering will be switched off. How do you size it?",
+      "choices": [
+       {
+        "t": "Transformational for the reps: many people, daily habits, hard to go back",
+        "p": 2,
+        "f": "Correct. You get a sponsor, a plan and a budget for the people side, not just for IT."
+       },
+       {
+        "t": "Incremental: the order process is the same, only the tool is new",
+        "p": 0,
+        "f": "Every rep changes a daily habit and paper is removed. Treating big change as a small project is a classic mistake."
+       },
+       {
+        "t": "Too early to say; size it after go-live, when real usage data exists",
+        "p": 0,
+        "f": "Sizing decides how much structure you need. Waiting means discovering it at go-live."
+       }
+      ]
+     },
+     {
+      "text": "The IT manager says: 'The system works in testing, so the change is done.' What do you answer?",
+      "choices": [
+       {
+        "t": "The technical side is ready; the people side is whether reps adopt it",
+        "p": 2,
+        "f": "Correct. A system that is installed but not used delivers nothing."
+       },
+       {
+        "t": "Agreed; once training is booked, adoption will follow",
+        "p": 0,
+        "f": "Training is one step. Desire, ability and reinforcement still decide adoption."
+       },
+       {
+        "t": "Partly; we should first add more features reps asked for",
+        "p": 1,
+        "f": "Listening to users helps, but it is still the technical side. The people plan is missing."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "diag",
+    "variants": [
+     {
+      "text": "Your force field analysis scores: driving forces 4 + 3 + 4 = 11. Restraining forces: fear of being tracked 5, slow 3G at depot B 4, habit 3 = 12. What is your first action?",
+      "choices": [
+       {
+        "t": "Reduce the strongest restraining forces: tracking fears and depot B signal",
+        "p": 2,
+        "f": "Correct. The restraining side is stronger (12 against 11). Reducing the top restraining forces first shifts the balance."
+       },
+       {
+        "t": "Add more driving forces, such as a bonus for early adopters",
+        "p": 1,
+        "f": "It can help, but pushing harder against strong restraining forces raises resistance. Reduce them first."
+       },
+       {
+        "t": "Go ahead; 11 and 12 are close enough to balance",
+        "p": 0,
+        "f": "The restraining side is winning. Ignoring it means slow adoption and workarounds."
+       }
+      ]
+     },
+     {
+      "text": "You list the restraining forces from the head office. A depot supervisor says your list is wrong. What do you do?",
+      "choices": [
+       {
+        "t": "Run the analysis with reps and supervisors at each depot",
+        "p": 2,
+        "f": "They add 'orders lost when the signal drops', which no one in the office knew. Diagnose with the people affected."
+       },
+       {
+        "t": "Keep your list; supervisors often defend old habits",
+        "p": 0,
+        "f": "Guessing restraining forces from the office is a common mistake. You miss the real blockers."
+       },
+       {
+        "t": "Ask the supervisor to email any missing points",
+        "p": 1,
+        "f": "Better than nothing, but one email gives one view. Workshops with the people affected find more."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "You form a guiding coalition. Who must be in it?",
+      "choices": [
+       {
+        "t": "The sponsor, depot heads, expert reps and respected supervisors",
+        "p": 2,
+        "f": "Correct: position power, expertise, credibility and leadership, including people who could block it."
+       },
+       {
+        "t": "The IT team and the project manager, to move fast",
+        "p": 0,
+        "f": "No position power or credibility with reps. The coalition must include those who could block it."
+       },
+       {
+        "t": "Only senior managers, so decisions are quick",
+        "p": 1,
+        "f": "Power is there, but without expert users and trusted supervisors, the design and the message suffer."
+       }
+      ]
+     },
+     {
+      "text": "The sponsor signed the business case but has not appeared since. Reps say 'head office does not really care'.",
+      "choices": [
+       {
+        "t": "Ask the sponsor to open the depot briefings and visit each depot",
+        "p": 2,
+        "f": "Reps see the sponsor in person. 'No sponsor, no change': visible, not just a signature."
+       },
+       {
+        "t": "Send a strong email in the sponsor's name",
+        "p": 1,
+        "f": "An email helps a little, but reps judge commitment by presence."
+       },
+       {
+        "t": "Ignore it; the depot managers can carry the message",
+        "p": 0,
+        "f": "Without a visible sponsor, depot managers lack backing when resistance comes."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "Draft vision: 'Project ORBIT phase 2: digital order capture enablement.' What do you do with it?",
+      "choices": [
+       {
+        "t": "Rewrite it in plain words with benefits reps care about",
+        "p": 2,
+        "f": "New version: 'Orders in seconds, no lost paper, commission visible the same day.' People must understand and care."
+       },
+       {
+        "t": "Keep it; a project name gives the change an identity",
+        "p": 0,
+        "f": "A project name is not a vision. Reps cannot explain it, so they cannot buy into it."
+       },
+       {
+        "t": "Add a long slide deck to explain what ORBIT means",
+        "p": 1,
+        "f": "A vision that needs a deck fails Kotter's five-minute test. Make it short and concrete."
+       }
+      ]
+     },
+     {
+      "text": "Week 4. People ask for proof the app helps. What short-term win do you plan?",
+      "choices": [
+       {
+        "t": "Publish depot A's pilot: same-day commission statements for all reps",
+        "p": 2,
+        "f": "Visible, clear and linked to the change. Reps at other depots start asking when they get it."
+       },
+       {
+        "t": "Report that 92% of the IT test cases passed in the last test cycle",
+        "p": 0,
+        "f": "Not visible or meaningful to reps. A win must matter to the people who change."
+       },
+       {
+        "t": "Wait for full go-live results so the benefit shown is fully proven",
+        "p": 1,
+        "f": "Real results take months. Plan wins along the way, do not hope for them."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "people",
+    "variants": [
+     {
+      "text": "Power/interest grid: the national sales director has high power but low interest in the app. Where do you place him and how do you engage?",
+      "choices": [
+       {
+        "t": "Keep satisfied: short updates and consult him on decisions",
+        "p": 2,
+        "f": "Correct. He stays supportive and approves the depot B signal budget when you ask."
+       },
+       {
+        "t": "Monitor: he is not interested, so do nothing",
+        "p": 0,
+        "f": "High power means he can stop the change. Ignoring him is a risk."
+       },
+       {
+        "t": "Keep informed: send him the weekly newsletter",
+        "p": 1,
+        "f": "Keep informed is for low-power, high-interest groups. He needs more direct attention."
+       }
+      ]
+     },
+     {
+      "text": "Supervisor Rosa: power 4, now Resistant (2), needs to be Leading (5). Supervisor Tomás: power 2, now Neutral (3), needs Supportive (4). Who comes first?",
+      "choices": [
+       {
+        "t": "Rosa: priority 4 x 3 = 12 against 2 x 1 = 2 for Tomás",
+        "p": 2,
+        "f": "Correct: priority = power x gap. You meet Rosa one-to-one this week."
+       },
+       {
+        "t": "Tomás: he is closer to supporting, so a quick win",
+        "p": 0,
+        "f": "Easy is not important. Spend time where power and gap are highest."
+       },
+       {
+        "t": "Both together in a group meeting",
+        "p": 1,
+        "f": "Efficient, but Rosa's resistance needs a one-to-one conversation first."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "people",
+    "variants": [
+     {
+      "text": "ADKAR scores for rep Paulo: Awareness 4, Desire 2, Knowledge 2, Ability 1, Reinforcement 1. What do you do first?",
+      "choices": [
+       {
+        "t": "Work on Desire: what is in it for him",
+        "p": 2,
+        "f": "Correct. The barrier point is the first score of 3 or lower, which is Desire. More training would not fix it."
+       },
+       {
+        "t": "Coach Ability, since it is his lowest score",
+        "p": 0,
+        "f": "Fix the first barrier, not the lowest score. Without desire, he will not practise."
+       },
+       {
+        "t": "Send him to the next training session",
+        "p": 0,
+        "f": "Answering low Desire with more training is a common mistake."
+       }
+      ]
+     },
+     {
+      "text": "ADKAR scores for rep Ana: Awareness 5, Desire 4, Knowledge 3, Ability 2, Reinforcement 1. What do you do first?",
+      "choices": [
+       {
+        "t": "Train her: Knowledge is the first score of 3 or lower",
+        "p": 2,
+        "f": "Correct. After training, you check Ability with practice."
+       },
+       {
+        "t": "Recognise her publicly to boost Reinforcement",
+        "p": 0,
+        "f": "Reinforcement comes last. Fix the first barrier first."
+       },
+       {
+        "t": "Pair her with a champion for practice",
+        "p": 1,
+        "f": "Practice builds Ability, but she first needs to know how. Train, then practise."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "people",
+    "variants": [
+     {
+      "text": "Depot B reps resist: they believe the tablet will be used to track and punish them. Which approach first?",
+      "choices": [
+       {
+        "t": "Education and participation: show what is tracked and involve them in the rules",
+        "p": 2,
+        "f": "Correct. Misunderstanding and low trust call for the first three approaches. Reps help write the data-use rules."
+       },
+       {
+        "t": "Tell them clearly that tablet use is mandatory from Monday onwards",
+        "p": 0,
+        "f": "Coercion first turns misunderstanding into hostility."
+       },
+       {
+        "t": "Offer depot B a cash bonus for every week the tablets are used",
+        "p": 1,
+        "f": "Negotiation can work, but it does not fix the misunderstanding. Explain first."
+       }
+      ]
+     },
+     {
+      "text": "A rumour spreads on WhatsApp: 'the app will replace 20 reps'. It is false. What do you do?",
+      "choices": [
+       {
+        "t": "Have supervisors answer it face to face this week, with facts",
+        "p": 2,
+        "f": "Correct. Rumours are answered fast, face to face, through the line."
+       },
+       {
+        "t": "Send a company-wide email next month with the facts",
+        "p": 1,
+        "f": "Too slow and too distant. The rumour grows for a month."
+       },
+       {
+        "t": "Ignore it; responding gives it attention",
+        "p": 0,
+        "f": "Ignoring rumours is a listed mistake. Silence looks like confirmation."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "The launch announcement is ready. In which order do people hear it?",
+      "choices": [
+       {
+        "t": "Sponsor and coalition, then supervisors, then team briefings",
+        "p": 2,
+        "f": "Correct. Supervisors are briefed first, with a script and a question list, so they can answer their teams."
+       },
+       {
+        "t": "Everyone at once by email, so it is fair",
+        "p": 0,
+        "f": "Teams then ask supervisors questions they cannot answer. Trust travels through the line."
+       },
+       {
+        "t": "Reps first, then supervisors, so reps hear it directly",
+        "p": 0,
+        "f": "Teams hearing news before supervisors is a listed mistake."
+       }
+      ]
+     },
+     {
+      "text": "Who should explain 'what changes for me' to the reps?",
+      "choices": [
+       {
+        "t": "Their direct supervisor",
+        "p": 2,
+        "f": "Correct. Senior leaders give the business reasons; direct supervisors explain what it means for each person."
+       },
+       {
+        "t": "The CEO, in a recorded video",
+        "p": 1,
+        "f": "Good for the business reasons, but reps want 'what it means for me' from the person they report to."
+       },
+       {
+        "t": "The IT vendor's trainer",
+        "p": 0,
+        "f": "Wrong sender. The vendor knows the system, not the reps' day."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sustain",
+    "variants": [
+     {
+      "text": "Four weeks after go-live: 140 target reps, 98 placed at least one order on the tablet this week. What is utilisation?",
+      "choices": [
+       {
+        "t": "70%",
+        "p": 2,
+        "f": "Correct: 98 / 140 x 100. Next you ask: who are the 42, and why?"
+       },
+       {
+        "t": "98%",
+        "p": 0,
+        "f": "That is the number of reps, not the percentage. Utilisation = active users / target users x 100."
+       },
+       {
+        "t": "Cannot tell without counting logins",
+        "p": 0,
+        "f": "Count real use, not logins. Orders placed is the right measure."
+       }
+      ]
+     },
+     {
+      "text": "This week: 2,400 orders on tablets, 2,160 with no error. What is proficiency?",
+      "choices": [
+       {
+        "t": "90%",
+        "p": 2,
+        "f": "Correct: 2,160 / 2,400 x 100. Using it is not the same as using it well."
+       },
+       {
+        "t": "10%",
+        "p": 0,
+        "f": "That is the error rate. Proficiency = error-free / total x 100."
+       },
+       {
+        "t": "It is the same as utilisation",
+        "p": 0,
+        "f": "Utilisation measures use; proficiency measures quality of use."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sustain",
+    "variants": [
+     {
+      "text": "Month 3: some reps are back on paper because old order books are still in the depots. What do you do?",
+      "choices": [
+       {
+        "t": "Remove the old order books and make managers ask about tablet orders",
+        "p": 2,
+        "f": "Correct. Remove the way back and keep managers asking. Use returns to target."
+       },
+       {
+        "t": "Accept paper from reps who prefer it, as long as targets are met",
+        "p": 0,
+        "f": "The change slides back. Old forms still available is a top reason for failure."
+       },
+       {
+        "t": "Send a firm reminder email to all reps about the tablet rule",
+        "p": 1,
+        "f": "A reminder helps briefly, but while paper exists, the old way stays easy."
+       }
+      ]
+     },
+     {
+      "text": "Utilisation reached 95%. The project budget ends this month. What do you do?",
+      "choices": [
+       {
+        "t": "Hand over to a named business owner with measures and a review meeting",
+        "p": 2,
+        "f": "Correct. Close the project, not the change. The owner keeps the measures alive."
+       },
+       {
+        "t": "Close the project and celebrate with the team; the target is met",
+        "p": 1,
+        "f": "Celebrate, yes, but without an owner and measures, the change can still slide back."
+       },
+       {
+        "t": "Keep the project team in place for another year, just to be safe",
+        "p": 0,
+        "f": "That avoids handover. The business must own the change, not the project team."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
