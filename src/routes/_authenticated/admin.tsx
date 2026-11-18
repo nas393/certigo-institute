@@ -44,7 +44,7 @@ type Stats = {
   courses: number; learners: number; enrollments: number; attempts: number;
   certificates: number; revoked: number; verifications: number; active_codes: number; avg_price_cents: number;
 };
-type Tab = "courses" | "pricing" | "codes" | "messages";
+type Tab = "courses" | "missions" | "pricing" | "codes" | "messages";
 
 const blank = {
   slug: "", title: "", category: "", summary: "",
@@ -221,7 +221,7 @@ function AdminPanel() {
         )}
 
         <div className="mt-8 flex flex-wrap gap-2">
-          {([["courses", "Courses & results"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"], ["messages", "Messages"]] as Array<[Tab, string]>).map(([id, label]) => (
+          {([["courses", "Courses & results"], ["missions", "Missions"], ["pricing", "Pricing & credentials"], ["codes", "Discount codes"], ["messages", "Messages"]] as Array<[Tab, string]>).map(([id, label]) => (
             <button
               key={id}
               onClick={() => setTab(id)}
@@ -238,8 +238,11 @@ function AdminPanel() {
           <div className="mt-8">
             <PaymentSettings />
             <div className="mt-4"><PricingTools categories={categories} onDone={load} /></div>
-            <div className="mt-4"><MissionImport /></div>
           </div>
+        )}
+
+        {tab === "missions" && (
+          <div className="mt-8"><MissionImport /></div>
         )}
 
         {tab === "messages" && (

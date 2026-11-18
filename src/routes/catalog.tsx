@@ -26,7 +26,7 @@ export const Route = createFileRoute("/catalog")({
 
 interface Row {
   slug: string; title: string; category: string; summary: string; skills: string[] | null;
-  question_count: number; pass_score: number; modules: any; price_cents: number;
+  question_count: number; pass_score: number; modules: any; price_cents: number; published?: boolean;
 }
 
 const minutesOf = (r: Row) => (Array.isArray(r.modules) ? r.modules : []).reduce((n: number, m: any) => n + (Number(m?.minutes) || 0), 0);
@@ -40,7 +40,7 @@ function Catalog() {
 
   useEffect(() => {
     supabase.from("certifications")
-      .select("slug, title, category, summary, skills, question_count, pass_score, modules, price_cents")
+      .select("slug, title, category, summary, skills, question_count, pass_score, modules, price_cents, published")
       .order("title")
       .then(({ data }) => setRows((data ?? []) as Row[]));
   }, []);
@@ -153,7 +153,14 @@ function Catalog() {
                   key={r.slug} to="/c/$slug" params={{ slug: r.slug }}
                   className="group flex flex-col rounded-xl border border-border bg-card p-4 sm:p-5 transition hover:-translate-y-0.5 hover:border-emerald-600/40 hover:shadow-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600/40"
                 >
-                  <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-emerald-700">{r.category}</div>
+                  <div className="flex items-center justify-between gap-2 font-mono text-[10px] uppercase tracking-[0.24em]">
+                    <span className="text-emerald-700">{r.category}</span>
+                    {r.published === false ? (
+                      <span className="rounded border border-amber-500 px-1.5 py-0.5 text-amber-700" title="Unpublished: only admins see this course">Draft</span>
+                    ) : (
+                      <span className="text-muted-foreground">◆ Mission</span>
+                    )}
+                  </div>
                   <h2 className="mt-2 font-display text-lg font-extrabold leading-snug tracking-tight">{r.title}</h2>
                   <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{r.summary}</p>
                   <div className="mt-3 hidden flex-wrap gap-1.5 sm:flex">
