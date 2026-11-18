@@ -1,0 +1,123 @@
+{
+ "slug": "customer-success-fundamentals",
+ "title": "Save the renewals",
+ "review": {"learner": 9, "manager": 9, "director": 9, "score_pct": 90, "checked": "2026-11-18", "notes": "Built on the course: CS vs service, lifecycle, logo and revenue churn, CRR, GRR, CLV, TTV, handover, kickoff, SMART success criteria, leading vs lagging, health score build, thresholds, value vs health matrix, success plan. Calculations checked. Fictional company."},
+ "content": {
+  "role": "Customer Success Manager",
+  "company": "Ledgerline (fictional), selling inventory software to distributors on yearly contracts",
+  "briefing": "You manage 40 business customers. Renewals are falling and the CEO wants to know why. You must onboard new customers well, spot risk early and protect revenue.",
+  "skills": {"metrics": "Retention metrics", "onboard": "Onboarding and value", "health": "Health and risk", "grow": "Success plans and growth"},
+  "steps": [
+   {"skill": "metrics", "variants": [
+    {"text": "You started the year with 200 customers and lost 8. What is logo churn?",
+     "choices": [
+      {"t": "4%", "p": 2, "f": "Customers lost / customers at start = 8 / 200."},
+      {"t": "8%", "p": 0, "f": "8 is the count, not the rate."},
+      {"t": "96%", "p": 0, "f": "That is the share kept."}]},
+    {"text": "Starting recurring revenue Kz 100 m. Lost to churn Kz 6 m, downgrades Kz 4 m, upsell Kz 12 m. What is gross revenue retention?",
+     "choices": [
+      {"t": "90%", "p": 2, "f": "(100 - 6 - 4) / 100. GRR excludes expansion."},
+      {"t": "102%", "p": 0, "f": "That includes upsell, which is net retention."},
+      {"t": "94%", "p": 0, "f": "Downgrades also reduce GRR."}]}]},
+   {"skill": "metrics", "variants": [
+    {"text": "Start: 200 customers. End: 210. New this year: 30. What is customer retention rate?",
+     "choices": [
+      {"t": "90%", "p": 2, "f": "(E - N) / S = (210 - 30) / 200."},
+      {"t": "105%", "p": 0, "f": "That counts new customers as retained."},
+      {"t": "85%", "p": 0, "f": "Recheck: 180 / 200 = 90%."}]},
+    {"text": "A customer pays Kz 2 m a year at 60% gross margin and stays about 5 years. What is CLV?",
+     "choices": [
+      {"t": "Kz 6 million", "p": 2, "f": "2 x 0.6 x 5."},
+      {"t": "Kz 10 million", "p": 0, "f": "That ignores gross margin."},
+      {"t": "Kz 1.2 million", "p": 0, "f": "That is one year of margin."}]}]},
+   {"skill": "onboard", "variants": [
+    {"text": "Contract signed 1 March. First value milestone, first stock count in the system, reached 15 April. What is time-to-value?",
+     "choices": [
+      {"t": "45 days", "p": 2, "f": "Milestone date minus contract start. Shorter TTV lowers churn."},
+      {"t": "6 weeks exactly", "p": 0, "f": "Close, but count the days: 45."},
+      {"t": "It cannot be measured", "p": 0, "f": "Dates make it easy to track."}]},
+    {"text": "What must the sales-to-CS handover include?",
+     "choices": [
+      {"t": "Goals, pains, promises and stakeholders", "p": 2, "f": "You do not overpromise or miss a hidden opponent."},
+      {"t": "Only the signed contract", "p": 0, "f": "The contract does not show what the customer expects."},
+      {"t": "Only the price and discount", "p": 0, "f": "Commercial terms are not the success story."}]}]},
+   {"skill": "onboard", "variants": [
+    {"text": "At the kickoff meeting, what must be agreed?",
+     "choices": [
+      {"t": "Roles, sponsor, success criteria and plan", "p": 2, "f": "Clarity on who, what success means and when."},
+      {"t": "A full product feature tour", "p": 0, "f": "Features come in training, not kickoff."},
+      {"t": "The next price increase", "p": 0, "f": "Not the purpose of kickoff."}]},
+    {"text": "Which is a SMART success criterion for a new customer?",
+     "choices": [
+      {"t": "'Stock accuracy from 85% to 97% by 30 June'", "p": 2, "f": "Metric, baseline, target and date."},
+      {"t": "'Better stock control soon'", "p": 0, "f": "Not measurable or timed."},
+      {"t": "'Use the software every day'", "p": 0, "f": "Activity, not an outcome."}]}]},
+   {"skill": "health", "variants": [
+    {"text": "Which is a leading indicator of churn risk?",
+     "choices": [
+      {"t": "Falling weekly logins and lost sponsor", "p": 2, "f": "Leading signals show risk while you can still act."},
+      {"t": "A lost renewal last month", "p": 0, "f": "That is lagging; it already happened."},
+      {"t": "Last year's revenue", "p": 0, "f": "Lagging and too old."}]},
+    {"text": "Health score: usage 80 (weight 40%), outcomes 60 (40%), relationship 50 (20%). Score and colour (green 75+, amber 50-74, red below 50)?",
+     "choices": [
+      {"t": "66: amber", "p": 2, "f": "32 + 24 + 10 = 66."},
+      {"t": "63: amber", "p": 0, "f": "That is the simple average. Apply weights."},
+      {"t": "80: green", "p": 0, "f": "That uses usage only."}]}]},
+   {"skill": "health", "variants": [
+    {"text": "A large customer pays the most but its health is red. Where does it sit, and what do you do?",
+     "choices": [
+      {"t": "Rescue: high value, low health", "p": 2, "f": "Executive attention and a recovery plan now."},
+      {"t": "Grow: upsell more modules", "p": 0, "f": "Upselling an unhappy customer accelerates churn."},
+      {"t": "Scale: automated emails only", "p": 0, "f": "Too little attention for the biggest risk."}]},
+    {"text": "Last year's churned accounts all had green health scores before leaving. What do you do?",
+     "choices": [
+      {"t": "Calibrate signals and weights", "p": 2, "f": "The score missed the real signals. Adjust and review regularly."},
+      {"t": "Trust the score; churn was bad luck", "p": 0, "f": "A score that misses churn is not working."},
+      {"t": "Stop using health scores", "p": 0, "f": "Improve it rather than drop it."}]}]},
+   {"skill": "health", "variants": [
+    {"text": "A customer turns amber. What should happen?",
+     "choices": [
+      {"t": "A defined action for amber, with an owner", "p": 2, "f": "Each colour triggers a play."},
+      {"t": "Wait to see if it turns red", "p": 0, "f": "Waiting loses the time to act."},
+      {"t": "Send a discount offer", "p": 0, "f": "Discounts rarely fix the cause."}]},
+    {"text": "The customer's executive sponsor leaves the company.",
+     "choices": [
+      {"t": "Treat it as a risk; find a new sponsor", "p": 2, "f": "Relationship change is a key leading signal."},
+      {"t": "No impact; users still log in", "p": 0, "f": "Without a sponsor, renewals are at risk."},
+      {"t": "Wait for the renewal date", "p": 0, "f": "Too late to rebuild the relationship."}]}]},
+   {"skill": "grow", "variants": [
+    {"text": "How does customer success differ from customer service?",
+     "choices": [
+      {"t": "Success is proactive; service reacts", "p": 2, "f": "CS drives outcomes before problems appear."},
+      {"t": "They are the same thing", "p": 0, "f": "Service fixes issues; success drives value."},
+      {"t": "Success only sells upgrades", "p": 0, "f": "Growth follows value, not the other way."}]},
+    {"text": "What is the goal of the success plan written in?",
+     "choices": [
+      {"t": "The customer's own words", "p": 2, "f": "Their goal, with metric, baseline, target and date."},
+      {"t": "Your product's feature names", "p": 0, "f": "Features are means, not their goal."},
+      {"t": "Internal sales targets", "p": 0, "f": "Those are your goals, not theirs."}]}]},
+   {"skill": "grow", "variants": [
+    {"text": "A green, high-value customer reached all goals. What next?",
+     "choices": [
+      {"t": "Grow: new goals, expansion and advocacy", "p": 2, "f": "Expand and advocate is the lifecycle's last stage."},
+      {"t": "Leave them alone; they are fine", "p": 1, "f": "Safe, but you miss growth and referrals."},
+      {"t": "Move them to rescue", "p": 0, "f": "They are healthy, not at risk."}]},
+    {"text": "In what order does the lifecycle run?",
+     "choices": [
+      {"t": "Onboard, adopt, value, renew, expand", "p": 2, "f": "Value comes before renewal and expansion."},
+      {"t": "Renew, onboard, expand, adopt", "p": 0, "f": "Renewal comes after value."},
+      {"t": "Expand first, then onboard", "p": 0, "f": "You cannot expand before adoption."}]}]},
+   {"skill": "onboard", "variants": [
+    {"text": "Training for all users is planned as one 3-hour session. What is better?",
+     "choices": [
+      {"t": "Short training by role, then practice", "p": 2, "f": "Training and adoption by role builds real use."},
+      {"t": "A longer, 6-hour session", "p": 0, "f": "More time in one go does not build habits."},
+      {"t": "Send the manual only", "p": 0, "f": "Manuals rarely drive adoption."}]},
+    {"text": "The onboarding plan has no first value milestone.",
+     "choices": [
+      {"t": "Add one, with a date", "p": 2, "f": "An early win proves value and lowers churn."},
+      {"t": "Not needed; value comes later", "p": 0, "f": "Customers who see no early value disengage."},
+      {"t": "Use contract signature as value", "p": 0, "f": "Signing is not value for the customer."}]}]}
+  ]
+ }
+}

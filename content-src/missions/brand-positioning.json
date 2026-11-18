@@ -1,0 +1,475 @@
+{
+ "slug": "brand-positioning",
+ "title": "Relaunching a tired brand",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: brand equity, CBBE diagnosis, positioning, STP, segmentation bases, five segment tests, segment sizing, insight, positioning statement, frame of reference, POP/POD, three POD tests, reason to believe. Calculations checked. Fictional brand and company."
+ },
+ "content": {
+  "role": "Brand Manager",
+  "company": "Goldfield Foods (fictional); the brand is 'Aurora' cooking oil (fictional), sold in supermarkets and small shops",
+  "briefing": "Aurora is losing share to cheaper imports and to a premium rival. Many shoppers know the name but say it is 'just another oil'. You must diagnose the brand and write a positioning the board will fund.",
+  "skills": {
+   "equity": "Brand equity and diagnosis",
+   "stp": "Segmentation and targeting",
+   "pos": "Positioning",
+   "proof": "Difference and proof"
+  },
+  "steps": [
+   {
+    "skill": "equity",
+    "variants": [
+     {
+      "text": "Shoppers pay 10% more for Aurora than for an unbranded oil of the same quality. What does this show?",
+      "choices": [
+       {
+        "t": "Brand equity: value the name adds",
+        "p": 2,
+        "f": "A price premium is one sign of brand equity."
+       },
+       {
+        "t": "Better product quality",
+        "p": 0,
+        "f": "Quality is the same; the name explains the gap."
+       },
+       {
+        "t": "Higher production costs",
+        "p": 0,
+        "f": "Cost does not explain what shoppers pay."
+       }
+      ]
+     },
+     {
+      "text": "Research: 85% of shoppers know Aurora, but most say it is 'just another oil'. Where is the CBBE gap?",
+      "choices": [
+       {
+        "t": "Meaning: performance and imagery",
+        "p": 2,
+        "f": "Salience is fine; the brand lacks a clear meaning."
+       },
+       {
+        "t": "Salience: more awareness ads",
+        "p": 0,
+        "f": "85% awareness is already high."
+       },
+       {
+        "t": "Resonance: start a loyalty club",
+        "p": 0,
+        "f": "Loyalty cannot be built on a brand with no meaning."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stp",
+    "variants": [
+     {
+      "text": "What is the correct order of the STP process?",
+      "choices": [
+       {
+        "t": "Segment, target, then position",
+        "p": 2,
+        "f": "Divide the market, choose who to serve, then define your place in their minds."
+       },
+       {
+        "t": "Position, then find a segment",
+        "p": 0,
+        "f": "Positioning needs a chosen target first."
+       },
+       {
+        "t": "Target everyone, then segment",
+        "p": 0,
+        "f": "Targeting everyone means positioning for no one."
+       }
+      ]
+     },
+     {
+      "text": "You split buyers by 'health-conscious', 'price-first' and 'big family cooking'. Which segmentation base is this?",
+      "choices": [
+       {
+        "t": "Psychographic and behavioural",
+        "p": 2,
+        "f": "Needs and lifestyles, not location or income."
+       },
+       {
+        "t": "Geographic, by area and city",
+        "p": 0,
+        "f": "Geographic splits by province or city."
+       },
+       {
+        "t": "Demographic, by income and age",
+        "p": 0,
+        "f": "Demographic splits by income, age or household size."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stp",
+    "variants": [
+     {
+      "text": "A segment 'people who love cooking on Sundays' cannot be identified in data or reached by any channel. Which tests fail?",
+      "choices": [
+       {
+        "t": "Measurable and accessible",
+        "p": 2,
+        "f": "If you cannot measure or reach it, you cannot target it."
+       },
+       {
+        "t": "Substantial only",
+        "p": 0,
+        "f": "It may be large; the problem is finding and reaching it."
+       },
+       {
+        "t": "None; it sounds attractive",
+        "p": 0,
+        "f": "Attractive is not enough."
+       }
+      ]
+     },
+     {
+      "text": "Big-family segment: 200,000 households, 4 bottles a month each, Kz 1,500 a bottle. Realistic share for Aurora: 10%. What monthly revenue?",
+      "choices": [
+       {
+        "t": "Kz 120 million",
+        "p": 2,
+        "f": "200,000 x 4 x 1,500 = 1.2 bn market; 10% = 120 m."
+       },
+       {
+        "t": "Kz 1.2 billion",
+        "p": 0,
+        "f": "That is the whole segment, before your share."
+       },
+       {
+        "t": "Kz 12 million",
+        "p": 0,
+        "f": "A zero is missing: 10% of 1.2 bn is 120 m."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pos",
+    "variants": [
+     {
+      "text": "Which is a real consumer insight?",
+      "choices": [
+       {
+        "t": "'Mothers fry often but fear oil harms the family'",
+        "p": 2,
+        "f": "Observation, motivation and a tension. It explains behaviour."
+       },
+       {
+        "t": "'60% of buyers are women aged 25-45'",
+        "p": 0,
+        "f": "A fact, not a human truth with tension."
+       },
+       {
+        "t": "'Our oil is cholesterol-free'",
+        "p": 0,
+        "f": "That is a product claim."
+       }
+      ]
+     },
+     {
+      "text": "Which line is a complete positioning statement?",
+      "choices": [
+       {
+        "t": "For busy family cooks, Aurora is the oil that fries lighter, as it is cold-filtered",
+        "p": 2,
+        "f": "Target, frame, point of difference and reason to believe."
+       },
+       {
+        "t": "Aurora is the best quality cooking oil for every family, every day, everywhere",
+        "p": 0,
+        "f": "No target, no difference, no proof."
+       },
+       {
+        "t": "Aurora cooking oil now comes in a new 2-litre bottle with a stronger handle",
+        "p": 0,
+        "f": "A product news line, not positioning."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pos",
+    "variants": [
+     {
+      "text": "Aurora is positioned against 'premium olive oils'. Most buyers compare it with other sunflower oils. What is wrong?",
+      "choices": [
+       {
+        "t": "The frame of reference is wrong",
+        "p": 2,
+        "f": "Choose the category buyers actually compare with."
+       },
+       {
+        "t": "Nothing; aim high",
+        "p": 0,
+        "f": "A frame buyers do not use confuses them."
+       },
+       {
+        "t": "The price is too low",
+        "p": 0,
+        "f": "Price is not the issue here."
+       }
+      ]
+     },
+     {
+      "text": "To be considered at all in sunflower oil, Aurora must match: clear bottle, fair price, easy to find. What are these?",
+      "choices": [
+       {
+        "t": "Points of parity",
+        "p": 2,
+        "f": "Must-haves to be in the game, not reasons to choose."
+       },
+       {
+        "t": "Points of difference",
+        "p": 0,
+        "f": "Everyone has them, so they do not differentiate."
+       },
+       {
+        "t": "Reasons to believe",
+        "p": 0,
+        "f": "RTBs prove a difference."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "proof",
+    "variants": [
+     {
+      "text": "Proposed difference: 'Made with love'. Which test does it fail?",
+      "choices": [
+       {
+        "t": "Deliverable: it cannot be proven",
+        "p": 2,
+        "f": "Desirable maybe, but not provable or ownable."
+       },
+       {
+        "t": "None; it is warm and friendly",
+        "p": 0,
+        "f": "Warmth without proof does not differentiate."
+       },
+       {
+        "t": "Only legal approval",
+        "p": 0,
+        "f": "The core problem is proof."
+       }
+      ]
+     },
+     {
+      "text": "Proposed difference: 'Fries lighter: absorbs 15% less oil, lab-tested'. Rivals cannot match it soon. Verdict?",
+      "choices": [
+       {
+        "t": "Desirable, deliverable, differentiating",
+        "p": 2,
+        "f": "It passes all three tests."
+       },
+       {
+        "t": "Too technical for ordinary shoppers",
+        "p": 1,
+        "f": "Make it simple in ads, but the substance is strong."
+       },
+       {
+        "t": "Not differentiating against rivals",
+        "p": 0,
+        "f": "Rivals cannot match it soon, so it is."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "proof",
+    "variants": [
+     {
+      "text": "Which is a strong reason to believe for 'fries lighter'?",
+      "choices": [
+       {
+        "t": "An independent lab test result",
+        "p": 2,
+        "f": "True, specific and checkable."
+       },
+       {
+        "t": "'Trusted by families'",
+        "p": 0,
+        "f": "A claim, not proof."
+       },
+       {
+        "t": "A brighter label colour",
+        "p": 0,
+        "f": "Design does not prove performance."
+       }
+      ]
+     },
+     {
+      "text": "Marketing wants to claim 'healthiest oil in Angola' without data.",
+      "choices": [
+       {
+        "t": "Refuse: claims must be true and provable",
+        "p": 2,
+        "f": "Unproven claims risk legal action and trust."
+       },
+       {
+        "t": "Approve; it sells",
+        "p": 0,
+        "f": "A false claim can destroy brand equity."
+       },
+       {
+        "t": "Approve in small print only",
+        "p": 0,
+        "f": "Small print does not make it true."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "equity",
+    "variants": [
+     {
+      "text": "Signs that Aurora's brand equity is rising include:",
+      "choices": [
+       {
+        "t": "Higher price premium and repeat buying",
+        "p": 2,
+        "f": "Premium, loyalty and lower price sensitivity show equity."
+       },
+       {
+        "t": "More discounts to keep volume",
+        "p": 0,
+        "f": "Needing discounts is a sign of weak equity."
+       },
+       {
+        "t": "More packs sold on promotion",
+        "p": 0,
+        "f": "Promotion volume can hide weak equity."
+       }
+      ]
+     },
+     {
+      "text": "Known, liked for performance, but buyers feel no attachment. CBBE next step?",
+      "choices": [
+       {
+        "t": "Build feelings and judgements next",
+        "p": 2,
+        "f": "Move up the pyramid once meaning is clear."
+       },
+       {
+        "t": "Restart with a big awareness campaign",
+        "p": 0,
+        "f": "Salience is already fine."
+       },
+       {
+        "t": "Cut the price to win attachment",
+        "p": 0,
+        "f": "Price does not build attachment."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pos",
+    "variants": [
+     {
+      "text": "The sales team wants Aurora to appeal to 'everyone'. What do you answer?",
+      "choices": [
+       {
+        "t": "A clear target makes the brand stronger",
+        "p": 2,
+        "f": "Sacrifice is part of positioning."
+       },
+       {
+        "t": "Agree; more people means more sales",
+        "p": 0,
+        "f": "Positioning for all ends up meaning nothing."
+       },
+       {
+        "t": "Create five brands instead",
+        "p": 0,
+        "f": "Not affordable, and it splits focus."
+       }
+      ]
+     },
+     {
+      "text": "Positioning is the place the brand holds:",
+      "choices": [
+       {
+        "t": "In the target customer's mind",
+        "p": 2,
+        "f": "Always relative to competitors."
+       },
+       {
+        "t": "On the supermarket shelf",
+        "p": 0,
+        "f": "Shelf position is distribution, not positioning."
+       },
+       {
+        "t": "In the company's strategy deck",
+        "p": 0,
+        "f": "It only matters where customers hold it."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stp",
+    "variants": [
+     {
+      "text": "Three segments are attractive. Which one do you target first?",
+      "choices": [
+       {
+        "t": "The one you can win and serve profitably",
+        "p": 2,
+        "f": "Attractiveness plus your ability to win."
+       },
+       {
+        "t": "The biggest, whatever the fit",
+        "p": 0,
+        "f": "Big but unwinnable wastes money."
+       },
+       {
+        "t": "All three at once",
+        "p": 0,
+        "f": "Splitting budget weakens every message."
+       }
+      ]
+     },
+     {
+      "text": "Two segments respond the same way to price, packs and ads. Which test fails?",
+      "choices": [
+       {
+        "t": "Differentiable",
+        "p": 2,
+        "f": "If they respond alike, they are one segment."
+       },
+       {
+        "t": "Measurable",
+        "p": 0,
+        "f": "They can be measured; they just do not differ."
+       },
+       {
+        "t": "Substantial",
+        "p": 0,
+        "f": "Size is not the issue."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
