@@ -1,0 +1,475 @@
+{
+ "slug": "executive-decision-making",
+ "title": "The warehouse decision",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: decision vs outcome, decision quality, narrow framing, decision statement, decision hierarchy, widening options, weighted matrix and sensitivity, decision tree and EV, System 1/2, anchoring, confirmation, sunk cost, overconfidence, pre-mortem, independent estimates, outside view. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Strategy Manager",
+  "company": "Northbridge Foods (fictional), a food distributor deciding how to expand storage",
+  "briefing": "The CEO asks: 'Should we build a new warehouse?' Kz 1.2 billion is at stake. You lead the decision process for the executive team. They want a clear, defensible choice, not just a gut feeling.",
+  "skills": {
+   "frame": "Framing the decision",
+   "options": "Options and evaluation",
+   "risk": "Uncertainty and value",
+   "bias": "Bias and group decisions"
+  },
+  "steps": [
+   {
+    "skill": "frame",
+    "variants": [
+     {
+      "text": "Last year a well-analysed project failed because a port strike hit. A director says the decision was bad. What do you answer?",
+      "choices": [
+       {
+        "t": "A good decision can still have a bad outcome",
+        "p": 2,
+        "f": "Judge decisions by quality of process, not only by luck."
+       },
+       {
+        "t": "Agree; bad outcome, bad decision",
+        "p": 0,
+        "f": "That punishes good process and rewards lucky gambles."
+       },
+       {
+        "t": "Blame the strike and move on",
+        "p": 1,
+        "f": "True, but the lesson about decision quality is lost."
+       }
+      ]
+     },
+     {
+      "text": "The question is framed as 'Build a new warehouse: yes or no?' What is the risk?",
+      "choices": [
+       {
+        "t": "Narrow framing hides other options",
+        "p": 2,
+        "f": "Ask why it matters: storage space? Then rent, 3PL or racking appear."
+       },
+       {
+        "t": "No risk; yes or no is clear",
+        "p": 0,
+        "f": "Yes-or-no hides better alternatives."
+       },
+       {
+        "t": "It is too broad a question",
+        "p": 0,
+        "f": "It is too narrow, not too broad."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "frame",
+    "variants": [
+     {
+      "text": "Which is a good decision statement?",
+      "choices": [
+       {
+        "t": "'Exec team picks a storage option by 30 June, under Kz 1.2 bn'",
+        "p": 2,
+        "f": "Who, what, by when, constraints and success measure."
+       },
+       {
+        "t": "'We will need a lot more storage space quite soon, ideally'",
+        "p": 0,
+        "f": "No owner, date, constraints or measure."
+       },
+       {
+        "t": "'Build the new warehouse in Viana and start in the spring'",
+        "p": 0,
+        "f": "That is a solution, not the decision to make."
+       }
+      ]
+     },
+     {
+      "text": "The board already decided to stay in the region. In the decision hierarchy, this is:",
+      "choices": [
+       {
+        "t": "Given: not open now",
+        "p": 2,
+        "f": "Givens set boundaries; focus decisions are made now; tactics come later."
+       },
+       {
+        "t": "Focus: decided in this process",
+        "p": 0,
+        "f": "It is already decided."
+       },
+       {
+        "t": "Tactical: decided later",
+        "p": 0,
+        "f": "It is a higher-level given."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "options",
+    "variants": [
+     {
+      "text": "The team only has 'build' on the table. How do you widen options?",
+      "choices": [
+       {
+        "t": "Ask: what if building were impossible?",
+        "p": 2,
+        "f": "The vanishing options test: renting and a 3PL appear."
+       },
+       {
+        "t": "Refine the build plan in more detail",
+        "p": 0,
+        "f": "Detail on one option is not more options."
+       },
+       {
+        "t": "Ask the CEO what she prefers",
+        "p": 0,
+        "f": "That narrows, not widens."
+       }
+      ]
+     },
+     {
+      "text": "Option C, a 3PL, cannot meet the must-have of temperature control. What happens to it?",
+      "choices": [
+       {
+        "t": "Screen it out before scoring",
+        "p": 2,
+        "f": "Must-haves filter; wants are weighted and scored."
+       },
+       {
+        "t": "Score it low on that criterion",
+        "p": 0,
+        "f": "A must-have failure cannot be offset by other scores."
+       },
+       {
+        "t": "Keep it as a backup, unscored",
+        "p": 0,
+        "f": "It does not meet a must-have."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "options",
+    "variants": [
+     {
+      "text": "Weights: cost 50%, speed 30%, flexibility 20%. Build scores 4, 3, 5. Rent scores 3, 5, 4. Totals?",
+      "choices": [
+       {
+        "t": "Build 3.9, Rent 3.8",
+        "p": 2,
+        "f": "Build: 2.0 + 0.9 + 1.0. Rent: 1.5 + 1.5 + 0.8."
+       },
+       {
+        "t": "Build 4.0, Rent 4.0",
+        "p": 0,
+        "f": "Those are simple averages. Apply the weights."
+       },
+       {
+        "t": "Build 12, Rent 12",
+        "p": 0,
+        "f": "Sums without weights."
+       }
+      ]
+     },
+     {
+      "text": "Build wins 3.9 to 3.8. What do you do before recommending it?",
+      "choices": [
+       {
+        "t": "Sensitivity: shift the top weight 10 points",
+        "p": 2,
+        "f": "With cost at 40%, rent wins. A small gap means low confidence."
+       },
+       {
+        "t": "Recommend build; it scored highest",
+        "p": 0,
+        "f": "A 0.1 gap may flip with small weight changes."
+       },
+       {
+        "t": "Add more criteria until build wins clearly",
+        "p": 0,
+        "f": "That is bending the analysis."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "risk",
+    "variants": [
+     {
+      "text": "In a decision tree, what does a circle show?",
+      "choices": [
+       {
+        "t": "An uncertain event",
+        "p": 2,
+        "f": "Squares are decisions you control; circles are chance."
+       },
+       {
+        "t": "A decision you control",
+        "p": 0,
+        "f": "That is a square."
+       },
+       {
+        "t": "A final outcome",
+        "p": 0,
+        "f": "End points show outcomes."
+       }
+      ]
+     },
+     {
+      "text": "Build: 60% chance of Kz +100 m, 40% chance of Kz -50 m. Rent: certain Kz +30 m. Expected values?",
+      "choices": [
+       {
+        "t": "Build Kz 40 m, Rent Kz 30 m",
+        "p": 2,
+        "f": "0.6 x 100 + 0.4 x (-50) = 40. Then consider risk tolerance."
+       },
+       {
+        "t": "Build Kz 50 m, Rent Kz 30 m",
+        "p": 0,
+        "f": "That is the average of outcomes, ignoring probabilities."
+       },
+       {
+        "t": "Build Kz 100 m, Rent Kz 30 m",
+        "p": 0,
+        "f": "That uses the best case only."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "risk",
+    "variants": [
+     {
+      "text": "Probabilities on one chance node are 50%, 30% and 30%. What is wrong?",
+      "choices": [
+       {
+        "t": "They must add up to 100%",
+        "p": 2,
+        "f": "They add to 110%. Fix the estimates first."
+       },
+       {
+        "t": "Nothing; estimates are rough",
+        "p": 0,
+        "f": "Rough is fine; impossible is not."
+       },
+       {
+        "t": "The largest must be 50%",
+        "p": 0,
+        "f": "No such rule."
+       }
+      ]
+     },
+     {
+      "text": "Build has higher EV but a 40% chance of losing Kz 50 m. The company has little cash. What do you advise?",
+      "choices": [
+       {
+        "t": "Weigh EV against how much loss we can bear",
+        "p": 2,
+        "f": "EV guides, but risk tolerance matters when losses hurt."
+       },
+       {
+        "t": "Always choose the highest EV",
+        "p": 0,
+        "f": "Ignores the company's ability to absorb a loss."
+       },
+       {
+        "t": "Always choose the certain option",
+        "p": 0,
+        "f": "Ignores value; sometimes risk is worth taking."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "bias",
+    "variants": [
+     {
+      "text": "The builder's first quote is Kz 1.5 bn. Now every estimate in the room is near Kz 1.4–1.6 bn. Which bias?",
+      "choices": [
+       {
+        "t": "Anchoring",
+        "p": 2,
+        "f": "The first number shapes the rest. Get independent estimates."
+       },
+       {
+        "t": "Sunk cost",
+        "p": 0,
+        "f": "Sunk cost is about past spending."
+       },
+       {
+        "t": "Survivorship",
+        "p": 0,
+        "f": "Survivorship is about missing failures."
+       }
+      ]
+     },
+     {
+      "text": "Kz 80 m was already spent on design for the build option. A director says: 'We cannot waste that.'",
+      "choices": [
+       {
+        "t": "Sunk cost: decide on future costs and value",
+        "p": 2,
+        "f": "Past spending cannot be recovered; it should not drive the choice."
+       },
+       {
+        "t": "Agree; build to recover the 80 m",
+        "p": 0,
+        "f": "Building does not recover it; it may add more loss."
+       },
+       {
+        "t": "Split the difference: build smaller",
+        "p": 1,
+        "f": "Possibly fine, but not because of the 80 m."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "bias",
+    "variants": [
+     {
+      "text": "The CEO only shares reports that support building. Which bias, and the fix?",
+      "choices": [
+       {
+        "t": "Confirmation bias: consider the opposite",
+        "p": 2,
+        "f": "Ask what would have to be true for renting to win."
+       },
+       {
+        "t": "Anchoring: start over",
+        "p": 0,
+        "f": "This is about selecting evidence."
+       },
+       {
+        "t": "No bias; reports are data",
+        "p": 0,
+        "f": "Selected data is biased data."
+       }
+      ]
+     },
+     {
+      "text": "Before the final vote, how do you surface hidden risks?",
+      "choices": [
+       {
+        "t": "A pre-mortem: imagine it failed, list why",
+        "p": 2,
+        "f": "People write reasons alone, then share. Real risks appear."
+       },
+       {
+        "t": "Ask if anyone has concerns",
+        "p": 1,
+        "f": "Group pressure keeps many silent."
+       },
+       {
+        "t": "Vote quickly to keep momentum",
+        "p": 0,
+        "f": "Risks stay hidden."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "bias",
+    "variants": [
+     {
+      "text": "The team estimates construction will take 12 months. Similar warehouses in the region took 20 on average.",
+      "choices": [
+       {
+        "t": "Start from 20 months: the outside view",
+        "p": 2,
+        "f": "Reference class first, then adjust for real differences."
+       },
+       {
+        "t": "Keep 12; our team is better",
+        "p": 0,
+        "f": "Overconfidence. Most teams think they are the exception."
+       },
+       {
+        "t": "Average them: 16 months",
+        "p": 1,
+        "f": "Closer, but without reasons it is a guess."
+       }
+      ]
+     },
+     {
+      "text": "How do you collect cost estimates from 5 managers without anchoring?",
+      "choices": [
+       {
+        "t": "Each writes an estimate alone first",
+        "p": 2,
+        "f": "Independent estimates first, then discuss."
+       },
+       {
+        "t": "The CEO gives her number first",
+        "p": 0,
+        "f": "Everyone anchors on the CEO."
+       },
+       {
+        "t": "Discuss openly until agreement",
+        "p": 0,
+        "f": "The first speaker anchors the group."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "frame",
+    "variants": [
+     {
+      "text": "Which is NOT one of the six elements of decision quality?",
+      "choices": [
+       {
+        "t": "A good outcome",
+        "p": 2,
+        "f": "Outcomes depend on chance; quality is about the process."
+       },
+       {
+        "t": "Creative alternatives",
+        "p": 0,
+        "f": "That is an element."
+       },
+       {
+        "t": "Commitment to action",
+        "p": 0,
+        "f": "That is an element."
+       }
+      ]
+     },
+     {
+      "text": "The executive team must decide fast on a minor supplier switch. What thinking fits?",
+      "choices": [
+       {
+        "t": "Fast thinking is fine for small, reversible calls",
+        "p": 2,
+        "f": "Save slow, careful thinking for big, irreversible decisions."
+       },
+       {
+        "t": "A full decision tree for every choice",
+        "p": 0,
+        "f": "Too slow for small decisions."
+       },
+       {
+        "t": "Delay until all data is perfect",
+        "p": 0,
+        "f": "Perfect data rarely arrives."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
