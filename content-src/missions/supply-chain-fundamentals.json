@@ -1,0 +1,475 @@
+{
+ "slug": "supply-chain-fundamentals",
+ "title": "Keeping the shelves full",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: three flows, bullwhip, service-cost-cash, demand vs orders, moving average, error and bias, net requirement, S&OP, average inventory, transport modes, cube-out vs weigh-out, cost per tonne, single vs dual sourcing. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Supply Chain Planner",
+  "company": "Atlas Consumer Goods (fictional), importing pasta and canned food by sea and delivering to shops by road",
+  "briefing": "Shops complain about empty shelves while the central warehouse is full of the wrong items. The managing director asks you to fix planning before the holiday season, without adding cash to stock.",
+  "skills": {
+   "chain": "Supply chain thinking",
+   "plan": "Demand and supply planning",
+   "stock": "Stock and service",
+   "move": "Transport and sourcing"
+  },
+  "steps": [
+   {
+    "skill": "chain",
+    "variants": [
+     {
+      "text": "Shop sales of pasta rise 5%. Your wholesalers' orders to you jump 30%, and your orders to the factory jump 60%. What is happening?",
+      "choices": [
+       {
+        "t": "The bullwhip effect: swings grow upstream",
+        "p": 2,
+        "f": "Small demand changes become big order swings. You share real sales data upstream."
+       },
+       {
+        "t": "A real 60% jump in consumer demand",
+        "p": 0,
+        "f": "Consumers bought only 5% more. Orders amplified it."
+       },
+       {
+        "t": "A data error in the order system",
+        "p": 1,
+        "f": "Worth a check, but the pattern is classic bullwhip."
+       }
+      ]
+     },
+     {
+      "text": "Sales want 99% service on every item, finance wants less stock, and logistics wants cheaper sea freight. What do you explain?",
+      "choices": [
+       {
+        "t": "Service, cost and cash trade off; balance them",
+        "p": 2,
+        "f": "More stock raises service but ties up cash; cheaper transport lengthens lead time."
+       },
+       {
+        "t": "All three can improve at the same time",
+        "p": 0,
+        "f": "Usually not without a process change. They pull against each other."
+       },
+       {
+        "t": "Service always comes first, whatever the cost",
+        "p": 1,
+        "f": "Service matters, but at any cost it destroys cash."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "A shop ordered 100 cases but you shipped 70 because of a stock-out. What was the true demand?",
+      "choices": [
+       {
+        "t": "100 cases: plan from real demand",
+        "p": 2,
+        "f": "Lost sales hide true demand. Planning on 70 makes the next stock-out worse."
+       },
+       {
+        "t": "70 cases: what was shipped",
+        "p": 0,
+        "f": "Shipments are capped by stock. Demand was higher."
+       },
+       {
+        "t": "85 cases: the average of the two",
+        "p": 0,
+        "f": "Averaging still hides the real demand."
+       }
+      ]
+     },
+     {
+      "text": "Sales of canned beans: 90, 100 and 110 cases in the last three months. What is the 3-month moving average forecast?",
+      "choices": [
+       {
+        "t": "100 cases",
+        "p": 2,
+        "f": "Correct: (90 + 100 + 110) / 3."
+       },
+       {
+        "t": "110 cases",
+        "p": 0,
+        "f": "That is a naive forecast: last month only."
+       },
+       {
+        "t": "300 cases",
+        "p": 0,
+        "f": "That is the total. Divide by the number of months."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "For six months, your forecast was higher than actual sales every month. What does this show?",
+      "choices": [
+       {
+        "t": "A bias: you always over-forecast",
+        "p": 2,
+        "f": "Bias shows a direction. You correct the method, and excess stock falls."
+       },
+       {
+        "t": "Normal random error",
+        "p": 0,
+        "f": "Random error goes both ways. Always high is bias."
+       },
+       {
+        "t": "A high MAPE only",
+        "p": 1,
+        "f": "MAPE shows size. Same direction every month is bias."
+       }
+      ]
+     },
+     {
+      "text": "Forecast 1,000 cases, safety stock 200, on hand 500, on order 300. What is the net requirement?",
+      "choices": [
+       {
+        "t": "400 cases",
+        "p": 2,
+        "f": "Correct: 1,000 + 200 - 500 - 300."
+       },
+       {
+        "t": "1,200 cases",
+        "p": 0,
+        "f": "You ignored stock on hand and on order."
+       },
+       {
+        "t": "700 cases",
+        "p": 0,
+        "f": "You forgot the stock on order."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "Sales and supply each have their own numbers, and they argue monthly. What fixes it?",
+      "choices": [
+       {
+        "t": "An S&OP cycle ending in one agreed plan",
+        "p": 2,
+        "f": "Demand review, supply review, reconciliation, executive decision: one plan."
+       },
+       {
+        "t": "Let supply use its own forecast",
+        "p": 0,
+        "f": "Two plans remain. The argument continues."
+       },
+       {
+        "t": "Let sales set the final numbers",
+        "p": 1,
+        "f": "Sales know demand, but supply limits must be included."
+       }
+      ]
+     },
+     {
+      "text": "In the executive S&OP meeting, demand exceeds capacity in December. What should the meeting do?",
+      "choices": [
+       {
+        "t": "Decide: build ahead, add a shift or ration",
+        "p": 2,
+        "f": "Executives decide with options and costs. December is planned in October."
+       },
+       {
+        "t": "Note the gap and review it again in December",
+        "p": 0,
+        "f": "Too late. The meeting exists to decide."
+       },
+       {
+        "t": "Ask the sales team to lower the forecast",
+        "p": 0,
+        "f": "Changing the forecast does not change demand."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stock",
+    "variants": [
+     {
+      "text": "You order 600 cases each time and keep 100 cases of safety stock. What is the average inventory?",
+      "choices": [
+       {
+        "t": "400 cases",
+        "p": 2,
+        "f": "Correct: Q/2 + safety stock = 300 + 100."
+       },
+       {
+        "t": "700 cases",
+        "p": 0,
+        "f": "Cycle stock averages Q/2, not Q."
+       },
+       {
+        "t": "300 cases",
+        "p": 0,
+        "f": "Safety stock stays all the time. Add it."
+       }
+      ]
+     },
+     {
+      "text": "To save ordering costs, someone proposes doubling order size from 600 to 1,200 cases. What happens to average cycle stock?",
+      "choices": [
+       {
+        "t": "It doubles, from 300 to 600",
+        "p": 2,
+        "f": "Bigger orders mean more average stock and more cash tied up."
+       },
+       {
+        "t": "It stays the same",
+        "p": 0,
+        "f": "Average cycle stock = Q/2. It rises with Q."
+       },
+       {
+        "t": "It halves",
+        "p": 0,
+        "f": "It is the opposite."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stock",
+    "variants": [
+     {
+      "text": "The warehouse is full, yet shops lack the top-selling items. What is the likely cause?",
+      "choices": [
+       {
+        "t": "Stock is not split by value and demand",
+        "p": 2,
+        "f": "ABC shows C items fill space while A items run out."
+       },
+       {
+        "t": "The warehouse is simply far too small",
+        "p": 0,
+        "f": "Space is full of the wrong items, not too little space."
+       },
+       {
+        "t": "Shops place their orders far too often",
+        "p": 1,
+        "f": "Order patterns matter, but the mix is the main issue."
+       }
+      ]
+     },
+     {
+      "text": "Daily demand 50 cases, lead time 12 days, safety stock 150. When do you reorder?",
+      "choices": [
+       {
+        "t": "At 750 cases on hand and on order",
+        "p": 2,
+        "f": "Correct: 50 x 12 + 150."
+       },
+       {
+        "t": "At 600 cases on hand and on order",
+        "p": 0,
+        "f": "Add safety stock."
+       },
+       {
+        "t": "At 212 cases on hand and on order",
+        "p": 0,
+        "f": "You added instead of multiplying."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "move",
+    "variants": [
+     {
+      "text": "A truck carries 20 tonnes for a trip costing Kz 200,000. What is the cost per tonne?",
+      "choices": [
+       {
+        "t": "Kz 10,000",
+        "p": 2,
+        "f": "Correct: 200,000 / 20."
+       },
+       {
+        "t": "Kz 4,000,000",
+        "p": 0,
+        "f": "You multiplied. Divide trip cost by tonnes."
+       },
+       {
+        "t": "Kz 200,000",
+        "p": 0,
+        "f": "That is the trip cost, not per tonne."
+       }
+      ]
+     },
+     {
+      "text": "The same Kz 200,000 trip runs at 60% load: 12 tonnes. What is the cost per tonne?",
+      "choices": [
+       {
+        "t": "About Kz 16,667",
+        "p": 2,
+        "f": "Correct: 200,000 / 12. Empty space raises cost per tonne."
+       },
+       {
+        "t": "Kz 10,000",
+        "p": 0,
+        "f": "That is at full load. Less weight, same cost."
+       },
+       {
+        "t": "Kz 6,000",
+        "p": 0,
+        "f": "Lower load raises, not lowers, cost per tonne."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "move",
+    "variants": [
+     {
+      "text": "Trucks with crisps are full by volume but carry only 4 tonnes of a 20-tonne limit.",
+      "choices": [
+       {
+        "t": "Cube-out: mix heavy goods into those loads",
+        "p": 2,
+        "f": "Volume fills first. Mixing in canned goods uses the weight capacity."
+       },
+       {
+        "t": "Weigh-out: reduce load per truck",
+        "p": 0,
+        "f": "Weight is far from the limit. Volume is the issue."
+       },
+       {
+        "t": "Buy bigger trucks for crisps",
+        "p": 1,
+        "f": "Possible, but mixed loads cost less."
+       }
+      ]
+     },
+     {
+      "text": "An urgent spare part must reach the factory in 2 days from abroad. Which mode?",
+      "choices": [
+       {
+        "t": "Air: fastest, highest cost per kilo",
+        "p": 2,
+        "f": "For small, urgent items, speed is worth the cost."
+       },
+       {
+        "t": "Sea: lowest cost per tonne",
+        "p": 0,
+        "f": "Sea takes weeks. The factory stops."
+       },
+       {
+        "t": "Rail: efficient for heavy loads",
+        "p": 0,
+        "f": "Rail suits heavy, long-distance loads, not urgent parts."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "move",
+    "variants": [
+     {
+      "text": "All pasta comes from one supplier at a good price. A strike there would stop supply for weeks.",
+      "choices": [
+       {
+        "t": "Add a second source for part of the volume",
+        "p": 2,
+        "f": "Dual sourcing balances price and security."
+       },
+       {
+        "t": "Stay single-sourced; the price is best",
+        "p": 0,
+        "f": "One strike empties the shelves."
+       },
+       {
+        "t": "Split volume across six suppliers",
+        "p": 1,
+        "f": "Security rises, but you lose leverage and pay more."
+       }
+      ]
+     },
+     {
+      "text": "Should shops be supplied directly from the central warehouse or via regional depots?",
+      "choices": [
+       {
+        "t": "Compare cost and service for each design",
+        "p": 2,
+        "f": "Each network design trades cost against speed. Data decides."
+       },
+       {
+        "t": "Always use regional depots",
+        "p": 0,
+        "f": "Depots add stock and cost. Not always right."
+       },
+       {
+        "t": "Always ship direct; it is simpler",
+        "p": 0,
+        "f": "Long trips to far shops may hurt service."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "chain",
+    "variants": [
+     {
+      "text": "Map the chain for imported pasta. What do you note at each stage?",
+      "choices": [
+       {
+        "t": "Lead time, stock point and owner",
+        "p": 2,
+        "f": "The map shows 6 weeks of lead time and where stock waits."
+       },
+       {
+        "t": "Only the cost of each stage",
+        "p": 0,
+        "f": "Cost alone hides where time and stock build up."
+       },
+       {
+        "t": "Only the suppliers' names",
+        "p": 0,
+        "f": "Names are not a map of flows."
+       }
+      ]
+     },
+     {
+      "text": "Customers pay in 60 days; you pay suppliers in 15. Which flow is the problem?",
+      "choices": [
+       {
+        "t": "Cash: it flows back too slowly",
+        "p": 2,
+        "f": "Product and information flow, but cash waits 45 extra days."
+       },
+       {
+        "t": "Product: deliveries are slow",
+        "p": 0,
+        "f": "Delivery is not the issue here."
+       },
+       {
+        "t": "Information: orders are late",
+        "p": 0,
+        "f": "Orders are fine. Payment timing is the issue."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
