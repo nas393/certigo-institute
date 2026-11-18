@@ -1,0 +1,475 @@
+{
+ "slug": "excel-and-data-for-business",
+ "title": "Rescue the monthly report",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: tidy data, Tables, data types, validation, IF, SUMIFS/COUNTIFS, absolute references, XLOOKUP/VLOOKUP, approximate match bands, IFERROR, safe cleaning, TRIM/SUBSTITUTE CHAR(160), VALUE, duplicates. Fictional company."
+ },
+ "content": {
+  "role": "Sales Operations Analyst",
+  "company": "Lakeside Distribution (fictional), a distributor selling to shops in several provinces",
+  "briefing": "The monthly sales report takes three days to build and often has errors. The sales director wants it right and fast. You inherit a messy export, broken formulas and a price list in another file.",
+  "skills": {
+   "tidy": "Tidy data",
+   "formulas": "Formulas",
+   "lookup": "Lookups",
+   "clean": "Cleaning data"
+  },
+  "steps": [
+   {
+    "skill": "tidy",
+    "variants": [
+     {
+      "text": "The export has two header rows, merged cells, subtotals inside the data and blank rows. What do you do first?",
+      "choices": [
+       {
+        "t": "Make it tidy: one header, one record per row",
+        "p": 2,
+        "f": "Tidy data lets sorting, filters and formulas work reliably."
+       },
+       {
+        "t": "Add colours to make it easier to read",
+        "p": 0,
+        "f": "Colour does not fix structure."
+       },
+       {
+        "t": "Build formulas around the merged cells",
+        "p": 0,
+        "f": "Merged cells and subtotals break formulas."
+       }
+      ]
+     },
+     {
+      "text": "New rows are added every week, and formulas keep missing them. What helps most?",
+      "choices": [
+       {
+        "t": "Convert the range to an Excel Table",
+        "p": 2,
+        "f": "The Table grows with new rows, and formulas fill down."
+       },
+       {
+        "t": "Extend every formula to row 100,000",
+        "p": 0,
+        "f": "Slow and error-prone."
+       },
+       {
+        "t": "Copy formulas down by hand each week",
+        "p": 1,
+        "f": "It works until someone forgets."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "tidy",
+    "variants": [
+     {
+      "text": "Sales amounts align left and SUM returns 0. What is the likely problem?",
+      "choices": [
+       {
+        "t": "Numbers are stored as text",
+        "p": 2,
+        "f": "Text aligns left. Convert with VALUE or Text to Columns."
+       },
+       {
+        "t": "The SUM function is broken",
+        "p": 0,
+        "f": "SUM works; it skips text."
+       },
+       {
+        "t": "The column is too narrow",
+        "p": 0,
+        "f": "Width does not change values."
+       }
+      ]
+     },
+     {
+      "text": "Sales reps type province names in many spellings: 'Luanda', 'luanda ', 'LDA'. How do you stop it?",
+      "choices": [
+       {
+        "t": "Data validation with a list",
+        "p": 2,
+        "f": "Reps choose from the list. No more variants."
+       },
+       {
+        "t": "Fix them by hand each month",
+        "p": 0,
+        "f": "The problem returns every month."
+       },
+       {
+        "t": "Ask reps to be careful",
+        "p": 1,
+        "f": "Helpful, but validation prevents errors."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "formulas",
+    "variants": [
+     {
+      "text": "Column D is sales, column E is target. Which formula shows 'Target met' or 'Below target'?",
+      "choices": [
+       {
+        "t": "=IF(D2>=E2,\"Target met\",\"Below target\")",
+        "p": 2,
+        "f": "Test, value if true, value if false. Text in quotes."
+       },
+       {
+        "t": "=IF(D2>E2,Target met,Below target)",
+        "p": 0,
+        "f": "Text needs quotes, and >= counts exactly meeting target."
+       },
+       {
+        "t": "=IF(E2>=D2,\"Target met\",\"Below target\")",
+        "p": 0,
+        "f": "Test reversed: it says met when sales are below."
+       }
+      ]
+     },
+     {
+      "text": "Total sales for Luanda: province in column A, sales in column C. Which formula?",
+      "choices": [
+       {
+        "t": "=SUMIFS(C:C,A:A,\"Luanda\")",
+        "p": 2,
+        "f": "Sum range first, then criteria range and criteria."
+       },
+       {
+        "t": "=SUMIFS(A:A,C:C,\"Luanda\")",
+        "p": 0,
+        "f": "Ranges reversed. The sum range comes first."
+       },
+       {
+        "t": "=COUNTIFS(A:A,\"Luanda\")",
+        "p": 0,
+        "f": "That counts rows, not sales."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "formulas",
+    "variants": [
+     {
+      "text": "You copy =C2*F1 down, where F1 holds the IVA rate. Rows below show 0. What is wrong?",
+      "choices": [
+       {
+        "t": "F1 must be absolute: $F$1",
+        "p": 2,
+        "f": "Relative F1 shifts to F2, F3 when copied."
+       },
+       {
+        "t": "C2 must be absolute: $C$2",
+        "p": 0,
+        "f": "C2 should change on each row."
+       },
+       {
+        "t": "Multiplication cannot be copied",
+        "p": 0,
+        "f": "It can, with the right references."
+       }
+      ]
+     },
+     {
+      "text": "You need to check a complex formula is right. What do you do?",
+      "choices": [
+       {
+        "t": "Trace precedents and check one result by hand",
+        "p": 2,
+        "f": "Formulas then Trace Precedents shows inputs; one hand check proves it."
+       },
+       {
+        "t": "Trust it if no error shows",
+        "p": 0,
+        "f": "No error message is not the same as correct."
+       },
+       {
+        "t": "Delete it and type values instead",
+        "p": 0,
+        "f": "Hard-coded values hide the logic."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lookup",
+    "variants": [
+     {
+      "text": "You need each product's price from the price list Table 'Prices'. Which formula?",
+      "choices": [
+       {
+        "t": "=XLOOKUP(A2,Prices[Code],Prices[Price],\"Not found\")",
+        "p": 2,
+        "f": "Exact match by default, and a clear message if missing."
+       },
+       {
+        "t": "=VLOOKUP(A2,Prices,2,TRUE)",
+        "p": 0,
+        "f": "TRUE is approximate match. Wrong prices appear silently."
+       },
+       {
+        "t": "=SUMIFS(Prices[Code],Prices[Price],A2)",
+        "p": 0,
+        "f": "Wrong function and ranges reversed."
+       }
+      ]
+     },
+     {
+      "text": "A VLOOKUP returns the wrong column after someone inserts a new column in the price list.",
+      "choices": [
+       {
+        "t": "Use XLOOKUP with the return column named",
+        "p": 2,
+        "f": "XLOOKUP points at the column, not a number."
+       },
+       {
+        "t": "Never insert columns again",
+        "p": 0,
+        "f": "The structure should not be frozen."
+       },
+       {
+        "t": "Change the column number each time",
+        "p": 1,
+        "f": "Works until the next change."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lookup",
+    "variants": [
+     {
+      "text": "Commission bands: 0 to 999,999 = 2%; 1,000,000 to 4,999,999 = 3%; 5,000,000 and above = 4%. How do you look up the rate?",
+      "choices": [
+       {
+        "t": "Approximate match on sorted lower limits",
+        "p": 2,
+        "f": "XLOOKUP match mode -1 finds the band for any amount."
+       },
+       {
+        "t": "Exact match on every possible amount",
+        "p": 0,
+        "f": "Impossible to list every amount."
+       },
+       {
+        "t": "Nested IFs for each amount",
+        "p": 1,
+        "f": "Works for few bands, but a band table is easier to maintain."
+       }
+      ]
+     },
+     {
+      "text": "A lookup shows #N/A for 12 products. What do you do first?",
+      "choices": [
+       {
+        "t": "Find why: missing codes or spaces",
+        "p": 2,
+        "f": "Find the cause before hiding the error."
+       },
+       {
+        "t": "Wrap it in IFERROR with 0",
+        "p": 0,
+        "f": "Zero hides missing prices and understates sales."
+       },
+       {
+        "t": "Delete those 12 rows",
+        "p": 0,
+        "f": "You lose real sales."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "clean",
+    "variants": [
+     {
+      "text": "Before cleaning the export, what is the safe first step?",
+      "choices": [
+       {
+        "t": "Keep the raw export untouched",
+        "p": 2,
+        "f": "Clean in helper columns, then check counts and totals."
+       },
+       {
+        "t": "Clean directly in the raw data",
+        "p": 0,
+        "f": "Mistakes cannot be undone later."
+       },
+       {
+        "t": "Delete columns you do not need",
+        "p": 1,
+        "f": "Possible later, but keep the original first."
+       }
+      ]
+     },
+     {
+      "text": "After cleaning, how do you know nothing was lost?",
+      "choices": [
+       {
+        "t": "Compare row counts and totals",
+        "p": 2,
+        "f": "Counts and totals before and after must agree."
+       },
+       {
+        "t": "Scroll through quickly",
+        "p": 0,
+        "f": "Thousands of rows cannot be checked by eye."
+       },
+       {
+        "t": "Trust the cleaning steps",
+        "p": 0,
+        "f": "Checks catch mistakes you did not expect."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "clean",
+    "variants": [
+     {
+      "text": "Product codes look identical, but lookups fail. LEN shows 9 characters for an 8-character code.",
+      "choices": [
+       {
+        "t": "Hidden spaces: TRIM or remove CHAR(160)",
+        "p": 2,
+        "f": "Web exports often contain non-breaking spaces TRIM misses."
+       },
+       {
+        "t": "Retype every product code by hand",
+        "p": 0,
+        "f": "Slow and error-prone."
+       },
+       {
+        "t": "Switch the lookup to approximate match",
+        "p": 0,
+        "f": "That returns wrong prices silently."
+       }
+      ]
+     },
+     {
+      "text": "Codes like 'AO-0045' must be split into region 'AO' and number '0045'. Which functions?",
+      "choices": [
+       {
+        "t": "LEFT for region, RIGHT for number",
+        "p": 2,
+        "f": "=LEFT(A2,2) and =RIGHT(A2,4). Or Text to Columns with '-'."
+       },
+       {
+        "t": "TRIM and then PROPER on the code",
+        "p": 0,
+        "f": "Those fix spaces and case, not splitting."
+       },
+       {
+        "t": "SUMIFS and COUNTIFS on the code",
+        "p": 0,
+        "f": "Those total and count, not split text."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "clean",
+    "variants": [
+     {
+      "text": "Some invoices appear twice. How do you decide what a duplicate is?",
+      "choices": [
+       {
+        "t": "Define the key columns, then count",
+        "p": 2,
+        "f": "Invoice number plus line; count before and after removing."
+       },
+       {
+        "t": "Remove any rows with the same amount",
+        "p": 0,
+        "f": "Different invoices can have the same amount."
+       },
+       {
+        "t": "Keep everything to be safe",
+        "p": 0,
+        "f": "Duplicates inflate sales."
+       }
+      ]
+     },
+     {
+      "text": "Customer names are in mixed case like 'jOÃO sILVA'. Which function fixes it?",
+      "choices": [
+       {
+        "t": "PROPER",
+        "p": 2,
+        "f": "Title Case: 'João Silva'."
+       },
+       {
+        "t": "TRIM",
+        "p": 0,
+        "f": "TRIM removes spaces, not case."
+       },
+       {
+        "t": "VALUE",
+        "p": 0,
+        "f": "VALUE converts text to numbers."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "formulas",
+    "variants": [
+     {
+      "text": "How many orders came from Benguela with sales over Kz 1 million? Province in A, sales in C.",
+      "choices": [
+       {
+        "t": "=COUNTIFS(A:A,\"Benguela\",C:C,\">1000000\")",
+        "p": 2,
+        "f": "Two conditions, each with range and criteria."
+       },
+       {
+        "t": "=SUMIFS(C:C,A:A,\"Benguela\")",
+        "p": 0,
+        "f": "That sums sales, not counts orders."
+       },
+       {
+        "t": "=COUNTIFS(C:C,\"Benguela\")",
+        "p": 0,
+        "f": "Wrong range and only one condition."
+       }
+      ]
+     },
+     {
+      "text": "In =2+3*4, what does Excel return?",
+      "choices": [
+       {
+        "t": "14",
+        "p": 2,
+        "f": "Multiply first, then add."
+       },
+       {
+        "t": "20",
+        "p": 0,
+        "f": "Excel does not work left to right here."
+       },
+       {
+        "t": "9",
+        "p": 0,
+        "f": "That adds all three numbers."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
