@@ -1,0 +1,475 @@
+{
+ "slug": "enterprise-sales-meddic",
+ "title": "The big fleet deal",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: complex sale, MEDDIC/MEDDPICC elements and 0-2 scoring, pursue/reset/walk, pain vs nice-to-have, pain chain, SPIN, value drivers, baseline/target/gap, ROI, payback, cost of inaction. Calculations checked. Fictional companies."
+ },
+ "content": {
+  "role": "Enterprise Account Executive",
+  "company": "TrackWise Systems (fictional), selling fleet-tracking software; the prospect is Summit Brewing (fictional), with 180 delivery trucks",
+  "briefing": "Summit Brewing could be your biggest deal this year: Kz 120 m. The sales cycle may take 6 months and involve many people. Your manager reviews the deal weekly using MEDDIC.",
+  "skills": {
+   "qualify": "Qualifying with MEDDIC",
+   "discover": "Discovery and pain",
+   "value": "Building the business case",
+   "control": "Controlling the deal"
+  },
+  "steps": [
+   {
+    "skill": "qualify",
+    "variants": [
+     {
+      "text": "Your contact is the fleet supervisor. He loves the demo. Who is the economic buyer?",
+      "choices": [
+       {
+        "t": "The person who can approve the money",
+        "p": 2,
+        "f": "Likely the CFO or COO. You ask the supervisor who signs off spend this size."
+       },
+       {
+        "t": "The fleet supervisor, who loves it",
+        "p": 0,
+        "f": "Enthusiasm is not budget authority."
+       },
+       {
+        "t": "The IT team, who will install it",
+        "p": 0,
+        "f": "IT may influence; it rarely owns the budget."
+       }
+      ]
+     },
+     {
+      "text": "MEDDIC score for the deal (0 unknown, 1 assumed, 2 confirmed): Metrics 1, Economic buyer 0, Decision criteria 2, Decision process 0, Pain 2, Champion 1. Total and verdict?",
+      "choices": [
+       {
+        "t": "6 of 12: reset before investing more",
+        "p": 2,
+        "f": "Real pain, but no access to the economic buyer and unknown process."
+       },
+       {
+        "t": "6 of 12: commit it in the forecast",
+        "p": 0,
+        "f": "Half unknown is not commit-ready."
+       },
+       {
+        "t": "8 of 12: pursue at full speed",
+        "p": 0,
+        "f": "Recount: 1 + 0 + 2 + 0 + 2 + 1 = 6."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "qualify",
+    "variants": [
+     {
+      "text": "Who is a real champion?",
+      "choices": [
+       {
+        "t": "Someone with influence who sells for you inside",
+        "p": 2,
+        "f": "A champion has power, gains from your success, and acts when you are not there."
+       },
+       {
+        "t": "Anyone who is friendly and replies fast",
+        "p": 0,
+        "f": "A friendly coach is not a champion without influence."
+       },
+       {
+        "t": "The most senior person you have met",
+        "p": 0,
+        "f": "Seniority without commitment is not championship."
+       }
+      ]
+     },
+     {
+      "text": "The deal has no clear pain and no path to the budget owner after 3 months.",
+      "choices": [
+       {
+        "t": "Walk away or park it, and free your time",
+        "p": 2,
+        "f": "No pain and no buyer means low odds. Focus elsewhere."
+       },
+       {
+        "t": "Keep pushing; persistence wins",
+        "p": 0,
+        "f": "Time spent here is taken from winnable deals."
+       },
+       {
+        "t": "Offer a 30% discount to create pain",
+        "p": 0,
+        "f": "Discounts do not create a business problem."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "discover",
+    "variants": [
+     {
+      "text": "The customer says: 'It would be nice to see trucks on a map.' Is this pain?",
+      "choices": [
+       {
+        "t": "Not yet: pain needs a cost and an owner",
+        "p": 2,
+        "f": "Dig into why it matters before treating it as pain."
+       },
+       {
+        "t": "Yes: they clearly asked for the feature",
+        "p": 0,
+        "f": "A wish is a nice-to-have."
+       },
+       {
+        "t": "Yes, as long as they have a budget",
+        "p": 1,
+        "f": "Budget helps, but without cost and owner it is still not pain."
+       }
+      ]
+     },
+     {
+      "text": "They mention late deliveries. Using the pain chain, what do you find next?",
+      "choices": [
+       {
+        "t": "Find cause, impact, owner and yearly cost",
+        "p": 2,
+        "f": "Late deliveries come from poor routing; they cost Kz 4 m a month in fines."
+       },
+       {
+        "t": "Present your routing module straight away",
+        "p": 0,
+        "f": "Too early; the pain is not quantified."
+       },
+       {
+        "t": "Ask how many trucks they run each day",
+        "p": 1,
+        "f": "A situation question you could research."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "discover",
+    "variants": [
+     {
+      "text": "Which is an implication question?",
+      "choices": [
+       {
+        "t": "'What do late deliveries cost you each month?'",
+        "p": 2,
+        "f": "It links the problem to business impact."
+       },
+       {
+        "t": "'How many trucks do you run?'",
+        "p": 0,
+        "f": "A situation question."
+       },
+       {
+        "t": "'Do you have problems with routing?'",
+        "p": 0,
+        "f": "A problem question."
+       }
+      ]
+     },
+     {
+      "text": "How do you quantify the pain in discovery?",
+      "choices": [
+       {
+        "t": "Use the customer's own numbers",
+        "p": 2,
+        "f": "Their numbers make the case credible to their CFO."
+       },
+       {
+        "t": "Use industry averages from your slides",
+        "p": 1,
+        "f": "Useful as a check, but less convincing than their data."
+       },
+       {
+        "t": "Estimate high to make the case stronger",
+        "p": 0,
+        "f": "Inflated numbers collapse under CFO review."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "value",
+    "variants": [
+     {
+      "text": "Total benefit over 3 years: Kz 360 m. Total cost: Kz 120 m. What is the ROI?",
+      "choices": [
+       {
+        "t": "200%",
+        "p": 2,
+        "f": "(360 - 120) / 120 x 100."
+       },
+       {
+        "t": "300%",
+        "p": 0,
+        "f": "That is benefit / cost, not the return."
+       },
+       {
+        "t": "67%",
+        "p": 0,
+        "f": "That divides by benefit instead of cost."
+       }
+      ]
+     },
+     {
+      "text": "Investment Kz 120 m. Monthly benefit Kz 10 m. What is the payback period?",
+      "choices": [
+       {
+        "t": "12 months",
+        "p": 2,
+        "f": "120 / 10."
+       },
+       {
+        "t": "10 months",
+        "p": 0,
+        "f": "Recheck: 120 divided by 10 is 12."
+       },
+       {
+        "t": "36 months",
+        "p": 0,
+        "f": "That is the contract length, not payback."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "value",
+    "variants": [
+     {
+      "text": "Fines for late delivery cost Summit Kz 4 m a month. They want to delay the decision by 6 months.",
+      "choices": [
+       {
+        "t": "Show the cost of inaction: about Kz 24 m",
+        "p": 2,
+        "f": "Every month of delay costs the buyer. Urgency becomes concrete."
+       },
+       {
+        "t": "Offer a discount if they sign now",
+        "p": 1,
+        "f": "Discounts create urgency at your cost; their own loss is stronger."
+       },
+       {
+        "t": "Accept the delay politely",
+        "p": 0,
+        "f": "Without urgency, deals stall."
+       }
+      ]
+     },
+     {
+      "text": "On-time delivery today is 78%; the target is 95%. How do you present the case?",
+      "choices": [
+       {
+        "t": "Baseline, target, gap and its value",
+        "p": 2,
+        "f": "17 points of gap, worth Kz 48 m a year in avoided fines."
+       },
+       {
+        "t": "List all software features",
+        "p": 0,
+        "f": "Features do not show value."
+       },
+       {
+        "t": "Promise 100% on-time delivery",
+        "p": 0,
+        "f": "Overpromising destroys credibility."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "value",
+    "variants": [
+     {
+      "text": "Into which value driver does 'fewer accidents and insurance claims' fit?",
+      "choices": [
+       {
+        "t": "Reduce risk",
+        "p": 2,
+        "f": "Revenue, cost or risk: every benefit fits one."
+       },
+       {
+        "t": "Increase revenue",
+        "p": 0,
+        "f": "Accidents are about risk and cost, not sales."
+       },
+       {
+        "t": "None of the drivers",
+        "p": 0,
+        "f": "Every benefit should fit one driver."
+       }
+      ]
+     },
+     {
+      "text": "Who should own the numbers in the business case?",
+      "choices": [
+       {
+        "t": "The customer, agreed with your champion",
+        "p": 2,
+        "f": "Customer-owned numbers survive internal review."
+       },
+       {
+        "t": "Your own marketing team, for speed",
+        "p": 0,
+        "f": "Vendor numbers are discounted by buyers."
+       },
+       {
+        "t": "Nobody; keeping them vague is safer",
+        "p": 0,
+        "f": "Vague cases do not get approved."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "You don't know how Summit approves purchases this size. What do you ask your champion?",
+      "choices": [
+       {
+        "t": "The steps, people and dates to signature",
+        "p": 2,
+        "f": "Decision process: technical review, CFO, board, legal."
+       },
+       {
+        "t": "Whether they are happy with our price",
+        "p": 0,
+        "f": "Price is not the process."
+       },
+       {
+        "t": "Nothing; it will become clear later",
+        "p": 0,
+        "f": "Unknown processes kill forecasts."
+       }
+      ]
+     },
+     {
+      "text": "Legal and procurement review will take 6 weeks after the business approves. Which MEDDPICC letter is this?",
+      "choices": [
+       {
+        "t": "P: paper process",
+        "p": 2,
+        "f": "Plan it early so the deal does not slip at the end."
+       },
+       {
+        "t": "C: competition",
+        "p": 0,
+        "f": "Competition is about rival vendors."
+       },
+       {
+        "t": "M: metrics",
+        "p": 0,
+        "f": "Metrics are the measurable benefits."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "A rival vendor is also bidding. What do you do?",
+      "choices": [
+       {
+        "t": "Learn their position and shape decision criteria",
+        "p": 2,
+        "f": "Competition is part of MEDDICC; criteria favour your strengths."
+       },
+       {
+        "t": "Criticise the rival to the customer",
+        "p": 0,
+        "f": "Attacking competitors hurts your credibility."
+       },
+       {
+        "t": "Ignore them; focus on your demo",
+        "p": 0,
+        "f": "Unknown competition is a blind spot."
+       }
+      ]
+     },
+     {
+      "text": "Your manager asks if the deal is 'commit' for this quarter. Economic buyer not met, paper process unknown.",
+      "choices": [
+       {
+        "t": "No: keep it as best case for now",
+        "p": 2,
+        "f": "Commit needs evidence: buyer access and a known process."
+       },
+       {
+        "t": "Yes: the champion is confident",
+        "p": 0,
+        "f": "Confidence is not evidence."
+       },
+       {
+        "t": "Yes, to meet the quarter target",
+        "p": 0,
+        "f": "Forecasting to target, not evidence, damages trust."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "discover",
+    "variants": [
+     {
+      "text": "How do you prepare for the first discovery meeting?",
+      "choices": [
+       {
+        "t": "Research, agree agenda and time, plan questions",
+        "p": 2,
+        "f": "You avoid asking facts you could have found yourself."
+       },
+       {
+        "t": "Prepare a 40-slide product pitch",
+        "p": 0,
+        "f": "Discovery is about listening, not pitching."
+       },
+       {
+        "t": "Just turn up and chat",
+        "p": 0,
+        "f": "Unprepared meetings waste the buyer's time."
+       }
+      ]
+     },
+     {
+      "text": "A need-payoff question sounds like:",
+      "choices": [
+       {
+        "t": "'If this were fixed, what would it be worth?'",
+        "p": 2,
+        "f": "The buyer states the value in their own words."
+       },
+       {
+        "t": "'Our tool fixes this, doesn't it?'",
+        "p": 0,
+        "f": "A leading pitch, not a question."
+       },
+       {
+        "t": "'How long have you had trucks?'",
+        "p": 0,
+        "f": "A situation question."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

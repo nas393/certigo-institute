@@ -1,0 +1,475 @@
+{
+ "slug": "internal-audit-and-controls",
+ "title": "The first audit",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: COSO, three lines, fraud triangle, preventive vs detective, manual vs automated, SoD, authorisation matrix, P2P/O2C/cash controls, red flags, inherent vs residual risk, walkthrough, design vs operation, deviation rate, finding structure. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Internal Auditor",
+  "company": "Pinecrest Group (fictional), a distribution group with 4 branches and central finance",
+  "briefing": "You join the internal audit team and lead your first audit: purchasing and payments at the largest branch. The audit committee wants to know if controls work and if anything looks like fraud.",
+  "skills": {
+   "frame": "Control frameworks",
+   "controls": "Designing controls",
+   "fraud": "Fraud risk",
+   "audit": "Audit testing and reporting"
+  },
+  "steps": [
+   {
+    "skill": "frame",
+    "variants": [
+     {
+      "text": "The branch manager says: 'With good controls, we can guarantee no errors.' What do you answer?",
+      "choices": [
+       {
+        "t": "Controls give reasonable, not absolute, assurance",
+        "p": 2,
+        "f": "Human error, override and collusion can still beat controls."
+       },
+       {
+        "t": "Agreed; that is the purpose of controls",
+        "p": 0,
+        "f": "No control system guarantees zero errors."
+       },
+       {
+        "t": "Only automated controls can guarantee it",
+        "p": 0,
+        "f": "Automated controls are stronger, but still not absolute."
+       }
+      ]
+     },
+     {
+      "text": "Staff see the branch manager approving his own expense claims, and nobody objects. Which COSO component is weak?",
+      "choices": [
+       {
+        "t": "The control environment: tone at the top",
+        "p": 2,
+        "f": "If leaders bypass rules, staff follow. Every other control weakens."
+       },
+       {
+        "t": "Monitoring activities",
+        "p": 0,
+        "f": "Monitoring may catch it later, but the root is tone at the top."
+       },
+       {
+        "t": "Information and communication",
+        "p": 0,
+        "f": "People know the rule. The problem is leadership behaviour."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "frame",
+    "variants": [
+     {
+      "text": "In the Three Lines Model, who owns and manages purchasing risk day to day?",
+      "choices": [
+       {
+        "t": "Management: first-line roles",
+        "p": 2,
+        "f": "Correct. Internal audit gives independent assurance; it does not own the risk."
+       },
+       {
+        "t": "Internal audit",
+        "p": 0,
+        "f": "Audit must stay independent. It does not run controls."
+       },
+       {
+        "t": "The board only",
+        "p": 0,
+        "f": "The board oversees; management owns."
+       }
+      ]
+     },
+     {
+      "text": "The CFO asks you to design and run the new payment approval process. What do you say?",
+      "choices": [
+       {
+        "t": "Advise, but management must own it",
+        "p": 2,
+        "f": "Running controls you later audit destroys your independence."
+       },
+       {
+        "t": "Agree; you know controls best",
+        "p": 0,
+        "f": "You would audit your own work."
+       },
+       {
+        "t": "Agree, but only for six months",
+        "p": 1,
+        "f": "Still a conflict for the period you run it."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "fraud",
+    "variants": [
+     {
+      "text": "A buyer is in debt, the system lets him create suppliers and approve their invoices, and he says 'the company underpays me'. What do you see?",
+      "choices": [
+       {
+        "t": "All three sides of the fraud triangle",
+        "p": 2,
+        "f": "Pressure, opportunity and rationalisation. Removing opportunity is your lever."
+       },
+       {
+        "t": "Only a personal problem, not a risk",
+        "p": 0,
+        "f": "Pressure plus opportunity is a classic fraud setting."
+       },
+       {
+        "t": "Just a training gap in the system",
+        "p": 0,
+        "f": "The issue is access, not knowledge."
+       }
+      ]
+     },
+     {
+      "text": "Which is a fraud red flag?",
+      "choices": [
+       {
+        "t": "A supplier shares an employee's bank account",
+        "p": 2,
+        "f": "Classic red flag. You start an investigation with care."
+       },
+       {
+        "t": "A supplier gives a 2% discount for early payment",
+        "p": 0,
+        "f": "Normal commercial terms."
+       },
+       {
+        "t": "A supplier sends invoices every month",
+        "p": 0,
+        "f": "Regular invoicing is normal."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "fraud",
+    "variants": [
+     {
+      "text": "Approval limit: Kz 5 million. You see 14 orders from one buyer between Kz 4.9 and 4.99 million.",
+      "choices": [
+       {
+        "t": "Likely split orders: test them all",
+        "p": 2,
+        "f": "Orders just below limits are a red flag for splitting."
+       },
+       {
+        "t": "Normal: each one is within his limit",
+        "p": 0,
+        "f": "The pattern itself is suspicious."
+       },
+       {
+        "t": "Raise his limit so the issue stops",
+        "p": 0,
+        "f": "That rewards the behaviour."
+       }
+      ]
+     },
+     {
+      "text": "One clerk creates suppliers, records invoices and releases payments.",
+      "choices": [
+       {
+        "t": "Segregation of duties is missing",
+        "p": 2,
+        "f": "Authorising, recording and paying must be split."
+       },
+       {
+        "t": "Efficient, and the clerk is trusted",
+        "p": 0,
+        "f": "Trust is not a control. One person controls everything."
+       },
+       {
+        "t": "Fine if the CFO checks yearly",
+        "p": 0,
+        "f": "A yearly check catches fraud far too late."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "controls",
+    "variants": [
+     {
+      "text": "The system blocks payment if PO, goods receipt and invoice do not match. What kind of control?",
+      "choices": [
+       {
+        "t": "Automated and preventive",
+        "p": 2,
+        "f": "It stops errors before payment, every time, without fatigue."
+       },
+       {
+        "t": "Manual and detective",
+        "p": 0,
+        "f": "No person runs it, and it acts before the error."
+       },
+       {
+        "t": "Automated and detective",
+        "p": 0,
+        "f": "It prevents payment rather than finding errors after."
+       }
+      ]
+     },
+     {
+      "text": "A monthly bank reconciliation, reviewed by someone independent. What kind?",
+      "choices": [
+       {
+        "t": "Manual and detective",
+        "p": 2,
+        "f": "It finds errors after they happen. Independence makes it stronger."
+       },
+       {
+        "t": "Automated and preventive",
+        "p": 0,
+        "f": "A person runs it, after the fact."
+       },
+       {
+        "t": "Not a control, just accounting",
+        "p": 0,
+        "f": "It is one of the key cash controls."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "controls",
+    "variants": [
+     {
+      "text": "How do you describe a control so it can be tested?",
+      "choices": [
+       {
+        "t": "Who, what, against what, when, and evidence",
+        "p": 2,
+        "f": "A clear description lets anyone test it."
+       },
+       {
+        "t": "'Payments are checked carefully'",
+        "p": 0,
+        "f": "Too vague to test."
+       },
+       {
+        "t": "'The CFO is responsible for payments'",
+        "p": 0,
+        "f": "That names an owner, not a control."
+       }
+      ]
+     },
+     {
+      "text": "Stock adjustments are posted and approved by the same storekeeper.",
+      "choices": [
+       {
+        "t": "Approval must be independent",
+        "p": 2,
+        "f": "An adjustment can hide theft. Someone independent approves it."
+       },
+       {
+        "t": "Fine; he knows the stock best",
+        "p": 0,
+        "f": "He can hide his own losses."
+       },
+       {
+        "t": "Fine if the counts are monthly",
+        "p": 1,
+        "f": "Counts help, but the same person approves the fix."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "audit",
+    "variants": [
+     {
+      "text": "Purchasing: inherent risk 20 (high). With good controls, residual risk 8. What drives the audit plan?",
+      "choices": [
+       {
+        "t": "Residual risk, then frequency by band",
+        "p": 2,
+        "f": "Rank units by residual score and set frequency by risk band."
+       },
+       {
+        "t": "Inherent risk only",
+        "p": 0,
+        "f": "It ignores existing controls."
+       },
+       {
+        "t": "Whichever unit is largest",
+        "p": 0,
+        "f": "Size is one input, not the plan."
+       }
+      ]
+     },
+     {
+      "text": "Before testing payments, how do you understand the process?",
+      "choices": [
+       {
+        "t": "Walk one transaction from start to end",
+        "p": 2,
+        "f": "Inspect documents and screens at each step."
+       },
+       {
+        "t": "Read the policy manual only",
+        "p": 0,
+        "f": "Practice often differs from policy."
+       },
+       {
+        "t": "Ask the manager if it works",
+        "p": 0,
+        "f": "Assertions are not evidence."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "audit",
+    "variants": [
+     {
+      "text": "The approval control is well designed on paper. What else must you test?",
+      "choices": [
+       {
+        "t": "Operating effectiveness over the period",
+        "p": 2,
+        "f": "A good design that is not followed protects nothing."
+       },
+       {
+        "t": "Nothing; design is enough",
+        "p": 0,
+        "f": "Design and operation are tested separately."
+       },
+       {
+        "t": "Only the latest month",
+        "p": 1,
+        "f": "One month may not represent the period."
+       }
+      ]
+     },
+     {
+      "text": "You test 25 payments; 2 lack approval. What is the deviation rate?",
+      "choices": [
+       {
+        "t": "8%",
+        "p": 2,
+        "f": "Correct: 2 / 25 x 100."
+       },
+       {
+        "t": "2%",
+        "p": 0,
+        "f": "That is the count, not the rate."
+       },
+       {
+        "t": "12.5%",
+        "p": 0,
+        "f": "You divided 25 by 2. The rate is 2 / 25 x 100."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "audit",
+    "variants": [
+     {
+      "text": "How do you write the finding on missing approvals?",
+      "choices": [
+       {
+        "t": "Condition, criteria, cause, effect, action",
+        "p": 2,
+        "f": "Management can act on a complete finding."
+       },
+       {
+        "t": "'Approvals are poor and must improve'",
+        "p": 0,
+        "f": "No facts, criteria or cause."
+       },
+       {
+        "t": "List the clerk's name and mistakes",
+        "p": 0,
+        "f": "Findings target processes, not blame."
+       }
+      ]
+     },
+     {
+      "text": "Management disagrees with your finding but cannot show evidence.",
+      "choices": [
+       {
+        "t": "Keep the evidenced finding; note their view",
+        "p": 2,
+        "f": "Evidence decides. Their response appears in the report."
+       },
+       {
+        "t": "Remove it to keep the relationship",
+        "p": 0,
+        "f": "Independence is lost."
+       },
+       {
+        "t": "Soften it until they agree",
+        "p": 1,
+        "f": "Watered-down findings mislead the committee."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "controls",
+    "variants": [
+     {
+      "text": "Who may approve a Kz 50 million contract? The rules are unclear.",
+      "choices": [
+       {
+        "t": "An authorisation matrix by amount and risk",
+        "p": 2,
+        "f": "Who can approve what, up to which amount, kept up to date."
+       },
+       {
+        "t": "Whoever is the most senior present",
+        "p": 0,
+        "f": "Unclear authority invites abuse."
+       },
+       {
+        "t": "Any manager, to keep things moving",
+        "p": 0,
+        "f": "Speed is not authority."
+       }
+      ]
+     },
+     {
+      "text": "Customer credit limits can be changed by any sales rep.",
+      "choices": [
+       {
+        "t": "Limit changes need independent approval",
+        "p": 2,
+        "f": "Order-to-cash control: reps sell; credit decides."
+       },
+       {
+        "t": "Fine; reps know their customers",
+        "p": 0,
+        "f": "Reps have an incentive to raise limits."
+       },
+       {
+        "t": "Fine if finance checks overdue debts",
+        "p": 1,
+        "f": "Detective only; the risk is already taken."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

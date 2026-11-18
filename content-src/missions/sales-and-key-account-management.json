@@ -1,0 +1,475 @@
+{
+ "slug": "sales-and-key-account-management",
+ "title": "Winning the supermarket account",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: BANT, conversion, weighted pipeline, ABC, margin matrix, buying centre, SPIN, FAB, objection steps, key accounts, share of wallet, price waterfall. Calculations checked. Fictional companies."
+ },
+ "content": {
+  "role": "Key Account Manager",
+  "company": "Sunfield Foods (fictional), a distributor of rice, oil and drinks; the customer is a fictional supermarket chain, MaxiMart",
+  "briefing": "You manage the sales pipeline for the region and the relationship with MaxiMart, a growing 14-store chain. Your quarter target is Kz 60 million. Your manager wants a forecast, an account plan and better margins.",
+  "skills": {
+   "pipe": "Pipeline and forecasting",
+   "sell": "Consultative selling",
+   "kam": "Key account management",
+   "value": "Pricing and margin"
+  },
+  "steps": [
+   {
+    "skill": "pipe",
+    "variants": [
+     {
+      "text": "A new lead says: 'We love your products.' He cannot say who approves purchases, has no budget yet, and wants to 'think about it next year'.",
+      "choices": [
+       {
+        "t": "Keep it as a lead; BANT is not confirmed",
+        "p": 2,
+        "f": "No authority, budget or timing. You plan a light follow-up and focus on qualified deals."
+       },
+       {
+        "t": "Move it to 'qualified' because he likes the products",
+        "p": 0,
+        "f": "Liking is not BANT. Your forecast gets inflated with a deal that will not close."
+       },
+       {
+        "t": "Send a full proposal now to speed things up",
+        "p": 1,
+        "f": "A proposal without a decider or a budget rarely moves. Qualify first."
+       }
+      ]
+     },
+     {
+      "text": "Last quarter: 200 leads, 80 qualified, 40 got proposals, 20 were won. What is the overall conversion rate?",
+      "choices": [
+       {
+        "t": "10%",
+        "p": 2,
+        "f": "Correct: 20 / 200, or 40% x 50% x 50%."
+       },
+       {
+        "t": "50%",
+        "p": 0,
+        "f": "That is one stage rate. Overall = stage rates multiplied."
+       },
+       {
+        "t": "25%",
+        "p": 0,
+        "f": "Check again: 20 won from 200 leads is 10%."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pipe",
+    "variants": [
+     {
+      "text": "Pipeline: Kz 10 m at proposal (25%), Kz 20 m in negotiation (50%), Kz 8 m verbal yes (75%). What is the weighted forecast?",
+      "choices": [
+       {
+        "t": "Kz 18.5 million",
+        "p": 2,
+        "f": "Correct: 2.5 + 10 + 6. You tell your manager the gap to target honestly."
+       },
+       {
+        "t": "Kz 38 million",
+        "p": 0,
+        "f": "That is the total pipeline. Weight each deal by its stage probability."
+       },
+       {
+        "t": "Kz 19 million",
+        "p": 0,
+        "f": "Recheck: 10 x 25% = 2.5; 20 x 50% = 10; 8 x 75% = 6."
+       }
+      ]
+     },
+     {
+      "text": "Your weighted forecast is Kz 42 m against a remaining target of Kz 60 m. What do you do?",
+      "choices": [
+       {
+        "t": "Report the Kz 18 m gap and the plan to fill it",
+        "p": 2,
+        "f": "Your manager adds two promotions in time. An honest forecast leads to action."
+       },
+       {
+        "t": "Report Kz 60 m to avoid a difficult meeting",
+        "p": 0,
+        "f": "The miss is discovered at quarter end, too late to fix."
+       },
+       {
+        "t": "Raise all deal probabilities to reach target",
+        "p": 0,
+        "f": "Probabilities follow stages, not targets. The forecast becomes fiction."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "kam",
+    "variants": [
+     {
+      "text": "ABC analysis of 120 customers by 12-month net sales. Which ones are A customers?",
+      "choices": [
+       {
+        "t": "Those making up the first 80% of sales",
+        "p": 2,
+        "f": "Correct. Usually a small number of customers. They get the most attention."
+       },
+       {
+        "t": "The top third by number of customers",
+        "p": 0,
+        "f": "ABC is based on cumulative sales share, not a fixed count."
+       },
+       {
+        "t": "Those that order every single week",
+        "p": 0,
+        "f": "Frequency is not value. Rank by net sales."
+       }
+      ]
+     },
+     {
+      "text": "A wholesaler is big in revenue but low in margin after discounts and delivery costs. Where does it sit?",
+      "choices": [
+       {
+        "t": "Fix terms: high revenue, low margin",
+        "p": 2,
+        "f": "You renegotiate discounts and delivery minimums. Margin rises 3 points."
+       },
+       {
+        "t": "Protect: it is one of the biggest accounts",
+        "p": 0,
+        "f": "Revenue hides discounts and cost to serve. This one needs better terms."
+       },
+       {
+        "t": "Develop: grow volume to fix the margin",
+        "p": 1,
+        "f": "More volume at low margin can mean more loss. Fix terms first."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sell",
+    "variants": [
+     {
+      "text": "At MaxiMart, the buyer signs orders, store managers use the stock, and the finance director approves new suppliers. Who decides?",
+      "choices": [
+       {
+        "t": "The finance director is the decider",
+        "p": 2,
+        "f": "Correct. You map the buying centre and arrange a meeting with him."
+       },
+       {
+        "t": "The buyer, because she signs the orders",
+        "p": 0,
+        "f": "She is the buyer role. Signing is not deciding."
+       },
+       {
+        "t": "The store managers, as main users",
+        "p": 1,
+        "f": "Users influence the choice, but here approval sits with finance."
+       }
+      ]
+     },
+     {
+      "text": "The buyer's assistant controls access to the buyer's diary and decides which suppliers get a meeting. What is his role?",
+      "choices": [
+       {
+        "t": "Gatekeeper",
+        "p": 2,
+        "f": "Correct. You treat him with respect and explain why the meeting matters to MaxiMart."
+       },
+       {
+        "t": "Influencer",
+        "p": 0,
+        "f": "Influencers shape the choice. He controls access."
+       },
+       {
+        "t": "User",
+        "p": 0,
+        "f": "Users work with the product. He controls information and access."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sell",
+    "variants": [
+     {
+      "text": "In the MaxiMart meeting you have asked about stores and deliveries. The buyer mentions 5 kg rice runs out on weekends. What next?",
+      "choices": [
+       {
+        "t": "Ask what empty shelves cost them on a weekend",
+        "p": 2,
+        "f": "An implication question. She estimates Kz 2 million lost. Now the need is clear."
+       },
+       {
+        "t": "Present your twice-weekly delivery offer",
+        "p": 1,
+        "f": "Too early. She has not yet felt the cost of the problem."
+       },
+       {
+        "t": "Ask how many stores they plan to open",
+        "p": 0,
+        "f": "Another situation question. You lose the problem she just raised."
+       }
+      ]
+     },
+     {
+      "text": "Which line is a benefit for MaxiMart, not a feature?",
+      "choices": [
+       {
+        "t": "'No empty rice shelves on weekends'",
+        "p": 2,
+        "f": "Correct: what it means for this customer."
+       },
+       {
+        "t": "'We deliver twice a week'",
+        "p": 0,
+        "f": "That is what you do, an advantage, not their benefit."
+       },
+       {
+        "t": "'Our trucks are refrigerated'",
+        "p": 0,
+        "f": "That is a feature: what the product has."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sell",
+    "variants": [
+     {
+      "text": "The buyer says: 'Your price is too high.' What do you do first?",
+      "choices": [
+       {
+        "t": "Acknowledge it, then ask: 'Too high compared with what?'",
+        "p": 2,
+        "f": "She compares with a smaller pack size. You show the price per kilo is lower."
+       },
+       {
+        "t": "Offer a 5% discount at once to keep the deal alive",
+        "p": 0,
+        "f": "You give away margin before knowing the real concern."
+       },
+       {
+        "t": "List every quality feature of your rice for her",
+        "p": 1,
+        "f": "Evidence comes after you clarify the objection."
+       }
+      ]
+     },
+     {
+      "text": "A store owner says: 'I already have a supplier.'",
+      "choices": [
+       {
+        "t": "Ask what works and what could be better",
+        "p": 2,
+        "f": "He mentions late deliveries. You propose a trial on two products."
+       },
+       {
+        "t": "Say your company is bigger and better",
+        "p": 0,
+        "f": "Claims without evidence close the conversation."
+       },
+       {
+        "t": "Leave a price list and promise to call",
+        "p": 1,
+        "f": "Polite, but you learn nothing about his needs."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "kam",
+    "variants": [
+     {
+      "text": "MaxiMart buys Kz 200 m of rice a year. Your sales to them are Kz 50 m. What is your share of wallet?",
+      "choices": [
+       {
+        "t": "25%",
+        "p": 2,
+        "f": "Correct: 50 / 200. There is room to grow inside an existing customer."
+       },
+       {
+        "t": "50%",
+        "p": 0,
+        "f": "Share of wallet = your sales / their total category purchases."
+       },
+       {
+        "t": "400%",
+        "p": 0,
+        "f": "You divided the wrong way."
+       }
+      ]
+     },
+     {
+      "text": "All contact with MaxiMart goes through you and one buyer. She is leaving next month.",
+      "choices": [
+       {
+        "t": "Build a diamond: supply chain, finance, marketing links",
+        "p": 2,
+        "f": "Many contacts, function to function. The relationship survives her leaving."
+       },
+       {
+        "t": "Ask her to introduce you to her replacement",
+        "p": 1,
+        "f": "Helpful, but one link is still fragile."
+       },
+       {
+        "t": "Keep the bow-tie; it is simple and efficient",
+        "p": 0,
+        "f": "One relationship means one point of failure."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "kam",
+    "variants": [
+     {
+      "text": "You write the MaxiMart account plan. Which item is most often missing but essential?",
+      "choices": [
+       {
+        "t": "A relationship map: decider, users, coach, opponents",
+        "p": 2,
+        "f": "You discover the logistics manager opposes you. Now you can act on it."
+       },
+       {
+        "t": "A list of all products MaxiMart has bought",
+        "p": 1,
+        "f": "Useful facts, but not a strategy."
+       },
+       {
+        "t": "A copy of the standard price list",
+        "p": 0,
+        "f": "Not a plan. Objectives, actions and relationships are."
+       }
+      ]
+     },
+     {
+      "text": "MaxiMart proposes joint business planning. What should it include?",
+      "choices": [
+       {
+        "t": "Shared objectives, joint KPIs and quarterly reviews",
+        "p": 2,
+        "f": "Both sides commit to actions and measure them together."
+       },
+       {
+        "t": "A list of discounts MaxiMart wants from you",
+        "p": 0,
+        "f": "That is a negotiation, not a joint plan."
+       },
+       {
+        "t": "Your sales targets for MaxiMart only",
+        "p": 1,
+        "f": "One-sided targets are not joint planning."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "value",
+    "variants": [
+     {
+      "text": "List price Kz 10,000 per case. On-invoice discount Kz 1,000. Rebate Kz 500, early-payment discount Kz 200, delivery cost Kz 300. What is the pocket price?",
+      "choices": [
+       {
+        "t": "Kz 8,000",
+        "p": 2,
+        "f": "Correct: 10,000 - 1,000 = 9,000 invoice; minus 1,000 off-invoice = 8,000."
+       },
+       {
+        "t": "Kz 9,000",
+        "p": 0,
+        "f": "That is the invoice price. Off-invoice items still reduce what you keep."
+       },
+       {
+        "t": "Kz 8,500",
+        "p": 0,
+        "f": "You missed the delivery cost. Every off-invoice item counts."
+       }
+      ]
+     },
+     {
+      "text": "A customer asks for 3% extra discount for ordering more. Your margin is already thin.",
+      "choices": [
+       {
+        "t": "Trade it: 3% only for a larger minimum order",
+        "p": 2,
+        "f": "You give something only for something. Delivery cost per case falls."
+       },
+       {
+        "t": "Agree; more volume always pays",
+        "p": 0,
+        "f": "More volume at a thin margin can mean more loss."
+       },
+       {
+        "t": "Refuse any discount at all",
+        "p": 1,
+        "f": "Firm, but you may lose a good trade. Ask what you get in return."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "value",
+    "variants": [
+     {
+      "text": "Your manager praises an account with high revenue. You know it gets big rebates and free daily delivery. What do you check?",
+      "choices": [
+       {
+        "t": "Gross margin after discounts and cost to serve",
+        "p": 2,
+        "f": "After rebates and delivery, the account loses money. Revenue hid it."
+       },
+       {
+        "t": "Revenue growth compared with last year",
+        "p": 0,
+        "f": "Revenue again. It hides discounts and service cost."
+       },
+       {
+        "t": "Number of orders placed each month",
+        "p": 1,
+        "f": "Order count explains cost to serve partly, not the full margin."
+       }
+      ]
+     },
+     {
+      "text": "A cantina owner wants to buy. What matters most to this channel?",
+      "choices": [
+       {
+        "t": "Small packs and frequent visits",
+        "p": 2,
+        "f": "Correct. Wholesalers want price and credit; cantinas want small packs and visits."
+       },
+       {
+        "t": "Listing fees and promotions",
+        "p": 0,
+        "f": "That is the supermarket channel."
+       },
+       {
+        "t": "Large credit lines and pallets",
+        "p": 0,
+        "f": "That fits wholesalers, not cantinas."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

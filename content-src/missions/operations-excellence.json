@@ -1,0 +1,123 @@
+{
+ "slug": "operations-excellence",
+ "title": "Fix the bottling line",
+ "review": {"learner": 9, "manager": 9, "director": 9, "score_pct": 90, "checked": "2026-11-18", "notes": "Built on the course: SIPOC, VSM, value-added, Little's Law, PCE, TIMWOODS, 5S, takt, standard work, operators needed, visual management, kanban, PDCA, Pareto, fishbone. Calculations checked. Fictional company."},
+ "content": {
+  "role": "Continuous Improvement Lead",
+  "company": "Clearwater Bottling (fictional), a water and soft drinks plant with two lines",
+  "briefing": "Line 2 misses daily output, orders wait for days, and the floor is cluttered. The plant manager gives you 8 weeks to improve flow and quality without new machines.",
+  "skills": {"see": "Seeing the process", "waste": "Removing waste", "flow": "Pace and flow", "solve": "Problem solving"},
+  "steps": [
+   {"skill": "see", "variants": [
+    {"text": "You start mapping line 2 on one page: suppliers, inputs, 5 main steps, outputs and customers. What tool is this?",
+     "choices": [
+      {"t": "SIPOC", "p": 2, "f": "A one-page, high-level view with a fixed start and end."},
+      {"t": "A fishbone diagram", "p": 0, "f": "That finds causes of one problem."},
+      {"t": "A Pareto chart", "p": 0, "f": "That ranks causes by size."}]},
+    {"text": "Which step is value-added for the customer?",
+     "choices": [
+      {"t": "Filling and capping the bottle", "p": 2, "f": "It changes the product, the customer would pay for it, done right first time."},
+      {"t": "Moving pallets to a storage area", "p": 0, "f": "Transport adds no value the customer pays for."},
+      {"t": "Re-inspecting bottles a second time", "p": 0, "f": "Over-processing, unless the customer requires it."}]}]},
+   {"skill": "see", "variants": [
+    {"text": "600 orders are in process and the plant completes 150 a day. What is the lead time?",
+     "choices": [
+      {"t": "4 days", "p": 2, "f": "Little's Law: WIP / completion rate. Cut WIP to cut lead time."},
+      {"t": "150 days", "p": 0, "f": "That is the completion rate, not lead time."},
+      {"t": "0.25 days", "p": 0, "f": "You divided the wrong way."}]},
+    {"text": "Value-added time is 2 hours. Total lead time is 40 hours. What is process cycle efficiency?",
+     "choices": [
+      {"t": "5%", "p": 2, "f": "Correct: 2 / 40. Most of the time is waiting."},
+      {"t": "20%", "p": 0, "f": "That is 40 / 2 divided by 100. Use 2 / 40."},
+      {"t": "95%", "p": 0, "f": "That is the non-value-added share."}]}]},
+   {"skill": "waste", "variants": [
+    {"text": "Line 2 fills 2,000 extra bottles a day 'to stay busy'. They sit in the warehouse for weeks. Which waste?",
+     "choices": [
+      {"t": "Overproduction", "p": 2, "f": "The worst waste: it creates inventory, transport and handling."},
+      {"t": "Motion", "p": 0, "f": "Motion is people moving more than needed."},
+      {"t": "Waiting", "p": 0, "f": "Here the line keeps running, not waiting."}]},
+    {"text": "Operators walk 40 metres to fetch caps every 20 minutes. Which waste?",
+     "choices": [
+      {"t": "Motion", "p": 2, "f": "Unnecessary movement of people. Caps go to the point of use."},
+      {"t": "Defects", "p": 0, "f": "No bad product is made."},
+      {"t": "Over-processing", "p": 0, "f": "Nothing extra is done to the product."}]}]},
+   {"skill": "waste", "variants": [
+    {"text": "The line has old tools, broken parts and unused boxes everywhere. Which 5S step first?",
+     "choices": [
+      {"t": "Sort: red-tag what is not needed", "p": 2, "f": "Remove everything not needed before arranging anything."},
+      {"t": "Shine: clean everything well", "p": 0, "f": "Cleaning clutter you do not need wastes effort."},
+      {"t": "Standardise: write the rules", "p": 0, "f": "First remove, then arrange, clean and standardise."}]},
+    {"text": "After 5S, the area slides back within a month. What was missing?",
+     "choices": [
+      {"t": "Sustain: regular audits led by leaders", "p": 2, "f": "Leaders check weekly and display the score."},
+      {"t": "More cleaning materials", "p": 0, "f": "Materials do not keep habits."},
+      {"t": "A bigger storage room", "p": 0, "f": "Space fills up again without discipline."}]}]},
+   {"skill": "flow", "variants": [
+    {"text": "Available time: 27,000 seconds per shift. Customer demand: 900 cases per shift. What is takt time?",
+     "choices": [
+      {"t": "30 seconds per case", "p": 2, "f": "Correct: 27,000 / 900. The line must produce one case every 30 s."},
+      {"t": "900 seconds per case", "p": 0, "f": "That is the demand, not the pace."},
+      {"t": "0.03 seconds per case", "p": 0, "f": "You divided the wrong way."}]},
+    {"text": "Total work content is 150 seconds per case. Takt time is 30 seconds. How many operators?",
+     "choices": [
+      {"t": "5", "p": 2, "f": "Correct: 150 / 30. Then balance the work across them."},
+      {"t": "6", "p": 0, "f": "150 / 30 is exactly 5. Round up only when there is a remainder."},
+      {"t": "30", "p": 0, "f": "That is the takt time."}]}]},
+   {"skill": "flow", "variants": [
+    {"text": "Work content is 140 seconds; takt is 30 seconds. How many operators?",
+     "choices": [
+      {"t": "5, then balance the work", "p": 2, "f": "140 / 30 = 4.67, rounded up to 5."},
+      {"t": "4, to save one person", "p": 0, "f": "4 people cannot meet takt. The line falls behind."},
+      {"t": "4.67, using part-time staff", "p": 0, "f": "Round up whole operators, then balance."}]},
+    {"text": "Cap stock runs out without warning, stopping the line.",
+     "choices": [
+      {"t": "Kanban with min and max lines", "p": 2, "f": "An empty bin or card signals replenishment in time."},
+      {"t": "Order a huge cap stock", "p": 0, "f": "Overproduction and inventory waste."},
+      {"t": "Ask the operator to watch it", "p": 1, "f": "A visual signal works better than memory."}]}]},
+   {"skill": "flow", "variants": [
+    {"text": "Supervisors cannot tell if the line is ahead or behind until the shift ends.",
+     "choices": [
+      {"t": "An hourly plan-versus-actual board", "p": 2, "f": "Status visible at a glance in seconds; problems are fixed in the hour."},
+      {"t": "A daily email with output totals", "p": 0, "f": "Too late to act during the shift."},
+      {"t": "Ask operators to report problems", "p": 1, "f": "Helpful, but a visual board shows it without asking."}]},
+    {"text": "Who should write the standard work for the filling station?",
+     "choices": [
+      {"t": "The people who do the work, with the lead", "p": 2, "f": "They know the details, and they follow what they helped write."},
+      {"t": "An engineer, alone, at head office", "p": 0, "f": "Standards written far from the work are often ignored."},
+      {"t": "The machine supplier's manual", "p": 0, "f": "A manual is not your sequence, takt and WIP."}]}]},
+   {"skill": "solve", "variants": [
+    {"text": "Rejects by cause this month: label crooked 120, cap loose 60, short fill 15, other 5. Where do you start?",
+     "choices": [
+      {"t": "Crooked labels: 60% of rejects", "p": 2, "f": "Pareto: a few causes create most of the problem. 120 of 200."},
+      {"t": "Short fill: it sounds most serious", "p": 0, "f": "Start with the biggest impact first."},
+      {"t": "All causes at once", "p": 0, "f": "Spreading effort fixes nothing fully."}]},
+    {"text": "You list causes of crooked labels under Man, Machine, Method, Material, Measurement and Environment. What tool?",
+     "choices": [
+      {"t": "A fishbone (Ishikawa) diagram", "p": 2, "f": "It organises possible causes before you test them."},
+      {"t": "A value stream map", "p": 0, "f": "That maps flow, not causes of a defect."},
+      {"t": "A SIPOC", "p": 0, "f": "That gives a high-level process view."}]}]},
+   {"skill": "solve", "variants": [
+    {"text": "You think a new label guide will fix crooked labels. How do you introduce it?",
+     "choices": [
+      {"t": "PDCA: test on one shift, measure, then act", "p": 2, "f": "Rejects fall 70% on the test shift. You standardise it."},
+      {"t": "Install it on both lines at once", "p": 0, "f": "If it fails, both lines fail."},
+      {"t": "Wait for a perfect design first", "p": 1, "f": "Small tests teach faster than waiting."}]},
+    {"text": "The test worked. What does 'Act' in PDCA mean now?",
+     "choices": [
+      {"t": "Standardise it in the standard work", "p": 2, "f": "Make the improvement the new standard so it lasts."},
+      {"t": "Start the next big project", "p": 0, "f": "Without standardising, the gain fades."},
+      {"t": "Repeat the test for a year", "p": 0, "f": "Once proven, standardise and move on."}]}]},
+   {"skill": "waste", "variants": [
+    {"text": "An experienced operator has ideas to cut changeover time, but nobody asks him. Which waste?",
+     "choices": [
+      {"t": "Unused skills", "p": 2, "f": "The eighth waste: people's ideas and talent left unused."},
+      {"t": "Waiting", "p": 0, "f": "Not about idle time here."},
+      {"t": "Transport", "p": 0, "f": "Not about moving materials."}]},
+    {"text": "Bottles are moved three times between filling and the truck. Which waste?",
+     "choices": [
+      {"t": "Transport", "p": 2, "f": "Unnecessary movement of materials. You redesign the layout."},
+      {"t": "Motion", "p": 0, "f": "Motion is people; transport is materials."},
+      {"t": "Overproduction", "p": 0, "f": "That is about making too much."}]}]}
+  ]
+ }
+}

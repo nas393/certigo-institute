@@ -1,0 +1,475 @@
+{
+ "slug": "workplace-hse-fundamentals",
+ "title": "A safer line by Friday",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: hazard vs risk, near miss, Swiss cheese, leading vs lagging, L x S rating and bands, hierarchy of controls, LOTO, TILE, forklifts, incident response, 5 Whys, LTIFR per million hours. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "HSE Officer",
+  "company": "Polaris Packaging (fictional), a plant making cartons on three production lines",
+  "briefing": "Last week a glove was pulled into a roller on line 3; the operator was lucky. The plant manager wants the line safe and a report by Friday. You also handle the daily safety work on the floor.",
+  "skills": {
+   "risk": "Risk assessment",
+   "control": "Controls",
+   "incident": "Incidents and learning",
+   "culture": "Safety culture and measures"
+  },
+  "steps": [
+   {
+    "skill": "incident",
+    "variants": [
+     {
+      "text": "An operator's glove was pulled into roller 3. He pulled his hand free with no injury. How do you classify it?",
+      "choices": [
+       {
+        "t": "A near miss: an incident with no harm",
+        "p": 2,
+        "f": "Correct. Near misses share causes with serious accidents. It is a free chance to fix the problem."
+       },
+       {
+        "t": "Nothing to report: nobody was hurt",
+        "p": 0,
+        "f": "Unreported near misses mean the next one may be an amputation."
+       },
+       {
+        "t": "An accident: equipment was involved",
+        "p": 0,
+        "f": "An accident causes harm. This is an incident that could have."
+       }
+      ]
+     },
+     {
+      "text": "A supervisor says: 'Near misses just create paperwork.' Reports have dropped to zero.",
+      "choices": [
+       {
+        "t": "Make reporting quick and thank every reporter",
+        "p": 2,
+        "f": "Reports return within a month. Reporting must be easy, fast and appreciated."
+       },
+       {
+        "t": "Agree, and focus only on real injuries",
+        "p": 0,
+        "f": "Zero reports does not mean zero risk. You lose your early warning."
+       },
+       {
+        "t": "Make near-miss reporting a disciplinary duty",
+        "p": 1,
+        "f": "Required, yes, but fear of blame cuts honest reporting."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "incident",
+    "variants": [
+     {
+      "text": "First minutes after a worker cut his arm on a guillotine. What comes first?",
+      "choices": [
+       {
+        "t": "Make the area safe and give first aid",
+        "p": 2,
+        "f": "Correct order: safe area, first aid, preserve the scene, then report."
+       },
+       {
+        "t": "Interview witnesses before they forget",
+        "p": 0,
+        "f": "People first. Evidence and interviews come after the area is safe and he is treated."
+       },
+       {
+        "t": "Restart the line to keep the order on time",
+        "p": 0,
+        "f": "Restarting destroys evidence and may hurt someone else."
+       }
+      ]
+     },
+     {
+      "text": "Glove pulled into roller 3. 5 Whys so far: the guard was removed, because cleaning took too long with it on. What next?",
+      "choices": [
+       {
+        "t": "Ask why cleaning took too long, answering with facts",
+        "p": 2,
+        "f": "You find the guard needs 12 bolts. A hinged guard with an interlock fixes the root cause."
+       },
+       {
+        "t": "Stop here: the operator broke the rule",
+        "p": 0,
+        "f": "That blames the person and leaves the cause. Look behind the person."
+       },
+       {
+        "t": "Retrain all operators on the guard rule",
+        "p": 1,
+        "f": "Training helps, but the latent cause, a hard-to-remove guard, remains."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "incident",
+    "variants": [
+     {
+      "text": "Swiss cheese model: the guard was off, the supervisor knew, and cleaning targets were tight. Which are latent conditions?",
+      "choices": [
+       {
+        "t": "The hard-to-clean guard design and the tight targets",
+        "p": 2,
+        "f": "Latent conditions sit in design, targets and resources. They are what managers can fix."
+       },
+       {
+        "t": "The operator putting his hand near the roller",
+        "p": 0,
+        "f": "That is an active failure at the front line."
+       },
+       {
+        "t": "Only the supervisor not stopping the work",
+        "p": 1,
+        "f": "That is one layer, but design and targets made the failure likely."
+       }
+      ]
+     },
+     {
+      "text": "Your report's corrective action says only: 'Operator to be more careful.' What do you change?",
+      "choices": [
+       {
+        "t": "Real fixes from the hierarchy, each with an owner",
+        "p": 2,
+        "f": "Interlocked guard, cleaning procedure, check of effectiveness: real fixes with owners."
+       },
+       {
+        "t": "Nothing more; the operator has agreed to it",
+        "p": 0,
+        "f": "'Be careful' is not a control. The same incident will happen again."
+       },
+       {
+        "t": "Add a written warning to the operator's file",
+        "p": 1,
+        "f": "Discipline does not fix the root cause, a guard that is hard to clean."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "risk",
+    "variants": [
+     {
+      "text": "Cleaning roller 3 with the guard off: likelihood 4, severity 4. Bands: 1-4 low, 5-9 medium, 10-16 high, 20-25 very high.",
+      "choices": [
+       {
+        "t": "16: high",
+        "p": 2,
+        "f": "Correct: 4 x 4 = 16, in the high band. Action is needed before work continues."
+       },
+       {
+        "t": "8: medium",
+        "p": 0,
+        "f": "You added instead of multiplying. Rating = likelihood x severity."
+       },
+       {
+        "t": "20: very high",
+        "p": 0,
+        "f": "Recheck: 4 x 4 is 16, which is high."
+       }
+      ]
+     },
+     {
+      "text": "After an interlocked guard is fitted, likelihood drops to 1 and severity stays 4. What is the residual risk?",
+      "choices": [
+       {
+        "t": "4: low",
+        "p": 2,
+        "f": "Correct: 1 x 4 = 4, low. The controls are enough."
+       },
+       {
+        "t": "16: unchanged",
+        "p": 0,
+        "f": "You did not re-rate after controls. Residual risk uses the new likelihood."
+       },
+       {
+        "t": "0: risk removed",
+        "p": 0,
+        "f": "The hazard still exists. Risk is reduced, not zero."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "Glue fumes cause headaches at line 2. Which control do you try first?",
+      "choices": [
+       {
+        "t": "Switch to a less hazardous water-based glue",
+        "p": 2,
+        "f": "Substitution sits high in the hierarchy and works without relying on people."
+       },
+       {
+        "t": "Give all operators respirator masks",
+        "p": 0,
+        "f": "PPE is the last line. It fails silently if fit or use is wrong."
+       },
+       {
+        "t": "Rotate operators every two hours",
+        "p": 1,
+        "f": "An administrative control. It reduces exposure but the hazard stays."
+       }
+      ]
+     },
+     {
+      "text": "Operators can reach into the moving roller during work. What is the strongest practical control?",
+      "choices": [
+       {
+        "t": "A fixed guard with an interlock that stops the roller",
+        "p": 2,
+        "f": "An engineering control: it protects even when someone makes a mistake."
+       },
+       {
+        "t": "A sign saying 'Do not reach into the roller'",
+        "p": 0,
+        "f": "Signs depend on attention every second. They fail."
+       },
+       {
+        "t": "Cut-resistant gloves for all operators",
+        "p": 0,
+        "f": "Gloves can be pulled in. PPE is not a fix for an entrapment hazard."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "A fitter must clear a jam inside the hydraulic press. He switched it off at the button. Is it safe?",
+      "choices": [
+       {
+        "t": "No: isolate every energy source, lock, bleed, then test",
+        "p": 2,
+        "f": "Lockout-tagout. Stored hydraulic pressure can still move the press."
+       },
+       {
+        "t": "Yes: the press is switched off",
+        "p": 0,
+        "f": "Switching off is not isolation. Someone could restart it or stored energy could move it."
+       },
+       {
+        "t": "Yes, if someone watches the start button",
+        "p": 0,
+        "f": "A watcher is not a lock. One person, one lock."
+       }
+      ]
+     },
+     {
+      "text": "Two fitters work inside the same machine under lockout. How many locks?",
+      "choices": [
+       {
+        "t": "Two: each fits a personal lock and tag",
+        "p": 2,
+        "f": "One person, one lock. Only the lock owner removes it."
+       },
+       {
+        "t": "One: the senior fitter's lock covers both",
+        "p": 0,
+        "f": "If he leaves and removes it, the other fitter is exposed."
+       },
+       {
+        "t": "None if the supervisor stays nearby",
+        "p": 0,
+        "f": "Supervision is not isolation. Locks protect each person."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "risk",
+    "variants": [
+     {
+      "text": "Workers lift 25 kg glue drums from the floor, twisting, in a narrow aisle. Using TILE, what is the best fix?",
+      "choices": [
+       {
+        "t": "A trolley and drum stand, so nobody lifts",
+        "p": 2,
+        "f": "You change the Task and Environment, not just the person. Back complaints stop."
+       },
+       {
+        "t": "Train all workers in safe lifting technique",
+        "p": 1,
+        "f": "Useful, but the twisting and floor-level lift remain."
+       },
+       {
+        "t": "Ask only the strongest workers to lift them",
+        "p": 0,
+        "f": "Strength does not remove the hazard. Injuries still happen."
+       }
+      ]
+     },
+     {
+      "text": "Forklifts and pedestrians share the loading bay. There was a near miss yesterday.",
+      "choices": [
+       {
+        "t": "Separate them with barriers and marked walkways",
+        "p": 2,
+        "f": "Physical separation is an engineering control. It works when people forget."
+       },
+       {
+        "t": "Tell drivers to sound the horn more often",
+        "p": 1,
+        "f": "Helpful, but people still walk into vehicle routes."
+       },
+       {
+        "t": "Ask pedestrians to wear high-visibility vests",
+        "p": 0,
+        "f": "PPE alone, when separation is possible, is the weakest choice."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "culture",
+    "variants": [
+     {
+      "text": "The plant had 3 lost-time injuries and 600,000 hours worked this year. What is the LTIFR?",
+      "choices": [
+       {
+        "t": "5.0 per million hours",
+        "p": 2,
+        "f": "Correct: 3 x 1,000,000 / 600,000."
+       },
+       {
+        "t": "0.5 per million hours",
+        "p": 0,
+        "f": "Check the multiplier: 3 / 600,000 x 1,000,000 = 5.0."
+       },
+       {
+        "t": "200 per million hours",
+        "p": 0,
+        "f": "You divided the wrong way. LTIFR = injuries x 1,000,000 / hours."
+       }
+      ]
+     },
+     {
+      "text": "1 lost-time injury, 250,000 hours worked. What is the LTIFR?",
+      "choices": [
+       {
+        "t": "4.0 per million hours",
+        "p": 2,
+        "f": "Correct: 1 x 1,000,000 / 250,000."
+       },
+       {
+        "t": "0.4 per million hours",
+        "p": 0,
+        "f": "The multiplier is 1,000,000. Recheck: 1,000,000 / 250,000 = 4."
+       },
+       {
+        "t": "25 per million hours",
+        "p": 0,
+        "f": "That uses the hours wrongly. LTIFR = injuries x 1,000,000 / hours."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "culture",
+    "variants": [
+     {
+      "text": "The board looks only at LTIFR. You want early warning. What do you add?",
+      "choices": [
+       {
+        "t": "Add leading indicators such as near misses",
+        "p": 2,
+        "f": "Leading indicators measure prevention before harm happens."
+       },
+       {
+        "t": "Add more detail on each lost-time injury",
+        "p": 0,
+        "f": "Still lagging. It measures harm after it happens."
+       },
+       {
+        "t": "Add total medical costs for each quarter",
+        "p": 0,
+        "f": "Another lagging measure. It arrives too late to prevent anything."
+       }
+      ]
+     },
+     {
+      "text": "Night shift skips PPE when no manager is around. What does this say, and what do you do?",
+      "choices": [
+       {
+        "t": "Weak culture: supervisors must lead it on every shift",
+        "p": 2,
+        "f": "Culture is how people behave when no one is watching. Supervisors enforce and model it."
+       },
+       {
+        "t": "Nothing serious, since the day shift fully complies",
+        "p": 0,
+        "f": "Night shift is where the next injury will happen."
+       },
+       {
+        "t": "Install cameras on the line to catch rule breakers",
+        "p": 1,
+        "f": "Monitoring may help, but culture changes through leadership, not only cameras."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "A small paper fire starts in a waste bin. Which part of the fire triangle does a water extinguisher remove?",
+      "choices": [
+       {
+        "t": "Heat",
+        "p": 2,
+        "f": "Water cools. Match the extinguisher to the fire class, then use PASS."
+       },
+       {
+        "t": "Oxygen",
+        "p": 0,
+        "f": "Smothering removes oxygen, as with a fire blanket or CO2."
+       },
+       {
+        "t": "Fuel",
+        "p": 0,
+        "f": "Removing fuel means taking away what burns."
+       }
+      ]
+     },
+     {
+      "text": "A painter must work on a roof edge with no guardrail for one hour.",
+      "choices": [
+       {
+        "t": "Fit temporary guardrails before work starts",
+        "p": 2,
+        "f": "Prevent falls with guardrails first; harnesses and nets mitigate."
+       },
+       {
+        "t": "Ask him to be careful and work quickly",
+        "p": 0,
+        "f": "Speed and care do not stop a fall from height."
+       },
+       {
+        "t": "Give him a harness and let him start",
+        "p": 1,
+        "f": "Mitigation is better than nothing, but prevention comes first."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

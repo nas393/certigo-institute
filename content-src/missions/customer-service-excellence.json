@@ -1,0 +1,475 @@
+{
+ "slug": "customer-service-excellence",
+ "title": "A hard week at the care desk",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: RATER, HEARD, de-escalation, recovery, chat tone, positive language, CSAT/NPS/FCR/service level/AHT formulas, CLV. All calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Customer Care Team Leader",
+  "company": "Northgate Home Appliances (fictional), a retailer with a call centre, WhatsApp care and 4 stores",
+  "briefing": "You lead a care team of 12. A delivery partner failed this week, complaints are up, and the director wants a service scorecard on Friday. Handle the customers, coach your team and read the numbers.",
+  "skills": {
+   "handle": "Handling customers",
+   "comm": "Communication",
+   "measure": "Service measures",
+   "lead": "Service leadership"
+  },
+  "steps": [
+   {
+    "skill": "handle",
+    "variants": [
+     {
+      "text": "A customer shouts at the counter: his fridge delivery was missed twice and he took two days off work. Other customers are watching.",
+      "choices": [
+       {
+        "t": "Stay calm, use his name, agree with the facts, invite him to a quiet office",
+        "p": 2,
+        "f": "His voice drops once he sits down. An audience keeps anger high; moving him helps you listen."
+       },
+       {
+        "t": "Tell him firmly to calm down first, so that you can help him properly",
+        "p": 0,
+        "f": "'Calm down' makes it worse. He gets louder and posts about it online."
+       },
+       {
+        "t": "Ask him to wait at the counter while you go and find the delivery manager",
+        "p": 1,
+        "f": "Escalation may be needed later, but leaving him angry in front of others first loses control."
+       }
+      ]
+     },
+     {
+      "text": "A customer on the phone has explained her broken washing machine for three minutes. She is still talking. What do you do?",
+      "choices": [
+       {
+        "t": "Let her finish, then paraphrase and confirm the key facts",
+        "p": 2,
+        "f": "She says 'yes, exactly'. Hear the full story first: anger falls when people feel heard."
+       },
+       {
+        "t": "Interrupt politely to get her order number and save time",
+        "p": 1,
+        "f": "You need the number, but interrupting early makes her repeat her story and feel rushed."
+       },
+       {
+        "t": "Put her on hold while you check the order in the system",
+        "p": 0,
+        "f": "Holding without explaining, mid-story, feels like being ignored. She asks for a manager."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "handle",
+    "variants": [
+     {
+      "text": "Using HEARD, you have heard the story and shown empathy. The delivery partner was at fault. What comes next?",
+      "choices": [
+       {
+        "t": "Apologise sincerely, then fix it: a confirmed delivery slot",
+        "p": 2,
+        "f": "Correct order: Apologise, Resolve, then Diagnose the cause. He accepts a slot with a two-hour window."
+       },
+       {
+        "t": "Explain that the delivery partner caused it, not the store",
+        "p": 0,
+        "f": "Blame shifting. To the customer, the partner is your company."
+       },
+       {
+        "t": "Diagnose the root cause with the partner before promising anything",
+        "p": 1,
+        "f": "Diagnosis matters, but it comes last. The customer needs a resolution now."
+       }
+      ]
+     },
+     {
+      "text": "The missed delivery cost a customer two days off work. The fridge now arrives tomorrow. What else do you do?",
+      "choices": [
+       {
+        "t": "Add a fair gesture, such as free delivery, and call after delivery",
+        "p": 2,
+        "f": "Good recovery: fix fast, a fair gesture for a real loss, and a follow-up. She later rates the service 5."
+       },
+       {
+        "t": "Nothing more; the fridge is now arriving",
+        "p": 1,
+        "f": "The problem is solved, but the loss is ignored. She stays, but she tells friends about the wait."
+       },
+       {
+        "t": "Offer a 50% refund on the fridge to end the complaint",
+        "p": 0,
+        "f": "Far beyond the loss. Gestures should be fair, and this sets an expensive example."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "comm",
+    "variants": [
+     {
+      "text": "A WhatsApp reply drafted by a new agent: 'ORDER DELAYED!!! WE DON'T KNOW WHEN. PROBLEM WITH DELIVERY.' How do you rewrite it?",
+      "choices": [
+       {
+        "t": "Greet, name, short apology, what you are doing, reply time 14:00",
+        "p": 2,
+        "f": "No capitals, one topic per message, and a time instead of 'soon'. The customer thanks you."
+       },
+       {
+        "t": "Keep the facts, remove the capitals and exclamation marks",
+        "p": 1,
+        "f": "Better tone, but it still says what you cannot do and gives no time."
+       },
+       {
+        "t": "Send it as is; customers want honesty and speed",
+        "p": 0,
+        "f": "Capitals read as shouting, and 'we don't know' with no next step makes the customer escalate."
+       }
+      ]
+     },
+     {
+      "text": "A customer asks if the oven can be installed today. Installers are booked until Thursday. What do you say?",
+      "choices": [
+       {
+        "t": "'I can book an installer for Thursday at 9:00. Shall I confirm it?'",
+        "p": 2,
+        "f": "Say what you can do and give a time. She books Thursday."
+       },
+       {
+        "t": "'No, that is not possible today. Installers are fully booked.'",
+        "p": 0,
+        "f": "Says only what you cannot do. She hangs up to call a competitor."
+       },
+       {
+        "t": "'Unfortunately there is a problem with installer availability.'",
+        "p": 1,
+        "f": "Polite, but 'problem' with no next step leaves her asking 'so when?'."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "handle",
+    "variants": [
+     {
+      "text": "A caller insults your agent with abusive language and refuses to stop after a polite warning.",
+      "choices": [
+       {
+        "t": "Set the boundary clearly, then end the call and log it",
+        "p": 2,
+        "f": "Correct. Set limits politely for abuse; staff safety and dignity come first."
+       },
+       {
+        "t": "Keep listening; the customer is always right",
+        "p": 0,
+        "f": "No one should accept abuse. Your agent leaves the shift upset."
+       },
+       {
+        "t": "Transfer the call to you so the agent is spared",
+        "p": 1,
+        "f": "Kind to the agent, but the abuse continues. A clear boundary is still needed."
+       }
+      ]
+     },
+     {
+      "text": "A customer asks for a refund larger than your authority allows. He is calm but firm.",
+      "choices": [
+       {
+        "t": "Escalate to the person who can approve it, and tell him when he will hear",
+        "p": 2,
+        "f": "Escalate when beyond your authority, and set expectations. He gets an answer the same day."
+       },
+       {
+        "t": "Approve it yourself now so he does not have to wait any longer",
+        "p": 0,
+        "f": "You exceed your authority. Finance reverses it and the customer is angrier."
+       },
+       {
+        "t": "Tell him that refunds of that size are not possible in this store",
+        "p": 0,
+        "f": "That is not true. It is only beyond your level. He complains to head office."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "measure",
+    "variants": [
+     {
+      "text": "NPS survey: 200 responses. 110 scored 9-10, 50 scored 7-8, 40 scored 0-6. What is the NPS?",
+      "choices": [
+       {
+        "t": "35",
+        "p": 2,
+        "f": "Correct: 55% promoters minus 20% detractors."
+       },
+       {
+        "t": "55",
+        "p": 0,
+        "f": "That is only the share of promoters. NPS subtracts the detractors."
+       },
+       {
+        "t": "80",
+        "p": 0,
+        "f": "You counted passives as promoters. Passives (7-8) are left out."
+       }
+      ]
+     },
+     {
+      "text": "CSAT survey: 300 responses, 240 rated 4 or 5. What is CSAT?",
+      "choices": [
+       {
+        "t": "80%",
+        "p": 2,
+        "f": "Correct: 240 / 300 x 100."
+       },
+       {
+        "t": "4.0",
+        "p": 0,
+        "f": "CSAT is the percentage of 4 and 5 ratings, not an average score."
+       },
+       {
+        "t": "60%",
+        "p": 0,
+        "f": "Wrong count. Use responses of 4 or 5 divided by all responses."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "measure",
+    "variants": [
+     {
+      "text": "Yesterday 1,000 calls were offered and 720 were answered within 20 seconds. The target is 80/20. What is the service level, and is it met?",
+      "choices": [
+       {
+        "t": "72%: below target",
+        "p": 2,
+        "f": "Correct: 720 / 1,000 x 100. You check staffing at the peak hours."
+       },
+       {
+        "t": "72%: on target",
+        "p": 0,
+        "f": "The target is 80% within 20 seconds. 72% misses it."
+       },
+       {
+        "t": "28%: below target",
+        "p": 0,
+        "f": "That is the share answered late. Service level = answered within target / offered x 100."
+       }
+      ]
+     },
+     {
+      "text": "This month, 800 issues were raised and 600 were solved at the first contact. What is FCR?",
+      "choices": [
+       {
+        "t": "75%",
+        "p": 2,
+        "f": "Correct: 600 / 800 x 100. FCR saves cost and customer effort."
+       },
+       {
+        "t": "25%",
+        "p": 0,
+        "f": "That is the share needing repeat contact."
+       },
+       {
+        "t": "133%",
+        "p": 0,
+        "f": "You divided the wrong way round. FCR = solved first time / total issues."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lead",
+    "variants": [
+     {
+      "text": "The director wants to cut average handling time from 7.5 to 5 minutes and rank agents on it.",
+      "choices": [
+       {
+        "t": "Balance AHT with FCR and CSAT so speed does not cut quality",
+        "p": 2,
+        "f": "Correct. AHT alone pushes agents to rush and customers call back. Speed is not service."
+       },
+       {
+        "t": "Agree; faster calls mean more calls answered",
+        "p": 0,
+        "f": "Agents rush, FCR falls and repeat calls rise. Total workload goes up."
+       },
+       {
+        "t": "Refuse to measure AHT at all",
+        "p": 1,
+        "f": "AHT is useful for staffing. The issue is using it as the only target."
+       }
+      ]
+     },
+     {
+      "text": "An agent's call: talk 300 seconds, hold 60 seconds, after-call work 90 seconds. What is the handling time for this call?",
+      "choices": [
+       {
+        "t": "450 seconds (7.5 minutes)",
+        "p": 2,
+        "f": "Correct: talk + hold + after-call work."
+       },
+       {
+        "t": "300 seconds (5 minutes)",
+        "p": 0,
+        "f": "You counted talk time only. Hold and after-call work are part of handling."
+       },
+       {
+        "t": "360 seconds (6 minutes)",
+        "p": 0,
+        "f": "After-call work is missing. AHT includes it."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lead",
+    "variants": [
+     {
+      "text": "A loyal customer spends Kz 20,000 a visit, 12 visits a year, for about 5 years, at a 25% margin. What is the lifetime profit at risk if she leaves?",
+      "choices": [
+       {
+        "t": "Kz 300,000",
+        "p": 2,
+        "f": "Correct: 20,000 x 12 x 5 = 1,200,000 revenue x 25% margin."
+       },
+       {
+        "t": "Kz 1,200,000",
+        "p": 0,
+        "f": "That is lifetime revenue. Multiply by margin to get profit."
+       },
+       {
+        "t": "Kz 60,000",
+        "p": 0,
+        "f": "That is one year's profit. Lifetime value counts all the years."
+       }
+      ]
+     },
+     {
+      "text": "Agents say the stock system is slow and the refund policy keeps changing. Service quality is falling.",
+      "choices": [
+       {
+        "t": "Fix internal service first: tools and clear policy for agents",
+        "p": 2,
+        "f": "The service-profit chain: internal service quality drives staff satisfaction and then customer value."
+       },
+       {
+        "t": "Run a smile-and-courtesy training for all agents",
+        "p": 1,
+        "f": "Courtesy helps, but agents with bad tools still fail customers."
+       },
+       {
+        "t": "Add a target for complaints closed per agent",
+        "p": 0,
+        "f": "Pressure without tools means agents close complaints without solving them."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lead",
+    "variants": [
+     {
+      "text": "You write a new service standard for WhatsApp. Which one is a real standard?",
+      "choices": [
+       {
+        "t": "'We reply to every WhatsApp within 15 minutes, 8:00 to 20:00'",
+        "p": 2,
+        "f": "Correct: measurable, specific, observable and timed."
+       },
+       {
+        "t": "'We always reply to customers as fast as possible'",
+        "p": 0,
+        "f": "Not measurable. Nobody can check 'as fast as possible'."
+       },
+       {
+        "t": "'We give friendly, excellent service on every channel'",
+        "p": 0,
+        "f": "A slogan, not a standard. It has no target or time."
+       }
+      ]
+     },
+     {
+      "text": "A customer's broken-oven case is beyond the front line. Specialists in Tier 2 handle repairs. What kind of escalation is this?",
+      "choices": [
+       {
+        "t": "Functional escalation to more skill",
+        "p": 2,
+        "f": "Correct. Hierarchical escalation is to more authority, such as a manager."
+       },
+       {
+        "t": "Hierarchical escalation to more authority",
+        "p": 0,
+        "f": "That is for decisions beyond your authority. Here you need technical skill."
+       },
+       {
+        "t": "No escalation; the agent should keep trying",
+        "p": 0,
+        "f": "Keeping a case at the front line beyond its skill wastes the customer's time."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "comm",
+    "variants": [
+     {
+      "text": "The scorecard shows CSAT is up 3 points, but comments mention long waits for callbacks.",
+      "choices": [
+       {
+        "t": "Read the comments, act on the callbacks, and report both",
+        "p": 2,
+        "f": "Scores show what; comments show why. The director agrees to fix the callback queue."
+       },
+       {
+        "t": "Report the CSAT rise; comments are only a few opinions",
+        "p": 0,
+        "f": "Ignoring comments hides the next problem. What gets measured gets managed only if you read it."
+       },
+       {
+        "t": "Wait for next month to see if comments repeat",
+        "p": 1,
+        "f": "Watching trends is fine, but a clear signal deserves action now."
+       }
+      ]
+     },
+     {
+      "text": "A customer's issue needs checking with the warehouse. You will know in about two hours.",
+      "choices": [
+       {
+        "t": "'I will check with the warehouse and reply by 14:00 today.'",
+        "p": 2,
+        "f": "Set expectations with a time. You reply at 13:40 and the customer is pleased."
+       },
+       {
+        "t": "'I will get back to you as soon as possible.'",
+        "p": 1,
+        "f": "Polite, but 'as soon as possible' means different things. He calls back twice."
+       },
+       {
+        "t": "'Please call us again later today for an update.'",
+        "p": 0,
+        "f": "You push the effort onto the customer. High effort predicts customers leaving."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

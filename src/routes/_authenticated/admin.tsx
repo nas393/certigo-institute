@@ -15,6 +15,7 @@ import { Loader2, Plus, Pencil, Trash2, Users, ChevronDown, ShieldAlert, Externa
 import { toast } from "sonner";
 import { DiscountCodes } from "@/components/admin/DiscountCodes";
 import { PricingTools } from "@/components/admin/PricingTools";
+import { MissionImport } from "@/components/admin/MissionImport";
 
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({ meta: [{ title: "Admin — CERTIGO." }] }),
@@ -237,6 +238,7 @@ function AdminPanel() {
           <div className="mt-8">
             <PaymentSettings />
             <div className="mt-4"><PricingTools categories={categories} onDone={load} /></div>
+            <div className="mt-4"><MissionImport /></div>
           </div>
         )}
 

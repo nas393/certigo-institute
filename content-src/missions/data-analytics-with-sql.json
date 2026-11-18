@@ -1,0 +1,475 @@
+{
+ "slug": "data-analytics-with-sql",
+ "title": "Questions from the CEO",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: keys, grain, WHERE/IN/LIKE/NULL, AND before OR, processing order, aggregates incl. COUNT DISTINCT, GROUP BY, WHERE vs HAVING, AOV, share of total, INNER vs LEFT JOIN, row multiplication, LEFT JOIN filter trap. Fictional company."
+ },
+ "content": {
+  "role": "Data Analyst",
+  "company": "Freshcart (fictional), an online grocery shop with customers in several provinces",
+  "briefing": "The CEO sends you questions every morning. The database has customers, products, orders (one row per order) and order_lines (one row per product in an order). Your answers go straight into decisions, so they must be right.",
+  "skills": {
+   "model": "Data model",
+   "filter": "Filtering and sorting",
+   "agg": "Aggregation",
+   "join": "Joins"
+  },
+  "steps": [
+   {
+    "skill": "model",
+    "variants": [
+     {
+      "text": "What is the grain of the order_lines table?",
+      "choices": [
+       {
+        "t": "One row per product in an order",
+        "p": 2,
+        "f": "Knowing the grain prevents double counting."
+       },
+       {
+        "t": "One row per order",
+        "p": 0,
+        "f": "That is the orders table."
+       },
+       {
+        "t": "One row per customer",
+        "p": 0,
+        "f": "That is the customers table."
+       }
+      ]
+     },
+     {
+      "text": "orders.customer_id points to customers.customer_id. What is orders.customer_id?",
+      "choices": [
+       {
+        "t": "A foreign key",
+        "p": 2,
+        "f": "It points to the primary key of another table."
+       },
+       {
+        "t": "The primary key of orders",
+        "p": 0,
+        "f": "Many orders share one customer; it is not unique."
+       },
+       {
+        "t": "A duplicate column",
+        "p": 0,
+        "f": "It is how the tables link."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "filter",
+    "variants": [
+     {
+      "text": "Orders from Luanda or Benguela with amount over 50,000. Which WHERE is correct?",
+      "choices": [
+       {
+        "t": "WHERE (province = 'Luanda' OR province = 'Benguela') AND amount > 50000",
+        "p": 2,
+        "f": "Brackets make the OR apply before the AND."
+       },
+       {
+        "t": "WHERE province = 'Luanda' OR province = 'Benguela' AND amount > 50000",
+        "p": 0,
+        "f": "AND runs first: all Luanda orders slip through, at any amount."
+       },
+       {
+        "t": "WHERE province = 'Luanda' AND province = 'Benguela' AND amount > 50000",
+        "p": 0,
+        "f": "No row can be in both provinces at once."
+       }
+      ]
+     },
+     {
+      "text": "Find customers with no phone number recorded. Which condition?",
+      "choices": [
+       {
+        "t": "WHERE phone IS NULL",
+        "p": 2,
+        "f": "Missing values need IS NULL."
+       },
+       {
+        "t": "WHERE phone = NULL",
+        "p": 0,
+        "f": "= NULL is never true. Use IS NULL."
+       },
+       {
+        "t": "WHERE phone = ''",
+        "p": 0,
+        "f": "An empty text is not the same as NULL."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "filter",
+    "variants": [
+     {
+      "text": "Why does WHERE total_value > 100000 fail when total_value is an alias defined in SELECT?",
+      "choices": [
+       {
+        "t": "WHERE runs before SELECT",
+        "p": 2,
+        "f": "Order: FROM, WHERE, SELECT, ORDER BY. The alias does not exist yet in WHERE."
+       },
+       {
+        "t": "Aliases cannot contain underscores",
+        "p": 0,
+        "f": "Underscores are fine."
+       },
+       {
+        "t": "Numbers need quotes",
+        "p": 0,
+        "f": "Numbers do not need quotes."
+       }
+      ]
+     },
+     {
+      "text": "Show the 10 largest orders first. Which ending (PostgreSQL)?",
+      "choices": [
+       {
+        "t": "ORDER BY amount DESC LIMIT 10",
+        "p": 2,
+        "f": "Sort descending, then limit."
+       },
+       {
+        "t": "ORDER BY amount ASC LIMIT 10",
+        "p": 0,
+        "f": "That gives the 10 smallest."
+       },
+       {
+        "t": "LIMIT 10 ORDER BY amount DESC",
+        "p": 0,
+        "f": "Wrong order of clauses."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "agg",
+    "variants": [
+     {
+      "text": "How many different customers ordered in March?",
+      "choices": [
+       {
+        "t": "COUNT(DISTINCT customer_id)",
+        "p": 2,
+        "f": "Unique customers, not orders."
+       },
+       {
+        "t": "COUNT(*)",
+        "p": 0,
+        "f": "That counts orders, so repeat customers count twice."
+       },
+       {
+        "t": "SUM(customer_id)",
+        "p": 0,
+        "f": "Adding IDs means nothing."
+       }
+      ]
+     },
+     {
+      "text": "COUNT(phone) returns 800, COUNT(*) returns 1,000 on customers. Why?",
+      "choices": [
+       {
+        "t": "COUNT(column) ignores NULLs",
+        "p": 2,
+        "f": "200 customers have no phone."
+       },
+       {
+        "t": "COUNT(*) double counts rows",
+        "p": 0,
+        "f": "COUNT(*) counts each row once."
+       },
+       {
+        "t": "800 phones are duplicates",
+        "p": 0,
+        "f": "Duplicates would still be counted."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "agg",
+    "variants": [
+     {
+      "text": "Revenue by province: SELECT province, SUM(amount) FROM orders ... What else is required?",
+      "choices": [
+       {
+        "t": "GROUP BY province",
+        "p": 2,
+        "f": "Every non-aggregated column must be in GROUP BY."
+       },
+       {
+        "t": "ORDER BY province",
+        "p": 0,
+        "f": "Sorting does not group."
+       },
+       {
+        "t": "WHERE province IS NOT NULL",
+        "p": 0,
+        "f": "Filtering does not group."
+       }
+      ]
+     },
+     {
+      "text": "Only show provinces with revenue above 5 million. Where does the condition go?",
+      "choices": [
+       {
+        "t": "HAVING SUM(amount) > 5000000",
+        "p": 2,
+        "f": "HAVING filters groups after aggregation."
+       },
+       {
+        "t": "WHERE SUM(amount) > 5000000",
+        "p": 0,
+        "f": "WHERE runs before grouping; aggregates are not allowed there."
+       },
+       {
+        "t": "ORDER BY SUM(amount) > 5000000",
+        "p": 0,
+        "f": "Sorting does not filter."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "agg",
+    "variants": [
+     {
+      "text": "The CEO asks for average order value. You have order_lines with line amounts. What do you compute?",
+      "choices": [
+       {
+        "t": "SUM(amount) / COUNT(DISTINCT order_id)",
+        "p": 2,
+        "f": "Revenue divided by number of orders."
+       },
+       {
+        "t": "AVG(amount) on order_lines",
+        "p": 0,
+        "f": "That is the average line, not the average order."
+       },
+       {
+        "t": "MAX(amount) on order_lines",
+        "p": 0,
+        "f": "That is the largest line."
+       }
+      ]
+     },
+     {
+      "text": "Province shares of revenue add up to 132%. What is likely wrong?",
+      "choices": [
+       {
+        "t": "Rows were double counted, maybe by a join",
+        "p": 2,
+        "f": "Shares must add to 100%; check the grain."
+       },
+       {
+        "t": "Nothing; shares can exceed 100%",
+        "p": 0,
+        "f": "Shares of one total must add to 100%."
+       },
+       {
+        "t": "Rounding errors",
+        "p": 0,
+        "f": "Rounding moves a few tenths, not 32 points."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "join",
+    "variants": [
+     {
+      "text": "You need all customers, including those who never ordered. Which join from customers to orders?",
+      "choices": [
+       {
+        "t": "LEFT JOIN",
+        "p": 2,
+        "f": "All customers stay; non-buyers show NULL order columns."
+       },
+       {
+        "t": "INNER JOIN",
+        "p": 0,
+        "f": "Customers without orders disappear."
+       },
+       {
+        "t": "No join is possible",
+        "p": 0,
+        "f": "The customer_id key links them."
+       }
+      ]
+     },
+     {
+      "text": "List customers who have never placed an order. After the LEFT JOIN to orders, add:",
+      "choices": [
+       {
+        "t": "WHERE o.order_id IS NULL",
+        "p": 2,
+        "f": "No matching order means no purchases."
+       },
+       {
+        "t": "WHERE o.order_id IS NOT NULL",
+        "p": 0,
+        "f": "That keeps only buyers."
+       },
+       {
+        "t": "WHERE c.customer_id IS NULL",
+        "p": 0,
+        "f": "Customers always have an ID."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "join",
+    "variants": [
+     {
+      "text": "You join orders to order_lines and SUM(orders.delivery_fee). Delivery revenue looks three times too high.",
+      "choices": [
+       {
+        "t": "Row multiplication from the join",
+        "p": 2,
+        "f": "Sum delivery fees at order grain, before joining lines."
+       },
+       {
+        "t": "Delivery fees really did triple",
+        "p": 0,
+        "f": "The join repeated the order-level value."
+       },
+       {
+        "t": "COUNT should be used, not SUM",
+        "p": 0,
+        "f": "Counting does not fix duplicated values."
+       }
+      ]
+     },
+     {
+      "text": "LEFT JOIN customers to orders, then WHERE o.order_date >= '2026-01-01'. Customers without orders vanish.",
+      "choices": [
+       {
+        "t": "Move the date filter into the ON clause",
+        "p": 2,
+        "f": "A WHERE on the right table removes the NULL rows."
+       },
+       {
+        "t": "Change to INNER JOIN instead",
+        "p": 0,
+        "f": "That removes non-buyers on purpose."
+       },
+       {
+        "t": "Remove the date filter",
+        "p": 1,
+        "f": "Then you get all years, not 2026."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "join",
+    "variants": [
+     {
+      "text": "Both orders and customers have customer_id. SELECT customer_id fails as ambiguous. Fix?",
+      "choices": [
+       {
+        "t": "Use aliases: o.customer_id or c.customer_id",
+        "p": 2,
+        "f": "Aliases make every column clear."
+       },
+       {
+        "t": "Rename the column in the database",
+        "p": 0,
+        "f": "Unnecessary and risky."
+       },
+       {
+        "t": "Remove customer_id from SELECT",
+        "p": 0,
+        "f": "You may need it."
+       }
+      ]
+     },
+     {
+      "text": "Which join returns only orders that match a customer?",
+      "choices": [
+       {
+        "t": "INNER JOIN",
+        "p": 2,
+        "f": "Only rows that match in both tables."
+       },
+       {
+        "t": "LEFT JOIN from customers",
+        "p": 0,
+        "f": "That keeps customers without orders."
+       },
+       {
+        "t": "No join; use WHERE",
+        "p": 0,
+        "f": "A join is needed to combine tables."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "model",
+    "variants": [
+     {
+      "text": "The CEO asks: 'How are we doing?' What is the first step of the analytics workflow?",
+      "choices": [
+       {
+        "t": "Turn it into a precise business question",
+        "p": 2,
+        "f": "Which measure, period and comparison? Then find tables."
+       },
+       {
+        "t": "Write a large query of everything",
+        "p": 0,
+        "f": "Without a question, results do not answer anything."
+       },
+       {
+        "t": "Send last month's report again",
+        "p": 0,
+        "f": "It may not answer what the CEO needs."
+       }
+      ]
+     },
+     {
+      "text": "Before sending the results, what do you do?",
+      "choices": [
+       {
+        "t": "Check totals against a known figure",
+        "p": 2,
+        "f": "If total revenue matches finance, the query is likely right."
+       },
+       {
+        "t": "Send fast; the query ran without error",
+        "p": 0,
+        "f": "No error does not mean correct."
+       },
+       {
+        "t": "Round all numbers to millions",
+        "p": 0,
+        "f": "Rounding is not a check."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

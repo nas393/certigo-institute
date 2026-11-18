@@ -1,0 +1,475 @@
+{
+ "slug": "performance-management",
+ "title": "Review season",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: KRAs, SMART, KPI cards, leading vs lagging, weighted score incl. lower-is-better, OKR outcomes and scoring, SBI, feedforward, performance log, rating biases, calibration, Mager and Pipe causes, PIP. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Sales Manager",
+  "company": "Crestline Drinks (fictional), a beverage company with a team of 8 sales reps",
+  "briefing": "It is year-end review season. You must score your 8 reps fairly, defend your ratings in calibration, set next year's goals, and deal with one rep who is falling behind. HR will check every rating against evidence.",
+  "skills": {
+   "goals": "Goals and KPIs",
+   "feedback": "Feedback through the year",
+   "rate": "Fair ratings",
+   "gap": "Managing performance gaps"
+  },
+  "steps": [
+   {
+    "skill": "goals",
+    "variants": [
+     {
+      "text": "Rep Joana: sales 90 of 100 target (weight 50%), order errors 2.5 against a target of 2.0, lower is better (weight 30%), new outlets 100% of target (weight 20%). Her weighted score?",
+      "choices": [
+       {
+        "t": "89",
+        "p": 2,
+        "f": "Correct: 90 x 0.5 = 45; errors 2.0 / 2.5 = 80% x 0.3 = 24; 100 x 0.2 = 20."
+       },
+       {
+        "t": "102.5",
+        "p": 0,
+        "f": "You scored errors as 2.5 / 2.0 = 125%, which rewards more errors. For lower-is-better KPIs use target / actual."
+       },
+       {
+        "t": "90",
+        "p": 0,
+        "f": "That is a simple average of 90, 80 and 100. Apply the weights."
+       }
+      ]
+     },
+     {
+      "text": "Rep Paulo: sales 110 of 100 target (weight 60%), visits 80% of target (weight 40%). His weighted score?",
+      "choices": [
+       {
+        "t": "98",
+        "p": 2,
+        "f": "Correct: 110 x 0.6 = 66; 80 x 0.4 = 32."
+       },
+       {
+        "t": "95",
+        "p": 0,
+        "f": "That is the simple average. Weights matter."
+       },
+       {
+        "t": "190",
+        "p": 0,
+        "f": "You added the achievements without weights."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "goals",
+    "variants": [
+     {
+      "text": "Two reps argue: one counts 'active outlets' as any outlet that ordered this year, the other only those that ordered this month.",
+      "choices": [
+       {
+        "t": "Write a KPI card: formula, source, owner, target",
+        "p": 2,
+        "f": "The card ends the argument. Everyone measures the same way."
+       },
+       {
+        "t": "Let each rep use their own definition",
+        "p": 0,
+        "f": "Scores become impossible to compare."
+       },
+       {
+        "t": "Pick the definition that gives higher scores",
+        "p": 0,
+        "f": "That inflates results and fails calibration."
+       }
+      ]
+     },
+     {
+      "text": "Next year's goal for a rep: 'Run a promotion in the Lobito area.' How do you improve it?",
+      "choices": [
+       {
+        "t": "Make it an outcome: active outlets from 80 to 110",
+        "p": 2,
+        "f": "Outcomes, not tasks. The promotion becomes one way to reach it."
+       },
+       {
+        "t": "Add the date and budget for the promotion",
+        "p": 1,
+        "f": "Better, but still a task. Success is the result, not the activity."
+       },
+       {
+        "t": "Keep it; it is clear and easy to check",
+        "p": 0,
+        "f": "Running a promotion that changes nothing would count as success."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "goals",
+    "variants": [
+     {
+      "text": "Key result: active outlets from 80 (start) to 110 (target). It is now 101. What is the OKR score?",
+      "choices": [
+       {
+        "t": "0.7",
+        "p": 2,
+        "f": "Correct: (101 - 80) / (110 - 80) = 21 / 30."
+       },
+       {
+        "t": "0.92",
+        "p": 0,
+        "f": "That is 101 / 110, which ignores the start."
+       },
+       {
+        "t": "0.21",
+        "p": 0,
+        "f": "That is the gain divided by 100, not by the planned gain."
+       }
+      ]
+     },
+     {
+      "text": "Which of these is a leading indicator for monthly sales?",
+      "choices": [
+       {
+        "t": "Customer visits made per week",
+        "p": 2,
+        "f": "Activities that predict results. You can act on it mid-month."
+       },
+       {
+        "t": "Monthly sales revenue",
+        "p": 0,
+        "f": "That is the lagging result itself."
+       },
+       {
+        "t": "Last year's annual market share",
+        "p": 0,
+        "f": "A lagging measure, and an old one."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "feedback",
+    "variants": [
+     {
+      "text": "In March, Joana handled a supermarket buyer's complaint very well. It is now December.",
+      "choices": [
+       {
+        "t": "Your log has the date, behaviour and impact",
+        "p": 2,
+        "f": "Notes written close to the event protect her rating from recency bias."
+       },
+       {
+        "t": "You remember it roughly; that is enough",
+        "p": 0,
+        "f": "Memory favours recent events. March fades."
+       },
+       {
+        "t": "Ask Joana to remind you of her good work",
+        "p": 1,
+        "f": "A self-assessment helps, but your own evidence matters most."
+       }
+      ]
+     },
+     {
+      "text": "Paulo was rude to a customer at yesterday's visit. When do you raise it?",
+      "choices": [
+       {
+        "t": "This week, using SBI",
+        "p": 2,
+        "f": "Feedback close to the event. He apologises to the customer."
+       },
+       {
+        "t": "In the year-end review",
+        "p": 0,
+        "f": "Months late. Problems grow when nobody speaks."
+       },
+       {
+        "t": "Only if the customer complains",
+        "p": 0,
+        "f": "You saw it. Waiting signals it is acceptable."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "feedback",
+    "variants": [
+     {
+      "text": "A rep keeps missing stock checks. You want to help without judging his past. Which approach?",
+      "choices": [
+       {
+        "t": "Feedforward: ask what he could do next time",
+        "p": 2,
+        "f": "Suggestions about the future, not criticism of the past. He proposes a checklist."
+       },
+       {
+        "t": "List every missed check this year",
+        "p": 0,
+        "f": "Pure criticism of the past. He gets defensive."
+       },
+       {
+        "t": "Wait for the year-end review",
+        "p": 0,
+        "f": "The problem continues all year."
+       }
+      ]
+     },
+     {
+      "text": "How do you run your weekly one-to-ones with the reps?",
+      "choices": [
+       {
+        "t": "Their agenda first, then KPIs and obstacles",
+        "p": 2,
+        "f": "Short, regular, employee-led. Issues surface early."
+       },
+       {
+        "t": "Only a review of last week's numbers",
+        "p": 0,
+        "f": "A numbers check misses obstacles and feedback."
+       },
+       {
+        "t": "Once a quarter, for one long session",
+        "p": 1,
+        "f": "Too rare. Problems wait months."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "rate",
+    "variants": [
+     {
+      "text": "Joana had a weak first half but an excellent December. You want to rate her 'Exceeds'. What bias risk?",
+      "choices": [
+       {
+        "t": "Recency: check the whole year in your log",
+        "p": 2,
+        "f": "A good December can hide a weak year. The log shows 'Meets' is fair."
+       },
+       {
+        "t": "Halo: she is popular with the team",
+        "p": 0,
+        "f": "Popularity is not mentioned. This is about timing."
+       },
+       {
+        "t": "No bias: December counts the most",
+        "p": 0,
+        "f": "All twelve months count equally."
+       }
+      ]
+     },
+     {
+      "text": "Paulo is brilliant with customers, so you rate him high on admin too, though his reports are often late.",
+      "choices": [
+       {
+        "t": "Halo: rate each area on its own evidence",
+        "p": 2,
+        "f": "One strength made everything look good. You rate admin 'Below'."
+       },
+       {
+        "t": "Fair: strong reps deserve good scores",
+        "p": 0,
+        "f": "Halo bias. Calibration will challenge it."
+       },
+       {
+        "t": "Contrast: compare him to the weakest rep",
+        "p": 0,
+        "f": "That is another bias. Rate against the standard."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "rate",
+    "variants": [
+     {
+      "text": "You rated all 8 reps 'Meets'. HR questions it.",
+      "choices": [
+       {
+        "t": "Central tendency: re-rate on the evidence",
+        "p": 2,
+        "f": "Everyone in the middle hides real differences. Two reps clearly exceed."
+       },
+       {
+        "t": "It is fair; they are all similar",
+        "p": 0,
+        "f": "The KPI data shows wide differences."
+       },
+       {
+        "t": "Raise all to 'Exceeds' to motivate",
+        "p": 0,
+        "f": "Leniency bias. Ratings lose meaning."
+       }
+      ]
+     },
+     {
+      "text": "In calibration, another manager says your rep should drop a level. What do you bring?",
+      "choices": [
+       {
+        "t": "Evidence: scorecard and log notes",
+        "p": 2,
+        "f": "Ratings backed by evidence survive calibration."
+       },
+       {
+        "t": "Your strong personal opinion",
+        "p": 0,
+        "f": "Opinions lose to evidence."
+       },
+       {
+        "t": "Agree, to keep the meeting short",
+        "p": 0,
+        "f": "The rep loses a fair rating to save time."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "gap",
+    "variants": [
+     {
+      "text": "Rep Mário's sales fell for 3 months. Before acting, what do you check?",
+      "choices": [
+       {
+        "t": "Whether he can't, is blocked, or won't",
+        "p": 2,
+        "f": "His tablet has been broken for 3 months. The cause is blocked, not won't."
+       },
+       {
+        "t": "Start a PIP to show you are serious",
+        "p": 0,
+        "f": "A PIP without diagnosis treats the wrong cause."
+       },
+       {
+        "t": "Move him to a smaller territory",
+        "p": 1,
+        "f": "Possible later, but diagnose first."
+       }
+      ]
+     },
+     {
+      "text": "A rep knows the visit standard, could do it, has tools, but skips visits to go home early.",
+      "choices": [
+       {
+        "t": "Won't: a clear conversation and consequences",
+        "p": 2,
+        "f": "Motivation or conduct. Training would not help."
+       },
+       {
+        "t": "Can't: send him to sales training",
+        "p": 0,
+        "f": "He has the skills already."
+       },
+       {
+        "t": "Blocked: give him a better vehicle",
+        "p": 0,
+        "f": "Nothing blocks him."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "gap",
+    "variants": [
+     {
+      "text": "After coaching, the gap continues. You write a PIP. What must it include?",
+      "choices": [
+       {
+        "t": "Gap with evidence, SMART targets, support, dates",
+        "p": 2,
+        "f": "No PIP without real support. He knows exactly what success means."
+       },
+       {
+        "t": "A warning that he will be dismissed",
+        "p": 0,
+        "f": "A PIP aims at improvement, not just paperwork."
+       },
+       {
+        "t": "A general target to 'try harder'",
+        "p": 0,
+        "f": "Vague targets cannot be met or measured."
+       }
+      ]
+     },
+     {
+      "text": "What is the right order of escalation for a performance gap?",
+      "choices": [
+       {
+        "t": "Informal talk, coaching, PIP, then HR process",
+        "p": 2,
+        "f": "Each step is recorded. The process is fair and defensible."
+       },
+       {
+        "t": "PIP first, then talk if he objects",
+        "p": 0,
+        "f": "Starting with a PIP skips the earlier, fairer steps."
+       },
+       {
+        "t": "Straight to HR for a formal process",
+        "p": 0,
+        "f": "Skipping steps is unfair and often against procedure."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "rate",
+    "variants": [
+     {
+      "text": "How should the final rating split results and behaviours?",
+      "choices": [
+       {
+        "t": "Both, weighted, e.g. 70% results, 30% how",
+        "p": 2,
+        "f": "A rep who hits target by misleading customers should not get top marks."
+       },
+       {
+        "t": "Results only: sales are what matter",
+        "p": 0,
+        "f": "How results are achieved also matters."
+       },
+       {
+        "t": "Behaviours only: results depend on luck",
+        "p": 0,
+        "f": "Results are the main purpose of the job."
+       }
+      ]
+     },
+     {
+      "text": "You tend to rate higher the reps who went to your old university. What bias, and what do you do?",
+      "choices": [
+       {
+        "t": "Similar-to-me: test each rating on evidence",
+        "p": 2,
+        "f": "Ask: would I rate this the same for someone different?"
+       },
+       {
+        "t": "Contrast: compare them with one another",
+        "p": 0,
+        "f": "Contrast is judging against the previous person."
+       },
+       {
+        "t": "Central tendency: give everyone the middle",
+        "p": 0,
+        "f": "A different bias. The issue is favouring people like you."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

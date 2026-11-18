@@ -1,0 +1,475 @@
+{
+ "slug": "business-english-for-the-workplace",
+ "title": "A week in English",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: six-part email, BLUF, register, false friends, grammar traps, send checklist, meeting stages, agreeing, polite disagreement, clarifying, video calls, actions, politeness ladder, conditionals, softening, negotiation stages. Fictional companies."
+ },
+ "content": {
+  "role": "Operations Coordinator",
+  "company": "Bridgeport Logistics (fictional), working with an English-speaking supplier and client",
+  "briefing": "This week you work in English: emails to a new supplier, a video meeting with a client, and a short negotiation. Your English must be clear, polite and correct, so nothing is misunderstood.",
+  "skills": {
+   "email": "Business emails",
+   "words": "Accuracy",
+   "meet": "Meetings and calls",
+   "nego": "Polite negotiation"
+  },
+  "steps": [
+   {
+    "skill": "email",
+    "variants": [
+     {
+      "text": "You need the supplier to confirm a delivery date by Thursday. How does your email start after the greeting?",
+      "choices": [
+       {
+        "t": "'Could you confirm the delivery date by Thursday?'",
+        "p": 2,
+        "f": "BLUF: the purpose in the first sentence."
+       },
+       {
+        "t": "'As you know, our company was founded in 2009...'",
+        "p": 0,
+        "f": "Background first hides the request."
+       },
+       {
+        "t": "'I am writing to you about several things.'",
+        "p": 0,
+        "f": "Vague; the reader still does not know what you need."
+       }
+      ]
+     },
+     {
+      "text": "Which subject line is best?",
+      "choices": [
+       {
+        "t": "'Delivery date: please confirm by Thu'",
+        "p": 2,
+        "f": "Topic and action in the subject line."
+       },
+       {
+        "t": "'Hello from Bridgeport Logistics team'",
+        "p": 0,
+        "f": "Says nothing about the content."
+       },
+       {
+        "t": "'Important!!! Please read urgently!!!'",
+        "p": 0,
+        "f": "Alarming and unclear."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "email",
+    "variants": [
+     {
+      "text": "You write a complaint to a new client about damaged goods. Which register?",
+      "choices": [
+       {
+        "t": "Formal",
+        "p": 2,
+        "f": "Formal for new contacts, complaints and legal matters."
+       },
+       {
+        "t": "Informal, to sound friendly",
+        "p": 0,
+        "f": "Too casual for a complaint to a new contact."
+       },
+       {
+        "t": "Text-message style",
+        "p": 0,
+        "f": "Unprofessional in business email."
+       }
+      ]
+     },
+     {
+      "text": "How do you end an email with a clear call to action?",
+      "choices": [
+       {
+        "t": "'Please send the revised price by Friday.'",
+        "p": 2,
+        "f": "Clear action and date."
+       },
+       {
+        "t": "'Let me know what you think about it all.'",
+        "p": 1,
+        "f": "Polite, but no clear action or date."
+       },
+       {
+        "t": "'Bye for now, talk soon, all the best.'",
+        "p": 0,
+        "f": "No action and too informal."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "words",
+    "variants": [
+     {
+      "text": "You want to say 'I intend to visit you in May'. Which sentence is correct?",
+      "choices": [
+       {
+        "t": "'I intend to visit you in May.'",
+        "p": 2,
+        "f": "'Pretend' means fingir, not intend."
+       },
+       {
+        "t": "'I pretend to visit you in May.'",
+        "p": 0,
+        "f": "False friend: it means you will fake a visit."
+       },
+       {
+        "t": "'I attend to visit you in May.'",
+        "p": 0,
+        "f": "'Attend' means to be present at."
+       }
+      ]
+     },
+     {
+      "text": "You mean 'at the moment, we have no stock'. Which is correct?",
+      "choices": [
+       {
+        "t": "'Currently, we have no stock.'",
+        "p": 2,
+        "f": "'Actually' means in fact, not currently."
+       },
+       {
+        "t": "'Actually, we have no stock.'",
+        "p": 0,
+        "f": "False friend: it means 'in fact'."
+       },
+       {
+        "t": "'Actual, we have no stock.'",
+        "p": 0,
+        "f": "Wrong word and wrong meaning."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "words",
+    "variants": [
+     {
+      "text": "Which sentence is correct?",
+      "choices": [
+       {
+        "t": "'Thank you for the information.'",
+        "p": 2,
+        "f": "'Information' has no plural."
+       },
+       {
+        "t": "'Thank you for the informations.'",
+        "p": 0,
+        "f": "'Informations' does not exist in English."
+       },
+       {
+        "t": "'Thank you for an information.'",
+        "p": 0,
+        "f": "Use 'a piece of information'."
+       }
+      ]
+     },
+     {
+      "text": "Which sentence is correct?",
+      "choices": [
+       {
+        "t": "'I agree with your proposal.'",
+        "p": 2,
+        "f": "'Agree' is a verb: no 'am'."
+       },
+       {
+        "t": "'I am agree with your proposal.'",
+        "p": 0,
+        "f": "A common trap: remove 'am'."
+       },
+       {
+        "t": "'I am agreeing your proposal.'",
+        "p": 0,
+        "f": "Wrong form and missing 'with'."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "meet",
+    "variants": [
+     {
+      "text": "The client proposes daily deliveries. Your warehouse is at 90% capacity. How do you disagree politely?",
+      "choices": [
+       {
+        "t": "'I see your point, but we're at 90%. Could we try three days a week?'",
+        "p": 2,
+        "f": "Cushion, reason, alternative."
+       },
+       {
+        "t": "'No, that is completely impossible for us, so please forget the idea.'",
+        "p": 0,
+        "f": "Too direct for a client; no reason or option."
+       },
+       {
+        "t": "'OK, maybe, we will see what happens with deliveries later on, perhaps.'",
+        "p": 0,
+        "f": "Unclear; the client thinks you agreed."
+       }
+      ]
+     },
+     {
+      "text": "You partly agree with a colleague's idea. What do you say?",
+      "choices": [
+       {
+        "t": "'I agree up to a point.'",
+        "p": 2,
+        "f": "Partial agreement, clearly signalled."
+       },
+       {
+        "t": "'I completely agree.'",
+        "p": 0,
+        "f": "That is full agreement."
+       },
+       {
+        "t": "'You are wrong.'",
+        "p": 0,
+        "f": "Not agreement, and too blunt."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "meet",
+    "variants": [
+     {
+      "text": "On a video call you missed a key number. What do you say?",
+      "choices": [
+       {
+        "t": "'Sorry, could you repeat the last figure?'",
+        "p": 2,
+        "f": "Polite and specific clarification."
+       },
+       {
+        "t": "Nod and hope it is in the minutes",
+        "p": 0,
+        "f": "Misunderstandings start this way."
+       },
+       {
+        "t": "'What? Say again.'",
+        "p": 0,
+        "f": "Too abrupt for a client meeting."
+       }
+      ]
+     },
+     {
+      "text": "A participant is speaking but nobody can hear him. What do you say?",
+      "choices": [
+       {
+        "t": "'I think you're on mute.'",
+        "p": 2,
+        "f": "Standard, polite video-call phrase."
+       },
+       {
+        "t": "'Your voice is closed.'",
+        "p": 0,
+        "f": "Not natural English."
+       },
+       {
+        "t": "'Speak louder, please.'",
+        "p": 0,
+        "f": "Volume is not the problem; mute is."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "meet",
+    "variants": [
+     {
+      "text": "At the end of the meeting, how do you confirm an action?",
+      "choices": [
+       {
+        "t": "'Ana will send the revised plan by Friday.'",
+        "p": 2,
+        "f": "Who, what, when. Then send it in writing."
+       },
+       {
+        "t": "'Someone will look into it.'",
+        "p": 0,
+        "f": "No owner and no date."
+       },
+       {
+        "t": "'We will do it soon.'",
+        "p": 0,
+        "f": "Vague on owner and date."
+       }
+      ]
+     },
+     {
+      "text": "In which order does a well-run meeting go?",
+      "choices": [
+       {
+        "t": "Open, agenda, discuss, summarise, close",
+        "p": 2,
+        "f": "The five meeting stages."
+       },
+       {
+        "t": "Discuss first, set the purpose at the end",
+        "p": 0,
+        "f": "Without a purpose, discussion drifts."
+       },
+       {
+        "t": "Close first, then discuss",
+        "p": 0,
+        "f": "Closing comes last."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "nego",
+    "variants": [
+     {
+      "text": "Which request is the most polite?",
+      "choices": [
+       {
+        "t": "'Would you mind sending the price list?'",
+        "p": 2,
+        "f": "Top of the politeness ladder."
+       },
+       {
+        "t": "'Send the price list.'",
+        "p": 0,
+        "f": "A command; too direct."
+       },
+       {
+        "t": "'Can you send the price list?'",
+        "p": 1,
+        "f": "Polite, but less formal than 'would you mind'."
+       }
+      ]
+     },
+     {
+      "text": "You offer a deal: payment terms in return for a fast decision. Which sentence?",
+      "choices": [
+       {
+        "t": "'If you confirm today, we will pay 30% in advance.'",
+        "p": 2,
+        "f": "First conditional for a real offer."
+       },
+       {
+        "t": "'If you confirm today, we would paid 30% in advance.'",
+        "p": 0,
+        "f": "Grammar error: 'would pay', and it weakens the offer."
+       },
+       {
+        "t": "'If you will confirm today, we pay 30%.'",
+        "p": 0,
+        "f": "Not 'if you will'; and the result needs 'will'."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "nego",
+    "variants": [
+     {
+      "text": "You must say the price is too high, but keep the relationship. Which is best?",
+      "choices": [
+       {
+        "t": "'I'm afraid the price seems a little high for us.'",
+        "p": 2,
+        "f": "Softening language keeps it polite and clear."
+       },
+       {
+        "t": "'Your price is too expensive and bad.'",
+        "p": 0,
+        "f": "Blunt and grammatically awkward."
+       },
+       {
+        "t": "'The price is OK, I think, maybe.'",
+        "p": 0,
+        "f": "So soft the message is lost."
+       }
+      ]
+     },
+     {
+      "text": "The negotiation is agreed verbally. What is the last stage?",
+      "choices": [
+       {
+        "t": "Close and confirm in writing",
+        "p": 2,
+        "f": "A written summary prevents misunderstandings."
+       },
+       {
+        "t": "Start bargaining again",
+        "p": 0,
+        "f": "Reopening damages trust."
+       },
+       {
+        "t": "Nothing; a verbal deal is enough",
+        "p": 0,
+        "f": "Memories differ. Confirm in writing."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "email",
+    "variants": [
+     {
+      "text": "Before you press send, what do you check?",
+      "choices": [
+       {
+        "t": "Subject, dated request, tone, attachments",
+        "p": 2,
+        "f": "The send checklist catches most problems."
+       },
+       {
+        "t": "Only the spelling of the person's name",
+        "p": 0,
+        "f": "Important, but not enough."
+       },
+       {
+        "t": "Nothing; it is better to send quickly",
+        "p": 0,
+        "f": "Speed causes avoidable mistakes."
+       }
+      ]
+     },
+     {
+      "text": "Which closing fits a neutral business email?",
+      "choices": [
+       {
+        "t": "'Kind regards,'",
+        "p": 2,
+        "f": "Neutral and professional."
+       },
+       {
+        "t": "'Love,'",
+        "p": 0,
+        "f": "Too personal for business."
+       },
+       {
+        "t": "'Yours faithfully,' to a known contact",
+        "p": 0,
+        "f": "Very formal, for unknown recipients."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

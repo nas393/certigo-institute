@@ -1,0 +1,475 @@
+{
+ "slug": "team-leadership-and-supervision",
+ "title": "First month as shift supervisor",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: peer to supervisor, credibility, Tuckman, huddle, workload maths, Herzberg, equity, recognition, can't/won't/system, documentation, progressive discipline, Thomas-Kilmann, interests, PDCA. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Shift Supervisor (newly promoted)",
+  "company": "Brightway Distribution (fictional), a warehouse picking and shipping orders for supermarkets",
+  "briefing": "Last month you were a picker on this team. Now you supervise 14 of your former peers on the day shift. Results are measured on safety, quality, delivery and cost. Your manager will review your first month.",
+  "skills": {
+   "lead": "Leading the team",
+   "plan": "Planning the work",
+   "motiv": "Motivation and fairness",
+   "perf": "Performance and conflict"
+  },
+  "steps": [
+   {
+    "skill": "lead",
+    "variants": [
+     {
+      "text": "Day one. Your best friend on the team expects to keep the easy aisle and long breaks, as before.",
+      "choices": [
+       {
+        "t": "Talk to her privately: the friendship stays, favours end, same rules for all",
+        "p": 2,
+        "f": "She is not happy, but the team sees fairness from day one. Keep friendships, end favours."
+       },
+       {
+        "t": "Let it continue quietly for the first month to keep the peace",
+        "p": 0,
+        "f": "Others notice in two days. Your credibility drops before you begin."
+       },
+       {
+        "t": "Move her to another shift so there is no conflict",
+        "p": 1,
+        "f": "It avoids the issue, but she did nothing wrong. A clear conversation was the fair way."
+       }
+      ]
+     },
+     {
+      "text": "You ask the team to wear safety shoes at all times. You often wear trainers on the floor yourself.",
+      "choices": [
+       {
+        "t": "Wear safety shoes yourself, every day, starting now",
+        "p": 2,
+        "f": "Credibility is the foundation: follow every rule you enforce. Compliance rises within a week."
+       },
+       {
+        "t": "Supervisors walk less, so trainers are fine for you",
+        "p": 0,
+        "f": "The team stops taking the rule seriously. Do what you say."
+       },
+       {
+        "t": "Remind the team the rule applies to them, not to you",
+        "p": 0,
+        "f": "Double standards destroy trust faster than any other mistake."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "lead",
+    "variants": [
+     {
+      "text": "Since your promotion, two senior pickers argue in front of the team and test every decision you make. Which Tuckman stage is this, and what do you do?",
+      "choices": [
+       {
+        "t": "Storming: name the conflict and resolve it openly",
+        "p": 2,
+        "f": "You meet both, agree ways of working, and the arguing stops. Storming needs the conflict named."
+       },
+       {
+        "t": "Forming: give clearer roles and wait for it to pass",
+        "p": 1,
+        "f": "Roles help, but this is storming. Ignored conflict grows."
+       },
+       {
+        "t": "Performing: give them more freedom to decide",
+        "p": 0,
+        "f": "Freedom now feeds the testing. They are not performing yet."
+       }
+      ]
+     },
+     {
+      "text": "Your new daily huddle is running 35 minutes and people sit in the canteen. How do you fix it?",
+      "choices": [
+       {
+        "t": "Standing at the board, same time daily, fixed agenda, 15 minutes",
+        "p": 2,
+        "f": "Safety, yesterday, today, problems, recognition. It runs to 12 minutes and the team stays focused."
+       },
+       {
+        "t": "Hold it weekly instead, so it takes less total time",
+        "p": 0,
+        "f": "You lose the daily rhythm: problems wait a week."
+       },
+       {
+        "t": "Keep it in the canteen but ask people to be brief",
+        "p": 1,
+        "f": "Sitting invites long talk. The board and a fixed agenda keep it short."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "Tomorrow: 9,600 order lines. Rate: 120 lines per picker per hour. Productive hours: 6.5 per person. How many pickers do you plan?",
+      "choices": [
+       {
+        "t": "13",
+        "p": 2,
+        "f": "Correct: 9,600 / 120 = 80 hours, 80 / 6.5 = 12.3, rounded up to 13. You also plan cover for absence."
+       },
+       {
+        "t": "12",
+        "p": 0,
+        "f": "You rounded down. 12 people give 78 hours, so 240 lines are late."
+       },
+       {
+        "t": "10",
+        "p": 0,
+        "f": "You used 8 hours per person. Breaks and huddles leave 6.5 productive hours."
+       }
+      ]
+     },
+     {
+      "text": "Tomorrow: 4,800 cartons to pack. Rate: 75 cartons per person per hour. Productive hours: 7 per person. How many packers do you plan?",
+      "choices": [
+       {
+        "t": "10",
+        "p": 2,
+        "f": "Correct: 4,800 / 75 = 64 hours, 64 / 7 = 9.1, rounded up to 10."
+       },
+       {
+        "t": "9",
+        "p": 0,
+        "f": "Rounding down leaves the work short by about one hour."
+       },
+       {
+        "t": "64",
+        "p": 0,
+        "f": "That is hours needed, not people. Divide by productive hours per person."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "At 11:00 the hour-by-hour board shows the team 300 lines behind plan. What do you do?",
+      "choices": [
+       {
+        "t": "Mark it red, find the cause now, and write the action with an owner",
+        "p": 2,
+        "f": "A broken scanner caused it. Replaced by 11:20. Problems need an owner and a date."
+       },
+       {
+        "t": "Wait for the end of the shift to see if the team catches up",
+        "p": 0,
+        "f": "The gap grows to 900 lines. The board exists to react in the hour."
+       },
+       {
+        "t": "Ask everyone to work faster for the rest of the day",
+        "p": 1,
+        "f": "Effort helps a little, but the real cause, a broken scanner, stays."
+       }
+      ]
+     },
+     {
+      "text": "Two pickers use different methods for the same heavy-item task. Errors differ a lot between them.",
+      "choices": [
+       {
+        "t": "Write the best method down as the standard work",
+        "p": 2,
+        "f": "Standard work is the current best way. Training both on it cuts errors by half."
+       },
+       {
+        "t": "Let each person use the method they prefer",
+        "p": 0,
+        "f": "Without a standard, you cannot train, compare or improve."
+       },
+       {
+        "t": "Ask the faster picker to show the other one quickly",
+        "p": 1,
+        "f": "Faster is not always better. Check which method gives the fewest errors first."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "motiv",
+    "variants": [
+     {
+      "text": "Morale is low. The water cooler has been broken for three weeks and the rota is posted late every week.",
+      "choices": [
+       {
+        "t": "Fix the water and post the rota on time",
+        "p": 2,
+        "f": "Herzberg: hygiene factors do not motivate, but when missing they create dissatisfaction. Complaints stop."
+       },
+       {
+        "t": "Start an employee-of-the-month award to lift spirits",
+        "p": 1,
+        "f": "Recognition motivates, but it cannot outweigh basic problems you control."
+       },
+       {
+        "t": "Nothing; conditions are decided by head office",
+        "p": 0,
+        "f": "Tools, water and rotas are in your control. Ignoring them costs trust."
+       }
+      ]
+     },
+     {
+      "text": "Overtime always goes to the same three pickers, who were your friends. Others notice.",
+      "choices": [
+       {
+        "t": "Set a clear, rotating rule for overtime and publish it",
+        "p": 2,
+        "f": "Equity theory: people compare effort and reward. A visible rule restores trust."
+       },
+       {
+        "t": "Keep it; those three are the most reliable",
+        "p": 0,
+        "f": "Others see favouritism and reduce their effort."
+       },
+       {
+        "t": "Explain privately to anyone who complains",
+        "p": 1,
+        "f": "Explaining helps one person at a time. A published rule is fairer and faster."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "motiv",
+    "variants": [
+     {
+      "text": "Lucas spotted a damaged pallet before loading. How do you recognise him?",
+      "choices": [
+       {
+        "t": "Today, naming what he did and why it mattered",
+        "p": 2,
+        "f": "Specific, linked to impact, timely and sincere. Others start checking pallets too."
+       },
+       {
+        "t": "Thank everyone at the next huddle for good work",
+        "p": 0,
+        "f": "Generic praise means nothing to Lucas, who did the work."
+       },
+       {
+        "t": "Note it down for his annual review in December",
+        "p": 1,
+        "f": "Recording it is good, but recognition loses value with time. Say it today too."
+       }
+      ]
+     },
+     {
+      "text": "A quiet, experienced picker seems bored. You have no budget for raises.",
+      "choices": [
+       {
+        "t": "Give her the returns area and new starters to train",
+        "p": 2,
+        "f": "Responsibility and learning are motivators that cost nothing. Her quality scores rise."
+       },
+       {
+        "t": "Tell her a raise may be possible early next year",
+        "p": 0,
+        "f": "An uncertain promise. When it does not come, trust falls."
+       },
+       {
+        "t": "Praise her in front of the team at every huddle",
+        "p": 1,
+        "f": "Some people dislike public praise. Ask or observe what suits her."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "perf",
+    "variants": [
+     {
+      "text": "A new picker's error rate is 2.1%; the standard is 0.5%. He tries hard but holds the scanner wrongly and skips the check step.",
+      "choices": [
+       {
+        "t": "Can't do: retrain him on the standard work and check in a week",
+        "p": 2,
+        "f": "He lacks skill, not will. After training, his errors fall to 0.6%."
+       },
+       {
+        "t": "Start progressive discipline with a recorded warning",
+        "p": 0,
+        "f": "Discipline for a skill gap is unfair and does not fix it."
+       },
+       {
+        "t": "Move him to packing, where errors matter less",
+        "p": 1,
+        "f": "It avoids the problem. Diagnose first: this is a training gap."
+       }
+      ]
+     },
+     {
+      "text": "An experienced picker knows the 07:00 start, has the skills and transport, but arrived late 5 times this month.",
+      "choices": [
+       {
+        "t": "Talk privately, record the facts, explain consequences",
+        "p": 2,
+        "f": "Correct diagnosis. He explains a childcare issue; you agree a review date, and it improves."
+       },
+       {
+        "t": "Book him on a time-management training course",
+        "p": 0,
+        "f": "He has the skill. Training does not fix a 'won't do' gap."
+       },
+       {
+        "t": "Let it go; he is one of the best pickers you have",
+        "p": 0,
+        "f": "Others notice the double standard. Consistency is a fairness principle."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "perf",
+    "variants": [
+     {
+      "text": "You write a note after a conversation about lateness. Which note is correct?",
+      "choices": [
+       {
+        "t": "'12 May: in at 07:40 for 07:00; rule explained; review 26 May'",
+        "p": 2,
+        "f": "Facts, the standard, what was agreed and a review date. HR can use it."
+       },
+       {
+        "t": "'He is always late and shows a poor attitude to his work.'",
+        "p": 0,
+        "f": "Opinions, not facts. This note would not stand in a formal process."
+       },
+       {
+        "t": "'Lateness discussed with him today. He says he will improve.'",
+        "p": 1,
+        "f": "Too little: no date, no facts, no standard, no review."
+       }
+      ]
+     },
+     {
+      "text": "After an informal talk and a recorded verbal warning, the late arrivals continue. What is the next step?",
+      "choices": [
+       {
+        "t": "A written warning, with HR and his right to explain",
+        "p": 2,
+        "f": "Correct progressive step, consistent and proportionate, following procedure and the law."
+       },
+       {
+        "t": "Dismissal; he has already had two clear chances",
+        "p": 0,
+        "f": "Skipping steps breaks procedure and can break the law. Involve HR."
+       },
+       {
+        "t": "Another informal chat, to keep the peace for now",
+        "p": 1,
+        "f": "Going backwards tells the team the process is not real."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "perf",
+    "variants": [
+     {
+      "text": "Two pickers fight over who gets the new electric pallet truck each morning. Both say 'I need it'.",
+      "choices": [
+       {
+        "t": "Ask why each needs it, then solve for both interests",
+        "p": 2,
+        "f": "One has heavy aisles early, the other late. A shared schedule meets both interests."
+       },
+       {
+        "t": "Decide yourself and give it to the most senior picker",
+        "p": 1,
+        "f": "Quick, but it treats positions, not interests. The other picker feels unfairly treated."
+       },
+       {
+        "t": "Let them sort it out between themselves",
+        "p": 0,
+        "f": "Avoiding an important conflict lets it grow into a relationship conflict."
+       }
+      ]
+     },
+     {
+      "text": "A forklift is reversing toward a picker who is not looking. Which conflict mode fits?",
+      "choices": [
+       {
+        "t": "Competing: give a firm instruction to stop now",
+        "p": 2,
+        "f": "Correct. In emergencies and safety, a firm, direct instruction is right."
+       },
+       {
+        "t": "Collaborating: ask both what they need",
+        "p": 0,
+        "f": "There is no time. Collaborating fits important issues with time to talk."
+       },
+       {
+        "t": "Compromising: ask the driver to slow down",
+        "p": 0,
+        "f": "A half measure in a safety emergency. Stop the movement."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "You think a new label position will cut picking errors. How do you introduce it?",
+      "choices": [
+       {
+        "t": "Test it on one aisle, measure, then decide",
+        "p": 2,
+        "f": "Errors fall by 30% on the test aisle. You roll it out with confidence."
+       },
+       {
+        "t": "Change all 40 aisles together this weekend",
+        "p": 0,
+        "f": "If the idea is wrong, every aisle is wrong. Test small first."
+       },
+       {
+        "t": "Ask the whole team to vote on it first",
+        "p": 1,
+        "f": "Involving the team is good, but only a test shows whether it works."
+       }
+      ]
+     },
+     {
+      "text": "Before loading a truck, there is a new risk: a ramp is wet after rain. The shift starts in 10 minutes.",
+      "choices": [
+       {
+        "t": "A short toolbox talk on the wet ramp now",
+        "p": 2,
+        "f": "One risk, linked to today's task, before work starts. Nobody slips."
+       },
+       {
+        "t": "Put a written note about it on the board",
+        "p": 1,
+        "f": "Some will read it. A short talk with questions checks understanding."
+       },
+       {
+        "t": "Raise it at next week's safety meeting",
+        "p": 0,
+        "f": "The risk is today. Next week is too late."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

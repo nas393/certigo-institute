@@ -1,0 +1,123 @@
+{
+ "slug": "procurement-and-vendor-management",
+ "title": "The packaging tender",
+ "review": {"learner": 9, "manager": 9, "director": 9, "score_pct": 90, "checked": "2026-11-18", "notes": "Built on the course: P2P cycle, three-way match, spend analysis, Kraljic, RFI/RFQ/RFP, pre-qualification, weighted and price scoring, TCO, landed cost and Incoterms, BATNA, ZOPA, interests. Calculations checked. Fictional companies."},
+ "content": {
+  "role": "Procurement Lead",
+  "company": "Highland Beverages (fictional), a juice and water bottler buying packaging, sugar and services",
+  "briefing": "Your packaging contract ends in 8 weeks. You must run a fair tender for bottles and caps, keep daily purchasing clean, and negotiate better terms. The finance director wants savings and no supply risk.",
+  "skills": {"p2p": "Purchase to pay", "strategy": "Category strategy", "tender": "Tendering and evaluation", "nego": "Cost and negotiation"},
+  "steps": [
+   {"skill": "p2p", "variants": [
+    {"text": "A supplier invoice arrives for 10,000 caps at Kz 12. The PO says Kz 11, and the goods received note shows 9,600 caps.",
+     "choices": [
+      {"t": "Hold payment and resolve price and quantity", "p": 2, "f": "Three-way match failed on both. You pay 9,600 at Kz 11 after the supplier corrects it."},
+      {"t": "Pay the invoice; the supplier is trusted", "p": 0, "f": "You overpay for 400 caps not received and a price not agreed."},
+      {"t": "Pay the PO amount for 10,000 caps", "p": 1, "f": "Price is right, but you still pay for caps never received."}]},
+    {"text": "A manager orders printing work by phone and sends the invoice to you after the job is done. There is no PO.",
+     "choices": [
+      {"t": "Escalate it: no PO means no commitment check", "p": 2, "f": "The PO is the legal commitment. A retrospective PO needs approval and a lesson."},
+      {"t": "Create a PO now so the invoice can be paid", "p": 1, "f": "It pays the supplier, but hides the control failure."},
+      {"t": "Pay it; the work was done and it is small", "p": 0, "f": "Bypassing POs is how spending gets out of control."}]}]},
+   {"skill": "strategy", "variants": [
+    {"text": "Bottles: high spend, big effect on cost, but only one supplier in the region can make your bottle shape. Kraljic quadrant?",
+     "choices": [
+      {"t": "Strategic: high impact, high supply risk", "p": 2, "f": "Partner and secure supply, while you work on a second source over time."},
+      {"t": "Leverage: high impact, low risk", "p": 0, "f": "Supply risk is high with one capable supplier. Competition is limited."},
+      {"t": "Non-critical: simplify and automate", "p": 0, "f": "High spend and high risk are anything but non-critical."}]},
+    {"text": "Sugar: high spend, many suppliers, easy to switch. Kraljic quadrant and approach?",
+     "choices": [
+      {"t": "Leverage: use competition to get better terms", "p": 2, "f": "High impact, low risk. A competitive tender cuts the price by 6%."},
+      {"t": "Strategic: sign a long exclusive partnership", "p": 0, "f": "You give away leverage in an open market."},
+      {"t": "Bottleneck: secure supply at any price", "p": 0, "f": "Supply risk is low. Bottleneck items are low impact, high risk."}]}]},
+   {"skill": "strategy", "variants": [
+    {"text": "Before writing category plans, the director asks where to start.",
+     "choices": [
+      {"t": "Spend analysis: 12 months of spend by category", "p": 2, "f": "Three categories hold 70% of spend. You focus there first."},
+      {"t": "Call every supplier for a 10% discount", "p": 0, "f": "Without data, you chase small suppliers and miss the big ones."},
+      {"t": "Start with the newest suppliers", "p": 1, "f": "New is not important. Value decides priority."}]},
+    {"text": "A special label glue costs little, but only one supplier makes it and lines stop without it.",
+     "choices": [
+      {"t": "Bottleneck: secure supply, buffer stock", "p": 2, "f": "Low impact, high risk. A buffer and a second source protect the lines."},
+      {"t": "Non-critical: buy it from the cheapest", "p": 0, "f": "There is only one supplier. Risk, not price, is the issue."},
+      {"t": "Leverage: run a tender to cut the price", "p": 0, "f": "No competition exists. A tender changes nothing."}]}]},
+   {"skill": "tender", "variants": [
+    {"text": "You know exactly what bottle you need: size, weight, colour and quantity. Which request do you send?",
+     "choices": [
+      {"t": "RFQ: a price for a clearly specified item", "p": 2, "f": "Clear specs mean suppliers compete on price and terms."},
+      {"t": "RFI: to learn what the market offers", "p": 0, "f": "You already know what you need."},
+      {"t": "RFP: proposals for a solution", "p": 1, "f": "RFP suits open problems. Here the spec is fixed."}]},
+    {"text": "You want to reduce plastic but do not know which packaging options exist.",
+     "choices": [
+      {"t": "RFI first, to learn the market", "p": 2, "f": "You learn about lighter bottles and recycled resin before writing specs."},
+      {"t": "RFQ for the current bottle", "p": 0, "f": "That prices what you already buy, not new options."},
+      {"t": "Award to the current supplier", "p": 0, "f": "No market check. You may miss better options."}]}]},
+   {"skill": "tender", "variants": [
+    {"text": "When do you set the evaluation criteria and weights?",
+     "choices": [
+      {"t": "Before opening any bids", "p": 2, "f": "Weights set in advance keep the tender fair and defensible."},
+      {"t": "After reading bids, to fit the best one", "p": 0, "f": "Changing weights after seeing bids is bias."},
+      {"t": "Only if two bids are very close", "p": 0, "f": "Criteria are always set first, not as a tie-breaker."}]},
+    {"text": "A cheap new supplier has no tax registration proof and no references.",
+     "choices": [
+      {"t": "Not pre-qualified: exclude until documents arrive", "p": 2, "f": "Legal, financial and capacity checks come before price."},
+      {"t": "Accept: price is what matters most", "p": 0, "f": "An unregistered supplier is a legal and supply risk."},
+      {"t": "Accept, with half payment in advance", "p": 0, "f": "You add cash risk to legal risk."}]}]},
+   {"skill": "tender", "variants": [
+    {"text": "Price is worth 40 points. Lowest bid Kz 400 per 1,000 bottles. Bidder B quotes Kz 500. B's price score?",
+     "choices": [
+      {"t": "32 points", "p": 2, "f": "Correct: 400 / 500 x 40."},
+      {"t": "40 points", "p": 0, "f": "Only the lowest price gets full marks."},
+      {"t": "50 points", "p": 0, "f": "You divided the wrong way. Lowest / their price x max."}]},
+    {"text": "Weights: price 40%, quality 35%, delivery 25%. Bidder A scores 4, 5, 3 (out of 5). Weighted score?",
+     "choices": [
+      {"t": "4.10", "p": 2, "f": "Correct: 1.60 + 1.75 + 0.75."},
+      {"t": "4.00", "p": 0, "f": "That is the simple average. Apply the weights."},
+      {"t": "12.00", "p": 0, "f": "That is the sum of scores without weights."}]}]},
+   {"skill": "nego", "variants": [
+    {"text": "Caps quoted FOB USD 20,000. Freight USD 3,000, insurance USD 230. What is the CIF value?",
+     "choices": [
+      {"t": "USD 23,230", "p": 2, "f": "Correct: FOB + freight + insurance. Duties and port costs come on top."},
+      {"t": "USD 20,000", "p": 0, "f": "That is FOB. Under FOB you pay the freight and insurance."},
+      {"t": "USD 23,000", "p": 0, "f": "Insurance is missing."}]},
+    {"text": "Supplier X is 8% cheaper per bottle but rejects run at 4%, against 0.5% for supplier Y. What do you compare?",
+     "choices": [
+      {"t": "Total cost of ownership, including rejects", "p": 2, "f": "Rejects, line stops and claims cancel most of the 8%."},
+      {"t": "Unit price only; X is cheaper", "p": 0, "f": "Price is only part of the cost."},
+      {"t": "Payment terms only", "p": 0, "f": "Terms matter, but quality cost is the big gap here."}]}]},
+   {"skill": "nego", "variants": [
+    {"text": "Before negotiating with the bottle supplier, what gives you walk-away power?",
+     "choices": [
+      {"t": "A real BATNA: a qualified second supplier", "p": 2, "f": "With an alternative in hand, you can say no to a bad deal."},
+      {"t": "A tough, fixed opening position", "p": 0, "f": "Positions without alternatives are bluffs."},
+      {"t": "The size of your company", "p": 1, "f": "Size helps, but the alternative is what gives power."}]},
+    {"text": "Your maximum is USD 520 per tonne. The seller's minimum is USD 480. Is there a deal zone?",
+     "choices": [
+      {"t": "Yes: between 480 and 520", "p": 2, "f": "ZOPA exists because buyer max is above seller min."},
+      {"t": "No: you both want different prices", "p": 0, "f": "Different positions are normal. The zone is what overlaps."},
+      {"t": "Only at exactly 500", "p": 0, "f": "Any price from 480 to 520 is possible."}]}]},
+   {"skill": "nego", "variants": [
+    {"text": "The supplier refuses any price cut. You learn they want steady volume to plan production.",
+     "choices": [
+      {"t": "Offer a volume forecast for a better price", "p": 2, "f": "You trade a variable they value. Price falls 3%."},
+      {"t": "Insist on the cut or end the talks", "p": 0, "f": "Positions clash and nothing moves."},
+      {"t": "Accept the price to keep the relationship", "p": 1, "f": "You give in without testing other variables."}]},
+    {"text": "In the tender debrief, a losing supplier asks why they lost.",
+     "choices": [
+      {"t": "Explain their scores against the criteria", "p": 2, "f": "Fair and useful. They improve and bid stronger next time."},
+      {"t": "Show them the winner's prices", "p": 0, "f": "That breaks confidentiality."},
+      {"t": "Say the decision is final, nothing more", "p": 1, "f": "Correct but unhelpful. A debrief improves future bids."}]}]},
+   {"skill": "p2p", "variants": [
+    {"text": "Received 5,000 juice cartons; 300 are damaged. What do you record?",
+     "choices": [
+      {"t": "GRN for 4,700 and a claim for 300", "p": 2, "f": "The shortage is noted at receipt, so the claim is easy."},
+      {"t": "GRN for 5,000; damage happens", "p": 0, "f": "You pay for 300 unusable cartons."},
+      {"t": "Reject the whole delivery", "p": 1, "f": "Possible, but production needs the 4,700 good cartons."}]},
+    {"text": "The new packaging contract is signed. How do you manage the supplier?",
+     "choices": [
+      {"t": "Agreed KPIs and regular performance reviews", "p": 2, "f": "On-time delivery and quality are tracked and reviewed every quarter."},
+      {"t": "Only when problems are reported", "p": 0, "f": "Problems grow unnoticed between complaints."},
+      {"t": "Retender every three months", "p": 0, "f": "Constant tenders destroy the relationship and cost time."}]}]}
+  ]
+ }
+}

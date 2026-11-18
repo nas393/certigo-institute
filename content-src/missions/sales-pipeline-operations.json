@@ -1,0 +1,475 @@
+{
+ "slug": "sales-pipeline-operations",
+ "title": "A forecast you can trust",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: buyer progress vs activity, exit criteria, qualification gates, stage probability from history, one source of truth, minimum fields, hygiene rules, coverage, win rate, stage conversion, cycle length, velocity, weighted pipeline, forecast categories. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Sales Operations Manager",
+  "company": "Pioneer Supplies (fictional), a B2B distributor of office and cleaning supplies",
+  "briefing": "Every month the sales forecast misses by 30%. Reps keep private lists, stages mean different things to different people, and deals sit untouched for months. You must build one pipeline and a forecast leadership can trust.",
+  "skills": {
+   "stages": "Stages and criteria",
+   "data": "Pipeline data",
+   "metrics": "Pipeline metrics",
+   "forecast": "Forecasting"
+  },
+  "steps": [
+   {
+    "skill": "stages",
+    "variants": [
+     {
+      "text": "A rep moved a deal to 'Offer submitted' because 'I sent the offer'. What is wrong with this as an exit criterion?",
+      "choices": [
+       {
+        "t": "It is seller activity, not buyer progress",
+        "p": 2,
+        "f": "Better: 'the buyer agreed a date to review the offer'."
+       },
+       {
+        "t": "Nothing; the offer was sent",
+        "p": 0,
+        "f": "Sending says nothing about the buyer's commitment."
+       },
+       {
+        "t": "It needs a manager signature",
+        "p": 1,
+        "f": "Checks help, but the criterion itself must be a buyer action."
+       }
+      ]
+     },
+     {
+      "text": "Which is a good exit criterion for 'Needs confirmed'?",
+      "choices": [
+       {
+        "t": "Buyer confirmed in writing; manager checks",
+        "p": 2,
+        "f": "Buyer action, evidence and who checks it."
+       },
+       {
+        "t": "The rep feels the needs are clear enough",
+        "p": 0,
+        "f": "A feeling is not evidence."
+       },
+       {
+        "t": "The rep held a meeting with the buyer",
+        "p": 0,
+        "f": "A meeting is activity, not confirmation."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "stages",
+    "variants": [
+     {
+      "text": "Last year, 40 deals passed 'Terms agreed' and closed: 30 won, 10 lost. What probability do you use for that stage?",
+      "choices": [
+       {
+        "t": "75%",
+        "p": 2,
+        "f": "Won from the stage / closed deals that passed it: 30 / 40."
+       },
+       {
+        "t": "90%, the usual industry figure",
+        "p": 0,
+        "f": "Use your own history, not generic numbers."
+       },
+       {
+        "t": "30%",
+        "p": 0,
+        "f": "That is the count won, not the rate."
+       }
+      ]
+     },
+     {
+      "text": "A rep wants to add a deal with no budget owner identified. Which gate does it fail?",
+      "choices": [
+       {
+        "t": "Qualification: authority not confirmed",
+        "p": 2,
+        "f": "BANT or MEDDIC gates keep weak deals out."
+       },
+       {
+        "t": "None; any interest counts",
+        "p": 0,
+        "f": "Unqualified deals inflate the pipeline."
+       },
+       {
+        "t": "Only the value field",
+        "p": 0,
+        "f": "The issue is qualification, not value."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "data",
+    "variants": [
+     {
+      "text": "Three reps keep private spreadsheets alongside the CRM.",
+      "choices": [
+       {
+        "t": "One shared pipeline for the whole team",
+        "p": 2,
+        "f": "Forecasts and reviews use only the shared pipeline."
+       },
+       {
+        "t": "Merge their lists by hand every month",
+        "p": 0,
+        "f": "Slow and error-prone; the private lists remain."
+       },
+       {
+        "t": "Let each rep pick their own tool",
+        "p": 0,
+        "f": "No single view; the forecast stays unreliable."
+       }
+      ]
+     },
+     {
+      "text": "Which fields are minimum for every opportunity?",
+      "choices": [
+       {
+        "t": "Account, value basis, stage, date, next step",
+        "p": 2,
+        "f": "Enough to review and forecast."
+       },
+       {
+        "t": "Only the account name, to keep it light",
+        "p": 0,
+        "f": "Too little to forecast."
+       },
+       {
+        "t": "Fifty optional fields, to capture it all",
+        "p": 0,
+        "f": "Too much; reps stop filling them."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "data",
+    "variants": [
+     {
+      "text": "A deal's close date passed two weeks ago, and it is still open.",
+      "choices": [
+       {
+        "t": "Update the date or close it",
+        "p": 2,
+        "f": "Hygiene rule: past close date means update or close."
+       },
+       {
+        "t": "Leave it; it may still close",
+        "p": 0,
+        "f": "Stale dates make the forecast wrong."
+       },
+       {
+        "t": "Move it to next year quietly",
+        "p": 1,
+        "f": "Moving dates without reason hides the problem."
+       }
+      ]
+     },
+     {
+      "text": "A deal has had no activity for 45 days. What does the hygiene rule say?",
+      "choices": [
+       {
+        "t": "Flag it as stale and review it",
+        "p": 2,
+        "f": "No activity in 30 days means stale."
+       },
+       {
+        "t": "Keep it at its stage",
+        "p": 0,
+        "f": "Untouched deals inflate the pipeline."
+       },
+       {
+        "t": "Raise its probability",
+        "p": 0,
+        "f": "Inactivity lowers, not raises, the chance."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "metrics",
+    "variants": [
+     {
+      "text": "Closed this year: 12 won, 28 lost, plus 15 still open. What is the win rate by count?",
+      "choices": [
+       {
+        "t": "30%",
+        "p": 2,
+        "f": "Won / (won + lost) = 12 / 40. Exclude open deals."
+       },
+       {
+        "t": "22%",
+        "p": 0,
+        "f": "You included open deals: 12 / 55."
+       },
+       {
+        "t": "43%",
+        "p": 0,
+        "f": "That is won / lost, not won / closed."
+       }
+      ]
+     },
+     {
+      "text": "Win rate is 30%. Roughly what pipeline coverage do you need?",
+      "choices": [
+       {
+        "t": "About 3.3 times the remaining target",
+        "p": 2,
+        "f": "Required coverage is about 1 / win rate."
+       },
+       {
+        "t": "About 1 times the remaining target",
+        "p": 0,
+        "f": "Only if you won every deal."
+       },
+       {
+        "t": "About 30 times the remaining target",
+        "p": 0,
+        "f": "That confuses the percentage."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "metrics",
+    "variants": [
+     {
+      "text": "Open pipeline for the quarter: Kz 90 m. Remaining target: Kz 30 m. What is coverage?",
+      "choices": [
+       {
+        "t": "3.0 times",
+        "p": 2,
+        "f": "90 / 30. Compare it with the coverage you need."
+       },
+       {
+        "t": "0.33 times",
+        "p": 0,
+        "f": "You divided the wrong way."
+       },
+       {
+        "t": "Kz 60 m",
+        "p": 0,
+        "f": "That is the difference, not coverage."
+       }
+      ]
+     },
+     {
+      "text": "100 deals entered 'Qualified'; 40 reached 'Needs confirmed'. What is the stage conversion?",
+      "choices": [
+       {
+        "t": "40%",
+        "p": 2,
+        "f": "Reached next / entered stage. It shows where deals stall."
+       },
+       {
+        "t": "60%",
+        "p": 0,
+        "f": "That is the share that did not move on."
+       },
+       {
+        "t": "250%",
+        "p": 0,
+        "f": "Divided the wrong way."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "metrics",
+    "variants": [
+     {
+      "text": "To measure the average sales cycle, which deals do you use?",
+      "choices": [
+       {
+        "t": "Won deals only",
+        "p": 2,
+        "f": "Average days from created to won."
+       },
+       {
+        "t": "All open deals",
+        "p": 0,
+        "f": "Open deals have no end date."
+       },
+       {
+        "t": "Lost deals only",
+        "p": 0,
+        "f": "Lost deals do not show how long winning takes."
+       }
+      ]
+     },
+     {
+      "text": "40 opportunities, 25% win rate, average deal Kz 2 m, cycle 50 days. Sales velocity?",
+      "choices": [
+       {
+        "t": "Kz 400 k per day",
+        "p": 2,
+        "f": "40 x 0.25 x 2,000,000 / 50."
+       },
+       {
+        "t": "Kz 20 m per day",
+        "p": 0,
+        "f": "You forgot to divide by the cycle length."
+       },
+       {
+        "t": "Kz 1.6 m per day",
+        "p": 0,
+        "f": "You left out the win rate."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "forecast",
+    "variants": [
+     {
+      "text": "Deals: Kz 10 m at 25%, Kz 20 m at 50%, Kz 8 m at 75%. Weighted pipeline?",
+      "choices": [
+       {
+        "t": "Kz 18.5 m",
+        "p": 2,
+        "f": "2.5 + 10 + 6."
+       },
+       {
+        "t": "Kz 38 m",
+        "p": 0,
+        "f": "That is the unweighted total."
+       },
+       {
+        "t": "Kz 19 m",
+        "p": 0,
+        "f": "You applied the average probability (50%) to the total. Weight each deal separately."
+       }
+      ]
+     },
+     {
+      "text": "A deal has a signed contract waiting only for the PO number. Which category?",
+      "choices": [
+       {
+        "t": "Commit",
+        "p": 2,
+        "f": "High confidence, evidence-based."
+       },
+       {
+        "t": "Best case",
+        "p": 0,
+        "f": "Best case is possible but less certain."
+       },
+       {
+        "t": "Pipeline",
+        "p": 0,
+        "f": "It is far beyond early stage."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "forecast",
+    "variants": [
+     {
+      "text": "Leadership wants one forecast number. What do you give?",
+      "choices": [
+       {
+        "t": "Closed + commit, with best case as upside",
+        "p": 2,
+        "f": "Categories show certainty levels honestly."
+       },
+       {
+        "t": "The full open pipeline",
+        "p": 0,
+        "f": "That assumes every deal wins."
+       },
+       {
+        "t": "The target, as the forecast",
+        "p": 0,
+        "f": "A target is not a forecast."
+       }
+      ]
+     },
+     {
+      "text": "The weighted pipeline looks good, but the CEO doubts it. Why can weighted forecasts mislead?",
+      "choices": [
+       {
+        "t": "Weak with few big deals or poor stage data",
+        "p": 2,
+        "f": "One big deal swings it; check with categories and deal review."
+       },
+       {
+        "t": "They are always too low by design",
+        "p": 0,
+        "f": "They can be high or low."
+       },
+       {
+        "t": "Weights are never useful for forecasting",
+        "p": 0,
+        "f": "Useful, but not alone."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "data",
+    "variants": [
+     {
+      "text": "When does the weekly exception report run?",
+      "choices": [
+       {
+        "t": "Before the pipeline review",
+        "p": 2,
+        "f": "Daily updates, weekly exceptions before review, monthly clean-up."
+       },
+       {
+        "t": "Only at quarter end",
+        "p": 0,
+        "f": "Problems pile up for three months."
+       },
+       {
+        "t": "Only when the forecast misses",
+        "p": 0,
+        "f": "Too late to fix anything."
+       }
+      ]
+     },
+     {
+      "text": "Every lost deal must have:",
+      "choices": [
+       {
+        "t": "A lost reason recorded",
+        "p": 2,
+        "f": "Lost reasons show what to fix in products, price or process."
+       },
+       {
+        "t": "Nothing; it is closed",
+        "p": 0,
+        "f": "You lose the lesson."
+       },
+       {
+        "t": "Its value deleted",
+        "p": 0,
+        "f": "Deleting data hides the history."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

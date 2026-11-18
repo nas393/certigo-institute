@@ -1,0 +1,475 @@
+{
+ "slug": "executive-communications",
+ "title": "Two minutes with the CEO",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: decision focus, BLUF, Pyramid Principle, MECE, SCQA and order, one-page memo, key numbers and context, chart choice, clutter, what/so what/now what, storyline, board paper, appendix. Fictional company."
+ },
+ "content": {
+  "role": "Chief of Staff",
+  "company": "Vantage Telecom Services (fictional), a regional telecom services company",
+  "briefing": "You prepare what the CEO and the board read. This week: a memo asking for budget, a monthly update, a board paper and a presentation. Executives have little time; every message must lead to a decision.",
+  "skills": {
+   "structure": "Structuring the message",
+   "write": "Writing for executives",
+   "numbers": "Numbers and charts",
+   "board": "Board papers and decks"
+  },
+  "steps": [
+   {
+    "skill": "structure",
+    "variants": [
+     {
+      "text": "You need the CEO to approve Kz 40 m for new network towers by Friday. How does your email start?",
+      "choices": [
+       {
+        "t": "'Please approve Kz 40 m for towers by Friday.'",
+        "p": 2,
+        "f": "BLUF: the request in the first two lines. Reasons follow."
+       },
+       {
+        "t": "'Over the last three years our network...'",
+        "p": 0,
+        "f": "History first buries the ask. The CEO stops reading."
+       },
+       {
+        "t": "'I hope you are well. Some updates below.'",
+        "p": 0,
+        "f": "No decision is visible."
+       }
+      ]
+     },
+     {
+      "text": "Before writing anything for the CEO, what do you decide first?",
+      "choices": [
+       {
+        "t": "What the reader must do: decide, approve, note",
+        "p": 2,
+        "f": "Decision focus shapes the whole message."
+       },
+       {
+        "t": "How long the document should be",
+        "p": 0,
+        "f": "Length follows purpose."
+       },
+       {
+        "t": "Which template to use",
+        "p": 0,
+        "f": "Format comes after purpose."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "structure",
+    "variants": [
+     {
+      "text": "Your arguments for the towers: 'coverage gaps', 'customer complaints', 'competitor coverage', 'complaints in the north'. What is wrong?",
+      "choices": [
+       {
+        "t": "Not MECE: complaints overlap",
+        "p": 2,
+        "f": "Mutually exclusive, collectively exhaustive. Merge the overlap."
+       },
+       {
+        "t": "Too few arguments",
+        "p": 0,
+        "f": "Three to five is right. The problem is overlap."
+       },
+       {
+        "t": "Nothing; more points persuade",
+        "p": 0,
+        "f": "Overlaps confuse and weaken the case."
+       }
+      ]
+     },
+     {
+      "text": "The CFO is sceptical about new spending. How do you order the memo?",
+      "choices": [
+       {
+        "t": "SCQA: context first, then the answer",
+        "p": 2,
+        "f": "For sceptical readers, build agreement before the answer."
+       },
+       {
+        "t": "Answer first, always",
+        "p": 1,
+        "f": "Works for busy or supportive readers; a sceptic may resist."
+       },
+       {
+        "t": "Appendix first, then the request",
+        "p": 0,
+        "f": "Detail before the point loses any reader."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "write",
+    "variants": [
+     {
+      "text": "In SCQA, what is the 'Complication'?",
+      "choices": [
+       {
+        "t": "What has changed",
+        "p": 2,
+        "f": "Situation, then what changed, then the question it raises, then the answer."
+       },
+       {
+        "t": "The recommended action",
+        "p": 0,
+        "f": "That is the Answer."
+       },
+       {
+        "t": "What the reader already accepts",
+        "p": 0,
+        "f": "That is the Situation."
+       }
+      ]
+     },
+     {
+      "text": "What does the title of a one-page decision memo say?",
+      "choices": [
+       {
+        "t": "The decision being asked",
+        "p": 2,
+        "f": "'Approve Kz 40 m for northern towers' tells the reader everything."
+       },
+       {
+        "t": "'Network update'",
+        "p": 0,
+        "f": "A topic, not a decision."
+       },
+       {
+        "t": "'Memo, version 3'",
+        "p": 0,
+        "f": "Says nothing about the content."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "write",
+    "variants": [
+     {
+      "text": "Your monthly update to the CEO. Which pattern fits?",
+      "choices": [
+       {
+        "t": "Situation, complication, resolution",
+        "p": 2,
+        "f": "A short three-part version for updates and emails."
+       },
+       {
+        "t": "A list of every task done",
+        "p": 0,
+        "f": "Activity is not insight."
+       },
+       {
+        "t": "Attach the raw reports",
+        "p": 0,
+        "f": "The CEO must do your thinking."
+       }
+      ]
+     },
+     {
+      "text": "The memo body: what comes right after the recommendation?",
+      "choices": [
+       {
+        "t": "Cost and timing, then key reasons",
+        "p": 2,
+        "f": "Recommendation with cost and timing, then supporting points."
+       },
+       {
+        "t": "Company history since 2010",
+        "p": 0,
+        "f": "Background belongs low, briefly."
+       },
+       {
+        "t": "A list of open questions",
+        "p": 0,
+        "f": "Questions undermine the ask."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "numbers",
+    "variants": [
+     {
+      "text": "Your draft has 22 numbers. How many key numbers should the message carry?",
+      "choices": [
+       {
+        "t": "Three to five",
+        "p": 2,
+        "f": "Start from the decision; keep only numbers that support it."
+       },
+       {
+        "t": "All 22",
+        "p": 0,
+        "f": "Too many numbers hide the message."
+       },
+       {
+        "t": "None; numbers bore executives",
+        "p": 0,
+        "f": "Executives need the key numbers."
+       }
+      ]
+     },
+     {
+      "text": "Revenue was Kz 940 m this month. How do you present it?",
+      "choices": [
+       {
+        "t": "Kz 940 m, 6% below plan",
+        "p": 2,
+        "f": "Context gives meaning: variance in value and percent."
+       },
+       {
+        "t": "Kz 940,231,567.48 exactly",
+        "p": 0,
+        "f": "False precision; round to what matters."
+       },
+       {
+        "t": "Kz 940 m, with no comparison",
+        "p": 0,
+        "f": "Without comparison, good or bad is unclear."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "numbers",
+    "variants": [
+     {
+      "text": "To show 12 months of churn rate, which chart?",
+      "choices": [
+       {
+        "t": "A line chart",
+        "p": 2,
+        "f": "Trend over time."
+       },
+       {
+        "t": "A pie chart",
+        "p": 0,
+        "f": "Pies show shares, not trends."
+       },
+       {
+        "t": "A table of 12 numbers",
+        "p": 1,
+        "f": "Exact, but the trend is harder to see."
+       }
+      ]
+     },
+     {
+      "text": "Your chart has heavy gridlines, a border, a legend and 3D bars. What do you do?",
+      "choices": [
+       {
+        "t": "Remove clutter so ink shows data",
+        "p": 2,
+        "f": "Tufte: most ink should show data."
+       },
+       {
+        "t": "Add more colours for clarity",
+        "p": 0,
+        "f": "More decoration hides the data."
+       },
+       {
+        "t": "Keep it; it looks professional",
+        "p": 0,
+        "f": "Clutter slows the reader."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "numbers",
+    "variants": [
+     {
+      "text": "'Churn rose to 3.2%.' What turns this into a useful executive message?",
+      "choices": [
+       {
+        "t": "Add so what and now what",
+        "p": 2,
+        "f": "'Up from 2.4%; costs Kz 15 m a year; we propose a retention offer.'"
+       },
+       {
+        "t": "Add the churn formula",
+        "p": 0,
+        "f": "Method does not tell them what to do."
+       },
+       {
+        "t": "Bold the number",
+        "p": 0,
+        "f": "Formatting is not meaning."
+       }
+      ]
+     },
+     {
+      "text": "To compare complaints across 6 regions, which chart?",
+      "choices": [
+       {
+        "t": "A sorted bar chart",
+        "p": 2,
+        "f": "Comparing categories: sorted bars show ranking at once."
+       },
+       {
+        "t": "A line chart",
+        "p": 0,
+        "f": "Lines imply time."
+       },
+       {
+        "t": "A 3D pie chart",
+        "p": 0,
+        "f": "Hard to compare and distorted."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "board",
+    "variants": [
+     {
+      "text": "You draft a 20-slide deck. How do you check the storyline?",
+      "choices": [
+       {
+        "t": "Read only the slide titles in order",
+        "p": 2,
+        "f": "Action titles alone should tell the whole story."
+       },
+       {
+        "t": "Check the fonts and colours",
+        "p": 0,
+        "f": "Design is not story."
+       },
+       {
+        "t": "Count the slides",
+        "p": 0,
+        "f": "Length is not logic."
+       }
+      ]
+     },
+     {
+      "text": "A slide title reads 'Q3 results'. How do you improve it?",
+      "choices": [
+       {
+        "t": "'Q3 profit beat plan by 8% on lower costs'",
+        "p": 2,
+        "f": "An action title states the point."
+       },
+       {
+        "t": "'Q3 results (final version)'",
+        "p": 0,
+        "f": "Still a topic, not a message."
+       },
+       {
+        "t": "'Q3 results and analysis'",
+        "p": 0,
+        "f": "Says what it covers, not what it shows."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "board",
+    "variants": [
+     {
+      "text": "A board paper should open with:",
+      "choices": [
+       {
+        "t": "Purpose and recommendation",
+        "p": 2,
+        "f": "Decision, discussion or information, and the executive summary."
+       },
+       {
+        "t": "Detailed methodology",
+        "p": 0,
+        "f": "Method belongs in the appendix."
+       },
+       {
+        "t": "A long market history",
+        "p": 0,
+        "f": "Background comes later and briefly."
+       }
+      ]
+     },
+     {
+      "text": "Your team wants to add 30 pages of supplier data to the board paper.",
+      "choices": [
+       {
+        "t": "Appendix it, unless needed to decide",
+        "p": 2,
+        "f": "Appendix discipline keeps the main paper short."
+       },
+       {
+        "t": "Put it all in the main paper",
+        "p": 0,
+        "f": "The decision gets lost in data."
+       },
+       {
+        "t": "Leave it out entirely",
+        "p": 1,
+        "f": "Directors may want it; the appendix keeps it available."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "write",
+    "variants": [
+     {
+      "text": "A before-and-after edit of your memo. What changed in the 'after'?",
+      "choices": [
+       {
+        "t": "Decision, cost and deadline moved first",
+        "p": 2,
+        "f": "The before version put history first and the vague ask last."
+       },
+       {
+        "t": "More history was added at the start",
+        "p": 0,
+        "f": "That is the before version's mistake."
+       },
+       {
+        "t": "The ask became softer and vaguer",
+        "p": 0,
+        "f": "Clear asks get faster decisions."
+       }
+      ]
+     },
+     {
+      "text": "The CEO replies: 'What exactly do you need from me?' What went wrong?",
+      "choices": [
+       {
+        "t": "The request was not clear up front",
+        "p": 2,
+        "f": "State the decision and deadline in the first lines."
+       },
+       {
+        "t": "The CEO did not read carefully",
+        "p": 0,
+        "f": "Busy readers skim; the writer must make it easy."
+       },
+       {
+        "t": "The memo was too short",
+        "p": 0,
+        "f": "Length was not the problem; clarity was."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

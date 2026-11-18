@@ -1,0 +1,475 @@
+{
+ "slug": "difficult-conversations",
+ "title": "The conversations you avoid",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: three conversations, truth assumption, intention invention, blame frame, raise or let go, purposes, ladder of inference, facts vs stories, own contribution, setting, third story, contrasting, listening skills, hierarchy and silence, SBI, DESC, positive no, bad news. Fictional company."
+ },
+ "content": {
+  "role": "Operations Manager",
+  "company": "Harbourlink Logistics (fictional), a freight and warehousing company",
+  "briefing": "This week you face several conversations you have been avoiding: a late colleague, an upset peer, a request from your boss you must refuse, and bad news for a team. Each one matters for results and relationships.",
+  "skills": {
+   "prep": "Preparing the conversation",
+   "open": "Opening well",
+   "listen": "Listening",
+   "assert": "Clear and assertive messages"
+  },
+  "steps": [
+   {
+    "skill": "prep",
+    "variants": [
+     {
+      "text": "Your planner Sara missed two deadlines. You think: 'She does not care about this job.' What error are you making?",
+      "choices": [
+       {
+        "t": "The intention invention: guessing her motive",
+        "p": 2,
+        "f": "You know the impact, not her intention. You go in curious instead of accusing."
+       },
+       {
+        "t": "No error: missed deadlines show low care",
+        "p": 0,
+        "f": "Behaviour does not prove motive. She may be overloaded."
+       },
+       {
+        "t": "The truth assumption: I am simply right",
+        "p": 1,
+        "f": "Close, but the specific error is inventing her intention."
+       }
+      ]
+     },
+     {
+      "text": "Before talking to Sara, you write: 'She is lazy and unreliable.' How do you prepare instead?",
+      "choices": [
+       {
+        "t": "Separate facts from the story you built",
+        "p": 2,
+        "f": "Fact: two deadlines missed on 3 and 10 May. 'Lazy' is your story."
+       },
+       {
+        "t": "Collect more examples to prove the point",
+        "p": 0,
+        "f": "Climbing the ladder of inference, selecting only data that fits."
+       },
+       {
+        "t": "Ask HR to deliver the message for you",
+        "p": 0,
+        "f": "The conversation is yours to have."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "prep",
+    "variants": [
+     {
+      "text": "What purpose do you set for the talk with Sara?",
+      "choices": [
+       {
+        "t": "Learn her story, share mine, solve it together",
+        "p": 2,
+        "f": "Three good purposes. You discover she covers two roles since a colleague left."
+       },
+       {
+        "t": "Make sure she admits the fault was hers",
+        "p": 0,
+        "f": "Winning is not a good purpose. She defends herself."
+       },
+       {
+        "t": "Tell her the rules and end the meeting quickly",
+        "p": 1,
+        "f": "Clear, but you miss her side and the real cause."
+       }
+      ]
+     },
+     {
+      "text": "A colleague's habit of tapping his pen annoys you. Should you raise it?",
+      "choices": [
+       {
+        "t": "Check first if it matters or is mainly in me",
+        "p": 2,
+        "f": "Some issues are better let go. Raise what truly affects work or the relationship."
+       },
+       {
+        "t": "Raise it today in front of the team",
+        "p": 0,
+        "f": "Public, and about a minor issue. It damages the relationship."
+       },
+       {
+        "t": "Never raise anything that might upset people",
+        "p": 0,
+        "f": "Avoiding all issues lets real problems grow."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "open",
+    "variants": [
+     {
+      "text": "Where and how do you talk to Sara?",
+      "choices": [
+       {
+        "t": "Privately, face to face, with enough time",
+        "p": 2,
+        "f": "A calm, private setting lowers defensiveness."
+       },
+       {
+        "t": "In the morning team meeting",
+        "p": 0,
+        "f": "Never in front of others. She loses face."
+       },
+       {
+        "t": "By WhatsApp, to keep it short",
+        "p": 0,
+        "f": "Serious topics need face to face. Tone gets lost in text."
+       }
+      ]
+     },
+     {
+      "text": "How do you open the conversation with Sara?",
+      "choices": [
+       {
+        "t": "With the third story, inviting her to solve it",
+        "p": 2,
+        "f": "'We have different views on the deadlines; can we work it out?' She engages."
+       },
+       {
+        "t": "'You have been missing deadlines on purpose.'",
+        "p": 0,
+        "f": "Opens with your story and an accusation."
+       },
+       {
+        "t": "With small talk for twenty minutes first",
+        "p": 1,
+        "f": "Warmth is fine, but a long delay builds tension."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "open",
+    "variants": [
+     {
+      "text": "Sara looks hurt: 'So you think I'm bad at my job?' What do you say?",
+      "choices": [
+       {
+        "t": "Contrast: I don't mean that; I do mean this",
+        "p": 2,
+        "f": "'I don't think you're bad at your job; I do want to fix the deadline issue.' Trust returns."
+       },
+       {
+        "t": "Repeat the facts about the missed deadlines",
+        "p": 0,
+        "f": "She hears an attack. Repair intent first."
+       },
+       {
+        "t": "Change the subject to calm things down",
+        "p": 1,
+        "f": "Avoids conflict but leaves the misunderstanding."
+       }
+      ]
+     },
+     {
+      "text": "You realise you never told Sara the deadlines were moved earlier. What do you do?",
+      "choices": [
+       {
+        "t": "Name your contribution openly",
+        "p": 2,
+        "f": "'I did not tell you clearly about the new dates.' She relaxes and shares hers."
+       },
+       {
+        "t": "Keep it to yourself; it weakens your position",
+        "p": 0,
+        "f": "The blame frame. She senses it and resists."
+       },
+       {
+        "t": "Blame the system for the confusion",
+        "p": 1,
+        "f": "Partly true, but owning your part builds trust faster."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "listen",
+    "variants": [
+     {
+      "text": "Sara says: 'I'm doing two jobs since Nuno left and nobody noticed.' What next?",
+      "choices": [
+       {
+        "t": "'You feel your extra work went unseen.'",
+        "p": 2,
+        "f": "Naming the feeling. She nods and explains the workload."
+       },
+       {
+        "t": "'Everyone is busy; that is no excuse.'",
+        "p": 0,
+        "f": "You argue with her feeling. She shuts down."
+       },
+       {
+        "t": "'I will hire someone next month.'",
+        "p": 1,
+        "f": "Rushing to fix it before understanding."
+       }
+      ]
+     },
+     {
+      "text": "She mentions 'some problems with the system'. What do you ask?",
+      "choices": [
+       {
+        "t": "'What happens in the system, exactly?'",
+        "p": 2,
+        "f": "Inquiry with an open question. The scheduling tool freezes daily."
+       },
+       {
+        "t": "'Is it the system or your planning?'",
+        "p": 0,
+        "f": "A closed, loaded question. She feels trapped."
+       },
+       {
+        "t": "'I am sure IT can fix that.'",
+        "p": 1,
+        "f": "You skip understanding the problem."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "listen",
+    "variants": [
+     {
+      "text": "A junior worker nods at everything you say but never speaks. You suspect he disagrees.",
+      "choices": [
+       {
+        "t": "Ask specific open questions, allow silence",
+        "p": 2,
+        "f": "After a pause, he explains the new route is unsafe at night."
+       },
+       {
+        "t": "Take the nods as agreement",
+        "p": 0,
+        "f": "In hierarchies, people may not contradict a superior."
+       },
+       {
+        "t": "Ask: 'Do you agree, yes or no?'",
+        "p": 0,
+        "f": "A closed question invites a polite yes."
+       }
+      ]
+     },
+     {
+      "text": "To check understanding after a long explanation, you say:",
+      "choices": [
+       {
+        "t": "'So the main issue is the loading order?'",
+        "p": 2,
+        "f": "Paraphrasing. She corrects one detail, and you now understand fully."
+       },
+       {
+        "t": "'OK, I understand everything.'",
+        "p": 0,
+        "f": "No check. Misunderstandings stay hidden."
+       },
+       {
+        "t": "'Can you repeat all of that?'",
+        "p": 1,
+        "f": "Paraphrasing in your own words shows you listened."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assert",
+    "variants": [
+     {
+      "text": "A peer keeps sending you his reports late, delaying your own. Using DESC, how do you start?",
+      "choices": [
+       {
+        "t": "Describe: 'Three reports came after Friday noon.'",
+        "p": 2,
+        "f": "Facts first, then Express, Specify and Consequences."
+       },
+       {
+        "t": "'You never respect anyone's time.'",
+        "p": 0,
+        "f": "A judgement, not a description. He defends himself."
+       },
+       {
+        "t": "'Maybe you could try a bit earlier?'",
+        "p": 1,
+        "f": "So soft the message is lost."
+       }
+      ]
+     },
+     {
+      "text": "In DESC, what does 'Specify' mean?",
+      "choices": [
+       {
+        "t": "State the change you ask for",
+        "p": 2,
+        "f": "'Please send it by Thursday 17:00.' Clear and specific."
+       },
+       {
+        "t": "Describe how angry you feel",
+        "p": 0,
+        "f": "That is Express."
+       },
+       {
+        "t": "Warn of what will happen if not",
+        "p": 0,
+        "f": "That is Consequences."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assert",
+    "variants": [
+     {
+      "text": "Your boss asks you to take on a new client this week. Your team is already at full load.",
+      "choices": [
+       {
+        "t": "Yes to the goal, no to now, yes to an option",
+        "p": 2,
+        "f": "'I want the client served well; not this week; I can start on the 20th.' Accepted."
+       },
+       {
+        "t": "Say yes and quietly work late",
+        "p": 0,
+        "f": "Quality falls and the team burns out."
+       },
+       {
+        "t": "Say no without explanation",
+        "p": 1,
+        "f": "A bare no damages the relationship."
+       }
+      ]
+     },
+     {
+      "text": "A supplier asks for payment before delivery, which your policy forbids.",
+      "choices": [
+       {
+        "t": "Positive no with an alternative",
+        "p": 2,
+        "f": "No to prepayment; yes to faster payment after delivery. He agrees."
+       },
+       {
+        "t": "Agree to keep the relationship",
+        "p": 0,
+        "f": "You break policy and carry the risk."
+       },
+       {
+        "t": "Ignore the request and hope he drops it",
+        "p": 0,
+        "f": "Silence creates confusion and delays."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assert",
+    "variants": [
+     {
+      "text": "The night shift will close next month. How do you tell the team?",
+      "choices": [
+       {
+        "t": "Headline first, then reason, impact, next steps",
+        "p": 2,
+        "f": "No buried message. People can ask questions about what happens next."
+       },
+       {
+        "t": "Start with a long talk about market trends",
+        "p": 0,
+        "f": "People sense bad news and stop listening."
+       },
+       {
+        "t": "Let the rumours spread first",
+        "p": 0,
+        "f": "Trust is lost and stories grow."
+       }
+      ]
+     },
+     {
+      "text": "After the bad news, a worker argues the decision should change. It is final.",
+      "choices": [
+       {
+        "t": "Listen and acknowledge, but keep it final",
+        "p": 2,
+        "f": "You recognise his feelings without reopening the decision."
+       },
+       {
+        "t": "Promise to reconsider to calm him",
+        "p": 0,
+        "f": "False hope makes it worse later."
+       },
+       {
+        "t": "Tell him to accept it and move on",
+        "p": 0,
+        "f": "Dismissive. He feels unheard."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "prep",
+    "variants": [
+     {
+      "text": "Sara's facts: two deadlines missed, the tool freezes, extra workload. What is the best agreed outcome?",
+      "choices": [
+       {
+        "t": "Clear actions, owners and a review date",
+        "p": 2,
+        "f": "Temporary help, a fix for the tool, and a review in two weeks."
+       },
+       {
+        "t": "A warning letter to be safe",
+        "p": 0,
+        "f": "Discipline ignores the causes you found."
+       },
+       {
+        "t": "Agree to talk again someday",
+        "p": 1,
+        "f": "Without dates and owners, nothing changes."
+       }
+      ]
+     },
+     {
+      "text": "Going into the talk, you want both results and a good relationship with Sara. Which mindset do you bring?",
+      "choices": [
+       {
+        "t": "Look for an outcome that serves both",
+        "p": 2,
+        "f": "Start with heart: avoid the either-or choice. You get the deadline fix and keep her trust."
+       },
+       {
+        "t": "Accept a weaker result to keep the peace",
+        "p": 0,
+        "f": "The sucker's choice: you lose results to protect the relationship."
+       },
+       {
+        "t": "Push for the result; trust can be repaired",
+        "p": 0,
+        "f": "The other sucker's choice: results now, damaged trust later."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
