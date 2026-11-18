@@ -1,0 +1,475 @@
+{
+ "slug": "angola-taxation-and-payroll",
+ "title": "Month-end at Ondjila Foods",
+ "content": {
+  "role": "Payroll & Tax Officer",
+  "company": "Ondjila Foods, Lda. (fictional), a food distributor in Luanda with 52 staff",
+  "briefing": "It is your second month as Payroll & Tax Officer. Payroll closes this week, the CFO wants the numbers today, and the auditors arrive next month. Every decision you make is recorded. Use the 2026 rules from the course: INSS 3% employee and 8% employer, meal and transport allowances non-taxable up to Kz 30,000 a month, and the 2026 IRT table.",
+  "skills": {
+   "calc": "Payroll calculation",
+   "comply": "Tax & INSS compliance",
+   "control": "Payroll controls",
+   "iva": "IVA & invoices"
+  },
+  "steps": [
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "A sales rep's month: base salary Kz 400,000, overtime Kz 50,000, meal allowance Kz 20,000, transport allowance Kz 10,000. Gross pay is Kz 480,000. What taxable income do you enter for IRT?",
+      "choices": [
+       {
+        "t": "Kz 435,600",
+        "p": 2,
+        "f": "Correct: 480,000 minus 30,000 non-taxable allowances minus 14,400 employee INSS. Your working paper shows every step."
+       },
+       {
+        "t": "Kz 450,000",
+        "p": 0,
+        "f": "You removed the allowances but forgot the employee INSS. The rep is over-taxed and complains on payday."
+       },
+       {
+        "t": "Kz 480,000",
+        "p": 0,
+        "f": "You taxed the full gross. Allowances within the limit and employee INSS come off first. The rep's payslip is wrong."
+       }
+      ]
+     },
+     {
+      "text": "A warehouse supervisor's month: base salary Kz 350,000, overtime Kz 30,000, meal allowance Kz 15,000, transport allowance Kz 10,000. Gross pay is Kz 405,000. What taxable income do you enter for IRT?",
+      "choices": [
+       {
+        "t": "Kz 367,850",
+        "p": 2,
+        "f": "Correct: 405,000 minus 25,000 non-taxable allowances minus 12,150 employee INSS (3%)."
+       },
+       {
+        "t": "Kz 380,000",
+        "p": 0,
+        "f": "You removed the allowances but not the employee INSS. The supervisor is over-taxed."
+       },
+       {
+        "t": "Kz 392,850",
+        "p": 0,
+        "f": "You deducted INSS but taxed the allowances, which are within the Kz 30,000 limit. Wrong base."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "Taxable income for the sales rep is Kz 435,600. Using the 2026 table, what IRT do you withhold?",
+      "choices": [
+       {
+        "t": "Kz 75,014",
+        "p": 2,
+        "f": "Correct: bracket 300,000 to 500,000, so 49,250 + 19% x 135,600."
+       },
+       {
+        "t": "Kz 82,764",
+        "p": 0,
+        "f": "You applied 19% to the whole income. IRT is a fixed amount plus the rate on the excess over the bracket's lower limit."
+       },
+       {
+        "t": "Kz 73,658",
+        "p": 0,
+        "f": "You used the 200,000 to 300,000 bracket (31,250 + 18% x 235,600). 435,600 sits in the 300,000 to 500,000 bracket."
+       }
+      ]
+     },
+     {
+      "text": "Taxable income for the supervisor is Kz 367,850. Using the 2026 table, what IRT do you withhold?",
+      "choices": [
+       {
+        "t": "Kz 62,141.50",
+        "p": 2,
+        "f": "Correct: bracket 300,000 to 500,000, so 49,250 + 19% x 67,850."
+       },
+       {
+        "t": "Kz 69,891.50",
+        "p": 0,
+        "f": "You applied 19% to the whole income instead of only the excess over Kz 300,000."
+       },
+       {
+        "t": "Kz 61,463.00",
+        "p": 0,
+        "f": "You used the 200,000 to 300,000 bracket. 367,850 is in the next bracket."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "The CFO asks: 'What does the sales rep really cost us this month?' Gross pay is Kz 480,000.",
+      "choices": [
+       {
+        "t": "Kz 518,400: gross plus 8% employer INSS",
+        "p": 2,
+        "f": "Correct. The CFO updates the budget with the real employer cost."
+       },
+       {
+        "t": "Kz 480,000: the gross is the cost",
+        "p": 0,
+        "f": "You left out the employer's 8% INSS. The budget is short every month."
+       },
+       {
+        "t": "Kz 532,800: gross plus 11% INSS",
+        "p": 0,
+        "f": "The 3% employee share is deducted from the employee's pay, not added to the company's cost."
+       }
+      ]
+     },
+     {
+      "text": "The CFO asks: 'What does the supervisor really cost us this month?' Gross pay is Kz 405,000.",
+      "choices": [
+       {
+        "t": "Kz 437,400: gross plus 8% employer INSS",
+        "p": 2,
+        "f": "Correct. Employer cost is gross plus the employer's 8%."
+       },
+       {
+        "t": "Kz 417,150: gross plus 3% INSS",
+        "p": 0,
+        "f": "3% is the employee's share, deducted from pay. The employer pays 8% on top."
+       },
+       {
+        "t": "Kz 449,550: gross plus 11% INSS",
+        "p": 0,
+        "f": "The employee's 3% is not an extra company cost. The budget is overstated."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "comply",
+    "variants": [
+     {
+      "text": "June salaries were paid on 30 June. Your manager asks for the latest date to declare and pay INSS for June.",
+      "choices": [
+       {
+        "t": "10 July, with the remuneration sheet",
+        "p": 2,
+        "f": "Correct. The sheet and payment are due by the 10th of the following month. You add it to the calendar."
+       },
+       {
+        "t": "31 July, together with the IRT",
+        "p": 0,
+        "f": "That is the IRT deadline. INSS is late from 11 July: 1% interest per month plus possible fines."
+       },
+       {
+        "t": "When cash allows; 1% interest is small",
+        "p": 0,
+        "f": "Fines of one to eight times the average monthly pay can follow, and workers' benefits may be affected."
+       }
+      ]
+     },
+     {
+      "text": "March salaries were paid on 28 March. The CFO asks when IRT withheld in March must reach the State.",
+      "choices": [
+       {
+        "t": "By the end of April",
+        "p": 2,
+        "f": "Correct. Withheld IRT is due by the end of the month after payment."
+       },
+       {
+        "t": "By 10 April",
+        "p": 1,
+        "f": "Paying early is safe, but 10 April is the INSS deadline. Know which date belongs to which tax."
+       },
+       {
+        "t": "With the annual return in February",
+        "p": 0,
+        "f": "Withheld IRT is delivered monthly. Waiting until February means a fine equal to the amount not delivered."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "comply",
+    "variants": [
+     {
+      "text": "Cash is tight. The CFO says: 'Hold this month's withheld IRT for six weeks. We need it to pay a key supplier.'",
+      "choices": [
+       {
+        "t": "Refuse politely: the withheld IRT belongs to the State, and show the fine",
+        "p": 2,
+        "f": "The CFO hears that non-delivery means a fine equal to the amount not delivered, and finds another way to pay the supplier."
+       },
+       {
+        "t": "Deliver half now and the rest in six weeks, with a note to the auditors",
+        "p": 1,
+        "f": "Better than nothing, but the late half still triggers the fine. Withheld tax is never working capital."
+       },
+       {
+        "t": "Agree for six weeks and record the IRT as a payable so nothing is lost",
+        "p": 0,
+        "f": "The auditors find it. The company pays a fine equal to the tax held back, and your name is on the payroll."
+       }
+      ]
+     },
+     {
+      "text": "The sales director suggests: 'Use the employees' INSS deductions for two weeks to fund a promotion. We pay it back before anyone notices.'",
+      "choices": [
+       {
+        "t": "Refuse: deductions belong to INSS and are due by the 10th",
+        "p": 2,
+        "f": "You explain the 1% monthly interest, the fines and the risk to workers' benefits. The idea is dropped."
+       },
+       {
+        "t": "Ask the CFO to decide, since cash planning is a finance call",
+        "p": 1,
+        "f": "Escalating is reasonable, but you should state clearly that this is not allowed and why."
+       },
+       {
+        "t": "Agree, if the money is back before the INSS deadline on the 10th",
+        "p": 0,
+        "f": "It is paid late, interest and a fine follow, and two workers find gaps in their INSS record."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "An email from a personal address, signed by a driver, asks you to change his salary bank account 'urgently, before payroll'.",
+      "choices": [
+       {
+        "t": "Ask for the signed change form and call him on the number HR has",
+        "p": 2,
+        "f": "The real driver never sent it. You stopped a payroll fraud attempt."
+       },
+       {
+        "t": "Change it now so he is paid on time, then send HR the email for the file",
+        "p": 0,
+        "f": "The salary goes to a fraudster. Master data changes need a signed form and approval first."
+       },
+       {
+        "t": "Reply to his email and ask him to confirm the new account number in writing",
+        "p": 1,
+        "f": "Careful, but the fraudster controls that email and 'confirms'. Verify through a channel you already trust."
+       }
+      ]
+     },
+     {
+      "text": "A branch manager asks you to add a new hire to this month's payroll today. There is no contract, no NIF and no INSS registration yet.",
+      "choices": [
+       {
+        "t": "Hold the payment until the contract, NIF and INSS registration are in place",
+        "p": 2,
+        "f": "The manager sends the documents within two days. The worker is paid correctly and is registered from day one."
+       },
+       {
+        "t": "Add the person now so they are paid, and flag the missing papers to HR",
+        "p": 1,
+        "f": "Well meant, but unregistered workers and missing NIFs cause errors and penalties. Documents come first."
+       },
+       {
+        "t": "Add the person; the branch manager approved it in writing and is accountable",
+        "p": 0,
+        "f": "Seniority is not a control. Someone on the payroll without a contract or NIF is a classic ghost-worker pattern."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "This month's gross payroll is 9% higher than last month. Headcount is the same. The CFO wants to approve in an hour.",
+      "choices": [
+       {
+        "t": "Run a variance check by employee before approval",
+        "p": 2,
+        "f": "You find one overtime entry typed as 300 hours instead of 30. Corrected before payment."
+       },
+       {
+        "t": "Approve now and add a note to review the variance in next month's close",
+        "p": 1,
+        "f": "The error is paid and is hard to recover. Variance analysis is done before payment, not after."
+       },
+       {
+        "t": "Approve; overtime is normal this season and the CFO is waiting",
+        "p": 0,
+        "f": "A Kz 2.4 million overpayment goes out. 'Season' is not an explanation for a variance."
+       }
+      ]
+     },
+     {
+      "text": "The payroll list has 52 people. The HR list has 51. The INSS remuneration sheet has 51.",
+      "choices": [
+       {
+        "t": "Stop and identify the extra person before paying",
+        "p": 2,
+        "f": "The extra name belongs to someone who left three months ago and is still being paid. You stop it."
+       },
+       {
+        "t": "Pay all 52 on time and investigate the difference right after payday",
+        "p": 1,
+        "f": "The investigation finds a leaver still being paid, but another month's salary is already gone."
+       },
+       {
+        "t": "Pay all 52; one person is a small difference and HR lists are often late",
+        "p": 0,
+        "f": "One ghost salary a month adds up fast, and the auditors will ask why the lists never matched."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "The bank transfer file totals Kz 18,500 more than total net pay on the payroll register.",
+      "choices": [
+       {
+        "t": "Do not pay until the difference is found",
+        "p": 2,
+        "f": "You find a duplicated advance refund. Fixed, and the file now matches the register."
+       },
+       {
+        "t": "Pay on time and correct the Kz 18,500 in next month's payroll",
+        "p": 1,
+        "f": "Money leaves without an explanation. Recovering it from an employee takes weeks."
+       },
+       {
+        "t": "Adjust the bank file total to match the register and send it",
+        "p": 0,
+        "f": "Changing the total hides the error instead of finding it. The file and register must agree line by line."
+       }
+      ]
+     },
+     {
+      "text": "IRT on the payroll summary is Kz 4,120,000. The tax payable account shows Kz 4,065,000.",
+      "choices": [
+       {
+        "t": "Reconcile both before delivering the IRT",
+        "p": 2,
+        "f": "A manual journal posted to the wrong account explains the Kz 55,000. Corrected, and the right amount is delivered."
+       },
+       {
+        "t": "Deliver Kz 4,065,000 from the ledger",
+        "p": 0,
+        "f": "You under-deliver Kz 55,000 of withheld tax. That shortfall carries a fine equal to the amount."
+       },
+       {
+        "t": "Deliver Kz 4,120,000 and investigate later",
+        "p": 1,
+        "f": "Delivering what was withheld is safer, but the ledger stays wrong until someone reconciles it."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "iva",
+    "variants": [
+     {
+      "text": "A supplier invoice for Kz 2,000,000 plus IVA shows your company's NIF with one wrong digit.",
+      "choices": [
+       {
+        "t": "Ask the supplier for a corrected invoice first",
+        "p": 2,
+        "f": "The supplier corrects it. You deduct Kz 280,000 of input IVA safely."
+       },
+       {
+        "t": "Deduct the IVA now; the company name is correct",
+        "p": 0,
+        "f": "A wrong NIF means no right to deduct. The Kz 280,000 deduction is rejected in an audit."
+       },
+       {
+        "t": "Pay the invoice and simply skip the IVA deduction",
+        "p": 1,
+        "f": "Safe, but you lose Kz 280,000 the company could recover with a corrected invoice."
+       }
+      ]
+     },
+     {
+      "text": "Sales invoices this month total Kz 12,000,000 before IVA at 14%. Valid input IVA is Kz 910,000. What IVA is payable?",
+      "choices": [
+       {
+        "t": "Kz 770,000",
+        "p": 2,
+        "f": "Correct: output 1,680,000 minus valid input 910,000."
+       },
+       {
+        "t": "Kz 1,680,000",
+        "p": 0,
+        "f": "You ignored the valid input IVA. The company overpays."
+       },
+       {
+        "t": "Kz 2,590,000",
+        "p": 0,
+        "f": "You added the input IVA instead of subtracting it. IVA payable = output IVA - valid input IVA."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "comply",
+    "variants": [
+     {
+      "text": "It is 3 January. The payroll system still holds last year's IRT table.",
+      "choices": [
+       {
+        "t": "Update to the table in force, check it against AGT, then run January payroll",
+        "p": 2,
+        "f": "January payslips use the right table, and there are no corrections later."
+       },
+       {
+        "t": "Run January as usual and apply the new table with corrections in February",
+        "p": 1,
+        "f": "Every January payslip is wrong, and February needs corrections for everyone."
+       },
+       {
+        "t": "Keep last year's table until AGT confirms the new one in writing",
+        "p": 0,
+        "f": "A new table took effect on 1 January 2026. Using an old table is a common audit finding."
+       }
+      ]
+     },
+     {
+      "text": "It is mid-January. The CFO asks what annual payroll filing is coming up.",
+      "choices": [
+       {
+        "t": "The Modelo 2 employer IRT return, due in February",
+        "p": 2,
+        "f": "You start collecting the year's totals now, so February is calm."
+       },
+       {
+        "t": "Nothing extra; IRT is delivered monthly, so there is no annual return",
+        "p": 0,
+        "f": "The annual Modelo 2 return is due in February. Missing it brings a penalty."
+       },
+       {
+        "t": "Nothing yet; AGT sends a reminder before any annual filing",
+        "p": 0,
+        "f": "No reminder comes. Deadlines belong in your own compliance calendar."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "All figures recomputed from the course (2026 IRT table, INSS 3%/8%, Kz 30,000 allowance limit). Answer lengths balanced. Fictional company."
+ }
+}

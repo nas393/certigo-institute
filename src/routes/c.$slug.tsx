@@ -37,6 +37,8 @@ function CertDetail() {
   const { translation, loading: translating, error: translateError } = useCourseTranslation(slug);
   const { info, reload: reloadAccess } = useCheckoutInfo(c?.id);
   const [pack, setPack] = useState<LessonPack | null>(null);
+  const [hasMission, setHasMission] = useState(false);
+  useEffect(() => { (supabase.rpc as any)("mission_info", { _slug: slug }).then(({ data }: any) => setHasMission(!!data)); }, [slug]);
   const [related, setRelated] = useState<Array<{ slug: string; title: string; summary: string }>>([]);
   useEffect(() => {
     if (!c?.category) return;
@@ -107,6 +109,11 @@ function CertDetail() {
         {modules.length > 0 && (
           <Button size="lg" className="w-full bg-emerald-600 text-white hover:bg-emerald-700" onClick={() => nav({ to: "/c/$slug/lesson/$n", params: { slug, n: "1" } })}>
             {L.startLesson1} <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        )}
+        {hasMission && (
+          <Button size="lg" variant="outline" className="w-full border-emerald-600 text-emerald-700" onClick={() => nav({ to: "/c/$slug/mission", params: { slug } })}>
+            Play the mission · free <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         )}
         {info?.access.access && (

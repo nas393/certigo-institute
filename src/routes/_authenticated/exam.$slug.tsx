@@ -21,7 +21,8 @@ type Start =
   | { status: "wait"; next_allowed_at: string; attempts: number }
   | { status: "certified"; serial: string }
   | { status: "payment_required" }
-  | { status: "lessons_required"; remaining: number };
+  | { status: "lessons_required"; remaining: number }
+  | { status: "mission_required" };
 
 function Exam() {
   const { slug } = Route.useParams();
@@ -61,6 +62,21 @@ function Exam() {
           <h1 className="font-display text-3xl font-black tracking-tighter">You're already certified.</h1>
           <Button asChild className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700">
             <Link to="/issued/$serial" params={{ serial: start.serial }}>View certificate</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
+  if (start?.status === "mission_required") {
+    return (
+      <div className="min-h-screen bg-background"><Header />
+        <div className="mx-auto max-w-2xl px-5 py-16 text-center sm:px-8">
+          <h1 className="font-display text-3xl font-black tracking-tighter">Pass the mission first.</h1>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Play the free role mission for this course. Pass it to unlock the certificate exam; your skill profile goes on the certificate.
+          </p>
+          <Button asChild className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700">
+            <Link to="/c/$slug/mission" params={{ slug }}>Play the mission</Link>
           </Button>
         </div>
       </div>
