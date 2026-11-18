@@ -1,0 +1,123 @@
+{
+ "slug": "project-management-essentials",
+ "title": "The new racking project",
+ "review": {"learner": 9, "manager": 9, "director": 9, "score_pct": 90, "checked": "2026-11-18", "notes": "Built on the course: charter, roles, WBS and 100% rule, scope creep, CPM and float, crashing vs fast tracking, parametric estimate, reserves, EVM (CPI, SPI, EAC), risk vs issue, P x I, threat responses. All calculations checked. Fictional company."},
+ "content": {
+  "role": "Project Manager",
+  "company": "Coastline Foods (fictional), a food manufacturer building new warehouse racking",
+  "briefing": "You manage a project to install new racking in the finished-goods warehouse. Budget: Kz 10 million. Target: 9 weeks. The operations director is the sponsor. The warehouse must keep shipping during the work.",
+  "skills": {"scope": "Scope and charter", "time": "Schedule", "cost": "Cost and earned value", "risk": "Risk and control"},
+  "steps": [
+   {"skill": "scope", "variants": [
+    {"text": "The sponsor wants to start work tomorrow 'and write things down later'. What do you do first?",
+     "choices": [
+      {"t": "Agree a short charter: purpose, objectives, scope, budget, top risks", "p": 2, "f": "One page, signed in two days. Later arguments about scope are settled by it."},
+      {"t": "Start tomorrow and document decisions as the work goes on", "p": 0, "f": "Without a charter, nobody agrees what 'done' means. Disputes start in week 2."},
+      {"t": "Write a full 40-page plan before any work starts at all", "p": 1, "f": "Planning is needed, but a charter comes first and the details follow."}]},
+    {"text": "Which objective is fit for the charter?",
+     "choices": [
+      {"t": "Install 1,200 pallet positions by 30 June within Kz 10 million", "p": 2, "f": "SMART: specific, measurable, achievable, relevant and timed."},
+      {"t": "Greatly improve warehouse storage capacity as soon as possible", "p": 0, "f": "Not measurable or timed. Nobody can say when it is achieved."},
+      {"t": "Install new racking with the best quality and at the lowest cost", "p": 1, "f": "A wish, not an objective. Add numbers and a date."}]}]},
+   {"skill": "scope", "variants": [
+    {"text": "Your WBS has racking, installation and safety inspection, but no project management or staff training. The sponsor approves it.",
+     "choices": [
+      {"t": "Add the missing work: the WBS must hold 100% of it", "p": 2, "f": "The 100% rule: all the work and only that work, including project management."},
+      {"t": "Keep it; management and training are overhead, not work", "p": 0, "f": "Unplanned work still costs time and money. The budget is short."},
+      {"t": "Add them later if there is still budget left at the end", "p": 1, "f": "Later means unfunded. Include them in the WBS now."}]},
+    {"text": "A team member proposes one work package: 'install all racking', estimated at 900 hours.",
+     "choices": [
+      {"t": "Split it by aisle, so each package is 8 to 80 hours", "p": 2, "f": "Smaller packages have one owner, can be estimated and have a clear 'done'."},
+      {"t": "Keep it as one package; it is one type of task", "p": 0, "f": "900 hours cannot be tracked or estimated well. Problems hide inside it."},
+      {"t": "Split it into two packages of 450 hours each", "p": 1, "f": "Still far too large to control. Aim for 8 to 80 hours."}]}]},
+   {"skill": "scope", "variants": [
+    {"text": "In week 3, the warehouse manager asks the installers to also paint the floor markings. It is not in scope.",
+     "choices": [
+      {"t": "Log a change request with its impact on time and cost", "p": 2, "f": "The sponsor approves it with 3 extra days and Kz 400,000. Scope stays controlled."},
+      {"t": "Agree informally; it is small and keeps him happy", "p": 0, "f": "Scope creep. Three more 'small' requests follow and the date slips."},
+      {"t": "Refuse it outright; the scope is fixed once signed", "p": 1, "f": "Firm, but the request may be valuable. Use change control, not a blanket no."}]},
+    {"text": "An installer adds extra decorative end panels nobody asked for, 'to make it look premium'.",
+     "choices": [
+      {"t": "Stop it: gold plating uses time and money", "p": 2, "f": "Extras nobody asked for consume budget. Deliver what was agreed."},
+      {"t": "Allow it; the customer will be pleased", "p": 0, "f": "The panels cost Kz 600,000 that the budget does not have."},
+      {"t": "Allow it if the team works extra hours", "p": 1, "f": "Overtime still costs money, and the scope was never agreed."}]}]},
+   {"skill": "time", "variants": [
+    {"text": "Your network has three paths: 6, 8 and 9 weeks. How long is the project, and where do you focus?",
+     "choices": [
+      {"t": "9 weeks; manage the 9-week path daily", "p": 2, "f": "The longest path is critical. Any delay on it delays the end."},
+      {"t": "8 weeks; the average of the paths", "p": 0, "f": "Durations are not averaged. The longest path sets the end."},
+      {"t": "6 weeks; the shortest path finishes first", "p": 0, "f": "The project ends only when all paths are done: 9 weeks."}]},
+    {"text": "Activity 'order racking' has early start week 3 and late start week 5. What is its total float?",
+     "choices": [
+      {"t": "2 weeks", "p": 2, "f": "Correct: late start minus early start. It can slip 2 weeks without delaying the end."},
+      {"t": "0 weeks", "p": 0, "f": "Zero float means critical. This activity has slack."},
+      {"t": "8 weeks", "p": 0, "f": "You added the dates. Float = late start minus early start."}]}]},
+   {"skill": "time", "variants": [
+    {"text": "The sponsor wants one week saved. Inspection must follow installation, which is on the critical path.",
+     "choices": [
+      {"t": "Crash a critical task: add a second install crew", "p": 2, "f": "Crashing adds resources at extra cost, on a critical activity. The week is saved."},
+      {"t": "Add people to the non-critical labelling task", "p": 0, "f": "That task has float. Speeding it up saves no time on the project."},
+      {"t": "Overlap installation and safety inspection", "p": 1, "f": "Fast tracking adds risk, and inspection must follow installation."}]},
+    {"text": "Customs holds the racking at the port for 2 weeks. 'Receive racking' is critical. What happens?",
+     "choices": [
+      {"t": "The end date moves 2 weeks unless you compress later work", "p": 2, "f": "A delay on the critical path delays the project. You recalculate and plan options."},
+      {"t": "Nothing; other tasks can use their float", "p": 0, "f": "Float on other paths does not help a critical delay."},
+      {"t": "It depends only on how fast installers work", "p": 1, "f": "Faster installation can help, but first see that the end date moves."}]}]},
+   {"skill": "cost", "variants": [
+    {"text": "Racking costs Kz 15,000 per pallet position. You need 400 positions in aisle A. What is the parametric estimate?",
+     "choices": [
+      {"t": "Kz 6,000,000", "p": 2, "f": "Correct: unit rate x quantity."},
+      {"t": "Kz 415,000", "p": 0, "f": "You added the numbers. Parametric = rate x quantity."},
+      {"t": "Kz 600,000", "p": 0, "f": "A zero is missing: 15,000 x 400 = 6,000,000."}]},
+    {"text": "Estimates total Kz 9 million. You add Kz 600,000 for listed risks, and the board holds Kz 400,000 for the unknown. What is the cost baseline?",
+     "choices": [
+      {"t": "Kz 9.6 million", "p": 2, "f": "Correct: estimates + contingency. Management reserve is outside the baseline."},
+      {"t": "Kz 10 million", "p": 0, "f": "That includes management reserve. It is held by the board, not in the baseline."},
+      {"t": "Kz 9 million", "p": 0, "f": "Contingency for identified risks is part of the baseline."}]}]},
+   {"skill": "cost", "variants": [
+    {"text": "Week 4: PV = Kz 5.0 m, EV = Kz 4.0 m, AC = Kz 5.0 m. What are CPI and SPI?",
+     "choices": [
+      {"t": "CPI 0.80, SPI 0.80: over budget and behind", "p": 2, "f": "Correct: CPI = EV / AC, SPI = EV / PV. Both below 1."},
+      {"t": "CPI 1.00, SPI 0.80: on budget but behind", "p": 0, "f": "Spending equals plan, but you earned only Kz 4 m for Kz 5 m. Cost is a problem."},
+      {"t": "CPI 1.25, SPI 1.25: under budget and ahead", "p": 0, "f": "You divided the wrong way. CPI = EV / AC."}]},
+    {"text": "Week 5: PV = Kz 4.0 m, EV = Kz 4.4 m, AC = Kz 4.0 m. What do you report?",
+     "choices": [
+      {"t": "CPI 1.10, SPI 1.10: under budget and ahead", "p": 2, "f": "Correct. Both indices above 1 are good."},
+      {"t": "CPI 0.91, SPI 0.91: over budget and behind", "p": 0, "f": "You divided the wrong way. CPI = EV / AC = 4.4 / 4.0."},
+      {"t": "On plan, since actual cost equals planned value", "p": 0, "f": "Comparing AC with PV mixes cost and time. Use EV."}]}]},
+   {"skill": "cost", "variants": [
+    {"text": "BAC is Kz 10 million and CPI is 0.80. If the trend continues, what is the estimate at completion?",
+     "choices": [
+      {"t": "Kz 12.5 million", "p": 2, "f": "Correct: EAC = BAC / CPI. You report the forecast and an action plan now."},
+      {"t": "Kz 8.0 million", "p": 0, "f": "You multiplied. A CPI below 1 means the final cost rises."},
+      {"t": "Kz 10.0 million", "p": 0, "f": "That assumes the problem disappears. Report the forecast, not hope."}]},
+    {"text": "The CFO asks only 'how much have we spent?'. CPI is 0.85.",
+     "choices": [
+      {"t": "Give spend and the forecast at completion", "p": 2, "f": "Spend alone hides the overrun. The forecast lets the CFO act early."},
+      {"t": "Give spend to date, which is what was asked", "p": 1, "f": "Accurate, but the CFO learns of the overrun too late."},
+      {"t": "Give spend and say the budget will be met", "p": 0, "f": "With CPI 0.85, that is not true. Trust is lost when the overrun appears."}]}]},
+   {"skill": "risk", "variants": [
+    {"text": "Two risks: A, a crane delay (probability 4, impact 5). B, a paint shortage (probability 2, impact 3). Which first?",
+     "choices": [
+      {"t": "A: score 20 against 6", "p": 2, "f": "P x I: 4 x 5 = 20, 2 x 3 = 6. Focus on the highest score."},
+      {"t": "B: it is easier to solve quickly", "p": 0, "f": "Ease is not priority. The crane risk could stop the project."},
+      {"t": "Both equally, in the order logged", "p": 1, "f": "Logging order is not priority. Score them."}]},
+    {"text": "The crane already broke down this morning. Where does it go?",
+     "choices": [
+      {"t": "Issue log: it is happening now", "p": 2, "f": "A risk is uncertain; an issue is already happening. You act today."},
+      {"t": "Risk register, with a high score", "p": 0, "f": "It is no longer uncertain. It needs action, not scoring."},
+      {"t": "Nowhere; tell the sponsor by phone", "p": 1, "f": "Tell the sponsor, yes, but log it so it is tracked and closed."}]}]},
+   {"skill": "risk", "variants": [
+    {"text": "Racking could be damaged in transport. You buy insurance. Which threat response is this?",
+     "choices": [
+      {"t": "Transfer", "p": 2, "f": "Correct: the financial impact passes to a third party."},
+      {"t": "Avoid", "p": 0, "f": "Avoid changes the plan to remove the risk. The risk still exists."},
+      {"t": "Mitigate", "p": 0, "f": "Mitigate reduces probability or impact, such as better packing."}]},
+    {"text": "Installation work may block forklift lanes during shipping hours. What do you do?",
+     "choices": [
+      {"t": "Avoid: install only at night when shipping stops", "p": 2, "f": "Changing the plan removes the threat. Shipping is never blocked."},
+      {"t": "Accept: the warehouse will cope somehow", "p": 0, "f": "Shipping must continue. Accepting a high-impact threat is not reasonable."},
+      {"t": "Transfer: ask the installer to pay any losses", "p": 1, "f": "It moves cost, but late shipments still hurt customers."}]}]}
+  ]
+ }
+}
