@@ -17,7 +17,7 @@ export const Route = createFileRoute("/_authenticated/exam/$slug")({
 
 type Item = { i: number; q: string; options: { j: number; text: string }[] };
 type Start =
-  | { status: "ok"; session_id: string; items: Item[] }
+  | { status: "ok"; session_id: string; expires_at: string; time_limit_seconds?: number; items: Item[] }
   | { status: "wait"; next_allowed_at: string; attempts: number }
   | { status: "certified"; serial: string }
   | { status: "payment_required" }
@@ -31,6 +31,8 @@ function Exam() {
   const [cert, setCert] = useState<any>(null);
   const [start, setStart] = useState<Start | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => { const t = window.setInterval(() => setNow(Date.now()), 1000); return () => window.clearInterval(t); }, []);
   const [submitting, setSubmitting] = useState(false);
   const { t } = useI18n();
   const { translation, loading: translating } = useCourseTranslation(slug);
@@ -54,6 +56,13 @@ function Exam() {
       options: it.options.map((o) => translation?.questions?.[it.i]?.options?.[o.j] ?? o.text),
     }));
   }, [start, translation]);
+
+  // Time limit: auto-submit what is answered when the clock reaches zero (the server allows 30 s grace).
+  const expiresAt = start?.status === "ok" && start.expires_at ? Date.parse(start.expires_at) : null;
+  useEffect(() => {
+    if (expiresAt && now >= expiresAt && !submitting) void submit(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [now, expiresAt]);
 
   if (start?.status === "certified") {
     return (
@@ -126,11 +135,12 @@ function Exam() {
   }
 
   if (!cert || start?.status !== "ok") return <div className="grid min-h-screen place-items-center"><Loader2 className="animate-spin" /></div>;
+  const left = expiresAt ? Math.max(0, Math.round((expiresAt - now) / 1000)) : 0;
 
-  async function submit() {
-    if (!user || !cert) return;
+  async function submit(timeUp = false) {
+    if (!user || !cert || submitting) return;
     const total = questions.length;
-    if (Object.keys(answers).length < total) {
+    if (!timeUp && Object.keys(answers).length < total) {
       toast.error("Answer every question first."); return;
     }
     setSubmitting(true);
@@ -181,7 +191,10 @@ function Exam() {
             <Loader2 className="h-3 w-3 animate-spin" /> {t("course.translating")}
           </p>
         )}
-        <p className="mt-2 text-sm text-muted-foreground">{questions.length} questions · pass at {cert.pass_score}%</p>
+        <p className="mt-2 text-sm text-muted-foreground">{questions.length} questions · pass at {cert.pass_score}%{start.time_limit_seconds ? ` · ${Math.round(start.time_limit_seconds / 60)} min` : ""}</p>
+        <div className={`sticky top-16 z-30 mt-4 rounded-lg border px-4 py-2 text-center font-mono text-sm backdrop-blur ${left <= 60 ? "border-red-500 bg-red-50/90 text-red-700" : "border-border bg-background/90"}`} aria-live="polite">
+          Time left {String(Math.floor(left / 60)).padStart(2, "0")}:{String(left % 60).padStart(2, "0")} · unanswered questions score zero
+        </div>
 
         <div className="mt-8 space-y-6">
           {questions.map((q, i) => (
@@ -203,7 +216,7 @@ function Exam() {
           ))}
         </div>
 
-        <Button onClick={submit} disabled={submitting} className="mt-8 bg-emerald-600 text-white hover:bg-emerald-700">
+        <Button onClick={() => submit()} disabled={submitting} className="mt-8 bg-emerald-600 text-white hover:bg-emerald-700">
           {submitting ? "Issuing…" : "Submit & issue certificate"}
         </Button>
       </div>
