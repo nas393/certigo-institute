@@ -1,0 +1,123 @@
+{
+ "slug": "people-management-fundamentals",
+ "title": "Your first team",
+ "review": {"learner": 9, "manager": 9, "director": 9, "score_pct": 90, "checked": "2026-11-18", "notes": "Built on the course: doer to manager, Situational Leadership D1-D4, delegation brief and levels, SMART, OKR progress formula, Eisenhower, one-to-ones, active listening, SBI, receiving feedback, GROW, tell vs coach. Calculations checked. Fictional company."},
+ "content": {
+  "role": "Team Manager (new)",
+  "company": "Keystone Insurance Brokers (fictional), a broker with a 7-person client service team",
+  "briefing": "You were the best client service adviser. Now you manage the team of seven, including two former peers. Your director judges you on team results, not your own work. This is your first quarter.",
+  "skills": {"lead": "Leading and delegating", "goals": "Goals and priorities", "talk": "One-to-ones and listening", "dev": "Feedback and coaching"},
+  "steps": [
+   {"skill": "lead", "variants": [
+    {"text": "Week one. A difficult client file arrives. You could solve it in 20 minutes, faster than anyone. What do you do?",
+     "choices": [
+      {"t": "Give it to an adviser and support them", "p": 2, "f": "You are judged on team results now. The adviser learns, and you stay free to lead."},
+      {"t": "Solve it yourself; it is quicker", "p": 0, "f": "You become the bottleneck. Next week there are ten such files on your desk."},
+      {"t": "Solve it, then explain how you did it", "p": 1, "f": "Better than nothing, but they learn more by doing it with support."}]},
+    {"text": "Your director asks what success looks like for you this quarter.",
+     "choices": [
+      {"t": "Team results: service levels and team growth", "p": 2, "f": "Correct. A manager is measured by what the team delivers."},
+      {"t": "My own number of client files closed", "p": 0, "f": "That was your job as an adviser. It is no longer the measure."},
+      {"t": "Fewer complaints reaching the director", "p": 1, "f": "Part of it, but too narrow. Results and development of the team count."}]}]},
+   {"skill": "lead", "variants": [
+    {"text": "Ana is new to claims handling and very excited to start. Which leadership style fits her now?",
+     "choices": [
+      {"t": "Directing: clear steps and close follow-up", "p": 2, "f": "D1: low competence, high enthusiasm. She needs direction, not freedom."},
+      {"t": "Delegating: let her organise it herself", "p": 0, "f": "Too much freedom too soon. She makes avoidable errors and loses confidence."},
+      {"t": "Supporting: listen and encourage her", "p": 1, "f": "Encouragement is nice, but she lacks the know-how. Direct first."}]},
+    {"text": "Pedro is highly skilled and fully committed on renewals. How do you lead him on renewals?",
+     "choices": [
+      {"t": "Delegating: agree the goal and let him run it", "p": 2, "f": "D4: high competence and commitment. Micromanaging would frustrate him."},
+      {"t": "Directing: check every renewal he sends", "p": 0, "f": "Over-supervising a D4 kills motivation."},
+      {"t": "Coaching: explain and ask his views each time", "p": 1, "f": "More than he needs. Give him room."}]}]},
+   {"skill": "lead", "variants": [
+    {"text": "You delegate a client report to Rui. What must the brief include?",
+     "choices": [
+      {"t": "Outcome, deadline, authority, resources, check-ins", "p": 2, "f": "Clear brief, no surprises. He knows what he can decide alone."},
+      {"t": "Just the deadline; he is experienced", "p": 0, "f": "Without the outcome and authority, he guesses. Rework follows."},
+      {"t": "A list of every step to follow", "p": 1, "f": "Too detailed for an experienced person. Define the result, not each step."}]},
+    {"text": "Rui will choose the report layout. He must consult you before sending it to the client. Which level is this?",
+     "choices": [
+      {"t": "Advise: he decides, after hearing your view", "p": 2, "f": "Level 5 of 7. Authority matches the responsibility you gave."},
+      {"t": "Tell: you decide and inform him", "p": 0, "f": "That is level 1. He would not decide anything."},
+      {"t": "Delegate: he decides without you", "p": 0, "f": "Level 7. Here you still want input before it goes out."}]}]},
+   {"skill": "goals", "variants": [
+    {"text": "Which goal is SMART?",
+     "choices": [
+      {"t": "Answer 90% of emails in 4 hours by 30 June", "p": 2, "f": "Specific, measurable, achievable, relevant and time-bound."},
+      {"t": "Improve email response times a lot", "p": 0, "f": "No metric, target or date."},
+      {"t": "Be the most responsive team in the company", "p": 0, "f": "Inspiring, but not measurable."}]},
+    {"text": "Key result: client satisfaction from 82% (baseline) to 95% (target). It is now 88%. What is the progress?",
+     "choices": [
+      {"t": "About 46%", "p": 2, "f": "Correct: (88 - 82) / (95 - 82) = 6 / 13."},
+      {"t": "About 93%", "p": 0, "f": "That is 88 / 95, which ignores the baseline."},
+      {"t": "6%", "p": 0, "f": "That is the points gained, not progress toward target."}]}]},
+   {"skill": "goals", "variants": [
+    {"text": "Key result: renewals on time from 40% to 80%. It is now 70%. Progress?",
+     "choices": [
+      {"t": "75%", "p": 2, "f": "Correct: (70 - 40) / (80 - 40) = 30 / 40."},
+      {"t": "87.5%", "p": 0, "f": "That is 70 / 80, which ignores the baseline."},
+      {"t": "30%", "p": 0, "f": "That is the points gained, not progress."}]},
+    {"text": "Monday: a client complaint due today, team training planning, a colleague's request for a 'quick chat', and old newsletters. What first?",
+     "choices": [
+      {"t": "The complaint now; schedule the training plan", "p": 2, "f": "Urgent and important first; important but not urgent gets a time slot."},
+      {"t": "The quick chat; it is fast to clear", "p": 0, "f": "Easy is not important. The complaint deadline slips."},
+      {"t": "Clear the newsletters to get a clean inbox", "p": 0, "f": "Neither urgent nor important. Drop them."}]}]},
+   {"skill": "talk", "variants": [
+    {"text": "How do you start a one-to-one with Ana?",
+     "choices": [
+      {"t": "Her topics first, then yours", "p": 2, "f": "The one-to-one is the team member's meeting. She raises a workload issue early."},
+      {"t": "Your list of tasks for her this week", "p": 0, "f": "It becomes a status meeting. She stops raising problems."},
+      {"t": "A review of her mistakes this month", "p": 0, "f": "Starting with mistakes shuts the conversation down."}]},
+    {"text": "Your one-to-ones keep being cancelled because 'something urgent' comes up.",
+     "choices": [
+      {"t": "Protect them as fixed, regular meetings", "p": 2, "f": "Problems surface early when the meetings happen. Fewer crises follow."},
+      {"t": "Hold them only when there is a problem", "p": 0, "f": "Then problems arrive late and big."},
+      {"t": "Replace them with a team meeting", "p": 1, "f": "Team meetings help, but private topics never come up there."}]}]},
+   {"skill": "talk", "variants": [
+    {"text": "Rui says: 'Nobody told me the client changed the policy, and now I look stupid.' What is the best response?",
+     "choices": [
+      {"t": "'You sound frustrated nobody told you.'", "p": 2, "f": "You reflect the feeling. He relaxes and explains what went wrong."},
+      {"t": "'Don't worry, it happens to everyone.'", "p": 0, "f": "It dismisses his feeling. He stops talking."},
+      {"t": "'You should have checked the file.'", "p": 0, "f": "Judgement before listening. He gets defensive."}]},
+    {"text": "Pedro says 'the client is unhappy'. What do you ask?",
+     "choices": [
+      {"t": "'What exactly did the client say?'", "p": 2, "f": "Clarifying gets facts. The client is unhappy about one fee, not the service."},
+      {"t": "'Is it serious enough to escalate?'", "p": 1, "f": "Closed too early. You do not know the problem yet."},
+      {"t": "'Which client? I will call them.'", "p": 0, "f": "You take over before understanding."}]}]},
+   {"skill": "dev", "variants": [
+    {"text": "Ana sent three quotes with the wrong client code. Which feedback is correct?",
+     "choices": [
+      {"t": "'Three quotes had the wrong client code.'", "p": 2, "f": "Behaviour, not personality. Then you explain impact and ask her view."},
+      {"t": "'You were careless with the quotes.'", "p": 0, "f": "A judgement of her, not a behaviour. She becomes defensive."},
+      {"t": "'Please be more careful in future.'", "p": 1, "f": "Too vague. She does not know what to change."}]},
+    {"text": "Pedro's presentation won a client yesterday. How do you give feedback with SBI?",
+     "choices": [
+      {"t": "When, what he did, and the effect it had", "p": 2, "f": "Situation, behaviour, impact. He knows exactly what to repeat."},
+      {"t": "'Great job yesterday, well done!'", "p": 0, "f": "Kind, but he does not learn what made it work."},
+      {"t": "Mention it in his annual review", "p": 1, "f": "Too late. Feedback works best close to the event."}]}]},
+   {"skill": "dev", "variants": [
+    {"text": "Your director gives you feedback that you are 'too slow to decide'. You feel it is unfair.",
+     "choices": [
+      {"t": "Thank her, ask for an example, then consider it", "p": 2, "f": "She gives two examples. You agree on a change. Separate the message from the trigger."},
+      {"t": "Explain why your slow decisions were right", "p": 0, "f": "Defending immediately closes the conversation."},
+      {"t": "Say nothing and move on", "p": 1, "f": "No argument, but no learning either."}]},
+    {"text": "Rui asks how to handle a client who keeps changing requests. He knows the basics.",
+     "choices": [
+      {"t": "Coach him with GROW questions", "p": 2, "f": "He finds his own solution: a written change log. He uses it again later."},
+      {"t": "Tell him exactly what to do", "p": 1, "f": "Quick, but he returns with the next case. Coaching builds his ability."},
+      {"t": "Take over the client yourself", "p": 0, "f": "You become the bottleneck and he learns nothing."}]}]},
+   {"skill": "dev", "variants": [
+    {"text": "A new adviser is about to send a policy that breaks a legal rule. Coach or tell?",
+     "choices": [
+      {"t": "Tell: stop it now and explain why", "p": 2, "f": "Legal risk calls for telling. Coach later, when it is safe."},
+      {"t": "Coach: ask what she thinks the risk is", "p": 0, "f": "Not now. The policy goes out while you coach."},
+      {"t": "Let her learn from the client's reaction", "p": 0, "f": "A legal breach is not a learning exercise."}]},
+    {"text": "In GROW coaching, Rui has a clear goal. What comes next?",
+     "choices": [
+      {"t": "Reality: 'What have you tried so far?'", "p": 2, "f": "Goal, Reality, Options, Way forward. You understand his situation first."},
+      {"t": "Options: tell him three ideas", "p": 0, "f": "You skipped Reality, and giving ideas is telling, not coaching."},
+      {"t": "Way forward: 'What will you do first?'", "p": 0, "f": "Too early. Reality and options come first."}]}]}
+  ]
+ }
+}
