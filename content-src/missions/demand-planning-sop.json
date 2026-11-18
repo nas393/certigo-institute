@@ -1,0 +1,475 @@
+{
+ "slug": "demand-planning-sop",
+ "title": "The forecast nobody trusts",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: true demand, stock-out cleaning, promotions, WMA, exponential smoothing, seasonal index, error = forecast - actual, MAD, bias, tracking signal, FVA, lag measurement, time fences, S&OP steps. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Demand Planner",
+  "company": "Baylight Foods (fictional), importing rice, oil and canned goods with a 3-month lead time",
+  "briefing": "Sales say the forecast is always wrong, finance says stock is too high, and the warehouse runs out of best-sellers. You own the forecast and the monthly S&OP cycle. Make the numbers trusted again.",
+  "skills": {
+   "data": "Demand data",
+   "model": "Forecasting methods",
+   "error": "Forecast error",
+   "sop": "S&OP and supply"
+  },
+  "steps": [
+   {
+    "skill": "data",
+    "variants": [
+     {
+      "text": "In March, oil sold 300 cases, but stock ran out for 10 of 30 days. On days with stock it sold 15 a day. What was true demand?",
+      "choices": [
+       {
+        "t": "About 450 cases",
+        "p": 2,
+        "f": "15 x 30 days. Shipments miss lost sales; you flag the adjustment."
+       },
+       {
+        "t": "300 cases",
+        "p": 0,
+        "f": "That is what was shipped, capped by the stock-out."
+       },
+       {
+        "t": "About 200 cases",
+        "p": 0,
+        "f": "You scaled the wrong way. Demand was higher, not lower."
+       }
+      ]
+     },
+     {
+      "text": "A huge spike in May came from a one-off promotion. What do you do with it in the history?",
+      "choices": [
+       {
+        "t": "Separate the promotion from the baseline",
+        "p": 2,
+        "f": "The baseline stays clean; promotions are forecast separately."
+       },
+       {
+        "t": "Leave it; it is real sales",
+        "p": 0,
+        "f": "Next May's forecast will expect the spike again."
+       },
+       {
+        "t": "Delete the month entirely",
+        "p": 0,
+        "f": "You lose the normal demand inside it too."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "model",
+    "variants": [
+     {
+      "text": "Last three months: 100, 120, 140 cases. Weights 0.2, 0.3, 0.5 (most recent last). Weighted moving average?",
+      "choices": [
+       {
+        "t": "126 cases",
+        "p": 2,
+        "f": "Correct: 20 + 36 + 70."
+       },
+       {
+        "t": "120 cases",
+        "p": 0,
+        "f": "That is the simple average."
+       },
+       {
+        "t": "114 cases",
+        "p": 0,
+        "f": "You put the biggest weight on the oldest month."
+       }
+      ]
+     },
+     {
+      "text": "Exponential smoothing, alpha 0.3. Old forecast 180, actual 200. New forecast?",
+      "choices": [
+       {
+        "t": "186",
+        "p": 2,
+        "f": "Correct: 0.3 x 200 + 0.7 x 180 = 60 + 126."
+       },
+       {
+        "t": "194",
+        "p": 0,
+        "f": "You swapped alpha: 0.7 x 200 + 0.3 x 180."
+       },
+       {
+        "t": "200",
+        "p": 0,
+        "f": "That is the naive forecast, not smoothing."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "model",
+    "variants": [
+     {
+      "text": "December averages 150 cases; the overall monthly average is 100. What is December's seasonal index?",
+      "choices": [
+       {
+        "t": "1.5",
+        "p": 2,
+        "f": "Correct: 150 / 100. December sells 50% above an average month."
+       },
+       {
+        "t": "0.67",
+        "p": 0,
+        "f": "You divided the wrong way."
+       },
+       {
+        "t": "50",
+        "p": 0,
+        "f": "That is the difference, not the index."
+       }
+      ]
+     },
+     {
+      "text": "A fancy new model beats nothing in tests. Before trusting it, what do you compare it with?",
+      "choices": [
+       {
+        "t": "A naive benchmark",
+        "p": 2,
+        "f": "If a model cannot beat 'next month = last month', it adds no value."
+       },
+       {
+        "t": "The sales team's opinion",
+        "p": 0,
+        "f": "Opinions are another step to test, not the baseline."
+       },
+       {
+        "t": "Nothing; complex models are better",
+        "p": 0,
+        "f": "Complex is not always more accurate."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "error",
+    "variants": [
+     {
+      "text": "Errors (forecast minus actual) for three months: +10, -20, +30. What is the MAD?",
+      "choices": [
+       {
+        "t": "20",
+        "p": 2,
+        "f": "Correct: (10 + 20 + 30) / 3."
+       },
+       {
+        "t": "6.7",
+        "p": 0,
+        "f": "That uses signed errors. MAD uses absolute values."
+       },
+       {
+        "t": "60",
+        "p": 0,
+        "f": "That is the total, not the average."
+       }
+      ]
+     },
+     {
+      "text": "Forecast 120, actual 100. Using the course rule, what is the error?",
+      "choices": [
+       {
+        "t": "+20: over-forecast",
+        "p": 2,
+        "f": "Error = forecast - actual. Positive means you over-forecast."
+       },
+       {
+        "t": "-20: under-forecast",
+        "p": 0,
+        "f": "Sign reversed. Forecast was above actual."
+       },
+       {
+        "t": "20%: of actual",
+        "p": 1,
+        "f": "That is a percentage error, not the error in units."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "error",
+    "variants": [
+     {
+      "text": "Cumulative error over six months is +60; MAD is 20. What is the tracking signal?",
+      "choices": [
+       {
+        "t": "3",
+        "p": 2,
+        "f": "Correct: 60 / 20. A steady positive value shows a bias to over-forecast."
+       },
+       {
+        "t": "1,200",
+        "p": 0,
+        "f": "You multiplied. Divide by MAD."
+       },
+       {
+        "t": "0.33",
+        "p": 0,
+        "f": "You divided the wrong way."
+       }
+      ]
+     },
+     {
+      "text": "A slow item sold 10 against a forecast of 20. Its MAPE looks terrible. What do you tell management?",
+      "choices": [
+       {
+        "t": "Small items inflate MAPE; check units too",
+        "p": 2,
+        "f": "A 10-unit miss is 100% here but tiny in value."
+       },
+       {
+        "t": "Fire the planner for this item",
+        "p": 0,
+        "f": "The percentage misleads on small volumes."
+       },
+       {
+        "t": "Stop forecasting small items",
+        "p": 0,
+        "f": "They still need a plan, with the right measure."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "error",
+    "variants": [
+     {
+      "text": "Statistical forecast error: 18%. After sales adjustments: 24%. What does forecast value added show?",
+      "choices": [
+       {
+        "t": "Sales input made it worse here",
+        "p": 2,
+        "f": "Keep steps that reduce error; review those that add it."
+       },
+       {
+        "t": "Sales input always helps",
+        "p": 0,
+        "f": "Here it raised the error by 6 points."
+       },
+       {
+        "t": "Nothing; both are errors",
+        "p": 0,
+        "f": "Comparing steps is exactly what FVA does."
+       }
+      ]
+     },
+     {
+      "text": "Lead time is 3 months. Which forecast do you judge accuracy on?",
+      "choices": [
+       {
+        "t": "The one made when the order was placed",
+        "p": 2,
+        "f": "Lag 3: that forecast drove the purchase."
+       },
+       {
+        "t": "Last week's updated forecast",
+        "p": 0,
+        "f": "Too late to change what was ordered."
+       },
+       {
+        "t": "The best forecast of the year",
+        "p": 0,
+        "f": "Cherry-picking hides real performance."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sop",
+    "variants": [
+     {
+      "text": "Rice: forecast over lead time plus review 2,400 bags, safety stock 400, on hand 900, on order 1,100. Net requirement?",
+      "choices": [
+       {
+        "t": "800 bags",
+        "p": 2,
+        "f": "Correct: 2,400 + 400 - 900 - 1,100. Then round to full containers."
+       },
+       {
+        "t": "2,800 bags",
+        "p": 0,
+        "f": "You ignored stock on hand and on order."
+       },
+       {
+        "t": "1,900 bags",
+        "p": 0,
+        "f": "You forgot stock on order."
+       }
+      ]
+     },
+     {
+      "text": "Your net requirement is 800 bags, but a container holds 1,000. The supplier minimum is one container.",
+      "choices": [
+       {
+        "t": "Round up to one full container",
+        "p": 2,
+        "f": "Constraints apply after the net calculation."
+       },
+       {
+        "t": "Order exactly 800 bags",
+        "p": 0,
+        "f": "Below the supplier minimum; the order is refused."
+       },
+       {
+        "t": "Skip ordering this month",
+        "p": 0,
+        "f": "You run out before the next order arrives."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sop",
+    "variants": [
+     {
+      "text": "Sales wants to change a shipment already loaded on the vessel. Which fence?",
+      "choices": [
+       {
+        "t": "Frozen: no changes",
+        "p": 2,
+        "f": "Loaded or paid means frozen."
+       },
+       {
+        "t": "Slushy: changes need approval",
+        "p": 0,
+        "f": "Slushy is ordered but not yet loaded."
+       },
+       {
+        "t": "Liquid: free to change",
+        "p": 0,
+        "f": "Liquid is beyond the ordering horizon."
+       }
+      ]
+     },
+     {
+      "text": "An order is placed but not loaded. Sales wants to swap one product. Which fence and rule?",
+      "choices": [
+       {
+        "t": "Slushy: change needs approval",
+        "p": 2,
+        "f": "Possible, with cost and supplier agreement."
+       },
+       {
+        "t": "Frozen: never change",
+        "p": 0,
+        "f": "Not loaded yet, so not frozen."
+       },
+       {
+        "t": "Liquid: change freely",
+        "p": 0,
+        "f": "Already ordered, so not liquid."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "sop",
+    "variants": [
+     {
+      "text": "In what order do the S&OP steps run each month?",
+      "choices": [
+       {
+        "t": "Data, demand, supply, pre-S&OP, executive",
+        "p": 2,
+        "f": "Each step feeds the next and ends in one plan."
+       },
+       {
+        "t": "Executive first, then the details",
+        "p": 0,
+        "f": "Executives decide on prepared options."
+       },
+       {
+        "t": "Supply review first, then demand",
+        "p": 0,
+        "f": "Demand is agreed before supply can respond."
+       }
+      ]
+     },
+     {
+      "text": "In pre-S&OP, demand exceeds the supply plan for oil in Q4. What do you prepare?",
+      "choices": [
+       {
+        "t": "Options with costs for executives",
+        "p": 2,
+        "f": "Extra vessel, rationing, or price action. Executives decide."
+       },
+       {
+        "t": "Lower the demand plan to fit supply",
+        "p": 0,
+        "f": "That hides the gap instead of solving it."
+       },
+       {
+        "t": "Wait to see what happens in Q4",
+        "p": 0,
+        "f": "Lead time is 3 months; waiting means stock-outs."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "data",
+    "variants": [
+     {
+      "text": "At which level do you plan vessels and cash for the next 12 months?",
+      "choices": [
+       {
+        "t": "Product families",
+        "p": 2,
+        "f": "Families for capacity and cash; SKUs for purchase orders."
+       },
+       {
+        "t": "Each SKU, every week",
+        "p": 0,
+        "f": "Too much detail for a 12-month view."
+       },
+       {
+        "t": "Total company only",
+        "p": 0,
+        "f": "Too broad to plan vessels and products."
+       }
+      ]
+     },
+     {
+      "text": "Powdered milk is C value and Z (erratic). How much effort do you put into its forecast?",
+      "choices": [
+       {
+        "t": "Little: simple rules or buy to order",
+        "p": 2,
+        "f": "Spend effort on A and X items where it pays."
+       },
+       {
+        "t": "Most: erratic items need complex models",
+        "p": 0,
+        "f": "Erratic, low-value items rarely repay the effort."
+       },
+       {
+        "t": "The same as rice",
+        "p": 1,
+        "f": "One effort level for all wastes planner time."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
