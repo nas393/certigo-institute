@@ -1,0 +1,475 @@
+{
+ "slug": "inventory-and-warehousing",
+ "title": "Stock that is always there",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: stock costs and trade-off, ABC and XYZ, ROP, safety stock (z x sd x root L), EOQ, receiving, slotting, picking methods, cycle counting and IRA, FEFO, expiry, shrinkage. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Inventory & Warehouse Supervisor",
+  "company": "Riverbend Wholesale (fictional), a food wholesaler with one central warehouse and 900 items",
+  "briefing": "Stock-outs on key items are up, yet the warehouse is full of slow stock and some milk powder expired last month. The general manager gives you one month to set reorder rules, fix accuracy and stop expiry losses.",
+  "skills": {
+   "plan": "Stock planning",
+   "calc": "Inventory calculations",
+   "ops": "Warehouse operations",
+   "control": "Accuracy and control"
+  },
+  "steps": [
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "The finance manager says: 'Order everything once a quarter to save ordering costs.' What is the trade-off?",
+      "choices": [
+       {
+        "t": "Lower ordering cost, but higher holding cost and expiry risk",
+        "p": 2,
+        "f": "Correct. Big, rare orders tie up cash and space. You look for the balance."
+       },
+       {
+        "t": "No trade-off; fewer orders always cost less overall",
+        "p": 0,
+        "f": "Holding cost rises: capital, space, damage and expiry."
+       },
+       {
+        "t": "Only transport costs change with order frequency",
+        "p": 0,
+        "f": "Holding, expiry and stock-out costs all change too."
+       }
+      ]
+     },
+     {
+      "text": "A key customer was fined because rice was out of stock for 3 days. Which cost is this?",
+      "choices": [
+       {
+        "t": "Stock-out cost",
+        "p": 2,
+        "f": "Lost margin, penalties and lost goodwill. It argues for the right safety stock."
+       },
+       {
+        "t": "Holding cost",
+        "p": 0,
+        "f": "Holding cost comes from keeping stock, not from lacking it."
+       },
+       {
+        "t": "Ordering cost",
+        "p": 0,
+        "f": "Ordering cost is the cost of placing and receiving orders."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "plan",
+    "variants": [
+     {
+      "text": "ABC-XYZ: rice is A (high value) and X (stable demand). How do you manage it?",
+      "choices": [
+       {
+        "t": "Tight control, frequent replenishment",
+        "p": 2,
+        "f": "AX items deserve close attention and regular, predictable orders."
+       },
+       {
+        "t": "Buy large quantities once a year",
+        "p": 0,
+        "f": "High value stock bought yearly ties up the most cash."
+       },
+       {
+        "t": "Order only when a customer asks",
+        "p": 0,
+        "f": "That fits erratic, low-value items, not a stable A item."
+       }
+      ]
+     },
+     {
+      "text": "Powdered milk: C class, Z (erratic demand, CV 1.22). How do you manage it?",
+      "choices": [
+       {
+        "t": "Low stock and simple rules, or buy to order",
+        "p": 2,
+        "f": "Low value and erratic: avoid big buffers that expire."
+       },
+       {
+        "t": "High safety stock to never run out",
+        "p": 0,
+        "f": "Erratic demand needs huge buffers. For C items, expiry risk wins."
+       },
+       {
+        "t": "The same rules as rice, for simplicity",
+        "p": 1,
+        "f": "One rule for all items wastes cash on some and starves others."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "Cooking oil: daily demand 40 cases, lead time 10 days, safety stock 120 cases. What is the reorder point?",
+      "choices": [
+       {
+        "t": "520 cases",
+        "p": 2,
+        "f": "Correct: 40 x 10 = 400 lead-time demand, plus 120 safety stock."
+       },
+       {
+        "t": "400 cases",
+        "p": 0,
+        "f": "That is lead-time demand only. Add safety stock."
+       },
+       {
+        "t": "160 cases",
+        "p": 0,
+        "f": "You added 40 + 120. Lead-time demand is daily demand x lead time."
+       }
+      ]
+     },
+     {
+      "text": "Sugar: daily demand 60 bags, lead time 7 days, safety stock 90 bags. What is the reorder point?",
+      "choices": [
+       {
+        "t": "510 bags",
+        "p": 2,
+        "f": "Correct: 60 x 7 = 420, plus 90 safety stock."
+       },
+       {
+        "t": "420 bags",
+        "p": 0,
+        "f": "You forgot safety stock."
+       },
+       {
+        "t": "157 bags",
+        "p": 0,
+        "f": "You added the numbers. Multiply daily demand by lead time first."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "Rice: z = 1.65 (95% service), daily demand standard deviation 20 bags, lead time 9 days. Safety stock = z x sd x root of L. What is it?",
+      "choices": [
+       {
+        "t": "99 bags",
+        "p": 2,
+        "f": "Correct: 1.65 x 20 x 3 = 99."
+       },
+       {
+        "t": "297 bags",
+        "p": 0,
+        "f": "You used L, not its square root. Root of 9 is 3."
+       },
+       {
+        "t": "33 bags",
+        "p": 0,
+        "f": "You left out the standard deviation."
+       }
+      ]
+     },
+     {
+      "text": "The sales manager wants 99% service instead of 95% on a C item. z rises from 1.65 to 2.33. What happens?",
+      "choices": [
+       {
+        "t": "Safety stock rises about 41% for a small gain",
+        "p": 2,
+        "f": "Correct: 2.33 / 1.65 = 1.41. Higher service needs much more stock."
+       },
+       {
+        "t": "Safety stock rises by about 4%",
+        "p": 0,
+        "f": "The 4 points of service cost far more than 4% stock."
+       },
+       {
+        "t": "Safety stock stays the same",
+        "p": 0,
+        "f": "Safety stock is proportional to z. It rises."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "calc",
+    "variants": [
+     {
+      "text": "Oil: annual demand 12,000 cases, cost per order Kz 5,000, holding cost Kz 300 per case per year. EOQ = square root of (2DS / H). What is EOQ?",
+      "choices": [
+       {
+        "t": "About 632 cases",
+        "p": 2,
+        "f": "Correct: root of 400,000. You round to full pallets."
+       },
+       {
+        "t": "About 400,000 cases",
+        "p": 0,
+        "f": "That is the value before the square root."
+       },
+       {
+        "t": "About 447 cases",
+        "p": 0,
+        "f": "Recheck: 2 x 12,000 x 5,000 / 300 = 400,000; its root is 632."
+       }
+      ]
+     },
+     {
+      "text": "Flour: annual demand 7,200 bags, cost per order Kz 2,000, holding cost Kz 180 per bag per year. What is EOQ?",
+      "choices": [
+       {
+        "t": "400 bags",
+        "p": 2,
+        "f": "Correct: root of (2 x 7,200 x 2,000 / 180) = root of 160,000."
+       },
+       {
+        "t": "160,000 bags",
+        "p": 0,
+        "f": "You forgot the square root."
+       },
+       {
+        "t": "283 bags",
+        "p": 0,
+        "f": "Recheck the 2 in the formula: root of 160,000 is 400."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "ops",
+    "variants": [
+     {
+      "text": "A delivery arrives. The truck driver wants a quick signature. What do you do before signing?",
+      "choices": [
+       {
+        "t": "Check documents, count, inspect and check expiry",
+        "p": 2,
+        "f": "You find 12 cases short and two near expiry. Recorded before signing."
+       },
+       {
+        "t": "Sign quickly and check during put-away",
+        "p": 0,
+        "f": "After signing, shortages are hard to claim."
+       },
+       {
+        "t": "Sign, but write 'not checked' on the note",
+        "p": 1,
+        "f": "Better than nothing, but claims are still weaker."
+       }
+      ]
+     },
+     {
+      "text": "Milk powder arrives with only 30% of shelf life left. Your minimum at receiving is 70%.",
+      "choices": [
+       {
+        "t": "Reject it or agree a return under the rule",
+        "p": 2,
+        "f": "The minimum remaining shelf life rule prevents next month's expiry loss."
+       },
+       {
+        "t": "Accept it and sell it first",
+        "p": 1,
+        "f": "FEFO helps, but you knowingly take stock likely to expire."
+       },
+       {
+        "t": "Accept it; the supplier is reliable",
+        "p": 0,
+        "f": "Reliability does not change the date. It expires in your warehouse."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "ops",
+    "variants": [
+     {
+      "text": "Pickers walk to the far end for the fastest-moving rice. Where should it go?",
+      "choices": [
+       {
+        "t": "Near dispatch, in the golden zone",
+        "p": 2,
+        "f": "Fast movers closest to dispatch, at waist to shoulder height. Picking time falls."
+       },
+       {
+        "t": "On the top level to save floor space",
+        "p": 0,
+        "f": "Heavy fast movers high up are slow and unsafe."
+       },
+       {
+        "t": "Wherever there is space this week",
+        "p": 1,
+        "f": "Random locations work for storage, but fast movers need a planned slot."
+       }
+      ]
+     },
+     {
+      "text": "Many small orders each go to the same zone. Pickers walk the same aisles again and again.",
+      "choices": [
+       {
+        "t": "Batch picking: several orders in one walk",
+        "p": 2,
+        "f": "Walking time falls. You sort orders at the packing table."
+       },
+       {
+        "t": "Discrete picking: one order per walk",
+        "p": 0,
+        "f": "That is the method causing repeated walks."
+       },
+       {
+        "t": "More pickers on the same method",
+        "p": 1,
+        "f": "More people walking the same routes adds cost."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "Cycle count: 500 locations counted, 470 within tolerance. What is inventory record accuracy?",
+      "choices": [
+       {
+        "t": "94%",
+        "p": 2,
+        "f": "Correct: 470 / 500 x 100."
+       },
+       {
+        "t": "6%",
+        "p": 0,
+        "f": "That is the error share."
+       },
+       {
+        "t": "98%",
+        "p": 0,
+        "f": "Recheck: 470 divided by 500 is 0.94."
+       }
+      ]
+     },
+     {
+      "text": "How do you plan the cycle count?",
+      "choices": [
+       {
+        "t": "Count A items most often, using blind counts",
+        "p": 2,
+        "f": "Counters do not see the system quantity, so they count honestly."
+       },
+       {
+        "t": "Count everything once a year at year end",
+        "p": 0,
+        "f": "Errors build up all year and stop the warehouse for days."
+       },
+       {
+        "t": "Show counters the system quantity to save time",
+        "p": 0,
+        "f": "Counters tend to confirm the number they see."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "Two batches of yoghurt: batch A received first, expires 30 June; batch B received later, expires 20 June. Which ships first?",
+      "choices": [
+       {
+        "t": "Batch B: first expired, first out",
+        "p": 2,
+        "f": "FEFO is the rule for food. Batch B would expire first."
+       },
+       {
+        "t": "Batch A: first in, first out",
+        "p": 0,
+        "f": "FIFO here would let batch B expire on the shelf."
+       },
+       {
+        "t": "Whichever is easier to reach",
+        "p": 0,
+        "f": "Convenience leads to expiry losses."
+       }
+      ]
+     },
+     {
+      "text": "The weekly near-expiry report shows 200 cases of juice expiring in 5 weeks.",
+      "choices": [
+       {
+        "t": "Act now: promote, transfer or return it",
+        "p": 2,
+        "f": "Sold through a promotion with 3 weeks to spare."
+       },
+       {
+        "t": "Wait; 5 weeks is still a long time",
+        "p": 0,
+        "f": "Customers need shelf life too. In 3 weeks nobody will take it."
+       },
+       {
+        "t": "Move it to the back of the warehouse",
+        "p": 0,
+        "f": "Hiding it guarantees the loss."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "control",
+    "variants": [
+     {
+      "text": "Stock of phone cards keeps disappearing. One clerk receives, stores, counts and adjusts the records.",
+      "choices": [
+       {
+        "t": "Split duties and restrict access to the cage",
+        "p": 2,
+        "f": "Segregation of duties and restricted access. Losses stop."
+       },
+       {
+        "t": "Ask the clerk to be more careful",
+        "p": 0,
+        "f": "One person controlling everything is the weakness."
+       },
+       {
+        "t": "Write off the losses each month",
+        "p": 0,
+        "f": "That hides shrinkage without stopping it."
+       }
+      ]
+     },
+     {
+      "text": "A count shows 18 fewer cases of oil than the system. The clerk wants to adjust the system now.",
+      "choices": [
+       {
+        "t": "Investigate first: recount and check recent movements",
+        "p": 2,
+        "f": "A dispatch was not posted. No real loss; the record is fixed correctly."
+       },
+       {
+        "t": "Adjust the system right away so the records match",
+        "p": 0,
+        "f": "Adjusting without checking hides theft or errors."
+       },
+       {
+        "t": "Ignore it; 18 cases is too small to matter here",
+        "p": 1,
+        "f": "Small gaps repeat. Investigate the cause."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
