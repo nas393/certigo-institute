@@ -1,0 +1,475 @@
+{
+ "slug": "logistics-and-freight",
+ "title": "Moving the goods",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: modes and filters, in-transit cost formula, TEU, FCL vs LCL, revenue ton, air chargeable weight (/6,000), bill of lading types, document consistency, Incoterms risk points, savings method, load planning. Calculations checked. Fictional companies."
+ },
+ "content": {
+  "role": "Logistics Coordinator",
+  "company": "Southwind Trading (fictional), importing appliances and spare parts and delivering to shops",
+  "briefing": "You run inbound freight and local deliveries. This month: a big appliance order from Asia, urgent spare parts, a new supplier contract, and a delivery route that keeps running late. Costs and lead times are on the line.",
+  "skills": {
+   "mode": "Choosing transport",
+   "ship": "Shipping and charges",
+   "docs": "Documents and Incoterms",
+   "route": "Routes and loading"
+  },
+  "steps": [
+   {
+    "skill": "mode",
+    "variants": [
+     {
+      "text": "500 washing machines from Asia: heavy, low value per kg, needed in 8 weeks. Which mode?",
+      "choices": [
+       {
+        "t": "Sea freight",
+        "p": 2,
+        "f": "Lowest cost per tonne. The 8-week window allows it."
+       },
+       {
+        "t": "Air freight",
+        "p": 0,
+        "f": "Heavy, low value-density goods by air would cost more than the margin."
+       },
+       {
+        "t": "Road from the nearest port only",
+        "p": 0,
+        "f": "Road cannot cross the ocean. Sea first, then road."
+       }
+      ]
+     },
+     {
+      "text": "20 kg of spare parts, a stopped production line, needed in 3 days from Europe. Which mode?",
+      "choices": [
+       {
+        "t": "Air freight",
+        "p": 2,
+        "f": "Urgent and high value: speed is worth the cost."
+       },
+       {
+        "t": "Sea freight LCL",
+        "p": 0,
+        "f": "Weeks at sea while the line stays stopped."
+       },
+       {
+        "t": "Wait to combine with the next order",
+        "p": 0,
+        "f": "Downtime costs far more than air freight."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "mode",
+    "variants": [
+     {
+      "text": "A shipment worth USD 73,000 sits 30 days in transit. Annual carrying rate is 20%. What is the in-transit inventory cost?",
+      "choices": [
+       {
+        "t": "USD 1,200",
+        "p": 2,
+        "f": "Correct: 73,000 x 0.20 x 30 / 365. Add it to the freight rate before comparing modes."
+       },
+       {
+        "t": "USD 14,600",
+        "p": 0,
+        "f": "That is a full year of carrying cost. Scale by transit days / 365."
+       },
+       {
+        "t": "USD 438,000",
+        "p": 0,
+        "f": "You multiplied by 30 without dividing by 365."
+       }
+      ]
+     },
+     {
+      "text": "Sea is USD 1,500 cheaper than air, but adds 25 days of transit on goods worth USD 146,000 at a 20% carrying rate. Is sea still cheaper?",
+      "choices": [
+       {
+        "t": "No: about USD 2,000 of extra stock cost outweighs it",
+        "p": 2,
+        "f": "Correct: 146,000 x 0.20 x 25 / 365 = 2,000, more than the USD 1,500 freight saving."
+       },
+       {
+        "t": "Yes: sea still saves USD 1,500 on the freight bill",
+        "p": 0,
+        "f": "Freight is only part of it. Goods in transit tie up cash: about USD 2,000 here."
+       },
+       {
+        "t": "Yes: time in transit has no real cost to us",
+        "p": 0,
+        "f": "Goods on the water are paid for but cannot be sold. That costs money."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "ship",
+    "variants": [
+     {
+      "text": "How many TEU is one 40-foot container?",
+      "choices": [
+       {
+        "t": "2 TEU",
+        "p": 2,
+        "f": "Correct. A 20-foot container is 1 TEU."
+       },
+       {
+        "t": "1 TEU",
+        "p": 0,
+        "f": "That is a 20-foot container."
+       },
+       {
+        "t": "4 TEU",
+        "p": 0,
+        "f": "TEU is twenty-foot equivalent: 40 feet is 2."
+       }
+      ]
+     },
+     {
+      "text": "You need chilled dairy shipped by sea. Which container?",
+      "choices": [
+       {
+        "t": "A reefer",
+        "p": 2,
+        "f": "Temperature controlled for perishable goods."
+       },
+       {
+        "t": "A dry container",
+        "p": 0,
+        "f": "No temperature control. The dairy spoils."
+       },
+       {
+        "t": "An open top",
+        "p": 0,
+        "f": "Open top is for tall cargo loaded from above."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "ship",
+    "variants": [
+     {
+      "text": "Your LCL cargo is 3.2 cubic metres and weighs 1,800 kg. How many revenue tons are charged?",
+      "choices": [
+       {
+        "t": "3.2",
+        "p": 2,
+        "f": "Correct: 1 RT = 1 m³ or 1,000 kg, whichever is greater. 3.2 m³ beats 1.8 t."
+       },
+       {
+        "t": "1.8",
+        "p": 0,
+        "f": "That uses weight, but volume is greater."
+       },
+       {
+        "t": "5.0",
+        "p": 0,
+        "f": "You added both. Only the greater one is charged."
+       }
+      ]
+     },
+     {
+      "text": "An air box is 100 x 80 x 60 cm and weighs 50 kg. Volumetric divisor 6,000. What is the chargeable weight?",
+      "choices": [
+       {
+        "t": "80 kg",
+        "p": 2,
+        "f": "Correct: 480,000 / 6,000 = 80 kg volumetric, greater than 50 kg actual."
+       },
+       {
+        "t": "50 kg",
+        "p": 0,
+        "f": "That is actual weight. Light, bulky boxes are charged on volume."
+       },
+       {
+        "t": "130 kg",
+        "p": 0,
+        "f": "You added both. The greater of the two is charged."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "ship",
+    "variants": [
+     {
+      "text": "Your order fills only a third of a container. Speed matters less than cost. FCL or LCL?",
+      "choices": [
+       {
+        "t": "LCL: share the container",
+        "p": 2,
+        "f": "You pay for your space only. Expect more handling time."
+       },
+       {
+        "t": "FCL: always safer",
+        "p": 1,
+        "f": "Safer and faster, but you pay for two thirds empty."
+       },
+       {
+        "t": "Wait until you can fill it",
+        "p": 0,
+        "f": "Delaying stock risks stock-outs."
+       }
+      ]
+     },
+     {
+      "text": "A full container of fragile glassware is ready. FCL or LCL?",
+      "choices": [
+       {
+        "t": "FCL: less handling, less damage",
+        "p": 2,
+        "f": "Your cargo alone, sealed at origin. Fewer touches, fewer breaks."
+       },
+       {
+        "t": "LCL: it is always cheaper",
+        "p": 0,
+        "f": "For a full load, FCL is usually cheaper too."
+       },
+       {
+        "t": "Air: fastest option",
+        "p": 0,
+        "f": "A full container by air is very costly."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "docs",
+    "variants": [
+     {
+      "text": "The bill of lading says 'three cartons damaged'. What type is it?",
+      "choices": [
+       {
+        "t": "A claused bill of lading",
+        "p": 2,
+        "f": "Banks often refuse claused bills under letters of credit."
+       },
+       {
+        "t": "A clean bill of lading",
+        "p": 0,
+        "f": "Clean means no remarks about damage."
+       },
+       {
+        "t": "A sea waybill",
+        "p": 0,
+        "f": "A waybill is a different document, not a title."
+       }
+      ]
+     },
+     {
+      "text": "You need fast release at the port and the goods are already paid. Which document fits?",
+      "choices": [
+       {
+        "t": "A sea waybill",
+        "p": 2,
+        "f": "Not a document of title, so no original paper is needed to release."
+       },
+       {
+        "t": "A negotiable bill of lading",
+        "p": 1,
+        "f": "Works, but originals must travel and can delay release."
+       },
+       {
+        "t": "A certificate of origin",
+        "p": 0,
+        "f": "That proves origin, not carriage or release."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "docs",
+    "variants": [
+     {
+      "text": "The invoice shows 1,000 units; the packing list shows 980. What do you do before shipment?",
+      "choices": [
+       {
+        "t": "A claused bill of lading",
+        "p": 2,
+        "f": "Inconsistent documents cause customs delays and fines."
+       },
+       {
+        "t": "A clean bill of lading",
+        "p": 0,
+        "f": "Customs holds the cargo. Demurrage starts."
+       },
+       {
+        "t": "A sea waybill, not a bill",
+        "p": 0,
+        "f": "Altering a supplier's document is not allowed."
+       }
+      ]
+     },
+     {
+      "text": "Your new contract says 'FOB Shanghai'. Where does risk pass to you?",
+      "choices": [
+       {
+        "t": "When goods are on board the ship in Shanghai",
+        "p": 2,
+        "f": "Correct. You arrange and pay the main freight and insurance."
+       },
+       {
+        "t": "When goods arrive at your warehouse",
+        "p": 0,
+        "f": "That would be a D rule, such as DAP."
+       },
+       {
+        "t": "When goods leave the supplier's factory",
+        "p": 0,
+        "f": "That would be EXW or FCA at the factory."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "docs",
+    "variants": [
+     {
+      "text": "Under CIF Luanda, who carries the risk during the sea voyage?",
+      "choices": [
+       {
+        "t": "The buyer: risk passes at origin",
+        "p": 2,
+        "f": "C rules: seller pays main carriage, but risk passes when loaded at origin."
+       },
+       {
+        "t": "The seller, until Luanda",
+        "p": 0,
+        "f": "The seller pays freight to Luanda, but risk has already passed."
+       },
+       {
+        "t": "The shipping line",
+        "p": 0,
+        "f": "Incoterms set risk between buyer and seller."
+       }
+      ]
+     },
+     {
+      "text": "How should the Incoterm be written in the contract?",
+      "choices": [
+       {
+        "t": "Rule, exact named place, Incoterms 2020",
+        "p": 2,
+        "f": "Example: FCA supplier's warehouse, full address, Incoterms 2020."
+       },
+       {
+        "t": "Just the three letters, e.g. 'FOB'",
+        "p": 0,
+        "f": "Without a named place, risk and cost points are unclear."
+       },
+       {
+        "t": "Rule and country, e.g. 'CIF Angola'",
+        "p": 0,
+        "f": "A country is too vague. Name the exact place."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "route",
+    "variants": [
+     {
+      "text": "Depot to shop A: 30 km. Depot to shop B: 40 km. A to B: 15 km. What is the saving from serving both on one route?",
+      "choices": [
+       {
+        "t": "55 km",
+        "p": 2,
+        "f": "Correct: 30 + 40 - 15. Pairs with the largest savings are joined first."
+       },
+       {
+        "t": "85 km",
+        "p": 0,
+        "f": "That forgets to subtract the A-B leg."
+       },
+       {
+        "t": "15 km",
+        "p": 0,
+        "f": "That is the A-B distance, not the saving."
+       }
+      ]
+     },
+     {
+      "text": "The delivery route runs late daily. Drops are in random order and trucks hit city traffic at 8:00.",
+      "choices": [
+       {
+        "t": "Group by zone and sequence to avoid peaks",
+        "p": 2,
+        "f": "On-time delivery rises from 70% to 92%."
+       },
+       {
+        "t": "Add a second truck to the same route",
+        "p": 1,
+        "f": "More cost; the bad sequence remains."
+       },
+       {
+        "t": "Ask drivers to drive faster",
+        "p": 0,
+        "f": "Unsafe, and traffic still wins."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "route",
+    "variants": [
+     {
+      "text": "A truck has 6 drops. How do you load it?",
+      "choices": [
+       {
+        "t": "Last drop first, first drop last",
+        "p": 2,
+        "f": "Each stop's goods are at the door when needed."
+       },
+       {
+        "t": "First drop first, at the back",
+        "p": 0,
+        "f": "Drivers unload everything at each stop."
+       },
+       {
+        "t": "In any order that fits",
+        "p": 0,
+        "f": "Time is lost searching at every stop."
+       }
+      ]
+     },
+     {
+      "text": "A load has heavy drums and light cartons. How do you place them?",
+      "choices": [
+       {
+        "t": "Heavy low and centred",
+        "p": 2,
+        "f": "Stable load, safe braking, no crushed cartons."
+       },
+       {
+        "t": "Heavy on top to hold cartons",
+        "p": 0,
+        "f": "Unstable and crushes cartons."
+       },
+       {
+        "t": "Heavy at the back door",
+        "p": 0,
+        "f": "Poor weight balance and risk at opening."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
