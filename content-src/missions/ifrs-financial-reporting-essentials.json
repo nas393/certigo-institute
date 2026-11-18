@@ -1,0 +1,475 @@
+{
+ "slug": "ifrs-financial-reporting-essentials",
+ "title": "Year-end close",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: Conceptual Framework, IAS 1 features and current/non-current, IAS 7 classification, IFRS 15 five steps, allocation by SSP, point in time vs over time, IAS 2 cost and NRV, IAS 16 cost and depreciation, IFRS 16 lessee model. Calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "Financial Accountant",
+  "company": "Meridian Equipment (fictional), selling and servicing industrial machines",
+  "briefing": "It is year-end. You prepare the IFRS financial statements for the auditors. Several transactions need judgement: a bundled sale, stock that lost value, a new machine, a lease and the cash flow statement.",
+  "skills": {
+   "present": "Presentation",
+   "revenue": "Revenue (IFRS 15)",
+   "assets": "Inventory and PPE",
+   "leases": "Leases and cash flows"
+  },
+  "steps": [
+   {
+    "skill": "present",
+    "variants": [
+     {
+      "text": "A bank loan is repayable in 8 months. Where does it go in the statement of financial position?",
+      "choices": [
+       {
+        "t": "Current liabilities",
+        "p": 2,
+        "f": "Due within 12 months, so current."
+       },
+       {
+        "t": "Non-current liabilities",
+        "p": 0,
+        "f": "Only liabilities due after 12 months are non-current."
+       },
+       {
+        "t": "Equity",
+        "p": 0,
+        "f": "A loan is an obligation, not equity."
+       }
+      ]
+     },
+     {
+      "text": "A customer owes Kz 5 m, and you owe the same customer Kz 2 m. The CFO wants to show Kz 3 m net.",
+      "choices": [
+       {
+        "t": "Show both, unless offsetting is allowed",
+        "p": 2,
+        "f": "No offsetting unless a standard requires or permits it."
+       },
+       {
+        "t": "Show Kz 3 m net; it is simpler",
+        "p": 0,
+        "f": "Offsetting hides the gross positions."
+       },
+       {
+        "t": "Show only the Kz 5 m receivable",
+        "p": 0,
+        "f": "The payable must also be reported."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "present",
+    "variants": [
+     {
+      "text": "The company has lost money for 3 years and its main loan is in default. Which assumption must management assess?",
+      "choices": [
+       {
+        "t": "Going concern",
+        "p": 2,
+        "f": "Material uncertainty must be disclosed, or another basis used."
+       },
+       {
+        "t": "Materiality",
+        "p": 0,
+        "f": "Materiality is about what matters to users, not survival."
+       },
+       {
+        "t": "Comparability",
+        "p": 0,
+        "f": "An enhancing characteristic, not the issue here."
+       }
+      ]
+     },
+     {
+      "text": "Paying interest on a loan: in which cash flow section under IAS 7?",
+      "choices": [
+       {
+        "t": "Operating or financing, by policy",
+        "p": 2,
+        "f": "IAS 7 allows a choice, applied consistently."
+       },
+       {
+        "t": "Always in investing activities",
+        "p": 0,
+        "f": "Investing is for long-term assets and investments."
+       },
+       {
+        "t": "It is not a cash flow at all",
+        "p": 0,
+        "f": "Interest paid is a cash outflow."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "revenue",
+    "variants": [
+     {
+      "text": "You sell a machine plus one year of servicing for Kz 1,000 k. Stand-alone prices: machine Kz 900 k, service Kz 300 k. How much is allocated to the machine?",
+      "choices": [
+       {
+        "t": "Kz 750 k",
+        "p": 2,
+        "f": "1,000 x 900 / 1,200. The discount is shared across both."
+       },
+       {
+        "t": "Kz 900 k",
+        "p": 0,
+        "f": "That gives the whole discount to the service."
+       },
+       {
+        "t": "Kz 700 k",
+        "p": 0,
+        "f": "That gives the whole discount to the machine."
+       }
+      ]
+     },
+     {
+      "text": "In the same deal, when is the service revenue recognised?",
+      "choices": [
+       {
+        "t": "Over the year, as service is given",
+        "p": 2,
+        "f": "The customer consumes the benefit as you perform."
+       },
+       {
+        "t": "All at signing",
+        "p": 0,
+        "f": "Nothing is delivered yet at signing."
+       },
+       {
+        "t": "At the end of the year",
+        "p": 0,
+        "f": "The service is delivered across the year."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "revenue",
+    "variants": [
+     {
+      "text": "What is step 2 of the IFRS 15 five-step model?",
+      "choices": [
+       {
+        "t": "Identify the performance obligations",
+        "p": 2,
+        "f": "Contract, obligations, price, allocation, recognition."
+       },
+       {
+        "t": "Determine the transaction price",
+        "p": 0,
+        "f": "That is step 3."
+       },
+       {
+        "t": "Recognise revenue",
+        "p": 0,
+        "f": "That is step 5."
+       }
+      ]
+     },
+     {
+      "text": "A customer earns a 5% rebate if it buys over Kz 50 m this year. It will very likely qualify. How do you treat it?",
+      "choices": [
+       {
+        "t": "Estimate it as variable consideration",
+        "p": 2,
+        "f": "Reduce revenue for the expected rebate."
+       },
+       {
+        "t": "Ignore it until the year ends",
+        "p": 0,
+        "f": "Revenue would be overstated during the year."
+       },
+       {
+        "t": "Book it as an expense later",
+        "p": 0,
+        "f": "Rebates reduce revenue, not expenses."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assets",
+    "variants": [
+     {
+      "text": "Imported spare parts: price Kz 100 k, non-recoverable duty Kz 10 k, inbound transport Kz 5 k, selling commission Kz 3 k. Inventory cost?",
+      "choices": [
+       {
+        "t": "Kz 115 k",
+        "p": 2,
+        "f": "Price + duty + transport in. Selling costs are excluded."
+       },
+       {
+        "t": "Kz 118 k",
+        "p": 0,
+        "f": "Selling costs are not part of inventory cost."
+       },
+       {
+        "t": "Kz 100 k",
+        "p": 0,
+        "f": "Duty and inbound transport are part of cost."
+       }
+      ]
+     },
+     {
+      "text": "A part cost Kz 50 k. It can now sell for Kz 60 k, with Kz 15 k of costs to sell. At what value is it carried?",
+      "choices": [
+       {
+        "t": "Kz 45 k",
+        "p": 2,
+        "f": "Lower of cost (50) and NRV (60 - 15 = 45)."
+       },
+       {
+        "t": "Kz 50 k",
+        "p": 0,
+        "f": "NRV is below cost, so write it down."
+       },
+       {
+        "t": "Kz 60 k",
+        "p": 0,
+        "f": "Selling price before costs is not NRV."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assets",
+    "variants": [
+     {
+      "text": "New machine: price Kz 800 k, delivery Kz 30 k, installation Kz 20 k, staff training Kz 15 k. Initial cost under IAS 16?",
+      "choices": [
+       {
+        "t": "Kz 850 k",
+        "p": 2,
+        "f": "Training is expensed, not capitalised."
+       },
+       {
+        "t": "Kz 865 k",
+        "p": 0,
+        "f": "Training is not part of the asset's cost."
+       },
+       {
+        "t": "Kz 800 k",
+        "p": 0,
+        "f": "Delivery and installation are included."
+       }
+      ]
+     },
+     {
+      "text": "Machine cost Kz 1,000 k, residual value Kz 100 k, useful life 5 years, straight line. Annual depreciation?",
+      "choices": [
+       {
+        "t": "Kz 180 k",
+        "p": 2,
+        "f": "(1,000 - 100) / 5."
+       },
+       {
+        "t": "Kz 200 k",
+        "p": 0,
+        "f": "You ignored the residual value."
+       },
+       {
+        "t": "Kz 220 k",
+        "p": 0,
+        "f": "Residual value is subtracted, not added."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "assets",
+    "variants": [
+     {
+      "text": "General admin costs for the head office are part of inventory cost, says a colleague. Correct?",
+      "choices": [
+       {
+        "t": "No: admin overheads are excluded",
+        "p": 2,
+        "f": "IAS 2 excludes selling and general admin costs."
+       },
+       {
+        "t": "Yes: all costs belong to inventory",
+        "p": 0,
+        "f": "Only costs to bring stock to its location and condition."
+       },
+       {
+        "t": "Yes, if they are large",
+        "p": 0,
+        "f": "Size does not change the rule."
+       }
+      ]
+     },
+     {
+      "text": "Some stock was spoiled by abnormal flooding in the warehouse. How do you treat the loss?",
+      "choices": [
+       {
+        "t": "Expense it; abnormal waste is excluded",
+        "p": 2,
+        "f": "Abnormal waste is not part of inventory cost."
+       },
+       {
+        "t": "Add it to the cost of remaining stock",
+        "p": 0,
+        "f": "That overstates inventory."
+       },
+       {
+        "t": "Defer it to next year",
+        "p": 0,
+        "f": "Losses are recognised when they occur."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "leases",
+    "variants": [
+     {
+      "text": "You lease a warehouse for 5 years. Under IFRS 16, what do you recognise at the start?",
+      "choices": [
+       {
+        "t": "A right-of-use asset and a lease liability",
+        "p": 2,
+        "f": "The liability is the present value of lease payments."
+       },
+       {
+        "t": "Only a monthly rent expense",
+        "p": 0,
+        "f": "That was the old operating-lease approach for lessees."
+       },
+       {
+        "t": "The full building as owned PPE",
+        "p": 0,
+        "f": "You control its use, not the building itself."
+       }
+      ]
+     },
+     {
+      "text": "How is the lease liability measured at commencement?",
+      "choices": [
+       {
+        "t": "Present value of the lease payments",
+        "p": 2,
+        "f": "Discounted at the rate in the lease or your borrowing rate."
+       },
+       {
+        "t": "Total of all payments, not discounted",
+        "p": 0,
+        "f": "IFRS 16 uses present value."
+       },
+       {
+        "t": "The building's market value",
+        "p": 0,
+        "f": "The liability is about payments, not the building."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "leases",
+    "variants": [
+     {
+      "text": "Your indirect cash flow statement starts from profit. Depreciation was Kz 180 k. What do you do with it?",
+      "choices": [
+       {
+        "t": "Add it back: it is non-cash",
+        "p": 2,
+        "f": "Depreciation reduced profit without using cash."
+       },
+       {
+        "t": "Subtract it again",
+        "p": 0,
+        "f": "That double-counts a non-cash cost."
+       },
+       {
+        "t": "Ignore it",
+        "p": 0,
+        "f": "It must be adjusted to reach cash."
+       }
+      ]
+     },
+     {
+      "text": "You bought the new machine for cash. Which section of the cash flow statement?",
+      "choices": [
+       {
+        "t": "Investing activities",
+        "p": 2,
+        "f": "Long-term asset purchases are investing."
+       },
+       {
+        "t": "Operating activities",
+        "p": 0,
+        "f": "Operating covers trading cash flows."
+       },
+       {
+        "t": "Financing activities",
+        "p": 0,
+        "f": "Financing is about loans and equity."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "present",
+    "variants": [
+     {
+      "text": "From which date does IFRS 18 replace IAS 1?",
+      "choices": [
+       {
+        "t": "1 January 2027",
+        "p": 2,
+        "f": "New categories and subtotals in profit or loss."
+       },
+       {
+        "t": "1 January 2025",
+        "p": 0,
+        "f": "Too early."
+       },
+       {
+        "t": "It has no set date",
+        "p": 0,
+        "f": "It has a set effective date."
+       }
+      ]
+     },
+     {
+      "text": "Closing cash in the cash flow statement does not match the balance sheet. What do you check first?",
+      "choices": [
+       {
+        "t": "The links between the statements",
+        "p": 2,
+        "f": "Closing cash must equal the balance sheet cash."
+       },
+       {
+        "t": "Nothing; small gaps are normal",
+        "p": 0,
+        "f": "The statements must reconcile exactly."
+       },
+       {
+        "t": "Change the balance sheet to match",
+        "p": 0,
+        "f": "Forcing a match hides the error."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
