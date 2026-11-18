@@ -1,0 +1,475 @@
+{
+ "slug": "financial-modeling",
+ "title": "Should we launch the new juice?",
+ "review": {
+  "learner": 9,
+  "manager": 9,
+  "director": 9,
+  "score_pct": 90,
+  "checked": "2026-11-18",
+  "notes": "Built on the course: model structure, colour conventions, no hard-coding, revenue drivers, DSO/DIO/DPO, CCC, indirect cash flow, contribution margin, break-even, margin of safety, discount trap, NPV. All calculations checked. Fictional company."
+ },
+ "content": {
+  "role": "FP&A Analyst",
+  "company": "Sunpeak Beverages (fictional), a juice and soft drinks producer",
+  "briefing": "The board must decide on a new juice line requiring Kz 100 million of equipment. You build the model, check working capital, find the break-even and give a clear recommendation. A sales director wants a launch discount too.",
+  "skills": {
+   "build": "Model building",
+   "pl": "Profit and drivers",
+   "cash": "Working capital and cash",
+   "decide": "Decision analysis"
+  },
+  "steps": [
+   {
+    "skill": "build",
+    "variants": [
+     {
+      "text": "A colleague's model has =E12*1.14 inside many formulas. What is wrong?",
+      "choices": [
+       {
+        "t": "A hidden hard-coded assumption",
+        "p": 2,
+        "f": "Put 14% in one input cell and reference it. Changing it then updates everything."
+       },
+       {
+        "t": "Nothing; the formula is shorter",
+        "p": 0,
+        "f": "When the rate changes, someone must find every hidden 1.14."
+       },
+       {
+        "t": "It should use 1.15 instead",
+        "p": 0,
+        "f": "The number is not the issue. Hiding it is."
+       }
+      ]
+     },
+     {
+      "text": "How do you lay out the model?",
+      "choices": [
+       {
+        "t": "Inputs, calculations, outputs, kept separate",
+        "p": 2,
+        "f": "Inputs typed once with unit and source; outputs read clearly."
+       },
+       {
+        "t": "Everything on one sheet, as needed",
+        "p": 0,
+        "f": "Hard to check and easy to break."
+       },
+       {
+        "t": "Outputs first, inputs at the end",
+        "p": 1,
+        "f": "Order matters less than separation, but mixing them is risky."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "build",
+    "variants": [
+     {
+      "text": "In your model, what does blue font mean?",
+      "choices": [
+       {
+        "t": "Inputs typed by hand",
+        "p": 2,
+        "f": "Blue inputs, black formulas, green links. Reviewers know what to change."
+       },
+       {
+        "t": "Formulas",
+        "p": 0,
+        "f": "Formulas are black."
+       },
+       {
+        "t": "Links to other sheets",
+        "p": 0,
+        "f": "Links are green."
+       }
+      ]
+     },
+     {
+      "text": "Column G uses a different formula from the rest of the row 'to adjust one month'. What do you do?",
+      "choices": [
+       {
+        "t": "One formula per row; the change goes in inputs",
+        "p": 2,
+        "f": "Consistent rows prevent hidden errors when copying."
+       },
+       {
+        "t": "Leave it, with a comment explaining the change",
+        "p": 1,
+        "f": "Comments get missed. Special columns cause errors."
+       },
+       {
+        "t": "Hide column G so the row looks consistent again",
+        "p": 0,
+        "f": "Hiding it makes the problem invisible."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pl",
+    "variants": [
+     {
+      "text": "Year 1: 1,000 cases a month, list price Kz 10,000, average discount 10%. What is monthly revenue?",
+      "choices": [
+       {
+        "t": "Kz 9 million",
+        "p": 2,
+        "f": "Revenue = volume x net price: 1,000 x 9,000."
+       },
+       {
+        "t": "Kz 10 million",
+        "p": 0,
+        "f": "That uses list price. Use net price after discounts."
+       },
+       {
+        "t": "Kz 1 million",
+        "p": 0,
+        "f": "That is the discount, not revenue."
+       }
+      ]
+     },
+     {
+      "text": "Revenue Kz 500 m, cost of sales Kz 300 m, opex Kz 120 m, depreciation Kz 20 m. What is EBITDA?",
+      "choices": [
+       {
+        "t": "Kz 80 million",
+        "p": 2,
+        "f": "Gross profit 200 minus opex 120. Depreciation comes after EBITDA."
+       },
+       {
+        "t": "Kz 60 million",
+        "p": 0,
+        "f": "That deducts depreciation, giving EBIT."
+       },
+       {
+        "t": "Kz 200 million",
+        "p": 0,
+        "f": "That is gross profit."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "cash",
+    "variants": [
+     {
+      "text": "Receivables Kz 60 m, annual revenue Kz 365 m. What is DSO?",
+      "choices": [
+       {
+        "t": "60 days",
+        "p": 2,
+        "f": "Correct: 60 / 365 x 365."
+       },
+       {
+        "t": "6 days",
+        "p": 0,
+        "f": "Check the formula: receivables / revenue x 365."
+       },
+       {
+        "t": "365 days",
+        "p": 0,
+        "f": "That is the number of days in the year."
+       }
+      ]
+     },
+     {
+      "text": "DSO 60, DIO 45, DPO 30. What is the cash conversion cycle?",
+      "choices": [
+       {
+        "t": "75 days",
+        "p": 2,
+        "f": "CCC = DSO + DIO - DPO. Cash is tied up 75 days."
+       },
+       {
+        "t": "135 days",
+        "p": 0,
+        "f": "You added DPO. Payables reduce the cycle."
+       },
+       {
+        "t": "15 days",
+        "p": 0,
+        "f": "You subtracted DIO."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "cash",
+    "variants": [
+     {
+      "text": "The juice line makes a profit in year 1, but the model shows cash falling. Why might that be?",
+      "choices": [
+       {
+        "t": "Working capital and capex absorb it",
+        "p": 2,
+        "f": "Indirect cash flow: profit + depreciation - working capital rise - capex."
+       },
+       {
+        "t": "The model must contain an error",
+        "p": 0,
+        "f": "Profit and cash often differ, especially in growth."
+       },
+       {
+        "t": "Depreciation is draining the cash",
+        "p": 0,
+        "f": "Depreciation is non-cash; it is added back."
+       }
+      ]
+     },
+     {
+      "text": "Next year revenue is Kz 730 m and you assume DSO stays 60 days. What receivables do you forecast?",
+      "choices": [
+       {
+        "t": "Kz 120 million",
+        "p": 2,
+        "f": "Receivables = DSO x revenue / 365 = 60 x 730 / 365."
+       },
+       {
+        "t": "Kz 60 million",
+        "p": 0,
+        "f": "That keeps last year's balance while revenue doubles."
+       },
+       {
+        "t": "Kz 730 million",
+        "p": 0,
+        "f": "That is the revenue."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "decide",
+    "variants": [
+     {
+      "text": "Price per case Kz 1,000, variable cost Kz 600, fixed costs Kz 20 m a year. What is break-even volume?",
+      "choices": [
+       {
+        "t": "50,000 cases",
+        "p": 2,
+        "f": "Fixed costs / CM per unit = 20,000,000 / 400."
+       },
+       {
+        "t": "20,000 cases",
+        "p": 0,
+        "f": "You divided by price, not by contribution margin."
+       },
+       {
+        "t": "33,333 cases",
+        "p": 0,
+        "f": "You divided by variable cost."
+       }
+      ]
+     },
+     {
+      "text": "Expected volume 62,500 cases, break-even 50,000. What is the margin of safety?",
+      "choices": [
+       {
+        "t": "20%",
+        "p": 2,
+        "f": "(62,500 - 50,000) / 62,500. Sales can fall 20% before losses."
+       },
+       {
+        "t": "25%",
+        "p": 0,
+        "f": "You divided by break-even, not expected volume."
+       },
+       {
+        "t": "12,500%",
+        "p": 0,
+        "f": "12,500 is units, not a percentage."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "decide",
+    "variants": [
+     {
+      "text": "Sales wants a 5% launch discount: price 1,000 to 950, variable cost 600. Current plan: 50,000 cases. How many cases keep total CM the same?",
+      "choices": [
+       {
+        "t": "About 57,143 cases",
+        "p": 2,
+        "f": "Old CM 20 m / new CM 350 per case. A 5% price cut needs 14% more volume."
+       },
+       {
+        "t": "52,500 cases",
+        "p": 0,
+        "f": "A 5% price cut needs much more than 5% more volume."
+       },
+       {
+        "t": "50,000 cases",
+        "p": 0,
+        "f": "CM per case falls from 400 to 350, so volume must rise."
+       }
+      ]
+     },
+     {
+      "text": "To earn a target profit of Kz 8 m with fixed costs of Kz 20 m and CM of Kz 400 per case, what volume?",
+      "choices": [
+       {
+        "t": "70,000 cases",
+        "p": 2,
+        "f": "(20 m + 8 m) / 400."
+       },
+       {
+        "t": "20,000 cases",
+        "p": 0,
+        "f": "That covers only the target profit."
+       },
+       {
+        "t": "50,000 cases",
+        "p": 0,
+        "f": "That is break-even, with zero profit."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "decide",
+    "variants": [
+     {
+      "text": "Investment Kz 100 m. Cash flows Kz 60 m in year 1 and Kz 60 m in year 2. Discount rate 10%. NPV?",
+      "choices": [
+       {
+        "t": "About Kz 4.1 million",
+        "p": 2,
+        "f": "60/1.1 + 60/1.21 = 54.5 + 49.6 = 104.1, minus 100."
+       },
+       {
+        "t": "Kz 20 million",
+        "p": 0,
+        "f": "That ignores the time value of money."
+       },
+       {
+        "t": "About -Kz 4.1 million",
+        "p": 0,
+        "f": "Sign reversed. Discounted inflows exceed 100."
+       }
+      ]
+     },
+     {
+      "text": "NPV is positive at the company's hurdle rate. What does it mean?",
+      "choices": [
+       {
+        "t": "The project creates value at that rate",
+        "p": 2,
+        "f": "Returns exceed the cost of capital used."
+       },
+       {
+        "t": "The project pays back in year 1",
+        "p": 0,
+        "f": "NPV is not payback."
+       },
+       {
+        "t": "Profit will be positive every year",
+        "p": 0,
+        "f": "NPV sums discounted cash; years can still be negative."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "pl",
+    "variants": [
+     {
+      "text": "The sales plan shows 60% growth while the market grows 5% and the plant is at capacity.",
+      "choices": [
+       {
+        "t": "Flag it: test against history and capacity",
+        "p": 2,
+        "f": "Sanity checks keep the model credible with the board."
+       },
+       {
+        "t": "Accept it; sales knows the market",
+        "p": 0,
+        "f": "Unchecked inputs make the whole model unreliable."
+       },
+       {
+        "t": "Cut it to 30% without asking",
+        "p": 1,
+        "f": "Better than 60%, but agree assumptions with evidence."
+       }
+      ]
+     },
+     {
+      "text": "Distribution costs rise with every case sold. How do you model them?",
+      "choices": [
+       {
+        "t": "As a variable cost per case",
+        "p": 2,
+        "f": "Variable costs move with volume; fixed costs with inflation."
+       },
+       {
+        "t": "As a fixed annual amount",
+        "p": 0,
+        "f": "Then higher volume looks falsely cheap."
+       },
+       {
+        "t": "Ignore them; they are small",
+        "p": 0,
+        "f": "They affect contribution margin and break-even."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "skill": "build",
+    "variants": [
+     {
+      "text": "The board asks: 'What if volume is 20% lower?' What should the model let you do?",
+      "choices": [
+       {
+        "t": "Change one input and see all outputs",
+        "p": 2,
+        "f": "A decision tool answers 'what if' in seconds."
+       },
+       {
+        "t": "Rebuild the forecast by hand",
+        "p": 0,
+        "f": "A good model avoids rework."
+       },
+       {
+        "t": "Show only the base case",
+        "p": 0,
+        "f": "Boards need to see risk, not one number."
+       }
+      ]
+     },
+     {
+      "text": "Your final recommendation slide should show:",
+      "choices": [
+       {
+        "t": "Decision, key numbers, risks, assumptions",
+        "p": 2,
+        "f": "Clear, honest and ready for a decision."
+       },
+       {
+        "t": "All 40 sheets of the model, for detail",
+        "p": 0,
+        "f": "Detail hides the message."
+       },
+       {
+        "t": "Only the best-case scenario, to persuade",
+        "p": 0,
+        "f": "Hiding risks damages trust."
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
