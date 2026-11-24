@@ -9,6 +9,8 @@ import { Input } from "@/components/ui/input";
 
 export interface CheckoutInfo {
   currency: string; single_cents: number; pass_cents: number; pass_days: number; mode: "off" | "test" | "live";
+  /* Bank or Multicaixa details the buyer pays to. Empty until the owner writes them. */
+  instructions?: string;
   access: { access: boolean; via?: "admin" | "pass" | "single"; until?: string };
 }
 
@@ -81,6 +83,14 @@ export function CheckoutPanel({ certificationId, info, onPaid, showSingle = true
             <Button className="mt-3 bg-emerald-600 text-white hover:bg-emerald-700" disabled={busy === "test"} onClick={() => void testPay()}>
               {busy === "test" && <Loader2 className="mr-2 h-4 w-4 animate-spin" />} Confirm test payment
             </Button>
+          </>
+        ) : info.instructions ? (
+          <>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Pay with the details below and quote your order reference. Your access opens once we confirm the payment.
+            </p>
+            <div className="mt-3 whitespace-pre-line rounded-lg border border-border bg-background p-3 text-sm">{info.instructions}</div>
+            <p className="mt-3 text-sm">Order reference: <span className="font-mono font-semibold">{pending.order_id.slice(0, 8).toUpperCase()}</span></p>
           </>
         ) : (
           <p className="mt-1 text-xs text-muted-foreground">
