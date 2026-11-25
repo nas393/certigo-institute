@@ -1,0 +1,366 @@
+{
+ "slug": "markets-and-orders-basics",
+ "minutes": [
+  20,
+  20,
+  20,
+  20,
+  20,
+  20
+ ],
+ "bodies": [
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what a financial market does for buyers and sellers;\n- name the main types of market participants and their goals;\n- explain why trading carries risk and what that means for a beginner;\n- describe what a trading account requires before you deposit money.\n\n## Key terms\n\n::: terms\nMarket: a place or system where buyers and sellers agree prices for something\nAsset: anything that can be bought or sold for value, such as a share, a currency pair or a commodity\nLiquidity: how easily something can be bought or sold without moving its price much\nBroker: a firm that carries out buy and sell orders for its clients\nSpeculator: a participant who aims to profit from price changes rather than from using the asset\nHedger: a participant who uses a market to reduce a risk they already carry\n:::\n\n## 1. What a market does\n\nA market brings together people who want to buy and people who want to sell. A shop owner in Luanda who needs stock would otherwise find a supplier by chance and negotiate every price from scratch. A market makes prices visible, comparable and quick to agree.\n\nFinancial markets work the same way for shares, currencies and commodities. In each case the price comes from the orders placed by everyone in the market. When many people want to buy, the price tends to rise. When many want to sell, it tends to fall.\n\n## 2. Who trades in a market\n\nInvestors buy to hold for years. Speculators buy and sell to profit from short-term moves. Hedgers use markets to protect against a price change they cannot avoid, such as a business fixing next year's fuel cost. Market makers quote both a buy price and a sell price and earn the difference. Most people you trade against are professionals with more information and experience. That is why a beginner should expect to be the least informed participant in many of their trades, and plan with that in mind before placing any order.\n\n::: diagram steps | Typical roles in a market\nInvestor: buys to hold for the long term\nSpeculator: trades to profit from short-term moves\nHedger: uses the market to reduce an existing risk\nMarket maker: quotes buy and sell prices and earns the difference\n:::\n\n::: slides\nSLIDE Step 1: Find the buyers and sellers | Who wants to buy?; Who wants to sell? | Prices come from the orders\nSLIDE Step 2: Name each goal | Investors hold; speculators trade moves; hedgers reduce risk | Goals explain behaviour\nSLIDE Step 3: Assume a prepared opponent | Most counterparties are professionals; Plan as if they know more | Plan for a well-informed other side\n:::\n\n## Worked example: who moves the price of fuel\n\nA grocer in Huambo buys fuel every month and wants to fix next year's cost. A fuel supplier agrees a price for future delivery, which removes the grocer's exposure to a price rise. A speculator on the other side bets that the price will fall. A market maker quotes both sides and earns the gap. The price is set by the orders of all three, not by any one of them. The grocer is a hedger. Her goal is certainty, not profit from the price moving.\n\n::: case | The first deposit\nCarla works as an accountant in Benguela. She has saved a small amount for three years and wants to start trading. A friend tells her a broker will double her money in a month.\n? What should Carla do first?\n- Deposit her full savings straight away, because the friend has experience || A claim of doubled money in a month is a warning sign, not evidence.\n* Check that the broker is regulated, read its cost schedule, and decide how much she can afford to lose before she deposits anything || This is the right order: check the broker, understand the costs, then set a limit.\n- Borrow money to increase the amount she can trade with || Borrowing adds risk and can increase losses beyond the amount she put in.\n:::\n\n## Tool: market participant checklist\n\n- Who is buying, and why?\n- Who is selling, and why?\n- Is each participant hedging, speculating or investing?\n- Who sets the price I will see, and how often is it updated?\n\n::: quiz\n? Which participant is mainly trying to reduce a risk they already carry?\n- The speculator, who trades on price moves || Speculators aim to profit from price changes, not to reduce an existing risk.\n* The hedger, such as a business that fixes the cost of fuel in advance || A hedger uses the market to protect against a price change it cannot avoid.\n- The investor, who holds an asset for years || Investors hold assets for long periods, but their goal is growth or income.\n:::\n\n::: quiz\n? Why is a claim of steady, guaranteed trading profits a warning sign?\n- Because markets never move in a predictable direction || Markets do move, but that is not the reason the claim is a warning sign.\n* Because no honest source can guarantee trading profits, and such claims often hide the losses || Guaranteed profit claims are common in scams and in promotions that hide the risk.\n- Because all trading is illegal in most countries || Trading is legal in many countries, subject to local rules.\n:::\n\n## Common mistakes\n\n- Treating a price as proof of what something is worth.\n- Assuming the other side of a trade is less experienced than you.\n- Confusing investing, which is long-term ownership, with trading, which is frequent buying and selling.\n- Trusting any promise of guaranteed or steady returns.\n\n## Self-check\n\n1. What does a market do for buyers and sellers? (Answer: it brings them together so they can agree a visible price.)\n2. Name one difference between investing and trading. (Answer: investing usually has a long time horizon, while trading involves more frequent buying and selling.)\n3. What is one check to make before depositing money with a broker? (Answer: confirm the broker is regulated, and understand its costs.)\n\n## Practical assignment\n\nThis week, choose one asset that interests you and write down its price once a working day for five days. Next to each price, note one news item you think may have moved it. Do not trade. The purpose is to see how prices respond to information.\n\n## Summary\n\n- A market brings buyers and sellers together, and its price comes from the orders of everyone in it.\n- Investors, speculators, hedgers and market makers have different goals, and most counterparties are professionals.\n- Trading carries a risk of loss, and no honest source can guarantee profits. Check regulation and costs before you deposit anything.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain how supply and demand set a market price;\n- read a two-way quote and identify the bid, the ask and the spread;\n- describe three things that can change the balance between buyers and sellers;\n- explain why a price is information about what people are willing to do, not a measure of true value.\n\n## Key terms\n\n::: terms\nSupply: the quantity sellers are willing to offer at a given price\nDemand: the quantity buyers are willing to take at a given price\nBid: the highest price a buyer is currently willing to pay\nAsk: the lowest price a seller is currently willing to accept\nSpread: the difference between the ask and the bid\nPrice discovery: the process by which trades reveal the price people agree on\n:::\n\n## 1. Supply, demand and the meeting point\n\nIf many people want to buy and few sellers have stock, buyers compete and the price rises until some drop out. If many sellers have stock and few want it, sellers lower their prices. The price settles where the quantity buyers want matches the quantity sellers offer. It is not a fixed fact about the product. It changes as the balance changes.\n\nThe useful habit is to ask, of any price move, what changed in the balance between buyers and sellers. If you cannot answer, you are guessing.\n\n## 2. Reading a two-way quote\n\nMost markets show two prices at once. The bid is the price at which buyers are currently willing to buy. The ask is the price at which sellers are currently willing to sell. The ask is always higher than the bid, and the gap between them is the spread. If you buy at the ask and sell straight away at the bid, you lose the spread. A narrow spread means the market is close to agreement. A wide spread means it charges more to enter and leave.\n\n::: diagram steps | Reading a quote\nBid: the price you receive when you sell at market\nAsk: the price you pay when you buy at market\nSpread: ask minus bid, a cost every trade starts with\nMid price: the point halfway between bid and ask, a reference only\n:::\n\n::: slides\nSLIDE Step 1: Find the balance | Ask how many people want to buy; Ask how many want to sell | Price follows the balance\nSLIDE Step 2: Note what changed | Look for news, large orders or a shift in mood; Write it down with the date | Change explains movement\nSLIDE Step 3: Test the reason | Does the explanation fit the size of the move?; Would it still make sense tomorrow? | Be honest about uncertainty\n:::\n\n## Worked example: the cost of one round trip\n\nA quote shows a bid of 75.10 and an ask of 75.30. The spread is 75.30 minus 75.10, which is 0.20. A trader who buys 100 units at the ask pays 7,530. If she sells straight away at the bid, she receives 7,510. The 20 difference is the spread cost, before any commission. The price did not need to move at all for her to lose 20. This is why short holding periods are expensive on wide spreads.\n\n::: case | The quiet morning\nJoao watches a commodity that his small import business uses. At 7 a.m., before most traders are active, the spread on his chosen instrument is much wider than the day before. He sees the price jump and wants to act at once.\n? What is the most sensible first step for Joao?\n- Buy immediately, because the price is moving and may keep rising || A thin market moves on small orders, and a fast move may reverse just as quickly.\n* Wait until the market is busier, and check the spread before placing any order || A wider spread is a real cost, and waiting for normal conditions reduces it.\n- Sell his stock of the commodity to lock in the current price || His business decision about stock is separate from his trading and should follow its own plan.\n:::\n\n## Tool: quote check\n\n- What is the bid and what is the ask?\n- What is the spread in currency and as a share of the price?\n- Is the market busy, or thin and quiet?\n- Would the trade still make sense after paying the spread?\n\n::: quiz\n? A market shows a bid of 100.00 and an ask of 100.20. What is the spread?\n- 100.00, the bid itself || The spread is the difference between the two prices, not the bid.\n* 0.20, the ask minus the bid || Ask minus bid gives the spread. Every trade starts with this cost.\n- 100.10, the midpoint between the two prices || The midpoint is a reference point. The spread is the gap between the prices.\n:::\n\n::: quiz\n? Which of these best describes a price?\n- The true value of the asset, which the market eventually reveals || Price can differ from value for long periods, so it is not proof of true value.\n* A record of the most recent agreement between buyers and sellers || This describes price as an agreement at a moment in time.\n- A forecast of where the price will be next week || A price is not a forecast, although traders use it to form expectations.\n:::\n\n## Common mistakes\n\n- Treating a high price as a fair price, or a low one as a bargain.\n- Ignoring the spread when judging how much a short trade must move to pay.\n- Reading a price move as news without checking what changed in the balance.\n- Trading a thin market at the same size as a busy one.\n\n## Self-check\n\n1. If buyers suddenly outnumber sellers, what is likely to happen to the price? (Answer: it tends to rise, as buyers compete for the available sellers.)\n2. A bid is 50.00 and an ask is 50.40. If you buy and sell straight away at the bid, what have you lost? (Answer: the spread of 0.40 per unit, before any other costs.)\n3. Name one reason a market moves that is not new information. (Answer: sentiment, the general mood of traders, or a large order that shifts the balance.)\n\n## Practical assignment\n\nPick one market you can observe for free. For three days, record the bid and the ask at the same time each day. Calculate the spread and note whether it changed. Write one sentence on what might explain any change. Do not place any trade.\n\n## Summary\n\n- Price is where the willingness to buy meets the willingness to sell, and it changes as that balance changes.\n- The ask is higher than the bid, and the gap between them is a cost you pay on every trade.\n- A price records an agreement at a moment. It is not proof of true value or a forecast of the next move.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain the difference between a market order and a limit order;\n- describe how a stop order and a stop-limit order behave;\n- choose an order type that matches a stated goal;\n- identify common order mistakes and check an order before sending it.\n\n## Key terms\n\n::: terms\nOrder: an instruction to a broker to buy or sell an asset under stated conditions\nMarket order: an order to buy or sell immediately at the best available price\nLimit order: an order to buy or sell only at a stated price or better\nStop order: an order that becomes a market order once a set price is reached\nFill: the execution of an order, in full or in part\nSlippage: the difference between the price you expected and the price at which the order was filled\n:::\n\n## 1. Market orders: speed first\n\nA market order buys or sells now, at the best price available. In a busy market it fills quickly and close to the quote. You do not control the exact price. If the market moves between your decision and the fill, you get the price that exists at that moment. The gap between the expected price and the fill price is slippage. It is usually small in liquid markets and larger in thin markets or during news.\n\n## 2. Limit and stop orders: control first\n\nA limit order sets the worst price you will accept. A buy limit fills at the limit or lower. You control the price, but you give up certainty that the order will fill. A stop order waits in the market. When the stop price is reached, it becomes a market order and is sent immediately. Traders use stops to limit a loss on an open position, or to enter when a level breaks. A stop-limit order becomes a limit order at the stop price, so it controls the price but may not fill at all.\n\n::: diagram steps | Using a market order\nCheck the market: is it busy, and is the spread normal?\nDecide the size: how much you will buy or sell\nSend the order: accept that the fill may differ slightly from the quote\nConfirm the fill: check the price and size you actually received\n:::\n\n::: slides\nSLIDE Stop step 1 | Choose the stop price before you enter; Confirm it fits your plan | Decide the exit first\nSLIDE Stop step 2 | Remember the stop becomes a market order; Expect a possible fill beyond the stop | A stop is not a guarantee\nSLIDE Stop step 3 | Review open stops daily; Cancel or move them only by your rules | Forgotten orders cause surprises\n:::\n\n## Worked example: a long position with a stop\n\nYou buy at 10.00 and place a stop at 9.50 to limit the loss to 0.50 per unit. The price falls steadily to 9.55 and then the market opens lower, at 9.20, after a weekend announcement. The stop is triggered at 9.50, but the first available price is 9.20. The stop becomes a market order and fills at about 9.20. The loss is 0.80 per unit, not 0.50. The stop did its job, but it could not control the price in the gap.\n\n::: case | The limit that never fills\nAmelia wants to buy a currency pair if its price falls to a level she has chosen. She places a buy limit at that level and goes to bed. Overnight the price drops a little above her limit and then rises again without reaching it.\n? What happened to her order, and what should she learn from it?\n- It filled automatically at the nearest price, so she made the trade she wanted || A limit order fills only at the limit or better. The nearest price is not a fill.\n* It stayed open and did not fill, so she did not trade, and she should check whether that outcome still suits her plan || A limit order protects the price but does not guarantee a trade. Missing a trade is a real outcome to plan for.\n- It was cancelled by the broker because of the overnight move || Brokers do not cancel orders on their own for this reason. The order remained open and simply did not fill.\n:::\n\n## Tool: order check before sending\n\n- Instrument: is it the one I planned?\n- Direction: buy or sell?\n- Size: is it the amount the plan produced?\n- Price or stop: is it written in the plan, and is it on the correct side of the market?\n\n::: quiz\n? A trader wants to buy only if the price falls to a set level and will not pay more. Which order fits best?\n- A market order, because it fills fastest || Speed is not the goal here. The trader wants a specific maximum price.\n* A buy limit order at that level, because it fills only at that price or lower || A buy limit sets the highest price the trader will accept.\n- A sell stop order at that level, because it protects against a fall || A sell stop is used to exit a position, not to buy at a lower price.\n:::\n\n::: quiz\n? Why can a stop order fill far from its stop price?\n- Because brokers add a fixed margin to stop orders || Brokers do not add a fixed margin to stop orders in this way.\n* Because once triggered it becomes a market order, which fills at the best price available at that moment || A market order takes the available price, which can be far from the stop if the market moves fast.\n- Because stop orders only work during the day || The main reason is that the stop becomes a market order, not the time of day.\n:::\n\n## Common mistakes\n\n- Using a market order in a thin market and being surprised by the fill.\n- Treating a stop as a guaranteed exit price.\n- Choosing a stop-limit order without asking what happens if it does not fill.\n- Entering an order without checking the direction, size or price.\n\n## Self-check\n\n1. What is the main trade-off of a market order? (Answer: speed and a likely close fill, but no control over the exact price.)\n2. What happens to a buy limit order if the price never reaches the limit? (Answer: it stays open and does not fill, so no trade happens.)\n3. Why is a stop order not a guarantee of a particular exit price? (Answer: once triggered it becomes a market order, which can fill beyond the stop in a fast market.)\n\n## Practical assignment\n\nOpen a demo account if one is available, and place three orders: one market, one limit and one stop, each with a written reason for choosing it. Note the fill price and compare it with the quote at the time. Record any slippage and what caused it.\n\n## Summary\n\n- A market order fills quickly at the best available price, but its exact price is not controlled.\n- A limit order controls the price but may not fill, and a stop order becomes a market order once triggered.\n- Check the instrument, direction, size and price before every order, and review open orders each day.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- list the main costs of trading and explain how each arises;\n- estimate the total cost of a simple trade before placing it;\n- read a broker's cost schedule and identify the items that matter most;\n- explain why execution quality is part of the price you pay.\n\n## Key terms\n\n::: terms\nCommission: a fee charged for executing a trade, sometimes shown separately from the spread\nFinancing: an interest-like charge for holding a leveraged position overnight, where the broker applies one\nCurrency conversion: exchanging money from one currency to another, usually at a rate that includes a margin\nRequote: a broker offering a different price from the one you clicked, often in a fast market\nExecution quality: how closely and how quickly your orders are filled at the prices you expected\nCost schedule: the broker's published list of fees, spreads and charges\n:::\n\n## 1. Where the costs come from\n\nMany trading costs are built into the price rather than charged as a separate line. The spread is the most important. A round trip, buying and then selling, costs at least one spread. Other costs are often shown separately: commissions per trade, financing on positions held overnight, inactivity and withdrawal fees, and currency conversion. None is unusual, but together they can turn a small expected gain into a loss.\n\n## 2. Slippage and execution quality\n\nSlippage is the gap between the expected price and the price you received. It is most common in fast markets, around news and in thin markets. It can work for you as well as against you. What matters is that you plan for it. Execution quality covers how orders are filled: how quickly, how often they are rejected and whether requotes occur. A broker with low published costs and poor execution can still be expensive.\n\n::: diagram steps | Estimating the cost of one trade\nSpread: the cost you pay to enter, which you see in the quote\nCommission: any fee per trade, as stated in the cost schedule\nExpected slippage: your own estimate, based on what you have observed\nTotal: add the three, then compare with the move you expect\n:::\n\n::: slides\nSLIDE Conversion step 1 | Identify the currency of your account; Identify the currency of the asset | Know both currencies\nSLIDE Conversion step 2 | Ask for the conversion margin in writing; Compare two brokers on one example | Compare before you trade\nSLIDE Conversion step 3 | Limit conversions to what you need; Keep a record of each conversion | Small costs add up\n:::\n\n## Worked example: the total cost of one trade\n\nA trade has a spread of 0.30, a commission of 0.10 per unit and expected slippage of 0.05 per unit. Adding the three gives 0.45 per unit. For a trade of 200 units, the estimated cost is 90 before any financing or conversion. The planned move must be large enough to cover that cost, with room for error. If the expected move is only 0.40 per unit, the trade has no margin for mistakes, even if the market moves as predicted.\n\n::: case | Two schedules\nMiguel is choosing between two brokers. Broker X has a narrow spread but charges a commission on every trade. Broker Y has a slightly wider spread and no separate commission. He plans a few small trades a month.\n? What is the most sensible next step for Miguel?\n- Choose Broker X because a narrow spread is always cheaper || A narrow spread is only part of the cost. The commission can outweigh it on small trades.\n* Work out the total cost of one planned trade at both brokers, including conversion and any inactivity fee, then decide || Comparing the full cost on his own trade is the only way to see which broker is cheaper for him.\n- Choose Broker Y because a wider spread means a more honest broker || The width of the spread does not show a broker's honesty. Its regulation and cost schedule do.\n:::\n\n## Tool: cost schedule checklist\n\n- Spread on each instrument I plan to trade\n- Commission per trade, if any\n- Financing for positions held overnight\n- Conversion margin, inactivity fee, deposit and withdrawal fees\n\n::: quiz\n? A trade has a spread of 0.30, a commission of 0.10 per unit and expected slippage of 0.05 per unit. What is the total estimated cost per unit?\n- 0.30, because only the spread matters || The spread is one cost. Commission and slippage also add to the total.\n* 0.45, the sum of spread, commission and expected slippage || Adding the three gives the estimated cost per unit before any other charge.\n- 0.10, because the commission is the largest single fee || The size of one fee does not give the total. Add all the costs.\n:::\n\n::: quiz\n? Why does execution quality matter to the price you pay?\n- Because a broker with good execution always has the lowest spread || Execution and spread are different things, although both affect cost.\n* Because slow fills, rejections and requotes change the price you actually receive || A poor fill is a real cost even when the published spread looks low.\n- Because execution quality only matters for professional traders || Every trader receives fills, so every trader is affected by execution quality.\n:::\n\n## Common mistakes\n\n- Comparing brokers on the spread alone and ignoring commissions and conversion.\n- Assuming every fill will match the quote on the screen.\n- Forgetting financing charges on positions held overnight.\n- Not keeping a record of real costs, so the estimate never improves.\n\n## Self-check\n\n1. Why is the spread a cost even when no separate fee is charged? (Answer: every trade starts at the ask when buying and the bid when selling, so the gap is paid on entry and exit.)\n2. What is slippage, and when is it most likely? (Answer: the gap between the expected and the filled price, most likely in fast markets, around news and in thin markets.)\n3. What should you compare when choosing between two brokers? (Answer: the total cost of the same planned trade, including spread, commission, conversion and fees.)\n\n## Practical assignment\n\nChoose one broker you are considering, or use a demo account's cost information. Calculate the total cost of one trade you might realistically place, including spread, commission, conversion and expected slippage. Write the result on one page and keep it next to your trading plan.\n\n## Summary\n\n- Trading costs include the spread, commissions, financing, currency conversion and fees, and many are built into the price.\n- Slippage and execution quality change the price you actually receive, so plan for them rather than assuming the quote.\n- Compare brokers on the total cost of the same trade, and keep a log of your own real costs.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- explain what the open, high, low and close of a candle show;\n- describe the difference between timeframes and why the choice matters;\n- identify an uptrend, a downtrend and a sideways market on a chart;\n- explain the limits of chart reading and why no pattern guarantees a result.\n\n## Key terms\n\n::: terms\nCandle: a visual summary of price over one period, showing the open, high, low and close\nTimeframe: the length of time each candle represents, such as one minute, one hour or one day\nTrend: a general direction of price over time, described by its highs and lows\nSupport: a price area where buying has often stopped a fall in the past\nResistance: a price area where selling has often stopped a rise in the past\nHindsight bias: the tendency to see a pattern clearly only after the outcome is known\n:::\n\n## 1. What a candle shows\n\nA candle summarises the price of an asset over one period. The body is the box between the open and the close. If the close is above the open, the body is shown in the rising colour. The thin lines above and below the body, called wicks, show the highest and lowest prices reached during the period. A candle shows what happened, not why. Two candles can look almost identical and hide very different events. Context from news, volume and the wider market is needed to understand why a candle formed.\n\n::: diagram steps | Reading one candle\nOpen: the first price of the period\nHigh: the highest price reached in the period\nLow: the lowest price reached in the period\nClose: the last price of the period, which sets the body colour\n:::\n\n## 2. Timeframes, trends and levels\n\nThe same market can look very different on different timeframes. A one-minute chart shows many small moves, most of them noise. A daily chart shows the bigger direction. Choose the timeframe for a reason you can state, before you look at the chart, and keep it while you review your results.\n\nIn an uptrend, each high and each low is higher than the one before. In a downtrend, both are lower. Support and resistance are price areas where the price has often paused or reversed. Treat them as zones, not exact lines. A break of a level is a reason to review your view, not proof that the price will continue.\n\n::: slides\nSLIDE Timeframe step 1 | Decide how long you will hold a position; Match the chart to that horizon | Horizon comes first\nSLIDE Timeframe step 2 | Look at one longer chart for context; Use the shorter chart only for timing | Context before timing\nSLIDE Timeframe step 3 | Write the timeframe in your notes; Do not change it after a loss | Stability keeps learning honest\n:::\n\n## Worked example: reading three daily candles\n\nThree daily candles show a close higher than the previous close each day, and each low sits above the one before. That describes a short uptrend on that timeframe. It does not say the trend will continue tomorrow. If the next candle closes below the last low, the description has changed. Write the rule before you look: \"The uptrend is intact while each low holds above the previous low.\" Then the chart tests your reading rather than flattering it.\n\n::: case | The break that reversed\nNadia marked a resistance zone on a daily chart. One morning the price moved above the zone, and she was tempted to buy at once. Two days later the price had fallen back below the zone.\n? What lesson should Nadia take from this?\n- Breaks always continue, so she should have bought earlier || Breaks do not always continue. Assuming they will is the mistake.\n* A break is a reason to review the view, and she should have written in advance what would confirm it before acting || Writing the rule before the move protects against chasing price.\n- Levels are exact lines, so the price should not have moved above it || Levels are zones. Prices often move a little above or below them.\n:::\n\n## Tool: chart reading routine\n\n- Name the timeframe and why I chose it.\n- Describe the trend using highs and lows.\n- Mark the main support and resistance zones.\n- Write what would prove my reading wrong, before I decide.\n\n::: quiz\n? A candle's close is above its open. How is its body usually shown?\n- Filled in the colour for a falling price || A close above the open is a rising candle, so its body uses the rising colour.\n* In the colour used for a rising candle, because the close is above the open || The body colour shows whether the period closed above or below its open.\n- Without a body, because only the wicks matter || The body is always shown. It is the box between open and close.\n:::\n\n::: quiz\n? A chart shows higher highs and higher lows. What does this describe?\n- A guaranteed rise over the next month || A pattern describes past prices. It does not guarantee a future move.\n* An uptrend, which describes the past direction of price || Higher highs and higher lows are the usual description of an uptrend.\n- A sideways market with no direction || A sideways market has highs and lows that stay within a range.\n:::\n\n## Common mistakes\n\n- Changing the timeframe after a loss until a pattern appears, which is hindsight bias.\n- Treating a support or resistance zone as an exact price.\n- Acting on a break without first writing what would confirm it.\n- Reading a pattern as a prediction rather than a description.\n\n## Self-check\n\n1. What do the wicks of a candle show? (Answer: the highest and lowest prices reached during the period.)\n2. Why should you choose a timeframe before you look at the chart? (Answer: to avoid changing the timeframe until a pattern appears, which is hindsight.)\n3. Why is a support or resistance level better treated as a zone? (Answer: prices rarely stop at one exact number, so the area near the level matters more.)\n\n## Practical assignment\n\nChoose one asset and one timeframe. For ten trading days, record the trend, the main support and resistance zones, and one sentence on what would prove your reading wrong. Do not trade. At the end, check how often your reading held.\n\n## Summary\n\n- A candle shows the open, high, low and close for one period, and the timeframe you choose changes what you see.\n- Trends and levels describe past prices, and a break of a level is a reason to review, not a guarantee.\n- Chart reading organises thinking and cannot remove risk, so write rules before you look at the chart.",
+  "## Learning objectives\n\nBy the end of this lesson you will be able to:\n\n- name the main kinds of events that move prices and how they differ;\n- explain liquidity and why it changes during the day and around holidays;\n- describe a gap and how it can affect an order or a stop;\n- set out a simple plan for trading around scheduled news.\n\n## Key terms\n\n::: terms\nScheduled release: an economic or company announcement that appears on a published calendar in advance\nLiquidity: the ease with which an asset can be bought or sold without moving its price much\nGap: a jump in price from one level to another with little or no trading in between\nVolatility: how much and how quickly a price moves over a period\nEvent risk: the chance that a specific announcement moves a price sharply\nOverreaction: a move that goes further than the new information justifies, often followed by a partial reversal\n:::\n\n## 1. What moves prices, and when\n\nPrices move when expectations change. Scheduled releases, such as official statistics or company results, have known dates, but nobody knows the result in advance. Unscheduled events, such as a sudden political development or a supply interruption, arrive without warning and leave no time to plan. The size of a move depends on how far the result differs from what people expected. A figure that matches expectations often moves a market little. A surprise can move it a lot.\n\nLiquidity is highest when the main markets are open and most traders are active. It falls during quiet hours, around public holidays and just before major events. Low liquidity does not mean the market is broken. It means each order has more effect on the price, and spreads are usually wider.\n\n::: diagram cycle | A day of changing liquidity\nOpening: wider spreads and fast moves as orders arrive\nBusy hours: tighter spreads and steadier prices\nQuiet hours: thinner trading and more sensitivity to single orders\nClose: positioning ahead of the next session or event\n:::\n\n## 2. Gaps and planning around scheduled news\n\nA gap is a jump in price from one level to the next, with little or no trading between them. Gaps often happen between sessions, over a weekend or after a surprise announcement. A stop triggered in a gap fills at the first available price, which can be far from the stop level. A stop is a useful tool, but it cannot protect against every gap. Position size matters here, because a smaller position limits the damage a gap can cause.\n\nFor scheduled news, decide before the event whether you will trade it at all. Many experienced traders stay out of major releases, because spreads widen, slippage increases and the first move is often reversed. If you do trade, decide your size, maximum loss and exit in advance.\n\n::: slides\nSLIDE Gap step 1 | Know when the market closes and opens; Note events that fall outside normal hours | Gaps follow closed time\nSLIDE Gap step 2 | Assume a stop may fill beyond its level; Size positions so a gap is survivable | Plan for the worst fill\nSLIDE Gap step 3 | Review gaps after they happen; Adjust rules, not your emotions | Learn from each gap\n:::\n\n## Worked example: a gap through a stop\n\nYou hold a buy at 10.00 with a stop at 9.50, and a maximum loss of 0.50 per unit. On Friday the price closes at 10.00. Over the weekend an announcement lands, and the market opens on Monday at 9.20. The stop is triggered, but the first available price is 9.20. The loss is 0.80 per unit, which is 60 percent more than planned. Nothing went wrong with the stop, but the gap changed the outcome. A smaller position would have made the loss smaller and still survivable.\n\n::: case | The announcement at ten\nDaniel has a small position in a commodity. An important economic figure is due at ten o'clock. The figure is a surprise, the price jumps and then reverses within minutes. He was not watching, and his stop filled well below its level.\n? What would have been the most useful step before the announcement?\n- Add to the position, because the first move suggests the trend is strong || The first move is often reversed, and adding before a release increases the risk.\n* Decide in advance whether to hold through the release, and size the position so the worst fill is survivable || A planned choice about size and exposure protects against surprise and gaps.\n- Ignore the calendar, because scheduled news cannot change prices || Scheduled news is one of the most common reasons prices move sharply.\n:::\n\n## Tool: news plan\n\n- What is the event, and what time is it released?\n- What was expected, and what would count as a surprise?\n- Will I hold through it, and what size is the worst fill I can survive?\n- What is my exit, and what will I do if the market gaps?\n\n::: quiz\n? Why can a stop order fill far from its stop price after a gap?\n- Because stops are only active during the day || Stops can be active whenever the market trades. The gap is the cause.\n* Because the price jumps past the stop level, and the stop fills at the first available price || A gap skips over the stop level, so the fill comes at the next price available.\n- Because brokers add a fixed delay to stop orders || Brokers do not add a fixed delay to explain gap fills.\n:::\n\n::: quiz\n? What is the most reasonable response to a sudden headline on a market you hold?\n- Trade at once, because the first move shows the real direction || The first move is often reversed. Acting at once without a plan is overreaction.\n* Check your plan, your position size and your maximum loss before you decide anything || Following the plan you wrote before the headline is the disciplined response.\n- Close all positions in every market, because headlines are always dangerous || Closing everything is not a plan either. Respond according to the plan you made.\n:::\n\n## Common mistakes\n\n- Holding a position through a scheduled release without deciding to do so.\n- Assuming a stop will fill at its level in a gap.\n- Acting on the first headline before checking the plan.\n- Trading thin markets around holidays at the same size as busy ones.\n\n## Self-check\n\n1. What is the difference between a scheduled release and an unscheduled event? (Answer: a scheduled release has a known time, while an unscheduled event arrives without warning.)\n2. Why is liquidity usually lower in quiet hours? (Answer: fewer participants are trading, so each order has more effect and spreads are wider.)\n3. What is a gap, and why does it matter for a stop? (Answer: a jump in price with little trading between levels, which can carry the price past a stop and fill it far from its level.)\n\n## Practical assignment\n\nLook at the economic calendar for the coming week and pick one scheduled event. Write what the figure measures, what the market is expected to show, and what you would do in each of three cases: a result above, below or in line with expectations. Do not trade. Compare your notes with the actual result and the market's reaction.\n\n## Summary\n\n- Prices move on scheduled releases and on unexpected events, and surprises move them most.\n- Liquidity changes during the day, and a gap can carry a price past a stop order.\n- Plan your response to scheduled news in advance, and do not act on headlines outside your rules."
+ ],
+ "slides": [
+  [
+   {
+    "title": "What a market does",
+    "points": [
+     "Brings buyers and sellers together",
+     "Makes prices visible and comparable",
+     "Prices come from the orders placed by everyone"
+    ],
+    "takeaway": "Prices are the sum of many decisions"
+   },
+   {
+    "title": "Types of assets",
+    "points": [
+     "Shares give part ownership of a company",
+     "Currencies are traded in pairs",
+     "Commodities trade in standard contracts"
+    ],
+    "takeaway": "Each asset carries its own risks"
+   },
+   {
+    "title": "Who trades",
+    "points": [
+     "Investors hold for the long term",
+     "Speculators profit from short-term moves",
+     "Hedgers reduce a risk they already carry",
+     "Market makers quote both prices"
+    ],
+    "takeaway": "Know who is on the other side"
+   },
+   {
+    "title": "Investing versus trading",
+    "points": [
+     "Investing has a long time horizon",
+     "Trading means more frequent buying and selling",
+     "Both carry risk"
+    ],
+    "takeaway": "Neither is guaranteed"
+   },
+   {
+    "title": "Choosing a broker",
+    "points": [
+     "Check the licence with a financial regulator",
+     "Ask how client money is held",
+     "Read the full cost schedule"
+    ],
+    "takeaway": "Check before you deposit"
+   },
+   {
+    "title": "Start on a demo",
+    "points": [
+     "A demo uses fake money at real prices",
+     "Keep notes and review the results",
+     "Live accounts change behaviour"
+    ],
+    "takeaway": "Practise before you risk money"
+   },
+   {
+    "title": "The learning limit",
+    "points": [
+     "Set a fixed learning amount",
+     "Write it down before you start",
+     "Use only money you can afford to lose"
+    ],
+    "takeaway": "Protect your savings first"
+   }
+  ],
+  [
+   {
+    "title": "Supply and demand",
+    "points": [
+     "More buyers push prices up",
+     "More sellers push prices down",
+     "Price settles where the two meet"
+    ],
+    "takeaway": "Price is a meeting point"
+   },
+   {
+    "title": "Reading a quote",
+    "points": [
+     "The bid is the price buyers offer",
+     "The ask is the price sellers want",
+     "The spread is the gap between them"
+    ],
+    "takeaway": "You always pay the spread"
+   },
+   {
+    "title": "What moves the balance",
+    "points": [
+     "News changes what people expect",
+     "Large orders shift the balance",
+     "Sentiment can run ahead of facts"
+    ],
+    "takeaway": "Expectation moves price as much as fact"
+   },
+   {
+    "title": "Why a market can stall",
+    "points": [
+     "Few buyers and few sellers",
+     "Wide spread",
+     "Small moves cost more"
+    ],
+    "takeaway": "Thin markets are harder to trade"
+   },
+   {
+    "title": "Price discovery",
+    "points": [
+     "Every trade records a price",
+     "Many trades make a visible range",
+     "The range changes as conditions change"
+    ],
+    "takeaway": "The market keeps updating the price"
+   },
+   {
+    "title": "Common misunderstandings",
+    "points": [
+     "A high price is not a fair price",
+     "A falling price is not always cheap",
+     "The last trade is not the true value"
+    ],
+    "takeaway": "Price is information, not a verdict"
+   }
+  ],
+  [
+   {
+    "title": "Market order",
+    "points": [
+     "Buys or sells now at the best available price",
+     "Fills quickly in a liquid market",
+     "The final price may differ from the quote"
+    ],
+    "takeaway": "Speed can cost price"
+   },
+   {
+    "title": "Limit order",
+    "points": [
+     "Sets the worst price you will accept",
+     "A buy limit fills at or below the limit",
+     "A sell limit fills at or above it"
+    ],
+    "takeaway": "No fill if the price never arrives"
+   },
+   {
+    "title": "Stop order",
+    "points": [
+     "Becomes a market order once the stop price is reached",
+     "Used to limit a loss or enter on a break",
+     "Can fill far from the stop"
+    ],
+    "takeaway": "A stop is not a guarantee"
+   },
+   {
+    "title": "Stop-limit order",
+    "points": [
+     "Becomes a limit order at the stop price",
+     "Gives control over price",
+     "May not fill at all"
+    ],
+    "takeaway": "Control can mean no trade"
+   },
+   {
+    "title": "Choosing an order",
+    "points": [
+     "Ask what you want most: speed, price or protection",
+     "Match the order to the goal"
+    ],
+    "takeaway": "The order should serve your plan"
+   },
+   {
+    "title": "Order mistakes",
+    "points": [
+     "Typing a wrong price or size",
+     "Using a market order in a thin market",
+     "Forgetting an open stop order"
+    ],
+    "takeaway": "Check before you send"
+   }
+  ],
+  [
+   {
+    "title": "Where costs come from",
+    "points": [
+     "The spread is paid on every trade",
+     "Commissions may be charged separately",
+     "Financing can apply to positions held overnight"
+    ],
+    "takeaway": "Know every cost before you trade"
+   },
+   {
+    "title": "Slippage",
+    "points": [
+     "The fill can differ from the quote",
+     "Fast markets and news increase it",
+     "Thin markets increase it too"
+    ],
+    "takeaway": "Expect some difference"
+   },
+   {
+    "title": "Currency conversion",
+    "points": [
+     "Your account may hold a different currency",
+     "Each conversion adds a cost",
+     "Check the rate you receive"
+    ],
+    "takeaway": "Conversion is a cost"
+   },
+   {
+    "title": "Reading a cost schedule",
+    "points": [
+     "Find the spread, commissions and financing",
+     "Ask about inactivity and withdrawal fees",
+     "Compare two brokers on the same trade"
+    ],
+    "takeaway": "Compare before you commit"
+   },
+   {
+    "title": "Execution quality",
+    "points": [
+     "Ask how orders are filled",
+     "Ask about rejections and requotes",
+     "Test on a demo first"
+    ],
+    "takeaway": "Execution is part of the price"
+   },
+   {
+    "title": "Total cost of a trade",
+    "points": [
+     "Add the spread, commission and expected slippage",
+     "Compare with the move you expect"
+    ],
+    "takeaway": "A small cost can decide a small trade"
+   }
+  ],
+  [
+   {
+    "title": "What a candle shows",
+    "points": [
+     "Open, high, low and close for one period",
+     "A filled body shows a fall or rise",
+     "Thin wicks show the extremes"
+    ],
+    "takeaway": "One candle is one period"
+   },
+   {
+    "title": "Timeframes",
+    "points": [
+     "The same market looks different on each timeframe",
+     "Shorter timeframes are noisier",
+     "Longer ones show the bigger picture"
+    ],
+    "takeaway": "Choose the timeframe before the chart"
+   },
+   {
+    "title": "Trend",
+    "points": [
+     "Higher highs and higher lows describe an uptrend",
+     "Lower highs and lower lows describe a downtrend",
+     "A sideways market has no clear direction"
+    ],
+    "takeaway": "A trend describes the past"
+   },
+   {
+    "title": "Support and resistance",
+    "points": [
+     "Price has often paused or reversed near these levels",
+     "A break can be a signal to reassess",
+     "Levels are areas, not exact lines"
+    ],
+    "takeaway": "Levels are zones"
+   },
+   {
+    "title": "Chart limits",
+    "points": [
+     "Charts describe past prices",
+     "Patterns do not guarantee outcomes",
+     "Many patterns look clear only in hindsight"
+    ],
+    "takeaway": "Charts describe, not predict"
+   },
+   {
+    "title": "A reading routine",
+    "points": [
+     "Name the timeframe",
+     "Describe the trend",
+     "Mark the main levels",
+     "Write what would prove you wrong"
+    ],
+    "takeaway": "Write before you decide"
+   }
+  ],
+  [
+   {
+    "title": "What moves prices",
+    "points": [
+     "Scheduled data releases",
+     "Company news and results",
+     "Unexpected events and rumours"
+    ],
+    "takeaway": "Surprise moves the most"
+   },
+   {
+    "title": "Liquidity",
+    "points": [
+     "Liquidity is the ease of trading without moving the price",
+     "It is highest in busy hours",
+     "It falls before holidays and at quiet times"
+    ],
+    "takeaway": "Liquidity is a condition, not a promise"
+   },
+   {
+    "title": "Gaps",
+    "points": [
+     "A gap is a jump between one price and the next",
+     "Gaps often happen between sessions",
+     "A stop may fill beyond its level"
+    ],
+    "takeaway": "Gaps break plans"
+   },
+   {
+    "title": "News risk",
+    "points": [
+     "Spreads widen around big news",
+     "Orders may slip or be rejected",
+     "Waiting can be the safer choice"
+    ],
+    "takeaway": "Plan for the event"
+   },
+   {
+    "title": "Reading the calendar",
+    "points": [
+     "Note scheduled events in advance",
+     "Decide in advance whether to trade them",
+     "Do not trade events you have not studied"
+    ],
+    "takeaway": "The calendar is a plan"
+   },
+   {
+    "title": "Avoid overreacting",
+    "points": [
+     "Early moves can reverse",
+     "Headlines are not analysis",
+     "Stick to your rules"
+    ],
+    "takeaway": "One headline is not a strategy"
+   }
+  ]
+ ]
+}

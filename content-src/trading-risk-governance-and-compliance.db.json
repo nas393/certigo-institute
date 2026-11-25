@@ -1,0 +1,474 @@
+{
+  "slug": "trading-risk-governance-and-compliance",
+  "title": "Trading Risk Governance and Compliance",
+  "category": "Trading & Markets",
+  "summary": "How trading firms govern risk, set limits, control trades and protect clients. Education only, not advice.",
+  "skills": [
+    "Three lines of defence",
+    "Risk appetite and limits",
+    "Segregation of duties",
+    "Client protection",
+    "Anti-money laundering",
+    "Compliance monitoring"
+  ],
+  "modules": [
+    {
+      "title": "Three Lines of Defence and Board Oversight",
+      "subject": "Governance",
+      "learned": "Describe the three lines of defence, the role of board oversight and risk appetite, and why independence matters.",
+      "minutes": 20,
+      "skills": [
+        "Three lines of defence",
+        "Independence"
+      ],
+      "check": {
+        "q": "A trader sets her desk's limits and reviews her own breaches. Which principle is missing?",
+        "options": [
+          "Independence, because the first line should not set and police its own limits",
+          "Speed, because limits must be acted on quickly",
+          "Profit, because limits reduce income",
+          "Disclosure, because limits must be published daily"
+        ],
+        "a": 0,
+        "explanation": "A second line sets limits and challenges breaches, so the first line cannot mark its own homework."
+      }
+    },
+    {
+      "title": "Limits, Thresholds and Escalation",
+      "subject": "Limits",
+      "learned": "Turn a risk appetite into limits with early-warning levels, explain value at risk and stress tests, and write an escalation path.",
+      "minutes": 20,
+      "skills": [
+        "Risk appetite and limits",
+        "Stress testing"
+      ],
+      "check": {
+        "q": "A desk's hard limit is 1,000,000 and its early-warning level is 750,000. Exposure is now 800,000. What is the correct response?",
+        "options": [
+          "Nothing, because the hard limit has not been reached",
+          "Review the position in writing and explain it to the named owner",
+          "Raise the hard limit to 800,000",
+          "Double the position to reach a safer level"
+        ],
+        "a": 1,
+        "explanation": "Crossing the early-warning level triggers a documented review while there is still room to act."
+      }
+    },
+    {
+      "title": "Segregation of Duties and Trade Controls",
+      "subject": "Trade controls",
+      "learned": "Explain segregation of duties, the four-eyes principle, trade capture, reconciliation and access rights.",
+      "minutes": 20,
+      "skills": [
+        "Segregation of duties",
+        "Reconciliation"
+      ],
+      "check": {
+        "q": "A trader amends a booked trade and then approves the amendment herself. What is the control failure?",
+        "options": [
+          "None, because amendments are routine",
+          "Only the timing, because the amendment came after booking",
+          "The four-eyes check is missing, so the amendment is not independent",
+          "The broker's fees, which should have been higher"
+        ],
+        "a": 2,
+        "explanation": "An amendment approved by its maker has not been checked by anyone else, so the four-eyes principle fails."
+      }
+    },
+    {
+      "title": "Client Protection: Know Your Client and Conflicts",
+      "subject": "Client protection",
+      "learned": "Describe know-your-client, suitability and appropriateness, conflicts of interest, written disclosure and complaint handling.",
+      "minutes": 20,
+      "skills": [
+        "Client protection",
+        "Conflicts of interest"
+      ],
+      "check": {
+        "q": "A client with limited knowledge asks for a complex leveraged product, and the firm sells it without an assessment. What is the main failure?",
+        "options": [
+          "None, because the client's insistence is enough",
+          "Only the price, because complex products are cheap",
+          "The client's choice, which the firm must never question",
+          "No recorded assessment of whether the product fits this client"
+        ],
+        "a": 3,
+        "explanation": "The client's wish does not replace the assessment. The firm must check and record the fit before selling."
+      }
+    },
+    {
+      "title": "Anti-Money Laundering: Risk, Due Diligence and Reporting",
+      "subject": "Anti-money laundering",
+      "learned": "Apply the risk-based approach, verify beneficial owners, apply enhanced due diligence, and escalate suspicion internally.",
+      "minutes": 20,
+      "skills": [
+        "Anti-money laundering",
+        "Beneficial ownership"
+      ],
+      "check": {
+        "q": "A corporate client's ownership chain ends in a company that will not name its owners. What is the right response?",
+        "options": [
+          "Treat the relationship as higher risk, apply enhanced checks and escalate before accepting it",
+          "Accept the client, because the paperwork is complete",
+          "Accept it and stop asking about ownership after a year",
+          "Reject it and publish the reason"
+        ],
+        "a": 0,
+        "explanation": "Unidentified beneficial owners call for enhanced due diligence and a senior decision under the risk-based approach."
+      }
+    },
+    {
+      "title": "Monitoring, Incidents and the Governance Pack",
+      "subject": "Monitoring and reporting",
+      "learned": "Design a monitoring plan, run a breach log to root cause, explain record keeping, and prepare a governance pack with decisions.",
+      "minutes": 20,
+      "skills": [
+        "Compliance monitoring",
+        "Root cause analysis"
+      ],
+      "check": {
+        "q": "A repeated booking error is corrected and logged as closed three times. What should the compliance officer do?",
+        "options": [
+          "Accept each closure, because each error was corrected",
+          "Reopen the log, find the root cause in the process, and test the fix before closing",
+          "Dismiss the person who made the errors, without reviewing the process",
+          "Stop logging, because repeated errors are normal"
+        ],
+        "a": 1,
+        "explanation": "Repeated errors point to a process gap. Only a fixed and tested process stops recurrence."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "lesson": 1,
+      "q": "In the three lines model, which line sets policies and limits and challenges the first line?",
+      "options": [
+        "The second line, made up of risk and compliance functions",
+        "The first line, made up of the business and its traders",
+        "The third line, made up of internal audit",
+        "The board, acting alone without functions"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 1,
+      "q": "What does the third line of defence provide?",
+      "options": [
+        "Daily trading limits set by the desk",
+        "Independent assurance to the board that the first and second lines work as described",
+        "Approval of every individual trade",
+        "Marketing support for new products"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 1,
+      "q": "What is a risk appetite?",
+      "options": [
+        "The maximum profit a desk may earn in a year",
+        "A list of products the firm will not sell",
+        "The amount and type of risk the board is willing to accept to meet its objectives",
+        "The daily loss figure set by the trader"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 1,
+      "q": "Why must the second and third lines be independent?",
+      "options": [
+        "So they can share the desk's bonus pool",
+        "So the first line can avoid reporting breaches",
+        "So the board never needs to read their reports",
+        "So they can challenge and review the first line without fear or conflict"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 1,
+      "q": "A risk officer's pay depends on the profit of the desk she checks. What is the issue?",
+      "options": [
+        "A conflict of interest that must be recorded and managed",
+        "No issue, because risk officers are always paid by the desk",
+        "An issue only if the profit is negative",
+        "A tax issue, not a governance issue"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "What is an early-warning threshold?",
+      "options": [
+        "The level at which the trader is paid a bonus",
+        "A level below the hard limit that triggers review while there is room to act",
+        "The maximum loss the firm will ever accept",
+        "The price at which an option expires"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 2,
+      "q": "What does value at risk estimate?",
+      "options": [
+        "The exact loss that will occur next week",
+        "The total capital of the firm",
+        "A loss not expected to be exceeded at a set confidence level over a set period",
+        "The average profit of all trades"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 2,
+      "q": "What does value at risk miss?",
+      "options": [
+        "Any loss on a trade that has been closed",
+        "The premium paid on options",
+        "The daily settlement of futures",
+        "Tail losses beyond its chosen confidence level"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 2,
+      "q": "What is a stress test?",
+      "options": [
+        "A calculation of loss under a large, specified market move, even if unlikely",
+        "A test of the trader's personal health",
+        "A check that the broker's systems are online",
+        "A review of each trade's entry price"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "A desk passes its early-warning level late in the day. What is the right response?",
+      "options": [
+        "Ignore it until the hard limit is reached",
+        "A written explanation to the named owner, with the plan, the same day",
+        "Raise the limit to fit the position",
+        "Add to the position to reach a safer figure"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "What does segregation of duties prevent?",
+      "options": [
+        "Traders from earning bonuses",
+        "Clients from opening accounts",
+        "One person controlling a transaction from start to finish, which can hide errors or unauthorised trades",
+        "Brokers from charging fees"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 3,
+      "q": "What makes a checker independent under the four-eyes principle?",
+      "options": [
+        "The checker is the maker's closest colleague",
+        "The checker is the trader who originated the trade",
+        "The checker is chosen by the maker",
+        "The checker is not the maker and does not report to the maker"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 3,
+      "q": "What is trade capture?",
+      "options": [
+        "Recording a trade in the firm's systems once, accurately and on time",
+        "Taking a photograph of the trading screen",
+        "Capturing the market's price movement",
+        "Selling the trade to a third party"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 3,
+      "q": "What is reconciliation?",
+      "options": [
+        "Agreeing the trader's bonus with the head of desk",
+        "Comparing the internal record of trades with an external record, and investigating any breaks",
+        "Converting trades into another currency",
+        "Closing all positions at the end of the day"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "Why are breaks aged?",
+      "options": [
+        "So breaks can be carried forward without investigation",
+        "Because breaks are always resolved in a day",
+        "So an open break that lingers becomes visible to the second line",
+        "So the age of a break sets its value"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "What does know-your-client verify?",
+      "options": [
+        "The client's future profits, before the account is opened",
+        "The broker's licence, which the client must provide",
+        "The client's favourite instrument",
+        "The client's identity, purpose and relevant circumstances, before the account is accepted"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 4,
+      "q": "What is the difference between suitability and appropriateness?",
+      "options": [
+        "Suitability applies where the firm advises, and appropriateness applies where the client decides without advice",
+        "Suitability applies to companies, and appropriateness applies to individuals",
+        "They are two names for the same test",
+        "Appropriateness applies only to futures"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 4,
+      "q": "When does a conflict of interest exist?",
+      "options": [
+        "When two clients ask for the same product on the same day",
+        "When the firm's interest, or a staff member's, could compete with the client's interest",
+        "When a client disagrees with the firm's price",
+        "When a trader takes a day off"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 4,
+      "q": "What is a disclosure in client protection?",
+      "options": [
+        "A press release about the firm's annual profit",
+        "A verbal confirmation after the first trade",
+        "A written statement of costs, risks or conflicts, given before the client decides",
+        "A list of the firm's staff"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "Why is a cluster of complaints about one product significant?",
+      "options": [
+        "It shows the product is performing well",
+        "It proves the clients are unreasonable",
+        "It has no meaning unless there are over a hundred complaints",
+        "It can reveal a control failure, such as a product sold without an assessment"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "What is the risk-based approach to anti-money laundering?",
+      "options": [
+        "Matching controls to the money laundering risk of each client, product and channel, and documenting the assessment",
+        "Applying the same checks to every client regardless of risk",
+        "Refusing all clients who make large deposits",
+        "Leaving controls to each individual staff member"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 5,
+      "q": "What is a beneficial owner?",
+      "options": [
+        "The person who signs the account opening form",
+        "The natural person who ultimately owns or controls a client, or on whose behalf a transaction is carried out",
+        "The broker who executes the first trade",
+        "The company's external auditor"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 5,
+      "q": "What is tipping off?",
+      "options": [
+        "Giving a client a copy of the account statement",
+        "Explaining the firm's fees to a new client",
+        "Telling a client or another person that a report has been made or is being considered",
+        "Sending a client a welcome email"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 5,
+      "q": "Which situation calls for enhanced due diligence?",
+      "options": [
+        "A client who opens a standard savings account with a small deposit",
+        "A client who has traded with the firm for a decade without incident",
+        "A client who asks for a printed statement each month",
+        "A client with complex ownership that will not name its beneficial owners"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "A staff member suspects a client's transactions are laundering money. What should happen first?",
+      "options": [
+        "The suspicion is reported internally to the named person, and the decision is recorded",
+        "The staff member tells the client, to ask for an explanation",
+        "The staff member closes the account personally",
+        "The staff member waits a year to see if the pattern repeats"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "What turns a monitoring plan into evidence?",
+      "options": [
+        "Writing the plan and filing it with the board",
+        "Running each test on schedule against the records, and logging each result and failure",
+        "Testing only after a regulator visits",
+        "Relying on each trader's memory of their trades"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 6,
+      "q": "What should happen to a failure found in a monitoring test?",
+      "options": [
+        "It is noted and fixed at the next annual review",
+        "It is discussed informally with the trader",
+        "It is logged the same day, with an owner, and closed only with evidence of the fix",
+        "It is ignored if the result was profitable"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 6,
+      "q": "What is a root cause?",
+      "options": [
+        "The name of the person who made the error",
+        "The first symptom the trader notices",
+        "The date on which the error was discovered",
+        "The underlying process failure that produced a breach, as distinct from its trigger"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 6,
+      "q": "What should a governance pack contain?",
+      "options": [
+        "Exposures, breaches, complaints and test results, each with a decision or action and an owner",
+        "Every email sent by the desk during the quarter",
+        "Only the firm's profit for the period",
+        "The full text of every policy, without a summary"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "Why must records be retrievable?",
+      "options": [
+        "Because records must be printed each day",
+        "Because monitoring, review and regulators depend on finding them quickly",
+        "Because records can be deleted once they are a year old",
+        "Because clients own all internal records"
+      ],
+      "a": 1
+    }
+  ]
+}

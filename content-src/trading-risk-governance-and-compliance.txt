@@ -1,0 +1,724 @@
+=== 20
+SLIDE Why governance matters | Risk is taken on purpose and by accident; Governance sets who decides and who checks; A firm without it relies on luck | Governance makes risk owned
+SLIDE Three lines | The first line owns and takes risk; The second line sets limits and challenges; The third line gives independent assurance | Own, challenge, assure
+SLIDE Board oversight | The board approves the risk appetite; It receives regular reports; It sets the tone on escalation | The board owns the appetite
+SLIDE Independence | Second and third lines must not report to the people they check; Independence protects the review; Conflicts are recorded | Checkers must be free
+SLIDE Roles on paper | Each role has a written mandate; Each mandate names decisions and limits; Mandates are reviewed each year | Written, not assumed
+SLIDE Governance mistakes | A single person approves and books trades; Limits exist but are never reported; Audit reports to the trader | Separation is the test
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe the three lines of defence and the role of each in managing trading risk;
+- explain how board oversight and a written risk appetite shape trading decisions;
+- explain why independence between the people who take risk and those who check it matters;
+- identify a governance gap from a simple description of roles and reporting lines.
+
+## Key terms
+
+::: terms
+Governance: the arrangements that decide who takes risk, who checks it and how decisions are recorded
+Three lines of defence: a common model in which the business, the risk and compliance functions, and internal audit each play a distinct role
+Risk appetite: the amount and type of risk the board is willing to accept to meet its objectives
+Independence: the freedom of a checking function from the influence of the people it checks
+Mandate: a written statement of a role's responsibilities, decisions and limits
+Escalation: passing a matter to a more senior person or body with the authority to decide on it
+:::
+
+## 1. Why governance is a risk control
+
+Trading risk is taken on purpose or by accident, when a control or model fails. Governance is the set of arrangements that decides who may take risk, who checks it, and how the decisions are recorded. A firm without clear governance relies on individual judgement and luck. Governance does not remove risk. It makes risk owned, visible and limited.
+
+## 2. The three lines of defence
+
+The first line is the business: the traders and desks that take risk, and that own the controls on their own activity. The second line is the risk and compliance functions, which set the policies and limits, monitor the first line and challenge its decisions. The third line is internal audit, which gives independent assurance to the board that the first and second lines work as described. Each line depends on the others, and no line replaces another.
+
+::: diagram pyramid | The three lines and their duties
+Board: approves the risk appetite and receives regular reports
+Third line: internal audit gives independent assurance to the board
+Second line: risk and compliance set limits, monitor and challenge
+First line: traders and desks take risk and own their controls
+:::
+
+::: slides
+SLIDE Step 1: Map the roles | Name the owner of each control; Write it beside the control | Who owns what
+SLIDE Step 2: Test the challenge | Does the second line have a real right to stop a trade; Is that right written | Challenge must have teeth
+SLIDE Step 3: Test the assurance | Does internal audit report to the board; Is its plan approved there | Independence is reported
+:::
+
+::: quiz
+? A trader sets the trading limits for her own desk and reviews her own breaches. Which principle is missing?
+- Speed, because a trader must act quickly on limits || Speed is not the principle at stake. The issue is who sets and checks the limits.
+* Independence, because the first line should not set and police its own limits || A second line is needed to set limits and challenge breaches, so the first line cannot mark its own homework.
+- Profit, because limits reduce the trader's income || Limits are not a matter of income. They are a control, and the control needs an independent owner.
+:::
+
+## 3. Board oversight and risk appetite
+
+The board sets the risk appetite: a written statement of the amount and type of risk the firm will accept to meet its objectives. The appetite is then turned into limits, reports and escalation rules. A risk appetite that no limit reflects is not an appetite. Regular reports to the board should show current exposure against each limit, breaches, and actions. A hidden breach means the appetite has already been overridden.
+
+## 4. Independence and the written mandate
+
+Independence means that the checking function is free to challenge without fear of reprisal, and that it does not report to the people it checks. In practice, the second line should report to a senior risk officer with a line to the board, and the third line should report to the audit committee. A conflict, such as a risk officer paid on desk profits, must be recorded and managed. Each role also needs a written mandate that names its decisions, its limits and its right to escalate.
+
+## Worked example: a limit that nobody reports in Luanda
+
+A small trading desk in Luanda holds a written limit: no more than 500,000 in net exposure to one commodity. The head trader reports on the desk's exposure every morning, and he is the only person who knows the figure. One month the exposure reaches 650,000. The desk does not report the breach, because the head trader expects the position to fall back. A junior colleague notices the figure in a spreadsheet and raises it with the second line.
+
+The review finds three gaps: nobody independent measures the limit, the head trader owns both the position and the report, and the escalation rule names no one. The fix is to move the measurement to the second line, to name the escalation contact in the mandate, and to report breaches to the board risk committee within one working day.
+
+::: case | The breach reported late
+Teresa, a second-line risk officer, learns that a desk exceeded its limit two days earlier. The head trader asks her not to report it yet, because the position is already coming down and a report would cause unnecessary alarm.
+? What should Teresa do?
+- Agree to wait, because the position is already falling || Waiting hides the breach from the people who must decide on it. The desk's own view of the position is not a reason to delay escalation.
+* Escalate the breach now, under the written mandate, with the duration and the plan to return within the limit || Escalation is a second-line duty, and the record must show the breach and the action.
+- Report the breach only after the position is closed, so the figures are final || Final figures can come later, but the breach must be reported when it is known. Waiting removes the chance to act.
+:::
+
+::: quiz
+? Why should a risk officer's pay not depend on the profits of the desk they check?
+- Because risk officers should never be paid at all || Risk officers are paid for their work. The issue is the conflict of interest tied to the desk's profit.
+* Because it creates a conflict of interest that can weaken the challenge to the desk's positions || A checker paid on the profit it is meant to challenge has a reason to look away, so the conflict must be recorded and managed.
+- Because profits are never relevant to risk, so the link is meaningless || Profit is relevant to risk, which is why it can create a conflict in the checking role.
+:::
+
+## Tool: governance map
+
+- Each control, and the person who owns it in the first line
+- The second-line function that sets the limit and can challenge
+- The third-line review that tests the control, and its reporting line
+- The reporting line of each function, and any conflict of interest
+- The escalation contact for each limit, written in the mandate
+- The date each mandate and the risk appetite were last reviewed
+
+## Common mistakes
+
+- Treating a written limit as a control when nobody independent measures it.
+- Letting the desk report its own breaches.
+- Describing internal audit as reporting to the executive that it audits.
+- Writing a risk appetite that is never reflected in any limit or report.
+
+## Self-check
+
+1. What does the second line of defence do? (Answer: it sets the policies and limits, monitors the first line, and challenges its decisions.)
+2. Why must the second and third lines be independent? (Answer: so that they can challenge and review the first line without fear or conflict.)
+3. What is a risk appetite? (Answer: the amount and type of risk the board is willing to accept to meet the firm's objectives.)
+
+## Practical assignment
+
+Write the governance map for a hypothetical trading desk with one commodity and one currency. Name the first-line owner, the second-line function and the third-line reviewer for each control. Mark any conflict of interest, and write the escalation contact for each limit.
+
+## Summary
+
+- Governance decides who takes risk, who checks it and how decisions are recorded, and it makes risk owned and visible.
+- The three lines of defence divide the roles: the business owns the risk, the second line challenges it, and internal audit gives independent assurance.
+- Independence and a written mandate are what make the checks real, and a limit that nobody independent measures is not a control.
+
+=== 20
+SLIDE A limit is a control | A limit caps an exposure, a sensitivity or a loss; It is approved in advance; It is measured by someone independent | Approved, measured, enforced
+SLIDE Risk appetite to limits | Turn the appetite into measurable limits; Link each limit to a metric; Set the owner for each | Appetite becomes numbers
+SLIDE Tiered thresholds | Use an early-warning level below the limit; Use the limit as the hard stop; Define each tier's action | Warn before the hard stop
+SLIDE Value at risk | VaR estimates a loss not expected to be exceeded at a set confidence over a set period; It misses tail losses; Pair it with stress tests | A useful but partial measure
+SLIDE Escalation path | Name the person for each tier; Set the response time; Record the decision | Named, timed, recorded
+SLIDE Limit mistakes | Limits set after the position was taken; Early warnings ignored; Breaches never reported | Limits precede trades
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- translate a risk appetite into measurable limits with named owners;
+- set early-warning thresholds below a hard limit and define the action at each tier;
+- explain what value at risk measures and why it must be paired with stress tests;
+- write an escalation path that names who acts, how quickly and how the decision is recorded.
+
+## Key terms
+
+::: terms
+Limit: a maximum allowed exposure, sensitivity or loss, approved in advance and measured independently
+Early-warning threshold: a level below the limit that triggers review before the hard limit is reached
+Hard limit: the level that must not be breached, with a defined response when it is
+Value at risk: a statistical estimate of the loss that is not expected to be exceeded at a set confidence level over a set period
+Tail loss: a loss beyond the range that a statistical measure such as value at risk is designed to capture
+Stress test: a calculation of the loss under a large, specified market move, even if that move is unlikely
+:::
+
+## 1. From appetite to limits
+
+The risk appetite is a statement. A limit makes it measurable. For each part of the appetite, the second line sets a limit on exposure, on a sensitivity or on a loss, and names the owner who must keep the position within it. A limit should be approved before the trade it governs, not set afterwards to fit a position. It should be measured independently of the person who holds the position.
+
+## 2. Thresholds and the action at each tier
+
+A single hard limit gives little warning. An early-warning threshold, often set at a fixed share of the limit, triggers a review while there is still room to act. The hard limit is the level that must not be breached. Each tier needs a defined action. At the early-warning level, the desk explains the position and reduces it if the plan requires. At the hard limit, the position is reduced and the breach is escalated the same day.
+::: diagram steps | Applying a two-tier limit
+Measure: calculate the exposure against the approved limit, daily
+Warn: at the early-warning level, the desk explains the position in writing
+Act: at the hard limit, reduce the position or stop new trades
+Escalate: report the breach to the named owner the same day, with the plan
+:::
+
+::: slides
+SLIDE Step 1: Set the hard limit | Approve it in advance; Name the metric and its source | Approved first
+SLIDE Step 2: Set the warning level | Choose a fixed share of the limit; Write the review required | Warn early
+SLIDE Step 3: Define the response | Say who acts, within what time, and how it is recorded | Named and timed
+:::
+
+::: quiz
+? A desk's hard limit is 1,000,000 of exposure and its early-warning level is 750,000. The exposure is now 800,000. What is the correct response?
+- Nothing, because the hard limit has not been reached || The early-warning level has been crossed. It triggers a review even though the hard limit remains open.
+* Review the position in writing and explain it to the named owner, because the early-warning level has been crossed || Crossing the warning level requires review while there is still room to act, as the tier defines.
+- Raise the hard limit to 800,000 so the position fits || Raising a limit to fit a position reverses the control. Limits are approved in advance and are not moved to suit trades.
+:::
+
+## 3. Value at risk and its limits
+
+Value at risk estimates the loss not expected to be exceeded at a set confidence level over a set period. A value at risk of 100,000 at 99 percent over one day means that losses above 100,000 are expected on about one day in a hundred under the model's assumptions. It misses tail losses beyond its confidence level, and it depends on historical data that may not repeat. Value at risk must therefore be paired with stress tests, which show what happens under large, specified moves.
+
+## 4. Escalation that works
+
+An escalation path names the person for each tier, the time within which they must respond, and the record of the decision. A path that says "tell management" does not work, because it does not name anyone who must act. A good path is short: the second line informs the named owner within an hour of a hard breach, the owner decides within the same day, and the decision, with its reasons, goes into the breach log.
+::: tip | Local rules
+Requirements on limits, reporting and the approval of trading risk in Angola must be confirmed by a qualified local adviser before a firm applies them. The approach in this lesson describes common practice, not a statement of local law.
+:::
+
+## Worked example: a warning that was ignored in Huambo
+
+A trading desk in Huambo has a hard limit of 2,000,000 on net exposure to a commodity, with an early-warning level at 1,500,000. The desk's exposure reaches 1,550,000 on a Tuesday. The warning triggers a review, but the review is sent to the desk head, who does not reply. On Thursday the exposure reaches 2,100,000, above the hard limit.
+
+The early warning worked, but the escalation did not: the path named no response time or backup. The fix requires a written reply within one working day, with automatic escalation to the risk committee chair if none arrives.
+
+::: case | The early warning
+Marcos sees that his desk's exposure has crossed the early-warning level. He believes the trend will continue in his favour, and he does not want to reduce the position. He is considering leaving it unexplained until the next review.
+? What should Marcos do?
+- Leave the position alone and explain nothing, because the hard limit has not been reached || The early-warning level requires a written explanation. Leaving it unexplained removes the review the tier was designed to trigger.
+* Explain the position in writing to the named owner, with the plan and the reason for holding it or reducing it || The warning level is a prompt for a documented review. The explanation is the control, and the owner decides.
+- Increase the position, to get back to a level that looks safer on paper || Adding exposure after a warning moves the desk closer to the hard limit. It is not a safer response.
+:::
+
+::: quiz
+? Why is value at risk paired with stress tests?
+- Because stress tests replace value at risk entirely || Stress tests add to value at risk. They do not replace it.
+* Because value at risk can miss tail losses beyond its confidence level, which stress tests are designed to show || Stress tests show losses under specified large moves, which the statistical measure may not capture.
+- Because regulators forbid the use of value at risk alone || Regulation is not the reason. The measure has a known limit that stress tests address.
+:::
+
+## Tool: limit framework card
+
+- Metric and its independent source, for each limit
+- Hard limit, approved and dated, with its owner
+- Early-warning level, as a fixed share of the hard limit
+- Action at each tier, and the response time
+- Escalation contact, with a backup
+- Breach log: time, excess, decision and reasons
+
+## Common mistakes
+
+- Setting a limit after the position has been taken.
+- Having an early-warning level with no required response.
+- Relying on value at risk alone and ignoring stress losses.
+- Treating a breach as a performance issue rather than a control event.
+
+## Self-check
+
+1. What is the difference between an early-warning level and a hard limit? (Answer: the early-warning level triggers review while there is still room to act, and the hard limit must not be breached.)
+2. What does value at risk not show? (Answer: the tail losses beyond its chosen confidence level.)
+3. What must an escalation path name? (Answer: the person for each tier, the time they have to respond, and the record of the decision.)
+
+## Practical assignment
+
+For a hypothetical desk, write one hard limit and one early-warning level in cash. Define the action at each tier, the owner, the response time and the backup contact. Add one stress scenario and state the loss it shows. Note what the value at risk figure would not reveal.
+
+## Summary
+
+- A limit is approved in advance, measured independently, and translates the risk appetite into a number with an owner.
+- Two tiers, an early warning and a hard limit, each with a defined action, make the response predictable.
+- Value at risk must be paired with stress tests, and every escalation path must name who acts, how quickly, and how it is recorded.
+
+=== 20
+SLIDE Segregation of duties | No one person should control a trade from start to finish; Separate the front, middle and back office; Record who did what | Split the chain
+SLIDE Four-eyes principle | A second person checks significant actions; The checker is independent of the maker; The check is recorded | Two people, one record
+SLIDE Trade capture | Every trade is captured once, accurately and on time; Changes after capture are logged; Errors are corrected with a record | Accurate, once, logged
+SLIDE Confirmations and reconciliation | Compare the internal record with the counterparty or broker; Investigate every break; Age the open breaks | Match every day
+SLIDE Access rights | Limit who can book, amend and approve trades; Review access each quarter; Remove access promptly when roles change | Least access needed
+SLIDE Control failures | A trader approving her own trade; A booking changed after confirmation; A break left open for weeks | Failures are patterns
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain segregation of duties and the four-eyes principle, and where each applies in a trading process;
+- describe trade capture, confirmation and reconciliation as controls;
+- set access rights so that no one can complete a sensitive action alone;
+- identify control failures from a description of a trading process.
+
+## Key terms
+
+::: terms
+Segregation of duties: the separation of the steps of a transaction, so that no one person controls it from start to finish
+Front office: the people who originate and execute trades
+Middle office: the people who check and monitor the risk and the limits of trades
+Back office: the people who settle, confirm and record trades
+Four-eyes principle: the requirement that a significant action is checked by a second, independent person
+Reconciliation: the comparison of the internal record of trades with an external record, such as a broker's or counterparty's confirmation
+:::
+
+## 1. Split the trade process
+
+A trade passes through several steps: it is originated, executed, captured, confirmed, risk-checked and settled. Segregation of duties means that these steps are performed by different people, so that no one can create, hide and settle a trade alone. In practice, the front office originates and executes, the middle office checks risk and limits, and the back office confirms and settles. Each separation is a control. When a firm combines two steps in one person, it creates the opportunity for a loss to be concealed or an unauthorised trade to go unnoticed.
+
+## 2. The four-eyes principle
+
+The four-eyes principle requires a second person to check a significant action before it takes effect. Examples include a change to a limit, a payment instruction, a trade amendment above a set size, and a change to a price used for valuation. The checker must be independent of the maker, which means not a close colleague who always agrees, and not a person who reports to the maker. The check is recorded: who made the change, who checked it, when and why. A check that is never recorded is not a check that can be reviewed.
+
+::: diagram steps | Applying the four-eyes check
+Maker: the person makes the change and records the reason
+System: the change is held pending approval
+Checker: an independent person reviews it against the source
+Record: the approval, the time and any rejection are logged
+:::
+
+::: slides
+SLIDE Step 1: Name the sensitive actions | Limit changes; amendments; payments; price changes | Name them first
+SLIDE Step 2: Assign a checker | The checker is not the maker and does not report to the maker | Independent
+SLIDE Step 3: Record the check | Who made it, who checked it, when and why | Recorded
+:::
+
+::: quiz
+? A trader amends the price of a trade after booking it, and then approves the amendment herself. What is the control failure?
+- None, because amendments are a routine part of trading || Amendments are normal, but a trader approving her own amendment breaks the four-eyes principle.
+* She has checked her own action, so the four-eyes check is missing and the amendment is not independent || An amendment that is approved by its maker is not checked by anyone else, so it is not controlled.
+- Only the timing, because the amendment was made after booking || The timing matters, but the core failure is the self-approval, which removes the independent check.
+:::
+
+## 3. Trade capture, confirmation and reconciliation
+
+Trade capture is the moment a trade is recorded in the firm's systems. It should happen once, accurately and on time. Any change after capture should be logged, with the reason and the approver. Confirmation is the step where the counterparty or broker confirms the terms. Reconciliation compares the internal record with the external one. Each break, where the two records differ, must be investigated and resolved. Breaks should be aged, so that a break open for weeks is visible to the second line.
+
+## 4. Access rights and the least access needed
+
+Access rights decide who can book, amend and approve trades. Each person should have only the access their role needs, and access should be reviewed on a schedule, such as each quarter. When a role changes, the old access must be removed promptly, because a trader who has moved desks may still be able to book trades there. Access rights are often overlooked in control reviews, yet they are where many unauthorised actions begin.
+
+## Worked example: the break that stayed open in Benguela
+
+A trading firm in Benguela reconciles its trades with its broker every morning. For six weeks a small break appears: a trade the firm booked at one price is confirmed by the broker at another. The break is small, so the back office records it as a timing difference and leaves it open. Each day the break is carried forward.
+
+A review finds that the break was caused by a booking changed after confirmation, by a trader who had access to amend bookings. The amendment was never checked by a second person. The fix has three parts: remove the trader's ability to amend confirmed bookings, require a four-eyes approval for any amendment, and age every break so that anything open for more than two days goes to the second line for review.
+
+::: case | The small break
+Fernanda sees a break of 0.20 per unit on a trade that has been open for three days. The back office says it is a timing difference that will clear by itself. She is asked to close it and move on.
+? What should Fernanda do?
+- Close the break as a timing difference, because it is small and will clear by itself || A small break can hide a booking error or an unauthorised change. Closing it without investigation removes the control.
+* Investigate the break, record the cause, and age it so the second line can see it if it stays open || Each break must be explained. Ageing makes an open break visible and stops it being carried forward unnoticed.
+- Ask the trader to change the booking to match the broker, so the break disappears || Changing the booking to match the broker without an independent check is an unrecorded amendment, which is the very failure the control prevents.
+:::
+
+::: quiz
+? Why should a trader's access to amend confirmed bookings be removed?
+- Because traders should never see their own bookings || Traders can see their bookings. The concern is the ability to change confirmed trades without an independent check.
+* Because an amendment without an independent check can hide errors or unauthorised trades || Removing that ability means every change to a confirmed trade needs an independent approval.
+- Because amendments are always illegal || Amendments are not illegal in themselves. The control concern is the lack of independent approval.
+:::
+
+## Tool: trade control checklist
+
+- Steps of the trade, and the person who performs each one
+- Sensitive actions that require a four-eyes check
+- Trade capture time and the accuracy check on each booking
+- Reconciliation done daily, with the number of breaks and their ages
+- Access list: who can book, amend and approve, reviewed this quarter
+- Control failures logged, with cause, owner and close date
+
+## Common mistakes
+
+- Letting one person originate, book, amend and approve a trade.
+- Treating small breaks as harmless and carrying them forward.
+- Failing to review access rights when roles change.
+- Recording a check as done without a record of who did it.
+
+## Self-check
+
+1. What does segregation of duties prevent? (Answer: one person controlling a trade from start to finish, which allows errors or unauthorised trades to go unseen.)
+2. What makes a checker independent? (Answer: the checker is not the maker and does not report to the maker.)
+3. Why are breaks aged? (Answer: so an open break that lingers for days or weeks becomes visible to the second line.)
+
+## Practical assignment
+
+Draw the trade process for a hypothetical desk, with each step and the person who performs it. Mark the four sensitive actions that need a four-eyes check, and name the checker for each. List one access right you would remove and explain why.
+
+## Summary
+
+- Segregation of duties splits the trade process so that no one person controls it from start to finish.
+- The four-eyes principle requires an independent check on significant actions, and the check is recorded.
+- Trade capture, reconciliation and access rights are controls, and breaks must be investigated and aged.
+
+=== 20
+SLIDE Who the client is | A firm must know who its clients are before it accepts their money; Identity and purpose must be verified; Records are kept | Know before you accept
+SLIDE Suitability and appropriateness | Assess the client's knowledge, experience and objectives; Match products to that profile; Record the assessment | Match, then record
+SLIDE Conflicts of interest | Identify where the firm's interest and the client's differ; Disclose them; Avoid or manage them | Identify, disclose, manage
+SLIDE Costs and disclosure | Disclose all costs in writing; Explain how costs change the result; Keep the disclosure on file | Costs in writing
+SLIDE Complaints | Record every complaint; Respond within the set time; Review patterns for control failures | Complaints are data
+SLIDE Client mistakes | A product sold without an assessment; A conflict left undisclosed; A complaint not recorded | Assessment comes first
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the know-your-client process and what it verifies;
+- describe suitability and appropriateness assessments and how they are recorded;
+- identify a conflict of interest and set out how it should be disclosed, avoided or managed;
+- explain why cost disclosure and complaint handling are part of client protection.
+
+## Key terms
+
+::: terms
+Know your client: the process of verifying a client's identity, purpose and relevant circumstances before accepting the client
+Suitability: an assessment of whether an advised product fits a client's knowledge, experience, objectives and financial situation
+Appropriateness: an assessment of whether a client understands the risks of a product they want to buy without advice
+Conflict of interest: a situation where the firm's interest could compete with the interest of a client
+Disclosure: a written statement to the client of costs, risks or conflicts, given before the client decides
+Complaint: an expression of dissatisfaction by a client, which must be recorded and answered within a set time
+:::
+
+## 1. Know your client
+
+Know-your-client is the process of verifying who the client is, what they intend to do with the account, and the circumstances that matter for the service. It normally includes identity documents, proof of address where required, the source of the funds, and an understanding of the client's purpose. It is done before the account opens and refreshed when circumstances change. A firm that accepts money from an unidentified client exposes both sides to serious risk.
+
+## 2. Suitability and appropriateness
+
+Where a firm advises a client, it must assess suitability: whether the recommended product fits the client's knowledge, experience, objectives and financial situation. Where the client makes the decision without advice, the firm assesses appropriateness: whether the client understands the risks of the product. The exact tests differ between jurisdictions and must be confirmed locally. In both cases the assessment is recorded, so the firm can show what it knew.
+
+::: diagram steps | Assessing a client before a product
+Profile: record the client's knowledge, experience and objectives
+Compare: match the product's risks to the profile
+Decide: advise, or record that the client chose without advice
+Record: keep the assessment, the date and the reasons on file
+:::
+
+::: slides
+SLIDE Step 1: Verify the client | Identity, purpose and source of funds; Keep the records | Verify first
+SLIDE Step 2: Assess the fit | Knowledge, experience and objectives; Product risks against the profile | Fit, not preference
+SLIDE Step 3: Disclose and record | Costs and risks in writing; The assessment on file | Written and kept
+:::
+
+::: quiz
+? A client with limited knowledge asks to buy a complex leveraged product. The firm sells it without an assessment because the client insists. What is the main failure?
+- None, because the client's insistence is enough to proceed || The client's wish does not replace the assessment. The firm must still check that the product is appropriate.
+* The firm did not assess appropriateness, and it has no record of why the product fitted this client || An assessment and its record are the firm's protection and the client's protection, whatever the client asks for.
+- Only the price, because complex products are always cheap || Price is not the issue. The failure is the missing assessment of fit.
+:::
+
+## 3. Conflicts of interest
+
+A conflict of interest arises when the firm's interest, or the interest of one of its staff, could compete with the interest of a client. Examples include a firm that earns more on one product than another, or a staff member paid a bonus for a particular sale. The first step is to identify the conflict. The second is to disclose it to the client in writing. The third is to avoid the conflict where possible, or to manage it through separation, controls and a clear policy. Disclosure alone is not always enough.
+
+## 4. Costs, disclosure and complaints
+
+Disclosure of costs is part of client protection. A client should receive the costs in writing, with an explanation of how each one changes the result of a trade, before they commit money. Each complaint should be recorded, answered within the time the rules set, and reviewed for patterns. A cluster of complaints about the same product or the same desk is a sign of a control failure, not of a few unhappy clients.
+
+::: tip | Local rules
+Know-your-client, suitability, disclosure and complaint requirements in Angola must be confirmed by a qualified local adviser or lawyer before they are applied. The tests and time limits described here are general practice and are not a statement of local law.
+:::
+
+## Worked example: the product sold without a record in Lobito
+
+A small brokerage in Lobito sells a leveraged product to a client who is new to trading. The client's file shows the identity documents, but the suitability assessment is a blank form, and the disclosure of costs was given verbally. Three months later the client loses most of the money and complains.
+
+The internal review finds that the product was sold to the client without a recorded assessment, that the costs were not disclosed in writing, and that the complaint was first logged as a general enquiry. The fix is to block the product from being sold until the assessment is complete, to require written disclosure before the first order, and to create a rule that any complaint about losses goes into the complaints register on the day it is received.
+
+::: case | The sale without the form
+Paulo, a sales adviser, has a client who is eager to start. The suitability form is long, and the client is impatient. Paulo suggests that they skip the form for now and complete it after the first trade.
+? What should Paulo do?
+- Skip the form for now, because the client is eager and the form can be completed later || Completing the assessment after the trade defeats its purpose. The assessment must come before the product is sold.
+* Complete the suitability assessment before any product is sold, and record it, even if the client is impatient || The assessment protects the client and the firm, and it must be in place before the sale.
+- Sell a lower-risk product without the form, to keep the client happy || Selling any product without an assessment is the same failure. The product's risk does not remove the requirement.
+:::
+
+::: quiz
+? Why is disclosure alone not always enough to manage a conflict of interest?
+- Because disclosure is always illegal || Disclosure is not illegal. It is one of several tools, and it may not be enough on its own.
+* Because some conflicts must also be avoided or separated, since telling the client does not remove the bias || A disclosed conflict can still distort advice. Separation and controls reduce the risk the disclosure does not remove.
+- Because clients never read disclosures || That may be true, but the reason is that disclosure does not remove the conflict itself.
+:::
+
+## Tool: client file checklist
+
+- Identity verified, purpose recorded, source of funds noted
+- Suitability or appropriateness assessment completed before sale, and dated
+- Conflicts identified, disclosed in writing and managed or avoided
+- Costs disclosed in writing before the first order, with an explanation
+- Complaints recorded on the day received, with the response date
+- Review date for the file, and the trigger for a fresh assessment
+
+## Common mistakes
+
+- Selling a product before the assessment is completed.
+- Disclosing costs verbally and not keeping a written record.
+- Treating a conflict as solved once it is disclosed.
+- Logging a complaint about losses as a general enquiry.
+
+## Self-check
+
+1. What does know-your-client verify? (Answer: the client's identity, purpose and relevant circumstances, before the account is accepted.)
+2. What is the difference between suitability and appropriateness? (Answer: suitability applies where the firm advises, and appropriateness applies where the client decides without advice.)
+3. Why should a cluster of complaints be reviewed? (Answer: it can reveal a control failure, such as a product sold without an assessment.)
+
+## Practical assignment
+
+Draft a one-page client file checklist for a hypothetical firm. Include identity, purpose, the assessment, the conflicts, the cost disclosure and the complaints register. For each item, name the person responsible and the point before which it must be complete. Mark every item that needs confirmation under local rules.
+
+## Summary
+
+- Know-your-client verifies who the client is before the account is opened, and suitability or appropriateness records whether a product fits.
+- Conflicts of interest must be identified, disclosed in writing, and avoided or managed, because disclosure alone may not be enough.
+- Written cost disclosure and a complaints register are part of client protection, and clusters of complaints signal control failures.
+
+=== 20
+SLIDE Risk-based approach | Money laundering risk is assessed for each client, product and channel; Controls match the risk; The approach is documented | Controls follow risk
+SLIDE Customer due diligence | Verify identity and beneficial ownership; Understand the purpose of the relationship; Record the evidence | Know who owns it
+SLIDE Enhanced due diligence | Apply it to higher-risk clients and transactions; Seek senior approval; Monitor more closely | More risk, more checks
+SLIDE Ongoing monitoring | Compare activity with the client's profile; Investigate unusual patterns; Record the review | Activity must fit the profile
+SLIDE Suspicious activity reporting | Staff report suspicion internally to a named person; The firm assesses and reports where the law requires; Tipping off is prohibited | Internal first, then the authority
+SLIDE Anti-money laundering mistakes | Treating all clients alike; Ignoring unusual activity; Telling a client about a report | Risk, monitor, report
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the risk-based approach to anti-money laundering and how it shapes controls;
+- describe customer due diligence, enhanced due diligence and ongoing monitoring;
+- explain how suspicious activity is escalated internally and reported where the law requires;
+- identify the warning signs that call for enhanced due diligence.
+
+## Key terms
+
+::: terms
+Money laundering: the process of concealing the origin of money obtained from criminal activity, so that it appears legitimate
+Risk-based approach: the principle that controls should be proportionate to the risk each client, product and channel presents
+Customer due diligence: the verification of a client's identity, beneficial ownership and the purpose of the relationship
+Beneficial owner: the natural person who ultimately owns or controls a client, or on whose behalf a transaction is carried out
+Enhanced due diligence: additional checks applied to higher-risk clients or transactions
+Tipping off: informing a client or another person that a report has been made or is being considered, which is prohibited in most regimes
+:::
+
+## 1. The risk-based approach
+
+The international standard for anti-money laundering, set by the Financial Action Task Force, is built on a risk-based approach. The firm assesses the money laundering risk of each client, product, channel and geography, then matches its controls to that risk. Low-risk relationships get proportionate checks. Higher-risk relationships get more. The approach must be documented. One set of controls for every client is simple, but usually wrong: too weak for the riskiest clients, too burdensome for the rest.
+
+## 2. Customer due diligence
+
+Customer due diligence starts with verifying the client's identity and, for a company or trust, the identity of the beneficial owners: the natural persons who ultimately own or control it. The firm must also understand the purpose of the relationship, such as the expected activity and the source of funds. A company whose owners cannot be identified is a warning sign in itself.
+
+::: diagram steps | Applying customer due diligence
+Identify: verify the client's identity with reliable documents
+Trace ownership: identify the beneficial owners of any company or trust
+Understand purpose: record the expected activity and the source of funds
+Record: keep the evidence and set the review date for the relationship
+:::
+
+::: slides
+SLIDE Step 1: Verify identity | Use reliable documents; Record the evidence | Evidence on file
+SLIDE Step 2: Trace ownership | Find the beneficial owners of any company; Check the chain | Follow the ownership
+SLIDE Step 3: Set the profile | Expected activity and source of funds; A baseline for monitoring | The baseline matters
+:::
+
+::: quiz
+? A corporate client's ownership chain ends in a company that will not name its owners. What is the right response?
+- Accept the client, because the company's paperwork is complete || Complete paperwork does not show who benefits. Unidentified owners are a warning sign, not a reason to accept.
+* Treat the relationship as higher risk, apply enhanced checks, and escalate before accepting it || Unidentified beneficial owners call for enhanced due diligence and a senior decision, under the risk-based approach.
+- Accept the client, but stop asking about ownership after the first year || Due diligence is not a one-off. Stopping the question removes a control the risk requires.
+:::
+
+## 3. Enhanced due diligence and ongoing monitoring
+
+Enhanced due diligence applies to higher-risk cases. Typical triggers include a client in a higher-risk jurisdiction, a politically exposed person, complex ownership, and cash activity that does not fit the profile. Checks are deeper, approval more senior and monitoring closer. Ongoing monitoring compares the client's actual activity with the profile recorded at the start. An unusual pattern, such as frequent transfers with no stated purpose, must be investigated and the review recorded, not ignored.
+
+## 4. Suspicious activity reporting
+
+Staff who suspect money laundering must report internally to a named person, usually a money laundering reporting officer. That person assesses the report and decides whether the law requires a report to the relevant authority. Staff must not tell the client or any other person that a report has been made or is being considered, because tipping off is prohibited in most regimes. The internal report and the decision must be recorded, even when no external report follows.
+
+::: tip | Local rules
+Anti-money laundering obligations in Angola, including the thresholds, reporting duties, the role of the reporting officer and the prohibition on tipping off, must be confirmed by a qualified local lawyer or compliance adviser before a firm applies them. This lesson describes the international approach, not Angolan law.
+:::
+
+## Worked example: the unusual transfers in Luanda
+
+A payments firm in Luanda notices that a business client, which has been active for a year, starts sending many transfers in amounts just below a level that would trigger a review. The client's profile says it is a small food supplier with modest monthly activity. The monitoring analyst flags the pattern.
+
+The analyst investigates and finds that the client now pays several new recipients with no clear link to its business. The review is escalated to the reporting officer, staff are reminded not to discuss it with the client, and the file moves to enhanced monitoring.
+
+::: case | The client who asks about the review
+Ana, a relationship manager, receives a call from a client whose account is under review. The client asks directly whether the firm has reported anything about its transactions.
+? What should Ana do?
+- Explain the review and the reason for it, so the client understands the firm's concern || Explaining the review or any report may be tipping off, which is prohibited. The reason for the review stays internal.
+* Give a neutral answer that says the firm cannot discuss its internal processes, and refer the matter to the compliance team without confirming or denying any report || A neutral answer avoids tipping off and passes the matter to the people authorised to handle it.
+- Say that nothing has been reported, to reassure the client and keep the relationship || Saying nothing has been reported is a statement about a process that may be underway. It can mislead, and it may still breach the rules.
+:::
+
+::: quiz
+? Why must the internal report and the decision on it be recorded even when no external report is filed?
+- Because every internal report must be sent to the regulator || Not every internal report leads to an external one. The record is needed whatever the decision.
+* Because the firm must be able to show how it assessed the suspicion and why it decided as it did || A record of the assessment and the reasons protects the firm and shows the risk-based approach in practice.
+- Because the client has the right to see every internal report || Clients do not have a right to see internal reports, and tipping off rules restrict disclosure.
+:::
+
+## Tool: AML risk review card
+
+- Client risk rating, with the reasons for it
+- Beneficial owners identified and verified, with the evidence reference
+- Expected activity and source of funds recorded as the profile
+- Monitoring alerts reviewed, with the date and the outcome
+- Internal reports logged, with the decision and the reasons
+- Review date, and the trigger for enhanced due diligence
+
+## Common mistakes
+
+- Applying the same controls to every client regardless of risk.
+- Accepting a company without identifying its beneficial owners.
+- Ignoring unusual activity that does not fit the recorded profile.
+- Telling a client, even informally, that a review or report is under way.
+
+## Self-check
+
+1. What is the risk-based approach? (Answer: matching controls to the money laundering risk of each client, product and channel, and documenting the assessment.)
+2. Why is a company that will not name its beneficial owners a warning sign? (Answer: because it hides who benefits from the activity, which is the core risk anti-money laundering controls address.)
+3. What is tipping off? (Answer: informing a client or another person that a report has been made or is being considered, which is prohibited in most regimes.)
+
+## Practical assignment
+
+For a hypothetical business client, write its risk rating and the reasons for it. List the beneficial owners you would need to identify, the evidence you would hold, and the expected activity you would record as the profile. Describe one pattern of activity that would trigger a review, and name the internal person you would report it to.
+
+## Summary
+
+- The risk-based approach matches anti-money laundering controls to the risk of each client, product and channel, and the assessment is documented.
+- Customer due diligence identifies the client and its beneficial owners, and ongoing monitoring tests activity against the profile.
+- Suspicion is reported internally first, the decision is recorded, and tipping off is prohibited, with the local rules to be confirmed by an expert.
+
+=== 20
+SLIDE A monitoring plan | Compliance monitors each key obligation on a schedule; Each test has an owner and a result; Gaps go to the log | Scheduled, owned, recorded
+SLIDE Breach and incident log | Log each breach or incident on the day it is found; Record cause, impact and owner; Close only with evidence | Log, cause, close
+SLIDE Root cause | Ask why until a process cause is found; Fix the process, not only the outcome; Test the fix | Find the process
+SLIDE Record keeping | Keep records of trades, advice, complaints and decisions; Keep them for the period the rules require; Make them retrievable | Retrievable records
+SLIDE Governance pack | A short regular pack for the board; Exposures, breaches, complaints, incidents and tests; Decisions recorded | One pack, every period
+SLIDE Compliance mistakes | Logging breaches late; Closing incidents without evidence; Treating the pack as a formality | Evidence closes items
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- design a compliance monitoring plan with owners, schedules and results;
+- run a breach and incident log, and find the root cause of a failure;
+- explain the record-keeping duties that support monitoring and review;
+- prepare a short governance pack that gives the board the facts it needs to decide.
+
+## Key terms
+
+::: terms
+Monitoring plan: a schedule of tests of key obligations, each with an owner, a frequency and a recorded result
+Breach: a failure to meet a rule, a limit or a policy
+Root cause: the underlying process failure that produced a breach or incident, as distinct from its immediate trigger
+Retention: keeping records for the period the rules require, in a form that can be retrieved
+Governance pack: a regular, short report to the board or committee with the facts needed to decide
+:::
+
+## 1. A monitoring plan that gets done
+
+A monitoring plan lists each key obligation, its test, its owner and its frequency. Monitoring turns a policy into evidence. A plan that is never run is a document, not a control. Each test produces a dated result, and any gap goes into the breach and incident log the same day.
+::: diagram steps | Running a monitoring test
+Select: choose the obligation and the test from the plan
+Perform: run the test against the evidence, not against memory
+Record: note the result, the date and the tester
+Log gaps: open a breach or incident entry for any failure
+:::
+
+::: slides
+SLIDE Step 1: Schedule the test | Name the obligation, the owner and the frequency | Owned and scheduled
+SLIDE Step 2: Run it on evidence | Use records, not recollection; Sample the population | Evidence, not memory
+SLIDE Step 3: Log what fails | Open an entry the same day; Assign an owner | Failures are logged
+:::
+
+::: quiz
+? A monitoring test finds that a trade approval was missing for one trade. What should happen next?
+- Note it as a minor point and fix it at the next review || A missing approval is a control failure. It should be logged the same day, not held for a later review.
+* Log the failure the same day, assign an owner, and find the cause before closing it || The log records the failure. The root cause and the evidence of the fix decide when it can close.
+- Ignore it, because one missing approval in a month is not significant || Significance is not the test. A missing approval is a failure of a control that must be recorded.
+:::
+
+## 2. The breach and incident log
+
+The breach and incident log records every failure of a rule, limit or policy, and every incident that disrupts a process. Each entry needs a date, the cause, the impact, the owner and a target close date. An entry closes only when there is evidence of the fix. A breach logged late, or closed without evidence, is itself a control failure.
+
+## 3. Root cause, not only the outcome
+
+Fixing an outcome is not the same as fixing its cause. A trade booked wrongly is corrected, but the root cause may be a booking screen that lets a confirmed price be typed over. Ask why until you reach a process cause, then fix it and test the fix. A root cause analysis that stops at a person's name usually misses the control that failed.
+
+::: case | The repeated booking error
+Clara, a compliance officer, sees that the same booking error has appeared three times in two months, each time corrected and logged as closed. Each closure cites the trader's mistake.
+? What should Clara do?
+- Accept each closure, because the trader corrected the error each time || Correcting each error without finding the cause leaves the control unchanged. The same failure will return.
+* Reopen the log, find the root cause in the booking process, fix it and test the fix before closing the entries again || The repeated pattern points to a process gap. Fixing the process and testing it is the only way to stop recurrence.
+- Dismiss the trader, because the errors were all made by one person || Removing one person may not fix the process.
+:::
+
+## 4. Record keeping and retention
+
+Records of trades, advice, complaints and decisions are the evidence that monitoring and regulators depend on. Keep each for the period the applicable rules require, and make it retrievable quickly.
+
+::: tip | Local rules
+Retention periods, reporting formats and the content of any regulatory returns in Angola must be confirmed by a qualified local adviser before the firm applies them. The approach here is general practice, not a statement of local requirements.
+:::
+
+## 5. The governance pack
+
+A governance pack is a short, regular report giving the board the facts it needs to decide: exposures against limits, breaches and incidents, complaint trends and test results. Each item shows a decision or action, with an owner.
+
+## Worked example: the pack that changed a decision in Benguela
+
+A brokerage in Benguela's quarterly board pack listed breaches for a year with no detail and no decisions. Restructured into sections that each end with a decision required, the first new pack showed three of twelve loss complaints relating to one product sold without a recorded assessment.
+
+The board paused that product until its assessment process was fixed. Under the old format the complaints would have appeared only as a total.
+
+::: case | The pack with no decisions
+Ahmed, a board member, receives a 40-page compliance pack with no summary and no decisions. The chair asks him to approve it as routine.
+? What should Ahmed do?
+- Approve it as routine, because the pack shows the firm is compliant || A pack with no summary or decisions does not show that the firm is compliant. The board cannot decide on what it cannot see.
+* Ask for a short summary with the decisions required, the owners and the status of each open breach, before approving the pack || A governance pack must give the facts and the decisions. Asking for it keeps the board's oversight real.
+- Reject the pack and ask for the compliance officer to be removed || Removing someone is not the first response. The format can be fixed.
+:::
+
+::: quiz
+? Why does a root cause analysis that stops at a person's name often fail?
+- Because people should never be named in a review || Naming the person is not the problem. The problem is stopping there, when the control that allowed the error is not found.
+* Because the control that allowed the error, such as a system or a missing check, is usually left unchanged || Fixing a person without fixing the process leaves the failure able to recur.
+- Because root causes are always technical and never human || Human factors can be causes. The point is to find the process gap as well.
+:::
+
+## Tool: compliance monitoring card
+
+- Monitoring plan: obligations, tests, owners and frequency
+- Test results for the period, with the evidence reference
+- Breach and incident log: open items, owners and target dates
+- Root cause and fix for each closed item, with the test of the fix
+- Governance pack: exposures, breaches, complaints, tests and the decisions required
+
+## Common mistakes
+
+- Running monitoring tests from memory rather than from the records.
+- Closing incidents without evidence of the fix.
+- Stopping the root cause analysis at the person who made the error.
+- Sending the board a pack that contains no decisions.
+
+## Self-check
+
+1. What turns a monitoring plan into evidence? (Answer: running each test on schedule against the records, and logging each result and failure.)
+2. Why must an incident close only with evidence? (Answer: so the record shows the fix was made and tested, not only that it was reported as done.)
+3. What should a governance pack include? (Answer: the facts needed to decide, such as exposures, breaches, complaints and test results, each with a decision or action and an owner.)
+
+## Practical assignment
+
+Write a one-page monitoring plan with five tests for a hypothetical trading firm. For each test, name the obligation, the owner, the frequency and the evidence used. Choose one breach from the plan, and write its root cause as a process failure rather than as a person's error.
+
+## Summary
+
+- A monitoring plan with owners and schedules turns policy into evidence, and each failure is logged the same day.
+- Root cause analysis must find the process that allowed a failure, and an incident closes only with evidence of the fix.
+- A short governance pack with decisions and owners gives the board the facts it needs, and retention must meet the applicable rules.

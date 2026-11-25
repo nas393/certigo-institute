@@ -37,7 +37,23 @@ function Paths() {
   }, [user]);
 
   // Only show courses that are live, so a path never links to a hidden course.
-  const paths = useMemo(() => PATHS.map((p) => ({ ...p, list: p.courses.map((s) => courses?.get(s)).filter(Boolean) as Course[] })), [courses]);
+  const paths = useMemo(() => PATHS.map((p) => ({
+    ...p,
+    list: p.courses.map((s) => courses?.get(s)).filter(Boolean) as Course[],
+    levelLists: p.levels?.map((l) => ({ title: l.title, list: l.courses.map((s) => courses?.get(s)).filter(Boolean) as Course[] })),
+  })), [courses]);
+
+  const courseItems = (list: Course[]) => list.map((c, i) => (
+    <li key={c.slug}>
+      <Link to="/c/$slug" params={{ slug: c.slug }} className="flex items-center gap-3 rounded-lg border border-border px-3 py-2 text-sm hover:border-emerald-600">
+        <span className={"flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold " + (done.has(c.id) ? "bg-emerald-600 text-white" : "bg-muted text-muted-foreground")}>
+          {done.has(c.id) ? <Check className="h-3.5 w-3.5" /> : i + 1}
+        </span>
+        <span className="flex-1">{c.title}</span>
+        <ArrowRight className="h-4 w-4 text-muted-foreground" />
+      </Link>
+    </li>
+  ));
 
   return (
     <div className="min-h-screen bg-background">
@@ -69,19 +85,12 @@ function Paths() {
                         <div className="h-full bg-emerald-600" style={{ width: `${(passed / p.list.length) * 100}%` }} />
                       </div>
                     )}
-                    <ol className="mt-4 space-y-2">
-                      {p.list.map((c, i) => (
-                        <li key={c.slug}>
-                          <Link to="/c/$slug" params={{ slug: c.slug }} className="flex items-center gap-3 rounded-lg border border-border px-3 py-2 text-sm hover:border-emerald-600">
-                            <span className={"flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold " + (done.has(c.id) ? "bg-emerald-600 text-white" : "bg-muted text-muted-foreground")}>
-                              {done.has(c.id) ? <Check className="h-3.5 w-3.5" /> : i + 1}
-                            </span>
-                            <span className="flex-1">{c.title}</span>
-                            <ArrowRight className="h-4 w-4 text-muted-foreground" />
-                          </Link>
-                        </li>
-                      ))}
-                    </ol>
+                    {p.levelLists ? p.levelLists.filter((l) => l.list.length > 0).map((l) => (
+                      <div key={l.title} className="mt-4">
+                        <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{l.title}</div>
+                        <ol className="mt-2 space-y-2">{courseItems(l.list)}</ol>
+                      </div>
+                    )) : <ol className="mt-4 space-y-2">{courseItems(p.list)}</ol>}
                     {next && (
                       <Link to="/c/$slug" params={{ slug: next.slug }} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 hover:underline">
                         {passed ? "Continue" : "Start"} with {next.title} <ArrowRight className="h-4 w-4" />

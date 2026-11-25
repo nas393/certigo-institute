@@ -1,0 +1,667 @@
+=== 20
+SLIDE What a moving average shows | An average of recent closing prices; It smooths short-term noise; It describes the past, not the future | A lagging description
+SLIDE Simple and exponential | A simple average weights each close equally; An exponential average gives recent closes more weight; Both lag the price | Choose one and keep it
+SLIDE Reading the slope | A rising average suggests an uptrend; A falling average suggests a downtrend; A flat average suggests no clear trend | Slope gives direction
+SLIDE Price and average together | Price above a rising average supports an uptrend; Price below a falling average supports a downtrend | Position confirms slope
+SLIDE Crossovers | A short average crossing a long one is a common signal; Crossovers lag the turning point; Sideways markets produce false signals | Expect late signals
+SLIDE Write the rule first | State the averages and their lengths; State what would prove the trend broken; Test the rule on past data | Rules before charts
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate a simple moving average from a list of closing prices;
+- describe a trend from the slope and position of a moving average;
+- explain why a moving-average crossover lags the turning point;
+- write a trend rule before you read a chart.
+
+## Key terms
+
+::: terms
+Moving average: the average of closing prices over a set number of periods
+Simple moving average: an average in which each close in the window has equal weight
+Exponential moving average: an average that gives more weight to recent closes
+Lag: the delay between a real change in price and the moment an indicator shows it
+Crossover: the point where a short moving average moves above or below a longer one
+Whipsaw: a signal that reverses soon after it appears, usually costing the trader money
+:::
+
+## 1. Calculate and read a simple moving average
+
+A simple moving average adds the closing prices over a set number of periods and divides by that number. With five closes of 20, 21, 22, 21 and 23, the sum is 107 and the average is 21.4. When a new close arrives and the oldest close drops out of the window, the average moves. It moves more slowly than price, which is the source of its smoothing and of its lag.
+
+Reading the average means looking at two things. The first is its slope: rising, falling or flat. The second is the position of price relative to the average: above or below. A trader who writes the averages and lengths in advance can then describe the trend in the same way every time, which makes the reading testable.
+
+::: diagram steps | Reading a moving average
+Compute: add the last n closes and divide by n
+Compare: note whether price is above or below the average
+Slope: check whether the average is rising, falling or flat
+Decide: use the reading only if your written rule says so
+:::
+
+## 2. Simple and exponential averages
+
+The exponential average gives more weight to recent closes, so it responds faster than a simple average of the same length. That speed is useful, but it also means the exponential average reacts more to short-term noise. Neither type predicts the next close. Each one describes the past in a different way. Choose one type and one length, record them in your plan, and do not switch after a losing trade.
+
+::: quiz
+? A trader's rule uses a 20-period moving average. A single day shows a sharp spike in price. Which average is more likely to react faster to that spike?
+- The simple average, because it weights each close equally || Equal weights make a simple average slower to respond than an exponential one.
+* The exponential average, because it gives recent closes more weight || More weight on recent closes makes the exponential average respond more quickly.
+- Neither, because both ignore recent closes || Both use recent closes. The difference is how much weight they give them.
+:::
+
+## 3. Trend, confirmation and crossovers
+
+A trend is confirmed when the slope and the position agree. Price above a rising average supports an uptrend, and price below a falling average supports a downtrend. A crossover adds a second average. When a short average moves above a longer one, many traders read it as a sign of a rising trend. When the periods are 50 and 200 days, the event is often called a golden cross. Its weakness is lag. It is calculated from past closes, so it can only confirm a change after prices have already moved.
+
+::: slides
+SLIDE Step 1: Choose the averages | Pick one short and one long length; Write both in the plan | Lengths are fixed
+SLIDE Step 2: Read the slope and position | Rising and above means up; Falling and below means down; Otherwise no clear trend | Both must agree
+SLIDE Step 3: Name the break | Write the close that breaks the trend; Count the closes it needs | A break must be defined
+:::
+
+::: quiz
+? A moving-average crossover signal appears after price has already risen 6 percent from its low. What does this show?
+- The crossover predicted the rise exactly || A crossover confirms a change after it has happened, so it does not predict the exact turn.
+* The signal lags, so part of the move has already happened || Lag is the delay built into averages, and it is why a crossover often comes after part of a move.
+- The signal is wrong, because averages should never move with price || Averages move with price. The question is how late they do so.
+:::
+
+## Worked example: Marta's trend rule in Luanda
+
+Marta works in procurement in Luanda. She follows the price of a commodity that her company buys regularly, and she uses a 20-day simple moving average. Before reading each chart, she writes her rule: the trend is up while the price stays above a rising 20-day average, and it is broken when the price closes below the average on two consecutive days.
+
+On Monday the 20-day average is 41.00 and rising. The price closes at 42.10, above the average, so the trend is intact. On Thursday and Friday the price closes at 40.20 and 40.10, both below the average. Her rule is met, so she records a broken trend and reviews her plan before considering any trade. She does not look for a reason to explain the break away. The rule decides.
+
+::: case | The crossover after the move
+Samuel sees that a 50-day average has just crossed above a 200-day average on a share that has already risen 15 percent. He wants to buy, because the signal looks confirmed.
+? What should Samuel do?
+- Buy at once, because the crossover shows a new trend has started || A crossover lags, so the move may be partly over. Buying at once assumes a prediction the signal cannot make.
+* Check the rule he wrote, measure how far the move has already run, and decide whether the entry and stop still fit his plan || The rule and the stop are the test. A late signal can still be a valid trade, but only if the plan allows it.
+- Ignore the chart, because averages are only for long-term investors || Averages are used on many timeframes. Ignoring the chart is not a method.
+:::
+
+## Tool: trend rule card
+
+- Averages used, with their lengths, written before I look at the chart
+- Trend up: price above a rising average. Trend down: price below a falling average
+- Trend broken: the exact close condition, and how many closes it needs
+- Crossover rule: which averages, and what I do if the signal arrives late
+- Chart timeframe fixed in the plan, and not changed after a loss
+
+## Common mistakes
+
+- Changing the length of the average until the chart looks right, which is hindsight.
+- Treating a crossover as a prediction rather than a late confirmation.
+- Trading every crossover in a sideways market, where whipsaws are common.
+- Using a moving average without deciding in advance what breaks the trend.
+
+## Self-check
+
+1. What is the simple moving average of the closes 10, 12 and 14? (Answer: 12, because 36 divided by 3 is 12.)
+2. Why does a crossover lag? (Answer: it is calculated from past closes, so it can only confirm a change after prices have moved.)
+3. What is a whipsaw? (Answer: a signal that reverses soon after it appears, which is common in sideways markets.)
+
+## Practical assignment
+
+Choose one asset and one timeframe. Write your trend rule with two moving averages, their lengths and the condition that breaks the trend. For the next fifteen sessions, record whether the rule says trend up, trend down or broken. Do not trade. At the end, compare your record with the price moves that followed.
+
+## Summary
+
+- A moving average averages recent closes and describes the trend, but it always lags price.
+- Slope and position together describe a trend, and a crossover is a late confirmation, not a prediction.
+- Write the averages, their lengths and the trend-breaking condition before you look at the chart.
+
+=== 20
+SLIDE What momentum measures | Momentum compares recent gains with recent losses; It shows how strongly price is moving; It does not show direction alone | Strength, not direction
+SLIDE The relative strength index | J. Welles Wilder introduced it in 1978; It runs from 0 to 100; Fourteen periods is the usual setting | Wilder's classic tool
+SLIDE Overbought and oversold | Readings above 70 are often called overbought; Readings below 30 are often called oversold; These are conventions | A label, not an order
+SLIDE Divergence | Price makes a higher high while the indicator makes a lower high; This can warn of weakening momentum; It is not a timing tool | A warning, not a trigger
+SLIDE Trend comes first | In an uptrend, high readings can persist for a long time; Oscillator signals are read with the trend; Context changes the meaning | Read with the trend
+SLIDE Momentum rules | Define the period and levels in advance; Record each signal; Test whether the rule helped | Define, then test
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe what a momentum oscillator measures and what it does not;
+- explain how the relative strength index is built from average gains and losses;
+- explain divergence and why it is a warning rather than a timing signal;
+- apply overbought and oversold readings only together with a trend rule.
+
+## Key terms
+
+::: terms
+Momentum: the speed and strength of price movement over a period
+Oscillator: an indicator that moves between fixed limits, such as 0 and 100
+Relative strength index: an oscillator from J. Welles Wilder (1978) that compares average gains with average losses
+Overbought: a reading above a chosen level, commonly 70 for the relative strength index, which signals strong recent gains
+Oversold: a reading below a chosen level, commonly 30 for the relative strength index, which signals strong recent losses
+Divergence: a mismatch between the direction of price highs or lows and the indicator's highs or lows
+:::
+
+## 1. What momentum shows
+
+Momentum measures how strongly price has moved over a recent period. It does not say where price is going. A strong rise and a strong fall can both show high momentum. The relative strength index compares average gains with average losses over a set period, usually 14 periods, and scales the result from 0 to 100. Its construction explains its behaviour: a long run of up-closes pushes it up, and a long run of down-closes pushes it down. Know the construction before you trust a reading.
+
+::: diagram steps | Using a relative strength reading
+Set the period: choose one length and keep it, such as 14
+Read the level: note whether the reading is above 70, below 30 or between
+Check the trend: ask whether the trend rule says the market is rising or falling
+Decide by the plan: act only on a signal the written rule allows
+:::
+
+## 2. Overbought and oversold are labels
+
+A reading above 70 is often called overbought, and a reading below 30 is often called oversold. These labels describe recent strength or weakness. They do not say the price must turn. In a strong uptrend the reading can stay above 70 for a long time, and traders who sell every time it passes 70 often lose money in trending markets. The useful question is what the reading tells you about the trend you have already identified.
+
+::: quiz
+? A relative strength reading rises above 70 during an uptrend that the trader's rule has already identified. What is the most accurate conclusion?
+- The price must fall within a few sessions || The label does not guarantee a fall, and strong trends can keep the reading high.
+* The reading shows strong recent gains, so the trader should check the trend rule before taking any action || The label describes momentum. The decision depends on the trend and the written rule.
+- The indicator is broken and should be removed || A high reading is a normal result in a strong trend, not an error.
+:::
+
+## 3. Divergence as a warning
+
+Divergence occurs when price makes a new high while the oscillator makes a lower high. In an uptrend this is called bearish divergence. Bullish divergence is the mirror image in a downtrend, where price makes a lower low while the oscillator makes a higher low. Divergence can warn that momentum is weakening. It does not give a time or a price, and a market can show divergence and keep rising for a long time. Treat it as a reason to review the plan, not as an order.
+
+::: slides
+SLIDE Step 1: Mark the swings | Find the last two price highs or lows; Note the matching indicator points | Two swings, not one
+SLIDE Step 2: Compare the direction | Does price make a higher high while the indicator does not? | Look for the mismatch
+SLIDE Step 3: Apply the rule | Decide in advance what divergence changes; Do not act on it alone | The rule decides
+:::
+
+## Worked example: Tiago's review of a rising commodity
+
+Tiago trades from Lobito and watches a commodity during a rise. Over three weeks the price makes higher highs, but the relative strength reading makes a lower high each time. His rule says that bearish divergence reduces the size of new long trades, but does not close an open trade. He cuts the size of his next entry by half and sets a stop beyond the recent swing low. Two weeks later the price falls through the stop, and the loss is limited to the planned amount. Tiago does not treat the earlier warning as proof of anything. He followed the rule he had written, and that is the only standard he uses to judge the decision.
+
+::: case | The overbought label
+Ana holds a long trade in a share that has risen for six weeks, with the reading above 70. A friend tells her the share is overbought and will fall, so she should sell now.
+? What should Ana do?
+- Sell now, because a reading above 70 means the price must fall || A label above 70 does not guarantee a fall, and a strong trend can keep the reading high.
+* Check her written trend rule and her stop, and sell only if one of them says to || The plan decides. The trend rule and the stop are the test, not the label alone.
+- Double the position, because an overbought reading means the trend is strong || A high reading does not confirm a strong trend by itself. Doubling the position also raises the risk without a new rule.
+:::
+
+::: quiz
+? Which setup describes bullish divergence?
+- Price makes a higher high while the indicator makes a lower high, in an uptrend || That describes bearish divergence in an uptrend.
+* Price makes a lower low while the indicator makes a higher low, in a downtrend || A higher low on the indicator while price makes a lower low is the bullish mirror image.
+- Price and the indicator both make higher highs at the same time || Matching highs are not a divergence.
+:::
+
+## Tool: momentum check card
+
+- Period and levels, written before I look at the chart
+- Trend: up, down or sideways, from the trend rule
+- Reading: above 70, below 30 or between, with its date
+- Divergence: whether highs or lows disagree with price, and across how many swings
+- Action the plan allows: none, reduce size, or review the stop
+
+## Common mistakes
+
+- Treating an overbought label as an order to sell.
+- Changing the period until the chart shows the signal you want.
+- Ignoring the trend when reading an oscillator.
+- Acting on a divergence without a written rule for what it changes.
+
+## Self-check
+
+1. What does the relative strength index measure? (Answer: the balance of recent average gains and losses over a set period, scaled from 0 to 100.)
+2. What reading is usually called overbought? (Answer: above 70, a convention that describes strong recent gains rather than a guaranteed fall.)
+3. Why is divergence a warning and not a timing signal? (Answer: it shows weakening momentum, but it does not say when or at what price the market will turn.)
+
+## Practical assignment
+
+Choose one share or currency pair and set a 14-period relative strength reading on a chart you can see for free. For ten sessions, record the reading, the trend from your rule, and any divergence. Decide in advance what each would change in the plan, and record whether the rule helped. Do not trade on these signals this week.
+
+## Summary
+
+- Momentum shows the strength of recent price moves, and the relative strength index is built from average gains and losses.
+- Overbought and oversold readings are labels, not orders, and they must be read against the trend.
+- Divergence warns of weakening momentum, and the written plan decides what, if anything, it changes.
+
+=== 20
+SLIDE What volatility means | Volatility is how much price moves over a period; Higher volatility means wider typical swings; It is not the same as direction | The size of moves
+SLIDE True range | The largest of three distances; High minus low; High minus previous close; Low to previous close, as an absolute distance | One session's full movement
+SLIDE Average true range | ATR averages true ranges over a period; J. Welles Wilder introduced it in 1978; Fourteen is a common period | Wilder's volatility gauge
+SLIDE ATR-based stops | Place a stop a set multiple of ATR beyond entry; The multiple belongs to the plan; Higher volatility means wider stops | The market sets the distance
+SLIDE Size follows the stop | A wider stop needs a smaller size for the same cash risk; Recalculate size when the stop changes | Link stop and size
+SLIDE Limits of ATR | ATR does not show direction; It can lag sudden shifts; It is a measure, not a forecast | A measure, not a forecast
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- calculate the true range for a session from its high, low and previous close;
+- calculate an average true range over a set period;
+- set a stop distance from ATR and size the position for a fixed cash risk;
+- explain the limits of ATR as a measure of risk.
+
+## Key terms
+
+::: terms
+Volatility: how much a price moves over a period, regardless of direction
+True range: the largest of three distances for a session, which captures gaps as well as intraday moves
+Average true range: the average of true ranges over a set period, usually 14
+Multiple: the number of ATR units used to set a stop distance
+Gap: a jump from one close to the next open, which the true range captures
+Lag: the delay between a change in volatility and the moment the ATR reflects it
+:::
+
+## 1. True range captures the whole move
+
+One session's range is the high minus the low, but that misses overnight gaps. The true range fixes this by taking the largest of three distances: the high minus the low, the high minus the previous close, and the absolute distance from the previous close to the low. The last two capture gaps. The true range is therefore an honest measure of how far price moved, including the jumps that a stop can suffer, as course 2 explained.
+
+## 2. Average true range and stop distance
+
+The average true range averages the true ranges over a period, commonly 14. J. Welles Wilder introduced the measure in 1978. Five true ranges of 1.2, 0.9, 1.5, 1.1 and 1.3 add to 6.0, and their average is 1.2. A stop placed two ATR units below entry is 2.4 below. The multiple, here two, belongs to the plan and must be the same on every trade you test. Choose it from the instrument's typical movement, and record it before you enter.
+
+::: diagram steps | Setting a volatility stop
+Measure: calculate the ATR over the chosen period
+Multiply: multiply the ATR by the multiple in your plan
+Place: set the stop that distance beyond the entry, on the losing side
+Size: divide the cash risk by the stop distance, and round down
+:::
+
+::: slides
+SLIDE Step 1: Read the sessions | Take high, low and previous close for each session; Work out the three distances | Use the full range
+SLIDE Step 2: Average them | Add the true ranges over the period; Divide by the number of sessions | The ATR result
+SLIDE Step 3: Set the distance | Multiply the ATR by the plan multiple; Place the stop on the losing side | The multiple is fixed
+:::
+
+::: quiz
+? An ATR is 1.2 and the plan uses a multiple of 2. The entry for a buy is 50.00. Where does the stop go?
+- At 48.80, because it is 1.2 below entry || A multiple of 2 doubles the ATR, so the distance is 2.4, not 1.2.
+* At 47.60, because two ATR units is 2.4 below entry || Two ATR units equal 2.4, and 50.00 minus 2.4 is 47.60.
+- At 52.40, because the stop goes above a buy entry || For a buy, the stop sits below the entry, on the losing side.
+:::
+
+## 3. Size follows the stop
+
+Stop distance and size work together. Take a plan that risks 100 USD per trade. A buy at 50.00 with a stop 2.4 below is a risk of 2.40 per unit. Dividing 100 by 2.40 gives 41.67, which rounds down to 41 units. The maximum loss is 41 multiplied by 2.40, which is 98.40 USD. If the ATR later rises, the stop distance grows, and the size must fall to keep the same cash risk. Recalculate the size every time the stop distance changes.
+
+## Worked example: Lena's ATR stop in Benguela
+
+Lena trades from Benguela and uses an ATR stop for every position. Her plan risks 100 USD per trade. She buys at 50.00 with a stop 2.4 below, which is two ATR units when the ATR is 1.2. Her size is 41 units. Next month the ATR rises to 2.0. Her new stop distance is 4.0 below entry, and her size becomes 25 units to keep the same 100 USD risk. She does not keep the old size because the chart looks familiar. The rule is the same, but the inputs have changed, so the output changes too.
+
+::: case | The volatility jump
+Miguel plans a new trade. Overnight the ATR has jumped from 1.2 to 2.0. He wants to use the same size as last week to keep things simple.
+? What should Miguel do?
+- Use last week's size, because the trade looks similar to the last one || Similar charts can carry very different volatility. The size must follow the current ATR.
+* Recalculate the stop distance and the size from the new ATR, keeping the cash risk unchanged || The plan sizes from the current measure. A fixed cash risk keeps the loss inside the budget.
+- Skip the risk limit this week, because volatility is unusually high || Dropping the limit removes the protection the plan exists to give. Volatility is a reason to size carefully, not to stop sizing.
+:::
+
+::: quiz
+? Why does a higher ATR need a smaller position for the same cash risk?
+- Because a wider stop lowers the loss per unit, so more units fit || A wider stop raises the risk per unit, which lowers the number of units that fit the budget.
+* Because a wider stop raises the risk per unit, so fewer units fit the same cash budget || With a fixed cash risk, size equals cash risk divided by risk per unit, so a larger risk per unit means fewer units.
+- Because volatility always means the trade will lose money || Volatility is not a verdict on profit. It changes the distance and the size.
+:::
+
+## Tool: ATR stop checklist
+
+- ATR period, and the ATR value on the entry date
+- Multiple used in the plan, written before entry
+- Stop distance: ATR times multiple, placed on the losing side
+- Cash risk budget, and the resulting risk per unit
+- Units: cash risk divided by risk per unit, rounded down
+- Recalculate when the ATR changes by the amount the plan names
+
+## Common mistakes
+
+- Using the high minus the low as the range, and missing overnight gaps.
+- Changing the multiple after seeing where the stop would fall.
+- Keeping the old size after the stop distance has changed.
+- Treating ATR as a forecast of direction or of profit.
+
+## Self-check
+
+1. What are the three distances in the true range? (Answer: the high minus the low, the high minus the previous close, and the absolute distance from the previous close to the low.)
+2. An ATR of 1.5 and a multiple of 2 give what stop distance? (Answer: 3.0, because 1.5 times 2 is 3.0.)
+3. Why does ATR not show direction? (Answer: it measures the size of moves, not whether they are up or down.)
+
+## Practical assignment
+
+On a chart you can see for free, calculate the true range for ten sessions and average them to get a ten-session ATR. Choose a multiple, place a hypothetical stop, and size a 100 USD risk on paper. Write one sentence on whether the stop would have survived the next session.
+
+## Summary
+
+- The true range captures the full movement of a session, including gaps, and ATR averages it over a period.
+- ATR sets a stop distance, and the size follows from the cash risk and that distance.
+- ATR measures volatility, not direction, and it is a measure rather than a forecast.
+
+=== 20
+SLIDE What volume records | Volume counts the units traded; Price moves on high volume are more convincing; Some markets publish no traded volume | Context for price
+SLIDE Confirmation | A breakout on high volume is more persuasive than one on low volume; Confirmation reduces false moves but does not remove them; Use a rule | Higher volume, stronger case
+SLIDE Relative volume | Compare volume with its average over a set period; A reading well above average is notable; Define the threshold in advance | Relative, not absolute
+SLIDE Volume and trend | Rising prices on rising volume support a trend; Falling volume in a rally can warn of weakness; Context matters | Watch the pattern
+SLIDE Check the data | Currency markets often show tick volume, not traded volume; Thin markets give unreliable volume; Check the source | Know what you measure
+SLIDE Confirmation rules | Write the volume condition; Record breakouts with and without volume; Review the outcome | Test before trusting
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain what volume records and why it can confirm or weaken a price move;
+- compare current volume with its average and judge whether it is notable;
+- identify when volume data is unreliable and what to check first;
+- write a volume confirmation rule and test it on past breakouts.
+
+## Key terms
+
+::: terms
+Volume: the number of units traded over a period
+Relative volume: current volume divided by its average over a set period
+Breakout: a price move beyond a level that the trader has marked as important
+Confirmation: additional evidence, such as volume, that supports a price signal
+Tick volume: the number of price changes in a period, used as a proxy where traded volume is not published
+Thin market: a market with few trades, where volume and prices are less reliable
+:::
+
+## 1. What volume adds to price
+
+Price tells you where the market traded. Volume tells you how much was traded there. A breakout above a resistance area on heavy volume suggests many participants agreed with the move. The same breakout on light volume suggests fewer participants, and a higher chance that it fails. Volume is context, not a guarantee. Strong volume can also accompany a false breakout, so it should be one part of a rule, not the whole rule.
+
+## 2. Relative volume
+
+Raw volume numbers mean little without a comparison. Relative volume divides the current volume by its average over a chosen period. If the 20-period average is 10,000 contracts and today's volume is 18,000, relative volume is 1.8. Define in advance what you call notable, for example 1.5 or more, and record the choice. Read the figure at the close of the period, not while it is still forming, because partial volume changes the reading.
+
+::: diagram steps | Testing a breakout with volume
+Mark the level: write the price that matters before the move
+Wait for the close: check the breakout at the close of the period
+Compare volume: divide current volume by its average
+Decide by rule: act only if the written condition is met
+:::
+
+::: slides
+SLIDE Step 1: Mark the level in advance | Write the price and why it matters; Do not move it after the move | Mark it before
+SLIDE Step 2: Read the close | Use the close, not an intraday spike; Note the date | The close decides
+SLIDE Step 3: Compare with the threshold | Divide volume by its average; Act only if the rule is met | Volume is the test
+:::
+
+::: quiz
+? A share breaks above a marked resistance level. Its volume is 0.6 times its 20-period average. What is the most careful reading?
+- The breakout is confirmed, because price moved beyond the level || Price moving beyond a level is only part of the evidence, and volume here is weak.
+* The breakout is weakly supported, and the rule may say to wait for stronger volume || Low relative volume is a reason for caution, and the rule decides whether to wait.
+- Volume does not matter for any breakout || Volume is one piece of context. Ignoring it throws away information the rule may use.
+:::
+
+## 3. Know the data source
+
+Not every market publishes traded volume. Many currency markets show tick volume, which counts price changes instead of units traded. It is useful but different. Thin markets and instruments with few trades produce unreliable volume. Before you use volume in a rule, check where it comes from, what it counts and whether it is available for the timeframe you use. A rule built on the wrong measure can give misleading test results.
+
+## Worked example: Ines and the breakout in Huambo
+
+Ines trades from Huambo. She marks a resistance level at 31.00 on a commodity-linked share. Her rule says she takes a breakout only if the daily close is above 31.00 and relative volume is at least 1.5 against its 20-day average. On Tuesday the close is 31.40 with relative volume of 2.1, so she takes a small position with a stop below the level. On Thursday, after a pullback, the price closes at 31.20, still above the level, but relative volume is 0.8. Her rule fails on volume, so she skips the trade. Over the next month she records every breakout, with and without the volume condition. The record shows whether the volume condition helped, and that is the question she is trying to answer.
+
+::: case | The weak breakout
+Elisa sees a share close above a resistance level. Her rule requires relative volume of at least 1.5 for a breakout entry, but the volume is 0.9. A friend says the level is broken and she should buy at once.
+? What should Elisa do?
+- Buy at once, because the level is broken and the volume rule is a formality || The rule exists to filter weak breakouts. Ignoring it removes the test.
+* Follow the rule and skip the trade, then record the outcome to test whether the rule helps || The record shows whether the volume condition improves results over time, which is how the rule earns its place.
+- Buy half now and add the rest later, because the breakout may still work || Splitting the entry still breaks the rule. The volume condition was not met.
+:::
+
+::: quiz
+? Why do some currency markets show tick volume rather than traded volume?
+- Because tick volume is always more accurate || Tick volume is a proxy, and it is not more accurate than traded volume.
+* Because many currency markets do not publish traded volume in the same way as exchanges || Market structure differs, so the data differs, and the trader must check the source.
+- Because tick volume is required by law for every market || Tick volume is not a legal requirement. It is a data choice.
+:::
+
+## Tool: volume confirmation card
+
+- Level marked before the move, and the reason it matters
+- Close condition: the close the period must make above or below the level
+- Volume average: the period used, written in the plan
+- Relative volume threshold, and when it is measured
+- Data source and volume type: traded or tick
+- Action if volume fails: skip, wait or reduce size, as the rule says
+
+## Common mistakes
+
+- Reading volume while the period is still forming, which changes the figure.
+- Treating tick volume as if it were traded volume.
+- Setting the volume threshold after seeing which breakouts worked.
+- Assuming high volume always means the move will continue.
+
+## Self-check
+
+1. What does relative volume measure? (Answer: current volume divided by its average over a chosen period.)
+2. A breakout comes on relative volume of 0.7. What does the rule-based reading suggest? (Answer: weak support, so the rule may say skip or wait.)
+3. What is tick volume? (Answer: a count of price changes in a period, used as a proxy where traded volume is not published.)
+
+## Practical assignment
+
+Choose one market with volume data and mark one resistance level. Over four weeks, record each close above or below the level, the relative volume at the close, and whether a breakout followed. Write one sentence on whether the volume condition helped, and what more data you would need to be sure.
+
+## Summary
+
+- Volume shows how much trading supports a price move, and relative volume makes it comparable over time.
+- Check the data source, because tick volume and traded volume are different measures.
+- A volume rule must be written and tested on past breakouts before it is trusted.
+
+=== 20
+SLIDE Indicator overload | Many indicators repeat the same information; Each added indicator adds noise; Choose a small set with distinct roles | Fewer, clearer tools
+SLIDE Roles | One indicator for trend; One for momentum or timing; One for risk, such as ATR | Each tool has one job
+SLIDE Timeframes | A higher timeframe sets the context; A lower timeframe is used for timing; Keep the same roles on each | Context, then timing
+SLIDE Alignment | Agreement across timeframes is stronger evidence; Disagreement is a reason to wait; Write what counts as alignment | Wait when they disagree
+SLIDE A written checklist | List each condition as yes or no; Count the conditions that must be met; Log every result | Yes or no, not a feeling
+SLIDE Avoid false precision | Indicators are estimates; Thresholds are conventions; Test them before relying on them | Estimates, not facts
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- select a small set of indicators with distinct roles;
+- use a higher timeframe for context and a lower timeframe for timing;
+- write an alignment rule and a yes-or-no checklist for a trade;
+- identify when adding indicators reduces clarity rather than adding information.
+
+## Key terms
+
+::: terms
+Indicator: a calculation based on price, volume or both, used to describe a market
+Redundancy: when two indicators measure the same thing and add no new information
+Higher timeframe: a longer chart that sets the context for a trade
+Lower timeframe: a shorter chart used to time the entry or exit
+Alignment: agreement between timeframes or indicators about the direction of the market
+Checklist: a list of conditions, each answered yes or no before a decision
+:::
+
+## 1. Fewer indicators, distinct roles
+
+Many traders add indicators until the chart looks busy. Most common indicators are transformations of the same price data, so they often agree for the wrong reason. Two moving averages with similar lengths give almost the same message. A better approach gives each tool one job: one to describe the trend, one to measure momentum or timing, and one to set risk, such as the ATR from lesson 3. Remove any indicator that repeats another.
+
+::: diagram pyramid | Roles of a small indicator set
+Trend: the direction, from a moving average
+Momentum or timing: the strength or the entry, from an oscillator
+Risk: the stop distance and the size, from ATR
+Confirmation: volume, only if the data source is reliable
+:::
+
+## 2. Timeframes: context, then timing
+
+Use a higher timeframe to decide the context. A daily chart may show whether the trend is up or down. Use a lower timeframe, such as a four-hour chart, to time an entry in the direction the higher timeframe shows. Keep the same roles on each timeframe. The most common error is letting the lower timeframe override the higher one, for example buying every short rise in a clear downtrend. Write down which timeframe sets the context and which one sets the timing.
+
+::: quiz
+? A daily chart shows a clear downtrend. A four-hour chart shows a short rise. Using a context-then-timing rule, what should the trader do?
+- Buy the short rise, because the lower timeframe is more recent || The lower timeframe is used for timing, and the higher timeframe sets the context. A short rise against a clear downtrend conflicts with the rule.
+* Wait for a timing signal in the direction of the daily downtrend, or do nothing || The higher timeframe decides the direction, and the lower timeframe times the entry only in that direction.
+- Ignore the daily chart, because short timeframes are more reliable || Short timeframes are not more reliable by default. The rule uses both for different jobs.
+:::
+
+## 3. Alignment and the checklist
+
+Alignment means the timeframes or indicators agree about direction. Agreement is stronger evidence than a single signal, but it is not certainty. Disagreement is a reason to wait. Turn the rule into a checklist of yes-or-no conditions: the higher timeframe trend is up, price is above the trend average, momentum is above its threshold, and the stop distance fits the size rule. Count how many conditions must be met. If the count is not met, the trade does not happen, and the reason is logged.
+
+::: slides
+SLIDE Step 1: Set the context | Read the higher timeframe trend; Answer yes or no | Context first
+SLIDE Step 2: Time the entry | Read the lower timeframe condition; Answer yes or no | Timing second
+SLIDE Step 3: Count the answers | All required conditions must be yes; Log any no | A no means no trade
+:::
+
+## Worked example: Pedro's checklist in Benguela
+
+Pedro trades from Benguela. He uses a daily chart for context and a four-hour chart for timing. His checklist has five yes-or-no conditions: the daily close is above its 50-day average; the daily average is rising; the four-hour price has pulled back to its 20-period average; the four-hour momentum reading is above 50; and the stop distance from ATR gives a size he can afford. All five must be yes. On Monday four conditions are yes, but the momentum reading is below 50, so he logs a no and skips the trade. On Wednesday all five are yes, and he takes a position sized by his risk rule. He does not change a condition after seeing the result.
+
+::: case | The crowded chart
+Aisha's screen has eight indicators. Four say the market is rising, three say it is falling, and the eighth is neutral. She cannot decide, so she wants to add a ninth indicator to break the tie.
+? What should Aisha do?
+- Add a ninth indicator and take the majority view, because more tools mean better decisions || Adding tools that repeat the same data adds noise and does not settle the question.
+* Remove the repeated indicators, keep one per role, and apply the checklist she wrote before the session || A small set with clear roles gives a clearer answer, and the written checklist decides.
+- Trade the side with the most indicators, because the majority is always right || A majority of repeated tools is not evidence. Many of them may be measuring the same thing.
+:::
+
+::: quiz
+? Why is a pair of moving averages with similar lengths often less useful than one average plus one momentum measure?
+- Because moving averages cannot be calculated on closing prices || Moving averages are calculated on closing prices. That is not the issue.
+* Because both averages mostly repeat the same information, while momentum adds a different measure || Redundant tools agree for the same reason and add little new information.
+- Because momentum measures always replace the need for trend || Momentum does not replace trend. It adds a different kind of information.
+:::
+
+## Tool: alignment checklist
+
+- Higher timeframe: context and direction, written as yes or no
+- Lower timeframe: timing condition, written as yes or no
+- Indicator roles: trend, momentum or timing, and risk, each with one tool
+- Number of conditions required, written before I look at the chart
+- Log of each decision, including the conditions that were not met
+- Review date for the checklist, not changed after a loss
+
+## Common mistakes
+
+- Adding indicators until the chart supports a view one already had.
+- Letting the lower timeframe override the higher one.
+- Changing the checklist after seeing which trades would have worked.
+- Counting repeated indicators as separate evidence.
+
+## Self-check
+
+1. What is the job of the higher timeframe in a context-then-timing rule? (Answer: to set the context and the direction of trades.)
+2. Why is redundancy a problem? (Answer: repeated tools agree for the same reason and add no new information.)
+3. What should a disagreement between timeframes lead to? (Answer: waiting, unless the written rule says otherwise.)
+
+## Practical assignment
+
+Choose two timeframes for one market, and select one indicator for each role: trend, momentum or timing, and risk. Write a yes-or-no checklist with at least four conditions. Apply it to the last twenty sessions on paper, log each yes and no, and count how many days the checklist would have allowed a trade.
+
+## Summary
+
+- A small set of indicators with distinct roles is clearer than a crowded chart.
+- Use a higher timeframe for context and a lower timeframe for timing, and wait when they disagree.
+- A written yes-or-no checklist, applied without change after the result, makes the decision testable.
+
+=== 20
+SLIDE What a backtest tests | A backtest applies a written rule to past prices; It shows how the rule would have behaved; It does not prove future results | Past behaviour, not a promise
+SLIDE Overfitting | Adjusting many settings to fit past data; The rule looks excellent on the test; It often fails on new data | Too many settings
+SLIDE Hindsight bias | Choosing the rule after seeing the answer; Selecting only the charts that worked; Looking back makes patterns look obvious | Decide before you look
+SLIDE Out-of-sample testing | Split the data into a development and a test period; Fix the rule before the test; Judge only on the test period | Keep a hidden test
+SLIDE Costs and fills | Include spread, commission and slippage; Model stops with a realistic fill; Ignoring costs misleads | Costs change the answer
+SLIDE Record and decide | Log every trade the rule would take; Keep the rule unchanged for the test; Review after a fixed number of trades | Fixed rules, fixed reviews
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe what a backtest tests and what it cannot prove;
+- explain overfitting and hindsight bias, and recognise them in a set of results;
+- split data into development and out-of-sample periods, and judge the rule only on the second;
+- include costs and realistic fills in a test, and record every trade the rule would take.
+
+## Key terms
+
+::: terms
+Backtest: applying a written rule to past prices to see how it would have performed
+Overfitting: adjusting a rule so closely to past data that it captures noise rather than a lasting pattern
+Hindsight bias: the tendency to see a pattern as obvious after the outcome is known
+Out-of-sample: data not used to develop a rule, reserved to test it
+Development period: the data used to design and adjust a rule
+Realistic fill: an assumed execution price that includes spread, slippage and commission
+:::
+
+## 1. What a backtest can and cannot show
+
+A backtest answers one question: how would this written rule have behaved on past data? It can show that a rule is unlikely to be workable, for example when losses are large after costs. It cannot prove the rule will work in future, because markets change, other traders adapt, and the sample may be small. Treat a backtest as a filter that removes weak ideas, not as proof that a strong idea is safe.
+
+## 2. Overfitting and hindsight bias
+
+Overfitting happens when a rule is tuned on past data until it fits every swing. A rule with many settings can always be made to look good on the period it was built for. Hindsight bias works in the same direction. A trader who looks at charts first, then writes the rule, selects the pattern that already worked. Guard against both by writing the rule before you test it, limiting the number of settings, and keeping a record of every version you tried.
+
+::: quiz
+? A trader tests 40 versions of a rule on the same data and keeps the one with the best result. What is the main risk?
+- The best result is proven, because it was the best of 40 || Choosing the best of many tested versions on the same data inflates the result.
+* The result is likely overfitted, because many versions were tried on one period || Repeated selection on one data set makes an impressive result likely to be chance.
+- There is no risk, because each version was tested honestly || Each version was tested on the same data, so the selection is the problem.
+:::
+
+## 3. Out-of-sample testing
+
+Split the past data into two parts. Use the first, the development period, to design the rule. Then fix the rule completely and test it once on the second part, the out-of-sample period. Judge the rule only on that second part. If the rule is changed after seeing the out-of-sample result, that period is no longer out-of-sample, and the test is spent. Record the split date before you begin.
+
+::: diagram steps | Running an honest backtest
+Write: fix the rule, every setting and the date it was written
+Split: record the development and out-of-sample dates
+Design: adjust settings only on the development period
+Test once: run the fixed rule on the out-of-sample period and log every trade
+:::
+
+::: slides
+SLIDE Step 1: Split the data | Choose the split date; Record it before the test | Date first
+SLIDE Step 2: Design on the first part | Set every rule and setting; Write them down | Design once
+SLIDE Step 3: Test once on the second part | Fix the rule; Judge only the result | One honest test
+:::
+
+## Worked example: Diego's out-of-sample test in Luanda
+
+Diego trades from Luanda. He builds a breakout rule using two years of daily data, designing it on the first eighteen months and setting its rules there. On the last six months, the out-of-sample period, the rule takes 24 trades. Using a realistic fill that includes a spread of 0.10 and slippage of 0.05 per unit, his average result after costs is 2 USD per trade, on a risk of 50 USD per trade. He does not adjust the rule. He records the result and reviews the sample size. He decides that 24 trades is too few to rely on, so he runs the fixed rule on new data before risking real money. The discipline is what makes the result meaningful.
+
+::: case | The rule that changed
+Rosa's rule lost money on the out-of-sample period. She suspects one setting is wrong, so she changes it and runs the test again on the same period, which now shows a profit.
+? What should Rosa do?
+- Accept the new result, because the rule now shows a profit || The out-of-sample period has been used to choose the setting, so the profit is not an honest test.
+* Treat the period as used, record the change, and test the revised rule on new data before trusting it || A new, untouched period is needed to test any change. The record keeps the history visible.
+- Use the new setting on real money straight away, since the test is complete || The test is not complete, because the same data was used to design the change.
+:::
+
+::: quiz
+? Which costs must a realistic backtest include?
+- Only the broker's advertised commission || Advertised commissions are only part of the cost. Spread and slippage also count.
+* Spread, commission and slippage on every simulated trade || A realistic fill includes all the costs the trader would pay in practice.
+- None, because backtests measure the rule, not the trader || Costs change the result, so ignoring them makes the rule look better than it is.
+:::
+
+## Tool: backtest protocol card
+
+- Rule written and dated before the test, with every setting listed
+- Development and out-of-sample split dates, written before the test
+- Costs and fills used: spread, commission and slippage per trade
+- Every trade the rule would take, logged, including the losses
+- Number of versions tested, with every version recorded
+- Decision rule for going forward: the sample size and result needed before real money
+
+## Common mistakes
+
+- Testing many versions and reporting only the best one.
+- Judging a rule on the period used to design it.
+- Ignoring costs and fills because they make the result smaller.
+- Treating a small sample of backtest trades as proof.
+
+## Self-check
+
+1. What does a backtest show? (Answer: how a written rule would have behaved on past data, not a guarantee of future results.)
+2. What is the difference between the development and out-of-sample periods? (Answer: the development period designs the rule; the out-of-sample period tests the fixed rule.)
+3. What is overfitting? (Answer: tuning a rule so closely to past data that it captures noise rather than a lasting pattern.)
+
+## Practical assignment
+
+Write one simple rule using a moving average and a stop from ATR. Split a year of daily data from a chart you can access into two halves. Design the rule on the first half and test it once on the second. Include a spread and a commission in every result, and record every trade, including the losers.
+
+## Summary
+
+- A backtest tests a written rule on past data and cannot prove future results, so treat it as a filter.
+- Overfitting and hindsight bias make results look better than they are, so write rules before you test them.
+- Judge a rule only on out-of-sample data, with costs included and every trade recorded.
