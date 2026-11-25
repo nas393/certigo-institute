@@ -1,0 +1,474 @@
+{
+  "slug": "technical-analysis-in-practice",
+  "title": "Technical Analysis in Practice",
+  "category": "Trading & Markets",
+  "summary": "Use moving averages, momentum, volatility and volume with written rules, and test them honestly. Education only.",
+  "skills": [
+    "Moving averages",
+    "Momentum oscillators",
+    "ATR volatility",
+    "Volume confirmation",
+    "Timeframe alignment",
+    "Backtesting"
+  ],
+  "modules": [
+    {
+      "title": "Moving Averages and Trend",
+      "subject": "Trend indicators",
+      "learned": "Calculate a simple moving average and describe a trend from the slope and position of an average.",
+      "minutes": 20,
+      "skills": [
+        "Moving averages",
+        "Trend rules"
+      ],
+      "check": {
+        "q": "A trader wants to use a 20-period average to define the trend on a chart she trades. What should she write before she looks at the chart?",
+        "options": [
+          "Only the broker's name and the lot size",
+          "A prediction of next month's price",
+          "The average length, the trend condition and the close that breaks the trend",
+          "Nothing, because averages are read after the trade"
+        ],
+        "a": 0,
+        "explanation": "A trend rule written before the chart defines the average, the trend condition and what breaks it, so the reading can be tested."
+      }
+    },
+    {
+      "title": "Momentum and the Relative Strength Index",
+      "subject": "Momentum",
+      "learned": "Explain what the relative strength index measures, read overbought and oversold labels with the trend, and identify divergence.",
+      "minutes": 20,
+      "skills": [
+        "Momentum oscillators",
+        "Divergence"
+      ],
+      "check": {
+        "q": "A relative strength reading is above 70 during a strong uptrend. Which conclusion is best supported?",
+        "options": [
+          "A certain fall within a few days",
+          "Strong recent gains, so the trend rule should decide the next step",
+          "The indicator is broken and should be removed",
+          "The trader should sell at once"
+        ],
+        "a": 1,
+        "explanation": "The label describes momentum. The written rule, not the reading alone, decides what happens next."
+      }
+    },
+    {
+      "title": "Volatility, True Range and ATR Stops",
+      "subject": "Volatility",
+      "learned": "Calculate true range and average true range, set a stop from ATR, and size the position for a fixed cash risk.",
+      "minutes": 20,
+      "skills": [
+        "ATR volatility",
+        "Stop sizing"
+      ],
+      "check": {
+        "q": "Overnight the ATR of a share rises from 1.2 to 2.0. A trader keeps a fixed 100 USD risk per trade. What should happen to the position size on a new trade?",
+        "options": [
+          "It should rise, because volatility creates more opportunity",
+          "It should stay the same, because the chart looks familiar",
+          "It should fall, because the stop distance widens for the same cash risk",
+          "It should double to offset the higher volatility"
+        ],
+        "a": 2,
+        "explanation": "A larger ATR widens the stop distance. Keeping the cash risk fixed means fewer units."
+      }
+    },
+    {
+      "title": "Volume and Breakout Confirmation",
+      "subject": "Volume",
+      "learned": "Compare current volume with its average, judge a breakout against a written volume rule, and check the data source.",
+      "minutes": 20,
+      "skills": [
+        "Volume confirmation",
+        "Data quality"
+      ],
+      "check": {
+        "q": "A breakout comes on relative volume of 0.7. What does the rule-based reading suggest?",
+        "options": [
+          "Strong confirmation, so the trade should be doubled",
+          "Volume is irrelevant to this breakout",
+          "The breakout is certain to continue",
+          "Weak support, so the rule may say to skip or wait"
+        ],
+        "a": 3,
+        "explanation": "Low relative volume is weak confirmation. The written rule decides whether that means skip, wait or reduce size."
+      }
+    },
+    {
+      "title": "Combining Indicators and Timeframes",
+      "subject": "Alignment",
+      "learned": "Choose a small set of indicators with distinct roles, use a higher timeframe for context, and apply a yes-or-no checklist.",
+      "minutes": 20,
+      "skills": [
+        "Timeframe alignment",
+        "Checklists"
+      ],
+      "check": {
+        "q": "A trader's checklist requires the daily trend to be up and the four-hour timing condition to be met. What is the checklist's job?",
+        "options": [
+          "To test whether every required condition is met before a trade happens",
+          "To predict the exact top of the move",
+          "To replace the stop order with a reminder",
+          "To count how many indicators the screen can show"
+        ],
+        "a": 0,
+        "explanation": "A yes-or-no checklist makes the decision testable. A trade happens only when the required conditions are all yes."
+      }
+    },
+    {
+      "title": "Backtesting Without Fooling Yourself",
+      "subject": "Backtesting",
+      "learned": "Describe what a backtest can and cannot show, split data into development and out-of-sample periods, and include realistic costs.",
+      "minutes": 20,
+      "skills": [
+        "Backtesting",
+        "Overfitting"
+      ],
+      "check": {
+        "q": "A rule looks excellent on the period used to design it but fails on new data. What is the most likely cause?",
+        "options": [
+          "The new data is always wrong",
+          "Overfitting to the design period",
+          "The market has stopped moving",
+          "The trader used a stop, which always fails"
+        ],
+        "a": 1,
+        "explanation": "A rule tuned to fit a period with many settings often fails on new data. That is overfitting, which is why out-of-sample tests exist."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "lesson": 1,
+      "q": "A trader's rule uses a 20-period average. Which average responds faster to a sudden price spike?",
+      "options": [
+        "An exponential average, which gives recent closes more weight",
+        "A simple average, which weights every close equally",
+        "Neither, because both ignore recent closes",
+        "A 200-period average, because longer periods react faster"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 1,
+      "q": "Price has risen 6 percent from its low before a moving-average crossover appears. What does this show?",
+      "options": [
+        "The crossover predicted the exact turn",
+        "The signal lags, so part of the move has already happened",
+        "The average is broken and should be removed",
+        "The signal confirms that the move will continue"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 1,
+      "q": "A five-period simple moving average uses closes of 20, 21, 22, 21 and 23. What is the average?",
+      "options": [
+        "21.0",
+        "22.0",
+        "21.4",
+        "107.0"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 1,
+      "q": "A rule breaks the trend after two closes below a rising 20-day average. Price closes below it on two consecutive days. What should the trader do?",
+      "options": [
+        "Keep the trend, because averages are not reliable",
+        "Buy at once, because price is now cheap",
+        "Change the average to 50 days until the trend returns",
+        "Record the trend as broken and review the plan before any trade"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 1,
+      "q": "Why should a trader write down the averages and their lengths before reading a chart?",
+      "options": [
+        "So the reading can be tested the same way every time",
+        "Because brokers require a written indicator list",
+        "Because averages change automatically over time",
+        "So the averages can be changed after a losing trade"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "A relative strength reading rises above 70 during an uptrend that the rule already identified. What is the most accurate conclusion?",
+      "options": [
+        "The price must fall within a few sessions",
+        "The reading shows strong recent gains, so the trend rule should decide the next step",
+        "The indicator is broken and should be removed",
+        "The trader should double the position at once"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 2,
+      "q": "Which setup describes bullish divergence?",
+      "options": [
+        "Price makes a higher high while the indicator makes a lower high, in an uptrend",
+        "Price and the indicator both make higher highs together",
+        "Price makes a lower low while the indicator makes a higher low, in a downtrend",
+        "Price stays flat while the indicator moves up sharply"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 2,
+      "q": "Who introduced the relative strength index, and in what year?",
+      "options": [
+        "An exchange, in 1990",
+        "A financial regulator, in 2008",
+        "The index has no known author",
+        "J. Welles Wilder, in 1978"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 2,
+      "q": "What reading is commonly labelled overbought on a relative strength chart?",
+      "options": [
+        "Above 70",
+        "Below 30",
+        "Exactly 50",
+        "Above 100"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "A trader sees bearish divergence in an uptrend. Which response follows a written rule?",
+      "options": [
+        "Sell everything, because divergence always ends the trend",
+        "Apply the size rule the plan sets for divergence, without assuming a fall",
+        "Ignore the rule, because divergence is never useful",
+        "Add to the position to profit from the reversal"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "A session has a high of 52, a low of 49 and a previous close of 55. What is the true range?",
+      "options": [
+        "3",
+        "7",
+        "6",
+        "4"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 3,
+      "q": "Five true ranges of 1.2, 0.9, 1.5, 1.1 and 1.3 are averaged. What is the average true range?",
+      "options": [
+        "6.0",
+        "1.5",
+        "1.0",
+        "1.2"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 3,
+      "q": "An ATR of 1.2 and a multiple of 2 give a stop for a buy entry at 50.00. Where is the stop?",
+      "options": [
+        "At 47.60, which is 2.4 below entry",
+        "At 48.80, which is 1.2 below entry",
+        "At 52.40, which is 2.4 above entry",
+        "At 49.40, which is 0.6 below entry"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 3,
+      "q": "Why does a higher ATR need a smaller position for the same cash risk?",
+      "options": [
+        "A wider stop lowers the loss per unit, so more units fit",
+        "A wider stop raises the risk per unit, so fewer units fit the budget",
+        "Volatility always makes a trade unprofitable",
+        "ATR is a fixed number that never changes the size"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "What does the average true range measure?",
+      "options": [
+        "The direction of the trend",
+        "The expected profit of the next trade",
+        "How much price moves, not which direction it moves",
+        "The exact future price range"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "A share breaks above a marked resistance level on volume of 0.6 times its average. What is the most careful reading?",
+      "options": [
+        "The breakout is confirmed beyond doubt",
+        "Volume is irrelevant to any breakout",
+        "The level has moved, so the breakout is void",
+        "The breakout is weakly supported, and the rule may say to wait"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 4,
+      "q": "What does relative volume compare?",
+      "options": [
+        "Current volume with its average over a chosen period",
+        "Today's price with yesterday's price",
+        "Volume on two different exchanges",
+        "The highest volume ever recorded"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 4,
+      "q": "What is tick volume?",
+      "options": [
+        "The number of units traded on a regulated exchange",
+        "A count of price changes in a period, used where traded volume is not published",
+        "The total value of a position",
+        "A fee charged on each trade"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 4,
+      "q": "Why should relative volume be read at the close of a period?",
+      "options": [
+        "Because brokers only publish closing volume",
+        "Because volume always falls before a close",
+        "Because partial volume changes the reading while the period is still forming",
+        "Because prices cannot be read during the day"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "A breakout rule requires volume of at least 1.5 times its average. A breakout comes on 0.9 times. A friend says to buy anyway. What should the trader do?",
+      "options": [
+        "Buy half now, because the rule is a formality",
+        "Buy at once, since the level is clearly broken",
+        "Change the threshold to 0.9 so the trade qualifies",
+        "Skip the trade and record the outcome to test whether the rule helps"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "A daily chart shows a clear downtrend. A four-hour chart shows a short rise. Under a context-then-timing rule, what should the trader do?",
+      "options": [
+        "Wait for a timing signal in the direction of the daily downtrend",
+        "Buy the short rise, since the lower timeframe is more recent",
+        "Ignore the daily chart because it is slower",
+        "Trade both directions at the same time"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 5,
+      "q": "Why is redundancy a problem in a set of indicators?",
+      "options": [
+        "Repeated tools always cancel each other out",
+        "Repeated tools agree for the same reason and add no new information",
+        "Redundancy is required by regulators",
+        "Redundant tools measure different things"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 5,
+      "q": "What is the job of the higher timeframe in a context-then-timing rule?",
+      "options": [
+        "To provide the exact entry price",
+        "To replace the stop order",
+        "To set the context and the direction of trades",
+        "To count the number of trades in a week"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 5,
+      "q": "What should a disagreement between timeframes lead to under a written rule?",
+      "options": [
+        "Taking the trade on the lower timeframe",
+        "Trading the side with more indicators",
+        "Doubling the size to resolve the conflict",
+        "Waiting, unless the rule says otherwise"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "A trader has eight indicators, four bullish and three bearish. What is the best next step?",
+      "options": [
+        "Remove repeated indicators and apply the written checklist",
+        "Add a ninth indicator and follow the majority",
+        "Trade the side with the most indicators",
+        "Stop reading charts altogether"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "What does a backtest show?",
+      "options": [
+        "That the rule will work in future",
+        "How a written rule would have behaved on past data",
+        "The exact profit the trader will earn",
+        "The reliability of the broker"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 6,
+      "q": "A trader tests 40 versions of a rule and keeps the best. What is the main risk?",
+      "options": [
+        "The best result is proven because it was the best",
+        "There is no risk, since each version was tested",
+        "The result is likely overfitted to one period",
+        "The broker will reject the rule"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 6,
+      "q": "What is the purpose of an out-of-sample period?",
+      "options": [
+        "To choose the settings after seeing the results",
+        "To replace the development period entirely",
+        "To record the trader's emotions",
+        "To test a rule that was fixed before the test, on data not used to design it"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 6,
+      "q": "Which costs must a realistic backtest include?",
+      "options": [
+        "Spread, commission and slippage on every simulated trade",
+        "Only the advertised commission",
+        "None, because backtests measure the rule only",
+        "Only the costs paid at the end of the year"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "A rule is changed after it fails on the out-of-sample period, then retested on that same period. What is the correct conclusion?",
+      "options": [
+        "The revised rule is now proven, because it passed",
+        "That period is used up, so the revised rule needs new data before it is trusted",
+        "The original test should be ignored and the new result accepted",
+        "The out-of-sample period was never needed"
+      ],
+      "a": 1
+    }
+  ]
+}

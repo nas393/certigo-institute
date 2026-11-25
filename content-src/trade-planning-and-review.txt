@@ -1,0 +1,683 @@
+=== 20
+SLIDE A trade is a thesis | A thesis states why the trade should work; It names what would prove it wrong; It sets the time horizon | Write the reason first
+SLIDE The plan template | Instrument, direction and thesis; Entry, stop and target; Size, cash risk and time horizon | One page, every trade
+SLIDE Plan before the order | Check the plan against the rules; Send the order only when every field is filled; Keep a copy | No empty fields
+SLIDE Common planning gaps | A missing stop; A target chosen after entry; A size set by feeling | Gaps create surprises
+SLIDE Plan changes are logged | Record the reason for any change; Mark the time of the change; Compare with the original | Changes are visible
+SLIDE Plan quality test | Could a stranger follow it? Does it name the exit before the entry? | Clear enough to test
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- write a trade thesis that names the reason for the trade and what would prove it wrong;
+- complete a one-page trade plan with entry, stop, target, size and time horizon;
+- check a plan against written rules before an order is sent;
+- explain why a plan must be fixed before entry and changed only through a logged reason.
+
+## Key terms
+
+::: terms
+Thesis: the reason a trade should work, written as one or two sentences
+Invalidation: the price or event that proves the thesis wrong
+Target: the price at which the plan takes a profit, set before entry
+Time horizon: the period over which the trade is expected to play out
+Trade plan: a written record of every field needed to enter, manage and exit a trade
+Change log: a dated record of every change made to a plan, with the reason
+:::
+
+## 1. Write the thesis before the chart
+
+A thesis is the reason a trade should work. It is short: one or two sentences that name the market condition, the evidence and the expected direction. A good thesis can be wrong in a specific way, and it names that way. "Price has held above a support area for three weeks, so buyers are defending it" is a thesis. "The chart looks strong" is not. The thesis must also state the invalidation, which is the price or event that would prove it wrong. Without an invalidation, a trader cannot tell a bad trade from a trade that is merely taking longer than expected.
+
+Write the thesis before you open the chart on the day of entry, if you can. If you cannot, write it before you press the button. The point is to separate the reason from the excitement of the moment.
+
+::: diagram steps | Building the thesis
+State the condition: what the market is doing now, in one sentence
+Name the evidence: the level, indicator or event that supports the view
+Name the invalidation: the specific price or event that proves it wrong
+Set the horizon: how long the trade should be given to work
+:::
+
+## 2. Use a one-page plan template
+
+A plan is a record of every field needed to enter, manage and exit a trade. Use a template so that no field is forgotten. The fields are the instrument, the direction, the thesis, the entry price, the stop price, the target, the size, the cash risk, the time horizon and the review date. Keep it to one page. A plan that needs three pages is usually a plan that has not yet been decided.
+
+::: slides
+SLIDE Step 1: Fill the identity fields | Instrument, direction, date and thesis; Keep the thesis to two sentences | Who, what, why
+SLIDE Step 2: Fill the price fields | Entry, stop and target; Stop and target on the correct sides of entry | Prices before orders
+SLIDE Step 3: Fill the risk fields | Size, cash risk and time horizon; Check the cash risk against the budget | Risk before send
+:::
+
+::: quiz
+? A trader writes a thesis that says "the chart looks strong and I feel confident." What is the main problem?
+- The thesis is too short, so it should be longer || Length is not the issue. The problem is that the statement names no evidence and no invalidation.
+* It gives no evidence and no invalidation, so the trader cannot test it afterwards || A thesis must name the reason and the event that would prove it wrong, so the result can be judged.
+- The thesis is correct, because confidence is the most important input || Confidence is not evidence. A plan built on feeling cannot be reviewed fairly.
+:::
+
+## 3. Check the plan before sending the order
+
+Before an order goes to the broker, check the plan against the written rules. Are all the fields filled? Is the stop on the losing side of the entry? Does the cash risk match the risk budget? Does the target sit on the profit side, and does the reward-to-risk ratio meet the plan's minimum? Each check is a yes or a no. A single no means the order is not sent, or it is sent only after the plan is corrected in writing.
+
+::: quiz
+? Which check matters most before an order is sent?
+- The broker's logo, because it shows the platform is trustworthy || The logo says nothing about the trade. The check is on the plan's fields.
+* The stop, confirming it sits on the losing side and matches the risk budget || A stop on the wrong side, or sized wrongly, breaks the plan before the trade begins.
+- The number of followers the idea has online || Popularity is not a plan check. The fields and rules are what matter.
+:::
+
+## Worked example: Filipe's first full plan in Lobito
+
+Filipe is a logistics coordinator in Lobito who trades part-time. He used to enter trades after a quick look at the chart. He now uses a one-page plan. On a Tuesday he writes: instrument, a commodity-linked share; direction, long; thesis, price has held above a support area for three weeks and the area has turned price twice before; entry at 20.00; stop at 19.30, below the support area; target at 21.40; size from a 0.5 percent risk budget on a 10,000 USD account; time horizon, two weeks. He checks the plan. The stop is below entry, the target is above it, the cash risk is 50 USD, and the reward-to-risk ratio is 2.0. Every field is filled, so he sends the order. The plan is his record, and the review will judge the decision, not the outcome.
+
+::: case | The empty field
+Filipe has written most of his plan, but the target field is empty. The price is moving quickly and he wants to send the order before it moves further.
+? What should Filipe do?
+- Send the order now and set the target after the trade has moved, once he can see where price is going || A target chosen after entry is chosen with the outcome in view. That is the gap the plan is meant to close.
+* Stop, fill the target field from the plan's rule, check the reward-to-risk ratio, and only then send the order || Every field is part of the decision. A plan is ready only when all the fields are complete and checked.
+- Send the order with no target, and add one later if the trade works || A trade with no target has no exit plan for profit. Adding it later repeats the problem.
+:::
+
+## Tool: one-page trade plan
+
+- Instrument, direction, date and two-sentence thesis
+- Invalidation: the price or event that proves the thesis wrong
+- Entry, stop and target, each on the correct side of entry
+- Size, cash risk and risk per unit, checked against the budget
+- Reward-to-risk ratio, and the minimum the plan requires
+- Time horizon and the date of the review
+
+## Common mistakes
+
+- Writing the thesis after the trade has moved, so it fits the result.
+- Leaving the target open and deciding it later under pressure.
+- Choosing the size from how confident the trader feels.
+- Changing the plan silently and not recording the reason.
+
+## Self-check
+
+1. What is an invalidation? (Answer: the price or event that proves the thesis wrong, so the trade can be judged against it.)
+2. Why keep a trade plan to one page? (Answer: a plan that needs more space is often not yet decided, and a short plan is easier to check and review.)
+3. What should happen if a check on the plan returns a no? (Answer: the order is not sent until the plan is corrected in writing.)
+
+## Practical assignment
+
+Write one full trade plan for an idea you are considering, on paper or on a demo account. Fill every field, including the invalidation and the time horizon. Check the plan against the four checks in this lesson, and write one sentence on which field you found hardest to complete and why.
+
+## Summary
+
+- A thesis names the reason for a trade and the specific event that would prove it wrong.
+- A one-page plan fills every field before the order is sent, and each field is checked.
+- A plan is fixed at entry, and any change is made only through a logged reason.
+
+=== 20
+SLIDE What a target is | A target is the price where the plan takes profit; It is set before entry; It is not a prediction of the exact top | Set the exit first
+SLIDE The R-multiple | One R equals the cash risk on the trade; A trade that makes twice its risk is plus 2R; A loss equal to the risk is minus 1R | Results in risk units
+SLIDE Reward to risk | Reward to risk is the target distance divided by the stop distance; A ratio of 2 means the target is twice the stop distance | Check before entry
+SLIDE Partial exits | Close part of the position at a first target; Let the rest run to a second target or a stop; Record each part separately | Lock in some gains
+SLIDE The effect of partials | A partial exit reduces the variance of the result; It also reduces the size of a big win; Both effects are real | Trade-off, not free money
+SLIDE Target rules | Define each target by a rule; Do not move targets after entry for emotional reasons; Log every change | Rules, not hopes
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- set a profit target from a written rule before entry;
+- express a trade result in R-multiples, using the cash risk as the unit;
+- calculate reward-to-risk from the entry, stop and target;
+- compare a single exit with a partial exit, and explain the trade-off each creates.
+
+## Key terms
+
+::: terms
+Target: the price at which the plan takes profit, set before entry
+R-multiple: a trade result expressed in units of its initial cash risk
+Reward to risk: the distance to the target divided by the distance to the stop
+Partial exit: closing part of a position at a first target and leaving the rest open
+Variance: how widely the results of trades spread around their average
+Runner: the part of a position kept open after a partial exit, to reach a later target
+:::
+
+## 1. Set the target before entry
+
+A target is the price at which the plan takes profit. It is set before entry, using a rule the trader can state: a multiple of the stop distance, a prior high or low, or a level the chart has respected. It is not a forecast of the exact top. Its job is to make the exit decision in advance, so that a trade is not held open out of hope or closed early out of fear. A plan with no target leaves the most important exit decision to the moment, when judgement is weakest.
+
+## 2. Measure results in R
+
+R is the cash risk on a trade. If a trade risks 100 USD, one R is 100 USD. A trade that makes 200 USD is plus 2R. A trade that loses its full risk is minus 1R. Expressing results in R makes trades comparable, even when they use different sizes or different instruments. A trader who risks 50 USD on one trade and 150 USD on another can still compare the two trades fairly by their R results.
+
+Reward to risk is the target distance divided by the stop distance. If the entry is 40.00, the stop is 39.00 and the target is 42.00, the stop distance is 1.00 and the target distance is 2.00. The reward-to-risk ratio is 2.0, or plus 2R if the target is hit.
+
+::: diagram steps | Setting a target
+Measure the stop: the distance from entry to the stop
+Choose the rule: a multiple of the stop distance, or a level the chart respects
+Place the target: on the profit side of the entry, at that distance
+Check the ratio: confirm it meets the plan's minimum before sending the order
+:::
+
+::: slides
+SLIDE Step 1: Name the rule | Choose one target rule; Write it in the plan | One rule per trade
+SLIDE Step 2: Apply it to the chart | Find the level or distance; Place the target on the profit side | Apply, do not adjust
+SLIDE Step 3: Check the ratio | Target distance divided by stop distance; Compare with the minimum | The ratio is the test
+:::
+
+::: quiz
+? A buy trade has an entry of 40.00, a stop at 39.00 and a target at 42.00. What is the reward-to-risk ratio?
+- 1.0, because the stop and the target are both one unit from entry || The target is two units from entry, while the stop is one unit away. The ratio is not 1.
+* 2.0, because the target distance of 2.00 divided by the stop distance of 1.00 is 2.0 || Target distance divided by stop distance gives the ratio.
+- 0.5, because the stop is the larger number || The stop is the smaller number here. Dividing the smaller distance by the larger one gives the wrong ratio.
+:::
+
+## 3. Partial exits and their trade-off
+
+A partial exit closes part of the position at a first target and leaves the rest open. It is a useful tool, and it has a clear trade-off. Taking part of the profit early reduces the swing in results. It also reduces the size of a big win, because the closed part no longer participates in a later move. Both effects are real. The choice depends on the strategy and on how much variation the trader can tolerate. Whatever is chosen must be written in the plan before entry.
+
+## Worked example: Clara's partial exit in Benguela
+
+Clara trades from Benguela. She buys 100 units at 40.00 with a stop at 39.00, so her cash risk is 100 USD, and one R is 100 USD. Her plan closes half the position at 42.00, which is 2R, and keeps the other half as a runner with a second target at 43.00.
+
+If price reaches 42.00, she closes 50 units at a gain of 2.00 each, which is 100 USD, or plus 1R on the first half. If the runner reaches 43.00, its 50 units make 150 USD, and the total is 250 USD, or plus 2.5R. If instead the runner is stopped at 39.00, it loses 50 USD, and the total is 50 USD, or plus 0.5R. Clara's plan gives a positive result in both cases. She knows the trade-off before she enters, so she does not change the plan when price comes near the first target.
+
+::: case | The runner that turns
+Tomas closed half his position at a first target as his plan says. The remaining half is now at a profit, and price is pulling back toward the entry. He wants to close the runner now to avoid giving back the gain.
+? What should Tomas do?
+- Close the runner now, because any pullback means the trade is over || A pullback is not the plan's exit. Closing early replaces the rule with a fear the plan was written to control.
+* Keep the runner under its written stop and second target, and exit only when one of them is reached || The runner has its own rules. Following them keeps the plan consistent from entry to exit.
+- Move the stop well below the entry, so the runner has more room || Moving the stop further from the price widens the planned loss, which the plan does not allow.
+:::
+
+::: quiz
+? What is the main effect of taking a partial exit at a first target?
+- It removes all risk from the trade || The stop and the runner still carry risk. A partial exit does not remove it.
+* It reduces the swing in results, but it also reduces the size of a large win || Locking in part of the gain is a trade-off. Both effects are real.
+- It guarantees the second target will be reached || A second target is not guaranteed. A partial exit changes the shape of the result only.
+:::
+
+## Tool: target and ratio card
+
+- Target rule: the one rule used, written before entry
+- Stop distance and target distance, in price units
+- Reward to risk, calculated and compared with the plan minimum
+- Partial exit: the fraction closed, at which price, and the rule for the runner
+- Result in R, recorded at exit
+- Any change to the target, with its reason and the time of the change
+
+## Common mistakes
+
+- Setting the target after entry, once the chart is visible.
+- Measuring results in cash only, which makes trades of different sizes hard to compare.
+- Taking partial profits by feel rather than by a written rule.
+- Forgetting that a partial exit changes the average size of the wins.
+
+## Self-check
+
+1. What is one R? (Answer: the cash risk on the trade, used as the unit for measuring results.)
+2. A trade has a stop distance of 0.50 and a target distance of 1.50. What is the reward to risk? (Answer: 3.0, because 1.50 divided by 0.50.)
+3. What is the main trade-off of a partial exit? (Answer: it reduces the swing in results but also reduces the size of a large win.)
+
+## Practical assignment
+
+Take three trades from a demo account or your own past records. For each, calculate the reward-to-risk ratio from the entry, stop and target, then express the result in R. Write one sentence on whether a partial exit would have changed the result, and in which direction.
+
+## Summary
+
+- A target is set before entry by a written rule, and it defines the profit exit in advance.
+- R-multiples express every trade in units of its own cash risk, which makes trades comparable.
+- A partial exit reduces the swing in results and also limits large wins, so the rule must be chosen in advance.
+
+=== 20
+SLIDE Why a journal matters | A journal records each decision; Memory changes after a result; Written records show patterns | Memory is not evidence
+SLIDE The core fields | Date, instrument and direction; Thesis, entry, stop and target; Size, cash risk and R result | Facts before feelings
+SLIDE Decision fields | Did I follow the plan, yes or no; Which rule did I break, if any; Which field was hardest | Process is visible
+SLIDE Context fields | Market conditions and timeframe; Events that day; Costs paid in cash | Context explains results
+SLIDE Feeling notes | Record emotion in one line; Note the moment it appeared; Keep it separate from the facts | Name the feeling
+SLIDE Keep it consistent | Use the same fields every time; Do not skip a trade because it lost; Review weekly | Consistency makes it useful
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list the core, decision and context fields a trade journal needs;
+- record a trade so that the process can be reviewed separately from the result;
+- separate facts from feelings in a journal entry;
+- keep a journal consistent so that patterns can be seen over time.
+
+## Key terms
+
+::: terms
+Trade journal: a dated record of every trade, including the reason, the plan and the result
+Core fields: the facts of a trade, such as entry, stop, target, size and R result
+Decision field: a yes or no record of whether the plan was followed
+Context field: a note about the market, timeframe or events on the day of the trade
+Cost: the spread, commission, financing and slippage paid on a trade, recorded in cash
+Pattern: a repeated feature of trades that is visible only across many records
+:::
+
+## 1. Why a journal matters
+
+Memory is not a reliable record of trading. After a win, the trader remembers the reasoning as sound. After a loss, the trader remembers the market as unfair. The journal fixes the record at the time, so the review can compare what was planned with what happened. It is also the only way to see patterns, such as a particular setup that repeatedly loses when the stop is moved, or a time of day when the plan is most often broken. Without a journal, these patterns stay invisible.
+
+## 2. The three groups of fields
+
+A trade journal has three groups of fields. The core fields are the facts: the date, the instrument, the direction, the thesis, the entry, the stop, the target, the size, the cash risk and the result in R. The decision fields record whether the plan was followed, a yes or no, and if not, which rule was broken. The context fields describe the market on the day: the timeframe, any scheduled events, and the costs paid in cash. Each group answers a different question. The core fields say what happened. The decision fields say whether the process was sound. The context fields say whether the conditions explain the result.
+
+::: diagram pyramid | What a journal entry must answer
+Core: what happened, in facts and in R
+Decision: whether the plan was followed, yes or no
+Context: what the market and events looked like
+Feeling: one line on the emotion, kept apart from the facts
+:::
+
+::: slides
+SLIDE Step 1: Record the facts first | Fill the core fields before the trade closes where possible; Use numbers | Facts first
+SLIDE Step 2: Answer the decision fields | Did I follow the plan; If not, which rule | Yes or no
+SLIDE Step 3: Add context and one feeling line | Events, timeframe and costs; One line on the emotion | Context and honesty
+:::
+
+## 3. Separate feelings from facts
+
+Feelings are part of trading, and they belong in the journal, but in their own place. Write one line on the emotion, such as "wanted to recover the morning loss," and note the moment it appeared. Keep it apart from the facts, so the emotional note does not change the entry or the stop after the fact. A journal that mixes feelings into the numbers becomes hard to trust, even for its author.
+
+::: quiz
+? A journal entry shows an entry price that differs from the plan, with no note explaining why. What is the main problem?
+- The journal is fine, because the entry price is a small detail || The entry price is a core fact. An unexplained change makes the record untrustworthy.
+* The record no longer matches the plan, and the reason for the change is missing, so the review cannot judge it || A plan and its record must agree, and any difference needs a logged reason.
+- The change is harmless if the result was a win || A win does not make an unlogged change acceptable. The review must still see it.
+:::
+
+## Worked example: Tatiana's journal in Huambo
+
+Tatiana trades from Huambo and keeps her journal in a spreadsheet with one row per trade. Her core fields are date, instrument, direction, entry, stop, target, size, cash risk, cost in cash and result in R. Her decision field is a yes or no for whether the plan was followed, and a short note if no. Her context field records the timeframe and any scheduled release that day. Her feeling field is one line.
+
+After twelve trades she notices something she had not seen. Three of her losses were on days when she had written "tired" in her feeling field, and in each of those trades she had moved the stop. The journal did not decide anything for her. It showed her the pattern, and she added a rule that she does not trade in the evening without a written review of her plan.
+
+::: case | The journal that looks bad
+Samuel has had a poor month. He is tempted to delete the losing trades from his journal, because they make him look like a bad trader. He is considering keeping only the winners so the record is easier to read.
+? What should Samuel do?
+- Delete the losing trades, because a clean record is more useful to review || A record with only winners shows nothing about the process. Deleting losses removes the very evidence the review needs.
+* Keep every trade, including the losers, and use the decision fields to review whether the plan was followed || The full record is the only honest basis for a review. The decision fields show whether the process or the outcome was the problem.
+- Keep the losers but remove the feeling notes, so the record looks more objective || Feeling notes can show patterns that the facts alone do not. Removing them weakens the review.
+:::
+
+::: quiz
+? Why should the decision field be separate from the result field?
+- Because the result is always more important than the process || The process matters on its own. A good process can produce a bad result, and the two must be judged apart.
+* Because a good decision can have a bad result, and a journal must show both separately || Separating the two lets the review judge the process and the outcome on their own terms.
+- Because brokers require two separate fields in every journal || Brokers do not require this. The reason is to review decisions fairly.
+:::
+
+## Tool: trade journal template
+
+- Date, instrument, direction and timeframe
+- Thesis, entry, stop, target and size, written before entry
+- Cash risk and result in R, filled at exit
+- Costs paid in cash: spread, commission and financing
+- Plan followed: yes or no, and the rule broken if no
+- One line on the emotion, with the time it appeared
+
+## Common mistakes
+
+- Filling the journal days later, from memory, so the entries match the outcome.
+- Recording results but not the decision, so the process cannot be reviewed.
+- Deleting losing trades from the record.
+- Mixing feelings into the facts, which makes the numbers hard to trust.
+
+## Self-check
+
+1. What are the three groups of fields in a trade journal? (Answer: core facts, decision fields and context fields.)
+2. Why should feelings be recorded in their own place? (Answer: so they do not alter the facts of the trade and so the numbers stay trustworthy.)
+3. What does a decision field show that a result field does not? (Answer: whether the plan was followed, which can be judged apart from the outcome.)
+
+## Practical assignment
+
+Create a journal with at least twelve fields, in a spreadsheet or on paper. Enter your last five trades, from a demo account or your own records, filling the core, decision and context fields. Note one pattern you can see across the five entries, and say what extra data would confirm or reject it.
+
+## Summary
+
+- A journal fixes the facts of each trade at the time, so memory cannot rewrite the record.
+- Core, decision and context fields answer different questions, and feelings belong in their own line.
+- A consistent journal that keeps every trade, including the losers, makes patterns visible.
+
+=== 20
+SLIDE Process and outcome | The process is the decisions taken; The outcome is the result; The two can differ on any trade | Judge them separately
+SLIDE Good decision, bad result | A plan followed correctly can lose money; A single loss does not prove a bad decision; Look at many trades | A good process can lose
+SLIDE Bad decision, good result | A plan broken can still win; A lucky win reinforces bad habits; The review must flag it | A lucky win is still a flag
+SLIDE A review question set | Was the plan followed; Was the risk within the rule; Was the exit as written | Three questions first
+SLIDE Hindsight in reviews | Do not judge the entry with later information; Write what was known at entry; Compare with the plan | Judge with what you knew
+SLIDE Review outputs | One finding per trade; One action for the plan, if any; Record the owner and date | Findings become actions
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- separate the quality of a trading decision from the result it produced;
+- classify a trade as good or poor process, and as a good or poor result;
+- use a fixed set of review questions to judge a trade;
+- avoid hindsight bias by judging each decision with the information available at entry.
+
+## Key terms
+
+::: terms
+Process: the decisions taken before and during a trade, judged against the written plan
+Outcome: the result of the trade in cash or R, after it has closed
+Hindsight bias: judging a decision using information that was not available when it was made
+Variance: the spread of results around an average, which means good decisions can lose and poor ones can win
+Review question: a fixed question asked of every trade in the same order
+Finding: a single observation from a review, linked to a rule and a date
+:::
+
+## 1. Process and outcome are different things
+
+Process is the set of decisions a trader made: whether the thesis was sound, whether the risk was within the budget, whether the exit followed the plan. Outcome is the result, the profit or loss in cash or R. The two are linked, but they are not the same. A trade can follow a sound process and still lose money, because markets carry risk and a single result is noisy. A trade can break the plan and still win, because a lucky outcome hides a poor decision. A review that judges only the outcome teaches the wrong lesson in both cases.
+
+## 2. Four kinds of trade
+
+Put every trade into one of four groups. A good process with a good result is the group to repeat. A good process with a poor result is a normal loss and should not change the plan without evidence. A poor process with a good result is the most dangerous group, because it reinforces a habit that will eventually lose money. A poor process with a poor result needs a fix to the plan, the execution or the discipline. The review question is always which group the trade belongs to, and why.
+
+::: diagram matrix | Process and result | Result (poor → good) | Process (poor → good)
+Lucky: poor process with a good result, which must be flagged
+Repeat: good process with a good result, which keeps the plan
+Normal loss: good process with a poor result, which is expected sometimes
+Fix: poor process with a poor result, which needs a plan change
+:::
+
+## 3. Ask the same questions every time
+
+A fixed set of review questions keeps reviews fair. Ask three questions first. Was the plan followed? Was the risk within the rule? Was the exit as written? Then ask whether the thesis was sound given what was known at entry. Ask the questions in the same order every time, and write the answers in the journal. The order matters, because it stops a dramatic result from pulling the review towards its conclusion before the facts are checked.
+
+::: quiz
+? Which question should come first in a review?
+- What was the final cash result of the trade || The result is the outcome. The review starts with the process.
+* Was the plan followed at entry and during the trade || The review first checks the decision against the plan, then the risk and the exit.
+- How did the trade make the trader feel || Feelings belong in the journal, but they are not the first review question.
+:::
+
+::: slides
+SLIDE Step 1: Check the plan | Was the plan followed at entry and during the trade; Yes or no | Process first
+SLIDE Step 2: Check the risk and the exit | Was the size within budget; Was the exit as written | Rules, then results
+SLIDE Step 3: Classify the trade | Place it in one of four groups; Write one finding | One group per trade
+:::
+
+## Worked example: Ana's review of two trades
+
+Ana reviews two trades from the same week. The first followed her plan. She entered on the setup she wrote, kept the stop where the plan said, and exited at her target. It made 1R. The second broke her rule: she entered before her volume condition was met, because the chart looked convincing. It also made 1R. A review that judged only the outcome would call both trades good.
+
+Ana classifies the first as a repeat and the second as a lucky trade. Her finding for the second is that the volume rule was broken and the result was a chance win. Her action is to keep the rule and to log any entry that skips a condition, whatever its outcome. Two weeks later the same kind of entry loses 1R. The review then shows the pattern clearly, because the earlier win was already flagged.
+
+::: case | The win that broke the rule
+Miguel's latest trade broke his plan: he entered before his volume condition was met. The trade won 2R. He is pleased and says the rule is too strict and should be relaxed.
+? What should Miguel do first?
+- Relax the volume rule, because the trade won and the condition clearly did not help || One lucky result is not evidence. Relaxing a rule after a win is the same error as abandoning it after a loss.
+* Classify the trade as a lucky result, flag the broken rule, and test the rule on the next several entries before deciding anything || The review separates the process from the win. The rule changes only with a sample and a written reason.
+- Record the trade as a repeat, because the result was good || A good result does not make a broken process a good one. The trade needs a flag, not praise.
+:::
+
+::: quiz
+? A trader follows her plan exactly and loses 1R. How should the review classify it?
+- As a poor process, because the trade lost money || The trade lost money, but the process followed the plan. Losses are part of the process when risk is controlled.
+* As a good process with a normal loss, which does not on its own justify changing the plan || The review judges the decision, and a single planned loss is within the expected variation of a sound plan.
+- As a lucky trade, because a loss cannot be lucky || A loss is not a lucky trade. A lucky trade is a poor process with a good result.
+:::
+
+## Tool: review question set
+
+- Was the plan followed at entry, during the trade and at exit?
+- Was the risk within the budget, and the size as written?
+- Was the exit as written, or was it changed, and why?
+- What was known at entry, and was the thesis sound on that information?
+- Which of the four groups does the trade belong to?
+- What is the one finding, and does the plan need an action?
+
+## Common mistakes
+
+- Judging every trade only by its cash result.
+- Using information that appeared after entry to judge the entry.
+- Praising a lucky win that broke the plan.
+- Changing a sound plan after a single planned loss.
+
+## Self-check
+
+1. What is the difference between process and outcome? (Answer: process is the quality of the decisions; outcome is the result, and the two can differ on any trade.)
+2. Which group is the most dangerous, and why? (Answer: a poor process with a good result, because it reinforces a habit that will eventually lose money.)
+3. Why judge the entry only with the information available at entry? (Answer: to avoid hindsight bias, which makes the decision look better or worse than it was.)
+
+## Practical assignment
+
+Review your last ten trades, or ten trades from a demo account. For each one, answer the review question set and place it in one of the four groups. Count how many fall into each group, and write one finding and one possible action for the plan, without changing the plan yet.
+
+## Summary
+
+- Process and outcome are separate, and a review must judge both without letting the result decide the answer.
+- Every trade belongs to one of four groups, and the poor-process good-result group needs a flag.
+- A fixed set of review questions, asked in the same order, keeps the review fair and free of hindsight.
+
+=== 20
+SLIDE Choose a small set | Pick five to seven metrics; Use the same ones each week; Define each in a sentence | A stable scoreboard
+SLIDE Plan adherence | Adherence is trades that followed the plan divided by all trades; Track it as a percentage; A low figure is a process signal | Process made visible
+SLIDE R distribution | Look at the average R and the spread; Note the best and worst trades; An average hides the spread | Spread matters
+SLIDE Expectancy in R | Expectancy in R is the average R result per trade; It uses real results, not forecasts; Costs in R reduce it | The average result
+SLIDE Holding time and costs | Record how long trades stay open; Record costs as a share of risk; Long holds can hide poor exits | Time and cost
+SLIDE Sample size | Small samples mislead; Keep the metrics across enough trades to read; Flag thin data | Enough trades to judge
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- choose a small, stable set of review metrics and define each one clearly;
+- calculate plan adherence and expectancy in R from a trade record;
+- read the spread of results, not only the average;
+- recognise when a sample is too small to support a conclusion.
+
+## Key terms
+
+::: terms
+Plan adherence: the share of trades that followed the written plan, as a percentage
+R distribution: the spread of trade results measured in R, including the best and worst trades
+Expectancy in R: the average result per trade, measured in R
+Holding time: the length of time a trade stays open
+Cost in R: the total costs of a trade expressed as a share of its initial cash risk
+Scoreboard: a short, stable set of metrics reviewed in the same way each period
+:::
+
+## 1. Choose a small, stable scoreboard
+
+Review metrics only help if they are the same every time. Choose five to seven measures and define each in one sentence. Use the same ones every week, so that changes over time are visible. Too many metrics produce a report that nobody reads, and frequent changes to the metrics make trends impossible to see. A useful scoreboard covers process, risk, results, cost and time.
+
+## 2. Plan adherence
+
+Plan adherence is the number of trades that followed the written plan, divided by all trades, expressed as a percentage. It is the most direct measure of process. If a trader took 30 trades and 22 followed the plan, adherence is 73 percent. A low figure is a process signal, even when the results look good, because a process that is often broken cannot be relied upon to produce results in the future. Track adherence each week, and treat a falling figure as a finding to review.
+
+::: diagram steps | Building the weekly scoreboard
+Count: the total number of trades in the period
+Score adherence: trades that followed the plan, divided by the total
+Measure R: sum the R results, then find the average and the spread
+Note cost and time: total cost in R, and the average holding time
+:::
+
+## 3. Read the spread, not just the average
+
+An average can hide a great deal. Suppose plan-following trades average plus 0.4R and trades that broke the plan average minus 0.3R. The overall average may look acceptable, but the split is what matters. Look at the spread as well: the best and worst trades, and how often each occurs. A few large losses can produce a poor result even when most trades are small winners. The spread shows the risk the average conceals.
+
+::: slides
+SLIDE Step 1: Score the process | Adherence as a percentage; Trend over the weeks | Process first
+SLIDE Step 2: Score the results | Average R, best and worst; Spread across trades | Spread, not only average
+SLIDE Step 3: Score cost and time | Cost in R per trade; Average holding time | Costs and time complete it
+:::
+
+::: quiz
+? A trader had 30 trades in a month, and 22 followed the plan. What is her plan adherence?
+- 22 percent, which is the share of trades that lost money || Adherence counts trades that followed the plan, not those that lost money.
+* About 73 percent, because 22 divided by 30 is about 0.73 || Adherence is plan-following trades divided by all trades, expressed as a percentage.
+- 30 percent, which is the total number of trades divided by 100 || That is not the formula. Divide the plan-following trades by the total.
+:::
+
+## 4. Expectancy in R and the cost of trading
+
+Expectancy in R is the average result per trade, measured in R. It uses real results, not forecasts, and it is best read alongside costs. If costs average 0.1R per trade, a positive expectancy of 0.15R falls to 0.05R after costs. Costs measured in R show how much of each trade's risk is spent on the broker and the market. Holding time matters too. Very long holding times can hide poor exits, because a trade that is held open for weeks may have drifted from its plan without anyone noticing.
+
+## Worked example: Lucia's scoreboard in Benguela
+
+Lucia keeps a weekly scoreboard with five measures: plan adherence, average R, spread of R results, cost in R and average holding time. In one month she takes 30 trades, and 22 follow the plan. The plan-following trades average plus 0.4R, and the 8 that broke the plan average minus 0.3R. Her overall average is plus 0.2R, which looks respectable. The split shows the process problem. Her costs average 0.1R per trade, so the net expectancy from plan-following trades is plus 0.3R.
+
+Lucia does not change the plan. She sets a finding for the month: adherence is 73 percent, and the broken trades are a process problem. Her action is to write one rule that forces a review before any trade taken outside her usual hours.
+
+::: case | The good average
+Ricardo's scoreboard shows an average of plus 0.2R, which he thinks is excellent. He is about to double his size. A colleague asks him to look at the split between trades that followed the plan and trades that did not.
+? What should Ricardo do first?
+- Double the size now, because the average is positive and the plan is working || An average can hide a process problem, and doubling the size before checking the split raises the risk on the broken trades too.
+* Check adherence and the split of results between planned and unplanned trades before deciding on size || The split shows whether the average is produced by the plan or by unplanned trades, which decides whether the size should change.
+- Stop recording trades, because a good average makes the journal unnecessary || A good average is a reason to keep recording, because the record is what shows where the average comes from.
+:::
+
+::: quiz
+? What is a sample-size warning sign in a review?
+- The average R is positive for the month || A positive average is a result. The warning sign is the number of trades behind it.
+* A conclusion is drawn from only a handful of trades, which may reflect chance || Small samples can look convincing by chance. The scoreboard should flag thin data before a conclusion is made.
+- The trader took more than one trade in a day || Several trades in a day is not a warning sign by itself. The sample size is the issue.
+:::
+
+## Tool: weekly scoreboard
+
+- Trades in the period, and how many followed the plan
+- Plan adherence as a percentage, compared with last week
+- Average R, best trade and worst trade in R
+- Expectancy in R, before and after costs
+- Average cost in R, and average holding time
+- Sample warning: flag the metrics if the trade count is too small to read
+
+## Common mistakes
+
+- Reviewing only the average result and missing the split between planned and unplanned trades.
+- Changing the metrics every week, which makes trends invisible.
+- Ignoring costs when comparing an expectancy with a target.
+- Drawing a conclusion from a handful of trades.
+
+## Self-check
+
+1. What is plan adherence? (Answer: the number of trades that followed the written plan, divided by all trades, as a percentage.)
+2. A trade costs 0.1R and the expectancy before costs is 0.2R. What is the expectancy after costs? (Answer: 0.1R per trade.)
+3. Why read the spread of results, not only the average? (Answer: a few large losses can produce a poor result even when most trades are small winners.)
+
+## Practical assignment
+
+Choose five measures for a scoreboard and define each in one sentence. Fill it in for your last twenty trades, from a demo account or your own records. Note whether the sample is large enough to read, and write one sentence on the finding you would act on first.
+
+## Summary
+
+- A small, stable scoreboard covers process, risk, results, cost and time, and it is read the same way each period.
+- Plan adherence and the split between planned and unplanned trades show whether the average is earned by the plan.
+- Costs, the spread of results and the sample size must be read alongside any expectancy figure.
+
+=== 20
+SLIDE A weekly routine | Review the journal and scoreboard; Answer the review questions; Write one finding and one action | Short and regular
+SLIDE A monthly routine | Review the scoreboard trend; Check the sample size; Decide whether to test a change | Trends, not moods
+SLIDE Changes need a reason | Write the reason for every change; Record the date and version; State the evidence | No silent changes
+SLIDE Test before you adopt | Run the change on new trades; Keep the old rule in the record; Compare after a set sample | Test, then adopt
+SLIDE Do not change after a loss | A loss is not a reason to change; A change after a bad week is suspect; Wait for the sample | Wait for the evidence
+SLIDE Version the plan | Give each plan a version number; Keep old versions; Link each trade to its version | Every trade has a plan
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- run a short weekly review and a monthly review using a fixed routine;
+- write a change log entry with a reason, a date, a version and the evidence behind it;
+- test a proposed change on new trades before adopting it;
+- explain why a change made after a bad week is not evidence that the change is needed.
+
+## Key terms
+
+::: terms
+Weekly review: a short, fixed review of the journal and scoreboard, held at the same time each week
+Monthly review: a broader review of trends in the scoreboard and of the plan itself
+Change log: a dated record of every plan change, with its reason, version and evidence
+Version: a number that identifies one version of a plan, so each trade can be linked to the plan it used
+Out-of-sample test: a test of a change on new trades, not on the trades that suggested it
+Recency bias: giving too much weight to recent results when judging a plan or a trader
+:::
+
+## 1. The weekly review
+
+A weekly review is short and regular. Hold it at the same time each week, with the journal and the scoreboard open. Answer the review questions for each trade from the week, record the adherence and the results, and write one finding and one action. The action may be to do nothing. A review that always ends with a long list of changes is usually a review driven by the last few trades, rather than by the evidence across the period.
+
+## 2. The monthly review
+
+The monthly review looks at trends rather than single weeks. Check whether adherence is rising or falling, whether the spread of results has widened, whether costs have changed, and whether the sample is large enough to read. Decide whether any change should be tested. A monthly review is the right place to ask whether the plan itself still matches the market, but it is not the place to change the plan because of a single bad week.
+
+::: diagram cycle | The review routine
+Weekly: review the journal, answer the questions, write one finding
+Monthly: review the scoreboard trend and the sample size
+Decide: note whether a change should be tested, or leave the plan as it is
+Log: record every change in the change log, with its reason and version
+:::
+
+::: slides
+SLIDE Step 1: Run the weekly review | Same time, same questions; One finding and one action | Routine
+SLIDE Step 2: Run the monthly review | Trends in adherence and results; Sample size check | Trends, not moods
+SLIDE Step 3: Decide and log | Test, keep or drop; Record the reason and the version | Every decision recorded
+:::
+
+## 3. Change the plan only with a logged reason
+
+Every change to the plan is logged: the date, the new version number, the reason and the evidence. The reason must be about the plan, not about a feeling. A change made after a bad week is suspect, because recent losses pull judgement towards recency bias. A change is tested before it is adopted, on new trades, and the old rule stays in the record so the two can be compared. Adopt the change only after the test sample is large enough to read. Until then, the plan stays at its current version.
+
+::: quiz
+? Which practice keeps a plan change auditable?
+- Overwriting the plan, so the latest version is always the only one || Overwriting removes the old rule, so trades can no longer be linked to the plan they used.
+* Keeping each version with a number, and linking each trade to the version it used || A version record lets every trade be traced to the rule that governed it.
+- Changing several rules at once to save time || Several changes at once make it impossible to tell which one helped.
+:::
+
+::: quiz
+? A trader loses three trades in a row and immediately changes her entry rule. What is the main concern?
+- The change is always correct, because a losing run means the rule is wrong || A run of losses is not evidence on its own. Recent results can mislead a review.
+* The change is made after a short run of results, which is recency bias, and it has not been tested on new trades || A change based on a short run, without a test on new trades, is not evidence that the change helps.
+- Nothing, because traders should always change their rules after losses || Changing rules after every loss removes the rule as a reference point and makes the record unreadable.
+:::
+
+## Worked example: Nuno's change log in Lobito
+
+Nuno trades from Lobito and runs a monthly review. After a month in which adherence fell to 68 percent, he notices that many of his broken trades were entered in the last hour of the session. He proposes a new rule: no entries in the last hour unless the review has been written. He records the proposal in his change log as version 2.1, with the reason, the date and the evidence: eleven of the fourteen broken trades were in that hour.
+
+He does not adopt the rule at once. For the next twenty trades he tests it on new entries and keeps version 2.0 in the record. At the end of the test, adherence in the last hour has risen from 45 percent to 85 percent, and the expectancy of those trades has improved. He adopts version 2.1 and writes the result beside the change. The record shows what changed, why, and what the evidence was.
+
+::: case | The bad week
+Chiara has had a bad week, and three of her trades lost 1R each. She is convinced the stop distance in her plan is too tight, and she wants to widen it from the next trade.
+? What should Chiara do?
+- Widen the stop at once, because the bad week shows the plan is wrong || A bad week is not evidence about the stop. Widening it immediately changes the risk on every new trade based on three results.
+* Log the concern, test a wider stop on new trades against the current version, and adopt it only after a sample shows the change helps || A tested change, with the old version kept in the record, is the disciplined way to answer a concern about the plan.
+- Stop trading until she feels better about the plan || Stopping trading removes the data the review needs. The record should keep growing while the question is tested.
+:::
+
+## Tool: change log entry
+
+- Date of the change, and the new version number
+- Previous version, kept in the record
+- Reason for the change, stated in terms of the plan
+- Evidence: the trades, the metric and the period behind the reason
+- Test plan: the number of new trades and the metric to compare
+- Result and decision: adopted, rejected or extended, with the date
+
+## Common mistakes
+
+- Changing the plan after a single bad week.
+- Making several changes at once, so no one can tell which one helped.
+- Adopting a change without testing it on new trades.
+- Overwriting old plan versions, so trades can no longer be linked to the rule they used.
+
+## Self-check
+
+1. What should a change log entry always contain? (Answer: the date, the version number, the reason, the evidence and the test plan.)
+2. Why is a change after a bad week suspect? (Answer: recent losses pull judgement towards recency bias, so the change may not reflect the real problem.)
+3. How should a proposed change be tested? (Answer: on new trades, against the current version, with the old rule kept in the record.)
+
+## Practical assignment
+
+Write a change log with one entry for a rule you would like to test. State the reason, the evidence, the number of new trades you will test on and the metric you will compare. Do not adopt the change until the test is complete, and record the result beside the entry.
+
+## Summary
+
+- A short, fixed weekly review and a broader monthly review keep the plan tied to evidence rather than to recent results.
+- Every change is logged with its reason, version and evidence, and it is tested on new trades before adoption.
+- A change made after a bad week is suspect, so a concern should be tested, not acted on at once.

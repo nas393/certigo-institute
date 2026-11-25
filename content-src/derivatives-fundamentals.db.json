@@ -1,0 +1,474 @@
+{
+  "slug": "derivatives-fundamentals",
+  "title": "Derivatives Fundamentals",
+  "category": "Trading & Markets",
+  "summary": "Forwards, futures and options: how they work, what they cost, and how their risk is measured. Education only.",
+  "skills": [
+    "Forward pricing",
+    "Futures margin",
+    "Option payoffs",
+    "Option Greeks",
+    "Hedge effectiveness",
+    "Derivatives limits"
+  ],
+  "modules": [
+    {
+      "title": "Forward Contracts and Counterparty Risk",
+      "subject": "Forwards",
+      "learned": "Describe a forward contract, estimate its price from spot and financing, and explain its counterparty risk and hedge trade-off.",
+      "minutes": 20,
+      "skills": [
+        "Forward pricing",
+        "Counterparty risk"
+      ],
+      "check": {
+        "q": "A business fixes a future fuel cost with a forward. The spot price later falls. What is the business's position?",
+        "options": [
+          "It is locked into the agreed price, so it gives up the benefit of the fall",
+          "It gains automatically, because the agreed price is always the best",
+          "The forward is cancelled when prices move",
+          "It must pay the difference to a government fund"
+        ],
+        "a": 0,
+        "explanation": "A forward removes price risk in both directions. The business trades the chance of a benefit for certainty of cost."
+      }
+    },
+    {
+      "title": "Futures, Margin and Daily Settlement",
+      "subject": "Futures",
+      "learned": "Explain standardisation and clearing, distinguish the margins, calculate daily settlement, and describe basis risk.",
+      "minutes": 20,
+      "skills": [
+        "Futures margin",
+        "Basis risk"
+      ],
+      "check": {
+        "q": "A long futures position loses 1,000 on Monday and gains 400 on Tuesday. What is the net variation margin over the two days?",
+        "options": [
+          "A gain of 1,400",
+          "A loss of 600",
+          "No movement, because futures settle only at expiry",
+          "A gain of 600"
+        ],
+        "a": 1,
+        "explanation": "Variation margin is settled daily. Minus 1,000 plus 400 gives a net loss of 600."
+      }
+    },
+    {
+      "title": "Options: Rights, Premium and Breakeven",
+      "subject": "Options",
+      "learned": "Explain calls and puts, calculate intrinsic and time value, and find the breakeven and maximum loss of a long option.",
+      "minutes": 20,
+      "skills": [
+        "Option payoffs",
+        "Breakeven"
+      ],
+      "check": {
+        "q": "A call has a strike of 50 and a premium of 3. What is the breakeven at expiry for the buyer?",
+        "options": [
+          "47",
+          "50",
+          "53",
+          "56"
+        ],
+        "a": 2,
+        "explanation": "The breakeven of a long call is the strike plus the premium, so 50 plus 3 is 53."
+      }
+    },
+    {
+      "title": "Covered Calls and Protective Puts",
+      "subject": "Option strategies",
+      "learned": "Read the payoff of a covered call and a protective put, and calculate the cap or floor each creates.",
+      "minutes": 20,
+      "skills": [
+        "Strategy payoffs",
+        "Floors and caps"
+      ],
+      "check": {
+        "q": "A holder owns a stock bought at 40 and buys a put with a strike of 38 for a premium of 1. What is the floor per share for the protected position?",
+        "options": [
+          "40",
+          "39",
+          "38",
+          "37"
+        ],
+        "a": 3,
+        "explanation": "The floor is the put strike minus the premium, here 38 minus 1, which is 37 per share."
+      }
+    },
+    {
+      "title": "Option Pricing and the Greeks",
+      "subject": "Pricing and sensitivities",
+      "learned": "List the inputs to an option price, describe delta, gamma, theta and vega, and explain the limits of option models.",
+      "minutes": 20,
+      "skills": [
+        "Option Greeks",
+        "Model risk"
+      ],
+      "check": {
+        "q": "Which Greek measures how fast delta changes as the spot price moves?",
+        "options": [
+          "Gamma",
+          "Theta",
+          "Delta",
+          "Vega"
+        ],
+        "a": 0,
+        "explanation": "Gamma measures the rate of change of delta, which matters for positions near the strike or near expiry."
+      }
+    },
+    {
+      "title": "Derivatives Risk, Limits and Escalation",
+      "subject": "Derivatives risk",
+      "learned": "Name the sources of derivative risk, measure hedge effectiveness and residual risk, and escalate limit breaches.",
+      "minutes": 20,
+      "skills": [
+        "Derivatives limits",
+        "Stress testing"
+      ],
+      "check": {
+        "q": "A desk has a notional exposure of 5 million and a deposit of 500,000. Which figure should test its exposure limit?",
+        "options": [
+          "The 500,000 deposit, because it is the cash committed",
+          "The 5 million notional, or its delta-equivalent, because losses scale with exposure",
+          "The average of the two figures",
+          "Neither, because limits are never set on exposure"
+        ],
+        "a": 1,
+        "explanation": "Losses scale with exposure, so the limit must test the exposure, not only the deposit."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "lesson": 1,
+      "q": "What is a forward contract?",
+      "options": [
+        "A private agreement to buy or sell an asset at a set price on a future date",
+        "An exchange-traded contract with daily settlement",
+        "An option that the buyer may decline",
+        "A loan secured on the asset"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 1,
+      "q": "Why is a forward usually exposed to counterparty risk?",
+      "options": [
+        "Because forwards are always guaranteed by the exchange",
+        "Because it is private and not usually cleared, so each side depends on the other",
+        "Because forward prices are set by the government",
+        "Because the contract has no delivery date"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 1,
+      "q": "Roughly how is a forward price estimated?",
+      "options": [
+        "Spot price minus the expected rise in price",
+        "The average of the last ten spot prices",
+        "Spot price plus the cost of financing until delivery, less any income the asset pays",
+        "The strike price of the nearest option"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 1,
+      "q": "What is arbitrage in the context of forward pricing?",
+      "options": [
+        "Guessing where the spot price will move next year",
+        "A fee paid to the clearing house",
+        "The right to cancel a forward at any time",
+        "Locking a risk-free gain when a forward price is far from spot plus financing"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 1,
+      "q": "A business hedges a future cost with a forward. What does the hedge give up?",
+      "options": [
+        "The benefit of a price fall, in exchange for certainty of the cost",
+        "All of its counterparty risk",
+        "Its right to buy the asset at spot",
+        "Any need for a budget"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "What distinguishes a futures contract from a forward?",
+      "options": [
+        "It is settled once, at expiry, with no cash in between",
+        "It is standardised and exchange-traded, and cleared through a clearing house",
+        "It has no delivery date",
+        "It is negotiated privately with each buyer"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 2,
+      "q": "What does a clearing house do?",
+      "options": [
+        "It sets the spot price of the asset",
+        "It guarantees a profit for every trade",
+        "It stands between buyers and sellers and reduces each party's default risk",
+        "It lends money to clients at a fixed rate"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 2,
+      "q": "What is variation margin?",
+      "options": [
+        "The deposit needed to open a position",
+        "The fee paid to the broker each month",
+        "The interest earned on the deposit",
+        "The daily gain or loss on a futures position, settled in cash"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 2,
+      "q": "A short futures position is used to hedge which exposure?",
+      "options": [
+        "A long physical stock that will be sold later",
+        "A future purchase of the commodity",
+        "A loan taken to buy shares",
+        "A currency position that is already short"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "What is basis risk?",
+      "options": [
+        "The risk that the broker charges a higher margin",
+        "The risk that the spot-futures difference changes, so the hedge is not perfect",
+        "The risk that the contract expires on a holiday",
+        "The risk that the futures market is closed"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "What right does a call option give its buyer?",
+      "options": [
+        "The obligation to buy the asset at the strike",
+        "The right to sell the asset at the strike",
+        "The right, not the obligation, to buy the asset at the strike",
+        "The right to receive the premium"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 3,
+      "q": "What is the buyer's maximum loss on an option?",
+      "options": [
+        "Unlimited, for any call",
+        "The strike price",
+        "The difference between strike and spot",
+        "The premium paid"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 3,
+      "q": "A call has a strike of 50, a premium of 3 and a spot of 52. What is its intrinsic value?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "1"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 3,
+      "q": "A put has a strike of 40 and a premium of 2. What is its breakeven at expiry for the buyer?",
+      "options": [
+        "42",
+        "38",
+        "40",
+        "2"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "Who carries the potentially large loss in an option contract?",
+      "options": [
+        "The buyer of a call, whose premium can rise without limit",
+        "The buyer of a put, because the strike can move",
+        "The seller, who takes the obligation and collects only the premium",
+        "Neither party, because options are guaranteed"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "What does a covered call combine?",
+      "options": [
+        "A long position in the asset with a long put",
+        "Two calls with different strikes and no asset",
+        "A short position in the asset with a long call",
+        "A long position in the asset with a short call on the same asset"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 4,
+      "q": "What does a covered call give up?",
+      "options": [
+        "The upside above the call strike, in exchange for premium income",
+        "All of the asset's downside",
+        "The premium received",
+        "The right to sell the asset"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 4,
+      "q": "What does a protective put set under a long position?",
+      "options": [
+        "A cap on the gain at the strike",
+        "A floor on the loss, with the premium as the cost of that floor",
+        "A guaranteed profit above the purchase price",
+        "A reduction in the asset's own risk to zero"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 4,
+      "q": "A stock is bought at 60 and a put with a strike of 55 is bought for a premium of 2. What is the floor per share?",
+      "options": [
+        "57",
+        "60",
+        "53",
+        "62"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "What is a kink on a payoff diagram?",
+      "options": [
+        "A point where the premium is paid",
+        "A point where the asset is delivered",
+        "A point where margin is called",
+        "A point where the slope changes, usually at a strike"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "What is the main unknown input in option pricing?",
+      "options": [
+        "Volatility, which is not directly observed",
+        "The strike, which is fixed in the contract",
+        "The expiry date, which is always known",
+        "The broker's commission"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 5,
+      "q": "A long call has a delta of 0.6. The underlying rises by 1. What happens approximately?",
+      "options": [
+        "The call falls by 0.6",
+        "The call rises by about 0.6",
+        "The call rises by 1",
+        "The call does not change"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 5,
+      "q": "What does theta measure for a long option holder?",
+      "options": [
+        "The sensitivity to a change in the spot price",
+        "The sensitivity to interest rates",
+        "The daily change in value from the passing of time, usually a cost",
+        "The change in the strike price"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 5,
+      "q": "What does vega measure?",
+      "options": [
+        "The change in the premium over one day",
+        "The sensitivity to the strike price",
+        "The rate of change of delta",
+        "The sensitivity of the option's value to implied volatility"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "In which year was the Black-Scholes model published?",
+      "options": [
+        "1973",
+        "1978",
+        "1990",
+        "1961"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "Why must limits test exposure rather than only the deposit?",
+      "options": [
+        "Because deposits are always larger than exposures",
+        "Because losses scale with the exposure, while the deposit is only the cash committed",
+        "Because the deposit is set by the regulator",
+        "Because exposure is never linked to losses"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 6,
+      "q": "What is residual risk?",
+      "options": [
+        "The profit left after a hedge is closed",
+        "The margin returned at expiry",
+        "The part of an exposure that a hedge does not offset, which remains open",
+        "The premium refunded when a hedge is cancelled"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 6,
+      "q": "A desk passes its net delta limit late in the session. What should happen?",
+      "options": [
+        "The breach waits until the next morning",
+        "The limit is raised to fit the position",
+        "The desk adds positions to hedge the breach",
+        "The breach is escalated the same day, with the cost and a plan recorded"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 6,
+      "q": "What should a stress test show that a normal limit does not?",
+      "options": [
+        "The loss under large moves in spot, volatility or basis, when liquidity is weakest",
+        "The average daily profit of the desk",
+        "The number of trades placed in a month",
+        "The fees paid to the clearing house"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "What is the purpose of a liquidity plan?",
+      "options": [
+        "To guarantee that every position can be closed at the screen price",
+        "To show how positions would be reduced in stress, and how long it would take",
+        "To record the trader's emotions during the day",
+        "To raise the limit when markets are calm"
+      ],
+      "a": 1
+    }
+  ]
+}

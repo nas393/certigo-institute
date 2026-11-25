@@ -1,700 +1,670 @@
 === 20
-SLIDE Losses hurt more than gains | A 10 percent loss needs an 11.1 percent gain to recover; A 50 percent loss needs 100 percent; Losses compound | Recovery gets harder fast
-SLIDE Risk comes first | Decide the maximum loss before entering; Write what would prove the idea wrong; Risk is a decision, not a feeling | Know the exit before the entry
-SLIDE Position size | Size depends on the amount you can lose; It also depends on the distance to your stop; Bigger stops need smaller positions | Size controls the damage
-SLIDE Risk-reward | Compare the possible loss with the possible gain; A ratio alone does not make a trade good; Win rate matters too | Use both numbers
-SLIDE Drawdown | A drawdown is the fall from a peak; Recovery from a deep drawdown takes a larger gain; Set a limit in advance | Protect the account first
-SLIDE Discipline | Write a plan and a checklist; Review every trade honestly; Avoid revenge trading and overtrading | Rules beat mood
+SLIDE Risk is a budget | Decide the most you can lose before you trade; Write the cash figure down; Keep it the same across trades | Budget first, trade second
+SLIDE Types of trading risk | Market risk moves against you; Gap risk skips your exit; Leverage risk magnifies losses; Counterparty and operational risk come from people and systems | Name the risk to control it
+SLIDE The risk cycle | Identify each risk; Measure the loss it could cause; Limit it with a rule; Review the outcome | The cycle repeats every trade
+SLIDE Risk budget in cash | Multiply equity by the risk percentage; One percent of 10,000 USD is 100 USD; Convert other currencies first | Cash limit, not a feeling
+SLIDE Total open risk | Add the risk on every open position; Compare the total with a ceiling; Several losses can fail together | Single trades add up
+SLIDE Risk is decided early | Set the maximum loss before entry; Write what would prove the idea wrong; Keep the rule when a setup looks certain | The plan beats the moment
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- explain why a large loss needs a larger percentage gain to recover;
-- explain why losses matter more than gains in planning a trade;
-- describe the role of a written maximum loss in every trading decision;
-- identify the most common ways beginners increase their losses.
+- name the main types of trading risk and give a workplace example of each;
+- set a risk budget as a fixed percentage of account equity, in cash and in percent;
+- set a total open-risk limit that covers every open position;
+- explain why the maximum loss must be decided before entering a trade.
 
 ## Key terms
 
 ::: terms
-Loss: a fall in the value of a position below the price at which it was opened
-Recovery: the gain needed to return an account to its earlier value after a loss
-Maximum loss: the most you have decided, in advance, that you can lose on one trade
-Compounding: the effect of each gain or loss being applied to a changed balance
-Revenge trading: placing trades to win back a recent loss, usually without a plan
-Overtrading: placing more trades than a plan supports, often when bored or emotional
+Risk budget: the share of account equity you accept losing on one trade or in one period
+Equity: the value of your account, including open profit or loss
+Gap risk: the risk that price jumps past your stop before you can exit at the planned level
+Leverage: borrowed exposure that makes a position larger than your own money
+Margin call: a broker request for more funds, or the closing of positions, when equity falls too low
+Counterparty risk: the risk that your broker or another party cannot meet its obligations
 :::
 
-## 1. Losses hurt more than gains
+## 1. The main types of trading risk
 
-Most people think of gains and losses as equal and opposite. They are not. If an account falls by 10 percent, it needs a gain of about 11.1 percent to return to where it started. If it falls by 50 percent, it needs a gain of 100 percent. The deeper the loss, the larger the gain needed to recover, and the gap grows faster than the loss itself.
+Market risk is the chance that prices move against your position. Liquidity risk is the chance that you cannot exit at the price you expected. Gap risk is the chance that price jumps past your exit, often over a weekend or after news. Leverage risk is the chance that borrowed exposure turns a small move into a large loss. Counterparty risk is the chance that your broker or another party fails to meet its obligations, which is why course 1 asked you to check regulation and how client money is held. Operational risk is the chance of your own error, such as a wrong size, a wrong instrument or a platform outage.
 
-This asymmetry is the reason risk comes before reward in trading. A trader who loses a large part of an account does not simply need a slightly better next trade. They need a much better series of trades to repair the damage. Many beginners lose money by taking large losses while trying to make back small gains.
+Name each risk first, then decide its control.
 
-::: diagram steps | The recovery arithmetic
-Loss of 10 percent: a gain of about 11.1 percent is needed to recover
-Loss of 25 percent: a gain of about 33.3 percent is needed to recover
-Loss of 50 percent: a gain of 100 percent is needed to recover
-Loss of 75 percent: a gain of 300 percent is needed to recover
+::: diagram cycle | The risk management cycle
+Identify: list every risk the trade carries
+Measure: estimate the size of the loss each risk could cause
+Limit: set a rule that caps the loss before you enter
+Review: check the outcome against the rule and adjust by evidence
 :::
 
-## 2. Decide the risk before the trade
+## 2. Set a risk budget
 
-Before you enter any trade, decide three things. The first is the price at which you will exit if the trade goes against you. The second is the amount of money you are willing to lose if that exit is hit. The third is what would prove your reason for the trade wrong, because a reason that cannot be wrong is not a reason at all.
+A risk budget turns a feeling into a number. Pick a fixed percentage of account equity that you accept losing on any single trade. A common rule of thumb for new traders is one to two percent, but the right figure depends on your experience and on how much you can lose without changing your life. Write it down before you trade, then calculate the cash amount. On a 10,000 USD account, one percent is 100 USD. If your account holds kwanzas, convert it to USD first and count the conversion cost from course 1.
 
-Many beginners skip this step and decide their exit later, when the price is moving and emotions are high. The result is usually a bigger loss than planned, or a trade held much longer than it should be. Writing the plan before the trade protects you from making the decision when you are least able to make it clearly.
+Add a second limit for the total open risk. This is the sum of the cash you would lose if every open position hit its stop at the same time. Set a ceiling for it, and check it before you open a new trade.
 
 ::: slides
-SLIDE Before the trade 1 | Choose the exit price if the trade fails; Check that the distance is realistic | Exit first
-SLIDE Before the trade 2 | Decide the money you can lose on this trade; Write it down | Loss limit first
-SLIDE Before the trade 3 | Write what would prove the idea wrong; Stop if that happens | A reason must be testable
-:::
-
-## 3. Position size: how much to trade
-
-Position size is the amount you buy or sell. It determines how much money you gain or lose for each unit of price movement. Two traders with the same idea can lose very different amounts if one trades ten times the size of the other.
-
-A simple way to size a trade is to start from the loss you have accepted. Take your account value, multiply it by the share you are willing to risk, and divide by the distance between your entry price and your exit price. The result is the number of units to trade. A common rule of thumb is to risk a small, fixed share of the account, such as one or two percent. That share is a choice you make, not a law, and it should match your own situation and your ability to absorb losses.
-
-Notice what this means. A wider stop gives fewer units for the same risk. A tighter stop gives more units. Size and stop are linked, and you should always decide them together.
-
-::: case | The wider stop
-Lucia runs a small shop in Lubango and has set aside an account of 5,000 units of currency for trading. She is willing to lose 2 percent of the account on one trade. Her planned entry is 10.00 and her stop is 9.00. Her friend suggests she set the stop further away at 8.00 to avoid being stopped out, and keep the same size.
-? What should Lucia consider before changing the stop?
-- Keeping the same size is fine, because the stop distance does not change the risk || A wider stop with the same size increases the amount Lucia can lose.
-* A wider stop means a smaller size if she keeps the same accepted loss, and she should decide the size only after the stop is fixed || This keeps the accepted loss the same. The size follows from the stop, not the other way round.
-- Moving the stop is always better because it avoids losses || Moving a stop to avoid a loss can turn a planned small loss into an unplanned large one.
-:::
-
-## 4. Risk-reward and expectancy
-
-The risk-reward ratio compares the amount you can lose with the amount you hope to gain. If you risk 1 unit to make 2 units, the ratio is 1 to 2. A good ratio on its own does not make a trade good, because the chance of winning matters too. A trade with a high reward and a low chance of success can lose money over time.
-
-Expectancy combines the two ideas. It is the average result per trade over many trades: the win rate multiplied by the average win, minus the loss rate multiplied by the average loss. The figures below are an illustrative example, not a forecast or a statistic. Suppose a plan wins 40 percent of the time, with an average win of 300 units and an average loss of 100 units. The expectancy is 0.4 times 300, minus 0.6 times 100, which is 120 minus 60, or 60 units per trade on average. Change any one of the inputs and the answer changes, and many real plans have negative expectancy.
-
-::: diagram matrix | Judging a plan | Win rate (low → high) | Reward versus risk (small → large)
-Weak plan: low win rate, small reward for the risk
-Hit-and-miss: high win rate, but rewards too small to cover losses
-Patient plan: low win rate, large rewards that cover losses
-Strong plan: high win rate with rewards that cover losses
-:::
-
-## 5. Drawdown: the fall from a peak
-
-A drawdown is the fall in an account from its highest value to a later low. If an account peaks at 1,000 units and falls to 800, the drawdown is 20 percent. Recovering needs a gain of 25 percent, because 200 is 25 percent of 800. Deep drawdowns are damaging in two ways. They reduce the money you have to trade with, and they often push traders into bigger, riskier positions to recover faster.
-
-Set a drawdown limit in advance. This is a level at which you stop trading, review your plan and reduce your size until you have a clear reason to continue. The number is yours to choose, and it should be one you would keep to even after a bad week.
-
-::: tip | Warning
-Drawdowns can grow quickly, and a losing streak can happen even with a sound plan. Never increase size to recover losses. Recovery trading is one of the most common ways traders lose their whole account.
-:::
-
-## 6. Discipline: following your own rules
-
-Good risk control is only useful if you follow it. Write a plan that states your entry rules, exit rules, size rules and loss limits. Turn it into a short checklist and use it before every trade. After each trade, record what you did, why you did it and whether you followed the plan. Review the record weekly, and change the plan only for clear reasons, not because of a single result.
-
-Two habits do particular damage. Revenge trading means placing trades to win back a loss, usually larger and faster than planned. Overtrading means placing more trades than the plan supports, often out of boredom or excitement. Both can be prevented by daily and weekly loss limits that you set in advance and that stop trading when reached.
-
-::: quiz
-? An account falls by 50 percent. What gain is needed to return to the starting amount?
-- 50 percent, the same as the loss || Losses and gains are not symmetric. A 50 percent loss needs more than 50 percent to recover.
-* 100 percent, because the account is now half its former size || Half of the original amount must double to return to the start.
-- 25 percent, because half of 50 is 25 || This ignores that the recovery is measured from the smaller balance.
+SLIDE Step 1: Measure your equity | Use the current account value; Include open profit or loss; Recalculate at the start of each week | Equity is the base
+SLIDE Step 2: Choose a percentage | Pick one fixed figure; Keep it the same across trades; Do not raise it after wins | One number, every trade
+SLIDE Step 3: Convert to cash | Multiply equity by the percentage; Write the cash limit on your plan | Know the cash figure before entry
 :::
 
 ::: quiz
-? A trader plans to risk 2 percent of an account of 2,000 units, with an entry of 10.00 and a stop of 9.00. How many units should she trade?
-- 2 units || That would risk far less than 2 percent of the account. Check the calculation.
-* 40 units, because 2 percent of 2,000 is 40, and each unit risks 1.00 to the stop || Accepted loss of 40 divided by 1.00 risk per unit gives 40 units.
-- 200 units, because 10 percent of 2,000 is 200 || The 10 percent figure is not the accepted risk in this plan.
+? A trader has an account worth 10,000 USD and a 1 percent risk budget. What is the most she can lose on one trade under this rule?
+- 1,000 USD, which is ten percent of the account || Ten percent is not the rule. One percent of 10,000 USD is 100 USD.
+* 100 USD, one percent of the account value || One percent of 10,000 USD is 100 USD, which is the maximum planned loss on a single trade.
+- 10 USD, because the budget is measured in tenths of a percent || The budget is one percent of equity, not one tenth of one percent.
 :::
+
+## 3. Decide the risk before you enter
+
+Risk is the amount you lose if your idea is wrong and your exit works as planned. A loss can be larger if a gap or a broker problem stops you from exiting at the planned price. That is why the budget must be decided before you enter, and why it should leave room for error. A trader who decides the risk during a trade is usually reacting to fear or hope. Before you enter, write down the maximum loss, the exit that triggers it and what would prove the idea wrong.
+
+::: quiz
+? Why should the maximum loss be decided before entering a trade?
+- Because the price always moves in the expected direction after entry || Prices do not always move as expected, and this is not the reason for deciding early.
+* Because decisions made during a trade tend to reflect fear or hope rather than the plan || A plan made before entry protects against emotional choices made under pressure.
+- Because brokers only accept orders with a risk figure attached || Brokers do not require a risk figure. The reason is to protect your own decisions.
+:::
+
+## Worked example: Rui and his open trades
+
+Rui trades from Luanda with a USD account of 8,000. He sets a risk budget of 1.5 percent per trade, which is 120 USD. His total open-risk limit is 5 percent, which is 400 USD. He already has three open positions, each risking 120 USD, so his total open risk is 360 USD, or 4.5 percent of equity. A fourth setup appears that he likes. Adding it would bring his total open risk to 480 USD, which is 6 percent. The rule says no, so he waits. He can take the setup next week when one of the three trades closes.
+::: case | The fourth setup
+Rui's three open positions each risk 120 USD on an 8,000 USD account. He sees a fourth setup that looks strong, and he feels sure it will work.
+? What should Rui do?
+- Open the trade and move the stop closer to keep the total risk down || Moving a stop closer to fit a rule can close the trade before its idea has room to work. That is a different decision, made for the wrong reason.
+* Wait, because the trade would break his total open-risk limit, and the limit was set before this setup appeared || The limit exists for the moments when a trader feels sure. Keeping to it is the discipline.
+- Open the trade and promise himself he will close one of the others later || A promise to act later is not a limit. It leaves the account exposed right now.
+:::
+
+## Tool: risk budget checklist
+
+- Account equity today, including open profit or loss
+- Risk budget per trade, as a percentage and in cash
+- Total open-risk limit, as a percentage and in cash
+- Maximum loss for the day or the week before I stop trading
+- What would prove this trade idea wrong
+
+## Common mistakes
+
+- Setting the risk budget after seeing a setup, which turns the rule into a justification.
+- Treating the budget as a target to reach rather than a maximum to stay under.
+- Counting only one trade and ignoring the total open risk.
+- Changing the percentage after a run of wins or losses.
 
 ## Self-check
 
-1. Why does a 50 percent loss need a 100 percent gain to recover? (Answer: the recovery is measured from the smaller balance, so the same percentage gain does not restore the original amount.)
-2. What should you decide before entering a trade? (Answer: the exit price if the trade fails, the money you can lose, and what would prove the idea wrong.)
-3. What is the difference between a drawdown and a loss on one trade? (Answer: a drawdown is the fall in the account from a peak over time, while a loss is the result of one position.)
+1. What is the difference between market risk and gap risk? (Answer: market risk is the chance that price moves against you; gap risk is the chance that price jumps past your exit, so you cannot exit at the planned level.)
+2. On a 6,000 USD account, what is a 2 percent risk budget in cash? (Answer: 120 USD, because 2 percent of 6,000 is 120.)
+3. Why should total open risk be tracked as well as single-trade risk? (Answer: several trades can fail together, so the combined loss can be much larger than the single-trade budget.)
 
 ## Practical assignment
 
-Write a one-page trading plan. Include your entry rule, exit rule, the share of the account you will risk on one trade, a daily loss limit, and a drawdown limit at which you will stop and review. Sign and date it, and keep it where you will read it before any trade.
+Write down your account equity, your risk budget per trade in percent and in cash, and your total open-risk limit. Then list every open position you have, real or on a demo account, and add up the cash risk on each. Compare the total with your limit, and write one sentence on what you would change.
 
 ## Summary
 
-- Losses need larger percentage gains to recover, so protecting the account comes before seeking reward.
-- Position size and the stop distance are linked, and both should be set from the loss you have accepted.
-- Discipline means a written plan, honest records and loss limits that you set before the market moves.
+- Risk has several types, including market, gap, leverage, liquidity, counterparty and operational risk, and each needs its own control.
+- A risk budget is a fixed percentage of equity, set in advance, with both a per-trade limit and a total open-risk limit.
+- The maximum loss is decided before you enter, and the limit holds even when a setup looks certain.
 
 === 20
-SLIDE Why an exit matters | An exit limits the damage; A trade without an exit has no end; Hope is not a plan | Define the end
-SLIDE Invalidation | Invalidation is the event that proves your idea wrong; Choose it before the trade; Make it specific and observable | A testable reason
-SLIDE Stop placement | Place the stop where the idea fails; Avoid stops so close that noise removes you; Avoid stops so far that the loss is too large | Balance distance and size
-SLIDE Mental stops | A mental stop is not an order; It depends on your discipline in the moment; Most people move them when they should not | Use real orders where possible
-SLIDE Taking profit | Decide a target before the trade; Consider taking part of the position early; Keep the rest only by plan | Profit also needs a rule
-SLIDE Reviewing an exit | Did the exit match the plan?; Was the stop placed where the idea failed?; Record one lesson | Learn from every exit
+SLIDE Size controls the loss | Size decides the cash loss; The stop decides the distance; Together they set the risk | Size is the control you own
+SLIDE The sizing formula | Units equal maximum loss divided by risk per unit; Risk per unit is entry minus stop for a buy; Round down | Divide, then round down
+SLIDE Four steps | Set the cash risk; Find the stop; Calculate risk per unit; Divide and round down | Same order, every trade
+SLIDE Position value is not risk | Position value is units times price; Risk is units times the stop distance; They are different numbers | Check both figures
+SLIDE Rounding and lot sizes | Round down to the allowed unit; Never round up to reach a target; Skip a trade if the minimum is too large | Round down, every time
+SLIDE Size after a streak | Keep the same percentage; Do not add size after wins; Do not double size to recover losses | The rule does not change
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- explain why an exit must be decided before a trade is placed;
-- define an invalidation point and state it in observable terms;
-- describe how stop placement balances the distance to the stop against position size;
-- explain why a mental stop is weaker than a stop order.
+- calculate the position size for a trade from a fixed cash risk and a stop distance;
+- distinguish position value from the cash you can lose on a trade;
+- round a position size correctly for the instrument you trade;
+- explain why size must not change because of a recent run of wins or losses.
 
 ## Key terms
 
 ::: terms
-Exit: the planned point at which a position will be closed, either to take a profit or to limit a loss
-Invalidation: the observable event that shows your reason for a trade is wrong
-Stop order: an instruction to close a position once a set price is reached
-Mental stop: a planned exit kept in the trader's head rather than placed with the broker
-Noise: small, random price movement that does not change the wider picture
-Target: a planned price at which you will take a profit
+Position size: the number of units you buy or sell in one trade
+Risk per unit: the distance between your entry price and your stop price, in money
+Position value: the number of units multiplied by the entry price
+Lot size: the smallest quantity an instrument or broker allows you to trade
+Round down: reduce a calculated size to the nearest allowed quantity, never up
 :::
 
-## 1. Why the exit comes first
+## 1. The fixed-risk sizing formula
 
-Every trade needs an exit. An entry without a defined exit has no end point, and so no defined risk. Traders who do not plan an exit tend to decide it in the moment, when fear or hope is strongest. That is the time when a small loss is most likely to grow.
+The fixed-risk method lets the stop decide how far price can move against you, and the size decides how much money that move costs. You start with the cash you are willing to lose, which comes from your risk budget. Then you divide it by the loss on each unit. For a buy trade, the loss on each unit is the entry price minus the stop price. The result is the number of units you can hold without exceeding the budget.
 
-The exit has two sides. One is the stop, which limits the loss if the trade fails. The other is the target, which says when to take a profit. Both should be set before you enter, and both should be written down. If you cannot state where you would exit, you are not ready to enter.
+In plain form, the formula is: position size in units equals maximum cash loss divided by risk per unit. Take the result and round it down to the nearest allowed quantity. Rounding up pushes the loss above the budget, and the rule exists to prevent exactly that.
 
-::: diagram steps | Setting the exit before the entry
-Reason: state the idea behind the trade in one sentence
-Invalidation: name the observable event that proves the idea wrong
-Stop: place the exit at the level where that event happens
-Target: set the profit point, or a rule for taking profit
+::: diagram steps | Position sizing steps
+Set the cash risk: multiply equity by the risk percentage
+Set the stop: choose the exit price that proves the idea wrong
+Find risk per unit: subtract the stop from the entry for a buy
+Divide and round down: maximum loss divided by risk per unit, rounded down
 :::
 
-## 2. Invalidation: the test of your idea
+## 2. Check the position value, not just the risk
 
-Invalidation is the event that tells you your reason for the trade no longer holds. Good invalidation is specific and observable. "The market feels weak" is not invalidation, because two people can disagree about it. "The price closes below the level where the trade was based" is invalidation, because anyone can check it.
-
-Choose invalidation before you enter. If you wait until you are losing money to decide what would count as wrong, you will usually find a reason to stay. A testable reason is the foundation of an exit that you can actually follow.
+Sizing controls the loss, not the amount invested. A trade can risk only 1 percent of equity and still tie up half the account, if the stop is close and the position value is large. So check both numbers. Position value is units multiplied by the entry price. Risk is units multiplied by the risk per unit. If the position value does not fit the funds in your account, the trade is too large, even when the risk looks small.
 
 ::: slides
-SLIDE Invalidation test 1 | Can another person check the event?; Does it happen at one clear point? | Specific beats vague
-SLIDE Invalidation test 2 | Is it linked to the reason for the trade?; Would the trade still make sense without it? | Link it to the idea
-SLIDE Invalidation test 3 | Write it before the entry; Do not change it while the trade is open | Fix it before the emotion arrives
-:::
-
-## 3. Where to place the stop
-
-The stop should sit where your idea fails, not at a random distance chosen to feel safe. If the stop is too close to the entry, ordinary price noise can remove you from a trade that was still valid. If it is too far away, the loss may be too large for your planned risk, and the position size will have to fall to compensate.
-
-This is where stop distance and position size meet. A reasonable stop at the invalidation point gives a distance, and that distance, together with the accepted loss, sets the size. Do not move the stop to make a size look better. Work out the stop first, then the size.
-
-::: case | The stop that was too close
-Ahmed sells a commodity his trading plan says to buy back at a lower price. He sets a stop only a few cents above the entry, because he does not want to lose much. Within an hour, normal price swings trigger the stop, and the price then falls exactly as his original idea predicted.
-? What is the main lesson from Ahmed's trade?
-- The idea was right, so he should have held the trade without a stop || Holding without a stop removes the defined risk, which is the one thing the plan protects.
-* The stop was placed inside normal noise rather than where the idea failed, so it removed a valid trade before the idea could be tested || A stop should be placed at invalidation. One set inside normal movement tests nothing.
-- Stops should always be as tight as possible || A tight stop is not automatically better. It must still sit where the idea is wrong.
-:::
-
-## 4. Mental stops and real orders
-
-A mental stop is an exit you plan but do not place with the broker. You intend to close the position if the price reaches a level, but nothing happens unless you do it yourself. Mental stops feel flexible, and that is their weakness. In the moment, most people move a mental stop, delay it or ignore it, especially when the trade is losing.
-
-A stop order is placed with the broker, so it closes the position automatically once the level is reached. It does not remove risk, because it can fill beyond the stop in a fast market, but it removes the decision made under pressure. Where a stop order is available, use it, and check that it is open.
-
-::: quiz
-? A trader has a plan to exit a losing trade at a certain price, but has not placed an order. What is the main weakness?
-- The trader cannot close a position manually || Traders can close positions manually. The weakness is that the decision depends on the trader in the moment.
-* The exit depends on the trader's discipline at the moment it is needed, and such decisions are often delayed or moved || A plan that is not placed as an order relies on the same emotions that caused the problem.
-- Mental stops are not allowed by brokers || The rules on this vary by broker. The practical weakness is about discipline, not permission.
+SLIDE Step 1: Set the cash risk | Multiply equity by the risk percentage; Write the figure on the plan | Start from the budget
+SLIDE Step 2: Divide by risk per unit | Entry minus stop for a buy; Maximum loss divided by that figure; Round down | Divide, then round down
+SLIDE Step 3: Check the position value | Units times entry price; Does it fit the funds available? | Small risk can still mean a large cost
 :::
 
 ::: quiz
-? An invalidation point should be which kind of statement?
-- A feeling that the market is becoming weak || A feeling cannot be checked, so it cannot test the idea.
-* An observable event, such as a close beyond a specific level, that another person could confirm || Observable events give a clear test and a fixed exit point.
-- The price the trader would prefer to see || A preference is a hope, not a test of the idea.
+? An account of 8,000 USD has a 1.5 percent risk budget. The entry is 50.00 and the stop is 48.50. How many units can be bought?
+- 120 units, which is the cash risk in USD || 120 is the cash risk, not the number of units. Divide the cash risk by the loss per unit.
+* 80 units, because 120 divided by 1.50 gives 80 || The cash risk is 120 USD and the risk per unit is 1.50, so the size is 80 units.
+- 53 units, because 8,000 divided by 150 gives 53 || The budget is 1.5 percent of 8,000, not 150. Recalculate the cash risk first.
 :::
 
-## 5. Taking profit with a plan
+## 3. Round down and check the lot size
 
-The target is the planned point at which you take a profit. Some traders set a fixed target before entering. Others take part of the position at a first level and keep the rest for a further move, moving the stop to protect what they have already gained. Either approach can work. What matters is that the rule is set before the trade and followed afterwards.
+Instruments trade in whole units or in set lot sizes. A calculated size of 62.5 units may have to become 62 units, or a lot size may force a smaller figure. Always round down. If the broker's minimum size is larger than your calculated size, the trade is too large for your budget. Skip the trade, or choose an instrument where the minimum fits. Do not trade a larger size to make it fit. Keep a short list of the minimum size and the lot step for every instrument you trade.
 
-Profit-taking is often as emotional as losing. Traders hold winners too long hoping for more, or close them too early out of fear. A written rule is the best defence against both habits.
-
-## 6. Reviewing exits
-
-After each trade, review the exit. Did it match the plan? Was the stop placed where the idea failed, or inside normal movement? Did you move it, and if so, why? Did you take profit according to the rule? Write one lesson from the review. Over time, these notes will show whether your exits are protecting your capital or undermining your results.
-
-::: tip | Practical tip
-Keep the exit notes in the same journal as your entries. A trade is not finished until the exit has been reviewed, and the review is where most of the learning happens.
+::: quiz
+? A calculation gives 62.5 units, and the broker only accepts whole units. What should you do?
+- Round up to 63 units, because the risk is close enough || Rounding up raises the loss above the budget. The rule is to round down.
+* Round down to 62 units, so the loss stays within the budget || Rounding down keeps the loss at or below the cash limit.
+- Trade 100 units and accept a larger loss this time || A larger size breaks the rule. The purpose of the rule is to prevent that.
 :::
+
+## Worked example: Helena's trade in Benguela
+
+Helena is a part-time trader in Benguela with a USD account of 5,000. Her risk budget is 1 percent, which is 50 USD. She wants to buy a share at 25.00, and she has set her stop at 24.20, below the level where her idea fails. The risk per unit is 25.00 minus 24.20, which is 0.80. Dividing 50 by 0.80 gives 62.5 units. She rounds down to 62 units. Her maximum loss is 62 multiplied by 0.80, which is 49.60 USD, inside her budget. The position value is 62 multiplied by 25.00, which is 1,550 USD, or 31 percent of her account. The risk is small, but the exposure is large, so she checks her broker's margin rules before placing the order.
+
+::: case | Two good weeks
+Carlos has had two profitable weeks. His account is up 12 percent, and his plan sets 1 percent per trade. He feels confident and thinks he could double his size on the next setup to make the gains faster.
+? What should Carlos do?
+- Double the position size, because the last two weeks show the method works || Two good weeks are a small sample. Doubling the size doubles the loss if the next trade fails.
+* Keep the same percentage, so the cash budget grows with his equity as the plan allows || A fixed percentage lets the cash risk grow as equity grows, and that keeps the rule intact.
+- Tighten the stop and keep the same size, so the trade looks safer || A tighter stop can close the trade before its idea has room to work. Set the stop from the chart, then size from the stop.
+:::
+
+## Tool: sizing worksheet
+
+- Cash risk: equity multiplied by the risk percentage
+- Entry price and stop price, written down before I send the order
+- Risk per unit: entry minus stop for a buy, or stop minus entry for a sell
+- Units: cash risk divided by risk per unit, rounded down to the allowed quantity
+- Position value, and whether it fits the funds available
+
+## Common mistakes
+
+- Rounding the size up to reach a target figure.
+- Confusing position value with risk, and assuming a small risk means a small trade.
+- Changing the percentage after a run of wins or losses.
+- Calculating the size first and then placing the stop wherever the size allows.
 
 ## Self-check
 
-1. Why should an exit be decided before the entry? (Answer: the exit limits the loss and is easiest to decide while calm, not in the moment when emotions are strongest.)
-2. What makes an invalidation point useful? (Answer: it is specific and observable, so another person could confirm that the idea has failed.)
-3. What is the difference between a mental stop and a stop order? (Answer: a mental stop depends on the trader acting in the moment, while a stop order is placed with the broker and closes automatically.)
+1. A risk budget is 60 USD and the risk per unit is 0.75. What is the position size? (Answer: 80 units, because 60 divided by 0.75 is 80.)
+2. Why is position value not the same as risk? (Answer: position value is units times price, the total market exposure; risk is units times the distance to the stop, the most you lose if the stop works.)
+3. Why round down rather than to the nearest unit? (Answer: rounding up can take the loss above the budget, and the budget is a maximum.)
 
 ## Practical assignment
 
-Take one recent trade you made, or one you studied on a demo. Write down the invalidation point, the stop, the target, and whether you followed them. If the stop was not at the invalidation point, write what you would change next time.
+Take one trade idea you are considering, on a demo account or on paper. Write the entry and the stop, calculate the risk per unit, and size the position for a 1 percent budget. Check the position value against your available funds. Then repeat the calculation once more, to make sure you get the same answer.
 
 ## Summary
 
-- Every trade needs an exit set before entry, with a stop where the idea fails and a target or profit rule.
-- Invalidation must be specific and observable, and the stop should sit at that point rather than inside normal noise.
-- A stop order enforces the plan better than a mental stop, and every exit should be reviewed.
+- Size equals maximum cash loss divided by risk per unit, always rounded down to the allowed quantity.
+- Position value is a separate check from risk, and it must fit the account and the broker's margin rules.
+- The percentage stays fixed after wins and losses, so one good or bad week does not change the rule.
 
 === 20
-SLIDE The core formula | Accepted loss equals account value times risk share; Units equal accepted loss divided by risk per unit; Risk per unit is entry minus stop | Size comes last
-SLIDE Worked example | Account 5,000; risk share 2 percent; accepted loss 100; entry 10.00; stop 9.00; risk per unit 1.00; size 100 units | Check every input
-SLIDE Changing one input | A wider stop reduces the size; A smaller account reduces the size; A higher risk share increases the size | Know what moves size
-SLIDE Short trades | For a short, risk per unit is stop minus entry; The same formula applies; Check the direction | Direction matters
-SLIDE Common sizing errors | Sizing by feel; Ignoring the stop distance; Adding size after a loss | Use the formula
-SLIDE Rounding and costs | Round size down, not up; Include spread and commission in the risk; Recheck after costs | Costs reduce room
+SLIDE A stop is an exit | A stop marks where the idea is wrong; Set it before entry; It is not a profit target | Start from the idea
+SLIDE Invalidation level | Find the price where the reason for the trade fails; Place the stop beyond it; Add a small buffer | Beyond the level, not on it
+SLIDE Distance drives size | A wider stop means fewer units for the same risk; A tighter stop means more units | The stop sets the size
+SLIDE Stops are not guarantees | Gaps can skip the stop; Thin markets can fill far away; Stop-limit orders can miss | Plan for a worse fill
+SLIDE Mental stops fail | A stop kept in your head is not an order; Emotion moves it; Use a real order | Write it and place it
+SLIDE Stop review | Check the stop each day; Move it only by a rule set in advance; Never move it further from the price after entry | Tightening follows a rule, loosening breaks it
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- calculate the accepted loss for a trade from the account value and the risk share;
-- calculate the position size from the accepted loss and the risk per unit;
-- explain how changing the stop, the account or the risk share changes the size;
-- identify common sizing errors and how to avoid them.
+- identify the invalidation level for a trade idea and place a stop beyond it;
+- calculate how a change in stop distance changes the position size for a fixed risk;
+- explain why a stop does not guarantee the exit price;
+- apply a review rule that moves a stop only in the direction the plan allows.
 
 ## Key terms
 
 ::: terms
-Account value: the money currently available in the trading account
-Risk share: the percentage of the account you accept losing on one trade
-Accepted loss: the money amount you have decided to lose if the trade fails
-Risk per unit: the difference between the entry price and the stop price, for one unit
-Position size: the number of units traded
-Round down: to take the lower whole number when a size does not divide exactly
+Invalidation level: the price at which the reason for the trade is proved wrong
+Stop-loss order: an order that exits a position once a set price is reached
+Buffer: a small distance added beyond a level, so normal price movement does not trigger the stop
+Trailing stop: a stop that moves in the trade's favour by a fixed rule as price moves
+Mental stop: an exit kept in your head, with no order placed with the broker
+Noise: small random price moves that do not change the direction of the trade
 :::
 
-## 1. The core formula
+## 1. Start from the reason for the trade
 
-Position sizing turns a risk decision into a number of units. The steps are simple. First, find the accepted loss by multiplying the account value by the risk share. Second, find the risk per unit by subtracting the stop from the entry, for a buy. Third, divide the accepted loss by the risk per unit. The result is the size.
-
-Written out, the logic is: accepted loss divided by risk per unit equals position size. The formula does not tell you whether to trade. It tells you how big the trade can be once you have decided to take it, and it keeps the loss you accept the same whatever the price is doing.
-
-::: diagram steps | Sizing a trade step by step
-Step 1: accepted loss equals account value times the risk share
-Step 2: risk per unit equals entry minus stop
-Step 3: position size equals accepted loss divided by risk per unit
-Step 4: round the size down to a whole number you can trade
-:::
-
-## 2. A worked example
-
-Suppose an account holds 5,000 units of currency. The trader accepts risking 2 percent, so the accepted loss is 100 units. The entry price is 10.00 and the stop price is 9.00. The risk per unit is 1.00. The position size is 100 divided by 1.00, which is 100 units. If the trade fails, the loss should be about 100 units, plus any costs.
-
-This example is illustrative. It shows the method, not a recommendation about any particular asset or price. Always use your own account value, your own risk share and a stop based on your own plan.
+A stop is not a number you pick because it feels comfortable. It is the price at which the reason for entering the trade stops being true. If you buy because price has held above a support area, the invalidation level sits below that area, since a clean break through it means the reason has gone. The stop goes beyond the invalidation level, with a small buffer, so ordinary noise does not close the trade before its idea has a chance to work. Write the reason, the invalidation level and the buffer before you enter.
 
 ::: slides
-SLIDE Example step 1 | Account of 5,000 units; risk share of 2 percent; accepted loss of 100 units | Start from the loss
-SLIDE Example step 2 | Entry 10.00; stop 9.00; risk per unit 1.00 | Stop distance drives size
-SLIDE Example step 3 | 100 divided by 1.00 gives 100 units; check the result against the loss | Verify before you trade
+SLIDE Step 1: Name the reason | Write why the trade makes sense; Keep it to one sentence | The reason comes first
+SLIDE Step 2: Find the invalidation level | Look for the price where the reason fails; Use a clear level on the chart | Use the chart, not a feeling
+SLIDE Step 3: Add a buffer and place the order | Place the stop beyond the level; Choose the buffer from normal movement; Send the order with the entry | Plan it, then place it
 :::
 
-## 3. What changes the size
-
-Three inputs move the size. A wider stop, with the same accepted loss, reduces the size, because each unit then risks more. A smaller account reduces the accepted loss and so the size. A higher risk share increases the accepted loss and so the size.
-
-Notice that the stop is set first, from the invalidation point. The size then follows. Do not choose the size first and then move the stop to fit it. That reverses the logic and makes the risk depend on what you want to trade rather than on what the market has shown.
-
-::: case | A bigger size after a loss
-Mariana lost 100 units on her last trade. Feeling she must win it back, she decides to double the size of her next trade, keeping the same stop. Her plan says to risk 2 percent of the current account value.
-? What should Mariana do?
-- Double the size, because the account is now smaller and she needs to recover || Doubling the size doubles the accepted loss, which breaks the plan and increases the risk after a loss.
-* Recalculate the accepted loss from the current account value, and keep the size the plan produces || The plan uses the current account value. A smaller account means a smaller accepted loss and a smaller size.
-- Skip the trade entirely to avoid risk || Skipping may be reasonable, but the plan does not require it. The point is to keep the size consistent with the rule.
+::: diagram steps | Placing a stop
+Name the reason: write the trade idea in one sentence
+Find invalidation: locate the price that proves the idea wrong
+Add a buffer: place the stop beyond that price by a small margin
+Check the distance: confirm the risk per unit suits your size
 :::
 
-## 4. Short trades
+## 2. Distance sets the size
 
-A short trade is a trade where you sell first, expecting the price to fall. The sizing logic is the same, but the direction is reversed. For a short, the risk per unit is the stop minus the entry, because the stop sits above the entry. Check the direction before every calculation, because a sign error can double or reverse the risk you think you are taking.
-
-Short trades can carry risks that differ from long trades, and some instruments have additional costs or rules for shorting. Learn those before you short anything.
-
-## 5. Common sizing errors
-
-The most common error is sizing by feel, choosing a number that seems comfortable rather than one the formula produces. Another is ignoring the stop distance and trading the same units regardless of where the stop sits. A third is adding size after a loss, which the example above shows can quickly break the plan. A fourth is adding size after a win, which can turn a good run into a large loss.
-
-The fix is the same in every case: use the formula, write the result, and check it against the accepted loss before you place the order.
+With a fixed cash risk, the distance to the stop decides how many units you can hold. A wider stop gives fewer units, and a tighter stop gives more. Take a 120 USD risk budget. A stop 1.50 below entry gives 80 units. A stop 3.00 below entry gives 40 units. The cash loss is 120 USD in both cases if the stop works. Some traders widen a stop to keep a large position. That changes the risk, so the size must be recalculated, not left the same.
 
 ::: quiz
-? An account is 5,000 units, the risk share is 1 percent, the entry is 20.00 and the stop is 19.50. What is the position size?
-- 50 units, because 1 percent of 5,000 is 50 and the entry is 20.00 || The accepted loss is 50, but the risk per unit is 0.50, not 20.00.
-* 100 units, because the accepted loss is 50 and the risk per unit is 0.50 || Accepted loss of 50 divided by risk per unit of 0.50 gives 100 units.
-- 10 units, because the stop is half a unit away || Half a unit is the risk per unit, not the size. Divide the accepted loss by the risk per unit.
+? With a fixed 120 USD risk, a trader moves the stop from 1.50 below entry to 3.00 below entry and keeps the same size of 80 units. What is the new risk?
+- Still 120 USD, because the size did not change || The size did not change, but the loss did. 80 units at 3.00 is 240 USD.
+* 240 USD, because 80 units multiplied by 3.00 is 240 || The loss doubles when the distance doubles and the size stays the same, which breaks the budget.
+- 60 USD, because a wider stop lowers the risk || A wider stop raises the loss on the same size. It does not lower it.
+:::
+
+## 3. A stop is not a guarantee
+
+A stop order becomes a market order when it is triggered. In a gap, price may open far beyond the stop, and the fill comes at the first price available. In a thin market, the fill can also be far away. A stop-limit order controls the fill price but may not fill at all, which can leave an open loss. The planned loss is a target for normal conditions, not a promise. Size the position for the worst fill you can survive, not for the stop price on the chart.
+
+## Worked example: Sofia's long trade in Lobito
+
+Sofia wants to buy a commodity-linked share at 12.40. Price has held above a support area near 11.90 for several sessions, and her reason is that the area has held twice before. Her invalidation level is a clean close below 11.90. She places her stop at 11.80, a buffer of 0.10 below the level. Her risk per unit is 12.40 minus 11.80, which is 0.60. With a 100 USD risk budget she can hold 166 units, since 100 divided by 0.60 is 166.67, rounded down.
+
+Her loss if the stop works is 166 multiplied by 0.60, which is 99.60 USD. A week later, price gaps down through her stop after a weekend announcement and fills at 11.45. Her loss is 166 multiplied by 0.95, which is 157.70 USD. She had planned for a stop loss, but the gap cost more. That is why she keeps each position small enough to survive a fill like this one.
+
+::: case | The stop that keeps moving
+Tomas bought a share with a stop at 9.50. Price falls toward the stop. He thinks the market is about to turn, so he moves the stop down to 9.00 to give the trade more room.
+? What should Tomas do?
+- Keep the moved stop, because the price is likely to turn back || Moving a stop further from the price on a losing trade changes the risk after entry. The plan set 9.50.
+* Restore the stop to 9.50, and exit if price closes through it, because the plan set that level before entry || A stop moved away from the plan is no longer the stop the plan allowed. The original rule decides.
+- Add to the position to lower the average price || Adding to a losing trade raises the risk and breaks the plan without new evidence.
 :::
 
 ::: quiz
-? A trader's calculation gives 37.8 units. The trader can only trade whole units. What should she do?
-- Round up to 38 units, to use the full accepted loss || Rounding up increases the loss beyond the accepted amount.
-* Round down to 37 units, so the loss stays at or below the accepted amount || Rounding down keeps the risk within the plan.
-- Trade 37.8 units by splitting one unit into fractions if the broker allows it || Fractional units are not always available, and the rule still applies: keep the loss within the accepted amount.
+? Which change to a stop is consistent with a rule-based plan?
+- Moving the stop further from the price when the trade goes against you || Moving a stop further away on a losing trade increases the planned loss after entry.
+* Moving the stop in the trade's favour by a rule set in advance, such as after a fixed gain || A rule set before entry that only moves the stop in the trade's favour keeps the risk under control.
+- Removing the stop because the trade looks strong || Removing the stop removes the planned exit and leaves the loss open.
 :::
+
+## Tool: stop placement checklist
+
+- The reason for the trade, in one sentence
+- The invalidation level, marked on the chart
+- The buffer, chosen from the normal movement I can see
+- The stop price, placed beyond the buffer
+- The risk per unit and the resulting size, checked against the budget
+- The stop order sent with the entry, not kept in my head
+
+## Common mistakes
+
+- Placing the stop at a level that is only a guess, with no reason tied to the trade.
+- Choosing the size first and then placing the stop wherever the size allows.
+- Moving the stop further away after the trade goes against you.
+- Trusting a mental stop that has no order behind it.
 
 ## Self-check
 
-1. How do you find the accepted loss? (Answer: multiply the account value by the risk share.)
-2. If the stop moves further from the entry, what happens to the size with the same accepted loss? (Answer: the size falls, because each unit now risks more.)
-3. What should you do after a loss to keep the plan consistent? (Answer: recalculate the accepted loss from the current account value, and do not increase the size.)
+1. What is an invalidation level? (Answer: the price at which the reason for the trade is proved wrong, so the stop goes beyond it.)
+2. With a fixed risk budget, what happens to position size when the stop gets wider? (Answer: the size falls, because each unit now carries more loss.)
+3. Why can a stop order lose more than planned? (Answer: a gap or a thin market can fill it far from the stop price, because a triggered stop becomes a market order.)
 
 ## Practical assignment
 
-Choose an account value and a risk share for practice. Pick three hypothetical trades with different stop distances. Calculate the size for each, and check that the accepted loss is the same in all three. Write one sentence on what you noticed.
+On a chart you can see for free, pick one trade idea and write the reason in one sentence. Mark the invalidation level and place a stop beyond it with a buffer. Calculate the risk per unit and the size for a 1 percent budget. Do this on paper or on a demo account, and note what would have happened to the stop over the next five sessions.
 
 ## Summary
 
-- Position size comes from the accepted loss divided by the risk per unit, which is the distance from entry to stop.
-- A wider stop, a smaller account or a lower risk share all reduce the size.
-- Never increase size to recover losses, and always round down so the loss stays within the plan.
+- A stop belongs beyond the invalidation level, is set before entry, and includes a buffer for normal price movement.
+- For a fixed risk, stop distance and position size move in opposite directions.
+- A stop is not a guarantee, so size for the worst fill you can survive, and move stops only as the plan allows.
 
 === 20
-SLIDE Risk-reward ratio | Compare the possible loss with the possible gain; A ratio of 1 to 2 means two units of gain for one unit of risk; A ratio is a description, not a promise | Describe the trade
-SLIDE Win rate | The share of trades that make money; A high win rate can hide small wins; Track it over many trades | Count over many trades
-SLIDE Expectancy | Win rate times average win, minus loss rate times average loss; The result is the average per trade; Negative expectancy loses over time | Average matters most
-SLIDE Illustrative example | A plan wins 40 percent of the time; Average win 300 and average loss 100; Expectancy is 60 per trade | An example, not a forecast
-SLIDE Sensitivity | Small changes in win rate change expectancy a lot; Check the plan under worse assumptions; Do not trust a single good run | Test the fragile parts
-SLIDE Using the numbers | Measure your own results over many trades; Record each trade honestly; Adjust the plan only with evidence | Let records decide
+SLIDE Win rate is not enough | A high win rate can still lose money; Average win and average loss matter too | Read both sides
+SLIDE Reward to risk | Reward to risk is the average win divided by the average loss; A ratio of 2 means a win is twice the loss | Measure the payoff
+SLIDE Expectancy | Win rate times average win, minus loss rate times average loss; It is the average result per trade | The average is the test
+SLIDE Break-even win rate | For a ratio R, break-even win rate is 1 divided by (1 plus R); A ratio of 1.5 needs 40 percent wins | Know your break-even
+SLIDE Costs reduce expectancy | Spreads and commissions come out of every trade; A small expectancy can vanish after costs | Subtract costs first
+SLIDE Small samples mislead | A few trades can look good by chance; Keep a long record before judging a method | Sample size matters
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- calculate a risk-reward ratio for a trade;
-- explain why win rate and reward size must be read together;
-- calculate expectancy from a stated win rate and average win and loss;
-- explain why small changes in the inputs can change the result a great deal.
+- calculate reward-to-risk and expectancy from a trade record;
+- find the break-even win rate for a given reward-to-risk ratio;
+- explain how trading costs reduce expectancy;
+- judge a method only on a sample large enough to mean something.
 
 ## Key terms
 
 ::: terms
-Risk-reward ratio: the possible gain on a trade compared with the possible loss
-Win rate: the share of trades in a series that finish with a profit
-Average win: the average profit on the winning trades in a series
-Average loss: the average loss on the losing trades in a series
-Expectancy: the average result per trade over many trades, calculated from win rate and average win and loss
-Sample size: the number of trades on which a result is based
+Win rate: the share of trades that close with a profit
+Average win: the mean profit on winning trades
+Average loss: the mean loss on losing trades, shown as a positive figure
+Reward-to-risk: the average win divided by the average loss
+Expectancy: the average expected result per trade, from wins and losses together
+Sample size: the number of trades in a record, which determines how far you can trust its average
 :::
 
-## 1. The risk-reward ratio
+## 1. Win rate alone misleads
 
-The risk-reward ratio compares what you can lose with what you can gain. If a trade risks 1 unit to make 2 units, the ratio is 1 to 2. Many traders look at this ratio first, because it is easy to calculate before entering. It describes the shape of a trade. It does not say whether the trade will work.
+A trader who wins 70 percent of trades can still lose money if each loss is much larger than each win. A trader who wins 30 percent can make money if the winners are much larger than the losers. The win rate describes how often you are right. Reward-to-risk describes how much you gain when you are right, compared with what you lose when you are wrong. Both matter. The test that combines them is expectancy.
 
-A high ratio can look attractive, but it is not enough on its own. A trade with a large possible gain and a small chance of success may lose money over many trades. To judge a plan, you need the chance of winning as well.
-
-::: diagram steps | Building a risk-reward figure
-Possible loss: the distance from entry to stop, in money
-Possible gain: the distance from entry to target, in money
-Ratio: possible gain divided by possible loss
-Check: is the ratio still good after costs and slippage?
+::: diagram matrix | Win rate and reward-to-risk | Win rate (low → high) | Reward-to-risk (low → high)
+Trend-style profile: few wins, but large winners, which needs patience
+Ideal but rare: many wins with large winners, which needs a strong edge
+Weak profile: few wins and small winners, which rarely pays after costs
+Scalp-style profile: many small wins, where one large loss can erase them
 :::
 
-## 2. Win rate and why it matters
+## 2. Expectancy and the break-even win rate
 
-The win rate is the share of trades that finish with a profit. A plan that wins four trades out of ten has a win rate of 40 percent. The win rate has to be read with the size of the wins and losses. A high win rate with tiny wins and large losses can still lose money, and a low win rate with large wins can be profitable.
+Expectancy is the win rate multiplied by the average win, minus the loss rate multiplied by the average loss. The loss rate is one minus the win rate. Expectancy is the average result you can expect per trade if the record repeats. A positive expectancy matters more than a profit in a few good weeks.
 
-Win rate is also only meaningful over a large number of trades. Ten trades tell you very little, because a short run can look good or bad purely by chance. Keep records and wait for a meaningful sample before drawing conclusions.
+Break-even is a useful companion check. For a reward-to-risk ratio R, the break-even win rate is 1 divided by (1 plus R). A ratio of 1.5 breaks even at 40 percent wins. A ratio of 2 breaks even at about 33 percent.
 
-## 3. Expectancy: putting the numbers together
+::: quiz
+? A method wins 40 percent of trades. Its average win is 150 USD and its average loss is 100 USD. What is the expectancy per trade?
+- 10 USD, because 150 minus 100 is 50, and 50 divided by 5 is 10 || Expectancy weights wins and losses by how often each occurs, so this division is not the method.
+* 0 USD, because 0.4 times 150 minus 0.6 times 100 equals 60 minus 60 || With a 40 percent win rate and a ratio of 1.5, the method breaks even before costs.
+- 60 USD, because only the average win matters || Expectancy also subtracts the losses. Ignoring them overstates the result.
+:::
 
-Expectancy combines win rate and the size of wins and losses into one figure: the average result per trade. The calculation is the win rate multiplied by the average win, minus the loss rate multiplied by the average loss. The loss rate is simply one minus the win rate.
+## 3. Costs and sample size
 
-The example below is illustrative only. It is not a forecast, and it is not a statistic about any real plan. A plan wins 40 percent of the time, with an average win of 300 units and an average loss of 100 units. The loss rate is 60 percent. The expectancy is 0.4 times 300, minus 0.6 times 100, which is 120 minus 60, or 60 units per trade on average.
+Costs come out of every trade. If your expectancy is 5 USD per trade and your costs are 5 USD per trade, your real expectancy is zero. Subtract spreads, commissions and expected slippage before you judge the method, as course 1 showed. Sample size matters as well. A few trades can look good or bad by chance. Keep a record over many trades before you draw a conclusion, and note the period and the market conditions in your record.
 
 ::: slides
-SLIDE Expectancy step 1 | Write the win rate and the loss rate; The loss rate is one minus the win rate | Two rates, one total
-SLIDE Expectancy step 2 | Multiply win rate by average win; Multiply loss rate by average loss | Keep the wins and losses separate
-SLIDE Expectancy step 3 | Subtract the losing part from the winning part; The result is the average per trade | Negative means losing over time
+SLIDE Step 1: Count every trade | Include the losing trades; Note the dates and the market; Do not drop a bad month | Honest counting
+SLIDE Step 2: Calculate expectancy | Win rate times average win; Minus loss rate times average loss; Loss rate is one minus win rate | The result per trade
+SLIDE Step 3: Subtract the costs | Take off spread, commission and slippage; Judge only what remains | Costs come first
 :::
 
-## 4. How sensitive is the result?
+## Worked example: Lucia's demo record
 
-Expectancy is sensitive to its inputs. In the example, if the win rate fell from 40 percent to 30 percent, the expectancy would be 0.3 times 300, minus 0.7 times 100, which is 90 minus 70, or 20 units per trade. A smaller fall, to 25 percent, would bring it to zero. Changes that look small can change the result a great deal.
+Lucia records her last 20 trades on a demo account. Seven were winners, so her win rate is 35 percent. Her average win is 200 USD and her average loss is 100 USD. Her expectancy is 0.35 times 200, which is 70, minus 0.65 times 100, which is 65. The result is 5 USD per trade. Her reward-to-risk ratio is 2, so the break-even win rate is about 33 percent, and she is just above it. Next she subtracts her average cost of 4 USD per trade. Her expectancy after costs is 1 USD per trade. That is too small to trust from 20 trades, so she keeps the record running and reviews it after more trades, rather than scaling up.
 
-This is why a good plan is tested under less favourable assumptions. Ask what happens if the win rate is lower, the average loss is higher, or costs and slippage take a share of each trade. If the plan only works under the best assumptions, it is fragile.
-
-::: case | The good run
-Tomas tests a plan on a demo account for two weeks. It wins six trades in a row and he concludes that the plan is reliable. He suggests trading it with a much larger size on his live account.
-? What is the most important thing Tomas should do before increasing size?
-- Increase the size, because six wins in a row is strong evidence || Six trades is a very small sample. A short run can look good by chance.
-* Record many more trades, measure the win rate and average win and loss, and test the plan under worse assumptions before changing size || A meaningful sample and a stress test are needed before any size change.
-- Stop trading the plan because it has worked too well || A good run is not a reason to stop. It is simply not enough evidence to change size.
-:::
-
-## 5. Using the numbers honestly
-
-Measure your own results over many trades rather than relying on a published example. Record every trade, including the ones you would rather forget. Calculate your own win rate, average win, average loss and expectancy. Adjust the plan only when the evidence is clear and large enough, and never because of one streak.
-
-::: tip | Warning
-Numbers in a sales page, a video or a social media post are often selected to look good. Ask for the full record, the number of trades and the costs before you believe any claim about a plan.
+::: case | Scaling up too soon
+Lucia's record shows an expectancy of 5 USD per trade before costs. A friend tells her to double her position size, because the method is working.
+? What should Lucia do first?
+- Double the size now, because a positive result means the method is profitable || A positive average before costs can disappear after costs, and 20 trades is a small sample.
+* Subtract all costs from the expectancy, and keep recording until the sample is large enough to judge the method || Costs and sample size are the two checks that decide whether the edge is real.
+- Stop recording, because a small sample says nothing useful || A small sample says little on its own, but the record is how she learns more. Stopping removes that learning.
 :::
 
 ::: quiz
-? A trade risks 50 units to make 100 units. What is the risk-reward ratio?
-- 2 to 1, because the gain is twice the loss || That is the reverse. The ratio compares the risk with the reward.
-* 1 to 2, because one unit of risk is set against two units of possible gain || The risk comes first, so the ratio is 1 to 2.
-- 1 to 1, because the distances are both 50 || The possible gain is 100, not 50.
+? A method has a reward-to-risk ratio of 3. What is its break-even win rate?
+- 75 percent, which is three quarters of trades || That answer uses the ratio as a percentage. Use 1 divided by (1 plus R) instead.
+* 25 percent, because 1 divided by (1 plus 3) is 0.25 || With R equal to 3, the method breaks even when one trade in four is a win, before costs.
+- 33 percent, because every ratio of 3 breaks even at one third || One third is the break-even for a ratio of 2. Recalculate with R equal to 3.
 :::
 
-::: quiz
-? A plan has a win rate of 30 percent, an average win of 200 and an average loss of 100. What is the expectancy per trade?
-- 60 units, because 30 percent of 200 is 60 || That ignores the losing trades. Subtract the losing part.
-* -10 units, because 0.3 times 200 is 60, minus 0.7 times 100 is 70 || Expectancy is the winning part minus the losing part. Here the plan loses 10 units on average.
-- 130 units, because 200 minus 70 is 130 || The loss rate is 70 percent, so the losing part is 0.7 times 100, not 70 absolute.
-:::
+## Tool: expectancy worksheet
+
+- Number of trades in the record, and the period they cover
+- Win rate: winning trades divided by all trades
+- Average win and average loss, in cash
+- Reward-to-risk: average win divided by average loss
+- Expectancy: win rate times average win, minus loss rate times average loss
+- Expectancy after costs, and whether the sample is large enough to trust
+
+## Common mistakes
+
+- Judging a method only by its win rate.
+- Ignoring the average loss when the wins look attractive.
+- Forgetting costs, and assuming a small positive expectancy is real profit.
+- Drawing conclusions from a handful of trades.
 
 ## Self-check
 
-1. What does a risk-reward ratio describe? (Answer: the shape of a trade, comparing possible loss with possible gain, not whether the trade will work.)
-2. Why is a high win rate not enough to show a plan is profitable? (Answer: the size of wins and losses matters too, so a high win rate with small wins and large losses can lose money.)
-3. Why is a small sample dangerous when judging a plan? (Answer: a short run can look good or bad by chance, so it does not show the true result.)
+1. What is expectancy? (Answer: the average expected result per trade, from wins and losses weighted by how often each occurs.)
+2. A method has a reward-to-risk ratio of 1. What is its break-even win rate? (Answer: 50 percent, because 1 divided by (1 plus 1) is 0.5.)
+3. Why is a positive expectancy before costs not enough? (Answer: costs are paid on every trade, and they can reduce or remove a small positive expectancy.)
 
 ## Practical assignment
 
-Take the last twenty trades you made, or a demo log of twenty trades. Count the wins and losses, calculate your win rate, average win, average loss and expectancy. If you have fewer than twenty trades, record the figures and note that the sample is too small to judge.
+Take your last 20 trades from a demo account or from a trading journal you already keep. Calculate the win rate, the average win, the average loss, the reward-to-risk ratio and the expectancy. Subtract your average cost per trade, then write one sentence on whether the method deserves more testing.
 
 ## Summary
 
-- The risk-reward ratio describes a trade's shape, while expectancy combines win rate with the size of wins and losses.
-- Small changes in win rate or average loss can change expectancy a lot, so test a plan under worse assumptions.
-- Judge a plan by your own records over many trades, and treat good short runs and published claims with caution.
+- Win rate and reward-to-risk must be read together, and expectancy combines them into an average result per trade.
+- The break-even win rate for a reward-to-risk ratio R is 1 divided by (1 plus R).
+- Subtract costs and keep a large enough record before judging a method.
 
 === 20
-SLIDE What drawdown measures | A drawdown is the fall from a peak to a later low; It is shown as a percentage of the peak; It describes the account, not one trade | Measure the account
-SLIDE Recovery | A 20 percent drawdown needs a 25 percent gain; Deeper drawdowns need much larger gains; Recovery takes time and luck | Protect the peak
-SLIDE Drawdown limit | Set the limit in advance; Choose a level you would keep to after a bad week; Review the plan when it is reached | The limit is yours to choose
-SLIDE Trading during drawdown | Reducing size is a common response; Do not increase size to recover; Pause if the plan is no longer clear | Smaller size, clearer mind
-SLIDE Psychology | Losses trigger fear or greed; Recovery trading is a common mistake; Write the rule before the loss | Prepare before the pressure
-SLIDE Review | Look at the cause of the drawdown; Separate bad luck from a broken plan; Change only with evidence | Diagnose before acting
+SLIDE What a drawdown is | A drawdown is the fall from a peak to a later low; It is measured as a percentage of the peak | Measure from the peak
+SLIDE Recovery is harder | A loss of 20 percent needs a gain of 25 percent; A loss of 50 percent needs a gain of 100 percent | Losses work against you
+SLIDE Recovery table | 10 percent needs 11.1 percent; 20 percent needs 25; 30 percent needs 42.9; 50 percent needs 100 | Use the table in your plan
+SLIDE Loss limits | Set a daily limit in cash; Set a weekly limit; Set a maximum drawdown that pauses trading | Limits are written in advance
+SLIDE Stop when a limit is hit | Stop new trades when a limit is reached; Review the record before the next session; Do not trade to win it back | The limit ends the day
+SLIDE Review after a breach | Record what happened; Check whether the rule was followed; Change the rule only with evidence | Review, do not react
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- calculate a drawdown as a percentage of a peak balance;
-- calculate the gain needed to recover from a given drawdown;
-- set a drawdown limit in advance and state what happens when it is reached;
-- explain why increasing size during a drawdown is one of the most damaging habits in trading.
+- calculate a drawdown as a percentage of peak equity;
+- calculate the gain needed to recover from a loss;
+- set daily, weekly and maximum drawdown limits in advance;
+- explain why trading to win back a loss usually increases the damage.
 
 ## Key terms
 
 ::: terms
-Peak: the highest value an account has reached so far
-Trough: the lowest value an account reaches after a peak, before it recovers
-Drawdown: the percentage fall from a peak to a later trough
-Drawdown limit: a level, set in advance, at which trading stops for review
-Recovery trading: taking larger or riskier trades to win back losses quickly
-Losing streak: a run of consecutive losing trades, which can occur even with a sound plan
+Drawdown: the fall in equity from a peak to a later low, as a percentage of the peak
+Peak equity: the highest account value reached before a fall
+Recovery gain: the percentage gain needed to return to a previous peak after a loss
+Loss limit: a cash or percentage loss at which trading stops for a set period
+Maximum drawdown: the largest fall you accept before you pause and review the plan
+Revenge trading: trading to win back a loss, often with larger size and less care
 :::
 
-## 1. Measuring the fall from a peak
+## 1. Measure drawdown from the peak
 
-A drawdown measures how far an account has fallen from its highest value. It is calculated as the difference between the peak and the trough, divided by the peak, and shown as a percentage. If an account peaks at 1,000 units and falls to 800, the drawdown is 200 divided by 1,000, which is 20 percent.
+Drawdown is measured from a peak, not from your starting balance. If your account rises to 10,000 USD and then falls to 8,000 USD, the drawdown is 2,000 USD, which is 20 percent of the peak. The figure matters because it shows how far you are from your best result, and it is the figure your plan should watch. Record the peak each time it is reached, and calculate the drawdown from that record.
 
-Drawdown describes the account over time. A single trade can produce a loss, but the drawdown captures the cumulative effect of several losses and any gains in between. It is one of the most useful measures of how a plan is performing, because it shows how much pain the plan has caused.
+## 2. Recovery arithmetic
 
-::: diagram steps | Calculating a drawdown
-Peak: the highest account value so far, for example 1,000 units
-Trough: the lowest value after that peak, for example 800 units
-Difference: peak minus trough, here 200 units
-Drawdown: difference divided by peak, here 20 percent
+Losses are harder to recover than they look, because each percentage loss is taken from a smaller balance. To recover from a loss of L, the gain needed is L divided by (1 minus L). A loss of 10 percent needs a gain of 11.1 percent. A loss of 20 percent needs 25 percent. A loss of 30 percent needs 42.9 percent. A loss of 50 percent needs 100 percent, which means doubling what remains. Use this table in your plan, so the cost of a large loss is clear before you take one.
+
+::: quiz
+? An account falls from 10,000 USD to 8,000 USD. What is the drawdown, and what gain recovers it?
+- 2,000 USD drawdown, recovered by a 2,000 USD gain || The drawdown is a percentage of peak, and the recovery is a percentage of the smaller balance.
+* 20 percent drawdown, recovered by a 25 percent gain on the 8,000 USD balance || The 20 percent drawdown is from the peak, and a 25 percent gain on 8,000 gives back 10,000.
+- 20 percent drawdown, recovered by a 20 percent gain || A 20 percent gain on 8,000 gives 9,600, which is still below the peak.
 :::
 
-## 2. The recovery arithmetic again
-
-Recovery from a drawdown is harder than the drawdown itself. In the example, the account must gain 200 units from 800 to get back to 1,000. That is a gain of 25 percent of the lower balance. Deeper drawdowns need much larger gains. A drawdown of 40 percent needs a gain of about 66.7 percent. A drawdown of 50 percent needs a gain of 100 percent.
-
-This is the reason to protect the peak. Each point of drawdown you avoid makes recovery easier, and the most effective way to avoid a deep drawdown is to limit the size of each loss from the start.
-
-## 3. Setting a drawdown limit in advance
-
-A drawdown limit is a level at which you stop trading and review your plan. For example, you may decide that if the account falls by a set percentage from its peak, you will stop trading for a period, review your records, and reduce your size before resuming. The level is yours to choose. It should be one you would keep to even after a bad week, because the limit is most useful exactly when you feel most inclined to ignore it.
-
-Write the limit into your plan, with what you will do when it is reached. A limit without an action is only a wish.
+::: diagram steps | Using a drawdown limit
+Measure: calculate the drawdown from the peak equity
+Compare: check the figure against the written limit
+Pause: stop new trades when the limit is reached
+Review: record the cause, and decide the next step by the plan
+:::
 
 ::: slides
-SLIDE Limit step 1 | Choose a drawdown level you can accept; Write it in your plan | Set it before losing
-SLIDE Limit step 2 | Decide what happens when it is reached; Stop, review and reduce size | Make the action concrete
-SLIDE Limit step 3 | Keep the limit even after a bad week; Review the limit only in calm conditions | Calm sets the rule
+SLIDE Step 1: Find the peak | Use the highest equity recorded; Update it when a new peak is reached | The peak comes from your record
+SLIDE Step 2: Calculate the fall | Peak minus current equity; Divide by the peak | Drawdown is a percentage
+SLIDE Step 3: Compare with the limit | Is the drawdown above the maximum; If yes, pause and review | The limit decides the action
 :::
 
-## 4. Trading during a drawdown
+## 3. Set loss limits in advance
 
-During a drawdown, many traders are tempted to increase their size to recover faster. This is one of the most damaging habits in trading. A larger size increases the accepted loss on each trade, so a further losing streak does much more harm. It turns a manageable drawdown into a serious one.
+Set three limits before you trade: a daily cash loss limit, a weekly limit, and a maximum drawdown that pauses trading. Write them in cash and as percentages of the equity on the day they are set. When a limit is reached, you stop placing new trades for that period. The limit protects you from the moments when a losing trader wants to take larger risks to get back to even.
 
-The better response is usually to reduce size, follow the plan exactly, and pause if the plan no longer seems clear. Trading smaller gives you time to see whether the plan is working, and it protects the capital you need to continue at all.
+## Worked example: Noémia's month
 
-::: case | The double-up
-Ruth is down 30 percent from her peak after a losing month. She has a plan that risks 2 percent per trade. Frustrated, she decides to risk 8 percent on the next few trades to recover quickly.
-? What is the most serious problem with Ruth's decision?
-- The decision is sound, because larger trades recover losses faster || Larger trades increase the loss on every losing trade, which can deepen the drawdown quickly.
-* It replaces the plan with recovery trading, which raises the loss on each trade and can turn a drawdown into a severe one || The plan's protection is removed exactly when it matters most. Recovery trading is a common route to a large loss.
-- Ruth should trade more often rather than larger || More trades also increase the loss if the plan is not working. Frequency is not the fix.
-:::
+Noémia trades from Huambo with a USD account of 6,000 at the start of the month. Her plan sets a daily loss limit of 2 percent, which is 120 USD, a weekly limit of 3 percent, which is 180 USD, and a maximum drawdown of 10 percent from the monthly peak. On Monday she loses 120 USD on her first two trades, which reaches her daily limit. She stops and writes down what happened. On Tuesday she wins 90 USD. By Wednesday her week-to-date result is minus 90 USD, which is 1.5 percent and inside her weekly limit. Her drawdown from the monthly peak of 6,000 is also 90 USD, or 1.5 percent, so she continues with the same size. Had her equity fallen 600 USD from the peak, her drawdown would have reached 10 percent. The plan would then require a pause and a review, not a larger trade to recover.
 
-## 5. Psychology under pressure
-
-Losses trigger strong emotions, mainly fear and greed. Fear can make a trader hesitate on a valid trade or close a winner too soon. Greed can make them chase a move or enlarge a position. Both are predictable, which means they can be prepared for. Write your rule before the loss, not during it, and keep the rule visible.
-
-It also helps to remember that losing streaks can happen to a sound plan. The number of losing trades in a row is partly a matter of chance. A plan that is well tested can still have a bad month, and the right response is to check the process, not to abandon it or to chase the loss.
-
-## 6. Diagnosing the cause
-
-When a drawdown happens, review the cause before you change anything. Separate bad luck from a broken plan. Bad luck means the plan was followed and the market went against it, which can happen even with a good plan. A broken plan means rules were broken, stops were moved, size was increased or trades were taken outside the plan. Only the second calls for a change in the plan. The first calls for patience and a check that the plan is still reasonable.
-
-::: tip | Practical tip
-Write a short note after every drawdown: the peak, the trough, the cause, the rules that were broken, if any, and the one change you will make. Read the note before you trade again.
+::: case | Win it back
+Noémia has lost 300 USD over two weeks, which puts her 5 percent below her peak. She feels she must win the money back this week, and she is considering doubling her risk per trade for the next few sessions.
+? What should Noémia do?
+- Double the risk per trade, because a bigger size will recover the loss faster || Doubling the risk doubles the loss if the trades fail, and it pushes the drawdown towards the maximum.
+* Keep her risk per trade and her limits as written, and review the record before deciding anything new || The plan was designed for this moment. Recovery needs a steady process, and the review shows whether the method or her execution needs changing.
+- Trade the most volatile instrument, so the gain comes quickly || Volatility increases risk, and it does not address the reason for the losses.
 :::
 
 ::: quiz
-? An account falls from 2,000 units to 1,500 units. What is the drawdown?
-- 500 percent, because 500 is the difference || The drawdown is a percentage of the peak, not the difference itself.
-* 25 percent, because the fall of 500 is 25 percent of the peak of 2,000 || Difference divided by peak gives 500 divided by 2,000, which is 25 percent.
-- 33 percent, because 500 divided by 1,500 is one third || The percentage is calculated from the peak, not from the trough.
+? What is revenge trading?
+- Trading a strategy that has worked well in the past || That describes a repeated method, not revenge trading.
+* Trading to win back a loss, often with larger size and less care than the plan allows || Revenge trading breaks the plan at the moment when discipline matters most.
+- Closing all positions at the end of each day || Closing positions at the end of the day is a separate practice, not revenge trading.
 :::
 
-::: quiz
-? A trader has a drawdown limit of 20 percent and reaches it. What should she do?
-- Increase her size to recover before anyone notices || Increasing size is the most damaging response to a drawdown.
-* Stop trading as the plan says, review the records and reduce size before resuming || The limit exists to trigger a review and a smaller size, which protects the capital.
-- Ignore the limit, because drawdowns always recover || Drawdowns do not always recover, and the limit exists for that reason.
-:::
+## Tool: loss limit card
+
+- Daily loss limit: cash amount and percentage of equity on the day
+- Weekly loss limit: cash amount and percentage of equity at the start of the week
+- Maximum drawdown: percentage from the peak, and the action it triggers
+- Recovery table: the gain needed for each level of loss
+- Review rule: what I do after any limit is reached
+
+## Common mistakes
+
+- Setting limits after a bad day, when the numbers feel arbitrary.
+- Measuring drawdown from the starting balance rather than the peak.
+- Increasing size to recover a loss instead of following the plan.
+- Ignoring the recovery arithmetic until a large loss has already happened.
 
 ## Self-check
 
-1. How is a drawdown calculated? (Answer: the difference between the peak and the trough, divided by the peak, shown as a percentage.)
-2. Why is a 50 percent drawdown so serious? (Answer: it needs a 100 percent gain to recover, which is far harder than the loss itself.)
-3. What should a trader do when a drawdown limit is reached? (Answer: stop trading as planned, review the records and reduce size before resuming.)
+1. An account falls from a peak of 5,000 USD to 4,000 USD. What is the drawdown in percent? (Answer: 20 percent, because 1,000 divided by 5,000 is 0.2.)
+2. How much gain is needed to recover a 30 percent loss? (Answer: about 42.9 percent, because 0.3 divided by 0.7 is 0.429.)
+3. Why should loss limits be written before a bad day? (Answer: after a loss the limit feels arbitrary, which tempts a trader to change it when discipline matters most.)
 
 ## Practical assignment
 
-Write your drawdown limit, the action you will take when it is reached, and the size you will trade at during recovery. Show it to someone you trust and ask them to hold you to it. Review it at the end of the month.
+Write your daily, weekly and maximum drawdown limits in cash and as percentages of equity. Then produce a recovery table showing the gain needed for losses of 5, 10, 20 and 30 percent. Save it next to your trading plan, and use it in your next review.
 
 ## Summary
 
-- A drawdown is the percentage fall from a peak to a later trough, and deeper drawdowns need much larger gains to recover.
-- Set a drawdown limit in advance, with a clear action when it is reached, and do not increase size to recover.
-- Diagnose the cause of a drawdown before changing the plan, and distinguish bad luck from broken rules.
+- Drawdown is measured from peak equity, and the gain needed to recover rises faster than the loss.
+- Daily, weekly and maximum drawdown limits must be written before trading and followed when reached.
+- Increasing size to win back a loss breaks the plan, and a review is the correct response.
 
 === 20
-SLIDE Rules before trades | Write entry, exit, size and loss rules; Keep them short enough to use; Keep them visible | A plan you can read in a minute
-SLIDE The checklist | Confirm the reason and the invalidation point; Confirm the size from the formula; Confirm the stop is placed | Check before every trade
-SLIDE Journal | Record the reason, the entry, the exit and the rule followed; Note any broken rule honestly; Review weekly | Records beat memory
-SLIDE Revenge trading | Trading to win back a loss; Often larger and faster than planned; Stop for the day when it starts | Stop when emotion starts
-SLIDE Overtrading | Too many trades beyond the plan; Often from boredom or excitement; Set a maximum number of trades | Fewer trades, clearer decisions
-SLIDE Loss limits | Set a daily loss limit in advance; Set a weekly loss limit too; Stop trading when either is reached | Limits protect the next day
+SLIDE What leverage does | Leverage lets a position be larger than your own money; It magnifies gains and losses equally | Leverage scales both sides
+SLIDE Leverage ratio | Position value divided by account equity; A 10,000 USD position on 1,000 USD equity is 10 times | Calculate it before entry
+SLIDE Margin and margin calls | Margin is the deposit a broker requires; A margin call asks for more funds or closes positions | Know your broker's rules
+SLIDE Adverse move on leverage | A 10 percent move on a 10 times position costs the full equity; Small moves can be large losses | Size the exposure
+SLIDE The written risk plan | Include per-trade risk, limits, a leverage cap and instruments; Review it each month | One page, kept current
+SLIDE Plan review | Check the record against the plan; Change the plan only with evidence; Date and sign each change | Changes are recorded
 BODY
 ## Learning objectives
 
 By the end of this lesson you will be able to:
 
-- write a short trading plan that states entry, exit, size and loss rules;
-- use a pre-trade checklist and a trading journal to keep the plan in use;
-- explain revenge trading and overtrading and how loss limits prevent them;
-- set a daily and a weekly loss limit and state what happens when each is reached.
+- calculate the leverage ratio of a position from its value and the account equity;
+- explain how margin and margin calls can force a loss;
+- set a leverage cap and write it into a risk plan;
+- write a one-page risk plan covering per-trade risk, loss limits and review.
 
 ## Key terms
 
 ::: terms
-Trading plan: a written set of rules for when to enter, exit, size and stop trading
-Checklist: a short list of checks completed before each trade
-Trading journal: a record of each trade, the reason for it, the rules followed and the result
-Daily loss limit: the most you have decided, in advance, to lose in one trading day
-Weekly loss limit: the most you have decided, in advance, to lose in one trading week
-Discipline: following the written plan even when a trade feels strongly one way or the other
+Leverage: borrowed exposure that lets a position be larger than the account's own money
+Leverage ratio: position value divided by account equity
+Margin: the deposit a broker requires to open and keep a leveraged position
+Margin call: a broker request for more funds, or the closing of positions, when equity falls below the required level
+Equity: the value of the account, including open profit or loss
+Risk plan: a written document that sets risk, limits, leverage and review rules before trading
 :::
 
-## 1. A plan you can actually use
+## 1. How leverage magnifies the result
 
-A trading plan is only useful if you read it and follow it. A plan that runs to pages will not be used under pressure. Keep yours short. It should state when you enter, when you exit, how much you risk, and when you stop trading for the day or the week. If a rule needs a long explanation, simplify it until it fits on one page.
+Leverage allows a trader to control a position larger than the money in the account. Gains and losses are calculated on the full position, not on the deposit. The leverage ratio is the position value divided by the account equity. If a trader has 1,000 USD and controls a 10,000 USD position, the ratio is 10 times. A 1 percent move in price produces a 100 USD gain or loss, which is 10 percent of the account. Leverage does not change the direction of the trade. It changes how much each move matters.
 
-Keep the plan visible while you trade. Many traders print it, pin it near their screen or save it as the first item in their trading software. The aim is for the rules to be the first thing you see when you open the platform.
+## 2. Margin and margin calls
 
-::: diagram steps | The four rules of a plan
-Entry: the conditions that must be met before any trade
-Exit: the stop, the target and the rule for taking profit
-Size: the formula that sets the number of units from the accepted loss
-Stop trading: the daily and weekly loss limits and the rule for overtrading
+Margin is the deposit the broker requires to keep a leveraged position open. Each broker sets its own requirement, and it can change, especially in volatile markets. If equity falls below the required level, the broker may issue a margin call, asking for more funds, or it may close positions without asking. A margin call can force a loss at the worst moment, because the position is closed after the price has already moved against you. Read your broker's margin rules in writing before using any leverage, and keep an equity buffer above the level that triggers a call.
+
+::: quiz
+? A trader's account equity is 1,000 USD, and she holds a 10,000 USD position. Price falls 10 percent. What happens to the account?
+- She loses 100 USD, which is 10 percent of the account || The 10 percent applies to the position, not to the account. The loss on 10,000 USD is 1,000 USD.
+* She loses 1,000 USD, which is the whole account equity, before any margin rule acts || A 10 percent move on a 10,000 USD position is a 1,000 USD loss, which equals the account equity.
+- She loses nothing, because leverage protects the deposit || Leverage magnifies losses. It does not protect the deposit.
 :::
 
-## 2. The pre-trade checklist
+## 3. Set a leverage cap in your plan
 
-A checklist is a short set of questions completed before every trade. It catches mistakes that a tired or excited mind would miss. A good checklist asks whether the reason for the trade is written, whether the invalidation point is set, whether the size comes from the formula, whether the stop is placed as an order, and whether the trade fits the plan. If any answer is no, the trade does not happen.
-
-The checklist works because it turns a feeling into a series of checks. It takes less than a minute, and it is one of the most effective habits a trader can build.
+A leverage cap is a maximum ratio you will not exceed, written into your risk plan. It works together with the risk budget from lesson 2. Because the stop distance decides the size, a position can carry a small risk and still use high leverage. A cap of a small multiple of equity keeps the exposure manageable even when the stop is close. Choose the cap before you trade, and check it on every trade with the leverage ratio.
 
 ::: slides
-SLIDE Checklist 1 | Is the reason written in one sentence?; Is the invalidation point specific? | Reason first
-SLIDE Checklist 2 | Is the size from the formula?; Is the stop placed as an order? | Size and stop
-SLIDE Checklist 3 | Does the trade fit the plan?; Is the daily loss limit still unused? | Fit and limits
+SLIDE Step 1: Calculate the ratio | Position value divided by account equity; Do it before every entry | Ratio first
+SLIDE Step 2: Compare with the cap | Is the ratio above the written cap; If yes, reduce the size | The cap is a ceiling
+SLIDE Step 3: Check the margin buffer | Read the broker's rules in writing; Keep equity above the margin level with room to spare | Know the level
 :::
 
-## 3. The trading journal
+## Worked example: Joana's leveraged trade in Benguela
 
-A journal records every trade: the reason, the entry, the exit, the size, the rule followed and the result. Write the entry before the trade and complete the record afterwards. Note honestly whether you followed the plan. If you broke a rule, write which rule and why. The journal is your most reliable teacher, because memory tends to remember the wins and forget the mistakes.
+Joana trades from Benguela with 2,000 USD in her account. She is tempted by a 12,000 USD position, which would be six times leverage. Her plan caps leverage at three times, so she calculates the cap: three times 2,000 is 6,000 USD of maximum position value. She reduces the position to 6,000 USD. Two weeks later, a market she holds falls 8 percent in one session. On the full 12,000 USD position the loss would have been 960 USD, or 48 percent of her starting equity, and a margin call would be likely. On her capped 6,000 USD position the loss is 480 USD, or 24 percent. She keeps most of her equity to trade again. The cap did not prevent the loss, but it kept the loss within what she had planned to accept.
 
-Review the journal weekly. Look for patterns in when you break rules, which setups work and which do not, and where your emotions take over. Change the plan only when the evidence is clear, not because of one good or bad week.
-
-## 4. Revenge trading
-
-Revenge trading means placing trades to win back a recent loss. It usually comes soon after a loss, and it tends to produce larger, faster and less considered trades than the plan allows. It feels like taking control, but it is usually the opposite: the trader is reacting to the loss rather than following a rule.
-
-The best defence is a rule that stops trading for the day when a loss limit is reached, and a rule that says you may not trade again until you have written a short note on the last trade. If you notice the urge to trade to win back money, stop for the day. The market will still be there tomorrow.
-
-::: case | The afternoon session
-Kwame lost his daily limit in the morning. In the afternoon he feels he can win it back and places three trades, each larger than his plan allows. By the end of the day his loss is three times the daily limit.
-? What should Kwame have done?
-- Trade the afternoon with smaller size, to reduce the risk of the revenge trades || Smaller size is better than larger size, but the rule was to stop once the daily limit was reached.
-* Stop trading once the daily loss limit was reached, and write a note on the morning trades before any further decision || The daily loss limit exists to stop trading when emotion is highest. A note creates a pause before the next decision.
-- Trade the afternoon with the same size, because the morning was simply bad luck || Luck may have caused the morning loss, but the afternoon trades broke the plan and multiplied the damage.
+::: case | The margin warning
+Samuel holds a leveraged position. His broker warns that his equity is close to the margin level. He believes the price will recover tomorrow, and he considers adding funds to keep the trade open rather than closing it.
+? What should Samuel do first?
+- Add funds quickly to avoid a margin call, because the price will recover || Adding money to protect a losing position increases the amount at risk, and it is not part of a plan.
+* Check the plan, and decide whether to reduce or close the position under the written limits before choosing to add funds || The plan decides the action. Reducing the exposure is often the disciplined response.
+- Open a second leveraged position to offset the first || A second position adds exposure and risk, and it does not solve the margin problem.
 :::
 
-## 5. Overtrading
-
-Overtrading means placing more trades than the plan supports. It often comes from boredom, from the wish to be active, or from the excitement of a fast market. Each extra trade adds costs, adds decisions made under less than ideal conditions and increases the chance of error. Set a maximum number of trades per day or per week in your plan, and treat any trade beyond it as a plan break.
-
-Fewer trades usually mean clearer decisions and lower costs. A quiet day with no trades is a successful day if the plan says so.
-
-## 6. Daily and weekly loss limits
-
-A daily loss limit is the most you have decided, in advance, to lose in one day. When it is reached, you stop trading for that day. A weekly loss limit does the same over a week. Both limits protect the next session from the damage of a bad one. They are most useful when they are set in calm conditions and treated as final once reached.
-
-Write both limits in your plan, and check them before the first trade of each day. If you find yourself wanting to raise a limit after reaching it, that is the moment to stop, not to continue.
-
-::: tip | Practical tip
-Set your daily and weekly loss limits as a percentage of your account, not as a fixed amount, so they shrink as the account shrinks. Review them monthly, not after each trade.
+::: diagram steps | Writing your one-page risk plan
+Risk per trade: the percentage of equity you accept losing on one trade
+Loss limits: daily, weekly and maximum drawdown, in cash and percent
+Leverage cap: the highest ratio of position value to equity
+Review: the date, the reviewer and the rule for any change
 :::
 
 ::: quiz
-? A trader has reached his daily loss limit and wants to place one more trade to win the money back. What does the plan say?
-- Place one small trade, because one trade will not hurt || The plan says to stop when the limit is reached. A small trade is still a break from the plan.
-* Stop trading for the day, because the daily limit is final once reached || The limit protects the next session and exists to stop trading when emotion is highest.
-- Place one trade with twice the usual size, to recover faster || Larger size is revenge trading and breaks the plan more seriously.
+? Which item belongs in a written risk plan?
+- A list of tips from social media posts || Social media tips are not a risk plan. The plan should contain your own rules.
+* The per-trade risk percentage, loss limits, a leverage cap and a review schedule || These rules set the limits you must keep, and the review keeps them current.
+- The broker's advertised return || Advertised returns are not risk rules, and they often hide the risk.
 :::
 
-::: quiz
-? Which description best matches overtrading?
-- Trading in a single market only || That describes focus, not overtrading.
-* Placing more trades than the plan supports, often from boredom or excitement || Overtrading is about the number of trades beyond the plan's limit.
-- Using a stop order on every trade || A stop order is a risk tool, not a sign of overtrading.
-:::
+## Tool: one-page risk plan
+
+- Account equity, and the date it was measured
+- Risk per trade, in percent and in cash
+- Total open-risk limit and the maximum number of open positions
+- Daily, weekly and maximum drawdown limits, with the action each one triggers
+- Leverage cap, and the margin rules of my broker, written down
+- Review date, and the person or record that checks it
+
+## Common mistakes
+
+- Using leverage without calculating the leverage ratio on each trade.
+- Treating margin rules as optional, or learning them only after a margin call.
+- Adding funds to a losing leveraged position without checking the plan.
+- Writing a risk plan once and never updating it after a change in equity or broker rules.
 
 ## Self-check
 
-1. What are the four main rules a trading plan should state? (Answer: entry, exit, size and when to stop trading.)
-2. What does a pre-trade checklist catch that a trader might otherwise miss? (Answer: mistakes made in a hurry or under emotion, such as missing an invalidation point or sizing by feel.)
-3. Why should a daily loss limit be final once reached? (Answer: because the limit exists to stop trading when emotion is highest, and reviving it after a loss is the start of revenge trading.)
+1. What is the leverage ratio of a 6,000 USD position on 2,000 USD of equity? (Answer: 3 times, because 6,000 divided by 2,000 is 3.)
+2. Why is a margin call dangerous? (Answer: it can close positions at the worst moment, after the price has already moved against you.)
+3. Name two items a written risk plan must include. (Answer: for example, the per-trade risk percentage and the loss limits, or the leverage cap and the review schedule.)
 
 ## Practical assignment
 
-Write your full trading plan on one page. Include the four rules, the checklist, your daily and weekly loss limits as percentages, and your maximum number of trades per day. Print it, sign and date it, and use it on a demo account for two weeks. Record each trade in a journal and review it at the end of the two weeks.
+Write a one-page risk plan using the tool in this lesson. Calculate the leverage ratio of your largest planned position, and check it against your cap. Read your broker's margin rules and copy the key numbers into the plan. Set a review date one month ahead, and put it in your calendar.
 
 ## Summary
 
-- A short written plan with entry, exit, size and stop-trading rules is the foundation of discipline.
-- A pre-trade checklist and a journal keep the plan in use and show where rules are being broken.
-- Revenge trading and overtrading are prevented by daily and weekly loss limits and a maximum number of trades.
+- Leverage magnifies gains and losses on the full position, so the leverage ratio must be calculated before each trade.
+- Margin calls can close positions at the worst moment, so the broker's rules must be read and kept in mind.
+- A one-page risk plan, with per-trade risk, loss limits, a leverage cap and a review date, keeps the course rules in one place.

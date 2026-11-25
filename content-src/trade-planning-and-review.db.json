@@ -1,0 +1,474 @@
+{
+  "slug": "trade-planning-and-review",
+  "title": "Trade Planning and Review",
+  "category": "Trading & Markets",
+  "summary": "Plan, record and review each trade, judging process and result apart. Education only, not advice.",
+  "skills": [
+    "Trade planning",
+    "Reward to risk",
+    "Trade journaling",
+    "Process review",
+    "Performance metrics",
+    "Change control"
+  ],
+  "modules": [
+    {
+      "title": "Writing the Thesis and the Trade Plan",
+      "subject": "Trade planning",
+      "learned": "Write a thesis with its invalidation and complete a one-page plan before an order is sent.",
+      "minutes": 20,
+      "skills": [
+        "Trade planning",
+        "Invalidation"
+      ],
+      "check": {
+        "q": "A trader writes that a chart looks strong and feels right. Why is this not a usable thesis?",
+        "options": [
+          "It names no evidence and no invalidation, so the trade cannot be tested",
+          "It is too short, so it should be longer",
+          "It is correct, because confidence is the key input",
+          "It should be written after the result instead"
+        ],
+        "a": 0,
+        "explanation": "A usable thesis names the evidence and the specific event that would prove it wrong, so the result can be judged."
+      }
+    },
+    {
+      "title": "Targets, R-Multiples and Partial Exits",
+      "subject": "Targets and results",
+      "learned": "Set a target by a written rule, express results in R, and explain the trade-off of a partial exit.",
+      "minutes": 20,
+      "skills": [
+        "Reward to risk",
+        "Partial exits"
+      ],
+      "check": {
+        "q": "A buy has an entry of 40.00, a stop at 39.00 and a target at 42.00. What is the reward-to-risk ratio?",
+        "options": [
+          "1.0",
+          "2.0",
+          "0.5",
+          "3.0"
+        ],
+        "a": 1,
+        "explanation": "The target is 2.00 from entry and the stop is 1.00 away, so the target distance divided by the stop distance is 2.0."
+      }
+    },
+    {
+      "title": "The Trade Journal",
+      "subject": "Journaling",
+      "learned": "List the core, decision and context fields of a trade journal, and keep feelings separate from facts.",
+      "minutes": 20,
+      "skills": [
+        "Trade journaling",
+        "Record keeping"
+      ],
+      "check": {
+        "q": "A trader keeps a journal but fills in the stop only after the trade closes, from memory. What is the main risk?",
+        "options": [
+          "Memory always records trades more accurately",
+          "The broker will refuse the record",
+          "The record can drift to match the outcome, so the review cannot judge the plan",
+          "It costs more time than a paper journal"
+        ],
+        "a": 2,
+        "explanation": "Facts recorded after the outcome tend to fit the result. Recording the plan before the trade keeps the review honest."
+      }
+    },
+    {
+      "title": "Process Versus Outcome in Review",
+      "subject": "Process review",
+      "learned": "Separate the quality of a decision from its result, classify trades, and avoid hindsight bias.",
+      "minutes": 20,
+      "skills": [
+        "Process review",
+        "Hindsight bias"
+      ],
+      "check": {
+        "q": "A trader followed her plan exactly and lost 1R. How should the review classify the trade?",
+        "options": [
+          "A poor process, because the trade lost money",
+          "A lucky trade, because a loss cannot be lucky",
+          "A reason to double the size next time",
+          "A good process with a normal loss, which does not on its own justify changing the plan"
+        ],
+        "a": 3,
+        "explanation": "The review judges the decision. A planned loss within normal variation does not, on its own, justify changing a sound plan."
+      }
+    },
+    {
+      "title": "Scoreboard: Adherence, Expectancy and Cost",
+      "subject": "Performance metrics",
+      "learned": "Calculate plan adherence and expectancy in R, read the spread of results, and recognise a sample that is too small.",
+      "minutes": 20,
+      "skills": [
+        "Performance metrics",
+        "Sample size"
+      ],
+      "check": {
+        "q": "A trader's plan adherence falls from 90 percent to 70 percent over a month, while results look good. What does this signal?",
+        "options": [
+          "A process problem to review, even though results look good",
+          "A certain loss in the next month",
+          "That the market has become unsuitable for trading",
+          "That the journal should be stopped"
+        ],
+        "a": 0,
+        "explanation": "A falling adherence rate is a process signal. A process that is often broken cannot be relied on to keep producing results."
+      }
+    },
+    {
+      "title": "Weekly and Monthly Review with a Change Log",
+      "subject": "Review and change control",
+      "learned": "Run a fixed weekly and monthly review, log every plan change with its evidence, and test changes on new trades.",
+      "minutes": 20,
+      "skills": [
+        "Change control",
+        "Review routine"
+      ],
+      "check": {
+        "q": "After a bad week, a trader wants to widen her stop at once. What is the right response under a change log?",
+        "options": [
+          "Widen the stop at once, because the bad week shows the plan is wrong",
+          "Log the concern, test the wider stop on new trades, and adopt it only if the sample supports it",
+          "Stop trading until she feels better about the plan",
+          "Delete the bad week from the journal"
+        ],
+        "a": 1,
+        "explanation": "A change after a bad week is suspect. A tested change, with the old version kept in the record, answers the concern without guessing."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "lesson": 1,
+      "q": "Why must a trade's invalidation be written before entry?",
+      "options": [
+        "So a bad trade can be told apart from one that is merely slow",
+        "Because brokers require it on every order",
+        "So the stop can be moved after entry",
+        "Because invalidation replaces the time horizon"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 1,
+      "q": "Which is the best example of a usable thesis?",
+      "options": [
+        "The chart looks strong and I feel confident",
+        "Price has held above a support area for three weeks, so buyers are defending it, and a close below the area proves it wrong",
+        "Everyone online is buying, so it should rise",
+        "The market will go up because it has gone down"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 1,
+      "q": "A trader's order is ready, but the target field is empty. What should happen next?",
+      "options": [
+        "Send the order and set the target later",
+        "Send the order and leave the target blank",
+        "Fill the target from the plan's rule, check the ratio, then send the order",
+        "Skip the trade because the target cannot be known"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 1,
+      "q": "Which check should be run before an order is sent?",
+      "options": [
+        "The broker's logo matches the brand",
+        "The idea has many followers online",
+        "The chart looks confident to the trader",
+        "The stop is on the losing side of entry and the cash risk fits the budget"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 1,
+      "q": "A trader fills in the thesis after the trade has closed. What is the main problem?",
+      "options": [
+        "The thesis now fits the result, so the decision cannot be judged fairly",
+        "Nothing, because the thesis is only a formality",
+        "It is better, because the result is already known",
+        "Brokers require plans to be written after the trade"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "A buy has an entry of 40.00, a stop at 39.00 and a target at 42.00. What is the reward-to-risk ratio?",
+      "options": [
+        "1.0",
+        "2.0",
+        "0.5",
+        "3.0"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 2,
+      "q": "What is one R?",
+      "options": [
+        "The total cash in the account",
+        "The commission paid on the trade",
+        "The cash risk on the trade, used as the unit for its result",
+        "The distance from entry to target"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 2,
+      "q": "A trade risks 100 USD and makes 250 USD. What is its result in R?",
+      "options": [
+        "Plus 250R",
+        "Plus 1.5R",
+        "Minus 2.5R",
+        "Plus 2.5R"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 2,
+      "q": "What is the main trade-off of a partial exit?",
+      "options": [
+        "It reduces the swing in results but also limits the size of a large win",
+        "It removes all risk from the trade",
+        "It guarantees the second target will be reached",
+        "It doubles the expected profit"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 2,
+      "q": "Why should a target be set before entry?",
+      "options": [
+        "Because the target predicts the exact top of the move",
+        "So the exit decision is made in advance, not under pressure",
+        "Because brokers require a target on every order",
+        "So the target can be moved after each good candle"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "What are the three groups of fields in a trade journal?",
+      "options": [
+        "Cash, tax and currency",
+        "Entry, exit and commission only",
+        "Core facts, decision fields and context fields",
+        "Feelings, rumours and forecasts"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 3,
+      "q": "Why should feelings be recorded in their own place?",
+      "options": [
+        "Because feelings are the most important field",
+        "Because brokers ban emotional notes",
+        "So the feeling can be used to choose the next entry",
+        "So they do not alter the facts of the trade and the numbers stay trustworthy"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 3,
+      "q": "A trader deletes losing trades from the journal to make it look better. What is the main problem?",
+      "options": [
+        "The record hides the process, so the review cannot find what went wrong",
+        "A cleaner record is always more useful",
+        "Deleting losers improves the average result",
+        "Losing trades do not need to be recorded"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 3,
+      "q": "What does a decision field show that a result field does not?",
+      "options": [
+        "The exact profit in cash",
+        "Whether the plan was followed, which can be judged apart from the outcome",
+        "The broker's commission",
+        "The market's direction for the next week"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 3,
+      "q": "Which entry belongs in the context fields?",
+      "options": [
+        "The final result in R",
+        "The exit price of the trade",
+        "The timeframe, and any scheduled release on the day of the trade",
+        "The trader's emotions in one line"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "Which group is the most dangerous for a trader's habits?",
+      "options": [
+        "A good process with a poor result",
+        "A poor process with a poor result",
+        "A good process with a good result",
+        "A poor process with a good result, because it reinforces a habit that later loses money"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 4,
+      "q": "A trader wins a trade that broke her volume rule. What should the review record?",
+      "options": [
+        "A lucky result, flagged, with the broken rule noted",
+        "A good trade to repeat",
+        "Proof that the volume rule is too strict",
+        "Nothing, because a win needs no review"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 4,
+      "q": "Which is the first question in a review?",
+      "options": [
+        "What was the final cash result?",
+        "Was the plan followed at entry and during the trade?",
+        "How did the trader feel?",
+        "What will the market do next week?"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 4,
+      "q": "Why judge an entry only with the information available at entry?",
+      "options": [
+        "Because later information is never relevant",
+        "Because the broker only records entry data",
+        "To avoid hindsight bias, which makes a decision look better or worse than it was",
+        "To make every review shorter"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 4,
+      "q": "In a trade review, what is process?",
+      "options": [
+        "The final cash result of the trade",
+        "The broker's execution speed alone",
+        "The number of trades taken in a month",
+        "The quality of the decisions taken, judged against the written plan"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "A trader took 30 trades in a month, and 22 followed the plan. What is her plan adherence?",
+      "options": [
+        "About 73 percent",
+        "22 percent",
+        "30 percent",
+        "8 percent"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 5,
+      "q": "A trade costs 0.1R and the expectancy before costs is 0.2R. What is the expectancy after costs?",
+      "options": [
+        "0.3R per trade",
+        "0.1R per trade",
+        "0.2R per trade",
+        "Minus 0.1R per trade"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 5,
+      "q": "Why read the spread of results, not only the average?",
+      "options": [
+        "The spread shows the broker's fees",
+        "An average is always misleading, so the spread replaces it",
+        "A few large losses can produce a poor result even when most trades are small winners",
+        "The spread is required by regulators"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 5,
+      "q": "What is the main sign of a sample that is too small to read?",
+      "options": [
+        "A positive average R for the month",
+        "More than one trade in a day",
+        "A plan adherence above 70 percent",
+        "A conclusion drawn from only a handful of trades, which may reflect chance"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 5,
+      "q": "A scoreboard shows a positive average R, and the trader wants to double the size. What should be checked first?",
+      "options": [
+        "Adherence and the split of results between planned and unplanned trades",
+        "The broker's advertised returns",
+        "The number of followers on social media",
+        "The weather on the day of the trade"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "What should a change log entry always contain?",
+      "options": [
+        "Only the new rule and the date",
+        "The date, the version number, the reason, the evidence and the test plan",
+        "Only the trader's name and the broker",
+        "Only the result of the last trade"
+      ],
+      "a": 1
+    },
+    {
+      "lesson": 6,
+      "q": "Why is a change made after a bad week suspect?",
+      "options": [
+        "Because changes are never allowed in trading",
+        "Because bad weeks always reverse",
+        "Recent losses pull judgement towards recency bias, so the change may miss the real problem",
+        "Because the journal cannot be updated during a bad week"
+      ],
+      "a": 2
+    },
+    {
+      "lesson": 6,
+      "q": "How should a proposed change to a plan be tested?",
+      "options": [
+        "On the trades that suggested the change",
+        "By applying it at once to all open positions",
+        "By asking friends whether the rule sounds good",
+        "On new trades, against the current version, with the old rule kept in the record"
+      ],
+      "a": 3
+    },
+    {
+      "lesson": 6,
+      "q": "What does a monthly review look at, compared with a weekly review?",
+      "options": [
+        "Trends across the period, and whether the sample is large enough to read",
+        "Each trade's entry price, one at a time",
+        "Only the broker's fees",
+        "Only the trader's emotions in the journal"
+      ],
+      "a": 0
+    },
+    {
+      "lesson": 6,
+      "q": "Which practice keeps a plan change auditable?",
+      "options": [
+        "Overwriting the plan so the latest version is the only one",
+        "Keeping each version with a number and linking each trade to the version it used",
+        "Changing several rules at once to save time",
+        "Deleting old versions after each month"
+      ],
+      "a": 1
+    }
+  ]
+}

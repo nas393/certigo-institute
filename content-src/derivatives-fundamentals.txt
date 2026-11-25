@@ -1,0 +1,693 @@
+=== 20
+SLIDE What a derivative is | A contract whose value depends on an underlying asset; It sets terms now for a future exchange; It can hedge or speculate | Value comes from something else
+SLIDE Forward contracts | Two parties agree a price and a future date; Terms are private and not standardised; Each side carries the other's default risk | Private, flexible, risky
+SLIDE Forward price | The forward price is roughly the spot price plus the cost of financing until delivery; Income from the asset reduces it; No view of the future is needed | Arbitrage sets the link
+SLIDE Hedging with a forward | A business with a future cost can lock in a price; A hedge removes price risk and also removes gains; The hedge must match the exposure | Lock it, and give up the upside
+SLIDE Counterparty risk | The other party may not pay or deliver; Collateral and credit limits reduce it; Check the counterparty before the deal | Know who is on the other side
+SLIDE Forward mistakes | Hedging a different quantity or date; Ignoring the counterparty; Treating the hedge as a profit source | Match the exposure
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- describe what a derivative is and what determines its value;
+- explain how a forward contract works, including its counterparty risk;
+- estimate the forward price of an asset using the cost of financing until delivery;
+- explain how a forward can hedge a future price exposure, and what the hedge gives up.
+
+## Key terms
+
+::: terms
+Derivative: a contract whose value depends on an underlying asset, rate or index
+Underlying: the asset, rate or index that a derivative's value depends on
+Forward contract: a private agreement to buy or sell an asset at a set price on a future date
+Spot price: the price for immediate delivery of the underlying asset
+Counterparty risk: the risk that the other party to a contract fails to meet its obligations
+Hedge: a position taken to offset an existing exposure to price movement
+:::
+
+## 1. What a derivative is
+
+A derivative is a contract whose value comes from something else. The something else is the underlying: a commodity, a currency, a share, an interest rate or an index. The contract sets the terms today for an exchange in the future. Derivatives serve two broad purposes. Businesses use them to hedge, which means reducing an exposure they already carry. Traders use them to speculate, which means taking a view on price.
+Some derivatives are standardised and exchange-traded. Others are private, and this lesson starts with the simplest private form.
+
+## 2. Forward contracts
+
+A forward contract is a private agreement to buy or sell an asset at a set price on a future date. Its terms are negotiated, so the size, the date and the delivery arrangements can be tailored. A forward is not usually traded on an exchange, and it is not cleared by a central party. Each side therefore faces the other's default risk for the life of the contract.
+## 3. The forward price
+
+The forward price is the price agreed today for delivery later. In a simple, well-functioning market it is roughly the spot price plus the cost of financing the asset until delivery, less any income the asset pays during that period. If the forward price were much higher than this, a trader could buy the asset now, finance it, and sell it forward, locking in a risk-free gain. That opportunity is called arbitrage. A forward price is not a forecast of where the spot price will go.
+
+::: diagram steps | Estimating a forward price
+Start from spot: the current price for immediate delivery
+Add financing: the cost of holding the asset until the delivery date
+Subtract income: any income the asset pays during the period
+Compare: check the agreed forward price against this estimate
+:::
+
+::: slides
+SLIDE Step 1: Identify the exposure | What asset, what quantity and what date; Is the exposure a cost or a sale | Name the exposure first
+SLIDE Step 2: Choose the hedge size | Match the quantity and date of the exposure; Avoid over-hedging | Match, do not overshoot
+SLIDE Step 3: Check the counterparty | Assess credit and collateral; Set a limit for each counterparty | Check before signing
+:::
+
+::: quiz
+? An importer agrees a forward to buy a commodity in six months at a fixed price. The spot price later falls sharply. What is the importer's position on the contract?
+- The importer gains, because the agreed price is now cheaper than the market || The importer is locked into the agreed price, so the fall means the contract is now worse than the market. The gain would be the seller's.
+* The importer is locked in, so the fall means a paper loss against the market, which the hedge was meant to accept || A forward removes price risk in both directions. The importer gives up the benefit of a fall in exchange for certainty.
+- The contract is automatically cancelled when the price falls || A forward does not cancel because the price moves. The terms stand until delivery or settlement.
+:::
+
+## 4. Hedging with a forward
+
+A business with a future cost, such as an importer buying fuel, can use a forward to lock in the price. The hedge removes the risk of a price rise, and it also removes the benefit of a price fall. That is the cost of certainty. The hedge is effective only if it matches the exposure in quantity, date and asset. A hedge of the wrong size or the wrong delivery date leaves part of the risk open, and it can add a new one.
+## Worked example: Carlos's fuel hedge in Luanda
+
+Carlos runs a small distribution business in Luanda. He expects to buy 50,000 litres of fuel in six months. The spot price is 1.00 per litre. A supplier offers a forward at 1.05 per litre for delivery in six months, which Carlos accepts. His budget fails if the cost rises above 1.05. The forward fixes his cost at 52,500, which is 50,000 multiplied by 1.05.
+
+If the spot price rises to 1.20 at delivery, the forward saves Carlos 7,500, because 50,000 multiplied by 0.15 is 7,500. If the spot price falls to 0.90, the forward costs him 7,500 more than buying at spot, which is 50,000 multiplied by 0.15 again. He accepted that trade-off for budget certainty.
+
+::: case | The hedge that is too large
+Marta's company has a real exposure of 20,000 litres of fuel in six months. She is tempted to hedge 40,000 litres, because she thinks the price will rise and she wants a profit on the extra quantity.
+? What should Marta do?
+- Hedge 40,000 litres, because a larger hedge gives more protection || A hedge larger than the exposure creates a new speculative position. The extra 20,000 litres carries risk that the business does not need.
+* Hedge only the 20,000 litres of real exposure, and treat any view on price as a separate decision with its own limits || A hedge should match the exposure. A separate view needs separate approval and risk limits.
+- Hedge 20,000 litres now and add more later, if the price rises || Adding a hedge after a price rise is speculation on direction. The hedge should be set by the exposure, not by the price move.
+:::
+
+::: quiz
+? Why is a forward contract usually exposed to counterparty risk?
+- Because forwards are always guaranteed by the exchange || Forwards are private and usually not cleared through an exchange, so no central party guarantees them.
+* Because it is private, so each side depends on the other to meet its obligations until delivery || Each party faces the other's default risk, which is why credit and collateral matter.
+- Because forward prices are set by the government || Forward prices are set by the parties and by market conditions, not by a government.
+:::
+
+## Tool: forward hedge checklist
+
+- Exposure: asset, quantity, date and whether it is a cost or a sale
+- Hedge quantity and date, matched to the exposure
+- Forward price, compared with the spot price and the cost of financing
+- Counterparty: credit assessment, limit and collateral terms
+- What the hedge gives up if the price moves in the business's favour
+- Review date, and what triggers the hedge to be reduced or closed
+
+## Common mistakes
+
+- Hedging a different quantity or delivery date from the real exposure.
+- Treating a hedge as a source of profit.
+- Signing a forward without checking the counterparty's credit.
+- Reading the forward price as a forecast of the future spot price.
+
+## Self-check
+
+1. What determines the approximate forward price of an asset? (Answer: the spot price plus the cost of financing until delivery, less any income the asset pays.)
+2. Why does a forward hedge remove the benefit of a price fall? (Answer: the price is fixed, so the business pays the agreed price whatever the market does.)
+3. What is counterparty risk in a forward? (Answer: the risk that the other party does not meet its obligations, because the contract is private and usually not cleared.)
+
+## Practical assignment
+
+Choose a real or hypothetical cost your business faces in six months. Write the exposure in asset, quantity and date. Estimate a forward price from the spot price and an assumed financing cost. Then list three counterparty checks you would run before signing, and say what the hedge would give up.
+
+## Summary
+
+- A derivative's value comes from an underlying asset, and a forward is a private contract with counterparty risk.
+- A forward price is linked to the spot price and the cost of financing, and it is not a forecast.
+- A hedge must match the exposure, and it removes both the loss and the benefit of a price move.
+
+=== 20
+SLIDE Futures are standard | Exchange-traded contracts with fixed size and date; The terms are the same for every buyer and seller; Trading is anonymous | Standard terms, central trading
+SLIDE The clearing house | A central counterparty stands between the parties; It reduces the default risk of each side; Members post margin | The middleman takes the risk
+SLIDE Margin | Initial margin is a deposit to open a position; Maintenance margin is the minimum to keep it open; Both are set by the exchange or broker | A deposit, not a payment
+SLIDE Daily settlement | Gains and losses are settled each day; This is called variation margin; A loss must be funded in cash | Losses are paid daily
+SLIDE Hedging with futures | A short futures position hedges a long exposure; A long position hedges a short exposure; The basis can differ | Opposite sides hedge
+SLIDE Futures mistakes | Ignoring daily margin calls; Using the wrong contract size; Forgetting the basis | Plan for cash calls
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain how a futures contract is standardised and cleared;
+- distinguish initial margin, maintenance margin and variation margin, and calculate a daily settlement;
+- describe how a short or long futures position hedges an existing exposure;
+- explain basis risk and why a futures hedge is rarely perfect.
+
+## Key terms
+
+::: terms
+Futures contract: a standardised, exchange-traded agreement to buy or sell an asset at a set price on a set date
+Clearing house: a central counterparty that stands between buyers and sellers and guarantees the trades
+Initial margin: a deposit required to open a futures position
+Maintenance margin: the minimum balance that must be kept in the account while a position is open
+Variation margin: the daily cash gain or loss on a futures position, settled each day
+Basis: the difference between the spot price of an asset and the futures price for the same asset
+:::
+
+## 1. Standard contracts and a central counterparty
+
+A futures contract is a forward that has been standardised. The size, the quality, the delivery date and the settlement terms are fixed by the exchange, so every contract of the same type is identical. Because the terms are standard, futures trade on an exchange, and the trades are cleared through a clearing house. The clearing house stands between the buyer and the seller. The cost of that protection is margin: members must post deposits and settle losses in cash.
+
+## 2. Margin and daily settlement
+
+Initial margin is the deposit required to open a futures position. It is not a payment for the contract, but a collateral deposit that protects the clearing house. Maintenance margin is the minimum balance that must remain in the account while the position is open. If the account falls below it, the holder receives a margin call and must add cash. Futures are marked to market each day. The gain or loss on the day, called variation margin, is settled in cash, so a position can require funding every day even when the eventual outcome is favourable.
+
+::: diagram steps | Daily settlement of a long futures position
+Mark to market: compare the day's settlement price with the previous day's
+Settle the change: credit a gain, or debit a loss, in cash
+Check the margin: is the account above the maintenance level?
+Call if needed: add cash to restore the initial margin when the account falls below maintenance
+:::
+
+::: slides
+SLIDE Step 1: Open the position | Post the initial margin; Confirm the contract size | Deposit first
+SLIDE Step 2: Settle each day | Compare the settlement price; Credit or debit the change | Cash moves daily
+SLIDE Step 3: Watch the maintenance level | Stay above it; Plan the cash for a call | Plan for the call
+:::
+
+::: quiz
+? A long futures position gains 2,000 in one day, but the previous day it lost 3,000. What is the net variation margin over the two days?
+- A gain of 5,000, because the two movements are added together || The movements have opposite signs. Adding them as if they were both gains gives the wrong total.
+* A loss of 1,000, because the gain of 2,000 is set against the earlier loss of 3,000 || Net change is the gain minus the loss: 2,000 minus 3,000 is minus 1,000.
+- No margin movement at all, because futures settle only at expiry || Futures are marked to market each day, so the movements are settled in cash daily.
+:::
+
+## 3. Hedging with futures
+
+A futures contract can hedge an existing exposure. A business that holds a long physical stock of a commodity, which it will later sell, can sell futures to lock in a price. That is a short hedge. A business that expects to buy the commodity later can buy futures, which is a long hedge. The futures position is opposite to the physical exposure.
+
+## 4. Basis risk
+
+Basis is the difference between the spot price of the asset and the futures price for the same asset. A futures hedge is rarely perfect because the basis can change between the date the hedge is placed and the date it is closed. That change is basis risk. It can arise when the contract's delivery point or quality differs from the physical exposure, or when the hedge is closed before expiry. A professional measures basis risk rather than assuming the hedge is exact.
+
+## Worked example: Helena's stock hedge in Benguela
+
+Helena manages stock for a company that imports a commodity. The company holds stock worth 500,000 at the current price, and it will sell the stock in three months. She is worried that the price will fall. She sells futures to hedge, with a total notional value close to the stock. Suppose the price falls 10 percent over the period. The stock loses 50,000 in value, and the short futures gain roughly the same, so the net exposure is small.
+
+But the basis moves as well. If the futures price falls 10 percent and the spot price falls 9 percent, the stock loses 45,000 and the futures gain 50,000, leaving a net gain of 5,000 from the basis change. If the spot price falls more than the futures price, the hedge loses effectiveness instead. Helena reports the basis exposure separately.
+
+::: case | The margin call on a good trade
+Samuel holds a long futures position that is profitable overall. On one day the market falls sharply, the account drops below its maintenance margin, and he receives a margin call for cash he did not plan to commit.
+? What should Samuel do first?
+- Ignore the call, because the position is profitable overall || A margin call is a cash requirement that must be met. Ignoring it can lead to the position being closed by the broker.
+* Meet the call from funds set aside for margin, and check whether the position still fits the plan's limits || A margin plan that sets aside cash before entry turns the call into a known cost, and the limits decide whether the position stays.
+- Add more futures to average the price down, so the margin is no longer needed || Adding positions to meet a margin call increases the exposure at the moment the account is under strain.
+:::
+
+::: quiz
+? Why does a futures hedge rarely eliminate all price risk?
+- Because futures contracts never move with the underlying asset || Futures usually move with the underlying asset, but not perfectly.
+* Because the basis between spot and futures can change, which creates basis risk || Basis risk is the part of the exposure a futures hedge does not remove, and it must be measured.
+- Because margin rules cancel the hedge each day || Margin rules require cash and do not cancel hedges. The hedge still exists.
+:::
+
+## Tool: futures position card
+
+- Contract: asset, size, delivery month and clearing house
+- Initial margin posted, and maintenance margin required
+- Cash reserve set aside for a margin call, in currency
+- Daily settlement log: the settlement price and the variation margin
+- Hedge ratio and basis exposure, reported separately
+- Action on a margin call: who approves funding, and the time limit
+
+## Common mistakes
+
+- Opening a position without a cash reserve for a margin call.
+- Treating the initial margin as the total cost of the position.
+- Assuming a futures hedge removes all risk, including basis risk.
+- Using a contract size that does not match the physical exposure.
+
+## Self-check
+
+1. What is the difference between initial margin and maintenance margin? (Answer: initial margin is the deposit needed to open a position, and maintenance margin is the minimum balance that must be kept while it is open.)
+2. What is variation margin? (Answer: the daily gain or loss on a futures position, settled in cash each day.)
+3. What is basis risk? (Answer: the risk that the difference between the spot and futures price changes, so the hedge is not perfect.)
+
+## Practical assignment
+
+Take a hypothetical futures position of a given size. Write down the initial and maintenance margin you would need to fund, and build a three-day daily settlement table from two assumed price changes. State the cash you would need to reserve so that one margin call can be met without changing the position.
+
+## Summary
+
+- Futures are standardised and cleared, and the clearing house reduces default risk for each party.
+- Futures are marked to market daily, so a position can require cash even when it is profitable overall.
+- A futures hedge removes most of the price risk, but basis risk remains and must be measured.
+
+=== 20
+SLIDE What an option is | The buyer pays a premium for a right; The right is to buy a call or sell a put; It is not an obligation | A right, not a duty
+SLIDE Call and put | A call gives the right to buy at the strike; A put gives the right to sell at the strike; The seller takes the other side | Two directions, two roles
+SLIDE Intrinsic value | A call's intrinsic value is the spot minus the strike, if positive; A put's is the strike minus the spot, if positive; Zero otherwise | What it is worth now
+SLIDE Time value | Time value is the premium minus the intrinsic value; It reflects the chance of further movement; It falls toward expiry | The rest of the premium
+SLIDE Breakeven | A long call breaks even at strike plus premium; A long put breaks even at strike minus premium; Maximum loss is the premium | Know the breakeven
+SLIDE Option mistakes | Forgetting the premium; Ignoring time decay; Confusing buyer and seller risk | Premium is the price
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- explain the difference between a call and a put, and between the buyer and the seller of an option;
+- calculate the intrinsic value and time value of an option from its premium;
+- calculate the breakeven and the maximum loss of a long call or long put;
+- explain why an option buyer's maximum loss is the premium, and a seller's loss can be much larger.
+
+## Key terms
+
+::: terms
+Option: a contract that gives the buyer the right, but not the obligation, to buy or sell an underlying asset at a set price
+Call option: an option to buy the underlying asset at the strike price
+Put option: an option to sell the underlying asset at the strike price
+Strike price: the price at which the option can be exercised
+Premium: the price paid by the buyer to the seller for the option
+Intrinsic value: the amount an option would be worth if exercised now, never less than zero
+Time value: the part of the premium above intrinsic value, reflecting the chance of further movement before expiry
+:::
+
+## 1. Rights, not obligations
+
+An option gives its buyer a right, not a duty. A call option lets the buyer purchase the underlying asset at the strike price. A put option lets the buyer sell the underlying asset at the strike price. The buyer pays a premium to the seller for this right, and the seller takes the obligation to perform if the buyer exercises. The asymmetry matters. The buyer's maximum loss is the premium. The seller's potential loss can be much larger, which is why option selling needs collateral, margin and strict limits.
+
+## 2. Intrinsic and time value
+
+The intrinsic value of an option is what it would be worth if exercised now. For a call, it is the spot price minus the strike, if that is positive, and zero otherwise. For a put, it is the strike minus the spot price, if that is positive, and zero otherwise. The rest of the premium is the time value. Time value reflects the chance that the underlying moves further in the holder's favour before expiry. It tends to fall as expiry approaches, which is why options lose value through time when nothing else changes.
+
+::: diagram steps | Splitting a call premium
+Read the spot: the current price of the underlying
+Find the intrinsic value: spot minus strike, not below zero
+Subtract: premium minus intrinsic value is the time value
+Check the breakeven: strike plus premium for a long call
+:::
+
+::: slides
+SLIDE Step 1: Read the terms | Underlying, strike, premium and expiry; Note the option type | Read the contract
+SLIDE Step 2: Calculate intrinsic value | Call: spot minus strike, floor zero; Put: strike minus spot, floor zero | Value if exercised now
+SLIDE Step 3: Find the breakeven | Call: strike plus premium; Put: strike minus premium | Where the trade breaks even
+:::
+
+::: quiz
+? A call option has a strike of 50 and a premium of 3. The spot price is 52. What is the intrinsic value and the time value?
+- Intrinsic 3, time 0 || The intrinsic value is spot minus strike, which is 2, not 3.
+* Intrinsic 2 and time value 1, because the premium of 3 minus the intrinsic 2 leaves 1 || Spot minus strike gives 2, and the rest of the premium is time value.
+- Intrinsic 5 and time value minus 2 || Time value cannot be negative in this calculation, and the intrinsic value uses the strike, not the sum.
+:::
+
+## 3. Breakeven and maximum loss
+
+For a long call, the breakeven at expiry is the strike plus the premium. The buyer loses the premium if the spot price is at or below the strike, and profits above the breakeven. For a long put, the breakeven is the strike minus the premium. The maximum loss for an option buyer is always the premium paid. A seller of the same option collects the premium, but takes the obligation, and the seller's loss can be large when the market moves against the position.
+
+## Worked example: Andre's call on a commodity in Lobito
+
+Andre expects a commodity to rise over the next two months. He buys a call with a strike of 50 for a premium of 3 per unit. His breakeven at expiry is 53, which is 50 plus 3. If the spot price at expiry is 56, the intrinsic value is 6, and his profit is 3 per unit, which is 6 minus the premium. If the spot price is 48, the call expires worthless, and his loss is the premium of 3 per unit, no more. He chose the call because the premium is the most he can lose, and he sized the position so that the total premium fits his risk budget.
+
+::: case | The premium and the budget
+Ruth wants to buy a call to speculate on a price rise. Her plan limits any single loss to 300 USD. The call costs 6 USD per unit, and she considers buying 80 units.
+? What should Ruth do?
+- Buy 80 units, because a call's maximum loss is smaller than a futures loss || The maximum loss on 80 units is 480 USD, which exceeds her 300 USD limit. The premium is the loss, so the size must be set from it.
+* Set the size so that the total premium is within 300 USD, which allows 50 units, and record the breakeven || The premium is the maximum loss for a buyer, so the size must fit the limit. Recording the breakeven completes the plan.
+- Sell a put instead, because selling options has no risk || Selling a put carries potentially large losses and an obligation. It is not a way to avoid risk.
+:::
+
+::: quiz
+? Who has the potentially unlimited or very large loss in an option contract?
+- The buyer of a call, because the premium can rise without limit || The buyer's maximum loss is the premium paid, which is known in advance.
+* The seller of the option, who takes the obligation and can face a loss well beyond the premium received || The seller collects the premium but must perform if the buyer exercises, so the seller's loss can be large.
+- The buyer of a put, because the strike can move against the buyer || The strike is fixed in the contract. The put buyer's maximum loss is the premium.
+:::
+
+## Tool: option position card
+
+- Option type: call or put, buyer or seller
+- Underlying, strike price, premium and expiry date
+- Intrinsic value and time value at the current spot price
+- Breakeven at expiry, for the position as held
+- Maximum loss: premium for a buyer, and the calculated obligation for a seller
+- Size checked against the risk budget for the maximum loss
+
+## Common mistakes
+
+- Forgetting to include the premium when calculating breakeven.
+- Assuming time value stays constant until expiry.
+- Treating option selling as a risk-free way to earn income.
+- Sizing an option position from its premium per unit rather than the total premium.
+
+## Self-check
+
+1. What is the buyer's maximum loss on an option? (Answer: the premium paid, which is known before the trade.)
+2. A call has a strike of 50, a premium of 3 and a spot of 56. What is the intrinsic value? (Answer: 6, because spot minus strike is 6.)
+3. What is the breakeven of a long put with a strike of 40 and a premium of 2? (Answer: 38, because strike minus premium is 38.)
+
+## Practical assignment
+
+Choose one hypothetical call and one put with stated strikes and premiums. For each, calculate the intrinsic value at three spot prices, the time value at each, and the breakeven. Then state the maximum loss for the buyer and check that it fits a stated risk budget.
+
+## Summary
+
+- An option gives its buyer a right, and the buyer's maximum loss is the premium paid.
+- Intrinsic value is what an option is worth if exercised now, and time value is the rest of the premium.
+- The breakeven of a long call is strike plus premium, and the seller of an option can face losses far larger than the premium received.
+
+=== 20
+SLIDE Payoffs at expiry | A payoff diagram shows profit or loss against the spot price; Each position has its own shape; Read the kinks | Shape before size
+SLIDE Covered call | Long stock with a short call; Income from the premium caps the upside; The stock still carries the downside | Income for a cap
+SLIDE Protective put | Long stock with a long put; The put sets a floor; The premium is the cost of the floor | A floor for a fee
+SLIDE Worked floor | Floor equals strike minus the premium paid, for the stock position; Maximum loss is known at entry | Know the floor
+SLIDE Payoff reading | Note where the payoff changes slope; Check the loss in each case; Compare the strategies on the same chart | The kinks matter
+SLIDE Strategy mistakes | Ignoring the stock's own risk; Forgetting the premium; Treating a covered call as risk-free | The stock stays
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- draw and read the payoff at expiry of a simple option strategy;
+- explain how a covered call and a protective put change the risk of a stock position;
+- calculate the floor and the cap that each strategy creates, using the premium;
+- identify the risks that remain after each strategy is applied.
+
+## Key terms
+
+::: terms
+Payoff at expiry: the profit or loss of a position at the expiry date, as a function of the spot price
+Covered call: a long position in the underlying asset combined with a short call on the same asset
+Protective put: a long position in the underlying asset combined with a long put on the same asset
+Floor: the lowest value a protected position can lose, set by the put strike and the premium
+Cap: the highest value a covered-call position can gain, set by the call strike and the premium
+Kink: a point on a payoff diagram where the slope changes, usually at a strike
+:::
+
+## 1. Payoffs as shapes
+
+A payoff diagram shows what a position makes or loses at expiry, for every possible spot price. It is the clearest way to understand an option strategy. Each position has its own shape, and the points where the slope changes, called kinks, usually sit at the strike prices. Before sizing or pricing a strategy, a professional draws its payoff and reads the loss in each part of the range. The shape shows what the strategy protects and what it gives up.
+
+## 2. Covered call: income for a cap
+
+A covered call combines a long position in an asset with a short call on the same asset. The seller of the call collects the premium, which is income. In return, the upside above the call strike is capped, because the call holder can require the asset to be sold at the strike. The position still carries the full downside of the asset, offset only by the premium received. A covered call is therefore a trade of some upside for income, not a way to remove the risk of the asset.
+
+::: diagram steps | Reading a covered call
+Hold the asset: the long stock carries the full downside below the strike
+Sell the call: receive the premium, which is income
+Read the cap: the upside is limited above the strike, plus the premium
+Check the downside: the loss below the strike is reduced only by the premium
+:::
+
+## 3. Protective put: a floor for a fee
+
+A protective put combines a long position in an asset with a long put on the same asset. The put gives the holder the right to sell at the strike, which sets a floor under the position. The premium is the cost of that floor. Below the strike, the put offsets the loss on the asset, so the position's loss is limited. Above the strike, the asset gains, and the put expires worthless, so the premium is lost. The floor is the strike minus the premium paid, and it is known at entry.
+
+::: slides
+SLIDE Step 1: Draw the asset payoff | A straight line through the purchase price | Start with the stock
+SLIDE Step 2: Add the option payoff | Add the put or short call at each spot price | Add one leg at a time
+SLIDE Step 3: Read the floor or the cap | Floor is strike minus premium; Cap is strike plus premium | The levels set the risk
+:::
+
+::: quiz
+? A holder owns a stock bought at 40 and buys a put with a strike of 38 for a premium of 1. What is the approximate floor for the combined position?
+- 40, because the stock was bought at 40 || The floor is set by the put strike and the premium, not by the purchase price alone.
+* 37, because the put strike of 38 minus the premium of 1 is 37 for the position per share || Strike minus premium gives the floor for the protected position, which is then compared with the purchase cost.
+- 39, because the premium is added to the strike || The premium reduces the floor. Adding it would overstate the protection.
+:::
+
+## Worked example: Sofia's protective put in Benguela
+
+Sofia holds 1,000 shares bought at 40. She is worried about a short-term fall, so she buys 1,000 puts with a strike of 38 at a premium of 1 per share, which costs 1,000 in total. Her floor is 38 minus 1, which is 37 per share, so her worst-case loss on the position is 3 per share, or 3,000 in total, on top of any gain she has not made.
+
+Suppose the price falls to 30 at expiry. The stock loses 10 per share, or 10,000 in total. The put pays 8 per share, which is 8,000, because 38 minus 30 is 8. The premium of 1,000 is a cost, so the net result is minus 10,000 plus 8,000 minus 1,000, which is minus 3,000. That matches her floor. Sofia accepts the premium as the price of certainty over a period she cannot predict, and she checks that the premium fits her budget.
+
+::: case | The cap that disappoints
+Ahmed sold covered calls against his shares for a steady premium. The share price rises sharply and goes well above the call strike, so the shares are called away at the strike. He feels he has lost money because the shares would have gained more.
+? What should Ahmed review?
+- Conclude that covered calls always lose money, because the shares would have gained more || A covered call trades upside for income. Judging it only by the missed gain ignores the premium and the plan's purpose.
+* Review whether the strategy matched his goal: the income and the cap were the deal he accepted, and the downside risk remains in the shares || The review should measure the premium income against the cap, and check that the shares' downside is still within his risk limits.
+- Buy the same calls back at any price, so the shares are never sold || Buying back a call at a higher price can create a loss larger than the premium received. It is a separate trade, not a fix.
+:::
+
+::: quiz
+? A covered call is described as lowering risk. What is the accurate correction?
+- It removes all risk, because the premium covers any loss || The premium offsets only part of the loss, and the stock still carries the downside below the strike.
+* It reduces some downside through the premium and gives up upside above the strike, while the stock's downside remains || The strategy trades upside for income. The shares still lose value if the price falls.
+- It has no effect on the stock position at all || A covered call changes the position's payoff, by capping upside and adding premium income.
+:::
+
+## Tool: strategy payoff card
+
+- Position: asset, quantity and purchase price
+- Option legs: type, strike, premium and expiry, for each leg
+- Floor or cap, calculated from the strike and the premium
+- Maximum loss and maximum gain across the payoff range
+- Residual risk the strategy does not remove
+- Limit check: the maximum loss compared with the risk budget
+
+## Common mistakes
+
+- Describing a covered call as risk-free.
+- Forgetting the premium when calculating the floor or the cap.
+- Judging a strategy only by the outcome in one scenario.
+- Ignoring the asset's own risk when a strategy is added to it.
+
+## Self-check
+
+1. What is the purpose of a protective put? (Answer: to set a floor under a long position, with the premium as the cost of that floor.)
+2. What does a covered call give up? (Answer: the upside above the call strike, in exchange for the premium income.)
+3. A stock is bought at 60 with a put at 55 for a premium of 2. What is the floor per share? (Answer: 53, because strike minus premium is 53.)
+
+## Practical assignment
+
+Choose a hypothetical stock position and draw its payoff at expiry for three spot prices. Add a protective put and then a covered call on a separate chart. For each, calculate the floor or the cap and state the residual risk that remains. Compare the two shapes in one sentence.
+
+## Summary
+
+- A payoff diagram shows the profit or loss of a strategy across the range of spot prices, and its kinks sit at the strikes.
+- A covered call trades upside for premium income, and a protective put buys a floor for a premium.
+- Each strategy changes the risk of the position, and the residual risk must be measured and limited.
+
+=== 20
+SLIDE What drives option prices | The spot price; The strike; Time to expiry; Volatility; Interest rates and any income from the asset | Six inputs, one price
+SLIDE Volatility | Higher expected movement raises option prices; Implied volatility is read from the market price; Volatility is the main unknown | The key input
+SLIDE Time decay | Time value falls as expiry approaches; The rate of decay is not constant; It is largest near expiry | Time works against buyers
+SLIDE The Greeks | Delta measures sensitivity to the spot price; Gamma measures how delta changes; Theta measures time decay; Vega measures volatility | Risk as sensitivities
+SLIDE Model caution | Option models rest on assumptions; The Black-Scholes model was published in 1973; Real prices can break its assumptions | Models are approximations
+SLIDE Using the Greeks | Read the Greeks for each leg; Add them across the book; Set limits on the total | Limits on sensitivities
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- list the inputs that drive an option's price and explain the role of each;
+- explain how volatility and time to expiry affect the premium;
+- describe delta, gamma, theta and vega as sensitivities of a position;
+- explain why option models are approximations and how their assumptions can fail.
+
+## Key terms
+
+::: terms
+Implied volatility: the volatility that, put into an option model, reproduces the observed market price
+Delta: the change in an option's price for a small change in the spot price of the underlying
+Gamma: the rate of change of delta as the spot price moves
+Theta: the change in an option's value as time passes, other inputs unchanged
+Vega: the change in an option's value for a one-point change in implied volatility
+Option model: a mathematical formula that relates an option's price to its inputs under stated assumptions
+:::
+
+## 1. The inputs to an option price
+
+An option's price depends on six inputs: the spot price of the underlying, the strike, the time to expiry, the volatility of the underlying, the interest rate, and any income the underlying pays before expiry. The first two set the intrinsic value. The others mainly drive the time value. A trader who understands which input is moving can explain a price change, and can separate it from the rest. Most of the uncertainty in option pricing sits in volatility, which is not directly observed.
+
+## 2. Volatility and time
+
+Higher expected volatility raises the price of both calls and puts, because larger moves give the option more chance to finish in the money. Market prices can be used to back out the volatility implied by an option, called implied volatility, which is then compared with the volatility the trader expects. Time works in a different way. Time value falls as expiry approaches, and the decline is faster near expiry. That is time decay, and it works against the buyer of an option and in favour of the seller, all else equal.
+
+::: diagram steps | Reading an option's sensitivities
+Start from the spot: note the underlying price and the strike
+Read delta: how much the option moves for a small spot move
+Read theta: how much value is lost each day, all else equal
+Read vega: how much the option gains or loses if volatility moves
+:::
+
+::: slides
+SLIDE Step 1: Identify the inputs | Spot, strike, time, volatility and rates; Note which is known and which is estimated | Known and estimated
+SLIDE Step 2: Read the Greeks | Delta, gamma, theta and vega for each position; Check their sign | Sensitivities
+SLIDE Step 3: Add across the book | Sum the Greeks by underlying; Compare with the limits | Limits on the total
+:::
+
+## 3. The Greeks as sensitivities
+
+The Greeks measure how a position's value responds to each input. Delta is the change in value for a small change in the underlying price, and it is the most common measure of directional exposure. Gamma measures how fast delta changes, which matters for positions that are near the strike or near expiry. Theta measures the daily loss of time value for a holder. Vega measures the sensitivity to implied volatility. Professionals add the Greeks across all positions in the same underlying, so the total exposure is visible and can be limited.
+
+::: quiz
+? A long call's delta is 0.6. The underlying rises by 1. Approximately what happens to the call's value, all else equal?
+- It falls by 0.6, because a call loses when the underlying rises || A long call gains value when the underlying rises. Delta is a positive sensitivity for a long call.
+* It rises by about 0.6, because delta measures the change in value for a small change in the underlying || Delta is the approximate change in value for a unit move in the underlying, so a delta of 0.6 implies a rise of about 0.6.
+- It rises by 1, because delta always equals the change in the underlying || Delta is a sensitivity, not a copy of the underlying's move. Here it is 0.6.
+:::
+
+## 4. Model caution
+
+Option models give a price under stated assumptions. The Black-Scholes model, published in 1973, is the best-known example, and its assumptions include constant volatility and a particular pattern of price movement. Real markets can break those assumptions. Prices jump, volatility changes, and liquidity disappears in stress. A professional treats the model as a tool for pricing and for sensitivities, not as a guarantee, and checks the output against market prices and stress scenarios. Model risk, the risk that the model is wrong, is a real and separate risk.
+
+## Worked example: Ines's book in Huambo
+
+Ines manages a small options book for a company in Huambo. She holds a long call with a delta of 0.5 and a short call with a delta of minus 0.2 on the same commodity. The net delta is 0.3 for every unit of underlying. Her vega is positive on the long call and negative on the short call, and the net vega is small. Her theta is negative overall, because the long call loses value each day through time decay.
+
+The committee sets a limit on net delta of 0.5 per unit of underlying. Ines reports a net delta of 0.3, inside the limit, and a theta cost of a set amount per day. She runs a scenario where volatility rises by five points, and records that the result depends on a model input.
+
+::: case | The volatility scenario
+Marcos's options book passes its delta limit. A colleague says the book is safe because its model price matches the market price on the day.
+? What should Marcos check next?
+- Accept the colleague's view, because a matching price means the model is correct || A matching price on one day does not test the model under stress, where its assumptions may fail.
+* Run stress scenarios on volatility and the spot price, check the Greeks against limits, and record the model risk separately || Limits and stress tests show exposures that a single price match cannot. Model risk is a separate line in the review.
+- Increase the book's size, because the model shows a profit under current assumptions || Changing size because of a model output increases exposure to the model's own errors.
+:::
+
+::: quiz
+? What does theta measure for the holder of a long option?
+- The sensitivity of the option to a change in the spot price || That is delta. Theta measures the change over time.
+* The daily change in value from the passing of time, all else equal, which is usually negative for a long holder || Time decay reduces the time value of a long option, so theta is usually a cost for the holder.
+- The sensitivity of the option to interest rates || That describes rho. Theta measures the effect of time.
+:::
+
+## Tool: option sensitivity card
+
+- Inputs: spot, strike, time to expiry, volatility, rate and income
+- Implied volatility, and the volatility assumed in the model
+- Delta, gamma, theta and vega for each position and in total
+- Limits for each Greek, and the current utilisation
+- Stress scenarios: volatility and spot moves, with results
+- Model risk note: the assumptions that might fail
+
+## Common mistakes
+
+- Treating the model price as a market fact rather than an estimate.
+- Ignoring volatility, which is the main unknown in most option prices.
+- Looking at one position's Greeks without adding them across the book.
+- Forgetting theta when holding a long option for a long period.
+
+## Self-check
+
+1. Which input is the main unknown in option pricing? (Answer: volatility, which is not directly observed and must be estimated or implied.)
+2. What does gamma measure? (Answer: how fast delta changes as the spot price moves.)
+3. Why is model risk a separate risk? (Answer: because the model may be wrong or its assumptions may fail in real markets, even when its output looks consistent.)
+
+## Practical assignment
+
+Take one hypothetical call and one put with stated inputs. Write down the six inputs for each and identify which one you estimated rather than observed. Describe in one paragraph how the price of each would change if volatility rose by five points and if time passed by one month.
+
+## Summary
+
+- An option's price depends on six inputs, and volatility and time are the most important to understand.
+- The Greeks are sensitivities that show how a position responds to each input, and they are added across the book.
+- Models rest on assumptions, so their outputs must be stress-tested and treated as estimates, with model risk recorded separately.
+
+=== 20
+SLIDE Where derivative risk comes from | Leverage; Margin and cash calls; Liquidity; Counterparty; Model and basis risk | Five sources to name
+SLIDE Leverage in derivatives | A small deposit controls a large exposure; Losses scale with the exposure, not the deposit; Size from exposure | Exposure, not deposit
+SLIDE Liquidity | A position may be hard to close at a fair price; Stress makes markets thinner; Plan the exit in advance | Plan the exit
+SLIDE Hedge effectiveness | Measure how far the hedge offsets the exposure; Basis and timing gaps remain; Report the residual | Measure the residual
+SLIDE Limits and escalation | Set limits on exposure, Greeks and margin; Escalate breaches the same day; Record each breach | Limits with owners
+SLIDE Derivatives mistakes | Sizing from the deposit; Ignoring stress; Assuming a hedge is exact | Size from exposure
+BODY
+## Learning objectives
+
+By the end of this lesson you will be able to:
+
+- name the main sources of risk in a derivatives book and explain how each arises;
+- measure a hedge's effectiveness and the residual risk it leaves;
+- set and escalate limits on exposure, sensitivities and margin;
+- explain why stress tests and liquidity plans are needed alongside limits.
+
+## Key terms
+
+::: terms
+Leverage: the ratio of exposure to the capital needed to hold it, which magnifies both gains and losses
+Liquidity risk: the risk that a position cannot be closed quickly at a fair price
+Hedge effectiveness: the share of an exposure that a hedge offsets, measured over a defined period
+Residual risk: the risk that remains after a hedge or strategy has been applied
+Limit: a maximum allowed exposure, sensitivity or loss, approved in advance
+Escalation: passing a breach to the person or committee with authority to act on it
+:::
+
+## 1. Where derivative risk comes from
+
+Derivatives combine several sources of risk in one instrument. Leverage means a small deposit controls a large exposure, so losses scale with the exposure rather than the deposit. Margin means that adverse moves can require cash at short notice. Liquidity means that a position may be hard to exit at a fair price, especially in stress. Counterparty risk arises in private contracts. Model and basis risk arise when the pricing or the hedge is an approximation.
+## 2. Leverage and the size that matters
+
+Leverage is the ratio of the exposure to the capital needed to hold it. A position with a notional value ten times the deposit magnifies the result by ten. A common error is to size a position from the deposit, which looks small, rather than from the exposure, which may be large. Limits should use the exposure and its sensitivity, which is what loses money when the market moves.
+
+::: diagram steps | Setting an exposure limit
+Measure the exposure: the notional or the delta-equivalent value of each position
+Add across the book: sum the exposure by underlying and by counterparty
+Compare with the limit: check each total against the approved maximum
+Escalate any breach: pass it to the owner the same day, with a plan to return within limit
+:::
+
+::: slides
+SLIDE Step 1: Measure the exposure | Use the notional or delta-equivalent; Add across the book | Exposure first
+SLIDE Step 2: Compare with the limit | Check each total against the approved maximum | Limits are approved
+SLIDE Step 3: Escalate and record | Pass the breach to the owner; Record the time and the plan | Breaches are visible
+:::
+
+::: quiz
+? A desk holds a position with a notional value of 5 million and a deposit of 500,000. Which figure should be used to test its exposure limit?
+- The deposit of 500,000, because it is the cash the desk has committed || The deposit is what must be funded. The exposure that loses money is the notional, or its equivalent.
+* The notional value of 5 million, or its delta-equivalent, because losses scale with the exposure || The exposure drives the loss, so the limit must test the exposure, not just the deposit.
+- The average of the two figures, because it balances them || Averaging the two figures hides the exposure. Each has its own purpose.
+:::
+
+## 3. Hedge effectiveness and residual risk
+
+A hedge should offset the exposure it was designed to cover. Hedge effectiveness measures how much of the exposure it offsets over a defined period. A hedge that offsets most of the exposure is effective, but the part it does not offset is residual risk. Residual risk comes from basis differences, timing gaps between the exposure and the hedge, and quantity mismatches. The residual is reported with the effectiveness.
+
+## 4. Stress and liquidity plans
+
+Limits describe normal conditions, but losses occur in stress. A stress test applies a large move in the spot price, in volatility or in the basis, and shows the loss on the book. Liquidity matters most in stress, when spreads widen and buyers become scarce. A liquidity plan sets out how a position would be reduced, which counterparties would be approached, and how long it would take. The plan is written before the stress, because the stress is when the plan is hardest to write.
+
+::: tip | Local rules
+Rules on derivatives, margin, reporting and client protection in Angola must be confirmed by a qualified local adviser before a firm applies them. This lesson describes general practice only.
+:::
+
+## Worked example: Dinis's limit breach in Luanda
+
+Dinis runs risk for a small trading desk in Luanda. The desk's limit on net delta is 2 million in notional terms, and the desk has been growing its positions. One morning, after a sharp move, the desk's net delta reaches 2.3 million. Dinis escalates the breach the same day to the head of trading, who must approve any position above the limit. He records the time, the excess of 0.3 million and a plan: reduce the position by 0.4 million within two sessions, using the liquidity plan. The desk reduces the position on the second day. The review then checks whether a sizing rule or a single trade caused the breach.
+
+::: case | The breach at the close
+Teresa sees that the desk's net delta has passed its limit late in the session. Closing part of the position now would cost a wider spread. She is tempted to leave the breach until the next morning, when liquidity may be better.
+? What should Teresa do?
+- Leave the breach overnight, because the spread is worse now and the market may recover || Leaving a breach open ignores the limit and the approval rule. The cost of the spread is part of the escalation decision, not a reason to delay it.
+* Escalate the breach the same day, and let the owner decide, with the spread cost and the plan recorded || Limits are only effective if breaches are escalated promptly. The owner weighs the cost, and the record shows the decision.
+- Increase the limit so that the breach is no longer a breach || Raising a limit to fit a position reverses the control. Limits are approved in advance, not changed to suit a trade.
+:::
+
+::: quiz
+? Why should a hedge's effectiveness be reported with its residual risk?
+- Because the residual is always larger than the effectiveness || That is not the point. Both figures show different parts of the same exposure.
+* Because it shows what remains open, so the committee does not assume the hedge is exact || The residual is the part the hedge did not offset. Reporting it makes the open risk visible.
+- Because regulators require the residual to be reported in every case || The reason is internal risk control. The point is to show what remains open.
+:::
+
+## Tool: derivatives risk card
+
+- Exposure by underlying and counterparty, with the limit and utilisation
+- Greeks summed across the book, with their limits
+- Margin: cash required, cash reserved and the trigger for a call
+- Hedge effectiveness over the period, and the residual risk in currency
+- Stress results for spot, volatility and basis moves
+- Liquidity plan: how each position would be reduced, and how long it would take
+- Breach log: time, excess, owner and the plan to return within limit
+
+## Common mistakes
+
+- Sizing derivative positions from the deposit rather than the exposure.
+- Reporting hedge effectiveness without the residual risk.
+- Setting limits without stress tests or a liquidity plan.
+- Raising a limit to fit a position instead of reducing the position.
+
+## Self-check
+
+1. Why is leverage a risk, not only a benefit? (Answer: it magnifies both gains and losses, so losses scale with the exposure rather than the deposit.)
+2. What is residual risk? (Answer: the part of an exposure that a hedge or strategy does not offset, which remains open.)
+3. What should a stress test show that a normal limit does not? (Answer: the loss under large moves in the spot price, volatility or basis, when liquidity and prices are most stressed.)
+
+## Practical assignment
+
+Build a one-page derivatives risk card for a hypothetical book with two positions in the same underlying. Include exposure, a stated limit, one stress scenario, a hedge effectiveness figure and the residual risk. Write the escalation step you would take if the limit were breached.
+
+## Summary
+
+- Derivatives combine leverage, margin, liquidity, counterparty, model and basis risk, and each needs its own control.
+- Limits test the exposure and the sensitivities, and a breach must be escalated the same day with a plan.
+- Hedge effectiveness must be reported with its residual risk, and stress tests and liquidity plans complete the picture.
